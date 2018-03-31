@@ -68,22 +68,21 @@
   background-size: cover;
   height: 45.938rem;
   overflow: auto;
+  @include flx-center;
   &__content {
-    margin-top: 7.875rem;
-    padding: none;
+    padding: 0;
     color: #1d1e21;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   &__h1{
     color: white;
-    text-align: center;
     font-weight: 300;
-    margin-top: 17.5rem;
     font-size: 3.125rem;
+    margin-bottom: 1rem;
   }
   &__h3{
     @extend .intro__h1;
-    margin-top: 1.25rem;
     font-size: 1.563rem;
   }
   &__buttons {
@@ -160,23 +159,54 @@ button:hover {
 // Footer
 .social {
   background-color: #fff;
+  // background-color: blue;
   overflow: auto;
   padding-bottom: 9.375rem;
-  text-align: center;
+  // display: flex;
+  // width: 65%;
+  @include flx-center;
   &__content{
-
+    width: 60%;
+    flex-direction: column;
+    // background-color: green;
+    &>hr{
+      border: 0;
+      border-top: 1px solid #eaebec;
+      margin: 1.313rem 0;
+    }
+  }
+  &__collections{
+    @include flx-center;
+    flex-direction: column;
   }
   &__icons{
-
+    &>li{
+      border-radius: 1.25rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: inline-block;
+      margin: 1.25rem 5px;
+      border: 1px solid #eaebec;
+      padding: 0.625rem 0;
+      text-align: center;
+      &:hover{
+        cursor: pointer;
+      }
+    }
   }
   &__twitter{
-
+    color: #55acee;
   }
   &__facebook{
-
+    color: #4c66a4;
   }
   &__instagram{
-
+    color: #3f729b;
+  }
+  .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
   }
 }
 

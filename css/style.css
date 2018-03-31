@@ -470,25 +470,26 @@ th {
   background-size: cover;
   height: 45.938rem;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro__content {
-  margin-top: 7.875rem;
-  padding: none;
+  padding: 0;
   color: #1d1e21;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro__h1, .intro__h3 {
   color: white;
-  text-align: center;
   font-weight: 300;
-  margin-top: 17.5rem;
   font-size: 3.125rem;
+  margin-bottom: 1rem;
 }
 
 .intro__h3 {
-  margin-top: 1.25rem;
   font-size: 1.563rem;
 }
 
@@ -572,5 +573,58 @@ button:hover {
   background-color: #fff;
   overflow: auto;
   padding-bottom: 9.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__content {
+  width: 60%;
+  flex-direction: column;
+}
+
+.social__content > hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+}
+
+.social__collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social__icons > li {
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
   text-align: center;
+}
+
+.social__icons > li:hover {
+  cursor: pointer;
+}
+
+.social__twitter {
+  color: #55acee;
+}
+
+.social__facebook {
+  color: #4c66a4;
+}
+
+.social__instagram {
+  color: #3f729b;
+}
+
+.social .copy {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
 }
