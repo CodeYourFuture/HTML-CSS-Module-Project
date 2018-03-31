@@ -515,3 +515,62 @@ button:hover {
   border-color: #cf3d0e;
   cursor: pointer;
 }
+
+.cases {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cases__content {
+  margin-top: 7.875rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #1d1e21;
+}
+
+.cases__content > h2 {
+  font-size: 2.75rem;
+  margin: 1.625rem 0 4.125rem;
+  margin-left: 6rem;
+  font-weight: 300;
+  align-self: center;
+}
+
+.cases__devices {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cases__devices > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.cases__devices > li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.cases__img {
+  width: 127px;
+  height: 127px;
+  align-self: center;
+}
+
+.cases__caption > h3 {
+  font-weight: 400;
+  font-size: 1.563rem;
+  margin: 2.5rem 0px 1.875rem;
+}
+
+.social {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
+}

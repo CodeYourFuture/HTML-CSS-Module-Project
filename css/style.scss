@@ -108,7 +108,76 @@ button:hover {
   border-color: #cf3d0e;
   cursor: pointer;
 }
+// cases
+.cases {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
+  @include flx-center;
+  &__content{
+    margin-top: 7.875rem;
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    color: #1d1e21;
+    &>h2{
+      font-size: 2.75rem;
+      margin: 1.625rem 0 4.125rem;
+      margin-left: 6rem;
+      font-weight: 300;
+      align-self: center;
+    }
+  }
+  &__devices{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    &>li{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    &>li:not(:last-child){
+      margin-right: 1rem;
+      
+    }
+    
+  }
+  &__img{
+    width:127px;
+    height: 127px;
+    align-self: center;
+  }
+  &__caption{
+    &>h3{
+      font-weight: 400;
+      font-size: 1.563rem;
+      margin: 2.5rem 0px 1.875rem;
+    }
+  }
+}
 
+// Footer
+.social {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
+  &__content{
 
+  }
+  &__icons{
+
+  }
+  &__twitter{
+
+  }
+  &__facebook{
+
+  }
+  &__instagram{
+
+  }
+}
 
 
