@@ -17,7 +17,6 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  font-size: 62.5%;
 }
 
 /**
@@ -411,3 +410,54 @@ th {
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
 /* For example: General styles, Navigation styles, Hero styles, Footer etc. */
 /*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
+.header {
+  padding: 0 0.938rem;
+  margin: 0 auto;
+  min-width: 37.5rem;
+  height: 4.375rem;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid #DDD;
+}
+
+.header:focus {
+  outline: none;
+}
+
+.header .logo {
+  height: 4.375rem;
+}
+
+.container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #838994;
+  font-size: 1.04rem;
+  list-style: none;
+}
+
+.navigation__item:hover {
+  cursor: pointer;
+  color: #333333;
+}
+
+.navigation__item--active {
+  color: #4c5058;
+  font-weight: 500;
+}
