@@ -415,6 +415,7 @@ th {
   margin: 0 auto;
   min-width: 37.5rem;
   height: 4.375rem;
+  background-color: #fff;
   display: flex;
   position: fixed;
   width: 100%;
@@ -460,4 +461,57 @@ th {
 .navigation__item--active {
   color: #4c5058;
   font-weight: 500;
+}
+
+.intro {
+  background-image: url("../img/first-background.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
+}
+
+.intro__content {
+  margin-top: 7.875rem;
+  padding: none;
+  color: #1d1e21;
+  text-align: center;
+}
+
+.intro__h1, .intro__h3 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+}
+
+.intro__h3 {
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
+}
+
+.intro__buttons {
+  color: white;
+  text-align: center;
+  margin-top: 1.563rem;
+}
+
+button {
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+
+button:hover {
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
 }
