@@ -5,6 +5,190 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.navigation {
+    background-color: #ffff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+  }
+  .navigation > .content {
+    height: 4.375rem;
+    width: 60%;
+  }
+  .content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+  }
+  .navigation .links {
+    display: flex;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    justify-content: space-around;
+  }
+  ul {
+    list-style: none;
+  }
+  .navigation .links li.active {
+    color: #4c5058;
+    font-weight: bold;
+  }
+  .navigation .links li {
+    display: inline-block;
+    margin-left: 1.563rem;
+  }
+  .navigation .logo {
+    height: 4.375rem;
+    margin-top: -3.5rem;
+  }
+  .intro {
+    background-image: url('https://raw.githubusercontent.com/CodeYourFuture/karma-clone/master/img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: hidden;
+  }
+  .intro h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+  }
+  .intro h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+  }
+  .intro .button {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+  }
+  button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+  }
+  .cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+  }
+  .cases .content {
+    margin-top: 7.875rem;
+    color: #1d1e21;
+    text-align: center;
+  }
+  .cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+  }
+  .cases .device > li {
+    width: 33.3333333%;
+    float: left;
+  }
+  .social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+  }
+  .social .icons > li {
+    border-radius: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+  }
+  @media only screen and (max-width: 600px) {
+  
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .navigation .logo {
+      margin-top: -4rem;
+    }
+    .navigation .links {
+      display: flex
+    }
+    .intro h1 {
+      text-align: left;
+      margin-top: 6rem;
+      font-size: 20px;
+      padding: 10px
+    }
+    .intro h3 {
+      text-align: left;
+      font-size: 13px;
+      padding: 10px;
+    }
+    .intro .button {
+      text-align: left;
+      padding: 10px;
+    }
+    button {
+      width: 9rem;
+      padding: 0.7rem;
+      font-size: 15px;
+    }
+    .intro {
+      height: auto;
+      width: auto;
+    }
+    .cases .content {
+      margin-top: 5rem;
+    }
+    .cases h2 {
+      font-size: 19px;
+      text-align: left;
+    }
+    .device {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    div .caption {
+      font-size: 12px;
+    }
+    .social h5 {
+      text-align: justify;
+      padding: 0 90px;
+    }
+    .social .icons {
+      text-align: justify;
+      padding: 0 85px;
+    }
+    .social{
+      text-align: justify;
+    }
+    .social .copy {
+      padding: 35px;
+    }
+     .device img {
+       width: 70px;
+       height: 70px;
+     } 
+    }
+    
+  
+  
 
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
