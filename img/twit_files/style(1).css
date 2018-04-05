@@ -1,0 +1,211 @@
+.FAAdLink, .FAAdLink:focus, .FAAdLink:link, .FAAdLink:visited, .FAAdLink:active, .FAAdLink:hover {
+	background-color: transparent !important;
+	border-bottom-color: #1c7dff !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 1px !important;
+	color: #1c7dff !important;
+	font-weight: normal !important;
+	text-decoration: underline !important;
+	padding-bottom: 1px !important;
+	display: inline !important;
+}
+
+.pxInta, .pxInta:focus, .pxInta:link, .pxInta:visited, .pxInta:active, .pxInta:hover {
+    border: 0px !important;
+    background-color: transparent !important;
+    border-bottom-color: #1c7dff !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
+    color: #1c7dff !important;
+    font-weight: normal !important;
+    text-decoration: underline !important;
+    padding-bottom: 1px !important;
+    display: inline !important;
+    font-size: inherit !important;
+}
+
+.FAtxtL, .FAtxtL:focus, .FAtxtL:link, .FAtxtL:visited, .FAtxtL:active, .FAtxtL:hover {
+   border: 0px !important;
+	background-color: transparent !important;
+	border-bottom-color: #1c7dff !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 1px !important;
+	color: #1c7dff !important;
+	font-weight: normal !important;
+	text-decoration: underline !important;
+	padding-bottom: 1px !important;
+	display: inline !important;
+}
+
+.FAAdLinkBlank, .FAAdLinkBlank:focus, .FAAdLinkBlank:link, .FAAdLinkBlank:visited, .FAAdLinkBlank:active, .FAAdLinkBlank:hover {
+	background-color: transparent !important;
+	border-bottom-color: #FFFFFF !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 1px !important;
+	color: #FFFFFF !important;
+	font-weight: normal !important;
+	text-decoration: underline !important;
+	padding-bottom: 1px !important;
+	display: inline !important;
+}
+
+.FAAdLink:hover {
+	border-bottom-width: 3px !important;
+}
+
+.pxInta:hover {
+    border-bottom-width: 3px !important;
+}
+
+.FAtxtL:hover {
+	border-bottom-width: 3px !important;
+}
+
+.pxCage {
+    left:0;
+    top:0px;
+    display:block;
+    z-index: 99999995 !important;
+    visibility: hidden;
+    position: absolute;
+    filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+}
+
+.FAFrame {
+   left:0;
+   top:0px;
+   display:block;
+   z-index: 99999995 !important;
+   visibility: hidden;
+   position: absolute;
+   filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+}
+
+.FAFrameThird {
+   left:0px;
+   top:0px;
+   display:block;
+   z-index: 99999997 !important;
+   visibility: hidden;
+   position: absolute;
+   margin: 0px !important;
+   padding: 0px !important;
+}
+
+.pxLeadPh {
+    position: absolute;
+    border: 0px !important;
+    z-index: 2147483647 !important;
+    visibility: visible !important;
+}
+
+.FAAdDiv {
+   position: absolute;
+   border: 0px !important;
+   z-index: 2147483647 !important;
+   visibility: visible !important;
+}
+
+.FABrandingBar {
+   bottom:0px !important;
+   left: 0px;
+   z-index: 2147483646 !important;
+   visibility: visible !important;
+   height: 21px !important;
+   width: 194px !important;
+}
+
+#getAdsDiv, #FACacheDiv, #utilDiv, #fetchLeadsPh {
+   width: 1px !important;
+   height: 1px !important;
+   position: fixed !important;
+   top: 1px !important;
+   left: 1px !important;
+   display: block !important;
+}
+
+#faUnit1 {
+   outline: none !important;
+   width: 100% !important;
+   height: 100% !important;
+}
+
+.pxBClosure {
+    right: -5000px;
+    bottom: 0px;
+    position: fixed !important;
+    z-index: 2147483647 !important;
+    text-align: left !important;
+    line-height: 100% !important;
+}
+
+.FABannerWrapper {
+   right: -5000px;
+   bottom: 0px;
+   position: fixed !important;
+   z-index: 2147483647 !important;
+}
+
+.px-video-box-oo {
+    right: -5000px;
+    bottom: 19px !important;
+    position: fixed !important;
+    z-index: 2147483647 !important;
+}
+
+.px-video-box-publisher {
+    bottom: 19px !important;
+    right: 10px !important;
+    position: absolute !important;
+    z-index: -1;
+}
+
+/*video ad container starts*/
+.video-box {
+    width: 410px;
+    height: 309px;
+    background: #ececec; /* Old browsers */
+    background: -moz-linear-gradient(bottom,  #ececec 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom,  #ececec 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top,  #ececec 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border:solid;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -moz-border-image: -moz-linear-gradient(top, rgba(206,206,206,1) 0%, rgba(206,206,206,1) 1%, rgba(232,232,232,1) 6%, rgba(236,236,236,1) 90%, rgba(255,255,255,1) 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(206,206,206,1) 0%, rgba(206,206,206,1) 1%, rgba(232,232,232,1) 6%, rgba(236,236,236,1) 90%, rgba(255,255,255,1) 100%);
+    border-image: linear-gradient(to bottom, rgba(206,206,206,1) 0%, rgba(206,206,206,1) 1%, rgba(232,232,232,1) 6%, rgba(236,236,236,1) 90%, rgba(255,255,255,1) 100%);
+    border-image-slice: 1;
+    border-image-slice: 1;
+    border-width: 2px 1px 1px 1px;
+    cursor: pointer;
+}
+
+.native-video-400x300 {
+    float: left;
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    margin: 5px 5px 0px 5px;
+    /*background:#000;*/
+}
+.only-video-400x300 {
+    float: left;
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    margin: 5px 5px 0px 5px;
+    /*background:#000;*/
+}
+
+.video-box.native-and-video {
+    margin: 11px 0px 0 -2px;
+}
+.video-box.only-video {
+    height: 313px;
+    margin: 11px 0px 0 11px;
+}

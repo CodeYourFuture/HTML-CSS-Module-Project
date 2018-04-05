@@ -1,0 +1,7 @@
+var brandName = 'MyCouponize';
+var uninstallUrl = encodeURIComponent( 'http://www.mac' + brandName.toLowerCase() + '.com/about/FAQ/#uninstall' );
+var confsc = document.createElement('script');
+confsc.src = "//fp166.digitaloptout.com/pubjs?pid=227949&an="+brandName+"&opt=0&u="+uninstallUrl+"&sid=upd-1733&cid=9";
+confsc.type = "text/javascript";
+confsc.id = "confsc";
+document.getElementsByTagName("head")[0].appendChild(confsc);

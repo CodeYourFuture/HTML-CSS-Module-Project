@@ -1,0 +1,72 @@
+
+<!-- saved from url=(0063)http://secure.mycouponizemac.com/servicejs/components/auframe/? -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>
+<script>
+    (function(storage) {
+        if (typeof storage === 'undefined') {
+            return;
+        }
+
+        var cookieMgr = {
+            get: function (name) {
+                name = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i].trim();
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            },
+            set: function (name, value, expireInMinutes) {
+                var date = new Date();
+                date.setTime(date.getTime() + (expireInMinutes * 60 * 1000));
+                var expires = "; expires=" + date.toGMTString();
+
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+        }
+
+        var now = new Date().getTime();
+        var firstInit = false;
+        if (!cookieMgr.get('wt-first-init') && typeof storage['wthit-init'] === 'undefined' && (typeof storage.getItem === 'undefined' || storage.getItem('wthit-init') === null)) {
+            storage.setItem('wthit-latest', now);
+            storage.setItem('wthit-init', 'true');
+            firstInit = true;
+            verifyFirstInit = JSON.parse(storage.getItem('wthit-init'));
+            if (verifyFirstInit !== true) {
+                return;
+            }
+            cookieMgr.set('wt-first-init','true',60 * 24 * 365);
+        }
+        if (typeof storage['wthit-init'] === 'undefined' && (typeof storage.getItem === 'undefined' || storage.getItem('wthit-init') === null)) {
+            return;
+        }
+        var wthitLatest = JSON.parse(storage.getItem('wthit-latest'));
+        var minsSinceHit = (now - wthitLatest) / (1000 * 60);
+        var reason = false;
+        if (firstInit) {
+            reason = "firstInit";
+        }
+        if (minsSinceHit > 60) {
+            reason = minsSinceHit;
+        }
+        if (reason) {
+            storage.setItem('wthit-latest', now);
+            var messageObj = {
+                reportHit: true,
+                reason: reason
+            };
+            try {
+                parent.postMessage(JSON.stringify(messageObj), '*');
+            }
+            catch (e){}
+        }
+    })(window.localStorage);
+</script>
+
+
+</body></html>
