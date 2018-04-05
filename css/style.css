@@ -21,11 +21,14 @@ body {
     margin: 0 auto;
     min-width: 37.5rem;
   }
+  .navigation .content {
+    display: flex;
+  }
   .navigation .links {
     display: flex;
     color: #838994;
     font-size: 1.04rem;
-    margin-top: -2.3rem;
+    margin-top: 2.3rem;
     justify-content: space-around;
   }
   ul {
@@ -42,9 +45,6 @@ body {
   .navigation .logo {
     height: 4.375rem;
     margin-top: 1rem;
-  }
-  .content div {
-    display: flex;
   }
   .intro {
     background-image: url('https://raw.githubusercontent.com/CodeYourFuture/karma-clone/master/img/first-background.jpg');
@@ -94,6 +94,7 @@ body {
     color: #1d1e21;
     text-align: center;
   }
+  
   .cases h2 {
     font-size: 2.75rem;
     margin: 1.625rem 0 3.125rem;
@@ -102,6 +103,11 @@ body {
   .cases .device > li {
     width: 33.3333333%;
     float: left;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    align-items: center;
   }
   .social {
     background-color: #fff;
