@@ -104,9 +104,8 @@ body {
     font-weight: 300;
   }
   .cases .device > li {
-    width: 33.3333333%;
-    float: left;
-    display: flex;
+    width: 25%;
+    display: inline-flex;
     justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -178,7 +177,7 @@ body {
     .device {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
     div .caption {
       font-size: 12px;
