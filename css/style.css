@@ -19,10 +19,12 @@ body {
   .content {
     padding: 0 0.938rem;
     margin: 0 auto;
-    min-width: 37.5rem;
+    min-width: 100%;
   }
   .navigation .content {
     display: flex;
+    justify-content: center;
+  
   }
   .navigation .links {
     display: flex;
@@ -96,7 +98,6 @@ body {
     color: #1d1e21;
     text-align: center;
   }
-  
   .cases h2 {
     font-size: 2.75rem;
     margin: 1.625rem 0 3.125rem;
@@ -159,6 +160,9 @@ body {
       width: 9rem;
       padding: 0.7rem;
       font-size: 15px;
+    }
+    .content {
+      min-width: 100%;
     }
     .intro {
       height: auto;
