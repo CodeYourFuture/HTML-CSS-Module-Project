@@ -121,7 +121,10 @@ body {
     border-radius: 100%;
     width: 1.5rem;
     height: 1.5rem;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: 1.25rem 5px;
     border: 1px solid  #248f8f;
     padding: 0.625rem 0.625rem 0.625rem 0.625rem;
@@ -138,7 +141,7 @@ body {
       /* margin-top: -4rem; */
     }
     .navigation .links {
-      display: flex
+      display: flex;
     }
     .intro h1 {
       text-align: left;
@@ -168,7 +171,7 @@ body {
       width: auto;
     }
     .cases .content {
-      margin-top: 5rem;
+      margin-top: 1rem;
     }
     .cases h2 {
       font-size: 19px;
@@ -189,6 +192,7 @@ body {
     .social .icons {
       text-align: justify;
       padding: 0 85px;
+      display: flex;
     }
     .social{
       text-align: justify;
