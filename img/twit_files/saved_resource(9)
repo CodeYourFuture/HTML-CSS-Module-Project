@@ -1,6 +1,0 @@
-var body = document.getElementsByTagName('body');
-if (body && body.length > 0 && location.search=='?webhelper') {
-	var e=document.createElement('script');
-	e.src = '//service.securesrv12.com/servicejs/webHelperIcon.js';
-	document.body.appendChild(e);
-}
