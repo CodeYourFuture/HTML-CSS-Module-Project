@@ -4,7 +4,74 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+       
 }
+.mainnav {  
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1.5px solid #DDD;
+    z-index: 5;
+}
+    
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+    margin: 0 auto;
+    width: 60%;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a{
+    color: #838994;
+}
+
+li{
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-left: 1rem;  
+}
+
+.logo{
+    height: 3rem;
+}
+
+img {
+    height: 3rem;
+}
+
+.bold { 
+font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+
+}
+
+h1{
+    margin-top:18rem;
+    font-size: 3rem;    
+}
+
+.background {
+    background-image: url(../img/first-background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45rem;
+    overflow: scroll;
+}
+
 
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
