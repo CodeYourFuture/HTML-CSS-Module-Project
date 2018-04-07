@@ -1,14 +1,278 @@
-
- /* Use the 'Roboto' font from Google. Already added to your HTML header */
-
 body {
+    display: flex;
     font-family: 'Roboto', sans-serif;
+    flex-flow: column wrap;
+    font-size: 1.05em;
+    font-stretch: 100%;
+    font-style: normal;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Add your custom styles here */
-/* Remember: be organised, use comments and separate your styles into meaningful chunks */
-/* For example: General styles, Navigation styles, Hero styles, Footer etc. */
+nav,
+main,
+header,
+footer,
+section,
+.container,
+ul,
+li,
+figure {
+    display: flex;
+}
 
-/*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
+main {
+    flex-flow: column nowrap;
+    padding-top: 70px;
+}
 
+ul,
+.container {
+    align-items: center;
+}
+
+.container {
+    width: 58%;
+}
+
+ul {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h5,
+span {
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.6em;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+hr {
+    align-self: flex-start;
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+    width: 100%;
+}
+
+i {
+   font: normal normal normal 14px/1 FontAwesome;
+}
+
+:root {
+    --main-color: #f15a29;
+}
+
+
+/* Navigation Menu */
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #DDD;
+    justify-content: center;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+nav .container {
+    justify-content: space-between;
+}
+
+nav img {
+    height: auto;
+    width: 26px;
+}
+
+.menu-links li {
+    color: #838994;
+    margin-left: 1.563rem;
+    font-weight: 400;
+}
+
+.menu-links li:first-child {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.menu-links li:hover {
+    color: #333333;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    align-items: center;
+    background-image: url(../img/first-background.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    flex-direction: column;
+    height: 41.5rem;
+    justify-content: center;
+}
+
+.hero h3 {
+    margin-top: 1rem; 
+}
+
+.hero button {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    border-radius: 4px;
+    border-style: none;
+    color: white;
+    font-size: 1.075em;
+    padding: 1rem 1.5rem;
+    text-shadow: none;
+    width: 9.688rem;
+}
+
+.hero button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+
+.hero button:focus {
+    outline: none;
+}
+
+
+/* Benefits */
+.benefits {
+    align-items: stretch;
+    min-height: 33rem;
+    justify-content: center;
+}
+
+.benefits > .container {
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.benefits ul {
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.benefits li {
+    flex-flow: column nowrap;
+    width: 33.3333333%;
+}
+
+.benefits .visuals {
+    justify-content: center;
+}
+
+.visuals img {
+    height: 127px;
+    width: 127px;
+}
+
+.benefits .caption {
+    justify-content: center;
+}
+
+.benefits .caption h3 {
+    font-weight: 400;
+}
+
+
+
+/* Footer */
+
+footer {
+    height: 11rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+footer > .container {
+    flex-flow: column nowrap;
+}
+
+footer li {
+    align-items: center;
+    border: 1px solid #eaebec;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2.5rem;
+    justify-content: center;
+    margin: 0 0.5rem;
+    width: 2.5rem;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-facebook {
+    color: #4c66a4;
+}
+
+.fa-instagram {
+    color: #3f729b;
+}
+
+footer span {
+    color: #838994;
+    font-size: 0.88rem;
+    margin-top: 1.2rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Nav menu would do it with a hambumger menu */
+
+    .benefits {
+        padding: 4rem 0;
+    }
+
+    .benefits ul {
+        flex-direction: column;
+    }
+
+    .benefits li {
+        padding: 2rem 0;
+    }
+}
