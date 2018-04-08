@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    
        
 }
 .mainnav {  
@@ -21,6 +23,7 @@ body {
     margin: 1rem 0 1rem 0;
     margin: 0 auto;
     width: 60%;
+    padding: 1rem;
 }
 
 ul{
@@ -39,16 +42,18 @@ li{
     margin-left: 1rem;  
 }
 
-.logo{
-    height: 3rem;
+.logo {
+    height: 4.4rem;
 }
 
 img {
     height: 3rem;
+   
 }
 
 .bold { 
-font-weight: bold;
+font-weight: 500;
+color: #4c5058;
 }
 
 main {
@@ -58,19 +63,97 @@ main {
 
 }
 
-h1{
-    margin-top:18rem;
+h1 {
+    margin-top:17.5rem;
     font-size: 3rem;    
+    font-size: 3.125rem;
+    font-weight: 300;
+}
+
+.main h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+    font-weight: 300;
+}
+
+div.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    justify-content: center;
 }
 
 .background {
     background-image: url(../img/first-background.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 45rem;
-    overflow: scroll;
+    background-position: center bottom;
+    height: 45.938rem;
+    overflow: auto;
 }
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 7.875rem;
+    padding-bottom: 5rem;
+    color: #1d1e21;
+}
+
+h2.section {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;  
+    height: 9rem;
+}
+
+.images img{
+    width: 127px;
+    height: 127px;
+}
+
+div.words {
+    font-weight: 400;
+    font-size: 1.563rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.words p {
+   width: 127px;
+}
+
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+    font-size: 
+}
+
+
 
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
