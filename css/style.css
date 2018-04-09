@@ -2,7 +2,6 @@
  /* Use the 'Roboto' font from Google. Already added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 1;
     
@@ -22,7 +21,7 @@ body {
     justify-content: space-between;
     margin: 1rem 0 1rem 0;
     margin: 0 auto;
-    width: 60%;
+    width: 60rem;
     padding: 1rem;
 }
 
@@ -104,7 +103,7 @@ button {
 }
 
 .container{
-    width: 60%;
+    width: 60rem;
     margin: 0 auto;
     margin-top: 7.875rem;
     padding-bottom: 5rem;
@@ -141,17 +140,69 @@ div.words {
    width: 127px;
 }
 
-.social hr {
+.hr {
     border: 0;
     border-top: 1px solid #eaebec;
     margin: 1.313rem 0;
 }
 
+.media {
+    width:60rem;
+    margin: auto;
+
+}
+
 h5{
+    font-weight: 500;
     display: flex;
     justify-content: center;
-    font-size: 
 }
+
+ul.icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+
+
+div.media{
+    padding-bottom: 10rem;
+}
+
+.icons li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+li.twitter {
+    color: #55acee;
+}
+
+li.twitter {
+    color: #55acee;
+}
+
+li.instagram {
+    color: #3f729b;
+}
+
+
+
+
+
+
+
 
 
 
