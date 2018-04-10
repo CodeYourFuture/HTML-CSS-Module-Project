@@ -1,13 +1,3 @@
-/*
-phone 0 - 600px;
-tab-port < 900px;
-tab-land < 1200px;
-normal < 1800px;
-big-desk > 1800px
-//default 1rem = 16px; 
-inside media query rem and em are same, set to browser defaule
-but research suggests em is better than rem in media query;
-*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -445,26 +435,11 @@ th {
   justify-content: space-between;
 }
 
-@media (max-width: 56.25em) {
-  .container {
-    width: 100%;
-    padding: 0 1rem;
-    justify-content: space-around;
-  }
-}
-
 .navigation {
   width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (max-width: 37.5em) {
-  .navigation {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 .navigation__list {
@@ -505,12 +480,6 @@ th {
   flex-direction: column;
 }
 
-@media (max-width: 37.5em) {
-  .intro__content {
-    padding: .5rem;
-  }
-}
-
 .intro__h1, .intro__h3 {
   color: white;
   font-weight: 300;
@@ -518,22 +487,8 @@ th {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 37.5em) {
-  .intro__h1, .intro__h3 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-}
-
 .intro__h3 {
   font-size: 1.563rem;
-}
-
-@media (max-width: 37.5em) {
-  .intro__h3 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
 }
 
 .intro__buttons {
@@ -563,59 +518,31 @@ button:hover {
 .cases {
   background-color: #fff;
   overflow: hidden;
-  padding-bottom: 5rem;
+  padding: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cases__content {
-  margin-top: 7.875rem;
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 1rem;
   color: #1d1e21;
-}
-
-@media (max-width: 56.25em) {
-  .cases__content {
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-  }
 }
 
 .cases__content > h2 {
   font-size: 2.75rem;
-  margin: 1.625rem 0 4.125rem;
-  margin-left: 6rem;
+  margin-bottom: 2rem;
   font-weight: 300;
   align-self: center;
-}
-
-@media (max-width: 56.25em) {
-  .cases__content > h2 {
-    font-size: 2rem;
-    margin: 0;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .cases__content > h2 {
-    font-size: 1.5rem;
-  }
+  padding: 1rem;
 }
 
 .cases__devices {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: 37.5em) {
-  .cases__devices {
-    flex-direction: column;
-  }
+  justify-content: space-evenly;
 }
 
 .cases__devices > li {
@@ -652,12 +579,6 @@ button:hover {
 .social__content {
   width: 60%;
   flex-direction: column;
-}
-
-@media (max-width: 37.5em) {
-  .social__content {
-    width: 100%;
-  }
 }
 
 .social__content > hr {
@@ -704,4 +625,52 @@ button:hover {
   font-size: 0.9rem;
   font-weight: 300;
   color: #838994;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: space-around;
+  }
+  .cases__content {
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+  .cases > h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navigation {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .intro__content {
+    padding: .5rem;
+  }
+  .intro__h1, .intro__h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .intro__h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .cases h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .cases h3 {
+    font-size: 1.5rem;
+  }
+  .cases__devices {
+    flex-direction: column;
+  }
+  .social__content {
+    width: 100%;
+  }
 }

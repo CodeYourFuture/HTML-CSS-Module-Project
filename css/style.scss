@@ -6,13 +6,7 @@
 
 /*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
 .header {
-  // padding: 0 0.938rem;
-  // margin: 0 auto;
   min-width: 37.5rem;
-  @include respond(tab-port) {
-    // 
-    // min-width: 17.5rem;
-  }
   height: 4.375rem;
   background-color: #fff;
   display:flex;
@@ -31,27 +25,12 @@
   width:65%;
   display: flex;
   justify-content: space-between;
-  @include respond(tab-port) {
-    width:100%;
-    padding: 0 1rem;
-    justify-content: space-around;
-  }
-  // @include flx-center;
 }
-//  Navigation Section
-
 .navigation {
-  // background-color: #fff;
-  // flex-grow: 1;
   width: 75%;
-  @include respond(phone) {
-   opacity: 0;
-   visibility: hidden;
-  }
   @include flx-center;
   &__list{
     width: 100%;
-    // background-color: green;
     display: flex;
     justify-content: space-between;
     color: #838994;
@@ -84,27 +63,16 @@
     color: #1d1e21;
     display: flex;
     flex-direction: column;
-    @include respond(phone) {
-      padding: .5rem;
-     }
   }
   &__h1{
     color: white;
     font-weight: 300;
     font-size: 3.125rem;
     margin-bottom: 1rem;
-    @include respond(phone) {
-      font-size: 2.5rem;
-      text-align: center;
-     }
   }
   &__h3{
     @extend .intro__h1;
     font-size: 1.563rem;
-    @include respond(phone) {
-      font-size: 1.5rem;
-      text-align: center;
-     }
   }
   &__buttons {
     color: white;
@@ -132,51 +100,32 @@ button:hover {
 .cases {
   background-color: #fff;
   overflow: hidden;
-  padding-bottom: 5rem;
+  padding: 2.5rem;
   @include flx-center;
   &__content{
-    margin-top: 7.875rem;
     display:flex;
     flex-direction: column;
-    padding: 0;
+    padding: 1rem;
     color: #1d1e21;
-    @include respond(tab-port) {
-      width:100%;
-      padding: 1rem;
-      margin: 0;
-     }
     &>h2{
       font-size: 2.75rem;
-      margin: 1.625rem 0 4.125rem;
-      margin-left: 6rem;
+      margin-bottom: 2rem;
       font-weight: 300;
       align-self: center;
-      @include respond(tab-port) {
-        font-size:2rem;
-        margin: 0;
-       }
-       @include respond(phone) {
-        font-size:1.5rem;
-
-       }
+      padding: 1rem;
     }
   }
   &__devices{
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    @include respond(phone) {
-      flex-direction: column;
-     }
+    justify-content: space-evenly;
     &>li{
       display: flex;
       flex-direction: column;
       
-      
     }
     &>li:not(:last-child){
       margin-right: 1rem;
-      
     }
     
   }
@@ -198,20 +147,12 @@ button:hover {
 // Footer
 .social {
   background-color: #fff;
-  // background-color: blue;
   overflow: auto;
   padding-bottom: 9.375rem;
-  // display: flex;
-  // width: 65%;
   @include flx-center;
   &__content{
     width: 60%;
-    flex-direction: column;
-    // background-color: green;
-    @include respond(phone) {
-      width:100%;
-     }
-
+    flex-direction: column;;
     &>hr{
       border: 0;
       border-top: 1px solid #eaebec;
@@ -253,4 +194,61 @@ button:hover {
   }
 }
 
-
+// MEDIA
+@media only screen and (max-width: 900px) {
+  .container{
+    width:100%;
+    padding: 0 1rem;
+    justify-content: space-around;
+  }
+  .cases {
+    &__content{
+      width:100%;
+    padding: 1rem;
+      margin: 0;
+    }
+    & > h2 {
+        font-size:2rem;
+        margin: 0;
+    }
+  }
+  
+}
+@media only screen and (max-width: 767px) { 
+  .navigation {
+      opacity: 0;
+      visibility: hidden;
+  }
+  .intro{
+      &__content{
+          padding: .5rem;
+      }
+      &__h1{
+          font-size: 2.5rem;
+          text-align: center;
+      }
+      &__h3{
+          font-size: 1.5rem;
+          text-align: center;
+      }
+  }
+ 
+  .cases  {
+       h2 {
+      font-size:2rem;
+      text-align: center;
+  }
+  h3 {
+    font-size:1.5rem;
+}
+      &__devices {
+          flex-direction: column;
+      }
+  }
+  .social{
+      &__content {
+           width:100%;
+      }
+  }
+     
+}

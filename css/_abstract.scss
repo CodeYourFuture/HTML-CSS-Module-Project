@@ -8,37 +8,3 @@ $blk-col:#000000;
  justify-content: center;
  align-items: center;
 }
-// MEDIA QUERY MANAGER
-/*
-phone 0 - 600px;
-tab-port < 900px;
-tab-land < 1200px;
-normal < 1800px;
-big-desk > 1800px
-//default 1rem = 16px; 
-inside media query rem and em are same, set to browser defaule
-but research suggests em is better than rem in media query;
-*/
-@mixin respond ($break-point){
-    @if $break-point == phone {
-        @media (max-width: 37.5em) {//600px/16 
-            @content
-        };
-    }
-    @if $break-point == tab-port {
-        @media (max-width: 56.25em) {//900px/16
-            @content
-        };
-    }
-    @if $break-point == tab-land {
-        @media (max-width: 75em) {//1200px/16
-            @content
-        };
-    }
-    @if $break-point == big-desk {
-        @media (min-width: 112.5em) {//1800px/16
-            @content
-        };
-    }
-
-}
