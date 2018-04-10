@@ -8,6 +8,8 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -16,21 +18,36 @@
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the imges you need are in img folder -->
-    <section class="header">
-        <div class="container">
+    <nav class="navbar  navbar-light bg-light">
+        <a class="navbar-brand" href="#">
             <img class="logo" src="img/karma-logo.svg" alt="Logo Image" width="26" />
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item navigation__item--active">Meet Karma</li>
-                    <li class="navigation__item">How it Works</li>
-                    <li class="navigation__item">Store</li>
-                    <li class="navigation__item">Blog</li>
-                    <li class="navigation__item">Help</li>
-                    <li class="navigation__item">Login</li>
-                </ul>
-            </nav>
-        </div>
-    </section>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Meet Karma<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How it Works</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Login</a>
+            </li>
+          </ul>
+      </nav>
     <!-- introduction  section-->
     <section class="intro">
         <div class="intro__content">
@@ -91,6 +108,9 @@
             
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>
