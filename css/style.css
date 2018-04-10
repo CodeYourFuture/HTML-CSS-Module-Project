@@ -406,59 +406,23 @@ th {
   padding: 0;
 }
 
-/* Add your custom styles here */
-/* Remember: be organised, use comments and separate your styles into meaningful chunks */
-/* For example: General styles, Navigation styles, Hero styles, Footer etc. */
-/*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
-.header {
-  min-width: 37.5rem;
-  height: 4.375rem;
-  background-color: #fff;
-  display: flex;
-  position: fixed;
-  width: 100%;
-  justify-content: center;
-  border-bottom: 1px solid #DDD;
-}
-
-.header:focus {
-  outline: none;
-}
-
-.header .logo {
-  height: 4.375rem;
-}
-
-.container {
-  width: 65%;
+.container-top {
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-.navigation {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+nav.navbar-light {
+  background-color: white;
 }
 
-.navigation__list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: #838994;
-  font-size: 1.04rem;
-  list-style: none;
+.nav-item {
+  padding: .5rem;
+  letter-spacing: 1px;
 }
 
-.navigation__item:hover {
-  cursor: pointer;
-  color: #333333;
-}
-
-.navigation__item--active {
-  color: #4c5058;
-  font-weight: 500;
+.logo {
+  height: 90%;
 }
 
 .intro {
@@ -467,7 +431,6 @@ th {
   background-repeat: no-repeat;
   background-size: cover;
   height: 45.938rem;
-  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,61 +479,35 @@ button:hover {
 }
 
 .cases {
-  background-color: #fff;
-  overflow: hidden;
-  padding: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5rem 0;
 }
 
-.cases__content {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  color: #1d1e21;
-}
-
-.cases__content > h2 {
-  font-size: 2.75rem;
-  margin-bottom: 2rem;
+.cases__h2 {
+  font-size: 3rem;
+  margin-bottom: 3.5rem;
   font-weight: 300;
-  align-self: center;
-  padding: 1rem;
-}
-
-.cases__devices {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.cases__devices > li {
-  display: flex;
-  flex-direction: column;
-}
-
-.cases__devices > li:not(:last-child) {
-  margin-right: 1rem;
+  text-align: center;
 }
 
 .cases__img {
   width: 127px;
   height: 127px;
-  align-self: center;
 }
 
-.cases__caption > h3 {
-  font-weight: 400;
-  font-size: 1.563rem;
-  margin: 2.5rem 0px 1.875rem;
-  text-align: center;
+.cases__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cases__caption {
+  margin-top: 2rem;
 }
 
 .social {
-  background-color: #fff;
   overflow: auto;
   padding-bottom: 9.375rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,16 +519,25 @@ button:hover {
 }
 
 .social__content > hr {
-  border: 0;
-  border-top: 1px solid #eaebec;
-  margin: 1.313rem 0;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border: 1px solid #E9EAEB;
 }
 
 .social__collections {
+  padding-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.social__collections > h5 {
+  font-weight: 700;
 }
 
 .social__icons > li {
@@ -627,28 +573,7 @@ button:hover {
   color: #838994;
 }
 
-@media only screen and (max-width: 900px) {
-  .container {
-    width: 100%;
-    padding: 0 1rem;
-    justify-content: space-around;
-  }
-  .cases__content {
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-  }
-  .cases > h2 {
-    font-size: 2rem;
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .navigation {
-    opacity: 0;
-    visibility: hidden;
-  }
+@media only screen and (max-width: 768px) {
   .intro__content {
     padding: .5rem;
   }
@@ -660,17 +585,31 @@ button:hover {
     font-size: 1.5rem;
     text-align: center;
   }
-  .cases h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .cases h3 {
-    font-size: 1.5rem;
-  }
-  .cases__devices {
-    flex-direction: column;
+  .social {
+    padding: 0;
   }
   .social__content {
     width: 100%;
+  }
+  .container-top {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  body {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-expand-md {
+    justify-content: center;
   }
 }

@@ -1,54 +1,21 @@
 @import 'abstract';
 @import 'normalize';
-/* Add your custom styles here */
-/* Remember: be organised, use comments and separate your styles into meaningful chunks */
-/* For example: General styles, Navigation styles, Hero styles, Footer etc. */
-
-/*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
-.header {
-  min-width: 37.5rem;
-  height: 4.375rem;
-  background-color: #fff;
-  display:flex;
-  position: fixed;
-  width:100%;
-  justify-content: center;
-  border-bottom: 1px solid #DDD;
-  &:focus {
-    outline: none;
-  }
-  .logo{
-    height: 4.375rem;
-  }
-}
-.container{
-  width:65%;
+.container-top{
+  width:80%;
   display: flex;
   justify-content: space-between;
 }
-.navigation {
-  width: 75%;
-  @include flx-center;
-  &__list{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    color: #838994;
-    font-size: 1.04rem;
-    list-style: none;
-  }
-  &__item{
-    &:hover{
-      cursor: pointer;
-      color: #333333;
-    }
-    &--active {
-      color: #4c5058;
-      font-weight: 500;
-    }
-  }
+nav.navbar-light{
+  background-color:rgb(255, 255, 255);
 }
-
+.nav-item{
+  padding: .5rem;
+  // text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.logo{
+  height: 90%;
+}
 // introduction
 .intro {
   background-image: url('../img/first-background.jpg');
@@ -56,7 +23,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 45.938rem;
-  overflow: auto;
   @include flx-center;
   &__content {
     padding: 0;
@@ -97,71 +63,55 @@ button:hover {
   cursor: pointer;
 }
 // cases
-.cases {
-  background-color: #fff;
-  overflow: hidden;
-  padding: 2.5rem;
-  @include flx-center;
-  &__content{
-    display:flex;
-    flex-direction: column;
-    padding: 1rem;
-    color: #1d1e21;
-    &>h2{
-      font-size: 2.75rem;
-      margin-bottom: 2rem;
-      font-weight: 300;
-      align-self: center;
-      padding: 1rem;
-    }
-  }
-  &__devices{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    &>li{
-      display: flex;
-      flex-direction: column;
-      
-    }
-    &>li:not(:last-child){
-      margin-right: 1rem;
-    }
-    
+.cases{
+  padding:5rem 0;
+  &__h2{
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+    // padding: 1rem;
   }
   &__img{
     width:127px;
     height: 127px;
-    align-self: center;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__caption{
-    &>h3{
-      font-weight: 400;
-      font-size: 1.563rem;
-      margin: 2.5rem 0px 1.875rem;
-      text-align: center;
-    }
+    margin-top:2rem;
   }
 }
-
 // Footer
 .social {
-  background-color: #fff;
+  // background-color: #fff;
   overflow: auto;
   padding-bottom: 9.375rem;
+  margin-bottom: 3rem;
   @include flx-center;
   &__content{
     width: 60%;
-    flex-direction: column;;
-    &>hr{
-      border: 0;
-      border-top: 1px solid #eaebec;
-      margin: 1.313rem 0;
+    flex-direction: column;
+    &> hr { 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border: 1px solid #E9EAEB;
     }
   }
   &__collections{
+    padding-top: 25px;
     @include flx-center;
     flex-direction: column;
+    &>h5{
+      font-weight: 700;
+    }
   }
   &__icons{
     &>li{
@@ -193,32 +143,8 @@ button:hover {
     color: #838994;
   }
 }
-
 // MEDIA
-@media only screen and (max-width: 900px) {
-  .container{
-    width:100%;
-    padding: 0 1rem;
-    justify-content: space-around;
-  }
-  .cases {
-    &__content{
-      width:100%;
-    padding: 1rem;
-      margin: 0;
-    }
-    & > h2 {
-        font-size:2rem;
-        margin: 0;
-    }
-  }
-  
-}
-@media only screen and (max-width: 767px) { 
-  .navigation {
-      opacity: 0;
-      visibility: hidden;
-  }
+@media only screen and (max-width: 768px) { 
   .intro{
       &__content{
           padding: .5rem;
@@ -232,23 +158,30 @@ button:hover {
           text-align: center;
       }
   }
- 
-  .cases  {
-       h2 {
-      font-size:2rem;
-      text-align: center;
-  }
-  h3 {
-    font-size:1.5rem;
-}
-      &__devices {
-          flex-direction: column;
-      }
-  }
   .social{
+    padding: 0;
+    // margin: 0;
       &__content {
            width:100%;
       }
+  }   
+  .container-top{
+    width: 100%;
   }
-     
+}
+ @media (min-width: 576px){
+   .navbar-collapse {
+     flex-grow: 0;
+ }
+ }
+ @media only screen and (max-width: 575px) { 
+  body{
+    text-align: center;
+  }     
+ }
+
+@media only screen and (min-width:768px){
+  .navbar-expand-md {
+    justify-content: center;
+}
 }
