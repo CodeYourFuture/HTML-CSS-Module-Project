@@ -1,213 +1,158 @@
 
  /* Use the 'Roboto' font from Google. Already added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+ body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
-.navigation {
-    background-color: #ffff;
-    position: fixed;
-    width: 100%;
-    border-bottom: 1px solid #DDD;
-    z-index: 9999;
-  }
-  .navigation > .content {
-    height: 6rem;
-    width: 60%;
-  }
-  .content {
-    padding: 0 0.938rem;
-    margin: 0 auto;
-    min-width: 100%;
-  }
-  .navigation .content {
-    display: flex;
-    justify-content: center;
+
+.nav-bar {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #DDD;
+  z-index: 9999;
+ 
+}
+
+.nav-bar .links {
+  height: 5.35rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.links {
+  padding: 0 1rem;
+  margin: 0 auto;
   
-  }
-  .navigation .links {
-    display: flex;
-    color: #838994;
-    font-size: 1.04rem;
-    margin-top: 2.3rem;
-    justify-content: space-around;
-  }
-  ul {
-    list-style: none;
-  }
-  .navigation .links li.active {
-    color: #4c5058;
-    font-weight: bold;
-  }
-  .navigation .links li {
-    display: inline-block;
-    margin-left: 1.563rem;
-  }
-  .navigation .logo {
-    height: 4.375rem;
-    margin-top: 1rem;
-  }
-  .intro {
-    background-image: url('https://raw.githubusercontent.com/CodeYourFuture/karma-clone/master/img/first-background.jpg');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    width: auto;
-    overflow: hidden;
-    padding: 3rem;
-  }
-  .intro h1 {
-    margin-top: 17.5rem;
-    font-size: 3.125rem;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-  }
-  .intro h3 {
-    margin-top: 1.25rem;
-    font-size: 1.563rem;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-  }
-  .intro .button {
-    color: white;
-    text-align: center;
-    margin-top: 1.563rem;
-  }
-  button {
-    width: 9.688rem;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    color: white;
-    font-size: 1.125rem;
-  }
-  .cases {
-    background-color: #fff;
-    overflow: hidden;
-    padding-bottom: 5rem;
-  }
-  .cases .content {
-    margin-top: 7.875rem;
-    color: #1d1e21;
-    text-align: center;
-  }
-  .cases h2 {
-    font-size: 2.75rem;
-    margin: 1.625rem 0 3.125rem;
-    font-weight: 300;
-  }
-  .cases .device > li {
-    width: 25%;
-    display: inline-flex;
-    justify-content: space-around;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-  }
-  .social {
-    background-color: #fff;
-    overflow: auto;
-    padding-bottom: 9.375rem;
-    text-align: center;
-  }
-  .social .icons > li {
-    border-radius: 100%;
-    width: 1.5rem;
-    height: 1.5rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 1.25rem 5px;
-    border: 1px solid  #248f8f;
-    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
-    text-align: center;
-    
-  }
-  @media only screen and (max-width: 600px) {
+}
+
+.nav-bar .links li {
+  display: inline-flex;
+  color: #504d4b;
+  font-size: 1.5rem;
+  margin-left: 1.3rem;
+}
+
+.nav-bar .logo {
+  height: 3.45rem;
+}
+
+.main {
+  background-image: url('../img/first-background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50.35rem;
+  width: auto;
+  padding: 20rem 5rem 5rem 3rem;
+  color: azure;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main h1 {
+  font-size: 4.4rem;
+}
+
+.button {
+  color: #504d4b;
+  border-style: none;
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.container .icons {
+  text-align: center;
+  padding-bottom: 7rem;
+ 
+}
+
+.container h3 {
+  padding-top: 2rem;
+}
+
+.social {
+  background: #fff;
+  overflow: auto;
+  padding-bottom: 5rem;
+  text-align: center;
   
-    body {
+}
+
+.social .content li {
+  border-radius: 100%;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #ff765b;
+  background: burlywood;
+  margin: 1rem 13px;
+}
+/* small divices (landscape phones, 576px and up) */
+@media screen and (max-width: 600px) { 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+
+.main h1 {
+  font-size: 3rem;
+}
+
+.main h2 {
+  font-size: 1.5rem;
+}
+
+} 
+/* medium divices (tablets, 786px and up) */
+@media (min-width: 768) {
+
+  body {
       margin: 0;
       padding: 0;
-    }
-    .navigation .logo {
-      /* margin-top: -4rem; */
-    }
-    .navigation .links {
-      display: flex;
-    }
-    .intro h1 {
-      text-align: left;
-      margin-top: 6rem;
-      font-size: 20px;
-      padding: 10px
-    }
-    .intro h3 {
-      text-align: left;
-      font-size: 13px;
-      padding: 10px;
-    }
-    .intro .button {
-      text-align: left;
-      padding: 10px;
-    }
-    button {
-      width: 9rem;
-      padding: 0.7rem;
-      font-size: 15px;
-    }
-    .content {
-      min-width: 100%;
-    }
-    .intro {
-      height: auto;
-      width: auto;
-    }
-    .cases .content {
-      margin-top: 1rem;
-    }
-    .cases h2 {
-      font-size: 19px;
-      text-align: left;
-    }
-    .device {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    div .caption {
-      font-size: 12px;
-    }
-    .social h5 {
-      text-align: justify;
-      padding: 0 90px;
-    }
-    .social .icons {
-      text-align: justify;
-      padding: 0 85px;
-      display: flex;
-    }
-    .social{
-      text-align: justify;
-    }
-    .social .copy {
-      padding: 35px;
-    }
-     .device img {
-       width: 70px;
-       height: 70px;
-     } 
-    }
-    
-  
-  
+  }
+
+}
+/* large divices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  body {
+      margin:0;
+      padding:0;
+  }
+
+}
+/* extra large divices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  body {
+      margin: 0;
+      padding: 0;
+  }
+
+}
+
+
+
 
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
