@@ -1,14 +1,301 @@
 
  /* Use the 'Roboto' font from Google. Already added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+ html, body{
+	margin:0px;
+	padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  height: 100%;
+  width: 100%;
 }
+.logo {
+  width: 3%;
+}
+.nav-items > .logo {
+  flex: 2;
+  margin:0 auto;
+}
+ul {
+  list-style: none;
+}
+li{
+  display: inline;
+}
+li a{
+  text-decoration: none;
+  color: gray;
+}
+.active{
+  color: black;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid gray;
+}
+.flex-nav {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  float: right;
+  align-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  flex-flow: row wrap;
+  margin: 0% auto;
+}
+.nav-item {
+  margin-left: 3%;
+  text-align: center;
+  font-size:1.4rem;
+  text-decoration: none;
+}
+.nav-bar {
+  background-color: #fff;
+  width:100%;
+  margin-left:5%;
+  margin-top: 1%;
 
-/* Add your custom styles here */
-/* Remember: be organised, use comments and separate your styles into meaningful chunks */
-/* For example: General styles, Navigation styles, Hero styles, Footer etc. */
+}
+.clear-fix:after{
+	display:block;
+	content:"";
+	visibility:hidden;
+	overflow:hidden;
+	width:0;
+	height:0;
+	font-size:0;
+	line-height:0;
+	clear:both;
+}
+.text-over-image p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight:300;
+  height:14%;
+  line-height:2.5rem;
+  color: #fff;
+  z-index: 100;
+}
+p.intro {
+  font-size: 4.2rem;
+  margin: 0 auto;
+}
+p.bring {
+  font-size: 2.2rem;
+  margin-top: 5%;
+}
+.btn-learn-more {
+  background-color: #f15a29;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.5% 3%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 400;
+}
+.btn-learn-more:hover {
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
+}
+.img-first-background {
+  background-image: url(/img/first-background.jpg)
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
+  margin-top: 6%;
+  position:relative;
+  width: 100%;
+  height: 300%;
+  background-size: cover;
+  z-index:0;
+}
+.flex-contianer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-warp: warp;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.flex-item {
+  width: 20%;
+  height: 20%;
+  margin: 1% 0px;
+  padding: 1%;
+  text-align:center;
+}
+.buttom{
+  color: black;
+}
+.every-karma {
+  font-size: 3.7rem;
+  font-weight: 300;
+  text-align: center;
+}
+.flex-item img{
+  width:55%;
+}
+.caption h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 2.5rem 0px 1.875rem;
+}
+hr {
+  width: 50%;
+  opacity: 0.3;
+}
+footer-container {
 
-/*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
+  
+  text-align: center;
+}
+.join-us {
+  margin: 0 auto;
+  text-align: center;
+  width: 25%;
+}
+footer .social-btn-list{
+  list-style:none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 0;
+}
+footer .social-btn-list li{
+  margin: 1% 2%;
+  padding: 0;
+}
+footer .social-btn-list .fa-instagram{
+  font-size: 1.5rem;
+	color:#dd4b39;
+}
+footer .social-btn-list .fa-facebook{
+  font-size: 1.5rem;
+	color:#3b5998;
+}
+h5 {
+  font-size: 1.2rem;
+  color: #000;
+}
+.copyright {
+  color: gray;
+  text-align: center;
+  margin: 1%;
+  font-size: 1.2rem;
+}
+/* resize mobile */
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	padding: 0;
+	}
+	.nav-bar a {
+	text-align: center;
+	padding: 10px;
+	}
+nav-item li {
+  min-width: 100%;
+}
+header {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+	}
+  .logo {
+    /*visibility: hidden;
+    margin-top: -50px;
+    width: 5px;*/
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+  }
+  .flex-nav {
+  height: 17px;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin-left: 0%;
+  }
+  .flex-item {
+    min-width: 80%;
+    height: 20%;
+    margin: 1% 0px;
+    padding: 1%;
+    text-align:center;
+  }
+  .text-over-image p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:100;
+    height:20px;
+    line-height:0.75rem;
+    font-size: 1.1rem;
+  }
+  p.intro {
+    font-size: 1.5rem;
+    margin: 10px auto;
+  }
+  p.bring {
+    margin-top: 0px;
+    font-size: 0.65rem;
+    margin-top: 50px;
+  }
+  .btn-learn-more {
+    top: 30%;
+    left: 50%;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 200;
+  }
+.every-karma {
+  font-size:1rem;
+  }
+.copyright{
+  font-size: 0.75rem;
+  margin: 0 auto;
+  }
+  footer .social-btn-list li{
+  	margin:0px auto;
+    padding: 4px;
+    float: left;
+  }
+}
+/* resize  tablet size */
+@media only screen and (max-width: 790px)  {
 
+}
