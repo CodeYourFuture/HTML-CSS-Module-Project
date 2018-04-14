@@ -78,15 +78,6 @@ i {
     --main-color: #f15a29;
 }
 
-/* nav ul , */
-footer ul {
-    flex-flow: row wrap;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-}
-
 
 /* Navigation Menu */
 
@@ -97,6 +88,7 @@ nav {
     min-height: 70px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav img {
@@ -139,7 +131,7 @@ nav ul {
 }
 
 .hero h3 {
-    margin-top: 1rem; 
+    margin: 1rem 0; 
 }
 
 .hero button {
@@ -204,13 +196,13 @@ nav ul {
 /* Footer */
 
 footer {
-    height: 11rem;
     justify-content: center;
     padding-bottom: 5rem;
 }
 
-footer > .container {
-    flex-flow: column nowrap;
+footer ul {
+    margin: 0;
+    padding-left: 0;
 }
 
 footer li {
