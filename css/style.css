@@ -12,34 +12,35 @@ body {
 }
 
 /* header style */
+
 .header{
-    display:flex;
     width:100%;
     padding: 10px 0;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
 .logo {
     width: 35px;
     height: 35px;
     margin-top: 2%;
 }
-nav .navbar{
-    display: flex;
-    flex-direction: row;
-    padding: 3px;
-    color: rgb(148, 146, 145);
-    margin-top:5%;
-    text-transform: capitalize;
+.navbar-brand{
+    display: block;
+    width:37%;
+    text-align: center;
 }
-nav .navbar a{
+.navbar, nav{
+    padding: 0;
+    color: rgb(148, 146, 145);
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a{
     margin-left: 25px;
     text-decoration: none;
 }
- .faded{
-   
-    color: rgb(148, 146, 145);
+.faded{
+   color: rgb(148, 146, 145);
 }
 
  a:hover{
@@ -53,7 +54,9 @@ nav .navbar a{
     font-weight: bold;
     color: rgb(70, 71, 70);  
 }
+
 /* main body style*/ 
+
 main, .main{width: 100%;
 height: 100%;
 color: rgb(70, 71, 70);
@@ -62,17 +65,15 @@ color: rgb(70, 71, 70);
     text-align: center;
 }
 
-.sec1{
+.section{
     background-image: url("../img/first-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 20%;
+    background-position: center right;
+    background-size: cover;
+    padding: 10%;
     margin: 0;
-    width:100%;
-    height:600px;
     text-align: center;
     color:white;
-   
 }
 .text
 {
@@ -85,13 +86,11 @@ h1
     font-size: 3rem;
   
 }
-.text2
+.secondary-text
 {
     font-size: 1.5rem;
-   
-   
 }
-.sec1 .btn {
+.section .btn {
     background-color:rgb(223, 94, 20);
     font-size: 16px;
     padding: 16px 30px;
@@ -104,60 +103,61 @@ h1
     margin-top: 1rem;
     color: white;
 }
-
-.sec1 .btn:hover {
+.section .btn:hover {
     background-color:rgb(187, 93, 39);
     color: white;
 }
-.sec2{
+.main-lower-section{
+    padding: 7%;
+    text-align: center;
+}
+.icons-section{
+    margin: auto;
+    padding: 2%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
-.sec2 div{
+.icons-section div{
     margin: 5px 10px;
 }
 .orange-icon{
     width: 150px;
     height: 150px;
 }
+
 /* footer style */
+
 footer{
     padding-top: 7%;
 }
 .footer-content{
     width: 20%;
     margin: auto;
-    
 }
 .footer-content .icons{
     list-style-type: none;
 }
-
-
 .fa{
     display: inline-block;
     margin-left: 3px; 
 }
 
+ /* break point for responsive */
+
 @media only screen and (max-width: 700px){
-    .header, div.navbar{
+  /*  This styles is disabled to reley on bootstrap grid responsive style
+  .header, div.navbar{
         flex-direction: column;
         justify-content:space-between;
-    }
+    } 
     
     div.navbar{
         padding: 0;
         justify-content: center;
         align-items: flex-start;
-       
-       
-        
     }
     nav{
         padding: 0;
-        
-        
     }
     .navbar a{
         background-color: linen;
@@ -165,16 +165,14 @@ footer{
         display: block;
         margin:3% 0 0 0; 
         padding:5px;
+    }*/
+  .icons-section{
+         flex-direction: column;
     }
-    .sec2{
-        
-        flex-direction: column;
-      
-    }
-
-    .footer-content{
-        width:100%;
-    }
+/*
+   .footer-content{
+      width: 100%;
+    }*/
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
 /* For example: General styles, Navigation styles, Hero styles, Footer etc. */
