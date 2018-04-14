@@ -1,4 +1,7 @@
-
+body {
+  width:90%;
+  margin: auto;
+}
 #pond{
 display: flex;
 align-items:center;
@@ -69,6 +72,11 @@ li {
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: center; 
+  margin-bottom: 100px;
+}
+hr {
+  width:50%;
+  opacity: 0.3;
+  margin-top: 50px;
 }
