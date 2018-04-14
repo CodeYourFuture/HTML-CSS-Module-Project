@@ -10,9 +10,9 @@ body {
 
 nav,
 main,
-header,
+header:not(.title-section),
 footer,
-section,
+section:not(.benefits),
 .container,
 ul,
 li,
@@ -28,18 +28,6 @@ main {
 ul,
 .container {
     align-items: center;
-}
-
-.container {
-    width: 58%;
-}
-
-ul {
-    flex-flow: row wrap;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
 }
 
 figure {
@@ -88,6 +76,15 @@ i {
 
 :root {
     --main-color: #f15a29;
+}
+
+nav ul ,
+footer ul {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 
@@ -169,28 +166,23 @@ nav img {
 
 /* Benefits */
 .benefits {
-    align-items: stretch;
-    min-height: 33rem;
-    justify-content: center;
+    padding: 4rem 0 2rem;
 }
 
-.benefits > .container {
-    flex-flow: column wrap;
-    justify-content: center;
+.benefits article {
+    display: block;
 }
-
 .benefits ul {
-    flex-flow: row wrap;
-    width: 100%;
+    margin-top: 5rem;
+    padding-left: 0;
 }
-
 .benefits li {
     flex-flow: column nowrap;
-    width: 33.3333333%;
 }
 
 .benefits .visuals {
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .visuals img {
@@ -251,28 +243,22 @@ footer span {
 
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
-    .container {
-        width: 95%;
-    }
-
-    nav ul {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     /* Nav menu would do it with a hambumger menu */
 
+    .hero {
+        height: 30rem;
+    }
+
     .benefits {
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
 
     .benefits ul {
-        flex-direction: column;
+        margin-top: 0rem;
     }
 
     .benefits li {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
     }
 }
