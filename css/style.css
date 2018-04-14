@@ -1,1 +1,171 @@
 
+/* Use the 'Roboto' font from Google. Already added to your HTML header */
+
+body {
+	padding: 0;
+	margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Add your custom styles here */
+/* Remember: be organised, use comments and separate your styles into meaningful chunks */
+/* For example: General styles, Navigation styles, Hero styles, Footer etc. */
+
+/*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
+
+.col-12{
+	width: 100%;
+}
+
+.col-8{
+	width: 66.6666667%;
+}
+
+.col-6{
+	width: 50%;
+}
+
+.col-4{
+	width: 33.3333333%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+
+.header{
+	display: flex;
+	position: fixed;
+	top:0;
+	flex-direction: row-reverse;
+	background-color: white;
+}
+
+.header ul{
+	list-style-type: none;
+		margin-right: 30%;
+}
+
+.header ul li{
+	float: right;
+	padding: 15px;
+	color: gray;
+}
+
+.header .active{
+	font-weight: bold;
+}
+
+.header ul li:hover{
+	cursor: pointer;
+	color: black;
+}
+
+.header img{
+	width: 40px;
+	height: 40px;
+	margin-left: 60%;
+	padding: 15px;
+}
+
+.sec-1{
+	background-image: url(../img/first-background.jpg);
+	height: 700px;
+	background-repeat: no-repeat;
+}
+
+.intro{
+	padding-top: 250px;
+}
+
+.intro h1, h3{
+	text-align: center;
+	color: white;
+}
+
+.intro h1{
+	font-size: 50px;
+}
+
+.intro h3{
+	font-size: 25px;
+}
+
+.btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.sec-1 button{
+	border: 0;
+	background-color: tomato;
+	padding: 15px 30px;
+	color: white;
+	font-size: 18px;
+	border-radius: 3px;
+}
+
+.sec-1 button:hover{
+	background-color: #ea570e;
+}
+
+.sec-2 h1{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+}
+
+.sec-2 ul{
+	list-style-type: none;
+	margin-left: 15%; 
+}
+
+.sec-2 ul li{
+	float: left;
+	padding: 5%;
+}
+
+.sec-2 h4{
+	text-align: center;
+	font-size: 20px;
+}
+
+.sec-2 img{
+	height: 120px;
+	width: 120px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer ul{
+	list-style-type: none;
+	padding-left: 40%;
+}
+
+footer ul li{
+	float: left;
+}
+
+footer ul li:hover{
+	cursor: pointer;
+}
+
+footer img{
+	width: 30px;
+	height: 30px;
+	border: solid 0.5px silver;
+	border-radius: 100px;
+}
+
+footer h5, h6{
+	text-align: center;
+}
