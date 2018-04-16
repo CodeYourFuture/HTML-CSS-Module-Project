@@ -4,6 +4,8 @@
  body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-bar {
@@ -38,6 +40,7 @@
 
 .nav-bar .logo {
   height: 3.45rem;
+  margin-right: 1.5rem;
 }
 
 .main {
@@ -108,11 +111,29 @@ body {
   padding: 0;
 }
 
-.main {
+/* .nav-bar { 
+  height: 30%;
+ } */
+
+.nav-bar .links {
+  display: inline;
+}
+
+ .nav-bar .links li { 
+  font-size: 1rem;
+  margin-right: 7px;
+  margin-bottom: 20px;
+ } 
+
+/* .nav-bar .logo { 
+  padding-block-start: 1rem;
+ } */
+
+.main { 
   background-size: cover;
   height: auto;
   width: auto;
-}
+ } 
 
 .main h1 {
   font-size: 3rem;
