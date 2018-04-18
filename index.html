@@ -6,15 +6,125 @@
     <title>Karma</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/style.css"> 
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
     
 </head>
 <body>
+<!--Navbar-expand means when we want the toggle button to show up.In this case on small screens (sm). fixed-top means I want to fix it to d top of the page. bg-light means light background. navbar-dark means for the colour of the text -->
+    <nav class="navbar navbar-expand-sm navbar-light navbar-backgd fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="favicon.ico" alt="">
+            </a>
+            <!--navbar-toggler is to create the toggle button, data-toggle = collapse is to collapse the button and data-target is set to an ID of the element you want to collapse-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"  aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id= "navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="" class="nav-link">Meet Karma </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Login</a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="background">
+        <div class="first">
+            <div class="container">
+                <div class="row justify-content-center">
+                        <div class="hero">
+                                <h1>Introducing Karma</h1>
+                                <h3>Bring WiFi with you, everywhere you go.</h3>
+                                <div class='button'>
+                                    <button>Learn More</button>
+                                </div>
+                        </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class ="container">
+            <div class="row justify-content-center hero">
+                <h2>Everyone needs a little Karma</h2>
+            </div>
+                    <div class="main">
+                                <ul class="row">
+                                        <li class="col-md-4 col-xs-12 writeup">
+                                                    <img width="127" height="127" src="img/icon-devices.svg" alt="Internet for all devices image">
+                                                    <div class="caption">
+                                                        <h3>Internet for all devices</h3>
+                                                    </div>   
+                                        </li>
+                                        <li class="col-md-4 col-xs-12 writeup">
+                                            <img width="127" height="127" src="img/icon-coffee.svg" alt="Boost your productivity image">
+                                                <div class="caption">
+                                                    <h3>Boost your productivity</h3>
+                                                </div>
+                                        </li>
+                                        <li class="col-md-4 col-xs-12 writeup">
+                                            <img width="127" height="127" src="img/icon-refill.svg" alt="Pay as You Go image">
+                                                <div class="caption">
+                                                    <h3>Pay as You Go</h3>
+                                                </div>
+                                        </li>
+                                    </ul>      
+                    </div>
+
+                    <footer>
+                                <hr class='footer--hr'>
+                                <div class="row justify-content-center">
+                                    <div class="col-xs-12">
+                                        <div class='footer--content'>
+                                            <h5>Join us on</h5>
+                                            <ul class="icons">
+                                                    <li class="twitter">
+                                                        <i class="fa fa-twitter"> </i>
+                                                    </li>
+                                                     <li class="facebook">
+                                                        <i class="fa fa-facebook"> </i>
+                                                    </li>
+                                                    <li class="instagram">
+                                                        <i class="fa fa-instagram"> </i>
+                                                    </li>
+                                            </ul>
+                                            <span class="copy">
+                                                © Karma Mobility, Inc.
+                                            </span>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+                        </footer>                    
+            </div>            
+    </section>
+
+    
+
  
     
-    <header>
+    <!--<header>
         <div class='mainnav'>
                 <nav class='nav1'>
                     <div class='logo'>
@@ -33,10 +143,10 @@
                         </div>
                 </nav>  
          </div>
-    </header>
+    </header> -->
         
 
-      <main class="background">
+      <!--<main class="background">
           <div class='main'>
           <h1>Introducing Karma</h1>
           <h3>Bring WiFi with you, everywhere you go.</h3>
@@ -44,9 +154,9 @@
             <button>Learn More</button>
           </div>
           </div>
-      </main>
+      </main>-->
 
-      <section class='container'>
+      <!--<section class='container'>
           <h2 class='section'>Everyone needs a little Karma</h2>
           <div class='images'>
               <img src="img/icon-devices.svg"alt="">
@@ -62,7 +172,7 @@
 
       <footer>
 
-            <hr class=' media'>
+        <hr class=' media'>
             
           <div class='media'>
             <h5>Join us on</h5>
@@ -91,6 +201,9 @@
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
 
     <!-- All the imges you need are in img folder -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 </body>
 </html>

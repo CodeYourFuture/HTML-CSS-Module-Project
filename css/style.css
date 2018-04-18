@@ -4,12 +4,46 @@
 body {
     -webkit-font-smoothing: antialiased;
     line-height: 1;
+    font-family: Roboto;
     
        
 }
-.mainnav {  
+.navbar-backgd {  
     background-color: #fff;
-    position: fixed;
+}
+
+button {
+    width: 10rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    color: #fff;
+}
+    
+div.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.563rem;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.125rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+}
+  /*  position: fixed;
     width: 100%;
     border-bottom: 1.5px solid #DDD;
     z-index: 5;
@@ -23,8 +57,9 @@ body {
     margin: 0 auto;
     width: 60rem;
     padding: 1rem;
-}
+}*/
 
+/*
 ul{
     list-style: none;
     text-decoration: none;
@@ -91,17 +126,25 @@ button {
     color: white;
     font-size: 1.125rem;
     justify-content: center;
-}
+}*/
 
-.background {
+.first{
     background-image: url(../img/first-background.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    height: 45.938rem;
-    overflow: auto;
+    height: 46rem;
+    padding-top: 17.5rem;
+}
+.background {
+    height: 46rem;
 }
 
+    
+    
+   
+}
+/*
 .container{
     width: 60rem;
     margin: 0 auto;
@@ -109,7 +152,92 @@ button {
     padding-bottom: 5rem;
     color: #1d1e21;
 }
+*/
 
+.hero{
+    margin-top: 128px;
+}
+
+h2{
+    margin: 26px 0 50px 0;
+    font-size: 2.75rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.writeup{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul.row {
+    padding: 0;
+}
+.caption h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+    color: #1d1e21;
+}
+
+.main {
+    padding-bottom: 5rem;
+}
+
+.footer--hr{
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+
+.footer--content{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ul.icons {
+    padding: 0;
+}
+.icons li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+.twitter {
+    color: #55acee;
+}
+
+.facebook {
+    color: #4c66a4;
+}
+
+.instagram {
+    color: #3f729b;
+}
+
+.footer--content .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+
+
+@media (max-width: 12450px) {
+
+ }
+
+
+
+/*
 h2.section {
     font-size: 2.75rem;
     margin: 1.625rem 0 3.125rem;
