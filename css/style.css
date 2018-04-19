@@ -5,6 +5,35 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.container {
+ display: flex;  
+ width: 100%; 
+}
+ul {
+    list-style: none;
+}
+.navbar {
+ justify-content: space-between;  
+ width: 60%;
+ float: right;
+}
+.main {
+background-image:  url("http://res.cloudinary.com/dtcyr3qi6/image/upload/v1524161787/buy-now-bg_sgixzl.jpg");
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height:46rem;
+text-align: center;
+padding-top: 20rem;
+}
+.extra {
+    display: block;  
+    justify-content: space-between; 
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
 
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
