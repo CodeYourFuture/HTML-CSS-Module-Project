@@ -8,7 +8,8 @@ body {
 }
 .container {
  display: flex;  
- width: 100%; 
+ width: ; 
+ align-items:center;
 }
 ul {
     list-style: none;
@@ -51,6 +52,11 @@ font-weight: 300;
 footer {
 text-align: center;    
 }
+
+.box {
+    width: 10rem;
+    height: 200px;
+    }
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
 /* For example: General styles, Navigation styles, Hero styles, Footer etc. */
