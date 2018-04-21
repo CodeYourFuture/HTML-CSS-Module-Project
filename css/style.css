@@ -5,10 +5,114 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+ul {
+  list-style: none;
+  text-align: center;
+}
+ul > li{
+  display: inline-block;
+  padding: 0 15px 0 15px;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  justify-content: center;
+}
+.logo{
+width: 7%;
+float: right;
+}
 
+.navbar{
+  width: 100%;
+}
+
+.introduction{
+  background-image: url(../img/first-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 42rem;  
+  
+}
+.intro-head{
+  margin-top:10%;
+}
+.button{
+  padding:15px 20px;
+  border:2px solid #ff9933;
+  background-color: #ff9933;
+}
+
+.title{
+  text-align: center;
+  height: 50px;
+  padding-top: 1%;
+  margin-bottom: 3%;
+  margin-top:6%;
+}
+.icon{
+  width: 130px;
+  display: inline-block;
+}
+.icon-box{
+  text-align: center;
+  margin-top: 3%;
+}
+.caption{
+margin: 5% 0;
+padding: 0;
+}
+.intro-head {
+  color: white;
+  text-align: center;
+  padding: 7rem;
+}
+h5{
+  text-align: center;
+}
+.social-icon{
+  padding: 0;
+}
+.circl-icon {
+  text-align: center;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+ }
+.fa-twitter{
+  color: #55acee;
+}
+.instagram{
+  color: #3f729b;
+}
+.facebook{
+  color:#4c66a9;
+}
+.copy{
+  text-align: center;
+}
+.clear-fix:after,
+.clear-fix:before {
+  content: "";
+  display: table;
+}
+.clear-fix:after{
+  clear:both; 
+}
+.clear-fix {
+  zoom: 1;
+}
 /* Add your custom styles here */
 /* Remember: be organised, use comments and separate your styles into meaningful chunks */
 /* For example: General styles, Navigation styles, Hero styles, Footer etc. */
 
 /*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
-
