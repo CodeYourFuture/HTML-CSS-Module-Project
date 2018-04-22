@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -130,7 +130,10 @@ table {
 * {
   margin: 0;
   padding: 0;
-  color: rgb(0, 0, 0);
+  color: gray;
+}
+.black {
+  color: black;
 }
 
 /* Use the 'Roboto' font from Google. Already added to your HTML header */
@@ -181,10 +184,10 @@ li {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: red;
+  color: black;
 }
-.active {/*
-  color: rgb(10, 10, 10);*/
+.active {
+  color: rgb(10, 10, 10);
 }
 .text-over-image p {
   position: absolute;
@@ -270,6 +273,7 @@ p.bring {
   font-weight: 300;
   font-size: 1.4rem;
   text-align: center;
+  color: black;
 }
 hr {
   width: 50%;
@@ -316,9 +320,7 @@ footer .social-icons--list .fa-facebook-f {
 footer .social-icons--list .fab {
   padding: 13% 0;
 }
-
 .copyright {
-  color: gray;
   text-align: center;
   margin: 1% auto 10% auto;
   font-size: 0.875rem;
@@ -333,4 +335,102 @@ footer .social-icons--list .fab {
 }
 .clear-fix {
   zoom: 1;
+}
+
+/* resize mobile */
+@media only screen and (max-width: 600px) {
+  .logo-div {
+    margin-left: 10px;
+    width: 30px;
+    margin-top: 0px;
+  }
+  .logo {
+    width: 15px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .flex-nav {
+    max-width: 80%;
+    font-size: 9px;
+  }
+  .nav-item li {
+    min-width: 50%;
+  }
+  header {
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+  }
+  .flex-nav {
+    width: 100%;
+  }
+  .flex-items {
+    flex-direction: row;
+    justify-self: right;
+  }
+
+  .text-over-image p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    height: 20px;
+    line-height: 0.75rem;
+    font-size: 0.75rem;
+  }
+  p.intro {
+    top: 20%;
+    font-size: 0.751rem;
+    margin: 10px auto;
+  }
+  p.bring {
+    visibility: hidden;
+  }
+  .btn-learn-more {
+    top: 36%;
+    left: 50%;
+    color: white;
+    font-size: 0.55rem;
+    font-weight: 200;
+  }
+  .img-first-background {
+    height: 15rem;
+    width: 100%;
+  }
+  .every-karma p {
+    font-size: 0.7rem;
+  }
+  .flex-items {
+    flex-direction: column;
+  }
+  .flex-item_image {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .flex-item_image img {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    margin: 0 auto;
+  }
+  footer .social-btn-list li {
+    margin: 0px 5%;
+    padding: 4px;
+    float: left;
+  }
+}
+/* resize  tablet size */
+@media only screen and (max-width: 790px) {
 }
