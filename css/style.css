@@ -1,14 +1,276 @@
 
- /* Use the 'Roboto' font from Google. Already added to your HTML header */
-
+ 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Add your custom styles here */
-/* Remember: be organised, use comments and separate your styles into meaningful chunks */
-/* For example: General styles, Navigation styles, Hero styles, Footer etc. */
+html, body, div, span, 
+h1,h3, h6, p,
+a, code, em, img
+, u, i, center, ul, li, caption, footer, header, 
+menu, navbar, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;}
+    
 
-/*  TIP: When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
+    
+footer, header, menu, nav, section {
+        display: block;
+        justify-content: space-around;
+    }
 
+ body {
+        line-height: 1rem;
+    }
+ ul {
+        list-style: none;
+    }
+
+    .container-fluid{
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+    div {
+        border: 0;
+    }
+    .container {
+        padding: 0 0.938rem;
+        margin: 0 auto;
+        min-width: 37.5rem;
+    }
+    :focus {
+        outline: none;
+    }
+    .navbar Section{
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid #DDD;
+        z-index: 9999;
+        font-size:1.2em;
+        padding:15% 5% 15% 5%;
+        height: 300rem;
+    }
+    .navbar-logo{
+      padding: 20px;
+
+    }
+    .navbar-brand .logo {
+        height: 3.375rem;
+        padding:0 15px 5px;
+        margin: 0 0 0 15%;
+    
+    }
+    .navbar-header{
+        height:0.98rem;
+
+    }
+    .navbar-nav .navbar-default li a {
+        height: 4.375rem;
+
+        
+
+    } 
+    .nav .navbar-nav{
+        justify-content: center, space-around;
+
+    }
+    .navbar .links {
+        float: right;
+        color: #838994;
+        font-size: 1.04rem;
+        margin-top: 1.7rem;
+    }
+    .top-navigation .links li {
+        display: inline-block;
+        margin-left: 1.563rem;
+    }
+    .navbar .links li.active {
+        color: #4c5058;
+        font-weight: 500;
+    }
+    .navbar .links li:hover {
+        cursor: pointer;
+        color: #333333;
+    }
+    
+    /**
+     * Introduction Section
+     */
+    .main {
+        background-image: url('../img/first-background.jpg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 45rem;
+        width:auto;
+        overflow: auto;
+        text-align: center;
+
+    }
+    
+    .main h3 h2 {
+        color: white;
+        text-align: center;
+        font-weight: 300;
+        
+    }
+    .main h1 {
+        justify-content: center;
+        margin-top: 17.5rem;
+        font-size: 4.125rem;
+        color:white;
+    }
+    .main h3 {
+        justify-content: center;
+        margin-top: 1.25rem;
+        font-size: 2.1rem;
+        text-align: center;
+        color:white;
+        word-spacing:0.5px;
+        letter-spacing:0.2px;
+    }
+    /**
+     * The buttons
+     */
+    .main .buttons {
+        color: white;
+        text-align: center;
+        margin-top: 1.9rem;
+        width: 100%;
+    }
+    .padding .container {
+        width: 100%;
+        padding: 0 1rem;
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 1.125rem;
+        line-height: 1.2;
+    }
+    
+    /**
+     * The Three Case Images
+     */
+    .padding {
+        background-color: #fff;
+        overflow: hidden;
+        padding-bottom: 5rem;
+    }
+    .padding .container {
+        margin-top: 7.875rem;
+        padding: none;
+        color: #1d1e21;
+        text-align: center;
+    }
+    .padding h2 {
+        font-size: 2.75rem;
+        margin: 1.625rem 0 3.125rem;
+        font-weight: 300;
+    }
+    .padding .devices > li {
+        width: 33.3333333%;
+        float:left;
+    }
+    .padding .devices h3 {
+        font-weight: 400;
+        font-size: 1.563rem;
+        margin: 2.5rem 0px 1.875rem;
+    }
+    .padding .devices p {
+        font-weight: 300;
+        font-size: 1.313rem;
+    }
+    
+    /**
+     * Footer
+     */
+    .social {
+        background-color: #fff;
+        overflow: auto;
+        padding-bottom: 9.375rem;
+        text-align: center;
+    }
+    .social hr {
+        border: 0;
+        border-top: 1px solid #eaebec;
+        margin: 1.313rem 0;
+    }
+    .social .icons > li {
+        border-radius: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-block;
+        margin: 1.25rem 5px;
+        border: 1px solid #eaebec;
+        padding: 0.625rem 0;
+        text-align: center;
+    }
+    .social .icons > li:hover {
+        cursor: pointer;
+        width:100%;
+        padding: 5% 5% 10% 5%;
+        justify-content: center; 
+    }
+    .social .twitter {
+        color: #55acee;
+    }
+    .social .facebook {
+        color: #4c66a4;
+    }
+    .social .instagram {
+        color: #3f729b;
+    }
+    .social .copy {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #838994;
+        justify-content: center;
+    }
+    
+    /**
+     * Responsive Design
+     */
+    @media (min-width: 48rem) {
+        .content {
+            width: 46rem;
+        }
+    }
+    @media (min-width: 62rem) {
+        .content {
+            width: 60rem;
+        }
+    }
+    @media (min-width: 75rem) {
+        .content {
+            width: 60%;
+        }
+    }
+    
+    button {
+        width: 15rem;
+        background-color: #f15a29;
+        border-color: #f15a29;
+        text-shadow: none;
+        border-style: none;
+        border-radius: 4px;
+        padding: 1rem 1.5rem;
+        color: white;
+        font-size: 1.125rem;
+    }
+    button:hover {
+        background-color: #d9400e;
+        border-color: #cf3d0e;
+        cursor: pointer;
+    }
+    
+    
