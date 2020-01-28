@@ -39,7 +39,7 @@ a:hover {
     color: black;
 }
 
-.container {
+.navContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,39 @@ a:hover {
     margin-top: 12vh;
     
 }
+
+.icon-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.second-section-heading {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 7%;
+
+
+}
   
+.coffee-icon, .devices-icon, .refill-icon {
+    width: 20vw;
+    height: 20vh;
+    border: 1px dashed blue;
+}
+
+figure {
+    margin-left: 5px;
+}
+
+figcaption h2 {
+    font-weight: lighter;
+    text-align: center;
+    border: 2px double seagreen;
+    margin-top: 0;
+}
 
 
 
