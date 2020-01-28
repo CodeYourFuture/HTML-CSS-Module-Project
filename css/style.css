@@ -16,4 +16,20 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+nav{
+    display: flex;  
+    align-items: flex-end;
+    justify-content: space-around;
+        
+}
 
+.navbut {
+    display: flex;  
+    list-style: none;
+  
+}
+
+.imgpic {
+    display: flex; 
+    list-style: none;
+}
