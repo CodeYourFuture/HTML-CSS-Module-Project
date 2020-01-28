@@ -9,6 +9,10 @@ body {
 /* nav */
 nav {
     border: 2px solid red ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: whitesmoke;
     
 }
 
@@ -55,6 +59,13 @@ a:hover {
     margin-right: 100px;
 }
 
+/* main section */
+#karmaDevice {
+    width: 100%;
+    height: 100%;
+    margin-top: 12vh;
+    
+}
   
 
 
