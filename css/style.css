@@ -16,4 +16,28 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.navbar {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999; /*only used with position*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
 
+.navcontent {
+    padding: 0 1;
+    margin: 0, auto; /*horizontally centered*/
+
+}
+
+.navlinks {
+    float: right;
+    color: lightslategrey;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
