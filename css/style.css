@@ -7,14 +7,55 @@ body {
 }
 
 /* nav */
+nav {
+    border: 2px solid red ;
+    
+}
+
 #logo img{
     width: 4vh;
     height: 6vh;
 }
 
+ul li {
+    list-style-type: none;
+}
+
 li a {
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: lightslategray;
+    border: 3px solid lime;
+    margin: 25px 35px 5px 0px;
+    
 }
+
+a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 50px;
+}
+
+#linkOne {
+    margin-left: 200px;
+    color:black;
+    
+}
+
+#linkSix {
+    margin-right: 100px;
+}
+
+  
 
 
 
