@@ -18,7 +18,7 @@ body {
 
 /* nav Style */
 nav {
-    border: 2px solid red ;
+    /* border: 2px solid red ; */
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -27,8 +27,8 @@ nav {
 }
 
 #logo img{
-    width: 4vh;
-    height: 6vh;
+    width: 37px;
+    height: 37px;
 }
 
 ul li {
@@ -40,13 +40,14 @@ li a {
     font-size: 1rem;
     font-weight: 500;
     color: lightslategray;
-    border: 3px solid lime;
+    /* border: 3px solid lime; */
     margin: 25px 35px 5px 0px;
     
 }
 
 a:hover {
-    color: black;
+    color: darkslategray
+    
 }
 
 .navContainer {
@@ -57,26 +58,77 @@ a:hover {
 }
 
 #logo {
-    margin-left: 50px;
+    /* margin-left: 10rem; */
+    /* margin-right: 38rem; */
+    margin-right: 25vw;
 }
 
 #linkOne {
-    margin-left: 200px;
+    margin-left: 14rem;
     color:black;
     
 }
-
-#linkSix {
-    margin-right: 100px;
+#linkOne,
+#linkTwo, #linkThree, #linkFour, #linkFive, #linkSix {
+    margin: 0px 15px;
 }
 
-/* main section */
+
+/* #linkSix {
+    margin-right: 10rem;
+} */
+
+/* Main Section  Content*/
+.intro-content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    /* top: 15rem;
+    margin-left: 43rem;
+    font-size: 1.7rem; */
+    top: 35vh;
+    margin-left: 27vw;
+    font-size: 1.7rem;
+    font-weight: 350;
+   
+}
+
+.content {
+    overflow: hidden;
+}
+
+.intro-content h1 {
+    font-weight: 350;
+    margin-bottom: 5px;
+
+}
+
+.intro-content p {
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color:#f15a29;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 1.4rem;
+}
+
+/* Main First Section  */
 #karmaDevice {
-    width: 100%;
-    height: 100%;
-    margin-top: 12vh;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10px;
+    z-index: 3;
     
 }
+
+/* Second Section Style */
 
 .icon-container {
     width: 100%;
@@ -95,20 +147,20 @@ a:hover {
 }
   
 .coffee-icon, .devices-icon, .refill-icon {
-    width: 20vw;
-    height: 20vh;
-    border: 1px dashed blue;
+    width: 15vw;
+    height: 15vh;
+    /* border: 1px dashed blue; */
 }
 
 .coffee {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
     
 }
 
 .devices {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10;
+    /* margin-right: 10; */
     order: -1;
 }
 
@@ -122,8 +174,9 @@ figcaption h3 {
     padding: 15px 0px;
     /* word-spacing: 3px; */
     text-align: center;
-    border: 2px double seagreen;
+    /* border: 2px double seagreen; */
     margin-top: 5px;
+    margin-right: 50px;
 }
 
 hr {
@@ -132,6 +185,8 @@ hr {
     opacity: 0.3;
     
 }
+
+/* Footer Style */
 footer {
     text-align: center;
     height: 50vh;
@@ -147,6 +202,7 @@ i {
     border-radius: 50%;
     padding: 10px;
     margin: 0px 10px;
+    cursor: pointer;
 }
 
 
