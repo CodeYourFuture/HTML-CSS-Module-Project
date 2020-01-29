@@ -1,11 +1,3 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
 /**
  * Add your custom styles below
  * 
@@ -16,4 +8,54 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.logo-icon {
+  width: 30px;
+}
+
+.menu-nav {
+  list-style-type: none;
+  padding: 17px;
+  margin: 0px;
+  text-align: center;
+  font-size: 16px;
+}
+.nav-flex-box {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.nav-list {
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 1px;
+
+  width: 7%;
+}
+.logo-icon {
+  margin-right: 200px;
+}
+.web-content {
+  overflow-x: hidden;
+}
+.background-img {
+  width: 100%;
+}
+.content-container {
+  position: relative;
+  text-align: center;
+}
+.content-list {
+  list-style-type: none;
+}
+.list-elements {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
