@@ -6,14 +6,207 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/first-background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    padding-top: 17.5rem ;
+    font-size: 3.125rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.intro__text {
+    padding-top: 1.25rem;
+    font-size: 1.563rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.intro__button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    margin: 25px auto;
+    display: block;
+}
+
+.intro__button:hover{
+    background-color: #D9400E;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid #DDD;  
+}
+
+.svg {
+    width: 26px;
+}
+
+.nav {
+    font-size: 16px;
+}
+
+.nav__link {
+    color: #838994;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    color: #1d1e21;
+    transition: color .2s linear;
+}
+
+.home__link {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
 
 
+.main{
+    width: 100%;
+    height: 429px;
+    background-color: #fff;
+    
+}
+
+.main__title{
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+    text-align: center;
+    color: #1d1e21;
+    margin-top: 120px;
+}
+
+.main__svg{
+    height: 127px;
+}
+
+.main__inner{
+    width: 900px;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.main__block{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.main__text{
+    font-weight: 400;
+    font-size: 1.563rem;
+    color: #1d1e21;
+    width: 250w;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer{
+    width: 60vw;
+    margin: 0 auto;
+    height: 255px;
+    background-color: #fff;
+    border-top: 1px solid #DDD;
+}
+
+.footer__title{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.footer__links{
+    width: 60vw;
+    margin: 0 auto;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__twitter{
+    color: #55acee;
+}
+
+.footer__facebook{
+    color: #4c66a4;
+}
+
+.footer__instagram {
+    color: #3f729b;
+}
+
+.footer__icon{
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #DDD;
+}
+
+.footer__icon:hover{
+    cursor: pointer;
+}
+
+.footer__text{
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
