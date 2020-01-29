@@ -1,10 +1,114 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-size: 16px;
 }
+.top-navigation{
+    background-color:white;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    
+}
+.content{
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+}
+
+
+li{
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;
+    
+    }   
+    a{
+    text-decoration: none;
+    color: black;
+    padding-left: 1px;
+    }
+.logo{
+
+    padding-right: 430px;
+    
+    
+}
+
+.introduction{
+    background-image: url(../img/first-background.jpg);
+    background-position: center bottom;
+     background-position-x: center;
+     background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 42.938rem;
+    overflow: auto;
+}
+
+.content1{
+    text-align: center;
+    padding: 200px;
+    color: aliceblue;
+}
+.buttons{
+    color:white;
+    font-size: 20px;     
+}
+button{
+    width: 170px;
+    height: 50px;
+    background-color:#fe614a;
+    border-radius: 10px;
+    border: none;
+    transition: .6s;
+    overflow: hidden;
+}
+.content2{
+    text-align: center;
+}
+/* .devices{
+    
+} */
+.social{
+    text-align:center;
+    padding-bottom: 9rem;
+}
+h1{
+    font-size: 60px;
+}
+p{
+    font-size: 25px;
+}
+h2{
+   font-size: 45px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 500;
+}
+h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 50px;
+}
+spam{
+    font-size: 20px;
+    padding-left: 35px;
+}
+/**
+
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 /**
  * Add your custom styles below
