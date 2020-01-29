@@ -6,6 +6,48 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/first-background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    padding-top: 17.5rem ;
+    font-size: 3.125rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.intro__text {
+    padding-top: 1.25rem;
+    font-size: 1.563rem;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.intro__button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    margin: 25px auto;
+    display: block;
+}
 /**
  * Add your custom styles below
  * 
