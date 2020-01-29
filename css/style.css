@@ -20,39 +20,108 @@ body {
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 999; /*only used with position*/
+    z-index: 999; /*only used with position-999 is to keep it always as top layer*/
     margin: 0;
     padding: 0;
     border: 0;
-    display: block;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
 }
 
-.navcontent {
-    padding: 0 1;
-    margin: 0, auto; /*horizontally centered*/
-
-}
-
-.navlinks {
-    float: right;
-    color: lightslategrey;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: flex;
 }
 
 .logo {
-    height: 4.3rem;
-    margin: 0;
+    height: 50px;
+    margin: 10px;
     padding: 0;
     border: 0;
     width: 26;
 }
+.content {
+    padding: 0 1;
+    margin: 1120;
+    color: lightslategrey);
+    display: flex;
+    flex-direction: row;   
+}
+
+ul, li{
+    list-style-type: none;
+    display: flex;
+    margin-top: 10;
+    margin-left: 50;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.navlinks {
+    float: right;
+    margin: 0,30;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: row;    
+}
 
 .introduction {
-    background-image: url(C:\Users\HDRS\Documents\GitHub\karma-clone\img\first-background.jpg);
+    background-image: url('../img/first-background.jpg');
     background-position: center-bottom;
     background-size: cover;
-    height: 45rem;
+    height: 800px;
+    background-color: maroon;
+    display: flex;
+    flex-direction: column;
+}
+
+.introcontent {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+.button {
+    width: 155px;
+    background-color: red;
+    border-color: red;
+    border-radius: 4px;
+    padding: 10px 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-width: 2px;
+    
+}
+
+.cases {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 500;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 84;
+    margin-top: 2.625rem;
+    margin-right: 0px;
+    margin-bottom: 3.125rem;
+    margin-left: 0px;
+}
+
+.caption {
+    display: block;
 }
