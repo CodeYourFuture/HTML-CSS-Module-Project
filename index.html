@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Add a link to your CSS file here (use the line above to guide you) -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <header>
-            <nav>
-                <ul>
-                    <li>Meet Karma</li>
-                    <li>How it Works</li>
-                    <li></li>
-                </ul>
-            </nav>
-        </header>
+      <header>
+        <img
+          class="logo"
+          src="data:image/png;base64,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"
+          width="26"
+        />
+        <nav>
+          <ul>
+            <li>Meet Karma</li>
+            <li>How it Works</li>
+            <li>Store</li>
+            <li>Blog</li>
+            <li>Help</li>
+            <li>Login</li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero-picture">
+        <div class="hero-content">
+          <h1>Introducing Karma</h1>
+          <h3>Bring WiFi with you, everwher you go.</h3>
+          <div class="button-container">
+            <button class="button">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1 class="second-section-h1">Everyone needs a little Karma.</h1>
 
+        <div class="flex-container">
+          <div class="flex1">
+            <img src="../img/icon-devices.svg" />
+            <h3>Internet for all devices</h3>
+          </div>
+          <div class="flex2">
+            <img src="../img/icon-coffee.svg" />
+            <h3>Boost your productivity</h3>
+          </div>
+          <div class="flex3">
+            <img src="../img/icon-refill.svg" />
+            <h3>Pay as You Go</h3>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-
-</body>
-
+  </body>
 </html>

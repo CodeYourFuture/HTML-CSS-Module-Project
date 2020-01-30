@@ -1,9 +1,97 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+
+}
+
+nav ul>li {
+    list-style-type: none;
+}
+
+ul>li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* section hero-picture */
+
+.hero-picture {
+    background-image: url("../img/first-background.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hero-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.hero-content h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+
+.button {
+    background-color: #f15a29;
+    border-color: #f15a29;
+    padding: 15px;
+    border-radius: 4px;
+    width: 140px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+section div div {
+    text-align: center;
+}
+
+/* second section */
+
+.second-section-h1 {
+    font-weight: 300;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 45px;
+}
+
+section div>img {
+    width: 127px;
+    height: 127px;
+}
+
+.flex-container {
+    flex-direction: row;
+    display: flex;
 }
 
 /**
@@ -15,5 +103,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
