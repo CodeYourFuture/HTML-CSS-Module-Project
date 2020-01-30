@@ -24,8 +24,6 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    vertical-align: baseline;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
 }
@@ -41,24 +39,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border: 0;
     width: 26;
 }
-.content {
+/*.content {
     padding: 0 1;
     margin: 1120;
     color: lightslategrey);
     display: flex;
     flex-direction: row;   
-}
+}*/
 
-ul, li{
+li{
     list-style-type: none;
-    display: flex;
-    margin-top: 10;
-    margin-left: 50;
+    display: inline-block;
+    margin: 25px 0 0 25px;
     cursor: pointer;
     justify-content: space-between;
 }
 
-.navlinks {
+.links {
     float: right;
     margin: 0,30;
     padding: 0;
@@ -87,7 +84,12 @@ ul, li{
 }
 
 h2 {
-    font-weight: 200;
+    font-weight: 400;
+    font-size: 144;
+    margin-top: 2rem;
+    margin-right: 0px;
+    margin-bottom: 3.125rem;
+    margin-left: 0px;
 }
 
 .button {
@@ -101,27 +103,31 @@ h2 {
     text-align: center;
     cursor: pointer;
     border-width: 2px;
-    
 }
 
 .cases {
-    background-color: white;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     margin-top: 500;
     text-align: center;
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 84;
-    margin-top: 2.625rem;
-    margin-right: 0px;
-    margin-bottom: 3.125rem;
-    margin-left: 0px;
+.devices {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 300px 200px 300px;
 }
 
-.caption {
-    display: block;
+.captions {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.devices .li {
+    margin: 0 300px 200px 300px; 
 }
