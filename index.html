@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -14,80 +15,80 @@
 </head>
 <body>
 
-
-    <header><center>Karma</center></header>
-    <nav class="top-navigation">
-    <div class="logo">
-        <img class="logo" src="img/karma-logo.svg" alt="Logo Image" width="20">
-    </div>
-           <ul class="links">
-               <li class="active">Meet Karma</li>
-               <li>How it works</li>
-               <li>Store</li>
-               <li>Blog</li>
-               <li>Help</li>
-               <li>Login</li>
-
-
-
-           </ul>
-        </nav>
+    <!--Header tag-->
     
-
-        <section class="cases">
-            <div class="content3">
-                <h2>Everyone needs a little karma.</h2>
-        
-                <ul class="devices">
-                <li> 
-                <img src="img/icon-devices.svg" width="127" height="127">
-                <div class="caption">
-                    <h3>Internet for all devices</h3>
-                </div>
-                </li>
-        
-                <li> 
-                <img src="img/icon-coffee.svg" width="127" height="127">
-                <div class="caption">
-                    <h3>Boost your productivity</h3>
-                </div>
-                </li>
-        
-                <li> 
-                <img src="img/icon-refill.svg" width="127" height="127">
-                    <h3>Pay as You Go</h3>
-                </div>
-                </li>
-                </ul>
+    <main> <!--this is the main content of the webpage everything goes in here-->
+        <nav class="main-navigation"><!--creating a nav the purpose for this is to connect it to other pages whether it is in the page or out-->
+            <div class="content"> <!--this is a class for content-->   
+            <!--create unordered list for the navigation to give it a list form-->
+              <ul class="navigation">
+                <li class="karma">Meet Karma</li>
+                <li>How it Works</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Login</li>
+              </ul>
+              <!--create image class and reference from image folder for logo alt tag is important for seo-->
+              <img class="logo" src="img/karma-logo.svg" alt="Logo Image" width="20">
             </div>
-            </section>
-
-            <footer class="social">
-            <div class="content4">
-                <hr>
-                <h5>Join us on</h5>
-                <ul class="icons">
-                    <li>
-                        <i class="fa fa-twitter"></i>
-                    </li>
-                    <li>    
-                        <i class="fa fa-facebook"></i>
-                    </li>
-                    <li>
-                        <i class="fa fa-instagram"></i>
-                    </li>
-                </ul>
-            </div>
-                <span class="copy">
-                    © Karma Mobility, Inc.
-                </span>
-                </div>
-            </footer>
+          </nav><!--end nav-->
         
+          <!----Now seperating the program into sections-->
+         
+          <!--creating section for middle headers -->
+          <section class="introduction">
+            <div class="content">
+              <!--headings for karma-->
+              <h1>Introducing you to Karma</h1>
+              <h3>Bring WiFi with you, everywhere you go.</h3>
+              <!--button-->
+              <button>Learn More!</button>
+            </div>
+          </section>
 
-
+          <!--section class for internet/coffee/refill-->
+          <section class="three">
+            <div>
+              <h2>Everyone needs a little Karma. </h2>
+              <ul class="devices">
+                <li>
+                  <img src="img/icon-devices.svg" alt="device" width="127" height="127">
+                  <h3>Internet for all devices</h3>
+                </li>
+                <li>
+                  <img src="img/icon-coffee.svg" alt="productivity" width="127" height="127">
+                  <h3>Boost Your Productivity</h3>
+                </li>
+                <li>
+                  <img src="img/icon-refill.svg" alt="refill" width="127" height="127">
+                  <h3>Pay as You Go</h3>
+                </li>
+              </ul>
+            </div>
+          </section>
+         
+          <!--footer class for social media-->
+          <footer class="socialmedia">
+            <hr>
+            <div class="content">
+              <ul class="icons">
+                <li class="twitter">
+                  <i class="fa fa-twitter"></i>
+                </li>
+                <li class="facebook">
+                  <i class="fa fa-facebook"></i>
+                </li>
+                <li class="instagram">
+                  <i class="fa fa-instagram"></i>
+                </li>
+              </ul>
+              <p><center>© Karma Mobility, Inc.</center></p>
+            </div>
+          </footer>
    
-    
+    <!--note can't find images for social media-->
+   
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->

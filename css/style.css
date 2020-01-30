@@ -18,3 +18,118 @@ body {
 
 
 /*Top Navigation*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  /*navigation*/
+  
+  .main-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%
+  }
+  /*styling the content*/
+  .main-navigation  .content {
+    width: 970px;
+    height: 4.375rem;
+    margin: 0 auto;
+    color: #838994;
+   
+  }
+  
+  .main-navigation .navigation {
+    float: right;
+    font-size: 1rem;
+    margin-top: 25px; 
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .main-navigation li {
+    display: inline-block;
+    margin-left: 35px;
+  }
+  
+  .main-navigation .navigation .karma {
+    color: #4c5058;
+    font-weight: 500;
+  }
+  /*when you hover over the naviation do this*/
+  .main-navigation .navigation li:hover {
+    cursor: pointer;
+    color: #333333;
+  }
+   /*making the logo appear 20px down*/
+  .logo{
+    padding-top:20px;
+  }
+   /*styling the background*/
+  .introduction {
+    background-image: url('https://thinkful-ed.github.io/karma-clone/img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    background-position: 10 bottom;
+    overflow: auto;
+  }
+  
+  .introduction .content {
+    color: white;
+    text-align: center;
+    padding-top: 400px;
+  }
+   /*styling the button*/
+  button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+    background-color: orange;
+    color: white;
+  }
+  /*align 3 items in middle*/
+  .three {
+    text-align: center;
+  }
+  
+  /*devices*/
+  
+  .devices > li {
+    width: 33%;
+    box-sizing: border-box;
+    height: 4em;
+    display: inline-block;
+    list-style: none;
+    box-sizing: border-box;
+    margin-left:-5%;
+    margin-right: -5%;
+  }
+  /*social media*/
+  
+  .socialmedia .twitter {
+    color: #55acee;
+  }
+  .socialmedia .icons {
+    text-align: center;
+  }
+  .socialmedia .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+  }
