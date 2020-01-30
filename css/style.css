@@ -70,6 +70,7 @@ body {
 .content-container img {
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 .content-container .btn {
@@ -85,4 +86,10 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+.karma-title {
+  font-size: 20px;
+}
+.device {
+  width: 200px;
 }
