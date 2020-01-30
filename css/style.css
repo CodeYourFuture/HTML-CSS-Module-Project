@@ -5,7 +5,30 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-.container {
+//navbar is a list of links, but i do not plan to make them working
+ul{ text-align: center; }
+li { 
+    padding:10px;
+    display: inline-block; 
+    justify-content: space-around;
+    
+    }
+    li:hover {
+        font-style:bold;
+        cursor: pointer;
+        color: #910909;
+    }
+navbar{
+    display:flex;
+    flex-basis:50vw;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+}
+
+.aside{
     position: relative;
     text-align: center;
     color: white;
