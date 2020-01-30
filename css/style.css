@@ -46,7 +46,7 @@ header{
     z-index:10;
     background-color:white;
     }
-section{
+.hero-area{
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -83,17 +83,23 @@ section{
     text-align: center;
     border-style: none;
 }
-section .content-area{
+.content-area{
     display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-
-}
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    }
 .single-service{
+    margin: 0 100px;
+}
+.single-service img{
     width:150px;
     height:150px;
-    background-color: darkcyan;
+}
+.service-area h3{
+    text-align:center;
+    font-weight:lighter;
+    font-size:30px;
 }
  
 /**
