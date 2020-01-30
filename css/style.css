@@ -15,14 +15,54 @@ ul {
     list-style: none;
 }
 
-nav {
-    float: right;
-}
 
 li {
     display: inline-block;
     padding: 10px; 
     margin: 10px;
+}
+
+header {
+    align-content: space-between;
+}
+
+.first-banner {
+    max-width: 100%;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.introduction {
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    font-weight: 100;
+    font-size: 48px;
+}
+
+.intro-subheading {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    font-weight: 100;
+}
+
+button {
+    background-color: rgb(211, 90, 9);
+    border: none;
+    padding: 10px 10px;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: orangered;
 }
 /**
  * Add your custom styles below
