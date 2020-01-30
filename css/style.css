@@ -5,6 +5,81 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+ul, li{
+    list-style-type: none;
+    
+}
+.navigation {
+    background-color: #fff;
+    
+}
+.navigation .links {
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+}
+.navigation .links li {
+    display: inline;
+    margin-left: 1.563rem;
+}
+.logo{
+    margin-left: 1.6rem;
+}
+.content{ 
+	min-width: 37.5rem;
+	margin: 0 auto;
+	padding: 0 0.98rem;
+	width: 60%;
+	padding: 0px 15px;
+	}
+.introduction {
+    background-image: url('../img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+    
+}
+.introduction h1 {
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction h3{
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 1.25rem;
+	font: 1.563rem;
+}
+.cases .content {
+    margin-top: 7.5rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 2.3rem;
+}
+.cases h2{
+    font-size: 2.75rem;
+    font-weight: lighter;
+}
+h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.56rem;
+}
+.buttons{
+    text-align: center;
+}
+
 
 /**
  * Add your custom styles below
