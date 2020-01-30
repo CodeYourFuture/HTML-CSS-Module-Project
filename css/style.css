@@ -45,17 +45,44 @@ body {
 }
 .background-img {
   width: 100%;
+  position: absolute;
 }
 .content-container {
-  position: relative;
+  position: static;
   text-align: center;
+  width: 0px;
 }
-.content-list {
-  list-style-type: none;
-}
-.list-elements {
+
+.first-list-element {
   position: absolute;
-  top: 50%;
+  z-index: 100;
+  left: 550px;
+  top: 350px;
+  color: white;
+}
+.second-list-element {
+  position: absolute;
+  z-index: 100;
+  left: 470px;
+  top: 420px;
+  color: white;
+}
+.content-container img {
+  width: 100%;
+  height: auto;
+}
+
+.content-container .btn {
+  position: absolute;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: orangered;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
