@@ -79,7 +79,7 @@ li{
     text-align: center;
     font-weight: 300;
     margin: 350px;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
 }
 
@@ -123,11 +123,19 @@ h2 {
 
 .captions {
     background-color: white;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: space-around;
+    margin: 0 80px 0 80px;
 }
 
-.devices .li {
-    margin: 0 300px 200px 300px; 
+h3 {
+    font-weight: 300;
+    font-size: 170;
+}
+
+h5 {
+    font-size: 16px;
+    display: block;
+
 }
