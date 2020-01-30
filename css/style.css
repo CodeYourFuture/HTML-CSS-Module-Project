@@ -83,7 +83,18 @@ section{
     text-align: center;
     border-style: none;
 }
+section .content-area{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 
+
+}
+.single-service{
+    width:150px;
+    height:150px;
+    background-color: darkcyan;
+}
  
 /**
  * Add your custom styles below
