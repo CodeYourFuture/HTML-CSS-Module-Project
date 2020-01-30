@@ -23,6 +23,12 @@ nav ul>li {
 ul>li {
     display: inline-block;
     padding: 10px;
+    color: #838994;
+}
+
+.nav-bold {
+    font-weight: 00;
+    color: #37393d;
 }
 
 /* section hero-picture */
@@ -92,6 +98,62 @@ section div>img {
 .flex-container {
     flex-direction: row;
     display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+@media (max-width: 650px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+section div div {
+    margin: 20px;
+}
+
+section div>h3 {
+    font-weight: 300;
+    font-size: 25px;
+    ;
+}
+
+/* section three */
+
+hr {
+    width: 85%;
+    border: 1px solid #eaebec;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.flex-container-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+
+footer h3 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+
+.icon-div {
+    margin: 5px;
+}
+
+span {
+    color: #838994;
+    font-size: 14px;
 }
 
 /**
