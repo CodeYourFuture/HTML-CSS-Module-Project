@@ -15,6 +15,7 @@ body {
 main {
     position: relative;
 }
+
 li {
     list-style: none;
 }
@@ -26,9 +27,9 @@ a {
 /*global classes styling*/
 
 .container {
-    max-width: 1000px;
+    max-width: auto;
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .btn {
@@ -41,10 +42,11 @@ a {
     background-color: rgb(224, 107, 52);
 }
 
-/* top - header - navbar section - logo + list of links*/
 .grid {
     display: flex;
 }
+
+/* top - header - navbar section - logo + list of links*/
 
 .header{
     position: fixed;
@@ -52,24 +54,36 @@ a {
     padding: 20px;
     height: 30px;
     width: 100%;
-    display: flex;    
+    display: flex; 
+    flex-wrap: nowrap;       
     align-items: center;
     justify-content: space-around;
     background-color: white;
 }
-
-
-.logo {
-    width: 27px;
-    
-}
-
-.bold-link {
-    font-weight: bold;
-}
-
-.links  {
+/*logo position in the nav-bar*/
+.header-logo {
+    width: 100%;
+    height: 100%;
+    max-width: 35px;
     display: flex;
+    margin-left: 15px;
+}
+
+/*nav-bar links*/
+ul {    
+        font-weight: 400px;
+        margin-top: 10px;
+        padding: 0px;
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        text-align: center;
+    }
+
+.nav-bold {
+    font-weight: bold;
 }
 
 /* intro section */
