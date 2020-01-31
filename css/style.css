@@ -1,6 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+/* global element css styling*/
 body {
     background-color: lightblue;
     margin: 0px;
@@ -11,6 +12,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+main {
+    position: relative;
+}
 li {
     list-style: none;
 }
@@ -19,22 +23,45 @@ a {
     color:grey;
     text-decoration: none;
 }
-/* header - navbar section - logo + list of links*/
+/*global classes styling*/
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 60px;
+    width:  150px;
+    border: 3px black solid;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(224, 107, 52);
+}
+
+/* top - header - navbar section - logo + list of links*/
+.grid {
+    display: flex;
+}
 
 .header{
     position: fixed;
-    margin-top: 0px;
+    margin: 0px;
+    padding: 20px;
     height: 30px;
     width: 100%;
-    padding: 20px;
     display: flex;    
     align-items: center;
     justify-content: space-around;
     background-color: white;
 }
 
+
 .logo {
     width: 27px;
+    
 }
 
 .bold-link {

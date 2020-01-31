@@ -14,64 +14,88 @@
 
 <body>
     <main>
-    <!-- header section / navbar + logo + unordered list of links that do not open-->        
+    <!-- top - header section / navbar + logo + unordered list of links that do not open-->        
 <header class="header">
     <div class="logo">
         <!-- logo--> 
-    <img class="navbar-logo" src="img/karma-logo.svg" alt="navbar logo"> 
+    <img class="header-img" src="img/karma-logo.svg" alt="karma logo"> 
             <!-- 6 list of links, using # instead of actual urls -->    
         </div>
 
-    <nav>
-        <ul class="links">
-            <li class="bold-link"><a href="#">Meet Karma</a></li>
-            <li><a href="#">It Works</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Login</a></li>
+    <nav class="nav-bar">
+        <ul>
+            <li class="bold-text"><a href="#">Meet Karma</a></li>
+            <li>
+                <a class="nav-link" href="">It Works</a></li>
+            <li><a class="nav-link" href="">Store</a></li>
+            <li><a class="nav-link" href="">Blog</a></li>
+            <li><a class="nav-link" href="">Help</a></li>
+            <li><a class="nav-link" href="">Login</a></li>
         </ul>        
     </nav>
 </header>
+<div class="container"></div>
     <!-- Section 1 - intro section + button-->
-<section>
-    <div container="intro">
+<div class="container">
+    <section class="section-intro">
+    <div class="intro">
         <img src="img/first-background.jpg" alt="background image">
-        <h1>Introducing Karma</h1>
-        <h2>Bring WiFi with you, everywhere you go.</h2>
-        <button>Learn more</button>
+        <div class="desc">
+            <h1>Introducing Karma</h1>
+            <h2>Bring WiFi with you, everywhere you go.</h2>            
+        </div>
+        <button class="btn">Learn More</button>
     </div>
 </section>
+</div>
 
 <!-- information section + 3 favicon icons-->
-<section>
-    <h1>Everyone needs a little Karma.</h1>    
-    <div class="info">
-        <ul>
-        <li>
-            <img class="info" src="img/icon-devices.svg" alt="devices icon">            
-            <h3>Internet for all devices</h3>
-        </li>
-        <li>
+<div class="container">
+<section class="section-grid">
+    <div class="grid">
+        <div class="desc">
+            <h1>Everyone needs a little Karma.</h1>          
+        </div>        
+        <div class="icon">
+            <img class="info" src="img/icon-devices.svg" alt="devices icon"></div>
+        <div class="desc">
+            <h3>Internet for all devices</h3>  
+        </div>
+        <div class="icon">
             <img class="info" src="img/icon-coffee.svg" alt="coffee icon">
+        </div>
+        <div class="desc">
             <h3>Boost your productivity</h3>
-        </li>
-        <li>
+        </div>
+        <div class="icon">
             <img class="info" src="img/icon-refill.svg" alt="pay as you go refill icon">
+        </div>
+        <div class="desc">
             <h3>Pay as You Go</h3>
-        </li>
-    </ul>
-</div>
+        </div>
 </section>
+</div>
 
-<!-- footer section content-->
+<div class="container"></div>
+
+<!-- footer section content + social media logos -->-->
 <footer>
-    <h3>Join us on</h3>
-    <!-- social media logos -->
+    <div class="desc">
+        <h3>Join us on</h3>        
+    </div>
+<div class="icon">
     <i class="fa fa-twitter"></i>
+</div>
+<div class="icon">
     <i class="fa fa-facebook"></i>
+</div>
+<div class="icon">
     <i class="fa fa-instagram"></i>
-    <h4> Karma Mobility, Inc</h4>
+</div>
+<div class="desc">
+        <h4> © Karma Mobility, Inc</h4>
+</div>
+
 </footer>
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
