@@ -10,6 +10,8 @@
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* General formating */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,10 +19,11 @@
   font-size: 16px;
 }
 
+html,
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: black;
+  color: #000;
   text-align: center;
   background-image: url("img/first-background.jpg");
   margin: 0;
@@ -28,12 +31,13 @@ body {
   line-height: 1.6;
 }
 
+/* Header section */
 .logo {
   max-width: 1.625rem;
 }
 
 .nav-bar {
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   height: 70px;
   margin-top: 0;
@@ -43,20 +47,6 @@ body {
   align-items: center;
   z-index: 1;
   border-bottom: 1px solid #eaebec;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-
-ul li {
-  padding: 1rem;
-}
-
-.bold {
-  font-weight: 500;
 }
 
 .nav-bar ul li a {
@@ -69,6 +59,22 @@ ul li {
   opacity: 1;
 }
 
+/* Lists and list items */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  padding: 1rem;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+/* First section */
 #hero {
   background-image: url("../img/first-background.jpg");
   background-size: auto;
@@ -84,13 +90,15 @@ ul li {
 
 #hero h1 {
   font-size: 3.125rem;
-  line-height: 0;
   font-weight: lighter;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 #hero h3 {
   font-size: 1.625rem;
   font-weight: lighter;
+  padding: 0 1rem;
 }
 
 button {
@@ -111,6 +119,7 @@ button:hover {
   opacity: 0.75;
 }
 
+/* Second section */
 #benefits {
   padding: 6.25rem 0;
 }
@@ -118,8 +127,10 @@ button:hover {
 #benefits h2 {
   font-size: 2.75rem;
   font-weight: lighter;
+  padding: 0 1rem;
 }
 
+/* Footer section */
 .icons {
   display: flex;
   justify-content: center;
@@ -127,14 +138,18 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.icons figure figcaption {
-  font-size: 1.5rem;
-  font-weight: 400;
+figure {
+  padding: 0;
+  margin: 0;
 }
 
 .icon {
   max-width: 8.125rem;
-  padding: 1rem;
+}
+
+.icons figure figcaption {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .footer-line {
@@ -151,7 +166,7 @@ button:hover {
 }
 
 .fa {
-  border-radius: 1.25rem;
+  border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
   display: inline-block;
@@ -177,4 +192,27 @@ button:hover {
 .copyright {
   padding-bottom: 5rem;
   color: #838994;
+}
+
+/* Media queries */
+@media (max-width: 550px) {
+
+  *,
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+
+  *,
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+
+@-ms-viewport {
+  width: device-width;
 }
