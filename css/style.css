@@ -1,10 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 /**
  * Add your custom styles below
@@ -16,4 +10,170 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  text-align: center;
+  background-image: url("img/first-background.jpg");
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.logo {
+  max-width: 1.625rem;
+}
+
+.nav-bar {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  margin-top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+  border-bottom: 1px solid gray;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul li {
+  padding: 1rem;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
+
+ul li a:hover {
+  opacity: 1;
+}
+
+#hero {
+  background-image: url("../img/first-background.jpg");
+  background-size: auto;
+  background-position: center;
+  height: 114vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.25rem;
+}
+
+#hero h1 {
+  font-size: 3.125rem;
+  line-height: 0;
+  font-weight: lighter;
+}
+
+#hero h3 {
+  font-size: 1.625rem;
+  font-weight: lighter;
+}
+
+button {
+  padding: 0.75rem 2rem;
+  background: orangered;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  margin-top: 1.625rem;
+}
+
+button a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+#benefits {
+  display: flex;
+  flex-direction: column;
+  padding: 6.25rem 18.75rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons figure figcaption {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.icon {
+  min-width: 8.125rem;
+}
+
+.footer-line {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+  display: block;
+}
+  hr {
+    
+}
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-facebook {
+  color: #4c66a4;
+}
+
+.fa-instagram {
+  color: #3f729b;
+}
+
+.copyright {
+  padding-bottom: 5rem;
+  color: #838994;
+}
