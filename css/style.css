@@ -1,10 +1,88 @@
 
+ 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  background-color: #ffffff;
+ 
+}
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+  
+.logo {
+    margin-top: 15px;
+    width: 10%;
+    position: relative;
+  }
+
+
+.logo > img {
+  width: 100%;
+  height: 4.375rem;
+  max-width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.nav-bar{
+  background-color: #ffffff;
+  height: 4.375rem;
+  width: 60rem;
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+  
+  
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.03rem;
+	margin-top: 1.563rem;
+  color: #838994;
+
+}
+li {
+  list-style: none;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+
+
+
 
 /**
  * Add your custom styles below
