@@ -14,6 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
 .logo-icon {
   width: 30px;
 }
@@ -25,28 +26,35 @@ body {
   text-align: center;
   font-size: 16px;
 }
+
 .nav-flex-box {
   display: flex;
   justify-content: center;
   max-width: 100%;
 }
+
 .nav-list {
   padding: 10px;
   padding-left: 10px;
   padding-right: 1px;
-
   width: 7%;
 }
+
 .logo-icon {
   margin-right: 200px;
 }
+
 .web-content {
   overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
 }
+
 .background-img {
   width: 100%;
   position: absolute;
 }
+
 .content-container {
   position: static;
   text-align: center;
@@ -60,17 +68,18 @@ body {
   top: 350px;
   color: white;
 }
-.second-list-element {
+* .second-list-element {
   position: absolute;
   z-index: 100;
   left: 470px;
   top: 420px;
   color: white;
 }
-.content-container img {
-  width: 100%;
-  height: auto;
+
+.second-content-container {
+  position: relative;
   z-index: -1;
+  margin-top: 50%;
 }
 
 .content-container .btn {
@@ -87,9 +96,28 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
+
 .karma-title {
   font-size: 20px;
+  text-align: center;
 }
+.list-flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-menu {
+  list-style-type: none;
+  padding: 17px;
+  margin: 0px;
+  text-align: center;
+  font-size: 16px;
+}
+
 .device {
-  width: 200px;
+  width: 100px;
+}
+.line{
+ width:50%;
 }
