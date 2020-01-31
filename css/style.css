@@ -6,6 +6,87 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+/* nav bar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    position: fixed;
+    max-height: 70px;
+    background-color: white;
+    width: 100%;
+    padding: 5px 20px 5px 30px;
+
+}
+
+nav li {
+   display: inline-block;
+   padding: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(87, 85, 85);
+}
+
+/* first item from list */
+
+.meet-karma {
+    font-weight: bold;
+    color: black;
+}
+
+/* logo */
+
+.karma-logo {
+    max-width: 30px;
+    height: 30px;
+}
+
+/* first section */
+
+.first-section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.first-article {
+ position: absolute;
+ color: white;
+ align-content: center;
+ padding-top: 200px;
+}
+
+.more-button {
+    background-color: rgb(211, 6, 6);
+    border: none;
+    border-radius: 10px;
+    margin-left: 70px;
+    padding: 20px;
+}
+
+/* second section */
+
+.second-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title {
+    text-align: center;
+    padding: 100px;
+}
+
+footer {
+    display: flex;
+}
 /**
  * Add your custom styles below
  * 
