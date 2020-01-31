@@ -79,7 +79,7 @@ body {
 .second-content-container {
   position: relative;
   z-index: -1;
-  margin-top: 50%;
+  margin-top: 60%;
 }
 
 .content-container .btn {
@@ -118,6 +118,25 @@ body {
 .device {
   width: 100px;
 }
-.line{
- width:50%;
+.line {
+  width: 50%;
+}
+.footer-social-media {
+  text-align: center;
+}
+.footer-flex-box {
+  list-style-type: none;
+  justify-content:center ;
+  align-items: center;
+  display: flex;
+   padding: 17px;
+  margin: 0px;
+  text-align: center;
+  font-size: 16px;
+}
+.footer-list {
+  width: 20px;
+}
+.twitter-list {
+  width: 23px;
 }
