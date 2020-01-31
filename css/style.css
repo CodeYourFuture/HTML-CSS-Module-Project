@@ -32,7 +32,7 @@ a:hover{
     opacity:1;
     
 }
-header nav ul li{
+header  li{
     display:inline;
     margin: 0 15px;
 }
@@ -105,6 +105,7 @@ header{
  hr{
      margin:100px 250px 0px 250px;
      color:gray;
+     opacity:0.50;
  }
  footer ul li{
      list-style:none;
@@ -117,18 +118,24 @@ header{
      margin: 0 20px;
  }
  
-.social-area .twitter{
+.twitter, .facebook, .instragram{
+    
+    font-size:15px;
+    border:1px solid grey;
+    padding:15px;
+    border-radius:60px;
+}
+.light-blue{
     color:lightblue;
-    font-size:20px;
 }
-.social-area .facebook{
+.blue{
     color:blue;
-    font-size:20px;
 }
-.social-area .instragram{
+.red{
     color:red;
-    font-size:20px;
 }
+
+
 footer h5,p{
     text-align:center;
     font-size:20px;
