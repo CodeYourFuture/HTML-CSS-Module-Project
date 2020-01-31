@@ -2,28 +2,49 @@
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: lightblue;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/* header - navbar section - logo + list of links*/
-nav {
-
-}
-
-logo {
-
-}
-
-ul  {
-
-}
-
 li {
-
+    list-style: none;
 }
 
+a {
+    color:grey;
+    text-decoration: none;
 
+}
+/* header - navbar section - logo + list of links*/
+
+.header {
+    position: fixed;
+    margin-top: 0px;
+    height: 30px;
+    width: 100%;
+    padding: 20px;
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.logo {
+    width: 27px;
+}
+
+.bold-link {
+    font-weight: bold;
+}
+
+.links  {
+    display: flex;
+}
 
 /* intro section */
 

@@ -13,24 +13,27 @@
 </head>
 
 <body>
+    <main>
     <!-- header section / navbar + logo + unordered list of links that do not open-->        
-<header>
-    <navbar>
-        <ul> 
+<header class="header">
+    <div class="logo">
         <!-- logo--> 
-            <img src="favicon.ico" alt="logo">
-            <!-- 6 list of links, using # instead of actual urls -->
-            <a href="#">Meet Karma</a>
-            <a href="#"> It Works</a>
-            <a href="#">Store</a>
-            <a href="#">Blog</a>
-            <a href="#">Help</a>
-            <a href="#">Login</a>
-        </ul>
-    </navbar>
+    <img class="navbar-logo" src="img/karma-logo.svg" alt="navbar logo"> 
+            <!-- 6 list of links, using # instead of actual urls -->    
+        </div>
+
+    <nav>
+        <ul class="links">
+            <li class="bold-link"><a href="#">Meet Karma</a></li>
+            <li><a href="#">It Works</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>        
+    </nav>
 </header>
     <!-- Section 1 - intro section + button-->
-
 <section>
     <div>
         <img src="img/first-background.jpg" alt="background image">
@@ -46,15 +49,15 @@
     <h1>Everyone needs a little Karma.</h1>
         <ul>
         <li>
-            <img src="img/icon-devices.svg" alt="devices icon">            
+            <img src="img/icon-devices.svg" alt="devices icon" height="127"   width="127">            
             <h3>Internet for all devices</h3>
         </li>
         <li>
-            <img src="img/icon-coffee.svg" alt="coffee icon">
+            <img src="img/icon-coffee.svg" alt="coffee icon" height="127" width="127">
             <h3>Boost your productivity</h3>
         </li>
         <li>
-            <img src="img/icon-refill.svg" alt="pay as you go refill icon">
+            <img src="img/icon-refill.svg" alt="pay as you go refill icon" height="127" width="127">
             <h3>Pay as You Go</h3>
         </li>
     </ul>
@@ -68,10 +71,11 @@
     <i class="fa fa-twitter"></i>
     <i class="fa fa-facebook"></i>
     <i class="fa fa-instagram"></i>
-    <h4>@ Karma Mobility, Inc</h4>
+    <h4> Karma Mobility, Inc</h4>
 </footer>
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+    </main>
 </body>
 </html>
 
