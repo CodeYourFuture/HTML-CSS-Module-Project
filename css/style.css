@@ -42,13 +42,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   z-index: 1;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #eaebec;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 ul li {
@@ -61,11 +61,11 @@ ul li {
 
 .nav-bar ul li a {
   text-decoration: none;
-  color: black;
+  color: #000;
   opacity: 0.5;
 }
 
-ul li a:hover {
+.nav-bar ul li a:hover {
   opacity: 1;
 }
 
@@ -74,7 +74,7 @@ ul li a:hover {
   background-size: auto;
   background-position: center;
   height: 114vh;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,8 +95,8 @@ ul li a:hover {
 
 button {
   padding: 0.75rem 2rem;
-  background: orangered;
-  border: 1px solid orangered;
+  background: #ff4500;
+  border: 1px solid #ff4500;
   border-radius: 5px;
   margin-top: 1.625rem;
 }
@@ -104,7 +104,7 @@ button {
 button a {
   font-size: 1.125rem;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 button:hover {
@@ -112,15 +112,19 @@ button:hover {
 }
 
 #benefits {
-  display: flex;
-  flex-direction: column;
-  padding: 6.25rem 18.75rem;
+  padding: 6.25rem 0;
+}
+
+#benefits h2 {
+  font-size: 2.75rem;
+  font-weight: lighter;
 }
 
 .icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .icons figure figcaption {
@@ -129,19 +133,16 @@ button:hover {
 }
 
 .icon {
-  min-width: 8.125rem;
+  max-width: 8.125rem;
+  padding: 1rem;
 }
 
 .footer-line {
   border: 0;
   border-top: 1px solid #eaebec;
-  margin: 1.313rem 0;
+  margin: 1rem 10rem;
   display: block;
 }
-  hr {
-    
-}
-
 
 .social-media {
   display: flex;
