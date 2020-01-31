@@ -39,13 +39,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     border: 0;
     width: 26;
 }
-/*.content {
-    padding: 0 1;
-    margin: 1120;
-    color: lightslategrey);
-    display: flex;
-    flex-direction: row;   
-}*/
 
 li{
     list-style-type: none;
@@ -117,7 +110,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 0 300px 200px 300px;
 }
 
@@ -134,8 +126,27 @@ h3 {
     font-size: 170;
 }
 
-h5 {
-    font-size: 16px;
+footer {
     display: block;
+    flex-direction: column;
+    margin: 30px 0 500px 0;
+    text-align: center;
+}
 
+.social {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fa {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin: 15px 25px 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: center;
 }
