@@ -28,6 +28,7 @@ header {
 
 .first-banner {
     max-width: 100%;
+    padding-bottom: 15px;
 }
 
 .banner {
@@ -51,7 +52,7 @@ header {
     font-weight: 100;
 }
 
-button {
+.learn {
     background-color: rgb(211, 90, 9);
     border: none;
     padding: 10px 10px;
@@ -61,9 +62,54 @@ button {
     font-size: 20px;
 }
 
-button:hover {
+.learn:hover {
     background-color: orangered;
 }
+
+.information {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.details {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    justify-content: stretch;
+}
+
+.fuel {
+    width: 150px;
+    height: 150px;
+}
+
+.karma {
+    text-align: center;
+    font-size: 48px;
+}
+
+.join {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    color: slategrey;
+}
+
+.media {
+    text-align: center;
+}
+
+.social {
+    background-color:white ;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 /**
  * Add your custom styles below
  * 
