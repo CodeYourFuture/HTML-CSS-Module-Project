@@ -5,33 +5,133 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-
-}
-
-nav ul>li {
-    list-style-type: none;
-}
-
-ul>li {
-    display: inline-block;
-    padding: 10px;
+a {
     color: #838994;
 }
 
-.nav-bold {
-    font-weight: 00;
-    color: #37393d;
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
-/* section hero-picture */
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.header ul a {
+    display: block;
+    /* outline: 1px solid red; */
+    padding: 20px;
+    /* border-right: 1px solid orange; */
+    text-decoration: none;
+}
+
+.header ul a:hover {
+    background-color: #E0E0E0;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding: 10px 20px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    border: 1px solid #838994;
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background-color: #838994;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: #838994;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #838994;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background-color: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width:48em) {
+
+    .header li {
+        float: left;
+
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
 
 .hero-picture {
     background-image: url("../img/first-background.jpg");
