@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 //navbar is a list of links, but i do not plan to make them working
-ul{ text-align: center; }
+ul{ text-align:right; }
 li { 
     padding:10px;
     display: inline-block; 
@@ -20,11 +20,12 @@ li {
     }
 navbar{
     display:flex;
-    flex-basis:50vw;
+    flex-basis:250vw;
 }
 .container{
     display:flex;
-    justify-content:space-between;
+    flex-direction: row;
+    justify-content:space-around;
     width:80%;
 }
 
@@ -49,6 +50,21 @@ navbar{
     padding: 1rem 1.5rem;
     color: white;
     font-size: 1.125rem;
+}
+h2{ text-align:center;
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.icontainer{
+    display:flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.iContainerCaptions{
+    display:flex;
+    align-content: center;
+    justify-content: space-evenly;
 }
 /**
  * Add your custom styles below
