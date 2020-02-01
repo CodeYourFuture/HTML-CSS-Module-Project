@@ -15,7 +15,6 @@ body {
     align-items: flex-start;
     justify-content: space-around;
     background-color: rgb(241, 241, 241);
-    color: rgb(231, 231, 231);
     position: fixed;
     width: 100%;
 }
@@ -44,10 +43,10 @@ li {
     margin-right: 50px;
 }
 
-a {
+.navbar a {
     text-decoration: none;
     font-size: 1.5em;
-    color: #333;
+    color: rgb(160, 160, 160);
 }
 
 
@@ -109,14 +108,41 @@ a {
 width: 70%;
 }
 
-.nuzzle {
-
-}
-
 
 .segments h5 {
     font-size: 2em;
     font-weight: 50;
+}
+
+.seg {
+    border-bottom: 1px rgb(201, 201, 201) solid;
+}
+
+/* FOOTER */
+
+#footer h6 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 50;
+    margin-bottom: 1vh;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+
+.twitter {
+    width: 12%;
+}
+
+.face {
+    width: 60%;
+    /* margin: 0px 20px; */
+}
+
+.insta {
+    width: 12%;
 }
 /**
  * Add your custom styles below
