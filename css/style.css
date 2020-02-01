@@ -7,8 +7,10 @@ body {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    float: left;
+    padding-left: 130px;
 }
 
 ul {
@@ -18,12 +20,16 @@ ul {
 
 li {
     display: inline-block;
-    padding: 10px; 
-    margin: 10px;
+    padding: 10px;
+    margin-left: 25px;
 }
 
 header {
-    align-content: space-between;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 16px;
+    color: darkslategray;
+
 }
 
 .first-banner {
@@ -77,7 +83,7 @@ header {
     padding: 10px;
     margin: auto;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     justify-content: stretch;
 }
 
@@ -95,10 +101,6 @@ header {
     text-align: center;
 }
 
-.copyright {
-    text-align: center;
-    color: slategrey;
-}
 
 .media {
     text-align: center;
@@ -108,6 +110,12 @@ header {
     background-color:white ;
     border-radius: 50%;
     padding: 5px;
+    margin: 5px;
+}
+
+.copyright {
+    text-align: center;
+    color: slategrey;
 }
 
 /**
