@@ -12,10 +12,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-main {
-    position: relative;
-}
-
 header{
     position: fixed;
     z-index: 10px;
@@ -23,8 +19,7 @@ header{
     padding: 20px;
     height: 70px;
     width: 100%;
-    display: flex; 
-    flex-wrap: nowrap;       
+    display: flex;       
     align-items: center;
     justify-content: space-around;
     background-color: white;
@@ -35,6 +30,17 @@ header nav ul li {
     display: inline;
     margin: 0px 20px;
 }
+
+ul {    
+    font-weight: 400px;
+    margin-top: 10px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    }
 
 li {
     list-style: none;
@@ -56,27 +62,44 @@ hr {
     opacity: 0.30;
 }
 
+
 /* lighter makes the letters thinner */
-footer h5 p {
+footer h5 p{
     text-align: center;
     font-size: 15px;
     font-weight: lighter;
-    
 }
 
 p {
     color: rgb(189, 183, 183);
 }
 
-/*global classes styling*/
+/* css styling of html class elements*/
 
-.container {
-    max-width: auto;
-    width: 100%;
-    margin: auto;
+/* hero-header section - image and bold text / intro https://designmodo.com/hero-headers/ */
+
+.hero-header {
+    margin: 0px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn {
+/* background-image from the image folder */
+.hero-header {
+    margin: 0px;
+    background-image: url(/img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: auto;
+    position: relative;
+    height: 650px;
+}
+
+.hero-btn {
     border: 3px black solid;
     color: white;    
     padding: 0 20px;
@@ -89,30 +112,19 @@ p {
     cursor: pointer;
 }
 
-.btn:hover  {
+.hero-btn:hover  {
     background-color: rgb(182, 65, 11);
     color: white;
     opacity: 1;
 }
 
-.grid {
+/* .grid {
     display: flex;
-}
+    justify-content: center;
+} */
 
 /* top - header - navbar section - logo + list of links*/
 
-header{
-    position: fixed;
-    margin: 0px;
-    padding: 20px;
-    height: 30px;
-    width: 100%;
-    display: flex; 
-    flex-wrap: nowrap;       
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-}
 /*logo position in the nav-bar*/
 .header-logo {
     width: 100%;
@@ -120,17 +132,6 @@ header{
 }
 
 /*nav-bar links*/
-ul {    
-    font-weight: 400px;
-    margin-top: 10px;
-    padding: 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    text-align: center;
-    }
-
 .nav-bold {
     font-weight: bold;
 }
