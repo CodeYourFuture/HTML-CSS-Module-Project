@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 59vw;
     margin: 0 auto;
 }
 
@@ -24,10 +24,13 @@ h1, h2, h3, h4, h5 {
     height: 100vh;
     background: url("../img/first-background.jpg") center no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro__title {
-    padding-top: 17.5rem ;
     font-size: 3.125rem;
     color: white;
     text-align: center;
@@ -43,7 +46,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .intro__button {
-    width: 9.688rem;
+    min-width: 9.688rem;
     background-color: #f15a29;
     border-color: #f15a29;
     text-shadow: none;
@@ -108,7 +111,7 @@ h1, h2, h3, h4, h5 {
 
 .main{
     width: 100%;
-    height: 429px;
+    height: 100vh;
     background-color: #fff;
     
 }
@@ -155,7 +158,8 @@ h1, h2, h3, h4, h5 {
 
 .footer{
     width: 60vw;
-    margin: 0 auto;
+    margin: 15vh auto 0 auto;
+
     height: 255px;
     background-color: #fff;
     border-top: 1px solid #DDD;
