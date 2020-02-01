@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  line-height: 1;
 }
 
 /**
@@ -14,12 +15,116 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ol,
+ul {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+.nav-links li.active {
+  color: #ff00ea;
+  font-weight: 500;
+}
 
 .intro-sec {
+  display: flex;
+  overflow: auto;
   background-image: url("../img/two-ice-cream-cups-1362534.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
-  overflow: auto;
+  height: 700px;
+  text-align: center;
+}
+.intro-sec h1,
+h2 {
+  color: #ffcf98;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.intro-sec h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.cborder {
+  border: #ffe0fc 0.5rem solid;
+  margin-top: 16rem;
+  background-color: rgba(102, 52, 16, 0.5);
+  border-color: #cc8350;
+  padding: 20px;
+}
+
+.top-nav {
+  display: block;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  z-index: 99;
+}
+
+.content {
+  padding: 0;
+  margin: 0 auto;
+}
+:focus {
+  outline: none;
+}
+.nav-links {
+  float: right;
+  color: #838994;
+  font-size: 1.04rem;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.logo {
+  height: 80px;
+  padding: 10px;
+}
+
+.cases {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+button {
+  width: 9rem;
+  background-color: #cc8350;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: #ffcf98;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+button:hover {
+  background-color: #ff73f3;
+  cursor: pointer;
+}
+
+/* --- Responsive design css code --- */
+
+@media (min-width: 48 rem) {
+  .content {
+    width: 46rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .content {
+    width: 60rem;
+  }
+}
+@media (min-width: 75rem) {
+  .content {
+    width: 60%;
+  }
 }
