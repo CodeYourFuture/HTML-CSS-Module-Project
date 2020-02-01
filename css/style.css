@@ -4,7 +4,6 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
 .nav {
   background-color: #fff;
   position: fixed;
@@ -25,12 +24,50 @@ body {
 .nav .e-logo {
   height: 4.375rem;
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+
+.section-one {
+  background-image: url("https://www.ukyouth.org/wp-content/uploads/2020/01/finalhomepage-scaled.gif");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 24.2rem;
+  overflow: auto;
+}
+
+.section-two .sec2 {
+  margin-top: 7.875rem;
+  padding: none;
+  color: #1d1e21;
+  text-align: center;
+}
+.section-two .buttons {
+  text-align: center;
+  margin-top: 1.563rem;
+}
+.lowe {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
+}
+.lowe hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+}
+.lowe .soci-icons > li {
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+  text-align: center;
+}
+
+.lowe .copy {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
+}
