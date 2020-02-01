@@ -10,15 +10,27 @@ body {
 /* navigation bar */
 
 .navbar {
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-  
+    background-color: rgb(241, 241, 241);
+    color: rgb(231, 231, 231);
+    position: fixed;
+    width: 100%;
+}
+
+header a:hover {
+    color: black;
+}
+
+
+.dark {
+    color: black;
 }
 
 .logo {
-   width: 30px;
+   width: 4vh;
 }
 
 .links {
@@ -38,6 +50,26 @@ a {
     color: #333;
 }
 
+
+/* SHOWCASE */
+
+.showcase{
+    background: url(../img/first-background.jpg) no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase h2{
+    color: white;
+}
+
+.showcase h4 {
+    color: white;
+}
 /**
  * Add your custom styles below
  * 
