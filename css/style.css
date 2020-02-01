@@ -76,6 +76,32 @@ p {
 
 /* css styling of html class elements*/
 
+/* top - header - navbar section - logo + list of links*/
+/*nav-bar link meet karma = bold*/
+.nav-bold {
+    font-weight: bold;
+}
+
+/*logo position in the nav-bar*/
+.header-logo {
+    width: 100%;
+    width: 25px;
+}
+
+
+/* intro section */
+
+.section-intro {
+    width: 100%;
+    display: flex; 
+}
+
+/* information section - with 3 icons in the middle */
+
+.info {
+    width:  127px;
+}
+
 /* hero-header section - image and bold text / intro https://designmodo.com/hero-headers/ */
 
 .hero-header {
@@ -86,16 +112,21 @@ p {
     justify-content: center;
 }
 
+.hero-desc {
+    color: white;
+    text-align: center;
+    test
+} 
+
+
 /* background-image from the image folder */
 .hero-header {
-    margin: 0px;
     background-image: url(/img/first-background.jpg);
+    margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    position: relative;
+    background-position: center bottom;
     overflow: auto;
-    position: relative;
     height: 650px;
 }
 
@@ -118,36 +149,6 @@ p {
     opacity: 1;
 }
 
-/* .grid {
-    display: flex;
-    justify-content: center;
-} */
-
-/* top - header - navbar section - logo + list of links*/
-
-/*logo position in the nav-bar*/
-.header-logo {
-    width: 100%;
-    width: 25px;
-}
-
-/*nav-bar links*/
-.nav-bold {
-    font-weight: bold;
-}
-
-/* intro section */
-
-.section-intro {
-    width: 100%;
-    display: flex; 
-}
-
-/* information section - with 3 icons in the middle */
-
-.info {
-    width:  127px;
-}
 /* footer section - social media logo */
 
 /*
@@ -157,7 +158,13 @@ Remember:
  - Be organised, use comments and separate your styles into meaningful chunks
 for example: General styles, Navigation styles, Hero styles, Footer etc.
 When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+
 http://thinkful-ed.github.io/karma-clone/
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://codepen.io/freeCodeCamp/full/RKRbwL
+
 */
 
 
