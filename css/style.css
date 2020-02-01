@@ -65,10 +65,51 @@ a {
 
 .showcase h2{
     color: white;
+    font-size: 4em;
+    font-weight: 100;
+    margin: 0em;
 }
 
 .showcase h4 {
     color: white;
+    font-size: 2em;
+    font-weight: 50;
+    margin: 10px 0px;
+}
+
+.button {
+    margin-top: 3vh;
+    height: 50px;
+    background-color: rgb(255, 74, 42);
+    color: white;
+    border: 0vh;
+    padding: 0px 40px;
+}
+
+/* SEGMENTS */
+.seg h2 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 4em;
+    font-weight: 100;
+}
+
+.segments{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.segments h5 {
+    font-size: 2em;
+    font-weight: 50;
 }
 /**
  * Add your custom styles below
