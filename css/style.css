@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
 }
 
 /**
@@ -16,4 +17,85 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*HEADER*/
 
+
+
+ #logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+#logo p {
+    margin-left: 30px;
+    font-size: 1em;
+    color: orangered;
+    font-style: bold;
+}
+#logo-img {
+    width: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: orangered; 
+    justify-content: right;
+    margin: 10px;
+    margin-right: 60px;
+    
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 10px;
+}
+
+/*MAIN*/
+
+
+
+#bg {
+    margin: 0 auto;
+    height: 100vh;
+    
+    /* background-image: url(img/first-background.jpg); */
+}
+
+h1 {
+    margin-left: 70px;
+    color: white;
+}
+
+form {
+    color: white;
+    
+}
+input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    color: orangered;
+    margin-left: 100px;
+ 
+}
+#btn-ins {
+    color: white;
+    background-color: orangered;
+    margin: 5px;
+    
+    margin-left: 110px;
+}
+#btn-ins:hover {
+    background-color: white;
+    color: orangered;
+}
