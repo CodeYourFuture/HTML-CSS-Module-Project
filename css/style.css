@@ -6,9 +6,38 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.logo {
-    width: 40px;
+
+/* navigation bar */
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  
 }
+
+.logo {
+   width: 30px;
+}
+
+.links {
+    list-style-type: none;
+    display: inline-flex;
+    flex: 3;
+    justify-content: flex-end;
+}
+
+li {
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #333;
+}
+
 /**
  * Add your custom styles below
  * 
