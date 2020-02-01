@@ -7,7 +7,18 @@ body {
 }
 
 
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
 /* nav bar */
+
 
 nav {
     display: flex;
@@ -19,6 +30,7 @@ nav {
     background-color: white;
     width: 100%;
     padding: 5px 20px 5px 30px;
+    border-bottom: 5px, solid, lightslategrey;
 
 }
 
@@ -51,7 +63,6 @@ a {
 
 .first-section {
     display: flex;
-    position: relative;
     justify-content: center;
     padding-top: 100px;
     width: 100%;
@@ -77,24 +88,36 @@ a {
 .second-section {
     display: flex;
     justify-content: space-evenly;
+    align-content: center;
 }
+
 
 .title {
     text-align: center;
     padding: 100px;
 }
 
-footer {
-    display: flex;
+.footer-content {
+    padding-top: 50px;
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+
+.footer-content h5 {
+    size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+ p {
+    color: lightslategray;
+    padding-top: 60px;
+    text-align: center;
+}
+
+
 
 
