@@ -46,11 +46,13 @@ ul, li{
     
 }
 .introduction{
-    
     background-image: url('../img/first-background.jpg');
     background-size: cover;
     height: 730px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
 }
 
 .intro-text h2,
