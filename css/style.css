@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
     width: 100%;
 }
 
@@ -46,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #000000;
+    color: #4885b2;
 }
 
 header {
@@ -54,24 +55,33 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: white;
     padding: 10px;
 }
 
 /*MAIN*/
-
-
-
-#bg {
-    margin: 0 auto;
-    height: 100vh;
-    
-    /* background-image: url(img/first-background.jpg); */
+img {
+    display: block;
 }
 
-h1 {
-    margin-left: 70px;
+#back {
+    background-image: url('/img/first-background.jpg');
+    height: 100vh;  
+}
+
+#title {
+    padding: 100px 0;
+    margin: auto;
     color: white;
+    text-align: center;
+    
+}
+
+#fbtn {
+    background-color: orangered;
+    border: none;
+    padding: 10px;
+    
 }
 
 form {
