@@ -14,7 +14,21 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+header {
+  background: white;
+  display: flex;
+  display: inline;
+  position: fixed;
+  top: 0;
+  left: 30;
+  width: 100%;
+  justify-content: space-evenly;
+  z-index: 100;
+}
 .logo-icon {
   width: 30px;
 }
@@ -38,6 +52,8 @@ body {
   padding-left: 10px;
   padding-right: 1px;
   width: 7%;
+  z-index: 100;
+  position: relative;
 }
 
 .logo-icon {
@@ -126,10 +142,10 @@ body {
 }
 .footer-flex-box {
   list-style-type: none;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   display: flex;
-   padding: 17px;
+  padding: 17px;
   margin: 0px;
   text-align: center;
   font-size: 16px;
