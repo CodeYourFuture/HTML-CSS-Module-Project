@@ -6,60 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-
-}
-.header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;   
-    z-index: 1000;
-    background-color: white;
-    border-bottom: 1px solid #DDD;  
-}
-/* logo */
-.svg {
-    width: 25px;
-}
-/* nav */
-.nav {
-    font-size: 16px;
-}
-
-.nav__link {
-    color: #e66920;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 10px;
-
-}
-
-.nav__link:hover {
-    color: #1d1e21;
-    transition: color .2s linear;
-}
-
-
-
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-}
-.intro {
-    width: 100%;
-    height: 100vh;
-    background: url("../img/first-background.jpg") center no-repeat;
-    background-size: cover;
-}
-
-.intro__title {
+h1 {
     padding-top: 17.5rem ;
     font-size: 3.125rem;
     color: white;
@@ -67,7 +14,7 @@ body {
     font-weight: 300;
 }
 
-.intro__text {
+h2 {
     padding-top: 1.25rem;
     font-size: 1.563rem;
     color: white;
@@ -75,7 +22,63 @@ body {
     font-weight: 300;
 }
 
-.intro__button {
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+/* The header section */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #DDD;  
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+
+
+/* nav */
+.nav {
+    font-size: 16px;
+
+}
+
+.nav a {
+    color: #5e5c5c;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.nav a:hover {
+    color: #111111;
+
+}
+
+
+/* The hero section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    /* The hero image */
+    background: url("../img/first-background.jpg") center no-repeat;
+    background-size: cover;
+
+}
+
+
+.hero__button {
     width: 9.688rem;
     background-color: #f15a29;
     border-color: #f15a29;
@@ -89,7 +92,7 @@ body {
     display: block;
 }
 
-.intro__button:hover{
+.hero__button:hover{
     background-color: #D9400E;
 }
 
@@ -112,9 +115,6 @@ body {
     margin-top: 120px;
 }
 
-.main__svg{
-    height: 127px;
-}
 
 .main__inner{
     width: 900px;
@@ -141,12 +141,14 @@ body {
     text-align: center;
     margin-top: 10px;
 }
+
+
 /* footer section */
 .footer{
     width: 100vw;
     margin: 0 auto;
     height: 150px;
-    background-color: rgb(187, 187, 187);
+    background-color: #fff;
 
 }
 
