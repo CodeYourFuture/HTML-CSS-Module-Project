@@ -129,20 +129,29 @@ width: 70%;
 
 .social {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .twitter {
-    width: 12%;
+    height: 50px;
 }
 
 .face {
-    width: 60%;
-    /* margin: 0px 20px; */
+height: 55px;
+margin: 0px 20px;
 }
 
 .insta {
-    width: 12%;
+    height: 55px;
+}
+
+.copy {
+    text-align: center;
+    color: rgb(172, 172, 172);
+}
+
+.end {
+    margin-top: 200px;
 }
 /**
  * Add your custom styles below
