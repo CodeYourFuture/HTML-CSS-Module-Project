@@ -32,7 +32,7 @@ header a:hover {
    width: 4vh;
 }
 
-.links {
+.nav-links {
     list-style-type: none;
     display: inline-flex;
     flex: 3;
@@ -152,6 +152,79 @@ margin: 0px 20px;
 
 .end {
     margin-top: 200px;
+}
+
+/* Tablet */
+@media (max-width: 1024px){
+
+body {
+    background-color: teal;
+}
+
+}
+
+/* MObile */
+
+@media (max-width: 480px){
+
+body {
+    background-color:#a0c5ab;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.navbar a {
+    font-size: 0.75em;
+}
+
+.showcase {
+    background-position: -600px 20px;
+}
+
+.showcase h2 {
+    font-size: 2em;
+    font-weight: 50;
+}
+
+.showcase h4 {
+    font-size: 1em;
+    font-weight: 40;
+}
+
+.seg {
+    font-size: 0.5em;
+    font-weight: 50;
+}
+
+.segments {
+    flex-direction: column;
+    align-items: center;
+}
+
+.seg h2 {
+    margin-top: 5vh;
+}
+
+.twitter {
+    height: 20px;
+}
+
+.face {
+height: 25px;
+margin: 0px 20px;
+}
+
+.insta {
+    height: 25px;
+}
+
+.copy {
+
+    color: black;
+} 
+
 }
 /**
  * Add your custom styles below
