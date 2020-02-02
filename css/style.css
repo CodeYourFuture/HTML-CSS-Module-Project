@@ -1,19 +1,194 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+	font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+#page-wrapper {
+	position: relative;
+}
+li {
+	list-style: none;
+}
+a {
+	color: Black;
+	text-decoration: none;
+}
+.container {
+	max-width: 59vw;
+	width: 100%;
+	margin: 0 auto;
+}
+.btn {
+	padding: 0 10px;
+	height: 32px;
+	font-size: Arial;
+	font-weight: 800;
+	text-transform: uppercase;
+	border: 2px black solid;
+	border-radius: 3px;
+	background: transparent;
+	cursor: pointer;
+	background-color: #d6dbdf;
+}
+.grid {
+  display: flex;
+}
+header {
+	padding: 10px 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	min-height: -100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #d6dbdf;
+	border-bottom: 1px solid #ddd;
+}
+
+.logo {
+	width: 60vw;
+}
+
+.logo>img {
+	float: left;
+	width: 10px;
+	height: 10px;
+	max-width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 0px;
+}
+
+nav {
+  font-weight: 400;
+}
+
+nav>ul {
+	width: 35vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
 
+/* SHOWCASE */
+
+.showcase{
+    background: url(../img/first-background.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase h2{
+    color: white;
+    font-size: 4em;
+    font-weight: 100;
+    margin: 0em;
+}
+
+.showcase h4 {
+    color: white;
+    font-size: 2em;
+    font-weight: 50;
+    margin: 10px 0px;
+}
+
+.button {
+    margin-top: 3vh;
+    height: 50px;
+    background-color: rgb(255, 74, 42);
+    color: white;
+    border: 0vh;
+    padding: 0px 40px;
+}
+
+/* SEGMENTS */
+.seg h2 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 2sem;
+    font-weight: 100;
+}
+
+.segments{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
+}
+
+.nuzzle{
+	width: 40%;
+}
+.coffee{
+	width: 30%;
+}
+.dev{
+	width: 30%;
+}
+
+.segments h5 {
+    font-size: 1em;
+    font-weight: 30;
+}
+
+.seg {
+    border-bottom: 1px rgb(201, 201, 201) solid;
+}
+
+/* FOOTER */
+
+#footer h6 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 50;
+    margin-top: 20vh;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.twitter {
+    height: 50px;
+}
+
+.face {
+height: 55px;
+margin: 0px 20px;
+}
+
+.insta {
+    height: 55px;
+}
+
+.copy {
+    text-align: center;
+    color: rgb(172, 172, 172);
+}
+
+.end {
+    margin-top: 200px;
+}
+
+
+@media screen and (max-with : 600px)
+body{
+
+
+}
