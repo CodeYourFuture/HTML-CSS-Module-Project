@@ -11,7 +11,6 @@
  */
 
 /* General formating */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -74,7 +73,7 @@ ul li {
 }
 
 /* First section */
-#hero {
+.first-section {
   background-image: url("../img/first-background.jpg");
   background-size: auto;
   background-position: center;
@@ -87,14 +86,14 @@ ul li {
   padding: 0 20px;
 }
 
-#hero h1 {
+.first-section h1 {
   font-size: 3.125rem;
   font-weight: lighter;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-#hero h3 {
+.first-section h3 {
   font-size: 1.625rem;
   font-weight: lighter;
   padding: 0 20px;
@@ -106,12 +105,7 @@ button {
   border: 1px solid #ff4500;
   border-radius: 5px;
   margin-top: 1.625rem;
-}
-
-button a {
   font-size: 1.125rem;
-  text-decoration: none;
-  color: #fff;
 }
 
 button:hover {
@@ -119,11 +113,11 @@ button:hover {
 }
 
 /* Second section */
-#benefits {
+.second-section {
   padding: 6.25rem 0;
 }
 
-#benefits h2 {
+.second-section h2 {
   font-size: 2.75rem;
   font-weight: lighter;
   padding: 0 1rem;
@@ -137,16 +131,11 @@ button:hover {
   flex-wrap: wrap;
 }
 
-figure {
-  padding: 0;
-  margin: 0;
-}
-
 .icon {
   max-width: 8.125rem;
 }
 
-.icons figure figcaption {
+.icons h3 {
   font-size: 1.5rem;
   font-weight: 400;
 }
