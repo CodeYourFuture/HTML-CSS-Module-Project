@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
+    
 }
 
 /**
@@ -24,9 +26,7 @@ nav{
 ul {
     list-style: none;
 }
-body{
-    /* display: flex; */
-}
+
 .navbar{
     background-color: white;
     position: fixed;
@@ -36,6 +36,7 @@ body{
     justify-content: space-around;
     /* display: inline-block; */
     /* margin-left: 1.563rem; */
+    /* margin-bottom: -300px; */
 }
 .navigates{
     /* float: right; */
@@ -56,11 +57,13 @@ body{
 }
 .section1{
     background-image: url(https://github.com/CodeYourFuture/karma-clone/blob/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg?raw=true);
-    background-position: center bottom;
+    /* background-position: center; */
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 45.938rem;
+    /* background-size: 100%; */
+    width: 100%;
+    /* height: 45.938rem; */
     overflow: auto;
+    /* margin-top: -10px; */
 }
 .advertise h3{
     color: white;
@@ -75,6 +78,10 @@ body{
     font-weight: 300;
     margin-top: 17.5rem;
     font-size: 3.125rem;
+}
+.advertise{
+    /* padding: 10; */
+    /* margin-top: -800%; */
 }
 .buttons{
     color: white;
@@ -91,7 +98,6 @@ body{
     padding: 1rem 1.5rem;
     color: white;
     font-size: 1.125rem;
-    margin-left: 40rem;
 }
 .services img{
     width: 127px;
@@ -138,3 +144,21 @@ h5{
     vertical-align: baseline;
     box-sizing: border-box;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(0, 78, 17);
+      font-size: 12px;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .navbar{
+        background-color: yellowgreen;
+        width: 100%;
+        /* color: black; */
+    }
+    .navigates{
+        color: purple;
+    }
+
+  }
