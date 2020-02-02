@@ -13,11 +13,9 @@ body {
 
 #header {
     background-color: white;
-    border-bottom: 1px solid purple;
+    border-bottom: 1px solid grey;
     top: 0;
-    position: fixed;
     width: 100%;
-    
 }
 
 
@@ -29,8 +27,6 @@ body {
 
 #nav-bar {
     text-align: center;
-   
-    
 }
 
 #nav-bar ul {
@@ -103,34 +99,67 @@ body {
     color: white;
 }
 
-h1 {
+.hero-text h1 {
     font-size: 60px;
     color: white;
     font-weight: lighter;
 }
 
+.intro h1  {
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
 .content {
    justify-content: center;
-   padding: 20px;
 }
 
 .services {
     width: 150px;
     height: 150px;
-    display: inline-flex;
-    text-decoration: none;
-    
-   
-    
+    flex-direction: row;
+    justify-content: center;
 }
 
-h3 {
-font-size: 30px;
-justify-content: flex-end;
-padding: 50px;
-
+.caption {
+    padding: 5px 10px;
+    font-size: 25px;
+    position: relative;
 }
+
 /*Footer*/
+
+.footer {
+height: 100px;
+padding-top: 20px;
+background-color: pink;
+border-top: 1px solid #000000;
+width: 70%;
+text-align: center;
+}
+
+.footer p {
+    color: black;
+    font-size: 20px;
+}
+
+.footer-sm {
+    width: 20px;
+    float: center;
+    display: inline-flex;
+}
+
+.footer-sm img {
+    width: 100%;
+}
+
+.footer-end {
+    color: grey;
+    text-align: center;
+    font-size: 10px;
+}
 
 /**
  * Add your custom styles below
