@@ -28,9 +28,10 @@ nav {
     position: fixed;
     max-height: 70px;
     background-color: white;
+    z-index: 1;
     width: 100%;
     padding: 5px 20px 5px 30px;
-    border-bottom: 5px, solid, lightslategrey;
+    border-bottom: 1px solid lightslategrey;
 
 }
 
@@ -64,7 +65,7 @@ a {
 .first-section {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 70px;
     width: 100%;
 }
 
@@ -87,18 +88,33 @@ a {
 
 .second-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
+    margin-bottom: 100px;
 }
 
 
 .title {
     text-align: center;
     padding: 100px;
+    margin-top: 50px;
+}
+
+.icon {
+    height: 120px;
+    margin: 60px;
+}
+
+
+h4 {
+    text-align: center;
 }
 
 .footer-content {
+    margin: 0 auto;
     padding-top: 50px;
+    border-top: 1px solid lightslategrey;
+    width: 50%;
 }
 
 .footer-content h5 {
@@ -107,7 +123,7 @@ a {
     padding-bottom: 20px;
 }
 
-.icons {
+.media {
     display: flex;
     justify-content: center;
 }
