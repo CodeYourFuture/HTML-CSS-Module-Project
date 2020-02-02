@@ -37,13 +37,19 @@ body {
     width: 2em;
 }
 
-nav a {
-    text-decoration: none;
-    color: orangered; 
-    justify-content: right;
-    margin: 10px;
+nav {
+    
     margin-right: 60px;
     
+}
+li {
+    margin: 10px;
+    display: inline;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: orangered; 
 }
 
 nav a:hover {
@@ -74,38 +80,36 @@ img {
     margin: auto;
     color: white;
     text-align: center;
-    
 }
+
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 25px;
+}
+
 
 #fbtn {
+    color: white;
     background-color: orangered;
-    border: none;
     padding: 10px;
+    border: none;
+}
+#fbtn:hover {
+    background-color: white;
+    color: orangered;
     
 }
 
-form {
-    color: white;
-    
-}
-input {
+#features {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-    width: 300px;
-    color: orangered;
-    margin-left: 100px;
- 
+    justify-content: center;
+  
 }
-#btn-ins {
-    color: white;
-    background-color: orangered;
-    margin: 5px;
-    
-    margin-left: 110px;
-}
-#btn-ins:hover {
-    background-color: white;
-    color: orangered;
+
+#features img {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
 }
