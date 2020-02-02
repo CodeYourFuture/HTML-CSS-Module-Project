@@ -4,16 +4,118 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: white;
+    
+}
+.top-navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    border-bottom: 2px solid #838994;
+    height: 70px;
+    color: #838994;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.top-navbar .logo {
+    flex-direction: row;
+    margin-right:180px; 
+}
 
+.top-navbar .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    list-style-type: none;
+    margin-left: 200px;
+    margin-right: 200px;  
+    font-size: 17px;
+}
 
+.top-navbar .links li {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+.top-navbar .first-link {
+    font-weight: bolder;
+    color: #3d4147
+}
+
+.middle-content {
+    background-image: url('../img/first-background.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    height: 750px;
+    text-align: center;
+    color: white;
+}
+
+.middle-content h1 {
+    margin-top: 280px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.middle-content h3 {
+    margin-top: 20;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+button {
+    background-color: #f15a29;
+    color: white;
+    border-style: none; 
+    border-radius: 4px;
+    padding: 16px 24px;
+    font-size: 18px;
+ }
+
+/* SECTION MIDDLE-PAGE / Icons (Devices, Boost, Refill) */
+
+.middle-page .content {
+    text-align: center;
+    color: rgb(29, 26, 26);
+    margin-top: 100px;
+    padding: none;
+}
+
+.middle-page h2 {
+        font-size: 2.75rem;
+        font-weight: 200;
+}
+
+.middle-page li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+/* BOTTOM SECTION Social (Twitter, Facebook,Instagram) */
+
+.social-links {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.social-links hr {
+    width: 70%
+}
+
+.social-links .social-icons li {
+list-style-type: none;
+display: inline-block;
+border-radius: 50px;
+padding: 0.625rem 0;
+width: 2.1rem;
+border: 1px solid #4e7194;
+text-align: center;
+margin: 1.25rem 5px;
+background: white;
+color: rgb(67, 133, 177);
+}
+
+.social-links h4 {
+font-weight: 100;
+}
