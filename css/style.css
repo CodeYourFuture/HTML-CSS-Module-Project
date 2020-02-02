@@ -17,6 +17,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Navigation bar*/
 nav{
     display: flex;  
     align-items: flex-end;
@@ -26,9 +27,7 @@ nav{
     width: 100%;
 }
 
-a{
-    text-decoration: none;
-}
+
 
 .karmalogo{
    width: 50px;
@@ -36,20 +35,33 @@ a{
    margin-left: -200px;
 }
 
+a{
+    text-decoration: none;
+    color: grey;
+}
 .navbut {
     display: flex;  
     list-style: none;
+    padding: 10px, 10px, 10px, 10px;
      
 }
 
+.navbut li{
+    padding-left: 30px;
+    color: grey;
+}
+
+.navbut #meetk{
+    color: red;
+}
 
 .hero{
 width: 130%;
 }
 
 .summary{
-    margin-top: -500px; 
-    margin-bottom: 400px;
+    margin-top: -50%; 
+    margin-bottom: 40%;
     color: white;
 }
 
