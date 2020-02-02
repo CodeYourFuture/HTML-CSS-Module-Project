@@ -120,8 +120,9 @@ nav>ul {
 .seg h2 {
     text-align: center;
     margin-top: 10vh;
-    font-size: 2sem;
-    font-weight: 100;
+    font-size: 3em;
+	font-weight: 100;
+	margin-bottom: 10vh;
 }
 
 .segments{
@@ -132,18 +133,19 @@ nav>ul {
 }
 
 .nuzzle{
-	width: 40%;
+	width: 100%;
 }
 .coffee{
-	width: 30%;
+	width: 100%;
 }
 .dev{
-	width: 30%;
+	width: 100%;
 }
 
 .segments h5 {
-    font-size: 1em;
-    font-weight: 30;
+    font-size: 2em;
+	font-weight: 30;
+	margin-bottom: 10vh;
 }
 
 .seg {
@@ -185,10 +187,57 @@ margin: 0px 20px;
 .end {
     margin-top: 200px;
 }
+/* For Mobile  */
 
+@media (max-width: 1024px){
+	body {
+		background-color: teal;
+	}
+	}
+	@media (max-width: 480px){
+	body {
+		background-color:#a0c5ab;
+	}
+	.hide-mobile {
+		display: none;
+	}
+	.navbar a {
+		font-size: 0.75em;
+	}
+	.showcase {
+		background-position: -600px 20px;
+	}
+	.showcase h2 {
+		font-size: 2em;
+		font-weight: 50;
+	}
+	.showcase h4 {
+		font-size: 1em;
+		font-weight: 40;
+	}
+	.seg {
+		font-size: 0.5em;
+		font-weight: 50;
+	}
+	.segments {
+		flex-direction: column;
+		align-items: center;
+	}
+	.seg h2 {
+		margin-top: 5vh;
+	}
+	.twitter {
+		height: 20px;
+	}
+	.face {
+	height: 25px;
+	margin: 0px 20px;
+	}
+	.insta {
+		height: 25px;
+	}
+	.copy {
+		color: black;
+	}
+	}
 
-@media screen and (max-with : 600px)
-body{
-
-
-}
