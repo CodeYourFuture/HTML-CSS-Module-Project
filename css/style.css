@@ -1,192 +1,191 @@
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 .navigation {
-    background-color: aliceblue;
-    width: 100%;
-    position: fixed;
-    border-bottom: 1px solid #DDD;
-    z-index: 9999;
+  background-color: aliceblue;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid #ddd;
+  z-index: 9999;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 .navigation .logo {
-    height: 4.37rem;
+  height: 4.37rem;
 }
 .navigation > .content {
-    height: 4.37rem;
+  height: 4.37rem;
 }
 .navigation .links {
-    float: right;
-    font-size: 1.04rem;
-    color: #838994;
-    margin-top: 1.7rem;
+  float: right;
+  font-size: 1.04rem;
+  color: #838994;
+  margin-top: 1.7rem;
 }
-.navigation .links li{
-    display: inline-block;
-    margin-left: 1.563rem;
+.navigation .links li {
+  display: inline-block;
+  margin-left: 1.563rem;
 }
-.navigation .links li:hover{
-    color: #333333;
-    cursor: pointer;
+.navigation .links li:hover {
+  color: #333333;
+  cursor: pointer;
 }
 .navigation .links li.active {
-    font-weight: 500;
-    color: #4c5058;
+  font-weight: 500;
+  color: #4c5058;
 }
 .content {
-    padding: 0 0.938rem;
-    margin: 0 auto;
-    min-width: 37.5rem;
+  padding: 0 0.938rem;
+  margin: 0 auto;
+  min-width: 37.5rem;
 }
 :focus {
-    outline: none;
+  outline: none;
 }
 .introduction {
-    background-position: center bottom;
-    background-image: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45.938rem;
-    overflow: auto;
+  background-position: center bottom;
+  background-image: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
 }
 .introduction h1 {
-    margin-top: 17.5rem;
-    font-size: 3.125rem;
-    color: white;
-    font-weight: 300;
-    text-align: center;
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+  color: white;
+  font-weight: 300;
+  text-align: center;
 }
 .introduction h3 {
-    margin-top: 1.25rem;
-    font-size: 1.563rem;
-    color: white;
-    text-align: center;
-    font-weight: 300;
+  margin-top: 1.25rem;
+  font-size: 1.563rem;
+  color: white;
+  text-align: center;
+  font-weight: 300;
 }
 .introduction .buttons {
-    margin-top: 1.563rem;
-    text-align: center;
-    color:white;
+  margin-top: 1.563rem;
+  text-align: center;
+  color: white;
 }
 .introduction .half {
-    padding: 0 0.938rem;
-    width: 49%;
-    display: inline-block;
-    vertical-align: bottom;
-    line-height: 1.2;
-    font-size: 1.125rem;
+  padding: 0 0.938rem;
+  width: 49%;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1.2;
+  font-size: 1.125rem;
 }
 button {
-    width: 9.688rem;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    color: white;
-    font-size: 1.125rem;
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
 }
 button:hover {
-    background-color: #d9400e;
-    border-color: #cf3d0e;
-    cursor: pointer;
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
 }
 
 .cases {
-    background-color: #fff;
-    overflow: hidden;
-    padding-bottom: 5rem;
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
 }
 .cases .content {
-    margin-top: 7.875rem;
-    padding: none;
-    color: #1d1e21;
-    text-align: center;
+  margin-top: 7.875rem;
+  padding: none;
+  color: #1d1e21;
+  text-align: center;
 }
 .cases h2 {
-    font-size: 2.75rem;
-    margin: 1.625rem 0 3.125rem;
-    font-weight: 300;
-    text-align: center;
+  font-size: 2.75rem;
+  margin: 1.625rem 0 3.125rem;
+  font-weight: 300;
+  text-align: center;
 }
 .cases .devices > li {
-    width: 33.3333333%;
-    float:left;
+  width: 33.3333333%;
+  float: left;
 }
 .cases .devices h3 {
-    font-weight: 400;
-    font-size: 1.563rem;
-    margin: 2.5rem 0px 1.875rem;
+  font-weight: 400;
+  font-size: 1.563rem;
+  margin: 2.5rem 0px 1.875rem;
 }
 .cases .devices p {
-    font-weight: 300;
-    font-size: 1.313rem;
+  font-weight: 300;
+  font-size: 1.313rem;
 }
 
 .social {
-    background-color: #fff;
-    overflow: auto;
-    padding-bottom: 9.375rem;
-    text-align: center;
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9.375rem;
+  text-align: center;
 }
 .social hr {
-    border: 0;
-    border-top: 1px solid #eaebec;
-    margin: 1.313rem 0;
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
 }
 .social .icons > li {
-    border-radius: 2rem;
-    width: 2.5rem;
-    height: 1.25rem;
-    display: inline-block;
-    margin: 1.25rem 5px;
-    border: 1px solid #eaebec;
-    padding: 0.625rem 0;
-    text-align: center;
+  border-radius: 2rem;
+  width: 2.5rem;
+  height: 1.25rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid #eaebec;
+  padding: 0.625rem 0;
+  text-align: center;
 }
 .social .icons > li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .social .twitter {
-    color: #55acee;
+  color: #55acee;
 }
 .social .facebook {
-    color: #4c66a4;
+  color: #4c66a4;
 }
 .social .instagram {
-    color: #3f729b;
+  color: #3f729b;
 }
 .social .copy {
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: #838994;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
 }
 
 @media (min-width: 48rem) {
-    .content {
-        width: 46rem;
-    }
+  .content {
+    width: 46rem;
+  }
 }
 @media (min-width: 62rem) {
-    .content {
-        width: 60rem;
-    }
+  .content {
+    width: 60rem;
+  }
 }
-@media (min-width: 75rem) {
-    .content {
-        width: 60%;
-    }
+@media (max-width: 1200px) {
+  .content {
+    width: 60%;
+  }
 }
-
 
 /**
  * Add your custom styles below
@@ -197,5 +196,3 @@ button:hover {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
