@@ -194,11 +194,14 @@ h2 {
     font-weight: 300;
     color: #838994;
 }
-/**
- * Add your custom styles below
 
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
+@media (max-width: 768px) {
+    .main__inner{
+    display: flex;
+    flex-direction: column;
+        }
+    .footer__instagram {
+        color: #db1a13;
+        }    
+    }
 
