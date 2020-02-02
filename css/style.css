@@ -16,4 +16,115 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+ul {
+    list-style: none;
+}
+body{
+    /* display: flex; */
+}
+.navbar{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 4.375rem;
+    z-index: 10;
+    justify-content: space-around;
+    /* display: inline-block; */
+    /* margin-left: 1.563rem; */
+}
+.navigates{
+    /* float: right; */
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    display: inline-block;
+    margin-left: 1.563rem;
+    font-weight: 500;
+}
+.logo{
+    height: 4.375rem;
+    width: 26px;
+}
+.navigates:hover{
+    cursor: pointer;
+    color: #333333;
+}
+.section1{
+    background-image: url(https://github.com/CodeYourFuture/karma-clone/blob/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg?raw=true);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+.advertise h3{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+.advertise h1{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.buttons{
+    color: white;
+    /* display:flex;
+    text-align: center;
+    justify-content: center; */
+    margin-top: 1.563rem;
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    margin-left: 40rem;
+}
+.services img{
+    width: 127px;
+    height: 127px;
+}
+.services {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.services h3{
+    font-weight: 400;
+    align-self: stretch;
+}
+.pics{
+    display: flex;
+    align-self: column;
+    /* justify-content: space-around; */
+}
+.texts{
+    display: flex;
+    flex-direction: row;
+    /* text-align: justify; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
