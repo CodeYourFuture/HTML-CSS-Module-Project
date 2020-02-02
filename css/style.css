@@ -26,7 +26,7 @@ nav {
     align-items: center;
     justify-content:space-around;
     position: fixed;
-    max-height: 70px;
+    max-height: 60px;
     background-color: white;
     z-index: 1;
     width: 100%;
@@ -110,6 +110,8 @@ h4 {
     text-align: center;
 }
 
+/* footer */
+
 .footer-content {
     margin: 0 auto;
     padding-top: 50px;
@@ -128,7 +130,11 @@ h4 {
     justify-content: center;
 }
 
- p {
+.fa {
+    padding: 20px;
+}
+
+ footer p {
     color: lightslategray;
     padding-top: 60px;
     text-align: center;
