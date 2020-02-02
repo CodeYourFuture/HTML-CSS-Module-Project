@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+   
 }
 
 /**
@@ -20,16 +21,69 @@ nav{
     display: flex;  
     align-items: flex-end;
     justify-content: space-around;
-        
+    position: fixed;    
+    background-color: white;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.karmalogo{
+   width: 50px;
+   padding: auto;
+   margin-left: -200px;
 }
 
 .navbut {
     display: flex;  
     list-style: none;
-  
+     
 }
 
-.imgpic {
+
+.hero{
+width: 130%;
+}
+
+.summary{
+    margin-top: -500px; 
+    margin-bottom: 400px;
+    color: white;
+}
+
+button{
+    background-color: orange;
+    border-radius: 10%;
+    width: 150px;
+    height: 50px;
+}
+
+.imgpic{
     display: flex; 
+    justify-items: center;
     list-style: none;
+   
+    
+}
+
+section{
+    text-align: center;
+    
+}
+
+footer{
+    text-align: center;
+}
+
+.social{
+    display: flex;  
+    flex-direction: row;
+    list-style: none;
+    justify-items: center;
+}
+.comp, .coffee, .fuel{
+    width: 200px;
+    height: 200px;
 }
