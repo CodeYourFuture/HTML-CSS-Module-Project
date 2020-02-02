@@ -61,7 +61,7 @@ width: 130%;
 
 .summary{
     margin-top: -50%; 
-    margin-bottom: 40%;
+    margin-bottom: 50%;
     color: white;
 }
 
@@ -72,13 +72,7 @@ button{
     height: 50px;
 }
 
-.imgpic{
-    display: flex; 
-    justify-items: center;
-    list-style: none;
-   
-    
-}
+
 
 section{
     text-align: center;
@@ -89,11 +83,26 @@ footer{
     text-align: center;
 }
 
+.reasons{
+
+    display: flex; 
+    justify-items: center;
+    padding-left: 20%;
+}
+
+.imgpic li{
+    display: flex; 
+    justify-items: center;
+    list-style: none;
+   
+    
+} 
 .social{
     display: flex;  
     flex-direction: row;
     list-style: none;
     justify-items: center;
+  
 }
 .comp, .coffee, .fuel{
     width: 200px;
