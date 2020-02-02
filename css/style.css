@@ -118,7 +118,7 @@ header{
      margin: 0 20px;
  }
  
-.twitter, .facebook, .instragram{
+.social-media{
     
     font-size:20px;
     border:1px solid grey;
@@ -144,6 +144,20 @@ footer h5,p{
 footer p{
     color:gray;
 }
+
+/** 
+this is for mobile view point 0 to 768px 
+
+*/
+@media(max-width:768px){
+    .content-area{
+        flex-direction: column;
+    }
+    .single-service{
+        margin:20px 0;
+    }
+}
+
 /**
  * Add your custom styles below
  * 
