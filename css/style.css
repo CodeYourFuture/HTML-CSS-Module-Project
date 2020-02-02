@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
+    
 }
 /*General styles*/
 
@@ -13,6 +15,7 @@ body {
     background-color: white;
     border-bottom: 1px solid purple;
     top: 0;
+    position: fixed;
     width: 100%;
     
 }
@@ -26,7 +29,6 @@ body {
 
 #nav-bar {
     text-align: center;
-    background-color: coral;
    
     
 }
@@ -62,21 +64,72 @@ body {
 /*Hero styles*/
 
 .hero-image {
-    background-image: inherit;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 1980px;
+    height: 735px;
+    background-image: url(../img/first-background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
 }
 
+
 .hero-text {
+    color: white;
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 50%
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.hero-text button {
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-size: 20px;
+    
+}
+
+.hero-text button:hover {
+    background-color: red;
     color: white;
 }
 
+h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: lighter;
+}
+
+.content {
+   justify-content: center;
+   padding: 20px;
+}
+
+.services {
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    text-decoration: none;
+    
+   
+    
+}
+
+h3 {
+font-size: 30px;
+justify-content: flex-end;
+padding: 50px;
+
+}
 /*Footer*/
 
 /**
