@@ -68,7 +68,7 @@
      text-align: center;
     }
     .introduction h3{
-        font-weight: 1000px;
+        font-weight: 100;
         letter-spacing: 5px;
         font-family:'Bitter', serif ;
     }
@@ -92,13 +92,49 @@
     }
     .devices{
         list-style-type: none;
-        display:inline-block;
-        text-align: center;
-        justify-content:space-around;
-        margin: 150;
-        width: 50px;
+        display: flex;
+       justify-content: space-around;
+        
+    }
+    .social {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+
+
     }
     .social_media{
         list-style-type: none;
+        display: flex;
+        
+    }
+    .social_media li img {
         width: 50px;
+    }
+
+
+    @media (max-width: 328px){
+        
+    }
+    @media (max-width: 768px){
+        .devices{
+            flex-direction: column;
+
+        }
+
+        .devices li img{
+            width: 100px;
+
+        }
+
+        .devices li h3{
+            font-size: 1em;
+            color: tomato;
+
+        }
+
+    }
+    @media (max-width: 1200px){
+        
     }
