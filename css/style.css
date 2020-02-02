@@ -1,10 +1,6 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
 
 /**
  * Add your custom styles below
@@ -16,4 +12,102 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+/** navigation bar*/
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+}
+.top-navigation > .content {
+    height: 60px;
+}
+.top-navigation .logo {
+    height: 100px;
+}
+.top-navigation .links {
+    float: right;
+    color: grey;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+/*
+Section-1
+**/
+.section-1{
+    background-image:url('../img/first-background.jpg');
+    background-position:center-bottom;
+    background-size:cover;
+    height:600px;
+    overflow: auto;
+}
+.section-1 h1{
+    color:white;
+    text-align:center;
+    font-size: 80px;
+}
+.section-1 h2{
+    color:white;
+    text-align:center;
+    font-size:40px;
+}
+
+
+/**
+the button
+*/
+.buttons{
+    color:white;;
+    text-align:center;
+    margin-top:1.563rem;
+}
+
+/**
+section-2
+*/
+.section-2 {
+    background-color:white;
+    overflow:hidden;
+}
+.section-2 .content{
+    margin-top:100px;
+    color:black;
+    padding:none;
+    text-align:center;
+}
+.section-2 h3{
+    font-size:60px;
+    font-weight:normal;
+
+}
+
+/**
+footer
+*/
+.social-media{
+    background-color:white;
+    overflow:auto;
+    padding-bottom: 300px;
+    text-align:center;
+}
+.social-media hr{
+border:1px;
+border-color: black;
+}
 
