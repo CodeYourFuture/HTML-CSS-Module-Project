@@ -32,7 +32,8 @@ body {
 .header-inner {
     background-color:white;
     height:80px;
-    width: 1000px;
+    /**width: 1000px */
+    width:80%;
     margin:auto;
     display: flex;
     justify-content: space-between;
@@ -73,13 +74,16 @@ body {
 /** Hero styles */
 #hero-container {
     background-image: url("../img/first-background.jpg");
-    margin:auto;
-    padding: 200px;
+    background-position:center-bottom;
+    /**margin:auto;
+    padding: 200px; */
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    overflow: auto;
+    height: 45rem;
 }
 #hero-container h1 {
     font-size:48px;
@@ -121,14 +125,14 @@ body {
 
 /** Content styles -- styling of icons and texts  */
 .middle-container {
-    width: 1000px;
+    width: 80%;
     background-color: white;
     margin: auto;
     padding:30px;
 }
 
 .column-layout {
-    width: 1000px;
+    width: 80%;
     background-color: white;
     margin: auto;
     display: flex;
@@ -162,7 +166,7 @@ body {
 
 /** Footer styles */
 .footer-container {
-    width: 800px;
+    width: 60%;
     background-color: white;
     border-top: 0.5px solid #A8A8A8;
     margin:auto;
@@ -170,7 +174,7 @@ body {
 }
 
 .footer-layout {
-    width: 800px;
+    width: 60%;
     background-color: white;
     margin:auto;
     display:flex;
@@ -208,3 +212,9 @@ h2 {
     text-align: center;
 }
 
+@media (max-width: 480px) {
+
+#hero-container {
+    background-position: -900px 20px;
+}
+}
