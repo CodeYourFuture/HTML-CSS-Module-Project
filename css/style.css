@@ -8,30 +8,42 @@ body {
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
+    justify-content: space-between;
+    padding: 5px;
 }
 header {
-	position: fixed;
-	width: 100%;
-	background: #174ee6;
+    height: 20%;
 }
 nav {
     display: flex;
+    justify-content: space-between;
 }
 .ul-header {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    
 }
 .ul-header > li {
-    flex: 0em;
+    padding: 10px;
 }
-img {
+.logo-img {
     width: 60px;
-    height: 60px;
+    padding: 3px;
 }
 .hero-sec {
     display: flex;
     flex-direction: column;
+}
+.hero-img {
+    width: 100%;
+}
+main {
+    margin: 1px;
+    height: 65%;
+}
+footer {
+    height: 15%;
 }
 
 /**
@@ -59,3 +71,4 @@ img {
         background-color: red;
     }
 }
+
