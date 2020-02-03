@@ -17,7 +17,82 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
  a{
+    
+
      color: brown;
+     text-decoration: none;
+     padding: 9px;
+     /* background-color: lightgray; */
+ }
+ #navigation{
+    display: flex;
+     color: darkgreen;
+     justify-content: flex-start;
+     align-items: center;
+     height: 60px;
+
+     /* float: right; */
+     
+ 
+ }
+ #logo-img{
+     width: 50px;
+     height: 50px;
+     justify-content:flex-start;
  }
 
+#header{
+    background-color: white;
+    height: 60px;
+     width: 100%;
 
+}
+
+#first-section{
+   background-image: url("../img/first-background.jpg");
+    height: 700px;
+    color: white;
+
+}
+#content{
+    display: flex;
+    flex-direction: row;
+}
+#links{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    float: right;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo{
+    height: 45px;
+    width:50%;
+    float: left;
+}
+@media screen and (max-width: 460px){
+    body{
+        background-color: red;
+    }
+    #navigation{
+        
+        height: 50px;
+        width: 480px;
+        
+    }
+    a{
+        color:green;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width:900px){
+    body{
+        background-color: green;
+    }
+}
+@media screen and ()
