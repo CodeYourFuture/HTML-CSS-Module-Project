@@ -6,10 +6,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.navbar {
-   display: flex; 
-   list-style: none;
-}
 
 /**
  * Add your custom styles below
@@ -21,4 +17,12 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.meet-karma {
+    background-image: url(../img/first-background.jpg);
+}
 
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
