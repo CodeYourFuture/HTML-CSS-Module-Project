@@ -1,11 +1,18 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+ /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
+}
 
 /**
  * Add your custom styles below
@@ -17,12 +24,59 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-.meet-karma {
+ 
+.karma-introduction {
     background-image: url(../img/first-background.jpg);
+    background-position: center bottom ;
+    padding: 250px;
+    text-align: center;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
+.karma-introduction h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 50px;
+    margin: 10px;
 }
+
+.karma-introduction h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.karma-introduction button {
+    background-color: rgb(233, 92, 41);
+    font-size: 17px;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.karma-introduction button:hover {
+    background-color: rgb(207, 69, 6);
+}
+
+.about {
+    text-align: center;
+    padding: 200px;
+}
+
+.about h1 {
+    font-weight: 300;
+    font-size: 45px;   
+}
+
+.about li {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.footer {
+    text-align: center;
+}
+
