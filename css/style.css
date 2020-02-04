@@ -9,43 +9,52 @@ body {
 
 
 
+
+
 /*HEADER*/
-#header{
-    display: flex;
+.header{
     background-color: white;
-    padding: 10px;
     position: fixed;
     width: 100%;
-}
-#logo-img {
-    width: 2em;
-}
-
-nav ul{
-    margin: auto;
-    
-    width: 100%;
-    position: fixed;
     display: flex;
-    justify-content: flex-end;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
     
 }
-
-nav li {
-    margin: 10px;
-    list-style-type: none;
+.logo {
+    width: 2em;
+    padding: 0px 20px;
+    margin-left: 100px;
 }
-nav a {
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+.logo-title p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.header ul li {
+    display: inline-block;
+}
+
+.header li a{
+    display: block;
+    padding: 20px 20px;
     text-decoration: none;
-    color: orangered; 
-    margin-right: 60px;
-    
+    color: orangered;
+}
+.header li a:hover {
+    background-color: black;
+
 }
 
-nav a:hover {
-    color: #4885b2;
-}
 
 
 /*MAIN*/
