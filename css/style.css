@@ -129,7 +129,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .icon {
@@ -144,8 +144,8 @@ button:hover {
 .footer-line {
   border: 0;
   border-top: 1px solid #eaebec;
-  margin: 1rem 10rem;
-  display: block;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .social-media {
@@ -155,13 +155,13 @@ button:hover {
 }
 
 .fa {
-  border-radius: 50%;
+  display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  display: inline-block;
   margin: 1.25rem 5px;
-  border: 1px solid #eaebec;
   padding: 0.625rem 0;
+  border: 1px solid #eaebec;
+  border-radius: 50%;
   text-align: center;
   text-decoration: none;
 }
@@ -191,6 +191,13 @@ button:hover {
   body {
     font-size: 12px;
   }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
 }
 
 @media (max-width: 350px) {
@@ -205,3 +212,21 @@ button:hover {
 @-ms-viewport {
   width: device-width;
 }
+
+/* @media screen and (max-width: 480px){
+  body {
+    background-color: red;
+  }
+  
+}
+
+@media screen and (max-width: 320px){
+  body {
+    background-color: green;
+  }
+
+@media screen and (max-width: 1024px){
+
+}
+
+(div> */
