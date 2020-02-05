@@ -16,6 +16,7 @@ body {
     float: left;
     width: 30px;
     padding: 10px 20px;
+    margin-left: 100px;
   }
 
 #page-nav {
@@ -64,7 +65,7 @@ img {
 #back {
     display: flex;
     justify-content: center;
-    background-image: url('/img/first-background.jpg');
+    background-image: url('/img/snow_background copy.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,18 +79,18 @@ img {
     text-align: center;
 }
 
-h1 {
-    font-size: 50px;
+#title h1 {
+    font-size: 70px;
 }
-p {
-    font-size: 25px;
+#title p {
+    font-size: 30px;
 }
 
 
 #fbtn {
     color: white;
     background-color: orangered;
-    padding: 10px;
+    padding: 10px 30px;
     border: none;
 }
 #fbtn:hover {
@@ -160,7 +161,7 @@ footer p {
 /*MEDIA QUERY*/
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 414px){
     /* Show Hamburger */
     
  #page-nav label {
@@ -185,31 +186,38 @@ footer p {
 }
 
 #page-nav input:checked ~ ul {
-      display: block;
-      float: left;
-      width: 100%;
-      text-align: center;
-      cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
 }
 
 #page-nav input:checked ~ ul a {
-    display: block;      
+    display: block;
+    border-bottom: 2px solid black;      
 }
 #back {
     background-image: url(/img/background-mobile.jpg);
 }
 #title {
-    margin-top: 400px;
-    color: red;
+    margin-top: 200px;
+    
 }
 #title h1 {
+    color: white;
+    font-size: 50px;
     text-shadow: 2px 2px black;
 }
 #fbtn {
     padding: 10px 80px;
 }
 #title p {
-    color:black;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px black;
     
 }
+#page-nav img {
+    margin-left: 10px;
+  }
 }
