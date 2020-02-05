@@ -19,6 +19,11 @@ ul, li{
     width: 100%;
     height: 70px;
 }
+.navcontent{
+    display: flex;
+    width:80%;
+}
+
 .nav-bar ul{
     padding: 0;
     margin:0 0 0 450px;
@@ -48,7 +53,7 @@ ul, li{
 .introduction{
     background-image: url('../img/first-background.jpg');
     background-size: cover;
-    height: 730px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,6 +100,14 @@ h5{
     color: black;
     text-align: center;
     font-weight: 300;
+}
+@media (max-width: 768px) {
+    .everyone h2{
+        font-size: 15px;
+    }
+    .intro-text h2{
+        color:yellow;
+    }
 }
 /**
  * Add your custom styles below
