@@ -106,8 +106,8 @@ body {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .about h1 {
@@ -118,8 +118,6 @@ body {
 
 .about img {
     padding-bottom: 25px;
-    padding-right: 75px;
-    padding-left: 50px;
 }
 
 .about ul {
@@ -128,7 +126,7 @@ body {
     flex-direction: row;
     font-size: 25px;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 h4 {
@@ -162,9 +160,39 @@ hr {
     font-size: 15px;
 }
 
+.footer ul {
+    padding-left: 10px;
+}
+
 .footer li{
     display: inline;
     list-style: none;
     border: 1px solid rgb(234, 235, 236);
     border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.twitter {
+    color: rgb(87, 150, 233);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.facebook {
+    color: rgb(76, 102, 164);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.instagram {
+    color: rgb(63, 114, 155);
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
