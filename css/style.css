@@ -7,13 +7,15 @@ body {
 }
 //navbar is a list of links, but i do not plan to make them working
 ul{ text-align:right; }
-li { 
+.navlink { 
+    display:flex;
+    position:relative;
     padding:10px;
     display: inline-block; 
     justify-content: center;
     
     }
-    li:hover {
+    .navlink:hover {
         font-style:bold;
         cursor: pointer;
         color: #910909;
@@ -32,13 +34,17 @@ h1{
     font-weight: lighter;
     font-size: 2.75rem;
 }
-.aside{
+main{
+    display:flex;
     position: relative;
     text-align: center;
     color: white;
   }
   .centered {
+    display:flex;
+    flex-direction: column;
     position: absolute;
+    align-self:center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -53,18 +59,31 @@ h1{
     padding: 1rem 1.5rem;
     color: white;
     font-size: 1.125rem;
+    position:relative;
+    top: 50%;
+    left: 30%;
 }
-h2{ text-align:center;
+h2{ 
+    padding: 50px 0px 50px;
+    text-align:center;
     font-size: 1.75rem;
     margin: 1.625rem 0 3.125rem;
     font-weight: 300;
 }
 .icontainer{
+    
     display:flex;
-    align-content: center;
     justify-content: space-evenly;
 }
+.iconblock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 footer{
+
+    padding: 50px 0px 50px;
     text-align: center;
 }
 
