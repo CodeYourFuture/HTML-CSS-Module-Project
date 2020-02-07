@@ -78,10 +78,11 @@ body {
     text-align: center;
 }
     
-.footer-share {
+.social-share {
     display: flex;
     flex-direction: column;
     margin-left: 550px;
+    list-style: none;
 }
 .content-footer {
     justify-content: center;
@@ -93,9 +94,9 @@ a {
     height: 40px;
     width: 40px;
     border: none;
-    margin-left: 30px;;
+    margin-left: 25px;;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .footer-share {
         flex-direction: row;
     }
