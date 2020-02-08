@@ -38,7 +38,7 @@ body {
  #logo-img{
      width: 50px;
      height: 50px;
-     justify-content:flex-start;
+     /* justify-content:flex-start; */
  }
 
 #header{
@@ -57,12 +57,27 @@ body {
 #content{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 #links{
     display: flex;
     list-style-type: none;
-    flex-direction: row;
-    float: right;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    color: gray;
+
+}
+li{
+    padding: 20px;
+    
+}
+#meet{
+    font-size: larger;
+    color: black;
+}
+li:hover{
+    color: black;
 }
 #title{
     display: flex;
@@ -74,6 +89,32 @@ body {
     height: 45px;
     width:50%;
     float: left;
+}
+.img-size{
+    height: 100px;
+    width: 100px;
+}
+.all-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#second-title{
+    text-align: center;
+    padding: 40px;
+    margin-top: 100px;
+    
+    
+}
+#line{
+    width: 60%;
+    margin-top: 150px;
+}
+.font-family{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
 }
 @media screen and (max-width: 460px){
     body{
@@ -92,7 +133,7 @@ body {
 }
 @media screen and (min-width:900px){
     body{
-        background-color: green;
+        /* background-color: green; */
     }
 }
 @media screen and ()
