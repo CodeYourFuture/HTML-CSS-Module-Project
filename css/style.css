@@ -1,6 +1,5 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -15,5 +14,20 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ *{
+     
+ }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
-
+li{
+    float: right;
+}
