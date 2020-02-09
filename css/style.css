@@ -6,8 +6,126 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-@media{
-    
+.karma-logo{
+    width: 45px;
+    height: 45px;
+    float: left;
+    padding-left: 130px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+header{
+    justify-content: space-between;
+    text-align: center;
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.first-section{
+    max-width: 100%
+    padding-bottem 15px;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.introduction{
+    position: absolute
+    top: 40% 
+    left: 36% 
+    font: weight: 100;
+    font-size 48px;
+}
+
+.intro-subheading{
+    border: none;
+    padding:10px 10px;
+    position: absolute;
+    top: 65%
+    left: 45% 
+    font-size: 20px;
+}
+
+.learn{
+    background-color: rgb(211,90,9);
+    border: none;
+    padding:10px 10px;
+    position: absolute;
+    top: 65%
+    left: 45% 
+    font-size: 20px;
+}
+
+.learn:hover{
+    background-color: rgb(211,90,9);
+}
+
+.information{
+    display: flex;
+    justify-content: space-around;
+}
+
+.details{
+    padding: 10px
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    justify-content: stretch;
+}
+
+.fuel{
+    width: 150px;
+    height: 150px;
+}
+
+.karma{
+    text-align: center;
+    font-size: 40px;
+}
+
+.join{
+    text-align: center;
+}
+
+.media{
+    text-align: center;
+}
+
+.social{
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.copyright{
+    text-align: center;
+    color: slategray;
+}
+
+@media (max-width: 768px){
+    header{
+        background-color: blueviolet;
+    }
+    footer{
+        font-size: 20px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /**
