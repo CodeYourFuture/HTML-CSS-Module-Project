@@ -1,10 +1,9 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
- /* General styles */
+/* General styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -17,182 +16,217 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
- /* Header styles */
- .header {
-     display: flex;
-     position: fixed;
-     background-color: white;
-     padding-bottom: 5px;
-     width: 100%;
-     border-bottom: 2px solid rgb(234, 235, 236);
-     ;
- }
+/* Header styles */
+.header {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  padding-bottom: 5px;
+  width: 100%;
+  border-bottom: 2px solid rgb(234, 235, 236);
+}
 
- .header-img {
-     padding-top: 12px;
-     padding-left: 275px;
-     padding-right: 185px;
- }
+.header-img {
+  padding-top: 12px;
+  padding-left: 275px;
+  padding-right: 185px;
+}
 
- /* Navigation styles */
- .links .active a {
-     font-weight: 500;
-     font-size: 17px;
-     text-decoration: none;
-     color: rgb(76, 80, 88);
-     }
+/* Navigation styles */
+.links .active a {
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+  color: rgb(76, 80, 88);
+}
 
- a {
-    text-decoration: none;
-    font-size: 17px;
-    color: rgb(131, 137, 148);
- }
+a {
+  text-decoration: none;
+  font-size: 17px;
+  color: rgb(131, 137, 148);
+}
 
- .navigation ul {
-     display: flex;
-     flex-direction: row;
-     list-style: none;
-     padding-top: 10px;
- }
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-top: 10px;
+}
 
- .navigation li {
-     display: flex;
-     padding-right: 30px;
-     color: darkgrey;
- }
+.navigation li {
+  display: flex;
+  padding-right: 30px;
+  color: darkgrey;
+}
 
- .navigation .links a:hover {
-     color: rgb(32, 27, 27);
- }
- 
- /* Introductory section styles */
+.navigation .links a:hover {
+  color: rgb(32, 27, 27);
+}
+
+/* Introductory section styles */
 .karma-introduction {
-    background-image: url(../img/first-background.jpg);
-    background-position: center bottom;
-    padding: 250px;
-    text-align: center;
+  background-image: url(../img/first-background.jpg);
+  background-position: center bottom;
+  padding: 250px;
+  text-align: center;
 }
 
 .karma-introduction h1 {
-    color: white;
-    font-weight: 300;
-    font-size: 50px;
-    margin: 10px;
+  color: white;
+  font-weight: 300;
+  font-size: 50px;
+  margin: 10px;
 }
 
 .karma-introduction h2 {
-    color: white;
-    font-weight: 300;
-    font-size: 25px;
-    margin: 10px;
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+  margin: 10px;
 }
 
 .karma-introduction button {
-    background-color: rgb(241,90,41);
-    font-size: 17px;
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    border-radius: 4px;
-    margin: 10px;
+  background-color: rgb(241, 90, 41);
+  font-size: 17px;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin: 10px;
 }
 
 .karma-introduction button:hover {
-    background-color: rgb(207, 69, 6);
+  background-color: rgb(207, 69, 6);
 }
 
 /* About section styles */
 .about {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .about h1 {
-    font-weight: 300;
-    font-size: 45px;  
-    padding-bottom: 25px;
+  font-weight: 300;
+  font-size: 45px;
+  padding-bottom: 25px;
 }
 
 .about img {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
-.about ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    font-size: 25px;
-    list-style: none;
-    justify-content: space-around;
+.about .benefits {
+  display: flex;
+  font-size: 25px;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.about .benefits li {
+    width: 250px;
 }
 
 h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
-
 hr {
-    width: 60%;
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgb(234, 235, 236);
+  width: 60%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(234, 235, 236);
 }
 
 /* Footer section styles */
-
 .footer {
-    text-align: center;
+  text-align: center;
 }
 
 .footer h5 {
-    font-weight: 400;
-    font-size: 17px;
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 
 .footer p {
-    font-weight: 300;
-    color: rgb(131,137,148);
-    padding-top: 20px;
-    font-size: 15px;
+  font-weight: 300;
+  color: rgb(131, 137, 148);
+  font-size: 15px;
 }
 
-.footer ul {
-    padding-left: 10px;
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
 }
 
-.footer li{
-    display: inline;
-    list-style: none;
-    border: 1px solid rgb(234, 235, 236);
-    border-radius: 50%;
-    margin: 5px;
-    cursor: pointer;
+.footer .social-media li {
+  list-style: none;
+  border: 1px solid rgb(234, 235, 236);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
 }
 
 .twitter {
-    color: rgb(87, 150, 233);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 12px;
-    padding-left: 12px;
+  color: rgb(87, 150, 233);
 }
 
 .facebook {
-    color: rgb(76, 102, 164);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
+  color: rgb(76, 102, 164);
 }
 
 .instagram {
-    color: rgb(63, 114, 155);
-    padding: 10px;
-    padding-bottom: 10px;
-    padding-right: 12px;
-    padding-left: 12px;
+  color: rgb(63, 114, 155);
 }
+
+/* Media queries */
+/* Find a way to resize background image */
+/* Work on specificity */
+
+@media screen and (max-width: 780px) {
+    .karma-introduction {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top left;
+    }
+
+    .karma-introduction h2 {
+        width: 250px;
+    }
+
+    .about h1 {
+        width: 350px;
+    }
+  /* Add hamburger menu here */
+  }
+  
+  @media screen and (max-width: 1055px) {
+    .header-img {
+      display: flex;
+      justify-self: flex-start;
+      padding-left: 25px;
+    }
+  
+    .navigation .links {
+      padding-left: 20px;
+    }
+  
+    .about .benefits {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .about .benefits li {
+      padding-top: 50px;
+      align-self: center;
+    }
+  }
