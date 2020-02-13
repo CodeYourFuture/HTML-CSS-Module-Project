@@ -9,10 +9,13 @@
     margin: 0;
     padding: 0;
   }
+  .nav_bar_ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
   
   .nav_bar_ul li {
-      float: right;
-      align-content: center;
       padding-inline-end: 20px;
     }
 
@@ -39,12 +42,13 @@
     display: block; 
     height: 20px;
     width: 50px;
-    margin-inline-start: 300px;}
+    margin-inline-start: 300px;
+}
 
 
     .introduction{
         display: block;
-        background-image: url(img/first-background.jpg);
+        background-image: url("img/first-background.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -67,15 +71,23 @@
      font-family: 'Bitter', serif;
      text-align: center;
     }
-    .introduction h3{
-        font-weight: 100;
-        letter-spacing: 5px;
+    div.devices h3{
+        font-weight: 20px;
+        text-align: left;
         font-family:'Bitter', serif ;
+        box-sizing: border-box;
     }
+    div.devices li{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
     .button{
         text-align: center;
         margin: 50px;
-        font-size:x-large;
+        font-size:50px;
         border-radius: 5px;  
     }
     .cases {
@@ -85,31 +97,44 @@
     }
     .cases_h1{
         text-align: center;
-        font-size: x-large;
+        font-size: 20px;
         font-family:'Bitter', serif;
-        letter-spacing: 3px;
+        letter-spacing:1px;
         margin: 50px 100px;
     }
     .devices{
         list-style-type: none;
         display: flex;
-       justify-content: space-around;
-        
+        justify-content: space-around;
     }
-    .social {
+    div.social ul{
      display: flex;
-     flex-direction: column;
-     justify-content: center;
+     flex-direction: row;
+     justify-content:center;
      align-content: center;
-
-
+     list-style-type: none;
     }
-    .social_media{
+    div.social h3{
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     list-style-type: none;
+    }
+
+    p{
+        font-size: 15px;
+        color: blue;
+        text-align: center;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    a{
+        text-decoration: none;
         list-style-type: none;
-        display: flex;
-        
+        cursor: auto;    
     }
-    .social_media li img {
+
+    .social li img {
         width: 50px;
     }
 
