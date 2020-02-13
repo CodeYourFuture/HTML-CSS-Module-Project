@@ -14,20 +14,128 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
- *{
      
- }
-ul{
-    list-style-type: none;
+ *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+    box-sizing: border-box;
+    
+  }
+  
+  .navigation {
+    background: white;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: flex-end;  
+  }
+  
+  
+  .links li {
+    padding: 5px 45px;
+    list-style-type: none;
+    font-size: 90%;
+    font-family: "verdana"  
+  }
+  
+  .logo {
+   ??????????
+  }
+  
+  
+  /*.style li{
+    color: blue;
+  }
+    */
+  
+  
+  .introduction {
+    background: bisque; 
+    margin: 4px 0;  
+  }
+  
+  
+  .introduction-text {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    
+  }
+  
+  .introduction-text h1 {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 180%;
+    color: white;
+  }
+  
+  
+  .introduction-text h3 {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 140%;
+    color: white;
+  }
+  
+  .introduction-text button {
+    background: grey;
+    height: 30px;
+    width: 80px;
+    color: white;
+    
+  }
+  
+  
+  
+  
+  
+  
+  .Information-container {
+    background: white;
+    margin: 200px, 0;
+  }
+  
+  .Information-text {
+    height: 50px;
+   
+    /*background: white;
+    display: flex;
+    justify-content: center;
+   
+  */  
+  }
+  
+  
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .devices {
+    display: flex;
+    justify-content: center;  
+  }
+  
+  
+  .devices li {
+    padding: 8px 80px;
+    list-style-type: none;
+    
+  }
 
-li{
-    float: right;
-}
+  
+  
+  
+  
+  .social{
+    background: white;  
+  }
+  
+  .footer-text{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+
