@@ -17,6 +17,7 @@ body {
  */
 
 /* Header styles */
+
 .header {
   display: flex;
   position: fixed;
@@ -63,29 +64,36 @@ a {
   color: rgb(32, 27, 27);
 }
 
-/* Introductory section styles */
-.karma-introduction {
+/* Hero section styles */ 
+.hero-banner {
   background-image: url(../img/first-background.jpg);
   background-position: center bottom;
-  padding: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
-}
+  height: 100vh;
+  width: 100%;
+  }
 
-.karma-introduction h1 {
+  .hero-banner .hero-text {
+    padding-top: 250px;
+  }
+
+.hero-banner .hero-text h1 {
   color: white;
   font-weight: 300;
   font-size: 50px;
   margin: 10px;
 }
 
-.karma-introduction h2 {
+.hero-banner .hero-text h2 {
   color: white;
   font-weight: 300;
   font-size: 25px;
   margin: 10px;
 }
 
-.karma-introduction button {
+.hero-banner button {
   background-color: rgb(241, 90, 41);
   font-size: 17px;
   color: white;
@@ -95,11 +103,12 @@ a {
   margin: 10px;
 }
 
-.karma-introduction button:hover {
+.hero-banner button:hover {
   background-color: rgb(207, 69, 6);
 }
 
 /* About section styles */
+
 .about {
   text-align: center;
   padding-top: 100px;
@@ -123,10 +132,11 @@ a {
   font-size: 25px;
   list-style: none;
   justify-content: space-around;
+  padding-left: 0;
 }
 
 .about .benefits li {
-    width: 250px;
+  width: 250px;
 }
 
 h4 {
@@ -142,6 +152,7 @@ hr {
 }
 
 /* Footer section styles */
+
 .footer {
   text-align: center;
 }
@@ -176,15 +187,15 @@ hr {
   padding: 10px;
 }
 
-.twitter {
+.fa-twitter {
   color: rgb(87, 150, 233);
 }
 
-.facebook {
+.fa-facebook {
   color: rgb(76, 102, 164);
 }
 
-.instagram {
+.fa-instagram {
   color: rgb(63, 114, 155);
 }
 
@@ -193,40 +204,42 @@ hr {
 /* Work on specificity */
 
 @media screen and (max-width: 780px) {
-    .karma-introduction {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top left;
-    }
+  .hero-banner {
+    background-size: 100% 100%;
+  }
+  .about h1 {
+    width: 350px;
+  }
 
-    .karma-introduction h2 {
-        width: 250px;
-    }
-
-    .about h1 {
-        width: 350px;
-    }
+  .about .benefits {
+    padding-left: 0;
+  }
   /* Add hamburger menu here */
+}
+
+@media screen and (max-width: 1055px) {
+  .header-img {
+    display: flex;
+    justify-self: flex-start;
+    padding-left: 25px;
   }
-  
-  @media screen and (max-width: 1055px) {
-    .header-img {
-      display: flex;
-      justify-self: flex-start;
-      padding-left: 25px;
-    }
-  
-    .navigation .links {
-      padding-left: 20px;
-    }
-  
-    .about .benefits {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .about .benefits li {
-      padding-top: 50px;
-      align-self: center;
-    }
+
+  .navigation .links {
+    padding-left: 20px;
   }
+
+.hero-banner {
+  background-size: 100% 100%;
+}
+
+  .about .benefits {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .about .benefits li {
+    padding-top: 50px;
+    align-self: center;
+  }
+}
