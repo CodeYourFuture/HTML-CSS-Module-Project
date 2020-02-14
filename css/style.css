@@ -1,34 +1,42 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: white;
-    
 }
-.top-navbar {
-    position: fixed;
-    width: 100%;
+
+header {
     background-color: #fff;
-    z-index: 9999;
+    width: 100%;
+    height: 71px;
+    position: fixed;
+}
+
+img.logo {
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+.top-navbar {
     border-bottom: 2px solid #838994;
-    height: 70px;
+    height: 53px;
     color: #838994;
 }
 
-.top-navbar .logo {
+.logo {
     flex-direction: row;
-    margin-right:180px; 
+    position: absolute;
+    /* margin-right:180px;  */
 }
 
 .top-navbar .links {
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     list-style-type: none;
     margin-left: 200px;
-    margin-right: 200px;  
+    margin-right: 200px;
     font-size: 17px;
 }
 
@@ -44,9 +52,12 @@ body {
 
 .middle-content {
     background-image: url('../img/first-background.jpg');
-    background-position: center bottom;
+    background-position: center-top;
+    /* background-position: 10 bottom; */
+    overflow: auto;
     background-size: cover;
-    height: 750px;
+    height: 100vh;
+    background-repeat: no-repeat;
     text-align: center;
     color: white;
 }
@@ -66,11 +77,11 @@ body {
 button {
     background-color: #f15a29;
     color: white;
-    border-style: none; 
+    border-style: none;
     border-radius: 4px;
     padding: 16px 24px;
     font-size: 18px;
- }
+}
 
 /* SECTION MIDDLE-PAGE / Icons (Devices, Boost, Refill) */
 
@@ -82,11 +93,11 @@ button {
 }
 
 .middle-page h2 {
-        font-size: 2.75rem;
-        font-weight: 200;
+    font-size: 2.75rem;
+    font-weight: 200;
 }
 
-.middle-page li{
+.middle-page li {
     display: inline-block;
     margin-left: 2rem;
 }
@@ -104,18 +115,28 @@ button {
 }
 
 .social-links .social-icons li {
-list-style-type: none;
-display: inline-block;
-border-radius: 50px;
-padding: 0.625rem 0;
-width: 2.1rem;
-border: 1px solid #4e7194;
-text-align: center;
-margin: 1.25rem 5px;
-background: white;
-color: rgb(67, 133, 177);
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 0.625rem 0;
+    width: 2.1rem;
+    border: 1px solid #4e7194;
+    text-align: center;
+    margin: 1.25rem 5px;
+    background: white;
+    color: rgb(67, 133, 177);
 }
 
 .social-links h4 {
-font-weight: 100;
+    font-weight: 100;
+}
+
+.middle-page .content {
+    color: white;
+}
+
+.social-links h4 {
+    color: white;
+}
+
 }
