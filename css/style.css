@@ -1,10 +1,10 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
 
 /**
  * Add your custom styles below
@@ -17,3 +17,101 @@ body {
  */
 
 
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+body {
+    line-height: 1;
+}
+
+
+/* Nav section styling */
+
+.navigation {
+    width: 100%;
+    background-color: pink;
+    position: fixed;
+    z-index: 9999;
+}
+
+.navigation .links {
+    float: right;
+}
+
+.navigation .links li {
+    display: inline-block;
+    color: #838994;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold hover {
+    background-color: bisque;
+}
+
+.button {
+    width: 500px;
+    height: 200px;
+    padding: 40px 60px;
+}
+
+
+/* Introduction styling */
+
+.introduction {
+    background-image: url(../img/first-background.jpg);
+    height: 45.938rem;
+}
+
+
+/* Boxes styling */
+
+.features {
+    display: flex;
+    justify-content: center;
+}
+
+.caption {
+    position: relative;
+    top: 150px;
+    right: 160px;
+    width: 200px;
+    text-align: center;
+}
+
+.links li,
+.features li {
+    list-style-type: none;
+}
+
+footer {
+    border-top: 1px solid lightgrey;
+    margin-left: 120px;
+    margin-right: 120px;
+}
