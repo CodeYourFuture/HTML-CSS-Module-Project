@@ -64,7 +64,7 @@ a {
   color: rgb(32, 27, 27);
 }
 
-/* Hero section styles */ 
+/* Hero section styles */
 .hero-banner {
   background-image: url(../img/first-background.jpg);
   background-position: center bottom;
@@ -73,11 +73,11 @@ a {
   text-align: center;
   height: 100vh;
   width: 100%;
-  }
+}
 
-  .hero-banner .hero-text {
-    padding-top: 250px;
-  }
+.hero-banner .hero-text {
+  padding-top: 250px;
+}
 
 .hero-banner .hero-text h1 {
   color: white;
@@ -108,7 +108,6 @@ a {
 }
 
 /* About section styles */
-
 .about {
   text-align: center;
   padding-top: 100px;
@@ -132,7 +131,7 @@ a {
   font-size: 25px;
   list-style: none;
   justify-content: space-around;
-  padding-left: 0;
+  align-content: center;
 }
 
 .about .benefits li {
@@ -200,17 +199,32 @@ hr {
 }
 
 /* Media queries */
-/* Find a way to resize background image */
 /* Work on specificity */
+
+@media screen and (max-width: 550px) {
+  .about {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .about h1 {
+    padding-left: 50px;
+    padding-top: 0;
+  }
+}
 
 @media screen and (max-width: 780px) {
   .hero-banner {
     background-size: 100% 100%;
   }
-  .about h1 {
-    width: 350px;
+
+  .about {
+    padding-top: 95px;
   }
 
+  .about h1 {
+    padding-left: 0;
+  }
   .about .benefits {
     padding-left: 0;
   }
@@ -228,9 +242,9 @@ hr {
     padding-left: 20px;
   }
 
-.hero-banner {
-  background-size: 100% 100%;
-}
+  .hero-banner {
+    background-size: 100% 100%;
+  }
 
   .about .benefits {
     display: flex;
