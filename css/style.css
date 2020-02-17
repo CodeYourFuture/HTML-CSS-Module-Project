@@ -12,7 +12,7 @@ ul, li{
 }
 .nav-bar {
     display:flex;
-    justify-content: space-evenly;
+    
     position: fixed;
     overflow: hidden;
     background-color: #fff;
@@ -21,13 +21,17 @@ ul, li{
 }
 .navcontent{
     display: flex;
-    width:80%;
+    justify-content: space-evenly;
+    width:100%;
+}
+.links{
+    text-align: right;
 }
 
 .nav-bar ul{
     padding: 0;
-    margin:0 0 0 450px;
-    text-align: center;
+    
+    
 }
 .nav-bar li{
     margin-top: 20px;
@@ -36,17 +40,16 @@ ul, li{
     font-weight: 400;    
 }
 .nav-bar a{
+    display:inline;
+    padding:14px 16px;
     color:rgb(48, 46, 46);
-    display: block;
-    width:120px;
     text-decoration: none;
 } 
 
 .logo{
-    position: absolute;
     width: 26px;
     height: 70px;
-    margin-left: 25px;
+    margin: 15px 0px;
     height: 70px;
     
 }
@@ -77,8 +80,12 @@ ul, li{
     font-size: 30px;
 }
 button {
+    background-color:rgb(226, 84, 32);
     margin:0 auto;
-    display:block;
+    color:white;
+    padding: 20px 40px;
+    border: 0 solid orangered;
+    border-radius: 5px;
 }
 .everyone{
     text-align: center;
@@ -96,10 +103,24 @@ button {
     font-weight: 300;
     font-size: 45px;
 }
+.bottom-img{
+    width:130px;
+}
 h5{
     color: black;
     text-align: center;
     font-weight: 300;
+}
+.fa{
+    color:rgb(102, 102, 228);
+    padding-right: 35px;
+}
+.bottom{
+    text-align: center;
+}
+.bottom h4{
+    margin-right: 35px;
+    font-weight: 400;
 }
 @media (max-width: 768px) {
     .everyone h2{
