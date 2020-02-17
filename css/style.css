@@ -32,38 +32,36 @@ header{
 
 .first-section{
     max-width: 100%
-    padding-bottem 15px;
+    padding-button: 15px;
 }
 
-.banner{
-    position: relative;
-    text-align: center;
-    color: white;
+div{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    flex-direction: column;
 }
-
-.introduction{
-    height: 0;
-    border: 1px solid red;
-    top: 40% 
-    left: 36% 
-    font: weight: 100;
+.introduction{ 
+    top: 40%;
+    left: 36%;
+    font-weight: 100;
     font-size: 48px;
     display: flex;
+    color: white;
 }
-
 .intro-subheading{
-    height: 0;
-    border: 1px solid red;
     display: flex;
     padding:10px 10px;
-    top: 65%
-    left: 45% 
-    font-size: 20px; 
+    top: 65%;
+    left: 45%; 
+    font-size: 20px;
+    color: white; 
 }
-
 .learn{
-    height: 0;
-    border: 1px solid red;
     background-color: rgb(211,90,9);
     border: none;
     padding:10px 10px;
@@ -71,13 +69,6 @@ header{
     top: 65%
     left: 49%; 
     font-size: 20px;
-}
-
-.banner div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid orange;
 }
 
 .learn:hover{
