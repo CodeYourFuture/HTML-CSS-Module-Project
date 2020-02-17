@@ -42,30 +42,42 @@ header{
 }
 
 .introduction{
-    position: absolute
+    height: 0;
+    border: 1px solid red;
     top: 40% 
     left: 36% 
     font: weight: 100;
-    font-size 48px;
+    font-size: 48px;
+    display: flex;
 }
 
 .intro-subheading{
-    border: none;
+    height: 0;
+    border: 1px solid red;
+    display: flex;
     padding:10px 10px;
-    position: absolute;
     top: 65%
     left: 45% 
-    font-size: 20px;
+    font-size: 20px; 
 }
 
 .learn{
+    height: 0;
+    border: 1px solid red;
     background-color: rgb(211,90,9);
     border: none;
     padding:10px 10px;
-    position: absolute;
+    display: flex;
     top: 65%
-    left: 45% 
+    left: 49%; 
     font-size: 20px;
+}
+
+.banner div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
 }
 
 .learn:hover{
@@ -117,7 +129,7 @@ header{
 
 
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     header{
         background-color: blueviolet;
     }
@@ -128,7 +140,7 @@ header{
         display: flex;
         flex-direction: column;
     }
-}
+} */
 
 /**
  * Add your custom styles below
