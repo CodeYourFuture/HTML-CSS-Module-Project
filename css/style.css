@@ -3,15 +3,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    height: 100%;  
+    -webkit-font-smoothing: antialiased; 
+    margin: 0;
+    padding: 0;
 }
 
 
 /* header */
 
-
-#page-nav img {
+.page-nav img {
     display: block;
     float: left;
     width: 30px;
@@ -19,19 +19,19 @@ body {
     margin-left: 100px;
   }
 
-#page-nav {
+.page-nav {
     width: 100%;
     background-color: white;
     position: fixed; 
 }
 
 
-#page-nav label, #hamburger {
+.page-nav label, #hamburger {
     display: none;
 }
   
 /* Menu Items */
-#page-nav ul {
+.page-nav ul {
     
     list-style-type: none;
     margin: 0;
@@ -39,61 +39,64 @@ body {
     float: right;
     
 }
-#page-nav ul li {
+.page-nav ul li {
     display: inline-block;
     padding: 25px;
     margin-right: 30px;
 }
-#page-nav ul li a {
+.page-nav ul li a {
     color: orangered;
     text-decoration: none;
 }
-#page-nav ul li a:hover {
+.page-nav ul li a:hover {
     color: black;
     
 }
-#page-nav ul li a.active {
+.page-nav ul li a.active {
     color: black;
     
  }
 
 /*MAIN*/
 img {
-    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-#back {
-    display: flex;
-    justify-content: center;
-    background-image: url('/img/snow_background copy.jpg');
-    height: 100vh;
+.back {
+    width: 100%;
+    background-image: url('/img/snow_background\ copy.jpg');
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: auto;
+    padding: 0;
+    
 }
 
-#title {
-    padding: 100px 0;
+.title {
+    padding: 300px 0;
     margin: auto;
     color: white;
     text-align: center;
 }
 
-#title h1 {
-    font-size: 70px;
+.title h1 {
+    font-size: 90px;
 }
-#title p {
-    font-size: 30px;
+.title p {
+    font-size: 40px;
 }
 
 
-#fbtn {
+.fbtn {
     color: white;
     background-color: orangered;
-    padding: 10px 30px;
+    padding: 20px 100px;
     border: none;
 }
-#fbtn:hover {
+.fbtn:hover {
     background-color: white;
     color: orangered;
     
@@ -107,19 +110,18 @@ h2 {
     font-size: 40px;
 }
 
-#features {
+.features {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
 }
 
-#features img {
+.features img {
     width: 150px;
     height: 150px;
     margin: 80px;
 }
-#features p {
+.features p {
    text-align: center;
 } 
 hr {
@@ -130,7 +132,7 @@ footer p {
     text-align: center;
     font-size: 13px;
 }
-#social {
+.social {
     display: flex;
     justify-content: center;
     
@@ -145,12 +147,12 @@ footer p {
     border-radius: 50%;
   }
   
-#social a {
+.social a {
     margin: 20px;
     color:white;
     background-color: orangered;
 }
-#social a:hover {
+.social a:hover {
     color:white;
     background-color: #4885b2;
     
@@ -161,63 +163,71 @@ footer p {
 /*MEDIA QUERY*/
 
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 550px){
     /* Show Hamburger */
     
- #page-nav label {
-    display: inline-block;
-    color: orangered;
-    font-style: normal;
-    font-size: 1.6em;
-    padding: 10px;
-    float: right;
-    margin-top: 5px;
-    margin-right: 10px;
-}
-  
-/* Break down menu items into vertical */
-#page-nav ul li {
-    display: block;  
-}
+    .page-nav {
+        margin: 0;
+        padding: 0;
+    }
 
- /* Toggle show/hide menu on checkbox click */
-#page-nav ul {
-    display: none;
-}
-
-#page-nav input:checked ~ ul {
-    display: block;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-}
-
-#page-nav input:checked ~ ul a {
-    display: block;
-    border-bottom: 2px solid black;      
-}
-#back {
-    background-image: url(/img/background-mobile.jpg);
-}
-#title {
-    margin-top: 200px;
+    .page-nav label {
+        display: inline-block;
+        color: orangered;
+        font-style: normal;
+        font-size: 1.6em;
+        padding: 10px;
+        float: right;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
     
-}
-#title h1 {
-    color: white;
-    font-size: 50px;
-    text-shadow: 2px 2px black;
-}
-#fbtn {
-    padding: 10px 80px;
-}
-#title p {
-    font-size: 25px;
-    color: white;
-    text-shadow: 2px 2px black;
+    /* Break down menu items into vertical */
+    .page-nav ul li {
+        display: block;  
+    }
+
+    /* Toggle show/hide menu on checkbox click */
+    .page-nav ul {
+        display: none;
+    }
+
+    .page-nav input:checked ~ ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
     
-}
-#page-nav img {
-    margin-left: 10px;
-  }
+        
+    }
+
+    .page-nav input:checked ~ ul a {
+        display: block;
+        border-bottom: 2px solid black;      
+    }
+    .title {
+        padding-top: 50%;
+    }
+    .title h1 {
+        color: white;
+        font-size: 70px;
+        text-shadow: 2px 2px black;
+
+    }
+   
+    .title p {
+        font-size: 35px;
+        color: white;
+        text-shadow: 2px 2px black;
+        
+    }
+    .page-nav img {
+        margin-left: 10px;
+    }
+    .fbtn {
+        margin-top: 80px;
+    }
+    .features {
+        flex-direction: column;
+    }
 }
