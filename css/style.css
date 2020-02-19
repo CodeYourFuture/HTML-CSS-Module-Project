@@ -1,171 +1,251 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-/* global element css styling*/
-body {
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    box-sizing: border-box;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-header{
-    position: fixed;
-    z-index: 10px;
-    margin: 0px;
-    padding: 20px;
-    height: 70px;
-    width: 100%;
-    display: flex;       
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-}
-
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1 */
-header nav ul li {
-    display: inline;
-    margin: 0px 20px;
-}
-
-ul {    
-    font-weight: 400px;
-    margin-top: 10px;
-    padding: 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    text-align: center;
-    }
-
-li {
-    list-style: none;
-}
-
-a {
-    color: rgb(58, 53, 53);
-    text-decoration: none;
-    opacity: 0.65;
-}
-
-a:hover {
-    opacity: 1;
-}
-
-hr {
-    margin: 0px 250px;
-    color: rgba(202, 198, 198, 0.822);
-    opacity: 0.30;
-}
-
-
-/* lighter makes the letters thinner */
-footer h5 p{
-    text-align: center;
-    font-size: 15px;
-    font-weight: lighter;
-}
-
-p {
-    color: rgb(189, 183, 183);
-}
-
-/* css styling of html class elements*/
-
-/* top - header - navbar section - logo + list of links*/
-/*nav-bar link meet karma = bold*/
-.nav-bold {
-    font-weight: bold;
-}
-
-/*logo position in the nav-bar*/
-.header-logo {
-    width: 100%;
-    width: 25px;
-}
-
-
-/* intro section */
-
-.section-intro {
-    width: 100%;
-    display: flex; 
-}
-
-/* information section - with 3 icons in the middle */
-
-.info {
-    width:  127px;
-}
-
-/* hero-header section - image and bold text / intro https://designmodo.com/hero-headers/ */
-
-.hero-header {
-    margin: 0px;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-desc {
-    color: white;
-    text-align: center;
-} 
-
-/* background-image from the image folder */
-.hero-header {
-    background-image: url(/img/first-background.jpg);
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    overflow: auto;
-    height: 650px;
-}
-
-.hero-btn {
-    border: 3px black solid;
-    color: white;    
-    padding: 0 20px;
-    text-align: center;
-    text-decoration: none;
-    height: 60px;
-    width:  150px;
-    border-radius: 6px;
-    background-color: rgb(224, 107, 52);   
-    cursor: pointer;
-}
-
-.hero-btn:hover  {
-    background-color: rgb(182, 65, 11);
-    color: white;
-    opacity: 1;
-}
-
-/* service-facility section including icons and desc */
-.section-facility {
-    margin: 100px;
-    padding:50px;
-    height: 70px;
-    width: 100%;
-    display: flex;       
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-}
-
-
-/* footer section - social media logo */
-
-/*
-Add your custom styles below
+ /* global element css styling*/
  
-Remember: 
+ body {
+     margin: 0px;
+     padding: 0px;
+     position: relative;
+     box-sizing: border-box;
+     color: black;
+     font-family: 'Roboto', sans-serif;
+     -webkit-font-smoothing: antialiased;
+ }
+ 
+ .header-parent {
+     position: fixed;
+     z-index: 10;
+     margin: 0px;
+     padding: 20px;
+     height: 70px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: white;
+ }
+ /* https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1 */
+ 
+ header nav ul li {
+     display: inline;
+     margin: 0px 20px;
+ }
+ 
+ ul {
+     font-weight: 400px;
+     margin-top: 10px;
+     padding: 0px;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     text-align: center;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ a {
+     color: rgb(58, 53, 53);
+     text-decoration: none;
+     opacity: 0.65;
+ }
+ 
+ a:hover {
+     opacity: 1;
+ }
+ 
+ hr {
+     margin: 0px 250px;
+     color: rgba(202, 198, 198, 0.822);
+     opacity: 0.30;
+ }
+ /* lighter makes the letters thinner */
+ 
+ footer h5 p {
+     text-align: center;
+     font-size: 15px;
+     font-weight: lighter;
+ }
+ 
+ p {
+     color: rgb(189, 183, 183);
+ }
+ /* css styling of html class elements*/
+ /* top - header - navbar section - logo + list of links*/
+ /*nav-bar link meet karma = bold*/
+ 
+ .nav-bold {
+     font-weight: bold;
+ }
+ /*logo position in the nav-bar*/
+ 
+ .header-logo {
+     width: 100%;
+     width: 25px;
+ }
+ /* intro section */
+ 
+ .section-intro {
+     width: 100%;
+     display: flex;
+ }
+ /* information section - with 3 icons in the middle */
+ 
+ .info {
+     width: 127px;
+ }
+ /* hero-header section - image and bold text / intro https://designmodo.com/hero-headers/ */
+ 
+ .hero-header {
+     margin: 0px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .hero-desc {
+     color: white;
+     text-align: center;
+ }
+ /* background-image from the image folder */
+ 
+ .hero-header {
+     background-image: url(../img/first-background.jpg);
+     margin: 0px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center bottom;
+     overflow: auto;
+     height: 650px;
+ }
+ 
+ .hero-btn {
+     border: 3px black solid;
+     color: white;
+     padding: 0 20px;
+     text-align: center;
+     text-decoration: none;
+     height: 60px;
+     width: 150px;
+     border-radius: 6px;
+     background-color: rgb(224, 107, 52);
+     cursor: pointer;
+ }
+ 
+ .hero-btn:hover {
+     background-color: rgb(182, 65, 11);
+     color: white;
+     opacity: 1;
+ }
+ /* service-facility section including icons and desc */
+ 
+ .services {
+     box-sizing: border-box;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 50px 0px;
+     padding: 50px;
+ }
+ 
+ .desc-service h2 {
+     text-align: center;
+     margin: 0px 0px;
+     padding: 1px;
+     font-size: 45px;
+     font-weight: lighter;
+ }
+ 
+ .parent {
+     width: auto;
+     display: flex;
+     flex-direction: row;
+     margin: 10px;
+     padding: 2px;
+ }
+ 
+ .icon {
+     display: flex;
+     align-content: center;
+     width: auto;
+     margin: 5px 30px;
+     padding: 5px;
+ }
+ 
+ .icon .device {
+     display: flex;
+     align-content: center;
+ }
+ 
+ .item h3 {
+     text-align: center;
+     margin: 20px;
+     padding: 10px;
+     font-size: 26px;
+     font-weight: lighter;
+ }
+ /* footer section - social media logo */
+ 
+ footer {
+     box-sizing: border-box;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ .social {
+     width: 500px;
+     margin: 10px;
+ }
+ 
+ .media-icons {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .desc-top {
+     text-align: center;
+     font-size: 20px;
+     font-weight: lighter;
+     margin: 1px;
+ }
+ 
+ .desc-bottom {
+     color: rgb(133, 128, 128);
+     text-align: center;
+     font-weight: lighter;
+     margin: 0px;
+ }
+ 
+ .media-icons li {
+     border: 1px solid #e9edf1;
+     width: 20px;
+     margin: 10px;
+     padding: 10px;
+     border-radius: 90px;
+ }
+ 
+ .twitter {
+     color: #55acee;
+ }
+ 
+ .facebook {
+     color: #094ff1;
+ }
+ 
+ .instagram {
+     color: #9b3f47;
+ }
+ /*
+Add your custom styles below for all styling of the webpage
+
+Remember:
  - Be organised, use comments and separate your styles into meaningful chunks
 for example: General styles, Navigation styles, Hero styles, Footer etc.
 When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
@@ -176,6 +256,6 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 https://codepen.io/freeCodeCamp/full/RKRbwL
 
+indentation issues html and css- https://www.freeformatter.com/html-formatter.html
+
 */
-
-
