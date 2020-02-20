@@ -14,7 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-header{
+.header {
     position: fixed;
     z-index: 10px;
     margin: 0px;
@@ -28,12 +28,12 @@ header{
 }
 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1 */
-header nav ul li {
+.header .content .nav .links li {
     display: inline;
     margin: 0px 20px;
 }
 
-ul {    
+.links {    
     font-weight: 400px;
     margin-top: 10px;
     padding: 0px;
