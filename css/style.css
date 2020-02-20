@@ -159,14 +159,32 @@ p {
     margin: 2px;
     padding:5px;
     width: 100%;
-    display: flex;
+    /* display: flex;
     align-items: row;
-    justify-content: center;
+    justify-content: center; */
     margin: 0px;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
 }
 
+.section-facility h2 {
+    font-size: 35px;
+    font-weight: lighter;
+    margin-top: 60px;
+}
+
+.devices {
+    display: flex;
+    align-items: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+
+ul img {
+    margin: 0px 60px;
+}
 
 /* footer section - social media logo */
 footer {
