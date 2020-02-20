@@ -198,12 +198,38 @@ footer {
     text-align: center;
 }
 
+/* footer section*/
 .social-media ul li{
-    margin: 0px;
+    margin-top: 10px;
     padding: 0px;
     display: flex;
 }
 
+.social {
+    display: flex;
+    align-items: row;
+    justify-content: center;
+}
+
+.social-media i {
+margin: 25px;
+border: 1px solid rgb(218, 217, 217);
+padding: 10px;
+border-radius: 50%;
+}
+
+.light-blue {
+    color: rgb(46, 124, 214)
+}
+
+.blue {
+    color: rgb(83, 83, 161);
+}
+.dark-blue {
+    color: rgb(119, 119, 197);
+}
+
+.fa
 /*
 Add your custom styles below
  
