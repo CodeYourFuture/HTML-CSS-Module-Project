@@ -151,14 +151,23 @@ p {
 
 /* service-facility section including icons and desc */
 .section-facility {
-    margin: 100px;
-    padding:50px;
-    height: 70px;
-    width: 100%;
+    margin: 2px;
+    padding:5px;
+    /* height: 70px; */
+    /* width: 100%; */
+    /* height: auto; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon {
     display: flex;       
     align-items: center;
-    justify-content: column;
-    background-color: white;
+    justify-content: center;
+    margin: 20px;
 }
 
 /* footer section - social media logo */
@@ -177,6 +186,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 https://codepen.io/freeCodeCamp/full/RKRbwL
 
+https://github.com/thomaspark/flexboxfroggy
 */
 
 
