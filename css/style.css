@@ -120,7 +120,11 @@ width: 70%;
 
 /* FOOTER */
 
-#footer h6 {
+footer {
+    padding-bottom: 100px;
+}
+
+footer h6 {
     text-align: center;
     font-size: 1.5em;
     font-weight: 50;
@@ -150,9 +154,7 @@ margin: 0px 20px;
     color: rgb(172, 172, 172);
 }
 
-.end {
-    margin-top: 200px;
-}
+
 
 /* Tablet */
 @media (max-width: 1024px){
