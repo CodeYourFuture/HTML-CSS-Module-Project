@@ -14,35 +14,13 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.header {
-    position: fixed;
-    z-index: 10px;
-    margin: 0px;
-    padding: 20px;
-    height: 70px;
-    width: 100%;
-    display: flex;       
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-}
 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1 */
-.header .content .nav .links li {
-    display: inline;
-    margin: 0px 20px;
-}
-
-.links {    
-    font-weight: 400px;
-    margin-top: 10px;
-    padding: 0px;
+header ul li {
+    margin: 0px;
+    padding: 5px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    text-align: center;
-    }
+}
 
 li {
     list-style: none;
@@ -64,32 +42,59 @@ hr {
     opacity: 0.30;
 }
 
-
-/* lighter makes the letters thinner */
-footer h5 p{
-    text-align: center;
-    font-size: 15px;
-    font-weight: lighter;
-}
-
 p {
     color: rgb(189, 183, 183);
 }
+
+/* top navigation bar */
+.header .nav {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;       
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+@media (max-width: 500px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
 
 /* css styling of html class elements*/
 
 /* top - header - navbar section - logo + list of links*/
 /*nav-bar link meet karma = bold*/
+
 .nav-bold {
     font-weight: bold;
 }
 
 /*logo position in the nav-bar*/
-.header-logo {
-    width: 100%;
-    width: 25px;
+.logo .header-logo {
+    width: 40%;
+    margin: 0px 10px;
+    padding: 15px;
+    position: relative;
 }
 
+.nav ul {    
+    font-weight: 400px;
+    margin-top: 5px 3px;
+    padding: 1px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    }
 
 /* intro section */
 
@@ -153,11 +158,9 @@ p {
 .section-facility {
     margin: 2px;
     padding:5px;
-    /* height: 70px; */
     width: 100%;
-    /* height: auto; */
-    box-sizing: border-box;
     display: flex;
+    align-items: row;
     justify-content: center;
     margin: 0px;
     padding: 20px;
@@ -167,20 +170,21 @@ p {
 
 /* footer section - social media logo */
 footer {
-    margin: 2px;
-    padding:5px;
-    /* height: 70px; */
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    /* height: auto; */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    margin: 0px;
-    padding: 20px;
+    align-content: column;
     text-align: center;
 }
 
-
+.social-media ul li{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
 
 /*
 Add your custom styles below
