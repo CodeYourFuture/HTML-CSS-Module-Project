@@ -143,7 +143,7 @@ p {
     cursor: pointer;
 }
 
-.hero-btn:hover  {
+.hero-btn:hover {
     background-color: rgb(182, 65, 11);
     color: white;
     opacity: 1;
@@ -154,23 +154,33 @@ p {
     margin: 2px;
     padding:5px;
     /* height: 70px; */
-    /* width: 100%; */
+    width: 100%;
     /* height: auto; */
     box-sizing: border-box;
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
 }
 
-
-.icon {
-    display: flex;       
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
 
 /* footer section - social media logo */
+footer {
+    margin: 2px;
+    padding:5px;
+    /* height: 70px; */
+    width: 100%;
+    /* height: auto; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+
 
 /*
 Add your custom styles below
