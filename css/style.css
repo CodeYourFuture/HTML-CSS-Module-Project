@@ -1,6 +1,8 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+* {
+    box-sizing: border-box;
+}
 /* global element css styling*/
 body {
     margin: 0px;
@@ -119,7 +121,7 @@ p {
 
 /* background-image from the image folder */
 .hero-header {
-    background-image: url(/img/first-background.jpg);
+    background-image: url(../img/first-background.jpg);
     margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,10 +157,9 @@ p {
     width: 100%;
     display: flex;       
     align-items: center;
-    justify-content: space-around;
+    justify-content: column;
     background-color: white;
 }
-
 
 /* footer section - social media logo */
 
