@@ -64,6 +64,7 @@ a {
   color: rgb(32, 27, 27);
 }
 
+
 /* Hero section styles */
 .hero-banner {
   background-image: url(../img/first-background.jpg);
@@ -180,7 +181,6 @@ hr {
   border-radius: 50%;
   height: 20px;
   width: 20px;
-  margin: 5px;
   cursor: pointer;
   margin: 10px;
   padding: 10px;
@@ -200,6 +200,16 @@ hr {
 
 /* Media queries */
 /* Work on specificity */
+
+@media screen and (max-width: 450px) {
+  .about {
+    padding-left: 125px;
+  }
+
+  .about .benefits li {
+    padding-left: 75px;
+  }
+}
 
 @media screen and (max-width: 550px) {
   .about {
