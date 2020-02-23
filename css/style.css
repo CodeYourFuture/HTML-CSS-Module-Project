@@ -10,16 +10,18 @@
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+*/
 
  body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-/** navigation bar*/
+
+
 .top-navigation {
-    background-color: #fff;
-    position: fixed;
+    background-color:green;
+    position:fixed;
+    flex-direction:space-between;
     width: 100%;
     border-bottom: 1px solid #DDD;
 }
@@ -30,7 +32,8 @@
     height: 100px;
 }
 .top-navigation .links {
-    float: right;
+    display:flex;
+    justify-content:space-between;
     color: grey;
     font-size: 20px;
     margin-top: 10px;
@@ -47,14 +50,12 @@
     cursor: pointer;
     color: #333333;
 }
-/*
-Section-1
-**/
+
 .section-1{
     background-image:url('../img/first-background.jpg');
     background-position:center-bottom;
     background-size:cover;
-    height:600px;
+    height:500px;
     overflow: auto;
 }
 .section-1 h1{
@@ -69,18 +70,14 @@ Section-1
 }
 
 
-/**
-the button
-*/
+
 .buttons{
     color:white;;
     text-align:center;
     margin-top:1.563rem;
 }
 
-/**
-section-2
-*/
+
 .section-2 {
     background-color:white;
     overflow:hidden;
@@ -97,9 +94,7 @@ section-2
 
 }
 
-/**
-footer
-*/
+
 .social-media{
     background-color:white;
     overflow:auto;
@@ -110,4 +105,13 @@ footer
 border:1px;
 border-color: black;
 }
+@media(max-width:768px){
+    .section-1{
+        flex-direction:column;
+    }
+.top-navigation{
+    background-color:green;
+}
+}
 
+/*  Add your styling here */
