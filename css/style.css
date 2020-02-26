@@ -17,7 +17,6 @@ body {
  */
 
 /* Header styles */
-
 .header {
   display: flex;
   position: fixed;
@@ -34,6 +33,11 @@ body {
 }
 
 /* Navigation styles */
+.navigation label,
+#hamburger {
+  display: none;
+}
+
 .links .active a {
   font-weight: 500;
   font-size: 17px;
@@ -49,7 +53,6 @@ a {
 
 .navigation ul {
   display: flex;
-  flex-direction: row;
   list-style: none;
   padding-top: 10px;
 }
@@ -63,7 +66,6 @@ a {
 .navigation .links a:hover {
   color: rgb(32, 27, 27);
 }
-
 
 /* Hero section styles */
 .hero-banner {
@@ -111,10 +113,7 @@ a {
 /* About section styles */
 .about {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 100px 0;
 }
 
 .about h1 {
@@ -133,6 +132,7 @@ a {
   list-style: none;
   justify-content: space-around;
   align-content: center;
+  padding-left: 0;
 }
 
 .about .benefits li {
@@ -201,44 +201,101 @@ hr {
 /* Media queries */
 /* Work on specificity */
 
-@media screen and (max-width: 450px) {
-  .about {
-    padding-left: 125px;
+@media screen and (max-width: 380px) {
+  .header {
+    display: flex;
+    justify-content: center;
   }
 
-  .about .benefits li {
-    padding-left: 75px;
+  .navigation input:checked ~ ul {
+    display: block;
+    padding: 0;
+  }
+
+  .about h1 {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation input:checked ~ ul {
+    display: block;
+  }
+
+  .hero-banner {
+    height: 110vh;
+  }
+
+  .about h1 {
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 550px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation input:checked ~ ul {
+    display: block;
+    padding: 0;
+  }
+
   .about {
     text-align: center;
     padding-top: 0;
   }
 
   .about h1 {
-    padding-left: 50px;
-    padding-top: 0;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 784px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    padding-right: 20px;
+  }
+
+  .navigation label {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: rgb(76, 80, 88);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 8px;
+    margin-top: 8px;
+  }
+
+  .navigation ul li {
+    display: block;
+  }
+
+  .navigation input:checked ~ ul {
+    display: block;
+    padding: 0;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
   .hero-banner {
     background-size: 100% 100%;
   }
-
-  .about {
-    padding-top: 95px;
-  }
-
-  .about h1 {
-    padding-left: 0;
-  }
-  .about .benefits {
-    padding-left: 0;
-  }
-  /* Add hamburger menu here */
 }
 
 @media screen and (max-width: 1055px) {
@@ -259,7 +316,6 @@ hr {
   .about .benefits {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
   }
 
   .about .benefits li {
