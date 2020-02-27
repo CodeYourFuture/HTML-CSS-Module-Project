@@ -1,5 +1,5 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+ 
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,58 +40,107 @@ ul {
   text-align: center;
 }
 .intro-sec h1,
-h2 {
+.intro-sec h2 {
   color: #ffcf98;
   text-align: center;
   font-weight: 300;
   font-size: 2.5rem;
 }
 
-.intro-sec h1 {
-  font-size: 3rem;
-  font-weight: 800;
-}
+
 
 .cborder {
   border: #ffe0fc 0.5rem solid;
   margin-top: 16rem;
   background-color: rgba(102, 52, 16, 0.5);
-  border-color: #cc8350;
+  border-color: rgb(255, 189, 131);
   padding: 20px;
+}
+.cborder h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.cborder h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+header{
+  display: block;
+  position: relative;
+  text-align: center;
+  
 }
 
 .top-nav {
-  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   position: fixed;
   background-color: #fff;
-  width: 100%;
   border-bottom: 1px solid #ddd;
-  z-index: 99;
+  justify-content: space-around;
+  align-content: space-between;
+  text-align: center;
+  flex-wrap: nowrap;
+  
 }
 
 .content {
   padding: 0;
   margin: 0 auto;
+  width: 25rem;
 }
-:focus {
+
+.nav-links {
+  align-self: center;
+  color: #838994;
+  font-size: 1.134rem;
+  margin-top: 20px;
+  padding: 5px;
+}
+.nav-links:focus {
   outline: none;
 }
-.nav-links {
-  float: right;
-  color: #838994;
-  font-size: 1.04rem;
-  margin-top: 30px;
-  padding: 10px;
+.nav-links li a{
+  color: #444444;
+  text-decoration: none;
+} 
+.nav-links li a:hover {
+  color: #ff00ea;
 }
 
 .logo {
-  height: 80px;
+  align-self: center;
+  height: 70px;
   padding: 10px;
 }
 
+ .motto{
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   color: rgb(24, 24, 24);
+   text-align: center;
+   font-size: 2.23em;
+   font-weight: 300;
+   margin-bottom: 80px;
+ }
 .cases {
   background-color: #fff;
-  overflow: hidden;
+  width: 100%;
+}
+
+.cases-parent{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.case-caption{
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 1.75em;
 }
 
 button {
@@ -105,26 +154,110 @@ button {
   font-weight: 400;
   font-size: 1.3rem;
 }
+
 button:hover {
   background-color: #ff73f3;
   cursor: pointer;
 }
 
+hr{
+  width:50%;
+  height: 0px;
+  border-top: 1px solid #c7c7c7;
+}
+
+footer{
+  width: 100%;
+  height:150px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   color: rgb(24, 24, 24);
+   text-align: center;
+   font-size: 0.85em;
+   font-weight: 300;
+}
 /* --- Responsive design css code --- */
 
-@media (min-width: 48 rem) {
+@media (min-width: 48rem) {
   .content {
-    width: 46rem;
+    width: 40rem;
   }
+
+  .cases-parent{
+    flex-direction: column;
+    
+    }
+
+    .motto{
+      font-size: 2.45em;
+      font-weight: 300;
+    }
+
+    .case-caption{
+      margin-bottom: 100px;
+      font-size: 1.85em;
+    }
 }
 
 @media (min-width: 62rem) {
   .content {
-    width: 60rem;
+    width: 50rem;
   }
+
+  .cases-parent{
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+    .motto{
+      font-size: 2.75em;
+      font-weight: 300;
+    }
+
+    .case-caption{
+      margin-bottom: 100px;
+      font-size: 2em;
+    }
 }
 @media (min-width: 75rem) {
   .content {
-    width: 60%;
+    width: 70rem;
   }
+
+  .cases-parent{
+    flex-direction: row;
+    justify-content: space-around;
+    
+    }
+
+    .motto{
+      font-size: 3em;
+      font-weight: 300;
+    }
+
+    .case-caption{
+      margin-bottom: 100px;
+      font-size: 2em;
+    }
+}
+
+  @media (min-width: 85rem) {
+    .content {
+      width: 80rem;
+    }
+
+    .cases-parent{
+      flex-direction: row;
+      justify-content: space-around;
+      
+      }
+
+      .motto{
+        font-size: 3.7em;
+        font-weight: 300;
+      }
+
+      .case-caption{
+        margin-bottom: 100px;
+        font-size: 2.2em;
+      }
 }
