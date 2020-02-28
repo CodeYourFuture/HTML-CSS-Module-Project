@@ -1,12 +1,10 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-
-/**
+    /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    /**
  * Add your custom styles below
  * 
  * Remember: 
@@ -15,142 +13,192 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-* {
-    box-sizing: border-box;
-    font-size: 100%;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-family: inherit;
-}
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    line-height: 1.2;
-}
-
-
-/* Header section styling */
-
-.upper-section .logo {
-    height: 3em;
-    position: fixed;
-    top: 1em;
-    left: 20em;
-    z-index: 1;
-}
-
-.navigation {
-    width: 100%;
-    background-color: #FFF;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navigation .links {
-    margin-left: 18em;
-    margin-right: 12em;
-}
-
-.navigation .links li {
-    display: inline-block;
-    color: #838994;
-    margin: 1.7em 0.9em;
-}
-
-.navigation .links li:hover {
-    color: #333;
-    cursor: pointer;
-}
-
-.navigation .links .bold {
-    font-weight: 500;
-    color: #4c5058;
-}
-
-
-/* Introduction styling */
-
-.button {
-    width: 10em;
-    height: 3.3em;
-    padding: 16px 20px;
-    background-color: #EF6327;
-    border-radius: 0.3em;
-}
-
-.button:hover {
-    background-color: #E05616;
-}
-
-.button p {
-    color: #FFF;
-    font-size: 1.1em;
-    text-align: center;
-}
-
-.introduction {
-    background-image: url(../img/first-background.jpg);
-    background-size: cover;
-    background-position: center bottom;
-    height: 50em;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1,
-h3 {
-    font-weight: 300;
-    color: #FFF;
-    text-align: center;
-    line-height: 0.4em;
-}
-
-h1 {
-    font-size: 3em;
-    margin-top: 7em;
-}
-
-h3 {
-    font-size: 1.7em;
-    margin-top: 0.2em;
-    margin-bottom: 1.2em;
-}
-
-
-/* Boxes styling */
-
-.features {
-    display: flex;
-    justify-content: center;
-}
-
-.caption {
-    position: relative;
-    top: 150px;
-    right: 160px;
-    width: 200px;
-    text-align: center;
-}
-
-.links li,
-.features li {
-    list-style-type: none;
-}
-
-footer {
-    border-top: 1px solid lightgrey;
-    margin-left: 120px;
-    margin-right: 120px;
-}
+    
+    * {
+        box-sizing: border-box;
+        font-size: 100%;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-family: inherit;
+    }
+    
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        line-height: 1.2;
+    }
+    /* Header section styling */
+    
+    .upper-section .logo {
+        height: 3em;
+        position: fixed;
+        top: 1em;
+        left: 20em;
+        z-index: 1;
+    }
+    
+    .navigation {
+        width: 100%;
+        background-color: #FFF;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+    }
+    
+    .navigation .links {
+        margin-left: 18em;
+        margin-right: 12em;
+    }
+    
+    .navigation .links li {
+        display: inline-block;
+        color: #838994;
+        margin: 1.7em 0.9em;
+    }
+    
+    .navigation .links li:hover {
+        color: #333;
+        cursor: pointer;
+    }
+    
+    .navigation .links .bold {
+        font-weight: 500;
+        color: #4c5058;
+    }
+    /* Introduction styling */
+    
+    .button {
+        width: 10em;
+        height: 3.3em;
+        padding: 16px 20px;
+        background-color: #EF6327;
+        border-radius: 0.3em;
+    }
+    
+    .button:hover {
+        background-color: #E05616;
+    }
+    
+    .button p {
+        color: #FFF;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    
+    .introduction {
+        background-image: url(../img/first-background.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        height: 50em;
+        overflow: auto;
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1,
+    h3 {
+        font-weight: 300;
+        color: #FFF;
+        text-align: center;
+        line-height: 0.4em;
+    }
+    
+    h1 {
+        font-size: 3em;
+        margin-top: 7em;
+    }
+    
+    h3 {
+        font-size: 1.7em;
+        margin-top: 0.2em;
+        margin-bottom: 1.2em;
+    }
+    /* Boxes styling */
+    
+    .boxes {
+        position: relative;
+        left: 2em;
+    }
+    
+    h2 {
+        font-size: 2.7em;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 3em;
+        margin-bottom: 1em;
+    }
+    
+    .features {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .caption {
+        font-size: 1.5em;
+        margin-top: 1em;
+        position: relative;
+        right: 1.8em;
+    }
+    
+    .links li,
+    .features li,
+    .social-media {
+        list-style-type: none;
+    }
+    
+    .features li {
+        margin: 0 1.3em 8em 1.3em;
+    }
+    /* Footer section styling */
+    
+    .footer {
+        border-top: 1px solid #d3d3d3;
+        margin: 0 15em;
+        text-align: center;
+    }
+    
+    .social-media li {
+        display: inline-block;
+    }
+    
+    .social-media li:hover {
+        cursor: pointer;
+    }
+    
+    .social-media img {
+        width: 2.3em;
+        height: 2.3em;
+        margin: 0 0.3em;
+    }
+    
+    h5 {
+        font-weight: 400;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .copyrights {
+        font-weight: 300;
+        color: #a9a9a9;
+        margin-top: 1em;
+        margin-bottom: 10em;
+    }
+    /* Responsive Design */
+    
+    @media screen and (max-width: 700px) {
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
