@@ -6,7 +6,7 @@ CITY CLASS_NO - FIRST_NAME LAST_NAME - MODULE - WEEK_NO
 
 For example,
 
-London Class 7 - Chris Owen - HTMl/CSS - Week 1
+London Class 7 - Chris Owen - HTML/CSS - Week 1
 
 -->
 
