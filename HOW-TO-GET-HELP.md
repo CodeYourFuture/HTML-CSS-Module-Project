@@ -1,0 +1,31 @@
+# How To Get Help
+
+When you get stuck it's important that you ask for help at the right time and in the right way - this means you will be able to solve you problem as quickly as possible!
+
+## Guide
+
+Please review our guide on the Syllabus for how to get help
+
+https://syllabus.codeyourfuture.io/guides/escalation-policy/
+
+You should complete all of the steps in the order listed to get help
+
+## Reporting Issues in Coursework
+
+Is there a problem with this coursework? 
+Have you noticed a bug? 
+Does something not make sense?
+
+Post in the relevent channel on Slack depending on the module you are completing:
+
+- Git - `cyf-module-git`
+- HTML/CSS - `cyf-module-html-css`
+- JavaScript Core 1 - `cyf-module-js1`
+- JavaScript Core 2 - `cyf-module-js2`
+- JavaScript Core 2 - `cyf-module-js3`
+- React - `cyf-module-react`
+- Node - `cyf-module-node`
+- SQL - `cyf-module-sql`
+- MongoDB - `cyf-module-mongodb`
+
+None of these? Post in #cyf-syllabus.
