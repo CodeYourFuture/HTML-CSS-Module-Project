@@ -84,6 +84,15 @@ ol, ul {
     list-style: none;
 }
 
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 li {
     display: list-item;
     text-align: -webkit-match-parent;
@@ -128,6 +137,12 @@ li {
 .cases .devices > li{
     width: 33.3333333%;
     float: left;
+}
+
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
 }
 
 button {
@@ -210,6 +225,12 @@ button {
     font-size: 0.9rem;
     font-weight: 300;
     color: #838994;
+}
+
+@media (min-width: 62rem) {
+    .content {
+        width: 60rem;
+    }
 }
 
 @media (min-width: 48rem) {
