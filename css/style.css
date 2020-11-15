@@ -17,3 +17,36 @@ body {
  */
 
 
+/**
+ * Section : Header
+ * Purpose : To the header of the page including the navigation bar and the logo
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.headerLogoContainer {
+    width: 1.5%;
+    padding: 1%;
+}
+
+.headerLogo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navBar li {
+    display: inline-block;
+    padding: 5%;
+    white-space: nowrap; /* to stop the li items from wrapping to next line */
+    align-self: flex-start;
+}
