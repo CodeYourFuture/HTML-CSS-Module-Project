@@ -51,18 +51,18 @@ footer {
     display: block;
 }
 
+.content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}
+
 .top-navigation {
     background-color: #fff;
     position: fixed;
     width: 100%;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
-}
-
-.content {
-    padding: 0 0.938rem;
-    margin: 0 auto;
-    min-width: 37.5rem;
 }
 
 .top-navigation .links {
@@ -78,6 +78,20 @@ footer {
 
 .top-navigation > .content {
     height: 4.375rem;
+}
+
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .logo {
+    height: 4.375rem;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
 
 ol, ul {
@@ -96,15 +110,6 @@ ul {
 li {
     display: list-item;
     text-align: -webkit-match-parent;
-}
-
-.top-navigation .links li.active {
-    color: #4c5058;
-    font-weight: 500;
-}
-
-.top-navigation .logo {
-    height: 4.375rem;
 }
 
 .introduction{
@@ -157,6 +162,12 @@ button {
     font-size: 1.125rem;
 }
 
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+
 .introduction h1 {
     margin-top: 17.5rem;
     font-size: 3.125rem;
@@ -186,6 +197,12 @@ button {
     text-align: center;
 }
 
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+
 .social .icons > li {
     border-radius: 1.25rem;
     width: 2.5rem;
@@ -195,6 +212,10 @@ button {
     border: 1px solid #eaebec;
     padding: 0.625rem 0;
     text-align: center;
+}
+
+.social .icons > li:hover {
+    cursor: pointer;
 }
 
 .social .twitter {
