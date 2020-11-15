@@ -21,6 +21,7 @@
 
 section {
     display: block;
+
 }
 
 div {
@@ -33,6 +34,21 @@ div {
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    display: block;
+}
+
+footer {
+    display: block;
 }
 
 .top-navigation {
@@ -68,6 +84,11 @@ ol, ul {
     list-style: none;
 }
 
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
 .top-navigation .links li.active {
     color: #4c5058;
     font-weight: 500;
@@ -85,10 +106,110 @@ ol, ul {
     overflow: auto;
 }
 
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+
+.cases .devices > li{
+    width: 33.3333333%;
+    float: left;
+}
+
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+
+.introduction h1, .introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
 .introduction .buttons {
     color: white;
     text-align: center;
     margin-top: 1.563rem;
+}
+
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+.social .twitter {
+    color: #55acee;
+}
+
+.social .facebook {
+    color: #55acee;
+}
+
+.social .instagram {
+    color: #55acee;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
 }
 
 @media (min-width: 48rem) {
