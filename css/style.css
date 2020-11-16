@@ -15,11 +15,6 @@ ul li {
   display: inline-block;
 }
 
-.content {
-  padding: 0 0.9rem;
-  margin: 0 auto;
-  min-width: 37.5rem;
-}
 h5 {
   font-size: 1rem;
   text-align: center;
@@ -130,6 +125,11 @@ button {
   font-weight: 400;
   font-size: 1.5rem;
   margin: 2.5rem 0px 1.9rem;
+}
+
+.cases .devices > li {
+  width: 33.3333333%;
+  float: left;
 }
 
 /* Footer styles */
