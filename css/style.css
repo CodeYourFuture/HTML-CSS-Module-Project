@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 /**
@@ -13,7 +14,7 @@ body {
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ * - When using Flexbox, remember    the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
 
@@ -23,6 +24,86 @@ img {
     width: 5%;
 }
 
+
+/* NAV */
+
+nav{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    margin: 0 0 0 10;
+}
+.logo-nav {
+    display: inline-block;
+    width: 2%;
+    padding: 1rem 1rem 1rem 5rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: right;
+    float: right;
+    padding-right: 5rem;
+}
+
+.menu li {
+    display: inline;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
+/* MAIN */
+
+/* First section */
+
 .first-section {
     background-image: url(../img/first-background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    padding-top: 25rem;
+}
+
+
+.first-section h1{  
+    margin: 15rem, 0, 0, 0,;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.first-section h2{  
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.first-section .button-first {
+    /* display: inline-block;
+    justify-content: center;
+    align-items: center; */
+    /* display: inline-block; */
+    margin: auto;
+    /* width:  */
+}
+
+
+/* Change it in to children and eddit h1 h2 */
+.white-font {
+    color: aliceblue;
+}
+
+
+/* second section */
+/* .second-section {
+
+} */
+
+.list-of-pictures {
+    list-style-type: none;
+
+}
+.list-of-pictures li {
+    display: inline-block;
+    width: 32%;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,62 +10,72 @@
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <!-- Add a link to your CSS file here (use the line above to guide you) -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-        <nav>
-            <ul>
-                <li>How it works</li>
-                <li>Store</li>
-                <li>Blog</li>
-                <li>Help</li>
-                <li>Login</li>
-            </ul>
-            <img src="img/karma-logo.svg" alt="">
-        </nav>
+    <nav>
+        <img class="logo-nav" src="img/karma-logo.svg" alt="">
+        <ul class="menu">
+            <li>Meet Karma</li>
+            <li>How it works</li>
+            <li>Store</li>
+            <li>Blog</li>
+            <li>Help</li>
+            <li>Login</li>
+        </ul>
 
-        <main>
-            
-            <section class="first-section">
-                <!-- TODO: -->
-                <!-- Picture -> css background -> easiest solution -->
-                <h1>Introduction Karma</h1>
-                <h2>Bring WiFi with You, everywhere You go.</h2>
+    </nav>
+
+    <main>
+
+        <section class="first-section">
+            <!-- TODO: -->
+            <!-- Picture -> css background -> easiest solution -->
+            <h1 class="white-font">Introduction Karma</h1>
+            <h2 class="white-font">Bring WiFi with You, everywhere You go.</h2>
+            <div class="button-first">
                 <button>Learn More</button>
-            </section>
+            </div>
+        </section>
 
-            <section>
-                <h2>Everyone needs a little Karma</h2>
+        <section class="second-section">
+            <h2>Everyone needs a little Karma</h2>
+            <ul class=list-of-pictures>
+                <li>
+                    <img src="img/icon-devices.svg" alt="">
+                    <div><h3>Internet for all devices</h3></div>
+                </li>
+                <li>
+                    <img src="img/icon-coffee.svg" alt="">
+                    <div><h3>Boos Your Productivity</h3></div>
+                </li>
+                <li>
+                    <img src="img/icon-refill.svg" alt="">
+                    <div><h3>Pay as You go</h3></div>
+                </li>
+            </ul>
+        </section>
 
-                <img src="img/icon-devices.svg" alt="">
-                <h3>Internet for all devices</h3>
+        <footer>
+            <h4>Join us on</h4>
 
-                <img src="img/icon-coffee.svg" alt="">
-                <h3>Boos Your Productivity</h3>
-
-                <img src="img/icon-refill.svg" alt="">
-                <h3>Pay as You go</h3>
-
-            </section>
-
-            <footer>
-                <h4>Join us on</h4>
-                
-                <!-- TODO: icons
+            <!-- TODO: icons
                 Twitter
                 Facebook
                 Instagram -->
 
-                <p>© Karma Mobility, Inc.</p>
-            </footer>
+            <p>© Karma Mobility, Inc.</p>
+        </footer>
 
 
-        </main>
+    </main>
 
 
 </body>
+
 </html>
