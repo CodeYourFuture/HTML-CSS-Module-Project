@@ -1,9 +1,13 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    line-height: 1.8;
 }
 
 /**
@@ -17,3 +21,193 @@ body {
  */
 
 
+
+/* nav styling */
+nav {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    border-bottom: 1px rgb(199, 198, 198) solid;
+
+
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    color: #a5a5a5;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-size: 17px;
+
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: #111;
+}
+
+
+/* logo */
+.logo {
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 6.5rem;
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+}
+
+/* bold on meet karma */
+span {
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+}
+
+/* showcase */
+
+#showcase {
+    background: url("../img/first-background.jpg") no-repeat center center/cover;
+    height: 41.5rem;
+    ;
+    margin-top: 1rem;
+}
+
+#showcase .showcase-text {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+
+    font-weight: 200;
+}
+
+
+
+.showcase-text h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+#showcase .showcase-text p {
+    font-size: 60px;
+    line-height: 1.2em;
+    font-size: 1.5rem;
+}
+
+#showcase .showcase-text button {
+    background-color: rgb(255, 106, 7);
+    padding: 0.5rem 2rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#showcase .showcase-text button:hover {
+    cursor: pointer;
+    background-color: rgb(199, 92, 21);
+}
+
+/* icons section */
+
+
+#icons-title {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#icons img {
+    height: 150px;
+    width: 200px;
+    margin: 0 1rem;
+}
+
+#icons p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 10rem;
+}
+
+.icon-3 p {
+    margin-right: 2rem;
+}
+
+/* Hr border */
+
+.style {
+    color: rgb(165, 165, 165);
+    width: 60%;
+    margin-left: 18rem;
+}
+
+/* footer */
+
+footer .footer-title {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-weight: 10;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+
+/* social media icons */
+.social {
+    margin: 1rem;
+}
+
+.social-1 i {
+    color: #1DA1F2;
+    border: 1px solid rgb(207, 206, 206);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-2 i {
+    color: #4267B2;
+    margin: 0 1rem;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-3 i {
+    border: 1px solid rgb(207, 206, 206);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
