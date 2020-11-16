@@ -10,10 +10,15 @@
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
- 
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: rgb(248, 248, 248);
+}
+
+.nav_list{
+    display: flex;
 }
 
 
