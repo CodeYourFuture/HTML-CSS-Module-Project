@@ -5,7 +5,10 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
+    padding: 0;
+
 }
+
 
 /**
  * Add your custom styles below
@@ -20,36 +23,54 @@ body {
 
 /* Temporrary */
 
-img {
+/* img {
     width: 5%;
+} */
+
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
 }
 
-
-/* NAV */
-
 nav{
-    position: fixed;
+    /* position: inline-block;; */
     background-color: white;
     width: 100%;
     margin: 0 0 0 10;
+    display: block;
 }
 .logo-nav {
-    display: inline-block;
-    width: 2%;
-    padding: 1rem 1rem 1rem 5rem;
+    /* display: inline-block; */
+    width: 1.5%;
+    padding: 1rem 1rem 1rem 20rem;
 }
 
 .menu {
     list-style-type: none;
-    display: flex;
-    align-items: right;
+    /* display: inline; */
+    /* align-items: right; */
     float: right;
-    padding-right: 5rem;
+    padding-right: 20rem;
+    display: block;
 }
 
 .menu li {
-    display: inline;
+    display: inline-block;
     padding: 1rem 1rem 1rem 1rem;
+    font-weight: normal;
+    font-style: normal;
+    color: grey;
+}
+
+.menu li:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.menu li:first-child {
+    font-weight: bold;
 }
 
 
@@ -60,50 +81,137 @@ nav{
 
 .first-section {
     background-image: url(../img/first-background.jpg);
-    background-position: center;
+    background-position: center bottom;
     background-size: cover;
-    height: 40rem;
-    padding-top: 25rem;
+    background-repeat: no-repeat;
+    height: 25rem;
+    padding-top: 15rem; /* Generally I have no idea */
 }
 
 
 .first-section h1{  
-    margin: 15rem, 0, 0, 0,;
+    margin-top: 12rem 0 0 0;  /*Generally I have no idea  */
     text-align: center;
     font-size: 3rem;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .first-section h2{  
     text-align: center;
     font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
 }
 
-.first-section .button-first {
-    /* display: inline-block;
-    justify-content: center;
-    align-items: center; */
-    /* display: inline-block; */
+.button-first {
     margin: auto;
-    /* width:  */
+    text-align: center;
 }
 
 
-/* Change it in to children and eddit h1 h2 */
+/* Change it in to children and eddit h1 h2? */
 .white-font {
-    color: aliceblue;
+    color: white;
 }
 
+/* I coopied it from page: button + button:hover */
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
 
 /* second section */
-/* .second-section {
-
-} */
+.second-section img {
+    width: 25%;
+}
+.second-section h2{
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: normal;
+}
 
 .list-of-pictures {
     list-style-type: none;
+    text-align: center;
 
 }
 .list-of-pictures li {
     display: inline-block;
-    width: 32%;
+    width: 30%;
+    
+}
+
+h3 {
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* hr */
+hr{
+    border-top: #eaebec 1px solid;
+    padding:0;
+    margin:0;
+    width: 85%;
+    height: 0;
+    margin: auto;
+}
+
+/* footer */
+h4 {
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer{
+    width: 100%;
+    padding-bottom: 10rem;
+}
+
+.manipulator{
+    display: inline-block;
+    width: 100%;
+}
+
+footer h4, p {
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icons {
+    list-style-type: none;
+    text-align: center;
+    padding: 0; /* small horrible stubborn value!*/ 
+}
+
+.icons > li {
+    display: inline-block;
+    text-align: center;
+    padding: 0.50rem;
+ }
+
+/*Easy edition of color's icons - nice */ 
+.icons .twitter {
+    color: #55acee;
+}
+.icons .facebook {
+    color: #4c66a4;
+}
+.icons .instagram {
+    color: #3f729b;
 }
