@@ -22,16 +22,23 @@ body {
 
 .nav{
     width: 100%;
-    border-bottom: rgb(27, 27, 26) solid 1px;
-    font-size: 1.3em;
-}
-
-.nav_contents{
+    height: 3em;
+    font-size: 1.2em;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 15px auto;
+    align-items: center;
+    border-bottom: rgb(27, 27, 26) solid 1px;
+    padding-bottom: 0.8em;
+}
 
+.logo_image{
+    height: 2em;
+    padding-top: 0.5em;
+}
+.nav_contents{
+    margin-right: 50px;
 }
 
 
@@ -39,7 +46,9 @@ a:link{
     text-decoration: none;
 } 
 
-.nav_list li{
+.nav_contents li{
+    align-self: center;
     list-style-type: none;
     float: left;
+    padding-left: 1.6em;
 }
