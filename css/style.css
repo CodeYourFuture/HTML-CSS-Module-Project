@@ -6,6 +6,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  line-height: 1;
 }
 
 body,
@@ -84,6 +85,7 @@ div.logo img {
 /* Introduction Section */
 .intro-section {
   display: flex;
+  align-items: center;
   background-image: url(../img/first-background.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -96,8 +98,8 @@ div.logo img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
   text-align: center;
+  margin-bottom: 0.1rem;
 }
 
 .intro-section h1,
@@ -109,17 +111,15 @@ div.logo img {
 
 .intro-section h1 {
   font-size: 3.125rem;
-  margin: -0.5rem 0;
+  margin: 0rem;
 }
 
 .intro-section h3 {
   font-size: 1.563rem;
   margin-top: 1.25rem;
-  margin-bottom: 1.553rem;
 }
 
 .intro-section button {
-  margin: -0.1rem;
 }
 
 .intro-section button.big-button {
@@ -134,11 +134,62 @@ div.logo img {
   font-size: 1.125rem;
 }
 
+/* Advertisement Section */
+.advert-section {
+  display: flex;
+  align-items: center;
+  height: 32.8125rem;
+}
+
+.advert-section .content {
+  box-sizing: border-box;
+}
+.advert-section .content h2 {
+  font-size: 2.75rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.advert-section .content > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.advert-section div .flex-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  text-align: center;
+}
+
+.advert-section img {
+  width: 127px;
+  height: 127px;
+}
+
+.advert-section .content h3 {
+  font-weight: 400;
+  font-size: 1.563rem;
+  margin: 2.5rem 0px 1.875rem;
+}
 /*
 * MEDIA QUERIES
 */
 @media (min-width: 48rem) {
   .content {
     width: 46rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  .content {
+    width: 60rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .content {
+    width: 60%;
   }
 }
