@@ -77,6 +77,66 @@ div.logo img {
   font-weight: 500;
 }
 
+/*
+* MAIN STYLES
+*/
+
+/* Introduction Section */
+.intro-section {
+  display: flex;
+  background-image: url(../img/first-background.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  overflow: auto;
+}
+
+.intro-section div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.intro-section h1,
+.intro-section h3 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.intro-section h1 {
+  font-size: 3.125rem;
+  margin: -0.5rem 0;
+}
+
+.intro-section h3 {
+  font-size: 1.563rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.553rem;
+}
+
+.intro-section button {
+  margin: -0.1rem;
+}
+
+.intro-section button.big-button {
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+
+/*
+* MEDIA QUERIES
+*/
 @media (min-width: 48rem) {
   .content {
     width: 46rem;
