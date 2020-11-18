@@ -15,10 +15,10 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
 }
 
 /* heading/ navbar styling */
-
 
 .nav_bar{
     width: 100%;
@@ -27,12 +27,13 @@ body {
     position: fixed;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
-    border-bottom: rgb(27, 27, 26) solid 1px;
-    padding-bottom: 0.8em;   
+    padding-bottom: 0.8em; 
+    background-color: rgb(248, 248, 248);
+    position: fixed;
     z-index: 300;
+    overflow: auto;
 }
 
 .logo_image{
@@ -42,7 +43,6 @@ body {
 }
 .nav_contents{
     margin-right: 6em;
-    /* opacity: 0.8; */
 }
 a:link{
     text-decoration: none;
@@ -72,19 +72,11 @@ ul li:first-child {
 /* -------------------heading---------- */
 
 /* Main Styling */
+
 .page_intro{
-    display: inline-flex
-    width: 100%;
-    height: 50ems;
-    overflow: auto;
-
- 
-}
-
-.hero_image{
-    width: 100%; 
-    height: 100%; 
-    padding-top: 4em;
-    /* object-fit: contain; */
-    
+    background-image: url(../img/first-background.jpg);
+    background-position: center bottom;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 40rem;
 }
