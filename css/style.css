@@ -14,6 +14,7 @@ header,
 main,
 footer,
 section,
+nav,
 div,
 h1,
 h2,
@@ -52,7 +53,6 @@ ul {
 
 .header-content {
   display: flex;
-  box-sizing: border-box;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -69,7 +69,6 @@ div.logo img {
 
 /* Navigation Styles */
 .navigation {
-  box-sizing: border-box;
   width: 32.375rem;
 }
 .navigation ul {
@@ -152,7 +151,6 @@ div.logo img {
 /* Advertisement Section */
 
 .advert-section .content {
-  box-sizing: border-box;
   margin: 7.875rem auto 6.875rem;
 }
 .advert-section .content h2 {
@@ -173,7 +171,6 @@ div.logo img {
   align-items: center;
   width: 33.33%;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .advert-section img {
@@ -200,7 +197,6 @@ div.logo img {
 }
 
 .footer .content {
-  box-sizing: border-box;
   border-top: 1px solid #eaebec;
   text-align: center;
   height: 11.001rem;
@@ -214,7 +210,6 @@ div.logo img {
   margin: auto;
   margin-top: 1.313rem;
   width: 9rem;
-  box-sizing: border-box;
 }
 
 .footer .content h5 {
@@ -229,11 +224,9 @@ div.logo img {
   margin: auto;
   margin-top: 1.313rem;
   width: 9.25rem;
-  box-sizing: border-box;
 }
 
 .footer .content .social-icons {
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -247,7 +240,6 @@ div.logo img {
   border: 1px solid #eaebec;
   padding: 0.625rem 0;
   text-align: center;
-  box-sizing: border-box;
   margin-top: -0.0625rem;
 }
 
