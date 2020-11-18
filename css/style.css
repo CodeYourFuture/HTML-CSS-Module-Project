@@ -78,6 +78,10 @@ div.logo img {
   font-weight: 500;
 }
 
+.navigation ul li:hover {
+  cursor: pointer;
+  color: #333333;
+}
 /*
 * MAIN STYLES
 */
@@ -119,7 +123,10 @@ div.logo img {
   margin-top: 1.25rem;
 }
 
-.intro-section button {
+.intro-section .content button:hover {
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
 }
 
 .intro-section button.big-button {
@@ -242,6 +249,9 @@ div.logo img {
   margin-top: -0.0625rem;
 }
 
+.social-icons div:hover {
+  cursor: pointer;
+}
 .social-icons .twitter {
   color: #55acee;
 }
