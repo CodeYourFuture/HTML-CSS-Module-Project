@@ -216,3 +216,57 @@ footer p {
 footer .copyright {
     margin-bottom: 7rem;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+
+
+    body {
+
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    nav ul li {
+        max-width: 100%;
+        height: auto;
+        font-size: medium;
+
+    }
+
+    nav img {
+        display: none;
+    }
+
+    #showcase {
+        max-width: 100%;
+    }
+
+    .showcase-text p {
+        display: none;
+    }
+
+    #icons {
+        flex-direction: column;
+        margin: 0 5rem;
+
+    }
+
+    #icons p {
+        margin-left: 2rem;
+    }
+
+    .style {
+        margin-left: 5rem;
+    }
+}
