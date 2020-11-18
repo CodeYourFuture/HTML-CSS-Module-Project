@@ -135,19 +135,17 @@ div.logo img {
 }
 
 /* Advertisement Section */
-.advert-section {
-  display: flex;
-  align-items: center;
-  height: 32.8125rem;
-}
 
 .advert-section .content {
   box-sizing: border-box;
+  margin: 7.875rem auto 6.875rem;
 }
 .advert-section .content h2 {
   font-size: 2.75rem;
   font-weight: 300;
   text-align: center;
+  margin: 0rem;
+  margin-bottom: 3.1rem;
 }
 
 .advert-section .content > div {
@@ -161,17 +159,22 @@ div.logo img {
   align-items: center;
   width: 33.33%;
   text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .advert-section img {
   width: 127px;
   height: 127px;
+  margin: 0;
 }
 
 .advert-section .content h3 {
   font-weight: 400;
   font-size: 1.563rem;
-  margin: 2.5rem 0px 1.875rem;
+  margin: 0;
+  margin-top: 2.7rem;
 }
 /*
 * MEDIA QUERIES
