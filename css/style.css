@@ -32,6 +32,7 @@ body {
     align-items: center;
     border-bottom: rgb(27, 27, 26) solid 1px;
     padding-bottom: 0.8em;   
+    z-index: 300;
 }
 
 .logo_image{
@@ -41,19 +42,18 @@ body {
 }
 .nav_contents{
     margin-right: 6em;
+    /* opacity: 0.8; */
 }
-
-
 a:link{
     text-decoration: none;
-    
 } 
+
 a{
-    color: gray
-    
+    color: rgb(138, 136, 136)
+
 }
 a:hover {
-    color: rgb(124, 8, 8);
+    color: rgb(0, 0, 0);
 }
 
 .nav_contents li{
@@ -61,4 +61,30 @@ a:hover {
     list-style-type: none;
     float: left;
     padding-left: 1.6em;
+}
+/* 1st in the a in list selected */
+
+ul li:first-child {
+    font-weight: 500;
+    opacity: 1;
+}
+
+/* -------------------heading---------- */
+
+/* Main Styling */
+.page_intro{
+    display: inline-flex
+    width: 100%;
+    height: 50ems;
+    overflow: auto;
+
+ 
+}
+
+.hero_image{
+    width: 100%; 
+    height: 100%; 
+    padding-top: 4em;
+    /* object-fit: contain; */
+    
 }
