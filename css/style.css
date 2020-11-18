@@ -20,31 +20,39 @@ body {
 /* heading/ navbar styling */
 
 
-.nav{
+.nav_bar{
     width: 100%;
     height: 3em;
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: fixed;
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
     border-bottom: rgb(27, 27, 26) solid 1px;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.8em;   
 }
 
 .logo_image{
-    height: 2em;
+    height: 2.2em;
     padding-top: 0.5em;
+    margin-left: 7em;
 }
 .nav_contents{
-    margin-right: 50px;
+    margin-right: 6em;
 }
 
 
 a:link{
     text-decoration: none;
+    
 } 
+a{
+    color: gray
+    
+}
+
 
 .nav_contents li{
     align-self: center;
