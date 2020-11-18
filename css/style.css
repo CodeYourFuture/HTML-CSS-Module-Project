@@ -13,9 +13,18 @@ body,
 header,
 main,
 footer,
-section {
-  margin: 0em;
-  padding: 0em;
+section,
+div,
+h1,
+h2,
+h3,
+h5,
+span,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -115,12 +124,11 @@ div.logo img {
 
 .intro-section h1 {
   font-size: 3.125rem;
-  margin: 0rem;
 }
 
 .intro-section h3 {
   font-size: 1.563rem;
-  margin-top: 1.25rem;
+  margin: 1.25rem 0 1.563rem;
 }
 
 .intro-section .content button:hover {
@@ -151,7 +159,6 @@ div.logo img {
   font-size: 2.75rem;
   font-weight: 300;
   text-align: center;
-  margin: 0rem;
   margin-bottom: 3.1rem;
 }
 
@@ -167,20 +174,16 @@ div.logo img {
   width: 33.33%;
   text-align: center;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 .advert-section img {
   width: 127px;
   height: 127px;
-  margin: 0;
 }
 
 .advert-section .content h3 {
   font-weight: 400;
   font-size: 1.563rem;
-  margin: 0;
   margin-top: 2.7rem;
 }
 
@@ -215,7 +218,6 @@ div.logo img {
 }
 
 .footer .content h5 {
-  margin: 0;
   font: inherit;
 }
 
