@@ -17,6 +17,8 @@ body {
     background-color: rgb(248, 248, 248);
     box-sizing: border-box;
     font-weight: 300;
+    width: 100%;
+    height: auto;
 }
 
 /* heading/ navbar styling */
@@ -186,9 +188,9 @@ footer h4{
 
 @media screen and (max-width: 600px) {
 
-    body{
+     body{
         font-size: 10px;
-        width:800px;
+        width:600px;
     }
 
     .nav_bar{
@@ -199,11 +201,14 @@ footer h4{
         margin-right: 0;
     }
 
-    .logo_image{
+     .logo_image{
         height: 1.5em;
-        padding-top: 0.5em;
+         padding-top: 0.5em;
         margin-left: 0;
-        left: 0;
+        left: 0; 
     
     } 
+    .page_intro{
+        width: 600px;
+    }
 }
