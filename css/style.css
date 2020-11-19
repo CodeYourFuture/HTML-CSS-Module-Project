@@ -137,18 +137,20 @@ h2 {
   height: 200px;
   width: 70%;
 }
+/*this will adjust the height and width of the images */
 .icon-grid > img {
   height: 100px;
   width: 100px;
 }
+/*the captions under the images are put inside a separate flex-box*/
 .captions {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 70%;
-  margin-left: -100px;
 }
+/*the h1 "everyone needs karma" styling*/
 .icons-captions h1 {
   font-size: 2.7rem;
   font-weight: 300;
@@ -188,6 +190,7 @@ hr {
 .social-media p:nth-child(3) {
   color: grey;
 }
+/*all the selected classed are bootstrap classes*/
 .fa {
   padding: 10px;
   font-size: 15px;
