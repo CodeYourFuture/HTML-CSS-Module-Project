@@ -16,6 +16,7 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: rgb(248, 248, 248);
     box-sizing: border-box;
+    font-weight: 300;
 }
 
 /* heading/ navbar styling */
@@ -35,7 +36,6 @@ body {
     border-bottom:1px solid rgb(121, 119, 119);
     position: fixed;
     z-index: 300;
-    overflow: auto;
 }
 
 .logo_image{
@@ -88,27 +88,51 @@ ul li:first-child {
    text-align: center;
    color: white;
    font-weight: 300;
-   padding-top: 15rem;
+   padding-top: 12rem;
    opacity: 1;
+   line-height: 0.7;
+}
+
+.page_intro h1{
+    font-weight: 300;
+    font-size: 3.2rem;
+}
+
+.page_intro h3{
+    font-weight: 300;
+    font-size: 1.7rem;
 }
 
 .learn_more_btn{
+    font-weight: 400;
     display: inline-block;
     background-color: #f15b2a;
-    width: 11rem;
-    padding: 1rem;
+    width: 9rem;
+    padding: 1.2rem;
     border: none;
-    border-radius: 5%;
+    border-radius: 5px 5px;
+    
+
 }
+.learn_more_btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .learn_more_btn:hover{
+    background-color: #e4430d; 
+  }
 
 /* section 2 (devices) */
 
-
+.Karma_service_photos{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-top: 7rem;
+}
 
 .internet_packages{
-    width: 100%;
-    display: flex;
+    display: flex; 
     justify-content: center;
-
-
+    font-size: 1.5rem;
 }
+
