@@ -78,7 +78,6 @@ ul li:first-child {
 .main_page{
     background-image: url(../img/first-background.jpg);
     background-position: center bottom;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     height: 40rem;
 }
@@ -134,6 +133,7 @@ ul li:first-child {
 .internet_packages{
     display: flex; 
     justify-content: center;
+    flex-wrap: wrap;
     font-size: 1.5rem;
 }
 
@@ -178,6 +178,32 @@ footer h4{
 }
 .instagram{
     color: #d6249f;
+
 }
 
+/* !-- Media Queries --> */
 
+
+@media screen and (max-width: 600px) {
+
+    body{
+        font-size: 10px;
+        width:800px;
+    }
+
+    .nav_bar{
+        justify-content: flex-start;
+    }
+
+    .nav_contents{
+        margin-right: 0;
+    }
+
+    .logo_image{
+        height: 1.5em;
+        padding-top: 0.5em;
+        margin-left: 0;
+        left: 0;
+    
+    } 
+}
