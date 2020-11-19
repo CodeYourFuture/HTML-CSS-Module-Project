@@ -1,40 +1,42 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
- head {
-
-}
+ 
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 
 }
-body {
-    margin: 0%;
-    padding: 0%;
-    border: 0%;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-.header-image {
-    color: white;
-    width: 6em;
-    float: center;
-    padding: 0%;
-}
 /** navigation section
 */
 
 .navbar {
-     background-color: white;
-    position: relative;
-    margin: 0;
-    padding: 0;
+    display: block;
+    background-color: white;
+    position: fixed;
     width: 100%;
-    border-bottom: 1px solid;
-    z-index: 9999;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar > .content {
+    height: 4.5rem;
+
+}
+
+.navbar .header-image {
+    height: 4.5rem;
+    margin-left: 30%;
+    margin-top: -9%;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-width: 37.5rem;
+}
+
+ul {
+    list-style: none;
 }
 
 ul.link a {
@@ -44,17 +46,16 @@ ul.link a {
     text-align: center;
     font-size: 1em;
     float: left;
-    margin: 0 3em;
+    
 
 }
 
 
 .link {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: white;
+    margin-left: 50%;
     
 }
 
@@ -71,12 +72,19 @@ ul.link a {
     text-decoration: none;
 }
 .active {
+    display: block;
+    color: rgb(31, 29, 29);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
     font-weight: bold;
 }
-.nav-bar a:hover{
-    transform: scale(1,2);
+
+li a:hover{
+    color: black;
     transition: 0.6s;
 }
+
 .introduction {
     background-image: url(../img/first-background.jpg);
     background-position: center;
@@ -104,8 +112,8 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-.btn {
-    background-color: rgb(199, 78, 23);
+button {
+    background-color: rgb(134, 52, 13);
     color: white;
     padding: 0 0.938rem;
     margin: 0 auto;
@@ -120,18 +128,17 @@ h2 {
     justify-content: center;
 }
 
-li {
-    order: -2;
-}
-h3 {
-    display: flex;
-    justify-content: center;
+.cases .devices > li {
+    float: left;
+    width: 27%;
 }
 
-.caption h3 {
+.cases .devices h3 {
     color: black;
-    text-align: center;
-    margin-top: 45px;
+    font-weight: 350;
+    font-size: 1.7rem;
+
+
 }
 /**
  * Add your custom styles below
