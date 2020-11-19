@@ -1,4 +1,3 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 
@@ -13,249 +12,171 @@
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
  body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    line-height: 1;
-}
-
-section {
-    display: block;
-
-}
-
-div {
-    margin: 0;
-    padding: 0;
-    border: 1px solid chocolate;
-    display: block;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-
-nav {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    display: block;
-}
-
-footer {
-    display: block;
-}
-
-.content {
-    padding: 0 0.938rem;
-    margin: 0 auto;
-    min-width: 37.5rem;
-}
-
-.top-navigation {
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    border-bottom: 1px solid #DDD;
-    z-index: 9999;
-}
-
-.top-navigation .links {
-    float: right;
-    color: #838994;
-    font-size: 1.04rem;
-    margin-top: 1.7rem;
-}
-.top-navigation .links li {
-    display: inline-block;
-    margin-left: 1.563rem;
-}
-
-.top-navigation > .content {
-    height: 4.375rem;
-}
-
-.top-navigation .links li.active {
-    color: #4c5058;
-    font-weight: 500;
-}
-
-.top-navigation .logo {
-    height: 4.375rem;
-}
-
-.top-navigation .links li:hover {
-    cursor: pointer;
-    color: #333333;
 }
 
 ol, ul {
     list-style: none;
 }
 
-ul {
+ /**************************************** Styling navigation bar ****************************************************************/
+ 
+.nav-bar {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    margin-right: 50%;
+}
+.nav-list, .header {
+    padding: 0 1rem;
+    margin: 0 auto;
+    min-width: 37rem;
+}
+.nav-bar > .nav-list {
+    height: 4rem;
+}
+.nav-links {
+    margin-right: 20%
+}
+.nav-bar .logo {
+    height: 4.5rem;
+    margin-left: 20%;
+}
+.nav-bar .nav-links {
+    float: right;
+    color: #838994;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+.nav-bar .nav-links li {
+    display: inline-block;
+    margin-left: 1.6rem;
+}
+.nav-bar .nav-links li.dark {
+    color: #4c5058;
+    font-weight: 500;
+}
+.nav-bar .nav-links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-.introduction{
-    background-image: url(/img/first-background.jpg);
+ /************************* Styling introduction Section ****************************************************************/
+.introduction {
+    background-image: url('../img/first-background.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
-    height: 45.938rem;
+    background-size: cover;
+    height: 46rem;
     overflow: auto;
 }
-
-.cases {
-    background-color: #fff;
-    overflow: hidden;
-    padding-bottom: 5rem;
-}
-
-.cases .content {
-    margin-top: 7.875rem;
-    padding: none;
-    color: #1d1e21;
+.introduction h1,
+.introduction h3 {
+    color: white;
     text-align: center;
-}
-
-.cases h2 {
-    font-size: 2.75rem;
-    margin: 1.625rem 0 3.125rem;
     font-weight: 300;
 }
-
-.cases .devices > li{
-    width: 33.3333333%;
-    float: left;
+.introduction h1 {
+    margin-top: 17rem;
+    font-size: 3rem;
 }
-
-.cases .devices h3 {
-    font-weight: 400;
-    font-size: 1.563rem;
-    margin: 2.5rem 0px 1.875rem;
+.introduction h3 {
+    margin-top: 1.3rem;
+    font-size: 1.7rem;
 }
-
+.buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.5rem;
+}
 button {
-    width: 9.688rem;
+    width: 10rem;
     background-color: #f15a29;
     border-color: #f15a29;
     text-shadow: none;
     border-style: none;
     border-radius: 4px;
     padding: 1rem 1.5rem;
-    color: white;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
 }
-
 button:hover {
     background-color: #d9400e;
     border-color: #cf3d0e;
     cursor: pointer;
 }
 
-.introduction h1 {
-    margin-top: 17.5rem;
-    font-size: 3.125rem;
+ /******************************************** Styling three list items and their respective images ****************************************/
+.items {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
 }
-
-.introduction h3 {
-    margin-top: 1.25rem;
-    font-size: 1.563rem;
-}
-
-.introduction h1, .introduction h3 {
-    color: white;
+.items .header {
+    margin-top: 7rem;
+    padding: none;
+    color: #1d1e21;
     text-align: center;
+}
+.items h2 {
+    font-size: 2.7rem;
+    margin: 1.6rem 0 3.2rem;
     font-weight: 300;
 }
-
-.introduction .buttons {
-    color: white;
-    text-align: center;
-    margin-top: 1.563rem;
+.items .item-list > li {
+    float:left;
+    width: 33.3333333%;
+}
+.items .item-list h3 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 2.5rem 0px 1.8rem;
+}
+.items .item-list p {
+    font-weight: 300;
+    font-size: 1.3rem;
 }
 
-.social {
+/******************* Styling footer ********************/
+.footer {
     background-color: #fff;
     overflow: auto;
-    padding-bottom: 9.375rem;
+    padding-bottom: 10rem;
     text-align: center;
 }
-
-.social hr {
+.footer hr {
     border: 0;
     border-top: 1px solid #eaebec;
-    margin: 1.313rem 0;
+    margin: 1.3rem 0;
 }
-
-.social .icons > li {
-    border-radius: 1.25rem;
+.footer .footer-list > li {
+    border-radius: 1.5rem;
     width: 2.5rem;
     height: 2.5rem;
     display: inline-block;
-    margin: 1.25rem 5px;
+    margin: 1.5rem 5px;
     border: 1px solid #eaebec;
-    padding: 0.625rem 0;
+    padding: 0.7rem 0;
     text-align: center;
 }
-
-.social .icons > li:hover {
-    cursor: pointer;
-}
-
-.social .twitter {
+.footer .twitter {
     color: #55acee;
 }
-
-.social .facebook {
-    color: #55acee;
+.footer .facebook {
+    color: #4c66a4;
 }
-
-.social .instagram {
-    color: #55acee;
+.footer .instagram {
+    color: #3f729b;
 }
-
-.fa-twitter:before {
-    content: "\f099";
-}
-
-.fa-facebook:before {
-    content: "\f09a";
-}
-
-.fa-instagram:before {
-    content: "\f16d";
-}
-
-.social .copy {
-    font-size: 0.9rem;
+.footer .copy {
+    font-size: 1rem;
     font-weight: 300;
     color: #838994;
 }
-
-@media (min-width: 62rem) {
-    .content {
-        width: 60rem;
-    }
-}
-
-@media (min-width: 48rem) {
-    .content {
-        width: 46rem;
-    }
+.footer .footer-list> li:hover {
+    cursor: pointer;
 }
