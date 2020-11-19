@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: white;
 }
 
 /**
@@ -15,5 +16,204 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ .nav-bar {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 4.375rem;
+    background-color:white;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 360px;
+    margin-right: 320px;
+}
 
+.nav-bar .nav-links > a {
+    text-decoration:none;
+    color: gray;
+    font-size: 1.05rem;
+    font-weight: normal;
+}
+.nav-bar .nav-links > a:hover {
+    color:black;
+}
+.nav-bar .nav-links a:first-child {  
+color: black;
+}
+
+.logo-image {
+    order: -1;
+    height: 40px;
+    width: 40px;
+    margin-left: 310px;
+}
+.introduction {
+    background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 45.938rem;
+    overflow: auto;
+}
+.introduction-flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 450px;
+    padding-top: 0px;
+    margin-bottom: 80px;
+}
+.introduction-flex-box h1, h2 {
+    color: white;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.introduction-flex-box h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+}
+.introduction-flex-box h2 {
+    font-size: 1.5rem;
+}
+.button {
+    width: 9.688rem;
+    height: 3.2rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    border-radius: 4px;
+    color: white;
+}
+.button:hover {
+    background-color: rgb(201, 5, 5);
+    border: 4px solid rgb(218, 6, 6);
+}
+.icons-captions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+.icons-captions h1 {
+    font-weight: normal;
+}
+.icon-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 70%;
+}
+.icon-grid > img {
+    height: 100px;
+    width: 100px;
+}
+.captions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-left: -100px;
+}
+.icons-captions h1 {
+    font-size: 2.7rem;
+    font-weight: 300;
+}
+.captions > p {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+hr {
+    margin-top: 100px;
+    width: 70%;
+    color: rgb(221, 217, 217);
+    border: 0.2px solid rgb(241, 238, 238);
+
+}
+.social-media {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    color:blue;
+}
+.links > a {
+    text-decoration: none;
+}
+.social-media p:nth-child(3) {
+    color: grey;
+}
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-twitter {
+      color: rgb(37, 184, 221);
+      border: 0.5px solid grey;
+      border-radius: 50%;
+  }
+
+.fa-facebook {
+    border-radius: 50%;
+    color: rgb(36, 36, 194);
+    border: 0.5px solid rgb(207, 203, 203);
+}
+.fa-instagram {
+    border-radius: 50%;
+    color: rgb(36, 126, 199);
+    border: 0.5px solid grey;
+}
+@media screen and (max-width:600px){
+  .icon-grid > img  {
+    height: 50px;
+    width: 50px;
+        }
+  .captions > p {
+      font-size: 12px;
+      text-align: center;
+      padding-left: 50px;
+  }
+  .icons-captions h1 {
+      font-size: 16px;
+  }
+
+}
 
