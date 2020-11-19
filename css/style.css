@@ -218,4 +218,21 @@ hr {
 }
 /*media query*/
 @media screen and (max-width: 600px) {
+  .icons-captions h1 {
+    font-size: larger;
+  }
+  .captions > p {
+    font-size: small;
+  }
+  .nav-bar {
+    height: 4rem;
+    display: inline-block;
+    margin-bottom: auto;
+    padding-right: 2000px;
+  }
+  .introduction {
+      height: 300px;
+      width: 600px;
+      margin-bottom: 100px;
+  }
 }
