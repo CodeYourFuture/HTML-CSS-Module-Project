@@ -16,50 +16,79 @@ body {
     box-sizing: border-box;
 }
 
-.logo {
-    padding: 0 10px;
-    margin: 0 auto;
-    min-width: 5%;
-    height: 5%
+.background:{
+background-image: url(http://127.0.0.1:5500/first-background.jpg);
+background-position: center bottom;
+background-repeat: no-repeat;
+
 }
 
-.navbar {
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    border-bottom: 1px solid #DDD;
+.logo {
+    display: inline-block;
+    margin-left: 400px;
+    padding-top:10px;
+    min-width: 2%;
+    height: 2%;  
+    border: none;  
 }
 
 .navbar.topic {
-    float: right;
-    color: gray;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    border-bottom: 0px;
+    color: #838994;
     font-size: 1.04rem;
-    margin-top: 1.7rem;
+    margin-top: 1rem;
+    position: relative;
 }
 
-.navbar.topic li {
+
+.navbar .links {
+    float: right;
+    color: #838994;
+    font-size: 1.04rem
+    
+}
+.navbar .topic li {
     display: inline-block;
-    margin-left: 1.563rem;
+    margin-right: 40px;
+    padding-left: -100px;
+    height: 2%; 
+
+  
+}
+.intro {
+    position: relative;
+    font-size: 25px;
+    margin-top:-35%;
+    color:white;
+    text-align: center;
+    font-weight: lighter, 200;
+    
 }
 
-.navbar.topic li.active {
-    color: gray;
-    font-weight: 500;
+.button1{
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    border-top-color: rgb(241, 90, 41);
+    border-right-color: rgb(241, 90, 41);
+    border-bottom-color: rgb(241, 90, 41);
+    border-left-color: rgb(241, 90, 41);
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    margin-left:44.5%;  
+    margin-top:2%; 
 }
 
-.navbar.topic li:hover {
-    cursor: pointer;
-    color: black;
-}
-
-.intro:nth-of-type(1) {
-    background-image: url(http://127.0.0.1:5500/first-background.jpg);
-    background-position: center;
-
-}
+.h3 {
+     }
 
 
-}
 
 
    
