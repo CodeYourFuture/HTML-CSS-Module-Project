@@ -3,22 +3,26 @@
 body, html {
     height: 100%;
 }
+
+/* .main{
+    display: flex;
+    flex-direction: column;
+} */
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-<<<<<<< Updated upstream
-}
-=======
     text-align: center;
 }
-.bg {
+.bg{
     background-image: url("../img/first-background.jpg");
-    background-repeat: space;
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 100%;
     height:100%;
     text-align:center;
     color: white;
     font-size:1.5rem;
+    /* border: 0.1rem solid; */
 }
 .para1{
     color:white;
@@ -42,19 +46,32 @@ button{
 } */
 nav{
     display: flex;
-    justify-content: space-between;
-    padding-left: 18rem;
-    padding-right: 18rem;
-    padding-top: 0.8rem;
+    justify-content: center;
+    flex-direction: row;
+    /* align-content: space-between; */
+    padding: 1rem 0rem 1rem 0rem;
+    /* margin: 0rem; */
+    z-index: 900;
+    background-color: ivory;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
-nav .logo{
+/* nav ul{
+    float: right;
+    padding-right: 2rem;
+} */
+#logo{
+    display: flex; 
     width: 1.5rem;
+   height: 3rem;
+   padding: 0rem;
 }
 ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
  
 li a{
@@ -68,10 +85,9 @@ li a{
         font-weight: bolder;
     }
 img{
-display:inline-block;
-justify-items: center;
+display: inline-flex;
 flex-flow: row nowrap;
-justify-content: space-evenly;
+justify-content: space-between;
 width: 11rem;
 height:8rem;
 padding: 1.5rem;
@@ -89,17 +105,31 @@ section{
     margin-bottom: 5rem;
 }
 
-    
+.footer{
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: column; */
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 0 10rem 0;
+    height: 10rem;
+}
+
+i.fa {
+  display: inline-block;
+  flex-flow: row nowrap;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 1rem 1rem;
+   margin: 0.4rem;
+}
 /* li {
     float: left;
     padding: 1rem;
     
-   }  */
-    
-   
->>>>>>> Stashed changes
+   }  
 
-/**
+/*
  * Add your custom styles below
  * 
  * Remember: 
