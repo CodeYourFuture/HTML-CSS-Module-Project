@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
@@ -14,3 +15,214 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+/* General styles */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+h5 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.content {
+  padding: 0 1rem;
+  margin: 0 auto;
+  min-width: 37.5rem;
+}
+:focus {
+  outline: none;
+}
+
+/* Navbar styles */
+
+.top-navigation .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo,
+.links {
+  display: inline-flex;
+}
+
+.logo {
+  height: 4.375rem;
+}
+
+.links {
+  justify-items: space-around;
+  align-items: center;
+  color: #838994;
+}
+
+.links > li {
+  margin-left: 1.563rem;
+}
+
+.active {
+  color: #4c5058;
+  font-weight: 500;
+}
+
+/* Introduction styles */
+
+.introduction {
+  background-image: url("../img/first-background.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 46rem;
+  overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.introduction h1 {
+  margin-top: 17.5rem;
+  font-size: 3rem;
+}
+
+button {
+  width: 10rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Cases styles */
+.cases {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+.cases h2 {
+  font-size: 2.75rem;
+  margin: 1.625rem 0 3.125rem;
+  font-weight: 300;
+}
+
+.cases .content {
+  margin-top: 8rem;
+  color: #1d1e21;
+  text-align: center;
+}
+
+.cases .devices h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 2.5rem 0px 1.9rem;
+}
+
+.cases .devices > li {
+  width: 33.3333333%;
+  float: left;
+}
+
+/* Footer styles */
+
+.social {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 9rem;
+  text-align: center;
+}
+
+.social .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.social .copy {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
+}
+
+.social .icons {
+  margin: 0;
+  padding: 0;
+}
+
+.social .icons > li {
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2rem;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #eaebec;
+  padding: 0;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.social .icons > li:hover {
+  cursor: pointer;
+}
+.social .twitter {
+  color: #55acee;
+}
+.social .facebook {
+  color: #4c66a4;
+}
+.social .instagram {
+  color: #3f729b;
+}
+.icons {
+  text-align: center;
+}
+
+/* Media queries */
+
+@media (min-width: 48rem) {
+  .content {
+    width: 46rem;
+  }
+}
+@media (min-width: 62rem) {
+  .content {
+    width: 60rem;
+  }
+}
+@media (min-width: 75rem) {
+  .content {
+    width: 60%;
+  }
+}
+>>>>>>> master
