@@ -1,11 +1,138 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ head {
+
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.header-image {
+    color: white;
+    width: 6em;
+    float: center;
+    padding: 0%;
+}
+/** navigation section
+*/
+
+.navbar {
+     background-color: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    z-index: 9999;
 }
 
+ul.link a {
+    display: block;
+    padding: 8%  16%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    float: left;
+    margin: 0 3em;
+
+}
+
+
+.link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    
+}
+
+
+.link li {
+    float: left;
+}
+
+.link li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.active {
+    font-weight: bold;
+}
+.nav-bar a:hover{
+    transform: scale(1,2);
+    transition: 0.6s;
+}
+.introduction {
+    background-image: url(../img/first-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 287px;
+
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    margin-top: 18px;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    background-color: rgb(199, 78, 23);
+    color: white;
+    padding: 0 0.938rem;
+    margin: 0 auto;
+}
+h2 {
+    color: Black;
+    text-align: center;
+    margin-top: 40px;
+}
+.devices {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    order: -2;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.caption h3 {
+    color: black;
+    text-align: center;
+    margin-top: 45px;
+}
 /**
  * Add your custom styles below
  * 
@@ -15,5 +142,4 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
 
