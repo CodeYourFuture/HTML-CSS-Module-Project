@@ -65,7 +65,7 @@ nav{
     justify-content: center;
     flex-direction: row;
     /* align-content: space-between; */
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 0.8rem 0rem 0.5rem 0rem;
     /* margin: 0rem; */
     z-index: 900;
     background-color: ivory;
@@ -79,7 +79,7 @@ nav{
 } */
 #logo{
     display: flex; 
-    width: 1.5rem;
+    width: 1.8rem;
    height: 3rem;
    padding: 0rem;
 }
@@ -88,6 +88,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0rem 0rem 0rem 14rem;
 }
  
 li a{
@@ -112,14 +113,18 @@ pre{
     font-size: 1.7rem;
     font-family: inherit;
 }
-.section1{
-    font-size: 2.5rem;
+.section1 p{
+    font-size: 2.8rem;
     font-family: inherit; 
     color:rgba(51, 42, 42, 0.911)
 }
-/* section{
+section{
     margin-bottom: 5rem;
-} */
+}
+.border-line{
+    border-bottom: 0.1rem solid rgb(239, 240, 239);
+    margin:8rem 16rem 2rem 16rem;
+}
 
 .footer{
     display: flex;
