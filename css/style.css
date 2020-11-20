@@ -198,4 +198,60 @@ hr {
     border-top: 1px solid #e1e1e1;
 }
 
+
+/**
+ * Section : Footer
+ * Purpose : To style the footer including the the social media icons
+*/
+
+footer {
+    margin-top: 1.5rem;;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footerContent {
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #838994;
+}
+
+.socialIcons {
+    width: 10%;
+    margin: 0.1rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.icon {
+    width: 33%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    color: #4c66a4;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-instagram {
+    color: #3f729b;
 }
