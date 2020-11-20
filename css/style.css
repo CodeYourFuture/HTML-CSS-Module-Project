@@ -3,28 +3,20 @@
 body, html {
     height: 100%;
 }
-
-/* .main{
-    display: flex;
-    flex-direction: column;
-} */
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-align: center;
 }
 .bg{
-    background-image: url("img/first-background.jpg");
+    background-image: url("../img/first-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    /* display: inline-block;
-    align-content: center; */
     width: 100%;
     height:100%;
     text-align:center;
     color: white;
     font-size:1.5rem;
-    /* border: 0.1rem solid; */
 }
 .bg-text{
     display: block;
@@ -32,22 +24,13 @@ body {
     align-content: center;
     color:white;
     padding-top: 12rem;
+    height:100%;
+    /* position: sticky; */
 }
 .bg-text pre:first-child{
 font-size:3.2rem;
+margin-bottom: 0rem;
 }
-/* .bg-text pre:last-child{
-font-size:rem;
-} */
-
-/* .para1{
-    color:white;
-    font-size:3rem;
-} */
-/* h6{
-    color: white;
-    font-size: 3rem;
-} */
 button{
     background-color: rgb(230, 85, 28);
     width: 10rem;
@@ -56,27 +39,18 @@ button{
     border-radius: 0.4rem;
     font-size: 1.2rem;
 }
-/* .background{
-    width: 100%;
-    height: 100%;
-} */
 nav{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    /* align-content: space-between; */
     padding: 0.8rem 0rem 0.5rem 0rem;
-    /* margin: 0rem; */
-    z-index: 900;
+    border-bottom: 0.1rem solid rgb(239, 240, 239);
+    /* z-index: 900; */
     background-color: ivory;
     position: fixed;
     width: 100%;
     top: 0;
 }
-/* nav ul{
-    float: right;
-    padding-right: 2rem;
-} */
 #logo{
     display: flex; 
     width: 1.8rem;
@@ -101,9 +75,8 @@ li a{
  #list1{
         font-weight: bolder;
     }
-img{
+#img{
 display: inline-flex;
-flex-flow: row nowrap;
 justify-content: space-between;
 width: 11rem;
 height:8rem;
@@ -113,10 +86,17 @@ pre{
     font-size: 1.7rem;
     font-family: inherit;
 }
-.section1 p{
+.section1{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+section p{
     font-size: 2.8rem;
     font-family: inherit; 
-    color:rgba(51, 42, 42, 0.911)
+    color:rgba(51, 42, 42, 0.911);
+    padding-bottom: 0rem;
 }
 section{
     margin-bottom: 5rem;
@@ -129,7 +109,6 @@ section{
 .footer{
     display: flex;
     flex-direction: column;
-    /* flex-flow: column; */
     align-content: center;
     justify-content: space-between;
     padding: 0 0 10rem 0;
@@ -145,12 +124,6 @@ i.fa {
   margin: 0.4rem;
   font-size: 1.2rem;
 }
-/* li {
-    float: left;
-    padding: 1rem;
-    
-   }  
-
 /*
  * Add your custom styles below
  * 
