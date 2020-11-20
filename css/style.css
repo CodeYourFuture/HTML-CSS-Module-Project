@@ -1,9 +1,119 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+body, html {
+    height: 100%;
+
+}
+
+.divimg {
+    background-image: url("img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: all; 
+    height: 100%;
+    width: 100%;
+    
+    
+ }
+
+  .divimg h1{
+
+    padding-top: 10rem;
+  }
+
+.label{
+    display:flex;
+    flex-flow: row;
+    justify-content:space-around;
+    padding: 100px; 
+    color: black}
+
+.label p{
+    color: black;
+}
+
+
+   #topnav {
+     display: flex ;
+    justify-content: space-around; 
+    text-decoration: none;
+    top:0rem;
+    position: fixed;
+    background-color: rgb(243, 243, 240);
+    width:100%;
+   
+
+
+    
+  }
+
+
+  li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(48, 46, 46) ;
+    
+  }
+
+  
+  ul {
+    list-style-type: none;
+  }
+
+  ul li:first-child{
+    font-weight: bold;
+}
+
+  li {
+      float:left;
+    
+    }
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+  body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
+
+}
+
+
+ h1, p{font-family: inherit;
+    color: white;
+    justify-content: flex-start;
+
+}
+
+button{
+    background-color:rgb(243, 79, 20);
+    color:white;
+    padding: 15px;
+    border-radius: 10px; 
+
+} 
+
+ 
+.section2 h1 {
+    font-family: inherit;
+    color: black;
+    padding: 3rem;
+
+} 
+
+.borderline{
+    border-bottom:0.1rem solid  rgb(219, 222, 224);
+    margin: 0rem 15rem 0rem 15rem;
+}
+    i.fa {
+        display: inline-block;
+        flex-flow: row nowrap;
+        border-radius: 3rem;
+        box-shadow: 0px 0px 2px #888;
+        padding: 1rem;
+        margin: 0.4rem;
+        font-size: 1.2rem;
+    
 }
 
 /**
