@@ -7,15 +7,118 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <style>
+     
+    </style> 
     <!-- Add a link to your CSS file here (use the line above to guide you) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    
+    <!--Social network icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
-<body>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+<body> <h1></h1>
+<!--Nav bar-->
+    <!--Add Nav bar for responsive web mode + font awesome-->
+   
+    <header>
+        <nav id="navbar">
+            <img id="karmalogo"src="img\karma-logo.svg" alt=""> 
+            <ul id="navbarlinks">  
+                <li class="active">Meet Karma</li>
+                <li>How It Works</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+<!--Landing page Image and text-->
+        <div id="img-positioning">
+            <section id="section1"> 
+                <div id="text-properties">
+                    <hgroup> 
+                    <h1>Introducing Karma</h1>
+                    <h3>Bring WiFi with, everywhere you go.</h3>
+                    </hgroup>
+                </div> 
+               
+                <button>Learn More</button>
+            </section>
+        </div>
+        
+
+
+<!--Flex box-->
+        <section id="section2">
+            <h2>Everyone needs a little Karma.</h2>
+            <div class= "flex_box-container">
+               <ul class="flex_elements">
+
+                   <li>
+                     <img class="mid-img" src="img\icon-devices.svg" alt="Orange logo of a computer devices">
+                     <div class="img-description">
+                         <h3>Internet for all devices</h3>
+                     </div>
+                    </li>
+                   
+                    
+                    <li>
+                        <img class="mid-img" src="img\icon-coffee.svg" alt="Orange logo of a coffee cup">
+                        <div class="img-description">
+                            <h3>Boost your productivity</h3>
+                        </div>
+                       </li>
+                       
+
+                     <li>
+                      <img class="mid-img" src="img\icon-refill.svg" alt="Orange logo of a petrol pump and nozzle">
+                      <div class="img-description">
+                        <h3>Pay As You Go</h3>
+                      </div>
+                    </li>
+               
+                </ul>
+            </div>
+        </section>
+    </main>
+
+<!-- Add your HTML markup here -->
+<!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+<!-- All the images you need are in the 'img' folder -->
 
 </body>
+
+<!--Footer-->
+    <Footer id="social_media">    
+     <div>
+       <hr>
+       <h5> Join us on</h5>
+       <ul class="icons">
+           <li id="twitterlogo">
+               <i class="fab fa-twitter">
+               </i>
+           </li>
+
+           <li id="facebooklogo">
+            <i class="fab fa-facebook">
+            </i>   
+           </li>
+           
+           <li id="instagramlogo">
+            <i class="fab fa-instagram">
+            </i>
+           </li>
+       </ul>
+       <span id="copyright">
+        © Karma Mobility, Inc.
+       </span>
+     </div>
+     <img src="" alt="">
+    </Footer>
 </html>

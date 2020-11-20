@@ -1,12 +1,235 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+ /*-----------------Body-----------------*/
+
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
     -webkit-font-smoothing: antialiased;
 }
+/*-----------------Header-----------------*/
 
-/**
+/*--Navbar-*/
+#navbar{
+position: fixed;
+background-color: #fff;
+width: 100%;
+border-bottom: 1px solid #DDD;
+top: 0rem;
+z-index: 9999;
+padding-top: 1px ;
+}
+
+/*--logo--*/
+#karmalogo{
+width:26px;
+margin-left: 20rem;
+}
+
+#navbar #karmalogo{
+height: 4.375rem;
+}
+
+/*-UL-*/
+#navbarlinks{
+list-style: none;
+display: block;
+}
+
+
+#navbar #navbarlinks{
+float: right;
+margin-bottom: 0rem;
+margin-right: 20.3rem ;
+color: grey;
+}
+
+#navbar #navbarlinks li{
+display: inline-block;
+margin-left: 1.563rem;
+}
+
+/*--Hover elements--*/
+
+#navbar #navbarlinks .active{
+color: #4c5058;
+font-weight: 500;
+}
+
+#navbar ul li:hoover{
+cursor: pointer;
+color: #333333;
+}
+/*-----------------Main-----------------*/
+
+#section1 {
+padding:0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+#text-properties h1{
+color: white; 
+font-size: 3.125rem;
+font-weight: 300;
+font-family: 'Roboto', sans-serif;
+margin-top: 17.5rem;
+}
+
+
+#text-properties h3{
+color:white;
+font-size: 1.563rem;
+font-weight: 300;
+font-family: 'Roboto', sans-serif;
+margin-top: 1.25rem;
+}
+
+
+button{
+background-color:#f15a29;
+border-color:#f15a29;
+border-style: none;
+width: 10rem;
+padding: 1rem 1.5rem;
+font-size: 1.125rem;
+color:white;
+border-radius: 4px;
+}
+
+/*-----------------Section 1-----------------*/
+/*-img-*/
+#img-positioning{
+background-image: url('../img/first-background.jpg');
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+height: 45.938rem;
+}
+
+
+
+/*-----------------Section 2-----------------*/
+
+
+/*--section 2 h2 positioning-*/
+
+
+#section2 h2{
+text-align: center;
+margin-top: 7.875rem;
+font-size: 2.75rem;
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+}
+
+
+/*--Ul-*/
+.flex_elements {
+display: flex;
+width: 80%;
+margin: 0 auto;
+}
+
+/*-logo-*/
+.flex_elements li{
+margin-left: 8rem;
+list-style: none;
+}
+
+/*-logo dimensions-*/
+.mid-img{
+width: 127px;
+height:127px;
+margin: 0 auto;
+display: block;
+}
+
+/*--Symbol description--*/
+.flex_elements li  h3{
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 1.563rem;
+text-align: center;
+} 
+/*-----------------Footer-----------------*/
+
+footer{
+width: 80%;
+margin: 0 auto;
+}
+
+/*---Hr---*/
+footer hr{
+
+}
+
+hr{
+    margin-top: 10rem;
+    width: 40rem;
+    border-top: 1px solid #eaebec;
+}
+
+
+/*--General footer-*/
+#socialmedia{
+display: flex;
+
+}
+
+footer{
+padding-bottom: 4rem;
+}
+
+
+#social_media .icons > li {
+    border-radius: 50%;
+    width: 3rem;
+    height: 2rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 1rem 0 ;
+    text-align: center;
+}
+
+/*-Icon colours-*/
+.fa-twitter {
+    color: #00aced
+}
+
+.fa-facebook {
+    color: #3b5998
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+
+/*--Social media caption--*/
+footer h5{
+text-align: center;
+font: inherit;
+
+}
+
+/*---Icon positions---*/
+.icons{
+text-align: center;
+padding-right: 2rem;
+}
+
+
+/*--Copyright--*/
+
+footer span{
+padding-left: 33.5rem;
+}
+/*
  * Add your custom styles below
  * 
  * Remember: 
