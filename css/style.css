@@ -156,4 +156,46 @@ header {
     background: #e04623;
 }
 
+
+/**
+ * Section : Introduction and images
+ * Purpose : To style the introduction including the three images
+*/
+
+ main {
+     margin-bottom: 7rem;;
+ }
+
+.introduction {
+    margin-top: 5rem;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.features {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.featureSection {
+    width: 30%;
+    /* border: 1px solid purple; */
+}
+
+.featureImage {
+    width: 45%;
+    margin: 1.5rem auto;
+}
+
+hr {
+    width: 60%;
+    border-top: 1px solid #e1e1e1;
+}
+
 }
