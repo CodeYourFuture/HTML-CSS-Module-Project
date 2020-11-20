@@ -22,6 +22,8 @@ nav {
   align-items: center;
   margin-right: 128.5px;
   margin-left: 128.5px;
+  padding-left: 15.008px;
+  padding-right: 15.008px;
   height: 4.375rem;
 }
 /*ul elements */
@@ -60,42 +62,57 @@ nav div:first-child img  {
   width: 40px;
 }
 /*this is the introduction section with the background image */
-.introduction {
+/*.introduction {
   background-image: url(../img/first-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;                        
   justify-content: center;
   width: 100%;
-  height:41.5rem ;
-  overflow: auto;
+  overflow:auto;
   align-items: center;
   margin-top: 0px;
   margin-bottom: 80px;
+  margin-left: 128.5px;
+  margin-right: 128.5px;
+  padding-left: 15.008px;
+  padding-right: 15.008px;
+}*/
+.introduction {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 45.938rem;
+  overflow: auto;
+  width: 100%;
+
 }
 /*this is a flex  box container that contains h1 and the .introduction-flex-box elements*/
-.introduction-flex-box {
+.introduction .introduction-box {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-top: 3px;
+  margin: 0 auto;
+  margin-left: 128.5px;
+  margin-right: 128.5px;
+  padding-left: 15.008px;
+  padding-right: 15.008px;
 }
 /*h1 elements inside the introduction container*/
 .introduction h1 {
   font-size: 3.1rem;
-  margin-bottom: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
   color: white;
   font-weight: 300;
-  margin-top: -5rem;
 }
 /*h2 of the .introduction-flex-box styling */
-.introduction-flex-box h2 {
+.introduction h2 {
   font-size: 1.563rem;
-  margin-left: 0px;
   color: white;
   font-weight: 300;
 }
@@ -115,6 +132,7 @@ nav div:first-child img  {
   border: 4px solid rgb(218, 6, 6);
 }
 /*styling the icons and captions*/
+/*
 .icons-captions {
   display: flex;
   flex-direction: column;
@@ -122,7 +140,6 @@ nav div:first-child img  {
   height: 380px;
   align-items: center;
   width: 100%;
-  margin-top: -20px;
 }
 .icons-captions h1 {
   font-weight: normal;
@@ -137,11 +154,13 @@ nav div:first-child img  {
   margin-left: 10px;
 }
 /*this will set the height and width of the images */
+/*
 .icon-grid > img {
   height: 130px;
   width: 130px;
 }
 /*the captions under the images are put inside a separate flex-box*/
+/*
 .captions {
   display: flex;
   flex-direction: row;
@@ -152,16 +171,49 @@ nav div:first-child img  {
   margin-right: 350px;
 }
 /*the h1 "everyone needs karma" styling*/
+/*
 .icons-captions h1 {
   font-size: 2.7rem;
   font-weight: 300;
-  margin-top: 70px;
 }
 .captions > p {
   font-size: 1.563rem;
   font-weight: normal;
-}
+}*/
 /*horizontal line*/
+/*.icons-captions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+
+}*/
+.icons-captions h2 {
+font-weight: 300;
+text-align: center;
+font-size: 2.5rem;
+margin-top: 100px;
+
+}
+.images-section ul {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.images-section ul li {
+  list-style: none;
+  
+}
+.images-section ul li img {
+  height: 127px;
+  width: 127px;
+}
+.images-section ul li div p {
+  font-size: 1.57rem;
+}
 hr {
   margin-top: 100px;
   width: 70%;
@@ -220,13 +272,13 @@ hr {
   color: rgb(36, 126, 199);
   border: 0.5px solid rgb(226, 221, 221);
 }
-.page-content {
+/*.page-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-around;
   align-items: left;
-}
+}*/
 @media only screen and (max-width:600px){
   .nav {
     
