@@ -158,8 +158,8 @@ footer h4{
     font-weight: 400;
 }
 
-.icons{
-   width: 10rem;
+/* .icons{
+   width: 10rem; */
 }
 .footer_items i {
     width: 2rem;
@@ -190,25 +190,29 @@ footer h4{
 
      body{
         font-size: 10px;
-        width:800px;
+         width:800px;
        
     }
-    .nav_bar{
+     .nav_bar{
         justify-content: flex-start;
+        
     }
 
-    .nav_contents{
+     .nav_contents{
         margin-right: 0;
-    }
+    } 
 
     .logo_image{
         height: 1.5em;
-         padding-top: 0.5em;
+        padding-top: 0.5em;
         margin-left: 0;
         left: 0; 
     
     } 
-    .page_intro{
-        width: 600px;
-    }
+    
+     .page_intro{
+        width: 100%;
+        object-fit: cover;
+;
+    }  
 }
