@@ -19,7 +19,7 @@ body {
 }
 
 .navbar > .content {
-    height: 4.5rem;
+    height: 4.275rem;
 
 }
 
@@ -31,7 +31,7 @@ body {
 
 .content {
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 0.7rem;
     min-width: 37.5rem;
 }
 
@@ -122,6 +122,8 @@ h2 {
     color: Black;
     text-align: center;
     margin-top: 40px;
+    font-weight: 100;
+    
 }
 .devices {
     display: flex;
@@ -137,9 +139,79 @@ h2 {
     color: black;
     font-weight: 350;
     font-size: 1.7rem;
+    margin-right: 10px;
+}
 
+.social{
+    background-color: #fff;
+    overflow: auto;
+    text-align: center;
+    padding: 8.5rem;
+}
+.social hr {
+    margin: 1.2rem 0;
+    border: 0;
+    border-top: 1px solid gray;
+}
+
+hr {
+    display: block;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.social .icons > li {
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    margin: 2rem 5px;
+    border: 1px solid #79a4cf;
+    padding: 0.125rem 0;
+    text-align: center;
+}
+
+.social .twitter {
+    color: rgb(201, 201, 221);
 
 }
+
+.social .facebook {
+    color: rgb(22, 22, 100);
+    
+}
+
+
+.social .instagram {
+    color: rgb(81, 81, 133);
+    
+}
+
+
+
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+}
+
+
+
 /**
  * Add your custom styles below
  * 
