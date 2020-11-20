@@ -15,7 +15,7 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-/*navigation style*/
+/*navigation style that contains two elements and displayed in flex box*/
 nav {
   display: flex;
   justify-content: space-around;
@@ -24,6 +24,7 @@ nav {
   margin-left: 128.5px;
   height: 4.375rem;
 }
+/*ul elements */
 nav ul {
   list-style: none;
   padding: 0;
@@ -32,6 +33,7 @@ nav ul {
   background-color:white;
   display: flex;
 }
+/*this targets the anchor elements nested inside the ul and li tags */
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -40,25 +42,29 @@ nav ul li a {
   line-height: 1;
 
 }
+/*this is to make the color of elements grey*/
 nav ul li a {
   color: gray;
 }
+/*when hover elements in the ul change to black*/
 nav ul li a:hover {
   color:black;
 }
+/*this will change the first a tag element inside the the first li element to black*/
 #meet-karma {
   color: black;
 }
+/*this would targets our logo image */
 nav div:first-child img  {
   height: 40px;
   width: 40px;
 }
-
+/*this is the introduction section with the background image */
 .introduction {
   background-image: url(../img/first-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,12 +75,14 @@ nav div:first-child img  {
   margin-top: 0px;
   margin-bottom: 80px;
 }
+/*this is a flex  box container that contains h1 and the .introduction-flex-box elements*/
 .introduction-flex-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 3px;
 }
+/*h1 elements inside the introduction container*/
 .introduction h1 {
   font-size: 3.1rem;
   margin-bottom: 8px;
@@ -84,7 +92,7 @@ nav div:first-child img  {
   font-weight: 300;
   margin-top: -5rem;
 }
-/*h2 styling */
+/*h2 of the .introduction-flex-box styling */
 .introduction-flex-box h2 {
   font-size: 1.563rem;
   margin-left: 0px;
@@ -128,7 +136,7 @@ nav div:first-child img  {
   width: 55%;
   margin-left: 10px;
 }
-/*this will adjust the height and width of the images */
+/*this will set the height and width of the images */
 .icon-grid > img {
   height: 130px;
   width: 130px;
@@ -147,6 +155,7 @@ nav div:first-child img  {
 .icons-captions h1 {
   font-size: 2.7rem;
   font-weight: 300;
+  margin-top: 70px;
 }
 .captions > p {
   font-size: 1.563rem;
@@ -168,6 +177,7 @@ hr {
   justify-content: space-around;
   margin-bottom: 180px;
 }
+/* the links class inside the social media class*/
 .links {
   display: flex;
   flex-direction: row;
@@ -180,7 +190,7 @@ hr {
 .links > a {
   text-decoration: none;
 }
-
+/*this selects third child*/
 .social-media p:nth-child(3) {
   color: grey;
 }
@@ -216,4 +226,9 @@ hr {
   width: 100%;
   justify-content: space-around;
   align-items: left;
+}
+@media only screen and (max-width:600px){
+  .nav {
+    
+  }
 }
