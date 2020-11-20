@@ -4,14 +4,29 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: first-background.jpg;
+    background-color: none; 
 }
-.nav-link{
-    font-size: 27px; 
-    justify-content: space-between; 
-    flex-direction: column;
-     
+
+.navigation{
+
+    max-width: 100%;
+    max-height: 100%;
 }
+
+.navigation-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.navigation-content ul{
+    display: inline-block;
+    padding: 3%;
+    align-self: flex-end;
+}
+
+
+
 
 /**
  * Add your custom styles below
