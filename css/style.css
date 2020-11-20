@@ -18,7 +18,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
-ol, ul {
+ul {
     list-style: none;
 }
 
@@ -127,19 +127,20 @@ button:hover {
     margin: 1.6rem 0 3.2rem;
     font-weight: 300;
 }
+.items .item-list{
+    display: flex;
+    justify-content: center;
+}
 .items .item-list > li {
     float:left;
-    width: 33.3333333%;
+    width: 20%;
 }
 .items .item-list h3 {
     font-weight: 400;
     font-size: 1.6rem;
     margin: 2.5rem 0px 1.8rem;
 }
-.items .item-list p {
-    font-weight: 300;
-    font-size: 1.3rem;
-}
+
 
 /******************* Styling footer ********************/
 .footer {
