@@ -105,4 +105,55 @@ header {
 }
 
 
+/**
+ * Section : Hero Image and content
+ * Purpose : To style the hero image and the hero content of the page including the hero heading, sub-heading and the button
+*/
+
+.heroImage {
+    margin-bottom: 2rem auto 5rem auto;
+    padding-top: 2rem;
+    background: url(../img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* border: 1px solid green; */
+    height: 44rem; /* to adjust the height of the hero image background */
+    overflow: auto;
+    color: white;
+    display: flex;
+}
+
+.heroContent {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+}
+
+.heroContent h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.heroContent h2 {
+    margin-top: 0.5rem;
+}
+
+.heroContent button {
+    padding: 4% 8%;
+    background: #f85c2c;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.heroContent button:hover {
+    background: #e04623;
+}
+
 }
