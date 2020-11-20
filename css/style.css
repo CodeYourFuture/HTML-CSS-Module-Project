@@ -4,6 +4,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: first-background.jpg;
+}
+.nav-link{
+    font-size: 27px; 
+    justify-content: space-between; 
+    flex-direction: column;
+     
 }
 
 /**
@@ -15,5 +22,6 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
 
 
