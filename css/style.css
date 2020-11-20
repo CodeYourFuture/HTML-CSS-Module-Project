@@ -16,91 +16,80 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 /*navigation style*/
-.nav-bar {
+nav {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  margin-right: 128.5px;
+  margin-left: 128.5px;
   height: 4.375rem;
-  background-color: white;
-  top: 0;
-  position: fixed;
-  overflow: hidden;
 }
-/*styling link tags*/
-.nav-links {
+nav ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 15.008px;
+  padding-right: 15.008px;
+  background-color:white;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-left: 360px;
-  margin-right: 320px;
 }
-/*targeting all anchor tags*/
-.nav-bar .nav-links > a {
+nav ul li a {
   text-decoration: none;
+  color: black;
+  display: block;
+  padding: 0.8rem 1rem;
+  line-height: 1;
+
+}
+nav ul li a {
   color: gray;
-  font-size: 1.05rem;
-  font-weight: normal;
 }
-/*nav items change color when mouse hovers over*/
-.nav-bar .nav-links > a:hover {
+nav ul li a:hover {
+  color:black;
+}
+#meet-karma {
   color: black;
 }
-/*the first of all the a elements will have a solid lack color */
-.nav-bar .nav-links a:first-child {
-  color: black;
-}
-/*styling the logo image*/
-.logo-image {
-  /*order: -1;*/
+nav div:first-child img  {
   height: 40px;
   width: 40px;
-  margin-left: 310px;
 }
-/*introduction section with background image*/
+
 .introduction {
   background-image: url(../img/first-background.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center bottom;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 45.938rem;
-  overflow: auto;
-}
-/*h1, h2 and button in flex-box*/
-.introduction-flex-box {
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  height:41.5rem ;
+  overflow: auto;
   align-items: center;
-  width: 40%;
-  height: 200px;
-  margin-top: 70px;
-  margin-left: 450px;
-  padding-top: 0px;
+  margin-top: 0px;
   margin-bottom: 80px;
 }
-/*adding font-weight, color and margin*/
-.introduction-flex-box h1,
-h2 {
+.introduction-flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3px;
+}
+.introduction h1 {
+  font-size: 3.1rem;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: white;
   font-weight: 300;
-  margin-top: 10px;
-}
-/*h1 styling */
-.introduction-flex-box h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  margin-top: -5rem;
 }
 /*h2 styling */
 .introduction-flex-box h2 {
-  font-size: 1.5rem;
+  font-size: 1.563rem;
+  margin-left: 0px;
+  color: white;
+  font-weight: 300;
 }
 /*button styling */
 .button {
@@ -110,6 +99,7 @@ h2 {
   border-color: #f15a29;
   border-radius: 4px;
   color: white;
+  font-size: 1.125rem;
 }
 /*button changes color when mouse hovers over*/
 .button:hover {
@@ -121,10 +111,10 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 350px;
+  height: 380px;
   align-items: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: -20px;
 }
 .icons-captions h1 {
   font-weight: normal;
@@ -135,12 +125,13 @@ h2 {
   justify-content: space-around;
   align-items: center;
   height: 200px;
-  width: 70%;
+  width: 55%;
+  margin-left: 10px;
 }
 /*this will adjust the height and width of the images */
 .icon-grid > img {
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
 }
 /*the captions under the images are put inside a separate flex-box*/
 .captions {
@@ -148,7 +139,9 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 55%;
+  margin-left: 300px;
+  margin-right: 350px;
 }
 /*the h1 "everyone needs karma" styling*/
 .icons-captions h1 {
@@ -156,7 +149,7 @@ h2 {
   font-weight: 300;
 }
 .captions > p {
-  font-size: 28px;
+  font-size: 1.563rem;
   font-weight: normal;
 }
 /*horizontal line*/
@@ -173,6 +166,7 @@ hr {
   width: 100%;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 180px;
 }
 .links {
   display: flex;
@@ -216,23 +210,10 @@ hr {
   color: rgb(36, 126, 199);
   border: 0.5px solid rgb(226, 221, 221);
 }
-/*media query*/
-@media screen and (max-width: 600px) {
-  .icons-captions h1 {
-    font-size: larger;
-  }
-  .captions > p {
-    font-size: small;
-  }
-  .nav-bar {
-    height: 4rem;
-    display: inline-block;
-    margin-bottom: auto;
-    padding-right: 2000px;
-  }
-  .introduction {
-      height: 300px;
-      width: 600px;
-      margin-bottom: 100px;
-  }
+.page-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: left;
 }
