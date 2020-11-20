@@ -32,7 +32,7 @@ nav ul {
   padding: 0;
   padding-left: 15.008px;
   padding-right: 15.008px;
-  background-color:white;
+  background-color: white;
   display: flex;
 }
 /*this targets the anchor elements nested inside the ul and li tags */
@@ -42,7 +42,6 @@ nav ul li a {
   display: block;
   padding: 0.8rem 1rem;
   line-height: 1;
-
 }
 /*this is to make the color of elements grey*/
 nav ul li a {
@@ -50,36 +49,18 @@ nav ul li a {
 }
 /*when hover elements in the ul change to black*/
 nav ul li a:hover {
-  color:black;
+  color: black;
 }
 /*this will change the first a tag element inside the the first li element to black*/
 #meet-karma {
   color: black;
 }
 /*this would targets our logo image */
-nav div:first-child img  {
+nav div:first-child img {
   height: 40px;
   width: 40px;
 }
 /*this is the introduction section with the background image */
-/*.introduction {
-  background-image: url(../img/first-background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  display: flex;
-  flex-direction: column;                        
-  justify-content: center;
-  width: 100%;
-  overflow:auto;
-  align-items: center;
-  margin-top: 0px;
-  margin-bottom: 80px;
-  margin-left: 128.5px;
-  margin-right: 128.5px;
-  padding-left: 15.008px;
-  padding-right: 15.008px;
-}*/
 .introduction {
   display: flex;
   align-items: center;
@@ -87,10 +68,9 @@ nav div:first-child img  {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  height: 45.938rem;
+  height: 41.38rem;
   overflow: auto;
   width: 100%;
-
 }
 /*this is a flex  box container that contains h1 and the .introduction-flex-box elements*/
 .introduction .introduction-box {
@@ -103,6 +83,7 @@ nav div:first-child img  {
   margin-right: 128.5px;
   padding-left: 15.008px;
   padding-right: 15.008px;
+  margin-top: -50x;
 }
 /*h1 elements inside the introduction container*/
 .introduction h1 {
@@ -115,6 +96,7 @@ nav div:first-child img  {
   font-size: 1.563rem;
   color: white;
   font-weight: 300;
+  margin-top: -20px;
 }
 /*button styling */
 .button {
@@ -132,69 +114,12 @@ nav div:first-child img  {
   border: 4px solid rgb(218, 6, 6);
 }
 /*styling the icons and captions*/
-/*
-.icons-captions {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 380px;
-  align-items: center;
-  width: 100%;
-}
-.icons-captions h1 {
-  font-weight: normal;
-}
-.icon-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 200px;
-  width: 55%;
-  margin-left: 10px;
-}
-/*this will set the height and width of the images */
-/*
-.icon-grid > img {
-  height: 130px;
-  width: 130px;
-}
-/*the captions under the images are put inside a separate flex-box*/
-/*
-.captions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 55%;
-  margin-left: 300px;
-  margin-right: 350px;
-}
-/*the h1 "everyone needs karma" styling*/
-/*
-.icons-captions h1 {
-  font-size: 2.7rem;
-  font-weight: 300;
-}
-.captions > p {
-  font-size: 1.563rem;
-  font-weight: normal;
-}*/
-/*horizontal line*/
-/*.icons-captions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
 
-}*/
 .icons-captions h2 {
-font-weight: 300;
-text-align: center;
-font-size: 2.5rem;
-margin-top: 100px;
-
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 100px;
 }
 .images-section ul {
   display: flex;
@@ -205,7 +130,6 @@ margin-top: 100px;
 
 .images-section ul li {
   list-style: none;
-  
 }
 .images-section ul li img {
   height: 127px;
@@ -279,8 +203,7 @@ hr {
   justify-content: space-around;
   align-items: left;
 }*/
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px) {
   .nav {
-    
   }
 }
