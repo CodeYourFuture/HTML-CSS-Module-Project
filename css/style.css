@@ -2,3 +2,66 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+/* header (nav) */
+
+.nav_bar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.nav_list {
+  float: right;
+  font-size: 1rem;
+  padding-right: 18rem;
+}
+
+.nav_list li {
+  display: inline-block;
+  margin-left: 1rem;
+  color: grey;
+}
+
+.logo_nav {
+  padding-left: 20rem;
+}
+
+.nav_list .highlighted {
+  font-weight: 500;
+  color: rgb(75, 73, 73);
+}
+/* intro main */
+
+.intro {
+  background-image: url("../img/first-background.jpg");
+  background-position: center;
+  height: 45rem;
+}
+
+.intro h1 {
+  color: white;
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.intro h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Button */
+
+.button {
+  text-align: center;
+  display: inline-block;
+  font-size: 1.125rem;
+  background-color: orange;
+  border-color: orange;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+}
