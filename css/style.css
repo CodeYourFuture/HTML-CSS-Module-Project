@@ -1,10 +1,151 @@
 
+
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
+#top_bar
+{
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#logo > img{
+    height:40px;
+    width:40px;
+}
+
+#logo{
+    
+    position: relative;
+}
+
+.navitems{
+    margin-right: 30px;
+}
+
+#navbar{
+    position: relative;
+    font-family: 'open_sanssemibold';
+}
+
+#navbar a {
+    color:rgb(194, 189, 189);
+    text-decoration:none;
+}
+
+#navbar a:hover {
+    color:rgb(39, 37, 37);
+    cursor: pointer;
+}
+#topbar{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    top:0;
+    position:sticky;
+    border:thin rgb(76, 190, 95) solid;
+    z-index: 200;
+ } 
+#banner{
+    height:661px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+#banner *{
+    color: white;
+}
+
+#banner > *{
+    margin-bottom: 20px;
+}
+
+#banner > button{
+    background-color: rgb(255, 136, 0);
+    border-radius: 4px 4px 4px 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: medium;
+    height: 55px;
+    width: 142px;
+    box-shadow: none;
+    font-family: 'open_sanssemibold';
+    border: 0;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:561px;
+}
+
+#features{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 900px;
+    font-family: 'open_sanslight';
+    font-size: 16pt;
+}
+
+#features > *{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+}
+
+#features img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: thin rgb(235, 233, 233) solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 145px;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#social img{
+    height: 25px;
+    width: 28px;
+    border-radius: 100%;
+}
+
 
 /**
  * Add your custom styles below
@@ -15,5 +156,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
