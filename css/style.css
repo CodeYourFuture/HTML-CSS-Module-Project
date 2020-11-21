@@ -37,10 +37,16 @@ h2 {
   margin-top: 20px;
 }
 
-button {
+.amingo {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px 32px;
+}
+
+button {
+  background-color: #ffffff
+  padding: 16px 32px;
 }
 
 #introduction {
@@ -50,12 +56,6 @@ button {
   background-size: cover;
   height: 45.938rem;
   overflow: auto;
-}
-
-.amingo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /**
