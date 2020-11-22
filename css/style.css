@@ -1,105 +1,225 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-*{
-    
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.background:{
-background-image: url(http://127.0.0.1:5500/first-background.jpg);
-background-position: center bottom;
-background-repeat: no-repeat;
-
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 .logo {
-    display: inline-block;
-    margin-left: 400px;
-    padding-top:10px;
-    min-width: 2%;
-    height: 2%;  
-    border: none;  
+  display: inline block;
+  justify-content: space-around;
 }
 
-.navbar.topic {
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    border-bottom: 0px;
-    color: #838994;
-    font-size: 1.04rem;
-    margin-top: 1rem;
-    position: relative;
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
 }
 
-
-.navbar .links {
-    float: right;
-    color: #838994;
-    font-size: 1.04rem
-    
-}
-.navbar .topic li {
-    display: inline-block;
-    margin-right: 40px;
-    padding-left: -100px;
-    height: 2%; 
-
-  
-}
-.intro {
-    position: relative;
-    font-size: 25px;
-    margin-top:-35%;
-    color:white;
-    text-align: center;
-    font-weight: lighter, 200;
-    
+.navbar ul {
+  list-style-type: none;
+  padding: 15px 10px;
 }
 
-.button1{
-    width: 9.688rem;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    border-top-color: rgb(241, 90, 41);
-    border-right-color: rgb(241, 90, 41);
-    border-bottom-color: rgb(241, 90, 41);
-    border-left-color: rgb(241, 90, 41);
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    font-size: 1.125rem;
-    margin-left:44.5%;  
-    margin-top:2%; 
+.navbar .topic ul li {
+  display: inline-block;
 }
 
-.h3 {
-     }
+.navbar .topic ul li:nth-child(even) {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.navbar .topic ul :last-child {
+  margin-right: 0;
+}
 
+.navbar .topic .links .subtitle {
+  font-weight: 500;
+  color: #5c5d5f;
+}
 
+.navbar .topic .links {
+  color: #8b8d91;
+}
 
+section.intro-background {
+  background-color: rgba(7, 0, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/first-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-   
+section.intro-background.title1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    
+section.intro-background .title1 > * {
+  color: white;
+  text-align: center;
+}
 
+.title1 h1 {
+  font-size: 50px;
+  font-weight: 300;
+  font-stretch: 100%;
+}
 
+.title1 h3 {
+  font-size: 1.563rem;
+  font-weight: 300;
+}
 
+.button1 {
+  width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: hidden;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  margin-top: 1.563rem;
+  margin-left: 8.5rem;
+}
 
+.button1 button {
+  background-color: transparent;
+}
 
+.options {
+  background-color: #fff;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
 
+.options .title2 {
+  margin-top: 7.875rem;
+  padding: none;
+  color: #1d1e21;
+  text-align: center;
+}
+
+.options h2 {
+  font-size: 2.75rem;
+  margin: 1.625rem 0 3.125rem;
+  font-weight: 300;
+}
+
+.h2 {
+  display: block;
+  margin-top: -50em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.options ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 4em;
+}
+
+hr {
+  background-color: #eee;
+  border: 0 none;
+  color: rgb(187, 182, 182);
+  height: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.options .icons1 .subheader1 h3 {
+  font-weight: 400;
+  font-size: 1.563rem;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.labels {
+  display: relative;
+  top: 1.313rem;
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 6.75rem;
+  text-align: center;
+}
+
+.labels h5 {
+  display: relative;
+  top: 1.313rem;
+  background-color: #fff;
+  overflow: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+ul.icons2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+.media .icons2 li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  margin: 0.5em;
+  border: 1px solid #eaebec;
+  cursor: pointer;
+}
+
+.media .twitter {
+  color: #55acee;
+}
+
+.media .facebook {
+  color: #4c66a4;
+}
+
+.media .instagram {
+  color: #3f729b;
+}
+
+.copywright {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #a7a8a8;
+  margin-top: 1rem;
+}
 
 /**
  * Add your custom styles below
@@ -110,5 +230,3 @@ background-repeat: no-repeat;
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
