@@ -8,15 +8,15 @@ body {
 #nav-bar {
   overflow: hidden;
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 17.5px;
+  width: 80%;
 }
 
 #nav-bar a {
   float: right;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -36,17 +36,23 @@ h2 {
   text-align: center;
   margin-top: 20px;
 }
-
-.amingo {
+.button_a {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 16px 32px;
+}
+.amingo {
+  background-color: #ff4500;
+  color: white;
+  padding: 18px 40px;
+  font-size: 20px;
+  margin: 4px 2px;
 }
 
-button {
-  background-color: #ffffff
-  padding: 16px 32px;
+.header-img {
+  display: block;
+  margin-top: 17.5px;
+  margin-left: 320px;
+  overflow: hidden;
 }
 
 #introduction {
@@ -54,8 +60,40 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 45.938rem;
+  height: 45.93rem;
   overflow: auto;
+  margin-top: 35px;
+}
+
+h3 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-family: Cambria, Cochin, Georgia, Times;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4px;
+}
+
+figcaption {
+  font-style: italic;
+
+  padding: 2px;
+}
+
+hr {
+  margin-top: 100px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin-right: 100px;
 }
 
 /**
