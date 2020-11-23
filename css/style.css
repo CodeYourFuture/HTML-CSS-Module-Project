@@ -1,117 +1,177 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-.Flex-content {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    padding: 0 50px;
-    justify-content: center;
-    justify-content: space-between;
-}
-
-.Flex-content>ul {
-    width: 35vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-right: 200px;
-}
-
-.Flex-content>img {
-    display: flex;
-    max-width: 100%;
-    margin-left: 300px;
-    width: 26;
-    max-width: 100%;
-    height: auto;
-}
-
-.content>active {
-    font-style: italic;
-    font-weight: bold;
-}
-
-.content {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-block {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    color: white;
-    justify-content: center;
-}
-
-.buttons {
-    background-color: #F15A29;
-    border-color: #F15A29;
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cases-content h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.devices {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.social-content {
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-}
-
-.icons {
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-    color: lightskyblue;
-    border-radius: 1.25rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: inline-block;
-    margin: 1.25rem 5px;
-    border: 1px solid #eaebec;
-    padding: 0.625rem 0;
-    text-align: center;
-    flex-direction: row;
-}
-
-.back-image {
-    width: 100%;
-    height: auto;
-}
+        /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+        /*body,
+    header,
+    main,
+    footer,
+    section,
+    nav,
+    div,
+    h1,
+    h2,
+    h3,
+    h5,
+    span,
+    img,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    */
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .Flex-content {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 0 50px;
+            justify-content: space-between;
+        }
+        
+        .Flex-content>ul {
+            width: 35vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+            margin-right: 200px;
+        }
+        
+        .Flex-content>img {
+            display: flex;
+            max-width: 100%;
+            margin-left: 300px;
+            width: 26;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .content>active {
+            font-style: normal;
+            font-weight: normal;
+        }
+        
+        .content {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .back-Image {
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 46rem;
+            /*overflow: auto;*/
+        }
+        
+        .text-block {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            color: white;
+            justify-content: center;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            font-style: normal;
+            font-weight: 300;
+        }
+        
+        .content-button {
+            width: 10rem;
+            position: relative;
+            background-color: #f15a29;
+            border-color: #f15a29;
+            text-shadow: none;
+            border-style: none;
+            border-radius: 4px;
+            padding: 1rem 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        button {
+            color: white;
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-left: 100px;
+        }
+        
+        button:hover {
+            background-color: #d9400e;
+            border-color: #cf3d0e;
+            cursor: pointer;
+        }
+        
+        .cases-content h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            font-style: normal;
+            font-weight: 300;
+        }
+        
+        .devices {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+            margin-top: 50px;
+            margin-bottom: 150px;
+            text-align: center;
+        }
+        
+        h3 {
+            font-style: normal;
+            font-weight: 400;
+        }
+        
+        .social-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-style: normal;
+            font-size: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        .icons {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: lightskyblue;
+            width: 150px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        
+        .icons li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+        }
+        
+        h5 {
+            text-align: center;
+            font-style: normal;
+        }
