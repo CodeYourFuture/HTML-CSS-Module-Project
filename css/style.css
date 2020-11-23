@@ -36,6 +36,12 @@
             justify-content: space-between;
         }
         
+        h1 {
+            font-size: 32;
+            font-style: normal;
+            font-weight: 300px;
+        }
+        
         .Flex-content>ul {
             width: 35vw;
             display: flex;
@@ -54,9 +60,9 @@
             height: auto;
         }
         
-        .content>active {
+        .active {
             font-style: normal;
-            font-weight: normal;
+            font-weight: bold;
         }
         
         .content {
@@ -104,7 +110,7 @@
             color: white;
             text-align: center;
             margin-top: 1.5rem;
-            margin-left: 100px;
+            margin-left: 120px;
         }
         
         button:hover {
@@ -137,6 +143,7 @@
         h3 {
             font-style: normal;
             font-weight: 400;
+            font-size: 24px;
         }
         
         .social-content {
