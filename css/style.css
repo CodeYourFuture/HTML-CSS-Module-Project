@@ -4,7 +4,20 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    /*margin: 0;
+    padding: 0;
+    border: o;
+    font-size: 100%;
+    font:italic;
+    vertical-align: baseline;
+    box-sizing: border-box
+   /* display: none;
+    line-height: 1;*/
+    
 }
+
+    
+
 
 /**
  * Add your custom styles below
@@ -15,5 +28,192 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ .content {
+     padding:0 1rem;
+     margin: 0.2 auto;
+     min-width: 38rem;
+     
+ }
+ :focus {
+     outline: none;
+ }
 
+.top-navigation{
+
+    background-color: rgba(197, 13, 13, 0.959);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1.1px solid blue;
+    z-index: 9999;                 
+}
+.top-navigation > .content{
+    height: 4.125rem;
+}
+.top-navigation .logo{
+    height: 4.125rem;
+
+    }
+    .top-navigation .links {
+        float: right;
+        color: blueviolet;
+        font-size: 1.02rem;
+        margin-top: 1.8rem;
+        
+    }
+    .top-navigation .links li{
+        display: inline-block;
+        margin-left: 1.6rem;
+    }
+    .top-navigation .links li.active {
+        color: rgb(74, 165, 14);
+        font-weight: 500;
+    }
+    .top-navigation .links li:hover{
+        cursor: pointer;
+        color: rgb(156, 158, 25);
+    }
+    .introduction{
+        background-image: url("../img/buy-now-bg.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55rem;
+        overflow: auto;
+    }
+    .introduction h1,.introduction h3 {
+        color: #000;
+        text-align: center;
+        font-weight: 450;
+    
+
+    }
+    .introduction h1 {
+        margin-top: 15.5rem;
+        font-size: 3.175rem;
+    }
+    .introduction h3 {
+        margin-top: 1.5rem;
+        font-size: 1.550rem;
+    }
+    .introduction .buttons {
+        color: rgb(223, 182, 20);
+        text-align: center;
+        margin-top: 1.6rem;
+    }
+    .introduction .half {
+        width: 50%;
+        padding: 0 1rem;
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+.cases {
+    background-color: darkcyan;
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+.cases .content {
+    margin-top: 8rem;
+    padding: none;
+    color: darkgreen;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 3rem;
+    margin: 1.5rem 0 3.1rem;
+    font-size: 400;
+}
+.cases .devices > li {
+    width: 30%;
+    float: right;
+}
+.cases .devices h3{
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin:2.5rem 0px 1.5rem;
+}
+.social{
+    background-color: darksalmon;
+    overflow: auto;
+    padding-bottom: 9.7rem;
+    text-align: center;
+}
+ .social hr {
+    border: 0;
+      border-top: 1.5px solid yellowgreen; 
+    margin: 1.6rem 0;
+
+}
+.social .icon > li {
+    border-radius: 1.3rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    margin: 1.3rem 6px;
+    border: 1.5px solid black;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.social .icon > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: chocolate;
+
+}
+.social .facebook {
+    color: deeppink;
+
+}
+.social .instagram {
+    color: maroon;
+}
+.social .copy {
+    font-size: 1rem;
+    font-weight: 500;
+    color: mediumaquamarine;
+
+}
+@media (min-width:50rem){
+    .content{
+        width: 48rem;
+    }
+}
+@media (min-width:64rem){
+    .content{
+        width: 62rem;
+    }
+}
+@media (min-width:77rem){
+    .content {
+        width: 62%;
+    }
+}
+@-webkit-keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top:2rem;}
+}
+@keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
+
+button {
+    width: 8.7rem;
+    background-color: pink;
+    border-color: red;
+    text-shadow: none;
+    border-radius: 5px;
+    padding: 1rem 1.7rem;
+    color: seashell;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: sienna;
+    border-color: teal;
+    cursor: pointer;
+}
+
+    
 
