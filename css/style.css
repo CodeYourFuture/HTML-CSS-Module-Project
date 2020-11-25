@@ -14,6 +14,100 @@ body {
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+
+ USE AS MANY FLEX BOXES AS POSSIBLE
  */
 
 
+/* Navigation
+*/
+
+.top {
+  width:100%;
+  background-color: white;
+  padding: 2rem;
+}
+
+.top > .links {
+  float: right;
+  font: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  display: flex;
+  
+}
+
+.links li {
+  margin-left: 1rem;
+
+}
+
+/* Introduction
+*/
+
+.header {
+  background-image: url('../img/first-background.jpg');
+  height: 100vh;
+  text-align: center;
+  color:white;
+}
+
+
+.header h1{
+  color: white;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.header h2{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  background-color: orange;
+  padding: 1rem;
+}
+
+/* Images 
+*/
+
+.flex-container {
+  background-color: white;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+
+}
+
+.caption{
+  color: black;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  margin-left: 1rem;
+  display: flex;
+}
+
+
+/* Footer
+*/
+
+.footnote {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
