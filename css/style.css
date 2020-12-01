@@ -1,19 +1,245 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
+.nav-bar .main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+   
+  }
+  
+  body {
+
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+ol {
+    list-style: none;
+}
+
+ol li{
+    display: inline-block;
+}
+
+
+.main-content {
+    padding: 0 1rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+    
+
+}
+/* adding styles to nav-bar section */
+
+.navigation 
+.logo {
+    display: inline-flex;
+}
+
+.logo {
+    height: 5rem;
+}
+
+.navigation {
+justify-items: space-around;
+align-items: center;
+color: #696E76;
+}
+
+.navigation >li {
+    margin-left: 2rem;
+}
+
+.active {
+
+    color:  #4c5058;
+    font-weight: 480;
+}
+
+/* adding styles to Intro-page section*/
+
+.Intro-page {
+     display: flex;
+     align-items: center;
+     background-image: url("../img/first-background.jpg");
+     background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 47rem;
+    overflow: auto;
+   
+  }
+  
+.Intro-page h1,
+.Intro-page p {
+    font: inherit;
+   color: white;
+   text-align: center;
+   font-size: 25px;
+    font-weight: 200rem;
+
+  }
+  
+.Intro-page h1 {
+       top-margin: 18rem; 
+       font-size: 3rem;
+  }
+
+.blog-button {
+
+       display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+  }
+
+  .blog-button {
+
+       width: 11rem;
+        background-color: #f15a29;
+        border-color: #f05c2b;
+        text-shadow: none;
+        border-style: none;
+         border-radius: 5px;
+         padding: 1.1rem 1.5rem;
+         color: white;
+        font-size: 1.2rem;
+        text-align: center;
+  }
+
+
+  .blog-button:hover {
+         background-color: #d9400e;
+         border-color: #cf3d0e;
+         cursor: pointer;
+  }
+
+
+/* adding styles to ads-section*/
+
+.ads-section .main-content {
+    margin-top: 9rem;
+    color: #1d1e21;
+    text-align: center;
+  }
+  
+  .ads-section .section p {
+    font-weight: 400;
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .ads-section .section > li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .ads-section{
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+  }
+  
+  .ads-section   h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+  }
+
+/* adding styles to footer section */ 
+
+
+h3 {
+   
+    text-align: center;
+    font: inherit;
+}
+
+.social-media {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9rem;
+    text-align: center;
+  }
+  
+  .social-media .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-media .bottom {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+  }
+
+  .social-media .media-icon {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media .media-icon > li {
+
+    margin-right: 5px;
+    border: 1px solid #eaebec;
+    padding: 0;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2rem;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+
+
+.social-media .media-icon > li:hover {
+    cursor: pointer;
+  }
+  .social-media .twitter {
+    color: #55acee;
+  }
+  .social-media .facebook {
+    color: #4c66a4;
+  }
+  .social-media .instagram {
+    color: #3f729b;
+  }
+  .media-icon {
+    text-align: center;
+  }
+
+
+  /* adding media queries */
+
+  @media (min-width: 49rem) {
+    .main-content {
+      width: 46%;
+    }
+  }
+  @media (min-width: 63rem) {
+    .main-content {
+      width: 60%;
+    }
+  }
+  @media (min-width: 74rem) {
+    .main-content {
+      width: 60%;
+    }
+  }
+  
 
