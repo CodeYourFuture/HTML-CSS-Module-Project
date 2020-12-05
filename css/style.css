@@ -379,6 +379,12 @@
 
 /* Larger Desktop View */
 @media screen and (min-width: 1294px) {
+  .Home__navigationBar {
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    position: sticky;
+  }
   .navigationBar {
     display: flex;
     justify-content: space-between;
