@@ -1,13 +1,8 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
 /* Mobile View */
 @media screen and (min-width: 320px) and (max-width: 420px) {
   .navigationBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.9em;
   }
@@ -19,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 50px;
   }
   .right__navLink {
     text-decoration: none;
@@ -141,16 +137,16 @@ body {
 @media screen and (min-width: 481px) {
   .navigationBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.2em;
   }
   .navigationBar__left {
-    width: 5%;
-    margin-left: 2em;
+    width: 2%;
+    margin-right: 200px;
   }
   .navigationBar__right {
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -277,13 +273,13 @@ body {
 @media screen and (min-width: 1024px) {
   .navigationBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.2em;
   }
   .navigationBar__left {
     width: 2%;
-    margin-left: 2em;
+    margin-right: 200px;
   }
   .navigationBar__right {
     width: 50%;
@@ -403,7 +399,7 @@ body {
   }
   .fa-instagram {
     color: #3f729b;
-  }dding: 0.5em 0.7em;
+    padding: 0.5em 0.7em;
   }
   .Footer-copyright {
     color: #838994;
@@ -420,13 +416,12 @@ body {
   }
   .navigationBar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     padding: 0.2em;
   }
   .navigationBar__left {
     width: 2%;
-    margin-left: 2em;
+    margin-right: 200px;
   }
   .navigationBar__right {
     width: 50%;
