@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Add a link to your CSS file here (use the line above to guide you) -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <main class="Home">
+      <header class="Home__navigationBar">
+        <nav class="navigationBar">
+          <div class="navigationBar__left">
+            <img
+              src="./img/karma-logo.svg"
+              alt="Company Logo"
+              class="left__navLogo"
+            />
+          </div>
+          <div class="navigationBar__right">
+            <a href="#" class="right__navLink home-link">Meet Karma</a>
+            <a href="#" class="right__navLink">How it Works</a>
+            <a href="#" class="right__navLink">Store</a>
+            <a href="#" class="right__navLink">Blog</a>
+            <a href="#" class="right__navLink">Help</a>
+            <a href="#" class="right__navLink">Login</a>
+          </div>
+        </nav>
+      </header>
+      <section class="Home__bannerContainer">
+        <img
+          src="./img/first-background.jpg"
+          alt="Home Page Banner"
+          class="Home__banner"
+        />
+        <h2 class="Banner__info main-heading">Introducing Karma</h2>
+        <h5 class="Banner__info secondary-heading">
+          Bring WiFi with you, everywhere you go.
+        </h5>
+        <button class="Banner__info btn">Learn More</button>
+      </section>
+      <section class="Home__contentSection">
+        <header>
+          <h3 class="contentSection__header">Everyone needs a little Karma.</h3>
+        </header>
+        <div class="contentSection__info">
+          <div class="info__left">
+            <img
+              src="./img/icon-devices.svg"
+              alt="Electronic devices"
+              class="info__img"
+            />
+            <h4 class="info__text devices-text">Internet for all devices</h4>
+          </div>
+          <div class="info__center">
+            <img
+              src="./img/icon-coffee.svg"
+              alt="Coffee image"
+              class="info__img"
+            />
+            <h4 class="info__text coffee-text">Boost your productivity</h4>
+          </div>
+          <div class="info__right">
+            <img
+              src="./img/icon-refill.svg"
+              alt="Petrol Machine"
+              class="info__img cls"
+            />
+            <h4 class="info__text">Pay as You Go</h4>
+          </div>
+        </div>
+      </section>
+      <footer class="Footer">
+        <h6 class="Footer-heading">Join Us</h6>
+        <div class="socialMedia__icons">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+        <h6 class="Footer-copyright">© Karma Mobility, Inc.</h6>
+      </footer>
+    </main>
+  </body>
 </html>

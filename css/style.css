@@ -1,19 +1,242 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* Navigation Bar */
 
+.Home__navigationBar {
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  background-color: white;
+  padding: 0.7em;
+}
 
+.navigationBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationBar__left {
+  width: 10%;
+}
+
+.left__navLogo {
+  width: 20%;
+}
+
+.navigationBar__right {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.right__navLink {
+  color: black;
+  text-decoration: none;
+  color: grey;
+}
+.home-link {
+  color: #4c5058;
+  font-weight: 500;
+}
+
+.right__navLink:hover {
+  color: black;
+}
+
+/* End of Navigation */
+
+/* Home Page Banner */
+.Home__banner {
+  width: 100%;
+  position: relative;
+}
+
+.Banner__info {
+  position: absolute;
+  color: white;
+}
+
+.main-heading {
+  top: 35%;
+  left: 32%;
+  font-size: 3.125rem;
+  font-weight: 400;
+}
+
+.secondary-heading {
+  top: 47%;
+  left: 31%;
+  font-size: 1.563rem;
+  font-weight: 300;
+}
+
+.btn {
+  top: 62%;
+  left: 44%;
+  padding: 1em 2em;
+  background-color: #f15a29;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+/* End of banner */
+
+/* Center Page (Main Content Section) */
+.contentSection__header {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.contentSection__info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info__img {
+  width: 80%;
+}
+
+.info__left,
+.info__center,
+.info__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* End of center content */
+
+/* Footer */
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.Footer-heading {
+  font-size: 1rem;
+  margin: 1em 0;
+  font-weight: 400;
+}
+
+.socialMedia__icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa {
+  border: 1.5px solid lightgray;
+  border-radius: 999px;
+  padding: 0.6em;
+}
+
+.fa-facebook {
+  padding: 0.6em 0.8em;
+}
+
+.Footer-copyright {
+  color: #838994;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Media Queries */
+
+/* Phone Media Query */
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  /* Navigation Bar */
+  .Home__navigationBar {
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    background-color: white;
+  }
+
+  .navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigationBar__left {
+    width: 5%;
+  }
+
+  .left__navLogo {
+    width: 100%;
+  }
+  .navigationBar__right {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .right__navLink {
+    font-size: 0.5rem;
+    font-weight: bolder;
+  }
+  /* End Of Navigation Bar */
+
+  /* Banner Section */
+  .main-heading {
+    top: 10%;
+    left: 22%;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .secondary-heading {
+    top: 12%;
+    left: 5%;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .btn {
+    top: 22%;
+    left: 20%;
+    padding: 0.3em 2em;
+    background-color: #f15a29;
+    border: none;
+    border-radius: 0.4rem;
+  }
+  /* End Of Banner Section */
+
+  .Home__contentSection {
+    padding: 1em;
+  }
+
+  .contentSection__header {
+    font-size: 1rem;
+  }
+  .info__img {
+    width: 40%;
+  }
+  .info__text {
+    font-size: 0.6rem;
+  }
+  .devices-text,
+  .coffee-text {
+    width: 70%;
+    text-align: center;
+  }
+  /* End of main section content */
+
+  /* Footer */
+  .socialMedia__icons {
+    width: 100%;
+  }
+}
