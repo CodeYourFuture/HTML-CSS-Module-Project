@@ -121,3 +121,129 @@
     color: #838994;
   }
 }
+
+/* Tablet View */
+@media screen and (min-width: 481px) and (max-width: 834px) {
+  .navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em;
+  }
+  .navigationBar__left {
+    width: 5%;
+    margin-left: 2em;
+  }
+  .navigationBar__right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .right__navLink {
+    text-decoration: none;
+    color: black;
+    font-size: 0.5rem;
+    font-weight: 700;
+    color: grey;
+  }
+  .home-link {
+    color: #4c5058;
+  }
+  .Home__banner {
+    width: 100%;
+    position: relative;
+  }
+  .Banner__info {
+    position: absolute;
+    color: white;
+  }
+
+  .main-heading {
+    top: 15%;
+    font-size: 1rem;
+    left: 38%;
+  }
+
+  .secondary-heading {
+    top: 17%;
+    left: 30%;
+    font-weight: 300;
+  }
+  .btn {
+    top: 23%;
+    left: 40%;
+    background-color: #f15a29;
+    border: none;
+    padding: 0.5em 1.5em;
+  }
+  .Home__contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contentSection__header {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  .contentSection__info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .info__img {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .info__text {
+    font-weight: 300;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .info__left,
+  .info__center,
+  .info__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .devices-text,
+  .coffee-text {
+    width: 70%;
+  }
+
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid grey;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .Footer-heading {
+    font-weight: 580;
+  }
+
+  .socialMedia__icons {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .fa {
+    border-radius: 999px;
+    border: 1px solid grey;
+    padding: 0.5em;
+  }
+
+  .fa-facebook {
+    padding: 0.5em 0.7em;
+  }
+  .Footer-copyright {
+    color: #838994;
+  }
+}
