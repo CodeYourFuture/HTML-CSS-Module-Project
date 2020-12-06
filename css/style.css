@@ -1,6 +1,6 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 * {
-  margin: 0;
+  margin: 0%;
   box-sizing: border-box;
 }
 body {
@@ -8,6 +8,72 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15px 20px 10px 20px;
+}
+
+.karma-logo {
+  padding: 10px;
+}
+
+.karma {
+  width: 30px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.header-mobile {
+  visibility: hidden;
+}
+
+.first-part img {
+  width: 100%;
+  height: auto;
+}
+
+.icons img {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+.social-media-logos {
+  padding: 10px;
+  width: 60px;
+  height: auto;
+}
 /**
  * Add your custom styles below
  * 
