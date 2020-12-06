@@ -16,4 +16,40 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 130px;
+}
 
+.logo{
+    width: 3%;
+}
+
+nav a{
+    margin: 1.1em;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: black;
+    opacity: 0.4;
+    transition: 0.5s ease;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: #f48022;
+    opacity: 1;
+}
+
+nav a:active{
+    opacity: 0.8;
+}
+
+/*First Article*/
+.title{
+    margin: 0;
+    background-image: url("img/first-background.jpg");
+    height: 500px;
+}
