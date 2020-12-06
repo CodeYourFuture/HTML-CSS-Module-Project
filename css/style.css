@@ -64,6 +64,7 @@ body {
 /*Container style*/
 .container{
     margin-top:75px ;
+  
 }
  
 .container-heading p{
@@ -83,4 +84,21 @@ body {
 .container-icons-wrapper p{
     width: 10em;
     margin:2em;
+}
+
+/*Footer style*/
+.footer-icons img{
+width:1em;
+margin-left:10px;
+margin-right:10px;
+}
+footer{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ 
+}
+.footer-heading p, .footer-copyright p{
+    font-size: 0.8em;
 }
