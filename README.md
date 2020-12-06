@@ -3,6 +3,8 @@
 The aim of this exercise is to create a page that looks just like this one: 
 
 
+
+
 ![alt text](./Karma%20-%20desktop%20design.png "Karma desktop design")
 
 
