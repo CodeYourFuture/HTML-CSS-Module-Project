@@ -6,6 +6,7 @@ https://github.com/CodeYourFuture/CYF-Coursework-Template
 
 # How To Get Help
 
+test
 When you get stuck it's important that you ask for help at the right time and in the right way - this means you will be able to solve your problem as quickly as possible!
 
 ## Guide
@@ -18,8 +19,8 @@ You should complete all of the steps in the order listed to get help
 
 ## Reporting Issues in Coursework
 
-Is there a problem with this coursework? 
-Have you noticed a bug? 
+Is there a problem with this coursework?
+Have you noticed a bug?
 Does something not make sense?
 
 Post in the relevent channel on Slack depending on the module you are completing:
