@@ -39,7 +39,27 @@ body {
     text-decoration: none;
  }
  nav ul li a:hover{
-    color:red;
+    color:orangered;
  }
+/*Main-hero style*/
+.hero{
+    text-align: center;
+    background-image: url('../img/first-background.jpg');
+    height: 700px;
+    background-size: cover;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.hero-button button{
+    background-color: orangered; 
+    height: 30px;   
+    border: none;
+    border-radius: 5%;
+    font-size: 0.75em;
+    padding: 5px 10px;
+    margin-top: 30px;
+}
 
  
