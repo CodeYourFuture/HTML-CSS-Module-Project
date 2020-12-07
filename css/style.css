@@ -16,4 +16,85 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* * {
+    border: 2px solid red;;
+} */
+
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+header {
+    display: flex;
+    width: 100%;
+
+}
+
+header nav {
+    margin-left: 35%;
+    justify-content: space-around;
+    width: 50%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li:first-of-type {
+    font-weight: 700;
+}
+
+header img {
+    margin: 1%;
+    margin-left: 15%;
+}
+
+section:nth-of-type(1) img {
+    /* display: flex; */
+    width: 100%;
+    height: 50vh;
+    
+}
+
+section:nth-of-type(1) {
+    /* position: relative; */
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    /* background-image: url("/img/first-background.jpg"); */
+    /* height: 52%; */
+    /* background-size: 100%; */
+    /* background-attachment: fixed; */
+
+}
+
+button {
+    color: #fff;
+    font-weight: 400;
+    background-color: rgb(189, 73, 27);
+    border-radius: 30px;
+    font-size: larger;
+    /* position: absolute; */
+}
+
+
+section:nth-of-type(2) div {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 15%;
+    margin-top: 2rem;
+}
+
+section:nth-of-type(2) div img{
+    width: 8.5vw;
+    height: 10vh;
+    margin: 0;
+}
+
+section:nth-of-type(2) h1 {
+    text-align: center;
+}
 
