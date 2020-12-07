@@ -14,22 +14,34 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar" id="myNavbar">
         <a href=""><img src="favicon.ico" alt=""></a>
-        <ul>
+        <ul class="nav_links">
             <li>
-                <a href="#">Meet Karma</a>
-                <a href="#">How it Works</a>
-                <a href="#">Store</a>
-                <a href="#">Blog</a>
-                <a href="#">Help</a>
-                <a href="#">Login</a>
+                <a href="#"> Meet Karma </a>
+                <a href="#"> How it Works </a>
+                <a href="#"> Store </a>
+                <a href="#"> Blog </a>
+                <a href="#"> Help </a>
+                <a href="#"> Login </a>
+                <a href="#"><i class="fa fa-bars icon"></i></a>
             </li>
-            Help</ul>
+        </ul>
     </nav>
     <header></header>
     <main></main>
     <footer></footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "nav_links") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav_links";
+            }
+        }
+    </script>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
