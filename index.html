@@ -13,18 +13,43 @@
 </head>
 <body>
     <header>
-        <section class="logo">
-            <img src="./img/karma-logo.svg" alt="icon of karma">   
+        <section class="logo" id="logo" >
+            <img id="logo" src="./img/karma-logo.svg" alt="icon of karma">   
         </section> 
         <nav>
-            <ul>
-                <li><a href="#">Meet Karma</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
+            <section class="big-screen">
+                <ul>
+                    <li><a href="#">Meet Karma</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </section>
+            <section class="mobile-screen" >
+                <div id="start-link">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="./img/menu-hamburger.svg">
+                    </a>
+                </div>
+              
+                <div class="topnav" id="myLinks">
+                    <ul>
+                        <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <img src="./img/menu-hamburger.svg">
+                            </a></li>
+                       
+                        <li><a href="#">Meet Karma</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                
+            </section>
         </nav>
         
     </header>
@@ -74,9 +99,26 @@
         </section>
 
     </footer>
+    
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            document.getElementById("logo").style.display="block";
+            document.getElementById("start-link").style.display="block";
+          } else {
 
+            x.style.display = "block";
+            document.getElementById("start-link").style.display="none";
+            document.getElementById("logo").style.display="none";
+          }
+        }
+        </script>
+        
 </body>
 </html>

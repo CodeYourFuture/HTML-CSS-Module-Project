@@ -29,12 +29,12 @@ body {
      padding-left:100px;
      min-width: 40px;
  }
- nav ul{
+ nav .big-screen ul{
      /*margin-right: 20px;*/
      display:flex;
      flex-wrap:nowrap;
  }
- nav ul li{
+ nav .big-screen ul li{
      list-style-type: none;
      display: inline;
      padding:0.5em 1.50em;
@@ -42,11 +42,11 @@ body {
      font-size:calc(1em + 0.5vw);  
     
  }
- nav ul li a{
+ nav .big-screen ul li a{
     text-decoration: none;
    
  }
- nav ul li a:hover{
+ nav .big-screen ul li a:hover{
     color:orangered;
  }
 /*Main-hero style*/
@@ -134,7 +134,7 @@ footer{
 }
 
 @media screen and (max-width:1000px){
-    nav{
+    nav .big-screen{
         display: none; 
     }
     .container-icons{
@@ -153,4 +153,69 @@ footer{
         display:flex;
         flex-direction: column;
         justify-content: center;    
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(94, 91, 91);
+        position: relative;
+        display:none;
+        min-width: 100vw;
+        margin-left:0;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+        
+      }
+
+
+      .topnav li{
+          list-style-type: none;
+      }
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background: rgb(151, 146, 146);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .active {
+        background-color: #4CAF50;
+        color: white;
+      }
+    header{
+     
+        margin: 0px 0px;
+    }
+    .logo{
+     
+        padding-left:0px;
+        
+    }
+
+}
+@media screen and (min-width:1000px){
+.mobile-screen {
+    display:none;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+
+  
 }
