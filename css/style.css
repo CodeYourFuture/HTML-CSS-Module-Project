@@ -21,22 +21,30 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 10px;
+  
+    margin: 10px 50px;
 }
  .logo{
-     width:20px;
+     width:40px;
+     padding-left:100px;
+     min-width: 40px;
  }
- nav{
-     margin-right: 20px;
+ nav ul{
+     /*margin-right: 20px;*/
+     display:flex;
+     flex-wrap:nowrap;
  }
  nav ul li{
      list-style-type: none;
      display: inline;
-     padding:5px;
+     padding:0.5em 1.50em;
+     
+     font-size:calc(1em + 0.5vw);  
     
  }
  nav ul li a{
     text-decoration: none;
+   
  }
  nav ul li a:hover{
     color:orangered;
@@ -46,18 +54,26 @@ body {
     text-align: center;
     background-image: url('../img/first-background.jpg');
     height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     color:white;
     display:flex;
     flex-direction: column;
     justify-content: center;    
 }
+.hero-headings-bigsize{
+    font-size:calc(2em + 1.5vw);
+}
+.hero-headings-smallsize{
+    font-size:calc(1em + 1vw);
+}
 .hero-button button{
     background-color: orangered; 
-    height: 30px;   
+    height: 3em;   
     border: none;
     border-radius: 5%;
-    font-size: 0.75em;
+    font-size: calc(0.75em + 1vw);
     padding: 5px 10px;
     margin-top: 30px;
 }
@@ -68,27 +84,40 @@ body {
 }
  
 .container-heading p{
-    font-size: 30px;
+  
+    font-size:calc(1.5em + 1vw);
     text-align: center;
 }
 .container-icons{
    
     display: flex;
     justify-content: center;
-  
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.container-icons-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .container-icons-wrapper img{
     width: 7.5em;
-    margin:2em;
+    margin:2em;    
 }
 .container-icons-wrapper p{
-    width: 10em;
+    font-size: 3em;
+    font-size:calc(1em + 0.75vw);
     margin:2em;
+    text-align:center;
+  
 }
+
 
 /*Footer style*/
 .footer-icons img{
-width:1em;
+width:1.5em;
 margin-left:10px;
 margin-right:10px;
 }
@@ -100,5 +129,28 @@ footer{
  
 }
 .footer-heading p, .footer-copyright p{
-    font-size: 0.8em;
+    font-size: 1.5em;
+    font-size:calc(0.8em + 0.5vw);
+}
+
+@media screen and (max-width:1000px){
+    nav{
+        display: none; 
+    }
+    .container-icons{
+   
+        flex-direction: column;
+     
+    }
+    .hero{
+        text-align: center;
+        background-image: url('../img/first-background.jpg');
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color:white;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;    
 }
