@@ -9,47 +9,60 @@ body {
 }
 
 div{
-
+ /* border: 1px solid Chocolate; */
 }
 
 .content{
-
+    padding: 0 0 150.08px;
+    margin: 0 auto;
+    min-width: 600px;
 }
 
 :focus{
-
+    outline: none;
 }
 /* * Navigation Section */
 
 .top-navigation-bar{
+    background-color: #fff;
+    position:fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+
+.top-navigation-bar > .content{
+ height: 70px; 
 
 }
 
-.top-navigtion-bar > .content{
-
+.top-navigtion-bar .logo{
+    height: 70px;
 }
 
-.top-navigtion-bar  > .logo{
-
+.top-navigation-bar .links{
+     float: right;
+    color: #838994;
+    font-size: 16.64px;
+    margin-top: 27.2px;
 }
 
-.top-navigtion-bar  > .links{
-
-}
-
-.top-navigtion-bar  > .links li{
-
+.top-navigation-bar .links li{
+    display: inline-block;
+    margin-left: 25.008px;
 }
 
 .top-navigation .links li.active {
-   
+        color: #4c5058;
+        font-weight: 500;
 }
 .top-navigation .links li:hover {
-    
+    cursor: pointer;
+    color: #333333;
 }
  /* Introduction Section */
  .introduction{
-
+   
  }
  .introduction h1,
 .introduction h3 {
