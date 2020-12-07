@@ -1,92 +1,90 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    height: 100%;
-}
-
-
-/********** NAVBAR ***********/
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 70px;
-    overflow: hidden;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #5d5d5d;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.navbar a:hover {
-    color: #f58957;
-}
-
-.nav_links li {
-    list-style: none;
-    text-decoration: none;
-    padding: 0 25px;
-}
-
-.icon {
-    display: none;
-}
-
-
-/**********  HEADER  ***********/
-
-
-/********** MAIN  ***********/
-
-
-/********** FOOTER  ***********/
-
-
-/********** MEDIA QUERIES  ***********/
-
-@media screen and (max-width: 600px) {
-    .nav_links a:not(:first-child) {
-        display: none;
-    }
-    .nav_links a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .nav_links.responsive {
-        position: relative;
-    }
-    .nav_links.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .nav_links.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
-
-/**
+        /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            font-family: 'Roboto', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        /********** NAVBAR ***********/
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #5d5d5d;
+            text-align: center;
+            padding: 14px 16px;
+            list-style: none;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .navbar a:hover {
+            color: #f58957;
+        }
+        
+        .nav_links li {
+            list-style: none;
+        }
+        
+        .icon {
+            display: none;
+        }
+        /**********  HEADER  ***********/
+        
+        .title_header {
+            display: flex;
+            flex-direction: column;
+            color: whitesmoke;
+            justify-content: center;
+            align-items: center;
+            background-image: url("/img/first-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: auto;
+        }
+        /********** MAIN  ***********/
+        /********** FOOTER  ***********/
+        /********** MEDIA QUERIES  ***********/
+        
+        @media screen and (max-width: 600px) {
+            .nav_links a:not(:first-child) {
+                display: none;
+            }
+            .nav_links a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .nav_links.responsive {
+                position: relative;
+            }
+            .nav_links.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .nav_links.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+        /**
  * Add your custom styles below
  * 
  * Remember: 
