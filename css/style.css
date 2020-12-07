@@ -1,10 +1,19 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.title_line {
+    font-stretch: wider;
+    font-size: 20px;
 }
 
 
@@ -92,6 +101,7 @@ footer {
 }
 
 .social_media i {
+    color: #2D88ff;
     padding: 30px;
 }
 
