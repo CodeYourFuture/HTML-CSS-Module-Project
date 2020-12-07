@@ -99,12 +99,19 @@ footer {
 /********** MEDIA QUERIES  ***********/
 
 @media screen and (max-width: 600px) {
+    body {
+        text-align: center;
+    }
     .nav_links a:not(:first-child) {
         display: none;
     }
     .nav_links a.icon {
         float: right;
         display: block;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
     }
 }
 
