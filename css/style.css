@@ -1,10 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rajdhani:wght@300&display=swap');
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
 
 /**
  * Add your custom styles below
@@ -17,3 +18,110 @@ body {
  */
 
 
+ .logo{
+     width:50px;
+     height: 50px;
+     
+ }
+
+ .top_header{
+     display: flex;
+     flex: 1;
+     
+ }
+
+ .top_nav_menu{
+  display: flex;
+    
+  justify-content: flex-end ;
+  align-items: flex-end;
+ padding-right: 80px;
+}
+ 
+ .top_nav_menu li{
+     padding: 15px;
+     list-style: none;
+ }
+
+ .top_nav_menu li a{
+     text-decoration: none;
+     color: gray;
+ }
+
+ .menu_bar{
+     flex: 2;
+ }
+
+
+
+ /* Background Image */
+.image_section{
+ 
+    text-align: center;  
+    position: relative; 
+
+}
+
+
+.image_text_button{
+   
+position: absolute;
+top: 200px;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+
+}
+
+
+.image_text_button h1{
+    color: lavender;
+font-family: 'Rajdhani', sans-serif;
+font-weight: lighter;
+font-size: 4rem;
+
+}
+.image_text_button p{
+    color: lavender;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2rem;
+    margin-top: -50px;
+}
+.link{
+   width: 10%;
+   background-color: orangered;
+   padding: 20px;
+   border-radius: 10px;
+   outline: none;
+   text-decoration: none;
+   color: lavender;
+   
+}
+
+ .bg_img{
+    width:100% ;
+ }
+
+
+ h2{
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+ }
+
+
+ .icon{
+   width:100% ;
+ }
+
+ .icons{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer*/
+footer{
+    background-color: peru;
+}
