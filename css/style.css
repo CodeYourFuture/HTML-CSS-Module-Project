@@ -1,10 +1,119 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+ *, html, body{
+    box-sizing: border-box;
+}
 body {
+    padding: 0px;
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+ul li{
+    list-style-type: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 10rem 0rem 10rem;
+    height: 10vh;
+}
+header ul{
+  display: flex;
+}
+.header-item a{
+  margin: 1rem;
+  color: rgb(138, 138, 138);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 360ms ease;
+}
+.header-item a:hover{
+    color: #ED5929;
+}
+.meet-karma a{
+  font-weight: 600;
+}
+.karma-logo{
+    width: 30px;
+}
+.section-one{
+    height: 110vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../img/first-background.jpg");
+}
+.section-one p:first-child{
+    font-size: 5.5rem;
+    font-weight: lighter;
+    margin: 0px;
+}
+.section-one p:nth-child(2){
+    font-size: 2.3rem;
+    font-weight: lighter;
+    margin: 0.8rem 0rem 4rem 0rem;
+}
+button{
+    border: none;
+    background-color: #ED5929;
+    color: white;
+    padding: 1.1rem;
+    width: 12%;
+    outline: none;
+    border-radius: 5px;
+}
+button:focus{
+    border: none;
+}
+.section-two{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.section-two h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.section-two ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.karma-items{
+    flex-basis: 30%;
+    font-size: 2rem;
+}
+.images{
+    width: 150px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    padding: 0px;
+    /* justify-content: center; */
+}
+.icon-image{
+    width: 50px;
+    padding: 0.8rem;
+}
+.social-icon{
+    border: 1px solid rgb(129, 129, 129);
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
 
 /**
  * Add your custom styles below
