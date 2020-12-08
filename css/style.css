@@ -78,6 +78,7 @@ background-color: white;
 }
 .main{
   display: flex;
+  justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
   vertical-align: middle;
@@ -117,6 +118,11 @@ hr.solid {
     margin-right: 20px;
     margin-top: 0px;
     }
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 700px) {
   .main, .intro {   
     flex-direction: column;
@@ -130,9 +136,3 @@ hr.solid {
     <a href="#">Link 3</a>
   </div>
 </div>
-.instagram-icon{
-  width:20px;
-  height:20px;
-
-
-}
