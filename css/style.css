@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -15,5 +14,38 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.navbar{
+background-color: white;
+position: -webkit-sticky;
+top: 0;
+}
+.navbar .logo {
+  height: 70px;
+}
+.navbar a{
+float: left;
+display: block;
+color: grey;
+text-align: center;
+padding: 14px 20px;
+background-color: white;
+}
+.navbar a:hover{
+  color: orange;
+}
+.right {
+  float: right;
+}
+.navbar a.current-tab{
+  color: black;
+}
 
+
+
+.intro{
+  -ms-flex: 70%;
+  flex: 70%;
+  background-image: url(C:\Users\omars\Documents\GitHub\HTML-CSS-Coursework-Week2\img\first-background.jpg);
+  padding:20px;
+}
 
