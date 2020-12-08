@@ -220,7 +220,7 @@ footer {
   }
 
   .navbar {
-    visibility: hidden;
+    display: none;
   }
 
   header.top-bar {
@@ -229,8 +229,12 @@ footer {
     height: 80px;
   }
 
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+  }
   .karma {
-    width: 20px;
+    width: 30px;
     margin-left: 10px;
     margin-top: 5px;
   }
@@ -238,7 +242,6 @@ footer {
   .header-mobile {
     visibility: visible;
     margin-right: 0px;
-    padding-top: 20px;
     position: relative;
   }
 
@@ -246,6 +249,8 @@ footer {
     position: absolute;
     top: 0px;
     right: 0px;
+    margin-top: 30px;
+    margin-right: 20px;
   }
 
   .footer-text {
