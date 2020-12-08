@@ -1,5 +1,5 @@
 /* Mobile View */
-@media screen and (min-width: 320px) and (max-width: 420px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .navigationBar {
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 50px;
+    margin-left: 100px;
   }
   .right__navLink {
     text-decoration: none;
@@ -47,7 +47,7 @@
 
   .secondary-heading {
     top: 13%;
-    left: 2%;
+    left: 6%;
     font-weight: 300;
   }
   .btn {
@@ -181,12 +181,12 @@
   }
 
   .secondary-heading {
-    top: 17%;
+    top: 20%;
     left: 30%;
     font-weight: 300;
   }
   .btn {
-    top: 25%;
+    top: 30%;
     left: 40%;
     background-color: #f15a29;
     border: none;
@@ -322,7 +322,7 @@
     font-weight: 300;
   }
   .btn {
-    top: 25%;
+    top: 22%;
     left: 50%;
     background-color: #f15a29;
     border: none;
@@ -403,6 +403,27 @@
   }
   .Footer-copyright {
     color: #838994;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1293px) {
+  .main-heading {
+    top: 35%;
+    font-size: 1rem;
+    left: 48%;
+  }
+
+  .secondary-heading {
+    top: 39%;
+    left: 42%;
+    font-weight: 300;
+  }
+  .btn {
+    top: 50%;
+    left: 50%;
+    background-color: #f15a29;
+    border: none;
+    padding: 0.5em 1.5em;
   }
 }
 
