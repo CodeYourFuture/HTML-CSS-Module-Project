@@ -12,6 +12,7 @@ body {
 ul li{
     list-style-type: none;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -41,7 +42,7 @@ header ul{
 .section-one{
     height: 110vh;
     display: flex;
-    color: white;
+    color: rgb(238, 238, 238);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -60,7 +61,7 @@ header ul{
 button{
     border: none;
     background-color: #ED5929;
-    color: white;
+    color: rgb(230, 230, 230);
     padding: 1.1rem;
     width: 12%;
     outline: none;
@@ -75,6 +76,7 @@ button:focus{
     flex-direction: column;
     justify-content: center;
     border-bottom: 1px solid rgb(197, 197, 197);
+    color: rgb(92, 92, 92);
 }
 .section-two h1{
     text-align: center;
@@ -97,6 +99,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(92, 92, 92);
 }
 footer ul{
     display: flex;
