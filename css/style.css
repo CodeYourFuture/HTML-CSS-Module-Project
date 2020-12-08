@@ -30,149 +30,151 @@ header {
 }
 
 .navbar {
-    width: 100%;
-    z-index: 5;
-    padding: 1rem 3rem;
     position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 0.5rem 5rem;
     /* background: #1b1b1b; */
     background: #f2f2f2;
+    transition: all 0.3s ease;
 }
+
+/* .navbar.sticky {
+    background: #f2f2f2;
+    padding: 1rem 0;
+} */
 
 .navbar .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* padding: 20px auto; */
 }
 
-.navbar .nav-list {
+.navbar .menu-list {
     display: inline-flex;
 }
 
-/* .nav-list a {
-    color: #fff;
-} */
-
-.nav-list li {
+.menu-list li {
     list-style: none;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 1.5rem;
 }
 
-.nav-list li a {
+.menu-list li a {
     color: #000;
     transition: all 0.3s ease;
 }
 
-.nav-list li a:hover {
-    color:indianred
+.menu-list li a:hover {
+    color:rgb(201, 98, 38)
 }
 
-.nav-list li:nth-of-type(1) {
-    font-weight: 500;;
+.menu-list li:nth-of-type(1) {
+    font-weight: 600;;
 }
 
 .icon {
     color:#000;
     font-style: 2rem;
     cursor: pointer;
+    display: none;
+    padding-top: 0.5rem;
+}
+
+.icon:hover {
+    color:indianred;
+    transition: all 0.3s ease;
 }
 
 .icon.cancel-btn {
     position: absolute;
-    left: 3rem;
+    right: 3rem;
     top: 2rem;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 868px) {
-    .navbar .nav-list {
+
+    body.disabledScroll {
+        overflow: hidden;
+    }
+
+    .navbar .menu-list {
         position: fixed;
-        top: 0;
-        left: 0;
         height: 100vh;
         width: 100%;
         max-width: 400px;
+        left: -100%;
+        top: 0;
         background: #222;
         display: block;
         padding: 4rem 0;
         text-align: center;
+        transition: all 0.3 ease;
     }
 
-    .navbar .nav-list li{
+    .navbar {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .navbar .menu-list.active {
+        left: 0%;
+    }
+
+    .navbar .menu-list li{
         margin-top: 3rem;
         
     }
 
-    .navbar .nav-list a {
-        color: rgb(190, 110, 35)
+    .navbar .menu-list a {
+        color: rgb(190, 110, 35);
     }
 
-    .nav-list li a:hover {
-        color: antiquewhite
+    .menu-list li a:hover {
+        color: antiquewhite;
     }
 
     .icon {
-        color: white;
+        display: block;
     }
-}
 
-/* 
- html, body {
-    height: 100%;
-    width: 100%;
-  } */
+    .icon.hide {
+        display: none;
+    }
+
+    .menu-btn {
+        left: 0%;
+    }
+
+    .icon.cancel-btn {
+        color: rgb(190, 110, 35);
+    }
+
+    .icon.cancel-btn:hover {
+        color: antiquewhite;
+    }
+
+}
   
-  /* header {
-      display: flex;
-    width: 100%;
-    
-}
-
-header nav {
-    margin-left: 35%;
-    justify-content: space-around;
-    width: 50%;
-}
-
-header ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-}
-
-li:first-of-type {
-    font-weight: 700;
-}
-
-header img {
-    margin: 1%;
-    margin-left: 15%;
-}  */
 
 .hero {
-    /* display: flex; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: url("/img/first-background.jpg") no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     background-position: center;
-    background-attachment: fixed;    
-}
+    background-attachment: fixed;
+ }
 
 .hero-content {
-    vertical-align: center;
     color: honeydew;
-}
-
-section:nth-of-type(1) {
-    /* position: relative; */
-    /* display: flex; */
-    flex-direction: row;
-    align-items: center;
-    /* background-image: url("/img/first-background.jpg"); */
-    /* height: 52%; */
-    /* background-size: 100%; */
-    /* background-attachment: fixed; */
-
+    font-size: 1.3rem;
 }
 
 button {
@@ -200,5 +202,5 @@ section:nth-of-type(2) div img{
 
 section:nth-of-type(2) h1 {
     text-align: center;
-}
+}  */
 
