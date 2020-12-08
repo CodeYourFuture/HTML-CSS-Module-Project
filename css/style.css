@@ -20,7 +20,8 @@ position: -webkit-sticky;
 top: 0;
 }
 .navbar .logo {
-  height: 70px;
+  height: 60px;
+  margin-left: 30px;
 }
 .navbar a{
 float: left;
@@ -43,9 +44,33 @@ background-color: white;
 
 
 .intro{
-  -ms-flex: 70%;
-  flex: 70%;
-  background-image: url(C:\Users\omars\Documents\GitHub\HTML-CSS-Coursework-Week2\img\first-background.jpg);
-  padding:20px;
+  background-image: url(/Users/omars/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg);
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 635px;
+  overflow: auto;
 }
-
+  
+.intro .content{
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
+.intro h1{
+  font-size: 50px;
+  margin-top: 200px;
+  font-weight: 100;
+}
+.intro h3{
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 100;
+}
+.button{
+  background-color: orange;
+  color: white;
+}
+.button:hover{
+  color: red;
+}
