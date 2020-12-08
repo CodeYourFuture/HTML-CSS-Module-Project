@@ -14,6 +14,22 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+#navbar {
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  padding: 10px 0;
+  font-size: 10px;
+  width: 50%;
+}
+#navbar > ul {
+  display: flex;
+  justify-content: space-around;
+  /*margin: 0 auto;*/
+  padding: 20px;
+  list-style-type: none;
+}
 
 .footer-class {
   position: absolute;
