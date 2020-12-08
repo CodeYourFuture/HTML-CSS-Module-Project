@@ -21,28 +21,44 @@
     <!-- Add a link to your CSS file here (use the line above to guide you) -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/02e465af65.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <!-- Top Navigation Menu -->
-      <img src="favicon.ico" alt="logo" />
       <nav class="navbar">
-        <ul>
-          <li>Meet Karma</li>
-          <li>How It Works</li>
-          <li>Store</li>
-          <li>Blog</li>
-          <li>Help</li>
-          <li>Login</li>
-        </ul>
+        <div class="content">
+          <div class="logo">
+            <a href="#"><img src="favicon.ico" alt="logo" /></a>
+          </div>
+          <ul class="nav-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Meet Karma</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+        <div class="icon nav-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
     </header>
+
     <main>
-      <section>
-        <img src="./img/first-background.jpg" alt="Background image" />
-        <h1>Introducing Karma</h1>
-        <p>Bring WiFi with you, everywhere you go.</p>
-        <button>Learn More</button>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Introducing Karma</h1>
+          <p>Bring WiFi with you, everywhere you go.</p>
+          <button>Learn More</button>
+        </div>
       </section>
       <section>
         <h1>Everyone needs a little Karma</h1>
@@ -68,6 +84,7 @@
         </div>
       </section>
     </main>
+
     <footer></footer>
   </body>
 </html>
