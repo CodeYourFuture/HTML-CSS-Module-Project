@@ -49,7 +49,7 @@ nav ul li a:hover {
 }
 
 .meet-karma {
-    color: black;
+  color: black;
 }
 
 nav ul li a:active {
@@ -85,20 +85,20 @@ h1 {
 h2 {
   font-size: 50px;
   font-weight: 100;
-  margin-top: 30px:
+  margin-top: 30px;
 }
 
 .learn-button {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .orange-button {
-    background-color: rgb(255, 72, 0);
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 25px 35px 25px 35px;
-    font-size: 22px;
+  background-color: rgb(255, 72, 0);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 25px 35px 25px 35px;
+  font-size: 22px;
 }
 
 .second-part {
@@ -177,6 +177,95 @@ footer {
   font-weight: 100;
   color: darkgray;
   margin: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .orange-button {
+    padding: 15px 25px 15px 25px;
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 17px;
+    padding: 20px;
+  }
+
+  .icons img {
+    width: 80px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
+
+  header.top-bar {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+  }
+
+  .karma {
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .header-mobile {
+    visibility: visible;
+    margin-right: 0px;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .mobile {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .footer-text {
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .first-part {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media {
+    width: 40px;
+    padding: 10px;
+  }
+
+  .footnote {
+    font-size: 15px;
+  }
 }
 
 /**
