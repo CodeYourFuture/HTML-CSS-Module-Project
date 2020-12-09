@@ -21,11 +21,12 @@ body {
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    /* border: 1.5px solid red; */
 }
 
 header {
     background: red;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: auto;
 }
 
@@ -34,6 +35,7 @@ header {
     width: 100%;
     z-index: 2;
     padding: 0.5rem 5rem;
+    border-bottom: 1px solid rgb(201, 98, 38);
     /* background: #1b1b1b; */
     background: #f2f2f2;
     transition: all 0.3s ease;
@@ -167,40 +169,100 @@ header {
     justify-content: center;
     background: url("/img/first-background.jpg") no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     background-position: center;
     background-attachment: fixed;
  }
 
 .hero-content {
     color: honeydew;
-    font-size: 1.3rem;
+    line-height: 3rem;
+    /* font-size: 1.3rem; */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
 }
 
 button {
     color: #fff;
     font-weight: 400;
     background-color: rgb(189, 73, 27);
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: larger;
-    /* position: absolute; */
+    margin-top: 2rem;
+    width: 9rem;
+    border-style: none;  
+    position: relative;
+    left: 33%    
 }
 
+.section-devices {
+    margin-bottom: 5rem;
+}
 
-section:nth-of-type(2) div {
+.section-devices h1 {
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 400;
+} 
+
+.container-devices {
     display: flex;
     justify-content: space-around;
+    align-content: center;
+    text-align: center;
     margin: auto 15%;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-section:nth-of-type(2) div img{
-    width: 8.5vw;
-    height: 10vh;
-    margin: 0;
+.devices {
+    width: 33%;
+    height: 20vh;
+    /* margin: 3rem; */
 }
 
-section:nth-of-type(2) h1 {
+.devices img {
+    width: 50%;
+}
+
+footer {
+    margin-top: 3rem;
+    border-top:2px solid rgb(201, 98, 38);
+}
+
+footer h6 {
+    margin-top: 1rem;
     text-align: center;
-}  */
+    font-size: 1rem;
+}
 
+.social-media-images {
+    /* display: flex; */
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.social-media-images img {
+    width: 7%;
+    height: 5vh;
+    position: relative;
+    left: 40%;
+}
+
+
+
+footer p {
+    margin-top: 1rem;
+    text-align: center;
+    opacity: 0.5;
+}
