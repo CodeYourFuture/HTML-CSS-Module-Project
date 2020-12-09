@@ -1,5 +1,4 @@
 * {
-  margin: 0%;
   box-sizing: border-box;
 }
 body {
@@ -37,10 +36,6 @@ nav ul li {
   display: inline;
   padding: 10px;
   font-size: 20px;
-}
-
-.navbar-links {
-  font-size: 25px;
   color: rgb(169, 135, 135);
 }
 
@@ -57,11 +52,11 @@ nav ul li a:active {
 }
 
 .header-mobile {
-  visibility: hidden;
+  display: none;
 }
 
 .first-part {
-  background-image: url(/home/trip/Documents/HTML-CSS-Coursework-Week2/img/first-background.jpg);
+  background-image: url(../img/first-background.jpg);
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -78,13 +73,13 @@ h2 {
 
 h1 {
   font-size: 70px;
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
 h2 {
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 400;
   margin-top: 30px;
 }
 
@@ -111,13 +106,14 @@ h3 {
   text-align: center;
   font-size: 70px;
   padding: 100px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 h4 {
-  font-size: 40px;
-  font-weight: 100;
+  font-size: 30px;
+  font-weight: 400;
   padding: 50px;
+  text-align: center;
 }
 
 .container {
@@ -160,7 +156,11 @@ footer {
   margin: 30px;
 }
 
-.social a {
+.social li {
+  display: inline;
+}
+
+.social li a {
   margin: 20px;
 }
 
@@ -180,10 +180,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    width: 100%;
-  }
-
   h1 {
     font-size: 35px;
     margin-bottom: 10px;
