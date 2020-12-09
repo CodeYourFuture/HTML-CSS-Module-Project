@@ -43,13 +43,122 @@ nav a:hover{
     opacity: 1;
 }
 
-nav a:active{
+nav a:first-child{
     opacity: 0.8;
 }
 
 /*First Article*/
 .title{
-    margin: 0;
-    background-image: url("img/first-background.jpg");
-    height: 500px;
+    background-image: url("https://github.com/Thinkful-Ed/karma-clone/blob/master/img/first-background.jpg?raw=true");
+    min-height: 735px;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.title-content h2{
+    font-weight: 200;
+    font-size: 4rem;
+    margin: none;
+}
+
+.title-content h4{
+    font-weight: 200;
+    margin: none;
+}
+
+.title-content a{
+    background-color:  #f48022;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/*Second Article*/
+.qualities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 0;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.qualities h3{
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.qualities-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specific-quality{
+    width: 20%;
+    text-align: center;
+}
+
+.specific-quality h4{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+.icons-container{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 50%;
+    padding: 15px 0;
+}
+
+#twitter-icon, #facebook-icon, #instagram-icon{
+    width: 30%;
+}
+
+.company-name{
+    color:  rgb(207, 207, 207);
+}
+
+.company-name h5{
+    font-weight: 200;
 }
