@@ -1,21 +1,10 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+/*General Styles*/
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
 
 * {
     box-sizing: border-box;
@@ -28,7 +17,7 @@ body {
 }
 
 nav {
-    padding: 2rem 5rem;
+    padding: 0.8rem 5rem;
     top: 0;
     right: 0;
     left: 0;
@@ -47,10 +36,48 @@ nav {
 }
 
 .nav-links:hover {
-    color: orangered;
+    color: #f15b2a;
 }
 
 .nav-links:first-child {
     color: black;
     font-weight: 600;
+}
+
+/*Header Styles*/
+
+header {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 0.3125rem;
+    margin-top: 0;
+}
+
+header p {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.btn-intro {
+    padding: 0.5rem;
+    width: 120px;
+    background-color: #f15b2a;
+    border: none;
+    border-radius: 0.2rem;
 }
