@@ -32,6 +32,19 @@ li a{
     text-decoration: none;
 }
 
+li a:link, li a:visited {
+    color: grey;
+}
+
+a.selected:link, a.selected:visited{
+    color:black;
+    font-weight: 420;
+}
+
+li a:hover{
+    color: red;
+}
+
 .hero, main {
     width:100%;
 }
@@ -51,7 +64,46 @@ li a{
     left:50%;
     transform: translate(-50%, -50%); 
 }
+h1 {
+    font-weight: 300;
+    margin:8px;
 
+}
+
+p {
+    font-weight: 1;
+    margin: 10px;
+
+}
+
+.button{
+    font-size:13px;
+    margin:24px;
+}
+
+h2 {
+    font-weight: 400;
+    margin:40px 0px 0px 0px;
+    text-align:center;
+
+}
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.benefits p{
+        font-weight: 400;
+        margin:18px;
+}
+
+.benefits img{
+    height:100px;
+    width:auto;
+}
 
 /**
  * Add your custom styles below
