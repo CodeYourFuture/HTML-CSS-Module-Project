@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /**
@@ -14,33 +15,42 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-.navbar {
+.container {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  list-style-type: none;
+  justify-content: space-between;
 }
-li {
-  padding: 0px 30px 0 30px;
+.hamburger {
+  display: none;
 }
 
-a {
+.nav-logo {
+  display: inline-block;
+  padding: 0em 2em;
+  width: 100px;
+}
+.navbar a {
+  display: inline-block;
+  margin: 0 0 0.5em 0;
+  padding: 0.5em 1em;
   text-decoration: none;
   color: black;
 }
+.navbar {
+  float: right;
+  margin: 1em 5em 0 0;
+  align-items: center;
+  list-style-type: none;
+}
+
 a:hover {
   color: orangered;
 }
-.logo {
-  padding-right: 500px;
-}
 
-/* .middle {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */
+.middle {
+  position: relative;
+  text-align: center;
+}
 .centered-1 {
   position: absolute;
   font-size: 80px;
@@ -71,8 +81,6 @@ a:hover {
 }
 
 .background-img {
-  position: relative;
-  text-align: center;
   color: white;
   width: 100%;
 }
@@ -89,6 +97,7 @@ article {
 
 footer p {
   text-align: center;
+  color: gray;
 }
 
 .suggestions {
@@ -119,4 +128,15 @@ article div p {
   height: 50px;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    align-self: center;
+    padding-right: 3em;
+  }
 }
