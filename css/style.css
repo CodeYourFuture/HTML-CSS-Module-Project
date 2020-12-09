@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,108 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+}
+li {
+  padding: 0px 30px 0 30px;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: orangered;
+}
+.logo {
+  padding-right: 500px;
+}
+
+/* .middle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
+.centered-1 {
+  position: absolute;
+  font-size: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding-bottom: 80px;
+}
+.centered-2 {
+  position: absolute;
+  font-size: 40px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+}
+.centered-3 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.background-img {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.sub-title {
+  text-align: center;
+  font-size: 50px;
+  color: gray;
+  font-weight: 200;
+}
+article {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p {
+  text-align: center;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article div p {
+  font-size: 22px;
+  color: gray;
+  font-weight: 500;
+}
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+.socialmedia li {
+  display: flex;
+  border: 2px solid gray;
+  border-radius: 75px;
+  margin: 10px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
