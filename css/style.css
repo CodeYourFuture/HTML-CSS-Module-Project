@@ -16,4 +16,215 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* --------------------header style starts------------------------ */
+header{
+    width: 100%;
+    display: inline-block;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 1vw 0vw 1.5vw 8vw;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 17px;
+    margin: -57px 90px 20px 0vw;
+    padding-bottom: 5px;
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    display: flex;
+    color: grey;
+    margin-left: 20px;
+}
+
+a:hover{
+    color: #F15B2A;
+    transition: 0.3s;
+}
+
+.karma{
+    font-weight: 600;
+}
+/* --------------------header style ends------------------------ */
+
+/* --------------------hero-img style starts------------------------ */
+.hero-img{
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 54vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Introducing{
+    text-align: center;
+}
+
+h1{
+    font-size: 5vw;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 2vw;
+}
+
+.intro-p{
+    color: white;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+button{
+    background-color: #F15B2A;
+    padding: 1vw 2vw 1vw 2vw;
+    margin-top: 2vw;
+    border-radius: 10px;
+    border: 3px solid black;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    transition: 0.3s;
+    color: #F15B2A;
+    border: 3px solid #F15B2A;
+}
+/* --------------------hero-img style ends------------------------ */
+
+h2{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 100;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+}
+
+/* --------------------Features style starts------------------------ */
+.sec-feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle-feature{
+    margin: 0vw 7vw 0vw 7vw;
+}
+
+.icons{
+    width: 12vw;
+}
+
+.icon-p{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+/* --------------------Features style ends------------------------ */
+
+/* --------------------footer style starts------------------------ */
+footer{
+    margin: 6vw 7vw 0vw 7vw;
+    padding: 1vw 0vw 0vw 0vw;
+    border-top: 0.01px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-icon{
+    width: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.1px solid lightgrey;
+}
+
+h4{
+    font-weight: 100;
+    color: lightgrey;
+}
+/* --------------------Footer style ends------------------------ */
+
+/* --------------------@media------------------------ */
+@media (min-width: 280px) and (max-width: 760px){
+    .logo{
+        width: 5vw;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu-hamburger{
+        display: block;
+        float: right;
+        padding: 0px;
+        margin: 29px 30px 0px 0px;
+    }
+    
+    .Introducing{
+        margin: 0vw 20vw 0vw 20vw;
+    }
+
+    .intro-p{
+        font-size: 3.5vw;
+    }
+
+    button{
+        border-radius: 2px;
+        border: 0px solid black;
+    }
+
+    h1{
+        font-size: 8vw;
+    }
+
+    h2{
+        font-size: 8vw;
+    }
+
+    .sec-feature{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0vw;
+    }
+
+    .features{
+        margin: 50px 0px 50px 0px;
+    }
+
+    .icons{
+        width: 30vw;
+    }
+
+    .icon-p{
+        font-size: 4vw; 
+    }
+
+    footer{
+        padding-bottom: 30px;
+    }
+}
+
+
+
 
