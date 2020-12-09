@@ -35,7 +35,7 @@ h1 {
 }
 
 
-/**************** NAVBAR *******************/
+/* Navigation Bar */
 
 .icon {
     display: none;
@@ -62,7 +62,6 @@ h1 {
 
 .navbar a:hover {
     color: #f58957;
-    z-index: 1;
 }
 
 .nav_links li {
@@ -70,7 +69,7 @@ h1 {
 }
 
 
-/****************   HEADER   *******************/
+/* Header (Karma) */
 
 .intro-duction {
     background-image: url("../img/first-background.jpg");
@@ -94,7 +93,7 @@ button {
 }
 
 
-/**************** MAIN CONTENT *******************/
+/*Content within the body*/
 
 .how-it-works {
     text-align: center;
@@ -115,7 +114,7 @@ button {
 }
 
 
-/**************** FOOTER  *******************/
+/* Footer and Social Media Icons*/
 
 footer{
     display: flex;
@@ -123,21 +122,16 @@ footer{
     align-items: center;
     color: rgb(92, 92, 92);
 }
+
 footer ul{
     display: flex;
     padding: 0px;
-    /* justify-content: center; */
 }
+
 .icon-image{
     width: 19px;
     padding: 0.8rem;
 }
-/* .social-media{
-    border: 1px solid rgb(0, 0, 0);
-    text-align: center;
-    border-radius: 30%;
-    margin: 0.5rem;
-} */
 
 .social-icon1,
 .social-icon2,
@@ -149,48 +143,4 @@ footer ul{
 }
 
 
-/* footer {
-    text-align: center;
-}
-
-.social_media i {
-    color: #2D88ff;
-    padding: 30px;
-} */
-
-
-/********** MEDIA QUERIES  ***********/
-
-@media screen and (max-width: 600px) {
-    body {
-        text-align: center;
-        font-size: 20px;
-    }
-    .nav_links a:not(:first-child) {
-        display: none;
-    }
-    .nav_links a.icon {
-        float: right;
-        display: block;
-    }
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .nav_links.responsive {
-        position: relative;
-    }
-    .nav_links.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .nav_links.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
+/* Media Queries for the webpage to be Responsive*/
