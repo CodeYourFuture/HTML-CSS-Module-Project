@@ -26,13 +26,13 @@ body {
 
  .top_header{
      display: flex;
-     flex: 1;
+     width: 90%;
+     margin: 0 auto;
      
  }
 
  .top_nav_menu{
   display: flex;
-    
   justify-content: flex-end ;
   align-items: flex-end;
  padding-right: 80px;
@@ -50,6 +50,7 @@ body {
 
  .menu_bar{
      flex: 2;
+ 
  }
 
 
@@ -66,9 +67,9 @@ body {
 
 .image_text_button{
  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 30%;
+  transform: translate(-30%, -30%);
 }
 
 
@@ -86,14 +87,19 @@ font-size: 4rem;
     margin-top: -50px;
 }
 .link{
-   width: 10%;
-   background-color: orangered;
+width: 30%;
+   background-color: rgb(241, 121, 77);
    padding: 20px;
    border-radius: 10px;
-   outline: none;
+ 
    text-decoration: none;
    color: lavender;
-   
+ 
+}
+
+.link:hover{
+    background-color: rgb(212, 84, 4);
+      transition: 0.4s ease-in;
 }
 
  .bg_img{
