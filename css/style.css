@@ -1,162 +1,171 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rajdhani:wght@300&display=swap');
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+font-family: 'Roboto', sans-serif;
+-webkit-font-smoothing: antialiased;
 }
 
 
 /**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+* Add your custom styles below
+* 
+* Remember: 
+* - Be organised, use comments and separate your styles into meaningful chunks
+*    for example: General styles, Navigation styles, Hero styles, Footer etc.
+* 
+* - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+*/
 
 
- .logo{
-     width:50px;
-     height: 50px;
-     
- }
+/*Header,Logo and Menu Section*/
+.logo{
+width:50px;
+height: 50px;
 
- .top_header{
-     display: flex;
-     width: 90%;
-     margin: 0 auto;
-     
- }
-
- .top_nav_menu{
-  display: flex;
-  justify-content: flex-end ;
-  align-items: flex-end;
- padding-right: 80px;
 }
- 
- .top_nav_menu li{
-     padding: 15px;
-     list-style: none;
- }
 
- .top_nav_menu li a{
-     text-decoration: none;
-     color: gray;
- }
+.top_header{
+display: flex;
+width: 90%;
+margin: 0 auto;
+    
+}
 
- .menu_bar{
-     flex: 2;
- 
- }
+/*Top Menu*/
+.top_nav_menu{
+display: flex;
+justify-content: flex-end ;
+align-items: flex-end;
+padding-right: 80px;
+}
+
+.top_nav_menu li{
+padding: 15px;
+list-style: none;
+}
+
+.top_nav_menu li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.top_nav_menu li a:hover{
+color: orange;
+transition: 0.4s;
+}
+/* nav Tag that holds menu items*/
+.menu_bar{
+flex: 2;
+}
 
 
 
- /* Background Image */
+/* Background Image */
 .image_section{
-
-    text-align: center;  
-    position: relative; 
-    padding-bottom: 90px;
-
+text-align: center;  
+position: relative; 
+padding-bottom: 90px;
 }
 
-
+/*container that hold Text and button link over the image*/
 .image_text_button{
- position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translate(-30%, -30%);
+position: absolute;
+top: 30%;
+left: 30%;
+transform: translate(-30%, -30%);
 }
 
 
 .image_text_button h1{
-    color: lavender;
+color: lavender;
 font-family: 'Rajdhani', sans-serif;
 font-weight: lighter;
 font-size: 4rem;
 
 }
 .image_text_button p{
-    color: lavender;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 2rem;
-    margin-top: -50px;
+color: lavender;
+font-family: 'Rajdhani', sans-serif;
+font-size: 2rem;
+margin-top: -50px;
 }
 .link{
 width: 30%;
-   background-color: rgb(241, 121, 77);
-   padding: 20px;
-   border-radius: 10px;
- 
-   text-decoration: none;
-   color: lavender;
- 
+background-color: rgb(241, 121, 77);
+padding: 20px;
+border-radius: 10px;
+text-decoration: none;
+color: lavender;
+
 }
 
 .link:hover{
-    background-color: rgb(212, 84, 4);
-      transition: 0.4s ease-in;
+background-color: rgb(212, 84, 4);
+transition: 0.4s ease-in;
 }
 
- .bg_img{
-    width:90% ;
- }
+.bg_img{
+width:90% ;
+}
 
 
- h2{
-   font-family: 'Rajdhani', sans-serif;
-     text-align: center;
-     font-size: 2.5rem;
- }
+
+/*Second Title after the image*/
+h2{
+font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
 
 
- .icon{
-   width:150px ;
-   
- }
 
- .icons{
-      font-size: 1.4rem;
-    display: flex; 
- 
-  gap:50px;
-    justify-content: center;
-    font-weight: bold;
-    color: rgb(68, 64, 64);
-    
-     
+/* Three Icons Section*/
+
+.icon{
+width:150px ;
+}
+
+.icons{
+font-size: 1.4rem;
+display: flex; 
+gap:50px;
+justify-content: center;
+font-weight: bold;
+color: rgb(68, 64, 64);   
 }
 
 .icon_text{
-    
-    text-align: center;
-
+text-align: center;
 }
 
 
-/* footer*/
+/* footer style start from here*/
 footer{
-    padding-top: 50px;
-    text-align: center;
+padding-top: 50px;
+text-align: center;
 }
 
 .social_media{
-    padding-left: 20px;
-    width:30px ;
-    height: 30px;
+margin-left: 20px;
+
 }
 
+.social_media img{
+    width: 20px;
+}
 .copyright{
-    color: rgb(158, 158, 158);
+color: rgb(158, 158, 158);
 }
 
+.footer_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 .join_text{
 
- color: rgb(51, 49, 49);
- font-size: 1rem;
- font-weight: bold;
+color: rgb(51, 49, 49);
+font-size: 1rem;
+font-weight: bold;
 }
