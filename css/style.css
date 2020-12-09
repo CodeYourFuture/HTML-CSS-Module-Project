@@ -97,7 +97,7 @@ header {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
 
     body.disabledScroll {
         overflow: hidden;
@@ -158,6 +158,10 @@ header {
 
     .icon.cancel-btn:hover {
         color: antiquewhite;
+    }
+
+    .container-devices {
+        flex-direction: column;
     }
 
 }
