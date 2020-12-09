@@ -4,7 +4,54 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
+
+header{
+    display:flex;
+    flex-direction:inline;
+    justify-content:space-between;
+    align-items:center;
+    padding: 5px 60px 5px 60px;
+    
+}
+
+.logo {
+    height:30px;
+    width:auto;
+}
+
+li {
+    display:inline;
+    padding:10px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.hero, main {
+    width:100%;
+}
+
+.container {
+    position: relative;
+    text align: center;
+    color: white;
+}
+
+.overhero {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+}
+
 
 /**
  * Add your custom styles below
