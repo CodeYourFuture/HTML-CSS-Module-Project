@@ -1,10 +1,173 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
+ 
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    position: relative;
 }
+ /* Header  */
+ header {
+    font-size: 24px;
+    width: 100%;
+    height: 20px;
+    padding: 40px;
+    margin: 20px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .logo {
+    width: 100%;
+    height: 50px;
+    align-self: flex-start;
+}
+
+.navbar {
+ }
+
+.navbar ul {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar ul li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+
+}
+.navbar ul li a {
+    /* list-style-type: none; */
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: orangered;
+}
+
+/* main */
+/* main first section */
+.picture {
+    background-image: url(../img/first-background.jpg);
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+}
+.picture-text{}
+
+.picture-text-heading {
+    font-size: 50px;
+}
+
+.picture-text-smalltext {
+    font-size: 30px;
+}
+
+.picture-button {
+    font-size: 24;
+    
+}
+
+.picture-button button {
+    width: 150px;
+    height: 50px;
+    padding: 15px 30px;
+    background-color: orangered;
+    text-align: center;
+    font-size: 24;
+}
+
+/* main second section */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 50px:
+    
+    
+}
+
+.wrapper-title {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.wrapper-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.wrapper-icon-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper-icon-content img {
+    width: 150px;
+    height: 150px;
+}
+
+.wrapper-icon-content p {
+    font-size: 24px;
+    padding: 15px 40px;
+    
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.footer-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.footer-icons img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px 10px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.footer-text {
+    font-size: 20px;
+    text-align: center;
+    
+}
+
 
 /**
  * Add your custom styles below
