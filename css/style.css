@@ -49,7 +49,7 @@ nav {
 header {
     background-image: url(/img/first-background.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
@@ -61,16 +61,15 @@ header {
 }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 2.7rem;
     font-weight: 300;
-    margin-bottom: 0.3125rem;
+    margin-bottom: -0.6875rem;
     margin-top: 0;
 }
 
 header p {
-    font-size: 2.2rem;
-    font-weight: 300;
-    margin: 2rem;
+    font-size: 1.6rem;
+    font-weight: 100;
     margin-bottom: 4rem;
 }
 
@@ -85,10 +84,11 @@ header p {
 /*Main Section*/
 
 main h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 300;
     text-align: center;
     margin-top: 7rem;
+    margin-bottom: 3rem;
 }
 
 .info-internet, .info-product, .info-pay {
@@ -102,6 +102,29 @@ main h1 {
 }
 
 .features p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: start;
+    width: 13rem;
+}
+
+.devices, .coffee, .refill {
+    width: 65%;
+}
+
+.info-internet {
+    margin-left: 0;
+    text-align: center;
+}
+
+.info-product {
+    margin-left: -34rem;
+    margin-right: -7rem;
+    text-align: center;
+}
+
+.info-pay {
+    margin-left: -26rem;
+    margin-right: -2rem;
 }
 
