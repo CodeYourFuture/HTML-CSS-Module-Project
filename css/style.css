@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,50 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px; /* is it better to use padding or margin??? */
+}
+.intro {
+  height: 750px; /* is there another method to fit the img inside the section without setting height */
 
+  background-image: url("/img/first-background.jpg");
+  background-repeat: no-repeat;
+
+  font-size: 70px;
+  font-weight: 100;
+  line-height: 0px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#textOne {
+  font-size: 40px;
+}
+#learnMore {
+  background-color: rgb(255, 86, 24);
+  padding: 35px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  border-style: hidden;
+  border-radius: 5px;
+}
+/* section {
+  width: fit-content;
+}
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+} */
