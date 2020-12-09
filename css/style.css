@@ -17,3 +17,40 @@ body {
  */
 
 
+* {
+    box-sizing: border-box;
+}
+
+
+/* Navbar Styles*/
+.logo {
+    width: 2rem;
+}
+
+nav {
+    padding: 2rem 5rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-links {
+    padding-top: 1rem;
+}
+
+.nav-links {
+    padding-right: 2rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.nav-links:hover {
+    color: orangered;
+}
+
+.nav-links:first-child {
+    color: black;
+    font-weight: 600;
+}
