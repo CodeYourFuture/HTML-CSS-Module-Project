@@ -6,22 +6,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
  /*Header style*/
  header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-  
     margin: 10px 50px;
 }
  .logo{
@@ -30,7 +19,6 @@ body {
      min-width: 40px;
  }
  nav .big-screen ul{
-     /*margin-right: 20px;*/
      display:flex;
      flex-wrap:nowrap;
  }
@@ -38,7 +26,7 @@ body {
      list-style-type: none;
      display: inline;
      padding:0.5em 1.50em;
-     
+     /* adding calc(), which makes minimum 1em for fontsize,even the device width is very small */
      font-size:calc(1em + 0.5vw);  
     
  }
@@ -77,19 +65,16 @@ body {
     padding: 5px 10px;
     margin-top: 30px;
 }
-/*Container style*/
+/*Main-Container style*/
 .container{
     margin-top:75px ;
-  
 }
  
 .container-heading p{
-  
     font-size:calc(1.5em + 1vw);
     text-align: center;
 }
 .container-icons{
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,8 +96,7 @@ body {
     font-size:calc(1em + 0.75vw);
     margin:2em;
     text-align:center;
-  
-}
+  }
 
 
 /*Footer style*/
@@ -126,19 +110,21 @@ footer{
    flex-direction: column;
    justify-content: center;
    align-items: center;
- 
-}
+ }
 .footer-heading p, .footer-copyright p{
     font-size: 1.5em;
     font-size:calc(0.8em + 0.5vw);
 }
-
-@media screen and (max-width:1000px){
+/* adding media query-inorder not to show navbar for big screens,make visible the mobile nav bar and changing background image height */
+@media screen and (max-width:1500px){
     nav .big-screen{
         display: none; 
     }
+
+    .mobile-screen {
+        display:block;
+      }
     .container-icons{
-   
         flex-direction: column;
      
     }
@@ -208,7 +194,9 @@ footer{
     }
 
 }
-@media screen and (min-width:1000px){
+
+/* adding media query for big screens-which hide the mobile nav bar and links */
+@media screen and (min-width:1500px){
 .mobile-screen {
     display:none;
   }

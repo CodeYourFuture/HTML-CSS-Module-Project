@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
+    <!-- my header -->
     <header>
         <section class="logo" id="logo" >
             <img id="logo" src="./img/karma-logo.svg" alt="icon of karma">   
@@ -54,6 +55,7 @@
         </nav>
         
     </header>
+    <!-- my main section -->
     <main>
         <section class="hero">
             <div class="hero-headings">
@@ -86,6 +88,7 @@
         </section>
         <hr>
     </main>
+    <!-- footer -->
     <footer>
         <section class="footer-heading">
             <p>Join us on</p>
@@ -101,20 +104,18 @@
 
     </footer>
     
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+    <!-- adding JS to show or hide/show logo and links for mobile navigation bar -->
     <script>
         function myFunction() {
-          var x = document.getElementById("myLinks");
+         
           
-          if (x.style.display === "block") {
-            x.style.display = "none";
+          if (document.getElementById("myLinks").style.display === "block") {
+           
+            document.getElementById("myLinks").style.display="none";
             document.getElementById("logo").style.display="block";
             document.getElementById("start-link").style.display="block";
           } else {
-
-            x.style.display = "block";
+            document.getElementById("myLinks").style.display="block";
             document.getElementById("start-link").style.display="none";
             document.getElementById("logo").style.display="none";
           }
