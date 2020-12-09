@@ -9,7 +9,7 @@ header {
 width: 30px;
 height: 30px;
 position: relative;
-top: 40px;left: 100px;
+top: 40px;left: 120px;
 
 }
 
@@ -41,72 +41,53 @@ top: 40px;left: 100px;
 
   .table{
     background-image: url(/img/first-background.jpg);
-    background-size: cover;
+    background-size: 142%;
     background-position: center;
+    background-repeat: no-repeat;
     width: 1500px;
     height: 1000px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;*/
     align-items: center; 
     position: relative;
-    top: 20px;left: 20px;
- 
+    top: 0px;left: 30px;
   }
 
-h2,
-h3 {
+h3,
+h4 {
   color: white;
   text-align: center;
   position: relative;
   top: 270px;left: 200px;
-  
-}
-
-h2 {
-  font-size: 70px;
   font-weight: 100;
-  margin-bottom: 90px;
-  /* position: relative;
-  top: 230px;left: 200px; */
+  vertical-align: middle;
+ 
 }
 
 h3 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 360px;left: 15px;
+}
+
+h4 {
   font-size: 50px;
-  font-weight: 100;
   margin-top: 50px:
   position: relative;
-  left: 100px;
+  top: 310px;left: -30px;
 }
 
-/* .learn-button {
-    margin-top: 50px;
-}
-
-.orange-button {
-    background-color: rgb(255, 72, 0);
-    border: none;
-    color: white;
-    border-radius: 4px;
-    padding: 25px 35px 25px 35px;
-    font-size: 22px; */
-}
-/* .table img{
-    width: 1500px;
-    height: 1000px;
-    position: absolute;
-    top: 0px;left: 40px;
-
-} */
-/* .table h1{
+.learn{
+  border: ;
+  line-height: 2.8;
+  padding: 0 20px;
+  font-size: 1rem;
   text-align: center;
+  color: #fff;
+  border-radius: 0px;
+  background-color: rgb(209, 115, 52);
+  position: relative;
+  top: -430px;left: 700px;
 }
-.table h2{
-  text-align: center;
-}
-.table p{
-  text-align: center;
-} */
 
 .icon p{
   text-align: center;
@@ -117,31 +98,37 @@ h3 {
   width: 180px;
   height: 80px;
   position: relative;
-  top: 1000px;left: 500px;
+  left: 500px;
+  /* top: 1000px; */
 }
-.title p{
+.specs p{
   display: inline;
   position: relative;
-  top: 1000px;left: 480px;
-  padding: 10px;
-  margin: 10px;
+  left: 480px; 
+   padding: 20px;
+  margin-top: 50px;
   font-size: 15px;
 }
 
- footer p{
+ footer h5 {
     text-align: center;
-    margin-top: 50px;
-    font-weight: bold;
+    margin-top: 60px;
+    /* font-weight: bold; */
   }
 footer img{
   
-    width: 20px;
-    height: 20px;
-    margin: 20px;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    margin-top: 5px;
     position: relative;
-    top: 1000px;left:700px;
+    left:725px;
   }
-
+  footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+  }
 
 
 /**
