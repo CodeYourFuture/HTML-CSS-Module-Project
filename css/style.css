@@ -15,6 +15,9 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+/*nav bar*/
+
 .container {
   position: relative;
   display: flex;
@@ -26,7 +29,7 @@ body {
 
 .nav-logo {
   display: inline-block;
-  padding: 0em 2em;
+  padding: 0.5em 2em;
   width: 100px;
 }
 .navbar a {
@@ -47,14 +50,25 @@ a:hover {
   color: orangered;
 }
 
-.middle {
+/*Main*/
+
+.main-content {
   position: relative;
   text-align: center;
+  overflow: hidden;
+}
+.middle-content {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.background-img {
+  width: 100%;
 }
 .centered-1 {
   position: absolute;
-  font-size: 80px;
-  top: 50%;
+  font-size: 5vw;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -62,31 +76,31 @@ a:hover {
 }
 .centered-2 {
   position: absolute;
-  font-size: 40px;
+  font-size: 2vw;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+}
+.centered-btn {
+  position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: gray;
-}
-.centered-3 {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: orangered;
-  color: white;
+  color: whitesmoke;
   border: none;
   padding: 15px;
   border-radius: 5px;
 }
-
-.background-img {
-  color: white;
-  width: 100%;
+.centered-btn:hover {
+  background-color: orange;
+  transition: 0.5s;
 }
-.sub-title {
+
+.title-section-2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 4vw;
   color: gray;
   font-weight: 200;
 }
@@ -95,33 +109,32 @@ article {
   justify-content: space-around;
 }
 
-footer p {
-  text-align: center;
-  color: gray;
-}
-
-.suggestions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 article div p {
   font-size: 22px;
   color: gray;
   font-weight: 500;
 }
-.socialmedia {
+
+hr {
+  width: 88%;
+  border-top: 2px solid gray;
+}
+
+/*footer*/
+footer p {
+  text-align: center;
+  color: gray;
+}
+.socialMedia {
   display: flex;
   justify-content: center;
   list-style-type: none;
   padding: 0;
 }
-.socialmedia li {
+.socialMedia a {
   display: flex;
   border: 2px solid gray;
-  border-radius: 75px;
+  border-radius: 50px;
   margin: 10px;
   padding: 0;
   width: 50px;
@@ -129,6 +142,8 @@ article div p {
   justify-content: center;
   align-items: center;
 }
+
+/*responsive*/
 
 @media only screen and (max-width: 800px) {
   .navbar {
@@ -138,5 +153,43 @@ article div p {
     display: flex;
     align-self: center;
     padding-right: 3em;
+  }
+  article {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .centered-1 {
+    position: absolute;
+    font-size: 7vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 50px;
+    line-height: 0.9em;
+    margin: 0;
+  }
+  .centered-2 {
+    position: absolute;
+    font-size: 4vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    line-height: 0.9em;
+    margin: 5px 0;
+  }
+  .centered-btn {
+    font-size: 2vw;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orangered;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
   }
 }
