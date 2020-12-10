@@ -72,12 +72,13 @@ h1 {
 
 p {
     font-weight: 1;
-    margin: 10px;
-
 }
 
-.button{
-    font-size:13px;
+
+button {
+    background-color: red;
+    padding: 6px;
+    font-size:12px;
     margin:24px;
 }
 
@@ -97,12 +98,61 @@ h2 {
 
 .benefits p{
         font-weight: 400;
-        margin:18px;
+        padding:18px;
 }
 
 .benefits img{
     height:100px;
     width:auto;
+}
+
+footer {
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+    margin:0px;
+    }
+
+hr {color:lightgray;
+    width:80%;
+}
+
+footer p {
+    
+    text-align:center;
+    font-weight:400;
+    }
+
+footer ul{
+    
+   /* border: solid black;
+    border-width: 5px;*/
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+footer li{
+   /* border: solid black;
+    border-width: 5px;*/
+    text-align: center;
+    }
+
+footer img{
+    height:16px;
+    width:16px;
+    filter: grayscale(80%);
+    padding:10px;
+    border:solid lightgray;
+    border-width:1px;
+    border-radius: 100px;
+}
+
+.copyright {
+    font-size:11px;
+    color:lightgray;
 }
 
 /**
