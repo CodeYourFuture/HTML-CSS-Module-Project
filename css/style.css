@@ -14,9 +14,10 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/* Header */
+/* nav bar */
 header {
   position: fixed;
+  background-color: rgb(255, 255, 255);
   min-height: 77px;
   min-width: 100%;
   padding: 0px 80px;
@@ -47,7 +48,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: rgb(214, 122, 35);
+  color: rgb(230, 92, 28);
 }
 
 /* main */
@@ -58,6 +59,33 @@ nav a:hover {
   margin: auto;
   display: block;
 }
+#intro-heading {
+  font-size: 35px;
+  color: rgb(219, 219, 219);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#intro-text {
+  font-size: 22px;
+  color: rgb(219, 219, 219);
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro-button {
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(230, 92, 28);
+  color: rgb(219, 219, 219);
+}
+
 /* container items */
 #container-heading {
   font-size: 25px;
