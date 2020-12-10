@@ -16,7 +16,7 @@ body {
  */
 .navbar {
   display: inline;
-  background-color: red;
+  /* background-color: red; */
   position: fixed;
   top: 30px;
   right: 0px;
@@ -32,14 +32,18 @@ body {
   list-style-type: none;
 }
 
+.navbar ul li a {
+  text-decoration: none;
+}
+
 .logo {
   position: fixed;
   display: inline;
-  margin: 5px 700px 10px 0px;
+  margin: 40px 700px 10px 0px;
   max-height: 5%;
   left: 0px;
 }
-.main-image {
+.page-center img {
   display: block;
   margin-top: 20px;
   margin-left: auto;
@@ -61,22 +65,35 @@ body {
 .header {
   height: 150px;
 }
+.page-center {
+  display: block;
+  position: relative;
+}
 .page-center p {
   position: absolute;
   margin-top: -350px;
   margin-left: 380px;
   color: white;
+  text-align: center;
+  line-height: 30px;
 }
-
+.page-center p:first-child {
+  font-size: 50px;
+}
 .page-center button {
   position: absolute;
-  margin-top: -250px;
+  margin-top: -200px;
   margin-left: 380px;
   background-color: #ff8c00;
   color: white;
 }
 
-.benefits {
+.strapline p {
+  text-align: center;
+  font-size: 25px;
+  color: grey;
+}
+.features {
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -84,10 +101,10 @@ body {
   margin-left: 120px;
 }
 
-.benefits img {
+.features img {
   width: 90px;
   height: 50px;
 }
-.benefits caption {
+.features caption {
   display: block;
 }
