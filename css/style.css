@@ -33,27 +33,34 @@ header {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: top; */
+  background-position: center;
   color: white;
-  padding: 50px;
+  padding: 35px;
   text-align: center;
+  /* height: auto; */
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-weight: 100;
+  font-size: 2.4rem;
+  font-weight: lighter;
+  /* border: 5px solid red; */
+  padding: 0 20px;
+  margin: 20px 30px 0 30px;
 }
 
 .hero p {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 100;
+  /* border: 3px solid red; */
+  padding: 10px 35px;
+  margin: 10px;
   line-height: 2rem;
 }
 
 .hero button {
-  padding: 1rem;
-  font-size: 1.2rem;
-  background-color: coral;
+  width: 120px;
+  padding: 0.7rem;
+  background-color: rgb(250, 115, 66);
   border: none;
   border-radius: 4px;
 }
