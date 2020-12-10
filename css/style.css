@@ -57,7 +57,7 @@ p {
 .header {
   height: 150px;
 }
-.page-center {
+/* .page-center {
   display: block;
   position: relative;
   max-width: 100%;
@@ -71,7 +71,7 @@ p {
   line-height: 30px;
 }
 .page-center p:first-child {
-  /*trying to enlarge the first line*/
+  
   font-size: 50px;
 }
 .page-center button {
@@ -80,8 +80,34 @@ p {
   margin-left: 380px;
   background-color: #ff8c00;
   color: white;
+} */
+
+.background-image {
+  background-image: url("/img/first-background.jpg");
+  height: 350px;
+  width: 100%;
+  left: 10%;
+  /* right: 10%; */
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
+.background-text {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.background-text h1 {
+  text-size: 12px;
+}
+.background-text button {
+  background-color: #ff8c00;
+  border-radius: 5px;
+}
 .strapline p {
   text-align: center;
   font-size: 25px;
@@ -109,6 +135,7 @@ p {
 .features figcaption {
   display: block;
   line-height: 30px;
+  color: grey;
 }
 
 .footer-class {
@@ -132,4 +159,5 @@ p {
 .social-media img {
   width: 50px;
   height: 20px;
+  border-radius: 50%;
 }
