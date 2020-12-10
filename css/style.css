@@ -15,14 +15,45 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* header */
 header {
   display: flex;
   justify-content: space-between;
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 10px;
 }
 
 .logo {
   width: 30px;
   height: 30px;
+}
+
+/* main section */
+.hero {
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: top; */
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.hero p {
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+.hero button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: coral;
+  border: none;
+  border-radius: 4px;
 }
