@@ -14,6 +14,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header */
 header {
   position: fixed;
   min-height: 77px;
@@ -47,4 +48,47 @@ nav a {
 }
 nav a:hover {
   color: rgb(214, 122, 35);
+}
+
+/* main */
+#bg-img {
+  padding-top: 80px;
+  width: 80%;
+  align-self: center;
+  margin: auto;
+  display: block;
+}
+/* container items */
+#container-heading {
+  font-size: 25px;
+  text-align: center;
+}
+#container-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icons {
+  width: 100px;
+  margin-right: 150px;
+  text-align: center;
+}
+/* footer */
+#footer-heading {
+  font-size: 15px;
+  text-align: center;
+}
+#footer-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-icons {
+  width: 25px;
+  margin-right: 50px;
+  text-align: center;
+}
+.footer-copyright {
+  font-size: 15px;
+  text-align: center;
 }
