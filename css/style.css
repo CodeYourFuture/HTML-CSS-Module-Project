@@ -17,13 +17,84 @@ body {
  */
 
 /* ------------Header start------------ */
+.header-img {
+    width: 30px;
+    margin-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+header {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+nav {
+    float: right;
+    margin-top: 23px;
+    display: flex;
+    margin-right: 80px;
+}
+
+a {
+    margin: 0px 40px 0px 0px;
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+
+a:hover{
+    color: #e1643b;
+}
+
+.meet {
+    font-weight: 500;
+    color: #4d5057;
+}
 /* ------------Header end------------ */
 
 /* ------------hero-img start------------ */
-/* ------------her-img end------------ */
+.hero-img {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45em;
+    margin-top: -21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 100;
+    color: white;
+}
+
+.main-p {
+    font-size: 3vw;
+    font-weight: 100;
+    color: white;
+}
+
+button {
+    background-color: #e1643b;
+    color: white;
+    padding: 1.5vw 2.5vw 1.5vw 2.5vw;
+    font-size: 1.5vw;
+    border-radius: 7px;
+    margin-top: 3vw;
+    border: 0;
+}
+/* ------------hero-img end------------ */
 
 /* ------------features start------------ */
+
 /* ------------features end------------ */
 
 /* ------------footer start------------ */
