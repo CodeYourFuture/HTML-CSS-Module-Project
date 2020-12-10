@@ -19,7 +19,7 @@ body {
 /* ------------Header start------------ */
 .header-img {
     width: 30px;
-    margin-left: 80px;
+    margin-left: 5vw;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -52,6 +52,12 @@ a:hover{
     font-weight: 500;
     color: #4d5057;
 }
+
+.menu{
+    float: right;
+    display: none;
+}
+
 /* ------------Header end------------ */
 
 /* ------------hero-img start------------ */
@@ -59,7 +65,7 @@ a:hover{
     background-image: url(/img/first-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 45em;
+    height: 54vw;
     margin-top: -21px;
     display: flex;
     justify-content: center;
@@ -93,11 +99,97 @@ button {
 }
 /* ------------hero-img end------------ */
 
+h2 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+
 /* ------------features start------------ */
+.features {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.sec-feat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icons {
+    width: 12vw;
+}
+
+.img-des {
+    font-size: 25px;
+}
 
 /* ------------features end------------ */
 
 /* ------------footer start------------ */
+footer {
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-top: 0.01px solid #ecedee;
+}
+
+h3{
+    font-weight: 500;
+}
+
+.sm-icon{
+    width: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 0.01px solid #ecedee;
+    border-radius: 25px;
+}
+
+h4{
+    font-weight: 100;
+    color: #9b9b9b;
+}
 /* ------------footer end------------ */
 
 /* ------------@media------------ */
+@media (min-width: 280px) and (max-width: 900px){
+    nav{
+        display: none ;
+    }
+
+    .menu{
+        display: block;
+        margin: 20px 24px 0px 0px;
+    }
+
+    .header-img{
+        width: 7vw;
+        margin-left: 6vw;
+    }
+
+    .hero-img{
+        height: 70vw;
+    }
+
+    h1 {
+        font-size: 11vw;
+    }
+    
+    .main-p {
+        font-size: 5vw;
+    }
+
+    button {
+        font-size: 4.5vw;
+        border-radius: 1vw;
+    }
+
+}
