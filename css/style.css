@@ -1,11 +1,12 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
-
+.bg-image {
+  background-image: url("/Users/sharonakaka/Desktop/Test Project/HTML-CSS-Coursework-Week2/img/first-background.jpg");
+}
 /**
  * Add your custom styles below
  * 
@@ -16,4 +17,53 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Navigation styles */
+.meet-karma {
+  font-weight: bold;
+}
 
+.nav-bar {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  background: #ffffff;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  width: 50px;
+  padding: 10px 0 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 30px;
+}
+
+nav a {
+  color: #444242;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ffa500;
+}
