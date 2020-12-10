@@ -37,16 +37,15 @@ h1 {
 
 /* Navigation Bar */
 
-.icon {
-    display: none;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
     overflow: hidden;
-    z-index: 1;
+}
+
+.dropdown-hamburger{
+    display: none;
 }
 
 .navbar a {
@@ -64,22 +63,33 @@ h1 {
     color: #f58957;
 }
 
+.nav_links {
+    display: inline-flex;
+}
+
 .nav_links li {
     list-style: none;
+}
+
+.nav-links li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1.5rem;
 }
 
 
 /* Header (Karma) */
 
 .intro-duction {
-    background-image: url("../img/first-background.jpg");
-    background-repeat: no-repeat;
+    background-image: url(../img/first-background.jpg);
     background-size: cover;
-    height: 800px;
+    background-repeat: no-repeat;
+    height: 54vw;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     color: white;
 }
 
@@ -144,3 +154,64 @@ footer ul{
 
 
 /* Media Queries for the webpage to be Responsive*/
+
+@media screen and (min-width: 270px) and (max-width: 720px) {
+        .logo{
+            width: 5vw;
+        }
+    
+        .navbar {
+            display: none;
+          }
+          
+        .dropdown-hamburger {
+            display: flex;
+            align-self: center;
+            padding-right: 3em;
+          }
+    
+        .intro-duction{
+            margin: 0vw 20vw 0vw 20vw;
+            background-image: url(/img/first-background.jpg);
+            background-size: cover;
+        }
+    
+        .intro-mation{
+            font-size: 3.5vw;
+        }
+    
+        button{
+            border-radius: 2px;
+            border: 0px solid black;
+        }
+    
+        h1{
+            font-size: 8vw;
+        }
+    
+        h2{
+            font-size: 8vw;
+        }
+    
+        .information{
+            display: flex;
+            flex-direction: column;
+            margin-right: 0vw;
+        }
+    
+        .feature_item{
+            margin: 50px 0px 50px 0px;
+        }
+    
+        .feature_icon{
+            width: 30vw;
+        }
+    
+        .feature-text{
+            font-size: 4vw; 
+        }
+    
+        footer{
+            padding-bottom: 30px;
+        }
+    }
