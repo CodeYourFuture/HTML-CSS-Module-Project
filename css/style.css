@@ -16,12 +16,12 @@ p {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 .navbar {
-  display: inline;
+  /* display: inline; */
   /* background-color: red; */
   position: fixed;
-  top: 30px;
+  /* top: 30px; */
   right: 60px;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   font-size: 10px;
   width: 50%;
 }
@@ -42,23 +42,22 @@ p {
   color: red;
 }
 .logo {
-  position: fixed;
-  display: inline;
-  margin: 50px 700px 10px 0px;
-  max-height: 3%;
-  left: 0px;
+  display: flex;
+  position: relative;
 }
-.page-center img {
-  display: block;
-  /* margin-top: 5px; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 70px;
-  width: 80%; /* cannot be centered if width is set to 100%*/
+.logo img {
+  position: fixed;
+  float: left;
+  /* display: inline-block; */
+  margin: 30px 700px 5px 0px;
+  max-height: 3%;
+  /* margin-top: 10px; */
+  /* margin-left: 10px; */
 }
 
-.header {
+.header-class {
   height: 150px;
+  display: flex;
 }
 
 .background-image {
@@ -93,27 +92,30 @@ p {
   color: grey;
 }
 .features {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
   /* flex-wrap: no-wrap; */
-  vertical-align: top;
-  text-align: center;
+  /* vertical-align: top; */
+  /* text-align: center; */
   /* width: 100px; */
   /* margin-left: 120px; */
-  font-size: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 300px;
+  font-size: 10px;
+  margin: auto;
+  height: auto;
+
+  /* width: 300px; */
   /* transform:translateX(-70%); */
 }
 
 .features img {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
+  /* display: inline-block; */
+  padding: 10px;
+  width: 80px;
+  height: 80px;
 }
 .features figcaption {
-  display: block;
-  line-height: 30px;
+  /* display: block; */
+  /* line-height: 30px; */
   color: grey;
 }
 
