@@ -26,7 +26,6 @@ body {
 
 header {
     background: red;
-    /* max-width: 1280px; */
     margin: auto;
 }
 
@@ -36,9 +35,7 @@ header {
     z-index: 2;
     padding: 0.5rem 5rem;
     border-bottom: 1px solid rgb(201, 98, 38);
-    /* background: #1b1b1b; */
     background: #f2f2f2;
-    transition: all 0.3s ease;
 }
 
 /* .navbar.sticky {
@@ -46,11 +43,14 @@ header {
     padding: 1rem 0;
 } */
 
+.logo {
+    width: 1.5rem;
+}
+
 .navbar .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 20px auto; */
 }
 
 .navbar .menu-list {
@@ -66,11 +66,12 @@ header {
 
 .menu-list li a {
     color: #000;
-    transition: all 0.3s ease;
+    
 }
 
 .menu-list li a:hover {
-    color:rgb(201, 98, 38)
+    color:rgb(201, 98, 38);
+    transition: all 0.3s ease;
 }
 
 .menu-list li:nth-of-type(1) {
@@ -114,7 +115,6 @@ header {
         display: block;
         padding: 1rem 0;
         text-align: center;
-        transition: all 0.3 ease;
     }
 
     .navbar {
@@ -166,7 +166,6 @@ header {
 
 }
   
-
 .hero {
     display: flex;
     align-items: center;
@@ -181,7 +180,6 @@ header {
 .hero-content {
     color: honeydew;
     line-height: 3rem;
-    /* font-size: 1.3rem; */
 }
 
 .hero-content h1 {
@@ -214,7 +212,7 @@ button {
 }
 
 .section-devices h1 {
-    margin-top: 4rem;
+    margin-top: 3rem;
     text-align: center;
     font-weight: 400;
 } 
@@ -224,19 +222,19 @@ button {
     justify-content: space-around;
     align-content: center;
     text-align: center;
-    margin: auto 15%;
-    margin-top: 2rem;
+    margin: auto 10%;
+    /* margin-top: 1rem; */
     flex-wrap: wrap;
 }
 
 .devices {
     width: 25%;
     height: 20vh;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .devices img {
-    width: 50%;
+    width: 70%;
 }
 
 footer {
@@ -251,19 +249,19 @@ footer h6 {
 }
 
 .social-media-images {
-    /* display: flex; */
-    flex-direction: row;
     margin-top: 1rem;
 }
 
-.social-media-images img {
-    width: 7%;
-    height: 5vh;
-    position: relative;
-    left: 40%;
+.social-media-images-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
-
+.social-media-images img {
+    width: 2rem;
+    margin: auto 1rem;
+}
 
 footer p {
     margin-top: 1rem;
