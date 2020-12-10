@@ -97,6 +97,9 @@ body {
     margin:2em;
     text-align:center;
   }
+#main-hr{
+    width:50%;
+}
 
 
 /*Footer style*/
@@ -116,7 +119,7 @@ footer{
     font-size:calc(0.8em + 0.5vw);
 }
 /* adding media query-inorder not to show navbar for big screens,make visible the mobile nav bar and changing background image height */
-@media screen and (max-width:1500px){
+@media screen and (max-width:768px){
     nav .big-screen{
         display: none; 
     }
@@ -199,7 +202,7 @@ footer{
 }
 
 /* adding media query for big screens-which hide the mobile nav bar and links */
-@media screen and (min-width:1500px){
+@media screen and (min-width:768px){
 .mobile-screen {
     display:none;
   }
