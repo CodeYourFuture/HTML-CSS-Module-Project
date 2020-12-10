@@ -61,11 +61,14 @@ body {
 .header {
   height: 150px;
 }
-/* .page-center {
-  position: relative;
-} */
+.page-center p {
+  position: absolute;
+  margin-top: -350px;
+  margin-left: 380px;
+  color: white;
+}
 
-.button {
+.page-center button {
   position: absolute;
   margin-top: -250px;
   margin-left: 380px;
@@ -78,7 +81,7 @@ body {
   vertical-align: top;
   text-align: center;
   width: 120px;
-  margin-left: 100px;
+  margin-left: 120px;
 }
 
 .benefits img {
