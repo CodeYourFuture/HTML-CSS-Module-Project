@@ -18,15 +18,32 @@ body {
 header {
   display: flex;
   justify-content: space-around;
+  height: 100px;
 }
+#logo {
+  height: 75px;
+}
+
 li {
   display: inline-block;
   margin: 5px;
   padding: 5px; /* is it better to use padding or margin??? */
 }
+#meetKarma {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(92, 92, 92);
+}
+
+a:hover {
+  color: rgb(255, 86, 24);
+}
+
 .intro {
   height: 750px; /* is there another method to fit the img inside the section without setting height */
-
   background-image: url("/img/first-background.jpg");
   background-repeat: no-repeat;
 
@@ -34,12 +51,13 @@ li {
   font-weight: 100;
   line-height: 0px;
   color: aliceblue;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#textOne {
+#firstText {
   font-size: 40px;
 }
 #learnMore {
@@ -51,6 +69,45 @@ li {
   font-weight: 400;
   border-style: hidden;
   border-radius: 5px;
+}
+
+.part-one {
+  font-size: 70px;
+  font-weight: 100;
+  color: rgb(46, 46, 46);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.contents {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
+  font-weight: 100;
+  color: rgb(46, 46, 46);
+}
+#content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  text-align: center;
+}
+
+#content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  text-align: center;
+}
+
+#content-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  text-align: center;
 }
 /* section {
   width: fit-content;

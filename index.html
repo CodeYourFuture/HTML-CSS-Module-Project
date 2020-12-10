@@ -19,28 +19,45 @@
     <!-- All the images you need are in the 'img' folder -->
 
     <header>
-        <img class="logo" src="img/karma-logo.svg"  alt="karma logo">
+        <img id="logo" src="img/karma-logo.svg"  alt="karma logo">
         <nav>
             <ul>
-                <li> <a> Meet Karma </a> </li>
-                <li> <a> How it Works </a> </li>
-                <li> <a> Store </a> </li>
-                <li> <a> Blog </a> </li>
-                <li> <a> Help </a> </li>
-                <li> <a> Login </a> </li>
+                <li id="meetKarma"> <a href="#"> Meet Karma </a> </li>
+                <li> <a href="#"> How it Works </a> </li>
+                <li> <a href="#"> Store </a> </li>
+                <li> <a href="#"> Blog </a> </li>
+                <li> <a href="#"> Help </a> </li>
+                <li> <a href="#"> Login </a> </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro">
-            <!-- <img src="img/first-background.jpg" alt="a tablet with a girl sitting on a table"> -->
+        <article class="intro">
             <p> Introducing Karma </p>
-        
-            <p id="textOne">Bring WiFi with you, everywhere you go.</p>
-
-            <button id="learnMore"> Learn More </button>       
-
+            <p id="firstText">Bring WiFi with you, everywhere you go.</p>
+            <button id="learnMore"> Learn More </button>             
+        </article>
+       
+        <article class="part-one">           
+            <p>Everyone needs a little Karma</p>
+        </article>
+       
+        <section class="contents">     
+            <article id="content-1">
+                <img src="/img/icon-devices.svg" alt="Animated picture of devices"/>
+                <p>Internet for all devices</p>
+            </article>
+           
+            <article id="content-2">
+                <img src="img/icon-coffee.svg" alt="Animated coffee cup"/>
+                <p>Boost your productivity</p>
+            </article>
+            
+            <article id="content-3">
+                <img src="/img/icon-refill.svg" alt="Animated petrol pump">
+                <p>Pay as You Go</p>
+            </article>
         </section>
     </main>
 </body>
