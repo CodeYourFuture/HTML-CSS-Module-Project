@@ -19,7 +19,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  /* background-color: aqua; */
   padding: 10px;
 }
 
@@ -37,13 +36,11 @@ header {
   color: white;
   padding: 35px;
   text-align: center;
-  /* height: auto; */
 }
 
 .hero h1 {
   font-size: 2.4rem;
   font-weight: lighter;
-  /* border: 5px solid red; */
   padding: 0 20px;
   margin: 20px 30px 0 30px;
 }
@@ -51,7 +48,6 @@ header {
 .hero p {
   font-size: 1.2rem;
   font-weight: 100;
-  /* border: 3px solid red; */
   padding: 10px 35px;
   margin: 10px;
   line-height: 2rem;
@@ -63,4 +59,18 @@ header {
   background-color: rgb(250, 115, 66);
   border: none;
   border-radius: 4px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container img {
+  width: 120px;
+}
+
+.about h2 {
+  margin: 0 auto;
 }
