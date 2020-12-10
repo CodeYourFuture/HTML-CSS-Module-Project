@@ -64,13 +64,27 @@ body {
 /* .page-center {
   position: relative;
 } */
-.benefits {
-  display: inline-block;
-}
+
 .button {
   position: absolute;
   margin-top: -250px;
   margin-left: 380px;
   background-color: #ff8c00;
   color: white;
+}
+
+.benefits {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 120px;
+  margin-left: 100px;
+}
+
+.benefits img {
+  width: 90px;
+  height: 50px;
+}
+.benefits caption {
+  display: block;
 }
