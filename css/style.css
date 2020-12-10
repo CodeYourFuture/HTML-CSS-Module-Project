@@ -1,9 +1,68 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+header{
+    margin-left:5%;
+    margin-right:5%;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin-left:5%;
+    margin-right:5%;
+}
+#nav{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.logo{
+ background-color: blue;
+ width: 50%;
+ height: 50px;
+}
+.nav-items{
+    background-color: rgb(212, 54, 54);
+    width: 50%;
+    height: 50px;
+}
+.nav-items ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+main .hero-image{
+    background-image: url('../img/first-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+   
+}
+figure img{
+    width:10em;
+}
+/*footer*/
+footer p{
+    text-align: center;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+
+}
+.footer-icons img{
+    width: 3em
 }
 
 /**
