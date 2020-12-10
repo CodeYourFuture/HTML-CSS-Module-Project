@@ -5,16 +5,7 @@ body, footer {
   -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
+/*Navigation*/
 .navbar{
 background-color: white;
 position: -webkit-sticky;
@@ -42,9 +33,12 @@ background-color: white;
 .navbar a.current-tab{
   color: black;
 }
+.navbar .icon {
+  display: none;
+}
 
 
-
+/*Introduction General styles*/
 .intro{
   background-image: url(C:/Users/omars/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg);
   background-size: cover;
@@ -70,6 +64,8 @@ background-color: white;
   margin-top: 20px;
   font-weight: 100;
 }
+
+/*Button - general styles*/
 .button{
   background-color: orange;
   color: white;
@@ -77,6 +73,8 @@ background-color: white;
 .button:hover{
   color: red;
 }
+
+/*Main text of the landing page - General styles*/
 .main{
   display: flex;
   justify-content: center;
@@ -86,6 +84,7 @@ background-color: white;
   flex-direction: row;
   
 }
+/*Icons styles*/
 .main .devices{
   width: 100%;
   height: auto;
@@ -105,6 +104,7 @@ background-color: white;
   margin-top: 0px;
 
 }
+/*General styles*/
 .statement{
 text-align: center;
 margin-top: 100px;
@@ -113,22 +113,23 @@ margin-top: 100px;
   text-align: center;
   padding-right: 0px;
 }
+
+/*Line break*/
 hr.solid {
     border-top: 3px solid grey;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 0px;
     }
+
+/*Footer*/
 .footer{
   display: flex;
   justify-content: center;
 }
 
-.navbar .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
+/*Changing screen size* - General style changes as a result*/
+@media screen and (max-width: 1200px) {
   .navbar a:not(:nth-child(0)) {display: none;}
   .navbar a.icon {
     float: right;
@@ -141,18 +142,12 @@ hr.solid {
     margin-right: 250px;
     padding-top: 20px;
   }
-
-@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 1200px) {
   .navbar.responsive .icon {
     position: absolute;
     right: 0;
     bottom:0;
     top: 0;
   }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
