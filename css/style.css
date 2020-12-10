@@ -7,8 +7,8 @@ body, footer {
 
 /*Navigation*/
 .navbar{
-background-color: white;
-position: -webkit-sticky;
+  background-color: white;
+  position: sticky;
 }
 .navbar .logo {
   height: 60px;
@@ -16,13 +16,13 @@ position: -webkit-sticky;
   float: left;
 }
 .navbar a{
-float: left;
-margin-top: 0;
-display: block;
-color: grey;
-text-align: center;
-padding: 14px 20px;
-background-color: white;
+  float: left;
+  margin-top: 0;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 20px;
+  background-color: white;
 }
 .navbar a:hover{
   color: orange;
@@ -110,8 +110,8 @@ a{
 }
 /*General styles*/
 .statement{
-text-align: center;
-margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 .statement-for-icons{
   text-align: center;
@@ -120,11 +120,11 @@ margin-top: 100px;
 
 /*Line break*/
 hr.solid {
-    border-top: 3px solid grey;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 0px;
-    }
+  border-top: 3px solid grey;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+}
 
 /*Footer*/
 .footer{
