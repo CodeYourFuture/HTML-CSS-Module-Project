@@ -35,6 +35,7 @@ p {
 
 .navbar ul li a {
   text-decoration: none;
+  color: grey;
 }
 
 .logo {
@@ -88,7 +89,8 @@ p {
 }
 .features {
   display: inline-block;
-  /* vertical-align: top; */
+  /* flex-wrap: no-wrap; */
+  vertical-align: top;
   text-align: center;
   /* width: 100px; */
   /* margin-left: 120px; */
@@ -96,12 +98,13 @@ p {
   margin-right: auto;
   margin-left: auto;
   width: 300px;
+  /* transform:translateX(-70%); */
 }
 
 .features img {
   display: inline-block;
-  width: 150px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
 }
 .features figcaption {
   display: block;
@@ -116,4 +119,17 @@ p {
   border-top-style: solid;
   border-top-width: 5px;
   border-top-color: rgb(177, 50, 50);
+}
+.footer-class p {
+  text-align: center;
+  font-size: 10px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media img {
+  width: 50px;
+  height: 20px;
 }
