@@ -1,6 +1,6 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+body, footer {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -18,14 +18,15 @@ body {
 .navbar{
 background-color: white;
 position: -webkit-sticky;
-top: 0;
 }
 .navbar .logo {
   height: 60px;
   margin-left: 30px;
+  float: left;
 }
 .navbar a{
 float: left;
+margin-top: 0;
 display: block;
 color: grey;
 text-align: center;
@@ -45,7 +46,7 @@ background-color: white;
 
 
 .intro{
-  background-image: url(/Users/omars/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg);
+  background-image: url(C:/Users/omars/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg);
   background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
@@ -82,27 +83,27 @@ background-color: white;
   margin-left: 20px;
   margin-right: 20px;
   vertical-align: middle;
+  flex-direction: row;
+  
 }
 .main .devices{
   width: 100%;
   height: auto;
   padding: 115px;
   margin-top: 0px;
-  align-content: flex-start;
 }
 .main .coffee {
   width: 100%;
   height: auto;
   padding:115px;
   margin-top: 0px;
-  align-content: flex-start;
 }
 .main .refill{
   width: 100%;
   height: auto;
   padding:115px;
   margin-top: 0px;
-  align-content: flex-start;
+
 }
 .statement{
 text-align: center;
@@ -123,16 +124,35 @@ hr.solid {
   justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
-  .main, .intro {   
-    flex-direction: column;
-    display: -ms-flexbox;
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:nth-child(0)) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
   }
-  <div class="dropdown" style="float:right;">
-  <button class="dropbtn">background-image: url(C:\Users\omars\Documents\GitHub\HTML-CSS-Coursework-Week2\img\menu-hamburger.svg)</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+  .main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 250px;
+    padding-top: 20px;
+  }
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom:0;
+    top: 0;
+  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
