@@ -15,9 +15,23 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-.nav-list-items {
-  list-style: none;
+.header {
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+}
+
+.header-img {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  width: 600px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-left: 800px;
 }
