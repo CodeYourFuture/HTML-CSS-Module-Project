@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rajdhani:wght@300&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rajdhani:wght@300&display=swap");*/
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
+font-family: "Roboto", sans-serif;
+-webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -18,115 +18,100 @@ body {
 
 /*Header,Logo and Menu Section*/
 .logo {
-  width: 50px;
-  height: 50px;
+width: 50px;
+height: 50px;
 }
 
 .top_header {
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
+display: flex;
+width: 90%;
+margin: 0 auto;
 }
 
 /*Top Menu*/
 .top_nav_menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 80px;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+padding-right: 80px;
 }
 
 .top_nav_menu li {
-  padding: 15px;
-  list-style: none;
+padding: 15px;
+list-style: none;
 }
 
 .top_nav_menu li a {
-  text-decoration: none;
-  color: gray;
+text-decoration: none;
+color: gray;
 }
 
 .top_nav_menu li a:hover {
-  color: orange;
-  transition: 0.4s;
+color: orange;
+transition: 0.4s;
 }
 /* nav Tag that holds menu items*/
 .menu_bar {
-  flex: 2;
+flex: 2;
 }
 
 /* Background Image */
 .image_section {
-  background-image: url("/img/first-background.jpg");
-  text-align: center;
-  padding-bottom: 90px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 500px;
-  width: 90%;
-  margin: 0 auto;
- 
+background-image: url("/img/first-background.jpg");
+text-align: center;
+padding-bottom: 90px;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 90%;
+margin: 0 auto;
+
 }
 
-/*container that hold Text and button link over the image
 .image_text_button{
-position: absolute;
-top: 30%;
-left: 30%;
-transform: translate(-30%, -30%);
-}
-*/
-
-.image_text_button{
-   
-    display: flex;
-  align-content: center;
-   justify-content: center;
-   flex-direction: column;
-   min-height: 600px;
-   
-  
+display: flex;
+align-content: center;
+justify-content: center;
+flex-direction: column;
+min-height: 600px;
+width: 80%;
 }
 
 .image_text_button h1 {
-  color: lavender;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: lighter;
-  font-size: 4rem;
+color: lavender;
+/*font-family: "Rajdhani", sans-serif;*/
+font-weight: lighter;
+font-size: 4rem;
+padding-bottom: 30px;
 }
 /**/
 .image_text_button p {
-  color: lavender;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 2rem;
-  margin-top: -50px;
+color: lavender;
+font-weight: lighter;
+font-size: 2rem;
+margin-top: -50px;
 }
 
 .link {
 width: 20%;
-  background-color: rgb(241, 121, 77);
-  padding: 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: lavender;
-  margin: 0 auto;
+background-color: rgb(241, 121, 77);
+padding: 20px;
+border-radius: 10px;
+text-decoration: none;
+color: lavender;
+margin: 0 auto;
 }
 
 .link:hover {
-  background-color: rgb(212, 84, 4);
-  transition: 0.4s ease-in;
-}
-
-.bg_img {
-  width: 90%;
+background-color: rgb(212, 84, 4);
+transition: 0.4s ease-in;
 }
 
 /*Second Title after the image*/
 h2 {
-  font-family: "Rajdhani", sans-serif;
-  text-align: center;
-  font-size: 2.5rem;
+text-align: center;
+font-size: 2.5rem;
+font-weight: lighter;
 }
 
 /* Three Icons Section*/
@@ -136,11 +121,11 @@ h2 {
 }
 
 .icons {
-  display: flex;
-  align-content: space-around;
-  justify-content: center;
-  font-weight: bold;
-  color: rgb(68, 64, 64);
+display: flex;
+align-content: space-around;
+justify-content: center;
+font-weight: bold;
+color: rgb(68, 64, 64);
 }
 
 .title {
@@ -170,12 +155,12 @@ footer {
 }
 
 .footer_icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .join_text {
-  color: rgb(51, 49, 49);
-  font-size: 1rem;
-  font-weight: bold;
+color: rgb(51, 49, 49);
+font-size: 1rem;
+font-weight: bold;
 }
