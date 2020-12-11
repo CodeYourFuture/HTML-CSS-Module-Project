@@ -24,6 +24,10 @@ header{
     padding: 10px 130px;
 }
 
+.burger{
+    display: none;
+}
+
 .logo{
     width: 3%;
 }
@@ -161,4 +165,90 @@ footer{
 
 .company-name h5{
     font-weight: 200;
+}
+
+@media only screen and (max-width: 480px){
+    /*Header*/
+    header{
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        width: 25px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    /*Article 1*/
+    .title{
+        width: 100%;
+        background-position: center;
+    }
+
+    .title-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-content h2{
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .title-content h4{
+        font-size: 1em;
+        text-align: center;
+        padding: 0 25px;
+    }
+
+    /*Article 2*/
+    .qualities h3{
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .qualities-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .specific-quality{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qualities-image-container{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Footer*/
+    .icons-container{
+        width: 40%;
+    }
+    
+    .icon-container{
+        width: 30%;
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 50%;
+        padding: 20px 0;
+    }
 }
