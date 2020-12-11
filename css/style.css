@@ -15,10 +15,27 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-.navigation-bar ul {
-  padding: 0px;
-  margin: 0px;
-  text-align: left;
-  display: inline-block;
-  vertical-align: top;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cfe0c3;
+  margin: 0;
+  padding: 0;
+}
+
+ /** navigation bar */
+
+..nav-logo {
+  float: left;
+  width: 20px;
+  height: auto;
+  border-radius: 50%;
+
+.nav-bar {
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
 }

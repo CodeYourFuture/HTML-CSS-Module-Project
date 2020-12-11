@@ -14,8 +14,8 @@ LDN7-Bisi Olajide - HTML/CSS- Week 2
 
 # Your Details
 
-- Your Name: Bisi Olajide
-- Your City: London
+- Your Name: bisi olajide
+- Your City: london
 - Your Slack Name: bisioolajide
 
 # Homework Details
