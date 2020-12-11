@@ -1,10 +1,23 @@
-
+/* General Content Styling */
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    padding: 10px;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /**
  * Add your custom styles below
@@ -16,4 +29,43 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Styling of the header section */
 
+.header {
+    margin: 1em 0;
+}
+
+.header-img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Page content starts here */
+/* First section / hero section is styled here */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/first-background.jpg);
+    width: 100%;
+    height: 80vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em;
+}
+
+.hero h1,
+.hero h2 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Styling of hero button */
+.btn {
+    border: none;
+
+    margin-top: 2em; 
+    padding: .5em 1em;border-radius: 5px;
+    background-color: rgba(223, 62, 34, 0.918);
+}
