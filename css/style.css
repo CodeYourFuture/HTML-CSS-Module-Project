@@ -29,11 +29,23 @@ li a:hover{
 .main img{
     width:100%;
 }
-.container{
-    display: flex;
+.main h1{
+    position: absolute;
+    left: 25%;
+    bottom: 60%;
+    color: azure; 
 }
-.container img{
-    width:33%;
+.main h2{
+    position:absolute;
+    left: 20%;
+    bottom:50%;
+    color:azure;
+    font-size: 50%;
+}
+.button{
+    position: absolute;
+    left:35%;
+    bottom: 40%;
 }
 .main a{
     text-decoration: none;
@@ -41,6 +53,24 @@ li a:hover{
     background-color: orangered;
     border-radius: 2px;
     padding: 10px;
+}
+.container h1{
+    position: relative;
+}
+#images{
+    display:flex;
+}
+#images p{
+    position: absolute;
+}
+#images img{
+    margin: 6%;
+}
+#captions{
+    display: flex;
+}
+#captions p{
+    margin:5%;
 }
 footer{
     display:flex;
