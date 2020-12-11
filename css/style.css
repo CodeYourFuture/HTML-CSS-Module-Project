@@ -7,6 +7,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    width: 0 auto;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -57,7 +61,6 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     color: whitesmoke;
-    height: 800px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -70,7 +73,7 @@ button {
     border: none;
     color: whitesmoke;
     padding: 10px 20px;
-    margin-top: 50px;
+    margin: 50px;
 }
 
 
