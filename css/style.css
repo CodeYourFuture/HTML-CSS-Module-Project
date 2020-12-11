@@ -7,14 +7,19 @@ body {
 }
 header img{
     width: 3%;
+    position: relative;
+    left: 15%;
+    top: 20%;
 }
 ul{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    left: 80%;
 }
 li{
-    margin: 20px;
+    margin: 15px;
 }
 a{
     text-decoration: none;
