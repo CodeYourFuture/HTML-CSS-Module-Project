@@ -18,41 +18,55 @@ body {
  */
 
 .logo{
-    width: 30px;
+    width: 40px;
     }
-
-
-
 header{
     display: flex;
-    padding: 10px 200px 10px 200px;
+    padding: 10px 150px 10px 150px;
     justify-content: space-between;
     }
 
 ul{
     display: flex;
-    flex-direction: row;
-    
-    
+    flex-direction: row;    
     }
 
 li{
-    padding: 0px 20px 0px 20px;
+    padding: 0px 30px 0px 30px;
     list-style-type: none;
-
+    font-size: xx-large;
+    }
+a:link{
+    color:rgb(137, 142, 151);
+    text-decoration: none;
 }
-a{
-
+.meet:link{
+    color:rgb(80, 80, 90);
+}
+.meet:hover{
+    color:rgb(240, 90, 41);
+}
+a:hover{
+    color:rgb(240, 90, 41);
     text-decoration: none;
 }
 
 main {
-    background-image: url(img/first-background.jpg);
-    width: 100%;
+    height:750px;
+    background-image: url("/img/first-background.jpg");
+    background-repeat: no-repeat;
+    
+    
    }
+.middleSection{
+    display:flex;
+    justify-content: space-evenly;
+}
 
-
-
-.icon {width: 20%; height: auto;}
+.socialSection{
+    display:flex;
+    justify-content: center;    
+}
+.icon {width: 100%; height: auto;}
 .social {width: 5%; height: auto;}
 
