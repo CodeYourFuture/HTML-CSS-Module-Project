@@ -4,19 +4,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-
-    nav {
-        display: flex;
-    }
 }
 
-main {
-    text-align: center;
-}
 
-footer {
-    text-align: center;
-}
+
+
 /**
  * Add your custom styles below
  * 
@@ -27,5 +19,20 @@ footer {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ main {
+    text-align: center;
+}
 
+footer {
+    text-align: center;
+}
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    display: flexbox;
+    justify-content: flex-end;
+}
