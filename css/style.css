@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 /**
@@ -45,5 +47,33 @@ nav{
 
 .navigation-links:hover {
     color: rgb(224, 68, 11);
+}
+
+/*Main content*/
+/*Section 1*/
+.first-section{
+    background-image: url(/img/first-background.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+   
+}
+
+button{
+    background-color: rgb(224, 68, 11);
+}
+
+
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    
 }
  
