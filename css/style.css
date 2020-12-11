@@ -96,3 +96,25 @@ body {
     margin: 0px;
     padding: 0px;
 }
+/* Footer styling starts here */
+footer {
+    flex-direction: column;
+    margin-top: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h4 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+footer section {
+    justify-content: space-evenly;
+}
+
+.footer-img {
+    margin: 3em 2em;
+    max-width: 10px;
+    max-width: 10px;
+}
