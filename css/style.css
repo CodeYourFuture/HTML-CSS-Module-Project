@@ -65,8 +65,9 @@ a:hover{
     background-image: url(/img/first-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
     height: 54vw;
-    margin-top: -21px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +154,11 @@ h3{
     border-radius: 25px;
 }
 
+.sm-icon:hover {
+    border: 0.01px solid #e1643b;
+    transition: 0.4s;
+}
+
 h4{
     font-weight: 100;
     color: #9b9b9b;
@@ -167,16 +173,22 @@ h4{
 
     .menu{
         display: block;
-        margin: 20px 24px 0px 0px;
+        width: 35px;
+        padding-top: 29px;
+        padding-bottom: 10px;
+        margin-right: 4vw;
     }
 
     .header-img{
-        width: 7vw;
+        width: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin-left: 6vw;
     }
 
     .hero-img{
-        height: 70vw;
+        height: 90vw;
+        
     }
 
     h1 {
@@ -192,4 +204,32 @@ h4{
         border-radius: 1vw;
     }
 
+    h2 {
+        font-size: 10vw;
+        margin-top: 35px;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-icons{
+        width: 35vw;
+    }
+
+    h3 {
+        white-space: nowrap;
+    }
+
+    .sm-group {
+        display: flex;
+        justify-content: center;
+    }
+    
+    h4 {
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+    }
 }
