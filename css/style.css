@@ -45,6 +45,11 @@ li a:hover{
     color: red;
 }
 
+
+/**
+ * Start of Main Section
+ */
+
 .hero, main {
     width:100%;
 }
@@ -106,13 +111,14 @@ h2 {
     width:auto;
 }
 
+
+/**
+ * Start of Footer
+ */
+
 footer {
     display:flex;
     flex-direction:column;
-    align-content: center;
-    justify-content: center;
-    text-align:center;
-    margin:0px;
     }
 
 hr {color:lightgray;
@@ -120,23 +126,20 @@ hr {color:lightgray;
 }
 
 footer p {
-    
     text-align:center;
     font-weight:400;
     }
 
 footer ul{
-    
-   /* border: solid black;
-    border-width: 5px;*/
     display:flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     }
 
 footer li{
-   /* border: solid black;
-    border-width: 5px;*/
     text-align: center;
     }
 
@@ -146,7 +149,7 @@ footer img{
     filter: grayscale(80%);
     padding:10px;
     border:solid lightgray;
-    border-width:1px;
+    border-width: 1px;
     border-radius: 100px;
 }
 
