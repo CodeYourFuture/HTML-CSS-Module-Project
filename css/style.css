@@ -68,7 +68,41 @@ ul li:hover{
       font-size: 30px;
       text-align: center;
   }
+  .column {
+    float: left;
+    width: 30%;
+    text-align: center;
+  }
+
+.img{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.icons{
+    color: blue;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.fcopyright{
+    color: gray;
+}
+
   
+
+
+
   
 
 
