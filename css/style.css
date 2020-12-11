@@ -1,12 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ /*header*/
 header{
-    margin-left:5%;
-    margin-right:5%;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
     margin-left:5%;
     margin-right:5%;
 }
@@ -15,13 +10,18 @@ body {
     flex-flow: row wrap;
 
 }
+li{
+    list-style-type: none; 
+}
+ul:nth-child(2){
+    color: chocolate;
+}
+
 .logo{
- background-color: blue;
  width: 50%;
  height: 50px;
 }
 .nav-items{
-    background-color: rgb(212, 54, 54);
     width: 50%;
     height: 50px;
 }
@@ -29,19 +29,48 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+a:hover{
+    color: orange;
+}
+li:first-of-type{
+    font-weight: 900;
+    color: black;
+}
+/*body*/
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.hero-image p{
+    font-size: 2em;
+    position: relative;
+}
+
 main .hero-image{
     background-image: url('../img/first-background.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
-    height: 30em;
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
+    height: 30;
     justify-content: center;
     flex-flow: column wrap;
+    position: relative;
     color: white;
+    height: 900px;
 }
-h2{
+.hero-image h1{
+    position: relative;
+}
+h1,h2{
     text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    
 }
 .icons{
     display: flex;
@@ -55,6 +84,7 @@ figure img{
 /*footer*/
 footer p{
     text-align: center;
+    opacity: 35%;
 }
 .footer-icons{
     display: flex;
@@ -62,7 +92,16 @@ footer p{
 
 }
 .footer-icons img{
-    width: 3em
+    width: 1em;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+}
+
+@media only screen and (max-width:320px){
+    nav .container{
+        display: none;
+    }
 }
 
 /**
