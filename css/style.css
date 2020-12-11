@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,148 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.list {
+  padding-right: 50px;
+}
+
+li {
+  display: inline;
+  padding: 15px;
+  font-size: 20px;
+  color: dimgray;
+  transition: font-size 0.5s ease;
+}
+
+li:hover {
+  color: red;
+  font-size: 25px;
+}
+
+.logo {
+  height: 50px;
+  width: 100px;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.backgroundImg {
+  background-image: url(../img/first-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.buttonS {
+  background-color: rgb(224, 65, 65);
+  padding: 20px 35px;
+  margin-top: 30px;
+  border-radius: 5%;
+  font-size: 20px;
+  border: none;
+}
+
+.buttonS:hover {
+  background-color: lightblue;
+}
+
+.firstText {
+  font-size: 70px;
+  font-weight: lighter;
+}
+.secondText {
+  font-size: 40px;
+  font-weight: lighter;
+}
+body {
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.serviceIcons {
+  height: 120px;
+  width: 120px;
+}
+
+.secondHeading {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.serviceHovers:hover {
+  color: #75b7f5;
+}
+
+footer {
+  border-top: 1px solid lightblue;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+
+.join {
+  padding-top: 20px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.socialMContainer {
+  margin: 5px;
+  border: 1px solid lightblue;
+  border-radius: 50%;
+  display: flex;
+}
+
+.socialM {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+.socialMContainer:hover {
+  background-color: lightblue;
+}
+
+.karmaInc {
+  opacity: 50%;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .services {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: inline;
+    padding-right: 30px;
+  }
+  nav {
+    display: none;
+  }
+  h3 {
+    width: 400px;
+  }
+}
