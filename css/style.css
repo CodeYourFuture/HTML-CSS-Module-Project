@@ -3,6 +3,9 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-image: url(/img/first-background.jpg);
+  width: 100%;
+  height: 600px;
 }
 
 /**
@@ -17,14 +20,16 @@ body {
 
 .header {
   display: flex;
+  background-color: white;
+  height: 70px;
 }
 
 .header-img {
   position: fixed;
-  height: 30px;
-  width: 30px;
+  height: 27px;
+  width: 27px;
   margin-left: 130px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .navigation {
@@ -33,7 +38,11 @@ body {
   width: 500px;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-left: 900px;
-  margin-top: 20px;
+  margin-left: 870px;
+  margin-top: 25px;
   align-items: baseline;
+}
+
+.mid-page {
+  background-color: white;
 }
