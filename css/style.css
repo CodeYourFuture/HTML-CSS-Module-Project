@@ -74,8 +74,15 @@ h3 {
   transform: translate(-50%, -50%);
 }
 .background-text h1 {
-  text-size: 12px;
+  font-size: 35px;
+  font-weight: 100;
 }
+
+.background-text h3 {
+  font-size: 20px;
+  font-weight: 50;
+}
+
 .background-text button {
   background-color: #f15a29; /*#ff8c00*/
   border-radius: 5px;
@@ -89,7 +96,7 @@ h3 {
 .features {
   display: flex;
   justify-content: space-around;
-  font-size: 10px;
+  font-size: 100;
   margin: auto;
   height: auto;
 }
