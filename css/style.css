@@ -105,6 +105,10 @@ button {
 
 /*Content within the body*/
 
+.header1 {
+    font-size: 40px;
+}
+
 .how-it-works {
     text-align: center;
     margin-top: 80px;
@@ -121,6 +125,21 @@ button {
     align-items: center;
     width: auto;
     padding: 65px;
+}
+
+.feature_icon1
+.feature_icon2
+.feature_icon3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 65px;
+}
+
+.feature_icon3 {
+    width: 150px;
+    height: 150px;
 }
 
 
