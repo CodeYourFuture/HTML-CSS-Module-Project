@@ -6,6 +6,89 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+svg {
+    padding: 20px 0 0 20px;
+    height: 50px;
+}
+
+.navbar li{
+    display: inline;
+    padding: 0 10px 0 40px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color:black;
+    font-size: 10px;
+}
+
+a:hover {
+    color: rgb(255, 102, 0);
+}
+
+header nav {
+    float:right;
+    margin-top: 10px;
+}
+
+.social {
+    height: 50px;
+}
+
+button {
+    background-color: rgb(255, 102, 0);
+    padding: 10px 10px 10px 10px;
+    border-style: hidden;
+    color:white;
+    align-content: center;
+}
+
+#coverpage {
+    min-height: 400px;
+    color: white;
+    text-align: center;
+}
+
+#coverpage h1 {
+    margin: -500px 0 0 0;
+    font-size: 40px;
+    color:white;
+    font-weight: lighter;
+}
+
+#coverpage p {
+    color: white;
+}
+
+#center {
+    margin: 440px 50px 0 0;
+    text-align: center;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+#wrap {
+    margin-top:20px;
+}
+
+#wrap .devices{
+    float:left;
+    width:50%;
+}
+
+
+.coffee {
+    display: inline;
+    align-items: center;
+}
+
+.refill {
+    display: flex;
+    justify-content: space-between;
+}
 /**
  * Add your custom styles below
  * 
