@@ -7,12 +7,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-img {
-    width: 0 auto;
-}
-
 h1 {
     font-size: 40px;
+}
+
+hr {
+    width: 70%;
+    border: 1px solid #d6d4d4;
 }
 
 .title_line {
@@ -64,6 +65,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 500px;
     justify-content: center;
 }
 
@@ -86,7 +88,7 @@ button {
 
 .content {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     width: 100%;
 }
@@ -94,7 +96,11 @@ button {
 .feature_item {
     align-items: center;
     width: auto;
-    padding: 65px;
+    padding: 100px;
+}
+
+.feature_item img {
+    font-size: 10px;
 }
 
 
