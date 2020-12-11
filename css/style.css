@@ -25,17 +25,64 @@ body {
   padding: 0;
 }
 
- /** navigation bar */
+/** navigation bar */
 
-..nav-logo {
-  float: left;
+.img-logo {
   width: 20px;
   height: auto;
   border-radius: 50%;
+}
 
 .nav-bar {
   padding: 20px;
   border-radius: 50%;
   display: flex;
   justify-content: space-between;
+}
+
+.container {
+  width: 40px;
+  height: auto;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+section {
+  text-align: center;
+  padding: 50px;
+}
+
+section h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+section p {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.media-tile {
+  max-width: 500px;
+  padding: 10px;
+  margin: 50px;
+}
+
+.media-tile img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.media-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.media-tile p {
+  font-size: 25px;
+  margin-top: 10px;
 }

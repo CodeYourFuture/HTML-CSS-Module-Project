@@ -22,7 +22,7 @@ Is there a problem with this coursework?
 Have you noticed a bug?
 Does something not make sense?
 
-Post in the relevent channel on Slack depending on the module you are completing:
+Post in the relevant channel on Slack depending on the module you are completing:
 
 - Git - `cyf-module-git`
 - HTML/CSS - `cyf-module-html-css`
