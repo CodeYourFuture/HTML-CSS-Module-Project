@@ -1,10 +1,185 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ /* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
 }
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+
+}
+
+/* HEADER */
+
+/* NAV */
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-hamburger {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items {
+    color: gray;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-items-first {
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+}
+
+.nav-items:hover {
+    color: rgb(231, 105, 21);
+}
+
+.active {
+    font-weight: 600;
+    color: gray;
+}
+
+
+/* HERO */
+
+.hero {
+    background: url("../img/first-background.jpg") center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+button {
+    background: rgb(231, 105, 21);
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+/* MAIN */
+
+main {
+    margin: 40px 0 30px 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* CARDS */
+
+.cards-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+article {
+    text-align: center;
+    width: 250px;
+}
+
+.cards-container > article > img {
+    width: 75px;
+}
+
+.cards-container > p {
+    font-size: 0.8em;
+}
+
+/* FOOTER */
+
+hr {
+    border-top-style: none;
+    width: 80vw;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.footer-text {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 0.6em;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .mobile-hamburger {
+      visibility: visible;
+      display: block;
+      order: 1;
+    }
+
+    .nav-items {
+        visibility: hidden;
+    }
+
+    /* nav {
+        display: flex;
+        justify-content: space-between;
+    } */
+  }
+
 
 /**
  * Add your custom styles below
