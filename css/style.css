@@ -3,7 +3,6 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 /**
@@ -19,17 +18,19 @@ body {
 /*nav bar*/
 
 .container {
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
+.logo {
+  width: 40px;
+}
 .hamburger {
   display: none;
+  width: 40px;
 }
 
 .nav-logo {
-  display: inline-block;
-  padding: 0.5em 2em;
+  padding: 0.5rem 2rem;
   width: 100px;
 }
 .navbar a {
@@ -40,10 +41,9 @@ body {
   color: black;
 }
 .navbar {
-  float: right;
-  margin: 1em 5em 0 0;
+  display: flex;
+  margin: 1rem 5rem 0 0;
   align-items: center;
-  list-style-type: none;
 }
 
 a:hover {
@@ -52,15 +52,9 @@ a:hover {
 
 /*Main*/
 
-.main-content {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-}
 .middle-content {
   position: relative;
   display: inline-block;
-  overflow: hidden;
 }
 .background-img {
   width: 100%;
@@ -104,6 +98,9 @@ a:hover {
   color: gray;
   font-weight: 200;
 }
+article img {
+  width: 125px;
+}
 article {
   display: flex;
   justify-content: space-around;
@@ -128,7 +125,6 @@ footer p {
 .socialMedia {
   display: flex;
   justify-content: center;
-  list-style-type: none;
   padding: 0;
 }
 .socialMedia a {
@@ -136,11 +132,14 @@ footer p {
   border: 2px solid gray;
   border-radius: 50px;
   margin: 10px;
-  padding: 0;
   width: 50px;
   height: 50px;
   justify-content: center;
   align-items: center;
+}
+
+.socialMedia a img {
+  width: 25px;
 }
 
 /*responsive*/
