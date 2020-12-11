@@ -5,12 +5,18 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-header {
-width: 30px;
-height: 30px;
-position: relative;
-top: 40px;left: 120px;
 
+@media screen and (min-width:601px) {
+  
+header {
+
+
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 40px;left: 120px;
 }
 
 .navbar{
@@ -129,7 +135,138 @@ footer img{
     text-align: center;
     font-size: 12px;
   }
+}
 
+@media screen and (min-width:150px) and (max-width:600px){
+  header {
+
+
+  }
+  .logo{
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 30px;left: 5px;
+  }
+  
+  .navbar{
+    color:rgb(88, 69, 69) 
+     
+  }
+  
+    ul li a {
+      list-style-type: none;
+      font-size: 15px;
+      position: relative;
+      top: 0px;right: 100px;
+      text-decoration: none;
+      
+  }
+    ul li a:hover
+    {
+    color: rgb(235, 106, 31);
+    }
+  
+    li {
+      display: inline;
+      padding: 7px;
+      margin: 10px;
+      float: right;
+      
+    }
+  
+    .table{
+      background-image: url(/img/first-background.jpg);
+      background-size:142%;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 200px;
+      align-items: center; 
+      position: relative;
+      top: 10px;right: -10px;
+      /* left: center; */
+    }
+  
+  h3,
+  h4 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 270px;left: 200px;
+    font-weight: 100;
+    vertical-align: middle;
+   
+  }
+  
+  h3 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 360px;left: 15px;
+  }
+  
+  h4 {
+    font-size: 50px;
+    margin-top: 50px:
+    position: relative;
+    top: 310px;left: -30px;
+  }
+  
+  .learn{
+    
+    line-height: 2.8;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(209, 115, 52);
+    position: relative;
+    top: -430px;left: 700px;
+  }
+  
+  .icon p{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .icon img{
+    width: 180px;
+    height: 80px;
+    position: relative;
+    left: 500px;
+   
+  }
+  .specs p{
+    display: inline;
+    position: relative;
+    left: 480px; 
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  
+   footer h5 {
+      text-align: center;
+      margin-top: 60px;
+    
+    }
+  footer img{
+    
+      width: 15px;
+      height: 15px;
+      margin: 10px;
+      margin-top: 5px;
+      position: relative;
+      left:725px;
+    }
+    footer p {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+}
 
 /**
  * Add your custom styles below
