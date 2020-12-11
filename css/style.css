@@ -64,8 +64,27 @@ nav{
    
 }
 
+.first-section h1 {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.first-section p{
+    font-size: 2em;
+    font-weight: 200;
+}
+
 button{
     background-color: rgb(224, 68, 11);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 /*Second section*/
@@ -92,10 +111,31 @@ button{
 }
 
 
-h1 {
+.second-section h1 {
     font-size: 3em;
     font-weight: 300;
     text-align: center;
     
 }
- 
+
+/*Footer*/
+footer {
+    border-top: 2px solid rgb(168, 164, 164);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.footer-icon{
+    width: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 16px;
+}
+
+footer p:last-child{
+    color: gray;
+}
