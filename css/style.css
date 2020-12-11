@@ -15,7 +15,6 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
 }
 
 
@@ -33,6 +32,7 @@ body {
 
 .header {
     margin: 1em 0;
+    justify-content: space-between;
 }
 
 .header-img {
@@ -56,7 +56,7 @@ body {
 }
 
 .hero h1,
-.hero h2 {
+.hero h3 {
     font-weight: lighter;
     text-align: center;
 }
@@ -68,4 +68,31 @@ body {
     margin-top: 2em; 
     padding: .5em 1em;border-radius: 5px;
     background-color: rgba(223, 62, 34, 0.918);
+}
+
+/* The styling for the main section starts here */
+
+.main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content h2 {
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0px;
+}
+
+.main-content h3 {
+    font-weight: lighter;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.main-img {
+    max-width: 50%;
+    margin: 0px;
+    padding: 0px;
 }
