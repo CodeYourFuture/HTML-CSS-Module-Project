@@ -187,3 +187,11 @@ footer section {
     }
 
 }
+
+/* Final media query for wide desktop screens */
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 80%;
+        margin: auto;
+    }
+}
