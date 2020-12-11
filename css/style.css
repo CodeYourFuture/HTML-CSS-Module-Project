@@ -25,14 +25,38 @@ body {
 
 footer {
     text-align: center;
+    display: inline;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
+ul.bar li {
+    display: inline;
+    list-style-type: none;
 }
 
-li {
-    display: flexbox;
-    justify-content: flex-end;
+ul.bar {
+        text-align: right;
+}
+
+.cta {
+    font-size: large;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+    height: 40px;
+    width: 150px;
+    padding:5px;
+    margin:10px;
+    border: 2px solid rgb(66, 64, 64);
+    border-radius: 2px;
+    background-color: orangered;
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  transform: translate(-50%, -50%);
 }
