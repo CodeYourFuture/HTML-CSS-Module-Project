@@ -16,4 +16,23 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.meetKarma {
+    font-weight: bold;
+}
+
+.backgroundImg {
+    height: 600px;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
