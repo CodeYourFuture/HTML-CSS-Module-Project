@@ -7,16 +7,14 @@ body {
 }
 header img{
     width: 3%;
+    height: 10%;
     position: relative;
-    left: 15%;
-    top: 20%;
+    left: 5%;
 }
 ul{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    position: relative;
-    left: 80%;
 }
 li{
     margin: 15px;
@@ -27,6 +25,9 @@ a{
 }
 li a:hover{
     color: orangered;
+}
+.main img{
+    width:100%;
 }
 .container{
     display: flex;
