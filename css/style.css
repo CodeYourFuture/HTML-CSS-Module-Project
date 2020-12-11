@@ -16,44 +16,109 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .header {
 
-header {}
+ }
 
-.logo{}
+.list {
+    list-style-type: none;
+}
 
-nav{}
+a {
+    text-decoration: none;
+    color: rgba(197, 192, 192, 0.61);
+    cursor: pointer;
+}
+a:first-child{
+    color: black;
+}
+a:hover {
+    color: rgb(235, 135, 42)
+}
 
-nav ul {}
+.header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: peachpuff;
+    display: flex;
+    padding: 40px 100px;
+    justify-content: space-between;
+}
+    
 
-main:first-child {} /*first section with the image*/
+.list {
+    display:flex;
+}
+li {
+    margin: 0 15px;
+}
+li:first-child {
+    margin-left: 0;
+}
+li:last-child {
+    margin-right: 0;
+}
+@media (max-width: 700px) {
+    .header {
+        padding: 20px 15px;
+    }
+}
+@media (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        margin: 0;
+    }
+    .list {
+        margin-bottom: 10px;
+    }
+    li {
+        margin: 0 7px;
+    }
 
-.background {}
+    -------
 
+    banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 110px 100px;
+    
+    }
 
-h1 {}
+    @media (max-width: 700px) {
+        section{
+            padding: 100px 50px;
+        }
+    }
+    @media (max-width: 500px) {
+        section{
+            padding: 125px 30px;
+        }
+    }
+    section p {
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 0 20px;
+        line-height: 2;
+    }
+    
+    .banner-area {
+        position: relative;
+        justify-content: center;
+        min-height: 100vh;
+        color:#fff;
+        text-align: center;
+    }
 
-.sectionOne h3 {}
-
-button {}
-
-button:hover {}
-
-sectionTwo {}
-
-p {}
-
-footer{}
-
-h6 {}
-
-footer ul {}
-
-
-@media
-@media
-
-
-
-
-
-
+  .banner .banner-img {
+      background-image: url(first-background-1.jpg);
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      webkit-background-size: cover;
+      z-index: -1;
+  }
