@@ -35,7 +35,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding: 0 50px;
+  padding: 0 400px;
 }
 nav li {
   display: inline-block;
@@ -61,7 +61,7 @@ nav a:hover {
 }
 #intro-heading {
   font-size: 35px;
-  color: rgb(219, 219, 219);
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 35%;
   left: 50%;
@@ -69,7 +69,7 @@ nav a:hover {
 }
 #intro-text {
   font-size: 22px;
-  color: rgb(219, 219, 219);
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 42%;
   left: 50%;
@@ -88,18 +88,20 @@ nav a:hover {
 
 /* container items */
 #container-heading {
-  font-size: 25px;
+  font-size: 35px;
+  font-weight: lighter;
   text-align: center;
+  margin-top: 100px;
 }
 #container-items {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .icons {
+  margin: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100px;
-  margin-right: 150px;
-  text-align: center;
 }
 /* footer */
 #footer-heading {
@@ -113,10 +115,11 @@ nav a:hover {
 }
 .footer-icons {
   width: 25px;
-  margin-right: 50px;
+  margin-right: 20px;
   text-align: center;
 }
 .footer-copyright {
   font-size: 15px;
   text-align: center;
+  color: rgb(119, 119, 119);
 }
