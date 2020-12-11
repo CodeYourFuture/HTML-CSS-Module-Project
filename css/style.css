@@ -5,6 +5,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+
+}
+
+html, body {
+    height: 100%;
 }
 
 * {
@@ -25,6 +30,7 @@ nav {
     left: 0;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .navbar-links {
@@ -44,6 +50,13 @@ nav {
 .nav-links:first-child {
     color: black;
     font-weight: 600;
+}
+
+.nav-hamburger {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
 }
 
 /*Header Styles*/
@@ -101,6 +114,7 @@ main h1 {
 .features {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .features p {
@@ -114,21 +128,6 @@ main h1 {
     width: 65%;
 }
 
-.info-internet {
-    margin-left: 0;
-    text-align: center;
-}
-
-.info-product {
-    margin-left: -34rem;
-    margin-right: -7rem;
-    text-align: center;
-}
-
-.info-pay {
-    margin-left: -26rem;
-    margin-right: -2rem;
-}
 
 /*Footer Styles*/
 
@@ -149,8 +148,8 @@ section {
     width: 40px;
     border: 2px solid #ddd;
     border-radius: 20px;
-    padding: 10px;
-    margin-right: 16px;
+    padding: 0.625rem;
+    margin-right: 1rem;
 }
 
 .copyright {
@@ -160,3 +159,55 @@ section {
 .twitter:hover, .facebook:hover, .instagram:hover {
     border: 1px solid #f15b2a;
 }
+
+/*Media queries*/
+
+@media screen and (max-width: 750px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: flex;
+    }
+    
+    nav {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    header {
+        height: 150%;
+    }
+
+   header h1 {
+       font-size: 3rem;
+       font-weight: 100;
+       margin-top: 2.8125rem;
+       text-align: center;
+   }
+
+   header p {
+       font-size: 1.5rem;
+       text-align: center;
+   }
+
+   .btn-intro {
+       position: absolute;
+       top: 80%;
+   }
+
+   main h1 {
+       font-size: 1.7rem;
+       margin-top: 3rem;
+   }
+  
+}
+
