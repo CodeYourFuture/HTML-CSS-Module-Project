@@ -19,7 +19,7 @@ ul{
 li{
     margin: 15px;
 }
-a{
+li a{
     text-decoration: none;
     color: grey;
 }
@@ -34,6 +34,13 @@ li a:hover{
 }
 .container img{
     width:33%;
+}
+.main a{
+    text-decoration: none;
+    color:azure;
+    background-color: orangered;
+    border-radius: 2px;
+    padding: 10px;
 }
 footer{
     display:flex;
