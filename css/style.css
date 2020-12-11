@@ -7,7 +7,7 @@ body {
 }
 
 svg {
-    padding: 20px 0 0 20px;
+    padding: 20px 0 20px 0;
     height: 50px;
 }
 
@@ -62,7 +62,7 @@ button {
 }
 
 #center {
-    margin: 440px 50px 0 0;
+    margin: 520px 50px 0 0;
     text-align: center;
 }
 
@@ -72,22 +72,43 @@ h2 {
 
 #wrap {
     margin-top:20px;
+    margin-left: 300px;
+    justify-items: center;
 }
 
 #wrap .devices{
     float:left;
-    width:50%;
+    width:30%;
 }
 
+.socialnav p {
+    padding-top: 400px;
+    font-size: 10px;
+    margin-left: 160px;
+}
 
-.coffee {
+.socialnav li{
     display: inline;
-    align-items: center;
+    padding: 0 10px 0 40px;
+    justify-content: center;
 }
 
-.refill {
-    display: flex;
-    justify-content: space-between;
+.socialnav nav {
+    display:inline;
+    margin-top: 10px;
+}
+
+.socialnav img {
+    height: 10px;
+    width: 20px;
+}
+
+footer {
+   margin-left: 500px;
+}
+
+.copy {
+     font-size: 15px;
 }
 /**
  * Add your custom styles below
