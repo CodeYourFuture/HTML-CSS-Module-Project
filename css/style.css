@@ -67,13 +67,16 @@ body {
 
 
 .introduction {
-	background-image: url(https://i.imgur.com/fS2SUrn.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background-image: url(../img/first-background.jpg);
     background-size: cover;
-    height: 45.938rem;
-    overflow: auto;
-	}
+    background-repeat: no-repeat;
+    height: 54vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
 
 
 .introduction h1, 
