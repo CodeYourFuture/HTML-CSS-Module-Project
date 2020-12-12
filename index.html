@@ -30,18 +30,11 @@
                 </ul>
             </section>
             <section class="mobile-screen" >
-                <div id="start-link">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <img src="./img/menu-hamburger.svg">
-                    </a>
-                </div>
-              
+               
+                <img src="./img/menu-hamburger.svg" class="hamburger-icon" onclick="myFunction()">
                 <div class="topnav" id="myLinks">
                     <ul>
-                        <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <img src="./img/menu-hamburger.svg">
-                            </a></li>
-                       
+                                       
                         <li><a href="#">Meet Karma</a></li>
                         <li><a href="#">How It Works</a></li>
                         <li><a href="#">Store</a></li>
@@ -108,16 +101,14 @@
     <script>
         function myFunction() {
          
-          
-          if (document.getElementById("myLinks").style.display === "block") {
+            const mobilemenu=document.getElementById("myLinks");
+          if (mobilemenu.style.display === "block") {
            
-            document.getElementById("myLinks").style.display="none";
-            document.getElementById("logo").style.display="block";
-            document.getElementById("start-link").style.display="block";
+            mobilemenu.style.display="none";
+           
           } else {
-            document.getElementById("myLinks").style.display="block";
-            document.getElementById("start-link").style.display="none";
-            document.getElementById("logo").style.display="none";
+            mobilemenu.style.display="block";
+         
           }
         }
         </script>

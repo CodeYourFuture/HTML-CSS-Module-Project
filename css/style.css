@@ -122,11 +122,9 @@ footer{
 @media screen and (max-width:768px){
     nav .big-screen{
         display: none; 
+        
     }
-
-    .mobile-screen {
-        display:block;
-      }
+   
     .container-icons{
         flex-direction: column;
      
@@ -137,18 +135,18 @@ footer{
     .topnav {
         overflow: hidden;
         background-color: rgb(94, 91, 91);
-        position: relative;
+        position: absolute;
         display:none;
         min-width: 100vw;
-        margin-left:0;
+        right:0px;
+        top:65px;
+       
       }
       
-      .topnav #myLinks {
-        display: none;
-        
+      .hamburger-icon{
+            margin:0 20px;
+       
       }
-
-
       .topnav li{
           list-style-type: none;
       }
@@ -160,10 +158,10 @@ footer{
         display: block;
       }
       
-      .topnav a.icon {
+      .icon {
         background: rgb(151, 146, 146);
-        display: block;
-        position: absolute;
+        display: inline-block;
+        /* position: absolute; */
         right: 0;
         top: 0;
       }
@@ -193,14 +191,9 @@ footer{
 }
 
 /* adding media query for big screens-which hide the mobile nav bar and links */
-@media screen and (min-width:768px){
+@media screen and (min-width:769px){
 .mobile-screen {
     display:none;
   }
-  
-  .topnav #myLinks {
-    display: none;
-  }
-
-  
+ 
 }
