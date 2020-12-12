@@ -8,11 +8,6 @@ header {
   padding: 20px;
 }
 
-.logo {
-  width: 30px;
-  height: 30px;
-}
-
 nav {
   width: 100%;
   display: flex;
@@ -20,9 +15,16 @@ nav {
   align-items: center;
 }
 
-/* NAV FOR DESKTOP */
-.nav-list {
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+ul.nav-list {
   display: none;
+  list-style: none;
+  padding: 0 20px;
+  color: black;
 }
 
 a.nav-item {
@@ -45,10 +47,11 @@ a.nav-item {
   background-position: center;
   color: white;
   text-align: center;
+  font-weight: lighter;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: lighter;
   padding: 70px 20px 0 20px;
   margin: 0;
@@ -56,9 +59,7 @@ a.nav-item {
 
 .hero p {
   font-size: 1.2rem;
-  font-weight: 100;
-  padding: 20px 65px;
-  margin: 10px;
+  padding: 0 65px 20px 65px;
   line-height: 2rem;
 }
 
@@ -120,7 +121,7 @@ footer {
   align-items: center;
 }
 
-.social img {
+.img-container img {
   width: 13px;
   margin: 5px;
 }
@@ -130,6 +131,8 @@ footer {
   font-weight: lighter;
   font-size: 0.8rem;
 }
+
+/* MEDIA QUERY FOR DESKTOP */
 
 @media only screen and (min-width: 600px) {
   header {
@@ -144,11 +147,8 @@ footer {
     justify-content: space-around;
   }
 
-  .nav-list {
+  ul.nav-list {
     display: flex;
-    list-style: none;
-    padding: 0 20px;
-    color: black;
   }
 
   .hero {
