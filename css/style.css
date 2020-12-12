@@ -5,14 +5,35 @@ body {
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
 }
 
 .logo {
   width: 30px;
   height: 30px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAV FOR DESKTOP */
+.nav-list {
+  display: none;
+}
+
+a.nav-item {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 10px;
+  color: gray;
+}
+
+.nav-item:hover {
+  color: rgb(250, 115, 66);
 }
 
 /* HERO SECTION */
@@ -30,7 +51,7 @@ header {
   font-size: 2rem;
   font-weight: lighter;
   padding: 70px 20px 0 20px;
-  margin: 20px 30px 0 30px;
+  margin: 0;
 }
 
 .hero p {
@@ -111,14 +132,31 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
-  .hero h1 {
-    padding-top: 100px;
+  header {
+    padding: 10px;
   }
 
-  .hero p {
-    font-size: 1.2rem;
-    font-weight: 100;
-    padding: 20px 65px;
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0 20px;
+    color: black;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .hero h1 {
+    padding-top: 150px;
   }
 
   .flex-container {
