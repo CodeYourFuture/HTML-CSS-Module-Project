@@ -23,6 +23,7 @@ header {
   padding: 0px 80px;
   display: flex;
   justify-content: left;
+  z-index: 5;
 }
 .logo {
   float: left;
@@ -104,11 +105,10 @@ nav a:hover {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100px;
-
-  p {
-    text-align: center;
-    line-height: 100px;
-  }
+  font-size: 200;
+}
+.container-text {
+  text-align: center;
 }
 /* footer */
 #footer-heading {
