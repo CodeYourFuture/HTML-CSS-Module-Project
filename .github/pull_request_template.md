@@ -18,5 +18,5 @@ London Class 7 - Chris Owen - HTML/CSS - Week 1
 
 # Homework Details
 
-- Module: 1
+- Module: HTML&CSS
 - Week: 2
