@@ -13,73 +13,62 @@
 </head>
  
 <body>
-    <!--Navigation bar -->
+    <Header>
+        <!--Navigation-->
+        <nav class="nav-position">          
+            <img src="img/karma-logo.svg" class="nav-logo" class="active">  
+            <img src="img/menu-hamburger.svg" class="hamburger">            
+            <ul class="nav-ul">
+                <li><a class="navul-a"href="#">Meet Karma</a></li>
+                <li><a class="navul-a"href="#">How it Works</a></li>
+                <li><a class="navul-a"href="#">Store</a></li>
+                <li><a class="navul-a"href="#">Blog</a></li>
+                <li><a class="navul-a"href="#">Help</a></li>
+                <li><a class="navul-a"href="#">Login</a></li>
+            </ul>
+        </nav> 
+    </Header>
     
-    <div>
-        <!-- Navigation left-aligned links -->
-        <nav>
-            <div class="nav-wrapper">
-                <div id="nav-logo">
-                <img src="img/karma-logo.svg" >  
-                  
-                    <ul id="nav-bar">
-                        <a href="Meet Karma">Meet Karma</a>
-                        <a href="How it Works">How it Works</a>
-                        <a href="Store">Store</a>
-                        <a href="Blog">Blog</a>
-                        <a href="Help">Help</a>
-                        <a href="Login">Login</a>
-                    </ul>
-                </div>
+    <main>
+        <!--page main background section-->
+        <section class="background">
+            <!--<img src="img/first-background.jpg" class="img-background">-->
+            <h1>Introducing Karma</h1>
+            <h3>Bring WiFi with you, everywhere you go</h4>
+            <button class="learn">Learn more</button>
+            
+        </section>
+    
+        <section class="img-main">
+            <h1>Everyone needs a little Karma</h1>
+            <div class="main-devices">
+                <img src="img/icon-devices.svg" class="device">
+                <h2>Internet for all devices</h2>    
             </div>
-        </nav>
-    </div>
-
-    <section id="background">
-        <img src="img/first-background.jpg">
-    </section>
+            <div class="main-devices"></div>
+                <img src="img/icon-coffee.svg" class="coffee">
+                <h2>Boost your productivity</h2>
+            </div>
+            <div class="main-devices"></div>
+                 <img src="img/icon-refill.svg" class="refill">
+                <h2>Pay as You Go</h2>  
+            </div>
+        </section>
+    </main>
     
-    <!-- Karma icons -->
-    
-    
-    <section id="karma">
-    <header>
-        <h1>Everyone needs a little Karma</h1>
-    </header>
-    
-    <div class="container">
-        <div class="karma">
-            <img src="img/icon-device.svg">
-            <p>Internet for all devices</p>
-        </div>
-            
-        <div class="karma">
-            <img src="img/icon-coffee.svg">
-            <p>Boost your productivity</p>
-        </div>
-            
-        <div class="karma">
-            <img src="img/icon-refill.svg">
-            <p>Pay as You Go</p>
-        </div>
-    </div>
-    </section>
- 
-    <!--media icons -->
-    <section id="contact" class="media-tile">
-    <p>Join us on</p>
-    <ul class="contact-ul"></ul>
-        <a><img src="img/twitter-icon.svg"></a>
-        <a><img src="img/facebook-icon.svg"></a>
-        <a><img src="img/instagram-icon.svg"></a>
-    </section>
-
-    <!--footer -->
-    <div>
-        <footer>
-             <p>© 2020 GitHub, Inc.</p>
-        </footer>
-    </div> 
+    <footer>
+        <!--footer media icons --> 
+        <section class="media-contact" >
+            <h3>Join us on</h3>
+                <ul class="social">
+                    <li><a><img src="img/twitter-icon.svg"></a></li>
+                    <li><a><img src="img/facebook-icon.svg"></a></li>
+                    <li><a><img src="img/instagram-icon.svg"class="social"></a></li>
+                </ul>
+             <h4>© Karma Mobility, Inc.</h4>
+        </section>
+    </footer>
+   
 </body>
 </html>
 
