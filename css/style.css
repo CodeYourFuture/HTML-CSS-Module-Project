@@ -1,20 +1,52 @@
 
  /* General styles */
 
+ * {
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+     box-sizing: border-box;
+ }
+
  body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     width: 100%;
+
 }
+
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin-left: 20px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+.icon{
+    width: 1.5em;
+    height: 2em;
+
+}
+
+}
+.ibody{
+    width: 1.5em;
+    height: 2em;
+
 }
 
  /* Nav */
 
-nav{
-    float: right;
 }
 
 /**
