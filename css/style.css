@@ -4,7 +4,114 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+.icodiv {
+  width: 20%;
+  margin-left: 1%;
+  padding-left: 1%;
+  margin-bottom: 0%;
+}
+
+.icoimage {
+  width: 15%;
+  height: 15%;
+}
+
+.navdiv {
+  width: 50%;
+  margin-bottom: 0%;
+}
+
+.unorderlist {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  margin: 5%;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(128, 118, 118);
+  text-decoration: none;
+}
+
+.meetkar {
+  font-weight: 600;
+}
+
+a:hover {
+  color: red;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0%;
+}
+
+.maindivimage {
+  position: relative;
+  width: 120%;
+  text-align: center;
+  color: white;
+}
+
+.mainimag {
+  max-width: 100%;
+  height: 80%;
+  padding: 5px;
+}
+
+.textimage1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textimage2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+.button {
+  position: absolute;
+  top: 70%;
+  background-color: rgb(248, 127, 14);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /**
