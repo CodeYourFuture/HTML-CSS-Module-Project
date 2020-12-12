@@ -25,6 +25,16 @@ header{
     padding: 10px 150px 10px 150px;
     justify-content: space-between;
     }
+.dropDown {
+    display:none;
+}
+.menu{
+    display:none;
+}
+@media (max-width: 1200px) {
+    .navBar     { display: none; }
+    .dropDown { display: inline-block; }
+  }
 
 ul{
     display: flex;
@@ -110,7 +120,7 @@ button:hover {
 .icon {
         width: 200px; 
         height: auto;
-        padding: 0px 150px 0px 150px;
+        padding: 0px 125px 0px 125px;
             }
 .middleSection{
     display:flex;
@@ -120,6 +130,12 @@ button:hover {
     color:rgb(80, 80, 90);
     font-size: 40px;
 }
+
+@media only screen and (max-width: 1300px) {
+    .middleSection {
+      flex-direction: column;
+    }
+  }
 
 hr{
     width: 80%;
@@ -137,7 +153,7 @@ hr{
     color:rgb(80, 80, 90);
 }
 .social {
-    width: 2%; 
+    width: 30px; 
     height: auto;
     padding: 0px 15px 0px 15px;
     border-radius: 50%;   
