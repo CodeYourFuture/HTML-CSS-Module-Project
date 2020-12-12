@@ -16,4 +16,132 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+#header {
+    background-color: white;
+    position: fixed;
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100% 
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
 
+#header-img {
+    padding: 15px 10px 30px 100px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    justify-content: flex-start;
+}
+
+#nav-bar {
+    overflow: hidden;
+    padding-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(105,105,105);
+    padding: 12px 10px;
+    text-align: right;
+}
+
+#background-image {
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    display: block;
+    width: 100%;
+}
+
+#text-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#centered-text {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.click {
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: #ff6200;
+    border-color: #ff6200;
+    width: 30%;
+    margin: 20px 0px 20px 0px;
+    padding: 15px 5px 15px 5px;
+    color: white;
+}
+
+#subheading {
+    position: absolute;
+    text-align: center;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+#pics {
+    padding-top: 50px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0 ,0));
+}
+
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px;
+}
+
+#contact {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    width: 30%;
+    margin: 20px 20px 20px 20px;
+}
+
+#media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#icon {
+    border: 3px solid #F5F5F5;
+    padding: 5px;
+    border-radius: 80%;
+    width: 10px;
+    height: 10px;   
+}
+
+.copyright {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    width: 30%;
+    color: #bebebe;
+    font-size: 10px;
+    padding; 15px;
+}   

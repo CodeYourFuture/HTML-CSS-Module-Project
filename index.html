@@ -8,14 +8,79 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Add a link to your CSS file here (use the line above to guide you) -->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
+    <header id="header">
+        <div>
+            <img  id="header-img" src="./img/karma-logo.svg" alt="Karma Logo" width=200 height=400>
+        </div>
+        <nav id="nav-bar">
+            <div class="nav-link">
+                <a href="#meet">Meet Karma</a>
+                <a href="#works">How it Works</a>
+                <a href="#store">Store</a>
+                <a href="#blog">Blog</a>
+                <a href="#help">Help</a>
+                <a href="#Login">Login</a>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div id="text-container">
+            <img id="background-image" src="./img/first-background.jpg" alt="Individual working remotely" width=100% height=600>
+            <div id="centered-text">
+                <h1>Introducing Karma</h1>
+                <h3>Bring WiFi with you, everywhere you go.</h3>
+                <form>
+                    <input class="click" type="submit" value="Learn More" class="btn">
+                </form>
+            </div>
+        </div>
+    </article>
 
+    <article>
+        <div id="subheading">
+            <h3>Everyone needs a little Karma.</h3>
+        </div>
+        <div>
+            <img id="pics" src="./img/icon-devices.svg" alt="Internet Devices" width=30% height=60>
+            <h4>Internet for all devices</h4>
+        </div>
+        <div>
+            <img id="pics" src="./img/icon-coffee.svg" alt="Productivity" width=30% height=60>
+            <h4>Boost your productivity</h4>
+        </div>
+        <div>
+            <img id="pics" src="./img/icon-refill.svg" alt="Pay As You Go" width=30% height=60>
+            <h4>Pay As You Go</h4>
+        </div>
+    </article>
+    
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+    
+    <hr/>
 
+    <footer>
+        <div id="contact">
+            <h4>Join us on</h4>
+        </div>
+        <section id="media">
+            <div>
+                <img id="icon" src="./img/twitter-icon.svg" alt="Twitter Icon" width=10 height=10>
+            </div>
+            <div>
+                <img id="icon" src="./img/facebook-icon.svg" alt="Facebook Icon" width=10 height=10>
+            </div>
+            <div>
+                <img id="icon" src="./img/instagram-icon.svg" alt="Instagram Icon" width=10 height=10>
+            </div>
+        </section>
+        <span class="copyright">&copy;Karma Mobility, Inc.</span>
+    </footer>
 </body>
 </html>
