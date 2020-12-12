@@ -3,9 +3,9 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-image: url(/img/first-background.jpg);
+  /*background-image: url(/img/first-background.jpg);
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100%;*/
 }
 
 /**
@@ -18,11 +18,16 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.background-img {
+  width: 100%;
+  height: 60px;
+}
+
 .header {
   display: flex;
   background-color: white;
-  height: 70px;
-  padding: 5px;
+  width: 100%;
+  height: 60px;
 }
 
 .header-img {
@@ -87,7 +92,7 @@ h4 {
   display: flex;
   background-color: white;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 h3 {
@@ -111,6 +116,7 @@ h3 {
   align-items: center;
   height: 40px;
   width: 90px;
+  border-radius: 10px;
 }
 
 p {
