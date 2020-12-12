@@ -41,7 +41,6 @@ header {
   display: flex;
   flex-direction: row;
   padding: 5%;
-  margin: 5%;
   justify-content: space-around;
   list-style-type: none;
   font-size: 20px;
@@ -64,8 +63,9 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 0%;
+  margin-bottom: 10%;
 }
 
 .maindivimage {
@@ -112,6 +112,92 @@ main {
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.bottomimages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0%;
+  width: 100%;
+}
+
+.divtext {
+  margin: 2%;
+  padding: 5%;
+  text-align: center;
+  font-size: 44px;
+  color: black;
+  font-weight: 500;
+}
+
+.image1 {
+  width: 33.33%;
+}
+
+.bimage {
+  width: 30%;
+  align-items: center;
+  transform: translate(120%, 10%);
+}
+
+.underimagetextr {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  transform: translate(0%, 70%);
+}
+
+.solid {
+  border-top: 1px solid #bbb;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footertext {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+
+.footerimages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-left: 6%;
+  flex-direction: row;
+}
+
+.divfooter {
+  width: 80%;
+}
+
+.fimage {
+  width: 20%;
+  align-items: flex-end;
+  transform: translate(80%, 10%);
+  border-radius: 50%;
+  border: 0.2px solid #bbb;
+}
+
+.lasttext {
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(92, 86, 86);
+  font-weight: 500;
 }
 
 /**
