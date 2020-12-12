@@ -4,7 +4,7 @@ body,
 p,
 h1,
 h3 {
-  padding: 0;
+  /* padding: 0; */
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -19,7 +19,7 @@ h3 {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   right: 60px;
   font-size: 10px;
   width: 50%;
@@ -27,7 +27,7 @@ h3 {
 .navbar > ul {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  /* padding: 20px; */
   list-style-type: none;
 }
 
@@ -53,13 +53,15 @@ h3 {
 
 .header-class {
   height: 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .background-image {
   background-image: url("/img/first-background.jpg");
   height: 350px;
   width: 100%;
-  left: 10%;
+  /* left: 10%; */
   background-position: center;
   background-size: cover;
   position: relative;
