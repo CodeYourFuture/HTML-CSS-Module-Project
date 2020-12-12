@@ -18,3 +18,52 @@ body {
 
 
 /* Header styles*/
+
+.header {
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 20px;
+    padding: 10px;
+}
+.logo img {
+    width: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 0% 3% 0% 0%;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.list li {
+    list-style: none;
+    display: inline;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: none;
+    color:rgb(167, 165, 165);
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(167, 165, 165);
+    justify-content: space-between;
+}
+a:hover {
+    color: coral;
+}
