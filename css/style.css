@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* header */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -15,7 +15,7 @@ header {
   height: 30px;
 }
 
-/* hero section */
+/* HERO SECTION */
 .hero {
   height: 350px;
   background-image: url("../img/first-background.jpg");
@@ -27,16 +27,16 @@ header {
 }
 
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: lighter;
-  padding-top: 70px;
+  padding: 70px 20px 0 20px;
   margin: 20px 30px 0 30px;
 }
 
 .hero p {
   font-size: 1.2rem;
   font-weight: 100;
-  padding: 10px 35px;
+  padding: 20px 65px;
   margin: 10px;
   line-height: 2rem;
 }
@@ -49,7 +49,7 @@ header {
   border-radius: 4px;
 }
 
-/* section about */
+/* ABOUT */
 .about {
   color: rgb(82, 80, 80);
   text-align: center;
@@ -78,8 +78,8 @@ header {
 hr {
   border-top: 1px solid rgb(240, 239, 239);
 }
-/* footer */
 
+/* FOOTER */
 footer {
   text-align: center;
 }
@@ -111,12 +111,18 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+  .hero h1 {
+    padding-top: 100px;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 20px 65px;
+  }
+
   .flex-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    /* background-color: aqua; */
   }
 }
