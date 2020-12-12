@@ -5,6 +5,10 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
 /**
  * Add your custom styles below
@@ -22,12 +26,13 @@ body {
 .header {
     position: absolute;
     background-color: antiquewhite;
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    z-index: 2;
 }
 
 .logo {
@@ -36,6 +41,12 @@ body {
 }
 .logo img {
     width: 100%;
+}
+/*.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;*/
 }
 
 .nav-bar {
@@ -46,17 +57,9 @@ body {
     align-items: center;
 }
 
-.list li {
+
+li {
     list-style: none;
-    display: inline;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: rgb(255, 255, 255);
-    border-style: none;
-    color:rgb(167, 165, 165);
-    justify-content: space-between;
-    padding: 10px;
-    
 }
 
 a {
@@ -66,4 +69,196 @@ a {
 }
 a:hover {
     color: coral;
+}
+
+@media only screen and (min-width: 300px) {
+    .list li {
+        list-style: none;
+        display: inline;
+        border-radius: 1px;
+        border-width: 0.5px;
+        color:rgb(167, 165, 165);
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+}
+@media only screen and (min-width: 600px) {
+    .list li {
+        list-style: none;
+        display:inline;
+        border-radius: 2px;
+        border-width: 1px;
+        color:rgb(167, 165, 165);
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+}
+
+
+
+
+/* main Styling*/
+/* css that goes with the code I tried out. the main issue being that the hero img did not show. 
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0. 0, 0.5), rgba(0, 0, 0, 0.5)) url('first-background.jpg');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: coral;
+    text-align:center;
+    cursor: pointer;
+}
+*/
+.main {
+    position: relative;
+    text-align: center;
+    color: white;
+    width:fit-content;
+
+}
+/*.elementor img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;*/
+}
+.background {
+    width: 100%;
+}
+.background img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: larger;
+    font-style: oblique;
+}
+.heading:last-child {
+    margin: 35%;
+    font-size: medium;
+}
+.button {
+    background-color: coral;
+    border-radius: 15%;
+    margin: 0 5%;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+}
+
+@media only screen and (min-width: 300px) {
+    .main {
+        position: relative;
+        text-align: center;
+        color: rgb(206, 204, 204);
+        width: 100%;
+    }
+    .background {
+        width: 100%;
+    }
+    .background img {
+        height: auto;
+        max-width: 100%;
+        border: none;
+        box-shadow: none;
+    .heading {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        font-size: large;
+        font-style: oblique;
+        width: fit-content;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        position: relative;
+        text-align: center;
+        color: white;
+        width: 100%;
+        margin: auto;
+    }
+    .background {
+        width: 100%;
+    }
+    .background img {
+        height: auto;
+        max-width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+    .heading {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        font-size: medium;
+        font-style: oblique;
+        width: fit-content;
+    }
+}
+
+
+/*image stylng*/
+
+.container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+   
+    
+}
+.item {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+/*
+.container:nth-child(1) {
+    background-color: pink;
+}
+
+.container:nth-child(2) {
+    background-color: red;
+}
+
+.container:nth-child(3) {
+    background-color: yellow;
+}*/
+
+@media (min-width: 500px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
