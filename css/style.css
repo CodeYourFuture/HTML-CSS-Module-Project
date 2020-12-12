@@ -45,16 +45,41 @@ body {
   /*align-items: baseline;*/
 }
 
-.h1-container {
-  height: 200px;
-  border: 4px aqua;
+.main-page {
   display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin-top: 80px;
+  /*background-color: chocolate;*/
+}
+
+.h1-container {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  /*background-color: pink;*/
   justify-content: center;
-  align-items: center;
 }
 
 h1 {
   color: white;
+  font-weight: lighter;
+  font-size: 50px;
+  /*margin-top: 70px;*/
+}
+
+.p-container {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  /*background-color: blue;*/
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  color: white;
+  font-size: 30px;
   font-weight: lighter;
 }
 
@@ -62,10 +87,33 @@ h1 {
   display: flex;
   background-color: white;
   justify-content: center;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 h3 {
   font-size: 30px;
+  font-weight: lighter;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  /*background-color: palegoldenrod;*/
+}
+
+.learn-more-button {
+  display: flex;
+  background-color: orangered;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 90px;
+}
+
+p {
+  color: white;
   font-weight: lighter;
 }
