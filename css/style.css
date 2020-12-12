@@ -1,9 +1,20 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ /* General styles */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+header{
+    width: 90%;
+    margin-left: 20px;
+}
+
+ /* Nav */
+
+nav{
+    float: right;
 }
 
 /**

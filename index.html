@@ -7,6 +7,7 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+
     <!-- Add a link to your CSS file here (use the line above to guide you) -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
@@ -15,39 +16,61 @@
 
     <!-- Header-->
     <header>
-        <img src="img/karma-logo.svg" alt="karma-logo">
+        <img class="icon" src="img/karma-logo.svg" alt="logo of Karma" />
+    
+    <!-- Nav Bar-->
         <nav>
             <ul>
-                <li>Meet Karma</li>
-                <li>How it Works</li>
-                <li>Store</li>
-                <li>Blog</li>
-                <li>Help</li>
-                <li>Login</li>
+                <li><a class="active" href="#sec-img-background">Meet Karma</a></li>
+                <li><a href="#sec-main-body">How It Work</a></li>
+                <li><a href="#sec-main-body">Store</a></li>
+                <li><a href="#footer">log</a></li>
+                <li><a href="#footer">Help</a></li>
+                <li><a href="#footer">Login</a></li>
             </ul>
         </nav>
-        <img src="img/menu-hamburger.svg" alt="menu-hamburger" class="menu-mobile">
     </header>
 
+    <!-- Main Hero-->
     <main>
-        <div>
-            <div class="big-background">
-            <img src="img/first-background.jpg" alt="">
+        <section class="hero-shot">
+           <div class="hero-letters">
+            <p class="intro-karma">Introducing Karma</p>
+            <p class="intro-bring">Bring WiFi with you, everywhere you go.</p>
+            <input type="button" value="Learn More" />
         </div>
-        <div>
-            <img src="img/icon-devices.svg" alt="devices-icon">
-            <img src="img/icon-coffee.svg" alt="coffee-icon">
-            <img src="img/icon-refill.svg" alt="refill-icon">
-        </div>
+        </section>
+        <p class="little-karma">Everyone needs a little karma.</p>
+        <section class="main-body" id="main-body">
+           
+            <div>
+                <img class="ibody" src=" img/icon-devices.svg" alt="Internet"/>
+                <p>Internet for all devices</p>
+            </div>
+
+            <div>
+                <img class="ibody" src="img/icon-coffee.svg" alt="Boost"/>
+                <p>Boost your productivity</p>
+            </div>
+
+            <div>
+                <img class="ibody" src="img/icon-refill.svg" alt="Pay"/>
+                <p> Pay as You Go</p>
+            </div> </section>
     </main>
-    <hr>
-    <footer>
-        <ul>
-            <li><img src="img/twitter-icon.svg" alt="twitter-icon"></li>
-            <li><img src="img/facebook-icon.svg" alt="facebook-icon"></li>
-            <li><img src="img/instagram-icon.svg" alt="instagram-icon"></li>
-        </ul>
-    </footer>
+
+    <!-- Footer-->
+    
+        <footer id="footer">
+            <p class="join-us">Join us on</p>
+            <div class="down-footer">
+            <img class="icon" src="img/twitter-icon.svg" alt="tw-icon"/>
+            <img class="icon" src="img/facebook-icon.svg" alt="fb-icon"/>
+            <img class="icon" src="img/instagram-icon.svg" alt="ins-icon"/>
+            </div>
+            <p class="made-by"> © Karma Mobility, Inc.</p>
+        </footer>
+
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
