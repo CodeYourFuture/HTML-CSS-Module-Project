@@ -20,10 +20,7 @@ body {
 /*Header*/
 
 /*Navigation*/
-nav{
-  display:;
-}
- 
+
 
 /*Links*/
 .links {
@@ -32,49 +29,60 @@ nav{
 .links:hover {
   color: red;
 }
+#logo {
+  margin-left: 7%;
+  margin-top: 5%;
+  width:5%;
+}
+/*Background Image Section*/
+div p{
+  
+}
+
+#img-text {
+  background-image: url("/img/first-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+  text-align: center;
+  color:white;
+  font-weight: lighter;
+  font-size:12px;
+}
+  
+
+#intro{
+  font-size: x-large;
+  
+}
+#wifi{
+  font-size: medium;
+}
+
 #learn {
   background-color: rgba(235, 81, 10, 0.89);
   text-decoration: none;
+  font-size: small;
   display: flex;
-  justify-self: center;
+  width:25%;
+  height:35px;
+  align-items: center;
+  margin-left: 40%;
+  justify-content: center;
   color:white;
 }
 
-#logo {
-    margin-left: 7%;
-    margin-top: 5%;
-    width:5%;
-  }
-
-/*Body*/
 /*Article*/
 #everyone {
     text-align: center;
     font-size: 28px;
   }
-div p{
-    color:white;
-    font-weight: lighter;
-}
+
 
 
 
 
 /*Second Div*/
-#img-text {
-  background-image: url("/img/first-background.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 180px;
-  text-align: center;
-  
-}
-#intro{
-  font-size: x-large;
-}
-#wifi{
-  font-size: medium;
-}
 
 #container {
   display: flex;
