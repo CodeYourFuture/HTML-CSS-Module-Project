@@ -51,11 +51,13 @@ header {
 h1 {
   color: white;
   font-weight: lighter;
+  font-size: 60px;
 }
 
 h2 {
   color: white;
   font-weight: lighter;
+  font-size: 45px;
 }
 
 .button {
@@ -68,6 +70,7 @@ h2 {
 .tagline {
   color: black;
   text-align: center;
+  font-size: 40px;
 
   padding-top: 20px;
 }
@@ -79,27 +82,35 @@ h2 {
   justify-content: space-around;
 }
 
-footer {
+.social {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 200%;
+  margin-top: 100px;
+  margin-left: 400px;
+  width: 800px;
   height: 200px;
 }
 
-.twitter {
-  width: 50px;
-  height: 50px;
+.social img {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
-.facebook {
-  width: 50px;
-  height: 50px;
+.facebook caption {
+  text-align: justify;
+  width: 20px;
+  color: pink;
+}
+.info {
+  text-align: center;
 }
 
-.insta {
-  width: 50px;
-  height: 50px;
+.copyright {
+  text-align: center;
 }
 
 /**
