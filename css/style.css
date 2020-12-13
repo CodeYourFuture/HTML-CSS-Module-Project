@@ -180,19 +180,24 @@ a #ig:link{
         left:25%;
     }
     .container{
-        display: block;
+        display:block;
     }
     .container h1{
         font-size: 150%;
         width:80%;
-        left:10%;
+        left:15%;
+    }
+    #images{
+        display:block;
+        padding-left: 25%;
     }
     #images img{
-        background-color: blue;
+        display: block;
+        width:50%;
         
     }
-    #captions p{
-        background-color: blue;
+    #captions{
+        display: block;
     }
 
 }
