@@ -12,6 +12,11 @@ header img{                               /*logo*/
     left: 5%;
     bottom: 89%;
 }
+#hamburger{
+    position:absolute;
+    left: 95%;
+    display: none;
+}
 ul{                                        /*Nav Bar*/
     list-style-type: none;
     display: flex;
@@ -134,7 +139,7 @@ li a:hover{
     padding-left: 2%;
     padding-right: 2%;
 }
-a #ig: link{
+a #ig:link{
     color: rgb(100, 98, 98);
 }
 .copyright{
@@ -146,7 +151,18 @@ a #ig: link{
     padding-bottom: 1%;
 }
 /*Media queries*/
+@media only screen and (max-width:600px) {
+    header img{
+        bottom:92%;
+    }
+    #hamburger { display:inline;
 
+    }
+    li{
+        display: none;
+    }
+
+}
 /**
  * Add your custom styles below
  * 
