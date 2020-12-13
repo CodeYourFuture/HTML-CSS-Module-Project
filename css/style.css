@@ -20,7 +20,7 @@ ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: rgb(66, 65, 65);
 }
 
@@ -49,16 +49,25 @@ ul {
     margin: 50px;
 }
 
+.icons, .features {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
 .socialMedia {
     font-size: 16px;
     font-weight: bold;
-    margin: 10px;
+    margin: 40px;
 }
 
-.icons {
-    width: 12px;
-    height: 12px;
+.socialIcons {
+    width: 16px;
+    height: 16px;
     display: flex;
     flex-direction: row;
-    align-self: center;
 }
