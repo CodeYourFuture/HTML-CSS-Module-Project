@@ -1,6 +1,6 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-/*Header and hero styling*/
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header *
+                                            /*Header and hero styling*/
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -59,30 +59,35 @@ li a:hover{
     padding: 10px;
 }
 
-/*Section with icons and text styling*/
+                                      /*Section with icons and text styling*/
 .container h1{
     position: relative;
+    width: 39%;
     left: 30%;
     padding-top: 10%;
     font-weight: lighter;
     font-size: 250%;
+    /* background-color: chartreuse; */
 }
 #images{
     display:flex;
-}
-#images p{
-    position: absolute;
+    justify-content: space-around;
+
 }
 #images img{
     margin: 6%;
 }
 #captions{
     display: flex;
+    justify-content: space-around;
+
 }
 #captions p{
     margin:5%;
+    font-size: 150%;
+    padding-right: 5%;
 }
-/*Footer styling*/
+                                     /*Footer styling*/
 footer{
     display:flex;
 }
