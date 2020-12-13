@@ -74,6 +74,7 @@ li a:hover{
     font-size: 250%;
     /* background-color: chartreuse; */
 }
+
 #images{
     display:flex;
     justify-content: space-around;
@@ -160,6 +161,28 @@ a #ig:link{
     }
     li{
         display: none;
+    }
+    .hero h1{
+        font-size: 180%;
+        position:absolute;
+        bottom: 80%;
+        left: 15%;
+        
+    }
+    .hero h2{
+        position:absolute;
+        bottom: 75%;
+        left:10%;
+        font-size: 100%;
+    }
+    .container{
+        display: block;
+    }
+    #images img{
+        
+    }
+    #captions p{
+        
     }
 
 }
