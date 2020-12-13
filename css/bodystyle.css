@@ -36,11 +36,56 @@ nav ul li {
 
 nav ul li a {
   color: rgb(68, 67, 67);
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px 10px;
 }
 
 a:hover {
   color: rgb(197, 58, 58);
   transition: 0.5s;
+}
+
+.menubutton {
+  float: right;
+  color: rgb(68, 67, 67);
+  font-size: 20px;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/*Hamburger Menu*/
+@media (max-width: 600px) {
+  .menubutton {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: auto;
+    background: whitesmoke;
+    top: 60px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  img.logo {
+    width: 15px;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
 }
