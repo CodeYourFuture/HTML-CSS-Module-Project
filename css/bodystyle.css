@@ -59,8 +59,57 @@ a:hover {
   display: none;
 }
 
+main {
+  width: 100%;
+  border: 3px blue solid;
+}
+/* HERO */
+#hero {
+  display: block;
+  min-height: 400px;
+  background: url("../img/first-background.jpg") no-repeat;
+  background-size: cover;
+  background-position: right;
+  color: whitesmoke;
+}
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: auto;
+  text-align: center;
+  padding: 20%;
+
+  border: 3px solid green;
+}
+
+#hero h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  border: 3px blue solid;
+}
+
+#hero p {
+  font-size: 15px;
+  margin: 10px;
+  border: solid 3px blue;
+}
+
+#hero button {
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  font-size: 14px;
+  background-color: rgb(225, 106, 66);
+
+  border: 3px blue solid;
+}
+
 /*Hamburger Menu*/
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   .menubutton {
     display: block;
   }
@@ -78,9 +127,6 @@ a:hover {
     display: block;
     margin: 10px 0;
     line-height: 30px;
-  }
-  img.logo {
-    width: 15px;
   }
   nav ul li a {
     font-size: 12px;
