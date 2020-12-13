@@ -45,11 +45,12 @@ header.logo{
     
   }
 
-  .photo{
+  .table{
     background-image: url(/img/first-background.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     margin: 0;
     padding: 0;
     width: 1500px;
@@ -57,11 +58,10 @@ header.logo{
     align-items: center; 
     position: relative;
     top: 0px;left: 30px;
-    
-    
+    /* z-index: -1; */
   }
 
-.photo h3,
+.table h3,
 h4 {
   color: white;
   text-align: center;
@@ -71,7 +71,7 @@ h4 {
  
 }
 
-.photo h3 {
+.table h3 {
   font-size: 70px;
   font-weight: 100;
   margin-bottom: 10px;
@@ -79,7 +79,7 @@ h4 {
   top: 360px;left: 15px;
 }
 
-.photo h4 {
+.table h4 {
   font-size: 50px;
   font-weight: 50;
   margin-top: 50px:
@@ -160,7 +160,7 @@ footer img{
   padding: 0px;
 
 }
-.photo{
+.table{
   background-image: url(/img/first-background.jpg);
   background-size:cover;
   background-position: center;
@@ -172,7 +172,7 @@ footer img{
  
 }
 
-.photo h3 {
+.table h3 {
   color: white;
   font-size: 30px;
   position: relative;
@@ -180,9 +180,10 @@ footer img{
   
  
 }
-.photo h4 {
+.table h4 {
   color: white;
   font-size: 20px;
+  word-wrap: break-word;
   position: relative;
   top: 210px;
 }
@@ -211,6 +212,8 @@ footer img{
   width: 50%;
   position: relative;
   top: 100px;left: 140px;
+ 
+  
  
 }
 .specs p{
