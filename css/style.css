@@ -48,34 +48,22 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-.main-page {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  /*background-color: chocolate;*/
+.hero-section {
 }
 
-.h1-container {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: center;
+.text-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 h1 {
   color: white;
   font-weight: lighter;
   font-size: 50px;
-  /*margin-top: 70px;*/
-}
-
-.p-container {
-  display: flex;
-  width: 100%;
-  height: 70px;
-  /*background-color: blue;*/
-  justify-content: center;
-  align-items: center;
 }
 
 h4 {
@@ -84,38 +72,9 @@ h4 {
   font-weight: lighter;
 }
 
-.break {
-  height: 80px;
-}
-
-.sub-heading-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.background-img {
   width: 100%;
-  height: 80px;
-  background-color: white;
-}
-
-.main-icons {
-  display: flex;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  width: 100%;
-}
-.icon1,
-.icon2,
-.icon3 {
-  width: 130px;
-  height: 130px;
-  padding: 100px;
-}
-
-h3 {
-  font-size: 30px;
-  font-weight: lighter;
+  height: 600px;
 }
 
 .click {
@@ -129,6 +88,32 @@ button {
   border: none;
   border-radius: 5px;
   color: antiquewhite;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+h3 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.main-icons {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  height: 150px;
+  width: 100%;
+}
+.icon1,
+.icon2,
+.icon3 {
+  width: 130px;
+  height: 130px;
 }
 
 p {
@@ -155,4 +140,8 @@ footer {
 .insta {
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 800px) {
+  .main-page;
 }
