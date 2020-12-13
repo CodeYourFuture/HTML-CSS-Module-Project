@@ -61,51 +61,41 @@ a:hover {
 
 main {
   width: 100%;
-  border: 3px blue solid;
 }
 /* HERO */
-#hero {
-  display: block;
+#hero div {
   min-height: 400px;
   background: url("../img/first-background.jpg") no-repeat;
   background-size: cover;
   background-position: right;
   color: whitesmoke;
-}
 
-#hero .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 400px;
   width: auto;
   text-align: center;
   padding: 20%;
-
-  border: 3px solid green;
 }
 
 #hero h2 {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  border: 3px blue solid;
 }
 
 #hero p {
   font-size: 15px;
   margin: 10px;
-  border: solid 3px blue;
 }
 
 #hero button {
   margin-top: 20px;
   width: 120px;
-  height: 120px;
+  height: 40px;
   font-size: 14px;
   background-color: rgb(225, 106, 66);
-
-  border: 3px blue solid;
 }
 
 /* Middle Title*/
@@ -126,7 +116,6 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  border: crimson 3px solid;
 }
 
 #boxes div .box {
@@ -137,8 +126,46 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  border: crimson 3px solid;
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: rgb(218, 211, 211);
+  height: 1px;
+  margin: 10px;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+  align-items: center;
+}
+
+footer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  width: 40px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(209, 207, 207);
 }
 
 /*Hamburger Menu*/
