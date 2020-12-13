@@ -76,3 +76,9 @@ ul {
     display: flex;
     flex-direction: row;
 }
+
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column;
+    }
+}
