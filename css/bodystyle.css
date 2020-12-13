@@ -120,6 +120,27 @@ main {
   color: rgb(75, 74, 74);
 }
 
+/*Boxes*/
+#boxes div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: crimson 3px solid;
+}
+
+#boxes div .box {
+  width: 120px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: crimson 3px solid;
+}
+
 /*Hamburger Menu*/
 @media (max-width: 780px) {
   .menubutton {
@@ -145,5 +166,8 @@ main {
   }
   #check:checked ~ ul {
     right: 0;
+  }
+  #boxes div {
+    flex-direction: column;
   }
 }
