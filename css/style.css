@@ -3,6 +3,8 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -14,11 +16,6 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-.background-img {
-  width: 100%;
-  height: 60px;
-}
 
 header {
   display: flex;
@@ -55,7 +52,6 @@ header {
   display: flex;
   flex-direction: column;
   height: 300px;
-  margin-top: 80px;
   /*background-color: chocolate;*/
 }
 
@@ -63,7 +59,6 @@ header {
   display: flex;
   width: 100%;
   height: 100px;
-  /*background-color: pink;*/
   justify-content: center;
 }
 
@@ -89,16 +84,43 @@ h4 {
   font-weight: lighter;
 }
 
-.mid-page {
+.break {
+  height: 80px;
+}
+
+.sub-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+
+.main-icons {
   display: flex;
   background-color: white;
   justify-content: center;
-  margin-top: 0px;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+}
+.icon1,
+.icon2,
+.icon3 {
+  width: 130px;
+  height: 130px;
+  padding: 100px;
 }
 
 h3 {
   font-size: 30px;
   font-weight: lighter;
+}
+
+.click {
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -112,4 +134,23 @@ button {
 p {
   color: white;
   font-weight: lighter;
+}
+
+footer {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+}
+
+.socials-icons {
+  background-color: white;
+}
+
+.twitter,
+.fb,
+.insta {
+  width: 50px;
+  height: 50px;
 }
