@@ -5,13 +5,13 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-header img{
+header img{                               /*logo*/
     width: 3%;
     height: 10%;
     position: relative;
     left: 5%;
 }
-ul{
+ul{                                        /*Nav Bar*/
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -31,21 +31,24 @@ li a:hover{
 }
 .hero h1{
     position: absolute;
-    left: 25%;
-    bottom: 60%;
+    left: 35%;
+    font-size: 300%;
+    font-weight: 400;
+    bottom: 35%;
     color: azure; 
 }
 .hero h2{
     position:absolute;
-    left: 20%;
-    bottom:50%;
+    font-size: 180%;
+    font-weight: lighter;
+    left: 30%;
+    bottom:30%;
     color:azure;
-    font-size: 50%;
 }
 .button{
     position: absolute;
-    left:35%;
-    bottom: 40%;
+    left:45%;
+    bottom: 20%;
 }
 .hero a{
     text-decoration: none;
