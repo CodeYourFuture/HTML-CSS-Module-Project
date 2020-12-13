@@ -1,0 +1,51 @@
+/* HEADER */
+header {
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 1%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 3px red solid;
+}
+
+header img {
+  width: 15px;
+  height: auto;
+}
+
+header nav {
+  margin: auto;
+  padding: 0;
+  width: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+
+  border: 3px blue solid;
+}
+
+header a {
+  margin: auto;
+  padding: 2%;
+  width: auto;
+
+  display: block;
+  text-align: center;
+
+  color: rgb(114, 111, 111);
+  font-size: 12px;
+  text-decoration: none;
+  border: 1px red solid;
+  overflow: hidden;
+}
+
+header a:hover {
+  color: rgb(228, 44, 44);
+}

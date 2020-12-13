@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+nav {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+}
+
+img.logo {
+  width: 20px;
+  height: auto;
+  margin: 10px;
+  margin-left: 40px;
+}
+
+nav ul {
+  float: right;
+  margin: 0 20px;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 60px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(68, 67, 67);
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+a:hover {
+  color: rgb(197, 58, 58);
+  transition: 0.5s;
+}
