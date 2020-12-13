@@ -16,4 +16,111 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+body {
+    font-family: roboto;
+    -webkit-font-smoothing: antialiased;
+}
 
+.navigation .links {
+    float: right; 
+}
+.logo {
+    margin-left: 100px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.bold:hover {
+    color: orange;
+}
+
+.navigation .links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation .links li:hover {
+    color: orange;
+}
+
+body {
+    line-height: 1;
+}
+.introduction {
+    background-image: url(../img/first-background.jpg);
+    height: 45.938rem;
+    font-family: roboto;
+}
+.description {
+    text-align: center;
+    font-family: roboto;
+    color: white;
+    margin-bottom: 50px;
+    padding: 300px;
+}
+
+/*.flex-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+  }*/
+  .text {
+    text-align: center;
+    margin-top: 100px;
+    font-family: roboto;
+    font-size: 30px;
+  }
+  .logo1 {
+    margin-left: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+
+  }
+  .logo2 {
+    margin-left: 40%;
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+
+  }
+  .logo3 {
+    margin-left: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+
+  }
+  
+.button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: orange;
+    color:white;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+
+
+.social-media {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+    border-top-style: solid;
+    border-color: lightgray;
+}
+.copyrights {
+    margin: 50px;
+    color: lightgray;
+}
