@@ -6,10 +6,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 header img{                               /*logo*/
-    width: 3%;
+    width: 2%;
     height: 10%;
-    position: relative;
+    position: absolute;
     left: 5%;
+    bottom: 89%;
 }
 ul{                                        /*Nav Bar*/
     list-style-type: none;
@@ -61,6 +62,10 @@ li a:hover{
 /*Section with icons and text styling*/
 .container h1{
     position: relative;
+    left: 30%;
+    padding-top: 10%;
+    font-weight: lighter;
+    font-size: 250%;
 }
 #images{
     display:flex;
