@@ -16,4 +16,169 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    margin: 30px;
+    padding: 0 40px;
+}
+.logo {
+    width: 40px;
+    height: 30px;
+}
 
+.menu-burger {
+    visibility: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction :row;
+    flex-wrap : nowrap;
+    justify-content:flex-end;
+    align-items:flex-start;
+    align-content:space-between;
+}
+
+.nav-items {
+    color: gray;
+    font-size: 15px;
+    font-weight: 450;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.nav-items:hover {
+    color: rgb(224, 103, 22);
+}
+
+
+main {
+    margin: 40px 0 30px 0;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px 0;  
+}
+
+#info {
+    background: url("../img/first-background.jpg") center;
+    padding: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+button {
+    background: rgb(231, 105, 21);
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 30px;
+}
+
+
+#store-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+div {
+    text-align: center;
+    width: 250px;
+}
+
+#store-wrapper > div > img {
+    width: 80px;
+}
+
+#store-wrapper > p {
+    font-size: 12px;
+}
+
+
+hr {
+    border-top-style: none;
+    width: 80vw;
+}
+
+
+footer {
+    display:flex;
+    height: 100px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:space-between;
+}
+
+.footer-text {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:space-between;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.blog-item {
+    margin: 20px;
+    position: relative;
+}
+
+.copy-write {
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.blog-item::before {
+    position: absolute;
+    margin: 6px 0 0 -6px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu-burger {
+      visibility: visible;
+      display: block;
+      order: 1;
+    }
+
+    .nav-items {
+        visibility: hidden;
+    }
+}
