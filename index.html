@@ -13,11 +13,11 @@
 </head>
 <body>
     <header class="navbar-container">
-        <img class="hamburger" src="/home/dom/Documents/HTML-CSS-Coursework-Week2/img/menu-hamburger.svg" width="3%" height="3%" alt="logo"><!--little logo missing-->
-        <img class="logo" src="/home/dom/Documents/HTML-CSS-Coursework-Week2/img/karma-logo.svg" width="3%" height="3%" alt="logo"><!--little logo missing-->
+        <img class="hamburger" src="img/menu-hamburger.svg" width="3%" height="3%" alt="logo"><!--little logo missing-->
+        <img class="logo" src="img/karma-logo.svg" width="3%" height="3%" alt="logo"><!--little logo missing-->
         <nav>
             <ul>
-                <li><a class="navLink" href="">Meet Karma</a></li>
+                <li><a class="navLinkHome navLink" href="">Meet Karma</a></li>
                 <li><a class="navLink" href="">How it Works</a></li>
                 <li><a class="navLink" href="">Store</a></li>
                 <li><a class="navLink" href="">Blog</a></li>
@@ -28,30 +28,41 @@
     </header>
     <main class="main">
         <div class="container">
-            <h2>Introducing Karma</h2>
+            <h1>Introducing Karma</h1>
             <h3>Bring WiFi with you, everywhere you go.</h3>
             <button class="cta">Learn More</button>
         </div>
         <section>
-            <h1>Everyone needs a little Karma.</h1>
-        </section>
-        <section>
-            <ul class="bar">
-                <li> Internet for all devices
-                    <img src="/home/dom/Documents/HTML-CSS-Coursework-Week2/img/icon-devices.svg"  width="10%" height="10%" alt="devices-icon">
-                </li>
-                <li> Boost your productivity
-                    <img src="/home/dom/Documents/HTML-CSS-Coursework-Week2/img/icon-coffee.svg" width="10%" height="10%" alt="coffe-icon">
-                </li>
-                <li>Pay as You Go
-                    <img src="/home/dom/Documents/HTML-CSS-Coursework-Week2/img/icon-refill.svg" width="10%" height="10%" alt="refill-icon">
-                </li>
-            </ul>
+            <h2>Everyone needs a little Karma.</h2>
+            <div class="bar">
+                <div> 
+                    <img class="image" src="img/icon-devices.svg"   alt="devices-icon">
+                    <p>Internet for all devices</p>
+                </div>
+                <div> 
+                    <img class="image" src="img/icon-coffee.svg"  alt="coffe-icon">
+                    <p>Boost your productivity</p>
+                </div>
+                <div>
+                    <img class="image" src="img/icon-refill.svg"  alt="refill-icon">
+                    <p>Pay as You Go</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <h6>Join us on</h6>
-        <!-- Twitter logo, Facebook logo, Instagram logo-->
+            <ul class="flex-icons">
+                <li><img class= "icons-footer" src="img/twitter-icon.svg"  alt="twitter-icon"></li>
+                <li><img class= "icons-footer" src="img/facebook-icon.svg"  alt="facebook-icon"></li>
+                <li><img class= "icons-footer" src="img/instagram-icon.svg"  alt="instagram-icon"></li>
+            </ul>
+            <small> &copy; Karma Mobility, Inc. </small>
+    </footer>
+    
+    <!-- Add your HTML markup here <footer> 
+        <h6>Join us on</h6>
+        
         <div>
             <img src="/home/dom/Documents/HTML-CSS-Coursework-Week2/img/twitter-icon.svg" width="5%" height="5%" alt="twitter-icon">
         </div>
@@ -63,10 +74,12 @@
         </div>
         <small> &copy; Karma Mobility, Inc. </small>
     </footer>
-
-    <!-- Add your HTML markup here -->
+-->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
 
 </body>
+
 </html>
+
+
