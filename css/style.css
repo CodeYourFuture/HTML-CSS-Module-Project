@@ -90,15 +90,21 @@ button {
   color: antiquewhite;
 }
 
+section {
+  height: 450px;
+}
+
 .sub-section {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  text-align: center;
+  height: 350px;
+  margin-top: 80px;
 }
 
 h3 {
   width: 100%;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: lighter;
 }
 
@@ -106,14 +112,25 @@ h3 {
   display: flex;
   background-color: white;
   justify-content: space-between;
-  height: 150px;
-  width: 100%;
+  padding-left: 400px;
+  padding-right: 400px;
 }
 .icon1,
 .icon2,
 .icon3 {
   width: 130px;
   height: 130px;
+  padding: 50px;
+}
+
+.icon-text {
+  font-size: 25px;
+}
+
+.icon-text li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
 }
 
 p {
@@ -140,8 +157,4 @@ footer {
 .insta {
   width: 50px;
   height: 50px;
-}
-
-@media (max-width: 800px) {
-  .main-page;
 }
