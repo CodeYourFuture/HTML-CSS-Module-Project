@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
+    width: 100vw;
 }
 
 h1, h2 {
@@ -184,14 +185,18 @@ i::before {
     }
 
     .nav-items {
+        display: none;
         visibility: hidden;
     }
-
-    /* nav {
-        display: flex;
-        justify-content: space-between;
-    } */
   }
+
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    article {
+        width: 200px;
+    }
+
+  }
+
 
 
 /**
