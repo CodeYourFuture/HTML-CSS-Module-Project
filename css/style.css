@@ -4,6 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-family: sans-serif; 
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 /**
@@ -16,12 +19,16 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
  #logo {
-     width: 2em;
+     width: 0.8em;
  }
 
  ul {
+     display: flex;
      position: fixed;
+
+     
      top: 0;
  }
 
@@ -29,15 +36,27 @@ body {
      list-style-type: none;
      margin: 0;
      padding: 0; 
-     display: inline-block;
-     left: 10%;
+     padding: 0.5em;
+     justify-content: space-evenly flex-end;
+    
 
 }
 
 
+a:active,
+a:hover {
+    outline: 0;
+    color: red;}
 
 
 
  h1 {
     font-size: 2em;
     margin: 0.67em 0;
+
+/*button,
+html input[type="button"]
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; 
+    cursor: pointer */
