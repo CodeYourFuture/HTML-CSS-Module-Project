@@ -1,9 +1,336 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+* {
+  box-sizing: border-box;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.top-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px 90px 16px 90px;
+}
+
+.karma-logo {
+  padding: 10px;
+}
+
+.karma {
+  width: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(169, 135, 135);
+}
+
+.navbar ul li a {
+  color: rgb(169, 135, 135);
+}
+
+nav ul li a:hover {
+  color: rgb(255, 72, 0);
+}
+
+.navbar ul li a.meet-karma {
+  color: black;
+}
+
+nav ul li a:active {
+  color: #000;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.first-part {
+  background-image: url(../img/first-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.learn-button {
+  margin-top: 50px;
+}
+
+.orange-button {
+  background-color: rgb(255, 72, 0);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 25px 35px 25px 35px;
+  font-size: 22px;
+}
+
+.second-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 70px;
+  padding: 100px;
+  font-weight: 400;
+}
+
+.third-section {
+  display: flex;
+}
+
+.laptop-woman {
+  height: 60vh;
+  margin: 0;
+}
+
+aside {
+  height: 60vh;
+  margin: 0;
+  background-color: rgb(238, 231, 231);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-karma {
+  background-color: rgb(255, 72, 0);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 25px 35px 25px 35px;
+  font-size: 22px;
+}
+
+.h3-aside {
+  display: inline;
+  font-size: 3rem;
+  color: rgb(90, 89, 89);
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img {
+  width: 200px;
+  height: auto;
+}
+
+hr {
+  width: 80%;
+  border: 2px solid darkgray;
+  margin: 5rem auto;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-size: 30px;
+  font-weight: 200;
+  margin: 30px;
+}
+
+.social li {
+  display: inline;
+}
+
+.social li a {
+  margin: 20px;
+}
+
+.social-media {
+  padding: 20px;
+  width: 70px;
+  height: auto;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+}
+
+.footnote {
+  font-size: 20px;
+  font-weight: 100;
+  color: darkgray;
+  margin: 15px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .orange-button {
+    padding: 15px 25px 15px 25px;
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  h4 {
+    font-size: 17px;
+    padding: 20px;
+  }
+
+  .icons img {
+    width: 80px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  header.top-bar {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+  }
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .karma {
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .header-mobile {
+    display: inline-block;
+    margin-right: 0px;
+    position: relative;
+  }
+
+  .mobile {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .footer-text {
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .first-part {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-media {
+    width: 40px;
+    padding: 10px;
+  }
+
+  .footnote {
+    font-size: 15px;
+  }
+
+  .third-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .laptop-woman {
+    width: 100vw;
+  }
+
+  aside {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .h3-aside {
+    font-size: 1.7rem;
+    color: rgb(90, 89, 89);
+  }
+
+  .get-karma {
+    font-size: 1rem;
+    padding: 1em;
+  }
 }
 
 /**
@@ -15,5 +342,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
