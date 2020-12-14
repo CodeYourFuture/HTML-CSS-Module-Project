@@ -1,10 +1,6 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
- /* * {
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,12 +14,6 @@ h1, h2 {
     font-weight: 300;
     margin: 0;
 }
-
-p {
-
-}
-
-/* HEADER */
 
 /* NAV */
 
@@ -74,7 +64,6 @@ ul {
     color: gray;
 }
 
-
 /* HERO */
 
 .hero {
@@ -116,7 +105,7 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
-
+    padding-bottom: 20px;
 }
 
 article {
@@ -131,6 +120,38 @@ article {
 .cards-container > p {
     font-size: 0.8em;
 }
+
+/* FEATURE */
+
+.feature {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.feature-img {
+    width: 45%;
+}
+
+.feature-text {
+    background-color: rgb(252, 237, 232);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    padding: 30px;
+    font-style: italic;
+    line-height: 2em;
+}
+
+.feature-btn {
+    width: 150px;
+    color: white;
+    font-weight: 500;
+
+}
+
 
 /* FOOTER */
 
@@ -188,6 +209,14 @@ i::before {
         display: none;
         visibility: hidden;
     }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature-img, .feature-text {
+        width: 100%;
+    }
   }
 
   @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -196,17 +225,4 @@ i::before {
     }
 
   }
-
-
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
 
