@@ -48,9 +48,6 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-.hero-section {
-}
-
 .text-container {
   text-align: center;
   position: absolute;
@@ -72,6 +69,9 @@ h4 {
   font-weight: lighter;
 }
 
+.hero-image {
+  display: flex;
+}
 .background-img {
   width: 100%;
   height: 600px;
@@ -109,33 +109,38 @@ h3 {
 }
 
 .main-icons {
-  display: flex;
   background-color: white;
-  justify-content: space-between;
-  padding-left: 400px;
-  padding-right: 400px;
 }
 .icon1,
 .icon2,
 .icon3 {
-  width: 130px;
-  height: 130px;
-  padding: 50px;
+  width: 140px;
+  height: 140px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 .icon-text {
-  font-size: 25px;
+  font-size: 27px;
+  padding-right: 40px;
 }
 
 .icon-text li {
   list-style: none;
   display: inline-block;
-  margin-left: 30px;
+  margin-right: 60px;
 }
 
-p {
-  color: ;
+.company-text p {
+  font-size: 15px;
   font-weight: lighter;
+  color: grey;
+}
+
+hr {
+  margin-left: 150px;
+  margin-right: 150px;
+  border-top: 1px grey;
 }
 
 footer {
@@ -143,10 +148,12 @@ footer {
   flex-direction: column;
   background-color: white;
   align-items: center;
-  padding: 50px 0px 50px 0px;
+  width: 100%;
+  padding: 20px 0px 50px 0px;
 }
 
-.join-us-section {
+.join-us-section p {
+  font-size: 17px;
 }
 
 .socials-icons {
@@ -159,7 +166,4 @@ footer {
 .insta {
   width: 30px;
   height: 30px;
-}
-
-.company-text {
 }
