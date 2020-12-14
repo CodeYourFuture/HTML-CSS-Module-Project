@@ -22,16 +22,22 @@ body {
 /* 1.1 making space between the contents in header  */
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100px;
 }
 
 /* 1.2 setting height for Karma logo */
-#logo {
-  height: 75px;
+.logo {
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 50px;
 }
 
-/* 1.3 making the list in header (Meet Karma, How it Works, etc) all appear in row */
+/* 1.3 adding padding to the 'nav' bar and making the list in header (Meet Karma, How it Works, etc) all appear in row */
+nav {
+  margin-right: 50px;
+}
+
 li {
   display: inline-block;
   margin: 5px;
@@ -39,7 +45,7 @@ li {
 }
 
 /* 1.4 adding weight to the 'Meet karma' font */
-#meetKarma {
+.meetKarma {
   font-weight: 600;
 }
 
@@ -59,12 +65,12 @@ a:hover {
 /* 2.1 adding background-image, decorating font size for texts, and displaying the contents as a column  */
 .intro {
   height: 750px; /* is there another method to fit the img inside the section without setting height */
+
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
-  font-size: 70px;
-  font-weight: 100;
-  /* line-height: 0px; */
+  font-size: 37px;
   color: aliceblue;
 
   display: flex;
@@ -74,55 +80,49 @@ a:hover {
 }
 
 /* 2.2 making the text "Bring WiFi with you, everywhere you go." appear smaller than what was specified above in 2.1 */
-#firstText {
+.firstText {
   font-size: 40px;
   font-weight: 100;
+  margin-top: 0px;
 }
 
 /* 2.3 decorating the 'Learn More' button */
-#learnMore {
+.learnMore {
   background-color: rgb(255, 86, 24);
   padding: 35px;
-  margin-bottom: 100px;
-  margin-top: 50px;
+  margin-bottom: 130px;
+  margin-top: 5px;
+  padding: 15px;
+
   font-size: 30px;
   font-weight: 400;
   border-style: hidden;
   border-radius: 5px;
 }
 
-/* 3.0 decorating the intro text to the second part of the page (e.g How Karma Works)   */
+/* 4.0 HOW KARMA WORKS */
+
+/* 4.1 decorating the intro text to the second part of the page (e.g How Karma Works)   */
 .part-one {
-  font-size: 70px;
-  font-weight: 100;
+  font-size: 37px;
   color: rgb(46, 46, 46);
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  width: 100%;
 }
-
-/* 4.0 HOW KARMA WORKS */
-
-/* 4.1 decorating the child elements inside this section */
+/* 4.2 decorating the child elements inside this section */
 .contents {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   font-size: 40px;
   font-weight: 100;
   color: rgb(46, 46, 46);
 }
 
-/* 4.2 adding content height, adjusting the display and aligning the texts */
-#content-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 400px;
-  text-align: center;
-}
-
 /* 4.3 adding content height, adjusting the display and aligning the texts */
-#content-2 {
+.content-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,17 +130,8 @@ a:hover {
   text-align: center;
 }
 
-/* 4.4 adding content height, adjusting the display and aligning the texts */
-#content-3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 400px;
-  text-align: center;
-}
-
-/* 4.5 adding a fixed height to the image inside this contents, as the default height was smaller than other images */
-#content-3 img {
+/* 4.4 adding a fixed height to all the images inside the contents, as the default height for some was smaller than other images */
+.content-1 img {
   height: 273.6px;
 }
 
@@ -167,7 +158,7 @@ footer {
 }
 
 /* 5.3 adding dimensions to the icon images */
-#icon {
+.icon {
   height: 35px;
   width: 35px;
 }
@@ -188,6 +179,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* line-height: 50px; */
   }
 }
 
