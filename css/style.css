@@ -19,26 +19,38 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+#header_container {
+    width: 100%;
+}
 
- #logo {
+
+ #logo_image {
      width: 0.8em;
+     margin-left: 5%;
+     margin-top: 2%;
+ }
+
+ nav {
+     width: 70%;
+     float: right;
+     margin-right: 10%;    
  }
 
  ul {
      display: flex;
-     position: fixed;
-
-     
+     /*position: fixed;*/
+     justify-content: flex-end;
      top: 0;
  }
 
  li {
      list-style-type: none;
-     margin: 0;
-     padding: 0; 
-     padding: 0.5em;
-     justify-content: space-evenly flex-end;
-    
+     padding: 0.5%;
+     justify-content: space-evenly;
+     padding-left: 5%;
+     
+
+     
 
 }
 
@@ -53,6 +65,7 @@ a:hover {
  h1 {
     font-size: 2em;
     margin: 0.67em 0;
+
 
 /*button,
 html input[type="button"]
