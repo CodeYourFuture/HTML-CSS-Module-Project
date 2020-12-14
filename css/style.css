@@ -59,12 +59,12 @@ a:hover {
 /* 2.1 adding background-image, decorating font size for texts, and displaying the contents as a column  */
 .intro {
   height: 750px; /* is there another method to fit the img inside the section without setting height */
-  background-image: url("/home/coder/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg");
+  background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
 
   font-size: 70px;
   font-weight: 100;
-  line-height: 0px;
+  /* line-height: 0px; */
   color: aliceblue;
 
   display: flex;
@@ -176,6 +176,19 @@ footer {
 #copyInfo {
   color: rgb(173, 173, 173);
   font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* please ignore this at the bottom (I only added it to experiment with different properties) */
