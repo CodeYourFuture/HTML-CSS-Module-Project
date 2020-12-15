@@ -4,6 +4,7 @@
 body {
 font-family: "Roboto", sans-serif;
 -webkit-font-smoothing: antialiased;
+box-sizing: border-box;
 }
 
 /**
@@ -57,7 +58,8 @@ flex: 2;
 
 /* Background Image */
 .image_section {
-background-image: url("/img/first-background.jpg");
+background-image: url('/img/first-background.jpg');
+
 text-align: center;
 padding-bottom: 90px;
 background-position: center;
@@ -168,9 +170,108 @@ font-weight: bold;
 
 
 
-/*HamBurger Menu*/
+
+
+/*Media Quires*/
+
+/* Extra small devices (phones, 600px and down) */
+@media(max-width: 736px)   {
+.menu_bar{
+  display: none;
+
+}
+
 
 .menu_box{
-    width: 60px;
-    height: 60px;
+position: relative;
+left: 100px;
+flex: 3;
 }
+
+h2{
+  font-size: 1.5rem;
+}
+
+
+.icons {
+flex-direction: column;
+
+}
+
+.link {
+width: 50%;
+
+
+}
+.image_text_button{
+  width: 100%;
+  margin: 0 auto;
+  
+}
+.image_text_button h1{
+  font-size: 3rem;
+}
+.image_text_button p{
+  font-size: 1.5rem;
+}
+/*HamBurger Menu*/
+.menu_box{
+position: relative;
+width: 80px;
+height: 80px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.5s ease-in-out;
+
+}
+.line{
+width: 50px;
+height: 6px;
+border-radius: 5px;
+background-color: #000;
+transition: all 0.5s ease-in-out;
+}
+
+.line::before,
+.line::after{
+content: '';
+position: absolute;
+width: 50px;
+height: 6px;
+border-radius: 5px;
+background-color: #000;
+transition: all .5s ease-in-out;
+    
+}
+.line::before{
+  transform: translateY(-14px);
+}
+.line::after{
+  transform: translateY(14px);
+}
+
+/* Apply Cross when clicked */
+.menu_box.open .line{
+  background: transparent;
+}
+
+.menu_box.open .line::before{
+  transform: rotate(45deg) ; 
+}
+.menu_box.open .line::after{
+  transform: rotate(-45deg);   
+}
+
+
+.main_container{
+  position: relative;
+}
+
+
+
+}
+
+
+
