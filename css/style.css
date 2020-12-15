@@ -71,6 +71,8 @@ a:hover{
 @media only screen and (max-width: 1120px) {
     .hamburger {
       display: block;
+      width: 40px;
+      
      }
      .navBar{
          display:none;
@@ -146,22 +148,69 @@ button:hover {
     text-align: center;
     color:rgb(80, 80, 90);
     font-size: 35px;
+    
 }
 .bottomsection{
     display: flex;
     flex-direction: row;
+    padding-bottom: 75px;
+    padding-top: 75px;
 }
 
+img{
+width: 45%;
+}
+.sectionright{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252,239,235);
+    width:55%;
+    
+}
+.italic{
+    color: rgb(80, 80, 90);
+    font-size: 3.5rem;
+    font-style: italic;
+    text-align: center;
+    padding:0px 17% 0px 17%;
+}
 @media only screen and (max-width: 1300px) {
-    .middleSection {
-      flex-direction: column;
+    .main1{
+        font-size: 50px;
     }
+    .main2{
+        font-size: 30px;
+    }
+    .main3{
+        font-size: 50px;
+    }
+    .middlesection {
+        flex-direction: column;
+        font-size: 25;
+    }
+    .bottomsection{
+        flex-direction: column;
+        padding-top:25px;
+        padding-bottom:25px;
+        }
+    .sectionright{
+        width:100%;
+        padding-bottom: 75px;
+        
+    }
+    img{
+        width: 100%;
+        }
+
   }
 
 hr{
     width: 80%;
-    border-width:1px;
+   
     border-color:rgb(221, 224, 230); 
+    
 }
 
 
