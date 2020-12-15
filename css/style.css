@@ -171,8 +171,21 @@ header {
         left: 0;
 
     }
+}
 
+@media (max-width: 500px) {
+    .features-container {
+        flex-direction: column;
+    }
 
+    .features-btn {
+        font-size: 2rem;
+    }
+
+    .features-img {
+        display: block;
+        width: 100%;
+    }
 }
   
 .hero {
@@ -262,6 +275,7 @@ button {
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-color: linen;
 }
 
 .features-content p {
@@ -273,7 +287,7 @@ button {
 
 .features-btn {
     height: 8vh;
-    font-size: 1em;
+    font-size: 1rem;
     left:0;
 }
 
