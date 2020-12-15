@@ -10,13 +10,13 @@
  header {
     font-size: 24px;
     width: 100%;
-    height: 20px;
-    padding: 40px;
-    margin: 20px;   
+    height: 90px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
 }
 
  .logo {
@@ -43,6 +43,7 @@
 .navbar ul li a {
     /* list-style-type: none; */
     text-decoration: none;
+    color: black;
 }
 
 .navbar ul li a:hover {
@@ -69,23 +70,18 @@
 .picture-text-heading {
     font-size: 50px;
 }
-
 .picture-text-smalltext {
     font-size: 30px;
 }
-
-.picture-button {
-    font-size: 24;
-    
-}
-
 .picture-button button {
-    width: 150px;
+    width: 160px;
     height: 50px;
     padding: 15px 30px;
+    border: 1px solid orangered;
+    border-radius: 5%;
     background-color: orangered;
     text-align: center;
-    font-size: 24;
+    font-size: 18px;
 }
 
 /* main second section */
@@ -111,8 +107,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    
 }
 
 .wrapper-icon-content {
@@ -120,6 +114,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center; 
     
 }
 
@@ -132,6 +127,57 @@
     font-size: 24px;
     padding: 15px 40px;
     
+}
+
+/* main third section */
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    height: 450px;
+    width: 100%;
+}
+
+.feature img {
+    width: 100%;
+    height: 450px;
+    
+    
+    
+}
+
+.feature-text {
+    background-color: rgb(250, 236, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 70%;
+}
+    
+.feature-text p {
+    color: black;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+    
+}
+.feature button{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: 1px solid orangered;
+    border-radius: 5%;
+    background-color: orangered;
+    text-align: center;
+    font-size: 18px;
+    color:white;
 }
 
 
@@ -151,22 +197,65 @@ footer {
     text-align: center;
     margin: 10px;
 }
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-.footer-icons img{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    padding: 10px 10px;
+.footer-icons-content {
+    margin: 5px;
+    padding: 5px 5px; 
     border: 1px solid grey;
     border-radius: 50%;
+}
+
+.footer-icons-content img{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    margin: 3px;
 }
 
 .footer-text {
     font-size: 20px;
     text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    header {
+        font-size: 20px;
+    }
+    .picture {
+        width: 100%;
+        height: 500px;
+    }    
+    .picture-text-heading {
+        font-size: 30px;
+    }
+    .picture-text-smalltext {
+        font-size: 20px;
+    }
+    .picture-button button {
+        width: 140px;
+        font-size: 14px;
+    }
+    .wrapper-icon {
+            flex-direction: column;
+    }
+    .wrapper-title {
+            font-size: 30px;
+    }
+
+    .feature {
+        display: none;
+    }
+    
     
 }
+    
+
 
 
 /**
