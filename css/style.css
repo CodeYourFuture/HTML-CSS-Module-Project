@@ -77,6 +77,8 @@ h3 {
 .logo {
     padding: 10px;
     padding-left: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 .navbar-container {
@@ -87,6 +89,8 @@ h3 {
 
 .hamburger {
     display: none;
+    width: 50px;
+    height: 50px;
 }
 
 nav ul li {
@@ -123,12 +127,35 @@ a:hover{
 .contact-ul li{
     font-size: 5px;
 }
-@media (max-width: 500px) {
-    .cta {
-        
-        color: rgb(236, 9, 9);
-        border-radius: 50px;
-        background-color: rgb(43, 255, 0);
+
+/* mobile media query*/ 
+@media (max-width: 400px) {
+   .hamburger {
+       display: inline-block;
     }
 
+    nav {
+        display: none;
+        }
+    main {
+        font-size: small;
+    }
+    .flex-icons {
+        flex-direction: column;
+    }
+    .bar {
+        flex-direction: column;
+    }
+    h1 {
+      font-family: 'Courier New', Courier, monospace;  
+    }
+    .cta {
+        font-size: small;
+        color: white;
+        padding: 15px 20px;
+        margin: 10px;
+        border: 2px solid rgb(66, 64, 64);
+        border-radius: 50px;
+        background-color: orangered;
+    }
 }
