@@ -48,6 +48,14 @@ header {
   transition: all 0.3s ease 0s;
 }
 
+.hero {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
 .text-container {
   text-align: center;
   position: absolute;
@@ -98,7 +106,7 @@ section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 350px;
+  height: 460px;
   margin-top: 80px;
 }
 
@@ -110,7 +118,11 @@ h3 {
 
 .main-icons {
   background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
+
 .icon1,
 .icon2,
 .icon3 {
@@ -120,15 +132,9 @@ h3 {
   padding-right: 90px;
 }
 
-.icon-text {
+.main-icons p {
   font-size: 27px;
-  padding-right: 40px;
-}
-
-.icon-text li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 60px;
+  width: max-content;
 }
 
 .extra-section {
@@ -196,7 +202,7 @@ footer {
   color: grey;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .nav-links li {
     float: none;
     width: 100%;
@@ -214,14 +220,24 @@ footer {
     font-size: 30px;
   }
 
-  .icon-text {
-    font-size: 17px;
-  }
-
   .icon1,
   .icon2,
   .icon3 {
     width: 100px;
     height: 100px;
+  }
+
+  .feature-img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .text-button {
+    width: 50%;
+  }
+
+  h2 {
+    width: 25%;
+    font-size: 25px;
   }
 }
