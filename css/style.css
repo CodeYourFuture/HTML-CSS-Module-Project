@@ -33,7 +33,7 @@ nav{
     font-size: 18px;
 }
 
-a:link {
+a {
     color: rgb(66, 65, 65);
     text-decoration: none;
     margin-right: 40px;
@@ -52,11 +52,10 @@ a:link {
     display: flex;
     position: relative;
     text-align: center;
+    justify-content: center;
 }
 
 .backgroundImg {
-    margin-bottom: 70px;
-    justify-content: center;
     width: 100%;
 }
 
@@ -119,24 +118,29 @@ figcaption {
 }
 
 h4, h5 {
-    position: relative;
-    text-align: center;
-    color:rgb(66, 65, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(66, 65, 65);
     font-size: 18px;
     font-weight: bold;
-    margin: 5px;
 }
 .socialIcons {
-    transform: translate(-50%, -50%);
     width: 18px;
-    height: 18px;
-    margin: 10px;
+    height: auto;
+    padding: 10px;
+    margin-left: 15px;;
+    border-radius: 50px;
+    border: 2px solid rgb(136, 134, 134, 30%);
 }
 
+hr {
+    opacity: 0.15;
+}
 h5 {
     font-size: 16px;
     font-weight: normal;
-    color:  rgb(136, 134, 134)
+    color:  rgb(136, 134, 134, 60%)
 }
 
 @media (max-width: 600px) {
@@ -144,9 +148,29 @@ h5 {
         flex-direction: column;
         width: 250px;
     }
+    
+    h1 {
+        font-size: 22px;
+        transform: translate(-50%, -80%);
+    }
+    
+    h2 {
+        font-size: 14px;
+        transform: translate(-50%, -30%);
+    }
+
+    button {
+        height: 15%;
+        padding: 2px;
+        font-size: 14px;
+        transform: translate(-50%, 60%);
+    }
+
     h3 {
         text-align: center;
+        font-size: 30px;
     }
+
     .karmaLogo {
         width: 250px;
     }
