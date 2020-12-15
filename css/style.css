@@ -169,17 +169,33 @@ footer {
   font-size: 15px;
 }
 
+/* 6.0 MAKING RESPONSIVE WEB DESIGN */
+
+/* 6.1 Adding media query */
 @media (max-width: 600px) {
-  .contents {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  header {
+    height: 100%;
   }
+
   .intro {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* line-height: 50px; */
+
+    font-size: 26px;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-size: 26px;
+  }
+
+  .content-1 img {
+    width: auto;
+    height: auto;
   }
 }
 
