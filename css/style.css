@@ -45,7 +45,7 @@ nav {
 nav ul li {
   display: inline-block;
   line-height: 60px;
-  margin: 5px;
+  margin: 10px;
   font-size: 18px;
   color: darkgrey;
 }
@@ -65,7 +65,7 @@ a.active, a:hover {
 .hamburger {
   display: none;
 }
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 767px) {
   nav-logo {
     padding-left: 50px;
   }
@@ -85,6 +85,8 @@ a.active, a:hover {
     color: black;
   }
 }
+@media (min-width:768px) and (max-width: 900px)
+
 
 /**--page main background section*/
 /**.img-background {
@@ -114,7 +116,7 @@ a.active, a:hover {
   background: url("../img/first-background.jpg") no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -133,14 +135,16 @@ a.active, a:hover {
 .container-devices {
    display: flex;
    justify-content: space-between;
-   align-content: center;
-   text-align: center;
+   /* align-content: center; */
+   /* text-align: center; */
    margin: auto 5%;
 }
 .main-devices {
-   width: 20%;
+   width: 15%;
    margin: 2em;
    font-size: medium;
+   /* justify-content: space-between; */
+   align-content: center;
 }
 .main-devices-img {
    width: 100%;
@@ -202,12 +206,13 @@ h4 {
 .contact-ul a {  
   font-size: 25px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  flex-direction: column;
-  height: 50px;
-  width: 50px;
+  padding: 10px, 5px;
+  /* margin-right: auto;
+  margin-top: auto; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  height: 40px;
+  width: 40px;
   /* display: inline-flex; */
   align-items: center;
   justify-content:right;
@@ -215,7 +220,7 @@ h4 {
 }
 
 .social {
-  width: 50px;
+  width: 40px;
  }
 
  section-ul li {
