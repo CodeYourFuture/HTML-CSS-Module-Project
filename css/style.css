@@ -92,8 +92,11 @@ a.active, a:hover {
 
   .contact-ul {
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
+  }
+
+  .contact-ul li {
+    margin-bottom: 3rem;
   }
 }
 @media (min-width:768px) and (max-width: 900px)
@@ -195,6 +198,8 @@ h4 {
   text-align: center;
   padding-top: 40px;
 }
+
+
 
 /**footer media icons*/
 .media-contact {
