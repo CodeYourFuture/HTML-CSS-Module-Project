@@ -1,12 +1,9 @@
-* {
+body {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-}
-
-body {
   background-color: white;
 }
 
@@ -19,13 +16,13 @@ nav {
 img.logo {
   width: 20px;
   height: auto;
-  margin: 10px;
-  margin-left: 40px;
+  margin: 1rem;
+  margin-left: 2rem;
 }
 
 nav ul {
   float: right;
-  margin: 0 20px;
+  margin: 0 0;
 }
 
 nav ul li {
@@ -36,8 +33,9 @@ nav ul li {
 
 nav ul li a {
   color: rgb(68, 67, 67);
-  font-size: 20px;
+  font-size: 1.8rem;
   padding: 5px 10px;
+  text-decoration: none;
 }
 
 a:hover {
@@ -48,7 +46,7 @@ a:hover {
 .menubutton {
   float: right;
   color: rgb(68, 67, 67);
-  font-size: 20px;
+  font-size: 1.6rem;
   line-height: 60px;
   margin-right: 40px;
   cursor: pointer;
@@ -64,7 +62,7 @@ main {
 }
 /* HERO */
 #hero div {
-  min-height: 400px;
+  min-height: 200px;
   background: url("../img/first-background.jpg") no-repeat;
   background-size: cover;
   background-position: right;
@@ -79,22 +77,20 @@ main {
   padding: 20%;
 }
 
-#hero h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
+#hero h1 {
+  font-size: 2rem;
 }
 
 #hero p {
-  font-size: 15px;
+  font-size: 1.6rem;
   margin: 10px;
 }
 
 #hero button {
-  margin-top: 20px;
-  width: 120px;
+  margin-top: 1vh;
+  width: 100px;
   height: 40px;
-  font-size: 14px;
+  font-size: 1rem;
   background-color: rgb(225, 106, 66);
 }
 
