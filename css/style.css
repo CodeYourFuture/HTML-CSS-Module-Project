@@ -64,7 +64,12 @@ body {
     font-size: calc(0.75em + 1vw);
     padding: 5px 10px;
     margin-top: 30px;
+    transition-duration: 0.4s;
 }
+.hero-button button:hover {
+    background-color:pink;
+    color:black;
+  }
 /*Main-Container style*/
 .container{
     margin-top:75px ;
@@ -100,7 +105,45 @@ body {
 #main-hr{
     width:50%;
 }
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+.features-image{
+    max-width:40%;
+    display: flex;
+   
+   
+}
+.features-text{
+    background-color: rgb(241, 206, 239);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.features-text p{
+    font-size:calc(1em + 1vw);
+    text-align: center;
+    font-style: italic;
+}
+.features button{
+    background-color: orangered; 
+    height: 3em;   
+    border: none;
+    border-radius: 5%;
+    font-size: calc(0.75em + 1vw);
+    padding: 5px 10px;
+    margin-top: 30px;
+    transition-duration: 0.4s;
+}
 
+.features button:hover {
+    background-color:pink;
+    color:black;
+  }
 
 /*Footer style*/
 .footer-icons img{
@@ -119,7 +162,7 @@ footer{
     font-size:calc(0.8em + 0.5vw);
 }
 /* adding media query-inorder not to show navbar for big screens,make visible the mobile nav bar and changing background image height */
-@media screen and (max-width:768px){
+@media(max-width:768px){
     nav .big-screen{
         display: none; 
         
@@ -191,9 +234,13 @@ footer{
 }
 
 /* adding media query for big screens-which hide the mobile nav bar and links */
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 .mobile-screen {
     display:none;
   }
+.features{
+    display: block;
+    display: flex;
+}
  
 }
