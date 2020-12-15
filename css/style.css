@@ -129,6 +129,7 @@ align-content: space-around;
 justify-content: center;
 font-weight: bold;
 color: rgb(68, 64, 64);
+padding-bottom: 40px;
 }
 
 .title {
@@ -169,7 +170,39 @@ font-weight: bold;
 }
 
 
+.student{
+  
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: thistle;
+text-align: center;
+}
+.student img{
+  width: 50%;
+  
 
+}
+.student_text {
+ flex: 2;
+}
+
+.student_link{
+  padding: 20px;
+background-color: orangered;
+border-radius: 10px;
+text-decoration: none;
+color: white;
+transition: 0.5s ease-out;
+}
+.student_link:hover{
+  background-color: rgb(197, 115, 48);
+}
+.student_text p{
+font-size: 2.4rem;
+padding-left: 80px;
+}
 
 
 /*Media Quires*/
@@ -181,6 +214,18 @@ font-weight: bold;
 
 }
 
+.student{
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.student img{
+  width: 100%;
+}
+.student_text p{
+font-size: 1rem;
+padding-bottom: 30px;
+
+}
 
 .menu_box{
 position: relative;
