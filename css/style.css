@@ -163,6 +163,16 @@ header {
         flex-direction: column;
     }
 
+    .features-content {
+        font-size: 0.7em;
+    }
+
+    .features-btn {
+        left: 0;
+
+    }
+
+
 }
   
 .hero {
@@ -237,6 +247,36 @@ button {
     width: 70%;
 }
 
+.features-container {
+    display: flex;
+}
+
+.features-container img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.features-content p {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 400;
+    padding: 2rem;
+}
+
+.features-btn {
+    height: 8vh;
+    font-size: 1em;
+    left:0;
+}
+
 footer {
     margin-top: 3rem;
     border-top:2px solid rgb(201, 98, 38);
@@ -267,6 +307,7 @@ footer p {
     margin-top: 1rem;
     text-align: center;
     opacity: 0.5;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 400px) {
