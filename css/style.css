@@ -42,7 +42,7 @@ a.selected:link, a.selected:visited{
 }
 
 li a:hover{
-    color: red;
+    color:#E0633A;
 }
 
 
@@ -81,10 +81,11 @@ p {
 
 
 button {
-    background-color: red;
-    padding: 6px;
+    background-color: #E0633A;
+    padding: 6px 12px 6px 12px;
     font-size:12px;
     margin:24px;
+    border-radius: 5px;
 }
 
 h2 {
@@ -158,14 +159,14 @@ footer img{
     color:lightgray;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
+@media (max-width:768px) {
+    .benefits {
+    flex-direction: column;
+    }
+    h1 {
+    font-size: 20px;
+    }
+    p {
+    font-size: 12px;
+    }
+}
