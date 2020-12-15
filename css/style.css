@@ -32,9 +32,6 @@ header nav {
     margin-top: 10px;
 }
 
-.social {
-    height: 50px;
-}
 
 button {
     background-color: rgb(255, 102, 0);
@@ -45,13 +42,13 @@ button {
 }
 
 #coverpage {
-    min-height: 400px;
+    min-height: 300px;
     color: white;
     text-align: center;
 }
 
 #coverpage h1 {
-    margin: -500px 0 0 0;
+    margin: -350px 0 0 0;
     font-size: 40px;
     color:white;
     font-weight: lighter;
@@ -62,53 +59,73 @@ button {
 }
 
 #center {
-    margin: 520px 50px 0 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 300px;
 }
 
-h2 {
+#center h2 {
     font-weight: lighter;
+    text-align: justify;
 }
 
 #wrap {
-    margin-top:20px;
-    margin-left: 300px;
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #wrap .devices{
-    float:left;
-    width:30%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align:center;
+
 }
 
-.socialnav p {
-    padding-top: 400px;
-    font-size: 10px;
-    margin-left: 160px;
+.social-nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 200px 0 200px;
+    padding: 0 250px 0 250px;
 }
-
-.socialnav li{
-    display: inline;
-    padding: 0 10px 0 40px;
+    
+footer p{
+    display: flex;
     justify-content: center;
 }
 
-.socialnav nav {
-    display:inline;
-    margin-top: 10px;
-}
-
-.socialnav img {
-    height: 10px;
+.social-nav img {
+    height: 20px;
     width: 20px;
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 25px;
 }
 
-footer {
-   margin-left: 500px;
+.text {
+    padding-top: 250px;
 }
 
-.copy {
-     font-size: 15px;
+
+@media (max-width: 700px) {
+    .navbar li {
+        display: block;
+    }
+    #wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .social-nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 20px 0 20px;
+    padding: 0 20px 0 20px;
+    }
+    #coverpage h1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: -150px 0 0 0;
+}
 }
 /**
  * Add your custom styles below
