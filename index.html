@@ -16,35 +16,53 @@
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-    <nav>
-        <img class = "karmaLogo" src = "img/karma-logo.svg" alt = "Karma Logo">
-        <ul class = "navBar">
-            <li class = "meetKarma">Meet Karma</li>
-            <li class = "navigation">How it Works</li>
-            <li class = "navigation">Store</li>
-            <li class = "navigation">Blog</li>
-            <li class = "navigation">Help</li>
-            <li class = "navigation">Login</li>
-        </ul>
-    </nav>
-    <img class = "backgroundImg" src = "img/first-background.jpg" alt = "tablet on desk">
-    <section class = "slogan">Everyone needs a little Karma.</section>
-    <section class = "icons">
-        <img src = "img/icon-devices.svg" alt = "devices">
-        <img src = "img/icon-coffee.svg" alt = "coffee">
-        <img src = "img/icon-refill.svg" alt = "refill">
+    <header>
+        <!-- Logo -->
+        <figure class = "karmaLogo">
+            <img src = "img/karma-logo.svg" alt = "Karma Logo">
+        </figure>
+        <!-- Navigation Bar -->
+        <nav>
+            <a href = "#" class = "meetKarma">Meet Karma</a>
+            <a href = "#" class = "navigation">How it Works</a>
+            <a href = "#" class = "navigation">Store</a>
+            <a href = "#" class = "navigation">Blog</a>
+            <a href = "#" class = "navigation">Help</a>
+            <a href = "#" class = "navigation">Login</a>
+        </nav>
+    </header>
+    <section class = "mainSection">
+        <!-- Main image -->
+        <figure class = "backgroundImg">
+            <img src = "img/first-background.jpg" alt = "tablet on desk">
+        </figure>
+        <!-- Main heading -->
+        <h1>Introducing Karma</h1>
+        <!-- Sub heading -->
+        <h2>Bring WiFi with you, everywhere you go.</h2>
     </section>
-    <ul class = "features">
-        <li>Internet for all devices</li>
-        <li>Boost your productivity</li>
-        <li>Pay as You Go</li>
-    </ul>
+    <section class = "slogan">
+        <!-- Slogan -->
+        <h3>Everyone needs a little Karma.</h3>
+        <!-- Icons -->
+        <figure class = "features">
+            <img src = "img/icon-devices.svg" alt = "devices">
+            <figcaption>Internet for all devices</figcaption>
+            <img src = "img/icon-coffee.svg" alt = "coffee">
+            <figcaption>Boost your productivity</figcaption>
+            <img src = "img/icon-refill.svg" alt = "refill">
+            <figcaption>Pay as You Go</figcaption>
+        </figure>
+    </section>
     <footer>
-        <section class = "socialMedia">Join us on</section>
-        <section class = "socialIcons">
-            <img src = "img/twitter-icon.svg" alt = "Twitter">
-            <img src = "img/facebook-icon.svg" alt = "Facebook">
-            <!--<img src = "img/instagram-icon.svg" alt = "Instagram"><-->
+        <hr>
+        <h4>Join us on</h4>
+        <section class = "socialMedia">
+            <figure>
+                <img class = "socialIcons" src = "img/twitter-icon.svg" alt = "Twitter">
+                <img class = "socialIcons" src = "img/facebook-icon.svg" alt = "Facebook">
+                <img class = "socialIcons" src = "img/instagram-icon.svg" alt = "Instagram">
+            </figure>
         </section>
     </footer>
 </body>

@@ -16,16 +16,26 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-ul {
-    list-style-type: none;
+header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    color: rgb(66, 65, 65);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .karmaLogo {
     width: 30px;
+    padding: 20px;
+}
+
+nav{
+    margin-right: 30px;
+}
+
+a:link {
+    color: rgb(66, 65, 65);
+    text-decoration: none;
+    margin-right: 40px;
 }
 
 .meetKarma {
@@ -37,44 +47,87 @@ ul {
     cursor: pointer;
 }
 
+.mainSection {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
 .backgroundImg {
     background-size: cover;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
+    justify-content: center;
     width: 100%;
 }
 
-.slogan, .socialMedia {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color:rgb(66, 65, 65);
-    margin: 50px;
+h1, h2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255,255,255);
+    font-weight: lighter;
 }
 
-.icons, .features {
+h1 {
+    top: 32%;
+    font-size: 40px;
+}
+
+h2 {
+    top: 40%;
+}
+
+.slogan {
     display: flex;
+    position: relative;
+    text-align: center;
+}
+
+h3 { 
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color:rgb(66, 65, 65);
+    font-weight: lighter;
+}
+
+.features {
+    display: flex;
+    text-align: center;
     flex-direction: row;
-    margin: 50px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
-    justify-content: space-evenly;
-    font-size: 30px;
+}
+
+figcaption {
+    font-size: 25px;
+    color:rgb(66, 65, 65);
 }
 
 .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    position: relative;
+    text-align: center;
+    color:rgb(66, 65, 65);
     font-size: 16px;
     font-weight: bold;
     margin: 40px;
 }
-
 .socialIcons {
+    transform: translate(-50%, -50%);
+    border-radius: rgb(66, 65, 65);
     width: 16px;
     height: 16px;
-    display: flex;
-    flex-direction: row;
 }
 
 @media (max-width: 600px) {
