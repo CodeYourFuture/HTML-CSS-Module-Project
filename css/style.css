@@ -43,7 +43,7 @@ a{
 
 /*Introduction General styles*/
 .intro{
-  background-image: url(/img/first-background.jpg);
+  background-image: url(../img/first-background.jpg);
   background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
@@ -154,4 +154,8 @@ hr.solid {
     bottom:0;
     top: 0;
   }
+}
+
+@media (maz width 1200px){
+  
 }
