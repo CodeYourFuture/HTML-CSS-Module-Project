@@ -134,6 +134,64 @@ hr {
   margin: 10px;
 }
 
+/* ADS */
+#ads {
+  min-height: 100px;
+
+  background-color: papayawhip;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: auto;
+  text-align: center;
+
+  border: 3px solid red;
+}
+
+#ads .image {
+  width: 100%;
+  min-height: 10rem;
+  border: 1px red solid;
+}
+
+#ads .text-button {
+  width: 100%;
+  min-height: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  border: 1px red solid;
+}
+
+#ads img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#ads p {
+  width: 70%;
+
+  font-size: 1rem;
+  color: black;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+#ads button {
+  margin-top: 1vh;
+  width: 8rem;
+  height: 2rem;
+  font-size: 0.8rem;
+  background-color: rgb(225, 106, 66);
+  color: whitesmoke;
+}
+
 /*Footer*/
 footer {
   display: flex;
@@ -191,6 +249,10 @@ footer .icons {
     right: 0;
   }
   #boxes div {
+    flex-direction: column;
+  }
+
+  #ads {
     flex-direction: column;
   }
 }
