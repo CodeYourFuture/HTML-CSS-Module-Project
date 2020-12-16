@@ -224,11 +224,12 @@ footer .icons {
   }
   ul {
     position: fixed;
-    width: 50%;
+    width: 35%;
     height: auto;
     background: whitesmoke;
+    opacity: 0.6;
     top: 60px;
-    right: -100%;
+    right: -90%;
     text-align: center;
     transition: all 0.5s;
   }
@@ -238,10 +239,10 @@ footer .icons {
     line-height: 30px;
   }
   nav ul li a {
-    font-size: 12px;
+    font-size: 1rem;
   }
   #check:checked ~ ul {
-    right: 0;
+    right: 1.5%;
   }
   #boxes div {
     flex-direction: column;
