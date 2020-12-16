@@ -68,11 +68,12 @@ a:hover {
 }
 
 .webpage_background_picture {
+    width: 100%;
     background-image: url("/img/first-background.jpg");
-    
-    /*min-height: 380px;*/
     background-position: center;
-    background-repeat: no-repeat;
+    /*min-height: 380px;
+    
+    background-repeat: no-repeat;*/
     background-size: cover;
     position: relative;
 
