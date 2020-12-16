@@ -1,13 +1,12 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-family: sans-serif; 
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    border: solid rgb(51, 48, 48) 9px;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  border: solid rgb(51, 48, 48) 9px;
 }
 
 /**
@@ -21,80 +20,95 @@ body {
  */
 
 #header_container {
-    width: 100%;
+  width: 100%;
 }
 
+#logo_image {
+  width: 0.8em;
+  margin-left: 5%;
+  margin-top: 2%;
+}
 
- #logo_image {
-     width: 0.8em;
-     margin-left: 5%;
-     margin-top: 2%;
- }
+nav {
+  width: 70%;
+  float: right;
+  margin-right: 10%;
+}
 
- nav {
-     width: 70%;
-     float: right;
-     margin-right: 10%;    
- }
+ul {
+  display: flex;
+  /*position: fixed;*/
+  justify-content: flex-end;
+  top: 0;
+}
 
- ul {
-     display: flex;
-     /*position: fixed;*/
-     justify-content: flex-end;
-     top: 0;
- }
-
- li {
-     list-style-type: none;
-     padding: 0.5%;
-     justify-content: space-evenly;
-     padding-left: 5%;
- }
-
+li {
+  list-style-type: none;
+  padding: 0.5%;
+  justify-content: space-evenly;
+  padding-left: 5%;
+}
 
 a:active,
 a:hover {
-    outline: 0;
-    color: red;}
+  outline: 0;
+  color: red;
+}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#webpage_background_container {
-    width: 100%;
-    height: 100%;
-    border: solid rgb(202, 33, 33) 9px;
+.hero-image {
+  background-image: url("/img/first-background.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-#webpage_background_picture {
-    width: 100%;
-    background-image: url("/img/first-background.jpg");
-    background-position: center;
-    /*min-height: 380px;
-    
-    background-repeat: no-repeat;*/
-    background-size: cover;
-    position: relative;
-
-    height: 500px;
-    /*border: solid rgb(202, 33, 33) 9px;*/
-
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-#webpage_text {
-    position: absolute;
-    font-size: 2em;
+/*Bottom website Icon section*/
 
-    top: 50%;
-    left: 50%;
+#icon_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 
+.icon_img_and-text {
+  width: 30%;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
 
+.smaller_img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
 /*button,
 html input[type="button"]
 input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button; 
     cursor: pointer */
-
