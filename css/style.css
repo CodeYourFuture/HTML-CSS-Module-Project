@@ -8,27 +8,42 @@ body, footer {
 /*Navigation*/
 .navbar{
   background-color: white;
-  position: sticky;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 50px;
 }
 .navbar .logo {
   height: 60px;
-  margin-left: 30px;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
 .navbar a{
-  float: left;
+  display: flex;  
+  flex-direction: row;  
+  justify-content: flex-end;
   margin-top: 0;
-  display: block;
   color: grey;
-  text-align: center;
-  padding: 14px 20px;
+  padding: 20px;
   background-color: white;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
 }
 .navbar a:hover{
   color: orange;
 }
 .right {
-  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: space-between;
+
+  
 }
 a{
   text-decoration: none;
@@ -89,25 +104,13 @@ a{
   
 }
 /*Icons styles*/
-.main .devices{
+.main .icons{
   width: 100%;
   height: auto;
   padding: 115px;
   margin-top: 0px;
 }
-.main .coffee {
-  width: 100%;
-  height: auto;
-  padding:115px;
-  margin-top: 0px;
-}
-.main .refill{
-  width: 100%;
-  height: auto;
-  padding:115px;
-  margin-top: 0px;
 
-}
 /*General styles*/
 .statement{
   text-align: center;
@@ -133,10 +136,12 @@ hr.solid {
 }
 
 /*Changing screen size* - General style changes as a result*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .navbar a:not(:nth-child(0)) {display: none;}
   .navbar a.icon {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    
     display: block;
   }
   .main{
