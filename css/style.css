@@ -67,7 +67,7 @@ a:hover {
     border: solid rgb(202, 33, 33) 9px;
 }
 
-.webpage_background_picture {
+#webpage_background_picture {
     width: 100%;
     background-image: url("/img/first-background.jpg");
     background-position: center;
@@ -85,7 +85,10 @@ a:hover {
 #webpage_text {
     position: absolute;
     font-size: 2em;
-    margin: 0.67em 0;
+
+    top: 50%;
+    left: 50%;
+
 
 
 /*button,
