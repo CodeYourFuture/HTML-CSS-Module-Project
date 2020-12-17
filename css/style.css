@@ -80,7 +80,7 @@ a:hover {
 
 /*Bottom website Icon section*/
 
-#icon_container {
+#icon_logo_container {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -108,11 +108,16 @@ h2 {
 }
 
 /*Footer section*/
-.smaller_logo {
-  width: 100%;
+.logo-align {
+  align-items: flex-end;
 }
 
-.logo_container {
+.smaller_logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
   width: 30px;
   height: auto;
 }
