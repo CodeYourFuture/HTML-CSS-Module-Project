@@ -128,9 +128,9 @@ main {
 .last-main-div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 5%;
-  width: 100%;
+  width: 80%;
 }
 
 .last-main-img {
@@ -278,8 +278,11 @@ footer {
 
   .last-main-div {
     flex-direction: column;
-    margin-top: 5%;
-    width: 50%;
+    margin-top: 3%;
+  }
+
+  .last-main-article {
+    padding: 2%;
   }
 
   .under-image-text {
