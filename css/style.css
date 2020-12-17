@@ -80,7 +80,7 @@ a:hover {
 
 /*Bottom website Icon section*/
 
-#icon_logo_container {
+#icon_container {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -111,17 +111,30 @@ h2 {
 .logo-align {
   align-items: flex-end;
 }
+.logo {
+  width: 30px;
+  height: auto;
+}
 
 .smaller_logo {
   width: 100%;
   height: auto;
 }
 
-.logo {
-  width: 30px;
-  height: auto;
+p {
+  text-align: center;
 }
 
+#logo_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.logo_align {
+  padding-top: 30px;
+}
 /*button,
 html input[type="button"]
 input[type="reset"],
