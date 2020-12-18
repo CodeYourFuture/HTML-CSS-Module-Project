@@ -111,6 +111,35 @@ article div p {
   color: gray;
   font-weight: 500;
 }
+.bottom-content {
+  display: flex;
+  width: 100%;
+}
+.bottom-content img {
+  height: 100%;
+}
+.last-content {
+  display: flex;
+  background-color: pink;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.last-content h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-family: "Harmattan", sans-serif;
+  font-family: "Michroma", sans-serif;
+  letter-spacing: 3px;
+  width: 80%;
+}
+.get-karma-btn {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 10px;
+}
 
 hr {
   width: 88%;
@@ -154,7 +183,34 @@ footer p {
     padding-right: 3em;
   }
   article {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  article section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  article p {
+    text-align: center;
+  }
+
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-content img {
+    width: 100%;
+  }
+  .last-content h3 {
+    font-size: 1rem;
+  }
+  .last-content {
+    padding-bottom: 20px;
+  }
+  .get-karma-btn {
+    font-size: 0.5rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -201,5 +257,21 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-content img {
+    width: 100%;
+  }
+  .last-content h3 {
+    font-size: 1rem;
+  }
+  .last-content {
+    padding-bottom: 20px;
+  }
+  .get-karma-btn {
+    font-size: 0.5rem;
   }
 }
