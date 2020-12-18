@@ -98,6 +98,12 @@ a:hover {
   color: gray;
   font-weight: 200;
 }
+article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 article img {
   width: 125px;
 }
