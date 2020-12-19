@@ -87,16 +87,17 @@ nav ul li {
 /* Social Media */
 .social-media .flex-container {
     display: flex;
-    height: 10vh;    
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
+    height: 300px;
     margin: 0px;
     padding: 10;
     background-color: lightBlue;
 }
 /* 
 .flex-container > div {
-    justify-content: center;
+    justify-content: space-between;
     margin: 5%;
     padding: 5%;
 } */
