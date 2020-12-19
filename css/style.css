@@ -95,6 +95,15 @@ nav ul li {
     
 }
 
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    margin: 5%;
+    padding: 5%;
+}
+
 /* Footer */
 footer {
     display: flex;
