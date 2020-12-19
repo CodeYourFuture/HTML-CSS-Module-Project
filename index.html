@@ -14,11 +14,11 @@
 </head>
 <body>
     <header id="header">
-        <div>
-            <img  id="header-img" src="./img/karma-logo.svg" alt="Karma Logo" width=200 height=400>
+        <div id="logo">
+            <img  id="header-img" src="./img/karma-logo.svg" alt="Karma Logo">
         </div>
         <nav id="nav-bar">
-            <div class="nav-link">
+            <div id="nav-link">
                 <a href="#meet">Meet Karma</a>
                 <a href="#works">How it Works</a>
                 <a href="#store">Store</a>
@@ -28,7 +28,7 @@
             </div>
         </nav>
     </header>
-    <article>
+    <main>
         <div id="text-container">
             <img id="background-image" src="./img/first-background.jpg" alt="Individual working remotely" width=100% height=600>
             <div id="centered-text">
@@ -39,25 +39,26 @@
                 </form>
             </div>
         </div>
-    </article>
-
-    <article>
-        <div id="subheading">
+    </main>
+    <article id="subheading">
+        <div>
             <h3>Everyone needs a little Karma.</h3>
         </div>
-        <div>
-            <img id="pics" src="./img/icon-devices.svg" alt="Internet Devices" width=30% height=60>
+    </article>
+    <section class="features">
+        <div class="feature-container">
+            <img src="./img/icon-devices.svg" alt="Internet Devices" width=40% height=60>
             <h4>Internet for all devices</h4>
         </div>
-        <div>
-            <img id="pics" src="./img/icon-coffee.svg" alt="Productivity" width=30% height=60>
+        <div class="feature-container">
+            <img src="./img/icon-coffee.svg" alt="Productivity" width=40% height=60>
             <h4>Boost your productivity</h4>
         </div>
-        <div>
-            <img id="pics" src="./img/icon-refill.svg" alt="Pay As You Go" width=30% height=60>
+        <div class="feature-container">
+            <img src="./img/icon-refill.svg" alt="Pay As You Go" width=40% height=60>
             <h4>Pay As You Go</h4>
         </div>
-    </article>
+    </section>
     
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
@@ -65,11 +66,11 @@
     
     <hr/>
 
-    <footer>
+    <footer id="footer-container">
         <div id="contact">
             <h4>Join us on</h4>
         </div>
-        <section id="media">
+        <div id="social-media">
             <div>
                 <img id="icon" src="./img/twitter-icon.svg" alt="Twitter Icon" width=10 height=10>
             </div>
@@ -79,7 +80,7 @@
             <div>
                 <img id="icon" src="./img/instagram-icon.svg" alt="Instagram Icon" width=10 height=10>
             </div>
-        </section>
+        </div>
         <span class="copyright">&copy;Karma Mobility, Inc.</span>
     </footer>
 </body>

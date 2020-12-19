@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
+/*
  * Add your custom styles below
  * 
  * Remember: 
@@ -19,47 +19,49 @@ body {
 #header {
     background-color: white;
     position: fixed;
-    max-height: 50px;
+    max-height: 40px;
     display: flex;
     flex-direction: row;
-    width: 100% 
-    z-index: 9999;
+    width: 100%; 
+    z-index: 1;
     top: 0;
     left: 0;
 }
 
+#logo {
+    flex-basis: 20%;
+}
+
 #header-img {
-    padding: 15px 10px 30px 100px;
+    padding: 5px 10px 5px 100px;
     width: 25px;
     height: 25px;
     position: relative;
-    justify-content: flex-start;
 }
 
 #nav-bar {
+    flex-basis: 80%;
     overflow: hidden;
-    padding-top: 10px;
+    padding: 10px 80px 0px 0px;
     width: 100%;
-    justify-content: flex-end;
-}
-
-.nav-link {
-    display: flex;
-    justify-content: flex-end;
+    text-align: end;
 }
 
 a {
     text-decoration: none;
-    text-align: center;
     font-size: 20px;
     color: rgb(105,105,105);
     padding: 12px 10px;
-    text-align: right;
+}
+
+#header a:hover {
+    background-color: #ddd;
+    color: #ff6200;
 }
 
 #background-image {
     background-repeat: no-repeat;
-    margin-top: 60px;
+    margin-top: 5px;
     display: block;
     width: 100%;
 }
@@ -89,16 +91,43 @@ a {
 }
 
 #subheading {
-    position: absolute;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-h4 {
+#subheading h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-container img {
+    width: 200px;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+.features h4 {
     font-size: 14px;
-}
-
-#pics {
-    padding-top: 50px;
+    font-weight: 540;
+    margin: auto;
+    padding-top: 0;
 }
 
 hr {
@@ -108,40 +137,133 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0 ,0));
 }
 
-footer {
+#footer-container {
     display: flex;
-    flex-direction: column-reverse;
-    padding: 50px;
-}
+    flex-direction: column;
+} 
 
 #contact {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    width: 30%;
-    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #606060;
 }
 
-#media {
+#social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 #icon {
+    margin: 0.2em;
     border: 3px solid #F5F5F5;
-    padding: 5px;
+    padding: 6px;
     border-radius: 80%;
     width: 10px;
-    height: 10px;   
+    height: 10px; 
 }
 
 .copyright {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    width: 30%;
-    color: #bebebe;
-    font-size: 10px;
-    padding; 15px;
-}   
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400; 
+    color: lightgrey;  
+    padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #header {
+        max-height: 28px;
+    }
+
+    #header-img {
+        padding: 5px 7px 2px 60px;
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+    
+    #nav-bar {
+        padding: 7px 5px 5px 60px;
+    }
+    
+    a {
+        font-size: 15px;
+        padding: 12px 10px;
+    }
+    
+    #background-image {
+        background-repeat: no-repeat;
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 20px;
+        margin-top: 70px;
+    }
+    
+    h3 {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .click {
+        font-size: 9px;
+        width: 50%;
+        margin: 15px 0px 15px 0px;
+        padding: 10px 5px 10px 5px;
+    }
+
+    #subheading {
+        margin-top: 20px;
+    }
+    
+    #subheading h3 {
+        font-size: 20px;
+    }
+    
+    .feature-container {
+        height: 100px;
+        width: 200px;
+    }
+    
+    .feature-container img {
+        width: 150px;
+    }
+    
+    .features h4 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    
+    hr {
+        width: 250px;
+    }
+    
+    #contact {
+        text-align: center;
+        font-size: 8px;
+        font-weight: 300;
+    }
+     
+    #icon {
+        margin: 0.17em;
+        border: 2.5px solid #F5F5F5;
+        padding: 5px;
+        border-radius: 70%;
+        width: 8px;
+        height: 8px; 
+    }
+
+    .copyright {
+        font-size: 8px;
+        font-weight: 300; 
+        padding: 10px;
+    }
+    
+}
