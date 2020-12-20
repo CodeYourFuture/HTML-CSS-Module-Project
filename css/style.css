@@ -1,261 +1,231 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-}
-
-header.logo{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 30px;left: 120px;
-}
-
-.navbar{
-  color:rgb(88, 69, 69) 
-  
-   
-}
-.hamburger{
-  display: none;
-}
-
-  ul li a {
-    list-style-type: none;
-    font-size: 15px;
-    position: relative;
-    top: 0px;right: 100px;
-    text-decoration: none;
-    
-}
-  ul li a:hover
-  {
-  color: rgb(235, 106, 31);
-  }
-
-  li {
-    display: inline;
-    padding: 7px;
-    margin: 10px;
-    margin-top: 0;
-    float: right;
-    
-  }
-
-  .photo{
-    background-image: url(/img/first-background.jpg);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width: 1500px;
-    height: 1000px;
-    align-items: center; 
-    position: relative;
-    top: 0px;left: 30px;
-    
-    
-  }
-
-.photo h3,
-h4 {
-  color: white;
-  text-align: center;
-  position: relative;
-  top: 270px;left: 200px;
-  vertical-align: middle;
- 
-}
-
-.photo h3 {
-  font-size: 70px;
-  font-weight: 100;
-  margin-bottom: 10px;
-  position: relative;
-  top: 360px;left: 15px;
-}
-
-.photo h4 {
-  font-size: 50px;
-  font-weight: 50;
-  margin-top: 50px:
-  position: relative;
-  top: 310px;left: -30px;
-}
-
-.learn{
-  
-  line-height: 2.8;
-  padding: 0 20px;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  background-color: rgb(209, 115, 52);
-  position: relative;
-  top: -430px;left: 700px;
-}
-
-.icon p{
-  text-align: center;
-  font-size: 30px;
-}
-
-.icon img{
-  width: 180px;
-  height: 80px;
-  position: relative;
-  left: 500px;
- 
-}
-.specs p{
-  display: inline;
-  position: relative;
-  left: 480px; 
-  padding: 20px;
-  margin-top: 50px;
-  font-size: 15px;
-}
-
- footer h5 {
-    text-align: center;
-    margin-top: 60px;
-  
-  }
-footer img{
-  
-    width: 15px;
-    height: 15px;
-    margin: 10px;
-    margin-top: 5px;
-    position: relative;
-    left:725px;
-  }
-  footer p {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 12px;
-  }
-
-  /* MOBILE*/
-
-@media (max-width: 600px) {
-
-  header.logo{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 10px;left: 15px;
-}
-  .navbar {
-    display: none;
-  }
-.hamburger{
-  display: block;
-  float: right;
-  padding: 0px;
-
-}
-.photo{
-  background-image: url(/img/first-background.jpg);
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  top: 10px;  left: 0;
- 
-}
-
-.photo h3 {
-  color: white;
-  font-size: 30px;
-  position: relative;
-  top: 200px;
-  
- 
-}
-.photo h4 {
-  color: white;
-  font-size: 20px;
-  position: relative;
-  top: 210px;
-}
-
-.learn{
-  font-size: 1rem;
-  color: #fff;
-  border-radius: 5px;
-  background-color: rgb(209, 115, 52);
-  position: relative;
-  top: -250px;left: 200px;
-  
-}
- 
-.icon p{
-  text-align: center;
-  font-size: 30px;
-  position: absolute;
-  top: 680px;left: 100px;
-}
-
-.icon img{
-  width: 180px;
-  height: 80px;
-  margin: 35px;
-  width: 50%;
-  position: relative;
-  top: 100px;left: 140px;
- 
-}
-.specs p{
-  display: block;
-  margin:65px;
-  position: relative;
-  top: -270px;left: 150px;
-  font-size: 15px;
-  
-}
-footer h5 {
-  position: relative;
-  left: 25px;
-  margin-top: -300px;
- 
-
-}
-footer img{
-
-  width: 15px;
-  height: 15px;
-  margin: 10px;
-  margin-top: 5px;
-  position: relative;
-  top: 0px;left: 210px;
- 
-}
-footer p {
-  position: relative;
-  top: -10px;left: 25px;
-  font-size: 12px;
-}
-
-}/*MOBILE CLOSE TAG
-
-
-   
-
-/**
- * Add your custom styles below
- * 
+/* * Add your custom styles below
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex' */
+ 
+ body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  }  
 
+/* MOBILE VERSION */
+
+header {
+padding: 0 45px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 12px;
+margin-bottom: 5px;
+text-align: center;
+z-index: 100;
+ }
+
+ 
+header img.logo{
+width: 30px;
+height: 40px;
+
+
+}
+
+/* HAMBURGER */
+
+.thick {
+display: none;
+}
+
+.burger{
+position: absolute;
+font-size: 35px;
+color: white;
+text-shadow: 2px 2px 4px rgb(31, 31, 31);
+top: 0;
+right: 0;
+}
+
+
+nav {
+/* display: flex;  */
+list-style: none; 
+
+
+} 
+a {
+color: rgb(14, 13, 13);
+text-decoration: none;
+transition: all 0.3s ease-out;
+}
+
+a:hover {
+color: rgb(235, 106, 31);
+
+}
+
+ul { 
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+
+ul li {
+margin-left: 20px;
+}
+
+/* FIRST SECTION */
+
+.intro{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-image: url(../img/first-background.jpg);
+background-size:cover;
+background-position:center;
+background-repeat: no-repeat;
+color: white;
+width: 100%;
+height:100vh;
+font-weight: lighter;  
+
+}
+  
+.intro h1{
+font-size: 55px;
+font-weight: 1;
+text-align: center;
+ 
+
+}
+.intro p{
+font-size: 35px;
+text-align: center;
+}
+
+button{
+width: 150px;
+height: 55px;
+font-size: 1.2rem;
+border-radius: 5px;
+background-color: rgb(209, 115, 52);
+margin-top:15px;
+}
+
+/* SECOND SECTION */
+  
+  .second{
+   text-align: center;
+   margin-top: 45px;
+ 
+  }
+  .second h1{
+    font-weight: 50; 
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+  }
+  .figures{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  .icon{
+    margin:20px;
+  }
+  .icon img{
+   
+    width: 80px;
+    height: 55px;
+  }
+
+  /* THIRD SECTION*/
+  
+  .feature{
+    display: flex;
+    justify-content: center; 
+    margin:25px  25px;
+    
+  }
+  .feature img{
+    flex: 1;
+  }
+  
+  .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(247, 228, 221);
+  flex: 1;
+          
+  }
+  .box p{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-variant-ligatures: normal;
+    font-size: 2rem;
+    letter-spacing: 4px;
+ 
+  }
+  .box button{
+  width: 165px;
+  height: 47px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: rgb(209, 115, 52);
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+.social{
+  text-align: center;
+  
+}
+.social img{
+width: 15px;
+height: 15px;
+margin: 5px;
+border: 1px solid rgb(230, 230, 230);
+border-radius: 40%;
+margin-top: -25px;
+}
+.social p{
+font-weight:lighter;
+font-size:10px ;
+margin-top: 0px;
+}
+
+/* DESKTOP VERSION */
+
+/* HEADER */
+@media (min-width:600px){
+
+.burger{
+  display: none;
+}
+
+}
+
+
+ 
+
+
+/* TABLET VERSION */
+/* @media (max width:800px){
+
+} Tablet Media Closing */
