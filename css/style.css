@@ -28,6 +28,36 @@ a {
 
 
 /* Navigation Styles */
+li, a, button {
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    padding-bottom: 27px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+}
+
+.nav_links li {
+    flex-direction: row;
+    padding: 0 px;
+}
 
 
 /* Header */
