@@ -97,7 +97,7 @@ a {
     margin-top: 40px;
 }
 
-#subheading h3 {
+#subheading h2 {
     font-size: 24px;
     font-weight: normal;
 }
@@ -128,6 +128,52 @@ a {
     font-weight: 540;
     margin: auto;
     padding-top: 0;
+}
+
+#extension {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
+}
+
+#ext-container {
+    flex-basis: 40%;
+}
+
+#ext-img {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#sales-container {
+    flex-basis: 60%;
+    background-color: #fef9f3;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+#sales-container h3 {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    align-content: baseline;
+    width: 60%;
+    margin: 60px 150px;
+    margin-bottom: 0;
+}
+
+.clicky {
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ff6200;
+    border-color: #ff6200;
+    width: 30%;
+    margin: 30px 260px;
+    padding: 15px 5px 15px 5px;
+    color: white;
 }
 
 hr {
@@ -223,7 +269,7 @@ hr {
         margin-top: 20px;
     }
     
-    #subheading h3 {
+    #subheading h2 {
         font-size: 20px;
     }
     
@@ -245,6 +291,32 @@ hr {
         width: 250px;
     }
     
+    #extension {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 10px 0;
+        margin: 10px 0 10px 0;
+    }
+    
+    #ext-container {
+        flex-basis: 50%;
+    }
+    
+    #sales-container {
+        flex-basis: 50%;
+    }
+    
+    #sales-container h3 {
+        font-size: 18px;
+        margin: 20px 120px;
+    }
+    
+    .clicky {
+        border-radius: 4px;
+        font-size: 14px;
+        margin: 20px 200px;
+    }
+
     #contact {
         text-align: center;
         font-size: 8px;
@@ -265,5 +337,5 @@ hr {
         font-weight: 300; 
         padding: 10px;
     }
-    
+
 }
