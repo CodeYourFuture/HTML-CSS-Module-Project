@@ -10,6 +10,7 @@
  body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
   }  
 
 /* MOBILE VERSION */
@@ -29,7 +30,7 @@ z-index: 100;
 header img.logo{
 width: 30px;
 height: 40px;
-
+margin: 10px;
 
 }
 
@@ -39,50 +40,20 @@ height: 40px;
 display: none;
 }
 
+ul {
+  display: none;
+  }
+
 .burger{
 position: absolute;
-font-size: 35px;
 color: white;
-text-shadow: 2px 2px 4px rgb(31, 31, 31);
-top: 0;
-right: 0;
-}
-
-
-nav {
-/* display: flex;  */
-list-style: none; 
-
-
-} 
-a {
-color: rgb(14, 13, 13);
-text-decoration: none;
-transition: all 0.3s ease-out;
-}
-
-a:hover {
-color: rgb(235, 106, 31);
-
-}
-
-ul { 
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
-
-}
-
-ul li {
-margin-left: 20px;
+right: 20px;
 }
 
 /* FIRST SECTION */
 
 .intro{
 display: flex;
-align-items: center;
 justify-content: center;
 flex-direction: column;
 background-image: url(../img/first-background.jpg);
@@ -92,21 +63,31 @@ background-repeat: no-repeat;
 color: white;
 width: 100%;
 height:100vh;
-font-weight: lighter;  
+text-align: center;
+font-weight: lighter; 
 
 }
   
 .intro h1{
+ 
 font-size: 55px;
 font-weight: 1;
-text-align: center;
- 
+
+}
+
+.intro h1 span{
+  display: block;
 
 }
 .intro p{
+display: block;
 font-size: 35px;
-text-align: center;
+
 }
+.intro p span {
+  display: block;
+   
+  }
 
 button{
 width: 150px;
@@ -115,6 +96,8 @@ font-size: 1.2rem;
 border-radius: 5px;
 background-color: rgb(209, 115, 52);
 margin-top:15px;
+align-self: center;
+
 }
 
 /* SECOND SECTION */
@@ -127,6 +110,9 @@ margin-top:15px;
   .second h1{
     font-weight: 50; 
   }
+  .second h1 span{
+    display: block;
+  }
   .container{
     display: flex;
     justify-content: center;
@@ -135,7 +121,7 @@ margin-top:15px;
   .figures{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
   }
   .icon{
@@ -151,43 +137,46 @@ margin-top:15px;
   
   .feature{
     display: flex;
-    justify-content: center; 
-    margin:25px  25px;
+    justify-content: center;
+    margin: 0;
     
   }
   .feature img{
+    width: 250px;
     flex: 1;
+    
   }
   
   .box{
+  background-color: rgb(247, 228, 221);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: rgb(247, 228, 221);
   flex: 1;
+  
           
   }
   .box p{
     text-align: center;
-    width: 600px;
-    margin: 0 auto;
+    width: -20px;
     font-family: "Helvetica Neue", "Arial", sans-serif;
     font-style: italic;
-    font-weight: 100;
-    font-variant-ligatures: normal;
-    font-size: 2rem;
-    letter-spacing: 4px;
+    font-size: 1rem;
  
   }
+  .box p span{
+    display: block;
+    
+  }
   .box button{
-  width: 165px;
-  height: 47px;
+  width: 140px;
+  height: 43px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   border-radius: 5px;
   background-color: rgb(209, 115, 52);
-  margin-top: 20px;
+  margin-top: -9px;
 }
 
 /* FOOTER */
@@ -218,8 +207,92 @@ margin-top: 0px;
 .burger{
   display: none;
 }
+nav {
 
+  list-style: none; 
+  
+  
+  } 
+  a {
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  }
+  
+  a:hover {
+  color: rgb(235, 106, 31);
+  
+  }
+  
+  ul { 
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  }
+  
+  ul li {
+  margin-left: 20px;
+  }
+
+  /* FIRST SECTION*/
+
+  .intro{
+   align-items: center;
+    
+    }
+          
+    .intro h1 span{
+      display: contents;
+    
+    }
+    .intro p{
+    display: contents;
+    
+    
+    }
+    .intro p span {
+      display:contents;
+       
+      }
+    
+    /* SECOND SECTION */
+
+    .figures{
+     
+      flex-direction: row;
+      
+    }
+    .second h1 span{
+      display: contents;
+    }
+
+/* THIRD SECTION*/
+
+.feature{
+  display: flex;
+ 
 }
+
+.feature img{
+  flex: 1;
+}
+
+.box{
+
+flex: 1;
+     
+}
+
+.box p{
+  width: 600px;
+  font-size: 2rem;
+ 
+}
+
+
+} /* } Desktop Closing  */
 
 
  
