@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -16,326 +15,321 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-#header {
-    background-color: white;
-    position: fixed;
-    max-height: 40px;
-    display: flex;
-    flex-direction: row;
-    width: 100%; 
-    z-index: 1;
-    top: 0;
-    left: 0;
+header {
+  background-color: white;
+  position: fixed;
+  max-height: 40px;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
-#logo {
-    flex-basis: 20%;
+.logo {
+  flex-basis: 20%;
 }
 
-#header-img {
-    padding: 5px 10px 5px 100px;
-    width: 25px;
-    height: 25px;
-    position: relative;
+.header-img {
+  padding: 5px 10px 5px 100px;
+  width: 25px;
+  height: 25px;
+  position: relative;
 }
 
-#nav-bar {
-    flex-basis: 80%;
-    overflow: hidden;
-    padding: 10px 80px 0px 0px;
-    width: 100%;
-    text-align: end;
+.nav-bar {
+  flex-basis: 80%;
+  overflow: hidden;
+  padding: 10px 80px 0px 0px;
+  width: 100%;
+  text-align: end;
 }
 
 a {
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(105,105,105);
-    padding: 12px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(105, 105, 105);
+  padding: 12px 10px;
 }
 
-#header a:hover {
-    background-color: #ddd;
-    color: #ff6200;
+header a:hover {
+  background-color: #ddd;
+  color: #ff6200;
 }
 
-#background-image {
-    background-repeat: no-repeat;
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-}
-
-#text-container {
+.text-container {
     position: relative;
     text-align: center;
     color: white;
 }
 
-#centered-text {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.background-image {
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .click {
-    border-radius: 3px;
-    font-size: 12px;
-    background-color: #ff6200;
-    border-color: #ff6200;
-    width: 30%;
-    margin: 20px 0px 20px 0px;
-    padding: 15px 5px 15px 5px;
-    color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  background-color: #ff6200;
+  border-color: #ff6200;
+  width: 30%;
+  margin: 20px 0px 20px 0px;
+  padding: 15px 5px 15px 5px;
+  /* color: white; */
 }
 
-#subheading {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
+.subheading {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-#subheading h2 {
-    font-size: 24px;
-    font-weight: normal;
+.subheading h2 {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .features {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .feature-container {
-    display: flex;
-    flex-direction: column;
-    height: 140px;
-    width: 250px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  width: 250px;
+  margin: 0;
+  padding: 0;
 }
 
 .feature-container img {
-    width: 200px;
-    margin: auto;
-    padding-bottom: 0;
+  width: 200px;
+  margin: auto;
+  padding-bottom: 0;
 }
 
 .features h4 {
-    font-size: 14px;
-    font-weight: 540;
-    margin: auto;
-    padding-top: 0;
+  font-size: 14px;
+  font-weight: 540;
+  margin: auto;
+  padding-top: 0;
 }
 
-#extension {
-    display: flex;
-    flex-direction: row;
-    padding: 20px 0 20px 0;
-    margin: 20px 0 20px 0;
+.extension {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
-#ext-container {
-    flex-basis: 40%;
+.ext-container {
+  flex-basis: 40%;
 }
 
-#ext-img {
-    padding-left: 0;
-    margin-left: 0;
+.ext-img {
+  padding-left: 0;
+  margin-left: 0;
 }
 
-#sales-container {
-    flex-basis: 60%;
-    background-color: #fef9f3;
-    display: flex;
-    flex-direction: column;
-    vertical-align: middle;
+.sales-container {
+  flex-basis: 60%;
+  background-color: #fef9f3;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
 }
 
-#sales-container h3 {
-    font-style: italic;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-    align-content: baseline;
-    width: 60%;
-    margin: 60px 150px;
-    margin-bottom: 0;
+.sales-container h3 {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  align-content: baseline;
+  width: 60%;
+  margin: 60px 150px;
+  margin-bottom: 0;
 }
 
 .clicky {
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #ff6200;
-    border-color: #ff6200;
-    width: 30%;
-    margin: 30px 260px;
-    padding: 15px 5px 15px 5px;
-    color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ff6200;
+  border-color: #ff6200;
+  width: 30%;
+  margin: 30px 260px;
+  padding: 15px 5px 15px 5px;
+  color: white;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    width: 400px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0 ,0));
+  border: 0;
+  height: 1px;
+  width: 400px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
-#footer-container {
-    display: flex;
-    flex-direction: column;
-} 
-
-#contact {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    color: #606060;
+.footer-container {
+  display: flex;
+  flex-direction: column;
 }
 
-#social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.contact {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #606060;
 }
 
-#icon {
-    margin: 0.2em;
-    border: 3px solid #F5F5F5;
-    padding: 6px;
-    border-radius: 80%;
-    width: 10px;
-    height: 10px; 
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  margin: 0.2em;
+  border: 3px solid #f5f5f5;
+  padding: 6px;
+  border-radius: 80%;
+  width: 10px;
+  height: 10px;
 }
 
 .copyright {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400; 
-    color: lightgrey;  
-    padding: 15px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: lightgrey;
+  padding: 15px;
 }
 
 @media only screen and (max-width: 600px) {
-    
-    #header {
-        max-height: 28px;
-    }
+  header {
+    max-height: 28px;
+  }
 
-    #header-img {
-        padding: 5px 7px 2px 60px;
-        width: 20px;
-        height: 20px;
-        position: relative;
-    }
-    
-    #nav-bar {
-        padding: 7px 5px 5px 60px;
-    }
-    
-    a {
-        font-size: 15px;
-        padding: 12px 10px;
-    }
-    
-    #background-image {
-        background-repeat: no-repeat;
-        margin-top: 5px;
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    
-    h1 {
-        font-size: 20px;
-        margin-top: 70px;
-    }
-    
-    h3 {
-        font-size: 10px;
-        margin-top: 10px;
-    }
+  .header-img {
+    padding: 5px 7px 2px 60px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
 
-    .click {
-        font-size: 9px;
-        width: 50%;
-        margin: 15px 0px 15px 0px;
-        padding: 10px 5px 10px 5px;
-    }
+  .nav-bar {
+    padding: 7px 5px 5px 60px;
+  }
 
-    #subheading {
-        margin-top: 20px;
-    }
-    
-    #subheading h2 {
-        font-size: 20px;
-    }
-    
-    .feature-container {
-        height: 100px;
-        width: 200px;
-    }
-    
-    .feature-container img {
-        width: 150px;
-    }
-    
-    .features h4 {
-        font-size: 10px;
-        font-weight: 500;
-    }
-    
-    hr {
-        width: 250px;
-    }
-    
-    #extension {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0 10px 0;
-        margin: 10px 0 10px 0;
-    }
-    
-    #ext-container {
-        flex-basis: 50%;
-    }
-    
-    #sales-container {
-        flex-basis: 50%;
-    }
-    
-    #sales-container h3 {
-        font-size: 18px;
-        margin: 20px 120px;
-    }
-    
-    .clicky {
-        border-radius: 4px;
-        font-size: 14px;
-        margin: 20px 200px;
-    }
+  a {
+    font-size: 15px;
+    padding: 12px 10px;
+  }
 
-    #contact {
-        text-align: center;
-        font-size: 8px;
-        font-weight: 300;
-    }
-     
-    #icon {
-        margin: 0.17em;
-        border: 2.5px solid #F5F5F5;
-        padding: 5px;
-        border-radius: 70%;
-        width: 8px;
-        height: 8px; 
-    }
+  h1 {
+    font-size: 20px;
+    margin-top: 70px;
+  }
 
-    .copyright {
-        font-size: 8px;
-        font-weight: 300; 
-        padding: 10px;
-    }
+  h2 {
+    font-size: 10px;
+    margin-top: 10px;
+  }
 
+  .click {
+    font-size: 9px;
+    width: 50%;
+    margin: 15px 0px 15px 0px;
+    padding: 10px 5px 10px 5px;
+  }
+
+  .subheading {
+    margin-top: 20px;
+  }
+
+  .subheading h2 {
+    font-size: 20px;
+  }
+
+  .feature-container {
+    height: 100px;
+    width: 200px;
+  }
+
+  .feature-container img {
+    width: 100%;
+  }
+
+  .features h4 {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  hr {
+    width: 250px;
+  }
+
+  .extension {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+  }
+
+  .ext-container {
+    flex-basis: 50%;
+  }
+
+  .sales-container {
+    /* flex-basis: 50%; */
+    align-items: center;
+  }
+
+  .sales-container h3 {
+    font-size: 18px;
+    margin: 20px 120px;
+  }
+
+  .clicky {
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 20px 200px;
+  }
+
+  .contact {
+    text-align: center;
+    font-size: 8px;
+    font-weight: 300;
+  }
+
+  .icon {
+    margin: 0.17em;
+    border: 2.5px solid #f5f5f5;
+    padding: 5px;
+    border-radius: 70%;
+    width: 8px;
+    height: 8px;
+  }
+
+  .copyright {
+    font-size: 8px;
+    font-weight: 300;
+    padding: 10px;
+  }
 }
