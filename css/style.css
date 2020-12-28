@@ -248,6 +248,12 @@ hr {
   padding: 15px;
 }
 
+@media only screen and (max-width: 625px) and (min-width: 601px) {
+  .nav-items {
+    font-size: 10px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .burger {
     visibility: visible;
@@ -367,5 +373,14 @@ hr {
     font-size: 8px;
     font-weight: 300;
     padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .extension {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
   }
 }
