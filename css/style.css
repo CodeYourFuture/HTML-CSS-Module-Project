@@ -14,8 +14,21 @@ body {
   height: 40rem;
   overflow: auto;
   width: 100%;
-  border-bottom: 100px solid white;
+  border-bottom: 50px solid white;
 }
+.introduction .introduction-square {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: 128px;
+  margin-right: 128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -50x;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -28,12 +41,12 @@ nav {
 }
 
 nav ul {
+  background-color: white;
   display: flex;
   list-style: none;
   padding: 0;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: white;
 }
 
 nav div:first-child img {
@@ -48,12 +61,12 @@ nav div:first-child img {
 }
 
 .button {
-  width: 9rem;
-  height: 3rem;
   background-color: #eb420a;
   border-color: #e74008;
   border-radius: 5px;
   color: white;
+  height: 3rem;
+  width: 9rem;
 }
 
 .images-section ul {
@@ -69,9 +82,17 @@ nav div:first-child img {
 
 .links {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   width: 15%;
   color: rgb(46, 46, 173);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
 }
