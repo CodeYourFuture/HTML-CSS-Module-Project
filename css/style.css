@@ -1,19 +1,77 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.introduction {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 40rem;
+  overflow: auto;
+  width: 100%;
+  border-bottom: 100px solid white;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 120px;
+  margin-left: 120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 4rem;
+}
 
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+}
 
+nav div:first-child img {
+  height: 30px;
+  width: 30px;
+}
+
+.introduction h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
+}
+
+.button {
+  width: 9rem;
+  height: 3rem;
+  background-color: #eb420a;
+  border-color: #e74008;
+  border-radius: 5px;
+  color: white;
+}
+
+.images-section ul {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.images-section ul li div p {
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  color: rgb(46, 46, 173);
+}
