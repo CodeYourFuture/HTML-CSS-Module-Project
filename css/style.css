@@ -1,10 +1,5 @@
-
+/* 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
 
 /**
  * Add your custom styles below
@@ -16,7 +11,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/*  Start of Custom Style */
+/*  Awesome font style  */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -38,43 +33,40 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
-}
-
-/**
- * HTML5 display-role reset for older browsers
+}   
+/* HTML5 display-role reset for older browsers
  */
- article, aside, details, figcaption, figure, 
- footer, header, hgroup, menu, nav, section {
-     display: block;
- }
- body {
-     line-height: 1;
- }
- ol, ul {
-     list-style: none;
- }
- /**
-  * End of Reset
-  */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+button {
+    line-height: normal;
+    text-align: center;
+    font: 400 13.3333px Arial;
+} 
+ul {
+    list-style: none;
+} 
+/* End of Reset */
 
+/* Start of Custom Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+} 
 .content {
     padding: 0 0.938rem;
-        padding-top: 0px;
-        padding-right: 0.938rem;
-        padding-bottom: 0px;
-        padding-left: 0.938rem;
     margin: 0 auto;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: auto;
     min-width: 37.5rem;
 }
 :focus {
     outline: none;
 }
 
-/*  Top navigation bar style */
+/* Top-avigation Section */
 
 .top-navigation {
     background-color: #fff;
@@ -107,42 +99,33 @@ time, mark, audio, video {
     cursor: pointer;
     color: #333333;
 }
-ul {
-    list-style: none;
-        list-style-position: initial;
-        list-style-image: initial;
-        list-style-type: none;
-}
 
 /* Introduction Section */
 
 .introduction {
-    background-image: url(http://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+    background-image: url('../img/first-background.jpg');
     background-position: center bottom;
-        background-position-x: center;
-        background-position-y: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
     overflow: auto;
-        overflow-x: auto;
-        overflow-y: auto;
+}
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
 }
 .introduction h1 {
     margin-top: 17.5rem;
     font-size: 3.125rem;
 }
 .introduction h3 {
-    margin-top: 1.25;
+    margin-top: 1.25rem;
     font-size: 1.563rem;
 }
-.introduction h1, .introduction h3 {
-    color: white;
-    text-align: center;
-    font-weight: 300;
-}
 
-/* The buttons */
+/* Buttons */
 
 .introduction .buttons {
     color: white;
@@ -157,8 +140,24 @@ ul {
     font-size: 1.125rem;
     line-height: 1.2;
 }
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+} 
 
-/* The Three Case Images */
+/* Three case images and devices*/
 
 .cases {
     background-color: #fff;
@@ -178,7 +177,7 @@ ul {
 }
 .cases .devices > li {
     width: 33.3333333%;
-    float: left;
+    float:left;
 }
 .cases .devices h3 {
     font-weight: 400;
@@ -188,12 +187,6 @@ ul {
 .cases .devices p {
     font-weight: 300;
     font-size: 1.313rem;
-}
-
-/*   */
-
-.caption {
-    display: block;
 }
 
 /* Footer */
@@ -206,7 +199,7 @@ ul {
 }
 .social hr {
     border: 0;
-    border-bottom: 1px solid #eaebec;
+    border-top: 1px solid #eaebec;
     margin: 1.313rem 0;
 }
 .social .icons > li {
@@ -225,26 +218,6 @@ ul {
 .social .twitter {
     color: #55acee;
 }
-
-
-.fa fa-twitter, .fa fa-facebook, .fa fa-instagram {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-        font-style: normal;
-        font-variant-ligatures: normal;
-        font-variant-caps: normal;
-        font-variant-numeric: normal;
-        font-variant-east-asian: normal;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 1;
-        font-family: FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-
 .social .facebook {
     color: #4c66a4;
 }
@@ -257,7 +230,7 @@ ul {
     color: #838994;
 }
 
-/* Responsive Design */
+/* Responsive Design/ Media Queries */
 
 @media (min-width: 48rem) {
     .content {
@@ -275,34 +248,17 @@ ul {
     }
 }
 
-/* Chrome, Safari, Opera */
+/* Chrome, Safari, Opera */ 
 
 @-webkit-keyframes bounce {
     0%, 100% {margin-top: 0px;}
     50% {margin-top: 2rem;}
 }
 
-/* Standard Syntax */
+/* Standard syntax */ 
 
 @keyframes bounce {
     0%, 100% {margin-top: 0px;}
     50% {margin-top: 2rem;}
 }
 
-/* button */
-
-button {
-    width: 9.688rem;
-    background-color: #f15a29;
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    color: white;
-    font-size: 1.125rem;
-}
-button:hover {
-    background-color: #d9400e;
-    border-color: #cf3d0e;
-    cursor: pointer;
-}
