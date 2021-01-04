@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body, html {
+    height: 100%;
+    margin: 0;   
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    position: relative;
+    background-color: rgb(141, 137, 137);
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    color: lightgray;
+    flex-wrap: wrap;
+    background-color: #333;
+    overflow: hidden;
+}
+
+/*.li {
+    flex-direction: row;
+    padding: 2%;
+    text-decoration: none;
+    flex-wrap: wrap;
+}*/
+a {
+    text-decoration: none;
+    color: lightgray;
+    float:left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+
+a:hover {
+    color: orange;
+}
+
+
+
+.image {
+    position: fixed;
+    padding-left: 10px 5px;
+    z-index: 1;
+}
+
+
+/*main body styling*/
+main {
+    background-color: rgb(107, 81, 81);
+}
+
+.container img {
+    position: absolute;
+    z-index: 0;
+
+
+}
+
+.container {
+    width: 100px;
+    
+}
+h2 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    padding: 15% 35%;
+    font-size: 30px;
+    display: inline;
+}
+p {
+    position: absolute;
+    z-index: 2x;
+    color: white;
+    padding: 20% 35%;
+    margin-top: 12px;
+  
+
+}        
+
+.button {
+    position: absolute;
+    margin:  25% 40%;
+    z-index: 2;
+    padding: 
+}
+
+
+@media screen and (max-width: 600px) {
+    a {
+        float: none;
+        width: 100%;
+    }
+   
+
+}
+
+@media screen and (max-width: 925px) {
+    p {
+        padding: 30% 35%;
+        margin-top: 12px;
+    }
+    button {
+        margin: 55% 50%;
+    }
+}
