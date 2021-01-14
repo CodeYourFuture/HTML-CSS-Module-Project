@@ -6,7 +6,7 @@ https://github.com/CodeYourFuture/CYF-Coursework-Template
 
 # How To Get Help
 
-When you get stuck it's important that you ask for help at the right time and in the right way - this means you will be able to solve you problem as quickly as possible!
+When you get stuck it's important that you ask for help at the right time and in the right way - this means you will be able to solve your problem as quickly as possible!
 
 ## Guide
 
