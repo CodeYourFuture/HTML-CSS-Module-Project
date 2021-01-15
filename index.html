@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Add a link to your CSS file here (use the line above to guide you) -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Karma</title>
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Add a link to your CSS file here (use the line above to guide you) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
+
 <body>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+  <!-- Add your HTML markup here -->
+  <main>
+    <nav class="menu_list">
+      <input type="checkbox" id="responsive_bar">
+      <label for="responsive_bar" class="ba_icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      <!-- logo -->
+      <picture>
+        <img src="img/karma-logo.svg" alt="karma-logo" />
+      </picture>
+      <ul>
+        <li><a href="#" title="meet Kama">meet kama</a></li>
+        <li><a href="#" title="how it work">how it works</a></li>
+        <li><a href="#" title="stores">stores</a></li>
+        <li><a href="#" title="blog">blog</a></li>
+        <li><a href="#" title="help">help</a></li>
+        <li><a href="#" title="login">log in</a></li>
+      </ul>
+    </nav>
+    <!-- introduction -->
+    <section class="hero_style">
+      <div class="introducing_Kama">
+        <p>introducing kama <br /></p>
+        <p class="second">Bring wi-fi with you, everywhere you go</p>
+        <button type="button">learn more</button>
+      </div>
+    </section>
+    <!-- features section -->
+    <section class="features">
+      <header>
+        <h1>Everyone need a little karma</h1>
+      </header>
+      <div class="description">
+        <div class="images">
+          <picture>
+            <img src="img/icon-devices.svg" alt="icon-devices" />
+          </picture>
+          <p>Internet for all devices </p>
+        </div>
+        <div class="images">
+          <picture>
+            <img src="img/icon-coffee.svg" alt="icon-coffee" />
+          </picture>
+          <p>Boost your productivity</p>
+        </div>
+        <div class="imagesrefill">
+          <picture>
+            <img src="img/icon-refill.svg" alt="icon-refill" />
+          </picture>
+          <p> Pay as you go</p>
+        </div>
+      </div>
+    </section>
+    <hr />
+  </main>
+
+  <!-- footer of the page -->
+  <footer>
+    <p>Join us on</p>
+    <div class="social_icon">
+      <a href="#"><img src="img/twitter-icon.svg" alt="twitter-icon" /></a>
+      <a href="#"><img src="img/facebook-icon.svg" alt="facebook-icon" /></a>
+      <a href="#"><img src="img/instagram-icon.svg" alt="instagram-icon." /></a>
+    </div>
+    <p>&copy; karma mobility inc</p>
+  </footer>
+
+  <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+  <!-- All the images you need are in the 'img' folder -->
 
 </body>
+
 </html>
