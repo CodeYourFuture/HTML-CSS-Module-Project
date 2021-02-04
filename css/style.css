@@ -20,35 +20,95 @@ body {
 align-self: end; Esto permite que se anule la alineación predeterminada 
 (o la especificada por align-items) para elementos flexibles individuales.
 */
-.navprincipal{
-    align-self: end;
-}
+    .navprincipal{
+     align-self: end;
+    }
 
-.imagenprincipal{
-    padding-top: 10px;
-}
+    .imagenprincipal{
+        padding-top: 10px;
+    }
 
-nav a{
-    text-decoration:none;
-    color:inherit;
-    font-size:14px;
-
+    nav a{
+        text-decoration:none;
+        color:inherit;
+        font-size:14px;
     } 
+
     nav li{
-    display:inline;
-    padding:5px 10px;
-    background-color:rgb(255, 255, 255);
-    text-align:center;
-    color:rgb(0, 0, 0);
-    
-    
-    }
-    nav li:hover{
-    background-color:rgb(211, 211, 211);
-    color:#000;
+        display:inline;
+        padding:5px 10px;
+        background-color:rgb(255, 255, 255);
+        text-align:center;
+        color:rgb(150, 22, 22);
     }
 
-   
+    nav li:hover{
+        background-color:rgb(211, 211, 211);
+        color:#000;
+    }
+
+    /* codigo ayuda con https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
+    
+    .mainprincipal{
+        
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .contenido{
+        background: url(../img/first-background.jpg);
+        width: 900px;
+        height: 500px;
+        background-size: cover;
+    }
+
+    .cuadroparatextos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+    }
+
+    h1 {
+       color: white;
+       font-weight: 100;
+       height: 9px;
+    }
+
+    h4{
+        color: darkgray;
+        font-weight: 100;
+        padding-bottom: 40px;
+
+
+    }
+
+
+     
+    /* padding es para dar relleno y especiado */
+    .boton{
+            text-decoration:none;
+            font-weight: 300;
+            font-size: 15px;
+            color: white;
+            padding-top:15px;
+            padding-bottom:15px;
+            padding-left:40px;
+            padding-right:40px;
+            background-color: coral;
+            border-radius:12px;
+
+    }
+
+
 
 /**
  * Add your custom styles below
