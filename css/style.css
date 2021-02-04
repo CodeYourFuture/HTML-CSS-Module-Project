@@ -18,6 +18,13 @@ body {
 
 /* Navigation Bar */
 
+.navigation-bar{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    position: fixed;
+
+}
+
 .navigation-bar li {
     display: inline-block;
     margin-left: 25px;
@@ -27,6 +34,12 @@ body {
 .logo {
     display: inline-block;
     vertical-align: baseline;
+ 
+}
+
+.navigation-bar .first-link{
+    color: #4c5058;
+    font-weight: 500px;
 }
 
 .navigation-bar a {
@@ -38,3 +51,4 @@ body {
     color:  #333333;
    
 }
+
