@@ -16,4 +16,25 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Navigation Bar */
 
+.navigation-bar li {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: baseline;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: #838994;
+}
+
+.navigation-bar a:not(.first-link):hover {
+    color:  #333333;
+   
+}
