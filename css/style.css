@@ -5,6 +5,50 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+   
+/* codigo ayuda con https://flexbox.help/ */
+.headprincipal{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: flex-end;
+}
+
+/* codigo ayuda con https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+align-self: end; Esto permite que se anule la alineación predeterminada 
+(o la especificada por align-items) para elementos flexibles individuales.
+*/
+.navprincipal{
+    align-self: end;
+}
+
+.imagenprincipal{
+    padding-top: 10px;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+
+    } 
+    nav li{
+    display:inline;
+    padding:5px 10px;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    color:rgb(0, 0, 0);
+    
+    
+    }
+    nav li:hover{
+    background-color:rgb(211, 211, 211);
+    color:#000;
+    }
+
+   
 
 /**
  * Add your custom styles below
