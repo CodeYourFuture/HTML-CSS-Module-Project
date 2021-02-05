@@ -93,7 +93,7 @@ align-self: end; Esto permite que se anule la alineación predeterminada
 
 
      
-    /* padding es para dar relleno y especiado */
+    /* padding es para dar relleno y espacio  */
     .boton{
             text-decoration:none;
             font-weight: 300;
@@ -108,6 +108,58 @@ align-self: end; Esto permite que se anule la alineación predeterminada
 
     }
 
+    .sectiontitulos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: stretch;
+
+    }
+
+    .sectiontitulos p{
+       color: rgb(77, 77, 77);
+       font-size: 1.7em;
+       padding-top: 45px;
+
+    }
+
+    .rowcontenido{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        width: 100%;
+    }
+    
+
+    .sectioncontenido{
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: stretch;       
+        
+    }
+
+    /*
+    space-between
+    es una propiedad abreviada de las propiedades align-contenty justify-content. space-between hace
+    que los elementos se distribuyan uniformemente en el contenedor de alineación. El primer elemento 
+    se coloca al borde del inicio del contenedor y el ultimo elemento con el borde final, 
+    los demas elementos se distribuyen uniformente.  */
+    .sectioncontenido  {
+        width: 700px;
+        place-content: space-between;
+        text-align: center;
+    }
+    
+ 
+    
 
 
 /**
