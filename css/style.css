@@ -1,9 +1,9 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
 
 /**
@@ -17,3 +17,136 @@ body {
  */
 
 
+/* General  styles */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+/* h1 {
+    font-size: 3em;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 1rem 0;
+} */
+
+/* Navigation styles */
+nav {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#logo {
+    margin: 20px;
+    width: 30px;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    word-break: break-all;
+}
+
+li {
+    margin: 15px 10px;
+}
+
+a {
+    color: rgb(129, 123, 123);
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #f15a29;
+}
+
+/* selected link */
+a:active,
+a:focus {
+    font-weight: 600;
+}
+
+
+/* Content styles */
+
+.intro {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.intro-img {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.intro-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-size: 1.25em;
+    background-color: #f15a29;
+    border-radius: 5px;
+    padding: 20px 20px;
+    border: none;
+}
+
+/* Actions style */
+.actions {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+main h2 {
+    margin-top: 5em;
+}
+
+.item {
+    margin: 2em;
+}
+
+.item img {
+    height: 30%;
+
+}
+
+@media screen and (min-width: 601 px) {
+    h1, h2, h3, h5 {
+        font-size: 150%;
+
+    }
+}
+
+@media screen and (max-width: 600 px) {
+    h1, h2, h3, h5 {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1, h2, h3, h5 {
+        font-size: 50%;
+    }
+}
