@@ -16,6 +16,8 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+
 /* Navigation Bar */
 
 .container {
@@ -56,6 +58,8 @@ body {
     color:  rgb(255, 81, 0); 
 }
 
+
+
 /*First Section */
 
 .background {
@@ -74,9 +78,10 @@ body {
     font-size: x-large;
     
 }
-.section-container h1,h3 {
-font-weight: inherit;
+    .section-container h1,h3 {
+    font-weight: inherit;
 }
+
 .button-learn  {
     display:flex;
     justify-content: center;
@@ -88,7 +93,10 @@ font-weight: inherit;
     padding: 20px 30px;
     border-radius: 10px;
     color: white;
+    font-weight: bold;
 }
+
+
 
 
 /*Second section */
@@ -108,9 +116,11 @@ font-weight: inherit;
 .devices-images img {
     display:inline-block;
     padding-top: 10px;
+    margin: 20px;
 }
 
 .text h3 {
+display:inline-block;
 font-weight: inherit;
 font-size: x-large;
 padding-bottom: 60px;
@@ -119,13 +129,20 @@ padding-bottom: 60px;
 .devices-images {
     display: flex;
     justify-content: center;
+    
+
 }
+    
 
  .text h3 {
-    display: flex;
-    justify-items: inherit;
-    
-}
+     display: flex;
+     justify-content: center;
+     justify-content: space-evenly;
+     margin: 20px; 
+     padding-right: 20px;
+     
+ }
+
 
 
 /* The Footer */
