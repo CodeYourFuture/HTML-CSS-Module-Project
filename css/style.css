@@ -157,6 +157,26 @@ align-self: end; Esto permite que se anule la alineación predeterminada
         place-content: space-between;
         text-align: center;
     }
+
+    .seccionfooter{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .p1   {
+        color: black ;
+        font-size: 0.9em;
+    }
+    
+    .p2 {
+        color:darkgray;
+        font-size: 0.8em;
+    }
+
     
  
     
