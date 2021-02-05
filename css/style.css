@@ -7,6 +7,22 @@ body {
 }
    
 /* codigo ayuda con https://flexbox.help/ */
+
+/* display: flex:
+Un área del documento que contiene un flexbox es llamada contendedor flex.
+ Para crear un contenedor flex, establecemos la propiedad del área del contenedor
+  display como flex o inline-flex 
+  
+  flex-wrap: 
+  Cuando los ítems sean demasiados para desplegarlos en una línea, serán repartidos en la línea siguiente
+  en este caso no usamos esta propiedad y se deja en nowrap
+
+  flex-direction:
+    nos permite cambiar la dirección de cómo los ítems son desplegados
+    column: el eje principal se cambiará y los ítems aparecerán en una columna
+    row: el eje principal se cambiará y los ítems aparecerán en una fila
+    column-reverse: las líneas de inicio y fin serán nuevamente puestas al revés.
+  */
 .headprincipal{
     display: flex;
 	flex-direction: row;
@@ -14,6 +30,8 @@ body {
 	justify-content: space-around;
 	align-items: baseline;
 	align-content: flex-end;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
 /* codigo ayuda con https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
@@ -23,6 +41,8 @@ align-self: end; Esto permite que se anule la alineación predeterminada
     .navprincipal{
      align-self: end;
     }
+
+
 
     .imagenprincipal{
         padding-top: 10px;
@@ -39,12 +59,16 @@ align-self: end; Esto permite que se anule la alineación predeterminada
         padding:5px 10px;
         background-color:rgb(255, 255, 255);
         text-align:center;
-        color:rgb(150, 22, 22);
+        color:rgb(121 121 121 / 78%);
+    }
+
+    nav li:visited{
+        color: black;
+        font-weight: 500;
     }
 
     nav li:hover{
-        background-color:rgb(211, 211, 211);
-        color:#000;
+        color:rgb(224, 124, 30);
     }
 
     /* codigo ayuda con https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
