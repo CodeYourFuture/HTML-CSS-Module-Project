@@ -8,7 +8,9 @@ body {
    
 /* codigo ayuda con https://flexbox.help/ */
 
-/* display: flex:
+/* Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principaly el eje cruzado
+
+display: flex:
 Un área del documento que contiene un flexbox es llamada contendedor flex.
  Para crear un contenedor flex, establecemos la propiedad del área del contenedor
   display como flex o inline-flex 
@@ -26,10 +28,8 @@ Un área del documento que contiene un flexbox es llamada contendedor flex.
 .headprincipal{
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: baseline;
-	align-content: flex-end;
     margin-left: 110px;
     margin-right: 110px;
 }
