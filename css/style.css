@@ -6,6 +6,88 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+#logo {width:25px;
+}
+
+header {
+    background-color: #ffffff;
+    color: #6d6868;
+    width: 100%;
+    padding: 20px;
+  }
+  
+#header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.topnav a {
+    float: left;
+    color: #625e5e;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .topnav a:hover {
+    color: rgb(219, 113, 43);
+  }
+  
+  .topnav a.active {
+    color: #625e5e;
+    font-weight: bold;
+  }
+  
+
+.introducing-karma {
+    padding: 5%;
+    background-image: url(../img/first-background.jpg);
+    background-size:auto;
+    width:90%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    Align-items: center; 
+}
+
+.introducing-karma button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 25px;
+    background-color: rgb(212, 116, 51);
+    color: #fff;
+    border:none;
+    border-radius: 2px;
+    margin-top: 1.5em;
+}
+
+.introducing-karma h1 {
+    font-weight: lighter;
+}
+
+h2 {color:#625e5e; 
+    text-align: center;
+    padding: 2%;
+}
+
+.needs {color:#625e5e; 
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content:space-between;
+    align-content: center;
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+  }
+
 /**
  * Add your custom styles below
  * 
