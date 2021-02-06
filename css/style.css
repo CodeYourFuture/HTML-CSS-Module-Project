@@ -1,19 +1,131 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+
+/*****HEADER*****/
+
+header {
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul li,
+nav ul li a {
+  color: rgb(145, 143, 143);
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+#current {
+  color: black;
+  font-weight: 500;
+}
+
+/*****LANDING*****/
+
+.landing {
+  background-image: url("../img/first-background.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landing h1 {
+  padding-top: 4em;
+  margin-bottom: 0;
+}
+
+.landing h4 {
+  margin: 1%;
+}
+
+.landing button {
+  background-color: rgb(241, 88, 50);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.75em;
+  padding: 1% 2%;
+  margin-bottom: 10em;
+}
+
+.landing button:hover {
+  background-color: red;
+}
+
+/*****CONTENT*****/
+
+section {
+  margin-top: 4em;
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+section .icons {
+  display: block;
+}
+
+/*****FOOTER*****/
+
+footer {
+  border-top: 0.5px solid rgb(230, 226, 226);
+  margin: 4em 0;
+}
+
+.smicons {
+  display: flex;
+  justify-content: center;
+  margin: -1em;
+}
+
+footer img {
+  border: 0.5px solid rgb(230, 226, 226);
+  border-radius: 50px;
+  margin: 0.5em;
+  padding: 0.7em;
+}
+
+footer h6:first-child {
+  font-weight: 400;
+}
+
+footer h6:last-child {
+  color: rgb(145, 143, 143);
 }
 
 /**
- * Add your custom styles below
- * 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
