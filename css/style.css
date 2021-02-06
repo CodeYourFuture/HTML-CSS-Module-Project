@@ -22,6 +22,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 h5 {
     font-weight: 300;
 }
@@ -133,6 +134,18 @@ main h2 {
     height: 30%;
 
 }
+
+/* Footer styles */
+footer img {
+    display: inline-block;
+    height: 40px;
+    border:1px solid  gray;
+    /* border-color: rgb(136, 132, 132); */
+    border-radius: 50%;
+    margin: 20px;
+    padding: 15px;
+}
+
 
 @media screen and (min-width: 1001px) {
     h1 {
