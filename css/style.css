@@ -27,7 +27,6 @@ body {
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 5px;
-    align-items: baseline;
     width: 100%;
     border-bottom: 1px solid grey; 
 }
@@ -107,7 +106,7 @@ body {
 }
 
 .content h2 {
-    text-align:center;
+    text-align: center;
     padding-top: 50px;
     font-size: xx-large;
     font-weight: inherit;
@@ -116,7 +115,7 @@ body {
 .devices-images img {
     display:inline-block;
     padding-top: 10px;
-    margin: 20px;
+    
 }
 
 .text h3 {
@@ -131,15 +130,17 @@ padding-bottom: 60px;
     justify-content: center;
 }
     
-
- .text h3 {
+ .text  {
      display: flex;
-     justify-content: center;
-     justify-content: space-evenly;
-     margin: 20px; 
-     padding-right: 20px;
+     flex-direction: column;
+     margin: 40px;
+    
+     
  }
 
+.text img ,h3 {
+    align-self: center;
+}
 
 
 /* The Footer */
