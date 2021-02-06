@@ -107,18 +107,21 @@ align-self: end; Esto permite que se anule la alineación predeterminada
         align-items: center;
         align-content: center;
         height: 100%;
+        text-align: center;
     }
 
     h1 {
        color: white;
        font-weight: 100;
-       height: 9px;
+       height: 1.5rem;
+       font-size: 3rem;
     }
 
     h4{
         color: darkgray;
         font-weight: 100;
-        padding-bottom: 40px;
+        padding-bottom: 2rem;
+        font-size: 1.5rem;
     }
 
     p{
@@ -224,6 +227,10 @@ align-self: end; Esto permite que se anule la alineación predeterminada
             align-items: center;
             align-content: center;
         }
+
+        h4 {
+            padding-top: 4rem;
+        }
       }
 
     .seccionfooter{
@@ -232,6 +239,14 @@ align-self: end; Esto permite que se anule la alineación predeterminada
         justify-content: center;
         align-items: center;
         align-content: center;
+        border-top: #d8d8d85c  0.1rem solid;
+        margin-top: 4rem
+    }
+
+    .imgbordes{
+        border-radius: 50%;
+        padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+        border: #d8d8d8 0.1rem solid
     }
 
     .p1   {
@@ -241,8 +256,9 @@ align-self: end; Esto permite que se anule la alineación predeterminada
     
     .p2 {
         color:darkgray;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
+
 
     
  
