@@ -28,11 +28,19 @@ Un área del documento que contiene un flexbox es llamada contendedor flex.
 .headprincipal{
     display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: baseline;
     margin-left: 110px;
     margin-right: 110px;
 }
+
+@media screen and (max-width: 600px) {
+    nav li a:not(:first-child) {display: none;}
+    nav li a.icon {
+      float: right;
+      display: block;
+    }
+  }
 
 /* codigo ayuda con https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
 align-self: end; Esto permite que se anule la alineación predeterminada 
@@ -86,8 +94,8 @@ align-self: end; Esto permite que se anule la alineación predeterminada
 
     .contenido{
         background: url(../img/first-background.jpg);
-        width: 900px;
-        height: 500px;
+        width: 100%; 
+        height: 600px;
         background-size: cover;
     }
 
@@ -111,8 +119,11 @@ align-self: end; Esto permite que se anule la alineación predeterminada
         color: darkgray;
         font-weight: 100;
         padding-bottom: 40px;
+    }
 
-
+    p{
+        font-size: 1.5rem;
+        text-align: center;
     }
 
 
@@ -121,7 +132,7 @@ align-self: end; Esto permite que se anule la alineación predeterminada
     .boton{
             text-decoration:none;
             font-weight: 300;
-            font-size: 15px;
+            font-size: 1rem;
             color: white;
             padding-top:15px;
             padding-bottom:15px;
@@ -145,30 +156,36 @@ align-self: end; Esto permite que se anule la alineación predeterminada
     .sectiontitulos p{
        color: rgb(77, 77, 77);
        font-size: 1.7em;
-       padding-top: 45px;
+       padding: 3rem 2rem 0px 2rem;
+       text-align: center;
 
+    }
+
+    .row4{
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
     }
 
     .rowcontenido{
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
         width: 100%;
     }
+
+
     
 
-    .sectioncontenido{
-        display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: baseline;
-	align-content: stretch;       
-        
-    }
+
+
+   
 
     /*
     space-between
@@ -177,15 +194,41 @@ align-self: end; Esto permite que se anule la alineación predeterminada
     se coloca al borde del inicio del contenedor y el ultimo elemento con el borde final, 
     los demas elementos se distribuyen uniformente.  */
     .sectioncontenido  {
-        width: 700px;
-        place-content: space-between;
-        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center; 
+        padding: 0px 10rem 0px 10rem;
     }
+
+
+    @media screen and (max-width: 600px) {
+
+        .sectioncontenido {
+            display: flex;
+            flex-direction: column;
+             flex-wrap: nowrap;
+             padding: 0% ;
+             align-content: center;
+             align-items: center;
+        }  
+
+        .row4 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+        }
+      }
 
     .seccionfooter{
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -193,7 +236,7 @@ align-self: end; Esto permite que se anule la alineación predeterminada
 
     .p1   {
         color: black ;
-        font-size: 0.9em;
+        font-size: 1.2rem;
     }
     
     .p2 {
