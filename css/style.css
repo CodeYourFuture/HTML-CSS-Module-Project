@@ -32,6 +32,7 @@ Un área del documento que contiene un flexbox es llamada contendedor flex.
 	align-items: baseline;
     margin-left: 4em;
     margin-right: 4em;
+    
 }
 
 /* codigo ayuda con https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
@@ -118,6 +119,8 @@ align-self: end; Esto permite que se anule la alineación predeterminada
         font-weight: 100;
         padding-bottom: 2rem;
         font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     p{
@@ -212,6 +215,10 @@ align-self: end; Esto permite que se anule la alineación predeterminada
     }
 
     @media screen and (max-width: 600px) {
+
+        .headprincipal{
+            margin-bottom: 0.8em;
+        }
 
         .sectioncontenido {
             display: flex;
