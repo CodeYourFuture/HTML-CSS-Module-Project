@@ -15,10 +15,25 @@ header {
     width: 100%;
     padding: 20px;
   }
-  
+
+
+@media screen and (max-width: 400px) {
+    .topnav {
+      visibility: hidden;
+
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    .hiddenbar {
+      visibility: hidden;
+
+    }
+  }
+
 #header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
 .topnav a {
@@ -73,20 +88,22 @@ h2 {color:#625e5e;
 
 .needs {color:#625e5e; 
     font-weight: lighter;
-    display: flex;
+    display: flex;     
+    justify-content: center;     
     flex-direction: row;
-    align-items: center; 
-    justify-content:space-between;
-    align-content: center;
 }
 
-.card {
-    display: inline-block;
+.card1, .card2, .card3 {
     background-color: white;
     padding: 20px;
     margin: 10px;
     width: 30%;
+    display: flex;     
+    justify-content:center;     
+    flex-direction: column;
+    align-items: center;
   }
+
 
 /**
  * Add your custom styles below
