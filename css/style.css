@@ -6,6 +6,132 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+img {
+   width: 50px;
+   margin-left: 150px;
+}
+.navigation{
+    display: flexbox;
+}
+.navigation ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+.navigation ul li {
+ display: inline-block;
+ justify-content: space-between;
+}
+.navigation ul li a  {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    text-align: center;
+   
+   
+   }
+
+
+
+ .header {
+display: block;
+justify-content:space-between;
+padding: 1.5rem;
+
+ }
+
+ .header {
+    display: block;
+    justify-content:space-between;
+    padding: 1.5rem;
+    
+     }
+         ul li{
+            font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+                color:white;
+                padding: 1% 5px;
+                display: flex;
+                font-size: 0.8rem;
+                font-family: cursive;
+              
+                
+        
+        }
+        ul li a :hover{ 
+            color: red;
+        }
+       header.header {
+           display: flex;
+          
+        }
+        .intro { 
+        display: block;
+        background-image: url(../img/first-background.jpg);
+        background-size: cover;
+        height: 18em;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       
+        
+
+        }
+        .intro p { 
+            text-align: center;
+            height: 2.5em;
+           
+          }
+         
+          #but-nav{ 
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+          
+          }
+         #pafo {
+             margin-top: none;
+             padding-top: 3rem;
+             font-size: 15px;
+          }
+          button {
+          background:tomato;
+          color: white;
+          text-align: center;
+          font-weight: bold;
+          font-size: 15px;
+ 
+        }
+        
+#tilo {
+    text-align: center;
+}
+#tio-nav p {
+   text-align: center;
+   font-size: 14px;
+   display: inline-block;
+   margin:145px;
+    
+}
+
+
+.internet-nav {
+    width: 8rem;
+    display: ;
+   
+}
+.internet-nav img {
+    width: 11em;
+    
+    display: inline;
+ 
+
+}
+
+
+
+
 /**
  * Add your custom styles below
  * 
