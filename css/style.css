@@ -5,6 +5,55 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
+ul {
+    flex-direction: row;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+} 
+
+nav li{
+    display:inline;
+    padding:5px 10px;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    color:rgb(121 121 121 / 78%);
+}
+
+nav li:visited{
+    color: black;
+    font-weight: 500;
+}
+
+nav li:hover{
+    color:rgb(224, 124, 30);
+}
+
+h1 {
+    color: white;
+    font-weight: 100;
+    height: 1.5rem;
+    font-size: 3rem;
+ }
+
+ h4{
+     color: darkgray;
+     font-weight: 100;
+     padding-bottom: 2rem;
+     font-size: 1.5rem;
+     margin-left: 1rem;
+     margin-right: 1rem;
+ }
+
+ p{
+     font-size: 1.5rem;
+     text-align: center;
+ }
+
    
 /* codigo ayuda con https://flexbox.help/ */
 
@@ -25,6 +74,7 @@ Un área del documento que contiene un flexbox es llamada contendedor flex.
     row: el eje principal se cambiará y los ítems aparecerán en una fila
     column-reverse: las líneas de inicio y fin serán nuevamente puestas al revés.
   */
+
 .headprincipal{
     display: flex;
 	flex-direction: row;
@@ -47,33 +97,6 @@ align-self: end; Esto permite que se anule la alineación predeterminada
 
     .imagenprincipal{
         padding-top: 10px;
-    }
-
-    ul {
-        flex-direction: row;
-    }
-
-    nav a{
-        text-decoration:none;
-        color:inherit;
-        font-size:14px;
-    } 
-
-    nav li{
-        display:inline;
-        padding:5px 10px;
-        background-color:rgb(255, 255, 255);
-        text-align:center;
-        color:rgb(121 121 121 / 78%);
-    }
-
-    nav li:visited{
-        color: black;
-        font-weight: 500;
-    }
-
-    nav li:hover{
-        color:rgb(224, 124, 30);
     }
 
     /* codigo ayuda con https://css-tricks.com/snippets/css/a-guide-to-flexbox/  */
@@ -107,27 +130,7 @@ align-self: end; Esto permite que se anule la alineación predeterminada
         text-align: center;
     }
 
-    h1 {
-       color: white;
-       font-weight: 100;
-       height: 1.5rem;
-       font-size: 3rem;
-    }
-
-    h4{
-        color: darkgray;
-        font-weight: 100;
-        padding-bottom: 2rem;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    p{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
+    
 
      
     /* padding es para dar relleno y espacio  */
@@ -215,6 +218,14 @@ align-self: end; Esto permite que se anule la alineación predeterminada
     }
 
     @media screen and (max-width: 600px) {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h4 {
+            padding-top: 4rem;
+        }
 
         .headprincipal{
             margin-bottom: 0.8em;
@@ -237,11 +248,6 @@ align-self: end; Esto permite que se anule la alineación predeterminada
             align-items: center;
             align-content: center;
         }
-
-        h4 {
-            padding-top: 4rem;
-        }
-
         .nav {
             display:none;
         }
@@ -253,10 +259,7 @@ align-self: end; Esto permite que se anule la alineación predeterminada
             display: block !important;
         }
 
-        ul {
-            display: flex;
-            flex-direction: column;
-        }
+       
       }
 
     .seccionfooter{
