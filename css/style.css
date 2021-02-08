@@ -20,6 +20,10 @@ body {
 
 /* Navigation Bar */
 
+#nav-toggle {
+    display: none;
+}
+
 .container {
     background-color: white;
     display: flex;
@@ -68,6 +72,7 @@ body {
     overflow: hidden;
     height: 700px;
     background-size: cover;
+    width: 100%;
 }
 
 .section-container{
@@ -96,9 +101,15 @@ body {
 }
 
 
-
-
 /*Second section */
+
+
+#flex-for-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 .last-section li {
     list-style-type: none;
@@ -115,7 +126,8 @@ body {
 .devices-images img {
     display:inline-block;
     padding-top: 10px;
-    
+    width: 127px;
+
 }
 
 .text h3 {
@@ -134,6 +146,10 @@ padding-bottom: 60px;
      display: flex;
      flex-direction: column;
      margin: 40px;
+     width: 130px;
+    height: 130px;
+    padding-bottom: 100px;
+
     
      
  }
@@ -172,3 +188,86 @@ padding-bottom: 60px;
     margin-left: 50px;
     color: grey;
 }
+
+/*Media Queries for the nav bar*/
+
+@media screen and (max-width: 400px) {
+    section, .container {
+        background-color : olive;
+        overflow: hidden;
+    }
+
+   
+        .logo {
+            position:relative;
+            top: 0;
+            right: 0;
+            margin-right: 250px;
+           
+        }
+   
+}
+
+
+@media screen and (max-width: 400px) {
+
+    #flex-for-mobile {
+       flex-flow: row nowrap;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+     .nav{ 
+         display: none;
+     }
+
+     .nav-toggle:ckecked ~ .nav {
+         display: block;
+     }
+
+     .nav-toggle{
+         display: none;
+         position: absolute;
+         top: 0;
+         right: 0;
+         margin-top: 40px;
+         margin-right: 12px;
+     }
+
+     .nav-toggle-label {
+         position: absolute;
+         top: 0;
+         right: 0;
+         margin-top: 40px;
+         margin-right: 12px;
+     }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 1em;
+        border-radius: 2px;
+        float: right;
+        position: relative;
+    }
+}
+
+.nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 5px;
+
+    }
+
+    .nav-toggle-label span::after {
+        top: 5px;
+    }
