@@ -158,6 +158,10 @@ padding-bottom: 60px;
     align-self: center;
 }
 
+hr {
+    width : 60%;
+    opacity: 30%;
+}
 
 /* The Footer */
 
@@ -193,7 +197,7 @@ padding-bottom: 60px;
 
 @media screen and (max-width: 400px) {
     section, .container {
-        background-color : olive;
+        background-color : rgb(230, 219, 214);
         overflow: hidden;
     }
 
@@ -212,10 +216,8 @@ padding-bottom: 60px;
 @media screen and (max-width: 400px) {
 
     #flex-for-mobile {
-       flex-flow: row nowrap;
-        box-sizing: border-box;
-        align-items: center;
-        justify-content: center;
+       display: block;
+       align-self: stretch;
        
     }
 
@@ -270,4 +272,11 @@ padding-bottom: 60px;
 
     .nav-toggle-label span::after {
         top: 5px;
+    }
+
+    @media screen and (max-width: 400px) {
+        footer  .border img {
+            background-color: rgb(230, 219, 214);
+        }
+
     }
