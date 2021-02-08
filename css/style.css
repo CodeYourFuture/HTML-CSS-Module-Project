@@ -143,8 +143,6 @@ body {
 }
 
 
-
-
 hr {
     width : 60%;
     opacity: 30%;
@@ -198,6 +196,7 @@ hr {
    
 }
 
+/* Nav bar and hamburger menu */
 
 @media screen and (max-width: 400px) {
 
@@ -277,8 +276,6 @@ hr {
     }
 
 
-
-
     /* Media Query for the footer */
 
     @media screen and (max-width: 400px) {
@@ -287,13 +284,13 @@ hr {
         }
 
     }
-
+     
+    /*Media Query for the body */
+    
 @media screen and (max-width: 400px) {
 
 body {
     background-color: rgb(250, 239, 235);
 }
-
-
 
 }
