@@ -18,6 +18,33 @@ body {
 
 
 /* General  styles */
+h1 {
+    font-size: 6vw;
+    /* font-size: 2em; */
+    margin: 3vw 0;
+    /* margin: 1rem 0; */
+}
+
+h2 {
+    font-size: 4.5vw;
+    /* font-size: 1.5em; */
+}
+
+h3 {
+    /* font-size: 0.75em; */
+    font-size: 2.25vw;
+    /* margin: 0.5rem 0; */
+    margin: 1.5vw 0;
+}
+
+h4 {
+    font-size: 2vw;
+    margin: 4.5vw;
+}
+
+a {
+    font-size: 2vw;
+}
 
 h1,
 h2,
@@ -36,8 +63,8 @@ nav {
 }
 
 #logo {
-    margin: 20px;
-    width: 30px;
+    margin: 3.5vw;
+    width: 2vw;
 }
 
 ul {
@@ -100,7 +127,7 @@ button {
     /* border-radius: 5px; */
     border-radius: 1vw;
     /* padding: 20px 20px; */
-    padding: 1.25vw 1.25vw;
+    padding: 2vw;
     border: none;
 }
 
@@ -129,8 +156,6 @@ hr {
     width: 80%;
 }
 
-
-
 footer img {
     display: inline-block;
     /* height: 30px; */
@@ -143,98 +168,76 @@ footer img {
     padding: 2vw;
 }
 
+@media screen and (max-width: 400px) {
+    .intro-img {
+        height: 100px;
+        object-fit: cover;
+    }
 
+    ul {
+        visibility: hidden;
+    }
 
+    .actions {
+        /* display: block; */
+        flex-wrap: wrap;
+    }
 
-/* @media screen and (max-width: 480px) {
+    .item img {
+        width: 60%;
+        height: 60%;
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 401px) {
     h1 {
-        font-size: 1vw;
-        margin: 0.5vw 0;
+        font-size: 2em;
+        margin: 1rem 0;
     }
 
     h2 {
-        font-size: 0.75em;
+        font-size: 1.5em;
     }
 
     h3 {
-        font-size: 0.35em;
-        margin: 0.25rem 0;
-    }
-
-    a {
-        font-size: 0.35em;
-    }
-
-    button {
         font-size: 0.75em;
-        border-radius: 2px;
-        padding: 10px 10px;
-    }
-
-
-    .item {
-        margin: 1em;
-    }
-
-    li {
-        margin: 0.5em;
-    }
-
-    footer img {
-        height: 10px;
-    }
-
-} */
-
-/* @media screen and (max-width: 1000px) and (min-width: 481px) { */
-    h1 {
-        font-size: 6vw;
-        /* font-size: 2em; */
-        margin: 3vw 0;
-        /* margin: 1rem 0; */
-    }
-
-    h2 {
-        font-size: 4.5vw;
-        /* font-size: 1.5em; */
-    }
-
-    h3 {
-        /* font-size: 0.75em; */
-        font-size: 2.25vw;
-        /* margin: 0.5rem 0; */
-        margin: 1.5vw 0;
+        margin: 0.5rem 0;
     }
 
     h4 {
-        font-size: 2vw;
-        margin: 4.5vw;
-    } 
-
-    a {
-        font-size: 0.6em;
-
+        font-size: 0.5em;
+        margin: 0.35em;
     }
 
+}
 
-    .item {
-        margin: 3vw;
+@media screen and (min-width: 901px) {
+    h1 {
+        font-size: 4em;
+        margin: 2rem 0;
     }
 
-    li {
-        margin: 1.5vw;
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin: 1rem 0;
+    }
+
+    h4 {
+        font-size: 1em;
+        margin: 0.75em;
     }
 
     button {
-        /* font-size: 1em; */
-        font-size: 3vw;
-        /* border-radius: 5px; */
-        border-radius: 1vw;
-        /* padding: 15px 15px; */
-        padding: 3vw 3vw;
+        font-size: 2.5em;
+        background-color: #f15a29;
+        border-radius: 5px;
+        padding: 20px 20px;
+        border: none;
     }
 
-    footer img {
-        /* height: 10px; */
-        height: 2vw;
-    }
+}
