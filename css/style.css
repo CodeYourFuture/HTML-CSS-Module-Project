@@ -103,14 +103,6 @@ body {
 
 /*Second section */
 
-
-#flex-for-mobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
 .last-section li {
     list-style-type: none;
     display: inline-block;   
@@ -123,40 +115,35 @@ body {
     font-weight: inherit;
 }
 
-.devices-images img {
-    display:inline-block;
-    padding-top: 10px;
-    width: 127px;
-
+.devices-images {
+    margin: 0 auto;
+    font-size: larger;
+    padding-bottom: 40px;
+    padding-top: 20px;
+ 
 }
 
-.text h3 {
-display:inline-block;
-font-weight: inherit;
-font-size: x-large;
-padding-bottom: 60px;
-}
 
 .devices-images {
     display: flex;
     justify-content: center;
+    
 }
     
- .text  {
-     display: flex;
-     flex-direction: column;
-     margin: 40px;
-     width: 130px;
-    height: 130px;
-    padding-bottom: 100px;
-
-    
-     
- }
+.text  {
+    text-align: center;
+    margin: 10px;
+    padding-right: 40px;
+}
+ 
 
 .text img ,h3 {
     align-self: center;
+
 }
+
+
+
 
 hr {
     width : 60%;
@@ -201,7 +188,6 @@ hr {
         overflow: hidden;
     }
 
-   
         .logo {
             position:relative;
             top: 0;
@@ -215,12 +201,7 @@ hr {
 
 @media screen and (max-width: 400px) {
 
-    #flex-for-mobile {
-       display: block;
-       align-self: stretch;
-       
-    }
-
+   
      .nav{ 
          display: none;
      }
@@ -274,9 +255,45 @@ hr {
         top: 5px;
     }
 
+    /* Media Query for the second section */
+
+    @media screen and (max-width: 400px) {
+        
+        .devices-images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+    
+        }
+
+        .devices-images img {
+            max-width: 50px;
+        }
+
+        .devices-images h3 {
+            margin: o auto;
+            font-size: 20px;
+        }
+    }
+
+
+
+
+    /* Media Query for the footer */
+
     @media screen and (max-width: 400px) {
         footer  .border img {
             background-color: rgb(230, 219, 214);
         }
 
     }
+
+@media screen and (max-width: 400px) {
+
+body {
+    background-color: rgb(250, 239, 235);
+}
+
+
+
+}
