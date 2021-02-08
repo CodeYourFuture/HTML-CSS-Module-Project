@@ -4,7 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+  
 }
+
 
 /**
  * Add your custom styles below
@@ -15,5 +17,184 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+body{
+ margin: 0;
+ font-size: 1.5rem;
+ line-height: 1.5;
+
+}
+  
+/* Meet Karma Bold */
+#bold {
+    font-weight: bold;
+    color:#4F5258;
+}
+
+#bold, .navbar ul li a:hover{
+    color: #4D5057;
+}
+h1, h3{
+    font-weight: 100;
+}
+/* Text h1 h3 */
+.text {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text1{
+   text-align: center;
+}
+
+/* Navbar Fixed */
+header {
+    width: 100%;
+    right: 0;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    
+}
+
+/* Button */
+button{
+    background-color: #F15B2A;
+    font-size: 1.5rem ;
+    padding-top: 2px;
+    border: none;
+    border-radius: 4px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+/*First Image */
+#container img {
+width: 100%;
+}
+#container{
+    position: relative;
+    z-index: -1;
+}
+
+/* Devices */
+#devices {
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+  
+ 
+    
+}
+/* Devices text2 */
+.text2{
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+    margin-right: 60px;
+    font-size: x-large;
+    
+}
+ 
+.inc{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: grey;
+}
+.text3{
+    display: flex;
+    justify-content: center;
+}
+
+/* socialMedia-space between */
+.socialMedia{
+    display:flex;
+    justify-content: center;
+    column-gap: 20px;
+   
+}
+/* CIRCLES around icons */
+ #circle .socialMedia img {
+     border-radius: 50%;
+     width: 34px;
+     height: 34px;
+     padding: 10px;
+     border: 1px solid grey;
+     text-align: center;
+     
+ }
+/* Space between text and icons */
+h6 {
+    margin: 10px;
+}
 
 
+ *, ::after, ::before{
+     box-sizing: border-box;
+ }
+
+ .logo{
+     position: absolute;
+     width: 60px;
+     padding-right: 0;
+     padding-left: 33px;
+     padding-top: 33px;
+     margin-left: 101px;
+
+ }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  li {
+    float: left;
+    
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:#A1A5AC;
+   }
+
+    .navbar a:hover{
+       text-decoration: none;
+       color: #E6805E;
+
+   }
+  
+   /* navbar */
+ nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 33px;
+    padding-left: 0;
+    padding-top: 33px;
+    margin-right: 101px;
+    background-color: white;
+    
+ }
+.navbar ul li {
+    margin-right:30px ;    
+}
+ #image{
+     display: flex;
+     justify-content:center;
+     align-items:center;
+ }
+
+ /* @media screen and (max-width: 400px)
+ .headerContainer{
+     background-color:red;
+    visibility:hidden;
+   
+} */
