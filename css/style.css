@@ -67,12 +67,17 @@ nav {
     width: 2vw;
 }
 
+#menu {
+    margin: 1.5vw;
+    width: 3vw;
+}
+
 ul {
     list-style: none;
     display: inline-flex;
     justify-content: flex-end;
     padding-left: 0;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 li {
@@ -174,8 +179,8 @@ footer img {
         object-fit: cover;
     }
 
-    ul {
-        visibility: hidden;
+    #menu {
+        visibility: visible;
     }
 
     .actions {
@@ -210,6 +215,11 @@ footer img {
         margin: 0.35em;
     }
 
+    #menu {
+        visibility: hidden;
+        width: 0;
+    }
+
 }
 
 @media screen and (min-width: 901px) {
@@ -230,6 +240,11 @@ footer img {
     h4 {
         font-size: 1em;
         margin: 0.75em;
+    }
+
+    #menu {
+        visibility: hidden;
+        width: 0;
     }
 
     button {
