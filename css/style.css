@@ -18,97 +18,52 @@ body {
 
 
 /* General  styles */
-h1 {
-    /* font-size: 6vw; */
-    font-size: 2em;
-    /* margin: 3vw 0; */
-    margin: 1rem 0;
-}
-
-h2 {
-    /* font-size: 4.5vw; */
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 0.75em;
-    /* font-size: 2.25vw; */
-    margin: 0.5rem 0;
-    /* margin: 1.5vw 0; */
-}
-
-h4 {
-    font-size: 2vw;
-    margin: 4.5vw;
-}
-
-a {
-    font-size: 1em;
-}
-
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a {
     font-weight: 300;
 }
+
+
+
+
 
 /* Navigation styles */
 header {
     position: fixed;
     width: 100%;
+    height: 5em;
     top: 0;
-
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
     z-index: 2;
 }
 
-nav {
-    width: 70%; 
-    margin: 2em auto; 
-    /* display: inline-flex; */
-    justify-content: center;
-}
-
 #logo {
-    position: fixed;
-    top: 2em;
-    left: 2em;
-    /* margin: 3.5vw; */
-    width: 2vw;
-    /* z-index: 2; */
+    margin-left: 2em;
+    width: 1.5em;
 }
 
-#menu {
-    /* position: fixed;
-    top: 2em;
-    right: 2em;
-    margin: 1.5vw;
-    width: 3vw;
-    z-index: 2; */
+/* Hide check-box */
+#menu__toggle {
+    opacity: 0;
 }
 
 ul {
-    width: 90%;
-    margin: 2em 4em;
-    position: fixed;
-    top: 0;
+    width: 70%;
     list-style: none;
-    background-color: white;
     display: flex;
     justify-content: flex-end;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 20px;
-    /* word-break: break-all; */
-    z-index: 1;
+    margin-right: 5em;
 }
 
 li {
-    margin: 15px 10px;
-    /* margin: 3vw 2vw; */
+    margin: 0.75em;
 }
 
 a {
@@ -130,7 +85,8 @@ a:focus {
 
 /* Content styles */
 main {
-    margin-top: 4em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .intro {
@@ -141,9 +97,10 @@ main {
 }
 
 .intro-img {
-    width: 100%;
-    margin: 0 auto;
-
+    max-width: 100%;
+    height: 40em;
+    object-fit: cover;
+    object-position: 65% 50%;
 }
 
 .intro-content {
@@ -155,35 +112,35 @@ main {
 }
 
 button {
-    /* font-size: 1.25em; */
-    font-size: 3vw;
+    font-size: 1.25em;
     background-color: #f15a29;
-    /* border-radius: 5px; */
-    border-radius: 1vw;
-    /* padding: 20px 20px; */
-    padding: 2vw;
+    border-radius: 0.5em;
+    padding: 1em;
     border: none;
 }
 
 /* Actions style */
+
+main h2 {
+    margin-top: 5em;
+}
+
 .actions {
     display: flex;
     justify-content: space-around;
-}
-
-main h2 {
-    /* margin-top: 5em; */
-    margin-top: 15vw;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .item {
-    /* margin: 2em; */
-    margin: 6vw;
+    margin: 2em;
 }
 
 .item img {
-    height: 30%;
+    width: 60%;
+    height: auto;
 }
+
 
 /* Footer styles */
 hr {
@@ -192,29 +149,23 @@ hr {
 
 footer img {
     display: inline-block;
-    /* height: 30px; */
-    height: 6vw;
+    height: 2em;
     border: 1px solid gray;
     border-radius: 50%;
-    /* margin: 20px 5px; */
-    margin: 4vw 1vw;
-    /* padding: 10px; */
-    padding: 2vw;
+    margin: 1em 0.25em;
+    padding: 1em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
-    /* скрываем чекбокс */
-    #menu__toggle {
-        opacity: 0;
+    body {
+        font-size: 75%;
     }
 
-    /* стилизуем кнопку */
+    /* Button style */
     .menu__btn {
         display: flex;
-        /* используем flex для центрирования содержимого */
         align-items: center;
-        /* центрируем содержимое кнопки */
         position: fixed;
         top: 20px;
         right: 20px;
@@ -224,10 +175,10 @@ footer img {
         z-index: 1;
     }
 
-    /* добавляем "гамбургер" */
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
+    /* adding hamburger-menu*/
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
         display: block;
         position: absolute;
         width: 100%;
@@ -235,25 +186,25 @@ footer img {
         background-color: #616161;
     }
 
-    .menu__btn > span::before {
+    .menu__btn>span::before {
         content: '';
         top: -8px;
     }
 
-    .menu__btn > span::after {
+    .menu__btn>span::after {
         content: '';
         top: 8px;
     }
 
-    /* контейнер меню */
+    /* menu container */
     .menu__box {
         display: block;
         position: fixed;
         visibility: hidden;
         top: 0;
-        left: 100px;
+        right: 0;
         width: 50%;
-        height: 50%;
+        height: 60%;
         margin: 0;
         padding: 80px 0;
         list-style: none;
@@ -262,7 +213,7 @@ footer img {
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
 
-    /* элементы меню */
+    /* Menu items */
     .menu__item {
         display: block;
         padding: 12px 24px;
@@ -277,162 +228,36 @@ footer img {
         background-color: #CFD8DC;
     }
 
-    #menu__toggle:checked ~ .menu__btn > span {
+    #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
     }
 
-    #menu__toggle:checked ~ .menu__btn > span::before {
+    #menu__toggle:checked~.menu__btn>span::before {
         top: 0;
         transform: rotate(0);
     }
 
-    #menu__toggle:checked ~ .menu__btn > span::after {
+    #menu__toggle:checked~.menu__btn>span::after {
         top: 0;
         transform: rotate(90deg);
     }
 
-    #menu__toggle:checked ~ .menu__box {
+    #menu__toggle:checked~.menu__box {
         visibility: visible;
-        left: 0;
-    }
-
-    /* ul {
-        width: 50%;
-        position: fixed;
-        top: 3em;
+        /* left: 0; */
         right: 0;
-        list-style: none;
-        display: inline-block;
-
     }
-
-    input {
-        position: fixed;
-        top: 2em;
-        right: 2em;
-        margin: 1.5vw;
-        width: 3vw;
-        z-index: 2;
-    }
-
-    #menu-togle {
-        opacity: 0;
-    }
-
-    #menu-btn {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        top: 2em;
-        right: 2em;
-
-        height: 26px;
-        width: 26px;
-        cursor: pointer;
-        z-index: 1;
-        visibility: visible;
-    }
-    #menu {
-        visibility: visible;
-    } */
-
-
-
-    .intro-img {
-        height: 100px;
-        object-fit: cover;
-    }
-
-
-
-    .actions {
-        /* display: block; */
-        flex-wrap: wrap;
-    }
-
-    .item img {
-        width: 60%;
-        height: 60%;
-    }
-
 }
 
-@media screen and (max-width: 900px) and (min-width: 481px) {
-    h1 {
-        font-size: 2em;
-        margin: 1rem 0;
+@media screen and (max-width: 900px) and (min-width: 601px) {
+    body {
+        font-size: 100%;
     }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 0.75em;
-        margin: 0.5rem 0;
-    }
-
-    h4 {
-        font-size: 0.5em;
-        margin: 0.35em;
-    }
-
-    #menu {
-        visibility: hidden;
-        height: 0;
-        width: 0;
-    }
-
-    main {
-        margin-top: 8em;
-    }
-
 }
 
 @media screen and (min-width: 901px) {
 
-
-
-    h1 {
-        font-size: 4em;
-        margin: 2rem 0;
+    body {
+        font-size: 125%;
     }
-
-    h2 {
-        font-size: 3em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-        margin: 1rem 0;
-    }
-
-    h4 {
-        font-size: 1em;
-        margin: 0.75em;
-    }
-
-    ul {
-
-        margin-right: 100px;
-    }
-
-    #menu {
-        visibility: hidden;
-        height: 0;
-        width: 0;
-    }
-
-    main {
-        margin-top: 9em;
-    }
-
-    button {
-        font-size: 2.5em;
-        background-color: #f15a29;
-        border-radius: 5px;
-        padding: 20px 20px;
-        border: none;
-    }
-
 }
