@@ -19,22 +19,22 @@ body {
 
 /* General  styles */
 h1 {
-    font-size: 6vw;
-    /* font-size: 2em; */
-    margin: 3vw 0;
-    /* margin: 1rem 0; */
+    /* font-size: 6vw; */
+    font-size: 2em;
+    /* margin: 3vw 0; */
+    margin: 1rem 0;
 }
 
 h2 {
-    font-size: 4.5vw;
-    /* font-size: 1.5em; */
+    /* font-size: 4.5vw; */
+    font-size: 1.5em;
 }
 
 h3 {
-    /* font-size: 0.75em; */
-    font-size: 2.25vw;
-    /* margin: 0.5rem 0; */
-    margin: 1.5vw 0;
+    font-size: 0.75em;
+    /* font-size: 2.25vw; */
+    margin: 0.5rem 0;
+    /* margin: 1.5vw 0; */
 }
 
 h4 {
@@ -43,7 +43,7 @@ h4 {
 }
 
 a {
-    font-size: 2vw;
+    font-size: 1em;
 }
 
 h1,
@@ -58,20 +58,18 @@ h5 {
 header {
     position: fixed;
     width: 100%;
-    top:0;
-    /* right: 0; */
-    /* height: 10em; */
-    /* display: block; */
+    top: 0;
+
     margin: 0 auto;
     background-color: white;
     z-index: 2;
 }
 
 nav {
-    /* width: 70%; */
-    /* margin: 2em auto; */
+    width: 70%; 
+    margin: 2em auto; 
     /* display: inline-flex; */
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 #logo {
@@ -80,16 +78,16 @@ nav {
     left: 2em;
     /* margin: 3.5vw; */
     width: 2vw;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 #menu {
-    position: fixed;
+    /* position: fixed;
     top: 2em;
     right: 2em;
     margin: 1.5vw;
     width: 3vw;
-    z-index: 2;
+    z-index: 2; */
 }
 
 ul {
@@ -109,8 +107,8 @@ ul {
 }
 
 li {
-    /* margin: 15px 10px; */
-    margin: 3vw 2vw;
+    margin: 15px 10px;
+    /* margin: 3vw 2vw; */
 }
 
 a {
@@ -206,22 +204,139 @@ footer img {
 
 @media screen and (max-width: 480px) {
 
-    ul {
+    /* скрываем чекбокс */
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex;
+        /* используем flex для центрирования содержимого */
+        align-items: center;
+        /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 100px;
+        width: 50%;
+        height: 50%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    /* ul {
         width: 50%;
         position: fixed;
         top: 3em;
         right: 0;
         list-style: none;
         display: inline-block;
-        /* justify-content: flex-end; */
-        /* margin: 0 auto; */
-        /* padding-left: 0; */
-        /* word-break: break-all; */
+
     }
 
-    #menu {
+    input {
+        position: fixed;
+        top: 2em;
+        right: 2em;
+        margin: 1.5vw;
+        width: 3vw;
+        z-index: 2;
+    }
+
+    #menu-togle {
+        opacity: 0;
+    }
+
+    #menu-btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 2em;
+        right: 2em;
+
+        height: 26px;
+        width: 26px;
+        cursor: pointer;
+        z-index: 1;
         visibility: visible;
     }
+    #menu {
+        visibility: visible;
+    } */
+
+
 
     .intro-img {
         height: 100px;
@@ -264,6 +379,7 @@ footer img {
 
     #menu {
         visibility: hidden;
+        height: 0;
         width: 0;
     }
 
@@ -303,6 +419,7 @@ footer img {
 
     #menu {
         visibility: hidden;
+        height: 0;
         width: 0;
     }
 
