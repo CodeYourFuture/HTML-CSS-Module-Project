@@ -55,29 +55,57 @@ h5 {
 }
 
 /* Navigation styles */
-nav {
+header {
+    position: fixed;
     width: 100%;
+    top:0;
+    /* right: 0; */
+    /* height: 10em; */
+    /* display: block; */
     margin: 0 auto;
-    display: inline-flex;
-    justify-content: space-around;
+    background-color: white;
+    z-index: 2;
+}
+
+nav {
+    /* width: 70%; */
+    /* margin: 2em auto; */
+    /* display: inline-flex; */
+    /* justify-content: center; */
 }
 
 #logo {
-    margin: 3.5vw;
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    /* margin: 3.5vw; */
     width: 2vw;
+    z-index: 2;
 }
 
 #menu {
+    position: fixed;
+    top: 2em;
+    right: 2em;
     margin: 1.5vw;
     width: 3vw;
+    z-index: 2;
 }
 
 ul {
+    width: 90%;
+    margin: 2em 4em;
+    position: fixed;
+    top: 0;
     list-style: none;
-    display: inline-flex;
+    background-color: white;
+    display: flex;
     justify-content: flex-end;
+    margin: 0 auto;
     padding-left: 0;
+    padding-right: 20px;
     /* word-break: break-all; */
+    z-index: 1;
 }
 
 li {
@@ -103,6 +131,9 @@ a:focus {
 
 
 /* Content styles */
+main {
+    margin-top: 4em;
+}
 
 .intro {
     position: relative;
@@ -173,15 +204,31 @@ footer img {
     padding: 2vw;
 }
 
-@media screen and (max-width: 400px) {
-    .intro-img {
-        height: 100px;
-        object-fit: cover;
+@media screen and (max-width: 480px) {
+
+    ul {
+        width: 50%;
+        position: fixed;
+        top: 3em;
+        right: 0;
+        list-style: none;
+        display: inline-block;
+        /* justify-content: flex-end; */
+        /* margin: 0 auto; */
+        /* padding-left: 0; */
+        /* word-break: break-all; */
     }
 
     #menu {
         visibility: visible;
     }
+
+    .intro-img {
+        height: 100px;
+        object-fit: cover;
+    }
+
+
 
     .actions {
         /* display: block; */
@@ -195,7 +242,7 @@ footer img {
 
 }
 
-@media screen and (max-width: 900px) and (min-width: 401px) {
+@media screen and (max-width: 900px) and (min-width: 481px) {
     h1 {
         font-size: 2em;
         margin: 1rem 0;
@@ -220,9 +267,16 @@ footer img {
         width: 0;
     }
 
+    main {
+        margin-top: 8em;
+    }
+
 }
 
 @media screen and (min-width: 901px) {
+
+
+
     h1 {
         font-size: 4em;
         margin: 2rem 0;
@@ -242,9 +296,18 @@ footer img {
         margin: 0.75em;
     }
 
+    ul {
+
+        margin-right: 100px;
+    }
+
     #menu {
         visibility: hidden;
         width: 0;
+    }
+
+    main {
+        margin-top: 9em;
     }
 
     button {
