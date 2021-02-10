@@ -43,6 +43,23 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
+#hamburger {
+  display: none;
+}
+
+/***MEDIA QUERIES HEADER ***/
+
+@media screen and (max-width: 400px) {
+  nav {
+    display: none;
+  }
+
+  #hamburger {
+    display: flex;
+    position: flex-end;
+  }
+}
+
 /*****LANDING*****/
 
 .landing {
@@ -89,8 +106,13 @@ section {
   padding-right: 15%;
 }
 
-section .icons {
-  display: block;
+/*** MEDIA QUERIES CONTENT ***/
+
+@media screen and (max-width: 400px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*****FOOTER*****/
