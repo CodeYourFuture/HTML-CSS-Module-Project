@@ -17,7 +17,7 @@ header {
   }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 399px) {
     .topnav {
       visibility: hidden;
 
@@ -29,6 +29,12 @@ header {
       visibility: hidden;
 
     }
+  }
+
+  .hiddenbar {
+    float: right;
+    margin-top: 1em;
+    margin-right: 0.5em;
   }
 
 #header {
@@ -63,7 +69,7 @@ header {
     color:white;
     display: flex;
     flex-direction: column;
-    Align-items: center; 
+    align-items: center; 
 }
 
 .introducing-karma button {
@@ -104,6 +110,31 @@ h2 {color:#625e5e;
     align-items: center;
   }
 
+footer {
+  text-align: center;
+}
+
+hr {
+  border-color:#e4e0e0;
+  background-color: #e4e0e0;
+  width:70%;
+  margin-top:5em;
+}
+
+.socialmedia1, .socialmedia2, .socialmedia3 {
+    border-radius: 50%;
+    border: 1px solid #e4e0e0;
+    padding: 10px;
+}
+
+footer h4 {
+  color:#6d6868;
+}
+
+
+h5 {color:#e4e0e0;
+    font-weight:normal;
+}
 
 /**
  * Add your custom styles below
