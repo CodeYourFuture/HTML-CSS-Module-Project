@@ -294,3 +294,35 @@ body {
 }
 
 }
+
+/* Adding more media queries */
+
+@media screen and (min-width: 700px) and (orientation: portrait) {
+
+    body{
+        font-size: small;
+        background-color: rgba(187, 187, 187, 0.219);
+    }
+
+    .logo::before {
+        content: Hello;
+    }
+
+    .section-container h3 {
+        font-size: 20px;
+    }
+
+    .section-container button:hover {
+        padding: 5px 5px;
+        color: salmon;
+    }
+
+    .last-section img {
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    .round-elements img {
+        width: 20px;
+    }
+}
