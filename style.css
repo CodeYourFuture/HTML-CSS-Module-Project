@@ -1,0 +1,104 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+}
+
+#LogoTopLeft {
+  display: inline;
+}
+
+#MenuContainer {
+  display: inline;
+}
+
+.logo {
+  width: 100px;
+  height: 100%;
+}
+
+#BackgroundImage {
+  background-image: url("../img/first-background.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 200px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: smaller;
+}
+
+h4 {
+  text-align: center;
+  color: grey;
+  font-size: smaller;
+}
+
+#MainButton {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  background-color: rgb(231, 127, 7);
+  color: rgb(7, 7, 7);
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menulist {
+  display: flex;
+}
+
+.menulist li {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.featurelist li img {
+  justify-content: center;
+}
+
+.featurelist {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.featurelist .caption h3 {
+  font-weight: 400;
+  font-size: 1.563rem;
+  margin: 1rem 10px 1rem;
+}
+
+footer {
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 10rem;
+  text-align: center;
+}
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
