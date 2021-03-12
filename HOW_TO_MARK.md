@@ -24,7 +24,7 @@ https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1-Solution
 
 ### 1.2) Using the Solutions Repo
 
-In these repositories you will find solutions to each weeks coursework. These solutions are example answers and will not be the extra solution that students give. You should use it to inform your feedback of the coursework.
+In these repositories you will find solutions to each weeks coursework. These solutions are example answers and will not be the exact solution that students give. You should use it to inform your feedback of the coursework.
 
 Additionally, you will find marking guides in these places
 
