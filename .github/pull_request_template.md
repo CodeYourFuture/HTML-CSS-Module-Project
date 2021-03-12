@@ -10,6 +10,8 @@ London Class 7 - Chris Owen - HTML/CSS - Week 1
 
 -->
 
+**Volunteers: Are you marking this coursework?** _You can find a guide on how to mark this coursework in `HOW_TO_MARK.md` in the root of this repository_
+
 # Your Details
 
 - Your Name:
