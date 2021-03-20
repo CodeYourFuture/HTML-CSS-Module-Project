@@ -89,3 +89,30 @@ img.logo {
 .learn-more-button:hover {
   background-color: green;
 }
+.bottom-text {
+  padding-top: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.bottom-text > h2 {
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.bottom-text p {
+  font-weight: 400;
+  font-size: 1.563rem;
+}
+.bottom-text ul {
+  flex-wrap: nowrap;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 20em;
+  padding-left: 0;
+}
+.bottom-text li {
+  width: 33.3333333%;
+  float: left;
+}
