@@ -6,6 +6,78 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Header styles*/
+
+header{
+    width:100%;
+    height:12vh;
+    background-color:transparent;
+    display:flex;
+    justify-content:space-between;
+}
+
+header .logo{
+    margin:11px 0px 5px 150px;
+    width:35px;
+    height:auto;
+}
+
+header nav{
+    margin:15px 100px 0px 0px;
+}
+
+header nav ul{
+    display:flex;
+    justify-content:flex-end;
+    list-style:none;
+    line-height:80%;
+}
+header nav ul li{
+    margin-right:40px;
+}
+
+a{
+    text-decoration:none;
+    color:#ddd;
+}
+a:active{
+    color:black
+}
+a:hover{
+    color:#e0633a;
+}
+
+/*Hero-section style*/
+
+.hero-section{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:180px 0px;
+    background:url(../img/first-background.jpg);
+    background-size:cover;
+    color:#ffffff;
+}
+
+.hero-section h1{
+    font-weight:lighter;
+    font-size:45px;
+}
+
+.hero-section p{
+    font-size:24px;
+    font-weight:lighter;
+    margin:-15px 0px 40px 0px;
+}
+
+.hero-section button{
+    padding:15px 40px;
+    background-color:#e0633a;
+    border-radius:10px;
+    border-style:none;
+}
 /**
  * Add your custom styles below
  * 
