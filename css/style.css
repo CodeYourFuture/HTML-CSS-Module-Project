@@ -15,5 +15,55 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    /* width:clamp(800px, 77vw, 1100px); */
+    max-width: 1440px;
+    margin: auto;
+    font-size: 16px;
+}
 
+/* 
+*Navigation styles */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding:1.25rem ;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: end;
+}
+.nav-links li {
+    list-style-type: none;
+}
+.nav-links li a {
+    color: #555;
+    font-weight:400;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    transition: color .4s ease;
+}
+.nav-links li:first-child a{
+    color: #555;
+    font-weight: 500;
+}
+.nav-links li a:hover {
+    color:#E03210;
+}
+.hamburger-menu {
+    display: none;
+}
+header img {
+    height: 48px;
+}
+
+/* Main section styles */
 
