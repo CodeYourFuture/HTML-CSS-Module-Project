@@ -32,29 +32,36 @@ header nav ul{
     list-style:none;
     line-height:80%;
 }
+
 header nav ul li{
     margin-right:40px;
 }
 
 a{
     text-decoration:none;
-    color:#ddd;
+    color:#8c8c8c;
 }
+
 a:active{
-    color:black
+    color:#000000;
 }
+
 a:hover{
     color:#e0633a;
 }
+
 header .menu{
     width:20px;
     height:auto;
     margin-right:10px;
     display:none;
 }
+
 header .menu:hover{
     color:#e0633a;
 }
+
+/*Main style*/
 
 main{
     display:flex;
@@ -143,7 +150,7 @@ footer p:first-child{
     font-weight:bold;
 }
 footer p:last-child{
-    color:#ddd;
+    color:#8c8c8c;
 }
 footer .social-media-links img{
     border:1px solid #000000;
@@ -154,6 +161,7 @@ footer .social-media-links img{
     height:auto;
 }
 
+/*Media Queries*/
 @media (max-width: 768px) {
     header .logo{
         margin:11px 0px 10px 20px;
