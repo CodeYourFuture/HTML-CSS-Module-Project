@@ -45,7 +45,7 @@ li:first-child {
 
 .nav-link:hover {
   cursor: pointer;
-  color: orange;
+  color: rgb(238, 132, 2);
 }
 
 /*styling article*/
@@ -59,4 +59,23 @@ li:first-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+h1:first-child {
+  font-size: 4em;
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+.intro-karma > p {
+  font-size: 2.5em;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: rgb(238, 133, 4);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 0.2em;
 }
