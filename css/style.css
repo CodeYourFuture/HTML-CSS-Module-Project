@@ -79,3 +79,44 @@ button {
   border: none;
   border-radius: 0.2em;
 }
+
+/*h1 after article*/
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 250;
+  margin-top: 150px;
+}
+
+/*section*/
+
+.section-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 2px;
+}
+
+section {
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box1"
+    "box2 box2 box2";
+}
+
+.icon-img {
+  grid-area: box1;
+  width: auto;
+}
+
+.gas {
+  grid-area: box1;
+  width: 160%;
+}
+
+.description {
+  grid-area: box2;
+  font-size: large;
+  font-weight: bold;
+}
