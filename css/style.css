@@ -46,7 +46,21 @@ a:active{
 a:hover{
     color:#e0633a;
 }
+header .menu{
+    width:20px;
+    height:auto;
+    margin-right:10px;
+    display:none;
+}
+header .menu:hover{
+    color:#e0633a;
+}
 
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
 /*Hero-section style*/
 
 .hero-section{
@@ -78,14 +92,117 @@ a:hover{
     border-radius:10px;
     border-style:none;
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
+/* Service style*/
+
+.services-wrapper{
+    width:100%;
+    height:auto;
+    font-size:35px;
+    font-weight:lighter;
+    padding:50px 0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.services{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+.service{
+    margin:20px 50px;
+    font-size:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.service img{
+    width:100px;
+    height:auto;
+}
+
+hr{
+    width:70%;
+    height:auto;
+
+}
+
+
+/* Footer Styles*/
+
+footer{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+footer p:first-child{
+    font-weight:bold;
+}
+footer p:last-child{
+    color:#ddd;
+}
+footer .social-media-links img{
+    border:1px solid #000000;
+    border-radius:50%;
+    padding:10px;
+    margin:5px 10px;
+    width:15px;
+    height:auto;
+}
+
+@media (max-width: 768px) {
+    header .logo{
+        margin:11px 0px 10px 20px;
+    }
+    header nav{
+        width:100%;
+        height:100%;
+        position:fixed;
+        top:17px;
+        left:105%;
+        z-index:10;
+    }
+    header nav ul{
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:space-around;
+        padding:5px;
+        background-color:#e0633a;
+        
+    }
+    header nav ul li{
+        width:100%;
+        height:auto;
+        padding:21.5px;
+        border-bottom:1px solid #ffffff;
+    }
+    header .menu{
+        display:block;
+    }
+}
+@media (max-width: 426px){
+    .hero-section{
+        justify-content:center;
+    }
+    .hero-section h1{
+        font-size:35px;
+    }
+    .hero-section p{
+        font-size:16px;
+    }
+    .services-wrapper{
+        font-size:20px;
+    }
+    .service p{
+        font-size:14px;
+    }
+
+}
 
