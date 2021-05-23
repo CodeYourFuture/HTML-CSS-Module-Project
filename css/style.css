@@ -20,16 +20,18 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 100px;
+  padding: 0px 100px;
 }
 
 .nav-bar > ul {
   display: flex;
+  align-items: flex-end;
 }
 
 .nav-bar > ul > li {
   display: inline;
   margin-inline: 20px;
+  margin-top: 10px;
 }
 
 .nav-link {
@@ -44,4 +46,17 @@ li:first-child {
 .nav-link:hover {
   cursor: pointer;
   color: orange;
+}
+
+/*styling article*/
+
+.intro-karma {
+  background-image: url(/img/first-background.jpg);
+  height: 735px;
+  width: 100%;
+  color: honeydew;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
