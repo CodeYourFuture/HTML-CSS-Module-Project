@@ -66,4 +66,133 @@ header img {
 }
 
 /* Main section styles */
+.introduce {
+    /* border: 2px solid red; */
+    background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 53.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.introduce h1 {
+    color: #fff;
+    font-size: 3.5rem; /* 56 pt */
+    letter-spacing:5px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 1rem;
+}
+.introduce h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+    text-align: center;
+}
+.introduce button{
+    background-color:#E03210;
+    border: none;
+    border-radius: 5px;
+    padding: 1.5rem 2.5rem;
+    margin: 4rem auto;
+    transition: background-color .4s ease;
+}
+.introduce button:hover {
+    background-color:  rgb(231, 140, 107);
+}
+.introduce button a {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-decoration: none;
+    
+}
+/* Main section  product styles */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 10.25rem auto 7rem;
+    padding: 0 5rem;
+    /* border-bottom: 1px solid #000; */
+}
+.products h2 {
+    font-size: 2.625rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-align: center;
+    grid-column: 1/4;
+}
+
+.products p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.products img {
+    height: 10.25rem;
+    margin: 3.625rem auto;
+}
+
+.products article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer styles */
+footer {
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem 0;
+    max-width: 1200px;
+}
+footer h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+footer img {
+    height: 1rem;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 1.75rem 0;
+}
+footer li {
+    list-style-type: none;
+    margin: 0.5rem;
+}
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.25rem;
+    width: 3.25rem;
+    border:1px solid #9c9c9c;
+    border-radius: 50%;
+    padding: 10px;
+    color:red;
+    background-color: #fff;
+    text-decoration: none;
+   transition: all 0.5s ease-in-out;
+}
+footer a:hover {
+    background-color:rgb(158, 158, 158);
+}
+footer p {
+    color: #565656;
+}
+
 
