@@ -195,4 +195,23 @@ footer p {
     color: #565656;
 }
 
+/* Responsive design */
+@media screen and (max-width:768px) {
+    html{
+        font-size:10px;
+    }
+   nav .hamburger-menu {
+       display: block;
+       height: 1.6rem;
+   }
+   nav .nav-links {
+       display:none;
+   }
+   section.products {
+       grid-template-columns: 1fr;
+   }
+   .products h2 {
+       grid-column: 1/2;
+   }
+}
 
