@@ -2,8 +2,14 @@
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
 }
 
 /**
@@ -16,4 +22,102 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
 
+li {
+    display: inline-block;
+    float: right;
+    font-size: 110%;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    justify-content: space-between;
+    color: black;
+  }
+
+li a:hover {
+    color: orange;
+  }
+
+.logo {
+    float: left;
+    width: 22px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.parallax {
+    background: url(C:/Users/aciun/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 250px;
+}
+
+.parallax h1, .parallax h3, .parallax button {
+    color: white;
+}
+
+button {
+    background-color: orangered;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+}
+
+button:hover {
+    background-color: white;
+    color: orangered;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 60px;
+}
+
+.features-1 img {
+    width: 50%;
+}
+
+.social-media, .social-media p {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.social img {
+    width: 20px;
+    padding: 10px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
