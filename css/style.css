@@ -125,23 +125,46 @@ nav a:hover {
 }
 /* end of hero section */
 
-.intro-wrapper {
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-}
 
 .intro-header h2 {
-    /* border: 2px solid blue; */
     font-size: 1.3rem;
     font-weight: lighter;
     padding: 0 4rem;
     text-align: center;
     margin-top: 5rem;
+}
 
+.intro-imgs {
+    /* border: 2px solid red;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.intro-imgs p {
+    /* border: 2px solid green; */
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.intro-left-img {
+    /* border: 2px solid blue; */
+    width: 115px;
+
+}
+
+.intro-middle-img {
+    /* border: 2px solid blue; */
+    width: 115px;
+
+}
+
+.intro-right-img {
+    /* border: 2px solid blue; */
+    width: 115px;
 }
 
 
@@ -175,6 +198,7 @@ nav a:hover {
     .hero-btn {
         font-size: 1rem;
     }
+    
 }
 
 /* From 500px upwards */
