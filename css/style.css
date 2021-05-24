@@ -1,6 +1,9 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+*{
 
+    box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -17,23 +20,99 @@ body {
  */
 
 img{
-
-    width:100px;
+    padding-right:0px;  
+    width:90px;
     height:50px;
 
 }
-/* ul{
-    padding:0px 10px 10px 10px;
-     display:flex;
-    flex-direction:column;
-    
-    align-items: flex-end;
-    justify-content: flex-end;
-    list-style:none;
-    
-} */
+
 #hamburger{width:50px;
-height:50px;}
-header{display:flex;
+height:50px;
+padding-right:10px;}
+
+ul{display:flex;
+    flex-wrap:wrap;
+justify-content:flex-end;
+
+list-style:none;
+margin-top:-30px;
+margin-left:-150px;
+}
+
+
+li{list-style: none; }
+a{
+    text-decoration: none;
+    font-size:14px;
+    padding:3px;
+}
+
+
+#hero-section{
+background-image: url("first-background.jpg");
+background-repeat:no-repeat;
+max-width: 100%;
+height:100%;
+padding-bottom:500px;
+
+}
+
+
+#Container{
+display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+
+align-items:center;
+/* align-content:center; */
+color:white;
+}
+
+#container > h1{text-align:center;} 
+
+#three{
+display:flex;
 flex-direction:row;
-justify-content:space-evenly;}
+justify-content: space-around;
+
+
+}
+
+.img{
+
+    width:200px;
+    height:200px;
+}
+.img-small{
+    width:50px;
+    height:50px;
+
+}
+.footer{
+    border-top: 2px solid gray;
+    padding:10px;
+align-items:center;
+display:flex;
+flex-direction: column;
+flex-wrap:flex;
+
+
+
+
+}
+.main{padding-bottom: 100px;}
+
+@media screen and (max-width:600px)
+{
+
+
+#three{
+display:flex;
+flex-direction:column;
+align-items:center;
+
+
+}
+
+
+}
