@@ -149,6 +149,38 @@ footer p:last-child {
   color: gray;
 }
 
+/*@media*/
+
+@media screen and (max-width: 360px) {
+  header {
+    padding: 0px 10px;
+  }
+
+  .nav-bar > ul {
+    flex-direction: column;
+  }
+
+  h1 :first-child {
+    font-size: 3em;
+  }
+
+  .intro-karma > p {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /*footer*/
 
 /*For own reference*/
