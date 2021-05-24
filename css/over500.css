@@ -39,9 +39,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-self: center;
-
+  font-size: 1.5em;
   color: #8b8d91;
-  display: none;
 }
 
 /*
@@ -59,8 +58,7 @@ nav {
   position: relative;
   text-align: center;
   color: white;
-  background-color: palegreen;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 .inner-header-div {
@@ -77,15 +75,8 @@ nav {
   border-color: orangered;
 }
 
-/* need to find a way to display this image properly when the screen is phone sized. I need the image centered and then any overflow
-hidden. Currently I) am controlling it through max height and I can't get justify content to work ... */
-
 .header-image {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-
-  max-height: 450px;
-
+  max-width: 100%;
+  padding-top: 5%;
   z-index: -1;
 }
