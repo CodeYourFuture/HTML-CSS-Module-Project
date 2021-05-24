@@ -41,6 +41,38 @@ header {
     padding-right: .8rem;
     margin-top: .8rem;
 }
+
+nav {
+    display: flex;
+    margin-right: 2rem;
+
+    /* border: 2px solid blue; */
+}
+
+nav li {
+    list-style: none;
+    padding: 0.8rem 1rem;
+    color: #000;
+    font-weight: lighter ;
+    font-size: 1.1rem;
+    /* border: 2px solid red; */
+
+}
+
+.brand-name {
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: lighter ;
+}
+
+nav a:hover {
+    color: #E06239;
+}
  /* end of header */
 
 .hero {
@@ -51,7 +83,6 @@ header {
     display:flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
     width: 100%;
     flex-direction: column;
     height: auto;
@@ -63,20 +94,17 @@ header {
     font-weight: lighter;
     text-align: center;
     height: 16rem;
-    border: 2px solid red;
     margin-top: 3rem;
 }
 
 .hero-title {
     font-size: 2rem;
     padding: .2rem 2rem;
-    border: yellowgreen 2px solid;
 }
 
 .hero-text p {
     padding: .2rem 3rem;
     font-size: 1rem;
-    border: yellowgreen 2px solid;
 }
 
 
@@ -102,29 +130,25 @@ header {
     .hero-title {
         font-size: 2.8rem;
         padding: .2rem 2rem;
-        border: yellowgreen 2px solid;
     }
 
     .hero-text p {
         padding: .2rem 3rem;
         font-size: 1.1rem;
         margin-top: 3rem;
-        border: yellowgreen 2px solid;
     }
     
 }
 
+/* from 700px upwards */
 @media screen and (min-width: 700px) {
     .hero-title {
         font-size: 4rem;    
-        border: yellowgreen 2px solid;
     }
 
     .hero-text p {
         padding: .2rem 3rem;
-        
         font-size: 1.6rem;
-        border: yellowgreen 2px solid;
     }
     .hero-btn {
         font-size: 1.2rem;
@@ -135,10 +159,19 @@ header {
     
 }
 
-
+/* from 0 to 700px */
 @media screen and (max-width: 700px) {
     .navlinks {
         display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    nav li {
+        font-size: 1.5rem;
+    }
+    nav a {
+        font-size: 1.5rem;
     }
 }
 
