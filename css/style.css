@@ -14,3 +14,108 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+/*mobile first*/
+header {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px 0 0;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 0 10px 0 0;
+}
+
+/*for media queries*/
+#hamburger {
+  width: 10%;
+}
+
+#logo {
+  width: 10%;
+  max-width: 50px;
+  height: 10%;
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 10px;
+  /*  display: none; */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(129, 126, 126);
+  font-size: 1.5em;
+}
+
+a:hover {
+  color: orange;
+}
+
+/*Current page corresponding link in bold*/
+nav ul li:first-child {
+  font-weight: 800;
+}
+
+main {
+  width: 100%;
+}
+
+#hero {
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+}
+
+h1,
+h2,
+#cta {
+  text-align: center;
+  color: white;
+  /* position: relative; */
+}
+
+h1 {
+  height: ;
+}
+
+#cta {
+  border: 2px solid tomato;
+  border-radius: 5px;
+  background-color: tomato;
+}
+
+#features {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.feature-container {
+}
+
+.feature-container img {
+  width: 50%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  border: 2px solid gray;
+  border-radius: 50%;
+  padding: 5px;
+  max-width: 20px;
+}
