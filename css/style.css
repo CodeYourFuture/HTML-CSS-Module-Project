@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
@@ -15,5 +19,123 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+header {
+    padding-bottom: .2rem;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem .3rem;
+}
+
+.logo-img {
+    height: 40px;
+    padding-left: 1rem;
+}
+
+.nav-toggle {
+    height: 1rem;
+    align-self: center;
+    padding-right: .8rem;
+    margin-top: .8rem;
+}
+ /* end of header */
+
+.hero {
+    background: url("../img/first-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+}
+
+
+.hero-text {
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+    height: 16rem;
+    border: 2px solid red;
+    margin-top: 3rem;
+}
+
+.hero-title {
+    font-size: 2rem;
+    padding: .2rem 2rem;
+    border: yellowgreen 2px solid;
+}
+
+.hero-text p {
+    padding: .2rem 3rem;
+    font-size: 1rem;
+    border: yellowgreen 2px solid;
+}
+
+
+.hero-btn {
+    color: #fff;
+    background-color: #E06239;
+    border: none;
+    padding: .7rem;
+    font-size: .9rem;
+    border-radius: 5px;
+    margin: .8rem;
+}
+
+.hero-btn:hover {
+    color: #E06239;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 400px) {
+    .hero {
+        padding: 160px 0;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+        padding: .2rem 2rem;
+        border: yellowgreen 2px solid;
+    }
+
+    .hero-text p {
+        padding: .2rem 3rem;
+        font-size: 1.1rem;
+        margin-top: 3rem;
+        border: yellowgreen 2px solid;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    .hero-title {
+        font-size: 4rem;    
+        border: yellowgreen 2px solid;
+    }
+
+    .hero-text p {
+        padding: .2rem 3rem;
+        
+        font-size: 1.6rem;
+        border: yellowgreen 2px solid;
+    }
+    .hero-btn {
+        font-size: 1.2rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    
+}
+
+
+
 
 
