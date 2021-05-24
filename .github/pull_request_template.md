@@ -16,21 +16,25 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Sharmaine Taylor
+- Your City: Manchester
+- Your Slack Name: Sharmaine
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML-CSS-Coursework
+- Week: Week 2
 
 # Notes
 
 - What did you find easy?
+Using breaking points, really like building the site mobile first 
+
 
 - What did you find hard?
+I could not add a toggle Navigation, did look up how to do it, but when I added it, it would cause problems, would like to find out how to do this.
 
 - What do you still not understand?
+Toggle navigation, practice needed in terms of sizing, positioning items better
 
 - Any other notes?
