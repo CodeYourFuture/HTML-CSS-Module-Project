@@ -16,4 +16,180 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    font-size: 16px;
+}
+/* HEADER CONTAINER, NAVBAR, LOGO STYLE */
+.nav-container img {
+    height: 48px;
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin:auto;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style-type: none;
+    padding-left: 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1rem;
+    transition: color 0.4s ease;
+}
+
+.nav-links a:hover {
+    color: 04121;
+}
+
+.nav-links li:first-child a {
+    color: black;
+}
+
+.nav-links li:first-child a:hover {
+    color: 04121;
+}
+
+/* SECTION BACKGROUND PICTURE STYLE */
+
+.section-photo {
+    background-image:url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.section-photo h1 {
+    color: white;
+    font-size: 54px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.section-photo h2 {
+    color:white;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.section-photo button {
+    background-color: #f56346;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 30px;
+    margin-top: 82px;
+
+}
+
+.section-photo button a {
+    color: white;
+    text-decoration: none;
+}
+/* SECTION GRID STYLE  */
+.grid img {
+    height: 146px;
+    margin: 80 auto;
+    justify-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    border-bottom: 1px solid lightgrey;
+    
+}
+.grid h2 {
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    grid-column: 1/4;
+    margin: 166px auto;
+}
+
+.grid p {
+    font-size: 20px;
+    text-align:center;
+}
+
+/* FOOTER STYLE */
+
+footer {
+    margin: 26px auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+footer h3 {
+    font-size: 16px;
+    text-align: center;
+
+}
+
+footer img {
+   height: 52px; 
+
+}
+
+footer a {
+  
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+ footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer li {
+    list-style: none;
+}
+
+footer p {
+    text-align: center;
+    color:lightslategrey;
+    margin: 28px auto;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    section.grid {
+        grid-template-columns: 1fr;
+    }
+}
