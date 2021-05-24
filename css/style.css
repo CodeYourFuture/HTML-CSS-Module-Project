@@ -1,8 +1,14 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 
 body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
     font-weight: normal;
@@ -22,56 +28,100 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+nav {
+    background: white;
+    padding 5px 20px;
+}
+
 ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-li {
-    display: inline-block;
-    float: right;
-    font-size: 110%;
     list-style-type: none;
-    margin-right: 50px;
-    margin-top: 15px;
 }
 
-li a {
-    text-decoration: none;
-    padding: 10px;
-    justify-content: space-between;
+a {
     color: black;
-  }
+    text-decoration: none;
+}
 
-li a:hover {
-    color: orange;
-  }
+a:hover {
+    text-decoration: underline;
+}
 
-.logo {
-    float: left;
-    width: 22px;
-    padding: 10px;
-    margin-left: 50px;
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+}
+
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+    order: 1;
+}
+
+.bars {
+    background: grey;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after {
+    background: grey;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
 }
 
 .parallax {
-    background: url(C:/Users/aciun/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding: 250px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background: url(C:/Users/aciun/Documents/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg);
+    background-position: center;
+    width: 100%;
 }
 
 .parallax h1, .parallax h3, .parallax button {
+    text-align: center;
+    
     color: white;
 }
 
 button {
-    background-color: orangered;
+    background-color: orange;
     padding: 10px;
     border: none;
     border-radius: 5%;
@@ -82,22 +132,29 @@ button:hover {
     color: orangered;
 }
 
+h2, p {
+    text-align: center;
+} 
+
 .features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.features-1 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 60px;
-}
-
 .features-1 img {
-    width: 50%;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
 
 .social-media, .social-media p {
     display: flex;
@@ -117,7 +174,47 @@ footer {
     justify-content: center;
 }
 
-@media screen (max-width: 992px) {
-    .navbar-header {
-        float: none;
+/* Desktop view */
+
+@media all and (min-width: 768px) {
+/* nav bar desktop */
+    .item {
+        display: block;
+        width: auto;
     }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+/* three features desktop */
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .features-1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 60px;
+    }
+
+    .features-1 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+  }
