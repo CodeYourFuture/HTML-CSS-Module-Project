@@ -1,13 +1,13 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
  * Add your custom styles below
+
  * 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
@@ -16,4 +16,68 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* ********************* DESKTOP *********************  */
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 3rem;
+  padding: 1rem 2.5rem;
+}
+
+.logo img {
+  min-width: 40px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: lightgrey;
+  padding: 1rem;
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* ********************* MOBILE ********************* */
+
+@media (max-width: 320px) {
+  body {
+    background-color: aqua;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    width: 3rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 1.7rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .logo img {
+    min-width: 20px;
+  }
+}
