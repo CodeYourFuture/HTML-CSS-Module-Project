@@ -45,8 +45,6 @@ header {
 nav {
     display: flex;
     margin-right: 2rem;
-
-    /* border: 2px solid blue; */
 }
 
 nav li {
@@ -55,12 +53,10 @@ nav li {
     color: #000;
     font-weight: lighter ;
     font-size: 1.1rem;
-    /* border: 2px solid red; */
-
 }
 
 .brand-name {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav a {
@@ -74,6 +70,10 @@ nav a:hover {
     color: #E06239;
 }
  /* end of header */
+
+
+
+ /* hero section */
 
 .hero {
     background: url("../img/first-background.jpg");
@@ -104,7 +104,8 @@ nav a:hover {
 
 .hero-text p {
     padding: .2rem 3rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
 }
 
 
@@ -115,14 +116,47 @@ nav a:hover {
     padding: .7rem;
     font-size: .9rem;
     border-radius: 5px;
-    margin: .8rem;
+    margin-top: 2rem;
 }
 
 .hero-btn:hover {
     color: #E06239;
     background-color: #fff;
 }
+/* end of hero section */
 
+.intro-wrapper {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.intro-header h2 {
+    /* border: 2px solid blue; */
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 0 4rem;
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+
+
+
+
+
+
+
+
+/* !!!!!!!!Media Queiues Below!!!!!!!!  */
+
+
+
+/* From 400px upwards */
 @media screen and (min-width: 400px) {
     .hero {
         padding: 160px 0;
@@ -133,11 +167,21 @@ nav a:hover {
     }
 
     .hero-text p {
-        padding: .2rem 3rem;
-        font-size: 1.1rem;
-        margin-top: 3rem;
+        font-size: 1.8rem;
     }
-    
+    .intro-header h2 {
+        font-size: 1.8rem;
+    }
+    .hero-btn {
+        font-size: 1rem;
+    }
+}
+
+/* From 500px upwards */
+@media screen and (min-width: 500px) {
+    .intro-header h2 {
+        font-size: 2.5rem;
+    }
 }
 
 /* from 700px upwards */
@@ -156,6 +200,9 @@ nav a:hover {
     .nav-toggle {
         display: none;
     }
+    .hero-btn {
+        font-size: 1.6rem;
+    }
     
 }
 
@@ -166,6 +213,7 @@ nav a:hover {
     }
 }
 
+/* From 900px upwards */
 @media screen and (min-width: 900px) {
     nav li {
         font-size: 1.5rem;
