@@ -42,7 +42,7 @@ a{
     color:#8c8c8c;
 }
 
-a:active{
+a:active, a:focus{
     color:#000000;
 }
 
@@ -105,7 +105,8 @@ main{
 .services-wrapper{
     width:100%;
     height:auto;
-    font-size:35px;
+    text-align:center;
+    font-size:40px;
     font-weight:lighter;
     padding:50px 0px;
     display:flex;
@@ -131,10 +132,42 @@ main{
 }
 
 hr{
-    width:70%;
+    width:90%;
     height:auto;
-
+    background-color:#c0bfbf;
 }
+
+/*Get Karma*/
+.get-karma{
+    width:100%;
+    height:300px;
+    background-color:rgb(224, 99, 58, 0.1);
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:50px;
+}
+.get-karma img{
+    height:300px;
+    width:auto;
+}
+.call-to-action{
+    width:350px;
+    text-align:center;
+    font-style:oblique;
+    color:#757575;
+    font-size:28px;
+    margin:30px 250px 50px 0px;
+}
+.call-to-action button{
+    padding:15px 40px;
+    background-color:#e0633a;
+    color:#ffffff;
+    font-size:16px;
+    border-radius:10px;
+    border-style:none;
+    font-style:normal;
+}
+
 
 
 /* Footer Styles*/
@@ -145,6 +178,7 @@ footer{
     display:flex;
     flex-direction:column;
     align-items:center;
+    padding-bottom:50px;
 }
 footer p:first-child{
     font-weight:bold;
