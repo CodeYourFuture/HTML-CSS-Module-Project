@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+=======
 
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+*{
+>>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
+
+    box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,6 +24,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+<<<<<<< HEAD
 img {
   width: 100px;
   height: 50px;
@@ -27,12 +36,19 @@ img {
 
 #corner > ul {
   display: flex;
+=======
+img{
+    padding-right:0px;  
+    width:90px;
+    height:50px;
+>>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
 
   /* align-content:flex-end;
      align-items:center; */
   justify-content: space-evenly;
   list-style: none;
 }
+<<<<<<< HEAD
 ul > li {
   padding: 10px;
 }
@@ -73,13 +89,127 @@ ul > li {
 
 display:flex;
 flex-direction:column;
+=======
+
+#hamburger{width:50px;
+height:50px;
+padding-right:10px;}
+
+ul{display:flex;
+    flex-wrap:wrap;
+justify-content:flex-end;
+
+list-style:none;
+margin-top:-30px;
+margin-left:-150px;
+}
+
+
+li{list-style: none; }
+a{
+    text-decoration: none;
+    font-size:14px;
+    padding:3px;
+}
+
+
+#hero-section{
+background-image: url("first-background.jpg");
+background-repeat:no-repeat;
+max-width: 100%;
+height:100%;
+padding-bottom:500px;
+
+}
+
+
+#Container{
+display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+
+align-items:center;
+/* align-content:center; */
+color:white;
+}
+
+#Container > h1{font-size:50pt;
+padding-top:20px;
+text-align:center;
+padding-bottom:20px;
+}
+
+#Container > p{font-size:20pt;
+padding-top:20px;
+text-align:center;
+
+padding-bottom:50px;
+}
+.button{
+text-align:center;
+    padding:10px;
+    color:red;
+    background-color:white;
+}
+
+
+
+#three{
+display:flex;
+flex-direction:row;
+>>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
 justify-content: space-around;
 
 
 }
+<<<<<<< HEAD
 
 #bottom > div{
 
 
     
+=======
+#container >h1{
+text-align:center;
+} 
+
+.img{
+
+    width:200px;
+    height:200px;
+}
+.img-small{
+    width:50px;
+    height:50px;
+
+}
+.footer{
+    border-top: 2px solid gray;
+    padding:10px;
+align-items:center;
+display:flex;
+flex-direction: column;
+flex-wrap:flex;
+
+
+
+
+}
+.main{padding-bottom: 100px;}
+
+@media screen and (max-width:600px)
+{
+
+
+#three{
+display:flex;
+flex-direction:column;
+align-items:center;
+
+
+
+}
+
+
+>>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
 }
