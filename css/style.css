@@ -55,11 +55,12 @@ ul > li {
   flex-basis: auto;
   background-size: cover;
   justify-content: center;
+  background-position:center center ;
   background-repeat: no-repeat;
-    padding-top: 200px;
+  padding-top: 10rem;
 
-  
-}
+  }
+
 
 #intro, #intro>h1, #intro>p {
   font-size: 2rem;
@@ -70,7 +71,7 @@ ul > li {
   align-items: center;
   color: white;
 }
-header,main,footer, #hero{align-self: center;}
+header,main,footer, #intro>p{text-align: center;}
 #intro > p {
   padding-bottom: 60px;
 }
@@ -89,14 +90,20 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 justify-content: space-evenly;
-margin-top:100px;
-margin-bottom:100px;
-
-
+margin-top:1rem;
+margin-bottom:1rem;
+}
+h1,h2{font-weight:normal;}
     
+
+button{
+  background-color:orange;
+  color:white;
+  border-radius: 5px;
 }
 #bottom>h1{
   text-align: center;
+  padding-top:2rem;
 }
 article{ align-items:center;}
 
@@ -122,7 +129,7 @@ align-items:center;
 }
 
 #bottom>img{align-items:center;}
-@media screen and (max-width:600px){
+@media screen and (max-width:460px){
   #corner > img {
     visibility: visible;
   width: 30px;
@@ -138,9 +145,10 @@ flex-direction:column;
 flex-wrap:wrap;
 justify-content: center;
 align-items:center;
+
 margin-top:100px;
 margin-bottom:100px;
 
 
     
-}
+}}
