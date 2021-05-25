@@ -20,11 +20,8 @@ img {
 #navigation_bar {
   display: flex;
   justify-content: space-around;
+  flex-shrink: inherit;
 }
-/* #main,
-#footer {
-  width: 1600px;
-} */
 
 #corner > ul {
   display: flex;
@@ -63,7 +60,7 @@ li:first-child a {
 
 /* Hero Styles */
 #hero {
-  background-image: url("/css/first-background.jpg");
+  background-image: url("../img/first-background.jpg");
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -162,7 +159,7 @@ article {
     height: 30px;
   }
   #corner > ul {
-    visibility: hidden;
+    display: none;
   }
   #bottom > div {
     display: flex;
