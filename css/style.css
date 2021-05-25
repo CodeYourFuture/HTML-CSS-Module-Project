@@ -69,12 +69,23 @@ nav ul li:first-child {
 
 main {
   width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 #hero {
-  width: 100%;
-  position: absolute;
+  text-align: center;
+}
+
+/*Testing hero image*/
+
+#hero-img {
+  width: 1020px;
+  height: 650px;
   z-index: -5;
+  object-fit: cover;
+  object-position: 47% 0;
 }
 
 h1,
@@ -82,7 +93,9 @@ h2,
 #cta {
   text-align: center;
   color: white;
-  /* position: relative; */
+  position: relative;
+  top: -180px;
+  font-weight: 100;
 }
 
 h1 {
@@ -97,20 +110,24 @@ h1 {
 
 #features {
   display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#feature-container {
+  display: flex;
   flex-flow: row wrap;
 }
 
-.feature-container {
-}
-
-.feature-container img {
+.feature img {
   width: 50%;
 }
 
 footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 footer img {
@@ -118,4 +135,10 @@ footer img {
   border-radius: 50%;
   padding: 5px;
   max-width: 20px;
+}
+
+@media screen and (min-width: 560px) {
+  #hamburger {
+    display: none;
+  }
 }

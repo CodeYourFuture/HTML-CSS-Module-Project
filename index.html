@@ -38,26 +38,27 @@
 
     <main>
       <section id="hero">
-        <img id="hero" src="img/first-background.jpg" alt="background" />
+        <img id="hero-img" src="img/first-background.jpg" alt="background" />
         <h1>Introducing Karma</h1>
         <h2>Bring WiFi with you, everywhere you go.</h2>
         <a id="cta" href="#">Learn More</a>
       </section>
 
-      <section id="features">
+     <section id="features">
         <h3>Everyone needs a little Karma.</h3>
-        <div class="feature-container">
-          <img src="img/icon-devices.svg" />
+        <section id="feature-container">
+        <div class="feature">
+          <img src="img/icon-devices.svg">
           <p>Internet for all devices</p>
         </div>
 
-        <div class="feature-container">
-          <img src="img/icon-coffee.svg" />
+        <div class="feature">
+          <img src="img/icon-coffee.svg">
           <p>Boost your productivity</p>
         </div>
 
-        <div class="feature-container">
-          <img src="img/icon-refill.svg" />
+        <div class="feature">
+          <img src="img/icon-refill.svg">
           <p>Pay as You Go</p>
         </div>
       </section>
@@ -65,10 +66,14 @@
 
     <footer>
       <p>Join us on</p>
-      <a href="#"><img src="img/twitter-icon.svg" /></a>
-      <a href="#"><img src="img/facebook-icon.svg" /></a>
-      <a href="#"><img src="img/instagram-icon.svg" /></a>
+      <div id="icon-container">
+            <a href="#"><img src="img/twitter-icon.svg" /></a>
+            <a href="#"><img src="img/facebook-icon.svg" /></a>
+            <a href="#"><img src="img/instagram-icon.svg" /></a>
+      </div>
       <p>© Karma Mobility, Inc</p>
     </footer>
   </body>
 </html>
+
+
