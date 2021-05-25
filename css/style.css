@@ -24,10 +24,8 @@ body {
   align-items: center;
 }
 
-.logo {
-  width: 2rem;
-  padding: 1rem 2.5rem;
-}
+/* .logo {
+} */
 
 .logo img {
   min-width: 40px;
@@ -99,7 +97,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 80%;
-  margin: auto;
+  margin: 1rem auto 3rem;
 }
 
 .info-icons h4 {
@@ -111,6 +109,37 @@ body {
 
 img {
   margin: 0 50px;
+}
+
+.social-media h4 {
+  border-top: 3px solid lightgrey;
+  width: 80%;
+  margin: 5rem auto 1rem;
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 400;
+}
+
+.social-icons {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.social-icons img {
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  margin: auto;
+  border: 2px solid lightgrey;
+  border-radius: 50px;
+  padding: 7px;
+}
+
+footer p {
+  text-align: center;
+  color: grey;
 }
 
 /* ********************* MOBILE ********************* */
@@ -130,13 +159,19 @@ img {
 
   .hamburger {
     display: block;
-    width: 3rem;
-    padding: 1rem;
+    min-width: 2rem;
+    padding: 0.5rem;
+  }
+
+  .hamburger img {
+    width: 30px;
   }
 
   .logo {
-    width: 1.7rem;
-    padding: 1rem 2.5rem;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 0;
+    margin: 0;
   }
 
   .logo img {
@@ -197,18 +232,45 @@ img {
   }
 
   .info-icons img {
-    width: 40%;
+    width: 50%;
     margin: 0 70px;
   }
 
-  /* .info-icons h4 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: grey;
-    font-weight: 500;
+  /* .hamburger {
+    width: 25px;
+
+    padding-right: 8rem;
   } */
 
-  /* .info-icons div {
-    margin-right: 100px;
-  }   */
+  .social-media h4 {
+    border-top: 3px solid lightgrey;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 400;
+  }
+
+  .social-icons {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .social-icons img {
+    justify-content: space-around;
+    align-items: center;
+    width: 20px;
+    margin: auto;
+    border: 2px solid lightgrey;
+    border-radius: 50px;
+    padding: 5px;
+  }
+
+  footer p {
+    text-align: center;
+    color: grey;
+    margin-bottom: 3rem;
+  }
 }
