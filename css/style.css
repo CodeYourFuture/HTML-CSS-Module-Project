@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-=======
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-*{
->>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
 
-    box-sizing: border-box;
-}
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  width: 1600px;
+ 
 }
 
 /**
@@ -24,7 +16,6 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-<<<<<<< HEAD
 img {
   width: 100px;
   height: 50px;
@@ -33,22 +24,16 @@ img {
   display: flex;
   justify-content: space-around;
 }
+#main,#footer{width: 1600px;}
 
 #corner > ul {
   display: flex;
-=======
-img{
-    padding-right:0px;  
-    width:90px;
-    height:50px;
->>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
 
   /* align-content:flex-end;
      align-items:center; */
   justify-content: space-evenly;
   list-style: none;
 }
-<<<<<<< HEAD
 ul > li {
   padding: 10px;
 }
@@ -58,22 +43,26 @@ ul > li {
 }
 
 #corner > img {
-  /* visibility: hidden; */
+   visibility: hidden;
   width: 30px;
   height: 30px;
 }
 
-#hero {
-  background-image: url("/img/first-background.jpg");
+#hero{
+  background-image: url("/css/first-background.jpg");
+  display:flex;
+  flex-wrap:wrap;
+  flex-basis: auto;
+  background-size: cover;
+  justify-content: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 735px;
+    padding-top: 200px;
+
+  
 }
 
-#intro {
+#intro, #intro>h1, #intro>p {
   font-size: 2rem;
-  padding-top: 200px;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -81,7 +70,7 @@ ul > li {
   align-items: center;
   color: white;
 }
-
+header,main,footer, #hero{align-self: center;}
 #intro > p {
   padding-bottom: 60px;
 }
@@ -89,127 +78,69 @@ ul > li {
 
 display:flex;
 flex-direction:column;
-=======
-
-#hamburger{width:50px;
-height:50px;
-padding-right:10px;}
-
-ul{display:flex;
-    flex-wrap:wrap;
-justify-content:flex-end;
-
-list-style:none;
-margin-top:-30px;
-margin-left:-150px;
-}
-
-
-li{list-style: none; }
-a{
-    text-decoration: none;
-    font-size:14px;
-    padding:3px;
-}
-
-
-#hero-section{
-background-image: url("first-background.jpg");
-background-repeat:no-repeat;
-max-width: 100%;
-height:100%;
-padding-bottom:500px;
-
-}
-
-
-#Container{
-display:flex;
-flex-direction:column;
-flex-wrap:wrap;
-
-align-items:center;
-/* align-content:center; */
-color:white;
-}
-
-#Container > h1{font-size:50pt;
-padding-top:20px;
-text-align:center;
-padding-bottom:20px;
-}
-
-#Container > p{font-size:20pt;
-padding-top:20px;
-text-align:center;
-
-padding-bottom:50px;
-}
-.button{
-text-align:center;
-    padding:10px;
-    color:red;
-    background-color:white;
-}
-
-
-
-#three{
-display:flex;
-flex-direction:row;
->>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
-justify-content: space-around;
+justify-content:space-around;
 
 
 }
-<<<<<<< HEAD
 
 #bottom > div{
 
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content: space-evenly;
+margin-top:100px;
+margin-bottom:100px;
+
 
     
-=======
-#container >h1{
-text-align:center;
-} 
-
-.img{
-
-    width:200px;
-    height:200px;
 }
-.img-small{
-    width:50px;
-    height:50px;
-
+#bottom>h1{
+  text-align: center;
 }
-.footer{
-    border-top: 2px solid gray;
-    padding:10px;
+article{ align-items:center;}
+
+footer{
+  
+  display:flex;
+flex-direction:column;
+justify-content: space-between;
 align-items:center;
-display:flex;
-flex-direction: column;
-flex-wrap:flex;
-
-
-
+}
+footer>div{
+  width:50%;
+  align-items:center;
 
 }
-.main{padding-bottom: 100px;}
+#icons{
+   display:flex;
+flex-direction:row
 
-@media screen and (max-width:600px)
-{
+;
+justify-content:center;
+align-items:center;
+}
 
+#bottom>img{align-items:center;}
+@media screen and (max-width:600px){
+  #corner > img {
+    visibility: visible;
+  width: 30px;
+  height: 30px;
+}
+#corner > ul {
+  visibility:hidden;
+}
+#bottom > div{
 
-#three{
 display:flex;
 flex-direction:column;
+flex-wrap:wrap;
+justify-content: center;
 align-items:center;
+margin-top:100px;
+margin-bottom:100px;
 
 
-
-}
-
-
->>>>>>> bbec271102f14a414cf9b1954163a3b626f78b64
+    
 }
