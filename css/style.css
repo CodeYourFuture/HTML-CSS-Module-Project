@@ -68,7 +68,26 @@ align-items:center;
 color:white;
 }
 
-#container > h1{text-align:center;} 
+#Container > h1{font-size:50pt;
+padding-top:20px;
+text-align:center;
+padding-bottom:20px;
+}
+
+#Container > p{font-size:20pt;
+padding-top:20px;
+text-align:center;
+
+padding-bottom:50px;
+}
+.button{
+text-align:center;
+    padding:10px;
+    color:red;
+    background-color:white;
+}
+
+
 
 #three{
 display:flex;
@@ -77,6 +96,9 @@ justify-content: space-around;
 
 
 }
+#container >h1{
+text-align:center;
+} 
 
 .img{
 
@@ -110,6 +132,7 @@ flex-wrap:flex;
 display:flex;
 flex-direction:column;
 align-items:center;
+
 
 
 }
