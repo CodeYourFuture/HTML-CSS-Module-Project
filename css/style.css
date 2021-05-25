@@ -3,6 +3,10 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-image: url "img/first-background.jpg";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 ul {
   margin: 0px;
@@ -26,16 +30,13 @@ ul {
 img {
   width: 50px;
 }
-body {
-  background-image: url("img/first-background.jpg");
-  background-size: cover;
-}
+
 /**
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be organized, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ * - When using flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
