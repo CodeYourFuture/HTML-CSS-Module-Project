@@ -1,9 +1,6 @@
-
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
- 
 }
 
 /**
@@ -15,7 +12,7 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
+/* Navigation bar */
 img {
   width: 100px;
   height: 50px;
@@ -24,18 +21,33 @@ img {
   display: flex;
   justify-content: space-around;
 }
-#main,#footer{width: 1600px;}
+/* #main,
+#footer {
+  width: 1600px;
+} */
 
 #corner > ul {
   display: flex;
-
-  /* align-content:flex-end;
-     align-items:center; */
   justify-content: space-evenly;
   list-style: none;
 }
 ul > li {
   padding: 10px;
+}
+
+li > a {
+  color: darkslategrey;
+  text-decoration: none;
+  font-weight: normal;
+}
+li > a:hover {
+  color: rgb(238, 52, 39);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+li:first-child a {
+  color: rgb(94, 16, 16);
 }
 #navigation_bar > div {
   display: flex;
@@ -43,26 +55,28 @@ ul > li {
 }
 
 #corner > img {
-   visibility: hidden;
+  visibility: hidden;
   width: 30px;
   height: 30px;
 }
+/* Main Styles */
 
-#hero{
+/* Hero Styles */
+#hero {
   background-image: url("/css/first-background.jpg");
-  display:flex;
-  flex-wrap:wrap;
-  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-size: cover;
   justify-content: center;
-  background-position:center center ;
+  background-position: center center;
   background-repeat: no-repeat;
   padding-top: 10rem;
+}
 
-  }
-
-
-#intro, #intro>h1, #intro>p {
+#intro,
+#hero > h1,
+#intro > h2 {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -71,84 +85,96 @@ ul > li {
   align-items: center;
   color: white;
 }
-header,main,footer, #intro>p{text-align: center;}
-#intro > p {
+header,
+main,
+footer,
+#intro > h2 {
+  text-align: center;
+}
+#intro > h2 {
   padding-bottom: 60px;
 }
-#bottom{
-
-display:flex;
-flex-direction:column;
-justify-content:space-around;
-
-
+#bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-#bottom > div{
-
-display:flex;
-flex-direction:row;
-flex-wrap:wrap;
-justify-content: space-evenly;
-margin-top:1rem;
-margin-bottom:1rem;
+#bottom > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-h1,h2{font-weight:normal;}
-    
+h1,
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+}
 
-button{
-  background-color:orange;
-  color:white;
+button {
+  background-color: rgb(51, 33, 2);
+  color: white;
   border-radius: 5px;
 }
-#bottom>h1{
+
+/* general */
+#bottom > h1 {
   text-align: center;
-  padding-top:2rem;
+  font-size: 2em;
+  padding-top: 2rem;
 }
-article{ align-items:center;}
-
-footer{
-  
-  display:flex;
-flex-direction:column;
-justify-content: space-between;
-align-items:center;
+article {
+  align-items: center;
 }
-footer>div{
-  width:50%;
-  align-items:center;
-
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-#icons{
-   display:flex;
-flex-direction:row
-
-;
-justify-content:center;
-align-items:center;
+#footer > div {
+  width: 50%;
+  align-items: center;
+}
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-#bottom>img{align-items:center;}
-@media screen and (max-width:460px){
+.boost > img {
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 460px) {
   #corner > img {
     visibility: visible;
+    width: 30px;
+    height: 30px;
+  }
+  #corner > ul {
+    visibility: hidden;
+  }
+  #bottom > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+.img-small {
   width: 30px;
   height: 30px;
 }
-#corner > ul {
-  visibility:hidden;
-}
-#bottom > div{
-
-display:flex;
-flex-direction:column;
-flex-wrap:wrap;
-justify-content: center;
-align-items:center;
-
-margin-top:100px;
-margin-bottom:100px;
-
-
-    
-}}
