@@ -16,4 +16,40 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* General styles */ 
 
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation styles */ 
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar li {
+
+}
+
+/* Main styles */ 
+
+.introduction {
+    background-image: url("/img/first-background.jpg");
+    text-align: center;
+    color: #fff;
+}
+
+/* Footer styles */ 
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media queries */
