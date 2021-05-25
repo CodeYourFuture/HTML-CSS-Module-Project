@@ -1,19 +1,172 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+* {
+  box-sizing: border-box;
+}
+.body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: auto;
+  background-color: white;
+  padding: 0;
+  margin: 0;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/****************************** Nav-bar Styling  *************************/
+.nav-bar {
+  display: flex;
+  justify-content: right;
+  align-items: left;
+  color: white;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  margin: 30px 50px 0px 0px;
+}
+.nav-bar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
+.navbar-links li {
+  list-style: none;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 1rem;
+  cursor: pointer;
+}
 
+.nav-bar ul li a:hover {
+  color: orangered;
+}
+
+.navbar-links li:hover {
+  cursor: pointer;
+  background-color: rgb(51, 37, 37);
+}
+/* logo styling  */
+ .logo {
+   width: 0px;
+  height: 4.5rem;
+}
+
+/************************** Header styling *********************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+header img {
+  height: auto;
+  width: 48px;
+}
+
+/******************* Button styling  *****************************/
+.button {
+  background-color: red;
+  color: white;
+}
+
+/**********************************Styling the INtro Section ************************/
+.introduction {
+  width: 100%;
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  overflow: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+  color: white;
+}
+.introduction h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.introduction button {
+  background-color: rgb(241, 16, 16);
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 10rem;
+  border-color: rgb(241, 16, 16);
+}
+/******************************************* Styling the Icons  ***********************************/
+.icons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons ul {
+  display: flex;
+  justify-content: space-around;
+}
+.icons li {
+  top: 20px;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 40px;
+  width: 20%;
+  float: left;
+  flex-direction: column;
+}
+
+.icons h1 h3 {
+  text-align: center;
+  display: flex;
+}
+/************************************ Social icons Styling ************************/
+.socials-icons img {
+  width: 50px;
+  height: auto;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/****************** HR break line ***************************/
+hr {
+  width: 90%;
+}
+
+/********************** Media Quary **************************** */
+@media screen and (max-width: 400px) {
+  ul {
+    position: flex;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-bar-links {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav-bar-links li {
+    text-align: center;
+  }
+  .nav-bar-links li a {
+    padding: 0.5rem 1rem;
+  }
+}
