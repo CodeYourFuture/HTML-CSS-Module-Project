@@ -1,9 +1,9 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 1600px;
 }
 
 /**
@@ -16,24 +16,70 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-img{
+img {
+  width: 100px;
+  height: 50px;
+}
+#navigation_bar {
+  display: flex;
+  justify-content: space-around;
+}
 
-    width:100px;
-    height:50px;
+#corner > ul {
+  display: flex;
+
+  /* align-content:flex-end;
+     align-items:center; */
+  justify-content: space-evenly;
+  list-style: none;
+}
+ul > li {
+  padding: 10px;
+}
+#navigation_bar > div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#corner > img {
+  /* visibility: hidden; */
+  width: 30px;
+  height: 30px;
+}
+
+#hero {
+  background-image: url("/img/first-background.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 735px;
+}
+
+#intro {
+  font-size: 2rem;
+  padding-top: 200px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#intro > p {
+  padding-bottom: 60px;
+}
+#bottom{
+
+display:flex;
+flex-direction:column;
+justify-content: space-around;
+
 
 }
-/* ul{
-    padding:0px 10px 10px 10px;
-     display:flex;
-    flex-direction:column;
+
+#bottom > div{
+
+
     
-    align-items: flex-end;
-    justify-content: flex-end;
-    list-style:none;
-    
-} */
-#hamburger{width:50px;
-height:50px;}
-header{display:flex;
-flex-direction:row;
-justify-content:space-evenly;}
+}
