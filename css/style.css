@@ -205,7 +205,21 @@ footer p {
        height: 1.6rem;
    }
    nav .nav-links {
-       display:none;
+       background-color: #fff;
+       border-radius: 12px;
+       position: fixed;
+       top:70px;   
+       flex-direction: column;
+       width: 90%;
+       text-align: center;
+       transform: translateX(120%);
+       transition: transform .4s ease;
+    }
+    nav .nav-links.show-menu{
+        transform: translateX(0);
+   } 
+   nav .nav-links li {
+       padding-bottom: 2rem;
    }
    section.products {
        grid-template-columns: 1fr;
