@@ -16,21 +16,21 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Bimbola Lasisi
+- Your City: Manchester
+- Your Slack Name: Bimbola(bee)
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML/CSS II
+- Week: Week2
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? styling css
 
-- What did you find hard?
+- What did you find hard? nav bar
 
-- What do you still not understand?
+- What do you still not understand? 
 
 - Any other notes?

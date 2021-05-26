@@ -32,9 +32,10 @@
 }
 .nav-bar ul li a {
   text-decoration: none;
-  color: #ddd;
+  color: rgb(151, 144, 144);
   padding: 1rem;
   cursor: pointer;
+
 }
 
 .nav-bar ul li a:hover {
@@ -45,10 +46,10 @@
   cursor: pointer;
   background-color: rgb(51, 37, 37);
 }
-/* logo styling  */
- .logo {
-   width: 0px;
-  height: 4.5rem;
+/********************* logo styling  ************************/
+ .nav-bar .logo img {
+   width: 6px;
+  height: 0.5rem;
 }
 
 /************************** Header styling *********************************/
@@ -67,7 +68,9 @@ header img {
 .button {
   background-color: red;
   color: white;
+  overflow: visible;
 }
+
 
 /**********************************Styling the INtro Section ************************/
 .introduction {
@@ -82,15 +85,22 @@ header img {
   flex-direction: column;
   align-items: center;
   padding: 200px 0;
-  color: white;
+  color: lightgrey;
+  font-weight: normal;
 }
 .introduction h1 {
-  font-size: 50px;
-  color: white;
+  font-size: 40px;
+  color:rgb(184, 179, 179);
   text-align: center;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
+.introduction h3 {
+  font-size: 20px;
+  color:rgb(180, 166, 166);
+  text-align: center;
+  font-weight: normal;
+}
 .introduction button {
   background-color: rgb(241, 16, 16);
   font-size: 1.2rem;
@@ -105,6 +115,10 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: rgb(110, 110, 110);
+}
+.icons img{
+  width: 50%;
 }
 .icons ul {
   display: flex;
@@ -127,7 +141,7 @@ header img {
 }
 /************************************ Social icons Styling ************************/
 .socials-icons img {
-  width: 50px;
+  width: 20px;
   height: auto;
 }
 
@@ -150,7 +164,7 @@ hr {
 }
 
 /********************** Media Quary **************************** */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   ul {
     position: flex;
   }
