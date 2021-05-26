@@ -63,9 +63,10 @@ img {
 
 .introduction {
     background: #000 url("/img/first-background.jpg") no-repeat;
+    background-position: center left;
     text-align: center;
     color: #fff;
-    height: 45rem;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,33 +93,53 @@ img {
 }
 
 .features {
-    height: 45rem;
+    height: 90vh;
+    position: relative;
+}
+
+.features h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 10rem auto -3rem auto;
+}
+
+.features p {
+    font-size: 2rem;
+    font-weight: 300;
+    align-self: flex-end;
 }
 
 .features .img {
     max-width: 500px;
     height: 500px;
     justify-content: space-around;
+    margin-top: -3rem;
 }
 
 .devices {
     background: url("/img/icon-devices.svg") no-repeat center;
-    flex: 0 1 20%;
+    flex: 0 1 25%;
+    background-size: 50%;
+    display: flex;
 }
 
 .coffee {
     background: url("/img/icon-coffee.svg") no-repeat center;
-    flex: 0 1 20%;
+    flex: 0 1 25%;
+    background-size: 50%;
+    display: flex;
 }
 
 .refill {
     background: url("/img/icon-refill.svg") no-repeat center;
-    flex: 0 1 20%;
+    flex: 0 1 25%;
+    background-size: 50%;
+    display: flex;
 }
 
 .feature-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 main {
@@ -130,10 +151,13 @@ main {
 footer {
     line-height: 5rem;
     margin: 1.5rem auto 4rem auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-media-icons {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     width: 10%;
     margin: 0 auto;
@@ -150,17 +174,5 @@ footer {
 .karma, .social-media-icons img {
     opacity: 70%;
 }
-/* 
-.twitter {
-    grid-area: "twitter";
-}
-
-.facebook {
-    grid-area: "facebook";
-}
-
-.instagram { 
-    grid-area: "instagram";
-} */
 
 /* Media queries */
