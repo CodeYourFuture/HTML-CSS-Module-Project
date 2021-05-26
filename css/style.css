@@ -1,4 +1,4 @@
-body {
+-body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -82,6 +82,30 @@ li:first-child a {
   align-items: center;
   color: white;
 }
+
+#extended{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(255, 192, 203, 0.438);
+  justify-content:flex-start;
+  /* align-items: center; */
+  
+  color: rgb(7, 7, 7);
+
+}
+#ex-version{
+  width:60%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#feature{width:40%; height:439px;}
 header,
 main,
 footer,
@@ -151,6 +175,42 @@ article {
   height: 250px;
 }
 
+.fa {
+  padding-top: 5px;
+  font-size: 50px;
+  height:20px;
+  width: 50px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+
+/*  Instagram */
+.fa-instagram {
+  background: #ee55da;
+  color: white;
+}
 /* Mobile screen */
 @media screen and (max-width: 460px) {
   #corner > img {
@@ -158,6 +218,12 @@ article {
     width: 30px;
     height: 30px;
   }
+#navigation_bar {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: inherit;
+}
+
   #corner > ul {
     display: none;
   }
@@ -171,8 +237,7 @@ article {
     margin-top: 100px;
     margin-bottom: 100px;
   }
-}
-.img-small {
-  width: 30px;
-  height: 30px;
+  #extended{
+      display:none;
+  }
 }
