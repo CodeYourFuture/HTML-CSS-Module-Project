@@ -125,13 +125,12 @@ img {
   width: 60%;
   margin: auto;
   padding: 1rem;
+  justify-content: center;
 }
 
 .social-icons img {
-  justify-content: center;
-  align-items: center;
   width: 20px;
-  margin: auto;
+  margin: 3%;
   border: 2px solid lightgrey;
   border-radius: 50px;
   padding: 7px;
@@ -236,12 +235,6 @@ footer p {
     margin: 0 70px;
   }
 
-  /* .hamburger {
-    width: 25px;
-
-    padding-right: 8rem;
-  } */
-
   .social-media h4 {
     border-top: 3px solid lightgrey;
     width: 60%;
@@ -256,11 +249,10 @@ footer p {
     width: 60%;
     margin: auto;
     padding: 1rem;
+    align-items: center;
   }
 
   .social-icons img {
-    justify-content: space-around;
-    align-items: center;
     width: 20px;
     margin: auto;
     border: 2px solid lightgrey;
