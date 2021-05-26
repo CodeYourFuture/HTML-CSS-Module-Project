@@ -118,6 +118,7 @@ h2 {
 
 h3 {
   margin-top: 100px;
+  text-align: center;
 }
 
 #cta {
@@ -185,5 +186,30 @@ footer p:last-child {
 
   nav ul {
     visibility: hidden;
+  }
+
+  #hero-img {
+    height: 400px;
+    object-fit: cover;
+    object-position: 65% 0;
+  }
+
+  #hero-text {
+    top: 20vh;
+    transform: scale(0.6);
+  }
+
+  h3 {
+    transform: scale(0.4);
+  }
+
+  #feature-container {
+    gap: 40px;
+    transform: scale(0.7);
+    margin: -140px 0 0 0;
+  }
+
+  footer {
+    margin: -120px 0 0 0;
   }
 }
