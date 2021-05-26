@@ -8,19 +8,16 @@ body {
   vertical-align: baseline;
 }
 .content {
-    padding: 0 0.938rem;
-    margin: 0 auto;
-    min-width: 37.5rem;
+  padding: 0 0.938rem;
+  margin: 0 auto;
+  min-width: 37.5rem;
 }
 :focus {
-    outline: none;
+  outline: none;
 }
 nav {
   display: block;
 }
-
-
-
 
 /* Navigation part style*/
 .navigationbar {
@@ -42,14 +39,13 @@ nav {
   font-size: medium;
   margin-top: 27px;
 }
-.navigationbar .links li {
+.navigationbar .links li .active {
   display: inline-block;
   font-weight: 400;
 }
-.navigationbar .links li :hover{
+.navigationbar .links li :hover {
   cursor: pointer;
   color: black;
-
 }
 
 /*header {
