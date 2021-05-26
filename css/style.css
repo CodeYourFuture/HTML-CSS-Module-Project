@@ -20,6 +20,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin: 0 0 20px 0;
 }
 
 nav {
@@ -30,11 +31,12 @@ nav {
 
 /*for media queries*/
 #hamburger {
-  width: 10%;
+  visibility: hidden;
+  position: absolute;
 }
 
 #logo {
-  width: 10%;
+  width: 5%;
   max-width: 50px;
   height: 10%;
   max-height: 50px;
@@ -45,6 +47,7 @@ nav ul {
   display: flex;
   list-style-type: none;
   padding: 0 80px 0 0;
+  position: absolute;
 }
 
 nav ul li {
@@ -170,8 +173,17 @@ footer p:last-child {
   color: #b5b5b5;
 }
 
-@media screen and (min-width: 560px) {
+@media screen and (max-width: 420px) {
+  #logo {
+    padding: 25px 0 0 30px;
+  }
+
   #hamburger {
-    display: none;
+    visibility: visible;
+    padding: 35px 30px;
+  }
+
+  nav ul {
+    visibility: hidden;
   }
 }
