@@ -15,8 +15,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-nav {
-  height: 70px;
+/ nav {
   display: grid;
   grid-template-columns: 30% 80%;
   position: fixed;
@@ -33,7 +32,7 @@ nav {
   overflow: hidden;
   margin-left: 20%;
   z-index: 0;
-  margin-top: 6%;
+  margin-top: 1%;
 }
 
 .nav-a-container {
@@ -41,8 +40,7 @@ nav {
   justify-content: space-around;
   align-self: center;
 
-  color: #8b8d91;
-  display: none;
+  color: #0c3c9e;
 }
 
 /*
@@ -73,7 +71,7 @@ nav {
 }
 
 .inner-header-div button {
-  background-color: orangered;
+  background-color: blue;
   padding: 15px;
   border-radius: 1rem;
   border-color: orangered;
@@ -86,48 +84,35 @@ hidden. Currently I) am controlling it through max height and I can't get justif
   background-image: url("https://raw.githubusercontent.com/erin-switchstitch/HTML-CSS-Coursework-Week2/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 500px;
 }
 
 main,
 h2 {
   color: #8b8d91;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 50px;
   font-size: 1.2em;
-  margin-left: 3%;
-  margin-right: 3%;
+
+  color: #0c3c9e;
 }
 
 figcaption {
   font-size: 1em;
 }
 
-.main-img-container{
-    
-    display: flexbox;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
+.main-img-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-img {
-    
-    padding: 5%;
-    
-    
-  
-  
-   
-  
+  flex-basis: 200px;
+  flex-grow: 1;
 }
 
 .main-img:last-of-type {
-    height: 100%;
 }
-
-
 
 footer {
   align-content: center;
@@ -136,13 +121,12 @@ footer {
 
 footer p {
   text-align: center;
-  padding-top: 30%;
+  padding-top: 10%;
   padding-bottom: 5%;
 }
 
 .footer-container {
   display: flex;
-
   justify-content: space-evenly;
   max-height: 80px;
   width: 100%;
