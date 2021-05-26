@@ -36,27 +36,22 @@ img {
     max-width: 100%;
 }   
 
-/* Navigation styles */ 
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    height: 3rem;
-    align-items: center;
-}
-
-.nav-bar ul {
+.nav-bar .nav-list {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 .nav-bar li {
-
+    margin-right: 3rem;
 }
 
 .nav-bar a {
-    color: #C2B99E;
+    color: #86847d;
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
 }
 
 /* Main styles */ 
