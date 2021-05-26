@@ -19,7 +19,7 @@
   background-color: white;
   border-bottom: 1px solid #ddd;
   text-decoration: none;
-  margin: 30px 50px 0px 0px;
+  margin: 20px 50px 0px 0px;
 }
 .nav-bar ul {
   display: flex;
@@ -35,7 +35,6 @@
   color: rgb(151, 144, 144);
   padding: 1rem;
   cursor: pointer;
-
 }
 
 .nav-bar ul li a:hover {
@@ -48,10 +47,15 @@
 }
 /********************* logo styling  ************************/
  .nav-bar .logo img {
-   width: 6px;
+   width: 2px;
   height: 0.5rem;
 }
 
+li:first-child a{
+  color:rgb(0, 0, 0);
+  font-weight: bolder;
+
+}
 /************************** Header styling *********************************/
 header {
   display: flex;
@@ -65,12 +69,11 @@ header img {
 }
 
 /******************* Button styling  *****************************/
-.button {
+.button:hover{
   background-color: red;
   color: white;
   overflow: visible;
 }
-
 
 /**********************************Styling the INtro Section ************************/
 .introduction {
@@ -163,12 +166,13 @@ hr {
   width: 90%;
 }
 
-/********************** Media Quary **************************** */
-@media screen and (max-width: 500px) {
+/********************** Media Queries responsive layout **************************** */
+@media screen and (max-width: 400px) {
   .nav-bar ul {
     position: flex;
   }
 
+  .
   .nav-bar {
     flex-direction: column;
     align-items: flex-start;
