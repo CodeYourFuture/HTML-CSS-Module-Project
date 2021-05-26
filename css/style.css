@@ -79,18 +79,41 @@ img {
 
 .introduction p:nth-child(2) {
     font-size: 2.2rem;
+    margin-bottom: 50px;
 }
 
 .learn-more a {
-    background-color: rgb(211, 68, 68);
+    background-color: #E0633A;
     color: #fff;
-    border: 1px solid #f00;
-    border-radius: 10%;
-    padding: 10px;
+    border: none;
+    border-radius: 6%;
+    padding: 15px;
+    font-size: 1.5rem;
 }
 
 .features {
     height: 45rem;
+}
+
+.features .img {
+    max-width: 500px;
+    height: 500px;
+    justify-content: space-around;
+}
+
+.devices {
+    background: url("/img/icon-devices.svg") no-repeat center;
+    flex: 0 1 20%;
+}
+
+.coffee {
+    background: url("/img/icon-coffee.svg") no-repeat center;
+    flex: 0 1 20%;
+}
+
+.refill {
+    background: url("/img/icon-refill.svg") no-repeat center;
+    flex: 0 1 20%;
 }
 
 .feature-container {
@@ -98,10 +121,15 @@ img {
     justify-content: space-around;
 }
 
+main {
+    border-bottom: 2px solid #d3d0c8;
+}
+
 /* Footer styles */
 
 footer {
-    border-top: 2px solid #d3d0c8;
+    line-height: 5rem;
+    margin: 1.5rem auto 4rem auto;
 }
 
 .social-media-icons {
