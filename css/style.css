@@ -1,5 +1,6 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -15,38 +16,46 @@ body {
 :focus {
   outline: none;
 }
-nav {
-  display: block;
-}
+
+
+
 
 /* Navigation part style*/
-.navigationbar {
+
+.navigation__bar {
   background-color: rgb(235, 217, 217);
   position: fixed;
   width: 100%;
   border-bottom: 0em solid #ddd;
   z-index: 9999;
 }
-.navigationbar > .content {
+.navigation__bar > .content {
   height: 70px;
 }
-.navigationbar .logo {
+.navigation__bar .logo {
   height: 70px;
 }
-.navigationbar .links {
+.navigation__bar ul {
   float: right;
   color: beige;
   font-size: medium;
   margin-top: 27px;
 }
-.navigationbar .links li .active {
+.navigation__bar .links li {
   display: inline-block;
-  font-weight: 400;
+  margin-left: 1.563rem;
+
 }
-.navigationbar .links li :hover {
+.navigation__bar .links li.active {
+  color: aliceblue;
+  font-weight: 500;
+}
+.navigation__bar .links li :hover {
   cursor: pointer;
   color: black;
+
 }
+/* first background*/
 
 /*header {
   background-color: transparent;
