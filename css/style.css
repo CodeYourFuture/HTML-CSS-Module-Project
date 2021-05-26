@@ -89,3 +89,32 @@ hidden. Currently I) am controlling it through max height and I can't get justif
 
   z-index: -1;
 }
+
+main,
+h2 {
+  color: #8b8d91;
+  text-align: center;
+  padding-top: 5%;
+}
+
+figcaption {
+  font-size: 2em;
+}
+
+.main-img {
+  max-width: 40%;
+  padding-top: 20%;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  width: 100%;
+}
+
+.footer-img {
+  max-width: 100%;
+  max-height: auto;
+
+  overflow: hidden;
+}
