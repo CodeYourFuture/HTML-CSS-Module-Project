@@ -61,6 +61,11 @@ a {
     color: #86847d;
     font-size: 1.2rem;
     padding: 1rem 1rem;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-bar a:hover {
+    color: #E0633A;
 }
 
 /* Main styles */ 
@@ -95,6 +100,11 @@ a {
     border-radius: 6%;
     padding: 15px;
     font-size: 1.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.learn-more  a:hover {
+    background-color: #e0633ac0;
 }
 
 .features {
