@@ -20,32 +20,47 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0px 100px;
+  padding: 0px 50px;
 }
 
-.nav-bar > ul {
-  display: flex;
-  align-items: flex-end;
+.nav-bar {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
 }
 
-.nav-bar > ul > li {
-  display: inline;
-  margin-inline: 20px;
-  margin-top: 10px;
+.menu {
+  margin: 0px 30px 0px 0px;
 }
 
-.nav-link {
+.menu a {
+  clear: right;
   text-decoration: none;
   color: gray;
+  margin: 0px 10px;
+  line-height: 70px;
 }
 
-li:first-child {
-  font-weight: 600;
-}
-
-.nav-link:hover {
+.menu a:hover {
   cursor: pointer;
   color: rgb(238, 132, 2);
+}
+
+span {
+  font-weight: 500;
+}
+
+label {
+  margin: 0px 40px 0px 0px;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
 }
 
 /*styling article*/
@@ -165,8 +180,31 @@ footer p:last-child {
     padding: 0px 10px;
   }
 
-  .nav-bar > ul {
-    flex-direction: column;
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+  }
+
+  .menu a:hover {
+  cursor: pointer;
+  color:black;
+  background-color: rgb(238, 132, 2);
+}
+
+  #toggle:checked + .menu {
+    display: block;
   }
 
   h1 :first-child {
