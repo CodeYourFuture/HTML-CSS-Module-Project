@@ -94,7 +94,7 @@ header img {
     margin: 1rem 0;
     text-align: center;
 }
-.introduce button{
+.introduce button, .get-today button{
     background-color:#E03210;
     border: none;
     border-radius: 5px;
@@ -102,10 +102,10 @@ header img {
     margin: 4rem auto;
     transition: background-color .4s ease;
 }
-.introduce button:hover {
+.introduce button:hover, .get-today button:hover {
     background-color:  rgb(231, 140, 107);
 }
-.introduce button a {
+.introduce button a, .get-today button a {
     color: #fff;
     font-weight: 500;
     letter-spacing: 3px;
@@ -146,6 +146,34 @@ header img {
     justify-content: space-between;
     align-items: center;
 }
+/* get Karma today section styles */
+.get-today {
+    background-color: rgb(253,234,231);
+    display: flex;
+    justify-items: center;
+    /* align-content: center; */
+}
+.get-today img {
+    max-width: 40vw;
+}
+.get-today article:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.get-today h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+    text-align: center;
+}
+.get-today button {
+    margin: 3rem auto 1rem;
+}
+
 
 /* Footer styles */
 footer {
@@ -183,7 +211,6 @@ footer a {
     border:1px solid #9c9c9c;
     border-radius: 50%;
     padding: 10px;
-    color:red;
     background-color: #fff;
     text-decoration: none;
    transition: all 0.5s ease-in-out;
@@ -226,6 +253,16 @@ footer p {
    }
    .products h2 {
        grid-column: 1/2;
+   }
+   .get-today {
+       flex-direction: column;
+   }
+   .get-today img {
+       max-width: 100%;
+       margin-bottom: 3rem;
+   }
+   .get-today button {
+       margin-bottom: 3rem ;
    }
 }
 
