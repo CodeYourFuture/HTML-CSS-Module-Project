@@ -69,6 +69,21 @@ nav a {
 nav a:hover {
     color: #E06239;
 }
+
+@media screen and (max-width: 700px) {
+    .navlinks {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    nav li {
+        font-size: 1.5rem;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+}
  /* end of header */
 /* 
 /* 
@@ -130,7 +145,39 @@ nav a:hover {
     background-color: #fff;
 }
 /* end of hero section */
-/* 
+
+@media screen and (min-width: 400px) {
+    .hero {
+        padding: 160px 0;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+        padding: .2rem 2rem;
+    }
+    .hero-text p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-title {
+        font-size: 4rem;    
+    }
+    .hero-text p {
+        padding: .2rem 3rem;
+        font-size: 1.6rem;
+    }
+    .hero-btn {
+        font-size: 1.2rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .hero-btn {
+        font-size: 1.6rem;
+    }
+}
+
 /* 
 /* 
 /* 
@@ -172,6 +219,79 @@ nav a:hover {
 .intro-right-img {
     width: 115px;
 }
+
+@media screen and (min-width: 400px) {
+    .intro-header h2 {
+        font-size: 1.8rem;
+    }
+    .hero-btn {
+        font-size: 1rem;
+    }
+    .intro-imgs p {
+        font-size: .9rem;
+    }
+    .intro-left-img {
+        width: 150px;
+    }
+    .intro-middle-img {
+        width: 150px;
+    }
+    .intro-right-img {
+        width: 150px;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .intro-header h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .intro-header h2 {
+        font-size: 2.8rem;
+    }
+    .intro-imgs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .intro-imgs p {
+        font-size: 1rem;
+    }
+    .intro-left-img {
+        width: 180px;
+        margin: 0 4rem;
+    }
+    .intro-middle-img {
+        width: 180px;
+        margin: 0 4rem;
+    }
+    .intro-right-img {
+        width: 180px;
+        margin: 0 4rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .intro-header h2 {
+        font-size: 3.8rem;
+    }
+    .intro-imgs p {
+        font-size: 1.8rem;
+    }
+    .intro-left-img {
+        width: 300px;
+    }
+    .intro-middle-img {
+        width: 300px;
+    }
+    .intro-right-img {
+        width: 300px;
+    }  
+}
+
 /* article section end  */
 /* 
 /* 
@@ -198,36 +318,42 @@ nav a:hover {
 
 
 /* footer section */
-.footer-wrapper p {
-    color: #bababd;
-    font-size: .8rem;
-    padding: 1rem 0;
-}
 
+footer {
+    margin-bottom: 2rem;
+}
 .join-text {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
+
 
 .icons {
     display: flex;
-    justify-content: space-evenly;
-    align-self: center;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .icons img {
-    width: 20px;
+    width: 30px;
+    border-radius: 100%; 
+    border: 2px solid #bababd;
+    margin: 0 0.5rem;
 }
 
 .social-icon {
-    border-radius: 50%; 
-    border: 2px solid #bababd;
-    padding: 7px;
+    
 }
 
 .disclaimer {
     display: flex;
     justify-content: center;
+}
+@media screen and (min-width: 400px) {
+    .footer-wrapper p {
+        font-size: 1rem;
+    }
 }
 /* footer end */
 /* 
@@ -239,167 +365,3 @@ nav a:hover {
 /* 
 /* 
 /* 
-/* !!!!!!!!Media Queries Below!!!!!!!!  */
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* From 400px upwards */
-@media screen and (min-width: 400px) {
-    .hero {
-        padding: 160px 0;
-    }
-    .hero-title {
-        font-size: 2.8rem;
-        padding: .2rem 2rem;
-    }
-    .hero-text p {
-        font-size: 1.8rem;
-    }
-    .intro-header h2 {
-        font-size: 1.8rem;
-    }
-    .hero-btn {
-        font-size: 1rem;
-    }
-    .intro-imgs p {
-        font-size: .9rem;
-    }
-    .intro-left-img {
-        width: 150px;
-    }
-    .intro-middle-img {
-        width: 150px;
-    }
-    .intro-right-img {
-        width: 150px;
-    }
-    .footer-wrapper p {
-        font-size: 1rem;
-    }
-}
-/* end of 400px upwards */
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* From 500px upwards */
-@media screen and (min-width: 500px) {
-    .intro-header h2 {
-        font-size: 2.5rem;
-    }
-}
-/* end of 500px upwards */
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* from 700px upwards */
-@media screen and (min-width: 700px) {
-    .hero-title {
-        font-size: 4rem;    
-    }
-    .hero-text p {
-        padding: .2rem 3rem;
-        font-size: 1.6rem;
-    }
-    .hero-btn {
-        font-size: 1.2rem;
-    }
-    .nav-toggle {
-        display: none;
-    }
-    .hero-btn {
-        font-size: 1.6rem;
-    }
-    .intro-header h2 {
-        font-size: 2.8rem;
-    }
-    .intro-imgs {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .intro-imgs p {
-        font-size: 1rem;
-    }
-    .intro-left-img {
-        width: 180px;
-        margin: 0 4rem;
-    }
-    .intro-middle-img {
-        width: 180px;
-        margin: 0 4rem;
-    }
-    .intro-right-img {
-        width: 180px;
-        margin: 0 4rem;
-    }
-}
-/* end of from 700px upwards */
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* from 0 to 700px */
-@media screen and (max-width: 700px) {
-    .navlinks {
-        display: none;
-    }
-}
-/* end of 0 to 700px */
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* 
-/* From 900px upwards */
-@media screen and (min-width: 900px) {
-    nav li {
-        font-size: 1.5rem;
-    }
-    nav a {
-        font-size: 1.5rem;
-    }
-
-    .intro-header h2 {
-        font-size: 3.8rem;
-    }
-
-
-
-    .intro-imgs p {
-        font-size: 1.8rem;
-    }
-    .intro-left-img {
-        width: 300px;
-    }
-    .intro-middle-img {
-        width: 300px;
-    }
-    .intro-right-img {
-        width: 300px;
-    }  
-
-}
-/* end of 900px upwards */
-
