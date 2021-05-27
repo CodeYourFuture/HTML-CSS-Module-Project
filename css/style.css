@@ -39,6 +39,7 @@ a {
     justify-content: space-between;
 }
 
+    /* Adjust the size and align the position of the logo image in nav bar */
 .logo {
     max-height: 4rem;
     max-width: auto;
@@ -46,6 +47,7 @@ a {
     margin: auto 0 auto 5rem;
 }
 
+    /*Style the navigation bar links */
 .nav-bar .nav-list {
     list-style-type: none;
     display: flex;
@@ -70,6 +72,8 @@ a {
 
 /* Main styles */ 
 
+    /*First (.introduction) section styles */
+
 .introduction {
     background: #000 url("/img/first-background.jpg") no-repeat;
     background-position: center left;
@@ -93,6 +97,8 @@ a {
     margin-bottom: 50px;
 }
 
+    /* learn more link in the .introduction section */
+
 .learn-more a {
     background-color: #E0633A;
     color: #fff;
@@ -106,6 +112,8 @@ a {
 .learn-more  a:hover {
     background-color: #e0633ac0;
 }
+
+    /*The second (.features) section */
 
 .features {
     display: flex;
@@ -138,25 +146,23 @@ a {
     align-items: flex-end   ;
 }
 
+    /* Each image in the .features section */
 .devices {
     background: url("/img/icon-devices.svg") no-repeat center;
     flex: 0 1 25%;
     background-size: 50%;
-    display: flex;
 }
 
 .coffee {
     background: url("/img/icon-coffee.svg") no-repeat center;
     flex: 0 1 25%;
     background-size: 50%;
-    display: flex;
 }
 
 .refill {
     background: url("/img/icon-refill.svg") no-repeat center;
     flex: 0 1 25%;
     background-size: 50%;
-    display: flex;
 }
 
 
