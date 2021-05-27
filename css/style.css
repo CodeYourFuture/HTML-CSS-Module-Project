@@ -1,10 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+
 
 /**
  * Add your custom styles below
@@ -16,4 +13,132 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
 
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 10px 30px;
+}
+
+header img {
+    width: 20px;
+    padding: 5px;
+}
+
+header nav ul {
+    display: flex;
+    align-content: space-around;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin: 2px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-nav ul li:first-child {
+    font-weight: bold;
+}
+
+.top-nav ul li:hover {
+    color: rgb(236, 95, 43);
+}
+
+
+/* Main content */
+
+.main-content {
+    display: flex;
+    background: url(../img/first-background.jpg) no-repeat;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-content h2, p {
+    margin: 10px;
+    padding: 5px;
+    font-weight: lighter;  
+}
+
+.main-content p {
+    font-size: 22px;   
+}
+
+.introducing-h2 {
+    font-size: 40px;
+}
+
+.main-content > a {
+    background: rgb(236, 95, 43);
+    border-radius: 3px;
+    padding: 8px 12px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+/* icon section */
+
+.icon-section h2 {
+    text-align: center;
+    margin-top: 90px;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 50px 0px;
+}
+
+
+.image-p {
+    width: 20vh;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin: 10px 0 100px 0;
+}
+
+footer img {
+    width: 15px;
+    margin: 5px 10px;
+    padding: 10px;
+    border: 1px lightgrey solid;
+    border-radius: 50%;
+}
+
+hr {
+    margin: 0 120px;
+    border: thin solid lightgrey;
+}
