@@ -21,7 +21,7 @@ body {
 
 /* Navigation part style*/
 
-.content {
+/*.content {
   padding: 0 0.938rem;
   margin: 0 auto;
   min-width: 37.5rem;
@@ -40,20 +40,20 @@ body {
   z-index: 9999;
 }
 .navigation > .content {
-  height: 4.375rem;
+  height: 70px;
 }
 .navigation .logo {
-  height: 4.375rem;
+  height: 70px;
 }
 .navigation .links {
   float: right;
   color: #838994;
-  font-size: 1.04rem;
-  margin-top: 1.7rem;
+  font-size: 18px;
+  margin-top: 27px;
 }
 .navigation .links li {
   display: inline-block;
-  margin-left: 1.563rem;
+  margin-left: 25px;
 }
 .navigation .links li.active {
   color: #4c5058;
@@ -67,20 +67,19 @@ body {
 /* Introduction Section*/
 
 .heroImage {
-background-image: url('../img/first-background.jpg');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 735.008px;
-    overflow: auto;
+  background-image: url("../img/first-background.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 735.008px;
+  overflow: auto;
 }
 
 .heroContents {
-	padding-top: 400px;
-	text-align: center;
-	color: white;
+  padding-top: 400px;
+  text-align: center;
+  color: white;
 }
-
 
 .bookButton {
   background-color: orange;
@@ -91,16 +90,6 @@ background-image: url('../img/first-background.jpg');
   border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
- */
 /*.background {
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -263,7 +252,83 @@ nav a :hover {
   letter-spacing: 3px;
   margin-bottom: 0px;
 }
-*/
+/*the second section style*/
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section h2 {
+  margin: 1.625rem 0 3.125rem;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  font-size: xx-large;
+  word-spacing: 10px;
+}
+
+ul {
+  display: flex;
+  justify-self: auto;
+  list-style: none;
+}
+section h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  text-align: -webkit-match-parent;
+}
+
+/*social media icons*/
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h5 {
+  margin-bottom: 1px;
+  display: flex;
+  margin-right: 0%;
+}
+
+.ftr__icons {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+.copyrights {
+  margin: 0%;
+  margin-bottom: 50px;
+}
+
+/* Responsive Design
+ */
+@media (min-width: 768px) {
+  .content {
+    width: 46rem;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    width: 60%;
+  }
+}
+
 /*
  /* Add your custom styles below
  /* 
