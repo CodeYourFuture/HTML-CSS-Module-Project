@@ -10,9 +10,9 @@
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body id="meet-karma">
-    <header>
+    <header id="header">
         <img class="logo" src="img/karma-logo.svg" alt="karma logo">
-        <nav id="nav">
+        <nav id="nav" class="nav">
             <ul>
                 <li><a href="#meet-karma">Meet Karma</a></li>
                 <li><a href="">How it Works</a></li>
@@ -22,7 +22,7 @@
                 <li><a href="">Login</a></li>
             </ul>
         </nav>
-        <img class="menu" id="hamburger-menu" src="img/menu-hamburger.svg" alt="navigation icon">
+        <img class="menu" id="hamburger-menu" onclick="myFunction()" src="img/menu-hamburger.svg" alt="navigation icon">
     </header>
     <main>
         <section class="hero-section">
@@ -47,6 +47,7 @@
                 </div>
             </section>
         </section>
+        <!--Get Karma-->
         <section class="get-karma">
             <img src="additional/feature-img.png" alt="a girl using Karma">
             <div class="call-to-action">
@@ -66,5 +67,6 @@
         <p>&commat;Karma Mobility, Inc.</p>
 
     </footer>
+    <script src="js/karma.js"></script>
 </body>
 </html>
