@@ -64,9 +64,44 @@ body {
   color: #333333;
 }
 
-/* Introduction Section
+/* Introduction Section*/
+
+.heroImage {
+background-image: url('../img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 735.008px;
+    overflow: auto;
+}
+
+.heroContents {
+	padding-top: 400px;
+	text-align: center;
+	color: white;
+}
+
+
+.bookButton {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
  */
-.background {
+/*.background {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +126,7 @@ body {
 
 /* The buttons
  */
-.background .button1 {
+/*.background .button1 {
   color: white;
   text-align: center;
   margin-top: 1.563rem;
