@@ -237,7 +237,7 @@ article {
     margin-top: 100px;
     margin-bottom: 100px;
   }
-  #extended{
-      display:none;
-  }
+
+  #corner:hover > #list {display:flex; flex-direction:column;}
+  #extended{display:none;}
 }
