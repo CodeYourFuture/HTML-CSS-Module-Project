@@ -137,6 +137,32 @@ section {
   font-weight: bold;
 }
 
+/*extended*/
+
+.extended {
+  display: flex;
+  width: 100%;
+  background-color: rgb(247, 169, 160, 0.1);
+}
+
+.get-karma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 250px;
+}
+
+.get-karma p {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.get-karma button {
+  color: white;
+  margin-top: 20px;
+}
+
 /*footer*/
 footer {
   display: flex;
@@ -172,6 +198,19 @@ footer p:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .extended {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 169, 160, 0.1);
+  }
+
+  .get-karma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
   }
 }
 
@@ -230,6 +269,19 @@ footer p:last-child {
   .section-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .extended {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 169, 160, 0.1);
+  }
+
+  .get-karma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
   }
 }
 
