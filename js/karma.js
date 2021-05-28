@@ -1,7 +1,6 @@
-//Just an experiment that is not working yet
-const menu = document.getElementById("hamburger-menu");
-const nav = document.getElementById("nav");
-
-menu.addEventListener("click", () => {
-    nav.style.left.value = "0";
-})
+function myFunction() {
+    var navigation = document.getElementById("nav");
+    var header = document.getElementById("header");
+    navigation.classList.toggle("navigation");
+    header.classList.toggle("fixed");
+ }
