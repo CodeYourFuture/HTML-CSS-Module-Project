@@ -38,7 +38,7 @@ header {
   text-decoration: none;
   color: gray;
   margin: 0px 10px;
-  line-height: 70px;
+  line-height: 35px;
 }
 
 .menu a:hover {
@@ -189,6 +189,11 @@ footer p:last-child {
     text-align: center;
     width: 100%;
     display: none;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    margin-top: 10px;
   }
 
   .menu a {
@@ -198,10 +203,10 @@ footer p:last-child {
   }
 
   .menu a:hover {
-  cursor: pointer;
-  color:black;
-  background-color: rgb(238, 132, 2);
-}
+    cursor: pointer;
+    color: black;
+    background-color: rgb(238, 132, 2);
+  }
 
   #toggle:checked + .menu {
     display: block;
@@ -254,3 +259,11 @@ footer p:last-child {
 }
 
 */
+/*text-align: center;
+    width: 100%;
+    display: none;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    margin: auto;*/
