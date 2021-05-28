@@ -6,7 +6,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    
 }
 
 /*Header Styles*/
@@ -101,6 +100,36 @@ body {
     border-radius: 2%;
     margin: 5% 10% 20% 35%;
 }
+
+/*Section Main Content Styles*/
+.main-content .main-container h2 {
+    padding: 1em;
+    font-weight: 300;
+    text-align: center;
+}
+/*Card Styles*/
+.card {
+    width: 70%;
+    padding: 1.5em 3.5em;
+}
+
+ .card img {
+     padding: 0 4em;
+     margin: 0 auto;
+     width: 30%;
+ }
+
+ .main-content .main-container .card h3 {
+     font-weight: 300;
+ }
+
+ .card-ctn {
+     text-align: center;
+ }
+
+ .card-ctn #card-title {
+     margin-left: -1.75em;
+ }
 /**
  * Add your custom styles below
  * 
