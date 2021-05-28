@@ -16,4 +16,111 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*general style*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+/*main section style*/
+#intro{
+    background-image: url(/img/first-background.jpg);
+    position: relative;
+    min-height: 600px;
+    max-width: 100%;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#intro h1{
+    
+    color: azure;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 2.5px;
+}
+#intro p{
+color:azure ;
+font-size: 1.1em;
+font-weight: 100;
+}
+#intro .btn{
+    background-color: #F05A29;
+    color: azure;
+    padding: 10px 20px;
+    margin-top: 25px;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+#intro .btn:hover{
+background-color: aliceblue;
+color:#F05A29 ;
+}
+/*section styles*/
+#services-container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2rem auto;
+    padding:0 2rem;
+}
+#services-container h2{
+    font-size:2rem ;
+    font-weight: 500;
+}
+.services{
+    display: flex;
+    flex-flow: row wrap;
+   
+}
+
+
+
+
+
+
+#get_karma .btn{
+    background-color: #F05A29;
+    color: azure;
+    padding: 10px 20px;
+    margin-top: 25px;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+#get_karma .btn:hover{
+background-color: aliceblue;
+color:#F05A29 ;
+}
+
+/*footer styles*/
+.social-links{
+    display:flex;
+    flex-wrap:wrap;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    justify-content:center;
+  }
+  
+
 
