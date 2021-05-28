@@ -1,10 +1,75 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+/*Universal styles*/
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
 }
+
+/*Header Styles*/
+.header {
+    width: 100%;
+    position: fixed;
+    max-height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    padding: 1em;
+    width: 25px;
+    height: auto;
+}
+
+#menu-hamburger {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    padding: 2em;
+    cursor: pointer;
+    margin-right: 0.5em;
+    margin-top: -0.5em;
+}
+
+/*The container <div> - needed to position content*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*Dropdown content (Hidden by default)*/
+.dropdown-nav {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   right: 0;
+}
+
+/*Links inside the Dropdown Menu*/
+.dropdown-nav a {
+    color: #000;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+/*Change colour of dropdown links on hover*/
+.dropdown-nav a:hover {
+    background-color: #ddd;
+}
+
+/*Show the dropdown menu on hover*/
+.dropdown:hover .dropdown-nav {
+    display: block;
+    margin-right: 2em;
+}
+
 
 /**
  * Add your custom styles below
