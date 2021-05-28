@@ -12,14 +12,14 @@ body {
 /*Header Styles*/
 .header {
     width: 100%;
-    position: fixed;
-    max-height: 15%;
+    max-height: 50px;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 #logo {
-    padding: 1em;
+    padding: 1em 0 0.25em 1em;
     width: 25px;
     height: auto;
 }
@@ -70,7 +70,37 @@ body {
     margin-right: 2em;
 }
 
+/*Hero Section*/     
+.hero-container {
+    background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 66%;
+    background-position-y: 30%;
+}
 
+.hero .hero-container .hero-heading {
+    font-weight: 300;
+    text-align: center;
+    padding: 1.75em 1em 0 1em;
+    color: #fff;
+    margin-top: 2%;
+}
+
+#hero-h2 {
+    padding-top: -1em;
+    margin-top: -1.5em;
+    font-size: 1.25em;
+}
+
+.hero-btn {
+    padding: 0.75em;
+    background-color: #ff8000;
+    color: #fff;
+    border: none;
+    border-radius: 2%;
+    margin: 5% 10% 20% 35%;
+}
 /**
  * Add your custom styles below
  * 
