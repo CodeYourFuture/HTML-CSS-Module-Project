@@ -16,21 +16,25 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Amanda Obiajulu Nwadukwe
+- Your City: Lancaster
+- Your Slack Name: Amanda Nwadukwe
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML/CSS
+- Week: 2
 
 # Notes
 
 - What did you find easy?
+    Working with flex-box.
 
 - What did you find hard?
+    Making the mobile navigation work.
 
 - What do you still not understand?
+    Nothing.
 
 - Any other notes?
+    None.
