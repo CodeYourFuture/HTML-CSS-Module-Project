@@ -71,8 +71,11 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 735.008px;
+  height: 735px;
   overflow: auto;
+  position: relative;
+  margin: 0%;
+  padding: 0px;
 }
 
 .heroContents {
@@ -255,10 +258,14 @@ nav a :hover {
 /*the second section style*/
 section {
   display: flex;
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
+  text-align: center;
+  word-break: break-word;
 }
 section h2 {
   margin: 1.625rem 0 3.125rem;
@@ -266,12 +273,11 @@ section h2 {
   letter-spacing: 3px;
   font-weight: normal;
   font-size: xx-large;
-  word-spacing: 10px;
 }
 
 ul {
   display: flex;
-  justify-self: auto;
+  /*justify-self: auto;*/
   list-style: none;
 }
 section h3 {
@@ -283,21 +289,29 @@ section h3 {
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  align-self: center;
+  padding-left: 1em;
+  margin-left: 2em;
+  width: 25vw;
 }
 li {
   text-align: -webkit-match-parent;
 }
 
 /*social media icons*/
-.content {
+/*.content {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-h5 {
+*/
+footer {
   margin-bottom: 1px;
   display: flex;
   margin-right: 0%;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
 }
 
 .ftr__icons {
@@ -313,16 +327,7 @@ h5 {
 
 /* Responsive Design
  */
-@media (min-width: 768px) {
-  .content {
-    width: 46rem;
-  }
-}
-@media (min-width: 992px) {
-  .content {
-    width: 960px;
-  }
-}
+
 @media (min-width: 1200px) {
   .content {
     width: 60%;
