@@ -34,6 +34,10 @@ body {
     margin-top: -0.5em;
 }
 
+.nav-bar ul li {
+    display: none;
+}
+
 /*The container <div> - needed to position content*/
 .dropdown {
     position: relative;
@@ -113,23 +117,63 @@ body {
     padding: 1.5em 3.5em;
 }
 
- .card img {
-     padding: 0 4em;
-     margin: 0 auto;
-     width: 30%;
- }
+.card img {
+    padding: 0 4em;
+    margin: 0 auto;
+    width: 30%;
+}
 
- .main-content .main-container .card h3 {
-     font-weight: 300;
- }
+.main-content .main-container .card h3 {
+    font-weight: 300;
+}
 
- .card-ctn {
-     text-align: center;
- }
+.card-ctn {
+    text-align: center;
+}
 
- .card-ctn #card-title {
-     margin-left: -1.75em;
- }
+.card-ctn #card-title {
+    margin-left: -1.75em;
+}
+
+/*Footer Styles*/
+.footer-ctn h4 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.footer-ctn {
+    border-top: 1px solid #efefef;
+}
+
+.icon-ctn {
+    display: inline-flex;
+    padding: 1.25em 3.5em;
+    
+}
+
+ footer .footer-ctn .icon-ctn img  {
+    width: 25px;
+    height: 25px;
+    padding: 0.75em;
+    margin: 5%;
+    border: 0.75px solid #b3b3b3;
+    border-radius: 50%;
+}
+
+.footer-ctn p {
+    text-align: center;
+    color: #b3b3b3;
+}
+
+@media screen and (min-width: 768px) {
+    #menu-hamburger {
+        display: none;
+    }
+
+    .nav-bar li {
+        padding: 1em;
+    }
+}
 /**
  * Add your custom styles below
  * 
