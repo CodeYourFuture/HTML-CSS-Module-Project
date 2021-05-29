@@ -28,11 +28,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
-
-
-
-
 /*main section style*/
 #intro{
     background-image: url(/img/first-background.jpg);
@@ -73,7 +68,7 @@ background-color: aliceblue;
 color:#F05A29 ;
 }
 /*section styles*/
-#services-container{
+#service-container{
     width: 100%;
     text-align: center;
     display: flex;
@@ -83,19 +78,15 @@ color:#F05A29 ;
     margin:2rem auto;
     padding:0 2rem;
 }
-#services-container h2{
+#service-container h2{
     font-size:2rem ;
     font-weight: 500;
 }
-.services{
+.service_card{
     display: flex;
     flex-flow: row wrap;
    
 }
-
-
-
-
 
 
 #get_karma .btn{
