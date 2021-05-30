@@ -110,6 +110,8 @@ p{
     padding: 0.5em;
     margin-right: 1em;
 }
+
+
 /*main section style*/
 
 #intro{
@@ -251,7 +253,12 @@ margin-bottom: 0.5em;
 }
 
 /*media query styles*/
-
+@media  (max-width: 480px){
+    .nav-bar #intro, #get-karma, #service-container, .footer-container, img{
+        display: flex;
+        flex-direction: column;
+    }
+}
 /*small tablet (when the browser is 641px or more)*/
 @media (min-width:641px){
    /*navigation*/
@@ -518,9 +525,7 @@ margin-bottom: 0.5em;
 /***********************************************************************************/
 /* hi-res laptops and desktops (when the browser is 1281px or more)*/
 @media (min-width:1281px){
-    body{
-        font-size:16px;
-    }
+   
     .nav-bar #intro, #get-karma, #service-container, .footer-container, img{
         width:100%;
     }
