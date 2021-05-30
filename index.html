@@ -7,17 +7,19 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Karma</title>
+    
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      as="style"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" as="style"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
@@ -37,12 +39,12 @@
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" />
         <div class="menu">
-          <a href="#"> <span> Meet Karma</span></a>
-          <a href="#">How it Works</a>
-          <a href="#"> Store</a>
-          <a href="#">Blog</a>
-          <a href="#">Help</a>
-          <a href="#">Login</a>
+          <a href="#" target="_blank"> <span> Meet Karma</span></a>
+          <a href="#" target="_blank">How it Works</a>
+          <a href="#" target="_blank"> Store</a>
+          <a href="#" target="_blank">Blog</a>
+          <a href="#" target="_blank">Help</a>
+          <a href="#" target="_blank">Login</a>
         </div>
       </div>
     </header>
@@ -56,34 +58,55 @@
       <h1>Everyone needs a little Karma.</h1>
 
       <div class="section-container">
-        <section class="device">
+        <section class="card">
           <img
             class="icon-img"
             src="./img/icon-devices.svg"
             alt="device icon"
+            width="100%"
+            height="100%"
           />
           <p class="description">Internet for all devices</p>
         </section>
 
-        <section class="boost">
-          <img class="icon-img" src="./img/icon-coffee.svg" alt="coffee icon" />
+        <section class="card">
+          <img
+            class="icon-img"
+            src="./img/icon-coffee.svg"
+            alt="coffee icon"
+            width="100%"
+            height="100%"
+          />
           <p class="description">Boost your productivity</p>
         </section>
 
-        <section class="pay">
+        <section class="card">
           <img
             class="icon-img gas"
             src="./img/icon-refill.svg"
             alt="refill icon"
+            width="100%"
+            height="100%"
           />
           <p class="description">Pay as You go</p>
         </section>
       </div>
 
       <div class="extended">
-        <img src="./additional/feature-img.png" alt="women with laptop and coffee mug">
+        <img class="img-extend"
+          src="./additional/feature-img.png"
+          alt="women with laptop and coffee mug"
+          width="600"
+          height="500"
+        />
         <section class="get-karma">
-          <p><i>Wherever I am, I just don't<br/> worry about my connection<br/> anymore!</i></p>
+          <p>
+            <i
+              >Wherever I am, I just don't<br />
+              worry about my connection<br />
+              anymore!</i
+            >
+          </p>
           <button>Get Karma today</button>
         </section>
       </div>
