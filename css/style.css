@@ -1,19 +1,210 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+/* phone size quary */
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+@media only screen and (max-width: 600px){ 
+    .body {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        grid-template-rows: auto;
+        background-color: rgb(27, 196, 139);
+        }
+        
+        label {
+            display: block;
+            cursor: pointer;
+            width: 30px;
+            font-size: 20px;
+            float: right;
+            
+        }
+        .navigation{
+            display: grid;
+            grid-template-columns: 90% 10%;
+        }
 
+        .Nav a:hover, button:hover {
+            color: rgb(59, 25, 12);
+            font-style: italic;
+            font-weight: bolder;
+        }
+        #toggle{
+            visibility: hidden;
+        }
 
+        #toggle, .toggle{
+            grid-column: 2;
+            grid-row: 1;
+            position:relative;
+            
+        }
+        .Nav {
+            text-align: center;
+            width: 100%;
+            display: none;
+        }
+        .Nav a {
+            display: block;
+            border-bottom: 1px solid #EAEAEB;
+            padding: 10px;
+         
+        }
+        #toggle:checked + .Nav {
+            display: block;
+            text-align: center;
+        }
+
+ .logo {
+       width: 30px;
+       height: 30px;
+       padding-left: 15px;
+       position: relative;
+        }
+    
+    .backgroundimage {
+        width: 100%;
+        height: 50%;
+    }
+    .header {
+        width: 99%;
+        flex-direction: column;
+    }
+    .maintitle {
+       position: relative;
+       top: -100px;
+       text-align: center;
+       color: lavenderblush;
+       font-size: 20px;
+        }
+ .main {
+    align-content: center;
+    text-align: center;
+    position: relative;
+    top:-150px;
+      }
+ button {
+        background-color: green;
+        border-radius: 20%;
+        color: white;
+        padding: 5px;
+        width: auto;
+    }
+
+ .icons {
+        width: 13%;
+    }
+
+    .footer-icons {
+        width: 5%;
+        height: 5%px;
+    } 
+ .footer {
+        display: flexbox;
+        text-align: center;
+        position: relative;
+        top: -100%;
+         }
+  }
+
+  /* style and layout for bigger screens*/
+
+  @media screen and (min-width:601px) and (max-width: 2000px) {
+
+    .body {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgb(140, 240, 140);
+        }
+    
+     /* Imag setting */
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding-bottom: 0%;
+        grid-template-rows: 1fr;
+        
+    }
+    
+     .logo {
+        width:30px;
+        height:30px;
+        padding-left: 20px;
+    }
+    .Nav {
+        font-size: 90%;
+        flex-direction: row;
+        justify-self: self-end;
+        padding-top: 1%;
+    }
+
+    .Nav a {
+        text-decoration: none;
+    }
+
+    .Nav a:hover, button:hover {
+        color: rgb(59, 25, 12);
+        font-style: italic;
+        font-weight: bolder;
+    }
+
+    .toggle, #toggle{
+        display: none;
+    }
+    
+    .icons {
+        width: 40%;
+    }
+    
+    .backgroundimage{
+        width: 100%;
+        height: 50%;
+    }
+    
+    /*header setting*/
+    .header {
+        width: 99%;
+        flex-direction: column;
+    }
+    
+    .maintitle {
+       position: relative;
+       top:-40%;
+       text-align: center;
+       color: lavenderblush;
+        }
+  button {
+     background-color: rgb(49, 77, 49);
+     padding: 5px;
+     width: auto;
+        }
+    
+    .main {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+        position: relative;
+        top: -80%;
+    }
+    
+    .headline {
+       grid-column-start: 1;
+       grid-column-end: 4;
+       text-align: center;
+    }
+    
+    .footer {
+        display: flexbox;
+        text-align: center;
+    }
+    
+    
+    .footer-icons {
+        width: 8%;
+        height: 8%px;
+        justify-content:space-between;
+    }
+
+  }
