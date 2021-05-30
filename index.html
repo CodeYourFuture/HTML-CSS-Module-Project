@@ -18,7 +18,7 @@
 
 
     <header>
-        <nav class="nav-bar">
+        <nav class="nav-bar grid">
             <img src="/img/karma-logo.svg" alt="logo image of karma" class="logo_pic">
             <ul class="nav-link">
                 <li class="nav-item"><a href="#intro">Meet Karma</a></li>
@@ -28,53 +28,51 @@
                 <li class="nav-item"><a href="#">Help</a></li>
                 <li class="nav-item"><a href="#">Login</a></li>
             </ul>
+            <img src="/img/menu-hamburger.svg" alt="hamburger menu picture" class="ham-burger">
         </nav>
     </header>
     <!--main section starts here-->
     <main>
-        <section id="intro">
-            <h1 class="welcome">Introducing Karma</h1>
-            <p>Bring WiFI with you,everywhere you go.</p>
-            <a href="#service_card"><button class="btn">Learn More</button></a>
+        <section id="intro" class="grid">
+            <h1 class="title">Introducing Karma</h1>
+            <p class="description">Bring WiFI with you,everywhere you go.</p>
+            <a class="btn" href="#service_card">Learn More</a>
         </section>
 
         <!--service section starts here-->
         <section id="service-container">
             <h2>Everyone needs a little Karma</h2>
-            <article class="service_card">
-                <img src="/img/icon-devices.svg" alt="desktop and mobile devices">
+            <article class="service-card">
+                <img src="/img/icon-devices.svg" alt="desktop and mobile device pics">
                 <h3>Internet for all devices</h3>
             </article>
             <article class="service-card">
                 <img src="/img/icon-coffee.svg" alt="image of a coffee cup" >
                 <h3>Boost your productivity</h3>
             </article>
-            <article class="service_card">
-                <img src="/img/icon-refill.svg" alt="refilling petrol logo ">
+            <article class="service-card">
+                <img src="/img/icon-refill.svg" alt="refilling petrol picture">
                 <h3>Pay as you go</h3>
             </article>
         </section>
 
-        <section id="get_karma">
+        <section id="get_karma" class="grid">
             <img src="/additional/feature-img.png" alt="featuring a person getting karma service">
-            <p>Wherever I am, I just don't worry about my connection any more!</p>
-            <a class="btn" href="#">Get Karma Today</a>
+                <h4>Wherever I am, I just don't worry about my connection any more!</h4>
+                <a class="btn karma-btn" href="#">Get Karma Today</a>
+           
+            
         </section>
     </main>
      <!--footer starts here-->
-     <footer class="container">
-        <aside class="footer_head">
-            <h4>Join us on</h4>
-        </aside>
-        <aside class="social_media">
+     <footer class="container">  
+            <h4>Join us on</h4>        
             <ul class="social-links">
-                <li><a href="#"><img src="/img/facebook-icon.svg" alt="facebook logo"></a></li>
-                <li><a href="#"><img src="/img/instagram-icon.svg" alt="instagram logo"></a></li>
-                <li><a href="#"><img src="/img/twitter-icon.svg" alt="twitter logo"></a></li>
-
+                <li><a href="www.facebook.com"><img src="/img/facebook-icon.svg" alt="facebook logo"></a></li>
+                <li><a href="www.instagram.com"><img src="/img/instagram-icon.svg" alt="instagram logo"></a></li>
+                <li><a href="www.twitter"><img src="/img/twitter-icon.svg" alt="twitter logo"></a></li>
             </ul>
-        </aside>
-        <aside><span>&#169;</span>Karma Mobility, inc.</aside>
+            <p class="copyright"><span>&#169;</span>Karma Mobility, inc.</p>
     </footer>
 </body>
 </html>

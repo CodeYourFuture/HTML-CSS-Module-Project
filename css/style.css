@@ -16,6 +16,12 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*variables*/ 
+:root{
+    --primary:#FAFAFA;
+    --secondary:#424242;
+    --tertiary :#F05A29;
+}
 /*general style*/ 
 *{
     margin: 0;
@@ -26,92 +32,293 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color:var(--primary) ;
+    overflow-x: hidden;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*fonts styling*/
+h1,h2,h3,h4{
+    color:var(--secondary);
 }
 
+h1{
+    font-size:1.8em;
+}
+h2{
+    font-size:1.4em;
+}
+h3{
+    font-size: 0.9em;
+    font-weight: 200;
+}
+h4{
+    font-size:1.2em;
+    font-weight:200;
+}
+.description{
+    font-size: 1.1em;
+}
+a,li{
+    color: var(--secondary);
+}
+p{
+    font-weight: 300;
+    font-size: 0.5em; 
+    color: var(--primary);
+} 
+.btn{
+    background-color: var(--tertiary);
+    color: azure;
+    padding: 0.6rem 0.9rem;
+    margin-top: 25px;
+    font-weight: 300;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 1px 2px 2px rgba(250, 248, 248, 0.6);
+}
+.btn:hover{
+    background-color: #f0ffff;
+    color:var(--tertiary);
+    }
+    
+/*mobile design*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.logo_pic{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    height: 50px;
+    padding: 0.5em;
+    margin-right: 15em;
+    
+}
+ .nav-link{
+   display: none;
+   grid-column: 2/ 3;
+}
+.ham-burger{
+    grid-column: 3 / 4 ;
+    justify-self: end;
+    padding: 0.5em;
+}
 /*main section style*/
+
 #intro{
     background-image: url(/img/first-background.jpg);
-    position: relative;
-    min-height: 600px;
-    max-width: 100%;
+    align-self: center;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position:center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#intro h1{
+    background-repeat: no-repeat;
+    padding: 0 0.5em 0.5em 0.5em;
     
-    color: azure;
-    font-size: 3.5em;
+}
+.title{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+    color:var(--primary);
+    font-weight: 300;
+    margin-top: 30px;
     text-align: center;
-    font-weight: 200;
-    letter-spacing: 2.5px;
 }
-#intro p{
-color:azure ;
-font-size: 1.1em;
-font-weight: 100;
-}
+.description{
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding:0 0.5em 0.5em 0.5em;
+    justify-self: center;
+    font-weight: 400;
+    font-size: 1em;
+ }
 #intro .btn{
-    background-color: #F05A29;
-    color: azure;
-    padding: 10px 20px;
-    margin-top: 25px;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center;
+    margin: 0.5em 0 0.5em;
     font-weight: 500;
-    border-radius: 8px;
-    font-size: 1.5rem;
+    padding: 0.5em;
+    
 }
-#intro .btn:hover{
-background-color: aliceblue;
-color:#F05A29 ;
-}
+
 /*section styles*/
 #service-container{
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row: repeat(2, 1fr);
+}
+#service-container h2{
+    grid-column: 1 / 4;
+    grid-row: 1;
     text-align: center;
+    margin-top: 0.7em;
+    font-weight:300 ;
+    font-size:1.2em ;
+   
+}
+#service-container .service-card{
+    grid-column: 1 / 4;
+    
+}
+
+.service-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
     margin:2rem auto;
     padding:0 2rem;
+
 }
-#service-container h2{
-    font-size:2rem ;
-    font-weight: 500;
+.service-card img{
+    margin: 0 auto;
+    max-width: 40%;
+    align-self: center
 }
-.service_card{
-    display: flex;
-    flex-flow: row wrap;
-   
+.service-card h3{
+ text-align: center;
+ font-size: 0.9em;
+ margin: 20px 0;
+
 }
 
-
-#get_karma .btn{
-    background-color: #F05A29;
-    color: azure;
-    padding: 10px 20px;
-    margin-top: 25px;
-    font-weight: 500;
-    border-radius: 8px;
-    font-size: 1.5rem;
-}
-#get_karma .btn:hover{
-background-color: aliceblue;
-color:#F05A29 ;
+#get_karma{
+    display: none;
 }
 
 /*footer styles*/
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    width: 80%;
+    max-width: 400px;
+    align-items: center;
+    border-top: 1px solid #f3e7e7
+    
+}
+.container h4{
+font-size: 1em;
+font-weight: 200;
+letter-spacing: 2px;
+margin-bottom: 0.5em;
+}
+
 .social-links{
     display:flex;
+    flex-direction: row;
     flex-wrap:wrap;
     list-style-type:none;
     padding:0;
-    margin:0;
+    margin:0 0.9em;
     justify-content:center;
-  }
-  
+}
+.social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.80em;
+    margin-right: 1em;
+    margin-bottom: 1rem;
+    width: 2.80em;
+    border:1px solid #9c9c9c;
+    border-radius: 25%;
+    padding: 0.9em;
+    color:rgb(238, 255, 0);
+    background-color: rgb(223, 202, 202);
+    text-decoration: none;
+   transition: all 0.5s ease-in-out;
+}
+.social-links img{
+    height: 2em;
+    margin: 0 0.5em;
+} 
+.copyright{
+    font-size: 0.8em;
+    color: #424242;
+    margin-top: 0.5rem;
+}
 
 
+
+/*media query styles*/
+
+/*small tablet (when the browser is 641px or more)*/
+@media (min-width:641px){
+
+
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops (when the browser is 961px or more)*/
+@media (min-width:961px){
+    body{
+        font-size:16px;
+    }
+    .nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center ;
+    padding: 0.5rem;
+    max-height: auto;
+    max-width: 100%;
+    }
+    .logo-pic{
+    grid-column: 1 / 2;
+    margin-right: auto;
+    }
+
+    #get_karma{
+        background-color: var(--primary);
+    }
+
+    #get_karma img{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        }
+    #get_karma h4{
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        margin: 4.5em;
+        text-align: center;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--secondary);
+        
+    
+    }
+    .karma-btn{
+        grid-column: 2 / 4;
+        grid-row:  1;
+        margin-top: 9em;
+        justify-self: center;
+        align-self: center;
+    } 
+}
+
+/* big landscape tablets, laptops, and desktops(when the browser is 1025px or more) */
+@media (min-width:1025px) {
+    body{
+        font-size:16px;
+    }
+}
+
+/* hi-res laptops and desktops (when the browser is 1281px or more)*/
+@media (min-width:1281px){
+    body{
+        font-size:16px;
+    }
+} 
+   
