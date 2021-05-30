@@ -4,7 +4,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    margin: 0;
 }
+
 
 /**
  * Add your custom styles below
@@ -15,5 +18,183 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a:hover{
+    color: chocolate;
+}
+
+.menu a:first-child{
+    font-weight: bold;
+}
+
+.logo_img{
+    height: 49px;
+
+}
+
+.nav{
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+/* section_style */
+.section_1{
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+.section_1 p{
+    color: white;
+}
+
+.learn_more{
+    background-color: chocolate;
+    color:white;
+    max-width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-top: 30px;
+} 
+
+/* section_2 stayle */
+
+.flex_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex_box img{
+    height: 165px;
+    width: 165px;
+}
+
+.section_2 h2{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* footer style */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer a{
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2{
+    font-weight: 500;
+}
+footer img{
+    height: 16px;   
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+ul li:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer li{
+    list-style: none;
+
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    line-height: 70px;
+    display: none;
+    width: 25px;
+    float: right;
+}
+
+.menu{
+    margin: 0 30px 0 0;
+}
+
+.menu a{
+    clear: right;
+    text-decoration: none;
+    color:black;
+    margin: 0 10px;
+    line-height: 70px;
+    
+
+}
+
+#toggle{
+    display: none;
+}
 
 
+
+
+
+
+/* Media queries */
+ @media only screen and  (max-width: 380px){
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color:gray;
+        
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .flex_box{
+        flex-direction: column;
+        align-items: center;
+    }
+}
