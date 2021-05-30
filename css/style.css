@@ -108,6 +108,7 @@ p{
     grid-column: 3 / 4 ;
     justify-self: end;
     padding: 0.5em;
+    margin-right: 1em;
 }
 /*main section style*/
 
@@ -146,7 +147,6 @@ p{
     margin: 0.5em 0 0.5em;
     font-weight: 500;
     padding: 0.5em;
-    
 }
 
 /*section styles*/
@@ -154,6 +154,7 @@ p{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row: repeat(2, 1fr);
+    margin-top: 2em;
 }
 #service-container h2{
     grid-column: 1 / 4;
@@ -165,10 +166,9 @@ p{
    
 }
 #service-container .service-card{
-    grid-column: 1 / 4;
-    
+    grid-column: span 1;
+    grid-row: 2;
 }
-
 .service-card{
     display: flex;
     flex-direction: column;
@@ -179,10 +179,11 @@ p{
     padding:0 2rem;
 
 }
+
 .service-card img{
     margin: 0 auto;
     max-width: 40%;
-    align-self: center
+    align-self: center;
 }
 .service-card h3{
  text-align: center;
@@ -255,27 +256,162 @@ margin-bottom: 0.5em;
 
 /*small tablet (when the browser is 641px or more)*/
 @media (min-width:641px){
-
-
-}
+   /*navigation*/
+     .ham-burger{
+        grid-column: 3 / 4 ;
+        justify-self: end;
+        padding: 0.5em;
+        margin-right: 2em;
+    }
+    /*intro*/
+    #intro{
+        background-image: url(/img/first-background.jpg);
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        padding: 0 0.5em 0.5em 0.5em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .title{
+        text-align: center;
+        color:var(--primary);
+        font-weight: 300;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+        padding:0 0.5em 0.5em 0.5em;
+        font-weight: 400;
+        font-size: 1em;
+     }
+    #intro .btn{
+        align-self: center;
+        justify-self:center ;
+        margin: 0.5em 0 0.5em;
+        font-weight: 500;
+        padding:5px
+    }
+    /*service section*/
+   .service-card{   
+        grid-column: 1 span  4;
+        align-self: center;
+        justify-self:center ;
+    }
+    .service-card img{
+        margin:10px;
+        max-width: 60%;
+        align-self: center;
+        margin: 10px 10%;
+    }
+    .service-card h3{
+     text-align: center;
+     font-size: 1rem;
+     margin:0.5em 0;
+    }
+    /*small tablet style ends*/
+    
+    
 /* tablet, landscape iPad, lo-res laptops ands desktops (when the browser is 961px or more)*/
 @media (min-width:961px){
     body{
         font-size:16px;
     }
-    .nav-bar{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-items: center ;
-    padding: 0.5rem;
-    max-height: auto;
-    max-width: 100%;
+    .grid{
+        width: 100%;
+        max-height: 1060px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
-    .logo-pic{
-    grid-column: 1 / 2;
-    margin-right: auto;
+   /*header section*/
+    .logo_pic{
+        grid-column: 1 / 2;
+        margin-right: auto;
+        height:70px ;
+        width: 70px;
+        }
+        /*navigation*/
+    .nav-link{
+        display: flex;
+        grid-column: 2 / -1;
+        justify-content: flex-end;
+        align-self: center;
+        margin-left: auto;
+        padding: 0 1.4em;
     }
-
+    .nav-link .nav-item a{
+        margin-left: 1em;
+        font-weight: 500;
+        padding: 0.5em;
+        color: var(--secondary);
+    }
+    .nav-link .nav-item a:hover{
+    color:#F05A29;
+    font-weight: 500;
+    }
+    .nav-link .nav-item:first-child > a{
+        margin: 0 auto;
+        text-decoration-line: underline;
+        font-weight: 800;
+        color:rgb(71, 87, 99);
+    }
+    /*hamburger*/
+    .ham-burger{
+        display: none;
+    }
+    /*intro*/
+    #intro{
+        background-image: url(/img/first-background.jpg);
+        width: 100%;
+        height: 600px;
+    }
+    .title{
+        text-align: center;
+        font-weight: 400;
+        margin-top: 20px auto 0;
+        text-align: center;
+        font-size: 4em;
+        letter-spacing: 0.1em;
+    }
+    .description{
+        text-align: center;
+        padding:5px;
+        font-weight: 400;
+        font-size: 1.8em;
+     }
+    #intro .btn{
+        background-color: var(--tertiary);
+        align-self: center;
+        justify-self:center ;
+        margin: 1em 0 0.5em;
+        font-weight: 500;
+        padding:0.6em;
+        font-size: 1.7em;
+        color: var(--primary);
+    }
+    /*service section*/
+    .service-card{   
+        grid-column: 1 span  4;
+        align-self: center;
+        justify-self:center ;
+    }
+    .service-card img{
+        margin:10px;
+        max-width: 60%;
+        align-self: center;
+        margin: 10px 10%;
+    }
+    .service-card h3{
+     text-align: center;
+     font-size: 1rem;
+     margin:0.5em 0;
+    }
+    /*get karma*/
     #get_karma{
         background-color: var(--primary);
     }
@@ -295,8 +431,8 @@ margin-bottom: 0.5em;
         text-align: center;
         font-style: italic;
         font-weight: 400;
-        color: var(--secondary);
-        
+        color: var(--secondary)
+        ;    
     
     }
     .karma-btn{
@@ -306,6 +442,7 @@ margin-bottom: 0.5em;
         justify-self: center;
         align-self: center;
     } 
+    
 }
 
 /* big landscape tablets, laptops, and desktops(when the browser is 1025px or more) */
