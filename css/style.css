@@ -18,7 +18,7 @@ body {
 nav {
   height: 70px;
   display: grid;
-  grid-template-columns: 30% 80%;
+  grid-template-columns: 30% 70%;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -34,6 +34,18 @@ nav {
   margin-left: 20%;
   z-index: 0;
   margin-top: 6%;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  padding-left: 90%;
+}
+
+#toggle {
+  display: none;
 }
 
 .nav-a-container {
@@ -103,38 +115,23 @@ figcaption {
   font-size: 1em;
 }
 
-.main-img-container{
-    
-    display: flexbox;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
+.main-img-container {
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-img {
-    
-    padding: 5%;
-    
-    
-  
-  
-   
-  
+  padding: 5%;
 }
 
 .main-img:last-of-type {
-    height: 100%;
+  height: 100%;
 }
 
-
-.extended-box{
-
-    
-    display: none;
-    
+.extended-box {
+  display: none;
 }
-
 
 footer {
   align-content: center;
@@ -161,4 +158,33 @@ footer p {
   padding: 2%;
   border: grey 1px solid;
   border-radius: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-a-container {
+    display: none;
+    text-align: center;
+    width: 350%;
+  }
+
+  .nav-a-first {
+    border-top: 3px solid black;
+  }
+
+  .nav-a,
+  .nav-a-first {
+    display: block;
+    border-bottom: 2px solid orangered;
+    background-color: white;
+    padding-top: 5%;
+  }
+
+  #toggle:checked + .nav-a-container {
+    display: block;
+  }
 }
