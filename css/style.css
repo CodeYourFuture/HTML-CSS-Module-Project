@@ -162,22 +162,49 @@ body {
         font-size: 2.5em;
     }
 }
+
 /*Section Main Content Styles*/
-.main-content .main-container h2 {
+.main-content  h2 {
     padding: 1em;
     font-weight: 300;
     text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+    .main-content  #lrg-font {
+        font-size: 2em;
+    }
+    
+    .main-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
 /*Card Styles*/
 .card {
     width: 70%;
-    padding: 1.5em 3.5em;
+    padding: 1.5em 2em;
 }
 
 .card img {
     padding: 0 4em;
     margin: 0 auto;
     width: 30%;
+}
+
+@media screen and (min-width: 500px) and (max-width: 760px) {
+    .card img {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card .lg-img {
+        width: 80px;
+    }
+
+    
 }
 
 .main-content .main-container .card h3 {
@@ -192,6 +219,39 @@ body {
     margin-left: -1.75em;
 }
 
+/*Extended desktop styles*/
+.aside-ctn {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffe6cc;
+}
+
+.aside-ctn img {
+    max-width: 30%;
+}
+
+.aside-ctn h2 {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+.aside-ctn button {
+    padding: 0.75em;
+    background-color: #ff8000;
+    color: #fff;
+    border: none;
+    border-radius: 2%;
+    margin-left: 35%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .aside-ctn {
+        display: none;
+    }
+}
 /*Footer Styles*/
 .footer-ctn h4 {
     text-align: center;
