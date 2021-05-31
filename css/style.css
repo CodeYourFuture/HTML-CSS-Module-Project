@@ -3,12 +3,13 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-image: url "img/first-background.jpg";
+  background-image: url("../img/first-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 ul {
+  background-color: white;
   margin: 0px;
   padding: 0px;
   list-style-type: none;
@@ -19,9 +20,16 @@ ul {
   flex-direction: row;
   padding: 10px;
   margin: 0px;
-  width: 100%;
-  text-align: center;
+  width: 30%;
+  text-align: right;
   color: gray;
+}
+.nav-item:hover {
+  color: orange;
+}
+.nav-link1 {
+  color: black;
+  margin: 15px;
 }
 .navbar-logo {
   width: 100%;
@@ -30,7 +38,22 @@ ul {
 img {
   width: 50px;
 }
-
+h1 {
+  color: white;
+  text-align: center;
+}
+p {
+  color: white;
+  text-align: center;
+}
+div {
+  color: white;
+  text-align: center;
+  border: 5px;
+}
+button {
+  background-color: orange;
+}
 /**
  * Add your custom styles below
  * 
