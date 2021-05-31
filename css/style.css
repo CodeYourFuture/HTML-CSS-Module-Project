@@ -40,6 +40,10 @@ body {
     }
 }
 
+.header #nav-bar {
+    margin-right: 40px;
+}
+
 .header #nav-bar #nav-list {
     list-style-type: none;
     margin-top: 4%;
@@ -128,7 +132,7 @@ body {
     margin-top: 2%;
 }
 
-#hero-h2 {
+.hero-h2 {
     padding-top: -1em;
     margin-top: -1.5em;
     font-size: 1.25em;
@@ -143,6 +147,21 @@ body {
     margin: 5% 10% 20% 35%;
 }
 
+@media screen and (min-width: 768px) {
+    .hero .hero-container #lg-font {
+        font-size: 3em;
+        padding-top: 15%;
+    }
+
+    .hero .hero-container .hero-btn {
+        margin-top: 15%;
+        margin-left: 50%;
+    }
+
+    .hero .hero-container .hero-h2 #hero-h2-lg {
+        font-size: 2.5em;
+    }
+}
 /*Section Main Content Styles*/
 .main-content .main-container h2 {
     padding: 1em;
