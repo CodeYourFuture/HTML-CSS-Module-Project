@@ -15,14 +15,34 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
  #logo{
      width: 50px;
      height: 50px;
-     margin-top: 10px;
-     margin-left: 50px;
+     margin-left: 100px;
+     margin-top: 20px;
+     position: absolute;
  }
- #nav-bar{
-     
+ .menu{
+     list-style: none;
+     padding: 20px;
  }
+
+ nav ul{
+     float: right;
+     width: 40%;
+     display: inline-flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-right: 100px;
+ }
+ .nav-link{
+     font-family: 'Roboto' , sans-serif;
+ }
+
+#background{
+    width: 100%;
+
+}
 
 
