@@ -177,7 +177,8 @@ body {
     
     .main-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
@@ -188,12 +189,18 @@ body {
 }
 
 .card img {
-    padding: 0 4em;
+    
     margin: 0 auto;
     width: 30%;
 }
 
-@media screen and (min-width: 500px) and (max-width: 760px) {
+@media screen and (min-width: 480px) and (max-width: 760px) {
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .card img {
         margin-left: 20%;
     }
@@ -201,10 +208,12 @@ body {
 
 @media screen and (min-width: 768px) {
     .card .lg-img {
-        width: 80px;
+        margin-left: 35%;
     }
 
-    
+    .card-img {
+        margin: auto;
+    }
 }
 
 .main-content .main-container .card h3 {
@@ -222,11 +231,12 @@ body {
 /*Extended desktop styles*/
 .aside-ctn {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: #ffe6cc;
 }
 
 .aside-ctn img {
+
     max-width: 30%;
 }
 
