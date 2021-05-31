@@ -37,7 +37,12 @@ body {
      margin-right: 100px;
  }
  .nav-link{
-     font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto' , sans-serif;
+    text-decoration: none;
+    color: grey;
+ }
+ .nav-link:hover{
+     color:red;
  }
 
 #background{
