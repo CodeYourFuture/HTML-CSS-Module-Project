@@ -1,18 +1,13 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 /**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+There is an @media request at the bottom of this stylesheet. It only uses CSS and HTML. The nav, .nav-a-container elements 
+are all targeted using the @media request and so have very different styling to the elements below. This method used a checkbox
+which can be toggled on and off to create the illusion of a hamburger icon logo whuich opens up a menu ... very clever solution:
+https://www.youtube.com/watch?time_continue=5&v=xMTs8tAapnQ&feature=emb_title&ab_channel=CalerEdwards
  */
 
 nav {
@@ -22,6 +17,7 @@ nav {
   position: fixed;
   background-color: white;
   width: 100%;
+  height: 70px;
   z-index: 1;
   font-size: 1.7vw;
 }
@@ -59,7 +55,7 @@ nav {
   position: relative;
   text-align: center;
   color: white;
-  background-color: palegreen;
+  background-color: white;
   font-size: 2vw;
 
   padding-top: 70px;
@@ -181,14 +177,14 @@ footer p {
   justify-content: center;
   max-height: 80px;
   width: 100%;
- 
+
   padding-bottom: 10%;
 }
 
 .fab {
   font-size: 40px;
-   margin: 10px;
-   height: 40px;
+  margin: 10px;
+  height: 40px;
   padding: 2%;
   border: grey 1px solid;
   border-radius: 10%;
