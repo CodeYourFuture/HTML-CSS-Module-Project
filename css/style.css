@@ -22,55 +22,93 @@ body {
     width: 25px;
     height: auto;
 }
-
+        
 #menu-hamburger {
     width: 40px;
     height: 40px;
     border: none;
     background: none;
-    padding: 2em;
+    padding: 1em;
     cursor: pointer;
     margin-right: 0.5em;
-    margin-top: -0.5em;
+    margin-top: 0.5em;
 }
 
-.nav-bar ul li {
+@media screen and (min-width: 520px) {
+    #menu-hamburger {
+        display: none;
+    }
+}
+
+.header #nav-bar #nav-list {
+    list-style-type: none;
+    margin-top: 4%;
+}
+
+.header #nav-bar #nav-list li {
+    padding: 0.5em;
+    display: inline;
+}
+
+.header #nav-bar #nav-list li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.header #nav-bar ul li:first-child {
+    font-weight: 500;
+}
+
+.header #nav-bar #nav-list li a:hover {
+    cursor: pointer;
+    color: #ff8000;
+}
+
+@media screen and (max-width: 525px) {
+    #nav-bar #nav-list li a {
     display: none;
-}
-
+    }
+    
 /*The container <div> - needed to position content*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 
 /*Dropdown content (Hidden by default)*/
-.dropdown-nav {
-   display: none;
-   position: absolute;
-   background-color: #f1f1f1;
-   min-width: 160px;
-   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-   right: 0;
-}
+    .dropdown-nav {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    }
 
 /*Links inside the Dropdown Menu*/
-.dropdown-nav a {
-    color: #000;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    display: block;
-}
+    .dropdown-nav a {
+        color: #000;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        display: block;
+    }
 
 /*Change colour of dropdown links on hover*/
-.dropdown-nav a:hover {
-    background-color: #ddd;
-}
+    .dropdown-nav a:hover {
+        background-color: #ddd;
+    }
 
 /*Show the dropdown menu on hover*/
-.dropdown:hover .dropdown-nav {
-    display: block;
-    margin-right: 2em;
+    .dropdown:hover .dropdown-nav {
+        display: block;
+        margin-right: 2em;
+    }
+}
+
+@media screen and (min-width: 525px) {
+    .dropdown {
+        display:none;
+    }
 }
 
 /*Hero Section*/     
@@ -165,15 +203,8 @@ body {
     color: #b3b3b3;
 }
 
-@media screen and (min-width: 768px) {
-    #menu-hamburger {
-        display: none;
-    }
+    
 
-    .nav-bar li {
-        padding: 1em;
-    }
-}
 /**
  * Add your custom styles below
  * 
