@@ -1,38 +1,45 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0%;
+  font-size: 100%;
+  vertical-align: baseline;
+  font: inherit;
+  float: center;
 }
+
 .body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  margin: auto;
-  background-color: white;
-  padding: 0;
-  margin: 0;
+  line-height: 1;
 }
 
-/****************************** Nav-bar Styling  *************************/
 .nav-bar {
-  display: flex;
-  justify-content: right;
-  align-items: left;
-  color: white;
   background-color: white;
   border-bottom: 1px solid #ddd;
-  text-decoration: none;
-  margin: 20px 50px 0px 0px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  line-height: 20px;
 }
 .nav-bar ul {
+  list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navbar-links li {
+.nav-bar .links {
   list-style: none;
+  margin-top: 1.5rem;
+  font-size: 0.6rem;
+  color: rgb(131, 137, 148);
+  float: right;
 }
+
 .nav-bar ul li a {
   text-decoration: none;
-  color: rgb(151, 144, 144);
+  color: rgb(131, 137, 148);
   padding: 1rem;
   cursor: pointer;
 }
@@ -43,18 +50,17 @@
 
 .navbar-links li:hover {
   cursor: pointer;
-  background-color: rgb(51, 37, 37);
+  background-color: rgb(131, 137, 148);
 }
 /********************* logo styling  ************************/
- .nav-bar .logo img {
-   width: 2px;
-  height: 0.5rem;
+.nav-bar .logo {
+  height: 4.325rem;
+  float: center;
 }
 
-li:first-child a{
-  color:rgb(0, 0, 0);
+li:first-child a {
+  color: rgb(76, 80, 88);
   font-weight: bolder;
-
 }
 /************************** Header styling *********************************/
 header {
@@ -65,51 +71,61 @@ header {
 }
 header img {
   height: auto;
-  width: 48px;
+  width: 30px;
 }
 
-/******************* Button styling  *****************************/
-.button:hover{
-  background-color: red;
-  color: white;
-  overflow: visible;
+header {
+  z-index: 1;
 }
+/******************* Button styling  *****************************/
 
 /**********************************Styling the INtro Section ************************/
 .introduction {
-  width: 100%;
+  max-width: 100%;
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  overflow: auto;
-  height: auto;
+  height: 600px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 200px 0;
   color: lightgrey;
   font-weight: normal;
 }
-.introduction h1 {
+
+.introduction .h1 {
   font-size: 40px;
-  color:rgb(184, 179, 179);
+  color: white;
+  font-weight: 300;
   text-align: center;
   font-weight: normal;
 }
 
-.introduction h3 {
+.introduction .h3 {
   font-size: 20px;
-  color:rgb(180, 166, 166);
+  font-weight: 300;
+  color: white;
   text-align: center;
-  font-weight: normal;
 }
-.introduction button {
-  background-color: rgb(241, 16, 16);
-  font-size: 1.2rem;
-  padding: 1rem;
-  width: 10rem;
-  border-color: rgb(241, 16, 16);
+.button {
+  background-color: rgb(271, 64, 14);
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  margin-top: 1.54rem;
+  padding: 6px 10px;
+  width: 7.34rem;
+  border-style: none;
+  color: white;
+}
+
+.introduction .button:hover {
+  background-color: rgb(271, 64, 14);
+
+  overflow: visible;
 }
 /******************************************* Styling the Icons  ***********************************/
 .icons {
@@ -120,7 +136,7 @@ header img {
   align-items: center;
   color: rgb(110, 110, 110);
 }
-.icons img{
+.icons img {
   width: 50%;
 }
 .icons ul {
@@ -138,11 +154,38 @@ header img {
   flex-direction: column;
 }
 
-.icons h1 h3 {
+.icons h2 {
   text-align: center;
-  display: flex;
+  font-size: 30px;
+  margin-top: 30px;
 }
-/************************************ Social icons Styling ************************/
+
+.icons h3 {
+  text-align: center;
+  font-size: 24px;
+}
+/* feature svg */
+
+.feature-svg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(253, 234, 231);
+}
+
+.feature-svg article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+article h3 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+/************************************ footer  Social icons Styling ************************/
 .socials-icons img {
   width: 20px;
   height: auto;
@@ -154,37 +197,46 @@ header img {
 
 .social-icons {
   display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
-
+/* footer  styling  */
 .footer {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.footer h4 {
+  margin-top: 30px;
+}
+
+.footer .li {
+  display: flex;
+}
+
 /****************** HR break line ***************************/
 hr {
   width: 90%;
 }
 
 /********************** Media Queries responsive layout **************************** */
-@media screen and (max-width: 400px) {
-  .nav-bar ul {
-    position: flex;
+/**************************** mobile ************************************************/
+@media screen and (max-width: 480px) {
+  .body {
+    background-color: white;
+  }
+  .nav-bar {
+    width: 40rem;
   }
 
-  .
   .nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
   }
-  .nav-bar-links {
-    width: 100%;
-    flex-direction: column;
-  }
-  .nav-bar-links li {
-    text-align: center;
-  }
-  .nav-bar-links li a {
-    padding: 0.5rem 1rem;
+  .introduction {
+    background-image: url("../img/first-background.jpg");
   }
 }
