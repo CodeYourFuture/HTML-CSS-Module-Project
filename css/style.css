@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    /* height: 5000px; */
 }
 
 /**
@@ -16,4 +17,83 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
+ /* header and nav style */
+
+header{
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+}
+
+header .container{
+    /* background-color: salmon; */
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+.container img{
+    height: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    /* margin: auto; */
+}
+
+nav a{
+    color: #555;
+    text-decoration: none;
+    font-weight: 400;
+    /* padding: 1rem 1.25rem; */
+    /* display: flex; */
+    /* justify-content: end; */
+    margin: 16px;
+}
+
+nav a:first-child{
+    color: #555;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: rgb(231, 79, 41);
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+ /* .banner .container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+main .banner .container{
+
+}
+
+section .banner {
+    background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+}  */
