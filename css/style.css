@@ -231,6 +231,8 @@ body {
 }
 
 .aside-ctn h2 {
+    margin-top: 10%;
+    margin-left: 5%;
     text-align: center;
     font-weight: 300;
     font-style: italic;
@@ -252,6 +254,7 @@ body {
         display: none;
     }
 }
+
 /*Footer Styles*/
 .footer-ctn h4 {
     text-align: center;
@@ -263,9 +266,15 @@ body {
 }
 
 .icon-ctn {
+    width: 100%;
     display: inline-flex;
-    padding: 1.25em 3.5em;
-    
+    justify-content: center;
+}
+
+@media screen and (min-width: 360px) {
+    .icon-ctn {
+        margin: auto;
+    }
 }
 
  footer .footer-ctn .icon-ctn img  {
