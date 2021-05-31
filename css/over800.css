@@ -15,13 +15,15 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/ nav {
+nav {
+  height: 8%;
   display: grid;
   grid-template-columns: 30% 80%;
   position: fixed;
   background-color: white;
   width: 100%;
   z-index: 1;
+  font-size: 1.7vw;
 }
 
 .nav-img {
@@ -39,8 +41,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-self: center;
-
-  color: #0c3c9e;
 }
 
 /*
@@ -52,6 +52,7 @@ body {
 
 .nav-a:hover {
   color: orangered;
+  cursor: pointer;
 }
 
 .header-div {
@@ -59,7 +60,8 @@ body {
   text-align: center;
   color: white;
   background-color: palegreen;
-  font-size: 0.7em;
+  font-size: 2vw;
+
   padding-top: 70px;
 }
 
@@ -71,7 +73,7 @@ body {
 }
 
 .inner-header-div button {
-  background-color: blue;
+  background-color: orangered;
   padding: 15px;
   border-radius: 1rem;
   border-color: orangered;
@@ -84,7 +86,7 @@ hidden. Currently I) am controlling it through max height and I can't get justif
   background-image: url("https://raw.githubusercontent.com/erin-switchstitch/HTML-CSS-Coursework-Week2/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 700px;
 }
 
 main,
@@ -92,26 +94,75 @@ h2 {
   color: #8b8d91;
   text-align: center;
   padding-top: 50px;
-  font-size: 1.2em;
-
-  color: #0c3c9e;
+  font-size: 1.5em;
 }
 
 figcaption {
   font-size: 1em;
 }
 
+/* I was having difficulties trying to get all three elements displaying on the same line. I should have been using inline-flex and then 
+set the outer container to 100%. All 3 elememets were still not playing together properly with the overall width. This is because 
+in my other CSS file there was a padding set. Found this out by inspecting the eleemtns in firefox, and then seeing what descriptors 
+are applying to my element and which css sheet it is from */
+
 .main-img-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  width: 100%;
 }
 
 .main-img {
-  flex-basis: 200px;
-  flex-grow: 1;
+  width: 20%;
+  max-width: 400px;
+  padding: 3%;
 }
 
-.main-img:last-of-type {
+.extended-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  /*grid-template-columns: 40% 60%;*/
+  height: 100%;
+  width: 90%;
+  background-color: #fcefeb;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 5%;
+}
+
+.extended-box-img {
+  grid-column-start: 0;
+  grid-column-start: 1;
+  max-width: 100%;
+  align-self: center;
+}
+
+/* managed to get these two seperate pieces of text to occupy the same row (i didn't set any rows in container - it did it automatically)
+by putting them inside a div together */
+
+.text-div {
+  align-self: center;
+  justify-self: center;
+}
+
+.extended-box-p {
+  grid-column-start: 1;
+  grid-column-start: 2;
+  font-size: 1.3em;
+  max-height: 100%;
+}
+
+.extended-box-a {
+  grid-column-start: 1;
+  grid-column-start: 2;
+  max-height: 100%;
+
+  background-color: orangered;
+  padding: 15px;
+  border-radius: 1rem;
+  border-color: orangered;
+  color: white;
 }
 
 footer {
@@ -127,14 +178,17 @@ footer p {
 
 .footer-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   max-height: 80px;
   width: 100%;
+ 
   padding-bottom: 10%;
 }
 
 .fab {
   font-size: 40px;
+   margin: 10px;
+   height: 40px;
   padding: 2%;
   border: grey 1px solid;
   border-radius: 10%;
