@@ -4,7 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
+    }
 
 /**
  * Add your custom styles below
@@ -16,6 +16,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+  
  #logo{
      width: 50px;
      height: 50px;
@@ -46,8 +47,54 @@ body {
  }
 
 #background{
-    width: 100%;
+    width: fit-content;
+    text-align: center;
+    
+    
+
 
 }
 
+#continer{
+    margin:0%;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: block;
+    
+}
+
+#title{
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    letter-spacing: 2px;
+    font-size: 3em;
+    font-weight: 200;
+}
+#subtitle{
+    position: absolute;
+    left: 33%;
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.btn{
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    color: white;
+    margin: 0 0 15px 0;
+    padding: 0 15px;
+    height: 55px;
+    font-size: 1em;
+    font-weight: 650;
+    font-family:  Permanent Marker ,sans-serif;
+    background: orangered;
+    border-radius: 10px;
+    border: 3px solid #000;
+    width: 150px;
+    
+}
 
