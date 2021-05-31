@@ -22,6 +22,7 @@ header {
   flex-wrap: wrap;
   padding: 10px 30px;
 }
+
 header img {
   width: 20px;
   padding: 5px;
@@ -33,19 +34,108 @@ header img {
   white-space: nowrap;
   align-content: center;
 }
+
 .navbar li {
-  font-size: 1rem;
+  font-size: 16px;
   list-style: none;
-  padding: 1rem 1rem;
+  padding: 15px 15px;
   align-items: flex-end;
 }
+
 .navbar li a {
-  color: lightgrey;
-  padding: 1rem;
+  color: rgb(180, 180, 180);
+  padding: 10px;
 }
+
 .navbar ul li:hover {
   color: rgb(255, 96, 38);
 }
+
 .navbar ul li:first-child {
   font-weight: bold;
+}
+
+.intro {
+  background-image: url(/img/first-background.jpg);
+  background-size: cover;
+  color: #fff;
+  height: 50vh;
+  text-align: center;
+  padding: 10% 0;
+}
+
+.intro h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 40px auto 35px;
+}
+
+.intro h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.intro button {
+  font-size: 20px;
+  margin: 25px;
+  padding: 15px;
+  background-color: rgb(238, 120, 41);
+  border: none;
+  border-radius: 3px;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(27, 27, 27);
+  font-weight: 400;
+  padding: 2%;
+}
+
+.content-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+.content-img img {
+  width: 150px;
+  height: 150px;
+}
+
+.content-img h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 20px;
+  color: rgb(62, 62, 62);
+}
+
+.social-media h1 {
+  font-size: 20px;
+  width: 80%;
+  margin: 80px auto 50px;
+  text-align: center;
+  font-weight: 375;
+}
+
+.social-links {
+  display: flex;
+  width: 12%;
+  margin: auto;
+  padding: 15px;
+}
+
+.social-links img {
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  margin: auto;
+  padding: 9px;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(62, 62, 62);
+  margin-bottom: 3%;
 }
