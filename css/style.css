@@ -23,6 +23,7 @@ body {
      margin-left: 100px;
      margin-top: 20px;
      position: absolute;
+     display: flex;
  }
  .menu{
      list-style: none;
@@ -32,7 +33,7 @@ body {
  nav ul{
      float: right;
      width: 40%;
-     display: inline-flex;
+     display: flex;
      flex-direction: row;
      justify-content: space-between;
      margin-right: 100px;
