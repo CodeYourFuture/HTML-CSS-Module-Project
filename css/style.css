@@ -4,96 +4,86 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    /* height: 5000px; */
+    max-width: 1200px;
+    margin: auto;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
- * {
-     margin: 0;
-     padding: 0;
+ *{
      box-sizing: border-box;
+     padding: 0;
+     margin: 0;
  }
 
- /* header and nav style */
+ .navbar{
+     background-color: whitesmoke;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
 
-header{
-    position: fixed;
-    /* top: 0; */
-    /* left: 0; */
-    width: 100%;
-}
-
-header .container{
-    /* background-color: salmon; */
-    padding-top: 16px;
-    padding-bottom: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding-left: 128px;
-    padding-right: 128px;
-}
-
-.container img{
-    height: 40px;
-}
-
-nav{
-    display: flex;
-    justify-content: end;
-    /* margin: auto; */
-}
-
-nav a{
-    color: #555;
-    text-decoration: none;
+ .nav-list{
+    list-style-type: none;
     font-weight: 400;
-    /* padding: 1rem 1.25rem; */
-    /* display: flex; */
-    /* justify-content: end; */
-    margin: 16px;
-}
+ }
 
-nav a:first-child{
-    color: #555;
-    font-weight: 500;
-}
+ .nav-list .list-item{
+     display: inline-block;
+     padding: 20px 10px;
+ }
 
-nav a:hover{
-    color: rgb(231, 79, 41);
-}
+ .nav-list a{
+     color: #555;
+     text-decoration: none;
+ }
 
-.hamburger-menu{
-    display: none;
-}
+ .nav-list li:first-child a{
+     font-weight: 500;
+ }
 
- /* .banner .container{
-    max-width: 1600px;
-    margin: 0 auto;
-    padding-left: 128px;
-    padding-right: 128px;
-}
+ .nav-list li a:hover{
+     color: rgb(231, 96, 18);
+ }
 
-main .banner .container{
+ .logo-icon{
+     height: 40px;
+ }
 
-}
+ .hamburger-menu{
+     display: none;
+ }
 
-section .banner {
-    background-image: url(../img/first-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
+ @media screen and (max-width: 480px){
+    .navbar{
+        flex-direction: column;
+    }
 
-}  */
+     .hamburger-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+     }
+
+     .nav-list{
+        width: 100%;
+        text-align: center;
+        display: none;
+     }
+
+     .nav-list .list-item{
+        display: block;
+        padding: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #555;
+     }
+
+     .container-icon{
+         width: 100%;
+     }
+
+     .logo-icon{
+         margin-left: 7.5px;
+         margin-top: 7.5px;
+     }
+ }
