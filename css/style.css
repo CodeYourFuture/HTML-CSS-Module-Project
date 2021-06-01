@@ -105,3 +105,16 @@ body {
     margin-top: 100px;
 }
 
+#benefits{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+#icons{
+    width: 20%;
+}
+
+.iconstitle{
+    font-weight: lighter;
+
+}
