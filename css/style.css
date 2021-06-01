@@ -47,7 +47,7 @@ body {
  }
 
 #background{
-    width: fit-content;
+    max-width: 98%;
     text-align: center;
     
     
@@ -71,30 +71,37 @@ body {
     letter-spacing: 2px;
     font-size: 3em;
     font-weight: 200;
+    
 }
 #subtitle{
     position: absolute;
     left: 33%;
     top: 45%;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.8em;
+    font-weight: 100;
 
 }
 .btn{
     position: absolute;
-    left: 40%;
+    left: 45%;
     top: 60%;
     color: white;
     margin: 0 0 15px 0;
     padding: 0 15px;
     height: 55px;
     font-size: 1em;
-    font-weight: 650;
-    font-family:  Permanent Marker ,sans-serif;
+    font-weight: 200;
+    font-family:  'Times New Roman', Times, serif ,sans-serif;
     background: orangered;
     border-radius: 10px;
     border: 3px solid #000;
     width: 150px;
     
+}
+#slogan{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight:lighter;
+    margin-top: 100px;
 }
 
