@@ -117,6 +117,12 @@ nav {
   margin-top: 15px;
 }
 
+/* --JOIN SECTION */
+
+.join-karma {
+  display: none;
+}
+
 /* --Footer-- */
 
 .footer-container {
@@ -146,6 +152,7 @@ nav {
   padding: 10px;
   border: rgb(235, 233, 233) 2px solid;
   border-radius: 50%;
+  cursor: pointer;
 }
 .trademark {
   color: rgb(184, 184, 184);
@@ -208,5 +215,33 @@ nav {
     margin-top: 20px;
     font-size: 24px;
     font-weight: lighter;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .join-karma {
+    display: inline-block;
+  }
+  .join-section-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(247, 232, 236, 0.945);
+  }
+
+  .join-now-link {
+    align-items: top;
+    padding: 40px 120px 20px 120px;
+
+    font-size: 24px;
+    font-style: italic;
+  }
+  .join-btn {
+    background-color: rgb(233, 91, 8);
+    color: rgb(241, 239, 239);
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    border: none;
   }
 }
