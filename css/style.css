@@ -188,7 +188,16 @@ article {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  
 }
+.img-small { 
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  margin-right:10px;
+  margin-left:10px;
+  
+  border:1px solid grey;}
 
 .boost > img {
   align-items: center;
@@ -196,42 +205,12 @@ article {
   height: 250px;
 }
 
-.fa {
-  padding-top: 5px;
-  font-size: 50px;
-  height:20px;
-  width: 50px;
-  text-align: center;
-  align-content: center;
-  text-decoration: none;
-}
-
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
 
 
 
-/*  Instagram */
-.fa-instagram {
-  background: #ee55da;
-  color: white;
-}
+
+
+
 /* Mobile screen */
 @media screen and (max-width: 460px) {
   .corner > img {
