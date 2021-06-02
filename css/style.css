@@ -158,3 +158,45 @@ body {
     padding-top: 4rem;
 }
 
+/* footer style */
+footer{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(214, 208, 208);
+    margin: auto;
+    max-width: 1200px;
+    padding: 2rem 0;
+}
+footer h3{
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+#main-footer{
+    display: flex;
+    justify-content: center;
+    /* flex: 1; */
+    padding: 2rem 1rem;
+}
+#main-footer img{
+    height: 1rem;
+}
+#main-footer a{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid rgb(206, 202, 202);
+    align-items: center;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 5px;
+
+}
+footer p{
+    color: rgb(165, 159, 159);
+}
