@@ -1,5 +1,7 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
@@ -8,30 +10,27 @@ body {
   vertical-align: baseline;
   margin: 0;
 }
-/*
-.content {
-  padding: 0 0.938rem;
-  margin: 0 auto;
-  min-width: 37.5rem;
-}
-:focus {
-  outline: none;
-}
-*/
-
-/* Navigation part style*/
-
-/*.content {
-  padding: 0 0.938rem;
-  margin: 0 auto;
-  min-width: 37.5rem;
-}
-:focus {
-  outline: none;
+/* the naviagation bar style*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Navigation Section
- */
+.nav-links{
+  display: inline-flex;
+}
+a {
+padding: 10px 20px;
+color: #4c5058;
+}
+
+
+
+
+/*the end of navigation bar style*/
+
 .navigation {
   background-color: #fff;
   position: fixed;
@@ -44,6 +43,7 @@ body {
 }
 .navigation .logo {
   height: 70px;
+  float: right;
 }
 .navigation .links {
   float: right;
@@ -279,9 +279,12 @@ ul {
   display: flex;
   /*justify-self: auto;*/
   list-style: none;
+  flex-direction: row;
+ 
 }
 section h3 {
   display: block;
+  
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -295,7 +298,7 @@ section h3 {
   width: 25vw;
 }
 li {
-  text-align: -webkit-match-parent;
+text-align: -webkit-match-parent;*/
 }
 
 /*social media icons*/
