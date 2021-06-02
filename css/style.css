@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* navbar style */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -53,6 +52,7 @@ body {
      display: none;
  }
 
+ /* navbar responsive design */
  @media screen and (max-width: 480px){
     .navbar{
         flex-direction: column;
@@ -87,3 +87,74 @@ body {
          margin-top: 7.5px;
      }
  }
+
+ /* banner style */
+ .banner{
+    background-image: url(/img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 47.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .banner h1{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 100;
+    padding: 0;
+    margin: .5rem 1rem;
+    font-size: 2.5rem;
+ }
+ .banner h2{
+    color:whitesmoke;
+    text-align: center;
+    font-weight: 20;
+    margin: .5rem 1rem;
+    font-size: 2rem;
+ }
+ .banner button{
+     text-align: center;
+     padding: 1rem 1rem;
+     margin: 3rem 1rem;
+     border: none;
+     border-radius: 5px;
+     background-color: rgb(231, 79, 52);
+ }
+.banner button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* products style */
+#products{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+#products .items{
+    display: flex;
+    /* padding: 1rem; */
+}
+#products .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 5rem;
+}
+#products .items .item p{
+    text-align: center;
+    padding: 1rem;
+}
+#products .items .item img{
+    text-align: center;
+    padding: .5rem 1rem;
+}
+.text-center{
+    font-size: 2.2rem;
+    font-weight: 20;
+    text-align: center;
+    padding-top: 4rem;
+}
+
