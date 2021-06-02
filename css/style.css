@@ -16,54 +16,54 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background-color: transparent;
 }
 
 .nav-links{
   display: inline-flex;
+  color: #838994;
+  font-size: 18px;
+  margin-top: 27px;
 }
 a {
 padding: 10px 20px;
 color: #4c5058;
 }
 
-
-
-
-/*the end of navigation bar style*/
-
-.navigation {
-  background-color: #fff;
-  position: fixed;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  z-index: 9999;
-}
-.navigation > .content {
-  height: 70px;
-}
-.navigation .logo {
-  height: 70px;
-  float: right;
-}
-.navigation .links {
-  float: right;
-  color: #838994;
-  font-size: 18px;
-  margin-top: 27px;
-}
-.navigation .links li {
-  display: inline-block;
+.nav-links li {
+  
   margin-left: 25px;
 }
-.navigation .links li.active {
+
+.nav-links li.active {
   color: #4c5058;
   font-weight: 500;
 }
-.navigation .links li:hover {
+ .nav-links li:hover {
+  cursor: pointer;
+  color: #333333;
+}
+.logo {
+  height: 70px;
+  float: right;
+}
+.nav-links li.active {
+  color: #4c5058;
+  font-weight: 500;
+}
+ .nav-links li:hover {
   cursor: pointer;
   color: #333333;
 }
 
+/*the end of navigation bar style*/
+
+
+
+
+
+  
+ 
 /* Introduction Section*/
 
 .heroImage {
@@ -91,56 +91,6 @@ color: #4c5058;
   padding: 10px;
   font-size: 15px;
   border-radius: 10px;
-}
-
-/*.background {
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 45.938rem;
-  overflow: auto;
-}
-
-.background h1,
-.background h4 {
-  color: white;
-  text-align: center;
-  font-weight: 300;
-}
-.background h1 {
-  margin-top: 17.5rem;
-  font-size: 3.125rem;
-}
-.background h4 {
-  margin-top: 1.25rem;
-  font-size: 1.563rem;
-}
-
-/* The buttons
- */
-/*.background .button1 {
-  color: white;
-  text-align: center;
-  margin-top: 1.563rem;
-}
-.background .half {
-  width: 49%;
-  padding: 0 0.938rem;
-  display: inline-block;
-  vertical-align: bottom;
-  font-size: 1.125rem;
-  line-height: 1.2;
-}
-
-.background .button1 {
-  color: white;
-  text-align: center;
-  margin-top: 1.563rem;
-}
-.background .half {
-  width: 49%;
-  padding: 0 0.938rem;
-  display: inline-block;
   vertical-align: bottom;
   font-size: 1.125rem;
   line-height: 1.2;
@@ -163,98 +113,9 @@ button:hover {
   cursor: pointer;
 }
 
-/*.navigation__bar {
-  background-color: rgb(235, 217, 217);
-  position: fixed;
-  width: 100%;
-  border-bottom: 0em solid #ddd;
-  z-index: 9999;
-}
-.navigation__bar > .content {
-  height: 70px;
-}
-.navigation__bar .logo {
-  height: 70px;
-}
-.navigation__bar ul {
-  float: right;
-  color: beige;
-  font-size: medium;
-  margin-top: 27px;
-}
-.navigation__bar .links li {
-  display: inline-block;
-  margin-left: 1.563rem;
 
-}
-.navigation__bar .links li.active {
-  color: aliceblue;
-  font-weight: 500;
-}
-.navigation__bar .links li :hover {
-  cursor: pointer;
-  color: black;
 
-}
-/* first background*/
 
-/*header {
-  background-color: transparent;
-}
-header::after {
-  content: ;
-  display: table;
-  clear: both;
-}
-nav {
-  float: right;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 25px;
-  position: relative;
-}
-nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
-}
-nav a :hover {
-  color: orangered;
-}
-
-/* background image style*/
-
-/*.background img {
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  padding: auto;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-.heading {
-  position: absolute;
-  top: 300px;
-  left: 0px;
-  right: 0px;
-  color: white;
-  text-align: center;
-  width: inherit;
-  font-size: large;
-  font-family: sans-serif;
-  font-weight: lighter;
-  letter-spacing: 3px;
-  margin-bottom: 0px;
-}
 /*the second section style*/
 section {
   display: flex;
