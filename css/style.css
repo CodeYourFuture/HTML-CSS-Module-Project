@@ -15,5 +15,77 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+#logo{
+    width: 20px;
+   margin-left:150px;
 
+}
+#nav-list{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:50 px;
+    
+    
+   
+}
+ nav li{
+    list-style-type: none;
+    margin: 20px;
+    /*justify-content:flex-end;*/
+    /*float:right;*/
+    
+ }   
+ a:hover {
+    color: coral;
+  } 
+  a:active {
+      color:rgb(139, 136, 136)
+  }
+#header-div{
+    display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-around;
+  
+  
+  
+   
+   
+    
+  
+}
+#kar-nav{
+    width: 100%;
 
+    
+
+}
+#learn-more-button{
+    background-color:coral;
+    padding: 15px;
+    border-radius: 7%;
+    
+}
+
+#interducing-img{
+   background-image: url(../img/first-background.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   padding: 200px;
+   text-align: center;
+   color: cornsilk;
+  font-family:sans-serif;
+  
+}
+#sec-2{
+    text-align: center;
+    padding: 50px;
+}
+
+.products-img{
+    width:100px;
+}
+#everyone-needs{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
