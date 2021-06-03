@@ -10,13 +10,14 @@ body {
   vertical-align: baseline;
   margin: 0;
 }
-/* the naviagation bar style*/
+/* the navigation bar style*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: transparent;
+  flex-wrap: wrap;
 }
 
 .nav-links{
@@ -24,37 +25,36 @@ header {
   color: #838994;
   font-size: 18px;
   margin-top: 27px;
+ 
+   
 }
 a {
 padding: 10px 20px;
 color: #4c5058;
+text-decoration: none;
 }
 
-.nav-links li {
+.nav-links li  {
+ margin-left: 25px;
   
-  margin-left: 25px;
 }
 
 .nav-links li.active {
   color: #4c5058;
   font-weight: 500;
 }
- .nav-links li:hover {
+ .nav-links li a :hover {
   cursor: pointer;
   color: #333333;
+  
 }
 .logo {
   height: 70px;
-  float: right;
+  margin-left:auto;
+  display: inline-flex;
 }
-.nav-links li.active {
-  color: #4c5058;
-  font-weight: 500;
-}
- .nav-links li:hover {
-  cursor: pointer;
-  color: #333333;
-}
+
+
 
 /*the end of navigation bar style*/
 
@@ -189,14 +189,33 @@ footer {
   margin-bottom: 50px;
 }
 
-/* Responsive Design
+ /* Responsive Design
  */
-
-@media (min-width: 1200px) {
-  .content {
-    width: 60%;
+@media all and (max-width: 600px) {
+ 
+  .logo {
+    margin: .25em 0;
+    align-self: left; /* align the logo to the left side of 'flex-container' */
+}
+  
+  .nav-links {
+    flex-direction: column;
+  }
+  
+  .nav-links a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px; 
+    border-bottom: 1px; 
+  }
+  
+  .nav-links li:last-of-type a {
+    border-bottom: none;
   }
 }
+
+
+
 
 /*
  /* Add your custom styles below
