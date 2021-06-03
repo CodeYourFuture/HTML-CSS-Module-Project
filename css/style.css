@@ -22,8 +22,11 @@ body {
 }
 #nav-list{
     display: flex;
+    margin-right: 75px;
     justify-content: flex-end;
-    margin-right:50 px;
+    
+    
+    
     
     
    
@@ -33,6 +36,7 @@ body {
     margin: 20px;
     /*justify-content:flex-end;*/
     /*float:right;*/
+    
     
  }   
  a:hover {
@@ -79,6 +83,10 @@ body {
 #sec-2{
     text-align: center;
     padding: 50px;
+   
+}
+#sec2-titl{
+    font-size:30px;
 }
 
 .products-img{
@@ -87,5 +95,17 @@ body {
 #everyone-needs{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+
+}
+.blog-iconn{
+    width:20px;
+    margin:20px;
+}
+footer{
+    text-align:center;
 }
