@@ -16,18 +16,28 @@
     <!-- All the images you need are in the 'img' folder -->
 
     <header class="header-container">
-        <nav class="nav-container">
-            <img src="/img/karma-logo.svg" alt="karmalogo">
-            <ul class="nav-links">
-                <li><a href="#">Meet Karma</a></li>
-                <li><a href="#">How it Works</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <img src="/img/karma-logo.svg" 
+            alt="karmalogo" />
+        </div>
+           
+        <div class="nav-bar">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div class="menu">
+                
+                        <a href="#"><span>Meet Karma</span></a>
+                        <a href="#">How it Works</a>
+                        <a href="#">Store</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Help</a>
+                        <a href="#">Login</a>
+                    
+                </div>
+        </div>  
     </header>
+
+    <main> 
     <section class="section-photo">
         <h1>Introducing Karma</h1>
         <h2>Bring WiFi with you, everywhere you go.</h2>
@@ -38,18 +48,31 @@
     <section class="grid">
         <h2> Everyone needs a little Karma.</h2>
         <article>
-            <img src="/img/icon-devices.svg" alt="devices-icon">
+            <img src="/img/icon-devices.svg" 
+            alt="devices-icon">
             <p> Internet for all devices</p>
         </article>
         <article>
-            <img src="/img/icon-coffee.svg" alt="coffee cup icon">
+            <img src="/img/icon-coffee.svg" 
+            alt="coffee cup icon">
             <p>Boost your productivity</p>
         </article>
         <article>
-            <img src="/img/icon-refill.svg" alt="oil refill icon">
+            <img src="/img/icon-refill.svg" 
+            alt="oil refill icon">
             <p>Pay as You Go</p>
         </article>
     </section>
+    <section class="extended">
+        <img class="extended-img" 
+        src="/additional/feature-img.png" 
+        alt="extended-photo">
+        <article>
+            <p>Wherever I am, I just don't <br> worry about my connection <br> anymore!</p>
+            <button><a href="#">Get Karma today</a></button>
+        </article>
+    </section>
+    </main>
     <footer>
         <h3>Join us on</h3>
         <ul>
