@@ -30,6 +30,7 @@ body {
   width: 30px;
   padding: 10px 0 15px 10px;
 }
+
 .hamburger {
   height: 20px;
   width: 40px;
@@ -57,6 +58,7 @@ nav {
   background-position: center;
   background-size: cover;
 }
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -64,6 +66,7 @@ nav {
   align-items: center;
   margin: 10px;
 }
+
 .hero-title {
   width: 150px;
   font-size: 16px;
@@ -72,6 +75,7 @@ nav {
   text-align: center;
   padding-top: 40px;
 }
+
 .hero-content {
   width: 180px;
   font-size: 14px;
@@ -80,9 +84,11 @@ nav {
   justify-content: center;
   text-align: center;
 }
+
 .button-hero {
   margin: 20px;
 }
+
 .hero-btn {
   background-color: rgb(233, 91, 8);
   color: rgb(223, 219, 219);
@@ -92,6 +98,7 @@ nav {
 }
 
 /* --Icon section-- */
+
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -101,6 +108,7 @@ nav {
   text-align: center;
   color: rgb(87, 85, 85);
 }
+
 .icon-title {
   width: 180px;
   font-size: 15px;
@@ -119,6 +127,7 @@ nav {
   padding: 10px;
   font-weight: normal;
 }
+
 .article-content {
   margin-top: 15px;
 }
@@ -142,15 +151,18 @@ nav {
   text-align: center;
   color: rgb(87, 85, 85);
 }
+
 .footer-title {
   font-weight: lighter;
 }
+
 .footer-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
+
 .med-icon {
   width: 15px;
   height: 15px;
@@ -160,34 +172,41 @@ nav {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .trademark {
   color: rgb(184, 184, 184);
 }
 
 @media screen and (min-width: 768px) {
   /* --HEADER-- */
+
   .hamburger {
     display: none;
   }
+
   nav {
     display: block;
     width: 60%;
     margin-right: 80px;
   }
+
   .nav-btns {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
   }
+
   .nav-link {
     align-items: center;
     text-align: center;
     text-decoration: none;
     color: rgb(146, 143, 143);
   }
+
   .nav-link:hover {
     color: rgb(233, 91, 8);
   }
+
   .active {
     color: rgb(94, 94, 94);
     font-weight: bold;
@@ -205,6 +224,7 @@ nav {
     font-size: 22px;
     margin-top: 40px;
   }
+
   .hero-content {
     width: 100%;
     font-size: 1.5em;
@@ -220,6 +240,7 @@ nav {
     align-items: center;
     text-align: center;
   }
+
   .icon-title {
     width: 100%;
     margin-top: 20px;
@@ -232,6 +253,7 @@ nav {
   .join-karma {
     display: inline-block;
   }
+
   .join-section-container {
     display: flex;
     justify-content: space-between;
@@ -247,6 +269,7 @@ nav {
     font-size: 24px;
     font-style: italic;
   }
+
   .join-btn {
     background-color: rgb(233, 91, 8);
     color: rgb(241, 239, 239);
