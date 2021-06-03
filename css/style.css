@@ -1,5 +1,5 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -20,50 +20,38 @@ header {
   flex-wrap: wrap;
 }
 
-.nav-links{
+.nav-links {
   display: inline-flex;
   color: #838994;
   font-size: 18px;
   margin-top: 27px;
- 
-   
 }
 a {
-padding: 10px 20px;
-color: #4c5058;
-text-decoration: none;
+  padding: 10px 20px;
+  color: #4c5058;
+  text-decoration: none;
 }
 
-.nav-links li  {
- margin-left: 25px;
-  
+.nav-links li {
+  margin-left: 25px;
 }
 
 .nav-links li.active {
   color: #4c5058;
   font-weight: 500;
 }
- .nav-links li a :hover {
+.nav-links li a :hover {
   cursor: pointer;
   color: #333333;
-  
 }
 .logo {
   height: 70px;
-  margin-left:auto;
+  margin-left: auto;
   display: inline-flex;
 }
 
-
-
 /*the end of navigation bar style*/
 
-
-
-
-
-  
- 
 /* Introduction Section*/
 
 .heroImage {
@@ -84,7 +72,7 @@ text-decoration: none;
   color: white;
 }
 
-.bookButton {
+.learnButton {
   background-color: orange;
   border: none;
   color: white;
@@ -113,13 +101,9 @@ button:hover {
   cursor: pointer;
 }
 
-
-
-
 /*the second section style*/
 section {
   display: flex;
-
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -138,14 +122,11 @@ section h2 {
 
 ul {
   display: flex;
-  /*justify-self: auto;*/
   list-style: none;
   flex-direction: row;
- 
 }
 section h3 {
   display: block;
-  
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -157,9 +138,6 @@ section h3 {
   padding-left: 1em;
   margin-left: 2em;
   width: 25vw;
-}
-li {
-text-align: -webkit-match-parent;*/
 }
 
 /*social media icons*/
@@ -189,33 +167,29 @@ footer {
   margin-bottom: 50px;
 }
 
- /* Responsive Design
+/* Responsive Design
  */
 @media all and (max-width: 600px) {
- 
   .logo {
-    margin: .25em 0;
+    margin: 0.25em 0;
     align-self: left; /* align the logo to the left side of 'flex-container' */
-}
-  
+  }
+
   .nav-links {
     flex-direction: column;
   }
-  
-  .nav-links a { 
-    text-align: center; 
+
+  .nav-links a {
+    text-align: center;
     padding: 10px;
-    border-top: 1px; 
-    border-bottom: 1px; 
+    border-top: 1px;
+    border-bottom: 1px;
   }
-  
+
   .nav-links li:last-of-type a {
     border-bottom: none;
   }
 }
-
-
-
 
 /*
  /* Add your custom styles below
