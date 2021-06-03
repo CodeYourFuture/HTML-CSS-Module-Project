@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1.0"
     />
     <title>Karma</title>
     <link
@@ -17,13 +17,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
+    <a class="logo" href="#">
+    <img src="../img/karma-logo.svg" alt="logo"/>
+    </a>
     <nav class="navbar">
-      <ul class="navbar-nav">
-        <a class="navbar-logo" href="#">
-          <img src="favicon.ico" alt="logo" />
-        </a>
+      <ul>
         <li class="nav-item">
-          <a class="nav-link1">Meet karma</a>
+          <a class="nav-link" id='nav-link1'>Meet karma</a>
         </li>
         <li class="nav-item">
           <a class="nav-link">How it works</a>
@@ -38,13 +38,36 @@
           <a class="nav-link">Login</a>
         </li>
       </ul>
+        <a class="nav-img" href="#">
+        <img src="../img/menu-hamburger.svg" alt="hamburger"/>
+        </a>
     </nav>
+    <div class="background">
     <h1>introducing karma</h1>
     <p>Bring WI-FI with you everywhere you go</p>
-    <div><button>Learn more</button></div>
+    <div class='button'><button>Learn more</button></div>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+    </div>
+    <p class='p'>Everyone needs a little karma</p>
+    
   </body>
-  <footer></footer>
+  <footer>
+    <div class="all-icon">  
+      <div class="icon">
+        <img a src="../img/icon-devices.svg" alt="icon-devices" /></a>
+        <p class="p1">Internet for all devices</p>
+      </div>
+      <div class="icon">
+        <img a src="../img/icon-coffee.svg" alt="icon-coffee" />
+        <p class="p1">Boost your productivity</p>
+      </div>
+      <div class="icon">
+        <img a src="../img/icon-refill.svg" alt="icon-refill" />
+        <p class="p1">Pay as you go</p>
+      </div>
+    </div>
+
+  </footer>
 </html>

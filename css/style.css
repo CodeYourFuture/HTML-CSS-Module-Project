@@ -3,42 +3,45 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-image: url("../img/first-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: contain;
 }
-ul {
+.background {
+  background-image: url("../img/first-background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 60vh;
+  position: top;
+}
+.navbar {
   background-color: white;
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-  display: flex;
+  text-align: right;
 }
 .nav-item {
-  display: block;
-  flex-direction: row;
-  padding: 10px;
-  margin: 0px;
-  width: 30%;
-  text-align: right;
+  padding: 0px;
+  margin: 10px;
   color: gray;
+  display: inline-block;
 }
 .nav-item:hover {
   color: orange;
 }
-.nav-link1 {
+#nav-link1 {
   color: black;
-  margin: 15px;
 }
-.navbar-logo {
-  width: 100%;
-  height: auto;
+.logo {
+  margin: 5px;
+  padding: 0px;
+  width: 30px;
+  float: left;
 }
-img {
-  width: 50px;
+nav select {
+  display: none;
 }
 h1 {
+  margin: 0px;
   color: white;
   text-align: center;
 }
@@ -49,11 +52,66 @@ p {
 div {
   color: white;
   text-align: center;
-  border: 5px;
+  border: 0px;
 }
 button {
   background-color: orange;
 }
+.p {
+  text-align: center;
+  color: black;
+}
+.icon img {
+  width: auto;
+  margin: 20px;
+  text-align: center;
+}
+
+.all-icon {
+  display: flex;
+  position: relative;
+  margin: 30px;
+  justify-content: space-evenly;
+}
+.p1 {
+  text-align: center;
+  color: black;
+}
+.nav-img {
+  display: none;
+}
+@media screen and (max-width: 675px) {
+  nav ul {
+    display: none;
+  }
+  .nav-img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+  .background {
+    height: fit-content;
+  }
+  .all-icon {
+    display: block;
+    position: top;
+    height: auto;
+  }
+  .icon img {
+    margin: 60px;
+  }
+  .logo {
+    width: 15px;
+    position: top;
+    margin: 5px;
+  }
+  .background {
+    position: relative;
+    top: 40px;
+  }
+}
+
 /**
  * Add your custom styles below
  * 
