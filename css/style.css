@@ -33,7 +33,7 @@ ul > li {
 }
 
 li > a {
-  color: darkslategrey;
+  color: rgb(84, 94, 94);
   text-decoration: none;
   font-weight: normal;
 }
@@ -44,7 +44,7 @@ li > a:hover {
 }
 
 li:first-child a {
-  color: rgb(94, 16, 16);
+  color: rgb(32, 27, 27);
 }
 .navigation_bar > div {
   display: flex;
@@ -59,18 +59,20 @@ li:first-child a {
 /* Main Styles */
 
 /* Hero Styles */
-.hero {
-  background-image: url("../img/first-background.jpg");
+
+.hero{
+  background-image: url(../img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 66%;
+  background-position-y: 30%;
+  width: 100%;
+  height: 53.125rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  background-size: cover;
   justify-content: center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding-top: 10rem;
+  align-items: center;
 }
-
 .intro,
 .hero > h1,
 .intro > h2 {
@@ -87,10 +89,9 @@ li:first-child a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgba(255, 192, 203, 0.438);
+  background-color: rgba(241, 220, 223, 0.438);
   justify-content:flex-start;
-  /* align-items: center; */
-  padding-bottom:-50px;
+  
   color: rgb(7, 7, 7);
 
 }
@@ -103,19 +104,7 @@ li:first-child a {
   justify-content: center;
   align-items: center;}
 
-.ex-version >#button{
-
-display:flex;
-  background-color: rgb(231, 84, 25);
-  color: white;
-  border:none;
-  border-radius: 5px;
-  padding:20px 40px 20px 40px; */
-  margin-top:40px;
-  /* margin-bottom: 300px; */
-  font-size:1.3rem;
-
- }.feature{ display:flex; width:40%; height:439px;}
+.feature{ display:flex; width:40%; height:439px;}
 header,
 main,
 footer,
@@ -125,14 +114,15 @@ footer,
 
 .hero > h1 { padding-top:90px;font-size:4rem; font-weight: normal;}
 .intro > h2 {
- margin-top:-20px;
+  margin-top:-20px;
   font-size:2rem;
   font-weight: normal;
-}
+    }
 .bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-bottom:5rem;
 }
 
 .bottom > div {
@@ -147,8 +137,10 @@ h1,
 h2 {
   font-size: 2em;
   font-weight: normal;
+ 
+  
 }
-
+.copyright{color:grey; }
 .button {
   background-color: rgb(231, 84, 25);
   color: white;
@@ -156,24 +148,32 @@ h2 {
   border-radius: 5px;
   padding:20px 40px 20px 40px;
   margin-top:40px;
-  margin-bottom: 300px;
   font-size:1.3rem;
 
 }
 
+.ex-version > .button{
+
+  background-color: rgb(231, 84, 25);
+  color: white;
+  border:none;
+  border-radius: 5px;
+  font-size:1.3rem;
+ }
 
 /* general */
 .bottom > h2 {
   text-align: center;
   font-size: 4rem;
   padding-top: 60px;
-  font-style:none;
+
 }
 article {
   align-items: center;
 }
 /* Footer */
 .footer {
+  margin-top:5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -181,6 +181,8 @@ article {
 }
 .footer > div {
   width: 50%;
+  margin-top:2rem;
+  margin-bottom:1rem;
   align-items: center;
 }
 .icons {
@@ -191,8 +193,8 @@ article {
   
 }
 .img-small { 
-  width:50px;
-  height:50px;
+  width:35px;
+  height:35px;
   border-radius: 50%;
   margin-right:10px;
   margin-left:10px;
@@ -201,8 +203,8 @@ article {
 
 .boost > img {
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 
 
