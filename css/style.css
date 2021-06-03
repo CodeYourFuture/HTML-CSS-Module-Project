@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  width: 100%;
 }
 
 /**
@@ -36,6 +37,11 @@ body {
   padding-right: 20px;
   cursor: pointer;
 }
+
+.hamburger-img:hover {
+  transform: scale(1.5);
+}
+
 nav {
   display: none;
 }
@@ -49,6 +55,7 @@ nav {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+  background-size: cover;
 }
 .hero-container {
   display: flex;
@@ -185,6 +192,10 @@ nav {
     color: rgb(94, 94, 94);
     font-weight: bold;
     text-decoration: none;
+  }
+
+  .active:hover {
+    color: rgb(233, 91, 8);
   }
 
   /* --HERO SECTION-- */
