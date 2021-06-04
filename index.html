@@ -16,30 +16,35 @@
     <!-- All the images you need are in the 'img' folder -->
 
     <header>
-        <nav class="nav-bar grid">
-            <img src="/img/karma-logo.svg" alt="logo image of karma" class="logo_pic">
+        <nav class="nav-bar">
+            <img src="/img/karma-logo.svg" height="50px" width="50px" alt="logo image of karma" class="logo_pic">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
             <ul class="nav-link">
-                <li class="nav-item active"><a href="#intro">Meet Karma</a></li>
-                <li class="nav-item"><a href="#service-container">How It Works</a></li>
-                <li class="nav-item"><a href="#service-container">Store</a></li>
-                <li class="nav-item"><a href="#get_karma">Blog</a></li>
+                <li class="nav-item"><a href="#">Meet Karma</a></li>
+                <li class="nav-item"><a href="#">How It Works</a></li>
+                <li class="nav-item"><a href="#">Store</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
                 <li class="nav-item"><a href="#">Help</a></li>
                 <li class="nav-item"><a href="#">Login</a></li>
             </ul>
-            <img src="/img/menu-hamburger.svg" alt="hamburger menu picture" class="ham-burger">
         </nav>
     </header>
     <!--main section starts here-->
     <main>
-        <section id="intro" class="grid">
+        <section id="intro">
             <h1 class="title">Introducing Karma</h1>
             <p class="description">Bring WiFI with you, everywhere you go.</p>
             <a class="btn" href="#service_card">Learn More</a>
         </section>
 
         <!--service section starts here-->
-        <section id="service-container" class="grid">
+        <section id="service-container">
             <h2>Everyone needs a little Karma</h2>
+            <div class="cards">
             <article class="service-card">
                 <img src="/img/icon-devices.svg" alt="desktop and mobile device pics">
                 <h3>Internet for all devices</h3>
@@ -52,6 +57,7 @@
                 <img src="/img/icon-refill.svg" alt="refilling petrol picture">
                 <h3>Pay as you go</h3>
             </article>
+            </div>
         </section>
 
         <section id="get_karma" class="grid">
@@ -72,5 +78,6 @@
             </ul>
             <p class="copyright"><span>&#169;</span>Karma Mobility, inc.</p>
     </footer>
+    <script src="/hamburger_menu.js"></script>
 </body>
 </html>

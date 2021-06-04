@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -20,13 +19,15 @@ body {
 :root{
     --primary:#FAFAFA;
     --secondary:#424242;
-    --tertiary :#F05A29;
+    --tertiary :#F9A68B;
 }
 /*general style*/ 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -35,14 +36,9 @@ body {
     background-color:var(--primary) ;
     overflow-x: hidden;
 }
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
+
 /*fonts styling*/
-h1,h2,h3,h4{
+h1,h2,h3,h4,a,li{
     color:var(--secondary);
 }
 
@@ -63,9 +59,7 @@ h4{
 .description{
     font-size: 1.1em;
 }
-a,li{
-    color: var(--secondary);
-}
+
 p{
     font-weight: 300;
     font-size: 0.5em; 
@@ -73,7 +67,7 @@ p{
 } 
 .btn{
     background-color: var(--tertiary);
-    color: azure;
+    color: #1F1F1F;
     padding: 0.6rem 0.9rem;
     margin-top: 25px;
     font-weight: 300;
@@ -85,120 +79,143 @@ p{
     background-color: #f0ffff;
     color:var(--tertiary);
     }
+    /*mobile styles*/
+
+    /*navigation*/
+    .nav-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo_pic{
+        padding: 0.5em;
+        margin:0 auto 0 0.7em;
+    }
+    .nav-link{
+        display: none;
+        position: fixed;
+        top: 49px;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ecdcdc;
+        text-align: center;    
+        transition: all .5s;
+    }
+    .nav-link .nav-item{
+        opacity: 1;
+        line-height: 0.5em;
+        margin: 1em 0;
+        transition: all .5s;
+    }
+    .nav-link .nav-item a{
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    .nav-link .nav-item a:hover{
+        color:#F05A29;
+        transition: 0.5s;
+    }
+    .nav-link .nav-item:first-child > a{
+        font-weight: 800;
+        color:rgb(64, 70, 75);
+    } 
+    .toggle-button{
+        position: absolute;
+        top:1em;
+        right:1.9em;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 31px;
+        height: 21px;
+        cursor: pointer;
+    }
+     .toggle-button .bar{
+        height: 3px;
+        width: 100%;
+        background-color:var(--secondary);
+        border-radius: 10px;
+    }
+    .nav-link.active{
+        display:flex;
+    }   
+  /*main section style*/
     
-/*mobile design*/
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
-.logo_pic{
-    grid-column: 1 / 2;
-    grid-row: 1;
-    height: 50px;
-    padding: 0.5em;
-    margin-right: 15em;
-    
-}
- .nav-link{
-   display: none;
-   grid-column: 2/ 3;
-}
-.ham-burger{
-    grid-column: 3 / 4 ;
-    justify-self: end;
-    padding: 0.5em;
-    margin-right: 1em;
-}
-
-
-/*main section style*/
-
-#intro{
+  #intro{
     background-image: url(/img/first-background.jpg);
-    align-self: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
     padding: 0 0.5em 0.5em 0.5em;
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
 .title{
-    grid-column: 1 / -1;
-    grid-row: 1;
-    justify-self: center;
-    color:var(--primary);
-    font-weight: 300;
-    margin-top: 30px;
-    text-align: center;
-}
-.description{
-    grid-column: 1 / -1;
-    grid-row: 2;
+     color:var(--primary);
+     font-weight: 400;
+     margin-top: 30px;
+     text-align: center;
+ }
+ .description{
     padding:0 0.5em 0.5em 0.5em;
-    justify-self: center;
     font-weight: 400;
     font-size: 1em;
+    text-align: center;
  }
-#intro .btn{
-    grid-column: 1 / -1;
-    grid-row: 3;
-    justify-self: center;
+ #intro .btn{
     margin: 0.5em 0 0.5em;
     font-weight: 500;
     padding: 0.5em;
 }
+/*service section styles*/
 
-/*section styles*/
 #service-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-row: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     margin-top: 2em;
 }
 #service-container h2{
-    grid-column: 1 / 4;
-    grid-row: 1;
     text-align: center;
     margin-top: 0.7em;
-    font-weight:300 ;
-    font-size:1.2em ;
-   
+    font-weight:400 ;
+    font-size:1.2em;   
 }
-#service-container .service-card{
-    grid-column: span 1;
-    grid-row: 2;
-}
-.service-card{
+.cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     text-align: center;
     margin:2rem auto;
     padding:0 2rem;
 }
-
 .service-card img{
+    display: block;	
     margin: 0 auto;
-    max-width: 40%;
-    align-self: center;
+    width: 100px;
 }
-
 .service-card h3{
- text-align: center;
- font-size: 0.9em;
- margin: 20px 0;
-
+    text-align: center;
+    font-size: 0.9em;
+    margin: 20px 0;   
 }
+ /*additional section for get-karma*/ 
 
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+} 
 #get_karma{
     display: none;
 }
-
 /*footer styles*/
+
 .footer-container{
     display: flex;
     flex-direction: column;
@@ -207,16 +224,14 @@ p{
     width: 80%;
     max-width: 400px;
     align-items: center;
-    border-top: 1px solid #f3e7e7;
-    
+    border-top: 1px solid #f3e7e7;    
 }
 .footer-container h4{
-font-size: 1em;
-font-weight: 200;
-letter-spacing: 2px;
-margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
 }
-
 .social-links{
     display:flex;
     flex-direction: row;
@@ -252,204 +267,97 @@ margin-bottom: 0.5em;
     margin-top: 0.5rem;
 }
 
-/*media query styles*/
-@media  (max-width: 320px){
-    .nav-bar #intro, #get-karma, #service-container, .footer-container, img{
-        display: flex;
-        flex-direction: column;
-    }
-}
-/*small tablet (when the browser is 641px or more)*/
+/**************** media query styles ***********************/
+
 @media (min-width:641px){
-   /*navigation*/
-     .ham-burger{
-        grid-column: 3 / 4 ;
-        justify-self: end;
-        padding: 0.5em;
-        margin-right: 2em;
-    }
-    /*intro*/
     #intro{
-        background-image: url(/img/first-background.jpg);
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position:center;
-        background-repeat: no-repeat;
-        padding: 0 0.5em 0.5em 0.5em;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        
-    }
-    .title{
-        text-align: center;
-        color:var(--primary);
-        font-weight: 300;
-        margin-top: 30px;
-        text-align: center;
-    }
-    .description{
-        text-align: center;
-        padding:0 0.5em 0.5em 0.5em;
-        font-weight: 400;
-        font-size: 1em;
-     }
-    #intro .btn{
-        align-self: center;
-        justify-self:center ;
-        margin: 0.5em 0 0.5em;
-        font-weight: 500;
-        padding:5px
+        height: 350px;
     }
     /*service section*/
-   .service-card{   
-        grid-column: 1 span  4;
-        align-self: center;
-        justify-self:center ;
-    }
+
     .service-card img{
-        max-width: 60%;
-        align-self: center;
-        margin: 10px 10%;
-    }
-    .service-card h3{
-     text-align: center;
-     font-size: 1rem;
-     margin:0.5em 0;
-    }
-    /*small tablet style ends*/
-    
-    
-/* tablet, landscape iPad, lo-res laptops ands desktops (when the browser is 961px or more)*/
+    width: 150px;        
+    margin: 10px 15%;
+    }         
+}
+    /********/
 @media (min-width:961px){
-    body{
-        font-size:16px;
-    }
-
-    .grid{
-        width: 100%;
-        max-height: 1060px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-   /*header section*/
     .logo_pic{
-        grid-column: 1 / 2;
-        margin-right: auto;
-        height:70px ;
-        width: 70px;
-    }
-        /*navigation*/
+        height: 8vh;          
+}   
     .nav-link{
-        display: flex;
-        grid-column: 2 / -1;
+        display:flex ;
+        flex-direction: row;
+        position: relative;
         justify-content: flex-end;
-        align-self: center;
-        margin-left: auto;
-        padding: 0 1.4em;
-    }
-
-    .nav-link .nav-item a{
-        margin-left: 1em;
-        font-weight: 500;
-        padding: 0.5em;
-        color: var(--secondary);
-    }
-
-    .nav-link .nav-item a:hover{
-    color:#F05A29;
-    font-weight: 500;
-    }
-
-    .nav-link .nav-item:first-child > a{
-        margin: 0 auto;
-        text-decoration-line: underline;
-        font-weight: 800;
-        color:rgb(71, 87, 99);
-    }
-    /*hamburger*/
-    .ham-burger{
+        background-color: var(--primary);
+        top:0;
+        text-align: center;
+        margin-right: 25px;
+        transition: none;
+}
+    .nav-item{
+        padding: 0.6em;
+        margin: 0.5em;
+}
+    .toggle-button{
         display: none;
-    }
-    /*intro*/
-
+}
+    /*intro section*/
+    
     #intro{
-        background-image: url(/img/first-background.jpg);
-        width: 100%;
         height: 600px;
-    }
+}
 
     .title{
-        text-align: center;
-        font-weight: 400;
-        margin-top: 20px auto 0;
-        text-align: center;
         font-size: 4em;
         letter-spacing: 0.1em;
-    }
+}
     .description{
-        text-align: center;
-        padding:5px;
-        font-weight: 400;
         font-size: 1.8em;
-    }
+}
     #intro .btn{
-        background-color: var(--tertiary);
-        align-self: center;
-        justify-self:center ;
-        margin: 1em 0 0.5em;
         font-weight: 500;
-        padding:0.6em;
-        font-size: 1.7em;
-        color: var(--primary);
-    }
+        padding:0.5em;
+        font-size: 1.5em;
+}
     /*service section*/
-
-    #service-container .service-card:nth-child(2) {
-       grid-column: 1 / 2 ;
-    }
-    #service-container .service-card:nth-child(3) {
-        grid-column: 2 / 3 ;
-    }
-     #service-container .service-card:nth-child(4) {
-        grid-column: 3 / 4 ;
-    }
 
     #service-container h2{
         text-align: center;
         margin-top: 0.7em;
-        font-weight:300 ;
+        font-weight:400 ;
         font-size:2em ;  
     }
-
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .service-card{
+        max-width: 40%;
+        padding: 2em;
+    }
     .service-card img{
-        max-width: 80%;
-        align-self: center;
+        max-width: 360px;       
         margin: 10px 5%;
     }
-
     .service-card h3{
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: 200;
+        font-size: 1.7em;
+        font-weight: 300;
         margin:0.5em 0;
     }
-
     /*get karma*/
-
+    
     #get_karma{
         background-color: rgb(241, 229, 205);
         display: grid;
         margin-bottom: 2em;
     }
-
     #get_karma img{
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
-
     #get_karma h4{
         grid-column: 2 / 4;
         grid-row: 1 / 2;
@@ -484,50 +392,26 @@ margin-bottom: 0.5em;
     }
     .footer-container h4{
         font-size: 2em;
-        font-weight: 300;
         letter-spacing: 2px;
         margin-bottom: 1em;
     }
     .social-links a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 4.80em;
-        margin-right: 1em;
-        margin-bottom: 1rem;
         width: 4.80em;
-        border:1px solid #9c9c9c;
-        border-radius: 25%;
-        padding: 0.9em;
-        color:rgb(238, 255, 0);
-        background-color: rgb(223, 202, 202);
-        text-decoration: none;
-       transition: all 0.5s ease-in-out;
+        border:1px solid #9c9c9c;       
     }
+   
     .social-links img{
         height: 3em;
-        margin: 0 0.5em;
     } 
     .copyright{
         font-size: 1.4em;
         font-weight: 300;
-        color: #424242;
-        margin-top: 0.5rem;
     }
-}
-/********************************************************************************/
-/* big landscape tablets, laptops, and desktops(when the browser is 1025px or more) */
-/*@media (min-width:1025px) {
-    body{
-        font-size:16px;
-    }
-}*/
-/***********************************************************************************/
-/* hi-res laptops and desktops (when the browser is 1281px or more)*/
+
+} 
 @media (min-width:1281px){
-   
-    .nav-bar #intro, #get-karma, #service-container, .footer-container, img{
+    .nav-bar, #intro, #get-karma, #service-container, .footer-container, img{
         width:100%;
     }
-} 
-   
+}   
