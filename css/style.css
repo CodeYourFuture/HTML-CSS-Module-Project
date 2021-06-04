@@ -31,15 +31,20 @@ body {
   margin-left: 50px;
   margin-top: 10px;
 }
-.nav-links ul {
+.nav-links {
   display: flex;
   align-items: center;
 }
-.nav-links li {
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+li {
   list-style: none;
 }
 
-.nav-links li a {
+.nav-links a {
   text-decoration: none;
   display: block;
   padding: 1rem;
@@ -48,6 +53,7 @@ body {
 .nav-links li a:hover {
   color: rgb(214, 99, 57);
 }
+
 .hamburgermenu {
   position: absolute;
   display: none;
@@ -151,8 +157,11 @@ footer {
   opacity: 0.3;
 }
 
-/* @media queries */
+/* @media queries  */
 @media screen and (max-width: 550px) {
+  .nav-links {
+    display: none;
+  }
   .hamburgermenu {
     position: absolute;
     display: flex;
@@ -163,16 +172,14 @@ footer {
     height: 30px;
     width: 35px;
   }
-  .nav-links ul {
-    display: none;
-    align-items: center;
-  }
+
   #refillsvg {
     margin-left: 40px;
   }
   .hero {
     height: 100%;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,11 +192,21 @@ footer {
     font-size: 1.9rem;
     color: azure;
     letter-spacing: 5px;
-    padding-top: 50px;
+    padding-top: 80px;
     font-weight: lighter;
   }
+  .hero-info {
+    display: grid;
+    place-items: center;
+    color: azure;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    width: 80%;
+    margin: auto;
+  }
   .hero-button {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   body {
     display: flex;
