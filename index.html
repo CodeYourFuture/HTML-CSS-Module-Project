@@ -8,12 +8,139 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 </head>
 <body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+  <header class="header container">
+        <div class="navigation navbar navbar-toggleable-md navbar-light">
+          <button
+            class="navigation__toggle navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation" >
+            <span class="navigation__toggle-icon navbar-toggler-icon"></span>
+          </button>
+          <a class="navigation__logo navbar-brand" href="/">
+            <object data="img/karma-logo.svg" width="35" height="50"> </object>
+          </a>
+  
+          <div class="navigation__content collapse navbar-collapse"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Meet Karma <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How it Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </header>
+  <main>
+     <div class="jumbotron">
+      <div class="jumbotron__text">
+        <h1>Introducing Karma</h1>
+        <p>
+          Bring WiFi with you, everywhere you go.
+        </p>
+        <hr class="my-4" />
+        <button>Learn More</button>
+      </div>
+     </div>
+  
+     <div>
+      <h2 class="heading">Everyone needs a little Karma.</h2>
+       <div class="icon-content">
+         <div class="icon">
+          <div class="icon__body">
+            <img class="icon__image" src="img/icon-devices.svg" alt="Internet for all devices" />
+            <p class="icon__title">
+              Internet for all devices
+            </p>
+          </div>
+         </div>
+  
+                <div class="icon">
+                  <div class="icon__body">
+                    <img class="icon__image" src="img/icon-coffee.svg" alt="Boost your productivity" />
+                    <p class="icon__title">
+                      Boost your productivity
+                    </p>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div class="icon__body">
+                    <img class="icon__image" src="img/icon-refill.svg" alt="Pay as You Go" />
+                    <p class="icon__title">
+                      Pay as You Go
+                    </p>
+                  </div>
+                </div>
+       </div>
+     </div>
+          </div>
+  
+        </div>
+  </main>
+  <footer class="footer container">
+            <h2 class="text-center">
+              Join us on
+            </h2>
+            <div class="media_icon">
+             <a href="#" target="_blank"><img class="social_media" src="img/twitter-icon.svg" alt="twitter" /></a>
+             <a href="#" target="_blank"></a><img class="social_media" src="img/facebook-icon.svg" alt="facebook" /></a>         
+             <a href="#" target="_blank"></a><img class="social_media" src="img/instagram-icon.svg" alt="instagram" /></a>                   
+            </div>
+            <p class="text-center">
+             © Karma Mobility, Inc.
+            </p>
+  </footer>
+  
+  <script
+        src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous">
+  </script>
+  <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous" >
+  </script>
+  <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous" >
+  </script>
 
 </body>
 </html>
