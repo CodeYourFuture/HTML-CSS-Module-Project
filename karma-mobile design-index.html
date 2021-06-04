@@ -13,29 +13,108 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="karma-mobile style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
-    <!-- the start of the navigation part of the page-->
     <header>
-      <!--hamburger menue for mobile display-->
+      <div class="flex-container">
+        <img
+          class="logo"
+          src="img/karma-logo.svg"
+          alt="Logo Image"
+          width="26"
+        />
 
-      <div class="mobile-container">
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-          <a href="#home" class="active">Logo</a>
-          <div id="myLinks">
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
+        <ul class="navigation">
+          <li><a href="#">Meet Karma</a></li>
+          <li><a href="#">How it Works </a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">login</a></li>
+        </ul>
       </div>
     </header>
+
+    <div class="heroImage">
+      <div class="heroContents">
+        <h1>Introducing Karma</h1>
+        <p>Bring WiFi with you, everywhere you go</p>
+        <a href="#"><button class="learnButton">Learn more</button></a>
+      </div>
+    </div>
+
+    <!--the start of the second section in the page-->
+    <section>
+      <h2>Everyone needs a little Karma</h2>
+
+      <ul>
+        <li>
+          <img
+            src="img/icon-devices.svg"
+            width="125"
+            height="125"
+            alt="first icon"
+          />
+          <!--the first icon and its caption-->
+          <h3>Internet for all devices</h3>
+        </li>
+
+        <li>
+          <img
+            src="img/icon-coffee.svg"
+            width="125"
+            height="125"
+            alt="second icon"
+          />
+          <!--the second icon and its caption-->
+          <h3>Boost your productivety</h3>
+        </li>
+
+        <li>
+          <img
+            src="img/icon-refill.svg"
+            width="125"
+            height="125"
+            alt="third icon"
+          />
+          <!--the third icon and its caption-->
+          <h3>Pay as you go</h3>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <!--social media icons-->
+      <div class="content">
+        <hr />
+        <h5>Join us on</h5>
+
+        <ul class="ftr__icons">
+          <li class="twitter">
+            <img src="img/twitter-icon.svg" />
+          </li>
+          <li class="facebook">
+            <img src="img/facebook-icon.svg" />
+          </li>
+          <li class="instagram">
+            <img src="img/instagram-icon.svg" width="67" height="67" />
+          </li>
+        </ul>
+
+        <span class="copyrights">
+          <p>&copy; Karma Mobility, Inc</p>
+        </span>
+      </div>
+    </footer>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
   </body>
 </html>
