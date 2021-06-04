@@ -1,4 +1,5 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
 * {
   box-sizing: border-box;
 }
@@ -28,6 +29,7 @@ body {
 }
 .logo {
   margin-left: 50px;
+  margin-top: 10px;
 }
 .nav-links ul {
   display: flex;
@@ -62,4 +64,135 @@ body {
   height: 5px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+/* Main (hero section) */
+.herosvg {
+  height: 100px;
+  width: 100px;
+}
+.hero {
+  /* display: grid;
+  place-items: center; */
+  height: 500px;
+  max-width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.hero-heading {
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+  color: azure;
+  letter-spacing: 5px;
+  padding-top: 170px;
+  font-weight: lighter;
+}
+.hero-info {
+  color: azure;
+  /* margin-bottom: 50px; */
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.hero-button {
+  color: white;
+  background-color: rgb(219, 108, 68);
+  height: 40px;
+  width: 120px;
+  border: 1px solid rgb(219, 108, 68);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+/* Main (karma section) */
+.karma-heading {
+  margin-top: 100px;
+  font-size: 1.7rem;
+  font-weight: lighter;
+  place-items: center;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px;
+}
+.svg-container {
+  flex: 1 1 360px;
+  display: grid;
+  place-items: center;
+}
+/* horizontal line */
+hr {
+  opacity: 0.2;
+  width: 60%;
+  margin: auto;
+}
+/* footer */
+footer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.footersvg {
+  height: 40px;
+  width: 40px;
+  border: rgb(224, 223, 223) solid 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.copyright {
+  opacity: 0.3;
+}
+
+/* @media queries */
+@media screen and (max-width: 550px) {
+  .hamburgermenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 1rem;
+    right: 1rem;
+    height: 30px;
+    width: 35px;
+  }
+  .nav-links ul {
+    display: none;
+    align-items: center;
+  }
+  #refillsvg {
+    margin-left: 40px;
+  }
+  .hero {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  .hero-heading {
+    display: grid;
+    place-items: center;
+    margin: 20px 40px;
+    font-size: 1.9rem;
+    color: azure;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    font-weight: lighter;
+  }
+  .hero-button {
+    margin-bottom: 60px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }
