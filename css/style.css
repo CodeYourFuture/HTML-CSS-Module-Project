@@ -37,6 +37,14 @@ body {
      display: flex;
      
  }
+ .hamburgericon{
+     display: none;
+     background-color: grey;
+     width: 30px;
+     height: 20px;
+     float: right;
+     margin: 5px 10px 10px 0px;
+ }
 
  nav ul{
      float: right;
@@ -169,11 +177,16 @@ span{
         margin-top:5px;
         margin-left: 20px;
         margin-bottom: 10px;
+        float: left;
 
     }
     .menu{
         display: none;
 
     }
+    .hamburgericon{
+        display: flex;
+    }
+   
     
 }
