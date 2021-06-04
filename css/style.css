@@ -39,7 +39,6 @@ body {
  }
  .hamburgericon{
      display: none;
-     background-color: grey;
      width: 30px;
      height: 20px;
      float: right;
@@ -69,7 +68,8 @@ body {
  }
 
 #background{
-    max-width: 98%;
+    width: 100%;
+    height: auto;
     text-align: center;
     
     
@@ -88,36 +88,40 @@ body {
 
 #title{
     position: absolute;
-    left: 35%;
-    top: 35%;
+    left: 0;
+    right:0;
+    top: 25%;
     letter-spacing: 2px;
     font-size: 3em;
     font-weight: 200;
+    margin-bottom: 5%;
     
 }
 #subtitle{
     position: absolute;
-    left: 33%;
-    top: 45%;
+    left: 0;
+    right: 0;
+    top: 35%;
     font-size: 1.8em;
     font-weight: 100;
+    margin-top: 5%;
 
 }
 .btn{
-    position: absolute;
-    left: 45%;
+    position:absolute;
+    left: 0;
+    right: 0;
     top: 60%;
     color: white;
-    margin: 0 0 15px 0;
-    padding: 0 15px;
-    height: 55px;
-    font-size: 1em;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
     font-weight: 200;
     font-family:  'Times New Roman', Times, serif ,sans-serif;
     background: orangered;
     border-radius: 10px;
-    border: 3px solid #000;
-    width: 150px;
+    border: 3px ;
+    
     
 }
 #slogan{
@@ -159,7 +163,7 @@ footer{
     margin: 10px;
     border: thin solid grey;
     border-radius: 50%;
-    border
+    
     
 }
 
@@ -187,6 +191,35 @@ span{
     .hamburgericon{
         display: flex;
     }
+    #background{
+        max-height: fit-content;
+    }
+    #title{
+        letter-spacing: 2px;
+        font-size: 1.5em;
+        margin-bottom: 10%;
+    }
+    #subtitle{
+        font-size: 1em;
+        margin-top: 10%;
+    }
+    .btn{
+        font-size: 1em;
+        padding: 10px;
+        margin-top: 20px;
+    
+        
+    }
+    #benefits{
+    display: grid;
+    grid-template-columns: none;
+    text-align: center;
+}
+.footericon{
+    width: 5%;
+    height: 5%;
+
+}
    
     
 }
