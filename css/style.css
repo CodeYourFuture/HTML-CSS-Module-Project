@@ -44,6 +44,7 @@ h1 {
   margin: 0px;
   color: white;
   text-align: center;
+  font-weight: normal;
 }
 p {
   color: white;
@@ -55,23 +56,22 @@ div {
   border: 0px;
 }
 button {
-  background-color: orange;
+  background-color: rgb(240, 128, 0);
 }
 .p {
   text-align: center;
   color: black;
 }
-.icon img {
-  width: auto;
-  margin: 20px;
-  text-align: center;
-}
 
 .all-icon {
   display: flex;
   position: relative;
-  margin: 30px;
   justify-content: space-evenly;
+}
+img{
+  max-width: 100px;
+  height:auto;
+
 }
 .p1 {
   text-align: center;
@@ -80,6 +80,31 @@ button {
 .nav-img {
   display: none;
 }
+h6{
+  text-align: center;
+  font-weight: normal;
+}
+.social{
+  display:flex;
+  margin: 50px;
+  padding: 0px;
+  margin:auto;
+  justify-content: center;
+  
+}
+
+footer img{
+  margin: 10px;
+  height: auto;
+  max-width: 30px;
+  
+}
+h5{
+  color: gray;
+  text-align: center;
+  font-weight: normal;
+}
+
 @media screen and (max-width: 675px) {
   nav ul {
     display: none;
@@ -96,10 +121,6 @@ button {
   .all-icon {
     display: block;
     position: top;
-    height: auto;
-  }
-  .icon img {
-    margin: 60px;
   }
   .logo {
     width: 15px;
@@ -110,6 +131,7 @@ button {
     position: relative;
     top: 40px;
   }
+
 }
 
 /**
