@@ -16,4 +16,194 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+nav {
+    background: white;
+    padding: 5px 20px;
+}
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+}
+
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+    order: 1;
+}
+
+.bars {
+    background: grey;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after {
+    background: grey;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+
+.parallax {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img\first-background.jpg);  /*It doesn't show the background NEED TO BE FIXED*/
+    height: 100vh;
+}
+
+.parallax h1, .parallax h3, .parallax button {
+    vertical-align: center;
+    align-items: center;
+    color: white;
+}
+
+.headings {
+    padding-top: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 5%;
+}
+
+button:hover {
+    background-color: white;
+    color: orangered;
+}
+
+h2, p {
+    text-align: center;
+} 
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+
+.social-media, .social-media p {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.social img {
+    width: 20px;
+    padding: 10px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Desktop view */
+
+@media all and (min-width: 768px) {
+/* nav bar desktop */
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+/* three features desktop */
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .features-1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 60px;
+    }
+
+    .features-1 img {
+        display: block;
+        margin-left: auto;
