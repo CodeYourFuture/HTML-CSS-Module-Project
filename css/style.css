@@ -20,7 +20,7 @@ img {
 }
 .navigation_bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-shrink: inherit;
 }
 
@@ -222,6 +222,8 @@ article {
     visibility: visible;
     width: 30px;
     height: 30px;
+    padding-right:10px;
+    padding-top:10px;
   }
 .navigation_bar {
   display: flex;
