@@ -3,12 +3,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     width:100%;
     height:100%;
+    color:#838994;
     text-align: center;
     line-height: 25px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*padding included in the box size*/
+    display: block; /*each element as a block*/
     }
 
 /**
@@ -21,11 +24,13 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-#nav-bar {position:fixed; 
+#nav-bar {position:fixed;
           top:0; 
           height: 70px;
           width:100%;
-         }
+          right:40px;
+          background-color: white;
+                   }
 
     #nav-bar ul {list-style-type:none; 
                 display:flex; 
@@ -37,7 +42,7 @@ body {
 
     #nav-bar img {height:60px; 
                   width:200px; position: absolute;
-                  left: 0px;
+                  left: 10px;
                   top: 10px;
                   z-index: -1;
                  }
@@ -49,25 +54,26 @@ body {
               padding:8px; 
              }
     
-   /* .nav-link:first-child {color: rgb(46, 44, 44)}*/
+   /*.nav-link:first-child {color: rgb(46, 44, 44)}*/
 
 article {margin-top:70px;}
 
 
-   h1, h2 {color: white; font-weight:lighter;}
+   h1 {color: white; font-weight:lighter; font-size: 2em;}
+   h2 {color: white; font-weight:lighter;}
 
 #intro {background-image: url('https://raw.githubusercontent.com/willem-blauenberg/portfolio/master/projects/karma/img/first-background.jpg'); 
                   height: 700px;
                   width:100%;
                   background-size: cover left;
                  background-position: center bottom;
+                 padding-top:50px;
                  text-align: center;
                  background-repeat: no-repeat;
-                 margin:1px;
-                                  } 
-                    
+                  } 
+   #into-content {align-items: center;}
                 
-button { background-color: #F15B2A;
+#learnbutton { background-color: #F15B2A;
         border: none;
         color: white;
         padding: 15px 32px;
@@ -76,9 +82,9 @@ button { background-color: #F15B2A;
         display: inline-block;
        }
 
-#content {height:30%}
+#content {height:350px}
 
-#content h1 {color: rgb(46, 44, 44);}
+#content h1 {color: rgb(46, 44, 44); }
 
 .service-img {width:100px; height:100px; }
 
@@ -91,9 +97,22 @@ button { background-color: #F15B2A;
 
 .servicename {text-decoration: none; color:rgb(46, 44, 44);}
 
-hr {width: 75%; color:lightgrey; align-items: center;}
 
-footer {height:20%;}
+footer {height:220;
+        text-align:center;
+        margin:auto; /* horizontally center the element within its container*/
+        max-width: 60%;
+        border-top: 1px solid lightgrey;}
 
+footer ul {margin:auto;}
 
+footer li {padding:10px;
+           display:inline-block;
+          }
+
+footer ul li img { width: 30px;
+          } 
+
+footer ul li img : hover {cursor:pointer;
+                         }
   
