@@ -1,70 +1,85 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
 }
 /* Header Section */
-header{
-    display: flex;
-    justify-content: space-evenly;
+header {
+  display: flex;
+  justify-content: space-evenly;
 }
-header img{
-    height: 3.25rem;
-    padding: 1em;
-  
+header img {
+  height: 3.25rem;
+  padding: 1em;
 }
-
 
 /* Navigation Section */
 
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none; 
-    width: 50rem;
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 50rem;
 }
-nav ul a{
-    text-decoration: none;
+nav ul a {
+  text-decoration: none;
 }
 /* Main Content Section */
-.hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/img/first-background.jpg");
-    width: 80rem;
-    height: 60vh;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/first-background.jpg");
+  width: 80rem;
+  height: 60vh;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.hero h1, h2{
-    color: white;
-    font-weight: 200;
+.hero h1,
+h2 {
+  color: white;
+  font-weight: 200;
 }
-.hero button{
-    width: 10rem;
-    padding: 1.5rem;
-    background-color: #f15b2a;
-    color: white;
+.hero button {
+  width: 10rem;
+  padding: 1.5rem;
+  background-color: #f15b2a;
+  color: white;
 }
-.features img{
-    height: 10rem;
-}
+.features {
+  width: 40rem;
+  margin: 0 auto;
 
-
-
+  border-bottom: 1px solid #8080803d;
+}
+.features h2 {
+  text-align: center;
+  color: black;
+}
+.features img {
+  height: 10rem;
+  padding: 0 1.5rem;
+}
+.features p {
+  display: inline-block;
+  padding: 0 1.5rem;
+  text-align: center;
+}
 
 /* Footer Section */
-footer img{
-    height: 1rem;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer img {
+  height: 1rem;
 }
 /* Media Queries */
-
 
 /**
  * Add your custom styles below
@@ -75,5 +90,3 @@ footer img{
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
