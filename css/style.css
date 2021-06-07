@@ -30,9 +30,39 @@ nav ul a{
     text-decoration: none;
 }
 /* Main Content Section */
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/first-background.jpg");
+    width: 80rem;
+    height: 60vh;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero h1, h2{
+    color: white;
+    font-weight: 200;
+}
+.hero button{
+    width: 10rem;
+    padding: 1.5rem;
+    background-color: #f15b2a;
+    color: white;
+}
+.features img{
+    height: 10rem;
+}
+
+
+
 
 /* Footer Section */
-
+footer img{
+    height: 1rem;
+}
 /* Media Queries */
 
 
