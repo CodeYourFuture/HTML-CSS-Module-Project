@@ -4,7 +4,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 25px;
+    box-sizing: border-box;
+    }
 
 /**
  * Add your custom styles below
@@ -16,4 +21,79 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+#nav-bar {position:fixed; 
+          top:0; 
+          height: 70px;
+          width:100%;
+         }
 
+    #nav-bar ul {list-style-type:none; 
+                display:flex; 
+                justify-content: flex-end;
+                }     
+  
+    #nav-bar ul a:hover {color:#F15B2A;
+                        }
+
+    #nav-bar img {height:60px; 
+                  width:200px; position: absolute;
+                  left: 0px;
+                  top: 10px;
+                  z-index: -1;
+                 }
+
+    .nav-link {text-decoration:none; 
+              color:darkgray; 
+              font-weight:bolder; 
+              display:block; 
+              padding:8px; 
+             }
+    
+   /* .nav-link:first-child {color: rgb(46, 44, 44)}*/
+
+article {margin-top:70px;}
+
+
+   h1, h2 {color: white; font-weight:lighter;}
+
+#intro {background-image: url('https://raw.githubusercontent.com/willem-blauenberg/portfolio/master/projects/karma/img/first-background.jpg'); 
+                  height: 700px;
+                  width:100%;
+                  background-size: cover left;
+                 background-position: center bottom;
+                 text-align: center;
+                 background-repeat: no-repeat;
+                 margin:1px;
+                                  } 
+                    
+                
+button { background-color: #F15B2A;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+       }
+
+#content {height:30%}
+
+#content h1 {color: rgb(46, 44, 44);}
+
+.service-img {width:100px; height:100px; }
+
+.services {width:200px;
+           text-align:center;
+           display:inline-block;
+           float:center;
+           padding:10px;
+           }
+
+.servicename {text-decoration: none; color:rgb(46, 44, 44);}
+
+hr {width: 75%; color:lightgrey; align-items: center;}
+
+footer {height:20%;}
+
+
+  

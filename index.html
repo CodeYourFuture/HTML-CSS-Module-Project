@@ -17,46 +17,64 @@
     <!-- All the images you need are in the 'img' folder -->
 
     <!-- header starts here-->
-<header id="header">
-    
-     <img src="http://www.w3.org/2000/svg" alt="Karma" id="header-img" />
-    
+<header id="header">  
    <nav id="nav-bar"> 
-   <ul>
-     <li> <a class="nav-link" href="#MeetKarma"> Meet Karma </a></li>
-     <li> <a class="nav-link" href="#Howitworks"> How it works </a> </li>   
-     <li> <a class="nav-link" href="#Store"> Store </a> </li> 
-     <li> <a class="nav-link" href="#Blog"> Blog </a> </li>
-     <li> <a class="nav-link" href="#Help"> Help </a></li>
-     <li> <a class=2nav-link" href="#Login"> Login</a></li> 
-  </ul>
+     <img src= "img\karma-logo.svg" alt="Karma">
+     <ul>
+       <li> <a class="nav-link" href="#MeetKarma"> Meet Karma </a></li>
+       <li> <a class="nav-link" href="#Howitworks"> How it works </a> </li>   
+       <li> <a class="nav-link" href="#Store"> Store </a> </li> 
+       <li> <a class="nav-link" href="#Blog"> Blog </a> </li>
+       <li> <a class="nav-link" href="#Help"> Help </a></li>
+       <li> <a class="nav-link" href="#Login"> Login</a></li> 
+     </ul>
   </nav> 
-     </header>
-   <!--header ends here-->
+</header> <!--header ends here-->
 
+<article>
    <!--Introduction starts here-->
-   <h1> Introudcing Karma </h1>
-   <h2> Bring WiFi with you, everywhere you go.</h2>
-   <button type="button"> Learn More </button>
+   <section id="intro"> 
+     <h1> Introudcing Karma </h1>
+     <h2> Bring WiFi with you, everywhere you go.</h2>
+     <button type="button"> Learn More </button>
+   </section>
    <!-- Introduction ends here-->
 
    <!--content starts here-->
-   <h1> Everyone needs a little Karma.</h1>
-   <p class="services"> <a href = "" target="_blank" class="servicename" > Internet for all devices </a>
-    <img class="service-img" src="http://www.w3.org/2000/svg" alt="Internet services"/>
-    </p>
+   <section id="content"> 
+   <h1> Everyone needs a little Karma.</h1> 
+   
+     <div class= "services">
+        <img class="service-img" src="img\icon-devices.svg" alt="Internet services"/>
+        <p > <a href = "" target="_blank" class="servicename" > Internet for all devices </a></p>
+     </div>  
+    
+     <div class= "services">
+        <img class="service-img" src="img\icon-coffee.svg" alt="Boost productivity"/>
+        <p class="services"> <a href = "" target="_blank" class="servicename" > Boost your productivity </a>  </p>
+     </div>  
+   
+     <div class= "services">
+        <img class="service-img" src="img\icon-refill.svg" alt="Pay as You Go"/>
+        <p class="services"> <a href = "" target="_blank" class="servicename" > Pay as You Go </a> </p>
+       </div>  
+   
+       
+</section>
+   <!-- content ends here-->
+</article>
 
-    <p class="services"> <a href = "" target="_blank" class="servicename" > Boost your productivity </a>
-        <img class="service-img" src="http://www.w3.org/2000/svg" alt="Boost productivity"/>
-        </p>
+<hr/>
 
-        <p class="services"> <a href = "" target="_blank" class="servicename" > Pay as You Go </a>
-            <img class="service-img" src="http://www.w3.org/2000/svg" alt="Pay as You Go"/>
-            </p>
-
-   <!-- Introduction ends here-->
-
-
+<footer>
+ <p> Join us on </p>
+  
+ <img src="img\twitter-icon.svg" alt="twitter">
+  <button class="btn"> </button>
+  
+      
+  
+</footer>
 
 </body>
 </html>
