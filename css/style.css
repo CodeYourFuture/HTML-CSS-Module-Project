@@ -17,3 +17,38 @@ body {
  */
 
 
+header {
+  position: fixed;
+  top: 0;
+  min-height: 65px;
+  display: flex;
+  align-items: left;
+  width: 100%;
+}
+
+.logo {
+    padding-top: 1em;
+    margin-left: 5em;
+    float: left;
+}
+
+  
+
+  
+#nav-bar-list {
+    list-style: none;
+    align-content: space-evenly;
+}
+  
+
+nav > ul {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 10em;
+    margin-left: 15em;
+    float: right;
+    justify-content: space-around;
+}
+  
