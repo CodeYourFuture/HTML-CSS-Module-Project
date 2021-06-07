@@ -7,11 +7,28 @@ body {
     font-size: 16px;
 }
 /* Header Section */
-
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+header img{
+    height: 3.25rem;
+    padding: 1em;
+  
+}
 
 
 /* Navigation Section */
 
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+    width: 50rem;
+}
+nav ul a{
+    text-decoration: none;
+}
 /* Main Content Section */
 
 /* Footer Section */
