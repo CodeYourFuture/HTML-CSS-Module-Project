@@ -1,19 +1,223 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+@media only screen and (min-width: 1px) {
+	#flex {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+@media only screen 
+and (min-width : 1201px) 
+{
+	#flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+}
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+  	box-sizing: inherit;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*start my code*/
+.top-navigation {
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.top-navigation > .content {
+	height: 4.375rem;
+}
+
+.content {	
+	width: 60rem;
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
 
 
+.top-navigation .logo {
+	height: 4.375rem;
+}
+
+.top-navigation .links {
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: #838994;
+	letter-spacing: 0.03rem;
+	margin-top: 1.563rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links > .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 1.5rem;
+}
+
+.top-navigation .links li:hover {
+	cursor: pointer;
+	color: #ff6600;
+}
+
+.introduction {
+	background-image: url("../images/first-background.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	overflow: auto;
+	height: 45.938rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+.introduction h1,
+.introduction h3 {
+	color: #ffffff;
+	text-align: center;
+	font-weight: 300;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+
+.introduction h3 {
+	margin-top: 1.25rem;
+	margin-bottom: 2rem;
+	font-size: 1.563rem;
+}
+
+.introduction .content .btn {
+	width: 155px;
+	border-radius: 4px;
+    color: #ffffff;
+    background-color: #f15a29;
+    font-size: 1rem;
+    display: block;
+    padding: 1rem 2em;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.introduction .content .btn:hover {
+	cursor: pointer;
+    background-color: #d9400e;
+    text-decoration: none;
+}
+
+.cases {
+	
+	text-align: center;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cases .devices {
+	width: 32.3333333%;
+	display: inline-block;
+	margin-top: 2rem;
+	margin-bottom: 8rem;
+}
+
+.cases h2 {
+	font-size: 2.750rem;
+	font-weight: 300;
+	margin-top: 8rem;
+	margin-bottom: 1rem;
+}
+
+.cases h3 {
+	font-size: 1.563rem;
+	margin-top: 2rem;
+}
+
+.footer {
+	text-align: center;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+}
+
+.footer hr {
+	border: 1px solid #eaebec;
+}
+
+.footer h5 {
+	font-size: 1rem;
+	margin-top: 1.5rem;
+}
+
+.footer p {
+	font-size: 0.875rem;
+	font-weight: 200;
+	color: #838994;
+	margin-bottom: 10rem;
+}
+
+.icons li {
+	display: inline-block;
+	margin: 1rem .5rem;
+	padding: .75rem;
+	height: 3rem;
+	width: 3rem;
+	border: 2px solid #eaebec;
+	border-radius: 50%;
+}
+
+i.fa.fa-twitter {
+	color: #55acee;
+}
+
+i.fa.fa-facebook {
+	color: #4c66a4;
+}
+
+i.fa.fa-instagram {
+	color: #3f729b;
+}
