@@ -54,7 +54,8 @@ body {
               padding:8px; 
              }
     
-   /*.nav-link:first-child {color: rgb(46, 44, 44)}*/
+   .nav li:first-child > a {color: rgb(46, 44, 44);}
+
 
 article {margin-top:70px;}
 
@@ -66,13 +67,18 @@ article {margin-top:70px;}
                   height: 700px;
                   width:100%;
                   background-size: cover left;
-                 background-position: center bottom;
-                 padding-top:50px;
-                 text-align: center;
-                 background-repeat: no-repeat;
-                  } 
-   #into-content {align-items: center;}
-                
+                  background-position: center;
+                  padding-top:50px;
+                  text-align: center;
+                  background-repeat: no-repeat;
+                        
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                   } 
+
+   #into-content {}
+
 #learnbutton { background-color: #F15B2A;
         border: none;
         color: white;
