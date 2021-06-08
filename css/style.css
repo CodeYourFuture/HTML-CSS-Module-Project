@@ -10,10 +10,11 @@ body {
 header{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 header img{
-    height: 3.25rem;
-    padding: 1em;
+    height: 2.4rem;
+    padding: 1rem 0 1rem 2rem;
   
 }
 
@@ -24,11 +25,25 @@ nav ul{
     display: flex;
     justify-content: space-evenly;
     list-style: none; 
-    width: 50rem;
+    width: 34rem;
 }
+
 nav ul a{
     text-decoration: none;
+    color: #9C9FA7;
 }
+
+
+nav ul a:hover{
+    color:#e0633a;
+
+}
+li:first-child a{
+    color: rgb(117, 114, 114);
+    font-weight: 500;
+    
+}
+
 /* Main Content Section */
 .hero{
     display: flex;
@@ -36,35 +51,52 @@ nav ul a{
     justify-content: center;
     align-items: center;
     background-image: url("/img/first-background.jpg");
-    width: 80rem;
-    height: 60vh;
+    width: 73rem;
+    height: 76vh;
     margin: 0 auto;
-    background-position: center;
+    background-position-x: -202px;
+    background-position-y: -26px;
     background-repeat: no-repeat;
 }
-.hero h1{
+.hero h1, h2{
     color: white;
-    font-weight: 200;
+    font-weight:100;
+    margin: 0;
+}
+.hero h1{
+    font-size: 3.5rem;
+}
+.hero h2{
+    letter-spacing: 2px;
+    padding: 1rem 0 3.5rem 0;
+    
 }
 .hero button{
-    width: 10rem;
-    padding: 1.5rem;
-    background-color: #f15b2a;
-    color: white;
+      
+        background-color: #e0633a;
+        color: white;
+        padding: .8rem 1.2rem;
+        border-radius: 5%;
+        border: none;
 }
 /* Features Icon Section */
 .features{
-    width: 25rem;
+    width: 44rem;
     margin: 0 auto;
+    padding-top: 5rem;
     
 }
 .features h2{
+
+    color: black;
     text-align: center;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
 }
 .icon-container{
     display: flex;
-    justify-content: space-evenly;
+    
     
 }
 .icons{
@@ -75,7 +107,7 @@ nav ul a{
     width: 12.5rem;
 }
 .features img{
-    height: 10rem;
+    height: 6rem;
 }
 
 
