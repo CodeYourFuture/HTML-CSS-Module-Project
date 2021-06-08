@@ -27,19 +27,19 @@ header {
 }
 
 .logo {
-    padding-top: 1em;
+    padding-top: 0.75em;
     margin-left: 5em;
     float: left;
 }
 
-  
 
+/*---------------------------------------*/
+/* Nav-bar styles*/
   
 #nav-bar-list {
     list-style: none;
     align-content: space-evenly;
 }
-  
 
 nav > ul {
     width: 50vw;
@@ -51,4 +51,28 @@ nav > ul {
     float: right;
     justify-content: space-around;
 }
-  
+
+
+li:first-of-type {
+    font-weight: bold;
+    color: black;
+}
+
+a:link {
+    color: red;
+    text-decoration: none; /*removes the underline from the links in the nav bar*/
+    
+}
+
+a:hover {
+    text-decoration: none; 
+    color: orange;
+}
+
+
+
+/*------------------------------------*/
+
+.first-background {
+    padding-top: 50px;
+}
