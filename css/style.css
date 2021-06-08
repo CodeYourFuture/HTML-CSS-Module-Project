@@ -12,7 +12,7 @@ body {
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ * - When using Flex-box, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
 /* Navigation */
@@ -31,6 +31,13 @@ body {
 
 .style-full-Menu.show {
   display: none;
+}
+
+/* Introduction */
+
+.intro-section {
+  background-image: url(../img/first-background.jpg);
+  background-size: contain;
 }
 
 /* Footer */
