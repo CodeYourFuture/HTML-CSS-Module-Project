@@ -1,144 +1,211 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
 }
 /* Header Section */
-header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-header img{
-    height: 2.4rem;
-    padding: 1rem 0 1rem 2rem;
-  
+header img {
+  height: 2.4rem;
+  padding: 1rem 0 1rem 2rem;
 }
-
 
 /* Navigation Section */
 
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none; 
-    width: 34rem;
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 34rem;
 }
 
-nav ul a{
-    text-decoration: none;
-    color: #9C9FA7;
+nav ul a {
+  text-decoration: none;
+  color: #9c9fa7;
 }
 
-
-nav ul a:hover{
-    color:#e0633a;
-
+nav ul a:hover {
+  color: #e0633a;
 }
-li:first-child a{
-    color: rgb(117, 114, 114);
-    font-weight: 500;
-    
+li:first-child a {
+  color: rgb(117, 114, 114);
+  font-weight: 500;
 }
 
 /* Main Content Section */
-.hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/img/first-background.jpg");
-    width: 73rem;
-    height: 76vh;
-    margin: 0 auto;
-    background-position-x: -202px;
-    background-position-y: -26px;
-    background-repeat: no-repeat;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/first-background.jpg");
+  width: 73rem;
+  height: 76vh;
+  margin: 0 auto;
+  background-position-x: -202px;
+  background-position-y: -26px;
+  background-repeat: no-repeat;
 }
-.hero h1, h2{
-    color: white;
-    font-weight:100;
-    margin: 0;
+.hero h1,
+h2 {
+  color: white;
+  font-weight: 100;
+  margin: 0;
 }
-.hero h1{
-    font-size: 3.5rem;
+.hero h1 {
+  font-size: 3.5rem;
 }
-.hero h2{
-    letter-spacing: 2px;
-    padding: 1rem 0 3.5rem 0;
-    
+.hero h2 {
+  letter-spacing: 2px;
+  padding: 1rem 0 3.5rem 0;
 }
-.hero button{
-      
-        background-color: #e0633a;
-        color: white;
-        padding: .8rem 1.2rem;
-        border-radius: 5%;
-        border: none;
+.hero button {
+  background-color: #e0633a;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5%;
+  border: none;
 }
 /* Features Icon Section */
-.features{
-    width: 44rem;
-    margin: 0 auto;
-    padding-top: 5rem;
-    
+.features {
+  width: 44rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+  box-shadow: 0px 1px 0px #eae5e5;
 }
-.features h2{
-
-    color: black;
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.8rem;
-    padding-bottom: 3rem;
+.features h2 {
+  color: black;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding-bottom: 3rem;
 }
-.icon-container{
-    display: flex;
-    
-    
+.icon-container {
+  display: flex;
 }
-.icons{
-    padding: 0 2rem;
-   
+.icons {
+  padding: 0 2rem;
 }
-.icons p{ 
-    width: 12.5rem;
+.icons p {
+  width: 11.5rem;
 }
-.features img{
-    width: 10rem;
-    height: 8rem;
+.features img {
+  width: 10rem;
+  height: 6rem;
 }
-
-
-
 
 /* Footer Section */
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-footer section{
-    display: flex;
+footer section {
+  display: flex;
 }
-footer img{
-    height: 1.6rem;
-    padding: 0.30rem 0;
-    
+footer img {
+  height: 1.6rem;
+  padding: 0.3rem 0;
+  border-radius: 100%;
 }
-footer h3{
-    font-size: 1rem;
-
+footer h3 {
+  font-size: 1rem;
+  font-weight: 400;
 }
-footer small{
-    padding-top: 1rem;
+footer small {
+  padding: 1rem;
+  color: #9c9fa7;
 }
 
 /* Media Queries */
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    width: 100vh;
+  }
+  header nav ul {
+    overflow: hidden;
+    height:0;
+  }
+  header nav ul.open {
+    height: auto;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+  }
+  header nav ul li {
+    display: block;
+    width: 100%;
+    margin:0;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+    margin:0;
+  }
+  header img{
+    height: 3.4rem;
+    padding: 2rem 0 1rem 4rem;
+  }
+  .hero {
+    width: 46rem;
+    height: 116vh;
 
+    background-position: center;
+  }
+  .icon-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    width: 46rem;
+  }
+  .features h2{
+      font-size: 3.6rem;
+  }
+  footer {
+    width: 46rem;
+    height: 4vh;
+  }
+  .icons img{
+      width: 21.7rem;
+      height: 7rem;
+  }
+  .icons p{
+      font-size: 2rem;
+      width: 21rem;
+      text-align: center;
+  }
+  .burger-nav {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url("/img/menu-hamburger.svg") no-repeat 98% center;
+    background-size: 2.5rem;
+    cursor: pointer;
+  }
+  footer h3{
+      font-size: 1.2rem;
+  }
+  footer img{
+    height: 2.4rem;
+  }
+  footer small{
+      font-size: 1.2rem;
+  }
+}
 
 /**
  * Add your custom styles below
@@ -149,5 +216,3 @@ footer small{
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
