@@ -1,5 +1,6 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ /* We are using the 'Roboto' font from Google. 
+ This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,4 +17,110 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ #header {
+  position: fixed;
+  top: 0;  /* probably don't need */
+  left: 0;   /* probably don't need */
+  height: 125px;
+  width: 100%;  /* full screen */
+ 
 
+}
+
+ #logo {
+     width: 50px;
+     height: 50px;
+       float: left; 
+        margin-left: 40px;
+        margin-top: 5px;
+ }
+
+ nav{
+     float: right;
+}
+   nav ul {
+       list-style: none;
+  }
+
+   ul li {
+        display: inline;
+        padding: 10px;
+   }
+
+    ul li a {
+        text-decoration: none;
+         color: black;
+    }
+    #nav_bar a:hover{
+        color: red;
+    }
+   h1 ,h2,h3 ,h4 {
+       text-align:center;
+   }
+
+.Intreducing {
+    margin-top: 100px;
+      position: relative;
+  text-align: center;
+  color: white;
+}
+.centered{
+      position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ button {
+     background-color: rgb(240, 145, 68);
+      height: 40px;
+ }
+ .Intreducing >img {
+     width: 100%;
+ }
+
+ .internet > img , .productivity >img , .Pay >img {
+     width: 100px;
+      /* border: 3px solid wheat; */
+ }
+
+  .internet , .productivity  , .Pay  {
+  margin: 2px 5px;
+  padding: 10px;
+      /* border: 3px solid wheat; */
+    width: 150px;
+    margin: 8px;
+    padding: 10px;
+ }
+ .flex-container{
+     display: flex;
+      flex-direction: row;
+       justify-content: center;
+        padding: 10px;
+ }
+
+
+ .soicial div > img {
+     width: 20px;
+ }
+
+  .soicial  {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+  }
+
+
+  /* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+*/
+
+@media only screen and (max-width : 300px){
+nav li
+{
+    display: block;
+   
+}
+}
