@@ -42,7 +42,7 @@ nav ul a{
     background-position: center;
     background-repeat: no-repeat;
 }
-.hero h1, h2{
+.hero h1{
     color: white;
     font-weight: 200;
 }
@@ -52,6 +52,28 @@ nav ul a{
     background-color: #f15b2a;
     color: white;
 }
+/* Features Icon Section */
+.features{
+    width: 25rem;
+    margin: 0 auto;
+    
+}
+.features h2{
+    text-align: center;
+    font-weight: 400;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.icons{
+    padding: 0 2rem;
+   
+}
+.icons p{ 
+    width: 12.5rem;
+}
 .features img{
     height: 10rem;
 }
@@ -60,9 +82,28 @@ nav ul a{
 
 
 /* Footer Section */
-footer img{
-    height: 1rem;
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+footer section{
+    display: flex;
+}
+footer img{
+    height: 1.6rem;
+    padding: 0.30rem 0;
+    
+}
+footer h3{
+    font-size: 1rem;
+
+}
+footer small{
+    padding-top: 1rem;
+}
+
 /* Media Queries */
 
 
