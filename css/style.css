@@ -18,8 +18,7 @@ body {
 
 
 header {
-  position: fixed;
-  top: 0;
+  position: sticky;
   min-height: 65px;
   display: flex;
   align-items: left;
@@ -73,6 +72,109 @@ a:hover {
 
 /*------------------------------------*/
 
+.containerBox {
+    position: relative;
+    width: 100%;
+}
+
+/*The main background image*/
+
 .first-background {
-    padding-top: 50px;
+    padding-top: 10px;
+    position: absolute;
+    left: 0;
+    max-height: 50vh;
+}
+
+button {
+    position: absolute;
+    top: 17em;
+    left: 43%;
+    border: none;
+    color: white;
+    background-color: orange;
+    min-height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    
+    
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 3em;
+    left: 35%;
+    font-weight: lighter;
+    font-size: 40px;
+   
+}
+
+h2 {
+    color: white;
+    position: absolute;
+    top: 8em;
+    left: 30%;
+    font-weight: lighter;
+}
+
+h3 {
+    position: absolute;
+    top: 55vh;
+    left: 30vw;
+    font-weight: lighter;
+    font-size: 30px;
+    
+}
+.flexcontainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding-top: 70vh;
+    padding-left: 25vw;
+    justify-content: space-evenly;
+}
+
+/*the three large icons at the bottom of main*/
+.icons {
+    width: 70%;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.flexitem {
+    margin-right: 5vw;
+    
+    
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 0px;
+
+
+ }
+
+ hr {
+    border-top: 1px solid grey;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    opacity: 0.5;
+ }
+
+ /*Container containing the three social media icons*/
+ .social-media-icons {
+     display: flex;
+     justify-content: center;
+ }
+
+ /*Adds a little space between each of the social media icons*/
+ .social-media-icon-img {
+     padding-left: 10px;
+ }
+
+.footer-text {
+    text-align: center;
+  
 }
