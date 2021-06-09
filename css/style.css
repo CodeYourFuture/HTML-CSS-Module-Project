@@ -6,14 +6,165 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+header img{
+    width:50px;
+    height:50px;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*nav*/
+.topnav a:hover, .topnav a:focus{
+    color:rgb(255, 123, 0);
+}
+.topnav {
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav .icon {
+    display: none;
+  }
+  
+  
+
+/*main*/
+.intro{
+    background-image: url(/img/first-background.jpg);
+    height:500px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+.intro h1{
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+.intro h2{
+    font-weight: 50;
+}
+.intro button{
+    background-color: rgb(255, 123, 0);
+    border:0;
+    border-radius: 5%;
+    padding:15px;
+    margin-top: 20px;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container img{
+    width: 90%;
+    height:90%;
+}
+.items{
+    text-align: center;
+    margin: 15%;
+    margin-top: 5%;
+    margin-bottom:5%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.items h2{
+    font-weight: 300;
+    font-size: 2rem;
+}
 
 
+/*footer*/
+footer{
+    text-align: center;
+}
+footer::before{
+
+}
+.footer_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 45%;
+    margin-right:45%;
+}
+.footer_container div{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border:2px solid rgb(247, 240, 240);
+}
+.footer_container img{
+    width:50%;
+    height:50%;
+}
+footer p:first-child {
+    border-top: 2px solid rgb(247, 240, 240);
+    padding-top: 0.8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.8rem;
+  }
+  footer p:last-child{
+    padding-bottom: 2rem;
+    color:#bbb;
+    font-size: 0.8rem;
+  }
+
+  /*Media queries*/
+  @media (max-width:900px){
+     .container{
+         display:block;
+     }
+     .footer_container{
+         margin-left: 100px;
+         margin-right: 100px;
+     }
+     .container img{
+        width: 30%;
+        height:30%;
+    }
+    .intro{
+        height: 300px;
+    }
+    .intro h1{
+        font-size: 2rem;
+    }
+    .intro h2{
+        font-weight: 40;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a{display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    header{
+        justify-content: space-between;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      
+    }

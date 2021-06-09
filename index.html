@@ -8,12 +8,83 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <header>
+        <img src="img/karma-logo.svg" alt="Karma logo" >
+        <nav class="topnav" id="myTopnav">
+            <a href="#">Meet Karma</a> 
+            <a href="#">How it works</a>
+            <a href="#">Store</a>
+            <a href="#">Blog</a>
+            <a href="#">Help</a>
+            <a href="#">Login</a>
+          
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+        
+        
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Introducing Karma</h1>
+            <h2>Bring WIFI with you every where you go</h2>
+            <button>Learn more</button>
+        </section>
+        <section class="items">
+            <h2>Everyone needs a little Karma</h2>
+            <div class="container">
+                <div>
+                    <img src="img/icon-devices.svg" alt="">
+                    <caption><h3>Internet for all devices</h3> </caption>
+                </div>
+                <div>
+                    <img src="img/icon-coffee.svg" alt="">
+                    <caption><h3> Boost your productivity</h3></caption>
+                </div>
+                <div>
+                    <img src="img/icon-refill.svg" alt="">
+                    <caption><h3>Pay as you go</h3> </caption>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Join us on</p>
+        <div class="footer_container">
+            <div>
+                <a href="#"><img src="img/twitter-icon.svg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="img/facebook-icon.svg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="img/instagram-icon.svg" alt=""></a>
+            </div>
+        </div>
+        <p>@ Karma Mobility, Inc</p>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+        </script>
+
+    </footer>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+   
 
 </body>
 </html>
