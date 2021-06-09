@@ -4,6 +4,9 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
+  
+    
+
 }
 /* Header Section */
 header {
@@ -125,9 +128,13 @@ footer small {
 
 /* Media Queries */
 @media screen and (max-width: 375px) {
+  body{
+    width: fit-content;
+  }
   main {
     display: flex;
     flex-direction: column;
+    
   }
   header {
     width: 100vh;
