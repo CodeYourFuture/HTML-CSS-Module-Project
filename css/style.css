@@ -40,9 +40,13 @@ header	{
 	color: #fff;
 }
 
+
+
 header .container {
 	padding: 20vw 15px;
 }
+
+
 
 .header-wrap {
 	display: flex;
@@ -62,6 +66,8 @@ header .container {
 	align-items: center;
 	height: 100%;
 	padding: 0 15px;
+	max-width: 800px;
+	margin: 0px auto;
 }
 
 #logo {
@@ -103,3 +109,45 @@ hr {
 	background-color: rgb(234, 234, 234);
 }
 
+footer p {
+	font-size: 12px;
+}
+
+.rights {
+	font-size: 10px;
+	color:rgb(102, 101, 101)
+}
+
+.social-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-wrap a {
+	border: 1px solid rgb(234, 234, 234);
+	border-radius: 50%;
+	margin: 0 5px;
+	padding: 10px;
+	width: 15px;
+	height: 15px;
+}
+
+.social-img {
+	width: 15px;
+	height: 15px;
+}
+
+@media screen and (min-width: 769px) {
+	header .container {
+		padding: 15vw 15px;
+	}
+
+	h1 {
+		margin-bottom: 30px;
+	}
+
+	header p {
+		margin-bottom: 30px;
+	}
+}
