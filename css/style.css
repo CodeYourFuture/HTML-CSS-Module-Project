@@ -15,8 +15,91 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+html {
+	font-weight: 200;
+}
 
+
+.container {
+	max-width: 800px;
+	margin: 0px auto;
+	padding: 0 15px;
+	text-align: center;
+}
+
+button {
+	background-color: #F15A29;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+
+header	{
+	background: url(/img/first-background.jpg) 70% 50%/cover no-repeat;
+	color: #fff;
+}
+
+header .container {
+	padding: 20vw 15px;
+}
+
+.header-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 15vw;
+}
+
+.navbar {
+	height: 50px;
+	background-color: #fff;
+}
+
+.navbar-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	padding: 0 15px;
+}
 
 #logo {
-	width: 30px;
+	width: 20px;
 }
+
+h1 {
+	font-weight: 200;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-weight: 200;
+}
+
+.features {
+	padding: 30px 0;
+}
+
+.features__wrap {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.features__element {
+	width: 200px;
+	margin: 20px;
+}
+
+.features__img {
+	width: 50px;
+}
+
+hr {
+	width: 90%;
+	border: 0;
+	height: 1px;
+	background-color: rgb(234, 234, 234);
+}
+
