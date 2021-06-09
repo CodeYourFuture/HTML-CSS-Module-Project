@@ -15,9 +15,20 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/* Navigation styles */
 
 
-.icon-container, .icon-captions {
+
+ /* Flexbox for icons */
+.icon-container {
     display:flex;
-   justify-content: space-between;
+    justify-content: space-around;
+   /* align-items: center; */
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
