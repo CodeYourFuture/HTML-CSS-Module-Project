@@ -1,5 +1,11 @@
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+
 <!DOCTYPE html>
 <html lang="en">
+<!--start head -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,13 +13,97 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="javascript" href="../HTML-CSS-Coursework-Week2/script.js">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+</head>
+<!--start body -->
+<body>
+    <header class="header">
+<div class="flex-container">
+<div>  <!--start  header image -->
+<img class="header-img" 
+src="../HTML-CSS-Coursework-Week2/img/karma-logo.svg"
+alt="Karma header images" />
+</div>
+
+ <!--start nav-bar in the header-->
+<div>
+    <button class="hamburger" id="hamburger" > <!--menu_hamburger for small screen-->
+        <img src="img/menu-hamburger.svg" alt="menu icon" />
+    </button >
+  <nav id="nav-bar">
+    <ul class="nav-ul">
+      <li><a class="nav-link" href="#">Meet Karma</a></li>
+      <li><a class="nav-link" href="#">How it Warks</a></li>
+      <li><a class="nav-link" href="#">Store</a></li>
+      <li><a class="nav-link" href="#">Blog</a></li>
+      <li><a class="nav-link" href="#">Help</a></li>
+      <li><a class="nav-link" href="#">login</a></li>
+      </ul>
+
+    </nav>
+</div>
+</div>
+    </header>
+
+     <!--start introduce section-->
+    <section class="introduce">
+    <div class="introduce-container">
+        <h1>Introducing Karma </h1>
+        <p>Bring WiFi with you ,everywher you go</p>
+				<button>Learn More</button>
+    </div>
+</section>
+
+  <!--start need section-->
+<section class="need">
+    <h2>Everyone needs a little Karma .</h2>
+    <div class="need-container">
+        
+        <div>
+            <img src="../HTML-CSS-Coursework-Week2/img/icon-devices.svg" 
+            alt="devices-image"/>
+            <a  href="" target="_blank">Internit for all devices.</a>
+        </div>
+        <div>
+            <img src="../HTML-CSS-Coursework-Week2/img/icon-coffee.svg" 
+            alt="devices-image"/>
+            <a  href="" target="_blank">Boost your broductivity.</a>
+        </div>
+        <div>
+            <img src="../HTML-CSS-Coursework-Week2/img/icon-refill.svg" 
+            alt="devices-image"/>
+            <a  href="" target="_blank">Pay as You Go.</a>
+        </div>
+    </div>
+</section>
+
+ <!--start footer-->
+<footer>
+    <hr/>
+    <p style="color: black;font-size: small;"> Join US on </p>
+    
+<section class="contact">
+
+    <div>
+        <a  href="" target="_blank">
+            <img class="contact-img"  alt="Twitter icon" src="../HTML-CSS-Coursework-Week2/img/twitter-icon.svg" /> </a>
+    </div>
+    <div>
+        <a  href="" target="_blank">
+            <img class="contact-img"  alt="Facebook icon" src="../HTML-CSS-Coursework-Week2/img/facebook-icon.svg" /> </a>
+    </div>
+    <div>
+        <a  href="" target="_blank">
+            <img class="contact-img"  alt="instagram icon" src="../HTML-CSS-Coursework-Week2/img/instagram-icon.svg" /> </a>
+    </div>
+
+</section>
+
+<span>@ Karma Mobilety.Inc</span>
+</footer>
 
 </body>
 </html>

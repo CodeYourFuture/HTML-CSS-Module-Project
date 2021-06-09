@@ -2,8 +2,9 @@
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif,'Roboto' ;
     -webkit-font-smoothing: antialiased;
+
 }
 
 /**
@@ -15,5 +16,197 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+ /*start css header code*/
+.header{
+    margin:10px;
+    height: 50px;
+    width:auto;
+    padding: 30px;
+    margin-top: 0;
+}
+
+.header-img{
+    max-height:50px;
+    width: 50px;
+    vertical-align:top;
+}
+
+/*start css flex-box code*/
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    vertical-align:top;
+    top:0;
+  }
+
+/*start css nav-bar code*/
+  .nav-bar{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center ;
+ padding-bottom: 10px;
+  }
+
+.nav-ul{
+  display: flex;
+  align-items:center ;
+  list-style-type: none;
+}
+
+/*start css link code*/
+ .nav-link { 
+  display: block;
+   margin:20px;
+   float:left;
+   list-style:none;
+   list-style-type:none;
+  
+ }
+  .nav-link:hover{
+    color:rgb(247, 7, 7);
+  }
+
+  /*end css menu-hamburger code*/
+  .hamburger {
+    display: none ;
+  }
+  
+  /*start css introduce-section code*/
+  .introduce{
+    top:30px;
+    margin-top: 30px;
+    background: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 300px;
+    padding: 100px 5%;
+    color:rgb(250, 248, 245);
+    display: flex;
+    justify-content: center;
+  }
+
+  .introduce-container{
+   
+    width: 400px;
+    margin:30px ;
+    padding: 50px;
+    max-width: 400px;
+    border-radius:50px;
+    text-align: center;
+  }
+  .introduce-container button{
+    background-color: chocolate;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .introduce-container button:hover{
+    background-color: rgb(151, 65, 3);
+  }
+
+  .introduce-container h1{
+    font-size: 40px;
+  }
+
+  /*start css need-section code*/
+
+  .need h2{
+    text-align: center;
+    margin-top:50px;
+    padding:10px ;
+  }
+  .need-container{
+    display:flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+
+  }
+ .need-container img{
+  width:100px;
+ }
+ .need-container div{
+   display: block;
+  text-align: center;
+   margin: 20px;
+ }
+ .need-container a:hover{
+   color: red;
+ }
+
+/*start css contact-section code*/
+ .contact{
+   display: flex;
+  justify-content: center;
+  padding: 10px;
+ }
+ .contact-img{
+   width:30px;
+   height:30px;
+ }
+
+ a{
+   color:black;
+   text-decoration: none;
+ }
+ 
+ /*start css footer code*/
+footer{
+  font-size:10px;
+  color:darkgray;
+  margin: 20px;
+  text-align: center;
+padding: 10px;
+}
+
+/*start css @media for Mobile screen  code*/
+@media screen and  (min-width:300px) and (max-width:700px){
+
+  p,
+  h2
+  {
+    word-wrap:normal;
+  }
+  .nav-ul{
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+
+.nav-ul.show{
+display: flex;
+}
+
+  .hamburger {
+    display: block;
+    border:0;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .need-container {
+
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items:center;
+    height: 500px;
+    padding: 20px;
+  }
+
+  .need-container div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+}
 
 
