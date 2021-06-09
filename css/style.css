@@ -15,5 +15,19 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ 
+ nav{
+     padding: 30px 60px;
+ }
+.nav_link>img{
+    width: 50px;
+    height: 40px;
+}
+.nav_link img, .nav_link ul{
+    display: inline;
+}
+.nav_link li{
+    display: inline;
+    float: right;   
 
-
+}
