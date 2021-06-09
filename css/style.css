@@ -102,6 +102,43 @@ h2 {
 	width: 50px;
 }
 
+.photo-quote {
+	margin-bottom: 50px;
+}
+
+.photo-quote__wrap {
+	display: flex;
+	flex-direction: space-between;
+}
+
+.photo-quote__img {
+	background: url(/additional/feature-img.png) 0 0/cover no-repeat;
+	height: 500px;
+	width: 45%;
+}
+
+.photo-quote__content {
+	background-color: #FCEFEB;
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.photo-quote__quote {
+	text-align: center;
+	font-size: 24px;
+	max-width: 300px;
+	font-style: italic;
+	font-weight: normal;
+	color:rgb(73, 73, 73)
+}
+
+.photo-quote button {
+	color: white;
+}
+
 hr {
 	width: 90%;
 	border: 0;
@@ -149,5 +186,11 @@ footer p {
 
 	header p {
 		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.photo-quote {
+		display: none;
 	}
 }
