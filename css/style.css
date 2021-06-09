@@ -110,9 +110,55 @@ body {
   padding: 0.8rem 1rem 0.8rem 1rem;
 }
 
-/* Article Section */
-.article-icons {
-  width: 60px;
+/* About Section */
+
+.about-devices-icon {
+  width: 5.3rem;
+  padding-top: 0.5rem;
+}
+
+.about-coffee-icon {
+  width: 5.5rem;
+}
+
+.about-refill-icon {
+  width: 4.1rem;
+}
+
+.about-section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 92%;
+  margin: 0 1rem 0 1rem;
+}
+
+.about-section h2 {
+  display: flex;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin: 2.5rem 1rem 1.9rem 1rem;
+}
+
+.about-container h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2.1rem;
+}
+
+.about-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+
+.about-section div:last-child {
+  border-bottom: 1px solid #f2f2f3;
+  padding-bottom: 4.8rem;
 }
 
 /* Footer */
