@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 /**
@@ -49,15 +50,309 @@ body {
 
 
 /*Navigation styles*/
+header{
+    position: relative;
+}
+
+
 nav .container{
     display: flex;
-    padding: 5vh 6vw;
+    padding: 2vh 10vw;
 
     border: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
 }
+
+/*Nav toggle-button*/
+
+  #check{
+    display: none;
+  }
+  .checkbtn{
+      display: none;
+  }
+  .checkbtn img{
+      height: 30px;
+  }
+
 
 #navbar-nav ul{
     display: flex;
 }
 
 
+#navbar-nav a{
+    margin-right: 50px;
+    color: #808080d9;
+    font-size: 1.2em;
+}
+
+#navbar-nav li:last-child a{
+    margin-right: 0px;
+}
+
+#navbar-nav a.active{
+    color: black;
+    
+}
+
+#navbar-nav a:not(.active):hover{
+    color: #f15b2a;
+    transition: 0.6s;
+}
+
+
+/*main styles*/
+main{
+    height: 500px;
+    background-image: url('../img/first-background.jpg');  
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+main .container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+main h1{
+    font-weight: lighter;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    color: #ffffffe8;
+    margin:0 0 0.67em 0; 
+}
+
+main h3{
+    margin-bottom: 1.5em;
+    color: #ffffffa6;
+    font-weight: lighter;
+    font-size: 1.7em;
+    letter-spacing: 0.1em;
+}
+
+main button{
+    background-color:  #f15b2a;
+    border: none;
+    padding: 1em 1.7em;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+
+/*section#features styles*/
+
+
+#features .container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+#features h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#features .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-bottom: 60px;
+
+}
+
+
+#features .grid-element {
+text-align: center;
+}
+
+#features .grid-element img{
+    height: 120px;
+}
+
+#features  .grid-element h4{
+font-weight: 400;
+font-size: 24px;
+margin-top: 30px;
+}
+
+#features hr{
+    height: 2px;
+    background: #80808052;
+    border: none;
+}
+
+
+/*footer styles*/
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 20px auto;
+}
+
+footer .container h5{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+footer .container .accounts{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+footer  .accounts a {
+    border: 1px solid #80808052;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer  .accounts a img{
+    height: 30px;
+}
+
+footer  .accounts a:hover{
+    transition: 0.6s;
+    border-color: black;
+}
+
+footer .container span{
+color:#80808052
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+
+    body{
+        font-size: 10px;
+    }
+
+
+    header .checkbtn{
+        display: block;
+      }
+
+      #check:checked ~ #navbar-nav{
+        left: 0;
+      }
+
+    header #navbar-nav{
+        position: absolute;
+        top: 100%;
+        background: #fff;
+        width: 100%;
+        left: -100%;
+        transition: 0.6s;
+    }
+
+    header #navbar-nav ul{
+        flex-direction: column;
+    }
+
+    header #navbar-nav a{
+        display: flex;
+        padding: 20px;
+    }
+
+
+    main{
+        height: 60vh;
+    }
+
+    main .container{
+        width: 80%;
+    }
+
+    #features .grid{
+        grid-template-columns: 1fr;
+    }
+    #features .grid-element{
+        margin-bottom: 40px;
+    }
+
+    #features .grid-element:last-child{
+        margin-bottom: 0px;
+    }
+
+    footer .container .accounts{
+        width: 100%;
+    }
+    footer .accounts a{
+        margin-bottom: 10px;
+    }
+}
+    
+    /* Medium devices (tablets, 768px and up)*/
+    @media (min-width: 576px) and (max-width: 991.98px) {
+
+
+        header .checkbtn{
+            display: block;
+          }
+    
+          #check:checked ~ #navbar-nav{
+            left: 0;
+          }
+    
+        header #navbar-nav{
+            position: absolute;
+            top: 100%;
+            background: #fff;
+            width: 100%;
+            left: -100%;
+            transition: 0.6s;
+        }
+    
+        header #navbar-nav ul{
+            flex-direction: column;
+        }
+    
+        header #navbar-nav a{
+            display: flex;
+            padding: 20px;
+        }
+    
+
+        main .container{
+            width: 80%;
+        }
+        footer .container .accounts {
+            width: 90%;
+        }
+
+}
+    
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+ 
+        main .container{
+            width: 60%;
+        }
+
+
+    }
+    
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+
+    }
