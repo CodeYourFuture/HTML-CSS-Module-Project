@@ -74,6 +74,15 @@ header .container {
 	width: 20px;
 }
 
+.burger-menu__icon {
+	width: 20px;
+	height: 2px;
+	background-color: black;
+	margin: 5px 0;
+}
+
+
+
 h1 {
 	font-weight: 200;
 	margin-bottom: 0px;
@@ -113,7 +122,7 @@ h2 {
 
 .photo-quote__img {
 	background: url(/additional/feature-img.png) 0 0/cover no-repeat;
-	height: 500px;
+	height: 400px;
 	width: 45%;
 }
 
@@ -180,17 +189,52 @@ footer p {
 		padding: 15vw 15px;
 	}
 
-	h1 {
-		margin-bottom: 30px;
-	}
-
 	header p {
 		margin-bottom: 30px;
 	}
+
+	.header-wrap {
+		padding: 0px;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+
+	.nav-menu ul {
+		display: flex;
+		flex-flow: row nowrap;
+		margin-left: 0; 
+		padding-left: 0;
+	}
+
+	.nav-menu__item {
+		list-style-type: none;
+		margin: 0px 10px;
+	}
+
+	.nav-menu__item-link {
+		color:rgb(73, 73, 73);
+		text-decoration: none;
+	}
+
+	.nav-menu__item:first-child {
+		font-weight: 500;
+	}
+	
+	.nav-menu__item-link:hover {
+		color:#F15A29;
+	}
+
 }
 
 @media screen and (max-width: 769px) {
 	.photo-quote {
 		display: none;
 	}
+
+	.nav-menu {
+		display: none;
+	}
 }
+
