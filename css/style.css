@@ -30,7 +30,7 @@ a {
   align-items: baseline;
   justify-content: space-between;
   max-width: 100%;
-  padding: 1rem 2rem 0rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .logo {
@@ -42,6 +42,32 @@ a {
   display: none;
 }
 
-.contanier {
+.container {
     padding: 1rem 2rem 0rem 2rem;
+}
+
+.intro-img {
+    background-image: url(../img/first-background.jpg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.intro-text {
+    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.btn {
+    background-color: chocolate;
+    padding: 0.45rem;
+    border: none;
+    text-transform: capitalize;
+    margin: 1rem;
 }
