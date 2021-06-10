@@ -74,12 +74,7 @@ main {
 }
 
 .style-full-Menu > li {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  line-height: 3rem;
   list-style-type: none;
-  color: #89899e;
 }
 
 .style-full-Menu > li:first-child {
@@ -87,7 +82,16 @@ main {
   font-weight: 500;
 }
 
-.style-full-Menu > li:hover {
+.style-full-Menu > li > a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 3rem;
+  color: #89899e;
+  text-decoration: none;
+}
+
+.style-full-Menu > li > a:hover {
   color: #e0633a;
   cursor: pointer;
 }
@@ -170,7 +174,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
-  border-bottom: 1px solid #f2f2f3;
+  border-bottom: 2px solid #f2f2f3;
 }
 
 .about-container {
@@ -239,16 +243,6 @@ main {
 
 /* Media queries */
 
-/* Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /* Header */
-  /* Navigation */
-  /* Introduction */
-  /* About */
-  /* Footer */
-  /* Social Media */
-}
-
 /* Laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Header */
@@ -278,12 +272,6 @@ main {
     justify-content: space-between;
     width: 29rem;
     padding-right: 2rem;
-  }
-
-  .style-full-Menu > li {
-    justify-content: space-around;
-    line-height: 0rem;
-    padding-right: 1rem;
   }
 
   /* Introduction */
@@ -381,15 +369,13 @@ main {
   }
 
   .style-full-Menu {
+    justify-content: space-between;
     width: 29rem;
     padding-right: 2.5rem;
   }
 
-  .style-full-Menu > li {
-    justify-content: center;
-    line-height: 0rem;
+  .style-full-Menu > li > a {
     font-size: 1.1rem;
-    padding-right: 1rem;
   }
 
   /* Introduction */
@@ -480,6 +466,7 @@ main {
   .style-full-Menu.show {
     display: flex;
     flex-flow: row nowrap;
+    width: 40rem;
   }
 
   .style-hamburger-Menu {
@@ -492,10 +479,9 @@ main {
     padding-right: 7rem;
   }
 
-  .style-full-Menu > li {
+  .style-full-Menu > li > a {
     line-height: 0rem;
     font-size: 1.4rem;
-    padding-right: 1rem;
   }
 
   /* Introduction */
@@ -527,6 +513,8 @@ main {
   .about-articles {
     flex-flow: row nowrap;
     justify-content: space-between;
+    width: 85%;
+    border-bottom: 2px solid #f2f2f3;
   }
 
   .about-section {
@@ -545,12 +533,12 @@ main {
 
   .about-container h3 {
     font-size: 2rem;
-    margin: 3rem 0 5.4rem 0;
+    margin: 3.5rem 0 5.4rem 0;
   }
 
   /* Footer */
   .footer {
-    padding-bottom: 8.5rem;
+    padding-bottom: 5.9rem;
   }
 
   .footer > p {
@@ -564,7 +552,7 @@ main {
   /* Social Media */
 
   .social-media-link {
-    padding: 1rem;
+    padding: 0.9rem;
   }
 
   .social-media-container {
