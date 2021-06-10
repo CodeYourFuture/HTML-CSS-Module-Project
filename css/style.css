@@ -5,6 +5,219 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    margin: 0 auto;
+}
+    /* container Responsive */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .container{
+        width: 960px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .container{
+        width: 720px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .container{
+        width: 540px;
+    }
+}
+
+/* ********* Start Nav ************ */
+nav{
+    background-color: #fff;
+}
+nav .nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav .logo img{
+    width: 25px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    color: #888;
+    transition: all .2s ease-in-out;
+    font-weight: 500;
+}
+nav li strong{
+    font-size: 16px;
+    color: #555;
+}
+nav a:hover:not(first-child){
+    color: orange
+}
+nav .mneu{
+    display: none;
+}
+/* NavBar Responsive Start */
+@media (min-width: 576px) and (max-width: 767.98px){
+    nav ul li{
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 575.98px){
+    nav{
+        padding: 0 10px;
+    }
+    nav .links{
+        display: none;
+    }
+    nav .mneu{
+        display: block;
+    }
+}
+ /* Header start */
+
+header{
+    min-height: 90vh;
+    background-image: url('../img/first-background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content{
+    text-align: center;
+    color: #fff;
+}
+.header-content h1{
+    font-size: 3em;
+    font-weight: 400;
+}
+.header-content p{
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+.header-content a{
+    display: inline-block;
+    padding: 12px 14px;
+    background: #ff5722;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    transition: all .5s ease-in-out;
+}
+.header-content a:hover{
+    background: rgb(255, 166, 0);
+}
+
+/* service Start */
+
+.service{
+    margin: 60px 0 30px;
+    padding: 20px 0;
+}
+.service h2{
+    color: #555;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+.service .service-box{
+    display: flex;
+    justify-content: space-between;
+}
+.service .service-box .item{
+    text-align: center;
+}
+
+.service .service-box img{
+    width: 200px;
+}
+.service .service-box p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #444;
+}
+        /* Service Responsive Start */
+@media (min-width: 768px) and (max-width: 991.98px){
+    .service .service-box img{
+        width: 150px;
+    }
+    .service .service-box p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #444;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .service .service-box img{
+        width: 100px;
+    }
+    .service .service-box p{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #444;
+    }
+}
+@media (max-width: 575.98px){
+    .service h2{
+        font-size: 2rem;
+    }
+    .service .service-box{
+        flex-wrap: wrap;
+    }
+    .service .service-box .item{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+/* Start footer */
+footer{
+    border-top: 1px solid #e7e7e7 ;
+    text-align: center;
+    padding: 10px 0;
+}
+footer h4{
+    color: #444;
+}
+footer .icone-box{
+    display: flex;
+    justify-content: center;
+}
+footer .icone-box .icone{
+    border-radius: 50px;
+    border: 1px solid #e7e7e7;
+    padding: 10px 12px;
+    margin: 0 10px;
+}
+footer .icone-box .icone img{
+    width: 20px;
+}
+ footer p{
+     color: #aaa;
+     font-weight: 500;
+ }
 
 /**
  * Add your custom styles below
