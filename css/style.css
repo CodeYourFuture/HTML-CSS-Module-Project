@@ -109,3 +109,24 @@ a:hover {
     text-align: center;
     
 }
+
+/*Footer*/
+
+footer {
+    border-top: 1px solid grey;
+    
+    text-align: center;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.media-frame {
+    margin: 0 2rem;
+    padding: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
