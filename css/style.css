@@ -1,10 +1,10 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
 
 /**
  * Add your custom styles below
@@ -16,4 +16,155 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+nav {
+    height: 60px;
+    width: 100%;
+}
 
+img.logo {
+    width: 20px;
+    height: auto;
+    margin: 15px 0 0 80px;
+}
+
+nav ul {
+    float: right;
+    margin: 0 0;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+    margin: 5px 5px;
+}
+
+nav ul li a {
+    color: #AEB1B8;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+nav ul li .active {
+    font-weight: 500;
+    color: #6B6D73;
+}
+
+a:hover {
+    color: #f05a29;
+    transition: 0.5s;
+}
+
+.hamburge {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+    font-size: 20px;
+    display: none;
+    float: right;
+    margin: 15px 40px 0 0;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+main {
+    width: 100%;
+}
+
+.intro div {
+    background: url("../img/first-background.jpg");
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    padding: 20%;
+    background-size: cover;
+    background-position: right;
+}
+
+.intro button {
+    padding: 0 30px;
+    height: 40px;
+    background-color: #E0633A;
+    border-radius: 7px;
+    border: 0px;
+}
+
+.titel {
+    margin: 40px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: #4E4F51;
+}
+
+.article div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.article .box {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: #EEE;
+    height: 1px;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    align-items: center;
+}
+
+footer .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+@media (max-width: 780px) {
+    .hamburge {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    .article div {
+        flex-direction: column;
+    }
+}
