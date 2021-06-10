@@ -130,3 +130,38 @@ hr {
     margin: 0;
   }
 }
+
+
+@media only screen and (min-device-width : 1025px) {
+
+    .logo{
+        width: 2%;
+    }
+    .intro-img {
+        height: 100vh;
+    }
+    .services-box {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .service-img {
+        margin: 0;
+    }
+    
+    .services-text {
+        font-size: 1.8rem;
+        margin: 4rem 0;
+    }
+
+    .service-img figcaption {
+        font-size: 1.5rem;
+    }
+
+    .social-icons {
+        width: 5vh;
+    }
+    .footer p {
+        font-size: 1.8rem;
+      }
+}
