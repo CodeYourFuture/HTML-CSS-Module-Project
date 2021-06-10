@@ -6,6 +6,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Global */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
 /**
  * Add your custom styles below
  * 
@@ -16,4 +26,19 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .main-nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 1rem 2rem 0rem 2rem;
+ }
 
+ .logo {
+    width: 4%;
+    height: auto;
+ }
+
+ .main-menu {
+     display: none;
+ }
