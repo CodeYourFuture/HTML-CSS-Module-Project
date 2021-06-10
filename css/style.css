@@ -16,16 +16,19 @@ body {
  */
 
 /* Header */
-
 .header-section {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Navigation */
-
 .company-logo {
   padding-left: 0.8rem;
   width: 2.3rem;
@@ -36,11 +39,12 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  width: 60%;
+  width: 100%;
 }
 
 .hamburger-icon {
   padding-right: 0.8rem;
+  padding-top: 0.8rem;
   width: 1.5rem;
   height: 1.1rem;
 }
@@ -61,21 +65,29 @@ body {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  background-color: #fff;
-  z-index: 1;
-}
-
-.style-full-Menu > li {
-  display: flex;
-  text-align: center;
-  line-height: 2rem;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* Introduction */
+.style-full-Menu > li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 3rem;
+  list-style-type: none;
+  color: #89899e;
+}
 
+.style-full-Menu > li:first-child {
+  color: #4b4b4d;
+}
+
+.style-full-Menu > li:hover {
+  color: #e0633a;
+  cursor: pointer;
+}
+
+/* Introduction */
 .intro-section {
   background-image: url(../img/first-background.jpg);
   background-position: 67%;
@@ -109,8 +121,11 @@ body {
   padding: 0.8rem 1rem 0.8rem 1rem;
 }
 
-/* About */
+.intro-section > button:hover {
+  background-color: #b15030;
+}
 
+/* About */
 .about-devices-icon {
   width: 5.5rem;
   padding-top: 0.5rem;
@@ -146,9 +161,12 @@ body {
   margin-top: 2.1rem;
 }
 
-.article {
-  border-bottom: 1px solid #f2f2f3;
+.about-articles {
+  display: flex;
+  flex-flow: column nowrap;
+
   width: 100%;
+  border-bottom: 1px solid #f2f2f3;
 }
 
 .about-container {
@@ -160,12 +178,17 @@ body {
   padding: 1rem 0 1rem 0;
 }
 
+.about-container:hover {
+  background-color: #b1503042;
+  border-color: #b1503042;
+  cursor: pointer;
+}
+
 .about-section div:last-child {
   padding-bottom: 4.8rem;
 }
 
 /* Footer */
-
 .footer {
   display: flex;
   flex-flow: column nowrap;
@@ -190,11 +213,12 @@ body {
   width: 7.8rem;
 }
 
+/* Social Media */
 .social-media-image {
   width: 0.8rem;
 }
 
-.social {
+.social-media-link {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -203,7 +227,13 @@ body {
   border-radius: 50%;
 }
 
-/* Media Quieres */
+.social-media-link:hover {
+  background-color: #b1503042;
+  border-color: #b1503042;
+  cursor: pointer;
+}
+
+/* Media queries */
 
 /* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
@@ -212,12 +242,25 @@ body {
   /* Introduction */
   /* About */
   /* Footer */
+  /* Social Media */
 }
 
 /* Laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Header */
+  .header-section {
+    align-items: center;
+  }
+
+  .company-logo {
+    padding-left: 3rem;
+  }
+
   /* Navigation */
+  .main-navbar {
+    width: 80%;
+  }
+
   .style-full-Menu.show {
     display: flex;
     flex-flow: row nowrap;
@@ -225,7 +268,16 @@ body {
 
   .style-hamburger-Menu {
     display: none;
-    flex-flow: row;
+  }
+
+  .style-full-Menu {
+    width: 29rem;
+  }
+
+  .style-full-Menu > li {
+    justify-content: space-around;
+    line-height: 0rem;
+    padding-right: 1rem;
   }
 
   /* Introduction */
@@ -243,11 +295,9 @@ body {
   }
 
   /* About */
-  .article {
-    display: flex;
+  .about-articles {
+    flex-flow: row nowrap;
     justify-content: space-between;
-    width: 100%;
-    border-bottom: 1px solid #f2f2f3;
   }
 
   .about-section div:last-child {
@@ -263,13 +313,15 @@ body {
   }
 
   /* Footer */
+  /* Social Media */
 }
 
-/* Deasktop */
+/* Desktop */
 @media (min-width: 1025px) and (max-width: 1200px) {
   /* Header */
   /* Navigation */
   /* Introduction */
   /* About */
   /* Footer */
+  /* Social Media */
 }
