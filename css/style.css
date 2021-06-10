@@ -44,20 +44,20 @@ a {
 
 /* Intro */
 .container {
-    padding: 1rem 2rem 0rem 2rem;
+  padding: 1rem 2rem 0rem 2rem;
 }
 
 .intro-img {
-    background-image: url(../img/first-background.jpg);
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: url(../img/first-background.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .intro-text {
-    text-align: center;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,51 +66,67 @@ a {
 }
 
 .btn {
-    background-color: chocolate;
-    padding: 0.45rem;
-    border: none;
-    text-transform: capitalize;
-    margin: 1rem;
+  background-color: chocolate;
+  padding: 0.45rem;
+  border: none;
+  text-transform: capitalize;
+  margin: 1rem;
 }
 
 /* Services */
 
 .services-text {
-    text-align: center;
+  text-align: center;
 }
 .services-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
 }
 .service-img {
-    /* width: 40%; */
-    margin: 2rem auto;
+  /* width: 40%; */
+  margin: 2rem auto;
 }
 
 .service-img figcaption {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 hr {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Footer */
 .social-icons {
-    display: flex;
-    justify-content: space-evenly;
-    width: 3vh;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 3vh;
+  margin: 0 auto;
 }
 
 .footer p {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-copyrights {
-    color: gray;
+  color: gray;
 }
 
 /* Media queries */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* For ipad: */
+
+  .services-box {
+    flex-direction: row;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-img {
+    margin: 0;
+  }
+}
