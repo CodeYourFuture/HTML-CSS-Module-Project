@@ -42,6 +42,7 @@ a {
   display: none;
 }
 
+/* Intro */
 .container {
     padding: 1rem 2rem 0rem 2rem;
 }
@@ -71,3 +72,22 @@ a {
     text-transform: capitalize;
     margin: 1rem;
 }
+
+/* Services */
+
+.services-text {
+    text-align: center;
+}
+.services-box {
+    display: flex;
+    flex-direction: column;
+}
+.service-img {
+    /* width: 40%; */
+    margin: 2rem auto;
+}
+
+.service-img figcaption {
+    margin-top: 1rem;
+}
+
