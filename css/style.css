@@ -165,8 +165,11 @@ footer {
 
  /*Container containing the three social media icons*/
  .social-media-icons {
-     display: flex;
-     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 47.5vw;
  }
 
  /*Adds a little space between each of the social media icons*/
