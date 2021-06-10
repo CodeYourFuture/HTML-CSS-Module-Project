@@ -81,6 +81,7 @@ a {
 .services-box {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 .service-img {
     /* width: 40%; */
@@ -91,3 +92,25 @@ a {
     margin-top: 1rem;
 }
 
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Footer */
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 3vh;
+    margin: 0 auto;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer-copyrights {
+    color: gray;
+}
+
+/* Media queries */
