@@ -284,10 +284,23 @@ footer p {
 		right: 0px;
 		width: 100%;
 	}
+
+	#toggle-close {
+		display: none;
+	}
 	
-	#toggle:checked + .nav-menu ul {
+	#toggle:checked ~ .nav-menu ul {
 		display: flex;
 		background-color: #fff;
 	}
+
+	#toggle:checked ~ #toggle-close {
+		display: inline-block;
+	}
+
+	#toggle:checked ~ #toggle-open {
+		display: none;
+	}
+
 }
 
