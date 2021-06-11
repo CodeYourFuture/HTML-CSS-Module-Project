@@ -21,6 +21,7 @@ body {
 .header-container {
     position: relative;
     width: 100%;
+    
 }
 /*Navigation Style*/
 .nav-bar {
@@ -33,14 +34,7 @@ body {
 
 }
 
-/*#nav {
-    display: flex;
-    flex-direction: row;
-    margin: 30px 0px;
-    padding: 0px 30px;
-    align-items: space-between;
-    width: auto;
-}*/
+
 
 
 ul > li{
@@ -68,7 +62,9 @@ a:hover {
     color: white;
     font-size: 1.5rem;
     word-spacing: 5px;
+    
 }
+
 
 .learn-more {
     
@@ -103,6 +99,7 @@ a:hover {
     margin: 3rem 1.5rem;
 }
 
+
 /*Describtion of images*/
 
 .desc {
@@ -113,7 +110,7 @@ a:hover {
 /*Footer*/
 
 footer {
-    border-top: 1px solid grey;
+    border-top: 1px solid rgb(212, 210, 210);
     padding-bottom: 2rem;
     text-align: center;
 }
@@ -127,6 +124,6 @@ footer {
 .media-frame {
     margin: 0 2rem;
     padding: 1.5rem;
-    border: 1px solid gray;
+    border: 1px solid rgb(212, 210, 210);
     border-radius: 50%;
 }
