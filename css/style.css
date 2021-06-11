@@ -131,7 +131,7 @@ main {
 }
 
 .about-icon {
-  width: 5.5rem;
+  width: 5.6rem;
 }
 
 .about-section {
@@ -145,15 +145,15 @@ main {
 .about-section h2 {
   display: flex;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.66rem;
   font-weight: 100;
-  margin: 2.5rem 1rem 1.9rem 1rem;
+  margin: 3.3rem 1rem 1.9rem 1rem;
 }
 
 .about-container h3 {
   font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 2.1rem;
+  margin-top: 1.7rem;
 }
 
 .about-articles {
@@ -230,7 +230,7 @@ main {
 
 /* Media queries */
 
-/* Laptops */
+/* Small screens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Header */
   .header-section {
@@ -321,7 +321,7 @@ main {
   }
 }
 
-/* Desktop */
+/* Desktop, large screens */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   /* Header */
   .header-section {
@@ -400,7 +400,7 @@ main {
   }
 
   .about-container h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 2.8rem;
   }
 
@@ -418,7 +418,7 @@ main {
   }
 }
 
-/* Large Screen Desktops & TVs */
+/* Extra Large Screens, TVs */
 @media screen and (min-width: 1201px) {
   /* Header */
   .header-section {
