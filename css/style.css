@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -15,25 +14,99 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
- 
- nav{
-     padding: 40px 40px 0px 60px;
-     background-color: rgb(247, 244, 241);
- }
-.nav_link>img{
-    width: 50px;
+
+nav {
+  padding: 20px 40px 3px 60px;
+  background-color: rgb(247, 244, 241);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.nav_link > img {
+  width: 50px;
+  height: 40px;
+}
+
+.nav_link ul,
+li {
+  display: flex;
+  font-size: 0.8rem;
+  padding-left: 15px;
+}
+li:active {
+  color: red;
+}
+.main-container {
+  background-image: url(/img/first-background.jpg);
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  line-height: 15px;
+}
+.main-container>button{
+
+    background-color: red;
+    border: none;
+  padding:5px 10px;
+  font-size: 0.6rem;
+}
+
+.container-services{
+    padding-top: 35px;
+    text-align: center;
+}
+.services>img{
+    width: 40px;
     height: 40px;
 }
-.nav_link img, .nav_link ul{
-    display: inline;
-}
-.nav_link li{
-    display: inline;
-    float: right;   
-    margin-left: 20px;
-    font-size: 1rem;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
 }
-li:active{
-color: red;
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+hr{
+    width: 80%;
+}
+
+.social-icon>a>img{
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid grey; 
+    border-radius: 50%;
+    padding:5px;
+
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    font-size: 0.6rem;
+line-height: 2px;
+}
+.social-icon-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+
+    
+
 }
