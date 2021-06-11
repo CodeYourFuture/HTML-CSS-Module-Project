@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -15,5 +14,178 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+#logo {
+  width: 100px;
+  height: 50px;
+}
 
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.navbar ul li {
+  padding: 10px;
+}
 
+.list-nav li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+.list-nav li a:hover {
+  color: rgb(248, 92, 44);
+}
+.list-nav li a:active {
+  color: black;
+}
+#menu {
+  display: none;
+}
+.section-1 {
+  background-image: url("/img/first-background.jpg");
+  height: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0px;
+}
+.section-1 h2 {
+  font-weight: 70;
+  font-size: 3.5rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.section-1 p {
+  font-weight: 80;
+  font-size: 2rem;
+}
+.section-1 button {
+  background-color: rgb(248, 92, 44);
+  height: 2.5em;
+  width: 8.5em;
+  border: none;
+  border-radius: 0.5em;
+  margin-top: 15px;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+.section-2 h2 {
+  text-align: center;
+}
+
+.h-font {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 40px;
+  text-align: center;
+}
+.section3 {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+}
+.section3 div {
+  margin: 65px;
+}
+.section3 div img {
+  width: 130px;
+  height: 165px;
+}
+.footer {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px rgb(212, 209, 209) solid;
+}
+.footer-img img {
+  width: 20px;
+  height: 20px;
+  border: 1px rgb(231, 224, 224) solid;
+  border-radius: 50%;
+  margin: 10px;
+}
+#footer-p {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    max-width: auto;
+    overflow-x: hidden;
+  }
+  .section-1 {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #logo {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    margin-right: 0;
+  }
+
+  .section-1 h2 {
+    font-weight: 80;
+    font-size: 1.7rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    align-items: center;
+  }
+  .section-1 p {
+    font-weight: 65;
+    font-size: 1.2rem;
+  }
+  .section3 {
+    flex-wrap: wrap;
+  }
+
+  .section3 div {
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-1 button {
+    height: 2.3em;
+    width: 7em;
+  }
+
+  .h-font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
+  .section3 div p {
+    font-size: 1.2em;
+    width: 100%;
+  }
+}
