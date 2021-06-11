@@ -16,4 +16,39 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+/*Header*/
 
+ header {
+    display: flex;  
+}
+
+.logo {
+    width: 5em;
+}
+
+nav {
+    display: flex;
+}
+
+/*Jumbotron*/
+
+ .jumbotron {
+    background-image: url("../img/first-background.jpg");
+    color: #fff;
+ }
+ /*Main content*/
+
+ .icons {
+     display: flex;    
+ }
+
+ /*footer*/
+
+ .socialMedia {
+     display: flex;
+ }
+ 
