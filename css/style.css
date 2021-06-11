@@ -1,5 +1,3 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,13 +27,6 @@ main {
   height: 2.3rem;
 }
 
-.main-navbar {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  width: 100%;
-}
-
 .hamburger-icon {
   padding-right: 0.8rem;
   padding-top: 0.8rem;
@@ -43,18 +34,25 @@ main {
   height: 1.1rem;
 }
 
-.style-hamburger-Menu {
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar-hamburger-Menu {
   display: flex;
   flex-flow: column nowrap;
   background-color: #fff;
   border: 0;
 }
 
-.style-full-Menu.show {
+.navbar-full-Menu.show {
   display: none;
 }
 
-.style-full-Menu {
+.navbar-full-Menu {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -63,16 +61,16 @@ main {
   padding: 0;
 }
 
-.style-full-Menu > li {
+.navbar-full-Menu > li {
   list-style-type: none;
 }
 
-.style-full-Menu > li:first-child {
+.navbar-full-Menu > li:first-child {
   color: #4b4b4d;
   font-weight: 500;
 }
 
-.style-full-Menu > li > a {
+.navbar-full-Menu > li > a {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -81,13 +79,13 @@ main {
   text-decoration: none;
 }
 
-.style-full-Menu > li > a:hover {
+.navbar-full-Menu > li > a:hover {
   color: #e0633a;
   cursor: pointer;
 }
 
-/* Introduction */
-.intro-section {
+/* Hero */
+.hero-section {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -100,21 +98,21 @@ main {
   height: 26.5rem;
 }
 
-.intro-section > h1 {
+.hero-section > h1 {
   font-weight: 100;
   font-size: 2.5rem;
   margin: 0rem 6rem 0rem 6rem;
   margin-top: 0.3rem;
 }
 
-.intro-section > p {
+.hero-section > p {
   font-weight: 100;
   font-size: 1.4rem;
   margin: 0rem 5rem 0rem 5rem;
   padding-top: 2rem;
 }
 
-.intro-section > button {
+.hero-section > button {
   background-color: #e0633a;
   border: 0px;
   border-radius: 4px;
@@ -125,7 +123,7 @@ main {
   height: 2.8rem;
 }
 
-.intro-section > button:hover {
+.hero-section > button:hover {
   background-color: #b15030;
   transition: 0.8s;
 }
@@ -247,47 +245,46 @@ main {
   }
 
   /* Navigation */
-  .main-navbar {
+  .navbar {
     width: 80%;
   }
 
-  .style-full-Menu.show {
+  .navbar-full-Menu.show {
     display: flex;
     flex-flow: row nowrap;
   }
 
-  .style-hamburger-Menu {
+  .navbar-hamburger-Menu {
     display: none;
   }
 
-  .style-full-Menu {
+  .navbar-full-Menu {
     justify-content: space-between;
     width: 29rem;
     padding-right: 2rem;
   }
 
-  /* Introduction */
-  .intro-section {
+  /* hero */
+  .hero-section {
     background-position: 60%;
     height: 32rem;
   }
 
-  .intro-section > h1 {
+  .hero-section > h1 {
     font-size: 3rem;
   }
 
-  .intro-section > p {
+  .hero-section > p {
     font-size: 1.6rem;
   }
 
-  .intro-section > button {
+  .hero-section > button {
     font-size: 1rem;
     width: 7.8rem;
     height: 3.2rem;
   }
 
   /* About */
-
   .about-icon {
     width: 5.5rem;
   }
@@ -328,8 +325,6 @@ main {
   .footer > h4 {
     font-size: 1rem;
   }
-
-  /* Social Media */
 }
 
 /* Desktop */
@@ -347,51 +342,50 @@ main {
   }
 
   /* Navigation */
-  .main-navbar {
+  .navbar {
     width: 100%;
   }
 
-  .style-full-Menu.show {
+  .navbar-full-Menu.show {
     display: flex;
     flex-flow: row nowrap;
   }
 
-  .style-hamburger-Menu {
+  .navbar-hamburger-Menu {
     display: none;
   }
 
-  .style-full-Menu {
+  .navbar-full-Menu {
     justify-content: space-between;
     width: 29rem;
     padding-right: 2.5rem;
   }
 
-  .style-full-Menu > li > a {
+  .navbar-full-Menu > li > a {
     font-size: 1.1rem;
   }
 
-  /* Introduction */
-  .intro-section {
+  /* Hero */
+  .hero-section {
     background-position: 60%;
     height: 42rem;
   }
 
-  .intro-section > h1 {
+  .hero-section > h1 {
     font-size: 3rem;
   }
 
-  .intro-section > p {
+  .hero-section > p {
     font-size: 1.6rem;
   }
 
-  .intro-section > button {
+  .hero-section > button {
     font-size: 1rem;
     width: 7.8rem;
     height: 3.2rem;
   }
 
   /* About */
-
   .about-icon {
     width: 8rem;
   }
@@ -432,8 +426,6 @@ main {
   .footer > h4 {
     font-size: 1rem;
   }
-
-  /* Social Media */
 }
 
 /* Large Screen Desktops & TVs */
@@ -451,53 +443,52 @@ main {
   }
 
   /* Navigation */
-  .main-navbar {
+  .navbar {
     width: 100%;
   }
 
-  .style-full-Menu.show {
+  .navbar-full-Menu.show {
     display: flex;
     flex-flow: row nowrap;
     width: 40rem;
   }
 
-  .style-hamburger-Menu {
+  .navbar-hamburger-Menu {
     display: none;
   }
 
-  .style-full-Menu {
+  .navbar-full-Menu {
     justify-content: space-between;
     width: 35rem;
     padding-right: 7rem;
   }
 
-  .style-full-Menu > li > a {
+  .navbar-full-Menu > li > a {
     line-height: 0rem;
     font-size: 1.4rem;
   }
 
-  /* Introduction */
-  .intro-section {
+  /* Hero */
+  .hero-section {
     background-position: 40%;
     height: 55.2rem;
   }
 
-  .intro-section > h1 {
+  .hero-section > h1 {
     font-size: 4.5rem;
   }
 
-  .intro-section > p {
+  .hero-section > p {
     font-size: 2.4rem;
   }
 
-  .intro-section > button {
+  .hero-section > button {
     font-size: 1.4rem;
     width: 12rem;
     height: 4rem;
   }
 
   /* About */
-
   .about-icon {
     width: 10rem;
   }
@@ -542,7 +533,6 @@ main {
   }
 
   /* Social Media */
-
   .social-media-link {
     padding: 0.9rem;
   }
