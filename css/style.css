@@ -1,19 +1,96 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
+    /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 550px;
+        margin-right: 150px;
+    }
+    
+    #red {
+        color: red;
+    }
+    
+    .wifi {
+        padding-left: 240px;
+        padding-top: 380px;
+        margin-left: 70px;
+        margin-right: 70px;
+        background-image: url("file:///C:/Users/New%20User/Documents/GitHub/HTML-CSS-Coursework-Week1/HTML-CSS-Coursework-Week2/img/first-background.jpg");
+        display: flex;
+        justify-content: center;
+    }
+    
+    .little {
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+    }
+    
+    .h3 {
+        text-align: center;
+    }
+    
+    .karma {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+        font-size: 20px;
+    }
+    
+    button {
+        width: 130px;
+        height: 50px;
+        border-radius: 10;
+        background-color: brown;
+    }
+    
+    .internet {
+        width: 190px;
+        height: 100px;
+    }
+    
+    .product {
+        width: 190px;
+        height: 100px;
+    }
+    
+    .pay {
+        width: 130px;
+        height: 100px
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 550px;
+        margin-left: 550px;
+    }
+    
+    .last h4 {
+        text-align: center;
+        margin-top: 180px;
+        font-weight: bold;
+    }
+    
+    .mobile p {
+        text-align: center;
+        font-weight: lighter;
+    }
+    
+    @media all and (max-width: 764px) {
+        main {
+            backgrond-color: blue;
+        }
+    }
