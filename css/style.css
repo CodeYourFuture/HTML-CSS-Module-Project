@@ -17,7 +17,8 @@ body {
  */
  
  nav{
-     padding: 30px 60px;
+     padding: 40px 40px 0px 60px;
+     background-color: rgb(247, 244, 241);
  }
 .nav_link>img{
     width: 50px;
@@ -29,5 +30,10 @@ body {
 .nav_link li{
     display: inline;
     float: right;   
+    margin-left: 20px;
+    font-size: 1rem;
 
+}
+li:active{
+color: red;
 }
