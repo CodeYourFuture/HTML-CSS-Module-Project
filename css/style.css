@@ -259,6 +259,8 @@ font-size: 1rem;
 .hero{min-width:100%; min-height:100%; width:100%; height:100%; position:relative}
 .footer  { margin-top:1rem;}
 
-  .corner:hover > .list {display:flex; flex-direction:column;}
+  .corner> .list {display:none; flex-direction:column;margin-top:10px; }
   .extended{display:none;}
+
+  .list.active{display:flex;}
 }
