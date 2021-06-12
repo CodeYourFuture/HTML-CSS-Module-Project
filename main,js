@@ -1,0 +1,6 @@
+window.onload=function(){
+    .addEventListener('click', function(e) {
+  draw.classList.toggle('open');
+  e.stopPropagation();
+});
+};

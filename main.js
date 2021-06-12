@@ -1,12 +1,17 @@
+/** @format */
 
-  /** @format */
+window.onload = function() {
+	var menu = document.querySelector('.hamburger');
+	var ham = document.querySelector('.list');
+	
 
-window.onload=function(){
-  const menu_btn = document.querySelector(".hamburger");
-  const responsive_menu = document.querySelector(".list");
+	menu.addEventListener('click', function() {
+		
 
-  menu_btn.addEventListener('click', function() {
-    responsive_menu.classList.toggle('active');
+	
+	//	menu.classList.contains("active");
+		ham.classList.toggle('active');
+	});
+	};
 
-  });};
-
+	
