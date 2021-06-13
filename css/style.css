@@ -15,5 +15,147 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ 
+ nav  {
+    display:flex;
+    justify-content: flex-end;
+     padding-top: 60px;
+     padding-left: 20px;
+     
+ } 
 
+.nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    
+}
+#logo{
+   margin-right:39em;
+    
+    
+    
+}
+.nav-list {
 
+    display: flex;
+    margin-right: 5rem;
+  }
+  .nav-list a {
+    display:flex;
+    justify-content: flex-end;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #2C3539;
+    
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    background-image: url(/home/coder/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg);
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      
+      margin-left: 30px;
+      margin-right: 10px;
+       
+      color:white;
+    }
+    h1{
+        font: 40px Arial, sans-serif;
+        color:antiquewhite;
+
+    }
+  .icons{
+      font-size: 20px;
+      color:#2C3539;
+      justify-content: center;
+      text-align:center ;
+      padding-top: 50px;
+
+  }
+  .icons-img{
+      display:flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      padding-top: 30px;
+
+  }
+  .device{ display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 30px;
+    
+    width: 20%;
+      
+  }
+  .coffee{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 30px;
+    
+    width: 20%;
+
+  }
+  .petrol{ display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 30px;
+    background-color:antiquewhite
+    width: 20%;
+
+  }
+  button{
+      
+      width: 10%;
+      height: 5vh;
+      font-size: 11px;
+      border-radius: 5px;
+      background-color:chocolate;
+      
+    
+  }
+  button a{
+    color:antiquewhite;
+    text-decoration: none;
+  }
+
+   
+  .media{
+       
+      margin-left: 50%;
+  }
+  .media-p{
+    padding-top: 60px;
+      margin-left: 48%;
+  }
+  footer{
+      
+      
+      justify-items: center;
+      text-align: center;
+      margin-left:3% ;
+      font-size: 7px;
+      padding-top:10px ;
+      padding-bottom:60px ;
+  }
+  
