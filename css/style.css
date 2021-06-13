@@ -122,7 +122,7 @@ main {
 
 .hero-section > button:hover {
   background-color: #b15030;
-  transition: 0.8s;
+  transition: background-color 0.8s ease-in;
 }
 
 /* About */
@@ -202,7 +202,6 @@ main {
 
 .social-media-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 7.8rem;
 }
@@ -214,7 +213,6 @@ main {
 
 .social-media-link {
   display: flex;
-  flex-direction: row;
   align-content: center;
   border: 1px solid #e2e2e7;
   padding: 0.6rem;
@@ -225,7 +223,7 @@ main {
   background-color: #b1503042;
   border-color: #b1503042;
   cursor: pointer;
-  transition: 0.4s ease-in;
+  transition: background-color 0.4s ease-in;
 }
 
 /* Media queries */
