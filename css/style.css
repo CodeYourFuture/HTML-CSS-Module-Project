@@ -1,6 +1,4 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -45,7 +43,7 @@ li:first-child a {
     justify-content: center;
     align-items: center;
     background-image: url("../img/first-background.jpg");
-    width: 73rem;
+    max-width: 73rem;
     height: 76vh;
     margin: 0 auto;
     background-position-x: -200px;
@@ -72,6 +70,34 @@ li:first-child a {
     border: none;
 }
 
+/* Features Icon Section */
+
+.features {
+    width: 44rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+    box-shadow: 0px 1px 0px #eae5e5;
+}
+.features h2 {
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+}
+.icon-container {
+    display: flex;
+}
+.icons {
+    padding: 0 2rem;
+}
+.icons p {
+    width: 11.5rem;
+}
+.features img {
+    width: 10rem;
+    height: 6rem;
+}
 /**
  * Add your custom styles below
  * 
