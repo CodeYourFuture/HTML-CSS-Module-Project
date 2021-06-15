@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,59 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.logo {
+  margin-left: 50px;
+}
 
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-bar a {
+  margin: 0px 25px 0px 25px;
+}
+
+.nav-bar a:hover {
+  cursor: pointer;
+  color: #f3d5a1;
+}
+
+.main {
+  background-image: url("https://thinkful-ed.github.io/karma-clone/img/first-background.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 71vw;
+  text-color: white;
+}
+.main .intro {
+  color: white;
+  text-align: center;
+  padding: 25vw;
+}
+button {
+  background-color: orange;
+}
+.section {
+  text-align: center;
+}
+
+.section h3 {
+  color: gray;
+}
+.notion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  font-size: 16px;
+}
+
+.foter {
+  text-align: center;
+}
+
+h6 {
+  color: gray;
+}
