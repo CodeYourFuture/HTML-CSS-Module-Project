@@ -98,6 +98,31 @@ li:first-child a {
     width: 10rem;
     height: 6rem;
 }
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer section {
+    display: flex;
+}
+footer img {
+    height: 1.6rem;
+    padding: 0.3rem 0;
+    border-radius: 100%;
+}
+footer h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+footer small {
+    padding: 1rem;
+    color: #92949b;
+}
+
 /**
  * Add your custom styles below
  * 
