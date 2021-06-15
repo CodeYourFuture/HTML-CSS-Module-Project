@@ -11,7 +11,6 @@ main {
 .header-section {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: flex-start;
   position: fixed;
   background-color: #fff;
@@ -138,8 +137,8 @@ main {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  width: 92%;
-  margin: 0 1rem 0 1rem;
+  width: 100%;
+  margin: 0;
 }
 
 .about-section h2 {
@@ -166,7 +165,6 @@ main {
 .about-container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1rem 0 1rem 0;
@@ -481,11 +479,6 @@ main {
     justify-content: space-between;
     width: 85%;
     border-bottom: 2px solid #f2f2f3;
-  }
-
-  .about-section {
-    width: 96%;
-    margin: 0 1rem 0 1rem;
   }
 
   .about-section div:last-child {
