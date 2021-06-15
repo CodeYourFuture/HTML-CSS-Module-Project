@@ -16,8 +16,26 @@ header img {
     height: 2.4rem;
     padding: 1rem 0 1rem 2rem;
 }
-   
-  
+
+/* Navigation Section */
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #9c9fa7;
+    padding: 1rem;
+}
+nav ul a:focus, nav ul a:hover {
+    color: #e0633a;
+}
+li:first-child a {
+    color: rgb(117, 114, 114);
+    font-weight: 500;
+}
 /**
  * Add your custom styles below
  * 
