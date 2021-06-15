@@ -36,6 +36,42 @@ li:first-child a {
     color: rgb(117, 114, 114);
     font-weight: 500;
 }
+
+/* Main Content Section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/first-background.jpg");
+    width: 73rem;
+    height: 76vh;
+    margin: 0 auto;
+    background-position-x: -200px;
+    background-position-y: -25px;
+    background-repeat: no-repeat;
+}
+.hero h1, .hero h2 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+}
+.hero h1 {
+    font-size: 3.5rem;
+}
+.hero h2 {
+    letter-spacing: 2px;
+    padding: 1rem 0 3.5rem;
+}
+.hero button {
+    background-color: #d35a32;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5%;
+    border: none;
+}
+
 /**
  * Add your custom styles below
  * 
