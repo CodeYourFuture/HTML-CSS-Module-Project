@@ -23,17 +23,22 @@ body {
 
 /* Navigation styles */
 
-ul {
-    list-style-type: none;
-    display: inline-block;
+.topnav {
+    display:flex;
+    justify-content: space-between;
 }
 
-.nav-links {
+ul {
+    list-style-type: none;
+    /* display: inline-block; */
+}
+
+/* .nav-links {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-}
+} */
 
 a:link, a:visited {
     text-decoration: none;
@@ -105,9 +110,17 @@ button {
 }
 
 /* Footer styling */
+
+.social {
+    display:flex;
+    justify-content: center;
+    
+}
 .social-icons {
+    display:inline-block;
     max-height: 1.5rem;
     border: 1px solid rgb(228, 226, 226);
     border-radius: 50%;
     padding: 0.5rem;
+    margin: 0.5rem;
 }
