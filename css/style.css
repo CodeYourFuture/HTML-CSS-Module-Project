@@ -277,7 +277,12 @@ footer p {
 
 	.nav-menu ul {
 		flex-direction: column;
-		display: none;
+		display: flex;
+		background-color: #fff;
+		width: 100%;
+		position: absolute;
+		transform: translate(0, -420px);
+		transition: transform 0.3s ease;
 	}
 
 	.nav-menu li {
@@ -295,8 +300,8 @@ footer p {
 	}
 	
 	#toggle:checked ~ .nav-menu ul {
-		display: flex;
-		background-color: #fff;
+		/* display: flex; */
+		transform: translate(0, 0px);
 	}
 
 	#toggle:checked ~ #toggle-close {
