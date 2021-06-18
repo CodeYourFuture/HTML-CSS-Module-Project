@@ -18,6 +18,160 @@ body {
  */
 
  /* header section */
+ header{
+     display: flex;
+     justify-content: space-evenly;
+     align-content: center;
+ }
+
+ header img{
+     height: 2.5em;
+     padding: 1rem ;
+   
+}
+
+/* Nav bar */
+
+
+ nav ul{
+     display: flex;
+     list-style: none;
+     justify-content: space-evenly;
+     width: 50rem;
+     padding: 1rem 0rem;
+
+ }
+
+ nav ul a{
+     text-decoration: none;
+     font-size: 1.5rem;
+     color:rgb(197, 189, 189);
+ }
+
+nav ul a:hover{
+    color:rgb(240, 104, 13);
+}
+
+li:first-of-type a{
+    color: rgb(105, 102, 102);
+    font-weight: 500;
+}
+x-special/nautilus-clipboard
+
+/*Main content*/
+.hero{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.hero img{
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    width: 102vh;
+    height: 100%;
+}
+
+
+.hero-text{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.hero-text h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero button{
+    background-color:rgb(240, 104, 13) ;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Icon Section */
+
+.icon img{
+width: 15rem;
+height: 5rem;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+
+}
+.icon-row{
+    padding: 1rem 2rem;
+}
+
+.icon-row p{
+    width: auto;
+    font-size: 1.2rem;
+    color: rgb(46, 45, 45);
+}
+
+.icon h2{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    color: rgb(46, 45, 45);
+    font-weight: 400;
+    
+}
+
+.icon{
+    width: auto;
+    margin: 0 auto;
+    padding-top: 4rem;
+    box-shadow: 0px 1px 0px rgb(189, 187, 187);
+}
 
 
 
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section{
+    display: flex;
+}
+
+footer img{
+    margin: 0.5rem;
+    height: 1.5rem;
+    padding: 1rem 1rem;
+    border: 1px solid grey;  
+    border-radius: 30%;
+     
+}
+
+footer h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+footer small{
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: grey;
+}s
