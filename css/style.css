@@ -8,20 +8,74 @@ body {
 nav {
   height: 50px;
   background-color: white;
-  display: flex;
+  display: block;
+  width: 100%;
 }
 nav ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 70vw;
+  position: relative;
+  left: -20px;
 }
 nav li {
   display: inline;
 }
 #karmalogo {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
+#startsection {
+  background-image: url(../img/first-background.jpg);
+  height: 425px;
+  width: 375px;
+  background-position: -350px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*this spaces things vertically*/
+}
+#startsection div {
+  display: flex;
+  flex-direction: column;
+}
+#startsection h2,
+p,
+button {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  color: white;
+  width: 66%;
+}
+#startsection h2 {
+  font-size: 2.5em;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+#startsection p {
+  font-size: 1.6em;
+  font-weight: 100;
+  letter-spacing: 0.1px;
+  width: 59%;
+}
+
+#learnmorebutton {
+  display: block;
+  margin: 0;
+  background: rgb(255, 123, 0);
+  border: 1px rgb(255, 123, 0) solid;
+  border-radius: 5px;
+  color: white;
+  height: 45px;
+  text-align: center;
+  width: 32%;
+}
+
 /**
  * Add your custom styles below
  * 
