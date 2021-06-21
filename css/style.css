@@ -16,7 +16,7 @@ nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 70vw;
+  gap: 80%;
   position: relative;
   left: -20px;
 }
@@ -30,11 +30,10 @@ nav li {
 #startsection {
   background-image: url(../img/first-background.jpg);
   height: 425px;
-  width: 375px;
-  background-position: -350px 0;
+  width: 100%;
+  background-position: -390px 0;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: flex;
   flex-direction: column;
 
@@ -58,12 +57,14 @@ button {
   font-weight: 200;
   letter-spacing: 1px;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 #startsection p {
-  font-size: 1.6em;
-  font-weight: lighter;
+  font-size: 1.4em;
+  font-weight: 100;
+  opacity: 80%;
   letter-spacing: 0.1px;
-  width: 59%;
+  width: 55%;
   color: white;
 }
 
@@ -82,7 +83,8 @@ button {
 
 #secondsection {
   background-color: whitesmoke;
-  height: 750px;
+  height: 740px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,19 +125,18 @@ img {
 }
 /* footer starts heeeeeeeree*/
 footer {
-  font-size: 15px;
-  height: 300px;
+  height: 360px;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 12px;
 }
 footer p {
   align-items: center;
   align-self: center;
-  font-size: 15px;
+  font-size: 14px;
 }
 footer div {
   display: flex;
@@ -155,6 +156,7 @@ footer div {
 }
 #instagramicon {
   filter: hue-rotate(180deg);
+  width: 13px;
 }
 #instagramicon::after {
   filter: hue-rotate(90deg);
@@ -166,12 +168,5 @@ footer div {
   opacity: 50%;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+@media screen (min-width: 376px) {
+}
