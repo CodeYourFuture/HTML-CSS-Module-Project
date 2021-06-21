@@ -36,7 +36,6 @@ nav li {
   background-size: cover;
   display: flex;
   flex-direction: column;
-
   justify-content: center; /*this spaces things vertically*/
 }
 #startsection div {
@@ -51,6 +50,7 @@ button {
   text-align: center;
   align-self: center;
   color: white;
+  justify-content: center;
 }
 #startsection h2 {
   align-items: center;
@@ -64,25 +64,25 @@ button {
   width: 30%;
 }
 #startsection p {
-  justify-self: center;
+  text-align: center;
   font-size: 1.4em;
   font-weight: 100;
   opacity: 80%;
   letter-spacing: 0.1px;
-  width: 55%;
+  width: 60%;
   color: white;
 }
 
 #learnmorebutton {
   display: block;
-  margin: 0;
+
   background: rgb(255, 123, 0);
   border: 1px rgb(255, 123, 0) solid;
   border-radius: 5px;
   color: white;
   height: 45px;
   text-align: center;
-  width: 32%;
+  width: 130px;
 }
 /*  second section */
 
@@ -130,7 +130,7 @@ img {
 }
 /* footer starts heeeeeeeree*/
 footer {
-  height: 360px;
+  height: 190px;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -172,13 +172,41 @@ footer div {
   font-size: 12px;
   opacity: 50%;
 }
-
-@media screen and (max-device-width: 211px) {
+/* tiny VERSION */
+@media (max-device-width: 211px) {
   #startsection h2 {
     font-size: 22px;
     font-weight: 500;
   }
 }
-/* tiny VERSION */
-@media screen (min-width: 376px) {
+/* Deskptop VERSION */
+@media (min-width: 376px) {
+  /*nav*/
+  nav {
+    height: 80px;
+  }
+  #karmalogo {
+    width: 65px;
+    height: 65px;
+  }
+
+  #startsection {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+  }
+  #startsection h2 {
+    font-size: 70px;
+    width: 70%;
+  }
+  #startsection p {
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
+  #learnmorebutton {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  /*mainsection*/
 }
