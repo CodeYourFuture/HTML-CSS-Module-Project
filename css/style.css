@@ -37,6 +37,7 @@ nav li {
 
   display: flex;
   flex-direction: column;
+
   justify-content: center; /*this spaces things vertically*/
 }
 #startsection div {
@@ -56,12 +57,14 @@ button {
   font-size: 2.5em;
   font-weight: 200;
   letter-spacing: 1px;
+  margin-bottom: 0;
 }
 #startsection p {
   font-size: 1.6em;
-  font-weight: 100;
+  font-weight: lighter;
   letter-spacing: 0.1px;
   width: 59%;
+  color: white;
 }
 
 #learnmorebutton {
@@ -79,13 +82,63 @@ button {
 
 #secondsection {
   background-color: whitesmoke;
-  height: 425px;
-  width: 375px;
+  height: 750px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /*this spaces things vertically*/
+  align-items: center;
+  justify-content: flex-start; /*this spaces things vertically*/
+  gap: 20px;
 }
-#secondsection {
+#secondsection div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+#secondsection h2,
+p,
+img {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  color: rgb(0, 0, 0);
+  width: auto;
+}
+#devicesicon,
+#coffeeicon,
+#refuelicon {
+  width: 80px;
+  margin: auto;
+}
+#secondsection h2 {
+  font-weight: 200;
+  font-size: 27px;
+  width: 86%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+#secondsection p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  font-size: 15px;
+  height: 300px;
+}
+footer p {
+  align-items: center;
+  align-self: center;
+}
+#twittericon {
+  width: 15px;
+}
+#facebookicon {
+  width: 15px;
+}
+#instagramicon {
+  width: 15px;
 }
 /**
  * Add your custom styles below
