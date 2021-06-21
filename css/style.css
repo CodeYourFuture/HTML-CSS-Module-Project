@@ -16,9 +16,9 @@ nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 80%;
-  position: relative;
-  left: -20px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 nav li {
   display: inline;
@@ -42,6 +42,7 @@ nav li {
 #startsection div {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 #startsection h2,
 p,
@@ -50,16 +51,20 @@ button {
   text-align: center;
   align-self: center;
   color: white;
-  width: 66%;
 }
 #startsection h2 {
-  font-size: 2.5em;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-size: 40px;
   font-weight: 200;
   letter-spacing: 1px;
   margin-bottom: 0;
   margin-top: 10px;
+  width: 30%;
 }
 #startsection p {
+  justify-self: center;
   font-size: 1.4em;
   font-weight: 100;
   opacity: 80%;
@@ -168,5 +173,12 @@ footer div {
   opacity: 50%;
 }
 
+@media screen and (max-device-width: 211px) {
+  #startsection h2 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+/* tiny VERSION */
 @media screen (min-width: 376px) {
 }
