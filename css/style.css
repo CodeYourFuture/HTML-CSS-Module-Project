@@ -1,19 +1,182 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 100;
+  text-align: center;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/**Header**/
 
+header {
+  padding-top: 1rem;
+}
+div.nav-layout {
+  display: flex;
+  justify-content: space-between;
+}
 
+.logo {
+  margin-left: 1rem;
+  width: 1.5rem;
+}
+
+/*Nav Bar*/
+
+nav ul {
+  margin-right: 1rem;
+  text-align: right;
+  display: none;
+}
+
+#burger-menu {
+  margin-right: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav a {
+  color: rgb(150, 148, 148);
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#highlighted {
+  color: rgb(71, 71, 71);
+}
+
+nav a:hover,
+nav a:focus,
+#highlighted:hover,
+#highlighted:focus {
+  color: rgb(252, 111, 30);
+}
+
+/**First section**/
+
+section.intro {
+  background-image: url("../img/first-background.jpg");
+  background-position-x: 35rem;
+  background-size: cover;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 5rem;
+}
+
+button {
+  background-color: rgb(252, 111, 30);
+  border: none;
+  border-radius: 3px;
+  padding: 0.8rem 1rem;
+}
+
+button:hover,
+button:focus {
+  padding: 1rem 1.2rem;
+}
+
+/*text*/
+
+.intro h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+.intro p {
+  color: rgb(224, 219, 219);
+  font-size: 1.5rem;
+}
+
+/**Second section**/
+
+.advantages h2 {
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin-bottom: 3.5rem;
+  margin-top: 3rem;
+}
+
+.advantages img {
+  width: 6rem;
+}
+
+.advantages p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.advantages p:last-of-type {
+  margin-bottom: 6rem;
+}
+
+/**Footer**/
+
+footer {
+  border-top: 1px solid rgb(204, 200, 200);
+  margin: 0 auto;
+  width: 80%;
+}
+
+footer img {
+  width: 1rem;
+  border: 1px solid rgb(204, 200, 200);
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  padding: 0.5rem;
+}
+
+footer img:last-child {
+  margin: 0;
+}
+
+footer p:first-child {
+  font-weight: 400;
+}
+
+footer p:last-child {
+  color: rgb(179, 174, 174);
+  font-size: 0.8rem;
+}
+
+/***Media queries***/
+
+@media (min-width: 550px) {
+  /*background image*/
+  section.intro {
+    background-position: center;
+  }
+}
+
+@media (min-width: 900px) {
+  /*Menu*/
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 3rem;
+  }
+
+  #burger-menu {
+    display: none;
+  }
+
+  /*Second section*/
+  .section-flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
