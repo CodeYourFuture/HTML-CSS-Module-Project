@@ -27,15 +27,17 @@ div.nav-layout {
 nav ul {
   margin-right: 1rem;
   text-align: right;
+  list-style: none;
   display: none;
 }
 
-#burger-menu {
-  margin-right: 1rem;
+nav li {
+  margin-top: 1.5rem;
 }
 
-ul {
-  list-style: none;
+#burger-menu-icon {
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
 nav a {
@@ -170,7 +172,7 @@ footer p:last-child {
     gap: 3rem;
   }
 
-  #burger-menu {
+  #burger-menu-icon {
     display: none;
   }
 
