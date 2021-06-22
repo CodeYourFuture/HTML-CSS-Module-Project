@@ -99,10 +99,10 @@ h1 {
 
 h2 {
   text-align: center;
-  position: absolute;
   width: 100%;
   font-size: 3rem;
   padding-top: 7rem;
+  font-weight: normal;
 }
 
 .image__center {
@@ -110,17 +110,19 @@ h2 {
   justify-content: space-around;
   padding-top: 14rem;
   align-items: center;
-  
 }
 
-.image__center div{
+
+.image__center div img {
   width: 170px;
   height: 170px;
-  
-
-
 }
 
+.image__center div  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .image__center p {
   padding-top: 2rem;
   font-size: 2rem;
@@ -147,5 +149,6 @@ footer {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  border: solid 2px rgb(204, 193, 193);
 }
 
