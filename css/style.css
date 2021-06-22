@@ -6,6 +6,168 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.navicon {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.navicon img{
+    margin-top: 30px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+}
+
+.navicon .navtop a{
+    text-align: right;
+}
+
+.navtop a{
+    color: rgb(219, 218, 218);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    
+}
+
+@media (max-width:768px){
+    .navtop a{
+        font-size: 10px;
+        margin-right: 10px;
+        
+}
+}
+
+
+ .navtop a:hover{
+    color: coral;
+    transition: 0.5s ;
+}
+
+.navtop a:first-child{
+    color: black;
+} 
+
+@media (max-width:768px){
+    .navtop{ 
+        
+}}
+.top{
+    background-image: url("../img/first-background.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    
+}
+    
+    
+.top h1{
+    color: white;
+    font-weight: lighter;
+    font-size: 60px;
+}
+@media (max-width:768px){
+    .top h1{
+        font-size: 30px;
+    }
+}
+
+
+.top h2{
+    color: white;
+    font-weight:lighter;
+    font-size: 40px;
+    
+}
+
+@media (max-width:768px){
+    .top h2{
+        font-size: 20px;
+    }
+}
+
+
+.top a{
+    color: #fff;
+    text-decoration: none;
+    padding: 24px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(252, 102, 42);
+    border: 2px solid rgb(252, 102, 42)
+}
+
+@media (max-width:768px){
+    .top a{
+        font-size: 15px;
+        padding: 14px;
+    }
+}
+
+.second h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-top: 150px;
+}
+
+@media (max-width:768px){
+    .second h1{
+        font-size: 30px;
+    }
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    border-bottom: solid 2px rgb(230, 225, 225);
+    width: 80%;
+   
+}
+.social h2{
+    font-weight:lighter;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+    
+}
+
+@media (max-width:768px){
+    .social h2{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+footer h3{
+    text-align: center;
+    font-weight:inherit;
+    font-size: 20px;
+}
+
+.socialicon{
+    text-align: center;
+    
+}
+
+.socialicon a{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+    
+
 /**
  * Add your custom styles below
  * 
