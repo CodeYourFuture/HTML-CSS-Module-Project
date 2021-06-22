@@ -6,26 +6,34 @@ body {
 }
 
 nav {
-  height: 50px;
+  height: 55px;
   background-color: white;
   display: block;
   width: 100%;
 }
-nav ul {
+#navcontain {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+nav ul {
+  display: none;
 }
 nav li {
-  display: inline;
+  display: none;
 }
 #karmalogo {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+}
+#menuhamburgericon {
+  width: 30px;
+  height: 30px;
 }
 #startsection {
   background-image: url(../img/first-background.jpg);
@@ -85,7 +93,9 @@ button {
   width: 130px;
 }
 /*  second section */
-
+#secondsectiondesk {
+  display: none;
+}
 #secondsection {
   background-color: whitesmoke;
   height: 740px;
@@ -102,13 +112,14 @@ button {
   width: 90%;
 }
 #secondsection h2,
-p,
-img {
+#secondsection p,
+#secondsection img {
   display: flex;
   text-align: center;
   align-self: center;
   color: rgb(0, 0, 0);
-  width: auto;
+
+  justify-content: center;
 }
 #devicesicon,
 #coffeeicon,
@@ -119,7 +130,7 @@ img {
 #secondsection h2 {
   font-weight: 200;
   font-size: 27px;
-  width: 86%;
+  width: 100%;
   margin-top: 40px;
   margin-bottom: 50px;
 }
@@ -142,6 +153,7 @@ footer p {
   align-items: center;
   align-self: center;
   font-size: 14px;
+  color: black;
 }
 footer div {
   display: flex;
@@ -184,12 +196,44 @@ footer div {
   /*nav*/
   nav {
     height: 80px;
+    display: flex;
   }
   #karmalogo {
+    display: inline;
+    position: relative;
     width: 65px;
     height: 65px;
+    padding-left: 90px;
   }
-
+  #menuhamburgericon {
+    display: none;
+  }
+  #navcontain {
+    width: 100%;
+  }
+  nav li {
+    display: inline;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  nav a:hover {
+    color: orange;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  /*mainsection*/
   #startsection {
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -203,10 +247,86 @@ footer div {
   #startsection p {
     font-size: 2em;
     letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   #learnmorebutton {
     padding-top: 2px;
     padding-bottom: 2px;
   }
-  /*mainsection*/
+  /*second section*/
+  #secondsection {
+    display: none;
+  }
+  #secondsectiondesk {
+    background-color: whitesmoke;
+    height: 740px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #secondsectiondesk h2 {
+    font-weight: 200;
+    font-size: 57px;
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: 60px;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+  }
+  #imgcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /*this spaces things vertically*/
+  }
+  #textcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /*this spaces things vertically*/
+  }
+  #devicesicon,
+  #coffeeicon,
+  #refuelicon {
+    width: 200px;
+  }
+  #secondsectiondesk div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #secondsectiondesk p {
+    font-weight: 400;
+    font-size: 38px;
+    text-align: center;
+    color: black;
+  }
+  footer {
+    height: 390px;
+  }
+  footer p {
+    font-size: 34px;
+  }
+  #socialicons {
+    justify-content: space-evenly;
+    width: 30%;
+  }
+  #twittericon,
+  #facebookicon,
+  #instagramicon {
+    width: 30px;
+  }
+  #copyright {
+    color: grey;
+    font-size: 30px;
+    opacity: 50%;
+  }
 }
