@@ -1,9 +1,29 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    width: 100%;
+}
+button {
+    padding: 1rem 1.5rem;
+    letter-spacing: .09rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    background-color: #E74320;
+}
+button:hover,
+button:focus {
+    box-shadow: -1px -1px 2px rgb(253, 250, 250),
+                1px 1px 2px rgb(253, 250, 250);
 }
 
 /**
@@ -16,4 +36,682 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Navigation */
 
+nav {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(253, 250, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width: 40%;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.burger {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: auto;
+    cursor: pointer;
+    display: none;
+}
+.burger > div {
+    height: 2px;
+    width: 16px;
+    margin: 1.5px;
+    background-color: #363636;
+    border-radius: 10px;
+}
+.nav-links {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #494949;
+    font-weight: 400;
+    transition: all .2s ease-out;
+}
+.nav-links span {
+    color: #0f0000;
+    font-weight: 500;
+}
+.nav-links a:hover {
+    color: #E74320;
+}
+
+
+main {
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: .1rem;
+}
+main h1 {
+    font-weight: 500;
+    font-size: 3.1rem;
+}
+main p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+article h2 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin: 5rem auto;
+}
+article .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.products .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.products img {
+    height: 10rem;
+}
+.products h3 {
+    font-weight: 500;
+    margin-top: 2rem;  
+}
+
+section {
+    margin-top: 10%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+section .additional-image {
+    background-image: url("../additional/feature-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+}
+section .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1e3e0;
+}
+.content p {
+    font-size: 2.2rem;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+footer {
+    height: 20%;
+    margin-top: 7rem;
+    border-top: 1px solid #dbd3d3;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+footer img {
+    background-color: transparent;
+    height: 2rem;
+    margin: 1rem;
+    padding: .5rem;
+    border: 1px solid #8d8d8d;
+    border-radius: 50%;
+}
+footer h4 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1024px) {
+    button {
+        font-weight: 400;
+    }
+    nav {
+        height: 8vh;
+    }
+    main {
+        height: 50%;
+    }
+    main h1 {
+        font-weight: 300;
+    }
+    main p {
+        font-weight: 300;
+    }
+    article {
+        height: 35%;
+    }
+    article h2 {
+        font-weight: 400;
+        margin-top: 2rem;
+    }
+    .products .product {
+        margin-top: -1rem;
+    }
+    .products h3 {
+        font-weight: 400;
+        font-size: 1.5rem;    
+    }
+    section {
+        height: 30%;
+    }
+    footer {
+        height: 12%;
+    }
+}
+@media screen and (max-width:768px) {
+    button {
+        padding: .8rem 1.2rem;
+        letter-spacing: .05rem;
+        font-size: 1.3rem;   
+    }
+    .logo {
+       width: 35%;
+    }
+    .nav-links {
+       width: 55%;
+    }
+    main {
+       height: 40%;
+    }
+    main h1 {
+       font-weight: 400;
+       font-size: 2.5rem;
+    }
+    main p {
+       font-size: 1.6rem;
+       margin-bottom: 2rem;
+    }
+    article {
+       height: 40%;
+       margin-top: 1rem;
+    }
+    article h2 {
+       font-size: 2rem;
+       font-weight: 400;
+    }
+    .products .product {
+       width: 32%;
+    }
+    .products img {
+       height: 7rem;
+    }
+    .products h3 {
+       font-weight: 400;
+       margin-top: 2rem;  
+    }
+
+    section {
+       margin-top: 7%;
+       height: 30%;
+    }
+    section .content {
+       width: 50%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: #f1e3e0;
+    }
+    .content p {
+       font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:580px) {
+    button {
+        padding: .6rem;
+        font-size: 1.2rem;   
+    }
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(253, 250, 250);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        clip-path: circle(100px at 95% -25%);
+       -webkit-clip-path: circle(100px at 95% -25%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 95% -25%);
+        -webkit-clip-path: circle(1000px at 95% -25%);
+        pointer-events: all;
+    }
+    .burger {
+        display: flex;
+        width: 50%;
+    }
+    .burger:focus {
+        outline: none;
+    }
+    main {
+        height: 57%;
+        background-position-x: -24rem;
+    }
+    main h1 {
+        font-weight: 100;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    main p {
+        font-weight: 100;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article {
+        height: 100%;
+        margin-top: -2rem;
+    }
+    article h2 {
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    article .products {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .products .product {
+        width: 100%;
+    }
+    .products img {
+        height: 5rem;
+    }
+    .products h3 {
+        font-weight: 300;
+        margin-top: 2rem;
+        margin-bottom: 4rem; 
+        font-size: 1rem;   
+     }
+     section {
+         margin-top: -3rem;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+     }
+     section .additional-image {
+         height: 40%;
+         width: 100%;   
+     }
+    section .content {
+        height: 30%;
+        width: 100%;
+        margin-top: -3rem;
+    }
+    .content p {
+        font-size: 1.5rem;
+    }
+     
+    footer {
+        height: 15%;
+        margin-top: -11rem;
+    }
+    footer h4 {
+        font-weight: 400;
+    }
+}
+   
+/*
+.nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(245, 244, 238);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    padding: 1rem;
+}
+.nav-links.open {
+    clip-path: circle(1000px at 95% -20%);
+    -webkit-clip-path: circle(1000px at 95% -20%);
+    pointer-events: all;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #3d3d3d;
+    transition: .3s all ease-out;
+}
+.nav-links li:first-child {
+    color: #0f0000;
+    font-weight: 500;
+}
+.nav-links li a:hover {
+    
+}
+
+
+/* 
+
+main {
+    background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}   
+main h1 {
+    font-weight: 100;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    letter-spacing: .1rem;
+}
+main p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 50;
+    letter-spacing: .06rem;
+    font-size: 1.3rem;
+}
+button {
+   background-color: #e95e3e;
+   padding: .6rem;
+   border: none;
+   border-radius: 5px;
+   margin-top: 2rem;
+   color: #fff;
+}
+button:hover {
+    background-color: coral;
+}
+
+/* Article 
+
+article {
+    text-align: center;
+    margin: 5rem 2rem;
+}
+article h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+article h3 {
+    font-weight: 500;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.products img {
+    height: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+.products .product {
+    width: 33.33%;
+}
+
+/* Section 
+
+section {
+    object-position: center;
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .additional-image {
+    background-image: url("../additional/feature-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+section .content {
+    text-align: center;
+}
+section .content p {
+    height: 25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 50;
+    letter-spacing: .06rem;
+    font-size: 1.3rem; 
+    margin-top: 2rem;   
+}
+
+/* Footer 
+
+footer {
+    height: 15vh;
+    margin-top: 7rem;
+    border-top: 1px solid #dbd3d3;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+footer img {
+    background-color: transparent;
+    height: 2rem;
+    margin: 1rem;
+    padding: .5rem;
+    border: 1px solid #8d8d8d;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+    .logo {
+        width: 50%;
+        position: absolute;
+        left: 5%;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center  
+    }
+    .nav-links {
+        position: fixed;
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin-right: auto;
+        top: 4%;
+        right: 5%;
+        transform: translate(-4%, -52%);
+        clip-path: none;
+        -webkit-clip-path: none;
+        background-size: cover;
+    }
+    .nav-links a{
+        display: flex;
+    }
+    main h1 {
+        flex-direction: row;
+    }
+    main h1 span {
+        margin: .5rem;
+    }
+    main p {
+        flex-direction: row;
+        font-size: x-large;
+    }
+    main p span {
+        margin: .5rem;
+    }
+    article .products {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    section {
+        width: 100%;
+        height: 23rem;
+        display: flex;
+        flex-direction: row;
+    }
+    section img {
+        width: 100%;
+        height: 100%;
+    }
+    section .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #f1e3e0;
+        font-weight: 400;
+    }
+    section .content p {
+        font-style: italic;
+    }   
+}
+@media screen and (min-width:1024px) {
+    nav {
+        height: 10vh;
+    }
+    main {
+        height: 70%;
+    }
+    .logo {
+        width: 45%;
+        margin-left: auto;
+    }
+    .nav-links {
+        width: 45%;
+        margin-right: auto;
+        display: flex;
+    }
+    section {
+        height: 70%;
+        width: 100%;
+    }
+    section .additional-image {
+        width: 100%;
+        object-fit: cover;
+        object-position: right;
+    }
+        
+}
+@media screen and (min-width:1300px) {
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(73, 35, 22);
+    }
+
+    footer {
+        height: 35vh;
+        padding-top: 6rem;
+    }
+
+    footer img {
+        height: 1rem;
+        background-color: transparent;
+        height: 3rem;
+        margin: 2rem;
+        padding: 1rem;
+        border: 1px solid #8d8d8d;
+        border-radius: 50%;
+    }
+}
