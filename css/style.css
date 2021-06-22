@@ -1,9 +1,6 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+cfa7:/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */ body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +13,74 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-
+/*Header flex-box*/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*Image box height*/
+header img {
+  height: 3rem;
+  padding: 1.5rem 1.5rem 0.5rem 0.5rem;
+  margin: 1rem;
+}
+/*Menu flex-box*/
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 44rem;
+}
+/*Menu items*/
+nav ul a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: rgb(36, 33, 36);
+}
+/*Hover colour*/
+nav ul a:hover {
+  color: red;
+}
+/*Meet Karma Strong*/
+li:first-child a {
+  font-weight: 700;
+}
+/*Karma Image*/
+hero {
+  display: flex;
+  justify-content: center;
+  background-image: ;
+}
+/*hero container*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+/*hero heading 1*/
+.hero h1 {
+  position: absolute;
+  font-weight: 100;
+  font-size: 3rem;
+  color: #ffffff;
+}
+/*hero heading 2*/
+.hero h2 {
+  position: absolute;
+  margin-top: 12rem;
+  font-weight: lighter;
+  color: #ffffff;
+}
+/*hero button*/
+.hero button {
+  position: absolute;
+  margin-top: 20rem;
+  background-color: rgba(231, 98, 9, 0.815);
+  padding: 1.5rem 2rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.255rem;
+}
