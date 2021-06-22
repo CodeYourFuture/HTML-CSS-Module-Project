@@ -192,7 +192,7 @@ footer div {
   }
 }
 /* Deskptop VERSION */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 935px) {
   /*nav*/
   nav {
     height: 80px;
@@ -209,7 +209,7 @@ footer div {
     display: none;
   }
   #navcontain {
-    width: 100%;
+    width: 25%;
   }
   nav li {
     display: inline;
@@ -228,9 +228,10 @@ footer div {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 40px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 70px;
     width: 100%;
   }
   /*mainsection*/
@@ -328,5 +329,22 @@ footer div {
     color: grey;
     font-size: 30px;
     opacity: 50%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 934px) {
+  #navcontain {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+  #menuhamburgericon {
+    display: block;
+  }
+  #startsection {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
   }
 }
