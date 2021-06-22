@@ -4,7 +4,6 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
 nav {
   height: 55px;
   background-color: white;
@@ -37,7 +36,7 @@ nav li {
 }
 #startsection {
   background-image: url(../img/first-background.jpg);
-  height: 425px;
+  height: 455px;
   width: 100%;
   background-position: -390px 0;
   background-repeat: no-repeat;
@@ -184,15 +183,16 @@ footer div {
   font-size: 12px;
   opacity: 50%;
 }
+
 /* tiny VERSION */
-@media (max-device-width: 211px) {
+@media (max-device-width: 219px) {
   #startsection h2 {
     font-size: 22px;
     font-weight: 500;
   }
 }
 /* Deskptop VERSION */
-@media (min-width: 376px) {
+@media only screen and (min-width: 601px) {
   /*nav*/
   nav {
     height: 80px;
