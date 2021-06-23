@@ -1,19 +1,292 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: #525050;
+}
+html{    
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+/* only class*/
+ .navbar-right-list .bold a{
+     color:#363333;
+     font-weight: 500;
+ }
+
+/* navbar*/
+#navbar{
+    min-width: 1500px;
+    margin: 0 auto;
+    min-height: 80px;
+}
+.navbar-container{
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.navbar-left img{
+    width: 35%;
+}
+.navbar-right{
+    width: 1000px;
+}
+.navbar-right-list{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-right-list li{
+    list-style: none;
+}
+.navbar-right-list li a{
+    text-decoration: none;
+    color:#6b6b6b;
+    font-weight: 400;
+    line-height: 0;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: all ease 0.8s;
+    padding: 15px 0 15px 15px;
+
+}
+.navbar-right-list li a:hover{
+    color:#e6541b;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/*header*/
+.container-header{
+    background: url(/img/first-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+.content-header{
+    padding-top: 300px;
+    text-align: center;
+}
+.content-header h1{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: .3;
+}
+.content-header p{
+    font-size: 2.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+.content-header a{
+text-decoration: none;
+background: #f74c0b;
+color: #fff;
+padding: 15px 25px;
+border-radius: 5px;
+letter-spacing: 0.8px;
+transition:  all ease 1s;
+} 
+.content-header a:hover{
+background:#fff;
+color:#f74c0b;
+}   
 
+/*content pag*/
+#container-section{
+    margin-top:200px;
+}
+.content-section{
+    margin: 0 auto;
+    width: 1500px;
+    text-align: center;
+    height: 500px;
+}
+.content-section h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 0 0 70px 0;
+}
+.description-section-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.description-section img{
+    height: 150px;
+}
+.description-section p{
+    font-size: 24px;
+    margin-top: 40px;
+    letter-spacing: .3px;
+}
+/*content pag banner*/
+.banner-container{
+    width: 100%;
+    max-height: 550px;
+    display: flex;
+    background: #e8d1c6;
+}
+.banner-container-img{
+    min-width: 750px;
+    min-height: 550px;
+}
+.banner-container-img img{
+    min-width: 750px;
+    min-height: 550px;
+}
+.banner-content{
+    margin: 0 auto;
+    max-width: 57%;
+    text-align: center;
+    padding: 100px;
+}
+.banner-content h1{
+    max-width: 500px;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+.banner-content a{
+    text-decoration: none;
+    background: #f74c0b;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    letter-spacing: 0.8px;
+    transition:  all ease 1s;
+}
+.banner-content a:hover{
+    background:#fff;
+    color:#f74c0b;
+}
 
+/*footer*/
+#footer{
+    min-height: 200px;
+}
+.container-footer{
+    max-width: 300px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px auto;
+    background: #ffff;
+    text-align: center;
+}
+.content-footer2 p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(102, 101, 101);
+}
+.content-footer-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-footer p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.content-footer-icon ul li{
+    list-style: none;
+}
+.content-footer-icon img{
+    max-width: 30px;
+}
+input{
+    display:none;
+}
+label{
+    display: none;
+}
+
+@media (max-width: 980px){
+    header{
+        max-width: 980px;
+        z-index:2
+    }
+    main{
+        max-width: 980px;
+    }
+    
+    #container-section {
+        margin-top: 80px;
+    }
+    .content-section{
+        max-width: 980px;
+        height: 0%;
+    }
+    .content-section{
+        
+    }
+    .description-section-icon{
+        flex-direction: column;
+    }
+    .description-section{
+        margin-bottom: 80px;
+    }
+    .banner-container{
+        max-width: 980px;
+        max-height: 0%;
+        flex-direction: column;
+    }
+    .banner-container-img img{
+        min-width: 100%;
+    }
+    #navbar{
+        min-width: 0%;
+    }
+    
+    .navbar-right-list{
+        display: none;
+    }
+    .navbar-container{
+        width: 90vw;
+    }
+    .navbar-right{
+        z-index: 1;
+        width: 100vw;
+        }
+    input:checked  ~ .navbar-right-list{
+        display: block;
+        z-index: 1;
+        background: rgb(255, 255, 255);
+        margin-top: 800px;
+        width: 100%;
+        height: 100vh;
+        background-position: left center;
+        padding: 50px;
+      }
+      input:checked  ~ .navbar-right-list li {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 30px;
+        line-height: 50px;
+        border-bottom: 2px solid rgb(153, 151, 151);
+    }
+    input:checked  ~ .navbar-right-list li a{
+        font-size: 24px;
+        padding: 20 0px;
+    }
+    label{
+        font-size: 25px;
+        display: block;
+        color: rgb(153, 151, 151);
+        margin-top: 10px;
+        text-align: right;
+     }
+}
