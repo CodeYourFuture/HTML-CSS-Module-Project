@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
 
 /**
@@ -17,8 +18,12 @@ body {
  */
 
 .container {
-    max-width: 80%;
     margin: 0 auto;
+}
+
+h2, h3 {
+    font-weight: 300;
+
 }
 /*Header*/
 
@@ -27,31 +32,104 @@ body {
 }
 
 .logo {
-    width: 5em;
+    width: 2em;
+    padding-left: 2em;
 }
 
 nav {
     display: flex;
+    padding: 1em 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 0 1em;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:hover {
+    color:#F15B2A;
 }
 
 /*Jumbotron*/
 
+h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+    opacity: 0.9;
+}
+
  .jumbotron {
-    background-image: url("../img/first-background.jpg");
-    color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     background-image: url("../img/first-background.jpg");
+     background-position: center;
+     background-size: cover;
+     padding: 50px 40px;
+     color: #fff;    
+ }
+
+ .jumbotron p {
+     font-weight: 100;
+     font-size: 120%;
+     opacity: 0.9;
+ }
+
+ .jumbotron button {
+     background-color: #F15B2A;
+     max-width: max-content;
+     border: none;
+     border-radius: 3px;
+     padding: 0.8em;
  }
  /*Main content*/
 
- .icons {
-     display: flex;    
+ article {
+     padding: 2em 0;
  }
+
+ 
+
+ .icons {
+     display: flex;
+     flex-direction: column;  
+     align-items: center;
+     padding:2em 0;
+ }
+ .icon {
+     padding: 1.5em 0;
+ }
+
+ .icon img {
+     max-width: 6em;
+ }
+
+.icon-title {
+    font-size: 120%;
+}
 
  /*footer*/
 
- .socialMedia {
+ footer {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .social-media {
      display: flex;
  }
- .socialMedia img{
+ .social-media img{
      width:1em;
      border: 0.15em solid #bebebe;
      border-radius:50%;
@@ -65,3 +143,42 @@ nav {
      color:#bebebe
  }
  
+ /*Media Queries*/
+
+ @media screen and (min-width: 700px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .logo {
+        padding-left: 4em;
+    }
+
+    .jumbotron {
+        padding: 100px 50px;
+    }
+
+    h2,
+    h3,
+    .icon-title {
+        font-size: 200%;
+    }
+
+    .icons {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-top: 2em;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    .icon img {
+        max-width: 8em;
+    }
+    
+    
+ }
