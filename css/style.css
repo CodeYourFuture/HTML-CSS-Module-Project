@@ -29,12 +29,18 @@ body {
  }
 
  ul li {
-   padding: 0 1em;
+   padding: 1em 1rem;
+   font-weight: bold;
+ }
+
+ li :focus, :hover {
+   color: coral;
  }
  
  .logo {
-    width: 2rem;
-    padding-left: 5rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem 2rem 1rem 5rem;
  }
 
  /* Main */
