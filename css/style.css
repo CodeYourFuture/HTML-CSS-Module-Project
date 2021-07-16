@@ -33,7 +33,8 @@ body {
    font-weight: bold;
  }
 
- li :focus, :hover {
+ li :focus, 
+ li :hover {
    color: coral;
  }
  
@@ -43,8 +44,43 @@ body {
     padding: 1rem 2rem 1rem 5rem;
  }
 
- /* Main */
+ /* Main Section */
 
+ /* Article Part */
+
+ .hero {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-image: url("/img/first-background.jpg");
+   background-size: cover;
+   padding: 12rem;
+ }
+
+ .hero h1 {
+   color: white;
+   font-weight: 200;
+   font-size: 300%;
+ }
+
+ .hero p {
+   color: white;
+   font-weight: 100;
+   font-size: 150%;
+ }
+
+ .hero button {
+   background-color: coral;
+   color: cornsilk;
+   border: none;
+   border-radius: 5px;
+   padding: 0.8rem 2rem;
+ }
+
+ /* Section Part */
+
+ 
 
  /* Footer */
 
