@@ -1,9 +1,35 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+html{
+    font-size: 10px;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+}
+
+#logo{
+    width: 2.5rem;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+}
+
+.nav-link{
+    margin:1.2rem;
+    color: #8C919A;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #E1643B;
+}
+.nav-link:first-child{
+    color: #4D5057;
 }
 
 /**
