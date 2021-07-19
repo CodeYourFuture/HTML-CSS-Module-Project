@@ -96,11 +96,47 @@ nav{
 }
 
 .icon{
-    width:30%;
+    width:40%;
 }
 
 .icon-description{
     font-size: 2rem;
+}
+
+hr{
+    margin: 0 10rem;
+}
+
+/* ------------------------------------------Footer Styles------------------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-paragraph{
+    color: #0F0F0F;
+    font-size: 1.8rem;
+    margin: 3rem 0 2rem 0;
+}
+
+.social-icons-container{
+    display: flex;
+    width: max-content;
+}
+
+.social-icons{
+    width: 1.8rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 0.2rem solid #c9cbcf86;
+    border-radius: 100%;
+}
+
+.copyright-paragraph{
+    color: #c5c7cc;
+    margin-bottom: 6rem;
 }
 
 
