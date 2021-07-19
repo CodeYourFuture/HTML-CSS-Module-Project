@@ -1,19 +1,76 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  padding: 0 100px;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.header__logo {
+  height: 70%;
+}
 
+.header__navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
 
+.header__navbar ul li:first-child {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: orangered;
+}
+/* ******************************************************************* */
+.hero {
+  height: 90vh;
+  background-image: url(../img/first-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__content {
+  color: white;
+  text-align: center;
+}
+.hero__content h1 {
+  font-size: 5rem;
+  font-weight: lighter;
+  padding: 1.2rem 0;
+}
+.hero__content p {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+.hero__button {
+  margin-top: 5rem;
+  padding: 1rem 1.2rem;
+  color: rgb(255, 250, 249);
+  background-color: orangered;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  text-transform: lowercase;
+}
