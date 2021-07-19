@@ -16,21 +16,67 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* ----------------------------------------------------------------------------------------------------------------------------------------- */
 
+ /* This is for the nav bar */
 .head-bar-container .nav-bar ul {
-    display: block;
+    /* width being 80% allows me to put the logo on the same line 
+    then floating it to the right makes it give the logo space*/
+    display: flex;
+    width: 75%;
+    float: right;
     margin: 0;
-    position: relative;
-    padding-left: ;
+    justify-content: right;
+    padding-right: 3em;
     list-style: none;
-    background-color: aqua;
-    width: 100%;
+    background-color: white;
 }
 .head-bar-container .nav-bar ul li {
     display: inline-block;
 }
-
 .head-bar-container .nav-bar ul li a {
     display: block;
     padding: 1em;
+    color: grey;
+    text-decoration: none;
+}
+.head-bar-container .nav-bar ul li a:hover {
+    color: orange;
+}
+#nav-first-li {
+    color: black;
+}
+.karma-logo {
+    width: 1.5em;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5;
+}
+
+
+/* this is the introduction block */
+.introduction-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+.introduction-container #first-background-img {
+    max-height: 600px;
+    width: 100%;
+}
+.introduction-container .centered-intro {
+    /* this code was mostly copied from a tutorial. */
+
+    /* it controls the text in the center of the image
+    and allows it to be displayed over the top and be
+    positioned where I like. */
+    font-size: 2.5em;
+    position: absolute;
+    vertical-align: inherit center;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);    
 }
