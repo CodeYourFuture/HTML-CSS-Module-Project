@@ -10,10 +10,51 @@
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+    <header class="header">
+        <img class="header__img" src="./img/karma-logo.svg">
+        <nav class="header__navbar">
+            <ul>
+                <li><a class="nav-link href= "#" ></a></li>
+                <li><a class="nav-link href= "#" ></a></li>
+                <li><a class="nav-link href= "#" ></a></li>
+                <li><a class="nav-link href= "#" ></a></li>
+                <li><a class="nav-link href= "#" ></a></li>
+                <li><a class="nav-link href= "#" ></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="./img/first-background.jpg" class="hero__img">
+            <div class="hero__content">
+                <h1>Introducing Karma</h1>
+                <p>Bring Wifi with you, everywhere you go.</p>
+                <button classs="hero__button">learn more</button>
+            </div>
+        </section>
+        <section class="dashboard">
+            <h2 class="dashboard__title">Everyone needs a little karma</h2>
+            <div class="dashboard__container">
+                <div class="dashboard__items">
+                    <img src="./img/icon-devices.svg" alt="devices" class="dashboard__img">
+                    <h4>internet for all devices</h4>
+                </div>
+                <div class="dashboard__items">
+                   <img src="./img/icon-coffee.svg" alt="coffee" class="dashboard__img">
+                   <h4>Boost your productivity</h4> 
+                </div>
+                <div class="dashboard__items">
+                    <img src="./img/icon-refill.svg" alt="refill" class="dashboard__img">
+                    <h4>Pay as you go</h4>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Join us on</p>
+            <img src="./img/twitter-icon.svg" alt="twitter"><img src="./img/facebook-icon.svg" alt="facebook"><img src="./img/instagram-icon.svg" alt="instagram">
+            <p> © Karma mobility inc.</p>
+        </footer>
+    </main>
 
 </body>
 </html>
