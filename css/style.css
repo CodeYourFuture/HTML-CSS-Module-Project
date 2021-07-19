@@ -22,7 +22,7 @@ body {
  }
 
  nav ul {
-   list-style: none;
+   list-style-type: none;
    display: flex;
    justify-content: flex-end;
    width: 50em;
@@ -80,8 +80,44 @@ body {
 
  /* Section Part */
 
- 
+ section h2 {
+   text-align: center;
+   color: black;
+   font-weight: 150;
+   font-size: 200%;
+ }
+
+.icons {
+   display: flex;
+   flex-flow: row;
+   align-items: center;
+   padding: 2rem 0 2rem 0;
+   justify-content: space-around;
+}
+
+.icon {
+  max-width: 6rem;
+
+}
+
+.caption {
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+}
 
  /* Footer */
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.social-media {
+  display: flex;
+}
+
+.social-media img {
+  width: 0.8rem;
+  padding: 0.5rem;
+}
