@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+/* **************************************** Header ************************************** */
 .header {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -41,7 +42,7 @@ body {
 .nav-link:hover {
   color: orangered;
 }
-/* ******************************************************************* */
+/* **************************************** Hero ************************************** */
 .hero {
   height: 90vh;
   background-image: url(../img/first-background.jpg);
@@ -73,4 +74,33 @@ body {
   border: 1px solid orangered;
   border-radius: 10px;
   text-transform: lowercase;
+}
+
+/* **************************************** Dashboard ************************************** */
+.dashboard {
+  padding: 5rem;
+  text-align: center;
+  height: 90vh;
+}
+.dashboard h2 {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+.dashboard__container {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 40%;
+}
+.dashboard__items {
+  height: 70%;
+}
+.dashboard__img {
+  height: 100%;
+}
+.dashboard__container h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
