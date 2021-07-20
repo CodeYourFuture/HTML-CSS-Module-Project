@@ -25,8 +25,17 @@ body {
   padding: 0 100px;
 }
 
+.header__logo-wrapper {
+  flex: 1;
+  text-align: left;
+}
 .header__logo {
-  max-height: 70%;
+  height: auto;
+  max-width: 50px;
+  min-width: 30px;
+}
+.header__navbar {
+  flex: 1;
 }
 
 .header__navbar ul {
@@ -34,7 +43,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 800px;
 }
 
 .header__navbar ul li:first-child {
@@ -146,3 +154,5 @@ body {
 .footer__content p:last-child {
   padding-top: 2.5rem;
 }
+
+/* ****************************************Media************************************** */
