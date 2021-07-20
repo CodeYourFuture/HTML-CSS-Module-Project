@@ -42,5 +42,114 @@ header a{
     color: black;   
 }
 header a:hover{
-    color: tomato;
+    color: #ee2d0b;
 }
+button{
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 20px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color:rgb(216, 45, 15) ;
+    border: transparent ;
+    color: #fff;
+     }
+
+
+.mainkarma {
+background-color: white;
+background-repeat: no-repeat;
+background-size:cover;
+height: 700px;
+/* background-position: ; */
+top: 100px;
+left: 100px;
+}
+.mainkarmacontainer {
+   text-align: center;
+   margin: 2px; 
+   color: #fff;
+
+   h1{
+    font-size:2.5em ;
+    font-weight:lighter;
+    padding-top:250px;
+ }
+ h2{
+    font-size: 2em;
+    font-weight: lighter;
+ }
+ .button{
+    display: flex;
+    justify-content: center; 
+ }
+     
+} 
+
+
+
+.smallkarma h3{
+   text-align: center;
+   font-size: 3em;
+   font-weight:lighter;
+}
+.imgcontainer ul{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+list-style: none;
+} 
+
+footer ul,h4,h5{
+    text-align: center;
+}
+
+footer h5{
+    color: gainsboro;
+    font-weight: lighter;
+}
+.social-icons a{
+    display:inline-block;
+    background-color:#fff;
+    margin-right:20px;
+    font-size: 20px;
+    line-height:30px;
+    width: 50px;
+    height: 20px;
+    border-radius:50%;
+    border: 2px solid whitesmoke;
+    
+}
+    
+.social-icons a.facebook{
+      color:#1877f2 ;
+  }
+.social-icons a.twitter{
+    color: #1DA1F2;
+}
+
+
+@media(max-width:700px) {
+header ul,a {
+    display: flex;
+    font-size: 5px;
+}
+header img{
+margin: auto 2px;
+}
+.mainkarmacontainer h1{
+    font-size: 1.5em;
+
+}
+h2{
+    font-size:1em ;
+}
+.smallkarma h3{
+    font-size: 1em ;
+}
+.imgcontainer ul, li{
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+
