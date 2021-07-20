@@ -16,4 +16,31 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+body {
+    margin: 30px;
+    height: 100%;
+    min-height: 100%;
+  } 
+  /* position of logo */
+header img{
+    margin: auto 60px;
+    float: left;
+    
+}
 
+header ul{
+   /* How menu should be displayed */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 70px;
+    
+    }
+header a{
+    text-decoration: none;
+    color: black;   
+}
+header a:hover{
+    color: tomato;
+}
