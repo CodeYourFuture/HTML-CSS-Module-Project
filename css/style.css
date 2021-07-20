@@ -5,35 +5,30 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0 8em 0 8em;
 }
 
 /*header*/
 header {
   text-align: center;
   width: 100%;
-  margin: 3em;
   display: flex;
-  padding: 0px;
-  margin: 3em 1em 1em 1em;
 }
 #logo {
   padding-left: 15em;
-  width: 2%; 
-  height: 2%; 
+  margin-top: 2em;
+  width: 2%;
+  height: 2%;
 }
 
 nav {
   width: 100%;
+  margin: 3em 3em 01em 1em;
 }
-nav ul {
-  padding: 0;
-  margin-right: 8em;
-  list-style: none;
-}
+
 nav li {
-  margin-bottom: 1em;
-  margin-right: 5em;
-  display: inline;
+  margin: 0 5em 1em 0;
+  list-style: none;
   float: right;
 }
 nav a {
@@ -47,22 +42,22 @@ nav a:hover {
 
 /*main*/
 
-section {
+section:first-of-type {
   background-image: url("/img/first-background.jpg");
   background-repeat: no-repeat;
-  margin: 0 7em 0 7em;
   background-size: cover;
   height: 80em;
   text-align: center;
+  width: 100%;
 }
 .info {
   color: darkgray;
   font-size: 2em;
-  padding-top: 3em;
+  padding-top: 10em;
   width: 60%;
   margin-left: 20%;
 }
-.info p:nth-child(2) {
+.info p {
   font-size: 2em;
   display: block;
   align-content: center;
@@ -71,7 +66,7 @@ section {
   color: white;
   font-weight: 95;
 }
-.info p:first-child {
+.info h1 {
   font-size: 3.5em;
   display: block;
   align-content: center;
@@ -94,7 +89,7 @@ p {
   font-weight: 95;
 }
 .container {
-  margin-top: 8em;
+  margin-top: 0em;
   display: flex;
   height: 20%;
   justify-content: space-between;
@@ -115,14 +110,18 @@ p {
 }
 
 .con p {
-  font-size: 7em;
+  font-size: 5em;
   font-weight: normal;
 }
 hr {
   width: 80%;
 }
 h2 {
+  margin-top: 3em;
+  margin-bottom: 0em;
   text-align: center;
+  font-size: 5em;
+  font-weight: 100;
 }
 
 /*footer*/
