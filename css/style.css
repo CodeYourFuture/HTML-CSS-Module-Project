@@ -23,15 +23,19 @@ body {
 
 /* Header styles */
 
+.logo {
+    width: 50px;
+}
+
 /* Container styles */
 
 .container {
-    display: flex;
+    display: inline;
 }
 
 /* Hero styles */
 
-section {
+#hero {
     width: 100%;
     height: 100vh;
 }
@@ -39,5 +43,27 @@ section {
 
 /* Main section styles */
 
+#main {
+    display: inline;
+    width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.main_items {
+    display: flex;
+    justify-content: center;
+}
+
 /* Footer styles */
 
+#footer {
+    text-align: center;
+}
+
+.social_icons {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+    width: 100px;
+}
