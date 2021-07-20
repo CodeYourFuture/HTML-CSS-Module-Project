@@ -1,9 +1,11 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+  border: 0.5px solid black;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +18,39 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  color: grey;
+}
 
+.header-container img {
+  margin: 5px 0px 0px 100px;
+  height: 60%;
+}
+
+.nav-box ul {
+  display: flex;
+  margin-right: 50px;
+}
+
+.nav-box ul li {
+  display: flex;
+  padding: 0px 15px 0px 15px;
+}
+
+.karma-bold {
+  color: black;
+  font-weight: bolder;
+}
+
+.nav-item:hover {
+  color: #f15b2a;
+}
+
+main {
+  width: 100%;
+}
