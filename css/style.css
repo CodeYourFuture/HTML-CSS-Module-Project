@@ -73,7 +73,7 @@ body {
     /* it controls the text in the center of the image
     and allows it to be displayed over the top and be
     positioned where I like. */
-    font-size: 5vmax;
+    font-size: 4vmax;
     position: absolute;
     vertical-align: inherit center;
     top: 20vmax;
@@ -82,7 +82,7 @@ body {
     font-weight: lighter;
 }
 .introduction-container .centered-sub {
-    font-size: 2.5vmax;
+    font-size: 1.5vmax;
     position: absolute;
     vertical-align: inherit center;
     top: 27vmax;
@@ -103,4 +103,9 @@ body {
     padding-bottom: 0.5em;
     text-align: center;
     vertical-align: middle;
+}
+@media (max-width: 600px) {
+    /* this is when the screen goes to
+    small for everything to fit 
+    I will use this to move things when needed */
 }
