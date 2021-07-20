@@ -1,9 +1,14 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+ * {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    width: 100vw;
 }
 
 /**
@@ -16,4 +21,23 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header styles */
+
+/* Container styles */
+
+.container {
+    display: flex;
+}
+
+/* Hero styles */
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Main section styles */
+
+/* Footer styles */
 
