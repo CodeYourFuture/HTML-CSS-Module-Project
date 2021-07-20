@@ -41,7 +41,7 @@ body {
     text-decoration: none;
 }
 .head-bar-container .nav-bar ul li a:hover {
-    color: orange;
+    color: orangered;
 }
 #nav-first-li {
     color: black;
@@ -73,11 +73,34 @@ body {
     /* it controls the text in the center of the image
     and allows it to be displayed over the top and be
     positioned where I like. */
-    font-size: 2.5em;
+    font-size: 5vmax;
     position: absolute;
     vertical-align: inherit center;
     top: 20vmax;
     left: 50%;
     transform: translate(-50%, -50%);    
-    
+    font-weight: lighter;
+}
+.introduction-container .centered-sub {
+    font-size: 2.5vmax;
+    position: absolute;
+    vertical-align: inherit center;
+    top: 27vmax;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    font-weight: lighter;
+    padding-top: 1vmax;
+}
+.learn-button{
+    position: inherit;
+    background-color: orangered;
+    bottom: 5em;
+    border-color: orangered;
+    border-radius: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5;
+    padding-bottom: 0.5em;
+    text-align: center;
+    vertical-align: middle;
 }
