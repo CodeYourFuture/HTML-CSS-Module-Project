@@ -9,11 +9,16 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 1.6rem;
+    text-align: center;
 }
 
 /* -----------------------------------Navigation Bar Styles----------------------------------- */
 #logo{
     width: 2.5rem;
+}
+
+.menu-hamburger{
+    display: none;
 }
 
 nav{
@@ -41,6 +46,7 @@ nav{
 .jumbotron{
     background-image: url("../img/first-background.jpg");
     background-size:cover;
+    background-position: center;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -75,7 +81,6 @@ nav{
 }
 
 .heading-icons-section{
-    text-align: center;
     font-size: 4rem;
     font-weight: lighter;
     color: #1D1E21;
@@ -139,7 +144,40 @@ footer{
     margin-bottom: 6rem;
 }
 
+/* -------------------------------Media Queries for the mobile design version------------------------- */
+@media only screen and (max-width: 750px) {   
+    nav{
+        padding: 2rem 4rem;
+    }
+}
 
+@media only screen and (max-width: 600px) {   
+    html{
+        font-size: 8px;
+    }
+
+    #nav-link-container{
+        display: none;
+    }
+
+    .menu-hamburger{
+        display: block;
+    }
+
+    .icons-box{
+        flex-direction: column;
+        margin: 4rem 0 0 0;
+    }
+
+    .icon-container{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .icons-section{
+        margin: 6rem 2rem 0 2rem;
+    }
+}
 /**
  * Add your custom styles below
  * 
