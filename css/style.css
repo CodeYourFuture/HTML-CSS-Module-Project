@@ -55,33 +55,35 @@ button{
      }
 
 
-.mainkarma {
+/* .mainkarma {
 background-color: white;
-background-repeat: no-repeat;
+
 background-size:cover;
 height: 700px;
 /* background-position: ; */
-top: 100px;
-left: 100px;
-}
-.mainkarmacontainer  img{
-   /* text-align: center; */
-   margin: 2px; 
-   /* color: #fff; */
-   position: relative;
+
+.mainkarmacontainer  {
+    
+    background-image:url('/img/first-background.jpg');
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+   text-align: center;
+   color: #fff;
+   
 }
    h1{
     font-size:2.5em ;
     font-weight:lighter;
     /* padding-top:250px; */
-    position: absolute;
+    
  }
  h2{
     font-size: 2em;
     font-weight: lighter;
  }
  .button{
-    display: flex;
+    
     justify-content: center; 
  }
      
