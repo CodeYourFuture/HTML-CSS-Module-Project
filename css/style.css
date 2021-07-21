@@ -18,29 +18,84 @@ body {
 /* header and navigation style */
 header{
     display: flex;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 nav {
     width: 55%;
-    background-color: burlywood;
+
 }
 nav ul{
     display: flex;
-    background-color: aqua;
     justify-content: space-around;
+
 }
 ul li{
 list-style: none;
+
 }
 li a:link{
     text-decoration: none;
-} 
+    color: dimgray;
+    font-size: 0.9em;
 
+} 
+li a:hover{
+    color: rgb(230, 133, 15);
+}
+
+/* Introduction section */
 .intro-image{
-    width: 93%;
-    display: block;
-    margin: 0 auto;
+   max-width: 95%;
+   display: flex;
+  margin: 0 auto;
     
+}
+.intro{
+    position:relative;
+}
+.intro-words{
+    position:absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: rgb(226, 226, 235);
+    font-size: 1.5em;
+}
+h1{
+    font-weight: 300;
+}
+/* Button style */
+.intro-words > button{
+    background-color: rgb(228, 96, 20);
+    padding: 0.7em 1.5em;
+    border-radius: 0.2em;
+    border:none;
+    font-size: 0.7em;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.cards-container{
+    display: flex;
+    justify-content:space-evenly;
+    width: 70%;
+    margin-top: 1em;
+    background-color: palegreen;
+
+}
+.icon-descrp img{
+    width: 70%;
+
+}
+.icon-descrp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
