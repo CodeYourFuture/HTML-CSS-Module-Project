@@ -110,3 +110,14 @@ h3{
     
 }
 
+/*media queries*/    /*how to make icons and p text in the center?*/
+@media  screen and (max-width:600px){
+    .options  {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+}
+    
+
+
