@@ -16,10 +16,23 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+body{
+    max: width 100%;
+}
+
 
 .nav-bar{
+float: right;
+width: 45%;
 
 }
+
+a {
+text-decoration: none;
+
+}
+
+
 
 .jumbotron {
  position: relative;
@@ -29,27 +42,38 @@ body {
 h1 {
 position: absolute;
 top: 30%;
-left: 70%;
-color:antiquewhite;
+left: 30%;
+color:white;
 
 }
+
 
 h3 {
 position: absolute;
 top: 40%;
-right: 3%;
-color:antiquewhite;
+right: 40%;
+color:white;
 }
 
 button {
 position: absolute;
 bottom: 45%;
-right: 13%;
-color:antiquewhite;
+right: 50%;
+color:white;
 background-color:orange;
 
 }
 
 header img {
     margin-left: 150px;
+}
+
+
+h2 {
+
+}
+
+#img {
+
+    width:100%;
 }
