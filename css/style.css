@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,98 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* navigation styles */
+.logo {
+  width: 3%;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  margin: 20px;
+}
+
+.logoAndNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* header */
+header {
+  width: 100%; /*image is too big*/
+  height: 735px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  color: white;
+  font-weight: lighter;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 60px;
+  width: 180px;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+h3{
+    font-size:2em;
+    font-weight:lighter;
+    display:flex;
+    justify-content: center;
+    margin-top:60px;
+    margin-bottom:40px;
+    
+}
+
+/*options links in main*/
+.options svg {
+  width: 30%;
+  height: auto;
+}
+
+.options{
+    display:flex;
+    justify-content:center;
+    }
+}
+
+
+
+/*social media buttons*/
+.social{
+    text-align:center;
+}
+
+/*footer*/
+.copyright{
+    color:rgb(80, 95, 95);
+    font-size: 0.7rem;
+    
+}
 
