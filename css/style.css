@@ -5,96 +5,84 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organized, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flex-
- box, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ /* Header */
 
- /* header */
+header {
+  display: flex;
+}
 
- header {
-    display: flex;
- }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 50em;
+}
 
- nav ul {
-   list-style-type: none;
-   display: flex;
-   justify-content: flex-end;
-   width: 50em;
- }
+ul li {
+  padding: 1em 1rem;
+  font-weight: bold;
+  cursor: auto;
+}
 
- ul li {
-   padding: 1em 1rem;
-   font-weight: bold;
-   cursor: auto;
- }
-
- li :focus, 
- li :hover {
-   color: coral;
- }
+li :focus, 
+li :hover {
+  color: coral;
+}
  
- .logo {
-    height: 3rem;
-    width: 3rem;
-    padding: 1rem 2rem 1rem 5rem;
- }
+.logo {
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem 2rem 1rem 5rem;
+}
 
  /* Main Section */
-
  /* Article Part */
 
- .hero {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   background-image: url("/img/first-background.jpg");
-   background-size: cover;
-   padding: 12rem;
- }
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/first-background.jpg");
+  background-size: cover;
+  padding: 12rem; 
+}
 
- .hero h1 {
-   color: white;
-   font-weight: 200;
-   font-size: 300%;
- }
+.hero h1 {
+  color: white;
+  font-weight: 200;
+  font-size: 300%;
+}
 
- .hero p {
-   color: white;
-   font-weight: 100;
-   font-size: 150%;
- }
+.hero p {
+  color: white;
+  font-weight: 100;
+  font-size: 150%;
+}
 
- .hero button {
-   background-color: coral;
-   color: cornsilk;
-   border: none;
-   border-radius: 5px;
-   padding: 0.8rem 2rem;
- }
+.hero button {
+  background-color: coral;
+  color: cornsilk;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+}
 
  /* Section Part */
 
- section h2 {
-   text-align: center;
-   color: black;
-   font-weight: 150;
-   font-size: 200%;
- }
+section h2 {
+  text-align: center;
+  color: black;
+  font-weight: 150;
+  font-size: 200%;
+}
 
 .icons {
-   display: flex;
-   flex-flow: row;
+  display: flex;
+  flex-flow: row;
    align-items: center;
-   padding: 2rem 0 2rem 0;
-   justify-content: space-around;
+  padding: 2rem 0 2rem 0;
+  justify-content: space-around;
 }
 
 .icon {
@@ -133,11 +121,11 @@ footer p {
   color: #a8a8a8;
 }
 
-/*Media query*/
+/* Media query Part */
 
 @media screen and (min-width: 700px) {
 
-  /*Header*/
+  /* Header */
   
   header {
     align-items: center;
@@ -152,6 +140,9 @@ footer p {
     justify-content: space-between;
 
   }
+
+    /* Main */
+    /* Article Part */
 
   .hero {
     background-position: center;
@@ -170,6 +161,8 @@ footer p {
     padding: 0.8rem 2rem;
   }
 
+    /* section Part */
+
   .icons {
     flex-direction: row;
     display: flex;
@@ -185,6 +178,8 @@ footer p {
   .icon img {
     max-width: 5rem;
   }
+
+    /* Footer */
 
   footer h4 {
     padding-bottom: 3rem;
