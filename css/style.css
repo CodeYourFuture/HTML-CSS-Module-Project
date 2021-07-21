@@ -24,7 +24,26 @@ body {
 /* Header styles */
 
 .logo {
-    width: 50px;
+    width: 20px;
+}
+/* #navbar {
+    width: 100vw;
+} */
+
+#navbar ul{
+    display: flex;
+    /* width: 100vw; */
+}
+
+#navbar ul>li {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+#navbar ul>li>a {
+    text-decoration: none;
+    color: #333;
 }
 
 /* Container styles */
@@ -45,14 +64,14 @@ body {
 
 #main {
     display: inline;
-    width: 80%;
+    width: 60%;
     text-align: center;
     border-bottom: 1px solid #000;
 }
 
 .main_items {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* Footer styles */
@@ -65,5 +84,5 @@ body {
     border: 1px solid #000;
     border-radius: 50%;
     padding: 5px;
-    width: 100px;
+    width: 30px;
 }
