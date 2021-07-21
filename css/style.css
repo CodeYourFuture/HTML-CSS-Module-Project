@@ -9,10 +9,11 @@ body {
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be organized, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ * - When using Flex-
+ box, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
  /* header */
@@ -31,6 +32,7 @@ body {
  ul li {
    padding: 1em 1rem;
    font-weight: bold;
+   cursor: auto;
  }
 
  li :focus, 
@@ -129,4 +131,67 @@ footer h4 {
 footer p {
   font-size: 0.9rem;
   color: #a8a8a8;
+}
+
+/*Media query*/
+
+@media screen and (min-width: 700px) {
+
+  /*Header*/
+  
+  header {
+    align-items: center;
+  }
+
+  .logo {
+    padding-left: 1.5rem;
+  }
+
+  ul {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .hero {
+    background-position: center;
+  }
+
+  .hero h1{
+    font-size: 2.6rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .hero button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .icons {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 2em;
+  }
+
+  .caption {
+    font-size: 1.3rem;
+  }
+
+  .icon img {
+    max-width: 5rem;
+  }
+
+  footer h4 {
+    padding-bottom: 3rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+  }
+
 }
