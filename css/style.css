@@ -8,12 +8,13 @@ body {
   margin: 0 8em 0 8em;
 }
 
-/*header*/
+/*-----------header---------------*/
 header {
   text-align: center;
   width: 100%;
   display: flex;
 }
+
 #logo {
   padding-left: 15em;
   margin-top: 2em;
@@ -24,6 +25,7 @@ header {
 nav {
   width: 100%;
   margin: 3em 3em 01em 1em;
+  padding-right: 2em;
 }
 
 nav li {
@@ -31,63 +33,65 @@ nav li {
   list-style: none;
   float: right;
 }
+
 nav a {
   color: gray;
   text-decoration: none;
   font-size: 2em;
 }
+
 nav a:hover {
   color: crimson;
 }
 
-/*main*/
+/*---------main-------------*/
 
-section:first-of-type {
+.about-karma-container {
   background-image: url("/img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 80em;
-  text-align: center;
   width: 100%;
+  display : flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
 }
-.info {
-  color: darkgray;
-  font-size: 2em;
-  padding-top: 10em;
-  width: 60%;
-  margin-left: 20%;
-}
-.info p {
-  font-size: 2em;
-  display: block;
-  align-content: center;
-  padding-top: 0;
-  padding-bottom: 1em;
+
+.about-karma-container p {
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+  margin-top: 0em;
   color: white;
   font-weight: 95;
+  font-size: 4.8em;
 }
-.info h1 {
-  font-size: 3.5em;
-  display: block;
-  align-content: center;
+
+.about-karma-container h1 {
+  font-size: 9em;
   margin-bottom: 0em;
+  margin-top: 0em;
   font-weight: 95;
   color: white;
 }
-.info a {
+
+button {
   background: rgb(211, 84, 11);
   text-decoration: none;
   padding: 0.7em 1.5em 0.7em 1.5em;
   border-radius: 0.3em;
-  font-size: 1.4em;
+  font-size: 2em;
   color: white;
 }
+
 p {
   text-align: center;
   padding-top: 1em;
   font-size: 6em;
   font-weight: 95;
 }
+
 .container {
   margin-top: 0em;
   display: flex;
@@ -96,7 +100,8 @@ p {
   width: 70%;
   margin-left: 15%;
 }
-.con {
+
+.con-item {
   width: 100%;
   height: 10%;
   font-size: 0.4em;
@@ -105,17 +110,20 @@ p {
   margin-right: 10em;
   justify-items: left;
 }
-.con img {
+
+.con-item img {
   width: 50%;
 }
 
-.con p {
+.con-item p {
   font-size: 6em;
   font-weight: normal;
 }
+
 hr {
   width: 80%;
 }
+
 h2 {
   margin-top: 3em;
   margin-bottom: 1em;
@@ -124,13 +132,14 @@ h2 {
   font-weight: 100;
 }
 
-/*footer*/
+/*----------footer-----------*/
 .social {
   display: flex;
   width: 100%;
   height: 50%;
   justify-content: center;
 }
+
 footer p {
   font-weight: normal;
   margin-bottom: 1em;
@@ -140,6 +149,7 @@ footer p {
 .social img {
   width: 2em;
 }
+
 .icons {
   padding: 1.3em;
   border-radius: 50%;
@@ -148,6 +158,7 @@ footer p {
   margin-right: 1.5em;
   border-style: solid;
 }
+
 #copyright {
   font-size: 1.8em;
   text-align: center;
