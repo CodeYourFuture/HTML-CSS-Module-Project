@@ -16,21 +16,22 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Krishan kumar
+- Your City: West Midlands
+- Your Slack Name: Krishan kumar
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:Html/Css challenge
+- Week:2
 
 # Notes
 
 - What did you find easy?
-
+styling css 
 - What did you find hard?
-
+  really enjoying working on this project..but found hard to do debugging.
 - What do you still not understand?
-
+still unsure with using flexbox.
 - Any other notes?
+No Notes
