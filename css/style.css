@@ -16,4 +16,34 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .logo{
+
+}
+
+/*setting background image */
+.largeImage{
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.imageContent{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 300px;
+ }
+.largeImage button{
+    background-color: orange;
+    border-radius: 5px;
+}
+
+
+
+
 
