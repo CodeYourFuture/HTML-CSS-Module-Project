@@ -60,9 +60,14 @@ button {
 position: absolute;
 bottom: 45%;
 right: 50%;
-color:white;
+border:none;
+text-transform:capitalize;
+padding: 1rem 2.3rem;
+color: white;
 background-color:orange;
-border-radius:4px;
+color: white;
+border-radius: 4px;
+
 
 }
 
@@ -122,4 +127,9 @@ padding: 2em;
 
 .soc-media img {
     width: 2em;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 20px;
 }
