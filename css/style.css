@@ -35,6 +35,9 @@ ul {
     4.1 FOOTER HEADER
     4.2 FOOTER NAV
     4.3 FOOTER COPYRIGHT
+
+5.0 MEDIA QUERY 
+    5.1 DESKTOP BREAKPOINT
 */
 
 /* 1.0 HEADER */
@@ -52,6 +55,7 @@ ul {
   padding: 10px; /* moves the element away from the top and left wall */
   align-items: center;
   position: absolute;
+  padding-left: 1em;
 }
 
 /* 1.2 TOP NAV */
@@ -62,6 +66,10 @@ ul {
   align-items: center;
   justify-content: flex-end;
   padding-right: 10px;
+}
+
+.top-nav:last-child {
+  padding-right: 2em; /* move the hamburger away from the right wall */
 }
 
 .top-nav ul {
@@ -83,6 +91,7 @@ ul {
 .top-nav a:hover,
 .top-nav a:focus {
   color: orangered;
+  transition: all 300ms ease-out;
 }
 
 /* 2.0 HERO BACKGROUND */
@@ -198,4 +207,34 @@ ul {
 .footer-content p {
   opacity: 0.5;
   padding-bottom: 5em;
+}
+
+/* 5.0 MEDIA QUERY */
+
+/* 5.1 DESKTOP BREAKPOINT */
+@media screen and (min-width: 1000px) {
+  .top-left-logo {
+    padding-left: 5em; /* moves the element away from the left wall */
+  }
+
+  .top-nav:last-child {
+    visibility: hidden; /* hide the hamburger menu */
+  }
+
+  .top-nav a {
+    visibility: visible;
+    padding-right: 5em; /* moves the elements away from the right wall */
+  }
+
+  .selling-points ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15em;
+  }
+
+  .selling-points img {
+    width: 10em;
+  }
 }
