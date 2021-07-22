@@ -74,14 +74,13 @@ button {
   margin: 20px;
 }
 
-h3{
-    font-size:2em;
-    font-weight:lighter;
-    display:flex;
-    justify-content: center;
-    margin-top:60px;
-    margin-bottom:40px;
-    
+h3 {
+  font-size: 2em;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 /*options links in main*/
@@ -90,34 +89,36 @@ h3{
   height: auto;
 }
 
-.options{
-    display:flex;
-    justify-content:center;
-    }
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-
+.optionChoice {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 /*social media buttons*/
-.social{
-    text-align:center;
+.social {
+  text-align: center;
 }
 
 /*footer*/
-.copyright{
-    color:rgb(80, 95, 95);
-    font-size: 0.7rem;
-    
+.copyright {
+  color: rgb(80, 95, 95);
+  font-size: 0.7rem;
 }
 
-/*media queries*/    /*how to make icons and p text in the center?*/
-@media  screen and (max-width:600px){
-    .options  {
-        display:flex;
-        flex-direction: column;
-        justify-content:center;
-    }
+/*media queries*/ /*how to make icons and p text in the center?*/
+@media screen and (max-width: 600px) {
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-    
-
-
