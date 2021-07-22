@@ -23,29 +23,44 @@ body {
 
 /* Header styles */
 
-.logo {
-    width: 20px;
+#navbar {
+    display: flex;
 }
-/* #navbar {
-    width: 100vw;
-} */
+
+#navbar .logo {
+    width: 30px;
+    margin: 15px 0 0 100px;
+}
 
 #navbar ul{
     display: flex;
-    /* width: 100vw; */
-}
-
-#navbar ul>li {
-    display: flex;
-    list-style: none;
     justify-content: flex-end;
+    width: 100%;
+    align-items: center;
 }
 
-#navbar ul>li>a {
+#navbar ul li {
+    list-style: none;
+    padding: 0 25px 0 5px;
+}
+
+#navbar ul li:last-child {
+    padding-right: 100px;
+}
+
+#navbar ul li a {
     text-decoration: none;
-    color: #333;
+    color: lightgray;
+    font-weight: 500;
+}
+/* Need to change the colour of meet karma text */
+#navbar ul li a #meet-karma {
+    color: #000;
 }
 
+#navbar ul li a:hover {
+    color: #cc6600;
+}
 /* Container styles */
 
 .container {
@@ -55,10 +70,39 @@ body {
 /* Hero styles */
 
 #hero {
+    background: url('../img/first-background.jpg') no-repeat center center/cover;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#hero h1, #hero p, #hero button {
+    color: #fff;
+    display: flex;
+}
+
+#hero h1 {
+    font-weight: 300;
+    font-size: 3em;
+}
+
+#hero p {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+#hero button {
+    padding: 15px;
+    background-color: #cc6600;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    align-content: center;
+    justify-content: center;
+}
 
 /* Main section styles */
 
@@ -66,12 +110,26 @@ body {
     display: inline;
     width: 60%;
     text-align: center;
-    border-bottom: 1px solid #000;
+}
+
+#main h2 {
+    font-weight: 300;
+    font-size: 2em;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .main_items {
     display: flex;
     justify-content: space-around;
+}
+
+.image-size {
+    width: 150px;
+}
+
+.main_items p {
+    font-weight: 400;
 }
 
 /* Footer styles */
@@ -80,9 +138,17 @@ body {
     text-align: center;
 }
 
+#footer h3 {
+    font-weight: 300;
+}
+
 .social_icons {
     border: 1px solid #000;
     border-radius: 50%;
     padding: 5px;
     width: 30px;
+}
+
+small {
+    color: lightgray;
 }
