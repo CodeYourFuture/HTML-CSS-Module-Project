@@ -29,7 +29,7 @@ body {
 
 #navbar .logo {
     width: 30px;
-    margin: 15px 0 0 100px;
+    margin: 15px 0 10px 100px;
 }
 
 #navbar ul{
@@ -53,9 +53,9 @@ body {
     color: lightgray;
     font-weight: 500;
 }
-/* Need to change the colour of meet karma text */
-#meet-karma {
-    color: #000;
+
+#navbar ul li #meet-karma {
+    color: #222;
 }
 
 #navbar ul li a:hover {
