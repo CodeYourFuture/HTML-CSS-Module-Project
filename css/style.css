@@ -54,6 +54,7 @@ ul {
   visibility: hidden; /* so they don't appear on smaller screens */
 }
 
+/* selects the first list item from the top-nav then selects the anchor tag which is a child */
 .top-nav li:first-child > a {
   font-weight: bold;
 }
@@ -111,9 +112,10 @@ ul {
 }
 
 .selling-points h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: none;
+  padding: 1em;
 }
 
 .selling-points li {
@@ -123,4 +125,43 @@ ul {
 .selling-points img {
   width: 25%;
   height: auto;
+  margin-bottom: 2em;
+}
+
+.footer-content {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.footer-content h3 {
+  border-top: 1px solid black;
+  padding-top: 1em;
+  font-weight: normal;
+  padding-bottom: 1em;
+}
+
+.footer-content nav {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.footer-content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-content img {
+  width: 20px;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.footer-content p {
+  opacity: 0.5;
+  padding-bottom: 5em;
 }
