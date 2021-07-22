@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
-</body>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Meta info -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body id="body">
+    <header id="page-header" class="page-header">
+      <img src="img/karma-logo.svg" alt="Karma Logo" class="top-left-logo" />
+      <nav id="top-bar-nav-container" class="top-nav">
+        <ul id="top-bar-nav-list">
+          <li><a href="#">Meet Karma</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Login</a></li>
+          <li><img src="img/menu-hamburger.svg" alt="hamburger menu" /></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="top-img-info" class="hero">
+        <article class="hero-info">
+          <h1 id="main-header">Introducing Karma</h1>
+          <p>Bring WiFi with you, everywhere you go</p>
+          <button>Learn More</button>
+        </article>
+      </section>
+      <section id="selling-points" class="selling-points">
+        <h2>Everyone needs a little Karma.</h2>
+        <ul>
+          <li>
+            <img src="img/icon-devices.svg" />
+            <figcaption>Internet for all devices</figcaption>
+          </li>
+          <li>
+            <img src="img/icon-coffee.svg" />
+            <figcaption>Boost your productivity</figcaption>
+          </li>
+          <li>
+            <img src="img/icon-refill.svg" />
+            <figcaption>Pay as you Go</figcaption>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

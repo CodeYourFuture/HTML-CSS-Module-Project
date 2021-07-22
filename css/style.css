@@ -1,19 +1,116 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* whole page style */
+body,
+* {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+
+  font-size: 16px;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ul {
+  list-style: none;
+}
 
+/* alignment */
+.page-header {
+  width: 100vw;
+  height: 60px;
+  background-color: white;
+}
 
+.top-left-logo {
+  display: flex;
+  width: 20px;
+  height: auto;
+  padding: 10px; /* moves the element away from the top and left wall */
+  align-items: center;
+  position: absolute;
+}
+
+.top-nav {
+  display: flex;
+  line-height: 60px; /* centers the element */
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.top-nav ul {
+  display: flex;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: black;
+  visibility: hidden; /* so they don't appear on smaller screens */
+}
+
+/* hero background and info */
+.hero {
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: 60%;
+  background-size: cover;
+}
+
+.hero-info {
+  height: 350px;
+  max-width: 250px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.hero-info h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero-info p {
+  font-size: 1.5rem;
+}
+
+.hero-info button {
+  margin-top: 20px; /* adds some space between the p and the button */
+  background-color: orangered;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.selling-points {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+}
+
+.selling-points h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: none;
+}
+
+.selling-points li {
+  margin-top: 4em;
+}
+
+.selling-points img {
+  width: 25%;
+  height: auto;
+}
