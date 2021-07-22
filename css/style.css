@@ -15,9 +15,34 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.logo{
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.header__navBar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+li{
+    margin-right: 5em;
+}
+.header__navBar ul li:first-child {
+    color: black ;
+    font-weight: 600;
 
- .logo{
-
+}
+a:hover{
+    color: coral;
 }
 
 /*setting background image */
@@ -30,20 +55,75 @@ body {
 }
 
 .imageContent{
-    font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    color: white;
-    padding-top: 300px;
+    padding-top: 200px;
  }
 .largeImage button{
-    background-color: orange;
+    color: white;
+    background-color: orangered;
     border-radius: 5px;
+    width: 110px;
+    height: 35px;
+}
+h1,
+h3,
+button{
+    font-weight: 100;
+    font-style: normal;
 }
 
+h1{
+    font-size: 50px;
+    color: white;
+}
+h3{
+    font-size: 2rem;
+    padding: 20px;
+    color: lightgray;
 
-
+}
+h2{
+    font-size: 2em;;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+.join, .copyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.copyRight{
+    color: gray;
+}
+.footer__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+   border: none;
+   height: 1px;
+   width: 80%;
+   background-color: gray;
+}
+   
+/***************************************************Media Queries*******************************************************************************/
+@media (max-width: 300px) {
+    .header__navBar{
+        display: none;
+    }
+    
+    
+}
 
 
