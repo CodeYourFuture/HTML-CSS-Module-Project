@@ -50,7 +50,17 @@ ul {
 .top-nav a {
   text-decoration: none;
   color: black;
+  outline: none;
   visibility: hidden; /* so they don't appear on smaller screens */
+}
+
+.top-nav li:first-child > a {
+  font-weight: bold;
+}
+
+.top-nav a:hover,
+.top-nav a:focus {
+  color: orangered;
 }
 
 /* hero background and info */
