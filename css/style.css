@@ -1,10 +1,5 @@
-
+/* 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
 
 /**
  * Add your custom styles below
@@ -15,5 +10,70 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ header{
+  width:100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 7%;
+  background:#fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1000;
+}
+ .nav-bar {
+  overflow: hidden;
+  background-color: #333;
+  position:sticky; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+nav ul{
+  float: right;
+  margin-right: 2em;
+}
 
 
+
+nav li{
+  padding: 1em;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+
+.hero-image {
+  background-image: url("/img/first-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  color: rgb(236, 18, 18);
+}
+
+
+@media screen and (max-width: 550px) {
+
+
+  #nav-bar ul{
+
+      display: none;
+  }
+  .hamb{
+      display: block;
+  }
+
+}
