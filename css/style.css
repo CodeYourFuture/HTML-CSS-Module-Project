@@ -59,4 +59,35 @@ li:hover {
     color : orange;
 }
 
+/* Panel styles */
+.panel-container {
+    /* background-image: url('../img/first-background.jpg') ; */
+    background: url('../img/first-background.jpg') no-repeat  center/cover ;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.panel-container p, h1, button {
+    color: white;    
+}
+
+.panel-container h1,p {
+    font-weight: 300;
+    margin: 15px;
+}
+
+.panel-container button {
+    background-color: orangered;
+    border-radius: 2px;
+    font-weight: 100;
+    font-size: x-small;
+    width: 80px;
+    height: 30px;
+    border-style: none;
+    /* padding-top: 10px; */
+}
