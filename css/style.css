@@ -106,10 +106,15 @@ body {
 
 /* Main section styles */
 
+.main_container {
+    display: flex;
+    justify-content: space-around;
+}
+
 #main {
-    display: inline;
+    display: inline-block;
     width: 60%;
-    text-align: center;
+    text-align: center;    
 }
 
 #main h2 {
@@ -122,6 +127,7 @@ body {
 .main_items {
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid #999;
 }
 
 .image-size {
