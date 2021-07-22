@@ -22,20 +22,19 @@ body {
   height: 10vh;
   position: sticky;
   top: 0;
-  padding: 0 100px;
+  padding: 5px 20px;
 }
 
 .header__logo-wrapper {
   flex: 1;
   text-align: left;
+  height: 100%;
 }
 .header__logo {
-  height: auto;
-  max-width: 50px;
-  min-width: 30px;
+  height: 80%;
 }
 .header__navbar {
-  flex: 1;
+  flex: 2;
 }
 
 .header__navbar ul {
@@ -71,57 +70,56 @@ body {
 }
 
 .hero__content h1 {
-  font-size: 5rem;
+  font-size: 80px;
   font-weight: lighter;
-  padding: 1.2rem 0;
+  padding: 20px 0;
 }
 
 .hero__content p {
-  font-size: 2.5rem;
+  font-size: 38px;
   font-weight: lighter;
 }
 
 .hero__button {
-  margin-top: 5rem;
-  padding: 1rem 1.2rem;
+  margin-top: 80px;
+  padding: 16px 20px;
   color: rgb(255, 250, 249);
   background-color: orangered;
   border: 1px solid orangered;
   border-radius: 10px;
   text-transform: lowercase;
 }
+.header__menu {
+  display: none;
+}
 
 /* **************************************** Dashboard ************************************** */
 .dashboard {
-  padding: 5rem;
   text-align: center;
   height: 90vh;
 }
 
-.dashboard h2 {
-  font-size: 4rem;
+.dashboard__title {
+  padding-top: 64px;
+  font-size: 64px;
   font-weight: lighter;
 }
 
 .dashboard__container {
-  margin-top: 8rem;
+  padding-top: 64px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  height: 40%;
 }
 
 .dashboard__items {
-  height: 70%;
-}
-
-.dashboard__img {
-  height: 100%;
+  flex: 1;
+  max-width: 200px;
 }
 
 .dashboard__container h4 {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: lighter;
 }
 
@@ -131,7 +129,7 @@ body {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  height: 20vh;
+  /* height: 20vh; */
   background-color: orangered;
   border-top-left-radius: 400px;
   border-top-right-radius: 400px;
@@ -143,7 +141,7 @@ body {
 
 .footer__content-icon {
   display: inline-block;
-  margin: 0.9rem;
+  margin: 14px;
 }
 
 .footer__content-icon img {
@@ -152,7 +150,39 @@ body {
 }
 
 .footer__content p:last-child {
-  padding-top: 2.5rem;
+  padding-top: 38px;
 }
 
 /* ****************************************Media************************************** */
+@media only screen and (max-width: 768px) {
+  .header__navbar ul {
+    display: none;
+  }
+  .header__menu {
+    display: inline-block;
+  }
+  .hero__content p {
+    font-size: 24px;
+  }
+  .hero__content h1 {
+    font-size: 38px;
+  }
+  .dashboard__container {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .dashboard__container h4 {
+    font-size: 16px;
+  }
+  .dashboard__items {
+    margin-bottom: 10px;
+  }
+  .dashboard__img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .dashboard__title {
+    padding: 0 5px 20px 5px;
+    font-size: 32px;
+  }
+}
