@@ -10,7 +10,6 @@ body {
 
 /*-----------header---------------*/
 header {
-  text-align: center;
   width: 100%;
   display: flex;
 }
@@ -38,6 +37,11 @@ nav a {
   color: gray;
   text-decoration: none;
   font-size: 2em;
+}
+nav li:last-of-type {
+  color: gray;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 nav a:hover {
