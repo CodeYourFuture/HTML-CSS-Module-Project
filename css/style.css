@@ -18,13 +18,33 @@ ul {
   list-style: none;
 }
 
-/* alignment */
+/* 
+1.0 HEADER
+    1.1 LOGO
+    1.2 TOP NAV
+
+2.0 HERO BACKGROUND
+    2.1 HERO INFO
+    2.2 HERO BUTTON
+
+3.0 SELLING POINTS
+    3.1 SECTION HEADER
+    3.2 SELLING POINTS LIST 
+
+4.0 FOOTER
+    4.1 FOOTER HEADER
+    4.2 FOOTER NAV
+    4.3 FOOTER COPYRIGHT
+*/
+
+/* 1.0 HEADER */
 .page-header {
   width: 100vw;
   height: 60px;
   background-color: white;
 }
 
+/* 1.1 LOGO */
 .top-left-logo {
   display: flex;
   width: 20px;
@@ -34,6 +54,7 @@ ul {
   position: absolute;
 }
 
+/* 1.2 TOP NAV */
 .top-nav {
   display: flex;
   line-height: 60px; /* centers the element */
@@ -64,7 +85,7 @@ ul {
   color: orangered;
 }
 
-/* hero background and info */
+/* 2.0 HERO BACKGROUND */
 .hero {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
@@ -73,6 +94,7 @@ ul {
   background-size: cover;
 }
 
+/* 2.1 HERE INFO */
 .hero-info {
   height: 350px;
   max-width: 250px;
@@ -97,6 +119,7 @@ ul {
   font-size: 1.5rem;
 }
 
+/* 2.2 HERO BUTTON */
 .hero-info button {
   margin-top: 20px; /* adds some space between the p and the button */
   background-color: orangered;
@@ -104,13 +127,15 @@ ul {
   padding: 10px;
 }
 
+/* 3.0 SELLING POINTS */
 .selling-points {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-top: 4em;
+  padding-top: 1em;
 }
 
+/* 3.1 SECTION HEADER */
 .selling-points h2 {
   font-size: 1.5rem;
   font-weight: normal;
@@ -118,8 +143,9 @@ ul {
   padding: 1em;
 }
 
+/* 3.2 SELLING POINTS LIST */
 .selling-points li {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 .selling-points img {
@@ -128,11 +154,13 @@ ul {
   margin-bottom: 2em;
 }
 
+/* 4.0 FOOTER */
 .footer-content {
   text-align: center;
   margin-top: 5em;
 }
 
+/* 4.1 FOOTER HEADER */
 .footer-content h3 {
   border-top: 1px solid black;
   padding-top: 1em;
@@ -140,6 +168,7 @@ ul {
   padding-bottom: 1em;
 }
 
+/* 4.2 FOOTER NAV */
 .footer-content nav {
   display: flex;
   flex-direction: column;
@@ -161,6 +190,7 @@ ul {
   padding: 10px;
 }
 
+/* 4.3 FOOTER COPYRIGHT */
 .footer-content p {
   opacity: 0.5;
   padding-bottom: 5em;
