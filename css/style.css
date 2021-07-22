@@ -22,143 +22,8 @@ body {
  /* ----------------------------------------------------------------------------------------------------------------------------------------- */
 /* this was going to be for mobile screens to add in the hamburger menu but it looks
 insanely complicated */
-/* its left uncommented for the sake of folding. */
- @media (min-width: 560px) {
-      /* This is for the nav bar */
-    .head-bar-container .nav-bar ul {
-        /* width being 80% allows me to put the logo on the same line 
-        then floating it to the right makes it give the logo space*/
-        display: flex;
-        width: 80%;
-        float: right;
-        margin: 0;
-        justify-content: right;
-        padding-right: 1em;
-        list-style: none;
-        background-color: white;
-    }
-    .head-bar-container .nav-bar ul li a {
-        display: block;
-        padding: 1em;
-        color: grey;
-        text-decoration: none;
-        font-size: small;
-    }
-    .karma-logo {
-        width: 0.8em;
-        height: auto;
-        padding-left: 2%;
-        padding-top: 0.5em;
-        padding-bottom: 0.5;
-    }
-    
-    
-    /* this is the introduction block */
-    .introduction-container .centered-intro {
-        /* this code was mostly copied from a tutorial. */
-    
-        /* it controls the text in the center of the image
-        and allows it to be displayed over the top and be
-        positioned where I like. */
-        font-size: 4vmax;
-        position: absolute;
-        vertical-align: inherit center;
-        top: 10vmax;
-        left: 50%;
-        transform: translate(-50%, -50%);    
-        font-weight: lighter;
-    }
-    .introduction-container .centered-sub {
-        font-size: 2vmax;
-        position: absolute;
-        /* vertical-align: inherit center; not sure
-        what I was thinking here */
-        top: 18vmax;
-        left: 50%;
-        transform: translate(-50%, -50%);    
-        font-weight: lighter;
-        padding-top: 1vmax;
-    }
-    .learn-button{
-        position: inherit;
-        background-color: rgb(241, 100, 48);
-        bottom: 5em;
-        border-color: rgb(241, 100, 48);
-        border-radius: 0.4em;
-        padding: 0.5em;
-        padding-left: 1em;
-        padding-right: 1em;
-        text-align: center;
-        vertical-align: middle;
-        font-size: smaller;
-    }
-    
-    /* this is for the bottom of the page, 'everyone needs a little karma' */
-    .bottom-section {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 40vmax;
-        margin-top: 3em;
-    }
-    .bottom-section h1 {
-        text-align: center;
-        color: rgb(51, 51, 51);
-        font-weight: lighter;
-        font-size: 3vmax;
-    }
-    .bottom-section .bottom-img-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .bottom-section .bottom-img-container .bottom-img {
-        margin: 4em;
-        margin-bottom: 1em;
-        width: 7vmax;
-        height: auto;
-    }
-    .bottom-section .bottom-img-sub {
-        display: flex;
-        flex-direction: row;
-        margin-left: 6vmax;
-        margin-right: 6vmax;
-        padding-left: 0.2vmax;
-        padding-right: 0.2vmax;
-        justify-content: space-between;
-        /* text-align: center; */
-        font-size: smaller;
-        color: rgb(51, 51, 51);
-    }
-    
-    
-    .social-media-section {
-        width: 100%;
-        position: absolute;
-        top: 80vmax;
-        margin-top: 10vmax;
-    }
-    .social-media-section h5 {
-        color: rgb(51, 51, 51);
-        justify-content: center;
-        text-align: center;
-    }
-    .social-media-section .social-icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .social-media-section .social-icons .social-icon-img {
-        width: 1.7vmax;
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .social-media-section p {
-        text-align: center;
-        font-size: 0.5em;
-        color: rgb(51, 51, 51);
-    }
- }
+
+
 
 
  /* This is for the nav bar */
@@ -411,7 +276,7 @@ insanely complicated */
 
 
 /* small screen */
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     /* this is when the screen goes to
     small for everything to fit 
     I will use this to move things when needed */
@@ -552,9 +417,156 @@ insanely complicated */
     }
 }
 
-
-@media (max-width: 550px) {
-    html {
-        background-color: pink;
+@media (min-width: 580px) {
+    .head-bar-container .nav-bar .hamburger-menu {
+        display: none;
     }
+}
+
+@media (max-width: 560px) {
+
+    /* This is for the nav bar */
+  .head-bar-container .nav-bar ul {
+      /* width being 80% allows me to put the logo on the same line 
+      then floating it to the right makes it give the logo space*/
+      display: none;
+      width: 80%;
+      float: right;
+      margin: 0;
+      justify-content: right;
+      padding-right: 1em;
+      list-style: none;
+      background-color: white;
+  }
+  .head-bar-container .nav-bar .hamburger-menu {
+      display: flexbox;
+      flex-direction: row;
+      float: right;
+      margin: 1em;
+      
+  }
+  .head-bar-container .nav-bar ul li a {
+      display: block;
+      padding: 1em;
+      color: white;
+      text-decoration: none;
+      font-size: small;
+  }
+  .head-bar-container .nav-bar ul li a:hover {
+    color: white;
+}
+  .karma-logo {
+      width: 0.8em;
+      height: auto;
+      padding-left: 2%;
+      padding-top: 0.5em;
+      padding-bottom: 0.5;
+  }
+  
+  
+  /* this is the introduction block */
+  .introduction-container .centered-intro {
+      /* this code was mostly copied from a tutorial. */
+  
+      /* it controls the text in the center of the image
+      and allows it to be displayed over the top and be
+      positioned where I like. */
+      font-size: 4vmax;
+      position: absolute;
+      vertical-align: inherit center;
+      top: 10vmax;
+      left: 50%;
+      transform: translate(-50%, -50%);    
+      font-weight: lighter;
+  }
+  .introduction-container .centered-sub {
+      font-size: 2vmax;
+      position: absolute;
+      /* vertical-align: inherit center; not sure
+      what I was thinking here */
+      top: 18vmax;
+      left: 50%;
+      transform: translate(-50%, -50%);    
+      font-weight: lighter;
+      padding-top: 1vmax;
+  }
+  .learn-button{
+      position: inherit;
+      background-color: rgb(241, 100, 48);
+      bottom: 5em;
+      border-color: rgb(241, 100, 48);
+      border-radius: 0.4em;
+      padding: 0.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+      text-align: center;
+      vertical-align: middle;
+      font-size: smaller;
+  }
+  
+  /* this is for the bottom of the page, 'everyone needs a little karma' */
+  .bottom-section {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 40vmax;
+      margin-top: 3em;
+  }
+  .bottom-section h1 {
+      text-align: center;
+      color: rgb(51, 51, 51);
+      font-weight: lighter;
+      font-size: 3vmax;
+  }
+  .bottom-section .bottom-img-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .bottom-section .bottom-img-container .bottom-img {
+      margin: 4em;
+      margin-bottom: 1em;
+      width: 7vmax;
+      height: auto;
+  }
+  .bottom-section .bottom-img-sub {
+      display: flex;
+      flex-direction: row;
+      margin-left: 6vmax;
+      margin-right: 6vmax;
+      padding-left: 0.2vmax;
+      padding-right: 0.2vmax;
+      justify-content: space-between;
+      /* text-align: center; */
+      font-size: smaller;
+      color: rgb(51, 51, 51);
+  }
+  
+  
+  .social-media-section {
+      width: 100%;
+      position: absolute;
+      top: 80vmax;
+      margin-top: 10vmax;
+  }
+  .social-media-section h5 {
+      color: rgb(51, 51, 51);
+      justify-content: center;
+      text-align: center;
+  }
+  .social-media-section .social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .social-media-section .social-icons .social-icon-img {
+      width: 1.7vmax;
+      margin-left: 2em;
+      margin-right: 2em;
+  }
+  .social-media-section p {
+      text-align: center;
+      font-size: 0.5em;
+      color: rgb(51, 51, 51);
+  }
 }
