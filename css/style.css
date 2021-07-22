@@ -17,23 +17,32 @@ body {
  */
 
 body{
-    max: width 100%;
+max-width: 100%;
 }
 
-
-.nav-bar{
-float: right;
-width: 45%;
-
+.nav-bar li{
+display:flex;
+justify-content: flex-end;
+color:grey;
+text-decoration: none;
 }
+
 
 a {
 text-decoration: none;
-
+color: grey;
+font-size:1em;
+padding:1em;
 }
 
 
+a:first-child {
+    font-weight:500;
+}
 
+#karma-logo {
+    
+}
 .jumbotron {
  position: relative;
  text-align: center;
@@ -85,12 +94,11 @@ font-weight: 100;
 }
 
 #img {
-
     width:100%;
 }
 
 .flex-container{
-    padding-top: 150px;
+padding-top: 150px;
 display: flex;
 justify-content: space-between;
 margin-left: 15%;
@@ -114,22 +122,31 @@ hr {
 
 .soc-media{
     display:flex;
-    justify-content:space-around;
-  
+    flex-direction: row;
+    align-content:center;
+
 }
 
 .logo {
 border-color: grey;
 border-style: solid;
+border-width: 1px;
 border-radius: 50%;
-padding: 2em;
+padding: 0.5rem;
+
 }
 
 .soc-media img {
-    width: 2em;
+    width: 1rem;
+    height:1rem;
 }
 
 h4 {
     font-weight: 400;
     font-size: 20px;
+}
+
+footer p {
+    color:rgb(145, 143, 143);
+    font-size: 12px;
 }
