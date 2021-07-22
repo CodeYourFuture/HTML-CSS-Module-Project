@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,144 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/**
+HEADER
+*/
+.logo {
+  width: 70px;
+  height: 70px;
+  padding-left: 10%;
+  padding-top: 1%;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 25px 40px;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: rgb(99, 99, 105);
+  font-size: 20px;
+  left: -50%;
+}
+.nav-links li a:hover {
+  color: orangered;
+}
+#meet-karma {
+  font-weight: 500;
+}
+
+.big-image {
+  background-image: url("../img/first-background.jpg");
+  height: 80vmin;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  object-fit: cover;
+  margin-top: 1%;
+}
+/**
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+}
+*/
+.img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15%;
+}
+h1,
+h3 {
+  color: rgb(221, 221, 221);
+  font-weight: 400;
+}
+h3 {
+  padding-bottom: 3%;
+}
+button {
+  background-color: orangered;
+  border-style: none;
+  border-radius: 6%;
+  padding: 1%;
+}
+.icon-img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: stretch;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  font-size: 50px;
+  padding: 5%;
+}
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: initial;
+  flex-direction: row;
+}
+.devices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.devices p {
+  font-size: 30px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10%;
+  border-top: 1px solid rgb(195, 194, 194);
+  padding-top: 5%;
+}
+.three-logos {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-logo {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 6%;
+  margin-bottom: 2%;
+}
+#Join-us-on {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#Karma-Mobility {
+  color: rgb(144, 163, 163);
+}
