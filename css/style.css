@@ -38,9 +38,11 @@ header ul{
     
     }
 header a{
+    color: black; 
     text-decoration: none;
-    color: black;   
-}
+   
+    }
+     
 header a:hover{
     color: #ee2d0b;
 }
@@ -53,7 +55,7 @@ button{
     border: transparent ;
     color: #fff;
      }
-
+ 
 
 /* .mainkarma {
 background-color: white;
@@ -66,7 +68,8 @@ height: 700px;
     
     background-image:url('/img/first-background.jpg');
     background-size: cover;
-    height: 700px;
+    height: 58em;
+    width: 98%;
     background-repeat: no-repeat;
     display:flex; 
     justify-content:center; 
@@ -79,16 +82,18 @@ height: 700px;
 
    h1{ 
        text-align: center;
+       top: 50%;
+       left:50%;
        justify-content: center;
-    font-size:2.5em ;
+    font-size:3.5em ;
     font-weight:lighter;
-    /* padding-top:250px; */
+    /* padding-top:250px;  */
      
  }
   h2{
      text-align: center;
      justify-content: center;
-    font-size: 2em;
+    font-size: 3.8em;
     font-weight: lighter;
  }
  .button{
@@ -104,39 +109,53 @@ height: 700px;
    font-size: 3em;
    font-weight:lighter;
 }
-.imgcontainer ul{
+
+.icon-container{
 display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-list-style: none;
+flex-flow: row wrap;
+justify-content:space-evenly;
+text-align: center;
 } 
 
-footer ul,h4,h5{
-    text-align: center;
+.icon{
+    width: 100px;
+}
+
+.icon-box{
+  
+justify-content:center; 
+text-align: center;
+font-size: 1.5em;
+}
+
+footer h4,h5{
+    display: flex;
+justify-content:center;
+flex-wrap: wrap;
+text-align: center;
+    font-size: 1.2em;
 }
 
 footer h5{
     color: gainsboro;
     font-weight: lighter;
 }
-.social-icons a {
+.social-icons {
     display:inline-block;
     background-color:#fff;
-    margin-right:100px;
+    margin-right:10px;
+    margin:auto
     font-size: 50px;
     line-height:30px;
     width: 50px;
     height: 20px;
     border-radius:50%;
     border: 2px solid whitesmoke;
-    
-}
-    
-.social-icons a.facebook{
-      color:#1877f2 ;
-  }
-.social-icons a.twitter{
     color: #1DA1F2;
+    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    /* justify-content: center; */
 }
 
 
@@ -161,6 +180,6 @@ h2{
 .imgcontainer ul, li{
     flex-direction: column;
     text-align: center;
-
+}
 
 
