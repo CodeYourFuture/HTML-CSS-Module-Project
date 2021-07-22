@@ -66,25 +66,33 @@ height: 700px;
     
     background-image:url('/img/first-background.jpg');
     background-size: cover;
-    height: 500px;
+    height: 700px;
     background-repeat: no-repeat;
-   text-align: center;
-   color: #fff;
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    flex-direction:column;
+    color: white;
+    }
+  
    
-}
-   h1{
+
+   h1{ 
+       text-align: center;
+       justify-content: center;
     font-size:2.5em ;
     font-weight:lighter;
     /* padding-top:250px; */
-    
+     
  }
- h2{
+  h2{
+     text-align: center;
+     justify-content: center;
     font-size: 2em;
     font-weight: lighter;
  }
  .button{
-    
-    justify-content: center; 
+     
  }
      
 
@@ -111,11 +119,11 @@ footer h5{
     color: gainsboro;
     font-weight: lighter;
 }
-.social-icons a{
+.social-icons a {
     display:inline-block;
     background-color:#fff;
-    margin-right:20px;
-    font-size: 20px;
+    margin-right:100px;
+    font-size: 50px;
     line-height:30px;
     width: 50px;
     height: 20px;
@@ -135,7 +143,7 @@ footer h5{
 @media(max-width:700px) {
 header ul,a {
     display: flex;
-    font-size: 5px;
+    font-size: 10px;
 }
 header img{
 margin: auto 2px;
@@ -153,7 +161,6 @@ h2{
 .imgcontainer ul, li{
     flex-direction: column;
     text-align: center;
-}
-}
+
 
 
