@@ -149,9 +149,13 @@ ul {
 }
 
 .selling-points img {
-  width: 25%;
+  width: 20%;
   height: auto;
   margin-bottom: 2em;
+}
+
+.selling-points img + figcaption {
+  font-size: 1.5rem;
 }
 
 /* 4.0 FOOTER */
