@@ -15,6 +15,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header */
 header {
   display: flex;
   flex-direction: row;
@@ -28,6 +29,12 @@ header {
   width: 40px;
   height: 40px;
 }
+
+.hamburger {
+  display: none;
+}
+
+/* Navigation */
 
 .navbar ul {
   display: flex;
@@ -55,10 +62,11 @@ header {
   color: orange;
 }
 
-li:first-child a {
-  color: black;
+li:first-of-type a {
+  font-weight: bold;
 }
 
+/* Hero Content */
 .section-hero {
   margin-top: 20px;
   position: relative;
@@ -75,13 +83,94 @@ li:first-child a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 50px;
+}
+.centered p {
+  font-size: 4rem;
 }
 
 .button-hero {
-  background-color: #E0633A;
-  font-size: 25px;
+  background-color: #e0633a;
+  font-size: 1.2rem;
   padding: 25px;
   border-radius: 10px;
   width: 30%;
+}
+
+/* Icon Section */
+
+.section-icon {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-header h2 {
+  text-align: center;
+  font-weight: 50;
+  font-size: 4rem;
+}
+
+.icon-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.page-icon {
+  text-align: center;
+  width: 20%;
+}
+
+.page-icon img {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.page-icon h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-header {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.social {
+  padding: 20px;
+  border: 3px solid rgb(225, 225, 228);
+  border-radius: 50%;
+  width: 20px;
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+  color: grey;
+  font-weight: lighter;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 500px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header-logo {
+    width: 20px;
+    height: 20px;
+  }
 }
