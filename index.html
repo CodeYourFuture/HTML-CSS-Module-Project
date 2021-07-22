@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-    <header>
-        <img src="/home/codeyourfuture/Documents/GitHub/HTML-CSS-Coursework-Week2/img/karma-logo.svg" alt="karma-logo"/>
-        <nav>
-            <ul>
-                <li>Meet Karma</li>
-                <li>How it Works</li>
-                <li>Store</li>
-                <li>Blog</li>
-                <li>Help</li>
-                <li>Login</li>
-            </ul>
-        </nav>
-        <main>
-            <section>
-            <h1>Introducing karma</h1>
-            <p>Bring WiFi with you, everywhere you go</p>
-            <button>Learn More</button>            
-            </section>
-            <section>
-                <h2>Everyone needs a little karma</h2>
-                <div>
-                    <img scr="img/icon-devices.svg" alt="device icon"/>
-                </div>
-                <div>
-                    <img src="img/icon-coffee.svg" alt="coffee icon"/>
-                </div>
-                <div>
-                    <img src="img/icon-refill.svg" alt="refill icon"/>
-                </div>
-            </section>
-            <footer>
-                <p>join us</p>
-                <div>
-                    <img src="img/twitter-icon.svg" alt="twitter  icon"/>
-                </div>
-                <div>
-                    <img src="img/facebook-icon.svg" alt="facebook icon"/>
-                </div>
-                <div>
-                    <img src="img/instagram-icon.svg" alt="instagram icon"/>
-                </div>
-                <p>&copy;Karma Mobility,inc.</p>
-            </footer>
-        </main>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header-wrapper">        
+          <img class="logo" src="img/karma-logo.svg" alt="karma-logo" />
+          <nav class="navbar">
+            <a href="#">Meet Karma</a>
+            <a href="#">How it Works</a>
+            <a href="#">Store</a>
+            <a href="#">Blog</a>
+            <a href="#">Help</a>
+            <a href="#">Login</a>
+         </nav>        
     </header>
 
+      <main>
+        <section>
+          <div class="main-header">
+            <h1>Introducing karma</h1>
+            <p>Bring WiFi with you, everywhere you go</p>
+            <button>Learn More</button>
+          </div>
+        </section>
+        <section class="second-part">
+          <h2>Everyone needs a little karma</h2>
+          <div class="icon-wrapper">
+            <div>
+            <img
+              class="icon-size"
+              src="img/icon-devices.svg"
+              alt="device icon"
+            />
+            <p>Internet for all devices</p>
+          </div>
+          <div>
+            <img
+              class="icon-size"
+              src="img/icon-coffee.svg"
+              alt="coffee icon"
+            />
+            <p>Boost your productivity</p>
+          </div>
+          <div>
+            <img
+              class="icon-size"
+              src="img/icon-refill.svg"
+              alt="refill icon"
+            />
+            <p>Pay as You Go</p>
+          </div>
+          </div>
+        </section>
+        <hr>
+        <footer>
+          <p>join us</p>
+          <div class="footer-icon-wrapper">
+            <div>
+            <img
+              class="social-icon"
+              src="img/twitter-icon.svg"
+              alt="twitter  icon"
+            />
+          </div>
+          <div>
+            <img
+              class="social-icon"
+              src="img/facebook-icon.svg"
+              alt="facebook icon"
+            />
+          </div>
+          <div>
+            <img
+              class="social-icon"
+              src="img/instagram-icon.svg"
+              alt="instagram icon"
+            />
+          </div>
+            </div>
+          <p>&copy;Karma Mobility,inc.</p>
+        </footer>
+      </main>
+    </header>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-
-</body>
+  </body>
 </html>

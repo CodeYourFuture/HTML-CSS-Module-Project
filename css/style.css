@@ -1,9 +1,9 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  max-width: 100%;
 }
 
 /**
@@ -16,4 +16,123 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header */
+.logo {
+  height: 70px;
+  width: 50px;
+}
 
+.social-icon {
+  height: 50px;
+  width: 50px;
+}
+
+header {
+}
+
+.header-wrapper {
+  height: 15vmin;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.navbar {
+}
+
+.navbar a {
+  text-decoration: none;
+  color: slategrey;
+  margin-left: 30px;
+}
+
+.navbar a:first-child {
+  color: darkslategray;
+}
+
+.navbar a:last-child {
+  margin-right: 100px;
+}
+
+.navbar a:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+.navbar a:nth-child(3) {
+  color: orangered;
+}
+
+/* main*/
+
+.main-header {
+  background-image: url("../img/first-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 85vmin;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button,
+.main-header h1,
+.main-header p {
+  color: antiquewhite;
+  font-weight: normal;
+  margin: 0;
+}
+
+button {
+  background-color: orangered;
+  border-style: none;
+  border-radius: 2px;
+  padding: 15px;
+}
+
+.second-part {
+  height: 80vmin;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.icon-size {
+  height: 150px;
+  width: 150px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.icon-wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*footer*/
+
+footer {
+  height: 20vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icon-wrapper {
+  display: flex;
+  margin-left: 30px;
+}
