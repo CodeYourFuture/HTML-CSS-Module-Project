@@ -79,23 +79,66 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 4em;
    
+}
+.features > h2{
+    font-size: 2em;
+    font-weight: 300;
 }
 .cards-container{
     display: flex;
     justify-content:space-evenly;
-    width: 70%;
+    width: 80%;
     margin-top: 1em;
-    background-color: palegreen;
+  
 
 }
-.icon-descrp img{
-    width: 70%;
+.card img{
+    width: 35%;
+    height: auto;
 
 }
-.icon-descrp{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 30%;
+ 
+
+}
+.card  p{
+    font-size: 1.4em;
+    font-weight: 400;
+}
+footer{
+    margin: 4em auto;
+    width: 80%;
+    display: flex;
+    border-top: 0.5px solid rgb(219, 215, 215);
+    flex-direction: column;
+    align-items: center;
+    
+}
+.social-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.social-link{
+    padding: 0.6em;
+    border:0.5px solid rgb(231, 226, 226);
+    border-radius: 50%;
+    width: 2%;
+    margin: 0.5em;
+
+}
+.social-icon{
+    width: 100%; 
+    
+}
+footer span{
+    color: rgb(143, 138, 138);
 }
