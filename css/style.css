@@ -19,6 +19,7 @@ body {
 body {
 max-width: 100%;
 }
+ /*header and nav-bar*/
 
 .header {
     display: flex;
@@ -60,6 +61,12 @@ padding:1em;
 }
 
 
+header img {
+    margin-left: 50px;
+}
+
+
+  /*-- Main image, text and button*/
 .jumbotron {
  position: relative;
  text-align: center;
@@ -88,20 +95,24 @@ top: 30%;
 left: 30%;
 color:white;
 font-weight:100;
+font-size: 3.5em;
 }
 
 
 h3 {
 position: absolute;
-top: 40%;
-right: 40%;
+top: 45%;
+right: 30%;
 color:white;
 font-weight:100;
+padding-top: 10px;
+font-size:2em;
+
 }
 
 button {
 position: absolute;
-bottom: 35%;
+bottom: 25%;
 right: 50%;
 border:none;
 text-transform:capitalize;
@@ -113,36 +124,33 @@ border-radius: 4px;
 
 }
 
-
-header img {
-    margin-left: 50px;
-}
-
-
-#h2 {
-display: flex;
-justify-content: center;
-font-size: 30px;
-padding-top:50px;
-font-weight: 100;
-}
-
 #img {
     width:100%;
 }
 
-.flex-container{
-padding-top: 150px;
-display: flex;
-justify-content: space-between;
-margin-left: 15%;
-width: 60%;
 
+/*Karma summary*/
+
+#h2 {
+display: flex;
+justify-content: center;
+font-size: 40px;
+padding-top:50px;
+font-weight: 100;
+}
+
+.flex-container{
+padding-top: 50px;
+display: flex;
+justify-content: space-around;
 
 }
 .flex-item {
+width: 10%;
 
 }
+
+/*social media links*/
 
 p {
 text-align: center;
@@ -154,10 +162,10 @@ hr {
     border-top: 0.5px;
 }
 
-.soc-media{
+.soc-media {
     display:flex;
-    flex-direction: row;
-    align-content:center;
+    align-content:space-around;
+    justify-content: center;
 
 }
 
@@ -168,11 +176,12 @@ border-width: 1px;
 border-radius: 50%;
 padding: 0.5rem;
 
+ 
 }
-
 .soc-media img {
     width: 1rem;
     height:1rem;
+
 }
 
 h4 {
@@ -180,7 +189,8 @@ h4 {
     font-size: 20px;
 }
 
-footer p {
+/*footer*/
+ p {
     color:rgb(145, 143, 143);
     font-size: 12px;
 }
