@@ -15,44 +15,75 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+
+
+ /*Styling Karma logo*/
 .logo{
     padding-left: 100px;
     padding-top: 10px;
 }
+
+/*Styling header of the page*/
+
 .header{
     background-color: white;
     display: flex;
     justify-content: space-between;
 }
+
+/*Styling the navigation bar of the page*/
+
 .header__navBar ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-a{
+
+/*removing underline and adding grey color to navigation bar*/
+
+.header__navBar a{
     text-decoration: none;
     color: grey;
 }
+
+/*Spacing the links*/
+
 li{
     margin-right: 5em;
 }
+
+/*Changing the color of the first child of the nav bar*/
+
 .header__navBar ul li:first-child {
     color: black ;
     font-weight: 600;
 
 }
+
+/*Adding hover effect to navigation links*/
+
 a:hover{
     color: coral;
 }
 
-/*setting background image */
+/*hiding hamburger menu in the desktop version*/
+
+.hamburger__menu{
+    display: none;
+}
+
+/*setting background as an image for the Hero content */
 .largeImage{
     background-image: url("../img/first-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
     width: 100%;
     height: 700px;
 }
+
+/*Styling and aligning the image content*/
 
 .imageContent{
     display: flex;
@@ -60,6 +91,9 @@ a:hover{
     flex-direction: column;
     padding-top: 200px;
  }
+
+ /*Styling the button icon on the image*/
+
 .largeImage button{
     color: white;
     background-color: orangered;
@@ -67,6 +101,9 @@ a:hover{
     width: 110px;
     height: 35px;
 }
+
+/*Styling the text on the image*/
+
 h1,
 h3,
 button{
@@ -74,16 +111,24 @@ button{
     font-style: normal;
 }
 
+/*Increased the size of h1 to make it loog more bigger*/
+
 h1{
     font-size: 50px;
     color: white;
 }
+
+/*Changed the size of h2 relative to font size of text and also changed it's color to grey*/
+
 h3{
     font-size: 2rem;
     padding: 20px;
     color: lightgray;
 
 }
+
+/*Designing the first heading under the background image*/
+
 h2{
     font-size: 2em;;
     font-weight: 400;
@@ -91,25 +136,40 @@ h2{
     text-align: center;
     padding: 30px;
 }
+
+/*Styling the icons under h2 to bring them in a row*/
+
 .icons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 1.5em;
 }
+
+/*Styling text of Footer content*/
+
 .join, .copyRight{
     display: flex;
     align-items: center;
     justify-content: center;
    
 }
+
+/*Changing the color of copyright text to grey*/
+
 .copyRight{
     color: gray;
 }
+
+/*Styling Social media icons*/
+
 .footer__icons{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/*Styling horizontal line and decreasing it's width*/
+
 hr{
    border: none;
    height: 1px;
@@ -118,10 +178,68 @@ hr{
 }
    
 /***************************************************Media Queries*******************************************************************************/
-@media (max-width: 300px) {
-    .header__navBar{
+@media only screen and (max-width: 450px) {
+
+    /*All of the following code will come into effect when the above line is true. ie: page width is less then 450px*/
+
+    /*Decreasing the font size of page relative to original font size of desktop version*/
+
+    body{
+        font-size: 0.7em;
+    }
+
+    /*Brining back the hamburger icon*/
+
+    .hamburger__menu{
+        display: block;
+        width: 30px;
+        margin-left: 90%;
+        margin-right: 20px;
+        margin-top: 15px;        
+    }
+
+    /*Hiding the navigation bar*/
+
+    .header__navBar ul{
         display: none;
     }
+
+    /*Assigning the background image to center*/
+
+    .largeImage{
+        margin: 20px;
+        align-content: center;
+        display: block;
+        width: 100%;
+    }
+
+    /*Assigning the content of the image to center and adding wrap so it can go on to next line if required*/
+
+    .imageContent{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    /*Due to screen size being small bringing the icons under h2 in a vertical position*/
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 50%;
+        margin-right: 50%;
+       
+    }
+
+    /*Changing the size of teh icons*/
+
+    .icons img{
+        width: 100px;
+        height: 100px;
+    }
+  
+
     
     
 }
