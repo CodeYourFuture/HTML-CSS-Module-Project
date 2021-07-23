@@ -1,19 +1,196 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.container {
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+/* ---- header ---- */
+
+.logo {
+    width: 10%;
+    float: left;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    float: right;
+    margin-right: 1rem;
+}
+
+header {
+    text-align: center;
+    background-color:#fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+#nav-bar {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    margin-bottom: 0.75em;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: gray;
+    font: 900 25px;
+    padding: 0.1em 0.2em;
+}
+
+nav {
+    display: none;
+    transform: scale(0.75, 1);
+}
+
+#toggle:checked ~ nav {
+    display: block;
+}
+
+nav li:first-child {
+    margin-top: 1em;
+    font-weight: bolder;
+}
+
+label {
+    margin: 0.5rem;
+    font-size: 25px;
+}
+
+.nav-toggle {
+    display: inline-block;
+}
+
+#toggle {
+    display: none;
+}
+
+/*hero section */
 
 
+.hero-img {
+    background-image: url("../img/first-background.jpg");
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    color: #fff
+}
+
+.hero-img h2 {
+    margin-bottom: 1em;
+}
+
+.tile-area h2 {
+    margin-bottom: 2em;
+}
+
+.hero-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    background-color: rgb(240, 131, 42);
+    padding: 0.7em;
+    border-radius: 4px;
+}
+
+.tile-area img {
+    width: 20%;
+    margin-bottom: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+/*footer*/
+
+.wrapper {
+    justify-content: center;
+}
+
+footer img {
+    width: 5%;
+}
+
+/* media query for desktop */
+
+@media screen and (min-width: 860px) {
+    .row {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        transform: scale(1);
+        justify-content: flex-end;
+    }
+
+    #nav-bar {
+        position: static;
+        display: flex;
+        align-items: center;
+        margin-right: 3em;
+    }
+
+    header .container {
+        height: 4rem;
+        align-items:center;
+    }
+
+    nav li:first-child {
+        margin-top: 0em;
+    }
+
+    .nav-link {
+        margin-left: 2em;
+    }
+
+    .tile-area img {
+        width: 30%;
+    }
+
+    .tile-content {
+        width: 33%;
+    }
+
+    .logo {
+        width: 10%;
+        margin-top: 0.5rem;
+        margin-left: 8rem;
+    }
+
+
+}
