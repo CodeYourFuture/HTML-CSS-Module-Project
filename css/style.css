@@ -18,26 +18,32 @@ body {
 /* header and navigation style */
 header{
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     margin: 1em auto;
 }
+header img{
+    width: 2.5%;
+}
 nav {
     width: 55%;
+
+
 
 }
 nav ul{
     display: flex;
     justify-content: space-around;
+  
 
 }
 ul li{
 list-style: none;
-
 }
+
 li a:link{
     text-decoration: none;
-    color: dimgray;
+    color: rgb(206, 199, 199);
     font-size: 0.9em;
 
 } 
@@ -141,4 +147,66 @@ footer{
 }
 footer span{
     color: rgb(143, 138, 138);
+}
+/* Media query */
+
+@media screen and (max-width:700px) {
+    .nav-bar{
+        width: 80%;
+    }
+    .intro-words{
+        position:absolute;
+        top: 10%;
+        font-size: 0.8em;
+    }
+    .features{
+        font-size: 0.7em;
+    }
+    .social-icon{
+        width: 150%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav-bar{
+        width: 95%;
+    }
+    li a:link{
+        font-size: 0.4em;
+    }    
+    .intro-words{
+        position:absolute;
+        top: 5%;
+        font-size: 0.4em;
+    }
+    .features{
+        font-size: 0.4em;
+    }
+    .social-link{
+        padding: 1em;
+    }
+    .social-icon{
+        width: 200%;
+    }
+    footer{
+        font-size: 0.5em;
+    }
+   
+}
+@media screen and (max-width:400px){
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .social-icon{
+        width: 200%;
+    }
+    footer{
+        font-size: 0.5em;
+    }
 }
