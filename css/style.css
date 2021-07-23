@@ -24,20 +24,28 @@ body {
 header {
     display: flex;
     flex-flow: row ;
+    padding-top: 20px;
+    width:100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .nav-items {
     display:flex;
     flex-flow: row nowrap;
     justify-content:stretch;
+
 }
 
 .nav-bar {
-    width: 80%;
+    width: 100%;
+    
 }
 
 .nav-link {
     text-decoration: none;
+    color: grey;
+    font-size: 20px;
 }
 
 li {
@@ -51,24 +59,27 @@ ul {
 
 
 .logo {
-    height: 30px;
-    width:50%;
+    height: 50px    ;
+    width:20%;
     padding-right: 400px;
     padding-left: 100px;
 }
 
-.graphic-items > img {
-    max-width: 100%;  
-    height: 100px;
-    weight: 100px;
-;
-}
+
 
 
 .main-section {
-    /**display: flex;**/
-    position:relative;
-    text-align: center  ;
+    display: flex;
+    background-image: url(/img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
 }
 
 .background-image {
@@ -77,21 +88,80 @@ ul {
     padding-bottom: 80px;
 }
 
-.text-over-image {
-    position: absolute;
+.text-over-image    {
     text-align: center;
+    font-weight: 400;
 }
+
+h3 {
+    font-size: 30px;
+    font-weight: 300;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+button {
+    background-color: orangered;
+    border-radius: 5%;
+    width: 250px;
+    height: 50px;
+}
+
+
 
 .graphic-items {
     display: flex;
-    flex-direction: row;    
-    justify-content: center;
-    width: 80%;
+    flex-direction: row wrap;    
+    width: 100%;
+    justify-content: space-evenly;
+}
+.graphic-items > img {
+    max-width: 100%;  
+    height: 130px;
+    weight: 130px;
 }
 
+.description-for-graphics {
+    display: flex;
+    flex-direction: row wrap;    
+    width: 90%;
+    justify-content: space-evenly;
+    font-size: 35px;
+    font-weight: 300;
+
+}
 
 
 .karma-catchphrase {
     text-align:center;
     font-weight: lighter;
+    font-size: 50px;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer-items {
+    display:flex;
+    justify-content: center;
+    
+}
+
+.soc-logo {
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%; 
+    padding: 20px;
+    
+}
+
+.soc-logo img {
+    width: 25px;
+    height: 25px;
 }
