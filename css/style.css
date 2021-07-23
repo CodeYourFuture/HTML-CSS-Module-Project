@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    max-width: 100%;
+    height: 100%;
 }
 
 /**
@@ -15,5 +17,371 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+ /*header*/
+ header {
+     padding: 10px 20px 10px 20px;
+     max-width: 100%;
+     height: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ header .nav_logo {
+     display: flex;
+     flex-direction: row;
+ }
+
+ #burger {
+     visibility: hidden;
+ }
+
+ header section {
+     max-width: 100%;
+     max-height: 20px;
+ }
+
+ header section div {
+     width: 100%;
+     height: auto;
+ }
+ 
+ /*header karma logo*/
+ header section img {
+     height: 30px;
+     width: 25px;
+     margin-left: 33px;
+ }
+
+ /*header navigation*/
+ header nav ul {
+     display: flex;
+     flex-direction: row;
+ }
+
+ header nav ul li {
+     list-style: none;
+     display: flex;
+     justify-content: space-evenly;
+     padding: auto;
+ }
+
+ header nav ul li a {
+     padding-right: 27px;
+     text-decoration: none;
+     color: black;
+     transition-duration: 0.5s;
+ }
+
+ header nav ul li a:hover, header nav ul li a:focus {
+     color: red;
+     cursor: pointer;
+     outline: none;
+     transition-duration: 0.5s;
+ }
+
+ h1 {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+ }
+
+ p {
+     text-align: center;
+ }
+
+ /*main content*/
+ main {
+     max-width: 100%;
+     height: 100%;
+     padding: 20px;
+     margin: auto;
+ }
+
+ /*main top content*/
+ .top {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .top img {
+     width: 100%;
+     height: 100%;
+     padding: auto;
+     object-fit: cover;
+ }
+
+ /*top pic content*/
+ .top_content {
+     position: absolute;
+     color: rgba(255,255,255,0.7);
+ }
+
+ .top .top_content .top_content_box {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .top_content_box h1 {
+     margin: 0;
+ }
+
+ .top_content_box p {
+     font-size: 22px;
+ }
+
+ /*main top content button*/
+ .top_context_box button {
+     width: 160px;
+     height: 60px;
+ }
+
+
+ .top_content_box button {
+     margin-top: 10px;
+     height: 50px;
+     width: 150px;
+     border-radius: 10px;
+     background-color: rgb(209, 109, 15);
+     color: white;
+     transition-duration: 0.5s;
+ }
+
+ .top_content_box button:hover 
+  {
+     height: 60px;
+     width: 160px;
+     background-color: white;
+     color: black;
+     font-size: 18px;
+     font-weight: bold;
+     transition-duration: 0.5s;
+ }
+
+ .top_content_box a:focus {
+     outline: 0 !important;
+ }
+
+ .top_content_box button:focus {
+    height: 60px;
+    width: 160px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    transition-duration: 0.5s;
+ }
+
+ /*mid content*/
+ .mid {
+     margin-top: 80px;
+     margin-bottom: 40px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .three_boxes {
+     margin-top: 20px;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+
+ .box {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .box img {
+     max-width: 90px;
+     max-height: 90px;
+ }
+
+ hr {
+     border-width: 2px;
+     color: lightgrey;
+     opacity: 0.5; 
+     margin: 0px 11% 0px 11%;
+ }
+
+ /*footer content*/
+ footer {
+     padding-bottom: 10px;
+ }
+
+ .footer_box {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .footer_icons {
+     display: flex;
+     flex-direction: row;
+     margin: 0px 20px 0px 20px;
+ }
+
+ .icon {
+     border: 1px solid lightgrey;
+     border-radius: 25px;
+     padding: 10px;
+     margin: 0px 10px 0px 10px;
+ }
+
+ footer img {
+     width: 20px;
+     height: 20px;
+     transition-duration: 0.5s;
+ }
+
+ footer img:hover {
+     width: 30px;
+     height: 30px;
+     background-color: yellow;
+     transition-duration: 0.5s;
+ }
+
+ footer a:focus img {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    transition-duration: 0.5s;
+ }
+
+ footer a:focus {
+     outline: none;
+ }
+ 
+ /*mobile version*/
+@media screen and (max-width: 690px) {
+    body {
+        overflow: auto;
+        margin: 0;
+        max-width: 100%;
+    }
+    /*burger menu*/
+    #burger {
+        visibility: visible;
+        min-height: 46px;
+        min-width: 46px;
+    }
+
+    /*nav logo */
+    .nav_logo {
+        padding: 10px;
+    }
+
+    /*header content with navigation*/
+    header {
+        padding: 10px 0px 10px 0px;
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header section img {
+        margin: 0;
+    }
+
+    header .nav_logo {
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #burger {
+        min-height: 200px;
+        height: 100%;
+    }
+
+    header nav ul li {
+        width: 100%;
+        margin: 0;
+        border: 1px solid grey;
+        border-radius: 5px;
+        min-height: 46px;
+        background-color: lightgrey;
+    }
+
+    header nav ul li a {
+        width: 100%;
+        min-height: 46px;
+        margin: auto;
+        display: block;
+        text-align: center;
+        line-height: 46px;
+        transition-duration: 0.5s;
+    }
+
+    header nav ul li a:hover,
+    header nav ul li a:focus {
+        background-color: grey;
+        color: white;
+        font-size: 16px;
+        transition-duration: 0.5s;
+    }
+
+    /*main content*/
+    main {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top img {
+        min-height: 270px;
+    }
+
+    .three_boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+
+    footer img {
+        width: 46px;
+        height: 46px;
+        transition-duration: 0.5s;
+    }
+
+}
 
 
