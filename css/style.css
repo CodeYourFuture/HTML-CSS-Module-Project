@@ -15,38 +15,45 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-/* header and navigation style */
+
+/* Keeping the navigation and logo flex position*/
 header{
     display: flex;
     width: 90%;
     justify-content: space-between;
     margin: 1em auto;
 }
+/* logo sizing */
 header img{
     width: 2.5%;
 }
+/* Keeping a space between the navigation and the logo */
 nav {
     width: 55%;
-
-
-
 }
+/* Setting navigation links in row with space */
 nav ul{
     display: flex;
     justify-content: space-around;
-  
-
-}
+  }
+  /* Removing bullet points of the li elements */
 ul li{
 list-style: none;
+} 
+/* making the first navigation link thicker and darker in color. Wanted to make links darder after visiting, but couldn't */
+ul li:first-child{
+    font-weight: 600;
+    color: rgb(26, 25, 25);
 }
-
+/* Removing the navigation link's underline style */
 li a:link{
     text-decoration: none;
-    color: rgb(206, 199, 199);
     font-size: 0.9em;
-
 } 
+/* Setting the navigation link's font color and hover color*/
+li a{
+    color: rgb(95, 93, 93);
+}
 li a:hover{
     color: rgb(230, 133, 15);
 }
@@ -61,6 +68,7 @@ li a:hover{
 .intro{
     position:relative;
 }
+/* h1 and p styles including making them stay on top of the image */
 .intro-words{
     position:absolute;
     top: 25%;
@@ -72,7 +80,7 @@ li a:hover{
 h1{
     font-weight: 300;
 }
-/* Button style */
+/* Introduction section's Button style */
 .intro-words > button{
     background-color: rgb(228, 96, 20);
     padding: 0.7em 1.5em;
@@ -80,44 +88,42 @@ h1{
     border:none;
     font-size: 0.7em;
 }
-
+/* feature section's style */
 .features{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4em;
-   
 }
 .features > h2{
     font-size: 2em;
     font-weight: 300;
 }
+/* aligning the feature's cards in row */
 .cards-container{
     display: flex;
     justify-content:space-evenly;
     width: 80%;
     margin-top: 1em;
-  
-
 }
+/* Sizing the card's image or icon */
 .card img{
     width: 35%;
     height: auto;
-
 }
+/* Aligning each card's image/icon and the text in column */
 .card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 30%;
- 
-
-}
+ }
 .card  p{
     font-size: 1.4em;
     font-weight: 400;
 }
+/* Alinging footer items in column and adding a line on top of the footer */
 footer{
     margin: 4em auto;
     width: 80%;
@@ -125,30 +131,31 @@ footer{
     border-top: 0.5px solid rgb(219, 215, 215);
     flex-direction: column;
     align-items: center;
-    
 }
+
+/* Arranging the social media icons in row */
 .social-container{
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
 }
-
+/* Creating circular border around the social media icons */
 .social-link{
     padding: 0.6em;
     border:0.5px solid rgb(231, 226, 226);
     border-radius: 50%;
     width: 2%;
     margin: 0.5em;
-
 }
 .social-icon{
     width: 100%; 
-    
 }
+/* Font color for the copyright text at the bottom */
 footer span{
     color: rgb(143, 138, 138);
 }
-/* Media query */
+
+/* Media query for 3 screen breakpoints */
 
 @media screen and (max-width:700px) {
     .nav-bar{
