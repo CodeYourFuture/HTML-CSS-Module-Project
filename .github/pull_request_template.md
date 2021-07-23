@@ -16,14 +16,14 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Nonye Ehiguese
+- Your City: West Midland
+- Your Slack Name: Gempearl
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML/CSS
+- Week:2
 
 # Notes
 
