@@ -27,24 +27,22 @@ nav {
   padding-right: 2em;
 }
 
-nav li {
+li {
   margin: 0 5em 1em 0;
   list-style: none;
   float: right;
+  
 }
-
-nav a {
+a {
   color: gray;
   text-decoration: none;
   font-size: 2em;
 }
-nav li:last-of-type {
-  color: gray;
-  text-decoration: none;
+li:last-of-type {
   font-weight: 500;
 }
 
-nav a:hover {
+a:hover {
   color: crimson;
 }
 
