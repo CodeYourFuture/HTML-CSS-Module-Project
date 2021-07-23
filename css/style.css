@@ -26,6 +26,7 @@ header{
 /* logo sizing */
 header img{
     width: 2.5%;
+    margin-left: 2em;
 }
 /* Keeping a space between the navigation and the logo */
 nav {
@@ -59,15 +60,18 @@ li a:hover{
 }
 
 /* Introduction section */
-.intro-image{
-   max-width: 95%;
-   display: flex;
-  margin: 0 auto;
-    
-}
 .intro{
     position:relative;
+    
 }
+.intro-image{
+   width: 95%;
+   display: block;
+    margin: 0 auto;
+  
+    
+}
+
 /* h1 and p styles including making them stay on top of the image */
 .intro-words{
     position:absolute;
@@ -157,7 +161,7 @@ footer span{
 
 /* Media query for 3 screen breakpoints */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:960px) {
     .nav-bar{
         width: 80%;
     }
@@ -180,7 +184,7 @@ footer span{
         width: 95%;
     }
     li a:link{
-        font-size: 0.4em;
+        font-size: 0.7em;
     }    
     .intro-words{
         position:absolute;
@@ -201,7 +205,10 @@ footer span{
     }
    
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
+    li a:link{
+        font-size: 0.5em;
+    }   
     .cards-container{
         display: flex;
         flex-direction: column;
