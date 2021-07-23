@@ -3,6 +3,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    
+
     -webkit-font-smoothing: antialiased;
 }
 
@@ -16,4 +18,196 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+
+
+
+
+
+/* setting background image*/
+.image{
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+.imagecontent{
+    padding-top: 200px;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+.imagecontent button{
+    background-color:orangered;
+    border-radius: 4px;
+    height: 40px;
+    width: 120px;
+
+}
+
+
+/*Setting font style and weight*/
+h1, h2, h3, button{
+    font-weight: 100;
+    font-style: normal;
+
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    padding-bottom: 20px;
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+/*making row for link options*/
+.navBar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+li{
+    margin-right: 2em;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+/*changing the colors for link row*/
+a{
+    text-decoration: none;
+    color: gray;    
+}
+/*Hiding hamburger manue on desktop screen*/
+.hamburger{
+    display: none;
+}
+
+.navBar ul li:first-child{
+    font-weight: 700;
+}
+
+
+/*putting hover effect for link options*/
+a:hover{
+    color: orange;
+}
+
+
+/*putting icons horizontally*/
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* styling the footer*/
+ .footer__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    color: gray;
+}
+.footer img{
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+
+
+
+/*media querry*/
+@media only screen and (max-width:450px) {
+    body{
+        font-size: 0.8em;
+    }
+
+    /*putting the hamburger*/
+    .hamburger{
+        display: block;
+        margin-left: 88%;
+        margin-right: 20px;
+        width: 25px;
+        margin-top: 15px;
+    }
+      /*hiding the navigations*/
+.navBar ul{
+    display: none;
+}
+
+    /*making background image in center*/
+    .image{
+        display: block;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin: 20px;
+    }
+    .imagecontent{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+
+    /*changing the sizes*/
+    .images img{
+        width: auto;
+        min-height: auto;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
 
