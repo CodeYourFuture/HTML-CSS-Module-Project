@@ -103,6 +103,7 @@ p {
   justify-content: space-between;
   width: 70%;
   margin-left: 15%;
+  
 }
 
 .con-item {
@@ -168,6 +169,27 @@ footer p {
   text-align: center;
   color: gray;
   padding-top: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger {
+   
+    display :  none;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+ nav {
+    display :  none;
+  }
+
+  
+  .hamburger {
+    width: 5em;
+  }
+  
+  
 }
 
 /**
