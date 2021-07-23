@@ -76,7 +76,7 @@ li:hover {
     color: white;    
 }
 
-.panel-container h1,p {
+.panel-container h1, p {
     font-weight: 300;
     margin: 15px;
 }
@@ -90,4 +90,35 @@ li:hover {
     height: 30px;
     border-style: none;
     /* padding-top: 10px; */
+}
+
+
+/* Newsletter */
+.newsletter-container-head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter-container-head h1 {
+    color: rgb(48, 47, 47);
+    font-weight: 300;    
+}
+
+#newsletter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+} 
+
+#newsletter-container img {
+    width: 45%;
+    margin-bottom: 15px;
+    align-content: space-around;
+}
+
+hr {
+    width: 80%;
 }
