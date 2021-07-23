@@ -166,7 +166,17 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
+/*Adding round border to footer icons*/
+
+.footer__icons img{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
 
 /*Styling horizontal line and decreasing it's width*/
 
@@ -176,6 +186,7 @@ hr{
    width: 80%;
    background-color: gray;
 }
+
    
 /***************************************************Media Queries*******************************************************************************/
 @media only screen and (max-width: 450px) {
@@ -207,8 +218,9 @@ hr{
     /*Assigning the background image to center*/
 
     .largeImage{
-        margin: 20px;
+        margin: 10px;
         align-content: center;
+        justify-content: center;
         display: block;
         width: 100%;
     }
