@@ -4,6 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 30px;
+    height: 100%;
+    min-height: 100%;
 }
 
 /**
@@ -16,16 +19,11 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-body {
-    margin: 30px;
-    height: 100%;
-    min-height: 100%;
-  } 
+
   /* position of logo */
 header img{
     margin: auto 60px;
-    float: left;
-    
+    float: left;   
 }
 
 header ul{
@@ -35,12 +33,11 @@ header ul{
     justify-content: flex-end;
     gap: 30px;
     margin-right: 70px;
-    
     }
+
 header a{
     color: black; 
     text-decoration: none;
-   
     }
      
 header a:hover{
@@ -65,7 +62,6 @@ height: 700px;
 /* background-position: ; */
 
 .mainkarmacontainer  {
-    
     background-image:url('/img/first-background.jpg');
     background-size: cover;
     height: 58em;
@@ -78,32 +74,22 @@ height: 700px;
     color: white;
     }
   
-   
-
    h1{ 
        text-align: center;
        top: 50%;
        left:50%;
        justify-content: center;
-    font-size:3.5em ;
-    font-weight:lighter;
-    /* padding-top:250px;  */
-     
+       font-size:3.5em ;
+       font-weight:lighter; 
  }
+
   h2{
      text-align: center;
      justify-content: center;
     font-size: 3.8em;
     font-weight: lighter;
  }
- .button{
-     
- }
-     
-
-
-
-
+ 
 .smallkarma h3{
    text-align: center;
    font-size: 3em;
@@ -128,36 +114,33 @@ text-align: center;
 font-size: 1.5em;
 }
 
-footer h4,h5{
-    display: flex;
+.footer{
+    text-align: center;
+flex-direction:column;
 justify-content:center;
-flex-wrap: wrap;
-text-align: center;
-    font-size: 1.2em;
+align-items:center;
 }
 
-footer h5{
+ h5 {
     color: gainsboro;
     font-weight: lighter;
+    text-align: center;
+    font-size: 1.2em;  
 }
+   
 .social-icons {
     display:inline-block;
     background-color:#fff;
-    margin-right:10px;
-    margin:auto
-    font-size: 50px;
+    margin-right:10px; 
+    margin:auto; 
+    font-size: 20px; 
     line-height:30px;
     width: 50px;
     height: 20px;
-    border-radius:50%;
+    border-radius: 50%;
     border: 2px solid whitesmoke;
-    color: #1DA1F2;
-    align-items: center;
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
-    /* justify-content: center; */
-}
-
+    color: #1DA1F2;  
+} 
 
 @media(max-width:700px) {
 header ul,a {
@@ -181,5 +164,4 @@ h2{
     flex-direction: column;
     text-align: center;
 }
-
-
+}
