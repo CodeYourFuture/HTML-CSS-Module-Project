@@ -32,37 +32,50 @@ body {
 }
 
 .header-wrapper {
-  height: 15vmin;
-  margin-left: 6.3em;
+  height: 13vmin;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
 
-  overflow-x: hidden;
+.navbar {
+  max-width: 100%;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .navbar a {
   text-decoration: none;
-  color: slategrey;
-  margin-left: 2em;
+  color: rgb(128, 146, 163);
   font-size: 1.5em;
+  margin-left: 1.5em;
 }
 
-.navbar a:active,
-.navbar a:first-child {
+.navbar li a:active,
+.navbar li:first-child a {
   color: darkslategray;
 }
 
-.navbar a:last-child {
+/*.navbar li:last-child {
   margin-right: 6.3em;
-}
+}*/
 
-.navbar a:not(:first-child):hover {
+.navbar li:not(:first-child) a:hover {
   color: orangered;
   cursor: pointer;
 }
 
-.navbar a:nth-child(3) {
+.navbar li:nth-child(3) a {
   color: orangered;
 }
 
@@ -112,8 +125,8 @@ button {
 }
 
 .icon-size {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 
 h2 {
@@ -129,8 +142,6 @@ p {
   font-weight: 100;
 }
 .icon-wrapper {
-  margin-left: 1em;
-  margin-right: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -142,11 +153,12 @@ hr {
 }
 /*footer*/
 
-footer {
+.footer-wrapper {
   height: 20vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2.5em;
 }
 
 .footer-icon-wrapper {
@@ -166,4 +178,8 @@ footer {
 
 span {
   color: slategrey;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 775px) {
 }
