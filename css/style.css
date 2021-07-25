@@ -16,4 +16,296 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .top-navigation {
+    background-color: #fff;
+    height: 71px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.top-navigation > .content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    width: 51.25rem;
+    height: 71px;
+}
+
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 28.5px;
+    letter-spacing: 0.01em;
+}
+
+
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.9rem;
+}
+
+.big-button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    background-color: #E62E00;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    margin-top: 100rem;
+}
+
+.hr2 {
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+    margin-top: 0px;
+    width: 100%;
+}
+
+
+
+.introduction {
+    background-image: url(../img/first-background.jpg);
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 595px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.introduction .content {
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+}
+
+.introduction .content h1 {
+    font-size: 3.125rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 11.5rem;
+    border: 0;
+}
+
+.introduction h3 {
+    box-sizing: border-box;
+    margin: -10rem;
+    font-size: 1rem;
+}
+
+.cases {
+    padding-bottom: 5rem;
+}
+
+.cases .content {
+    margin-top: 7.875rem;
+    color: #1d1e21;
+    text-align: center;
+}
+
+.cases h2 {
+    font-size: 2.75rem;
+ /*   margin: 1.625 0 3.125rem; */
+    font-weight: 300;
+}
+
+.cases .devices {
+    width: 69%;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 4em;
+}
+
+.cases .devices > li {
+    width: 33.3333333%;
+    float: left;
+    margin-top: 1.9rem;
+}
+
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.263rem;
+    margin: 1.5rem 0px 1.875rem;
+}
+
+.social {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+
+social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+    margin-top: 200px;
+    margin-left: 258px;
+    width: 52.0rem;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+
+.h5 {
+    color: black;
+    font-size: 1.0rem;
+    font-weight: 400;
+    margin-top: 400px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, 0);
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.twitter {
+    color: #55acee;
+}
+
+.facebook {
+    color: #4c66a4;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
+
+.instagram {
+    color: #3f729b;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.copyright {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
