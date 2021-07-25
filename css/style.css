@@ -34,13 +34,15 @@ header{
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: auto;
 }
 
 .header_img{
     
     width: 30%;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-left: 5%;
+    
 }
 
 .karma_img{
@@ -51,11 +53,11 @@ header{
     width:70%;
 }
 
-container ul{
+ul{
     display:none;
 }
 
-container svg{
+svg{
    padding-top: 15%;
    padding-left:110%;
    width:30%;
@@ -176,7 +178,7 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: 25%;
-    padding-left: 5%;
+    padding-left: 4%;
     
  }
   
@@ -208,6 +210,9 @@ main{
     display: flex;
     flex-direction: row;
     padding-left: 10%;
-    width: 4%;
+    width: 2%;
  }
  
+ @media screen and (min-width:500px){
+    
+ }
