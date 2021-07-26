@@ -22,13 +22,8 @@ body {
 }
 /* Header */
 .logo {
-  height: 70px;
-  width: 50px;
-}
-
-.social-icon {
-  height: 50px;
-  width: 50px;
+  max-height: 9vmin;
+  max-width: 20%;
 }
 
 .header-wrapper {
@@ -57,18 +52,14 @@ body {
 .navbar a {
   text-decoration: none;
   color: rgb(128, 146, 163);
-  font-size: 1.5em;
-  margin-left: 1.5em;
+  font-size: 1.5vw;
+  margin-left: 2vw;
 }
 
 .navbar li a:active,
 .navbar li:first-child a {
   color: darkslategray;
 }
-
-/*.navbar li:last-child {
-  margin-right: 6.3em;
-}*/
 
 .navbar li:not(:first-child) a:hover {
   color: orangered;
@@ -81,42 +72,47 @@ body {
 
 /* main*/
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-header {
   background-image: url("../img/first-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 85vmin;
+  height: 86.5vmin;
   width: 100%;
   line-height: 1.8;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 button,
 .main-header h1,
-.main-header p {
+.main-header h3 {
   color: antiquewhite;
   font-weight: 100;
   margin: 0;
 }
-
 h1 {
-  font-size: 2.5em;
+  font-size: 2.7vw;
 }
 
 button {
   background-color: orangered;
   border-style: none;
   border-radius: 4px;
-  padding: 0.4em;
-  font-size: 1.5em;
+  font-size: 1.2vw;
+  padding: 1vh 1.2vw;
+  margin-top: 2em;
 }
 
-.second-part {
+.main-icon {
   height: 80vmin;
   display: flex;
   flex-direction: column;
@@ -124,51 +120,23 @@ button {
   justify-content: center;
 }
 
-.icon-size {
-  height: auto;
-  width: auto;
-}
-
 h2 {
   text-align: center;
-  font-size: 2em;
   font-weight: 100;
+  font-size: 2vw;
   margin-top: 1.8em;
   color: #333;
 }
-
+h3,
 p {
-  font-size: 1.5em;
+  font-size: 1.5vw;
   font-weight: 100;
 }
-.icon-wrapper {
+.icon-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-hr {
-  width: 80%;
-  opacity: 0.4;
-}
-/*footer*/
-
-.footer-wrapper {
-  height: 20vmin;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2.5em;
-}
-
-.footer-icon-wrapper {
-  display: flex;
-  margin-left: 1em;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
+  align-items: baseline;
 }
 
 .icon-size-wrapper {
@@ -176,10 +144,158 @@ hr {
   flex-direction: column;
 }
 
-span {
-  color: slategrey;
-  font-size: 1.2em;
+hr {
+  width: 80%;
+  opacity: 0.2;
 }
 
-@media screen and (max-width: 775px) {
+.icon-size {
+  max-width: 100%;
+  height: auto;
+}
+/*footer*/
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border: 0.1rem solid rgb(144, 147, 151, 0.3);
+  border-radius: 50%;
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+.footer-wrapper p,
+span {
+  font-size: 1vw;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.footer-icon-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  color: slategrey;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 769px) {
+  .menu-hamburger {
+    display: none;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    display: none;
+  }
+
+  h1,
+  h3 {
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 10vh;
+  }
+
+  h3,
+  p {
+    font-size: 4vw;
+  }
+
+  .footer-wrapper p,
+  span {
+    font-size: 2vw;
+  }
+
+  button {
+    margin-top: 1vh;
+    font-size: 4vw;
+    padding: 0.8vh 1vw;
+  }
+
+  .main-header {
+    height: 70vmin;
+    line-height: 1.3;
+  }
+
+  .main-icon {
+    height: 95vmin;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-size-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-wrapper {
+    height: 10vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .footer-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .icon-size {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .social-icon {
+    max-width: 15px;
+    max-height: 15px;
+  }
+
+  hr {
+    margin-top: 8vh;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  br {
+    display: none;
+  }
+
+  .menu-hamburger {
+    max-width: 20%;
+  }
 }
