@@ -1,10 +1,15 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    width: 100%;
+    margin:auto;
+   
+
+    
 }
 
 /**
@@ -20,17 +25,18 @@ body {
 
 /* Starting small fr 400 X 862 */
 
-
+/* html{
+    height: 100%;
+    max-width: 100%;
+} */
 
 
 /* Header Section */
 
-html{
-    height: 100%;
-}
+
 
 header{
-    width:100%;
+    max-width:100%;
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -58,10 +64,12 @@ ul{
 }
 
 svg{
-   padding-top: 15%;
-   padding-left:110%;
-   width:30%;
-   height:20%;
+   position:absolute;
+   width:10%;
+   height:10%;
+   top:0.8%;
+   left:80%;
+
 }
 
 
@@ -80,7 +88,7 @@ main{
 
  .work-img{
     position: relative;
-    min-width:100%;
+    width:100%;
     height: 40vh;
  }
 
