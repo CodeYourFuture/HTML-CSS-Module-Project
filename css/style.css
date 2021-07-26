@@ -15,8 +15,8 @@ header {
 }
 
 #logo {
-  padding-left: 15em;
-  margin-top: 2em;
+  padding-left: 10em;
+  margin-top: 2.9em;
   width: 2%;
   height: 2%;
 }
@@ -28,14 +28,14 @@ nav {
 }
 
 li {
-  margin: 0 5em 1em 0;
+  margin: 0 3em 1em 0;
   list-style: none;
   float: right;
 }
 a {
   color: gray;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 li:last-of-type {
   font-weight: 500;
@@ -55,7 +55,7 @@ a:hover {
   background-image: url("/img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80em;
+  height: 52em;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -69,11 +69,11 @@ a:hover {
   margin-top: 0em;
   color: white;
   font-weight: 95;
-  font-size: 4.8em;
+  font-size: 3.3em;
 }
 
 .about-karma-container h1 {
-  font-size: 9em;
+  font-size: 6.1em;
   margin-bottom: 0em;
   margin-top: 0em;
   font-weight: 95;
@@ -83,9 +83,9 @@ a:hover {
 button {
   background: rgb(211, 84, 11);
   text-decoration: none;
-  padding: 0.7em 1.5em 0.7em 1.5em;
+  padding: 0.7em 1.2em 0.7em 1.2em;
   border-radius: 0.3em;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -101,8 +101,8 @@ p {
   display: flex;
   height: 20%;
   justify-content: space-between;
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin: auto;
   
 }
 
@@ -112,7 +112,7 @@ p {
   font-size: 0.4em;
   text-align: center;
   padding: 7em;
-  margin-right: 10em;
+  margin-right: 8em;
   justify-items: left;
 }
 
@@ -121,7 +121,7 @@ p {
 }
 
 .con-item p {
-  font-size: 6em;
+  font-size: 4em;
   font-weight: normal;
 }
 
@@ -133,7 +133,7 @@ h2 {
   margin-top: 3em;
   margin-bottom: 1em;
   text-align: center;
-  font-size: 5em;
+  font-size: 3.7em;
   font-weight: 100;
 }
 
@@ -148,15 +148,15 @@ h2 {
 footer p {
   font-weight: normal;
   margin-bottom: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .social img {
-  width: 2em;
+  width: 1.2em;
 }
 
 .icons {
-  padding: 1.3em;
+  padding: 1em;
   border-radius: 50%;
   border-width: 0.1em;
   border-color: rgb(207, 182, 182);
@@ -165,7 +165,7 @@ footer p {
 }
 
 #copyright {
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-align: center;
   color: gray;
   padding-top: 0;
