@@ -35,7 +35,7 @@ li {
 a {
   color: gray;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 li:last-of-type {
   font-weight: 500;
@@ -69,11 +69,11 @@ a:hover {
   margin-top: 0em;
   color: white;
   font-weight: 95;
-  font-size: 3.3em;
+  font-size: 3.3rem;
 }
 
 .about-karma-container h1 {
-  font-size: 6.1em;
+  font-size: 6.1rem;
   margin-bottom: 0em;
   margin-top: 0em;
   font-weight: 95;
@@ -92,28 +92,25 @@ button {
 p {
   text-align: center;
   padding-top: 1em;
-  font-size: 6em;
+  font-size: 6rem;
   font-weight: 95;
 }
 
-.container {
-  margin-top: 0em;
-  display: flex;
-  height: 20%;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
+
+  .container {
+    display: flex;
+    height: 19%;
+    justify-content: space-between;
+    width: 84%;
+    margin-left: 12em;
   
 }
 
 .con-item {
-  width: 100%;
-  height: 10%;
-  font-size: 0.4em;
-  text-align: center;
-  padding: 7em;
-  margin-right: 8em;
-  justify-items: left;
+ width: 100%;
+ text-align: center;
+ margin-right: 8em;
+ justify-items: left;
 }
 
 .con-item img {
@@ -121,7 +118,7 @@ p {
 }
 
 .con-item p {
-  font-size: 4em;
+  font-size: 1.7rem;
   font-weight: normal;
 }
 
@@ -133,7 +130,7 @@ h2 {
   margin-top: 3em;
   margin-bottom: 1em;
   text-align: center;
-  font-size: 3.7em;
+  font-size: 3.7rem;
   font-weight: 100;
 }
 
@@ -148,15 +145,15 @@ h2 {
 footer p {
   font-weight: normal;
   margin-bottom: 1em;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .social img {
-  width: 1.2em;
+  width: 1.4em;
 }
 
 .icons {
-  padding: 1em;
+  padding: 0.8em;
   border-radius: 50%;
   border-width: 0.1em;
   border-color: rgb(207, 182, 182);
