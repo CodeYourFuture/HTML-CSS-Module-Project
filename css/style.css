@@ -1,9 +1,99 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  display: flex;
+  color: gray;
+}
+
+nav ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+}
+
+nav ul li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.nav-bar {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  position: fixed;
+  padding-top: 15px;
+}
+
+.logo {
+  margin-left: 20%;
+  float: left;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  max-width: 40px;
+  max-height: 40px;
+}
+.nav-bar ul li:first-child {
+  color: black;
+}
+
+.slide1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  vertical-align: top;
+}
+
+#learn-more {
+  font-size: 25px;
+  color: white;
+  background-color: #f05a29;
+  border-radius: 5px;
+  border: none;
+  height: 60px;
+  width: 200px;
+}
+
+.little-karma {
+  width: 1000px;
+}
+
+#little-karma {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+#slide2 {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  background-color: blanchedalmond;
+}
+
+#get-karma-today {
+  font-size: 25px;
+  color: white;
+  background-color: #f05a29;
+  border-radius: 5px;
+  border: none;
+  height: 60px;
+  width: 200px;
+  align-self: flex-end;
 }
 
 /**
@@ -15,5 +105,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
