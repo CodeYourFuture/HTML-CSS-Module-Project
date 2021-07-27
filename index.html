@@ -15,106 +15,95 @@
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
 <header>
-    <!--The Logo-->
-    <img src="img/karma-logo.svg"
-         alt ="Karma Logo"
-         id ="Logo"
-         weight ="75"
-         height ="75">
+  
+<nav>
 
-    <!--The Nav-->
-    <nav>
-        <ul>
-            <li>Meet Karma</li>
-            <li>How it works</li>
-            <li>Store</li>
-            <li>Blog</li>
-            <li>Help</li>
-            <li>Login</li>
-        </ul>
-    </nav>
+<!--The Logo-->
+  <img id="karma-logo" 
+   src="./img/karma-logo.svg"
+   alt ="Karma Logo"
+   weight ="75px"
+   height ="75px"> 
+
+<!--The Nav links-->
+<div id ="nav-bar">
+    <ul>
+            <li><a href = "introduction"> Meet Karma </a></li>
+            <li><a href = "how-it-works"> How it works </a></li>
+            <li><a href = "store"> Store </a></li>
+            <li><a href = "blog"> Blog </a></li>
+            <li><a href = "help"> Help </a></li>
+            <li><a href = "login"> Login </a></li>
+    </ul>
+</div>
+
+</nav>
 
 </header>
 
-<main>
     <!--Introduction about Karma-->
-   <section class= "introduction">
-       <img src="img/first-background.jpg"
-            alt="introducting Karma"
-            weight="1080"
-            height ="500">
-        <div class ="Intro"><h1>Introducting Karma</h1> </div>
-        <div class ="Motto"><h3>Bring WIFI with you, everywhere you go.</h3> </div>
-        <button class = "MoreBtn">Learn More</button>
-   </section>
+   <section id= "introduction">
+        <img src = "img/first-background.jpg" 
+             alt = "background image"
+        <h1>Introducing Karma</h1> </div>
+        <h3>Bring WIFI with you, everywhere you go.</h3> </div>
+        <button id ="learn-more">Learn More</button>
+    </section>
 
-   <!--Benefits of Karma-->
-   <section class ="Features">
-        <div class ="Devices">
-            <img src="img/icon-devices.svg"
+
+    <!--Benefits of Karma-->
+   <section id ="Features">
+        <div class= "Karmaflexbox-1">
+            <h1>Everyone needs a little karma</h1>
+        </div>
+        <div class="Karmaflexbox-2">
+            <img id = "device" 
+                 src="./img/icon-devices.svg"
                  alt="Internet for all device"
-                 weight= "200"
-                 height ="200">
-            <p>Internet for all devices</p>
+            <h3> Internet for all devices</h3>
         </div>
-   </section>
-
-    <div class ="Productivity">
-        <img src="img/icon-coffee.svg"
-             alt="Boost your Productivity"
-             weight= "200"
-             height ="200">
-        <p>Boost your Productivity</p>
-    </div>
-
-    <div class ="Payasyougo">
-        <img src="img/icon-refill.svg"
-             alt="Pay as you go"
-             weight= "200"
-             height ="200">
-        <p>Pay as you go</p>
-    </div>
-
-<!--Customer Experience-->
-<section class ="Customer-Experience">
-    <div class ="customer-container">
-        <img src="additional/feature-img.png"
-             alt="Customer-Experience">
+        <div class="Karmaflexbox-2">
+            <img id="coffee" 
+                 src="./img/icon-coffee.svg"
+                 alt="Boost your Productivity"
+            <h3> Boost your Productivity</h3>
         </div>
+        <div class="Karmaflexbox-2">
+            <img id="refill"
+                 src="./img/icon-refill.svg"
+                 alt="Pay as you go"
+            <h3> Pay as you go</h3>
+        </div>
+    </section>
+    
 
-    <div class ="Experience-container">
-        <h3>Wherever I am, I just don't worry about my connection anymore!</h3>
-        <button class = "GetKarmaBtn">Get Karma today</button>
-    </div>
-</section>
+    <footer>
 
-<section class ="join-us">
-    <div class = "twitter">
-        <img src="img/twitter-icon.svg"
-             alt="twitter-icon"
-    </div>
-
-    <div class = "facebook">
-        <img src="img/facebook-icon.svg"
-             alt="facebook-icon"
-    </div>
-
-    <div class = "instagram">
-        <img src="img/instagram-icon.svg"
-             alt="instagram-icon"
-    </div>
-</section>
-
-<footer>
-    <p>(c) Karma Mobility.inc</p>
-</footer>
-
-</main>
-
-</body>
-
-
-
-
-
+        <h2>Join us on</h2> 
+        <div id = "icon-container">
+          <div class = "icon">
+            <img id = "twitter-icon" src="img/twitter-icon.svg"
+                 alt="twitter-icon" 
+                 weight= 30px;
+                 height = 30px;
+        </div>
+        <div class = "icon">
+            <img id= "facebook-icon" src="img/facebook-icon.svg"
+                 alt="facebook-icon"
+                 weight= 30px;
+                 height = 30px;
+        </div>
+        <div class = "icon">
+            <img id = "instagram-icon" src="img/instagram-icon.svg"
+                 alt="instagram-icon"
+                 weight= 30px;
+                 height = 30px;
+        </div>
+   
+        <h2> &copy; Karma Mobility.inc</h2>
+    </footer>
+    
+     
+    </body>
+    
 </html>
