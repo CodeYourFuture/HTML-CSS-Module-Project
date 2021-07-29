@@ -58,12 +58,16 @@ header{
 
 .menu {
    padding-top: 13px;
-   width:300px;
-   height:15vh;
+   width:120px;
+   height:24vh;
    position:absolute;
    transform: translate(500px, 0);
    transition:transform 0.3s ease;
-   background:honeydew;
+   background:orangered;
+}
+.menu a:hover{
+   background-color: grey;
+   border-style: groove;
 }
 
 .menu-two{display:none;}
@@ -71,7 +75,8 @@ header{
 a{
    
    text-decoration:none;
-   color:rgb(88, 83, 83);
+   font-size: 20px;
+   color:rgb(241, 237, 237);
    padding: -1.5em;
 }
 
@@ -100,7 +105,7 @@ li {
 }
 
 .change .menu {
-   -webkit-transform: translate(-100px, 0);
+   -webkit-transform: translate(-90px, 0);
    
 }
 
