@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-    
+
+
     <title>Karma</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bigscreen.css">
-    <link rel="stylesheet" media="screen and (min-width:500px)" href="css/bigscreen.css">
+    <!-- <link rel="stylesheet" media="screen and (min-width:500px)" href="css/bigscreen.css"> -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 
     <!-- Add your HTML markup here -->
@@ -20,102 +22,95 @@
     <!-- All the images you need are in the 'img' folder -->
 
     <!-- Header Section -->
-    <header>
-
-        <section class="header_img">
-            <img
-                class="karma_img"
-                src="img/karma-logo.svg"
-                alt="Karma Logo">
-        </section>
+    <header class="header">
+        <div class="logo">
+            <img src="img/karma-logo.svg" alt="karma logo">
+        </div>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="menu">
+                <li><a href="_blank">Meet Karma</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#"> Store</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+          
+        <script>
+          function myFunction(x) {
+            x.classList.toggle("change");
+          }
+        </script>
         
-        
-        
-        <!-- Navigation Bar -->
-        <nav class="nav_bar">
-            
-            
-                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H23C23.5523 0 24 0.447715 24 1V1.28572C24 1.838 23.5523 2.28572 23 2.28572H1C0.447716 2.28572 0 1.838 0 1.28572V1ZM0 7.85714C0 7.30485 0.447715 6.85713 1 6.85713H23C23.5523 6.85713 24 7.30485 24 7.85713V8.14285C24 8.69513 23.5523 9.14285 23 9.14285H1C0.447716 9.14285 0 8.69513 0 8.14285V7.85714ZM1 13.7143C0.447715 13.7143 0 14.162 0 14.7143V15C0 15.5523 0.447716 16 1 16H23C23.5523 16 24 15.5523 24 15V14.7143C24 14.162 23.5523 13.7143 23 13.7143H1Z" fill="black"/>
-                    
-                </svg>
-    
-                <ul class="nav_items">
-                    <li>
-                        <a class="nav-link" href="#">Meet Karma</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">How it Works</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#"> Store</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Help</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                    
-                </ul>
 
-
-            
-            
-            
-        </nav>
-
-        
     </header>
+
+
+
+   
+
+
+
 
     <!-- Welcome Section -->
     <main class="welcome-section">
-        <img class="work-img" src="img/first-background.jpg" alt="Work Desk">
-        <h1 class="main-header">Introducing Karma</h1>
-        <h2 class="main-headers">Bring WiFi with you, everywhere you go.</h2>
-        <button class= "learn-more" type="button">Learn More</button>
+
+        <div class="hero-image">
+            <img src="img/first-background.jpg" alt="desk picture">
+            <div class="hero-text">
+              <h1>Introducing Karma</h1>
+              <p>Bring WiFi with you, everywhere you go.</p>
+              <button>Learn More</button>
+            </div>
+        </div>
+
+
+        
+
+
+        <!-- Introduction section -->
+        <section class="introduction">
+
+            <h2 class="intro-header">Everyone Needs a Little Karma. </h2>
+
+
+            <section class="icons-section">
+
+                <section class=first-icon>
+                    <img class="icons" src="img/icon-devices.svg" alt="Different Devices Icon">
+                    <h3 class="icons-desc">Internet for all devices</h3>
+                </section>
+
+                <section class="second-icon">
+                    <img class="icons" src="img/icon-coffee.svg" alt="Coffee Icon">
+                    <h3 class="icons-desc">Boost your productivity</h3>
+                </section>
+
+                <section class="third-icon">
+                    <img class="icons" src="img/icon-refill.svg" alt="Refill Icon">
+                    <h3 class="icons-desc">Pay as You Go</h3>
+                </section>
+            </section>
+
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <h4 class="footer-header">Join us on</h4>
+
+            <section class="footer-social">
+                <img class="social" src="img/twitter-icon.svg" alt="Twitter Icon">
+                <img class="social" src="img/facebook-icon.svg" alt="Facebook Icon">
+                <img class="social" src="img/instagram-icon.svg" alt="Instagram Icon">
+            </section>
+
+        </footer>
     </main>
 
-    <!-- Introduction section -->
-    <section class="introduction">
-
-        <h2 class="intro-header">Everyone Needs a Little Karma.   </h2>
-       
-      
-        <section class="icons-section">
-
-            <section class=first-icon>
-                <img class="icons" src="img/icon-devices.svg" alt="Different Devices Icon">
-                <h3 class="icons-desc">Internet for all devices</h3>
-            </section>
-        
-            <section class="second-icon">
-                <img class="icons" src="img/icon-coffee.svg" alt="Coffee Icon">
-                <h3 class="icons-desc">Boost your productivity</h3>
-            </section>
-            
-            <section class="third-icon">
-                <img class="icons" src="img/icon-refill.svg" alt="Refill Icon">
-                <h3 class="icons-desc">Pay as You Go</h3>
-            </section>
-        </section>
-            
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <h4 class="footer-header" >Join us on</h4>
-
-        <section class="footer-social">
-            <img class="social" src="img/twitter-icon.svg" alt="Twitter Icon">
-            <img class="social" src="img/facebook-icon.svg" alt="Facebook Icon">
-            <img class="social" src="img/instagram-icon.svg" alt="Instagram Icon">
-        </section>
-        
-    </footer>
-
 </body>
+
 </html>

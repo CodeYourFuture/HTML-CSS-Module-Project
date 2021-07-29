@@ -1,226 +1,193 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    margin:auto;
-   
-
-    
+html, body, main{
+   height:100%;
+   width:100%;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-
-/* Starting small fr 400 X 862 */
-
-/* html{
-    height: 100%;
-    max-width: 100%;
-} */
-
-
-/* Header Section */
-
+header, main{
+   display: flex;
+   flex-flow: row wrap;
+   width:100%;
+   /* order:1; */
+}
 
 
 header{
-    max-width:100%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: auto;
+   padding-top:20px;
+   height: 40px;
+   position: fixed;
+   display: flex;
+   background-color: whitesmoke;
+   padding-bottom: 20px;
 }
 
-.header_img{
-    
-    width: 30%;
-    padding-top: 2%;
-    padding-left: 5%;
-    
+.logo {
+   display: inline-block;
+   float: left;
+   width:5%;
+   height: 40px;
+   
+   position:relative;
+   padding-left: 10px;
+   padding-top: 0px;
+   order:1;
+   
 }
 
-.karma_img{
-    max-width: 50%;
+.logo img{
+   max-width:100%;
+   max-height:100%;
 }
 
-.nav_bar{
-    width:70%;
-}
-
-ul{
-    display:none;
-}
-
-svg{
-   position:absolute;
-   width:10%;
-   height:10%;
-   top:0.8%;
+.container {
+   display: inline-block;
+   cursor: pointer;
+   width:2%;
+   position:relative;
+   order:2;
    left:80%;
 
 }
 
-
-main{
-    width:100%;
-    
-    position: relative;
-    text-align: center;
-    color:whitesmoke;
-    word-spacing: 2px;
-    letter-spacing: 1px;
-    
- }
- 
-
-
- .work-img{
-    position: relative;
-    width:100%;
-    height: 40vh;
- }
-
- main h1{
-    max-width:50%;
-    position: absolute;
-    top: 25%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    font-size:40px;
-    font-weight: 300;
- }
-  
- main h2{
-    position: absolute;
-    top: 60%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    font-weight: 100;
-    font-size:smaller;
-   
- }
-
- .learn-more{
-    position: absolute;
-    top: 80%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 68, 0);
-    border-radius: 5%;
-    width: 30%;
-    height: 40px;
-    word-spacing: 7px;
-    letter-spacing: 2px;
-    font-size: 15px;
-    font-weight: 100;
-    border: none;
- }
- 
-
- .introduction{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 40px;
-   
- }
- 
- section h2{
-    width:100%;
-    font-size: 30px;
-    font-weight: 400;
-    color: rgba(77, 72, 72, 0.87);
-    padding-left: 20%;
-    text-align: center;
-   
- }
- 
- .icons-section{
-    width:50%;
-    padding-top: 15%;
-    padding-left: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-   
- }
- 
- .icons{
-  
-    height: 50%;
-    width: 60%;
-  
- }
- 
- .icons-desc{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    font-weight: 500;
-    color: rgba(77, 72, 72, 0.87);
-    font-size: 20px;
-    padding-top: 2%;
-   
-   
- }
- 
- footer {
-     padding-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 25%;
-    padding-left: 4%;
-    
- }
-  
- footer h4{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    font-size:small;
-    color: rgba(77, 72, 72, 0.87);
-    padding-left: 4%;
-  
+.menu {
+   padding-top: 13px;
+   width:300px;
+   height:15vh;
+   position:absolute;
+   transform: translate(500px, 0);
+   transition:transform 0.3s ease;
+   background:honeydew;
 }
 
-.footer-social{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:center;
+.menu a{
    
-   
-   
-  
- }
- .social{
-     justify-content: center;
-    display: flex;
-    flex-direction: row;
-    padding-left: 10%;
-    width: 2%;
- }
+   text-decoration:none;
+   color:rgb(88, 83, 83);
+   padding: -1.5em;
+}
  
- @media screen and (min-width:500px){
-    
- }
+.bar1, .bar2, .bar3 {
+   width: 25px;
+   height: 4px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+}
+ 
+.change .bar1 {
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+   transform: rotate(-45deg) translate(-9px, 6px);
+}
+ 
+.change .bar2 {opacity: 0;}
+ 
+.change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.change .menu {
+   -webkit-transform: translate(-100px, 0);
+   
+}
+
+.hero-image {
+   
+   height: 50%;
+   width:100%;
+ 
+   
+}
+
+.hero-image img{
+   width:100%;
+   height:100%;
+}
+
+.hero-text {
+   text-align:center;
+   position: absolute;
+   top:45%;
+   left:45%;
+   transform: translate(-50%, -110%);
+   color:rgb(241, 237, 239);
+   word-spacing: 0.5em;
+   letter-spacing: 0.1em;
+}
+
+.hero-text h1{
+   font-size: 40px;
+   font-weight: 300;
+}
+
+
+
+.hero-text button{
+   width:120px;
+   height:48px;
+   background-color: orangered;
+   border: none;
+   border-radius:5%;
+}
+
+.introduction{
+   width:100%;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   
+
+}
+
+
+
+
+.introduction h2, .introduction section .icons-desc{
+   width:100%;
+   text-align: center;
+   font-weight: 400;
+   
+   
+}
+
+
+.introduction section{
+   
+}
+.introduction section .icons{
+   max-width:100%;
+   
+   
+}
+
+footer{
+   padding-top: 50px;
+   width:100%;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+footer h4{
+   width:100%;
+   text-align: center;
+   font-weight: 400;
+}
+
+footer .footer-social{
+   display: flex;
+   flex-flow: row nowrap;
+   width:100%;
+   justify-content: center;
+}
+
+.footer-social .social{
+   max-width:5%;
+}
