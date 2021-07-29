@@ -100,7 +100,7 @@ header{
 
 .hero-image {
    
-   height: 50%;
+   height: 80%;
    width:100%;
  
    
@@ -116,14 +116,14 @@ header{
    position: absolute;
    top:45%;
    left:45%;
-   transform: translate(-50%, -110%);
+   transform: translate(-40%, -70%);
    color:rgb(241, 237, 239);
    word-spacing: 0.5em;
    letter-spacing: 0.1em;
 }
 
 .hero-text h1{
-   font-size: 40px;
+   font-size: 50px;
    font-weight: 300;
 }
 
@@ -149,6 +149,9 @@ header{
 
 
 
+
+
+
 .introduction h2, .introduction section .icons-desc{
    width:100%;
    text-align: center;
@@ -158,9 +161,7 @@ header{
 }
 
 
-.introduction section{
-   
-}
+
 .introduction section .icons{
    max-width:100%;
    
@@ -191,3 +192,10 @@ footer .footer-social{
 .footer-social .social{
    max-width:5%;
 }
+
+/* for media query:
+.icons-section{
+   display: flex;
+   
+}
+*/
