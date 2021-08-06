@@ -4,7 +4,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    padding:0;
+    margin:0;
+    outline:0;
+    border:0;
+    font-size: 3em;
 }
+
 
 /**
  * Add your custom styles below
@@ -16,146 +22,92 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-nav{
-    display:flex;
-    color:gray;
-}
-
-nav ul{
-    
-    list-style:none; 
-}
-
-nav ul li{
-    display:inline;
-    padding: 5px;
-    margin:5px;
-}
-
-nav ul li :nth-child(1){
-    font-weight: bold;
-}
-
-nav ul li:hover{
-    color:tomato;
-    cursor: pointer;
-}
-
-#nav-bar{
-    /*background-color: white;
-    width: 100%;
-    position:fixed;
-    padding-top: 15px;
-    text-align: center;
+/*The Logo*/
+ #karma-logo{
+    display: flex;
     align-items: center;
-    border-bottom: 1px solid black; */
-
-        display: flex;
-        justify-content: space-evenly;
-        align-items: right;
-        position: static;
-        width: 100%;
-        height: 15px;
-        padding: 5px, 5px;
-        background-color: white;
-        top: 0;
-        font-size: 15px;
-        margin-left: 200px;
-        margin-right: 100px;
-        margin-bottom: 50px;
-        margin-top: -50px;
-   }
-
-#karma-logo{
-    margin-left= 5%;/* Top right bottom left */
-    max-height: 40px;
-    height: auto;
-    max-width: 50px;
     width: auto;
-    padding: 15px;
-    float: left;
+    height: auto;
+    padding-left= 5%;
+    padding:10px;
+    position:absolute;
+}
+ .header-nav{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-end;
+     padding-right: 10px;
+     line-height: 60px;
+ }
+
+ .header-nav:last-child{
+     padding-right: 2em; /* Positon the hamburger to the right but with gap*/
+ } 
+
+ .header-nav ul, #nav-list{
+    display: flex;
+ }
+
+ .header-nav a:hover, 
+ .header-nav a:focus{
+  color: tomato;
+
+ }
+
+/* Main Image */
+.hero-img {
+    background-image :url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-position:55%;
+    background-color: black;
+    background-size: cover;
 }
 
-
-h1{
-    font-size: 4em;
-    font-weight: lighter;
-
-}
-
-h2{
-    font-size: 3em;
-    font-weight: lighter;
+.IntroductionOfKarma{
+    height: 350px;
+    max-width: 250px;
+    color: white;
     text-align: center;
-    margin-left: 200px;
-}
-
-h3{
-    font-size: 2em;
-    font-weight: lighter;
-}
-
-
-
-#introduction{
-
-position:relative;
-text-align:center;
-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
 }
 
 #learn-more{
-position: absolute;
-top:;60%;
-left:55%;
-background-color: tomato;
+padding: 10px;
+margin-top: 20px;
+background-color: orangered;
+border-radius: 10%;
 }
 
-#feature{
-display: flex;
-justify-content: center;
-align-content: space-between;
+.featuresKarma{
+    padding-top: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
 }
 
-.Karmaflexbox-1{
-
+.featuresKarma h2{
+    font-weight: normal;
+    font-style: none;
+    font-size: 2em;
+    padding: 1em;
+}
+.featuresKarma li{
+   margin-top: 2em;
+  
 }
 
-.Karmaflexbox-2{
-
-display:flex;
-float:left;
-justify-content: space-around;
 }
-
-#device{
-
-}
-
-#coffee{
-
-}
-
-#refill{
-
-}
-#icon-container{
-
-}
-
-.icon{
-display:flex;
-justify-content: center;
-align-content: space-between;  
-margin-top: 10px;
-margin-left: 5px;
-}
-
-
+ 
 footer{
-display:flex;
-justify-content: center;
-margin-top: 50px;
-margin-bottom: 20px 
+font-size: 1em;
+}
 
 
