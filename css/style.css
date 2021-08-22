@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,184 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header */
 
+header {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 50em;
+}
+
+ul li {
+  padding: 1em 1rem;
+  font-weight: bold;
+  cursor: auto;
+}
+
+li :focus,
+li :hover {
+  color: coral;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem 2rem 1rem 5rem;
+}
+
+/* Main Section */
+/* Article Part */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/first-background.jpg");
+  background-size: cover;
+  padding: 12rem;
+}
+
+.hero h1 {
+  color: white;
+  font-weight: 200;
+  font-size: 300%;
+}
+
+.hero p {
+  color: white;
+  font-weight: 100;
+  font-size: 150%;
+}
+
+.hero button {
+  background-color: coral;
+  color: cornsilk;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+}
+
+/* Section Part */
+
+section h2 {
+  text-align: center;
+  color: black;
+  font-weight: 150;
+  font-size: 200%;
+}
+
+.icons {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+  justify-content: space-around;
+}
+
+.icon {
+  max-width: 6rem;
+}
+
+.caption {
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media img {
+  width: 0.8rem;
+  padding: 0.5rem;
+}
+
+footer h4 {
+  font-weight: 400;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #a8a8a8;
+}
+
+/* Media query Part */
+
+@media screen and (min-width: 700px) {
+  /* Header */
+
+  header {
+    align-items: center;
+  }
+
+  .logo {
+    padding-left: 1.5rem;
+  }
+
+  ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Main */
+  /* Article Part */
+
+  .hero {
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .hero button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+
+  /* section Part */
+
+  .icons {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-top: 2em;
+  }
+
+  .caption {
+    font-size: 1.3rem;
+  }
+
+  .icon img {
+    max-width: 5rem;
+  }
+
+  /* Footer */
+
+  footer h4 {
+    padding-bottom: 3rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+  }
+}
