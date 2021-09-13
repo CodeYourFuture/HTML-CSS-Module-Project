@@ -45,3 +45,57 @@ body {
   color: black;
   font-size: 16px;
 }
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+}
+
+.first-background {
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+}
+
+.karma {
+  position: absolute;
+  top: 270px;
+  right: 530px;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  font-weight: normal;
+}
+
+.second-heading {
+  font-size: 35px;
+  text-align: center;
+  font-weight: normal;
+}
+.card-container {
+  display: flex;
+
+  justify-content: space-between;
+  /* max-width: 496px; */
+  margin: 0 auto;
+  text-align: center;
+}
+.cards {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  border: 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
