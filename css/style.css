@@ -65,6 +65,17 @@ body {
   font-size: 25px;
 }
 
+.button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: orange;
+  font-size: 20px;
+  padding: 5px;
+}
+
 .karma {
   position: absolute;
   top: 270px;
@@ -79,6 +90,8 @@ body {
   font-size: 35px;
   text-align: center;
   font-weight: normal;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 .card-container {
   display: flex;
@@ -87,6 +100,7 @@ body {
   /* max-width: 496px; */
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 150px;
 }
 .cards {
   display: inline-block;
@@ -94,8 +108,25 @@ body {
   padding: 20px;
   margin: 10px;
   width: 100%;
-  border: 0px;
+  border: 2px;
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
+}
+
+#card-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 125px;
+  padding-bottom: 40px;
+}
+.join {
+  text-align: center;
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
