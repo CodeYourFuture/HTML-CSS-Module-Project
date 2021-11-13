@@ -8,12 +8,100 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <script>
+        function toggleMenu() {
+            var navBar=document.getElementById("navigation");
+            if (navBar.classList.contains("nav-mobile")) {
+                navBar.classList.remove("nav-mobile");
+                navBar.classList.add("navigation");
+            } else {
+                navBar.classList.remove("navigation");
+                navBar.classList.add("nav-mobile");
+            }
+            window.addEventListener("resize", function(event) {
+            if (navBar.classList.contains("nav-mobile")) {
+                navBar.classList.remove("nav-mobile");
+                navBar.classList.add("navigation");
+            }
+        })
+        }
+        
+    </script>
 </head>
 <body>
 
+    <header> 
+        <div class="logo">
+            <img src="./img/karma-logo.svg" alt="Karma Logo" />
+        </div>        
+        <nav>
+            <ul class="navigation" id="navigation">
+                <li><a href=""><strong>Meet Karma</strong></a></li>
+                <li><a href="">How it Works</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <a href="#" onclick="toggleMenu()">
+                <img src="./img/menu-hamburger.svg" alt="Show Navigation"/>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Introducing Karma</h1>
+            <h2>Brring WiFi with you, everywhere you go.</h2>
+            <button>Learn More</button>
+        </div> 
+        <div class="main">
+            <h3>Everyone needs a little Karma.</h3>
+            <div class="feature-container">
+                <div class="feature">
+                    <img src="./img/icon-devices.svg" alt="Devices" class="feature-image"/>
+                    <p>Internet for all devices</p>
+                </div>
+                <div class="feature">
+                    <img src="./img/icon-coffee.svg" alt="Coffe mug" class="feature-image"/>
+                    <p>Boost your productivity</p>
+                </div>
+                <div class="feature">
+                    <img src="./img/icon-refill.svg" alt="Refill" class="feature-image"/>
+                    <p>Pay as you go</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo">
+            <div class="promo-img">
+
+            </div>
+            <div class="quote-container">
+                <blockquote><em>Wherever I am, I just don't worry about my internet connection anymore!</em></blockquote>
+                <button>Get Karma today</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Join us on</p>
+        <div class="social-container">
+        <a href="#">
+            <img src="./img/twitter-icon.svg" alt="Find us on Twitter" class="social-logo"/>
+        </a>
+        <a href="#">
+            <img src="./img/facebook-icon.svg" alt="Find us on Facebook" class="social-logo"/>
+        </a>
+        <a href="#">
+            <img src="./img/instagram-icon.svg" alt="Find us on Instagram" class="social-logo"/>
+        </a>
+        </div>
+        <p class="footer-grey">&copy; Karma Mobility, Inc.</p>
+    </footer>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-        
+
     <!-- All the images you need are in the 'img' folder -->
 
 </body>

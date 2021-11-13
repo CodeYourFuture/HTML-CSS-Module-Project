@@ -1,7 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+body * {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -15,5 +15,210 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+body {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    padding: 0 auto;
+}
+
+body * {
+    border:0px solid black;
+}
+
+header {
+    padding: 0 7%;
+    padding-top:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 20px;
+}
+
+nav {
+    min-width: 50%;
+}
+
+ .navigation {
+     width:100%;
+     padding: 0 15px;
+     list-style: none;
+     display:flex;
+     justify-content: space-between;
+ }
+
+ .nav-mobile {
+    width:100%;
+    padding: 0;
+    list-style: none;
+ }
+
+ .nav-mobile li {
+    padding: 5px 0;
+ }
 
 
+
+ .navigation a, .nav-mobile a {
+    text-decoration: none;
+}
+
+.navigation a:hover, .nav-mobile a:hover{
+    color: #e0633a;
+} 
+
+.hamburger{
+    display:none;
+}
+
+.hero {
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    height: 60vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    text-align: center;
+    padding: 0 10%;
+}
+
+button {
+    background-color:#e0633a;
+    padding: 15px 35px;
+    border-radius: 5%;
+    margin-top:30px;
+}
+
+.hero h1 {
+    font-weight: 400;
+    font-size:56px;
+    margin-bottom:0px;
+}
+
+.hero h2 {
+    font-weight: 400;
+    font-size:31px;
+    margin-bottom:10px;
+}
+
+.main {
+    padding:30px 7%;
+}
+
+.main h3 {
+    text-align:center;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.feature-container {
+    display:flex;
+    justify-content: space-around;
+    padding-bottom:2rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align:center;
+    margin:0.5rem;
+}
+
+
+.feature-image {
+    width: 15vw;
+    padding-bottom:1rem;
+}
+
+.promo {
+    margin:40px 0;
+    display: flex;
+    width:100%;
+    min-height:300px;
+    background-color: #fcefeb;
+}
+
+.promo-img {
+    max-width:50%;
+    min-width:30%; 
+    background-image: url("../additional/feature-img.png");
+}
+
+.quote-container {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container blockquote {
+    text-emphasis: 1;
+    font-size:1.5rem;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:solid 1px rgb(189, 189, 189);
+}
+
+
+.social-container {
+    display:flex;
+}
+
+.social-container > a {
+    display:flex;
+    padding:5px;
+    margin: 5px;
+    justify-content: center;
+    width: 45px;
+    height:45px;
+    border: solid 1px rgb(189, 189, 189);
+    border-radius:50%;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.social-container > a:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.social-logo {
+    width: 75%;
+}
+
+@media screen and (max-width:600px) {
+    .feature-image {
+        width:30vw;
+    }
+    .feature-container {
+        flex-direction: column;
+    }
+    nav {
+        position: relative;
+    }
+    .hamburger {
+        display:block;
+        position:absolute;
+        right: 7%;
+        top: 15px;
+    }
+    .navigation {
+        display:none;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
