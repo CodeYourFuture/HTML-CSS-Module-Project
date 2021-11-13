@@ -1,10 +1,10 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
 
 /**
  * Add your custom styles below
@@ -17,3 +17,89 @@ body {
  */
 
 
+/* Header */
+
+header {
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+header img {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+/* Nav Links */
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding: 0.5rem;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: orangered;
+}
+
+strong {
+    font-weight: 500;
+}
+
+
+/* Hero */
+
+.hero {
+    background: url(../img/first-background.jpg);
+    height: 650px;
+    background-position: right 27% bottom 5%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Hero Text */
+
+h1,
+p,
+button {
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+    padding: 130px 0 0;
+    margin-bottom: 0;
+}
+
+.hero p {
+    font-size: 30px;
+    padding-top: 0;
+    font-weight: 300;
+}
+
+button {
+    background: rgb(255, 102, 0);
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
