@@ -158,12 +158,19 @@ h3 {
     font-size: 22px;
 }
 
-footer img {
-    height: 20px;
-    padding: 12px;
+footer a {
+    width: fit-content;
     margin: 10px;
     border: 1px solid rgb(238, 238, 238);
     border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 20px;
+    padding: 15px;
 }
 
 footer p {
