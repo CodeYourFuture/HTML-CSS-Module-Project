@@ -1,9 +1,18 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+:root {
+    --orange: #f07416;
+    --grey: #666666;
+    --white: #fff;
+    --dark-grey: #454545;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: var(--grey);
+    max-width: 1920px;
 }
 
 /**
@@ -15,5 +24,104 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ 
+  /*Navigation */
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  .header-logo{
+      padding-left: 5rem;
+      height: 50px;
+      width: auto;
+
+  }
+
+ .navigation-list {
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+ }
+
+ .navigation-list a {
+    text-decoration: none;
+    color: var(--grey);   
+ }
+
+.navigation-link {
+    padding: 0.5rem 1rem; 
+}
+
+.navigation-list :hover {
+    color: var(--orange);
+}
+
+#navigation-link-meet-karma {
+    color: var(--dark-grey);
+    font-weight: 600;
+}
+
+ /* End of navigation*/
+
+ /* Hero section */
+
+ .hero-section {
+    background-image: url(../img/first-background.jpg);
+    height: 560px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    padding-top: 10rem;
+ }
+
+ h1 {
+     font-size: 3em;
+     font-weight: lighter;
+     margin-bottom: 0;
+     padding-bottom: 0;
+ }
+
+ .hero-section p {
+     font-size: 1.7em;
+     font-weight: lighter;
+ }
+
+ .button {
+     background-color: var(--orange);
+     padding: 0.8rem 1.5rem;
+     border-style: none;
+     border-radius: 2px;
+ }
+
+ /* End of hero section */
+
+ /* Middle section */
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+ .middle-section-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .middle-section-icons {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+ }
+
 
 
