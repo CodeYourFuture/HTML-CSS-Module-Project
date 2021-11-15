@@ -1,11 +1,101 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+body h1{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+li{
+    list-style: none;
+}
+.logo-svg{
+    height: 40px;
+    width: 40px;
+}
+.flexboxrow{
+    display: flex;
+    
+}
+.navul{
+   
+    justify-content:space-around;
 
+}
+.li-space{
+    width: 50%;
+}
+.nav-li{
+color: gray;
+}
+.nav-li:hover{
+    color:rgb(245, 108, 58) ;
+
+}
+.main-picture{
+    background-image: url("../img//first-background.jpg");
+    height: 800px;
+    background-size:cover;
+    color: white;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.button-learn-more{
+    color: white;
+    background-color: rgb(245, 108, 58);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+}
+h1{
+    font-size:50px;
+}
+.bottom-main{
+    display:flex;
+    flex-direction: column;
+    
+}
+.size-image{
+    height: 150px;
+    width: 150px;
+}
+.text-bottom-main{
+    text-align: center;
+    font-size:40px;
+    padding: 90px 30px 50px 30px;
+}
+.three-images{
+    align-items:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text-in-three-images{
+    font-size: 20px;
+}
+hr{
+    width: 85%;
+}
+.size-icon{
+    height: 25px;
+    width: 25px;
+    border: 1px solid gray;
+    border-radius: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ul-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
 /**
  * Add your custom styles below
  * 
