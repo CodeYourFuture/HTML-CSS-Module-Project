@@ -13,7 +13,59 @@ body {
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent 
+ container set to 'display: flex'*/
 
+ /* HEADER */
+.header {
+    display: flex;
+}
 
+.header-image {
+    height: 50px;
+    width: 50px;
+    padding-left: 150px;
+    padding-top: 15px;
+}
+
+/* NAVIGATION */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-left: 1020px;
+}
+
+.nav-item {
+    padding: 17px;
+}
+
+.nav-link:hover {
+    color: #ff6500;
+}
+
+.nav-link {
+   text-decoration: none; 
+   color: #888;
+
+}
+
+/* BACKGROUND IMAGE, TEXT AND BUTTON */
+.background-image {
+    width: 2240px;
+}
+
+.large-text, .button {
+   text-align: center; 
+}
+
+.size1 {
+    font-size: 60px;
+}
+
+.size2 {
+    font-size: 32px;
+}
+
+.size3 {
+    font-size: 48px;
+}
