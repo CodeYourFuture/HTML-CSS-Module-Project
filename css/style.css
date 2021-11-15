@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
 /**
  * Add your custom styles below
  * 
@@ -17,3 +18,68 @@ body {
  */
 
 
+body{
+    width:100%;
+    margin:0 auto;
+}
+
+/* *******HEADER******* */
+
+ 
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 4rem;
+    
+    
+}
+/*****NAVIGATION LINKS******* */
+
+.navigation_list{
+    display:flex;
+    list-style: none;
+}
+.navigation_item{
+    padding:0 10px;
+   
+    
+}
+.navigation_link {
+    color:blue;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}.navigation_link:hover{
+    color:red;
+}
+/***********MAIN************ */
+.content{
+    background-image: url("../img/first-background.jpg");  
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/*************TEXT STYLE*********/
+
+.content h1,p{
+    color:white;
+    font-weight: 40;
+}
+.need_karma h2{
+    color:black;
+    font-weight: 40;
+}
+
+
+/********BUTTON********/
+button{
+    background-color:darkorange;
+    color:white;
+}
+
+/* .content{
+    display:flex;
+    flex-direction: column;
+} */

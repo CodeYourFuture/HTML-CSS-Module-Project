@@ -11,9 +11,74 @@
 </head>
 <body>
 
+
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-
-</body>
+    <header class="header">
+        <img src="favicon.ico" alt="image-logo"/>
+        <nav class="nav_bar">
+            <ul class="navigation_list">
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#"><strong>Meet Karma</strong></a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">How it Works</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Store</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Blog</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Help</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Login</a> 
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <a href="#" onclick="toggleMenu()">
+                <img src="../img/menu-hamburger.svg" alt="Show Navigation"/>
+            </a>
+        </div>
+    </header>
+    <!-------------MAIN CONTAINER--------------->
+    <main class="main">
+     <div class="content">
+         <div class="intro_karma">
+              <h1>Introducing Karma</h1>
+              <p>Bring WiFi with you,everywhere you go. </p>
+              <button>Learn More</button>
+         </div>
+         <!----Everyone Needs A Little Karma Container--->
+         <div class="need_karma">
+            <h2>Everyone needs a little Karma </h2>
+            <div class="features">
+                <img  src="img/icon-devices.svg" alt="device_feature"/>
+                <p>Internet for all devices</p>
+                <img src="img/icon-coffee.svg" alt="coffee_feature"/>
+                <p>Boost your productivity </p>
+                <img src="img/icon-refill.svg" alt="refill_feature"/>
+                <p>Pay as You Go</p>
+            </div>
+        </div>
+       <!---------Footer Container-------->
+            <footer class="footer">
+                <div class="foooter_content">
+                    <p>Join us</p>
+                
+                <div class="social_media">
+                    <img src="img/twitter-icon.svg" alt="tweeter_icon"/> 
+                    <img src="img/facebook-icon.svg" alt="facebook_icon"/>
+                    <img src="img/instagram-icon.svg" alt="instagram_icn"/>
+                </div>
+              </footer>
+            </footer>
+            
+     </div>
+  </main>
+ </body>
 </html>
