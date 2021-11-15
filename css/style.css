@@ -16,4 +16,121 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /*
+ * Remove default margin.
+ */
 
+ body {
+   background-color: black;
+   /* centralise the website */
+       max-width: 1350px; 
+	     margin: 0 auto; 
+	     float: none; 
+  }
+    
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  
+ 
+  .karma-logo {
+    width: 2rem; /* if you set NO width, the image will not show! */
+    /* add a border around the logo */
+    border: 0px solid white;
+    padding:0rem;
+    padding-top: 20px;
+    object-fit: scale-down;  
+
+    /*
+    width: 10rem;
+    margin-right: 1rem;
+    */
+  } 
+  
+  /* Navigation */
+  
+  .navigation-list {
+    list-style-type: none;
+    /* remove browser default settings */
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  /* determine how each item of the naviagtion bar is shown */
+  .navigation-item {
+    color: #fff;
+    padding: 22px 16px 16px 22px;
+    text-decoration: none;
+    display: inline;
+    float: left;
+    font-size: 22px;
+  }
+
+  /* determine how each link is shown */
+   .navigation-link {
+    color: gray;
+    display: block;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;    
+      }
+
+
+
+  /* change colour when mouse hovers over it */    
+  .navigation-link:hover {
+        color:#ec5800; /* persimmon */
+      }
+
+     /* always show 'Meet Karma' in black */
+     #meetKarma {
+      color: black;
+      font-weight:500;
+      /* move it further to the right */
+   }  
+
+
+   /* FLEXBOX for the LOGO & Navigation Bar */
+   .LogoNavbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+ /*   gap: 20rem; */
+    padding-left: 5rem; /* EXTEND TO THE LEFT */
+    padding-right: 5rem;
+    
+  }
+
+  /* hero */
+
+.hero {
+    background-image: url("../images/header-bike.jpg");
+    background-color: var(--grey-light);
+    color: white;
+    height: 320px;
+    width: 780px;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+   
+  }
