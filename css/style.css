@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,144 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* header navbar */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px 0;
+}
 
+ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 10px;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 1rem;
+  color: gray;
+  cursor: pointer;
+}
+
+li:first-child {
+  font-weight: 500;
+  color: #000;
+}
+
+li:hover {
+  color: #eb5a2f;
+}
+/* header navbar */
+/* main first-section*/
+.first-section {
+  background-image: url(/img/first-background.jpg);
+  background-color: #ccc;
+  background-size: cover;
+  color: #fff;
+  height: 250px;
+  padding: 225px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-title {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+}
+
+.content-paragraph {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  margin-bottom: 60px;
+}
+
+button {
+  background-color: #eb5a2f;
+  border: #eb5a2f;
+  border-radius: 2px;
+  padding: 15px 35px;
+  font-size: 1rem;
+}
+/* main first-section*/
+
+/* main second-section*/
+.second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 55px;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  margin: 35px 0;
+}
+
+.prod {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prod-paragraph {
+  margin-top: 35px;
+}
+
+/* main second-section*/
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  margin: auto;
+}
+
+.footer-title {
+  margin: 30px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.twitter,
+.facebook,
+.instagram {
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.rights {
+  color: #ccc;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  font-size: 0.9rem;
+}
+/* footer */
