@@ -16,4 +16,46 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* Variables */
+:root {
+    --orange: #f15b2a;
+}
 
+ /* Navigation Styles */
+
+.nav-flex-container {
+    display: flex;
+    justify-content: space-around;
+    height: 4em;
+}
+
+.logo {
+    height: 2.25em;
+    margin: auto 0;
+}
+
+.nav-ul {
+    list-style-type: none;
+    margin: auto 0;
+    padding: 0;
+}
+
+.nav-li {
+    display: inline;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: grey;
+    /* font-size: .90em; */
+}
+
+.nav-link:hover{
+    color: var(--orange);
+}
+
+.active-link {
+    font-weight: bold;
+    color: rgb(92, 91, 91);
+}
