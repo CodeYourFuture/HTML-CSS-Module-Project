@@ -1,6 +1,6 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* Body */
 body h1{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -31,6 +31,7 @@ color: gray;
     color:rgb(245, 108, 58) ;
 
 }
+/* main */
 .main-picture{
     background-image: url("../img//first-background.jpg");
     height: 800px;
@@ -41,7 +42,7 @@ color: gray;
   justify-content: center;
   flex-direction: column;
 }
-.button-learn-more{
+.button-red-text-white{
     color: white;
     background-color: rgb(245, 108, 58);
     border-radius: 5px;
@@ -65,6 +66,7 @@ h1{
     font-size:40px;
     padding: 90px 30px 50px 30px;
 }
+
 .three-images{
     align-items:none;
     display: flex;
@@ -85,6 +87,27 @@ hr{
     padding: 10px;
     margin: 10px;
 }
+.image-feature{
+   width: 40%;
+    
+}
+.last-part-main{
+    display: flex;
+    
+}
+.whetever-and-button{
+    background-color: #FCEFEB;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    flex-grow: 1;
+    align-items: center;
+}
+.p-whetever-and-button{
+    font-size: 30px;
+    text-align: center;
+}
+/* Footer */
 footer{
     display: flex;
     flex-direction: column;
@@ -96,14 +119,5 @@ footer{
     justify-content: space-between;
 
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
 
