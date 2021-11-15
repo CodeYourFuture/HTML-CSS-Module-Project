@@ -61,6 +61,13 @@ strong {
 }
 
 
+/* Hamburger Menu */
+
+.hamburger-menu-wrapper {
+    display: none;
+}
+
+
 /* Hero */
 
 .hero {
@@ -137,6 +144,38 @@ h2 {
 
 .column-container p {
     font-size: 30px;
+}
+
+
+/* Feature Section */
+
+.feature {
+    width: 100vw;
+    height: fit-content;
+    display: inline-flex;
+    background: rgba(255, 162, 145, 0.637);
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+.feature-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.feature img {
+    width: 45%;
+    height: auto;
+}
+
+.feature p {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    width: 55%;
 }
 
 hr {
@@ -312,5 +351,21 @@ footer p {
     footer p {
         font-size: 18px;
         margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:930px) {
+    /* Feature Section */
+    .feature {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3em;
+    }
+    .feature img {
+        width: 100%;
+    }
+    .feature p {
+        width: 80%;
     }
 }
