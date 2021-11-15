@@ -67,10 +67,10 @@ strong {
     background: url(../img/first-background.jpg);
     height: 650px;
     background-position: right 27% bottom 5%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -124,23 +124,24 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    padding: 3rem;
     padding-top: 2rem;
-    width: 30%;
+    width: 15rem;
+    height: 18rem;
 }
 
 .column-container img {
-    width: 150px;
-    height: 150px;
-    padding-bottom: 2rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 .column-container p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 hr {
     width: 90vw;
+    margin: auto;
     height: 2px;
     background-color: rgb(238, 238, 238);
     border: none;
@@ -177,4 +178,139 @@ footer p {
     color: rgb(163, 159, 159);
     font-size: 20px;
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        padding: 0 4rem;
+    }
+    /* Hero */
+    .hero {
+        height: 450px;
+    }
+    h1 {
+        font-size: 45px;
+        padding: 70px 0 0;
+    }
+    .hero p {
+        font-size: 25px;
+    }
+    button {
+        background: rgb(255, 102, 0);
+        padding: 5px 13px;
+        font-size: 13px;
+    }
+    /* Karma Details */
+    h2 {
+        font-weight: 300;
+        font-size: 35px;
+        text-align: center;
+        padding: 60px 0 0 0;
+    }
+    .column-container {
+        padding: 2rem;
+        padding-top: 1.5rem;
+        width: 13rem;
+        height: 15rem;
+    }
+    .column-container img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .column-container p {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    footer a {
+        margin: 7px;
+    }
+    footer img {
+        height: 17px;
+        padding: 12px;
+    }
+    footer p {
+        font-size: 15px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    /* Header */
+    header {
+        padding: 1rem 3rem;
+    }
+    /* Nav Links */
+    nav {
+        display: none;
+    }
+    .hamburger-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger-menu {
+        width: 1.5rem;
+        height: 0;
+        margin: 2px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    /* Hero */
+    .hero {
+        background: url(../img/first-background.jpg);
+        background-position: right 27% top 15%;
+        text-align: center;
+    }
+    /* Hero Text */
+    h1 {
+        font-size: 43px;
+        font-weight: 300;
+        padding: 40px 0 0;
+        width: 50%;
+    }
+    .hero p {
+        font-size: 20px;
+        width: 50%;
+    }
+    /* Karma Details */
+    h2 {
+        font-size: 35px;
+        padding: 40px 0 0 0;
+    }
+    .row-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        padding-top: 1.5rem;
+        width: 13rem;
+        height: 15rem;
+    }
+    .column-container img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .column-container p {
+        font-size: 20px;
+    }
+    /* Footer */
+    h3 {
+        font-weight: 400;
+        font-size: 22px;
+    }
+    footer a {
+        margin: 8px;
+    }
+    footer img {
+        height: 15px;
+        padding: 10px;
+    }
+    footer p {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
 }
