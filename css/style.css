@@ -55,6 +55,22 @@ body {
   color: black;
 }
 
+/* Adding the background picture */
+
+.main {
+  background-image: url("../img//first-background.jpg");
+  height: 700px;
+  background-size: cover;
+}
+
+.introduction {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 200px;
+}
 
 /**
  * Add your custom styles below
