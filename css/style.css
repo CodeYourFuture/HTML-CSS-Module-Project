@@ -26,6 +26,7 @@ body {
        max-width: 1350px; 
 	     margin: 0 auto; 
 	     float: none; 
+       background-image: url("file:///home/delroy/CYF/GitHub/HTML-CSS-Coursework-Week2/css/Karma%20-%20mobile%20design.png");
   }
     
   h1,h2,h3,h4,h5,h6 {
@@ -117,20 +118,76 @@ body {
     justify-content: space-between;
     background-color: white;
  /*   gap: 20rem; */
-    padding-left: 5rem; /* EXTEND TO THE LEFT */
-    padding-right: 5rem;
+    padding-left: 5rem;  /* EXTEND TO THE LEFT */
+    padding-right: 5rem; /* EXTEND TO THE RIGHT */
     
   }
 
-  /* hero */
+  /* The main image */ 
 
-.hero {
-    background-image: url("../images/header-bike.jpg");
-    background-color: var(--grey-light);
+.mainImage {
+  /* THIS WAS THE ONLY WAY I COULD GET THIS TO LOAD - I HAVEN'T FIGURED OUT HOW TO DO IT USING RELATIVE PATHS" */
+    background-image: url("file:///home/delroy/CYF/GitHub/HTML-CSS-Coursework-Week2/img/first-background.jpg");
+    /* THE ACTUAL SIZE OF THE IMAGE IS 1600 * 735 PIXELS */
+    height: 735px;
+    width: 1300x;
+    /* Handle how the text is displayed on top */
+    position: relative;
+    text-align: center;
     color: white;
-    height: 320px;
-    width: 780px;
+    /*
     padding-left: 2rem;
     margin-bottom: 3rem;
-   
+    background-color: var(--grey-light);
+    color: white;
+   */
   }
+
+  /* Based on https://www.w3schools.com/howto/howto_css_image_text.asp */
+
+  .centred {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  .para1 {
+    font-family: sans-serif; 
+    font-size:72px;
+    /* padding-left: 7rem; */
+  }
+
+  .para2 {
+    font-family: sans-serif; 
+    font-size:36px;
+    /* padding-left: 7rem; */
+    position: absolute;
+    bottom: 20rem;
+    right: 18rem;
+  }
+
+  /* Buttons */
+
+ /* Position the button */
+ .buttonContainer {
+  position: absolute;
+  bottom: 20%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.LearnMoreButton {
+  
+  background-color: #ff6200; /* #ec5800; */ /* persimmon */
+  color: #ffffff;
+  border: none;
+  padding: 20px 36px;
+  border-radius: 10px;
+  font-size:24px;
+}
+
+/* Change the background color when hovered over or when the button has the focus */
+
+button:hover {
+  background-color: #934423;
+ }
