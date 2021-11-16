@@ -33,7 +33,10 @@ body {
     header nav ul{
         display: none;        
     }
-    
+    header a:hover{
+        color:lawngreen;
+    }
+
     section div {
         font-size: medium;
         width: 20%;
@@ -57,6 +60,7 @@ body {
     header img:first-child {
         display: none;
     }    
+
     header nav ul{
         list-style-type: none;
         margin: 0;
@@ -76,9 +80,6 @@ body {
         text-decoration: none;    
     }
 
-    header li a:hover {
-        color: orange;
-    }
     section div {
         font-size: medium;
         width: 13%;
@@ -87,16 +88,16 @@ body {
         padding: 5%;
     }  
     
- }
+}
 
- @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     section div {
         font-size: 16px;
         width: 180px;
         margin: auto;
     }  
-        
- }
+}
+
 main {
     display: block;
     background-image: url("../img/first-background.jpg");
@@ -115,13 +116,19 @@ main p:first-child {
 }
 
 main button {
-    background-color: coral;
+    background-color:darkorange;
     border-block-style: none;
     border-radius: 4px;
     padding: 1.2rem 2rem;
     margin: 20px;
     font-size: large;
 }
+
+main button:hover {
+    background-color: white;
+    color:darkorange;
+}
+
 
 section {
     display: block;
