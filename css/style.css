@@ -16,10 +16,15 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+
+/* HEADER */
+
 .wrapper {
     width: 1170px;
     margin: 0 auto;
 }
+
 
 header{
     height: 50px;
@@ -29,13 +34,34 @@ header{
     position:relative;
 }
 
-
-
 .header-logo {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    float:left;
 }
+
+nav {
+    float:right;
+    line-height: 20px;
+}
+
+.banner-area {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top:50px;
+    background-image: ../img/first-background.jpg;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+
 
 .logo {
     width: 50px;
     height: 50px;
+}
