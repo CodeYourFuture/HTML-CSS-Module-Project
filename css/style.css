@@ -70,12 +70,43 @@ body {
 
     .hero-image {
         background-image: url("../img/first-background.jpg");
-        height: 58vw;
+        height: 59vw;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
     }
 
-    .content-container h1{
-        margin: 0;
+    .content-container {
+        margin: auto auto; 
+        /* background-color: darkorange; */
+        width: 100%;
+        text-align: center;
+        padding-bottom: 4em;
     }
+
+    .hero-text {
+        color: white;
+        font-weight: 300;
+    }
+
+        .hero-h1{
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero-h3{
+            font-size: 1.75em;
+            margin: 0.75em 0 1.5em;
+        }
+
+    .hero-btn {
+        background-color: var(--orange);
+        border-radius: 2.75px;
+        border: 0;   
+        padding: 1em 2em;  
+    }
+
+        .hero-btn-a {
+            text-decoration: none;
+        }
