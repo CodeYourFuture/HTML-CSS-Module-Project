@@ -58,40 +58,60 @@ nav a:nth-of-type(1) {color: black; font-weight: 100;}
 nav a:hover {color:chocolate;}
 
 
+
+/* MAIN */
+
 .banner-area {
     position: relative;
-    text-align: center;
-
 }
 
-.first-line {
-    display: flex;
+.img {
+    display:flex;
     justify-content: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 250px;
-    left: 35%;
-    color: white;
-    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     font-weight: 20;
+}
+
+h1 {
+    color: white;
+    font-weight: 20;
+    font-size: 67px;
+    margin-bottom: -10px;
+}
+
+p {
+    color: white;
+    font-weight: 1;
+    font-size: 35px;
+}
+
+
+
+.first-line {
+    color: white;
+    font-size: 60px;
+    font-weight: 20;
+    
 }
 
 .second-line {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 350px;
-    left: 35%;
     color: white;
-    font-size: 25px;
-    font-weight: 20;
+    font-size: 30px;   
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     top: 850px;
-    left: 50%;
-    font-size: 50px;
+    font-size: 75px;
     font-weight: 20;
 }
 
@@ -99,9 +119,10 @@ h2 {
 .section-logo {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
 }
