@@ -1,9 +1,212 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Main Image*/
+
+.main_image {
+  margin-top: 10px;
+  margin-bottom: 600px;
+}
+
+*/*Top Left Karma Logo*/
+
+.header__logo {
+  max-height: 50px;
+  width: auto;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+/*Top Right Navigation Links*/
+
+a:hover {
+  color: orange;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  margin-left: 900px;
+  margin-top: -40px;
+}
+
+.navigation__item {
+  padding: 0.5rem 0;
+  color: gray;
+}
+
+.navigation__link {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 8px;
+}
+
+/*Main*/
+.main_image {
+  background-image: url("../img/first-background.jpg");
+  padding: 200px;
+}
+.main_intro {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 0.8rem;
+  position: relative;
+  bottom: 100px;
+}
+.wifi_promo {
+  text-align: center;
+  color: white;
+  letter-spacing: 0.5rem;
+  position: relative;
+  bottom: 75px;
+}
+.learn_more_button {
+  color: white;
+  background-color: chocolate;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin-left: 480px;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  bottom: 50px;
+  overflow: hidden;
+}
+
+/*1st Section Heading*/
+.head_karma {
+  text-align: center;
+  position: relative;
+  font-size: 50px;
+  color: gray;
+  bottom: 500px;
+  letter-spacing: 0.5rem;
+}
+
+/*1st Section Images*/
+.container {
+  display: flex;
+}
+.internet_icon {
+  max-height: 200px;
+  width: auto;
+  padding: 100px;
+  position: relative;
+  bottom: 550px;
+  margin-left: 150px;
+}
+.coffee_icon {
+  max-height: 200px;
+  width: auto;
+  padding: 100px;
+  position: relative;
+  bottom: 560px;
+  margin-left: 20px;
+}
+.refill_icon {
+  max-height: 200px;
+  width: auto;
+  padding: 100px;
+  position: relative;
+  bottom: 560px;
+  margin-left: -20px;
+}
+/*1st Section Icon Descriptions*/
+.first_icon_sub_desc {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  color: gray;
+  bottom: 250px;
+  letter-spacing: 0.2rem;
+  margin-left: -1170px;
+}
+.second_icon_sub_desc {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  color: gray;
+  bottom: 250px;
+  letter-spacing: 0.1rem;
+  margin-left: 50px;
+}
+.third_icon_sub_desc {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  color: gray;
+  bottom: 250px;
+  letter-spacing: 0.1rem;
+  margin-left: 75px;
+}
+
+/* Underline */
+hr {
+  position: relative;
+  bottom: 500px;
+  width: 80%;
+  border: none;
+  height: 1px;
+  color: ghostwhite;
+  background-color: ghostwhite;
+}
+
+/* Join Us On */
+.connect_heading {
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  color: gray;
+  bottom: 530px;
+  letter-spacing: 0.1rem;
+  margin-left: 25px;
+}
+
+/*  2nd Section Images */
+.twitter_icon {
+  max-height: 20px;
+  width: auto;
+  padding: 100px;
+  position: relative;
+  bottom: 650px;
+  margin-left: 600px;
+}
+.facebook_icon {
+  max-height: 20px;
+  width: auto;
+  padding: 100px;
+  position: relative;
+  bottom: 875px;
+  margin-left: 660px;
+}
+.instagram_icon {
+  max-height: 20px;
+  width: auto;
+  padding: 100px;
+  position: relative;
+  bottom: 1100px;
+  margin-left: 720px;
+}
+
+/*footer*/
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: thistle;
+  text-align: center;
+  position: relative;
+  font-size: 10px;
+  bottom: 1200px;
+  letter-spacing: 0.2rem;
+  margin-left: 50px;
 }
 
 /**
@@ -15,5 +218,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
