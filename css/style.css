@@ -16,4 +16,35 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 3rem;
+ }
+ .svg-logo {
+     height: 3rem;
+ }
 
+ .nav-bar {
+     width: 50%;
+ }
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__list li:hover {
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+
+.active {
+    font-weight: 500;
+}
+
+
+ 
