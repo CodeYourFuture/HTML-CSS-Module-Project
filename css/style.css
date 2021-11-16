@@ -5,6 +5,56 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/* Header  and logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  padding-top: 7px;
+  border: 2px solid red;
+}
+
+.header__logo {
+  max-height: 40px;
+  width: auto;
+  margin-left: 390px;
+}
+
+/* Navigation bar  */
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 380px;
+}
+
+.navigation__item {
+  padding: 13px;
+}
+
+.navigation__link {
+  color: grey;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+.navigation__link__karma {
+  color: rgb(83, 75, 75);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 550;
+}
+
+.navigation__link:hover {
+  color: black;
+}
+
+.navigation__link__karma:hover {
+  color: black;
+}
+
 
 /**
  * Add your custom styles below
