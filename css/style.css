@@ -52,29 +52,35 @@ li:hover {
 .first-section {
   background-image: url(/img/first-background.jpg);
   background-color: #ccc;
-  background-size: cover;
+  /* background-size: cover;
   color: #fff;
   height: 250px;
   padding: 225px;
-  margin: 0;
+  margin: 0; */
+  height: 86vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content {
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .content-title {
-  margin: 0;
+  margin-top: 10%;
   font-weight: 300;
   margin-bottom: 5px;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .content-paragraph {
-  font-size: 1.5rem;
-  letter-spacing: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
   margin-bottom: 60px;
 }
 
@@ -155,4 +161,44 @@ footer {
   margin-bottom: 60px;
   font-size: 0.9rem;
 }
+
+.menu-burger {
+  display: none;
+}
 /* footer */
+
+/* mobile */
+@media screen and (max-width: 400px) {
+  /* header navbar */
+  ul {
+    display: none;
+  }
+  .menu-burger {
+    display: initial;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 25px;
+  }
+
+  /* main second-section*/
+  .second-section {
+    margin-bottom: 20px;
+  }
+
+  .content-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prod {
+    margin-bottom: 20px;
+  }
+}
