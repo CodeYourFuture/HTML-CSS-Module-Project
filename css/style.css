@@ -1,9 +1,13 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-weight: lighter;
 }
 
 /**
@@ -15,5 +19,71 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/* styling logo */
 
+#karma-logo {
+  float: left;
+  margin: 1rem;
+}
+/* styling navbar */
 
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  padding: 0 0 1rem 45rem;
+}
+
+.nav ul li {
+  display: inline;
+  list-style: none;
+  color: black;
+  padding: 0 0.8rem;
+}
+
+.nav ul li:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+/* styling body */
+.main p {
+  font-size: 40px;
+}
+.intro-karma {
+  background-image: url(../img/first-background.jpg);
+  padding: 15em 0em;
+  color: white;
+  text-align: center;
+}
+
+/* Styling button */
+button {
+  background-color: tomato;
+  border-style: none;
+  border-radius: 0.3rem;
+  height: 2.7rem;
+  width: 8rem;
+}
+.direction-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.direction-column {
+  flex-direction: column;
+  padding: 0.8rem;
+}
+.subtopic {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+footer a {
+  height: 2rem;
+  padding: 0.3rem;
+  border: 1px solid rgb(223, 219, 219);
+  border-radius: 2rem;
+}
