@@ -1,6 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  color: var(--white);
+}
+
+h1 {
+  margin: 0;
 }
 
 :root {
@@ -8,10 +14,6 @@ body {
   --white: #fff;
   --grey-light: #959697;
   --grey-dark: #6b7278;
-}
-
-body {
-  margin: 0;
 }
 
 /* Header */
@@ -56,4 +58,37 @@ li:first-child a {
 
 nav a:hover {
   color: var(--orange-dark);
+}
+
+/* Main */
+
+.main {
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  font-size: 72px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 4rem;
+  font-weight: 100;
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--orange-dark);
+  border-radius: 3px;
+  border: none;
+  padding: 10px 24px;
 }
