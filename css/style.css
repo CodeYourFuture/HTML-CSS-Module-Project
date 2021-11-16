@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 /**
@@ -15,5 +16,225 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ .header, .articles,
+ .footer {
+   max-width: 1200px;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+ }
 
+/* Header section  */
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding:1em;
+}
+
+.headerLogo{
+    height:50px;
+    width: auto;
+}
+/* Navbar  */
+.hamburgerMenu{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+.navigation-list{
+    display: flex;
+    list-style: none;
+}
+.navigation-item{
+    padding:0 5px;
+    margin: 0 10px;
+}
+.navigation-link,a{
+    text-decoration: none;
+    color:gray;
+    font-weight: 600;
+    font-size: large;
+}
+.active{
+    color:black;
+}
+.navigation-link:hover{
+    color:rgb(241, 111, 3);
+}
+/* Main content  */
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+ .main{
+    background-image: url(../img/first-background.jpg);
+    background-position:100%;  /*  This is important too for the small and big devices adjustment*/
+    background-size: cover; /* Image background-size set to cover for all diveces adjustment */
+    height:85vh; 
+    display: flex; 
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-weight: 100;
+ }
+ /* how can I make the class name main's header and paragraph fonts even more lighter? */
+ .main>h1{
+     font-size: 3.5em;
+     letter-spacing:3px;
+ }
+ .h1Paragraph{
+     font-size: 2.2em;
+     letter-spacing:1px;
+     margin-top: -10px;
+     font-weight: lighter;
+ }
+button{
+    background-color: rgb(241, 111, 3);
+    color:white;
+    border: none;
+    padding:15px 5px;
+    border-radius: 4px;
+    width: 10rem;
+    margin-top: 2%;
+}
+button:hover{
+    background-color: darkorange;
+}
+
+/* Articles with svg logo  */
+.article-h2{
+    text-align: center; 
+    padding-top:3%; 
+    font-size:2.5em;
+    font-weight:lighter;
+}
+
+.articles{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size:larger;
+    margin-bottom: 3%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    margin: 0 40px;
+    padding: 1.5em;
+    
+}
+article:hover{
+    background-color: rgb(253, 231, 206);
+    
+    border-radius: 5%;
+}
+svg{
+    width: 100px;
+    height: 150px;
+}
+hr{
+    width: 75%;
+}
+/* Extended article of the main content */
+.extended-article{
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 4%;
+    
+}
+.extended-article>.extended-article-textsAndButton{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 228, 255);
+    width: 55%; /* ask Edu buddy, How can i set this elements display to show 100% width?*/
+}
+.h2-of-extended-article{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-weight:lighter;
+    font-size: 1.1em;
+    
+}
+
+.h2-of-extended-article>h2{
+    margin: 0;
+}
+
+/* Footer  */
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:  center;
+}
+
+.social-media-icons>.logo{
+    height: 25px;
+    width: 25px;
+    border: 1px solid lightgray;
+    border-radius: 40%;
+    padding:5px;
+    margin: 5px;
+}
+.social-media-icons>.logo:hover{
+    background-color: rgb(192, 192, 192);
+}
+
+/* @media codes to fit the page in a smaller device  */
+@media (max-width:992px){
+    
+    .main>h1{
+        font-size: xx-large;
+    }
+    .h1Paragraph{
+        font-size:large;
+    }
+    .header>div{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: flex;
+       
+    }
+    main,.articles,.extended-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .article-h2{
+        font-size: 1.6em;
+    }
+
+    /* I need to fix the following main section to show the full width and height of the this class's
+    background-image also the text's should be on the center of x and y, How can I do that?? 
+    My solution- I used background-size:contain and background-repeat:no-repeat, then adjusted top 
+    and bottom margin to fit the whole picture in a smaller device;*/
+    .main{ 
+        padding: 10px 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin:-25% 0 -15% 0;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .extended-article>.extended-article-textsAndButton{
+        width: 100%;
+        padding: 5px;
+    }
+    footer>p{
+        font-size: x-small;
+    };
+}
+ 
