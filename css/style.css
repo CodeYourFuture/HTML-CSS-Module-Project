@@ -16,20 +16,12 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-.header {
-display:flex;
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
 }
 
-.header_logo {
-  max-height: 30px;
-  width: auto; 
-  margin-left: 50px; 
-}
-
-.navigation_list {
-
-}
-
-.navigation_item {
-    
+.logo {
+    width: 100px;
+    height: 100px;
 }
