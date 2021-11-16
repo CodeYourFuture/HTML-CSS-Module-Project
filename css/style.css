@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin:0;
+    padding:0;
 }
 
 /**
@@ -16,4 +18,293 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+p {
 
+margin-top: 1 rem;
+margin-bottom:0;
+
+
+
+}
+
+ .header {
+
+height: 5rem;
+width: 100%;
+ }
+
+.footer{
+
+    padding: 0 1.5rem;
+    
+    margin: 0 10rem 0 10rem;
+    
+}
+
+
+/* Navigation */
+
+.nav{
+
+display:flex;
+
+
+
+}
+
+
+.logo{
+float:left;
+height:1.5rem;
+width:1.5rem;
+padding-left: 5rem;
+padding-top:1rem;
+
+}
+
+.nav_btn{
+padding:1rem;
+padding-right: 2rem;
+
+
+}
+
+.nav_btn:hover{
+colur:orange
+
+}
+
+
+
+.container_box{
+
+display:flex;
+justify-content:right;
+
+
+}
+
+ul{
+margin:0px;
+padding:2rem;
+list-style-type:none;
+    
+}
+
+li {
+    
+display:inline;
+padding-right: 2rem;
+
+}
+
+.gray{
+
+color:gray;
+
+
+}
+
+/* Hero Section */
+
+
+.hero{
+
+
+background-image: url('../img/first-background.jpg');
+background-color: aquamarine;
+
+width:100%;
+height:40rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin:0 ;
+margin-top: -2.5rem;
+
+
+
+}
+
+.hero-text{
+    text-align: center;
+    position: relative;
+    top:25%;
+    color:white;
+}
+
+.hero-text h1{
+
+font-size: 3rem;
+font-weight:200;
+
+}
+
+.hero-text h2{
+    text-align: center;
+    position: relative;
+    color:black;
+}
+
+.hero-text p{
+
+font-size: 2rem;
+margin-bottom: 4rem;
+font-weight:200;
+
+}
+
+
+
+#learn_btn{
+
+margin-top:2rem;
+font-size: 1rem;
+padding:1rem 2rem 1rem 2rem;
+background-color:#ff6600;
+text-align: center;
+position: relative;
+
+border-radius: 6px;
+}
+
+.div h2{
+font-size:10rem;
+
+
+}
+
+/* Icon Images Orange*/
+
+.icons_container_text{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 6rem;
+    
+    font-size: 3rem;
+    font-weight: 200;
+    
+    
+}
+
+
+.icons_container{
+
+display:flex;
+flex-direction: row;
+align-content: center;
+padding-top: 4rem;
+padding-bottom:6rem;
+
+
+justify-content: center;
+justify-content: ;
+
+
+}
+
+.icons_images{
+display:flex;
+
+height:6rem;
+width: 6rem;
+padding:0 5rem 0 5rem;
+
+
+}
+
+.icons_container p{
+
+text-align: center;
+
+font-size: larger;
+
+}
+
+
+hr {
+    width:75%;
+    margin:0 auto;
+    background-color:rgb(216, 205, 205);
+    height:0.01rem;
+    border:none;
+}
+
+
+/* Footer Icons*/
+
+.footer_content{
+
+display:flex;
+flex-direction: column;
+margin: 0 auto;
+padding-top: 0.5rem;
+padding-bottom: 5rem;
+justify-content: center;
+align-items: center;
+
+}
+
+.footer_content p{
+
+    color:gray; 
+    font-weight: 100;  
+    
+    
+}
+
+#footer_join_us {
+
+color:black;
+font-weight:500;
+
+}
+
+
+.footer_icons{
+    display:flex;
+    flex-direction:row;
+    height:2rem;
+    width: 2rem;
+    justify-content: space-evenly;
+    
+}
+
+
+.footer_icons_container{
+padding:1rem;
+
+}
+
+.social_icons {
+    
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    
+    
+    
+    }
+
+
+.circle-icons{
+
+    border:1px solid rgb(219, 213, 213);
+    height:1rem;
+    width:1rem;
+    display:inline-block;
+    border-radius:50%;
+    padding:0.7rem;
+    margin:1rem 0.5rem 0 0.5rem;
+
+
+}
+
+
+#karma_footer{
+
+font-size:0.5rem;
+}
