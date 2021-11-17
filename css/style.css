@@ -28,7 +28,7 @@ body {
 }
 
 .menu-hamburger {
-  display: none;
+  display: none; /* Only for mobile */
 }
 
 .nav {
@@ -47,7 +47,7 @@ body {
 
 #meet-karma {
   color: #000;
-  font-weight: 500;
+  font-weight: 500; /* This for the Meet Karma button */
 }
 
 .nav-link:hover,
@@ -57,7 +57,7 @@ body {
 
 /* Main */
 .main {
-  margin-bottom: 75px;
+  margin-bottom: 5%;
 }
 
 /* Intro section */
@@ -68,7 +68,7 @@ body {
   height: 735px;
   color: #fff;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 5%;
 }
 
 .intro-title {
@@ -84,7 +84,7 @@ body {
   margin-bottom: 55px;
 }
 
-.learn-more {
+.learn-more-button {
   background-color: #f15b2a;
   border-radius: 2px;
   border: none;
@@ -94,22 +94,51 @@ body {
 /* Info section */
 .info {
   text-align: center;
+  margin-bottom: 7%;
 }
 
 .info-text {
   font-weight: 300;
-  font-size: 25px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
 
 .services {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* Flexbox to show services */
 }
 
 .service-icon {
   width: 100px;
   height: 100px;
+}
+
+.service-text {
+  font-size: 25px;
+}
+
+.quote {
+  display: flex; /* Used flexbox so that image and quote can go side by side */
+}
+
+.quote-text-box {
+  background-color: #fff2f2;
+  width: 100%;
+}
+
+.quote-text {
+  font-size: 35px;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.quote-button {
+  margin: 0 40%;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 25px;
+  background-color: #f17b53;
+  color: #fff;
 }
 
 /* Footer */
@@ -118,15 +147,15 @@ body {
 }
 
 hr {
-  border-top: 1px solid #e1e3e6;
+  border-top: 1px solid #e1e3e6; /* Used this to create a grey line above footer */
   width: 90%;
-  margin-bottom: 25px;
+  margin-bottom: 2%;
 }
 
 .social {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 2%;
 }
 
 .social-icon {
@@ -152,11 +181,11 @@ hr {
   }
 
   .menu-hamburger {
-    display: inline;
+    display: inline; /* This creates a hamburger menu instead of navigation in mobile mode */
   }
 
   nav {
-    display: none;
+    display: none; /* Navigation hidden when in mobile mode */
   }
 
   .intro {
@@ -165,5 +194,21 @@ hr {
 
   .services {
     flex-direction: column;
+  }
+
+  .quote {
+    flex-direction: column;
+  }
+
+  .quote-image {
+    width: 100%;
+  }
+
+  .quote-text-box {
+    padding-bottom: 10%;
+  }
+
+  .quote-text {
+    margin: 5%;
   }
 }

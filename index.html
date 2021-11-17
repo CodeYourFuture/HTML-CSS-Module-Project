@@ -21,6 +21,7 @@
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
 
+    <!-- Header -->
     <header class="header">
       <img src="img/karma-logo.svg" alt="karma-logo" class="karma-icon" />
       <img src="img/menu-hamburger.svg" class="menu-hamburger" />
@@ -50,13 +51,16 @@
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main class="main">
+      <!-- Intro subsection -->
       <section class="intro">
         <h1 class="intro-title">Introducing Karma</h1>
         <p class="description">Bring WiFi with you, everywhere you go.</p>
-        <button class="learn-more">Learn More</button>
+        <button class="learn-more-button">Learn More</button>
       </section>
 
+      <!-- Info subsection -->
       <section class="info">
         <p class="info-text">Everyone needs a little Karma.</p>
         <div class="services">
@@ -66,22 +70,43 @@
               alt="devices"
               class="service-icon"
             />
-            <p>Internet for all devices</p>
+            <p class="service-text">Internet for all devices</p>
           </div>
+
           <div class="service">
             <img src="img/icon-coffee.svg" alt="coffee" class="service-icon" />
-            <p>Boost your productivity</p>
+            <p class="service-text">Boost your productivity</p>
           </div>
+
           <div class="service">
             <img src="img/icon-refill.svg" alt="fuel" class="service-icon" />
-            <p>Pay as You Go</p>
+            <p class="service-text">Pay as You Go</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Quote subsection -->
+      <section class="quote">
+        <!-- Used flexbox so that image and quote can go side by side -->
+        <div class="quote-image-box">
+          <img src="img/feature-img.png" alt="woman" class="quote-image" />
+        </div>
+
+        <div class="quote-text-box">
+          <p class="quote-text">
+            <i>
+              Wherever I am, I just don't worry about my connection anymore!
+            </i>
+          </p>
+          <button class="quote-button">Get Karma today</button>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <hr />
+      <!-- Used this to create a grey line above footer-->
       <p>Join us on</p>
       <div class="social">
         <div class="social-icon">
@@ -91,6 +116,7 @@
             class="social-icon-image"
           />
         </div>
+
         <div class="social-icon">
           <img
             src="img/facebook-icon.svg"
@@ -98,6 +124,7 @@
             class="social-icon-image"
           />
         </div>
+
         <div class="social-icon">
           <img
             src="img/instagram-icon.svg"
