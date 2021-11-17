@@ -23,18 +23,42 @@ body {
 
 header {
   display: flex;
+  padding: 20px 0px;
+  justify-content: space-between;
 }
 
 header img {
   height: 50px;
-  padding-left: 30px;
+  padding-left: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
 }
 
 ul {
   display: flex;
+  list-style-type: none;
+  font-size: 18px;
 }
 
 li {
+  padding: 0 25px;
+}
+
+a {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e74c3c;
+}
+
+.meet-karma {
+  font-weight: bold;
 }
 
 article {
@@ -45,7 +69,6 @@ article {
   background: url(../img/first-background.jpg) no-repeat;
   background-size: cover;
   height: 250px;
-
   color: white;
   padding: 10% 0px;
 }
