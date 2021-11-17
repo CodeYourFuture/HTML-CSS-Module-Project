@@ -91,7 +91,9 @@ h5 {
 }
 
 /* Styling main section 1*/
-
+.section1 {
+  padding-bottom: 60px;
+}
 .direction_raw_center {
   /*applied for social icons and main articles */
   display: flex;
@@ -112,7 +114,7 @@ h5 {
 
 .article_width {
   /* articles are wrapped in <div> to make same width and adjust center position */
-  width: 850px;
+  width: 400px;
 }
 
 .article_thumbnail {
@@ -127,6 +129,7 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
+  padding-bottom: 30px;
 }
 
 .quote {
