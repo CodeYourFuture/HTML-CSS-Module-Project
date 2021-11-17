@@ -27,6 +27,10 @@ body {
   height: 50px;
 }
 
+.menu-hamburger {
+  display: none;
+}
+
 .nav {
   display: flex;
 }
@@ -61,14 +65,14 @@ body {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 300px;
-  padding-top: 300px;
+  height: 735px;
   color: #fff;
   text-align: center;
   margin-bottom: 100px;
 }
 
 .intro-title {
+  padding-top: 10%;
   font-weight: 300;
   font-size: 50px;
   margin-bottom: -15px;
@@ -139,4 +143,27 @@ hr {
 
 .copyright {
   color: #b3a9a9;
+}
+
+/* Mobile design */
+@media (max-width: 800px) {
+  .header {
+    margin: 25px 25px;
+  }
+
+  .menu-hamburger {
+    display: inline;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .intro {
+    padding-top: 25%;
+  }
+
+  .services {
+    flex-direction: column;
+  }
 }
