@@ -16,5 +16,37 @@ body {
  */
 
 body {
-  background-color: ;
+  background-color: white;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  display: flex;
+}
+
+header img {
+  height: 50px;
+  padding-left: 30px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+}
+
+article {
+  padding: 100px;
+}
+
+.hero {
+  background: url(../img/first-background.jpg) no-repeat;
+  color: white;
+}
+
+button {
+  background-color: red;
+  border-radius: 5px;
 }
