@@ -16,6 +16,7 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
  .header, .articles,
  .footer {
    max-width: 1200px;
@@ -24,7 +25,6 @@ body {
  }
 
 /* Header section  */
-
 .header{
     display: flex;
     justify-content: space-between;
@@ -38,11 +38,15 @@ body {
     width: auto;
 }
 /* Navbar  */
+
+/* Hamburger menu will not show on a bigger screen size, will only show on smaller device */
 .hamburgerMenu{
     display: none;
     width: 30px;
     height: 30px;
 }
+
+/* Main navbar  that will be visible on bigger device like desktop*/
 .navigation-list{
     display: flex;
     list-style: none;
@@ -70,7 +74,7 @@ body {
     
  .main{
     background-image: url(../img/first-background.jpg);
-    background-position:100%;  /*  This is important too for the small and big devices adjustment*/
+    background-position:100%;  /* This is important too for the small and big devices adjustment*/
     background-size: cover; /* Image background-size set to cover for all diveces adjustment */
     height:85vh; 
     display: flex; 
@@ -80,7 +84,8 @@ body {
     color:white;
     font-weight: 100;
  }
- /* how can I make the class name main's header and paragraph fonts even more lighter? */
+
+/* Main content's texts  */
  .main>h1{
      font-size: 3.5em;
      letter-spacing:3px;
@@ -91,6 +96,8 @@ body {
      margin-top: -10px;
      font-weight: lighter;
  }
+
+/* Button's */
 button{
     background-color: rgb(241, 111, 3);
     color:white;
@@ -104,7 +111,7 @@ button:hover{
     background-color: darkorange;
 }
 
-/* Articles with svg logo  */
+/* Articles with svg logo's  */
 .article-h2{
     text-align: center; 
     padding-top:3%; 
@@ -132,13 +139,16 @@ article:hover{
     
     border-radius: 5%;
 }
-svg{
+.article-img{
     width: 100px;
     height: 150px;
 }
+
+/* hr line used to create a gray line just after the article's section's end */
 hr{
     width: 75%;
 }
+
 /* Extended article of the main content */
 .extended-article{
     max-width: 100%;
@@ -187,8 +197,8 @@ footer{
     background-color: rgb(192, 192, 192);
 }
 
-/* @media codes to fit the page in a smaller device  */
-@media (max-width:992px){
+/* @media codes to fit the page in a device screen max width of 932 */
+@media (max-width:932px){
     
     .main>h1{
         font-size: xx-large;
@@ -200,8 +210,7 @@ footer{
         display: none;
     }
     .hamburgerMenu{
-        display: flex;
-       
+        display: flex; 
     }
     main,.articles,.extended-article{
         display: flex;
@@ -212,16 +221,68 @@ footer{
     .article-h2{
         font-size: 1.6em;
     }
+    .article-img{
+        width: 70px;
+        height: 105px;
+    }
 
-    /* I need to fix the following main section to show the full width and height of the this class's
+/* I need to fix the following main section to show the full width and height of the this class's
     background-image also the text's should be on the center of x and y, How can I do that?? 
     My solution- I used background-size:contain and background-repeat:no-repeat, then adjusted top 
     and bottom margin to fit the whole picture in a smaller device;*/
+    
     .main{ 
         padding: 10px 20px;
         background-size: contain;
         background-repeat: no-repeat;
-        margin:-25% 0 -15% 0;
+        margin: -6% 0 0 0;/* margin-top set to -6% to adjust the main a little bit upwards closer to navbar */
+    }
+    
+    .extended-article>.extended-article-textsAndButton{
+        width: 100%;
+        padding: 5px;
+    }
+    footer>p{
+        font-size: x-small;
+    };
+}
+/* End of @media codes to fit the page in a device screen max width of 992 */
+
+/* @media codes to fit the page in a device screen max width of 580 */
+@media (max-width:580px){
+    
+    .main>h1{
+        font-size: x-large;
+    }
+    .h1Paragraph{
+        font-size:large;
+    }
+    .header>div{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: flex; 
+    }
+    main,.articles,.extended-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .article-h2{
+        font-size: 1.5em;
+    }
+
+    .article-img{
+        width: 70px;
+        height: 105px;
+    }
+
+    .main{ 
+        padding: 10px 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: -20% 0 -20% 0;/* margin-top and bottom set to -20% to adjust the main a little bit upwards closer to navbar */
     }
 
     img{
@@ -234,7 +295,7 @@ footer{
         padding: 5px;
     }
     footer>p{
-        font-size: x-small;
+        font-size: 0.55em;
     };
 }
- 
+ /* End of @media codes to fit the page in a device screen max width of 580*/
