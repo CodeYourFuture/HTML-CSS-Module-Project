@@ -165,10 +165,15 @@ h2 {
 
 .extension {
     display: flex;
-    position:relative;
+    position: relative;
+    height: 450px;
+    width: 100%;
+    background-color: rgb(238, 212, 234);
+    margin-top: 200px;
 }
 
 .ext-image {
     width:43%;
     height:auto;
+    align-self: start;
 }
