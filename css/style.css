@@ -5,7 +5,115 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/* top link and logo */
+header{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   align-items: center;
+   padding:1em;
+   margin: auto 20px;
 
+}
+.logo-img{
+    height: 50px;
+    width: auto;
+}
+ 
+  .container{
+    display: flex;
+    list-style: none;
+  }
+.con-link{
+    text-decoration: none;
+    color: gray;
+    font-stretch: expanded;
+}
+.con-item,a{
+    padding:0 5px;
+    margin: 0 10px;
+    font-size: large;
+}
+.con-item:hover,a:hover{
+    color: rgb(241, 94, 9);
+   font-weight: bold;
+}
+.section{
+    background-image: url(../img/first-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height:70vh ;
+    text-transform: capitalize;
+    font-stretch: ultra-expanded;
+    font-size: 1.5em;
+}
+.but{
+    color: #fff;
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 10px 30px;
+    
+}
+/* main part */
+.main-img{
+    height:150px;
+}
+.article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+color: gray;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    margin-top: 100px;
+}
+.top-img-txt{
+    text-align: center;
+   font-weight: lighter;
+   font-size: 2.5em;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    font-stretch: ultra-expanded;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+.social-img{
+    height: 15px;
+    padding: auto 5px;
+ margin: auto 10px;
+}
+.social-media{
+ display: flex;
+ flex-direction: row;
+ 
+}
+.cc-right{
+    color: lightgray;
+}
 /**
  * Add your custom styles below
  * 
