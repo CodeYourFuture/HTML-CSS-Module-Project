@@ -117,20 +117,25 @@ p {
 /* LOWER SECTION */
 
 
+.h2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* text-align: center; */
+    margin-top: 100px;
+    padding: 0 100px;
+
+}
+
+
 h2 {
-    text-align: center;
+    
     top: 850px;
     font-size: 55px;
     font-weight: 20;
     margin-top: 100px;
 }
 
-.h2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-
-}
 
 
 @media (max-width: 1000px){
