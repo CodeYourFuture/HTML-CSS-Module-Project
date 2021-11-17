@@ -42,18 +42,18 @@ header{
 
 nav {
     float:right;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 nav a {
     margin: 0 20px;
     text-decoration: none;
-    color: rgb(100, 99, 99);
-    font-weight: 100;
+    color: rgb(129, 129, 129);
+    font-weight: 400;
 
 }
 
-nav a:nth-of-type(1) {color: black; font-weight: 100;}
+nav a:nth-of-type(1) {color: black; font-weight: 500;}
 
 nav a:hover {color:chocolate;}
 
@@ -99,29 +99,36 @@ p {
 .button {
     display: flex;
     align-self: center;
-    font-size: 50px;
-    padding: 15px 30px;
-
-}
-
-
-.first-line {
+    font-size: 20px;
     color: white;
-    font-size: 60px;
-    font-weight: 20;
     
+
 }
 
-.second-line {
-    color: white;
-    font-size: 30px;   
+.button1 {
+    padding: 20px 35px;
+    background-color: chocolate;
+    border: chocolate solid;
+    border-radius: 2%;
+    margin-top: 20px;
+    font-weight: 500;
 }
+
+
+
 
 h2 {
     text-align: center;
     top: 850px;
-    font-size: 75px;
+    font-size: 55px;
     font-weight: 20;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
 }
 
 
@@ -134,4 +141,20 @@ h2 {
 .logo {
     width: 200px;
     height: 200px;
+}
+
+.logo-text {
+    display: flex;
+    justify-content:space-around;
+    padding-right: 100px;
+    margin-top: 30px;
+    
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+
 }
