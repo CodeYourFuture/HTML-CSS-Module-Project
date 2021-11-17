@@ -1,11 +1,130 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
+main,
+footer {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.2rem;
+  padding-top: 60px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+.header_logo {
+  max-height: 35px;
+  width: auto;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__link {
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #7f7f7f;
+}
+
+.navigation__link:hover {
+  color: #c05326;
+}
+
+.text_color_dark {
+  color: #4c4c4c;
+}
+
+.text_color_light {
+  color: whitesmoke;
+}
+
+.hero {
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 280px;
+}
+
+.button {
+  background-color: #c05326;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+.articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.direction_column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 0px 30px;
+}
+.direction_raw_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.article_underline {
+  padding-bottom: 50px;
+  border-bottom: 1.5px solid #dddddd;
+  margin: 0px 100px;
+}
+.article_thumbnail {
+  max-height: 100px;
+  width: auto;
+}
+
+.social {
+  max-height: 20px;
+  width: 20px;
+  padding: 8px;
+  border-radius: 50px;
+  border: solid #dddddd 1px;
+  margin: 10px;
+}
+.social_icon {
+  max-height: 20px;
+  width: auto;
+}
+
+.copyright {
+  color: #7f7f7f;
+  font-size: 0.9rem;
+}
 /**
  * Add your custom styles below
  * 
@@ -15,5 +134,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
