@@ -175,5 +175,35 @@ h2 {
 .ext-image {
     width:43%;
     height:auto;
-    align-self: start;
+}
+
+.ext-text {
+    text-align: center;
+    font-size:45px;
+    font-weight:300;
+    padding: 75px 150px;
+}
+
+.ext-button {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: white;
+}
+
+
+.ext-button1 {
+    padding: 20px 35px;
+    background-color: chocolate;
+    border: chocolate solid;
+    border-radius: 2%;
+    font-weight: 500;
+    margin-top: -60px;
+}
+
+.ext-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
 }
