@@ -16,21 +16,22 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Selchuk Karakus
+- Your City: London Class 8
+- Your Slack Name: Selchuk Karakus
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML/CSS
+- Week: Week 2
 
 # Notes
 
 - What did you find easy?
-
+HTML has become second nature in a way, It's easy to read and write especialy since the introduction of semantic tags.
 - What did you find hard?
-
+Nothing is easy but then again nothing is hard either.  I believe It's just a matter of practice. 
 - What do you still not understand?
-
+At this stage I cant think of anything that we covered that I feel uncomfortable with. So far so good.
 - Any other notes?
+Some assignments are not very clear.  I wonder if this is done on purpose?
