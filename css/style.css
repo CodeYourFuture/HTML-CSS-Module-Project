@@ -1,9 +1,9 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
 /**
@@ -16,4 +16,154 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*header */
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.header-logo {
+  display: flex;
+  max-height: 50px;
+  width: 100px;
+  margin-left: 15px;
+}
+
+/* Navigation */
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+}
+
+#nav-bold {
+  color: black;
+}
+.nav-link {
+  color: rgb(160, 155, 155);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.nav-link:hover {
+  color: rgb(255, 102, 0);
+  cursor: pointer;
+}
+
+/* main */
+
+.content p {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.center {
+  background-image: url("../img/first-background.jpg");
+  height: 40vw;
+  background-repeat: no-repeat;
+  padding-top: 15.3rem;
+  background-size: 117%;
+  background-position-x: center;
+  padding-right: 5%;
+}
+
+.center p {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: auto;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#p1 {
+  font-size: 4.1rem;
+  margin-bottom: 1.2rem;
+}
+#p2 {
+  font-size: 2.2rem;
+  margin-bottom: 3.1rem;
+}
+button {
+  font-size: 1.3rem;
+  display: block;
+  margin: auto;
+  padding: 20px 35px;
+  background-color: rgb(255, 102, 0);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.more-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-top: 45px;
+  font-weight: 400;
+}
+
+.article-img {
+  max-width: 160px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
+
+.footer {
+  border-top: 1px solid rgb(199, 196, 196);
+  margin: 6rem 4rem 7rem;
+  padding-top: 0.5rem;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  border: 1px solid rgb(228, 225, 225);
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+}
+
+footer img {
+  height: 20px;
+  padding: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-p {
+  color: rgb(156, 154, 154);
+  margin-top: 1rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+}

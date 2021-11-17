@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-
-</body>
+    <header class="header">
+      <img class="header-logo" src="img/karma-logo.svg" />
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a id="nav-bold" class="nav-link" href="#">Meet Karma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">How it Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+    </header>
+    <div class="content">
+      <main class="main">
+        <div class="center">
+          <p id="p1">Introducing karma</p>
+          <p id="p2">Bring WiFi with you, everywhere you go.</p>
+          <button>Learn More</button>
+        </div>
+        <p>Everyone needs a little Karma.</p>
+        <div class="more-info">
+          <div class="article">
+            <img class="article-img" src="img/icon-devices.svg" />
+            <div class="article-title">Internet for all devices</div>
+          </div>
+          <div class="article">
+            <img class="article-img" src="img/icon-coffee.svg" />
+            <div class="article-title">Boost your productivity</div>
+          </div>
+          <div class="article">
+            <img class="article-img" src="img/icon-refill.svg" />
+            <div class="article-title">Pay as you Go</div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <p>Join us on</p>
+      <div class="footer-content">
+        <a href="#"><img src="img/twitter-icon.svg" /></a>
+        <a href="#"><img src="img/facebook-icon.svg" /></a>
+        <a href="#"><img src="img/instagram-icon.svg" /></a>
+      </div>
+      <p class="footer-p">&copy; Karma Mobility, Inc.</p>
+    </footer>
+  </body>
 </html>
