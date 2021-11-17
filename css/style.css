@@ -46,5 +46,70 @@ body {
     font-weight: 500;
 }
 
+.hero-intro {
+    background-image: url("../img/first-background.jpg");
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+   
+}
+
+.section-content{
+
+     text-align: center;
+     color: white;
+}
+
+.section-content h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.section-content h3 {
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-top: 0.8rem;
+}
+
+button {
+    width: 140px;
+    border-radius: 4px;
+    color:white;
+    background-color: #f15d07;
+    padding: 0.8rem;
+    border: none;
+}
+
+.main-icons {
+    margin:6rem 5rem ;
+}
+
+.container-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.main-icons h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.karma-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.karma-icon-svg {
+    height: 10rem;   
+}
+
+
+
+
 
  
