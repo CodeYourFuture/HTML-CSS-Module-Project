@@ -1,18 +1,31 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
-/* Header  and logo */
-.header {
+/* Header  Logo Navigation bar */
+
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 55px;
+  height: 70px;
   padding-top: 7px;
-  border: 2px solid red;
+  background: white;
+  position: fixed;
+  width: 100%;
+}
+
+li {
+  padding: 13px;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .header__logo {
@@ -21,8 +34,6 @@ body {
   margin-left: 390px;
 }
 
-/* Navigation bar  */
-
 .navigation__list {
   display: flex;
   flex-direction: row;
@@ -30,37 +41,35 @@ body {
   margin-right: 380px;
 }
 
-.navigation__item {
-  padding: 13px;
-}
-
-.navigation__link {
-  color: grey;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 400;
-}
 .navigation__link__karma {
   color: rgb(83, 75, 75);
   text-decoration: none;
   font-size: 17px;
   font-weight: 550;
 }
-
 .navigation__link:hover {
   color: black;
 }
-
 .navigation__link__karma:hover {
   color: black;
 }
 
-/* Adding the background picture */
+/* Adding background picture and headings*/
 
-.main {
+main {
   background-image: url("../img//first-background.jpg");
   height: 700px;
   background-size: cover;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 2px;
+}
+p {
+  font-size: 20px;
+  margin-top: 9px;
+  font-weight: 100;
 }
 
 .introduction {
@@ -69,9 +78,23 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 200px;
+  padding: 300px;
+}
+button {
+  background: rgb(218, 83, 30);
+  font-size: 20px;
+  padding: 17px 30px 17px 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(218, 83, 30);
 }
 /* Formatting section with three icons */
+h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 200;
+  margin-top: 100px;
+}
+
 .icon__logo {
   height: 120px;
 }
@@ -79,14 +102,15 @@ body {
 .icons__section {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding-top: 20px;
+  justify-content: center;
+  padding-top: 1px;
   margin: 10px;
 }
 
 .icon {
   display: flex;
   flex-direction: column;
+  padding: 50px;
 }
 
 /* Footer */
@@ -100,7 +124,7 @@ footer {
 }
 
 footer img {
-  height: 13px;
+  height: 15px;
   padding: 12px;
   margin: 5px;
   border: 1px solid rgb(207, 203, 203);
@@ -111,6 +135,10 @@ footer p {
   font-size: 15px;
   margin-bottom: 10 px;
   margin-top: 20px;
+}
+h3 {
+  font-weight: 250;
+  font-size: 15px;
 }
 
 /**
