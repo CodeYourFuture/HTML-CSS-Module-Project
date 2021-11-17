@@ -71,6 +71,47 @@ body {
   flex-direction: column;
   padding: 200px;
 }
+/* Formatting section with three icons */
+.icon__logo {
+  height: 120px;
+}
+
+.icons__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  margin: 10px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(197, 188, 188, 0.918);
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+footer img {
+  height: 13px;
+  padding: 12px;
+  margin: 5px;
+  border: 1px solid rgb(207, 203, 203);
+  border-radius: 50%;
+}
+footer p {
+  color: rgb(143, 139, 139);
+  font-size: 15px;
+  margin-bottom: 10 px;
+  margin-top: 20px;
+}
 
 /**
  * Add your custom styles below
