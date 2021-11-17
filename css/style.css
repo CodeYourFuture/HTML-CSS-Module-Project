@@ -207,3 +207,28 @@ h2 {
     flex-direction: column;
     margin-top: -30px;
 }
+
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    border-top: solid rgb(226, 226, 226);
+}
+
+.logo-container {
+    display: flex;
+
+}
+
+.footer-logo {
+    width: 20px;
+    height: auto;
+    margin: 10px 30px;
+    border: rgb(212, 212, 212) solid;
+    padding: 20px;
+    border-radius: 100%;
+}
