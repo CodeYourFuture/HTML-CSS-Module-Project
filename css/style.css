@@ -106,25 +106,25 @@ h2 {
   background-color: var(--white);
 }
 
-/* Section Under Main Image */
+/* Service section Under Main Image */
 
-.main__section {
+.service__section {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
 }
 
-.section__thumbnail {
+.service__thumbnail {
   max-height: 100px;
 }
 
-.section {
+.service {
   text-align: center;
   padding: 30px 60px;
 }
 
 .heading__underMainImage,
-.section__summary {
+.service__summary {
   color: var(--grey-dark);
   text-align: center;
 }
@@ -136,7 +136,7 @@ h2 {
 
 /* Footer */
 
-.footer {
+.footer__socialMedia {
   display: flex;
   justify-content: center;
 }
@@ -175,7 +175,7 @@ h2 {
     flex-direction: column;
   }
 
-  .main__section {
+  .service__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
