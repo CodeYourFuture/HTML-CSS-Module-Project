@@ -1,19 +1,207 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    text-align: center;
+    font-weight: 5;
+    font-size: 1.5rem;
+}
+h2 {
+    font-weight: 5;
+    font-size: 1.25rem;
+    text-align: center;
+}
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    height: 5%;
+
+}
+/* company-logo */
+.logo-area {
+    width: 25%;
+    padding: 0.5rem;
+    
+}
+.logo {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* navigation */
+/* show nav and hide hamburger in large viewport */
+nav {
+    display: block
+}
+.hamburger {
+    display: none
+}
+
+/* list inside navigation */
+ul {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-right: 10rem
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+li:hover {
+    color: orange
+}
+
+
+/* main section includes main image background and info*/
+main {
+    height: 80%;
+
+}
+
+
+.intro {
+    background: url('../img/first-background.jpg');
+    height: 40%;
+    color: #fdffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    background: orangered;
+    border: none;
+    margin-top: 2%;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.7s linear;
+}
+button:hover {
+    background: chocolate;
+    transform: scale(1.25);
+}
+
+/* title with informations with icons section */
+.services-title {
+    padding: 0 10%;
+    font-size: 5px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    
+
+}
+/* boxes with icons and infos */
+.services-container{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    justify-content: space-around;
+    width: 90%
+    
+
+}
+.individual-service-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.7s ease-out;
+    
+}
+.individual-service-box:hover {
+    transform: scale(1.25);
+}
+
+
+
+.service-icon{
+    width: 100px;
+    height: 100px
+}
+
+.social-icon {
+    width: 15px;
+    height: 15px
+}
+
+footer {
+    border-top: solid 0.5px rgba(0, 0, 0, 0.3);
+    height: 15%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 50%;
+
+}
+.social-icon {
+    border: solid 0.5px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+.light-text {
+    opacity: 0.25;
+}
+
+
+
+/* mobile view */
+@media screen and (max-width: 800px) {
+    /* hide nav and show hamburger in small screens */
+    nav {
+        display: none;
+        background: orange;
+    }
+    
+    .hamburger {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .services-container {
+        flex-direction: column
+    }
+
+    .service-icon {
+        width: 10%;
+        height: 10%
+    }
+}
+
 
 
