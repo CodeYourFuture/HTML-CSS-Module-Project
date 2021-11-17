@@ -61,7 +61,10 @@ nav a:hover {
 }
 
 /* Main */
-
+.container {
+    display: flex;
+    flex-direction:column;
+}
 .main {
   background-image: url("../img/first-background.jpg");
   background-size: cover;
@@ -91,4 +94,28 @@ h2 {
   border-radius: 3px;
   border: none;
   padding: 10px 24px;
+}
+
+/* Section Under Main Image */
+.main__section {
+    display: flex;
+    justify-content: center;
+}
+.section__thumbnail {
+    max-height: 100px;
+}
+
+.section {
+    text-align: center;
+    padding: 30px 60px;
+}
+
+.heading__underMainImage, .section__summary {
+    color: var(--grey-dark);
+    text-align: center;
+}
+
+.heading__underMainImage {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }
