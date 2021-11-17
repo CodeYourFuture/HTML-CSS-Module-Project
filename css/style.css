@@ -119,3 +119,38 @@ h2 {
     margin-top: 5rem;
     margin-bottom: 1rem;
 }
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    
+}
+.footer__topBorder {
+    border-top: 1px var(--grey-light) solid;
+    width: 80%;
+    font-weight: 100;
+}
+
+.heading__footer {
+    color: var(--grey-dark);
+    text-align: center;
+    font-weight: 100;
+}
+
+.heading__copyright {
+    color: var(--grey-light);
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 4rem;
+}
+
+.footer__thumbnail {
+    max-height: 15px;
+    width: auto;
+    border: 1px var(--grey-light) solid;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 7px;
+}
