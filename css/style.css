@@ -19,27 +19,26 @@ h2 {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
 /* styling logo */
 
 #karma-logo {
-  float: left;
-  margin: 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
+
 /* styling navbar */
 
 .nav {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
-  text-align: end;
-  padding: 0 0 1rem 45rem;
 }
 
 .nav ul li {
   display: inline;
   list-style: none;
   color: black;
-  padding: 0 0.8rem;
+  padding: 0 1rem;
 }
 
 .nav ul li:hover {
@@ -47,7 +46,7 @@ h2 {
   cursor: pointer;
 }
 
-/* styling body */
+/* styling Main-body */
 .main p {
   font-size: 40px;
 }
@@ -66,6 +65,9 @@ button {
   height: 2.7rem;
   width: 8rem;
 }
+
+/* styling Sub-body */
+
 .direction-row {
   display: flex;
   justify-content: center;
@@ -78,12 +80,19 @@ button {
 .subtopic {
   text-align: center;
 }
+
+/* styling footer */
 footer {
   text-align: center;
 }
-footer a {
-  height: 2rem;
-  padding: 0.3rem;
+h6 {
+  font-weight: lighter;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
   border: 1px solid rgb(223, 219, 219);
-  border-radius: 2rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin-left: 1rem;
 }
