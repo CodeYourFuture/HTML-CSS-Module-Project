@@ -129,7 +129,7 @@ p {
 
 
 h2 {
-    
+    text-align: center;
     top: 850px;
     font-size: 55px;
     font-weight: 20;
@@ -166,6 +166,17 @@ h2 {
 
 /* EXTENSION */
 
+
+@media (max-width: 1000px){
+    .extension {
+        flex-direction: column;
+
+    }
+    
+}
+
+
+
 .extension {
     display: flex;
     position: relative;
@@ -178,6 +189,7 @@ h2 {
 .ext-image {
     width:43%;
     height:auto;
+    position: relative;
 }
 
 .ext-text {
