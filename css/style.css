@@ -15,5 +15,33 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.header__logo {
+    
+    height: 20px;
+    width: 20px;
+}
 
+.navbar {
+    display: flex;
+}
+ /* .laptop is icons of laptop coffee and gas */
+.laptop {
+    height: 40px;
+    width: 40px;
+}
+/* 
+.icons {
+    height: 60px;
+    width: 60px;
+} */
 
+.insta {
+    max-height: 90px;
+    width: auto; 
+}
+
+.icon_more {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
