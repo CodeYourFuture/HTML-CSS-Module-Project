@@ -11,24 +11,29 @@ footer {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 200;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 3.5rem; /* Located in HERO under h1 */
   padding-top: 60px;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 2.1rem; /* Located under Hero */
   font-weight: 100;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.8rem; /* Main articles */
   font-weight: 400;
+}
+
+h5 {
+  font-size: 1.1rem; /* For "Join Us" located in the footer */
+  font-weight: 500;
 }
 
 .header {
@@ -40,6 +45,7 @@ h4 {
   max-height: 35px;
   width: auto;
 }
+/* Applying styling for Menu */
 
 .navigation__list {
   display: flex;
@@ -47,15 +53,16 @@ h4 {
 }
 
 .navigation__link {
-  padding: 0px 10px;
+  padding: 0px 15px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #7f7f7f;
 }
 
 .navigation__link:hover {
   color: #c05326;
 }
+/* Setting dark and light font color to use for multiple elements*/
 
 .text_color_dark {
   color: #4c4c4c;
@@ -65,50 +72,60 @@ h4 {
   color: whitesmoke;
 }
 
+/* Styling HERO section */
+
 .hero {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   margin-bottom: 20px;
-  padding: 280px;
+  padding: 200px;
 }
 
 .button {
   background-color: #c05326;
   border: none;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border-radius: 3px;
   margin-top: 30px;
+  font-size: 1.2rem;
 }
-.articles {
+
+/* Styling main articles*/
+
+.direction_raw_center {
+  /*applied for social icons and main articles */
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.articles {
   padding-top: 20px;
 }
 
 .direction_column_center {
+  /*applied for individual articles , that are wrapped in <div> to make same width and adjust center position */
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  margin: 0px 30px;
+  width: 850px;
 }
-.direction_raw_center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+.article_thumbnail {
+  /*Article images */
+  max-height: 150px;
+  width: auto;
 }
+
 .article_underline {
   padding-bottom: 50px;
   border-bottom: 1.5px solid #dddddd;
   margin: 0px 100px;
 }
-.article_thumbnail {
-  max-height: 100px;
-  width: auto;
-}
+/* styling footer */
 
 .social {
+  /* each social_icon wrapped in <div> to create circle border without cutting an image */
   max-height: 20px;
   width: 20px;
   padding: 8px;
@@ -116,6 +133,7 @@ h4 {
   border: solid #dddddd 1px;
   margin: 10px;
 }
+
 .social_icon {
   max-height: 20px;
   width: auto;
@@ -125,12 +143,3 @@ h4 {
   color: #7f7f7f;
   font-size: 0.9rem;
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
