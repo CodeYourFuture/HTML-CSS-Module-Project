@@ -23,9 +23,9 @@ body {
  body {
    background-color: black;
    /* centralise the website */
-       /* max-width: 1350px; 
+       max-width: 1350px; 
 	     margin: 0 auto; 
-	     float: none;  */
+	     float: none; 
   }
     
   h1,h2,h3,h4,h5,h6 {
@@ -68,7 +68,6 @@ body {
     /* remove browser default settings */
     margin: 0;
     padding: 0;
-    
 
     overflow: hidden;
     background-color: white;
@@ -113,10 +112,9 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: white;
-    margin-left: 7.3rem;
-    margin-right: 7.3rem;
-    padding-left: 5rem;  /* MOVE TO THE RIGHT */
-    padding-right: 5rem; /* MOVE TO THE LEFT */
+ 
+    padding-left: 5rem;  /* EXTEND TO THE LEFT */
+    padding-right: 5rem; /* EXTEND TO THE RIGHT */
     
   }
 
@@ -124,16 +122,13 @@ body {
 
 .mainImage {
     background-image: url(../img/first-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
  
     /* THE ACTUAL SIZE OF THE IMAGE IS 1600 * 735 PIXELS */
     height: 735px;
-    width: 100%;
+    width: 1300px;
     /* Handle how the text is displayed on top */
-    object-fit:cover;
     position: relative;
-    text-align: top left;
+    text-align: center;
     color: white;
 
   }
@@ -142,8 +137,8 @@ body {
 
   .centred {
     position: absolute;
-    top: 36%;
-    left: 46%;
+    top: 40%;
+    left: 55%;
     transform: translate(-50%, -50%);
   }
 
@@ -157,8 +152,8 @@ body {
     font-family: Roboto; 
     font-size:36px;
     position: absolute;
-    bottom: 22rem;
-    left: 32rem;
+    bottom: 20rem;
+    right: 18rem;
   }
 
   /* Buttons */
@@ -167,9 +162,8 @@ body {
  .buttonContainer {
   position: absolute;
   bottom: 20%;
-  left: 45%;
+  left: 55%;
   transform: translate(-50%, -50%);
-  margin-bottom:3rem;
 }
 .LearnMoreButton {
   
@@ -190,18 +184,16 @@ button:hover {
  /* The lower half */
 
  .LowerHalf {
-  margin-left: 7.3rem;
-  margin-right: 7.3rem;
    background-color: white;
  }
 
  .every1 {
   font-family: Roboto; 
-  font-size:52px;
+  font-size:48px;
   color:black;
-  /* text-align: center; */
+  text-align: center;
   padding-top:10rem;
-  padding-left:27rem;
+  padding-left:9rem;
  }
 
 
@@ -232,9 +224,6 @@ button:hover {
 /* Footer */
 
  .theFooter {
-
-  margin-left: 7.3rem;
-  margin-right: 7.3rem;
   position: absolute;
   right: 0;
   bottom: 14;
@@ -286,4 +275,3 @@ button:hover {
     .copyright {
       color: gray;
     }
-
