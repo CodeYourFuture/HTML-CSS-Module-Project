@@ -116,12 +116,15 @@ p {
 
 
 
+/* LOWER SECTION */
+
 
 h2 {
     text-align: center;
     top: 850px;
     font-size: 55px;
     font-weight: 20;
+    margin-top: 100px;
 }
 
 .h2 {
@@ -156,5 +159,16 @@ h2 {
     font-weight: 400;
     text-align: center;
     color: black;
+}
 
+/* EXTENSION */
+
+.extension {
+    display: flex;
+    position:relative;
+}
+
+.ext-image {
+    width:43%;
+    height:auto;
 }
