@@ -31,6 +31,7 @@ h4 {
 .header,
 .content_wrapper {
   max-width: 1200px;
+  min-height: 60px;
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
@@ -38,17 +39,26 @@ h4 {
 
 /*  ____________  header______________________ */
 
-ul {
-  padding: 5px;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   max-height: 60px;
 }
 
+ul {
+  padding: 5px;
+}
+
+.nav {
+  display: flex;
+}
+
 .nav_item {
   list-style: none;
-  padding: 5px 0;
+  padding: 5px 10px;
 }
 
 .nav_list {
@@ -63,7 +73,6 @@ ul {
 .nav_list:hover {
   color: var(--orange-dark);
 }
-
 /*  ____________  big poster section  ___________________ */
 
 .hero {
@@ -122,6 +131,40 @@ ul {
 
 .copyright {
   color: var(--grey-mid);
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
+
+/**
+ * 
+ *   desktop 
+ *
+ * 
+ */
+
+@media screen and (min-width: 600px) {
+  .product_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .hamburger_menu {
+    display: none;
+  }
 }
 
 /**
