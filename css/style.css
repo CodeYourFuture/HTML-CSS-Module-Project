@@ -23,7 +23,7 @@ body {
      padding: 1rem 3rem;
  }
  .svg-logo {
-     height: 3rem;
+     height: 2.5rem;
  }
 
  .nav-bar {
@@ -46,14 +46,48 @@ body {
     font-weight: 500;
 }
 
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+}
+
+
+/* @media only screen and (max-width: 768px) {
+  
+    .nav-bar .navigation__list{
+        display: none;
+    }
+
+    .hamburger {
+        display:block;
+        cursor: pointer;
+    }
+
+} */
+
 .hero-intro {
     background-image: url("../img/first-background.jpg");
     height: 45rem;
     display: flex;
     justify-content: center;
-    align-items: center;   
-   
+    align-items: center;      
 }
+
+@media screen and (max-width: 768px) {
+ .hero-intro {
+    height: 35rem;
+    background-position-x: 60%;
+    background-size: cover;
+  }
+}
+
 
 .section-content{
 
@@ -93,6 +127,14 @@ button {
     align-items: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+ .container-icon{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 .main-icons h1 {
     text-align: center;
     font-size: 3.5rem;
@@ -107,6 +149,47 @@ button {
 .karma-icon-svg {
     height: 10rem;   
 }
+
+.karma-icon h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+hr {
+    width: 80%;
+    border: 1px solid rgb(228, 220, 220);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icon {
+  height: 2rem;
+  border: 1px solid rgb(182, 179, 179); 
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+footer p {
+    color:rgb(182, 179, 179);
+
+}
+
 
 
 
