@@ -43,10 +43,59 @@ article {
 
 .hero {
   background: url(../img/first-background.jpg) no-repeat;
+  background-size: cover;
+  height: 250px;
+
   color: white;
+  padding: 10% 0px;
 }
 
 button {
-  background-color: red;
+  background-color: #e74c3c;
   border-radius: 5px;
+  padding: 15px 25px;
+  margin-top: 30px;
+  border: none;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.second-section {
+  padding-bottom: 0px;
+}
+
+.second-section-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #bdc3c7;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.second-section-columns img {
+  width: 100px;
+}
+
+footer p {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+footer img {
+  width: 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.trademark {
+  color: #bdc3c7;
 }
