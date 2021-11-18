@@ -5,9 +5,10 @@
 } */
 
 :root {
-    --orange-dark: #c05326;
-    --grey-dark: #292b2c;
+    --orange: #df5c3c;
+    --grey: #616668;
 }
+
 html, body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -15,7 +16,8 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     width: 100%;    
-    font-family: Roboto, sans-serif;   
+    font-family: Roboto, sans-serif; 
+    overflow-x: hidden;  
 }
 
 main {   
@@ -64,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--orange-dark);
+    color: var(--orange);
 }
 
 .active {
@@ -75,22 +77,28 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-color: blueviolet; 
+    background-color: black; 
     background-image: url(../img/first-background.jpg);
     color: white;
     background-repeat: no-repeat;
+    background-size: 162%;
+    background-position: center top 30%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center; 
-    font-size: 2rem;
-    
-       
+    font-size: 2.25rem;       
+}
+
+.hero-text-and-button p {
+    font-weight: 300;
 }
 
 h1 {
     font-weight: 200;
+    margin-bottom: 30px;
 }
+
 h1, h2, h3 {
     text-align: center;    
 }
@@ -100,14 +108,22 @@ h2 {
     font-weight: 300;
     padding-top: 60px;
 }
+
+h3{
+    font-size: 2rem;
+    font-weight: 300;    
+}
+
 button {
-    background-color: var(--orange-dark);  
+    background-color: var(--orange);  
     font-size: 1.4rem;
     font-weight: 400;
-    padding: 20px 35px;
-    border-radius: 10px;
+    padding: 22px 45px;
+    border-style: none;
+    border-radius: 6px;
     display: block;
     margin: 0 auto;
+    margin-top: 80px;
 }
 
 .section-items {
@@ -115,32 +131,61 @@ button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 60px;
 }
+
 .section-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+}
+
+.section-item img {
     width: 160px;
 }
 
+
+
 hr {
-    width: 80%;
+    width: 95%;
+    opacity: 0.3;    
 }
 
 
 footer {
-    width: 200px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 
 .footer-icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
+}
+
+.footer-icons img {
+    margin: 10px;
+}
+
+.footer-icons img {
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.75;    
+}
+
+footer p { 
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.credits {
+    opacity: 0.5;
 }
 /**
  * Add your custom styles below
