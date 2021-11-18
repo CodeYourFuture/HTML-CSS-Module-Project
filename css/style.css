@@ -1,19 +1,154 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+main,
+footer {
+  text-align: center;
+}
 
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
 
+h2 {
+  font-size: 3.5rem;
+  padding-top: 60px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.1rem;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1.8rem; 
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+.header_logo {
+  max-height: 35px;
+  width: auto;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__link {
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #7f7f7f;
+}
+
+.navigation__link:hover {
+  color: #c05326;
+}
+
+.text_color_dark {
+  color: #4c4c4c;
+}
+
+.text_color_light {
+  color: whitesmoke;
+}
+
+.hero {
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 200px;
+}
+
+.button {
+  background-color: #c05326;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 3px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.section1 {
+  padding-bottom: 60px;
+}
+.direction_raw_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.articles {
+  padding-top: 20px;
+}
+
+.direction_column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article_width {
+  width: 400px;
+}
+
+.article_thumbnail {
+  max-height: 150px;
+  width: auto;
+}
+.get_karma {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  padding-bottom: 30px;
+}
+
+.quote {
+  background: #fceae8;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+}
+
+.quote_text {
+  width: 40%;
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.social {
+  max-height: 20px;
+  width: 20px;
+  padding: 8px;
+  border-radius: 50px;
+  border: solid #dddddd 1px;
+  margin: 10px;
+}
+
+.social_icon {
+  max-height: 20px;
+  width: auto;
+}
+
+.copyright {
+  color: #7f7f7f;
+  font-size: 0.9rem;
+}
