@@ -6,14 +6,162 @@
     <title>Karma</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
+    
+    <!--==================== HEADER ====================-->
+<header class="header" id="header">
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+    <!--==================== NAVBAR ====================-->
+    <!--
+    <div>
+        <a href="#">
+            <img
+              src="img/karma-logo.svg"
+              alt="Karma official logo"
+              class="header_logo"
+            />
+          </a>
+    </div>
+-->
+    <nav class="nav container">
+        <a href="#">
+            <img
+              src="img/karma-logo.svg"
+              alt="Karma official logo"
+              class="header_logo"
+            />
+          </a>
 
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+            <ul class="nav_item" id="nav_item">
+                <li class="nav_list">
+                    <a class="nav_icon-text">Meet Karma</a>
+                </li>
+
+                <li class="nav_list">
+                    <a class="nav_icon">How it Works</a>
+                </li>
+
+                <li class="nav_list">
+                    <a class="nav_icon">Store</a>
+                </li>
+
+                <li class="nav_list">
+                    <a class="nav_icon">Blog</a>
+                </li>
+
+                <li class="nav_list">
+                    <a class="nav_icon">Help</a>
+                </li>
+
+                <li class="nav_list">
+                    <a class="nav_icon">Login</a>
+                </li>
+            </ul>
+    </nav>
+</header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+    <!--==================== INTRO SECTION ====================-->
+    <section class="about-section">
+        <div class="backimage">
+            <div class="backimage-text">
+                <h1>Introducing Karma</h1>
+                <p class="about-text">Bring WiFi with you, everywhere you go.</p>
+                <div class="backimage-text">
+                    <button class="intro-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== BODY SECTION ====================-->
+    <section class="service" >
+        <h2>Everyone needs a little Karma.</h2>
+        <div class="services">
+            <div class="columns">
+                <!-- column 1 -->
+                <div class="column">
+                    <img
+                    class="article__thumbnail"
+                      src="img/icon-devices.svg"
+                      alt=" different electronic devices"
+                    />
+                    <div class="column-text">
+                        <p>Internet for all devices</p>
+                    </div>
+                </div>
+                <!-- column 2 -->
+                <div class="column">
+                    <img
+                    class="article__thumbnail"
+                      src="img/icon-coffee.svg"
+                      alt="hot cup of coffee"
+                    />
+                    <div class="column-text">
+                        <p>Boost your productivity</p>
+                    </div>
+                </div>
+                <!-- column 3 -->
+                <div class="column">
+                    <img
+                    class="article__thumbnail"
+                      src="img/icon-refill.svg"
+                      alt="fuel refill tank"
+                    />
+                    <div class="column-text">
+                        <p>Pay as You Go</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <hr>
+     <!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__content">
+        <p>
+            <strong>
+                Join us on 
+            </strong>
+        </p>
+    </div>
+
+    <div class="socials">
+        <div class="social">
+            <img
+             src="img/twitter-icon.svg"
+             alt="twitter"
+             class="social_icon"
+            />
+      </div>
+      
+      <div class="social">
+            <img
+             src="img/facebook-icon.svg"
+             alt="facebook"
+             class="social_icon"
+            />
+      </div>
+      
+      <div class="social">
+            <img
+             src="img/instagram-icon.svg"
+             alt="instagram"
+             class="social_icon"
+            />
+      </div>   
+    </div>
+        <p>© Karma Mobility,Inc.</p>
+</footer>
 </body>
 </html>
