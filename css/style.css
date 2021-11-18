@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,119 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+header {
+  background-color: white;
+}
+.image-content {
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  padding: 15rem;
+  color: white;
+}
 
+.container {
+  margin: 0 auto;
+  width: 1150px;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.nav-links {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: gray;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* .logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 800px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 10px 10px;
+}
+#navbar a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+.intro {
+  background-image: url(../img/first-background.jpg);
+  padding: 13rem 0;
+  color: white;
+}
+h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  margin-left: 400px;
+  color: white;
+}
+
+/* p {
+  font-size: 25px;
+  margin-left: 280px;
+} */
+/*button {
+  background-color: tomato;
+  color: white;
+  padding: 15px 30px;
+  margin-left: 720px;
+  margin-top: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.small_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px;
+}
+.how_it_works {
+  justify-content: center;
+  padding: 0 20px;
+}
+.how_it_works p {
+  text-align: center;
+}
+.help-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.help p {
+  text-align: center;
+}  */
+.help-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  padding: 0.5rem;
+  /* flex-direction: row; */
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
