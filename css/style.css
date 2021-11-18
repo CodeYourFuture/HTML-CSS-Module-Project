@@ -1,11 +1,40 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
+header,
+main,
+footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 10px;
+}
+
+.logo-image {
+  width: 30px;
+  height: 25px;
+}
+
+.home {
+  background-image: url("../img/first-background.jpg");
+}
+
+.card-logos {
+  width: 50px;
+  height: 40px;
+}
+
+.footer-icons {
+  width: 30px;
+  height: 20px;
+}
 /**
  * Add your custom styles below
  * 
@@ -15,5 +44,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
