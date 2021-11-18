@@ -9,8 +9,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
-       
+    width: 100%;       
 }
 
 main {
@@ -31,14 +30,18 @@ img{
 /* Navigation */
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    display: flex;   
+    justify-content: space-between
 }
 
 nav ul {
     display: flex;
-    list-style: none;
-    
+    justify-content: space-between;
+    list-style: none;    
+}
+
+nav ul li {
+    padding: 0 20px;
 }
 
 nav ul li a {
@@ -48,8 +51,6 @@ nav ul li a {
 #hamburger {
     display: none;
 }
-
-
 
 .hero {
     background-color: blueviolet;
@@ -67,6 +68,18 @@ button {
     background-color: orange;   
 }
 
+.section-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     width: 200px;
     display: flex;
@@ -74,7 +87,11 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
 
+.footer-icons {
+    display: flex;
+    flex-direction: row;
 }
 /**
  * Add your custom styles below
