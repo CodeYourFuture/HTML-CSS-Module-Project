@@ -1,19 +1,193 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+h1 {
+  font-size: 4.5vw;
+}
 
+h2 {
+  font-size: 3vw;
+}
 
+h3 {
+  font-size: 2vw;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgb(233, 224, 224);
+  margin: 0 auto;
+}
+
+/* Html style trick */
+body,
+html {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header styles */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav {
+  width: 70%;
+  font-size: 1.5vw;
+  align-self: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: right;
+  padding: 0 0.5em;
+}
+
+.nav_li {
+  list-style: none;
+  font-weight: bolder;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: rgb(114, 113, 113);
+}
+.nav_link:hover {
+  color: rgb(255, 115, 0);
+}
+.nav_link:active {
+  color: black;
+}
+
+.logo_div {
+  padding-left: 3%;
+}
+
+.logo_div img {
+  width: 10%;
+  max-width: 50%;
+  margin-left: 10px;
+}
+
+/* ======================================Main Layout================================= */
+.main {
+  width: 100%;
+}
+
+#main_slide {
+  width: 100%;
+  background: url("../img/first-background.jpg");
+  height: 80vh;
+  max-height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.664);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.main_overlay h2 {
+  font-weight: 300;
+}
+
+.learnmore_btn {
+  padding: 0.8em;
+  margin: 8% auto;
+  background: rgb(201, 97, 0);
+  border-radius: 5px;
+  font-size: 2vw;
+}
+
+/* ============================Features styles======================================= */
+.features {
+  width: 100%;
+  margin-top: 4em;
+  text-align: center;
+}
+
+.features_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3em;
+  align-items: baseline;
+}
+
+.features_item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.features_item img {
+  max-width: 40%;
+}
+
+/* =================================Footer styles================== */
+.footer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons_container {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.icons_container a {
+  background-color: transparent;
+  display: block;
+  margin-left: 20px;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icons_container img {
+  max-width: 20px;
+}
+
+.watermark {
+  color: gray;
+}
+@media screen and (max-width: 400px) {
+  .features_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features_item {
+    margin-top: 10px;
+  }
+}
