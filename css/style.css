@@ -16,4 +16,205 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* header */
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-left: 50px;
+}
+
+.main-logo {
+    height: 50px;
+    width: auto;
+}
+
+/* I've started trying to do mobile version and then found out that we don't need to do it now */
+.menu-hamburger {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+/* navigation */
+.nav-list {
+    display: flex;
+    flow-flex: row wrap;
+    
+    list-style: none;    
+}
+
+.nav-item {
+    /*padding: 0 15px;*/
+    margin: 0 12px;   
+}
+
+.nav-link, a {
+    text-decoration: none;
+    color: rgb(126, 124, 124);
+    font-weight: 650;
+    font-size: large;
+}
+
+.nav-bold {
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgb(250, 142, 19);
+}
+
+/* main */
+.main {
+    background-image: url(../img/first-background.jpg);
+    height: 85vh;
+    background-position: 100%; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: 100;
+}
+
+.main h1 {
+    font-size: 3.5em;
+    letter-spacing: 4px;
+}
+
+.main p {
+    font-size: 2rem; 
+    margin-top: -10px;
+    letter-spacing: 0.1rem;
+}
+
+button {
+    background-color: rgb(243, 101, 6);
+    color: white;
+    font-weight: normal;
+    width: 12rem;
+    padding: 15px; 
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.2rem;   
+}
+
+button:hover {
+    background-color:rgb(241, 142, 71)
+}
+
+/* articles */
+
+.features-h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-top: 50px; 
+    padding-top: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;     
+}
+
+article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30 45px;
+    padding: 0 50px;
+    width: 13rem;
+}
+
+article:hover {
+    background-color: rgb(247, 224, 195); 
+    border-radius: 10px;
+}
+
+article a {
+        margin-bottom: 30px;
+}
+
+.features-img {
+    width: 100px;
+    height: 130px;
+    margin-bottom: 40px;
+}
+
+
+.extended-article {
+    max-width: 100%;
+    margin-top: 50px; 
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.extended-img {
+    width: 36rem;    
+}
+
+
+.extended-text {
+    background-color: rgb(247, 217, 222);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 78rem;
+    padding-top: -10px;
+   
+}
+.extended-text, p{
+    text-align: center;
+}
+
+hr {
+    color: rgb(212, 209, 209);
+    margin-top: 7rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-social{
+    display: flex;
+    flex-flow: row wrap;     
+}
+
+.logo-social {
+    width: 25px;
+    height: 25px;
+    margin: 0 8px;
+    border: 1px solid lightgray;
+    border-radius: 40%;
+    padding: 6px;
+}
+
+.join {
+    color: black;
+}
+
+footer p {
+    color: grey;
+    margin-top: 25px;
+}
 
