@@ -5,9 +5,16 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   box-sizing: border-box;
+  padding: 0%;
 }
 h2 {
   font-weight: lighter;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 5rem;
+  align-items: center;
 }
 
 /**
@@ -22,39 +29,43 @@ h2 {
 
 /* styling logo */
 
-#karma-logo {
-  margin: 1rem 1rem 0 1rem;
-}
+/* #karma-logo {
+  margin: 0 1rem 0 1rem;
+} */
 
 /* styling navbar */
 
-.nav {
+nav {
   /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
+.menu-image {
+  display: none;
+}
 
-.nav ul li {
+nav ul li {
   display: inline;
   list-style: none;
   color: black;
   padding: 0 1rem;
 }
 
-.nav ul li:hover {
+nav ul li:hover {
   color: tomato;
   cursor: pointer;
 }
 
 /* styling Main-body */
-.main p {
+main p {
   font-size: 40px;
 }
 .intro-karma {
   background-image: url(../img/first-background.jpg);
-  padding: 15em 0em;
+  padding: 5rem;
   color: white;
   text-align: center;
+  background-size: cover;
 }
 
 /* Styling button */
@@ -72,10 +83,14 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  height: fit-content;
 }
+
 .direction-column {
+  align-items: center;
+  display: flex;
   flex-direction: column;
-  padding: 0.8rem;
+  padding: 1.5rem;
 }
 .subtopic {
   text-align: center;
@@ -95,4 +110,41 @@ h6 {
   border-radius: 50%;
   padding: 0.4rem;
   margin-left: 1rem;
+}
+
+/* styling for tablet */
+@media screen and (max-width: 770px) {
+  nav {
+    font-size: 15px;
+  }
+  header {
+    padding: 2rem;
+  }
+  nav ul li {
+    padding: 0 0.5rem;
+  }
+}
+
+/* styling for  mobile */
+@media screen and (max-width: 580px) {
+  .direction-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+  }
+  header {
+    padding: 1rem;
+  }
+  .menu-image {
+    display: flex;
+  }
+  .intro-karma {
+    padding: 1rem 0;
+    width: 100%;
+    height: auto;
+    font-size: 10px;
+  }
 }
