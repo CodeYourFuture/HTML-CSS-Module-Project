@@ -16,6 +16,8 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* Header */
+
  header {
      display: flex;
      justify-content: space-between;
@@ -38,6 +40,8 @@ body {
     }
 }
 
+/* navbar*/
+
  .nav-bar {
      width: 50%;
  }
@@ -57,6 +61,8 @@ body {
 .active {
     font-weight: 500;
 }
+
+/* hamburger menu*/
 
 .hamburger {
     display: none;
@@ -87,6 +93,8 @@ body {
     }
 }
 
+/* hero section */
+
 .hero-intro {
     background-image: url("../img/first-background.jpg");
     height: 45rem;
@@ -103,9 +111,7 @@ body {
   }
 }
 
-
-.section-content{
-
+.section-content {
      text-align: center;
      color: white;
 }
@@ -131,6 +137,8 @@ button {
     border: none;
 }
 
+/* icon section */
+
 .main-icons {
     margin:6rem 5rem ;
 }
@@ -149,12 +157,13 @@ button {
   }
 }
 
-
 .main-icons h1 {
     text-align: center;
     font-size: 3.5rem;
     font-weight: 300;
 }
+
+/*single icon+text container*/
 
 .karma-icon {
     display: flex;
@@ -170,10 +179,47 @@ button {
     font-size: 2rem;
 }
 
+/* Addional Features section*/
+
+.additonal-features {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+ .additonal-features{
+    display: none;
+  }
+}
+
+.feature-img-png {
+    display: block;
+}
+
+.karma-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 225, 215);
+}
+
+.karma-content h1{  
+    width: 50%;             
+     font-style: italic;
+     text-align: center; 
+     font-weight: 400;   
+}
+.features-btn{
+    width: 180px;
+}
+
 hr {
     width: 80%;
-    border: 1px solid rgb(228, 220, 220);
+    border: 1px solid rgb(182, 179, 179);
 }
+
+/* footer */
 
 footer {
     display: flex;
@@ -185,7 +231,6 @@ footer h3 {
     font-weight: 500;
     font-size: 1.5rem;
 }
-
 
 .social-media-icons {
     display: flex;
@@ -203,7 +248,6 @@ footer h3 {
 
 footer p {
     color:rgb(182, 179, 179);
-
 }
 
 
