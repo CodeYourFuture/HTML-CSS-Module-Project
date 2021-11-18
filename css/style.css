@@ -70,6 +70,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .main {
   background-image: url("../img/first-background.jpg");
   background-size: cover;
@@ -132,6 +133,27 @@ h2 {
 .heading__underMainImage {
   margin-top: 5rem;
   margin-bottom: 1rem;
+}
+
+/* Advert section */
+
+.advert__section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: pink;
+  margin: 5rem 0;
+}
+
+.advert__board {
+  text-align: center;
+}
+
+.advert__slogan {
+  color: var(--grey-dark);
+  font-size: 34px;
+  font-style: italic;
+  padding: 0 190px;
 }
 
 /* Footer */
@@ -208,5 +230,24 @@ h2 {
     font-size: 25px;
     margin-bottom: 4rem;
     font-weight: 100;
+  }
+
+  .advert__section {
+    display: block;
+  }
+
+  .advert__slogan {
+    color: var(--grey-dark);
+    font-size: 34px;
+    font-style: italic;
+    padding: 0 28px;
+  }
+
+  .advert__img {
+    max-width: 20rem;
+  }
+
+  .advert__section .btn {
+    margin-bottom: 2rem;
   }
 }
