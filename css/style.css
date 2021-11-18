@@ -3,49 +3,71 @@
 * {
     outline: 1px solid red;
 }
+
+:root {
+    --orange-dark: #c05326;
+    --grey-dark: #292b2c;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;       
+    width: 100%;    
+    font-family: Roboto, sans-serif;   
 }
 
 main {
-    max-width: 600px;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    margin: 0 auto;  
 }
 
-img{
+/* img{
     max-width: 100%;
     height: auto;
     display: block;
-}
+} */
 /* Navigation */
 
 nav {
     display: flex;   
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    height: 90px;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    list-style: none;    
+    list-style: none;
+    font-size: 1.35rem;
+    font-weight: 500;
+    cursor: pointer;  
+    
 }
 
 nav ul li {
     padding: 0 20px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
+    color: #757e83;
+}
+
+nav ul li a:hover {
+    color: var(--orange-dark);
+}
+
+.active {
     color: black;
 }
 #hamburger {
@@ -53,19 +75,33 @@ nav ul li a {
 }
 
 .hero {
-    background-color: blueviolet;
+    background-color: blueviolet; 
     background-image: url(../img/first-background.jpg);
     color: white;
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+    font-size: 2rem;
+    
+       
 }
 
+h1 {
+    font-weight: 200;
+}
+h2 {
+    text-align: center;
+}
 button {
-    background-color: orange;   
+    background-color: var(--orange-dark);  
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 20px 35px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .section-items {
@@ -79,6 +115,7 @@ button {
     justify-content: center;
     align-items: center;
 }
+
 
 footer {
     width: 200px;
