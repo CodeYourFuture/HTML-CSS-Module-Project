@@ -5,15 +5,195 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/*Header
+-----------------------------------------------------*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50Px ;
+}
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.logoImg{
+    width: 20px;
+}
+
+.hamburgerMenu{
+    display: none;
+}
 
 
+.navList{
+    display: flex;
+    list-style: none;
+}
+
+.navItem{
+    padding: 15px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: rgb(168, 162, 162); 
+}
+
+.makeBlack{
+    color:rgb(105, 97, 97);
+    font-weight:bold;
+} 
+
+.navLink:hover, .makeBlack:hover{
+    color: chocolate;
+}
+
+/*Introduction
+----------------------------------------------------*/
+
+.introduction{
+    background-image: url(../img/first-background.jpg);
+    background-size: 117%;
+    background-repeat: no-repeat;
+    height: 40vh;
+    color: white;
+    text-align: center;
+    padding:15% 0;
+   }
+
+   .introduction h1{
+       font-size: 3rem;
+       font-weight: lighter;
+
+   }
+   
+   .introduction p{
+       font-size: 1.6rem;
+       font-weight: 2;
+   }
+
+   
+
+.learnmoreBtn{
+    color: white;
+    background-color: rgb(236, 119, 52);
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+    margin-top: 1.5%;
+}
+
+.introduction button:{
+     width: 130px;
+    }
+
+  
+
+/*Advantage
+------------------------------------------------*/
+.advantageTitle{
+    margin-top: 110px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: rgb(71, 67, 67);
+}
+
+.advantage{
+    display: flex;
+    color: rgb(71, 67, 67);
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px 200px;    
+}   
+
+.advantage img{
+    width: 100px;
+}
+
+.advantage p{
+    font-size: 1.5rem; 
+}
+ 
+.advantageColumn{
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    width: 20rem;
+}
+
+/*Get karma
+-------------------------------------------------*/
+
+.getkarmaBackground{
+    background-image: url(../additional/feature-img.png);
+    background-repeat: no-repeat;
+    height: 63vh;
+    width: 45vw;
+}
+
+.getkarmaTitle{
+    width: 65vw;
+    height: 63vh;
+    background-color: rgb(246, 230, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.getKarma{
+    display: flex;
+    margin: 3rem 0;
+}
+
+.getKarma p{
+    width: 40vW;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 10;
+    color: rgb(71, 67, 67);
+    }
+
+ .getKarma button{
+    width: 150px;
+ }
+
+/*footer
+-------------------------------------------------*/
+footer{
+    text-align: center;
+}
+
+footer hr{
+    background-color:rgb(238, 238, 238);
+    width: 70vw;
+    margin: auto;
+    height: 2px;
+    border: none;
+}
+
+footer img{
+    width: 15px;
+    padding: 15px;
+}
+
+footer a{
+    border-radius: 50%;
+    border: solid 0.5px lightgrey;
+    display: inline-flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px;
+    
+}
+
+footer p{
+    color: lightgrey;
+}
+
+footer h3{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+/*media query*/
+/*I am working on that8?
