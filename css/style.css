@@ -100,13 +100,84 @@ body {
             margin: 0.75em 0 1.5em;
         }
 
-    .hero-btn {
-        background-color: var(--orange);
-        border-radius: 2.75px;
-        border: 0;   
-        padding: 1em 2em;  
-    }
+        .hero-btn {
+            background-color: var(--orange);
+            border-radius: 2.75px;
+            border: 0;   
+            padding: 1em 2em;  
+        }
 
         .hero-btn-a {
             text-decoration: none;
         }
+
+        /* Article Section Styles */
+
+        .article-title {
+            text-align: center;
+            font-weight: 300;
+            font-size: 2.5em;
+            margin-top: 3em;
+            margin-bottom: 1.25em;
+        }
+
+        .article-text {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 1.25em;
+        }
+
+        .article-flex-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .article-svg {
+            height: 9vh;
+            width: 100%;
+        }
+
+/* End of Main Styles */
+
+
+/* Horizontal Rule Style */
+
+.hr{
+    margin: 2.5em 5em;
+    border-top: 1px solid rgb(241, 241, 241);
+    margin-bottom: 1.25em; 
+}
+
+
+/* Footer Styles */
+
+.call-to-action {
+    margin-top: 0.25em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.social-container {
+    margin: 0 0.5em;
+    height: 1em; 
+    border: solid 1px rgb(212, 212, 212);
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.socials {
+    height: 1em;
+}
+
+.footer-flex-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ip {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 2em;
+    color: rgb(172, 172, 172);
+}
