@@ -6,24 +6,11 @@ body {
 }
 
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
 /* Header */
 
 header {
     padding: 0 5rem;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -38,7 +25,6 @@ header img {
 /* Nav Links */
 
 ul {
-    display: flex;
     list-style-type: none;
 }
 
@@ -56,6 +42,10 @@ a:hover {
     color: orangered;
 }
 
+li:nth-of-type(1) a {
+    color: rgb(68, 67, 67);
+}
+
 strong {
     font-weight: 500;
 }
@@ -63,7 +53,7 @@ strong {
 
 /* Hamburger Menu */
 
-.hamburger-menu-wrapper {
+.hamburger-menu {
     display: none;
 }
 
@@ -71,14 +61,11 @@ strong {
 /* Hero */
 
 .hero {
-    background: url(../img/first-background.jpg);
+    background: url('../img/first-background.jpg');
     height: 650px;
     background-position: right 27% bottom 5%;
     width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -92,15 +79,11 @@ button {
 
 h1 {
     font-size: 50px;
-    font-weight: 300;
-    padding: 130px 0 0;
     margin-bottom: 0;
 }
 
 .hero p {
     font-size: 30px;
-    padding-top: 0;
-    font-weight: 300;
 }
 
 button {
@@ -115,22 +98,16 @@ button {
 /* Karma Details */
 
 h2 {
-    font-weight: 300;
     font-size: 40px;
-    text-align: center;
     padding: 80px 0 0 0;
 }
 
 .row-container {
-    display: flex;
-    text-align: center;
     justify-content: space-evenly;
 }
 
 .column-container {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 3rem;
     padding-top: 2rem;
     width: 15rem;
@@ -155,14 +132,10 @@ h2 {
     display: inline-flex;
     background: rgba(255, 162, 145, 0.637);
     margin-bottom: 5rem;
-    align-items: center;
 }
 
-.feature-wrapper {
-    display: flex;
+.feature-text-wrapper {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 60%;
 }
 
@@ -173,8 +146,6 @@ h2 {
 
 .feature p {
     font-size: 35px;
-    font-weight: 300;
-    text-align: center;
     width: 55%;
 }
 
@@ -189,10 +160,6 @@ hr {
 
 /* Footer */
 
-footer {
-    text-align: center;
-}
-
 h3 {
     font-weight: 400;
     font-size: 22px;
@@ -204,8 +171,6 @@ footer a {
     border: 1px solid rgb(238, 238, 238);
     border-radius: 50%;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer img {
@@ -217,6 +182,29 @@ footer p {
     color: rgb(163, 159, 159);
     font-size: 20px;
     margin-bottom: 100px;
+}
+
+
+/* General Styling */
+
+.jus-cen {
+    justify-content: center;
+}
+
+.al-cen {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.tex-cen {
+    text-align: center;
+}
+
+.fon-wei {
+    font-weight: 300;
 }
 
 @media screen and (max-width: 760px) {
@@ -241,9 +229,7 @@ footer p {
     }
     /* Karma Details */
     h2 {
-        font-weight: 300;
         font-size: 35px;
-        text-align: center;
         padding: 60px 0 0 0;
     }
     .column-container {
@@ -284,26 +270,16 @@ footer p {
     nav {
         display: none;
     }
-    .hamburger-menu-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
     .hamburger-menu {
-        width: 1.5rem;
-        height: 0;
-        margin: 2px;
-        border: 1px solid rgb(0, 0, 0);
+        display: flex;
     }
     /* Hero */
     .hero {
-        background: url(../img/first-background.jpg);
         background-position: right 27% top 15%;
-        text-align: center;
     }
     /* Hero Text */
     h1 {
         font-size: 43px;
-        font-weight: 300;
         padding: 40px 0 0;
         width: 50%;
     }
@@ -321,9 +297,6 @@ footer p {
         align-items: center;
     }
     .column-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding: 2rem;
         padding-top: 1.5rem;
         width: 13rem;
