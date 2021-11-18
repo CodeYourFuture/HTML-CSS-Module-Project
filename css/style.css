@@ -22,9 +22,21 @@ body {
      align-items: center;
      padding: 1rem 3rem;
  }
+
  .svg-logo {
      height: 2.5rem;
  }
+
+ @media only screen and (max-width: 768px) {
+
+     header {
+     padding: 1rem 1.2rem;
+    }
+  
+   .svg-logo {
+     height: 2rem;
+    }
+}
 
  .nav-bar {
      width: 50%;
@@ -58,19 +70,22 @@ body {
     background-color: #101010;
 }
 
-
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   
-    .nav-bar .navigation__list{
+    .navigation__list{
         display: none;
     }
 
-    .hamburger {
-        display:block;
-        cursor: pointer;
+    .nav-bar {
+        display: flex;
+        justify-content: end;
     }
 
-} */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
 
 .hero-intro {
     background-image: url("../img/first-background.jpg");
@@ -154,6 +169,7 @@ button {
     font-weight: 400;
     font-size: 2rem;
 }
+
 hr {
     width: 80%;
     border: 1px solid rgb(228, 220, 220);
