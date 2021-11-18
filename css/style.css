@@ -1,8 +1,18 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-/* * {
-    outline: 1px solid red;
-} */
+/* 
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+/* General styles */
 
 :root {
     --orange: #df5c3c;
@@ -51,13 +61,11 @@ nav ul {
     list-style: none;
     font-size: 1.35rem;
     font-weight: 500;
-    cursor: pointer;  
-    
+    cursor: pointer;      
 }
 
 nav ul li {
-    padding: 0 20px;
-    
+    padding: 0 20px;    
 }
 
 nav ul li a {
@@ -72,9 +80,12 @@ nav ul li a:hover {
 .active {
     color: black;
 }
+
 #hamburger {
     display: none;
 }
+
+/* Hero */
 
 .hero {
     background-color: black; 
@@ -94,6 +105,8 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
+/* Typography */
+
 h1 {
     font-weight: 200;
     margin-bottom: 30px;
@@ -109,10 +122,13 @@ h2 {
     padding-top: 60px;
 }
 
-h3{
+h3 {
     font-size: 2rem;
     font-weight: 300;    
 }
+
+
+/* Button */
 
 button {
     background-color: var(--orange);  
@@ -125,6 +141,9 @@ button {
     margin: 0 auto;
     margin-top: 80px;
 }
+
+
+/* Section */
 
 .section-items {
     width: 100vw;
@@ -145,13 +164,13 @@ button {
     width: 160px;
 }
 
-
-
 hr {
     width: 95%;
     opacity: 0.3;    
 }
 
+
+/* Footer */
 
 footer {
     width: 400px;
@@ -187,14 +206,6 @@ footer p {
 .credits {
     opacity: 0.5;
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+
 
 
