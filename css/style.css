@@ -8,7 +8,7 @@
     --orange-dark: #c05326;
     --grey-dark: #292b2c;
 }
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
@@ -18,8 +18,7 @@ body {
     font-family: Roboto, sans-serif;   
 }
 
-main {
-   
+main {   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +31,7 @@ main {
     height: auto;
     display: block;
 } */
+
 /* Navigation */
 
 nav {
@@ -91,8 +91,15 @@ nav ul li a:hover {
 h1 {
     font-weight: 200;
 }
-h2 {
+h1, h2, h3 {
     text-align: center;
+    
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    padding-top: 60px;
 }
 button {
     background-color: var(--orange-dark);  
@@ -105,8 +112,9 @@ button {
 }
 
 .section-items {
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 .section-item {
@@ -114,6 +122,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 160px;
 }
 
 
