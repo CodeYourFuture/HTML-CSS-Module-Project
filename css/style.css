@@ -1,11 +1,81 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+* {
+    outline: 1px solid red;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+       
 }
 
+main {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 auto;  
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+#hamburger {
+    display: none;
+}
+
+
+
+.hero {
+    background-color: blueviolet;
+    background-image: url(../img/first-background.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;    
+}
+
+button {
+    background-color: orange;   
+}
+
+footer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
 /**
  * Add your custom styles below
  * 
