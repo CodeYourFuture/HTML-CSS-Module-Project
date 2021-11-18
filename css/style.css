@@ -15,7 +15,7 @@
 /* General styles */
 
 :root {
-    --orange: #df5c3c;
+    --orange: #fc4c20;
     --grey: #616668;
 }
 
@@ -98,7 +98,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center; 
-    font-size: 2.25rem;       
+    font-size: 2.25rem; 
+    filter:saturate(0.7);     
 }
 
 .hero-text-and-button p {
@@ -110,6 +111,7 @@ nav ul li a:hover {
 h1 {
     font-weight: 200;
     margin-bottom: 30px;
+    padding-top: 80px;
 }
 
 h1, h2, h3 {
@@ -168,7 +170,6 @@ hr {
     width: 95%;
     opacity: 0.3;    
 }
-
 
 /* Footer */
 
