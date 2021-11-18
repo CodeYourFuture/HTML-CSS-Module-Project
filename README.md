@@ -14,8 +14,6 @@ The aim of this exercise is to create a page that looks just like this one:
    - To clone, click the green button that says 'Code' on that page.
   Now the code is on your own machine (this happened when you cloned), AND it's linked to your own Karma repository on Github (which was created when you forked).
 
- - Before you start coding, **create a new branch** following this format `your-class-name/your-name`, for example: `london-class-7/adam-smith`. Your branch name should be all lowercase, with no spaces. 
-
  - **Edit `index.html` and `style.css`** to re-create the design above.
    - Remember, use semantic HTML to re-create the structure, and style each element using CSS to make a perfect copy of the above image. 
    - All the images and icons you need can be found in the `img` folder, and the font 'Roboto' is already loaded into the project. 
