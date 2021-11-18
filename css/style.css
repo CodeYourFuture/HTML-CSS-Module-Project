@@ -49,17 +49,8 @@ h1, h2, .about-text{
  }
 
  /*hamburger menu */
- .hamburger {
-   background-color: transparent;
-   border: 0;
-   display: none;
-   /*cursor: pointer;*/
-   font-size: 40px;
- }
+ 
 
- .hamburger:focus {
-   outline: none;
- }
 /* hamburger menu end */
 
  /* --==================== INTRO SECTION ====================-- */
@@ -67,7 +58,7 @@ h1, h2, .about-text{
   background-image: url("../img/first-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  /*background-size: cover;*/
+  background-size: cover;
   color:white;
   padding: 250px 0;
 }
@@ -159,8 +150,10 @@ h2 {
     .columns {
       flex-direction: column;
     }
-/*
+
     .nav_item{
-      display: none;
-    }*/
+      display: flex;
+      justify-content: space-between;
+    }
+
   }
