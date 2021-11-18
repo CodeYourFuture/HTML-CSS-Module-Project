@@ -1,8 +1,8 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 :root {
     --orange-dark: #c05326;
@@ -92,8 +92,7 @@ h1 {
     font-weight: 200;
 }
 h1, h2, h3 {
-    text-align: center;
-    
+    text-align: center;    
 }
 
 h2 {
@@ -123,6 +122,10 @@ button {
     justify-content: center;
     align-items: center;
     width: 160px;
+}
+
+hr {
+    width: 80%;
 }
 
 
