@@ -4,16 +4,16 @@ The aim of this exercise is to add a new section to the homepage, and create a n
 
 ### Set up
 
-You can choose to add your code for Level 2 to the same branch you were using for Level 1, or to create a new 'level-2' branch. 
+You can choose to add your code for level 2 to the same branch you were using for level 1, or to create a new 'level-2' branch. 
 
 # Instructions
 
 - You'll find the designs inside the 'level 2' folder.
-- Add the new design block in your `index.html`
-- Create a new page called `order.html` and re-create the design for the Order form page (find this in the Level 2 folder as well)
-- For the Order page styles, you can keep using the same `style.css` file and add your Order page styles in there. Make sure the stylesheet is imported in the `<head>` of `order.html`.
+- Add the new section in your `index.html`
+- Create a new page called `order.html` and re-create the design for the order form page (the design is `level-2/store-desktop.png`)
+- For the order page styles, you can keep using the same `style.css` file and add your order page styles in there.
 You could also create a specific `order.css` file - just make sure you're not duplicating the CSS already defined in `style.css`! 
-- Connect the 2 pages by making the homepage's "Get Karma today" button navigate to the Order page.
+- Connect the 2 pages by making the homepage's "Get Karma today" button navigate to the order page.
 
 ### Submitting your work
  - Remember to **commit and push your code often**

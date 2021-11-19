@@ -5,13 +5,14 @@ Now let's make this website responsive!
 
 ### Set up
 
-You can choose to add your code for Level 3 to the same branch you were using for the previous levels, or to create a new 'level-3' branch. 
+You can choose to add your code for level 3 to the same branch you were using for the previous levels, or to create a new 'level-3' branch. 
 
 # Instructions
 
-- Use the techniques you've learned in class to make both the homepage and the Order page look good on mobile. 
+- Use the techniques you've learned in class to make both the homepage and the order page look good on mobile. 
 - You'll find the mobile designs inside the 'Level 3' folder. 
 - You can use 1 or 2 breakpoints, it's up to you (if you're not sure, start with 768px - it's a classic one as it's the width of an iPad and a good point to switch from a mobile layout to a desktop layout).
+- You might have to change some of your existing HTML and CSS code so that your webpage can match the mobile and desktop designs
 
 ### Submitting your work
  - Remember to **commit and push your code often**
