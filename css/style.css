@@ -16,54 +16,96 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-@media screen and (max-width: 820px) {
+
+/* Mobile size */
+@media screen and (max-width: 820px) { 
     header {
+        display: block;
         margin: 0;
-        height: 50px;
+        height: 70px;
     }
-    
+
     header img {
         height: 70%;
-        float: left;
-        margin: 5px;
+        margin: 10px 20px;
     }
-    header img:first-child {
-        display: block;
-    }
+
+    header img:last-child {
+        float: right;
+        height: 30%;
+        margin: 20px 10px;
+    }    
+
     header nav ul{
         display: none;        
     }
+
     header a:hover{
         color:lawngreen;
     }
 
-    section div {
-        font-size: medium;
-        width: 20%;
-        display: inline-table;
-        flex-direction: row;
-        padding: 5%;
+    section {
+        margin: 50px 0px 50px;
+        text-align: center;
+    }
+
+    .section_header {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content : space-around;
+    }
+
+    .section_content div {
+        font-size: 16px;
+        width: 180px;
+        margin: auto;
+        padding: 10px;
     }  
+
+    .section_content img {
+        padding: 0 46px;
+    }  
+
+    .section_content div:hover {
+        transform: scale(1.2);
+    }
+
+    .section_content div{
+        transition: transform 750ms;
+        will-change: transform;
+    }
 }
-@media screen and (min-width: 820px) {
+
+/* Desktop size */
+@media screen and (min-width: 820px) { 
+    
     header {
+        display: flex;
         margin: 0 100px;
-        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        height: 88px;
     }
-    
+
     header img {
-        height: 70%;
-        float: left;
-        margin: 5px;
+        height: 60%;
+        margin: 12px;
     }
     
-    header img:first-child {
+    header img:last-child {
         display: none;
     }    
 
     header nav ul{
         list-style-type: none;
-        margin: 0;
+        margin: auto;
         padding: 0;
         overflow: hidden;
     }
@@ -79,62 +121,68 @@ body {
         color: gray;
         text-decoration: none;    
     }
+    
+    section {
+        margin: 100px 50px 25px;
+        text-align: center;
+    }
 
-    section div {
-        font-size: medium;
-        width: 13%;
-        display: inline-table;
+    .section_header {
+        font-size: 46px;
+    }
+    .section_content {
+        display: flex;
         flex-direction: row;
-        padding: 5%;
+        align-items: center;
+        justify-content : space-evenly;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .section_content img {
+        padding: 0 20%;
+    }  
+
+    .section_content div {
+        font-size: 1.4rem;
+        width: 15rem;
+        margin: 40px;
     }  
     
 }
 
-@media screen and (max-width: 500px) {
-    section div {
-        font-size: 16px;
-        width: 180px;
-        margin: auto;
-    }  
-}
-
 main {
-    display: block;
     background-image: url("../img/first-background.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
     color: white;
+    font-size: 28px;
     text-align: center;
-    font-size: x-large;
-    padding: 12rem 0 8rem;
+    padding: 6rem 4rem 10rem;
     height: 200px;
 }
+
 main p:first-child {
     font-size: 40px;
     margin: 0;
 }
 
 main button {
-    background-color:darkorange;
-    border-block-style: none;
+    background-color:rgb(218, 138, 40);
+    border-style: none;
     border-radius: 4px;
-    padding: 1.2rem 2rem;
-    margin: 20px;
     font-size: large;
+    margin: 20px;
+    padding: 1.2rem 2rem;
+    transition: transform 750ms;
+    will-change: transform;
 }
 
 main button:hover {
     background-color: white;
     color:darkorange;
-}
-
-
-section {
-    display: block;
-    text-align: center;
-    font-size: xx-large;
-    margin: 5% 5% 0;
+    transform: scale(1.2);
 }
 
 footer {
