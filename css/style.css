@@ -116,7 +116,7 @@ body {
      color: white;
 }
 
-.section-content h1 {
+.section-content h2 {
     font-size: 3rem;
     font-weight: 300;
     margin-bottom: 0;
@@ -157,7 +157,7 @@ button {
   }
 }
 
-.main-icons h1 {
+.main-icons h2 {
     text-align: center;
     font-size: 3.5rem;
     font-weight: 300;
@@ -184,6 +184,7 @@ button {
 .additonal-features {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -192,7 +193,7 @@ button {
   }
 }
 
-.feature-img-png {
+.feature-img {
     display: block;
 }
 
@@ -201,22 +202,19 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     background-color: rgb(247, 225, 215);
 }
 
-.karma-content h1{  
+.karma-content h2{  
     width: 50%;             
-     font-style: italic;
-     text-align: center; 
-     font-weight: 400;   
+    font-style: italic;
+    font-size: 35px;
+    text-align: center; 
+    font-weight: 400;   
 }
 .features-btn{
     width: 180px;
-}
-
-hr {
-    width: 80%;
-    border: 1px solid rgb(182, 179, 179);
 }
 
 /* footer */
