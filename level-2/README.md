@@ -22,6 +22,7 @@ You could also create a specific `order.css` file - just make sure you're not du
 
 ## Designs
 
-![alt text](./homepage-desktop-extended.png "Homepage extended design")
+![Homepage extended design](./homepage-desktop-extended.png)
 
-![alt text](./store-desktop.png "Store design")
+![Store design](./store-desktop.png)
+

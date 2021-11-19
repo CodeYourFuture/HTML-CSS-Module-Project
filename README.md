@@ -2,7 +2,7 @@
 
 The aim of this exercise is to create a page that looks just like this one: 
 
-![alt text](./homepage-desktop.png "Karma desktop design")
+![Karma desktop design](./homepage-desktop.png)
 
 ### Set up
 

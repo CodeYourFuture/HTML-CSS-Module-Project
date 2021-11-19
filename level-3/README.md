@@ -20,6 +20,6 @@ You can choose to add your code for Level 3 to the same branch you were using fo
 
 ## Designs
 
-![alt text](./homepage-mobile.png "Homepage mobile design")
+![Homepage mobile design](./homepage-mobile.png)
 
-![alt text](./store-mobile.png "Store mobile design")
+![Store mobile design](./store-mobile.png)
