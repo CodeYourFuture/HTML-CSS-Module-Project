@@ -72,8 +72,11 @@ a:hover {
 
 
 .parent {
-    font-display: flex;
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+      
 }
 
     
@@ -81,10 +84,11 @@ a:hover {
 .seccontainer {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    align-content: space-between;
-    padding: 10px;
-    
+    flex-wrap: wrap;
+    gap: 120px;
+    margin:auto;
+
+   
 }
  
 
