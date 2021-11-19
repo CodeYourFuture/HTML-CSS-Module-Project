@@ -16,13 +16,13 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem; /* Located in HERO under h1 */
+  font-size: 3.5rem; /* Located under Hero */
   padding-top: 60px;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 2.1rem; /* Located under Hero */
+  font-size: 2.1rem; /* Located in HERO under h1 */
   font-weight: 100;
 }
 
@@ -52,6 +52,10 @@ h5 {
   list-style: none;
 }
 
+.hamburger_menu {
+  display: none;
+}
+
 .navigation__link {
   padding: 0px 15px;
   text-decoration: none;
@@ -61,6 +65,11 @@ h5 {
 
 .navigation__link:hover {
   color: #c05326;
+}
+
+.meet_karma {
+  color: #303030;
+  font-weight: 500;
 }
 /* Setting dark and light font color to use for multiple elements*/
 
@@ -77,8 +86,8 @@ h5 {
 .hero {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
-  margin-bottom: 20px;
-  padding: 200px;
+  background-size: cover;
+  padding: 200px 0px;
 }
 
 .button {
@@ -94,11 +103,12 @@ h5 {
 .section1 {
   padding-bottom: 60px;
 }
-.direction_raw_center {
+.direction_row_center {
   /*applied for social icons and main articles */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .articles {
@@ -140,9 +150,9 @@ h5 {
 }
 
 .quote_text {
-  width: 40%;
+  width: 68%;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -172,4 +182,54 @@ h5 {
 .copyright {
   color: #7f7f7f;
   font-size: 0.9rem;
+}
+
+@media screen and (max-width: 950px) {
+  .article_width {
+    /* articles are wrapped in <div> to make same width and adjust center position */
+    width: 250px;
+  }
+
+  .quote_text {
+    width: 68%;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .navigation__link {
+    padding: 0px 10px;
+    font-size: 1rem;
+  }
+
+  .get_karma {
+    flex-direction: column;
+  }
+
+  .quote {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  nav {
+    display: none;
+  }
+  .hamburger_menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  #articles {
+    /*used id to overwrite class .direction_row_center for section 1*/
+    flex-direction: column;
+  }
 }
