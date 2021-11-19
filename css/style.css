@@ -1,9 +1,10 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+body  {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    border: 2px solid red;
 }
 
 
@@ -11,75 +12,153 @@ body {
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be organized, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
 
+ 
 body{
     width:100%;
+    display: flex;
+    flex-direction: column;
     margin:0 auto;
 }
+/* body  *{
+    border:1px solid black;
+} */
 
 /* *******HEADER******* */
-
- 
 .header{
-    display:flex;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding:0 4rem;
-    
-    
+} 
+.logo {
+    height: 80px;
+    width: 80px;
+    padding-left: 5rem;
+    margin: 2.5rem  0;
 }
-/*****NAVIGATION LINKS******* */
+.nav_bar{
+    margin-top: 50px;
+}
 
 .navigation_list{
     display:flex;
     list-style: none;
+    padding-right: 5rem;  
 }
+
 .navigation_item{
-    padding:0 10px;
-   
+    padding:20px;
     
 }
+
 .navigation_link {
-    color:blue;
-    font-weight: 400;
+    color:rgb(109, 106, 106);
+    font-weight: 550;
+    font-size: 23px;
     text-transform: uppercase;
     text-decoration: none;
 
 }.navigation_link:hover{
+    color:rgb(245, 122, 21);
+}
+#meet_karma{
+    color:black;
+}
+#meet_karma:hover{
     color:red;
 }
-/***********MAIN************ */
-.content{
+
+/** MAIN***/
+
+.intro_karma{
+    width: 100%;
+    height: 100vh;
     background-image: url("../img/first-background.jpg");  
-    background-repeat: no-repeat;
-    margin: 0;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    margin-bottom: 50px;
+}
+
+.need_karma{
+    padding: 50px;
 }
 
 /*************TEXT STYLE*********/
-
-.content h1,p{
-    color:white;
-    font-weight: 40;
+.intro_karma h1{
+    font-weight: 100;
+    font-size:70px;
+    margin-top:15rem;
+    
+}    
+.intro_karma h2{
+    font-weight: 50;
+    font-size: 40px;
+    margin-bottom:50px;
 }
-.need_karma h2{
-    color:black;
+.need_karma h3{
+    text-align:center;
+    font-size: 50px;
     font-weight: 40;
+    color: rgb(47, 45, 45);
 }
+.need_karma p{
+    color: rgb(47, 45, 45);
+    font-size:25px;
 
+}
 
 /********BUTTON********/
 button{
-    background-color:darkorange;
+    background-color:rgb(185, 82, 45);
     color:white;
+    border-radius: 0.3rem;
+    padding: 15px 5px;
+    width:10rem;
 }
+/******Features*****/
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.feature_icon{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 1.5rem;
+     text-align: center;
+     padding:50px;
+     margin: 0 20px;     
+}
+.icon{
+    width: 10rem;
+    height: 10rem;
+}
+/****Footer*****/
+.footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+} 
 
-/* .content{
-    display:flex;
-    flex-direction: column;
-} */
+
+.find_us{
+    width:25px;
+    height: 25px; 
+    padding:15px;
+    border: 1px solid lightgray;
+    border-radius:40%;
+}
+hr{
+    width: 75%;
+}

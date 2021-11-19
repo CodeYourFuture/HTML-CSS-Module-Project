@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
+ </head>
 <body>
 
 
@@ -16,11 +16,13 @@
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
     <header class="header">
-        <img src="favicon.ico" alt="image-logo"/>
+        
+          <img src="img/karma-logo.svg" alt="image-logo" class="logo"/>
+        
         <nav class="nav_bar">
             <ul class="navigation_list">
                 <li class="navigation_item">
-                    <a class="navigation_link" href="#"><strong>Meet Karma</strong></a> 
+                    <a  id="meet_karma" class="navigation_link" href="#"><strong>Meet Karma</strong></a> 
                 </li>
                 <li class="navigation_item">
                     <a class="navigation_link" href="#">How it Works</a> 
@@ -39,46 +41,56 @@
                 </li>
             </ul>
         </nav>
-        <div class="hamburger">
+        <!-- <div class="hamburger">
             <a href="#" onclick="toggleMenu()">
-                <img src="../img/menu-hamburger.svg" alt="Show Navigation"/>
+                <img src="./img/menu-hamburger.svg" alt="toolbar"/>
             </a>
-        </div>
+        </div> -->
     </header>
-    <!-------------MAIN CONTAINER--------------->
-    <main class="main">
-     <div class="content">
+          <!--MAIN-->
+  <main class="main">
+         <!-- Intro Intro Karma Container -->
          <div class="intro_karma">
               <h1>Introducing Karma</h1>
-              <p>Bring WiFi with you,everywhere you go. </p>
+              <h2>Bring WiFi with you,everywhere you go. </h2>
               <button>Learn More</button>
          </div>
-         <!----Everyone Needs A Little Karma Container--->
+          <!--- Need Karma Container-->
          <div class="need_karma">
-            <h2>Everyone needs a little Karma </h2>
+            <h3>Everyone needs a little Karma. </h3>
             <div class="features">
-                <img  src="img/icon-devices.svg" alt="device_feature"/>
-                <p>Internet for all devices</p>
-                <img src="img/icon-coffee.svg" alt="coffee_feature"/>
-                <p>Boost your productivity </p>
-                <img src="img/icon-refill.svg" alt="refill_feature"/>
-                <p>Pay as You Go</p>
-            </div>
-        </div>
-       <!---------Footer Container-------->
-            <footer class="footer">
-                <div class="foooter_content">
-                    <p>Join us</p>
-                
-                <div class="social_media">
-                    <img src="img/twitter-icon.svg" alt="tweeter_icon"/> 
-                    <img src="img/facebook-icon.svg" alt="facebook_icon"/>
-                    <img src="img/instagram-icon.svg" alt="instagram_icn"/>
+                <div class="feature_icon">
+                   <img  src="img/icon-devices.svg" alt="device" class="icon"/>
+                   <p>Internet for all devices</p>
                 </div>
-              </footer>
-            </footer>
-            
-     </div>
-  </main>
- </body>
-</html>
+                <div class="feature_icon">
+                    <img src="img/icon-coffee.svg" alt="coffee" class="icon"/>
+                   <p>Boost your productivity </p>
+                </div>
+                <div class="feature_icon">
+                    <img src="img/icon-refill.svg" alt="refill" class="icon"/>
+                    <p>Pay as You Go</p>
+                </div> 
+            </div>
+         </div>
+            <hr>
+               <!---------Footer Container-------->
+              <footer class="footer">
+                    <p>Join us</p>
+                    <!-- Social Media Container-->
+                  <div class="social_media">
+                      <a href="#">
+                          <img src="img/twitter-icon.svg" alt="tweeter" class="find_us"/> 
+                      </a>
+                      <a href="#">
+                          <img src="img/facebook-icon.svg" alt="facebook" class="find_us"/>
+                      </a>
+                      <a href="#">
+                          <img src="img/instagram-icon.svg" alt="instagram" class="find_us"/>
+                      </a>
+                 </div>
+                 <p>&#169; Karma Mobility, Inc</p>
+            </footer> 
+     </main>
+</body>
+ </html>
