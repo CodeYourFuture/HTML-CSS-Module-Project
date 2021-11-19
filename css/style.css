@@ -66,16 +66,16 @@ nav {
 /* section styling starts here */
 .how-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
 
-.how_it_works {
+.how-it-works {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem;
+  /* padding: 6rem;*/
   margin: 0.5rem;
 }
 
@@ -90,7 +90,7 @@ nav {
   background-color: darkorange;
   color: white;
   padding: 10px 30px;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
   margin-top: 50px;
   border-radius: 5px;
   cursor: pointer;
@@ -108,6 +108,7 @@ footer {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 .help {
   text-align: center;
