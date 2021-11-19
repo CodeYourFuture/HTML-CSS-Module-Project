@@ -23,13 +23,19 @@ header {
   background-size: cover;
   padding: 15rem;
   color: white;
+  text-align: center;
 }
 
 .container {
   margin: 0 auto;
-  width: 1150px;
   max-width: 100%;
 }
+
+.image-content p {
+  font-size: 20px;
+}
+
+/* Nav styling starts here */
 
 nav {
   display: flex;
@@ -49,85 +55,78 @@ nav {
   text-decoration: none;
 }
 
-/* .logo {
+/* section styling starts here */
+.how-container {
   display: flex;
-  justify-content: flex-start;
-  margin-right: 800px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
-#navbar {
+.how_it_works {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 0 10px 10px;
-}
-#navbar a {
-  padding: 0 10px;
-  text-decoration: none;
-  color: gray;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  margin: 0.5rem;
 }
 
-.intro {
-  background-image: url(../img/first-background.jpg);
-  padding: 13rem 0;
-  color: white;
-}
-h1 {
-  font-size: 50px;
-  font-weight: lighter;
-  margin-left: 400px;
-  color: white;
-}
-
-/* p {
+.title {
+  text-align: center;
+  margin-top: 6rem;
   font-size: 25px;
-  margin-left: 280px;
-} */
-/*button {
-  background-color: tomato;
+}
+
+/* button styling starts here */
+.btn {
+  background-color: darkorange;
   color: white;
-  padding: 15px 30px;
-  margin-left: 720px;
+  padding: 10px 30px;
+  margin-left: 200px;
   margin-top: 50px;
   border-radius: 5px;
   cursor: pointer;
   border-style: none;
 }
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+
+/* footer styling starts here */
+
+footer {
+  background: rgb(255, 249, 249);
+  padding: 10px;
 }
-.small_container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 35px;
-}
-.how_it_works {
-  justify-content: center;
-  padding: 0 20px;
-}
-.how_it_works p {
-  text-align: center;
-}
+
 .help-links {
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
-.help p {
+.help {
   text-align: center;
-}  */
-.help-links {
-  list-style: none;
+  padding: 5px;
+}
+
+.socials {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.socials li {
+  width: 40px;
+  height: 40px;
   border: 1px solid lightgray;
   border-radius: 50%;
-  padding: 0.5rem;
-  /* flex-direction: row; */
-}
-.flex {
+  margin-left: 10px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: row;
+}
+.copyright {
+  text-align: center;
+  opacity: 0.2;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
 }

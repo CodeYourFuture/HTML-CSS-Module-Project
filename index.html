@@ -21,36 +21,36 @@
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
     <header>
+      <nav>
+        <img
+          src="./img/karma-logo.svg"
+          alt="karma-logo"
+          class="logo"
+          width="30px"
+        />
+        <ul class="nav-links">
+          <li>
+            <a href="#meet_karma"><strong>Meet Karma</strong></a>
+          </li>
+          <li><a href="#how_it_works">How it Works</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#help">Help</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
       <div class="container">
-        <nav>
-          <img
-            src="./img/karma-logo.svg"
-            alt="karma-logo"
-            class="logo"
-            width="20px"
-          />
-          <ul class="nav-links">
-            <li>
-              <a href="#meet_karma"><strong>Meet Karma</strong></a>
-            </li>
-            <li><a href="#how_it_works">How it Works</a></li>
-            <li><a href="#store">Store</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#help">Help</a></li>
-            <li><a href="#login">Login</a></li>
-          </ul>
-        </nav>
         <div class="image-content">
-          <h1 class="image-intro">Introducing Karma</h1>
-          <p class="header-intro">Bring WiFi with you, everywhere you go.</p>
+          <p>Introducing Karma</p>
+          <p>Bring WiFi with you, everywhere you go.</p>
           <button class="btn">Learn More</button>
         </div>
       </div>
     </header>
-    <section>
-      <div class="how_it_works">
-        <p>Everyone needs a little Karma</p>
 
+    <section>
+      <p class="title">Everyone needs a little Karma.</p>
+      <div class="how-container">
         <div class="how_it_works">
           <img
             src="./img/icon-devices.svg"
@@ -80,9 +80,9 @@
       </div>
     </section>
 
-    <section id="help">
-      <div class="flex">
-        <p>Join us on</p>
+    <footer>
+      <p class="help">Join us on</p>
+      <div class="socials">
         <ul class="help-links">
           <li>
             <img
@@ -93,6 +93,7 @@
               class="help-links"
             />
           </li>
+
           <li>
             <img
               src="./img/facebook-icon.svg"
@@ -102,6 +103,7 @@
               class="help-links"
             />
           </li>
+
           <li>
             <img
               src="./img/instagram-icon.svg"
@@ -113,7 +115,7 @@
           </li>
         </ul>
       </div>
-    </section>
-    <footer>&copy;Karma Mobility, inc</footer>
+      <p class="copyright">&copy;Karma Mobility, inc</p>
+    </footer>
   </body>
 </html>
