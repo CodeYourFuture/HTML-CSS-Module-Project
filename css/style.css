@@ -5,7 +5,14 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
+/* 1 rem=16px */
+header,
+main,
+footer {
+  padding: 0 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 /**
  * Add your custom styles below
  * 
@@ -15,82 +22,87 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
 .header {
-    height: 76px;
-    width: 100%;
-     
-   /*  just for now while i am working on header*/
-}
-
-/* .navigation_list {
-    
-} */
-.navbar {
+    height: 80px;
     display: flex;
-    /* align-content: space-between; */
+    justify-content: space-between;
+    align-items:center;
 }
 
-.navigatin_list {
-    /* display:flex;
-    justify-content: center; */
 
-    /* padding: 25px 50px; */
-   
-}
+
 
 
 .header__logo {
     
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 25px;
     padding-left: 30px;
-    padding-top: 24px;
+    /* padding-top: 24px; */
     color: rgba(243, 134, 0, 0.849);
 }
+
+/* meet karma how it works store etc */
 
 .navbar {
     display: flex;
     justify-content: flex-end;
-    
+    margin-right: 30px;   
 
 }
+
 
 .navigation_item {
     text-decoration: none;
-    /* find out what font size is used */
-    font-size: roman; 
     color: rgb(128, 127, 127);
-    padding: 10px;
+    padding-left: 15px;
+    
 }
+.navigation_item:hover {
+    color: rgba(243, 134, 0, 0.849);
+}
+
 a {
     cursor: pointer;
 }
 
-.hugepic {
-    background-image: url("../img/first-background.jpg");
-    color: white;
-    padding-bottom: 615px;
-    margin-bottom: 80px;
-    text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 
+.lowercontent h2  {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* baclground pic with text and button */
+.hugepic  {  
+
+   background-image: url("../img/first-background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 35rem;
+   display: flex;
+   justify-content: center;
+   text-align: center;
 
     
 }
 .centercontent {
-    /* display: flex;
-    flex-direction : column;
-    justify-content: center; */
-  display: flex; 
-  flex-direction: column; 
-  /* height: 450 px; */
-  align-items: center;
-  justify-content: center;
-  padding-top: 250 px;
-  font-family: 'Courier New', Courier, monospace;
     
+    max-width: 25rem;
+    margin: auto;
+    color: white;
+    
+    
+}
+.centercontent h1,
+ 
+.centercontent p  {
+    font-family: 'Raleway', sans-serif; 
+    
+}             
+
+.centercontent p {
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .button {
@@ -99,50 +111,85 @@ a {
     border-radius: 5px;
     border: none;
     padding: 10px 20px;
+    margin-top: 40px;
 
 }
 
-.content {
+/* Everyone need a little karma and 3 icons of laptop coffee gas  */
+
+.lowercontent {
     display: flex;
     /* align-items: center;
     justify-content: flex-start; */
     text-align: center;
     justify-content: space-evenly ;
     flex-direction: column;
+    height: 300px;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
+
  /* .laptop is icons of laptop coffee and gas */
 .laptop {
-    height: 40px;
-    width: 40px;
+    height: 140px;
+    width: 100px;
 }
-/* my parent container has to have display */
-.icons {
-    /* height: 60px;
-    width: 60px; */
-    display: flex;
-    justify-content: space-between;
 
+
+.icons {
+   
+    display: flex;
+    justify-content: space-around;
+    margin: 0 144px ;
+
+}
+
+
+.icon_more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+
+
+footer a {
+ text-decoration: none;
+ margin-right: 10px;
+ 
+}
+
+/* footer p is copyright icon and Karma mobility inc */
+
+footer p   {
+    /* font-weight: 500; */
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
 }
 
 .insta {
-    max-height: 90px;
-    width: auto; 
+   
+    height: 15px;
+    width: 15px;
+   
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    padding: 10px;
+    
 }
 
-.icon_more {
- display: flex;
- flex-direction: column;
- align-items: center;
- 
+footer h3  {
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
 }
+
+
 
 footer  {
     
     left: 0;
     bottom: 0;
     width: 100%;
-   
-    
     text-align: center;
 
 }
