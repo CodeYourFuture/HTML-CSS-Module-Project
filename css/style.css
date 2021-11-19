@@ -1,9 +1,155 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 1rem;
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 15rem;
+}
+
+/* nav-list*/ /* Remove bullets */
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 30rem;
+}
+
+/* nav-link-meet-karma */
+.nav-link-meet-karma {
+  font-weight: bolder;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+/* nav-link */
+.nav-link {
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+/* navbar hover */
+
+a:hover {
+  color: #c05326;
+}
+/* Nav-logo*/
+.nav-logo {
+  width: 2rem;
+  height: 3rem;
+}
+
+/* Background image */
+.background-image {
+  background-image: url("../img/first-background.jpg");
+  height: 45rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* karma */
+.karma {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* karma h1 */
+.karma h1 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+  margin-bottom: 0rem;
+}
+
+/* karma p */
+.karma p {
+  color: rgb(204, 201, 197);
+  font-size: 2rem;
+}
+
+/* button */
+.button {
+  background-color: #c05326;
+  color: white;
+  width: 8rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-top: 00.5rem;
+}
+
+/* details h1 */
+.details h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 2.3rem;
+  margin-top: 8.5rem;
+}
+
+/* article */
+.details img {
+  width: 12rem;
+  height: 8rem;
+}
+
+/* article-container */
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.45rem;
+  margin-top: 3rem;
+  padding: 2rem 29rem;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* line */
+.line {
+  border-top: 1px solid rgb(238, 234, 234);
+  width: 55rem;
+  height: 0.1rem;
+  margin: 1rem 25rem;
+}
+
+/* footer h5 */
+footer h5 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* footer p */
+footer p {
+  font-size: 0.88rem;
+  color: rgb(180, 180, 179);
+}
+
+/* logo-container */
+.logo-container img {
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid rgb(224, 218, 218);
+  padding: 0.28rem;
+  border-radius: 1rem;
 }
 
 /**
@@ -15,5 +161,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
