@@ -6,17 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent 
- container set to 'display: flex'*/
-
- /* HEADER */
+/* HEADER */
 .header {
     display: flex;
 }
@@ -24,7 +14,7 @@ body {
 .header-image {
     height: 50px;
     width: 50px;
-    padding-left: 150px;
+    padding-left: 160px;
     padding-top: 15px;
 }
 
@@ -32,7 +22,7 @@ body {
 .nav-list {
     display: flex;
     list-style: none;
-    margin-left: 1020px;
+    margin-left: 900px;
 }
 
 .nav-item {
@@ -46,57 +36,54 @@ body {
 .nav-link {
    text-decoration: none; 
    color: #888;
-
 }
 
 /* BACKGROUND IMAGE, TEXT AND BUTTON */
-.container1 {
+.page-top-half {
     position: relative;
 }
 
-.background-image {
-    width: 1898px;
-}    
-
-.img-txt {
+.page-top-half .large-text {
     position: absolute;
     z-index: 999;
     margin: 0 auto;
     left: 0;
     right: 0; 
+    color: whitesmoke;
 }
 
-.txt-col {
-    color: whitesmoke;
+.background-image {
+    width: 100%;
+} 
+
+.size1 {
+    font-size: 60px;
+    top: 34%;
+    font-weight: 100;
+}
+
+.size2 {
+    font-size: 34px;
+    top: 45%;
+    font-weight: 100;
+}
+
+.size3 {
+    font-size: 60px;
+    font-weight: 300;
+    color: #3c3b3b;
 }
 
 .large-text, .button {
    text-align: center; 
 }
 
-.size1 {
-    font-size: 90px;
-    top: 32%;     /*adjust to move positioned div up and down*/
-    font-weight: 100;
-}
-
-.size2 {
-    font-size: 48px;
-    top: 47%;
-    font-weight: 100;
-}
-
-.size3 {
-    font-size: 75px;
-    font-weight: 300;
-    color: #3c3b3b;
-}
-
 .button {
     position: absolute;
-    left: 47%;
-    top: 61%;
+    left: 46%;
+    top: 59%;
 }
+
 .rect-button {
     padding: 15px 40px;
     background-color: #eb6728;
@@ -106,29 +93,26 @@ body {
 }
 
 /* BOTTOM HALF OF PAGE STYLING */
-.container2 {
-    margin-top: 200px;
-    margin-bottom: 150px;
+.page-bottom-half {
+    margin-top: 150px;
+    margin-bottom: 90px;
     text-align: center;
 }
 
-.section-container {
+.icon-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
 
-.container3 {
+.icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .icon-devices {
-    max-width: 200px;
-    
+    max-width: 200px;   
 }
 
 .icon-text {
@@ -137,6 +121,11 @@ body {
 }
 
 /* FOOTER STYLING */
+.footer h6 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
 .footer-line {
     border-top: 2px solid #dfdfdf;
     margin: 0 150px 0 150px;
@@ -146,19 +135,33 @@ h6 {
     text-align: center;
     font-size: 23px;
     font-weight: 400;
-    color: #3c3b3b;
-    
+    color: #3c3b3b;   
 }
 
 .footer-content {
-    margin-bottom: 150px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.social-media-icons {
-    height: 40px;
-    margin: 0 10px 0 10px;
+/* SOCIAL MEDIA ICONs/COPYRIGHT */
+.social{
+    max-height: 20px;
+    width: 20px;
+    padding: 8px;
+    border-radius: 50px;
+    border: solid #dddddd 1px;
+    margin: 10px;
 }
 
+.social-media-icons {
+    max-height: 20px;
+    width: auto;
+}
+
+.copyright {
+    text-align: center;
+    color: #b5b3b3;
+    margin-bottom: 100px;
+}

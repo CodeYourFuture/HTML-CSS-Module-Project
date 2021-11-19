@@ -10,11 +10,6 @@
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
     <body>
-
-        <!-- Add your HTML markup here -->
-        <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-        <!-- All the images you need are in the 'img' folder -->
-
         <!-- HEADER -->
         <header class="header">
             <div class="karma-logo">
@@ -47,45 +42,42 @@
         </header>
 
         <!-- MAIN -->
-        <div>
-            <main class="main">
-                <!-- TOP HALF OF PAGE -->
-                <div class="container1">
-                    <img class="background-image" src="img/first-background.jpg" alt="background-image"/>
+        <main class="main">
+            <!-- TOP HALF OF PAGE -->
+            <div class="page-top-half">
+                <img class="background-image" src="img/first-background.jpg" alt="background-image"/>
 
-                    <!-- TEXT/BUTTON ON BACKGROUND IMAGE -->
-                    <p class="large-text img-txt txt-col size1">Introducing Karma</p>
-                    <p class="large-text img-txt txt-col size2">Bring WiFi with you, everywhere you go.</p>
-                
+                <!-- TEXT/BUTTON ON BACKGROUND IMAGE -->
+                <p class="large-text size1">Introducing Karma</p>
+                <p class="large-text size2">Bring WiFi with you, everywhere you go.</p>
 
-                    <div class="button">
-                        <button class="rect-button">Learn More</button>
+                <div class="button">
+                    <button class="rect-button">Learn More</button>
+                </div>
+            </div>
+
+            <!-- BOTTOM HALF OF PAGE -->
+            <section class="page-bottom-half">
+                <p class="large-text size3">Everyone needs a little Karma.</p>
+
+                <div class="icon-container">    
+                    <div class="icons">
+                        <img class="icon-devices" src="img/icon-devices.svg" alt="electronic devices"/>
+                        <p class="icon-text">Internet for all devices</p>
+                    </div>
+
+                    <div class="icons">
+                        <img class="icon-devices" src="img/icon-coffee.svg" alt="coffee mug"/>
+                        <p class="icon-text">Boost your productivity</p>
+                    </div>
+
+                    <div class="icons">
+                        <img class="icon-devices" src="img/icon-refill.svg" alt="refill pump"/>
+                        <p class="icon-text">Pay as You Go</p>
                     </div>
                 </div>
-
-                <!-- BOTTOM HALF OF PAGE -->
-                <div class="container2">
-                    <p class="large-text size3">Everyone needs a little Karma.</p>
-
-                    <div class="section-container">    
-                        <section class="container3">
-                            <img class="icon-devices" src="img/icon-devices.svg" alt="electronic devices"/>
-                            <p class="icon-text">Internet for all devices</p>
-                        </section>
-
-                        <section class="container3">
-                            <img class="icon-devices" src="img/icon-coffee.svg" alt="coffee mug"/>
-                            <p class="icon-text">Boost your productivity</p>
-                        </section>
-
-                        <section class="container3">
-                            <img class="icon-devices" src="img/icon-refill.svg" alt="refill pump"/>
-                            <p class="icon-text">Pay as You Go</p>
-                        </section>
-                    </div>
-                </div>   
-            </main>
-        </div>
+            </section>   
+        </main>
 
         <!-- FOOTER -->
         <footer class="footer">
@@ -93,17 +85,27 @@
             <h6>Join us on</h6>
             <!-- SOCIAL MEDIA ICONS -->
             <div class="footer-content">
-                <a target="_blank" href="#">
-                    <img class="social-media-icons" src="img/twitter-icon.svg" alt="twitter logo"/>
-                </a>
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="img/twitter-icon.svg" alt="twitter logo"/>
+                    </a>
+                </div>
+                
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="img/facebook-icon.svg" alt="facebook logo"/>
+                    </a>
+                </div>
 
-                <a target="_blank" href="#">
-                    <img class="social-media-icons" src="img/facebook-icon.svg" alt="facebook logo"/>
-                </a>
-
-                <a target="_blank" href="#">
-                    <img class="social-media-icons" src="img/instagram-icon.svg" alt="instagram logo"/>
-                </a>
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="img/instagram-icon.svg" alt="instagram logo"/>
+                    </a>
+                </div>
+            </div>  
+            <!-- COPYRIGHT SECTION -->
+            <div class="copyright">
+                <span>© Karma Mobility, Inc.</span>
             </div>   
         </footer>
     </body>
