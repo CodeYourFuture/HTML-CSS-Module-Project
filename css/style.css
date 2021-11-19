@@ -17,3 +17,141 @@ body {
  */
 
 
+ .logo{
+    width: 2em;
+    height: auto;
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+header {
+    height: 6em;
+    padding-left: 6em;
+}
+
+nav {
+    float: right;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    padding: 1.7em 4em 0em 0em;
+}
+
+nav a{
+    color: rgb(146, 145, 145);
+    padding-right: 1.3em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgba(224,99,58);
+}
+
+nav a.active{
+    color: rgb(48, 47, 47);
+}
+
+nav a.active:hover{
+    color: rgba(224,99,58);
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: lighter;
+}
+
+h1{
+    font-size: 3.6em;
+    padding-bottom: 20%;
+}
+
+h2{
+    font-size: 2em;
+    padding-bottom: 7%;
+}
+
+button{
+    background-color: rgba(224,99,58);
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.4em;
+    padding: 1em 2em;
+    margin-top: 6%;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: white;
+    color: rgba(224,99,58);
+}
+
+.howitworks{
+    color: black;
+    font-weight: lighter;
+    font-size: 2.6em;
+    text-align: center;
+    padding-top: 3.3em;
+}
+
+.outer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align:center;
+}
+
+.icons{
+    height: auto;
+    width: 9em;
+}
+
+.caption{
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: center;
+    width: 15em;
+}
+
+h3{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.social_container{
+    display: flex;
+    justify-content: center;
+}
+
+.s_icons{
+    width: 2rem;
+    margin: 1rem;
+    padding: 15px;
+    border: 2px solid lightgray;
+    border-radius: 2rem;
+}
+
+footer{
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    width: 96%;
+    border-top: 2px solid lightgray;
+}
+
+.karma_mobility{
+    color:lightslategray;
+}
