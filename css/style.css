@@ -1,6 +1,8 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+
+ /* General */
 :root {
     --orange: #f07416;
     --grey: #8b8b8b;
@@ -13,29 +15,30 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     color: var(--dark-grey);
-    max-width: 1920px;
+   
 }
+
+
  
-  /*Navigation */
+  /*Header and navigation */
 
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0.6rem 0;
   }
 
   .header-logo{
       padding-left: 5rem;
       height: 50px;
       width: auto;
-
   }
 
  .navigation-list {
     display: flex;
     list-style: none;
-    padding-right: 5rem;
+    padding-right: 7rem;
  }
 
  .navigation-list a {
@@ -44,7 +47,7 @@ body {
  }
 
 .navigation-link {
-    padding: 0.5rem 1rem; 
+    padding: 0 1.5rem; 
 }
 
 .navigation-list :hover {
@@ -56,17 +59,28 @@ body {
     font-weight: 600;
 }
 
- /* End of navigation*/
+.hamburger {
+    border:none;
+    background-color: var(--white);
+    display: none;
+}
+
+ /* End of header and navigation*/
+
+
 
  /* Hero section */
 
  .hero-section {
     background-image: url(../img/first-background.jpg);
-    padding: 13rem;
+    padding: 15rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--white);
+    background-size: cover;
+    background-position: center;
+   
  }
 
  h1 {
@@ -83,7 +97,7 @@ body {
 
  .button {
     background-color: var(--orange);
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     border-style: none;
     border-radius: 2px;
     margin-top: 1.2rem;
@@ -91,35 +105,48 @@ body {
 
  /* End of hero section */
 
+
+
+
+
  /* Middle section */
 
+ h2 {
+    font-size: 2.75em;
+    font-weight: lighter;
+    padding-top: 2rem;
+}
+
+.middle-section p {
+    font-size: 1.25em;
+}
+
  .middle-section {
-     text-align: center;
+    text-align: center;
  }
 
  .middle-section-container {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
+    padding: 0 15rem;
+    margin-bottom: 3rem;
+
  }
 
  .middle-section-box {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
 
  .middle-section-image {
-     width: 10vw;
+     width: 15vh;
  }
 
+/* End of middle section */
 
-h2 {
-    font-size: 3em;
-    font-weight: lighter;
-}
+
+
 
 /* Footer */
 
@@ -128,8 +155,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     border-top: 1px solid var(--lightest-grey);
-    margin: 0 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .footer-icons {
@@ -146,16 +172,51 @@ footer a {
     border: 1px solid var(--lightest-grey);
     border-radius: 50%;
     display: inline-flex;
-    padding: 0.8rem;
-    margin: 0 1rem;
+    padding: 0.6rem;
+    margin: 0 0.42rem;
 }
 
-@media screen and (max-width: 600px) {
-    .middle-section-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    
+.copyright {
+    color: var(--grey);
+    font-size: 0.8rem;
+    padding-top: 0.5em;
 }
+
+/* End of footer */
+
+
+
+
+/* Media queries */
+
+
+@media screen and (max-width: 600px) {
+    .middle-section-container {
+        flex-direction: column;
+        display: inline;
+    }   
+
+   nav {
+       display: none;
+   }
+
+   .hamburger {
+       display: inline;
+   }
+
+   .hero-section {
+       text-align: center;
+   }
+
+   .hero-section p {
+       padding: 0 2rem;
+       font-size: 2rem;
+       
+   }
+    
+  
+
+}
+ 
+
+
