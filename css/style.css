@@ -1,6 +1,5 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -50,41 +49,34 @@ body {
     left: 0;
     right: 0; 
     color: whitesmoke;
+    text-align: center; 
+}
+
+.page-top-half h1 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 60px;
+    top: 34%;
+    font-weight: 100;
+}
+
+.page-top-half p {
+    font-size: 34px;
+    top: 45%;
+    font-weight: 100;
 }
 
 .background-image {
     width: 100%;
 } 
 
-.size1 {
-    font-size: 60px;
-    top: 34%;
-    font-weight: 100;
-}
-
-.size2 {
-    font-size: 34px;
-    top: 45%;
-    font-weight: 100;
-}
-
-.size3 {
-    font-size: 60px;
-    font-weight: 300;
-    color: #3c3b3b;
-}
-
-.large-text, .button {
-   text-align: center; 
-}
-
-.button {
+.page-top-half button {
     position: absolute;
     left: 46%;
     top: 59%;
-}
-
-.rect-button {
     padding: 15px 40px;
     background-color: #eb6728;
     color: white;
@@ -99,43 +91,51 @@ body {
     text-align: center;
 }
 
+.page-bottom-half h1 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 60px;
+    font-weight: 300;
+    color: #3c3b3b;
+}
+
 .icon-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.icons {
+.icon {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.icon-devices {
+.icon .img {
     max-width: 200px;   
 }
 
-.icon-text {
+.icon .txt {
     font-size: 35px;
     color: #3c3b3b;
 }
 
 /* FOOTER STYLING */
-.footer h6 {
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-
-.footer-line {
+.footer-border-line {
     border-top: 2px solid #dfdfdf;
     margin: 0 150px 0 150px;
 } 
 
-h6 {
+.footer h6 {
     text-align: center;
     font-size: 23px;
     font-weight: 400;
-    color: #3c3b3b;   
+    color: #3c3b3b;  
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .footer-content {
@@ -146,7 +146,7 @@ h6 {
 }
 
 /* SOCIAL MEDIA ICONs/COPYRIGHT */
-.social{
+.social {
     max-height: 20px;
     width: 20px;
     padding: 8px;
