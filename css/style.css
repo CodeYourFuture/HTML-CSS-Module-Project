@@ -20,20 +20,19 @@
 
 
 /* FONTS */
-h1{
+h1, h2, h3, h5{
     font-weight:300;
+}
+h1{
     font-size: 76px;
-    color:var(--white)
 }
 
 h2{
-    font-weight:300;
     font-size: 58px;
     color:var(--black)
 }
 
 h3{
-    font-weight:300;
     font-size: 48px;
     color:var(--white)
 }
@@ -45,7 +44,6 @@ h4{
 }
 
 h5{
-    font-weight: 300;
     font-size: 20px;
     color:var(--grey-light)
 }
@@ -86,12 +84,6 @@ nav {
     background-color: white;
 }
 
-
-main{
-    display: flex;
-    flex-direction: column;
-    padding-top: 90px;
-}
 hero{
     background-color: rgb(199, 84, 21);
 }
