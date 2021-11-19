@@ -9,31 +9,144 @@ header,
 main,
 footer {
   padding: 0 1.5rem;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 header {
-  margin-top: 10px;
+  height: 4rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-image {
-  width: 30px;
-  height: 25px;
+  height: 40px;
+  width: auto;
+  margin-left: 6rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5rem;
+  list-style: none;
+  font-weight: 500;
+}
+
+.list-item {
+  margin-left: 25px;
+  padding: 0.5rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(138, 135, 135);
+}
+
+.nav-link:hover {
+  color: rgb(226, 131, 7);
+}
+
+.nav-active {
+  color: rgb(32, 29, 29);
 }
 
 .home {
+  font-family: "M PLUS 2", sans-serif;
   background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  max-width: 25rem;
+  margin: auto;
+  color: azure;
+  padding-bottom: 3.5rem;
+}
+
+.content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+.content p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+.content .learn-more {
+  color: azure;
+  background-color: rgb(207, 85, 4);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+
+.products {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.product-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 9rem;
+  border-bottom: 1px solid rgb(221, 211, 211);
+  padding-bottom: 2rem;
+}
+
+.products h1 {
+  font-family: "M PLUS 2", sans-serif;
+  font-size: 1.8rem;
+}
+
+.cards {
+  padding: 1rem 0;
 }
 
 .card-logos {
-  width: 50px;
-  height: 40px;
+  width: auto;
+  height: 90px;
+  padding-left: 1.5rem;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer h3 {
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 0.3rem;
+}
+
+.footer-contacts {
+  padding: 1rem;
 }
 
 .footer-icons {
-  width: 30px;
-  height: 20px;
+  width: auto;
+  height: 14px;
+  border: 1px solid rgb(221, 211, 211);
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: grey;
+}
+
+footer p {
+  color: rgb(138, 135, 135);
 }
 /**
  * Add your custom styles below

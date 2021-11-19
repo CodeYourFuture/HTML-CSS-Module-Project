@@ -12,6 +12,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -26,63 +30,67 @@
         />
       </a>
       <nav>
-        <ul>
-          <li>
-            <a>Meet Karma</a>
+        <ul class="nav-menu">
+          <li class="list-item">
+            <a href="#" class="nav-link nav-active">Meet Karma</a>
           </li>
-          <li>
-            <a>How it Works</a>
+          <li class="list-item">
+            <a href="#" class="nav-link">How it Works</a>
           </li>
-          <li>
-            <a>Store</a>
+          <li class="list-item">
+            <a href="#" class="nav-link">Store</a>
           </li>
-          <li>
-            <a>Blog</a>
+          <li class="list-item">
+            <a href="#" class="nav-link">Blog</a>
           </li>
-          <li>
-            <a>Help</a>
+          <li class="list-item">
+            <a href="#" class="nav-link">Help</a>
           </li>
-          <li>
-            <a>Login</a>
+          <li class="list-item">
+            <a href="#" class="nav-link">Login</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="home">
-        <h1>Introducing Karma</h1>
-        <p>Bring WiFi with you everywhere you go.</p>
-        <button>Learn More</button>
+        <div class="content">
+          <h1 class="intro-karma">Introducing Karma</h1>
+          <p class="slogan">Bring WiFi with you everywhere you go.</p>
+          <button class="learn-more">Learn More</button>
+        </div>
       </section>
       <section class="products">
         <h1>Everyone needs a little Karma</h1>
-        <article class="cards">
-          <img
-            class="card-logos"
-            src="./img/icon-devices.svg"
-            alt="devices-logo"
-          />
-          <p>Internet for all devices</p>
-        </article>
-        <article class="cards">
-          <img
-            class="card-logos"
-            src="./img/icon-coffee.svg"
-            alt="coffee-logo"
-          />
-          <p>Internet for all devices</p>
-        </article>
-        <article class="cards">
-          <img
-            class="card-logos"
-            src="./img/icon-refill.svg"
-            alt="refill-logo"
-          />
-          <p>Internet for all devices</p>
-        </article>
+        <div class="product-cards">
+          <article class="cards">
+            <img
+              class="card-logos"
+              src="./img/icon-devices.svg"
+              alt="devices-logo"
+            />
+            <p>Internet for all devices</p>
+          </article>
+          <article class="cards">
+            <img
+              class="card-logos"
+              src="./img/icon-coffee.svg"
+              alt="coffee-logo"
+            />
+            <p>Boost your productivity</p>
+          </article>
+          <article class="cards">
+            <img
+              class="card-logos"
+              src="./img/icon-refill.svg"
+              alt="refill-logo"
+            />
+            <p>Pay as you go</p>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-contacts">
       <h3>Join us on</h3>
       <div>
         <a href="#">
@@ -107,6 +115,7 @@
           />
         </a>
       </div>
+      <p>@Karma mobility, INC</p>
     </footer>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
