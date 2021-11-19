@@ -5,24 +5,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Main Image*/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 50px;
+}
 
+/* Main Image*/
 .main_image {
-  margin-top: 10px;
   margin-bottom: 600px;
+  position: relative;
+  top: -50px;
 }
 
 */*Top Left Karma Logo*/
-
 .header__logo {
-  max-height: 50px;
-  width: auto;
-  margin-top: 25px;
-  margin-left: 100px;
+  height: 50px;
+  margin-right: 900px;
 }
 
 /*Top Right Navigation Links*/
-
 a:hover {
   color: orange;
 }
@@ -30,19 +33,19 @@ a:hover {
 .navigation__list {
   display: flex;
   list-style: none;
-  margin-left: 900px;
-  margin-top: -40px;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
   color: gray;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
   margin: 8px;
 }
@@ -51,6 +54,7 @@ a:hover {
 .main_image {
   background-image: url("../img/first-background.jpg");
   padding: 200px;
+  background-size: cover;
 }
 .main_intro {
   text-align: center;
@@ -74,127 +78,81 @@ a:hover {
   border: none;
   border-radius: 5px;
   padding: 20px 40px;
-  margin-left: 480px;
+  margin-left: 650px;
   cursor: pointer;
   transition: 0.8s;
   position: relative;
-  bottom: 50px;
+  bottom: 20px;
   overflow: hidden;
 }
 
 /*1st Section Heading*/
-.head_karma {
+.everyone_karma {
   text-align: center;
   position: relative;
   font-size: 50px;
   color: gray;
   bottom: 500px;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
 }
 
 /*1st Section Images*/
-.container {
+.services_container {
   display: flex;
-}
-.internet_icon {
+  justify-content: space-evenly;
   max-height: 200px;
-  width: auto;
-  padding: 100px;
-  position: relative;
-  bottom: 550px;
-  margin-left: 150px;
-}
-.coffee_icon {
-  max-height: 200px;
-  width: auto;
   padding: 100px;
   position: relative;
   bottom: 560px;
-  margin-left: 20px;
+  margin-left: 650px;
+  margin-right: 650px;
 }
-.refill_icon {
-  max-height: 200px;
-  width: auto;
-  padding: 100px;
-  position: relative;
-  bottom: 560px;
-  margin-left: -20px;
-}
+
 /*1st Section Icon Descriptions*/
-.first_icon_sub_desc {
-  text-align: center;
+.icon_desc {
+  display: flex;
+  justify-content: space-evenly;
+  letter-spacing: 3px;
   position: relative;
-  font-size: 30px;
   color: gray;
-  bottom: 250px;
-  letter-spacing: 0.2rem;
-  margin-left: -1170px;
-}
-.second_icon_sub_desc {
-  text-align: center;
-  position: relative;
-  font-size: 30px;
-  color: gray;
-  bottom: 250px;
-  letter-spacing: 0.1rem;
-  margin-left: 50px;
-}
-.third_icon_sub_desc {
-  text-align: center;
-  position: relative;
-  font-size: 30px;
-  color: gray;
-  bottom: 250px;
-  letter-spacing: 0.1rem;
-  margin-left: 75px;
+  bottom: 660px;
+  margin-left: 250px;
+  margin-right: 350px;
 }
 
 /* Underline */
 hr {
   position: relative;
-  bottom: 500px;
+  bottom: 540px;
   width: 80%;
   border: none;
   height: 1px;
-  color: ghostwhite;
+  color: gray;
   background-color: ghostwhite;
 }
 
 /* Join Us On */
-.connect_heading {
+.footer_heading {
   text-align: center;
   position: relative;
   font-size: 15px;
   color: gray;
   bottom: 530px;
   letter-spacing: 0.1rem;
-  margin-left: 25px;
 }
 
 /*  2nd Section Images */
-.twitter_icon {
+.media_icons {
   max-height: 20px;
-  width: auto;
   padding: 100px;
   position: relative;
-  bottom: 650px;
-  margin-left: 600px;
+  bottom: 625px;
+  margin-left: -75px;
+  margin-right: -75px;
 }
-.facebook_icon {
-  max-height: 20px;
-  width: auto;
-  padding: 100px;
-  position: relative;
-  bottom: 875px;
-  margin-left: 660px;
-}
-.instagram_icon {
-  max-height: 20px;
-  width: auto;
-  padding: 100px;
-  position: relative;
-  bottom: 1100px;
-  margin-left: 720px;
+.media_connect {
+  display: flex;
+  justify-content: center;
 }
 
 /*footer*/
@@ -204,10 +162,23 @@ hr {
   text-align: center;
   position: relative;
   font-size: 10px;
-  bottom: 1200px;
+  bottom: 700px;
   letter-spacing: 0.2rem;
-  margin-left: 50px;
+  margin-left: 20px;
 }
+
+/*
+@media screen and (min-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .main {
+    padding-right: 2rem;
+    padding-right: 10px;
+  }
+}
+*/
 
 /**
  * Add your custom styles below
