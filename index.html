@@ -1,19 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_nav">
+        <div class="logo_div">
+          <img class="logo" src="img/karma-logo.svg" alt="logo" />
+        </div>
+        <div class="list_div">
+          <ul class="header_list">
+            <li class="list_item"><a class="nav_link">Meet Karma</a></li>
+            <li class="list_item"><a class="nav_link">How it Works</a></li>
+            <li class="list_item"><a class="nav_link">Stores</a></li>
+            <li class="list_item"><a class="nav_link">Blog</a></li>
+            <li class="list_item"><a class="nav_link">Help</a></li>
+            <li class="list_item"><a class="nav_link">Log in</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+    <main class="main">
+      <div class="main_slide">
+        <div class="main_slide_overlay">
+          <h1>Introducing Karma</h1>
+          <h2>Bring WiFi with you, everywhere you go.</h2>
+          <button class="learn_more_btn button">Learn More</button>
+        </div>
+      </div>
+      <div class="features">
+        <div class="features_header">
+          <h1>Everyone needs a little karma.</h1>
+        </div>
 
-</body>
+        <div class="features_icons_container">
+          <div class="features_icon">
+            <img
+              class="features_icon_logo"
+              src="img/icon-devices.svg"
+              alt="icon_for_device"
+            />
+            <h3>Internet for all devices</h3>
+          </div>
+          <div class="features_icon">
+            <img
+              class="features_icon_logo"
+              src="img/icon-coffee.svg"
+              alt="icon_for_coffee"
+            />
+            <br />
+            <h3>Boost Your Productivity</h3>
+          </div>
+          <div class="features_icon">
+            <img
+              class="features_icon_logo"
+              src="img/icon-refill.svg"
+              alt="icon_for_refill"
+            />
+            <h3>Pay as You Go</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr />
+    <footer class="footer">
+      <div class="footer_header">
+        <h3>Join us on</h3>
+      </div>
+
+      <div class="social_icons_container">
+        <div class="social_icons">
+          <a class="social_icons_page" href="https://twitter.com">
+            <img src="./img/twitter-icon.svg" alt="twitter icon" />
+          </a>
+        </div>
+        <div class="social_icons">
+          <a class="social_icons_page" href="https://facebook.com"
+            ><img src="./img/facebook-icon.svg" alt="facebook icon"
+          /></a>
+        </div>
+        <div class="social_icons">
+          <a class="social_icons_page" href="https://instagram.com">
+            <img src="./img/instagram-icon.svg" alt="instagram  icon" />
+          </a>
+        </div>
+      </div>
+
+      <div class="copy_right_text">
+        <h4>Karma Mobility.Inc</h4>
+      </div>
+    </footer>
+  </body>
 </html>

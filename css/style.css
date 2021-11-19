@@ -1,19 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgba(128, 128, 128, 0.582);
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+  margin: 5% auto;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 4vw;
+}
+h2 {
+  font-size: 3vw;
+}
+h3 {
+  font-size: 1.5vw;
+}
+h4 {
+  font-size: 1vw;
+}
+/* ==================== Header Styles ===================== */
+.header {
+  width: 100%;
+  padding: 0 0.5em;
+}
+.header_nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 1em 0em;
+}
+.logo {
+  width: 10%;
+  max-width: 15%;
+}
+.header_list {
+  display: flex;
+  list-style: none;
+}
+.list_item {
+  color: rgb(53, 51, 51);
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+.list_item:hover {
+  color: rgb(202, 118, 8);
+}
+.list_div {
+  align-self: center;
+}
+/* =======================Main Style========================== */
+
+.main_slide {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("../img/first-background.jpg");
+}
+.main_slide_overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.844);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.main_slide_overlay h2 {
+  color: rgb(184, 180, 180);
+}
+.button {
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 1vw;
+}
+.learn_more_btn {
+  color: white;
+  background: rgb(223, 105, 62);
+  width: 15%;
+  margin-top: 2%;
+}
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: space-between;
+  text-align: center;
+}
+.features_header {
+  justify-content: center;
+  align-items: center;
+}
+.features_icon {
+  width: 25%;
+}
+.features_icon h3 {
+  margin-top: 2em;
+}
+.features_icon_logo {
+  width: 30%;
 
+  margin-top: 2%;
+}
+.features_icons_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+/* ============================Footer Styles============================= */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  text-align: center;
+}
+.social_icons_container {
+  width: 15%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
 
+.copy_right_text {
+  align-items: center;
+  color: gray;
+  margin-top: 5%;
+}
+.social_icons_page img {
+  width: 40px;
+}
