@@ -87,10 +87,18 @@ h5 {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 200px 0px;
+}
+.hero_in {
+  /*applies for div inside hero*/
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
+  width: fit-content;
   background-color: #c05326;
   border: none;
   padding: 20px 30px;
@@ -189,7 +197,9 @@ h5 {
     /* articles are wrapped in <div> to make same width and adjust center position */
     width: 250px;
   }
-
+  .hero {
+    padding: 100px 0px;
+  }
   .quote_text {
     width: 68%;
     font-size: 1.5rem;
@@ -198,7 +208,7 @@ h5 {
   .button {
     padding: 10px 20px;
     border-radius: 3px;
-    margin-top: 20px;
+    margin: 0px 20px;
     font-size: 1rem;
   }
 }
@@ -216,6 +226,9 @@ h5 {
   .quote {
     padding-bottom: 30px;
   }
+  .hero {
+    padding: 50px 0px;
+  }
 }
 
 @media screen and (max-width: 715px) {
@@ -228,8 +241,45 @@ h5 {
 }
 
 @media screen and (max-width: 615px) {
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 200;
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Located under Hero */
+    padding-top: 60px;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-size: 1.1rem; /* Located in HERO under h1 */
+    font-weight: 100;
+  }
+
+  h4 {
+    font-size: 1.2rem; /* Main articles */
+    font-weight: 400;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 20px 0px;
+  }
+
   #articles {
     /*used id to overwrite class .direction_row_center for section 1*/
     flex-direction: column;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 10px 0px 20px 0px;
+    font-size: 0.8rem;
   }
 }
