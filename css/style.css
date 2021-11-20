@@ -1,19 +1,148 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-top: -1rem;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* content */
 
+.logo {
+  width: 30px;
+  height: 65px;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 7rem;
+  margin-bottom: -3rem;
+}
 
+/* navbar */
+
+.navbar {
+  text-align: right;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-left: 2rem;
+  padding-top: 8rem;
+  color: grey;
+}
+a:hover {
+  color: #dc582a;
+}
+
+/* hero */
+
+.hero {
+  background-image: url("../img/first-background.jpg");
+  width: 101%;
+  height: 90%;
+  background-repeat: no-repeat;
+  padding-bottom: 35rem;
+}
+
+.hero_paragraph {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 45%;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+  position: absolute;
+  margin-bottom: 0;
+  top: 73%;
+  left: 43%;
+}
+.button {
+  height: 35px;
+  width: 128px;
+  margin-left: 46rem;
+  margin-top: 28rem;
+  background-color: #dc582a;
+  color: white;
+}
+
+/* main paragraph */
+
+.main_paragraph {
+  text-align: center;
+  font-size: 2.7rem;
+  color: black;
+  margin-top: -14rem;
+}
+
+/* container */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 3rem;
+}
+
+.img {
+  width: 10%;
+  height: 5%;
+}
+
+.container_paragraph {
+  font-size: 1.3rem;
+  white-space: nowrap;
+  color: black;
+  padding-bottom: 10rem;
+}
+
+/* footer */
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  border-top: 0.5px solid lightgray;
+  margin-top: -5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding-top: 5rem;
+}
+
+.footer_paragraph {
+  margin-top: -4rem;
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.border {
+  height: 50px;
+  width: 50px;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  border-radius: 50px;
+  background-color: white;
+  border: thin solid lightgray;
+}
+
+.border > img {
+  width: 20px;
+  display: block;
+  margin: 1rem;
+}
+
+.copyright {
+  margin-top: 2.5rem;
+  margin-left: 2.2rem;
+  text-align: center;
+  color: grey;
+  font-size: 1.2rem;
+}
