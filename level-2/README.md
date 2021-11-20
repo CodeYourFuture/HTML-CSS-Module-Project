@@ -1,6 +1,9 @@
 # karma-clone
 ## Level 2
-The aim of this exercise is to add a new section to the homepage, and create a new page with an Order form.
+The aim of this exercise is to:
+-  add a new section to the homepage
+-  create a new 'store' page with an order form
+-  connect the 2 pages together by adding navigation
 
 ### Set up
 
@@ -10,10 +13,12 @@ You can choose to add your code for level 2 to the same branch you were using fo
 
 - You'll find the designs inside the 'level 2' folder.
 - Add the new section in your `index.html`
-- Create a new page called `order.html` and re-create the design for the order form page (the design is `level-2/store-desktop.png`)
-- For the order page styles, you can keep using the same `style.css` file and add your order page styles in there.
-You could also create a specific `order.css` file - just make sure you're not duplicating the CSS already defined in `style.css`! 
-- Connect the 2 pages by making the homepage's "Get Karma today" button navigate to the order page.
+- Create a new page called `store.html` and re-create the design for the store page (the design is `level-2/store-desktop.png`)
+- For the store page styles, you can keep using the same `style.css` file and add your store page styles in there.
+You could also create a specific `store.css` file - just make sure you're not duplicating the CSS already defined in `style.css`! 
+- Connect the 2 pages by:
+  - making the homepage's "Get Karma today" button navigate to the store page.
+  - making the header navigation "Store" link navigate to the store page, and the "Meet Karma" link navigate to the homepage.
 
 ### Submitting your work
  - Remember to **commit and push your code often**
