@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,125 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+header {
+  bottom: 20px;
+  top: 40px;
+}
 
+nav {
+  margin-top: 0;
+  position: relative;
+  z-index: 5;
+  height: 71;
+  bottom: 107;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  text-align: right;
+  justify-content: flex-end;
+  padding: 0px 50px;
+  color: gray;
+  position: relative;
+  z-index: 0;
+  margin-top: -54px;
+}
+
+li {
+  padding: 20px;
+  margin-top: 120px;
+}
+
+li:hover {
+  color: rgba(224, 100, 58, 255);
+}
+
+img {
+  height: 40px;
+  top: 9px;
+  position: relative;
+  z-index: 1;
+  left: 213px;
+}
+
+nav li:first-child {
+  font-weight: bold;
+}
+
+.main-section {
+  background-image: url("/img/first-background.jpg");
+  display: block;
+  color: white;
+  padding-bottom: 250px;
+  padding-top: 110px;
+  text-align: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+  margin-top: 70px;
+}
+
+h2 {
+  font-weight: 80;
+  font-size: 30px;
+}
+main button {
+  background-color: rgba(224, 100, 58, 255);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.lower-section {
+  text-align: center;
+}
+
+div {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 380px;
+  margin-left: 285px;
+  margin-top: -18px;
+}
+
+.middle-images {
+  height: 94px;
+  left: 55px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 22px;
+  margin-right: -83px;
+}
+
+hr {
+  margin: 46px 200px 10px 200px;
+  border: 0;
+  border-top: 1px solid lightgray;
+}
+
+footer {
+  text-align: center;
+}
+
+footer img {
+  width: 20px;
+  padding: 10px;
+  margin: 5px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  left: 2px;
+}
+
+footer .copyright {
+  color: lightgray;
+}
