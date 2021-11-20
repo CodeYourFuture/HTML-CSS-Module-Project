@@ -1,6 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -15,5 +16,131 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.header{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
 
+.karma_logo{
+    width: 80px;
+    height: 80px;
+    padding-left: 3rem;
+    margin: 2.5rem 0 2.5rem 0;
+    border: none;
+}
+nav{
+    margin-top: 50px;
+}
+.nav_list{
+    display:flex;
+    list-style: none;
+    padding-right:5rem;
+}
+
+.nav_link{
+    color:gray;
+    font-weight: 550;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav_link:hover{
+color:orangered
+}
+/* .karma_link{
+    color: black;
+    font-weight: 550;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+} */
+#meet_karma{
+color: black;
+
+}
+#meet_karma:hover{
+    color: green;
+}
+.intro{
+    width: 100%;
+    background-image: url("../img/first-background.jpg");
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin-bottom: 50px;
+}
+.everyone{
+    padding: 50px;
+}
+/* <!--text style--> */
+.intro h1{
+    font-weight: 100;
+    font-size: 70px;                                                                                              px;
+    margin-top: 15rem;
+}
+.intro h2{
+    font-weight:50;
+    font-size: 40px;                                                                                               px;
+    margin-bottom: 50px;
+}
+.intro h3{
+    font-weight:50;
+    font-size: 40px;                                                                                               px;
+    margin-bottom: 15rem;
+}
+.everyone h3{
+    text-align:center;
+    font-size: 65px;
+    font-weight: 40;
+    color:rgb(46, 48, 51);
+}
+.everyone p{
+    color: black;
+    font-size: 25px;
+}
+/* button */
+button{
+    background-color: orangered;
+    color: white;
+    padding: 15px 5px;
+    width: 10rem;
+}
+.tree_item{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+}
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px;
+    margin: 0 20px;
+    /* width: 10rem;
+    height: 10rem; */
+}
+.social_media{
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 40%;
+}
+.icon{
+    width: 10rem;
+    height: 10rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
