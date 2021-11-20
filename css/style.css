@@ -1,19 +1,132 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 4vw;
+}
+h2 {
+  font-size: 2.5vw;
+}
+h3 {
+  font-size: 1.5vw;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.header {
+  width: 100%;
+  padding: 1em;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5vw;
+}
+.ul_div {
+  width: 70%;
+  align-self: center;
+}
+.ul_div ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ul_div ul li {
+  list-style: none;
+}
+.nav_link {
+  color: rgb(41, 39, 39);
+  text-decoration: none;
+}
+.nav_link:hover {
+  color: orangered !important;
+}
+.logo img {
+  width: 5vw;
+}
+/* =============================Hero======================== */
+.hero {
+  width: 100%;
+  height: 80vh;
+  background: url("../img/first-background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.616);
+}
+.overlay_content {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin-top: 10%;
+  text-shadow: 0 0 20px black;
+}
+.overlay_content h3 {
+  color: rgb(218, 207, 207);
+}
+.overlay_btn {
+  padding: 1em;
+  background: rgb(255, 102, 0);
+  border-radius: 5px;
+  margin-top: 5%;
+  font-size: 1.5vw;
+}
 
+/* =================Custom <hr>==================== */
+hr {
+  width: 80%;
+  border: 1px solid gray;
+  margin: 3% auto;
+}
+.features {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.features h1 {
+  font-weight: 100;
+}
+.feature_item img {
+  width: 10vw;
+  margin-bottom: 20px;
+}
+.features_items {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+.icons_link {
+  padding: 1em;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+.icons_link img {
+  width: 30px;
+}
+.social_icons_div {
+  margin: 2%;
+}
+footer h4 {
+  color: gray;
+}
