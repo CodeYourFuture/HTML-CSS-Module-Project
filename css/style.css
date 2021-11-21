@@ -148,7 +148,44 @@ body {
 .features_item img {
   max-width: 40%;
 }
-
+/* ===================================Why Us Styles================ */
+.whyus {
+  width: 100%;
+  display: flex;
+  margin: 5% 0;
+  font-size: 2.5vw;
+  color: #434242;
+  text-align: center;
+}
+.whyus a,
+.whyus i {
+  display: block;
+}
+.whyus_btn {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  background: #e0633a;
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  border-radius: 10px;
+  font-size: 2vw 1vw;
+}
+.whyus_btn:hover {
+  background: #e44d1a;
+}
+.whyus_text {
+  width: 92%;
+  background: rgba(224, 99, 58, 0.1);
+  padding: 1.5em 5em;
+}
+.whyus_img {
+  width: 50%;
+  background: url("../additional/feature-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /* =================================Footer styles================== */
 .footer {
   width: 100%;
