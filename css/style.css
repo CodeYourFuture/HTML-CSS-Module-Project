@@ -18,7 +18,7 @@ body {
 
 
  body {
-  background-color: black;
+  background-color: white;
  }
    
  h1,h2,h3,h4,h5,h6 {
@@ -60,17 +60,7 @@ body {
   
   /* Navigation */
   
-  .navigation-list {
-    list-style-type: none;
-    /* remove browser default settings */
-    margin: 0;
-    padding: 0;
-    
-
-    overflow: hidden;
-    background-color: white;
-  }
-  
+   
   /* determine how each item of the naviagtion bar is shown */
 
   .navigation-item {
@@ -100,12 +90,11 @@ body {
         color:#ec5800; /* persimmon */
       }
 
-     /* always show 'Meet Karma' in black */
-     #meetKarma {
+      /* always show 'Meet Karma' in black */
+     .meet-Karma {
       color: black;
       font-weight:500;
    }  
-
 
    /* FLEXBOX for the LOGO & Navigation Bar */
 
@@ -120,58 +109,45 @@ body {
     
   }
 
-  /* The main image i.e. the 'hero' */ 
+   /* FLEXBOX for the Main Content */
 
-.mainImage {
+   .Sections-FlexBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* The main image i.e. the 'hero' */ 
+ 
+  /* THE ACTUAL SIZE OF THE IMAGE IS 1600 * 735 PIXELS */
+  .mainImage {
     background-image: url(../img/first-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
- 
-    /* THE ACTUAL SIZE OF THE IMAGE IS 1600 * 735 PIXELS */
+
     height: 735px; /* if you set NO height, the image will not show! */
     width: 100%;
-    /* Handle how the text is displayed on top */
-    object-fit:cover;
-    position: relative;
-    text-align: top left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
     color: white;
-
   }
 
-  /* Based on https://www.w3schools.com/howto/howto_css_image_text.asp */
-
-  .centred {
-    position: absolute;
-    top: 36%;
-    left: 46%;
-    transform: translate(-50%, -50%);
-  }
-
-  .para1 {
+  .karma-heading {
     font-family: Roboto; 
-    font-size:72px;
-  
+    font-size:48px;
+    padding-top:14rem;
   }
 
-  .para2 {
+  .paragraph {
     font-family: Roboto; 
     font-size:36px;
-    position: absolute;
-    bottom: 22rem;
-    left: 32rem;
   }
 
   /* Buttons */
 
- /* Position the button */
-
- .buttonContainer {
-    position: absolute;
-    bottom: 20%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    margin-bottom:3rem;
-}
 .LearnMoreButton {
   background-color: #ff6200; /* #ec5800; */ /* persimmon */
   color: #ffffff;
@@ -200,15 +176,20 @@ button:hover {
   font-size:52px;
   color:black;
   padding-top:10rem;
-  padding-left:27rem;
  }
 
+ .drawaline
+ {width: 90%;
+  /* --grey-light: #e4e4e4; */
+  background-color:#e4e4e4;
+  height:1px; /* Must set the height to show the coloured line -see https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
+     }
 
    /* FLEXBOX for three icons*/
 
    .iconFlexBox {
       margin-top:4rem;
-      margin-left:16rem;
+      /* margin-left:16rem; */
       display: flex;
       gap:7rem;    
       padding-bottom:6rem;
@@ -233,28 +214,14 @@ button:hover {
 
 /* Footer */
 
- .theFooter {
-  margin-left: 7.3rem;
-  margin-right: 7.3rem;
-  position: absolute;
-  right: 0;
-  bottom: 14;
-  left: 0;
-  padding: 1rem;
-  border-top-color:gray;
-  background-color: white;
-  text-align: center;
- }
-  
- 
-    /* Based on https://www.w3.org/Style/Examples/007/center.en.html */
 
-  .placeInTheCentre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+   /* FLEXBOX for the Main Content */
+
+   .theFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
   }
 
      /* FLEXBOX for three social media icons*/
@@ -276,61 +243,28 @@ button:hover {
     padding:1rem;
     } 
 
-    .drawaline
-      {width: 70%;
-        padding-right: 5rem;
-        margin-bottom: 2rem; 
-       /* --grey-light: #e4e4e4; */
-       background-color:#e4e4e4;
-       height:1px; /* Must set the height to show the coloured line -see https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
-          }
-      
+
+       
     .joinUs {
-        font-size: 22px;
-         /* padding-bottom: 8em; */
-      margin-bottom: 8em;
-    }
+      font-size: 22px;
+      padding-top: 1em;
+  }
   
+   
     .copyright {
-      position: absolute;
-      top: 70%;
-      width: 100%;
-      left: 10px;
       font-size: 20px;
       color: gray;
+      padding-bottom: 6em;
     }
-/*
-I know this may be a bit of an overkill, however I noticed that on 
-https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Coursework-Week2/master/Karma%20-%20desktop%20design.png
-
-the instagram icon is actually BLUE!
-Is there a way then to change the colour from orange to blue? Yes!
-
-This solution is taken from 
-    https://codepen.io/sosuke/pen/Pjoqqp 
-which in turn is based on 
-    https://stackoverflow.com/a/43960991/604861 
-*/
 
 
-    .blueInstagram { 
-      object-fit: cover;  
+/* Turn the logo BLUE!
+   Thanks for this, Deago Browne */
+.blueInstagram { 
+  filter: hue-rotate(250deg);
+  } 
 
-      /* For this code to work well the starting color needs to be black. 
-      If your icon set isn't black you can prepend "brightness(0) saturate(100%)" to your filter property 
-      which will first turn the icon set to black. */
-
-      filter: brightness(0) saturate(100%);
-
-      /* Now convert to Instagram Blue, that is, the target colour is #405DE6; */
-      filter: invert(40%) sepia(78%) saturate(481%) hue-rotate(181deg) brightness(83%) contrast(85%);
-      } 
-
-      /* WORKS - BUT CHANGED THE BORDER TO BLUE AS WELL!
-         SOLUTION:
-         Introduce a class for the border - solution based on https://stackoverflow.com/questions/13182577/how-can-i-blur-an-image-using-css-but-keep-the-border-straight 
-      */
-
+   
       .grayBorder {
             /* --grey-light: #e4e4e4; */
             border: 1px solid #e4e4e4;
