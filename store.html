@@ -1,0 +1,169 @@
+<!-- 
+
+Labels probably need to be bold.
+Spacing needs to be fixed.
+h1 probably needs tweeking.
+hr shouldn't have margin-top on this page.
+img - section flex ration needs to be adjusted so that the img fills out the side
+checkbox disclaimer needs to be smaller
+checkbox preset tick needs to be changed to the svg in /img/
+check assignment details for further requirements
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Karma Store</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+
+        <nav class='nav-grey-background'>
+            <div class='nav-flex-container'>
+                <img class='logo' src='img/karma-logo.svg' alt='karma logo'>
+                <ul class='nav-ul'>
+                    <li class='nav-li'><a class='meet-karma nav-link' href='index.html'>Meet Karma</a></li>
+                    <li class='nav-li'><a class='nav-link' href='#'>How it Works</a></li>
+                    <li class='nav-li'><a class='nav-link active-link' href='store.html'>Store</a></li>
+                    <li class='nav-li'><a class='nav-link' href='#'>Blog</a></li>
+                    <li class='nav-li'><a class='nav-link' href='#'>Help</a></li>
+                    <li class='nav-li'><a class='nav-link' href='#'>Login</a></li>
+                </ul> <!-- /na-ul -->
+            </div> <!-- /nav-flex-container -->
+        </nav>
+        
+
+        <!-- Main -->
+
+        <main class="store-main">
+
+            <section>
+
+                <!-- Call to Action -->
+
+                <h1 class='store-cta'>Order your Karma wifi device today!</h1>
+
+
+                <!-- Form -->
+
+                <form id='order-form'>
+
+                    <!-- for Accessibility -->
+                    <fieldset class="hide-this">
+                        <legend class='hide-this'>Your Name</legend>
+
+                        <div class='form-flex show-this'>
+
+                            <div>
+                            <label class='label' for="first-name">First name *</label>
+                            <input class='input' id='first-name' type='text' required minlength=2>
+                            </div>
+
+                            <div>
+                            <label class='label' for="last-name">Last name *</label>
+                            <input class='input' id='last-name' type='text' required minlength=2>
+                            </div>
+
+                        </div> 
+                    </fieldset>
+
+                    <fieldset class='hide-this'>
+                        <legend class='hide-this'>Your Address</legend>
+
+                        <div class='your-address show-this'>
+
+                            <label class='label' for='address-one'>Address *</label>
+                            <input class='input' type="text" id="address-one" required minlength=4>
+
+                            <label class='label' for='address-two'>Address 2</label>
+                            <input class='input' type="text" id="address-two">
+
+                            <div class='form-flex'>
+
+                                <div>
+                                    <label class='label' for='city'>City *</label>
+                                    <select class='input' required id='city' form='order-form'>
+                                        <option value="" disabled selected>Select your city...</option>
+                                        <option value='london'>London</option>
+                                        <option value='budapest'>Budapest</option>
+                                        <option value='new-york'>New York</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label class='label' for='postcode'>Postcode *</label>
+                                    <input type="text" class="input" id="postcode" required minlength=4 maxlength=8>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset class='hide-this'>
+                        <legend class='show-this'>Select a colour</legend>
+
+                        <div class='show-this'>
+
+                            <input class='' type="radio" required value='karma-orange' name='colour' id='karma-orange'>
+                            <label class='' for='karma-orange'>Karma Orange</label>
+
+                            <input class='' type="radio" required value='space-grey' name='colour' id='space-grey'>
+                            <label class='' for='space-grey'>Space Grey</label>
+
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class='hide-this'>
+                        <legend class='hide-this'>Consent Box</legend>
+
+                        <div class='show-this'>
+
+                            <input type='checkbox' id='consent-checkbox' value='consented' name='consent' required=true>
+                            <label for='consent-checkbox'>By placing your order you agree to Karma's <a class='consent-link' href='#'>Terms and Conditions</a>. *</label>
+
+                        </div>
+                    </fieldset>
+
+                    <input class='hero-btn hero-text hero-btn-a' type='submit' value='Place my order'>
+
+                </form>
+
+            </section>
+
+            <!-- Image -->
+
+            <img class="store-img" src="img/store-image_by-andrew-neel-unsplash.jpg" alt="woman working on her laptop while enjoying a hot beverage">
+
+        </main>
+
+        <!-- Horizontal Rule -->
+    
+        <hr class="hr">
+        
+        <!-- Footer -->
+        
+        <footer>
+            <p class="call-to-action">Join us on</p>
+            <section class="footer-flex-container">
+                <div class="social-container"><img class='socials' src="img/twitter-icon.svg" alt="twitter logo"></div>
+                <div class="social-container"><img class='socials' src="img/facebook-icon.svg" alt="facebook logo"></div>
+                <div class="social-container"><img class='socials' src="img/instagram-icon.svg" alt="instagramm logo"></div>
+            </section>
+            <p class="ip">&copy; Karma Mobility, Inc.</p>
+        </footer>
+    
+    </body>
+
+</html>
