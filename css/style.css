@@ -22,6 +22,18 @@ body {
     --faint-orange: rgba(224, 99, 58, 0.1);
 }
 
+
+/* Accessibility Styles */
+
+.hide-this {
+    visibility: hidden; 
+}
+
+.show-this {
+    visibility: visible;
+}
+
+
  /* Navigation Styles */
 
 .nav-flex-container {
@@ -60,9 +72,13 @@ body {
     color: var(--orange);
 }
 
-.active-link {
+.meet-karma {
     font-weight: bold;
     color: rgb(92, 91, 91);
+}
+
+.active-link {
+    color: var(--orange);
 }
 
 /* Main Styles */
@@ -222,3 +238,57 @@ body {
     margin-top: 2em;
     color: rgb(172, 172, 172);
 }
+
+
+/* store.html specific */
+
+    /* Navbar Styles */
+
+    .nav-grey-background {
+        background-color: rgba(196, 196, 196, 0.1);
+    }
+
+
+    /* Main Styles */
+
+    .store-main {
+        display: flex;
+    }
+
+
+        /* Store Call to Action */
+
+        .store-cta {
+            color: var(--orange);
+        }
+    
+
+        /* Form Styles */
+
+        .label {
+            font-weight: normal;
+            display: block;
+        }        
+
+        .input {
+            display: block;
+        }
+
+        .form-flex {
+            display: flex;
+        }
+
+        select:invalid { 
+            color: gray;
+            font-style: italic;
+        }
+
+        .consent-link {
+            color: var(--orange);
+        }
+
+        /* Image Styles */
+
+        .store-img {
+            width: 50%;
+        }
