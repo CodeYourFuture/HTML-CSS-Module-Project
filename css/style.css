@@ -2,10 +2,11 @@
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
  :root {
-    --grey-dark: #292b2c;
-    --grey-light: ;
-    --orange-dark: #c05326;
-    --orange-light: #f7eae4;
+    --grey-dark: #848993;
+    --grey-darker: #4D5057;
+    --grey-light: #E5E5E5;
+    --orange-dark: #E0633A;
+    --orange-light: #FCEFEB;
     --white: #fff;
   }
  
@@ -65,14 +66,18 @@ nav {
     padding: 5px 0;
  }
 
-
-
  .navigation a, .nav-mobile a {
     text-decoration: none;
+    color:var(--grey-dark);
+}
+
+.strong {
+    color:var(--grey-darker);
+    font-weight: 500;
 }
 
 .navigation a:hover, .nav-mobile a:hover{
-    color: #e0633a;
+    color: var(--orange-dark);
 } 
 
 .hamburger{
@@ -87,16 +92,23 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color:white;
+    color:var(--white);
     text-align: center;
     padding: 0 10%;
 }
 
 button {
-    background-color:#e0633a;
+    background-color:var(--orange-dark);
     padding: 15px 35px;
-    border-radius: 5%;
+    border-radius: 15px;
     margin-top:30px;
+    border:0;
+    color:var(--white)
+}
+
+button:hover{
+    background-color:var(--grey-darker);
+    color:var(--orange-light);
 }
 
 .hero h1 {
@@ -135,46 +147,61 @@ button {
     text-align:center;
     margin:0.5rem;
 }
-
-
 .feature-image {
-    width: 15vw;
+    width: 10vw;
     padding-bottom:1rem;
 }
-
 .promo {
     margin:40px 0;
     display: flex;
     width:100%;
     min-height:300px;
-    background-color: #fcefeb;
+    background-color: var(--orange-light);
 }
-
 .promo-img {
-    max-width:50%;
-    min-width:30%; 
-    background-image: url("../additional/feature-img.png");
+    width:40%;
+    overflow: hidden;
 }
-
+.promo-img img{
+    height:100%;    
+}
 .quote-container {
     display: flex;
-    width:100%;
+    width:60%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding:0;
+    padding-bottom:20px;
 }
-
+.quote {
+    quotes: "“" "”" "‘" "’";
+}
+.quote ::before {
+    content: open-quote;
+    color:var(--orange-dark);
+    font-size:4rem;
+    padding-right: 0.3rem;
+}
+.quote ::after {
+    content: close-quote;
+    color:var(--orange-dark);
+    font-size:4rem;
+    padding-left: 0.3rem;
+    line-height: 0.7;
+}
 .quote-container blockquote {
     text-emphasis: 1;
-    font-size:1.5rem;
+    font-size:40px;
     text-align: center;
+    margin:20px 20px 0 20px;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top:solid 1px rgb(189, 189, 189);
+    border-top:solid 1px var(--grey-dark);
 }
 
 
@@ -189,21 +216,21 @@ footer {
     justify-content: center;
     width: 45px;
     height:45px;
-    border: solid 1px rgb(189, 189, 189);
+    border: solid 1px var(--grey-dark);
     border-radius:50%;
     align-items: center;
     transition: 0.5s;
 }
 
 .social-container > a:hover {
-    background-color: rgb(189, 189, 189);
+    background-color: var(--orange-light);
 }
 
 .social-logo {
     width: 75%;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:850px) {
     .feature-image {
         width:30vw;
     }
@@ -225,5 +252,14 @@ footer {
     header {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .promo {
+        display: block;
+    }
+    .promo > * {
+        width: 100%;
+    }
+    .promo-img img {
+        width:100%;
     }
 }
