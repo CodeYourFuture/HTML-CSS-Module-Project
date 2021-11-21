@@ -1,0 +1,70 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.footer{
+
+    padding: 0 1.5rem;
+    
+    margin: 0 10rem 0 10rem;
+    
+}
+
+/* Footer Icons*/
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_content p {
+  color: gray;
+  font-weight: 100;
+}
+
+#footer_join_us {
+  color: black;
+  font-weight: 500;
+}
+
+.footer_icons {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  width: 2rem;
+  justify-content: space-evenly;
+}
+
+.footer_icons_container {
+  padding: 1rem;
+}
+
+.social_icons {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.circle-icons {
+  border: 1px solid rgb(219, 213, 213);
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 0.7rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+}
+
+#karma_footer {
+  font-size: 0.5rem;
+}

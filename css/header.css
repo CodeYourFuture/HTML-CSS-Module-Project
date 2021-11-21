@@ -1,0 +1,71 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+p {
+  margin-top: 1 rem;
+  margin-bottom: 0;
+}
+
+.header {
+  height: 5rem;
+  width: 100%;
+}
+
+/* Navigation */
+
+.nav {
+  display: flex;
+}
+
+.logo {
+  align-items: left;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
+
+.nav_btn {
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+.nav_btn:hover {
+  colur: orange;
+}
+
+.container_box {
+  display: flex;
+  justify-content: right;
+}
+
+ul {
+  margin: 0px;
+  padding: 2rem;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+.gray {
+  color: gray;
+}
