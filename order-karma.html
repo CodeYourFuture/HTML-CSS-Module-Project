@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orderpage.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <script>
+        function toggleMenu() {
+            var navBar=document.getElementById("navigation");
+            if (navBar.classList.contains("nav-mobile")) {
+                navBar.classList.remove("nav-mobile");
+                navBar.classList.add("navigation");
+            } else {
+                navBar.classList.remove("navigation");
+                navBar.classList.add("nav-mobile");
+            }
+            window.addEventListener("resize", function(event) {
+            if (navBar.classList.contains("nav-mobile")) {
+                navBar.classList.remove("nav-mobile");
+                navBar.classList.add("navigation");
+            }
+        })
+        }
+        
+    </script>
+</head>
+<body>
+
+    <header> 
+        <div class="logo">
+            <img src="./img/karma-logo.svg" alt="Karma Logo" />
+        </div>        
+        <nav>
+            <ul class="navigation" id="navigation">
+                <li><a href=""><strong>Meet Karma</strong></a></li>
+                <li><a href="">How it Works</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <a href="#" onclick="toggleMenu()">
+                <img src="./img/menu-hamburger.svg" alt="Show Navigation"/>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Order your Karma wifi device today!</h1>
+        <form>
+            <label for="fname">First Name <span class="requiredstar">*</span></label>
+            <input type="text" name="fname" id="fname" required/>
+            <label for="lname">Last Name <span class="requiredstar">*</span></label>
+            <input type="text" name="lname" id="lname" required/>
+            <label for="address">Address <span class="requiredstar">*</span></label>
+            <input type="text" name="address" id="address" required/>
+            <label for="address2">Address 2</label>
+            <input type="text" name="address2" id="address2" required/>
+            <label for="city">City <span class="requiredstar">*</span></label>
+            <select name="city" id="city">
+                    <option>Aberdeen</option>
+                    <option>Armagh</option>
+                    <option>Bangor</option>
+                    <option>Bath</option>
+                    <option>Belfast</option>
+                    <option>Birmingham</option>
+                    <option>Bradford</option>
+                    <option>Brighton & Hove</option>
+                    <option>Bristol</option>
+                    <option>Cambridge</option>
+                    <option>Canterbury</option>
+                    <option>Cardiff</option>
+                    <option>Carlisle</option>
+                    <option>Chelmsford</option>
+                    <option>Chester</option>
+                    <option>Chichester</option>
+                    <option>Coventry</option>
+                    <option>Derby</option>
+                    <option>Derry</option>
+                    <option>Dundee</option>
+                    <option>Durham</option>
+                    <option>Edinburgh</option>
+                    <option>Ely</option>
+                    <option>Exeter</option>
+                    <option>Glasgow</option>
+                    <option>Gloucester</option>
+                    <option>Hereford</option>
+                    <option>Inverness</option>
+                    <option>Kingston upon Hull</option>
+                    <option>Lancaster</option>
+                    <option>Leeds</option>
+                    <option>Leicester</option>
+                    <option>Lichfield</option>
+                    <option>Lincoln</option>
+                    <option>Lisburn</option>
+                    <option>Liverpool</option>
+                    <option>London</option>
+                    <option>Manchester</option>
+                    <option>Newcastle upon Tyne</option>
+                    <option>Newport</option>
+                    <option>Newry</option>
+                    <option>Norwich</option>
+                    <option>Nottingham</option>
+                    <option>Oxford</option>
+                    <option>Perth</option>
+                    <option>Peterborough</option>
+                    <option>Plymouth</option>
+                    <option>Portsmouth</option>
+                    <option>Preston</option>
+                    <option>Ripon</option>
+                    <option>St Albans</option>
+                    <option>St Asaph</option>
+                    <option>St Davids</option>
+                    <option>Salford</option>
+                    <option>Salisbury</option>
+                    <option>Sheffield</option>
+                    <option>Southampton</option>
+                    <option>Stirling</option>
+                    <option>Stoke-on-Trent</option>
+                    <option>Sunderland</option>
+                    <option>Swansea</option>
+                    <option>Truro</option>
+                    <option>Wakefield</option>
+                    <option>Wells</option>
+                    <option>Westminster</option>
+                    <option>Winchester</option>
+                    <option>Wolverhampton</option>
+                    <option>Worcester</option>
+                    <option>York</option>
+            </select>
+            <label for="postcode">Postcode <span class="requiredstar">*</span></label>
+            <input type="text" name="postcode" id="postcode" required/>
+            <fieldset>
+                <legend>Select a color</legend>
+                <input type="radio" name="color" value="orange" id="orange" required checked />
+                <label for="orange">Karma orange</label>
+                <input type="radio" name="color" value="grey" id="grey"/>
+                <label for="orange">Space Grey</label>
+            </fieldset>
+            <input type="checkbox" name="terms" value="true" id="terms"/>
+            <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a>. <span class="requiredstar">*</span></label>
+            <button type="submit">Place my order</button>
+        </form>
+        </section>
+        <section class="image-container">
+            <img src="./img/store-image.jpg" alt="Girl using Karma in a cafe"/>
+        </section>
+
+    </main>
+    <footer>
+        <p>Join us on</p>
+        <div class="social-container">
+        <a href="#">
+            <img src="./img/twitter-icon.svg" alt="Find us on Twitter" class="social-logo"/>
+        </a>
+        <a href="#">
+            <img src="./img/facebook-icon.svg" alt="Find us on Facebook" class="social-logo"/>
+        </a>
+        <a href="#">
+            <img src="./img/instagram-icon.svg" alt="Find us on Instagram" class="social-logo"/>
+        </a>
+        </div>
+        <p class="footer-grey">&copy; Karma Mobility, Inc.</p>
+    </footer>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+
+    <!-- All the images you need are in the 'img' folder -->
+
+</body>
+</html>

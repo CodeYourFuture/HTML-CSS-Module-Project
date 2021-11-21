@@ -1,6 +1,16 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+ :root {
+    --grey-dark: #292b2c;
+    --grey-light: ;
+    --orange-dark: #c05326;
+    --orange-light: #f7eae4;
+    --white: #fff;
+  }
+ 
+
+
 body * {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -21,11 +31,6 @@ body {
     flex-direction: column;
     padding: 0 auto;
 }
-
-body * {
-    border:0px solid black;
-}
-
 header {
     padding: 0 7%;
     padding-top:10px;
