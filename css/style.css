@@ -18,7 +18,8 @@ body {
 
  /* Variables */
 :root {
-    --orange: #f15b2a;
+    --orange: #E0633A;
+    --faint-orange: rgba(224, 99, 58, 0.1);
 }
 
  /* Navigation Styles */
@@ -74,7 +75,9 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 37.5% 100%;
         display: flex;
+        
     }
 
     .content-container {
@@ -102,7 +105,7 @@ body {
 
         .hero-btn {
             background-color: var(--orange);
-            border-radius: 2.75px;
+            border-radius: 3px;
             border: 0;   
             padding: 1em 2em;  
         }
@@ -117,8 +120,7 @@ body {
             text-align: center;
             font-weight: 300;
             font-size: 2.5em;
-            margin-top: 3em;
-            margin-bottom: 1.25em;
+            margin-top: 1.5em;
         }
 
         .article-text {
@@ -135,6 +137,45 @@ body {
         .article-svg {
             height: 9vh;
             width: 100%;
+        }
+
+        /* Call to Action Section Styles */
+
+        .cta-flex-container {
+            margin-top: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            margin-bottom: 4em;
+        }
+
+        .cta-img {
+            min-width: 40%;
+        }
+
+        .cta-sub-flex-container {
+            min-width: 60%;
+            height: inherit;
+            text-align: center;
+            background-color: var(--faint-orange);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .cta-text {
+            font-size: 1.75em;
+            font-style: italic;
+            font-weight: 400;
+            margin-top: 0;
+            padding: 0 10%;
+        }
+
+        .cta-quote {
+            color: var(--orange);
+            font-weight: 550;
         }
 
 /* End of Main Styles */
