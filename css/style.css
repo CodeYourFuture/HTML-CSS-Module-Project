@@ -67,6 +67,7 @@ h3 {
   background: rgba(0, 0, 0, 0.616);
 }
 .overlay_content {
+  padding-top: 2.5rem;
   width: 40%;
   margin: 0 auto;
   text-align: center;
@@ -105,6 +106,21 @@ hr {
   margin-bottom: 20px;
 }
 .features_items {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+.feature_requests {
+  position: absolute;
+  width: 841px;
+  height: 439px;
+  left: 599px;
+  top: 1638px;
+
+  background: rgba(224, 99, 58, 0.1);
+}
+.feature_requests_col {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
