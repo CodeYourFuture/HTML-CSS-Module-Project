@@ -47,17 +47,22 @@ h4 {
   list-style: none;
 }
 .list_item {
-  color: rgb(53, 51, 51);
   margin-left: 20px;
   cursor: pointer;
   font-size: 1.5vw;
 }
-.list_item:hover {
-  color: rgb(202, 118, 8);
-}
+
 .list_div {
   align-self: center;
 }
+.nav_link {
+  color: rgb(53, 51, 51);
+  text-decoration: none;
+}
+.nav_link:hover {
+  color: rgb(202, 118, 8);
+}
+
 /* =======================Main Style========================== */
 
 .main_slide {
@@ -112,7 +117,6 @@ h4 {
 }
 .features_icon_logo {
   width: 30%;
-
   margin-top: 2%;
 }
 .features_icons_container {
@@ -122,11 +126,10 @@ h4 {
   margin-top: 5%;
 }
 /* ============================Footer Styles============================= */
-.footer {
+.footer_header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1em;
   text-align: center;
 }
 .social_icons_container {
