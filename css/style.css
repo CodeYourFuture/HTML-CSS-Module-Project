@@ -169,7 +169,6 @@ button:hover {
 
 .IconFlexBox {
       margin-top:4rem;
-      /* margin-left:16rem; */
       display: flex;
       gap:7rem;    
       padding-bottom:6rem;
@@ -190,6 +189,30 @@ button:hover {
     padding-bottom: 3rem;
  }
    
+/* Showing the 'extended section' of the lady and the quote */
+.ExtendedFlexBox {
+  display: flex;
+  
+  /* margin-top:4rem;
+  gap:7rem;    
+  padding-bottom:6rem; */
+}
+
+/* THE ACTUAL SIZE OF THE IMAGE IS 599 x 439 PIXELS, 37.44 x 27.44 rem */
+.SmilingLady {
+    width:37.44rem;
+    height:27.44rem;
+    /* width: max-content; */
+    /* flex-grow: 1; */
+}
+
+.quote-container {
+  background: rgba(224, 99, 58, 0.1);
+  font-size:2rem;
+  text-align: center;
+  width:100%;
+  /* flex-grow: 1; */
+}
 
 
 /* Footer */
@@ -244,5 +267,24 @@ button:hover {
   filter: hue-rotate(250deg);
 } 
 
+/************************************** THE STORE PAGE **************************************/
 
+.StoreFlexBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+}
  
+.order-container
+{
+  width: 50%;
+}
+/* THE ACTUAL SIZE OF THE IMAGE IS 632 x 948 PIXELS */
+.LadyAtDesk{
+  width: 50%;
+}
+
+.order-fieldset {
+  border:none;
+}

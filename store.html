@@ -48,50 +48,67 @@
               </nav>
     </section>
 
-    <main class="MainFlexBox">
-        <section class="MainImage">
+    <main class="StoreFlexBox">
+        <section class="order-container">
 
-
-            <h1 class="karma-heading">Introducing Karma</h1>
+            <h1 class="karma-heading">Order your Karma wifi<br/>device today!</h1>
             
-            <p class="paragraph">Bring WiFi with you, everywhere you go.</p>
-       
+            <form>
+                <fieldset class="order-fieldset>
+                  <legend>Order information regarding Karma</legend>
+                  <label for="form-firstname">First name *</label>
+                  <input type="text" name="FirstName" id="form-firstname" required>
+
+                  <label for="form-lastname">Last name *</label>
+                  <input type="text" name="LastName" id="form-lastname" required>
+            
+                  <br/>
+
+                  <label for="form-address1">Address *</label>
+                  <input type="text" name="Address1" id="form-address" required>
+            
+                  <br/>
+
+                  <label for="form-address2">Address 2</label>
+                  <input type="text" name="Address2" id="form-address2">
+            
+                  <br/>
+
+                  <label for="form-city">City *</label>
+                  <input type="text" name="City" id="form-city" required>
+            
+                  <label for="form-postcode">Postcode *</label>
+                  <input type="text" name="Postcode" id="form-postcode">
+                              
+                  <br/>
+           
+                  <label for="form-colour">Select a colour</label>
+                  <input type=radio id="form-karma-orange" value="karma-orange" name="product-colour" required>
+                  <label for="form-karma-orange">Karma Orange</label>
+                  <input type=radio id="form-space-grey" value="space-grey" name="product-colour">
+                  <label for="form_space-grey">Space Grey</label>
+
+                  <br/>
+           
+              <label for="form-tc">By placing your order you agree to Karma's<br/>Terms and Conditions *"</label>
+                <select name="agreement" id="form-agreement" required>
+                    <option value="xs">XS</option>
+                </select>
+              </fieldset>
+            </form>
+                   
             <button class="LearnMoreButton">Learn More</button>
         </section>
 
-        <p class="everyone">Everyone needs a little Karma.</p>
+        <img src="img\store-image_by-andrew-neel-unsplash.jpg" alt="woman sitting at a table with right hand using the laptop
+                                                                    and a cup of presumably a hot drink in her left hand" class="LadyAtDesk">
 
-        <section class="IconFlexBox">
-            <div>
-              <img src="img\icon-devices.svg" alt="icons of computer, tablet and mobile" height=160px; class="IconPadding">
-              <p class="description">Internet for all devices</p> 
-            </div>
 
-            <div>
-              <img src="img\icon-coffee.svg" alt="icon of a cup of coffee" height=160px; class="IconPadding">
-              <p class="description">Boost your productivity</p> 
-            </div>
-
-            <div>
-              <img src="img\icon-refill.svg" alt="icon of a petrol pump" height=160px; class="Pad3rdIcon">
-              <p class="description">Pay as You Go</p> 
-            </div>
-        </section>
-
-        <section class="ExtendedFlexBox">
-            <img src="additional\feature-img.png" alt="smiling lady looking at her tablet" class="SmilingLady">
- 
-            <section class="quote-container">
-              <blockquote>
-                  <em>Wherever I am,<br>I just don't worry about my connection<br>anymore!</em>
-              </blockquote>
-            </section>
-        </section>
-
-        <hr class="drawaline">
      </main>
 
-    <footer class="thefooter">
+     <hr class="drawaline">
+
+     <footer class="thefooter">
         <p class="join-us">Join us on</p>
         <figure class="SocialMediaFlexBox">
           <a href="#">
