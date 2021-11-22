@@ -53,10 +53,17 @@ body {
   padding: 0;
 }
 
+
 .navigation__list li:hover {
     color: rgb(255, 115, 0);
     cursor: pointer;
 }
+
+.navigation__list li a {
+    text-decoration: none;
+}
+
+
 
 .active {
     font-weight: 500;
@@ -246,6 +253,52 @@ footer h3 {
 
 footer p {
     color:rgb(182, 179, 179);
+}
+
+/* store page css */
+
+.karma-order-form h1 { 
+    font-size: 50px;
+    color:rgb(218, 86, 25); 
+    font-weight: 500;
+         
+}
+
+.store-header .svg-logo {
+    padding-left: 5rem;
+}
+
+.store-main {
+    display: flex; 
+    width: 100%;  
+}
+
+
+.karma-order-form {
+    width: 50%;
+    padding: 5rem 12rem;
+}
+
+.karma-order-form input {
+    padding: 0.3rem 2rem;
+    margin-top: 0.1rem;
+}
+
+.karma-order-form label {
+    margin-top: 0.5rem;
+}
+
+.store-aside-img {
+    width: 50%;
+}
+
+.first-last-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adress input {
+    width: 60%;
 }
 
 
