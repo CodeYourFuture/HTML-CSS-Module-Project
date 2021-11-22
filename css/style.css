@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+<<<<<<< Updated upstream
 
 /**
  * Add your custom styles below
@@ -17,3 +18,189 @@ body {
  */
 
 
+=======
+/*Header
+-----------------------------------------------------*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6rem 3rem ;
+}
+
+.logoImg {
+    width: 1.25rem;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+
+.navList {
+    display: flex;
+    list-style: none;
+}
+
+.navItem {
+    padding: 1rem;
+}
+
+.navLink {
+    text-decoration: none;
+    color: rgb(168, 162, 162); 
+}
+
+.makeBlack {
+    color:rgb(105, 97, 97);
+    font-weight:bold;
+} 
+
+.navLink:hover, .makeBlack:hover {
+    color: chocolate;
+}
+
+/*Introduction
+----------------------------------------------------*/
+
+.introduction {
+    background-image: url('../img/first-background.jpg');
+    background-size: 117%;
+    background-repeat: no-repeat;
+    height: 47vh;
+    color: white;
+    text-align: center;
+    padding:15% 0;
+}
+
+.introduction h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+   
+.introduction p {
+    font-size: 1.6rem;
+    font-weight: 2;
+}
+
+.learnmoreBtn {
+    color: white;
+    background-color: rgb(236, 119, 52);
+    border: none;
+    border-radius: 0.1rem;
+    padding: 1rem;
+    margin-top: 1.5%;
+}
+
+.introduction button {
+    width: 8rem;
+}
+
+/*Advantage
+------------------------------------------------*/
+.advantageTitle {
+    margin-top: 6.9rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: rgb(71, 67, 67);
+}
+
+.advantage {
+    display: flex;
+    color: rgb(71, 67, 67);
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1.8rem 12.5rem;    
+}   
+
+.advantage img {
+    width: 6.25rem;
+}
+
+.advantage p {
+    font-size: 1.5rem; 
+}
+ 
+.advantageColumn {
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    width: 20rem;
+}
+
+/*Get karma
+-------------------------------------------------*/
+
+.getkarmaBackground {
+    background-image: url('../additional/feature-img.png');
+    background-repeat: no-repeat;
+    height: 63vh;
+    width: 45vw;
+}
+
+.getkarmaTitle {
+    width: 65vw;
+    height: 63vh;
+    background-color: rgb(246, 230, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.getKarma {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.getKarma h2 {
+    width: 40vW;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 10;
+    color: rgb(71, 67, 67);
+}
+
+.getKarma button {
+    width: 9.4rem;
+}
+
+/*footer
+-------------------------------------------------*/
+footer {
+    text-align: center;
+    border-top: rgb(238, 238, 238) solid 1px;
+    margin: 0 12.5rem;   
+}
+
+footer img {
+    width: 0.9rem;
+    padding: 0.9rem;
+}
+
+footer p {
+    color: lightgrey;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.socialmediaLogo {
+    display: inline-flex;
+    justify-content: center;  
+}
+
+.socialmediaLogo a {
+    border-radius: 50%;
+    border: solid 0.03rem lightgrey;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.6rem; 
+}
+
+/*media query*/
+/*I am still working on that*/
+>>>>>>> Stashed changes
