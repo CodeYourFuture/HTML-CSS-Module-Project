@@ -5,10 +5,12 @@
  /* General */
 :root {
     --orange: #f07416;
+    --light-orange: #f8e5de;
     --grey: #8b8b8b;
     --white: #fff;
     --dark-grey: #454545;
-    --lightest-grey: #d6d6d6;
+    --lightest-grey: #f0f0f0;
+    
 }
 
 body {
@@ -30,9 +32,9 @@ body {
   }
 
   .header-logo{
-      padding-left: 5rem;
-      height: 50px;
-      width: auto;
+    padding-left: 5rem;
+    height: 50px;
+    width: auto;
   }
 
  .navigation-list {
@@ -41,23 +43,24 @@ body {
     padding-right: 7rem;
  }
 
- .navigation-list a {
+ .navigation-link-meet-karma {
+    color: var(--dark-grey);
+    font-weight: 600;
     text-decoration: none;
-    color: var(--grey);   
- }
-
-.navigation-link {
-    padding: 0 1.5rem; 
+    padding: 0 1.5rem;      
 }
+
+ .navigation-link {
+    text-decoration: none;
+    color: var(--grey); 
+    padding: 0 1.5rem;   
+ }
 
 .navigation-list :hover {
     color: var(--orange);
 }
 
-#navigation-link-meet-karma {
-    color: var(--dark-grey);
-    font-weight: 600;
-}
+
 
 .hamburger {
     border:none;
@@ -97,6 +100,7 @@ body {
 
  .button {
     background-color: var(--orange);
+    color: var(--white);
     padding: 0.8rem 1.5rem;
     border-style: none;
     border-radius: 2px;
@@ -109,7 +113,7 @@ body {
 
 
 
- /* Middle section */
+ /* Feature section */
 
  h2 {
     font-size: 2.75em;
@@ -117,15 +121,15 @@ body {
     padding-top: 2rem;
 }
 
-.middle-section p {
+.feature-section p {
     font-size: 1.25em;
 }
 
- .middle-section {
+ .feature-section {
     text-align: center;
  }
 
- .middle-section-container {
+ .feature-section-container {
     display: flex;
     justify-content: space-evenly;
     padding: 0 15rem;
@@ -133,19 +137,56 @@ body {
 
  }
 
- .middle-section-box {
+ .feature-section-box {66, 135, 245
     display: flex;
     flex-direction: column;
     align-items: center;
  }
 
- .middle-section-image {
+ .feature-section-image {
      width: 15vh;
  }
 
-/* End of middle section */
+/* End of feature section */
 
 
+
+
+
+/* Get karma section */
+
+
+.get-karma-section {
+    background-color: var(--light-orange);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 439px;
+    margin-bottom: 2rem;
+}
+
+.get-karma-section-text {
+    width: 450px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    right: 15rem;
+    top: 3rem;
+    line-height: 1.6;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 2.15rem;
+}
+
+.get-karma-section span {
+    color: var(--orange);
+}
+
+/* End of get Karma section */
 
 
 /* Footer */
@@ -156,6 +197,7 @@ body {
     align-items: center;
     border-top: 1px solid var(--lightest-grey);
     padding-bottom: 3rem;
+    margin: 0 3rem;
 }
 
 .footer-icons {
@@ -210,13 +252,20 @@ footer a {
 
    .hero-section p {
        padding: 0 2rem;
-       font-size: 2rem;
-       
+       font-size: 2rem;    
    }
-    
-  
-
 }
  
+
+
+/* Karma Store page*/
+
+.store-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    background-color: var(--lightest-grey);
+}
 
 
