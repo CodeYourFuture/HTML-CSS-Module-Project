@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
@@ -39,10 +40,81 @@
         </ul>
       </nav>
     </header>
-    <form></form>
-    <div>
-      <img src="" alt="" />
-    </div>
+    <main>
+      <form>
+        <h1 class="form_title">Order your Karma wifi device today!</h1>
+        <div class="first_last_name">
+          <div class="first_last">
+            <label for="first_name">First name *</label>
+            <input id="first_name" type="text" minlength="2" required />
+          </div>
+          <div class="first_last last_name">
+            <label for="last_name">Last name *</label>
+            <input id="last_name" type="text" minlength="2" required />
+          </div>
+        </div>
+        <div class="address">
+          <label for="address">Address *</label>
+          <input id="address" type="text" required />
+
+          <label for="address2">Address 2</label>
+          <input id="address2" type="text" required />
+        </div>
+
+        <div class="city_postcode">
+          <div class="city__postcode">
+            <label name="city" for="city">City *</label>
+            <select class="city" id="city">
+              <option value="" class="select_city">Select your city...</option>
+              <option value="london">London</option>
+              <option value="oxford">Oxford</option>
+              <option value="bath">Bath</option>
+              <option value="birmingham">Birmingham</option>
+              <option value="bristol">Bristol</option>
+              <option value="cambridge">Cambridge</option>
+              <option value="chelmsford">Chelmsford</option>
+              <option value="leeds">Leeds</option>
+            </select>
+          </div>
+          <div class="city__postcode postcode">
+            <label for="postcode">Postcode *</label>
+            <input class="postcode" id="postcode" type="text" required />
+          </div>
+        </div>
+
+        <div class="feature_colour">
+          <h4 class="feature_radio_colour">Select colour</h4>
+          <div class="features">
+            <div class="feature_radio orange">
+              <input id="feature_colour_orange" type="radio" />
+              <label for="feature_colour_orange">Karma Orange</label>
+            </div>
+
+            <div class="feature_radio">
+              <input id="feature_colour_grey" type="radio" />
+              <label for="feature_colour_grey">Space Grey</label>
+            </div>
+          </div>
+        </div>
+
+        <label class="checkbox_checker">
+          <input type="checkbox" name="checkbox" id="checkbox" required />
+          <span></span>
+          By placing your order you agree to Karma's
+          <a class="link">Terms and Conditions</a> *
+        </label>
+
+        <button type="submit">Place my order</button>
+      </form>
+      <section class="image">
+        <img
+          src="./img/store-image_by-andrew-neel-unsplash.jpg"
+          alt="girl working at desk"
+          class="section_img"
+        />
+      </section>
+    </main>
+
     <footer>
       <h1 class="footer-title">Join us on</h1>
       <div class="social-media">

@@ -1,0 +1,177 @@
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+form {
+  width: 521px;
+  text-align: left;
+  margin: 30px 38px 30px 216px;
+}
+
+input {
+  line-height: normal;
+  border: 1px solid #6666;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 20px 0;
+}
+
+input#postcode {
+  padding: 10px 0;
+}
+
+.form_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #de6e49;
+}
+
+.first_last_name {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0;
+}
+
+.last_name {
+  margin-left: 25px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.city_postcode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.city__postcode {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+select {
+  font-style: italic;
+}
+
+.city__postcode.postcode {
+  margin-left: 40px;
+}
+
+.city {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px 125px 10px 0;
+}
+
+input[class="postcode"] {
+  margin-bottom: -15px;
+}
+
+label[name="city"] {
+  margin: 20px 0;
+}
+
+.feature_radio_colour {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.feature_radio.orange {
+  margin-right: 40px;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: #ef5d07;
+}
+
+.feature_radio {
+  display: flex;
+  align-items: center;
+}
+
+label[for="feature_colour_grey"],
+label[for="feature_colour_orange"] {
+  margin-left: 11px;
+}
+
+.checkbox_checker {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* label input  */
+.checkbox_checker input[type="checkbox"] {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Style the artificial checkbox */
+/* label span  */
+.checkbox_checker span {
+  height: 24px;
+  width: 24px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Style its checked state...with a ticked icon */
+[type="checkbox"]:checked + span:before {
+  content: url("../img/checkmark.svg");
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+a.link {
+  color: #ef5d07;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #ef5d07;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin-top: 40px;
+}
+
+.section_img {
+  width: 731px;
+  height: 165vh;
+}
