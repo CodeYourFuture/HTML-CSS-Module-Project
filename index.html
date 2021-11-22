@@ -19,84 +19,77 @@
   <col>
     <!-- Nav bar -->
     <header>
-      <nav class="topnav">
-        <img class="logo" src="img/karma-logo.svg" alt="logo" />
-        <a href="#Login">Login</a>
-        <a href="#Help">Help</a>
-        <a href="#Blog">Blog</a>
-        <a href="#Store">Store</a>
-        <a href="#How it Works">How it Works</a>
-        <a class="active" href="#Meet Karma">Meet Karma</a>
-      </nav>
+        <img class="logo" src="img/karma-logo.svg" alt="logo"/>
+        <nav class="nav__links">
+          <ul>
+            <li><a class="active" href="#Meet Karma">Meet Karma</a></li>
+            <li><a href="#How it Works">How it Works</a></li>
+            <li><a href="#Store">Store</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Help">Help</a></li>
+            <li><a href="#Login">Login</a></li>
+          </ul>
+          <!-- <a href="#Login">Login</a>
+          <a href="#Help">Help</a>
+          <a href="#Blog">Blog</a>
+          <a href="#Store">Store</a>
+          <a href="#How it Works">How it Works</a>
+          <a class="active" href="#Meet Karma">Meet Karma</a> -->
+        </nav>
     </header>
 
-    <main>
-      <div class="container">
-        <img
-          class="big-image"
-          src="img/first-background.jpg"
-          alt="working with your tablet"
-        />
-        <div class="text-container">
-          <h1 class="first-text">
-            Introducing Karma
-          </h1>
-          <h5 class="second-text">
-            Bring WiFi with you, everywhere you go.
-          </h5>
-          <button class="button1">
-            Learn More
-          </button>
-        </div>
-      </div>  
-    </main>
+  <main>
+    <section class="hero">
+      <h1>Introducing Karma</h1>
+      <p>Bring wifi with you, everywhere you go.</p>
+      <button>Learn More</button>
+    </section> 
+    
     
     <section>
-      <h1 id="title-main">Everyone needs a little Karma</h1>
+      <h1 class="title-main">Everyone needs a little Karma</h1>
       <div class="article-summary">
-        <div id="item">
-          <img class="icon" id="thumbnail" src="img/icon-devices.svg" alt="PC"/>
+        <div class="item">
+          <img class="icon" id="thumbnail" src="img/icon-devices.svg" alt="graffiti of a PC"/>
            <span class="sub-title">Internet for all devices</span> 
         </div>
-        <div id="item">
-           <img class="icon" id="thumbnail" src="img/icon-coffee.svg" alt="coffee"/>
+        <div class="item">
+           <img class="icon" id="thumbnail" src="img/icon-coffee.svg" alt="graffiti of an steaming cup of coffee"/>
            <span class="sub-title">Boost your productivity</span>
         </div>
-        <div id="item">
-           <img class="icon" id="thumbnail" src="img/icon-refill.svg" alt="re-fill"/>
+        <div class="item">
+           <img class="icon" id="thumbnail" src="img/icon-refill.svg" alt="graffiti of re-fill"/>
            <span class="sub-title">Pay as you go</span>
         </div>
       </div>
     </section>   
- 
-    <div class="footer">
+  </main>
+
+
+    <footer>
       <hr>
        <p>Join us on</p>
-       <footer>
-        <div class="social">
-          <img class="social_icon"
-           src="img/twitter-icon.svg"
-           alt="twitter"
-          />
-         </div>
-         <div class="social">
-          <img class="social_icon"
-           src="img/facebook-icon.svg"
-           alt="facebook"
-          />
-         </div>
-         <div class="social">
-          <img class="social_icon"
-           src="img/instagram-icon.svg"
-           alt="instagram"
-          />
-         </div>
-       </footer>
+        <section class="social">
+          <div class="social-container"><img class="social_icon"
+            src="img/twitter-icon.svg"
+            alt="twitter"/>
+          </div>
+          
+          <div class="social-container"><img class="social_icon"
+            src="img/facebook-icon.svg"
+            alt="facebook"/>
+          </div>
+          
+          <div class="social-container"><img class="social_icon"
+            src="img/instagram-icon.svg"
+            alt="instagram"/>
+          </div>
+        </section>
+
        <p class="footer-text">
          <span>©</span>
          Karma Mobility, Inc
        </p>
-       
-    </div>
+    </footer>
   </body>
 </html>

@@ -14,87 +14,102 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-.topnav {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  margin-right: 60px;
-}
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 5%;
+  height: 5%;
+  align-items: center;
+}
 /* nav bar */
-.topnav a {
-  float: right;
-  color: #5a5a5a;
-  text-align: center;
-  padding: 1vw 2vw;
+
+nav {
+  display: block;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+a {
   text-decoration: none;
-  font-size: 2vw;
-  background-color: white;
-  margin-top: 2vw;
+  color: rgb(116, 114, 114);
 }
 
 /* the color of links on hover */
-.topnav a:hover {
+.nav__links li a:hover {
   color: orangered;
 }
 
 /* Adding bold font to the active/current link */
-.topnav a.active {
+.active {
   font-weight: bold;
 }
+/* logo */
 .logo {
-  margin-left: 4vw;
-  margin-top: 2vw;
-  height: 3vw;
-  width: 2vw;
+  height: 30px;
+  width: 25px;
+  cursor: pointer;
 }
+.logo-top {
+  width: 25%;
+  padding: 10px;
+}
+
 /* styling background image & texts on the image */
 
-.big-image {
-  width: 97%;
-  margin: 0;
+.hero {
+  background-image: url("https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Coursework-Week2/master/img/first-background.jpg");
+  background-size: cover;
+  background-position: 60% 100%;
+  background-repeat: no-repeat;
+  padding: 150px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-}
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 50;
-  font-size: 6vw;
-  font-stretch: condensed;
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 0;
 }
-h5 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 50;
-  font-size: 2.5vw;
-  font-stretch: condensed;
-  width: 100%;
+
+p {
+  font-size: 24px;
+  font-weight: 300;
 }
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
+
+.hero p {
+  margin-bottom: 50px;
 }
-.button1 {
-  background-color: orangered;
-  border: 2vw solid orangered;
-  border-radius: 3%;
-  width: 30%;
-  font-size: 1.5vw;
+
+button {
+  background-color: #ef5d07;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  padding: 10px 20px;
 }
 
 .article-summary {
   text-align: center;
 }
 
-#title-main {
+.title-main {
   color: rgb(70, 69, 69);
   text-align: center;
   margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 .icon {
   width: 15vw;
@@ -114,32 +129,18 @@ h5 {
   font-size: 2vw;
   color: rgb(70, 69, 69);
 }
-#item {
+.item {
   vertical-align: top;
   display: inline-block;
   text-align: center;
   width: 30vw;
 }
 /* styling the footer */
-.footer {
-  bottom: 0;
-  margin-top: 10vw;
-}
-.social {
-  max-height: 2vw;
-  width: 2vw;
-  padding: 0.2vw;
-  border-radius: 5vw;
-  border: solid #dddddd 0.1vw;
-  margin: 2vw;
-}
-.social_icon {
-  max-height: 2vw;
-  width: auto;
-}
-p {
-  text-align: center;
-  margin-top: 3vw;
+
+footer {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
 }
 hr {
   width: 80%;
@@ -148,13 +149,26 @@ hr {
   color: rgb(196, 196, 196);
   background-color: rgb(196, 196, 196);
 }
-
-footer {
+.social {
   display: flex;
   justify-content: center;
 }
+.social_icon {
+  max-height: 2vw;
+  width: 2vw;
+  padding: 0.2vw;
+  border-radius: 5vw;
+  border: solid #dddddd 0.1vw;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+p {
+  text-align: center;
+  margin-top: 1vw;
+  font-size: medium;
+}
 
 .footer-text {
-  margin-top: 1vw;
+  margin-top: 2vw;
   color: rgb(196, 196, 196);
 }
