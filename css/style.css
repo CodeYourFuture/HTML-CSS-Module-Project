@@ -121,6 +121,12 @@ body {
   display: flex; /* Used flexbox so that image and quote can go side by side */
 }
 
+.quote-image-box {
+  background-image: url("../img/feature-img.png");
+  background-repeat: no-repeat;
+  padding: 11% 15%;
+}
+
 .quote-text-box {
   background-color: #fff2f2;
   width: 100%;
@@ -128,12 +134,16 @@ body {
 
 .quote-text {
   font-size: 35px;
-  margin-left: 25%;
-  margin-top: 10%;
+  margin: 15% 12% 25px;
+}
+
+.quote-orange {
+  color: #f15b2a;
+  font-weight: 600;
 }
 
 .quote-button {
-  margin: 0 40%;
+  margin: 0 40% 10%;
   border-radius: 5px;
   border: none;
   padding: 15px 25px;
