@@ -64,20 +64,12 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: white;
 }
-/* header{
-    display: flex;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    background-color: white;
-} */
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+      position: fixed;
     width: 100%;
     height: 90px;
     padding: 0 120px;
@@ -205,3 +197,8 @@ nav .nav__link_on{
     align-content: center;
 }
 
+.container{
+    justify-content: center;
+    text-align: center;
+
+}
