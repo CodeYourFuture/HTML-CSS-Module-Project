@@ -42,7 +42,7 @@ button {
   color: #fff;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
-  padding: 10px 20px;
+  padding: 15px 25px;
 }
 
 /* main features*/
@@ -50,26 +50,56 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
+  margin-top: 45px;
+}
+
+.content-title {
+  margin: 60px 0;
 }
 
 .feature {
   display: flex;
   flex-direction: row;
-  margin: 35px 0;
 }
 
 .features {
-  padding: 0 60px;
+  margin: 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .features > img {
-  height: 100px;
+  height: 40%;
 }
 
 .features-paragraph {
   margin-top: 35px;
+}
+
+/* main homepage_feature */
+.homepage_feature {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feature_text {
+  background: rgba(224, 99, 58, 0.1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature_text_paragraph {
+  font-family: "Roboto";
+  width: 55%;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 49px;
 }
