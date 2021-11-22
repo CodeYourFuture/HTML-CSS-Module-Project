@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 10px;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 1rem;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: gray;
+}
+
+.link-strong {
+  font-weight: 500;
+  color: #000;
+}
+
+a:hover {
+  color: #eb5a2f;
+}

@@ -1,253 +1,75 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-/* header navbar */
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 15px 0;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0 10px;
-  align-items: center;
-}
-
-li {
-  list-style: none;
-  margin: 0 20px;
-  font-size: 1rem;
-  color: gray;
-  cursor: pointer;
-}
-
-li:first-child {
-  font-weight: 500;
-  color: #000;
-}
-
-li:hover {
-  color: #eb5a2f;
-}
-/* header navbar */
-
-/* main first-section*/
-.first-section {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../img/first-background.jpg");
+/* main hero */
+.hero {
+  background-image: url("https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Coursework-Week2/master/img/first-background.jpg");
   background-size: cover;
-  margin: 0 auto;
-  position: relative;
-}
+  background-position: 60% 100%;
+  background-repeat: no-repeat;
 
-.content {
-  color: #fff;
+  padding: 150px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 25%;
-  left: 33%;
+
+  color: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
 }
 
-.content-title {
-  margin-top: 10%;
+h1 {
   font-weight: 300;
-  margin-bottom: 5px;
-  font-size: 3.5rem;
+  font-size: 42px;
+  margin-bottom: 0;
 }
 
-.content-paragraph {
-  font-size: 1.8rem;
+p {
+  font-size: 24px;
   font-weight: 300;
-  margin-bottom: 60px;
+}
+
+.hero p {
+  margin-bottom: 50px;
 }
 
 button {
-  background-color: #eb5a2f;
-  border: #eb5a2f;
-  border-radius: 2px;
-  padding: 15px 35px;
-  font-size: 1rem;
+  background-color: #ef5d07;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  padding: 10px 20px;
 }
-/* main first-section*/
 
-/* main second-section*/
-.second-section {
+/* main features*/
+.section_features {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 55px;
+  margin: 100px 0;
 }
 
-.product {
+.feature {
   display: flex;
   flex-direction: row;
   margin: 35px 0;
 }
 
-.prod {
+.features {
   padding: 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.prod-paragraph {
+.features > img {
+  height: 100px;
+}
+
+.features-paragraph {
   margin-top: 35px;
-}
-
-/* main second-section*/
-
-/* footer */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px solid #ccc;
-  width: 50%;
-  margin: auto;
-}
-
-.footer-title {
-  margin: 30px 0;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-}
-
-.twitter,
-.facebook,
-.instagram {
-  border: 1px solid #ccc;
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-
-.rights {
-  color: #ccc;
-  margin-top: 25px;
-  margin-bottom: 60px;
-  font-size: 0.9rem;
-}
-
-.menu-burger {
-  display: none;
-}
-/* footer */
-
-/* mobile */
-@media screen and (max-width: 400px) {
-  /* header navbar */
-  ul {
-    display: none;
-  }
-  .menu-burger {
-    display: initial;
-  }
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px 25px;
-  }
-
-  /* main first-section*/
-  .first-section {
-    width: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right 28% bottom 45%;
-  }
-
-  .content {
-    width: 80%;
-    text-align: center;
-    left: 10%;
-  }
-
-  .content-title.first {
-    font-size: 3rem;
-  }
-
-  .content-paragraph {
-    font-size: 1.5rem;
-    margin-bottom: 23px;
-  }
-
-  /* main second-section*/
-  .second-section {
-    margin-bottom: 20px;
-  }
-
-  .content-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .product {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .prod {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .first-section {
-    width: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right 28% bottom 45%;
-  }
-
-  .content {
-    width: 80%;
-    text-align: center;
-    left: 10%;
-  }
-
-  .content-title.first {
-    font-size: 4rem;
-  }
-
-  .content-paragraph {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-  }
-
-  .content-title {
-    text-align: center;
-    margin-bottom: 5%;
-  }
 }
