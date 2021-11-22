@@ -15,7 +15,7 @@
 /* General styles */
 
 :root {
-    --orange: #fc4c20;
+    
     --grey: #616668;
 }
 
@@ -133,7 +133,7 @@ h3 {
 /* Button */
 
 button {
-    background-color: var(--orange);  
+    background-color: #E0633A;  
     font-size: 1.4rem;
     font-weight: 400;
     padding: 22px 45px;
@@ -170,6 +170,64 @@ hr {
     width: 95%;
     opacity: 0.3;    
 }
+
+/* Section: Feature */
+
+.feature {
+    width: 100%;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.feature img {
+    display: block;
+    width: 44.5%;   
+    width: 568px;
+}
+
+.feature_text-and-button {  
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin:0 auto;  
+    background-color: hsla(15, 73%, 55%, 0.1);
+  
+}
+
+blockquote {
+    font-size: 42px; 
+    font-weight: 400;
+    line-height: 49.22px;
+    font-style: italic;
+    text-align: center; 
+}
+
+
+q {
+    color: #E0633A;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    
+
+}
+
+span {
+    color: black;
+}
+
+.feature_text-and-button button {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 28.13px;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 /* Footer */
 
