@@ -1,7 +1,7 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -38,8 +38,13 @@ a {
     color: grey;
 }
 
-a:hover {
+a:hover,
+span {
     color: orangered;
+}
+
+span {
+    font-weight: 500;
 }
 
 li:nth-of-type(1) a {
@@ -61,7 +66,7 @@ strong {
 /* Hero */
 
 .hero {
-    background: url('../img/first-background.jpg');
+    background: url("../img/first-background.jpg");
     height: 650px;
     background-position: right 27% bottom 5%;
     width: 100%;
@@ -129,7 +134,8 @@ h2 {
 .feature {
     width: 100vw;
     height: fit-content;
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: flex;
     background: rgba(255, 162, 145, 0.637);
     margin-bottom: 5rem;
 }
@@ -207,6 +213,24 @@ footer p {
     font-weight: 300;
 }
 
+.quotes::before {
+    content: "\201C";
+}
+
+.quotes::after {
+    content: "\201D";
+}
+
+.quotes::before,
+.quotes::after {
+    color: orangered;
+    font-size: 50px;
+}
+
+.form-img {
+    width: 50vw;
+}
+
 @media screen and (max-width: 760px) {
     header {
         padding: 0 4rem;
@@ -261,7 +285,7 @@ footer p {
     }
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width: 570px) {
     /* Header */
     header {
         padding: 1rem 3rem;
@@ -275,7 +299,7 @@ footer p {
     }
     /* Hero */
     .hero {
-        background-position: right 27% top 15%;
+        background-position: right 35% top 50%;
     }
     /* Hero Text */
     h1 {
@@ -327,7 +351,7 @@ footer p {
     }
 }
 
-@media screen and (max-width:930px) {
+@media screen and (max-width: 930px) {
     /* Feature Section */
     .feature {
         width: 100vw;
