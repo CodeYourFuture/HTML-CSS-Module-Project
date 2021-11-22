@@ -17,24 +17,10 @@ body {
  */
 
 
- body {
+body {
   background-color: white;
  }
    
- h1,h2,h3,h4,h5,h6 {
-   margin-top: 0;
-   margin-bottom: 0;
- }
- 
- /*
- * Remove default margin.
- */
-
- p {
-  margin-top: 0;
-  margin-bottom: 0;
-  }
-
 
 /* Header */
 
@@ -45,60 +31,59 @@ body {
     height: 5rem;
     margin-bottom: 1rem;
     padding-top: 1rem;
-  }
+}
   
  
-  .karma-logo {
+.karma-logo {
     width: 2rem; /* if you set NO width, the image will not show! */
     /* add a border around the logo */
     border: 0px solid white;
-    padding:0rem;
     padding-top: 20px;
     object-fit: scale-down;  
 
-  } 
+} 
   
   /* Navigation */
   
    
   /* determine how each item of the naviagtion bar is shown */
 
-  .navigation-item {
+.navigation-item {
     color: #fff;
     padding: 22px 16px 16px 22px;
     text-decoration: none;
     display: inline;
     float: left;
     font-size: 22px;
-  }
+}
 
   /* determine how each link is shown */
 
-   .navigation-link {
+.navigation-link {
     color: gray;
     display: block;
     text-align: center;
     padding: 14px 0px;
     text-decoration: none;    
-      }
+}
 
 
 
   /* change colour when mouse hovers over it */    
 
-  .navigation-link:hover {
+.navigation-link:hover {
         color:#ec5800; /* persimmon */
-      }
+}
 
       /* always show 'Meet Karma' in black */
-     .meet-Karma {
+.meet-Karma {
       color: black;
       font-weight:500;
-   }  
+ }  
 
    /* FLEXBOX for the LOGO & Navigation Bar */
 
-   .LogoNavbox{
+.LogoNavbox {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -107,44 +92,45 @@ body {
     padding-left: 5rem;  /* MOVE TO THE RIGHT */
     padding-right: 5rem; /* MOVE TO THE LEFT */
     
-  }
+}
 
    /* FLEXBOX for the Main Content */
 
-   .Sections-FlexBox{
+.MainFlexBox {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
 
   /* The main image i.e. the 'hero' */ 
  
   /* THE ACTUAL SIZE OF THE IMAGE IS 1600 * 735 PIXELS */
-  .mainImage {
+.MainImage {
     background-image: url(../img/first-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 735px; /* if you set NO height, the image will not show! */
+    /* height: 735px; = 45.938rem. If you set NO height, the image will not show! */
+    height: 45.94rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
     color: white;
-  }
+}
 
-  .karma-heading {
-    font-family: Roboto; 
-    font-size:48px;
+.karma-heading {
+    font-family: "Roboto", Arial, sans-serif; 
+    font-size:3rem; /* = 48px; */
     padding-top:14rem;
-  }
+}
 
-  .paragraph {
-    font-family: Roboto; 
-    font-size:36px;
-  }
+.paragraph {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 2.25rem; /* = 36px; */
+}
 
   /* Buttons */
 
@@ -165,50 +151,44 @@ button:hover {
 
  /* The lower half */
 
- .LowerHalf {
-    margin-left: 7.3rem;
-    margin-right: 7.3rem;
-    background-color: white;
- }
-
- .every1 {
-  font-family: Roboto; 
-  font-size:52px;
+.everyone {
+  font-family: "Roboto", Arial, sans-serif; 
+  font-size: 3.25rem; /* 52px; */
   color:black;
   padding-top:10rem;
  }
 
- .drawaline
- {width: 90%;
+.drawaline {
+  width: 90%;
   /* --grey-light: #e4e4e4; */
   background-color:#e4e4e4;
   height:1px; /* Must set the height to show the coloured line -see https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
-     }
+ }
 
    /* FLEXBOX for three icons*/
 
-   .iconFlexBox {
+.IconFlexBox {
       margin-top:4rem;
       /* margin-left:16rem; */
       display: flex;
       gap:7rem;    
       padding-bottom:6rem;
 
-  }
+}
 
-   .description {
-    font-size:28px;
-   }
+.description {
+    font-size:1.75rem; /* 28px; */
+ }
 
-   .iconPadding{
+.IconPadding {
     padding-left:4rem;
     padding-bottom: 3rem;
-   }
+ }
 
-   .iconPadding2{
+.IconPadding2 {
     padding-left:2rem;
     padding-bottom: 3rem;
-   }
+ }
    
 
 
@@ -217,20 +197,20 @@ button:hover {
 
    /* FLEXBOX for the Main Content */
 
-   .theFooter{
+.thefooter {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:2rem;
-  }
+}
 
      /* FLEXBOX for three social media icons*/
-     .socialMediaFlexBox {
+.SocialMediaFlexBox {
       display: flex;
       gap:1rem;    
-    } 
+} 
 
-  .socialMedia { 
+.SocialMedia { 
     object-fit: cover;  
     
     /* Circular Border 
@@ -241,35 +221,28 @@ button:hover {
     /* --grey-light: #e4e4e4; */
     border: 1px solid #e4e4e4;;
     padding:1rem;
-    } 
+} 
 
 
        
-    .joinUs {
-      font-size: 22px;
+.join-us {
+      font-size: 1.375rem; /* 22px; */
       padding-top: 1em;
-  }
+}
   
    
-    .copyright {
-      font-size: 20px;
+.copyright {
+      font-size: 1.25rem; /* 20px; */
       color: gray;
       padding-bottom: 6em;
-    }
+}
 
 
 /* Turn the logo BLUE!
    Thanks for this, Deago Browne */
-.blueInstagram { 
+.BlueInstagram { 
   filter: hue-rotate(250deg);
-  } 
+} 
 
-   
-      .grayBorder {
-            /* --grey-light: #e4e4e4; */
-            border: 1px solid #e4e4e4;
-            border-radius: 50%;
-            padding:1rem;
-            display:inline-block;
-      }
+
  
