@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Karma</title>
+    <title>Store</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
       rel="stylesheet"
@@ -14,13 +14,10 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
     <!-- Header -->
     <header class="header">
       <img src="img/karma-logo.svg" alt="karma-logo" class="karma-icon" />
@@ -51,55 +48,45 @@
 
     <!-- Main Content -->
     <main class="main">
-      <!-- Intro subsection -->
-      <section class="intro">
-        <h1 class="intro-title">Introducing Karma</h1>
-        <p class="description">Bring WiFi with you, everywhere you go.</p>
-        <button class="learn-more-button">Learn More</button>
-      </section>
-
-      <!-- Info subsection -->
-      <section class="info">
-        <p class="info-text">Everyone needs a little Karma.</p>
-        <div class="services">
-          <div class="service">
-            <img
-              src="img/icon-devices.svg"
-              alt="devices"
-              class="service-icon"
-            />
-            <p class="service-text">Internet for all devices</p>
-          </div>
-
-          <div class="service">
-            <img src="img/icon-coffee.svg" alt="coffee" class="service-icon" />
-            <p class="service-text">Boost your productivity</p>
-          </div>
-
-          <div class="service">
-            <img src="img/icon-refill.svg" alt="fuel" class="service-icon" />
-            <p class="service-text">Pay as You Go</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Quote subsection -->
-      <section class="quote">
-        <!-- Used flexbox so that image and quote can go side by side -->
-        <div class="quote-image-box"></div>
-
-        <div class="quote-text-box">
-          <p class="quote-text">
-            <i>
-              <span class="quote-orange">''</span> Wherever I am, I just don't
-              worry about my connection anymore!<span class="quote-orange"
-                >''</span
-              >
-            </i>
-          </p>
-          <button class="quote-button">Get Karma today</button>
-        </div>
-      </section>
+      <form class="form">
+        <p>Order your WiFi device today!</p>
+        <label for="first-name">First Name*</label>
+        <input type="text" id="first-name" name="first-name" />
+        <label for="last-name">Last Name*</label>
+        <input type="text" id="last-name" name="last-name" />
+        <label for="address">Address*</label>
+        <input type="text" id="address" name="address" />
+        <label for="address2">Address2</label>
+        <input type="text" id="address2" name="address2" />
+        <label for="city">City*</label>
+        <select id="city" name="city">
+          <option value="London">London</option>
+        </select>
+        <label for="postcode">Postcode*</label>
+        <input type="text" id="postcode" name="postcode" />
+        <p>Select a colour</p>
+        <input
+          type="radio"
+          id="karma-orange"
+          name="colour"
+          value="karma-orange"
+        />
+        <label for="karma-orange">Karma orange</label>
+        <input type="radio" id="space-grey" name="colour" value="space-grey" />
+        <label for="space-grey">Space Grey</label>
+        <input
+          type="checkbox"
+          id="terms-and-conditions"
+          name="terms-and-conditions"
+          value="terms-and-conditions"
+        />
+        <label for="terms-and-conditions"
+          >By placing your order you agree to Karma's Terms and Conditions.
+          *</label
+        >
+        <input type="submit" value="Place my Order" />
+      </form>
+      <div class="image"></div>
     </main>
 
     <!-- Footer -->
