@@ -85,6 +85,8 @@ h1 {
   font-size: 1.4rem;
 }
 
+/*Intro Button*/
+
 button {
   padding: 0.75rem 1.25rem;
   background-color: #f26639;
@@ -94,20 +96,31 @@ button {
   margin-top: 2rem;
 }
 
-/*Icon Image*/
+/*Karma Icon Images*/
 
-.icon_images {
+.karma_icon_images {
   display: flex;
-  height: 10rem;
-  width: 10rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.karma_icon_devices {
+  height: 50%;
+}
+
+.karma_icon_coffee {
+  height: 50%;
+}
+
+.karma_icon_refill {
+  height: 50%;
 }
 
 /*Icon Text*/
 
-/*Social Media*/
+/*Social Media Images*/
 
 .social_media_instagram {
   display: flex;
   height: 10rem;
-  width: 10rem;
 }
