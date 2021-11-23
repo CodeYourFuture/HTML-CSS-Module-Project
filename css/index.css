@@ -1,0 +1,148 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 0%;
+  background-color: #ebe4e4;
+  margin: 0;
+}
+/* styling the header */
+header {
+  width: 1440px;
+  background-color: #ebe4e4;
+}
+/* styling h1 */
+h1 {
+  margin-bottom: 50px;
+  color: #de6e49;
+}
+store:active {
+  color: orange;
+}
+
+/* styling the form and side image */
+.main {
+  width: 1440px;
+  border: 1px solid red;
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* styling the form */
+form {
+  display: flex;
+  padding-left: 40px;
+  width: 45%;
+  margin: 3% 5%;
+  flex-direction: column;
+  font-size: 15px;
+  height: auto;
+  background-color: white;
+}
+.order-form {
+  display: flex;
+  flex-direction: row;
+}
+
+/* styling the input */
+input,
+#city {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* styling the label */
+label {
+  margin-bottom: 5px;
+}
+
+/* putting the first and last name in a row */
+.full-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* putting first and last name in a column */
+.name-details {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+/* styling address */
+.address-one {
+  display: flex;
+  flex-direction: column;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+/* styling city and postcode */
+.city-postcode {
+  display: flex;
+  justify-content: space-between;
+}
+
+#city {
+  border: 0.5px solid black;
+}
+
+/* styling the button */
+button {
+  border-radius: 4px;
+  background-color: #e0633a;
+  cursor: pointer;
+  padding: 13px;
+  width: 100px;
+  color: white;
+  border-style: none;
+  font-size: 11px;
+  margin-top: 25px;
+}
+
+/* styling radio */
+.radio-check {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+/* changing the radio button color to orange when checked */
+input[type="radio"]:checked:after {
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
+}
+/* styling the terms and conditions */
+.terms {
+  color: tomato;
+}
+
+/* styling the side image */
+.aside-image {
+  background-image: url(../img/karma.jpg);
+  background-size: cover;
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* styling for tablet  */
+@media screen and (max-width: 770px) {
+  nav {
+    font-size: 15px;
+  }
+  header {
+    padding: 2rem;
+  }
+  nav ul li {
+    padding: 0 0.5rem;
+  }
+}
