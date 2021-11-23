@@ -169,10 +169,11 @@ q::after {
   object-fit: contain;
 }
 
+/* Store Order form Page */
+
 .order_form_main_container {
   display: flex;
   flex-direction: row;
-
   padding-bottom: -4rem;
 }
 
@@ -180,8 +181,92 @@ q::after {
   background-color: rgba(224, 99, 58, 0.1);
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
   width: 50%;
+  margin: 3rem 4rem 3rem 4rem;
+}
+
+.order_your_karma_text {
+  font-size: 2rem;
+  color: #e0633a;
+  padding-bottom: 1.5rem;
+}
+
+.form_row {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.form_column {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+label,
+input {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+}
+
+.place_order_btn {
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+}
+
+fieldset {
+  border: none;
+  width: 0;
+  display: inline-block;
+}
+
+.form_width {
+  width: 100%;
+}
+
+/* Radio Button Styling */
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.1em solid currentColor;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transform: translateY(0.2em);
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-colour);
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+:root {
+  --form-control-colour: #e0633a;
 }

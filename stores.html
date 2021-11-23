@@ -18,7 +18,8 @@
     <!-- All the images you need are in the 'img' folder -->
 
 <header>
-   
+   <div class= "navigation_bar">
+
     <div class = "logo">
      <img src= img/karma-logo.svg>     
     </div> 
@@ -33,6 +34,8 @@
             <li class="gray"> Login  </li>
         </ul>
     </nav>
+   </div>
+    
 </header>
 
 
@@ -41,24 +44,61 @@
 <div class= "order_form_main_container">
     <div class = "store_form_background">
         <div>
-            <p>Order your wifi<br>Karma devide today!</p>
+            <p class ="order_your_karma_text">Order your Karma wifi<br> devide today!</p>
 
         </div>
 
-        <div>
-            <p>FORM</p>
+        <div class= "form_width ">
+            <fieldset>
+                <div >
+                    <div class = "form_row " >
+                        <label for="firstname">First name*</label><br>
+                        <input id="firstname" type="text" name="firstname"/><br>
+                        <label for="lastname">Last name*</label><br>
+                        <input id="lastname" type="text" name="lastname"/>
+                    </div>       
+                <label for="address">Address*</label><br>
+                <input id="address" type="text" name="address"/><br>
+                <label for="address2">Address 2*</label><br>
+                <input id="address2" type="text" name="address2"/>   
+                    <div class = "form_row ">
+                        <div class = "form_column">
+                            <label for="city">City*</label><br>
+                            <input id="city" type="text" name="city"/><br>
 
+                        </div>
+                        <div class = "form_column">
+                            <label for="postcode">Postcode*</label><br>
+                            <input id="postcode" type="text" name="postcode"/>
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+               
+
+
+
+
+
+            </fieldset> 
         </div>
         <div>
             <p>Select a colour</p>
+            <div class = "form_row">
+                <input id="karmaorange" type="radio" name="karmacolour" value="karmaorange" />
+                <label for="karmaorange">Karma orange</label>
+                <input id="spacegrey" type="radio" name="karmacolour" value="spacegrey" checked />
+                <label for="spacegrey">Space Grey</label>  
+            </div>
 
         </div>
         <div >
             <input id="agreement" type="checkbox" name="agreement" />
-            <label for="agreement">By clicking this checkbox you agree to our Terms and Conditions</label>
+            <label for="agreement">By placing your order you agree to Karma's <u>Terms and<br>Conditions</u> *</label>
         </div>
         <div>
-            <btn class ="learn_btn">Place my order</btn>
+            <btn class ="place_order_btn">Place my order</btn>
         </div>    
             
         
