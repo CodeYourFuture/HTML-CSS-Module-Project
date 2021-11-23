@@ -120,10 +120,76 @@ h5 {
   text-align: center;
   width: 30vw;
 }
+/* Get-Karma-today */
+
+.Get-Karma {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+.article-img {
+  width: 40%;
+  height: 439px;
+  top: 1200px;
+  background: url("https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Coursework-Week2/master/additional/feature-img.png");
+}
+
+.article-container {
+  width: 60%;
+  background-color: rgba(255, 171, 143, 0.1);
+}
+.article-text {
+  position: absolute;
+  width: 548px;
+  height: 141px;
+  left: 570px;
+  top: 1250px;
+
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #434242;
+}
+
+.article-button {
+  position: absolute;
+  width: 180px;
+  height: 70px;
+  left: 750px;
+  top: 1450px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10%;
+}
+
 /* styling the footer */
 .footer {
   bottom: 0;
   margin-top: 10vw;
+}
+
+footer {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+}
+hr {
+  width: 80%;
+  height: 2px;
+  border-width: 0;
+  color: rgb(196, 196, 196);
+  background-color: rgb(196, 196, 196);
 }
 .social {
   max-height: 2vw;
