@@ -110,7 +110,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; /* stretch from left to right */
-    
+
     /* height: 735px; = 45.938rem. If you set NO height, the image will not show! */
     /* width: 100rem; */
     width:100%;
@@ -191,7 +191,7 @@ button:hover {
     padding-bottom: 3rem;
  }
    
-/* Showing the 'extended section' of the lady and the quote */
+/* Showing the 'extended section' of the woman and the quote */
 .ExtendedFlexBox {
   display: flex;
   
@@ -201,7 +201,7 @@ button:hover {
 }
 
 /* THE ACTUAL SIZE OF THE IMAGE IS 599 x 439 PIXELS, 37.44 x 27.44 rem */
-.SmilingLady {
+.SmilingWoman {
     width:37.44rem;
     height:27.44rem;
     /* width: max-content; */
@@ -210,10 +210,44 @@ button:hover {
 
 .quote-container {
   background: rgba(224, 99, 58, 0.1);
-  font-size:2rem;
+  font-size:3rem;
   text-align: center;
-  width:100%;
+  padding-top:2rem;
+  /* width:100%; */
   /* flex-grow: 1; */
+}
+
+.thequote {
+  position: relative;
+}
+
+/* Solution regarding quotes taken from 
+   https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-elements-in-css/#h-custom-blockquote */
+
+.blockquote {
+  /* position: relative; */
+}
+
+/* Handle the blockquote */
+
+blockquote::before {
+  content: open-quote;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  font-size:1em;
+  color: #E5E5E5;
+  /* Place it at the top-left */
+  top: 0;
+  left: 0;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  font-size:1em;
+  color: #E5E5E5;
+  /* Place it at the bottom-right */
+  bottom: 0;
+  right: 0;
 }
 
 
