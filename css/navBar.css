@@ -1,0 +1,32 @@
+/* HEADER*/
+.header {
+    display: flex;
+}
+
+.header-image {
+    height: 50px;
+    width: 50px;
+    padding-left: 160px;
+    padding-top: 15px;
+}
+
+/* NAVIGATION */
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-left: 900px;
+}
+
+.nav-item {
+    padding: 17px;
+}
+
+.nav-link:hover {
+    color: #eb6728;
+}
+
+.nav-link {
+   text-decoration: none; 
+   color: #888;
+} 
