@@ -137,7 +137,7 @@ body {
   /* Buttons */
 
 .LearnMoreButton {
-  background-color: #ff6200; /* #ec5800; */ /* persimmon */
+  background-color: #ff6200; 
   color: #ffffff;
   border: none;
   padding: 20px 36px;
@@ -221,33 +221,18 @@ button:hover {
   position: relative;
 }
 
-/* Solution regarding quotes taken from 
-   https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-elements-in-css/#h-custom-blockquote */
-
-.blockquote {
-  /* position: relative; */
-}
-
 /* Handle the blockquote */
 
 blockquote::before {
   content: open-quote;
-  font-family:Georgia, "Times New Roman", Times, serif;
   font-size:1em;
-  color: #E5E5E5;
-  /* Place it at the top-left */
-  top: 0;
-  left: 0;
+  color: #ff6200;
 }
 
 blockquote::after {
   content: close-quote;
-  font-family:Georgia, "Times New Roman", Times, serif;
   font-size:1em;
-  color: #E5E5E5;
-  /* Place it at the bottom-right */
-  bottom: 0;
-  right: 0;
+  color: #ff6200;
 }
 
 
