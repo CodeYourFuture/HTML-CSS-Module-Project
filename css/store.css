@@ -1,0 +1,72 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 5%;
+  height: 5%;
+  align-items: center;
+}
+/* nav bar */
+
+nav {
+  display: block;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+a {
+  text-decoration: none;
+  color: rgb(116, 114, 114);
+}
+
+/* the color of links on hover */
+.nav__links li a:hover {
+  color: orangered;
+}
+
+/* Adding bold font to the active/current link */
+.active {
+  font-weight: bold;
+}
+/* logo */
+.logo {
+  height: 30px;
+  width: 25px;
+  cursor: pointer;
+}
+.logo-top {
+  width: 25%;
+  padding: 10px;
+}
+
+/* main general design */
+
+.store-container {
+  display: flex;
+  width: 100%;
+}
+.store-image {
+  background: url("store-image_by-andrew-neel-unsplash.jpg");
+  width: 50%;
+}
+.store-form {
+  margin-left: 100px;
+  width: 50%;
+}
+/* form */
+
+.name-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+  height: 35px;
+}

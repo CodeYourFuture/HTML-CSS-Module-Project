@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+</html>
+<body>
+  <header>
+    <img class="logo" src="img/karma-logo.svg" alt="logo" />
+    <nav class="nav__links">
+      <ul>
+        <li><a class="active" href="#Meet Karma">Meet Karma</a></li>
+        <li><a href="#How it Works">How it Works</a></li>
+        <li><a href="#Store">Store</a></li>
+        <li><a href="#Blog">Blog</a></li>
+        <li><a href="#Help">Help</a></li>
+        <li><a href="#Login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="store-container">
+      <section class="store-image"></section>
+      <section class="store-form">
+        <form>
+          <!-- name -->
+          <fieldset class="name-container" class="name-box">
+            <div>
+              <label for="fname">First Name:</label><br />
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+                required="true"
+              />
+            </div>
+
+            <div>
+              <label for="lname">Last Name:</label><br />
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+                required="true"
+              />
+            </div>
+          </fieldset>
+
+          <!-- address -->
+          <fieldset>
+            <label for="Address">Address</label><br />
+            <input
+              for="text"
+              id="adr1"
+              name="address1"
+              placeholder="first line of your address"
+              required="true"
+            />
+            <br />
+            <label for="Address">Address 2</label><br />
+            <input
+              for="text"
+              id="adr2"
+              name="address2"
+              placeholder="Second line of your address"
+              required="true"
+            />
+          </fieldset>
+          <!-- dropdown -->
+          <fieldset>
+            <div>
+              <label for="cities">City</label><br />
+              <select id="cities" name="cities">
+                <option value="select">Seclect</option>
+                <option value="london">London</option>
+                <option value="winchester">Winchester</option>
+                <option value="southampton">Southampton</option>
+                <option value="manchester">Manchester</option>
+                <option value="leeds">Leeds</option>
+                <option value="birmingham">Birmingham</option>
+                <option value="coventry">Coventry</option>
+                <option value="bath">Bath</option>
+                <option value="brighton">Brighton</option>
+              </select>
+            </div>
+            <div>
+              <label for="postcode">Post Code</label><br />
+              <input
+                for="text"
+                id="number"
+                name="address2"
+                placeholder="Your PostCode"
+                required="true"
+              />
+            </div>
+          </fieldset>
+          <!-- radio button  -->
+          <fieldset>
+            <p>Select a colour</p>
+            <div>
+              <input
+                type="radio"
+                id="form__orange"
+                value="orange"
+                name="colour"
+              />
+              <label for="form__orange">Karma Orange</label>
+
+              <input type="radio" id="form__grey" value="grey" name="colour" />
+              <label for="form__grey">Space Grey</label>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </article>
+  </main>
+
+  <footer></footer>
+</body>
