@@ -16,13 +16,11 @@
 
     <!--==================== NAVBAR ====================-->
     <div>
-        <a href="#">
-            <img
-              src="img/karma-logo.svg"
-              alt="Karma official logo"
-              class="header_logo"
-            />
-          </a>
+        <img
+            src="img/karma-logo.svg"
+            alt="Karma official logo"
+            class="header_logo"
+        />
     </div>
 
     <nav class="container">
@@ -52,22 +50,23 @@
             
             <h1 class="intro">Order you Karma wifi device today!</h1>
     
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">Last name:</label>
+                <label for="fname">First name *</label>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname">Last name *</label>
                 <input type="text" id="lname" name="lname" minlength="3" maxlength="36" required><br><br>
 
             <br>
         
 
-            <label for="adr" class="address">Address</label>
-            <input type="text" id="adr" name="address" >
+            <label for="adr" class="address">Address *</label>
+            <input type="text" id="adr" name="address" required>
             <label for="adr" class="address">Address 2</label>
             <input type="text" id="adr" name="address" >
              <br>
         
-             <label for="city">City:</label>
-        <select name="city" id="city" placeholder="select your city...">
+             <label for="city">City *</label>
+        <select name="city" id="city" required>
+          <option value="option">select your option...</option>
           <option value="london">London</option>
           <option value="Bristol">Bristol</option>
           <option value="Manchester">Manchester</option>
@@ -82,8 +81,8 @@
           <option value="York">York</option>
          </select>
 
-         <label for="postcode">Postcode</label>
-                <input type="text" id="postcode" name="postcode">
+         <label for="postcode">Postcode *</label>
+                <input type="text" id="postcode" name="postcode" required>
            <br>
 
            <label>Pick a colour:</label>
@@ -96,13 +95,11 @@
            <br>
 
            <input id="agreement" type="checkbox" name="agreement" />
-           <label for="agreement">By placing your order you agree to karma's<a>Terms and Conditions.</a></label>
+           <label for="agreement">By placing your order you agree to karma's <a href="#">Terms and Conditions</a>. *</label>
            <br>
-           <button class="intro-btn">Place my order</button>
-
+           <button type="button" class="intro-btn">Place my order</button>
         </form>
-        </div> <!-- end div-->
-
+        </div> <!-- end div -->
         <div class="store-col">
             <img
               src="img/store-image.jpeg"
@@ -110,8 +107,6 @@
               class="store-image"
             />
         </div>
-          
-
     </section>
     </main>
     <hr>
