@@ -13,16 +13,42 @@ body {
   display: flex;
   width: 100%;
   height: 120px;
-  background-color: rgb(247, 239, 244);
+  background-color: rgb(233, 233, 233);
 }
 
 /*header_logo*/
 .header_logo {
   height: 75px;
   margin-left: 150px;
-  top: -50px;
+  top: -25px;
   position: relative;
   top: 25px;
+}
+
+/*Top Right Navigation Links*/
+a:hover {
+  color: orange;
+}
+
+.navigation__list {
+  display: flex;
+  position: relative;
+  bottom: 25px;
+  margin-left: 750px;
+  top: 30px;
+}
+
+.navigation__item {
+  color: silver;
+  padding: 0;
+  display: flex;
+}
+
+.navigation__link {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-decoration: none;
+  margin: 30px;
 }
 
 /*first section order page*/
@@ -30,21 +56,65 @@ body {
   display: flex;
   margin-left: 150px;
   margin-right: 900px;
-  background-color: lightseagreen;
+  position: relative;
+  top: 75px;
+  color: orangered;
 }
+
+.form_details {
+  position: relative;
+  top: 100px;
+  margin-left: -85px;
+  margin-right: 1000px;
+}
+.head_title {
+  display: flex;
+  color: orangered;
+}
+
+form {
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+fieldset {
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  padding: 0 0.625em;
+}
+input {
+  /*display: block;*/
+  margin: 25px;
+  height: 30px;
+  position: relative;
+  top: 40px;
+  margin-left: -50px;
+}
+
+label {
+  width: 100px;
+  /*display: block;*/
+  height: 25px;
+  position: relative;
+  margin-left: 50px;
+}
+
 /*image*/
 .section-2 {
   display: flex;
   margin-left: 1020px;
   background-color: magenta;
-  margin-top: -80px;
+  margin-top: -545px;
   position: relative;
 }
 
 /*working at desk image*/
 .working_desk {
   width: 1000px;
-  height: 800px;
+  height: 900px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -56,7 +126,7 @@ body {
   flex-direction: column;
   position: relative;
   height: 100px;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 /* Join Us On */
@@ -87,5 +157,5 @@ body {
   font-size: 15px;
   color: gray;
   position: relative;
-  bottom: 50px;
+  bottom: 30px;
 }
