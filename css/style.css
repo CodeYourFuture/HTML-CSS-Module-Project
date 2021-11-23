@@ -112,10 +112,20 @@ footer p {
 }
 
 footer img {
+  display: flex;
   width: 15px;
+  padding: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icon {
   border: 1px solid #bdc3c7;
   border-radius: 100px;
-  padding: 10px;
+  margin: 5px;
 }
 
 .trademark {
