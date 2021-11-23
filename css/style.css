@@ -1,10 +1,3 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
 main,
 footer {
   text-align: center;
@@ -28,215 +21,110 @@ h3 {
 
 h4 {
   font-size: 1.8rem; /* Main articles */
-  font-weight: 400;
 }
-
-h5 {
-  font-size: 1.1rem; /* For "Join Us" located in the footer */
-  font-weight: 500;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 100px;
-}
-.header_logo {
-  max-height: 35px;
-  width: auto;
-}
-/* Applying styling for Menu */
-
-.navigation__list {
-  display: flex;
-  list-style: none;
-}
-
-.hamburger_menu {
-  display: none;
-}
-
-.navigation__link {
-  padding: 0px 15px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #7f7f7f;
-}
-
-.navigation__link:hover {
-  color: #c05326;
-}
-
-.meet_karma {
-  color: #303030;
-  font-weight: 500;
-}
-/* Setting dark and light font color to use for multiple elements*/
-
-.text_color_dark {
-  color: #4c4c4c;
-}
-
-.text_color_light {
-  color: whitesmoke;
-}
-
-/* Styling HERO section */
 
 .hero {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 200px 0px;
+  padding: 200px 0;
 }
-.hero_in {
+
+.hero_items {
   /*applies for div inside hero*/
   width: 62%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.button {
-  width: fit-content;
-  background-color: #c05326;
-  border: none;
-  padding: 20px 30px;
-  border-radius: 3px;
-  margin-top: 30px;
-  font-size: 1.2rem;
-}
+/* Styling features*/
 
-/* Styling main section 1*/
-.section1 {
+.features_container {
   padding-bottom: 60px;
 }
-.direction_row_center {
-  /*applied for social icons and main articles */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
-.articles {
+.features {
   padding-top: 20px;
 }
 
-.direction_column_center {
-  /*applied for individual articles */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.article_width {
-  /* articles are wrapped in <div> to make same width and adjust center position */
+.feature_width {
+  /* features are wrapped in <div> to make same width and adjust center position */
   width: 400px;
 }
 
-.article_thumbnail {
-  /*Article images */
+.feature_thumbnail {
+  /*feature images */
   max-height: 150px;
   width: auto;
 }
 
-/* styling main section 2 of the page */
+/* styling Get Karma section */
 
 .get_karma {
-  display: flex;
-  flex-direction: row;
+  background: #fceae8;
   justify-content: stretch;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.quote {
-  background: #fceae8;
-  width: 100vw;
-  height: auto;
-  justify-content: center;
+.add_feature_img {
+  object-fit: cover;
 }
 
 .quote_text {
   width: 68%;
   font-style: italic;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 
-.article_underline {
-  /*line separation main and footer */
-  padding-bottom: 50px;
-  border-bottom: 1.5px solid #dddddd;
-  margin: 0px 100px;
-}
-/* styling footer */
-
-.social {
-  /* each social_icon wrapped in <div> to create circle border without cutting an image */
-  max-height: 20px;
-  width: 20px;
-  padding: 8px;
-  border-radius: 50px;
-  border: solid #dddddd 1px;
-  margin: 10px;
-}
-
-.social_icon {
-  max-height: 20px;
-  width: auto;
-}
-
-.copyright {
-  color: #7f7f7f;
-  font-size: 0.9rem;
+q::before,
+q::after {
+  font-size: 50px;
+  color: #e0633a;
 }
 
 @media screen and (max-width: 950px) {
-  .article_width {
+  .feature_width {
     /* articles are wrapped in <div> to make same width and adjust center position */
     width: 250px;
   }
   .hero {
     padding: 100px 0px;
   }
+
   .quote_text {
-    width: 68%;
-    font-size: 1.5rem;
+    font-size: 35px;
   }
 
-  .button {
-    padding: 10px 20px;
-    border-radius: 3px;
-    margin: 0px 20px;
-    font-size: 1rem;
+  q::before,
+  q::after {
+    font-size: 40px;
   }
 }
 
-@media screen and (max-width: 855px) {
-  .navigation__link {
-    padding: 0px 10px;
-    font-size: 1rem;
-  }
-
+@media screen and (max-width: 885px) {
   .get_karma {
     flex-direction: column;
   }
 
   .quote {
-    padding-bottom: 30px;
+    padding: 30px 0;
   }
+
   .hero {
     padding: 50px 0px;
   }
 }
 
 @media screen and (max-width: 715px) {
-  nav {
-    display: none;
+  .quote_text {
+    font-size: 28px;
   }
-  .hamburger_menu {
-    display: flex;
+
+  q::before,
+  q::after {
+    font-size: 35px;
   }
 }
 
@@ -258,28 +146,21 @@ h5 {
   }
 
   h4 {
-    font-size: 1.2rem; /* Main articles */
-    font-weight: 400;
+    font-size: 1.5rem; /* Features */
   }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+
+  .button {
+    padding: 10px 20px;
+    margin: 20px 0px;
+    font-size: 18px;
   }
 
   .hero {
     padding: 20px 0px;
   }
 
-  #articles {
-    /*used id to overwrite class .direction_row_center for section 1*/
+  .features_container .flex {
+    /*used id to overwrite class .direction_row_center for features*/
     flex-direction: column;
-  }
-
-  .button {
-    padding: 10px 20px;
-    border-radius: 3px;
-    margin: 10px 0px 20px 0px;
-    font-size: 0.8rem;
   }
 }

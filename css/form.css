@@ -1,0 +1,120 @@
+body {
+  width: 100vw;
+}
+
+h1 {
+  width: 75%;
+}
+
+.pad_bot {
+  padding-bottom: 30px;
+}
+
+.pad_top {
+  padding-top: 30px;
+}
+
+.head_backgr {
+  background: rgba(196, 196, 196, 0.1);
+}
+
+/* Styling Form BOX*/
+
+.form_box {
+  width: 50%;
+  padding: 100px 100px 30px 100px;
+}
+
+.required:after {
+  content: " *";
+  color: #666666;
+}
+
+.input_box {
+  padding: 10px;
+}
+.label_pad {
+  padding-bottom: 10px;
+}
+
+.name_box {
+  width: 47%;
+}
+
+.city_box {
+  width: 65%;
+}
+
+.post_box {
+  width: 30%;
+}
+
+.sel_col {
+  padding-left: 0;
+  border: none;
+}
+
+/*Styling radio buttons*/
+.radio {
+  margin-right: 5px;
+}
+.radio_text {
+  padding-right: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #666666;
+}
+
+input[type="radio"]:checked + *::before {
+  background: radial-gradient(
+    #e0633a 0%,
+    #e0633a 40%,
+    transparent 50%,
+    transparent
+  );
+  border-color: #666666;
+}
+/*styling image box*/
+
+img {
+  max-width: 100%;
+  max-height: 1235px;
+}
+
+/*styling T&C checkbox*/
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #666666;
+  border-radius: 3px;
+}
+input[type="checkbox"]:checked + *::before {
+  background-image: url("../img/checkmark.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}

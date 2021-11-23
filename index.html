@@ -14,101 +14,113 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/form.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
   <body>
-    <header class="header">
-      <img src="img/karma-logo.svg" alt="karma_logo" class="header_logo" />
+    <header class="header flex">
+      <div>
+        <img src="img/karma-logo.svg" alt="karma_logo" class="header_logo" />
+      </div>
       <nav>
-        <ul class="navigation__list">
+        <ul class="navigation__list flex">
           <li class="navigation__item">
-            <a class="navigation__link meet_karma" href="#">Meet Karma</a>
+            <a
+              class="navigation__link font_bold text_base_color"
+              href="index.html"
+              >Meet Karma</a
+            >
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">How it Works</a>
+            <a class="navigation__link text_color_med" href="#">How it Works</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Store</a>
+            <a class="navigation__link text_color_med" href="store.html"
+              >Store</a
+            >
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Blog</a>
+            <a class="navigation__link text_color_med" href="blog.html">Blog</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Help</a>
+            <a class="navigation__link text_color_med" href="#">Help</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Login</a>
+            <a class="navigation__link text_color_med" href="#">Login</a>
           </li>
         </ul>
       </nav>
       <img src="img/menu-hamburger.svg" class="hamburger_menu" />
     </header>
-
     <main>
       <div class="hero text_color_light">
-        <div class="hero_in">
+        <div class="hero_items">
           <h1>Introducing Karma</h1>
           <h3>Bring WiFi with you, everywhere you go.</h3>
           <button class="button text_color_light">Learn more</button>
         </div>
       </div>
 
-      <section class="section1">
-        <h2 class="text_color_dark">Everyone needs a little Karma.</h2>
-        <div
-          class="articles text_color_dark direction_row_center"
-          id="articles"
-        >
-          <article class="direction_column_center article_width">
+      <section class="features_container">
+        <h2 class="text_base_color">Everyone needs a little Karma.</h2>
+        <div class="features text_base_color flex center">
+          <section class="flex center direction feature_width">
             <img
               src="img/icon-devices.svg"
               alt="devices"
-              class="article_thumbnail"
+              class="feature_thumbnail"
             />
-            <h4>Internet for all devices</h4>
-          </article>
+            <h4 class="font_med">Internet for all devices</h4>
+          </section>
 
-          <article class="direction_column_center article_width">
+          <section class="flex center direction feature_width">
             <img
               src="img/icon-coffee.svg"
               alt="hot cup of coffee"
-              class="article_thumbnail"
+              class="feature_thumbnail"
             />
-            <h4>Boost your productivity</h4>
-          </article>
+            <h4 class="font_med">Boost your productivity</h4>
+          </section>
 
-          <article class="direction_column_center article_width">
+          <section class="flex center direction feature_width">
             <img
               src="img/icon-refill.svg"
               alt="refill station"
-              class="article_thumbnail"
+              class="feature_thumbnail"
             />
-            <h4>Pay as you Go</h4>
-          </article>
+            <h4 class="font_med">Pay as you Go</h4>
+          </section>
         </div>
       </section>
 
-      <section class="get_karma">
+      <section class="get_karma flex">
         <img
+          class="add_feature_img"
           src="additional/feature-img.png"
           alt="a woman smiling looking at her tablet"
         />
-        <div class="quote direction_column_center">
-          <p class="quote_text text_color_dark">
+        <div class="flex center direction">
+          <q class="quote_text text_base_color font_med">
             Wherever I am, I just don't worry about my connection anymore!
-          </p>
-          <button class="button text_color_light">Get Karma today</button>
+          </q>
+          <button
+            onclick="window.location.href='store.html'"
+            class="button text_color_light"
+          >
+            Get Karma today
+          </button>
         </div>
       </section>
-      <div class="article_underline"></div>
     </main>
 
     <footer>
+      <div class="underline"></div>
       <section>
-        <h5 class="text_color_dark">Join us on</h5>
+        <h5 class="text_base_color font_bold">Join us on</h5>
 
-        <div class="direction_row_center">
+        <div class="flex center">
           <div class="social">
             <img src="img/twitter-icon.svg" alt="twitter" class="social_icon" />
           </div>
@@ -131,7 +143,7 @@
         </div>
       </section>
 
-      <p class="copyright">© Karma Mobility, Inc.</p>
+      <p class="copyright text_color_med">© Karma Mobility, Inc.</p>
     </footer>
   </body>
 </html>

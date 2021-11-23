@@ -1,0 +1,152 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+}
+
+.it_text {
+  font-style: italic;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.highlight_color {
+  color: #e0633a;
+}
+
+.text_base_color {
+  color: #434242;
+}
+
+.text_color_med {
+  color: #7f7f7f;
+}
+
+.text_base_color2 {
+  color: #666666;
+}
+
+.text_color_light {
+  color: #ffffff;
+}
+
+.button {
+  border: none;
+  padding: 20px 30px;
+  border-radius: 3px;
+  margin: 30px 0px;
+  font-size: 24px;
+  background-color: #e0633a;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.direction {
+  flex-direction: column;
+}
+
+.font_bold {
+  font-weight: 500;
+}
+
+.font_med {
+  font-weight: 400;
+}
+
+/* Applying styling for header */
+
+.header {
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.header_logo {
+  width: 30px;
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+.hamburger_menu {
+  display: none;
+}
+
+.navigation__link {
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navigation__link:hover {
+  color: #e0633a;
+}
+
+/*Applying styling for footer*/
+
+.underline {
+  /*line separation main and footer */
+  border-top: 1.5px solid #dddddd;
+  margin: 0px 100px;
+}
+
+/* styling footer */
+h5 {
+  text-align: center;
+  font-size: 1.1rem; /* For "Join Us" located in the footer */
+}
+
+.social {
+  /* each social_icon wrapped in <div> to create circle border without cutting an image */
+  height: 20px;
+  width: 20px;
+  padding: 8px;
+  border-radius: 50px;
+  border: solid #dddddd 1px;
+  margin: 10px;
+}
+
+.social_icon {
+  height: 20px;
+  width: auto;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+/*Media and screen sizes*/
+
+@media screen and (max-width: 855px) {
+  .navigation__link {
+    padding: 0px 10px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger_menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .header {
+    padding: 20px;
+  }
+}
