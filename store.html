@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/store.css" />
+    <title>Store</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo_div">
+        <img src="./img/karma-logo.svg" alt="karma logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_li">
+            <a class="nav_link" href="#" active>Meet Karma</a>
+          </li>
+          <li class="nav_li">
+            <a class="nav_link" href="#">How it works</a>
+          </li>
+          <li class="nav_li">
+            <a class="nav_link" href="#">Store</a>
+          </li>
+          <li class="nav_li">
+            <a class="nav_link" href="./index.html">Blog</a>
+          </li>
+          <li class="nav_li">
+            <a class="nav_link" href="#">Help</a>
+          </li>
+          <li class="nav_li">
+            <a class="nav_link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="store">
+        <section class="store_section">
+          <fieldset class="store_form_div">
+            <h2>Order your Karma wifi device today!</h2>
+            <form class="store_form">
+              <div class="names_item">
+                <label for="firstname"
+                  >Firs Name<span style="color: red;">*</span>
+
+                  <input type="text" id="firstname" class="input firstname" />
+                </label>
+                <label for="firstname"
+                  >Last name<span style="color: red;">*</span>
+
+                  <input type="text" id="lastname" class="input lastname" />
+                </label>
+              </div>
+              <div class="address_first_item">
+                <label for="address_first"
+                  >Address<span style="color: red;">*</span><br />
+                  <input type="text" id="address_first" class="input" />
+                </label>
+                <label for="address_second"
+                  >Address 2 <br />
+                  <input type="text" id="address_second" class="input" />
+                </label>
+              </div>
+              <div class="address_second_item">
+                <label for="city">
+                  City<span style="color: red;">*</span><br />
+                  <select name="city" id="city">
+                    <option value="none">Select Your City...</option>
+                    <option value="London">London</option>
+                    <option value="London">Brighton</option>
+                    <option value="London">Manchester</option>
+                    <option value="London">Leeds</option>
+                  </select>
+                </label>
+              </div>
+              <div class="color_terms_div">
+                <div class="radio_part">
+                  <p>Select a colour <span style="color: red;">*</span></p>
+                  <div class="radio_item">
+                    <label for="orange">
+                      <input type="radio" id="orange" name="color" />
+                      Karma Orange
+                    </label>
+                    <label for="gray">
+                      <input type="radio" id="gray" name="color" />
+                      Karma Gray
+                    </label>
+                  </div>
+                </div>
+                <div class="terms_item">
+                  <label for="terms">
+                    <input type="checkbox" />
+
+                    By placing your order you agree to Karma's
+                    <a href="#" class="terms_link">Terms and Conditions</a>.
+
+                    <span style="color: red;">*</span>
+                  </label>
+                </div>
+              </div>
+              <button class="form_btn">Place My Order</button>
+            </form>
+          </fieldset>
+          <div class="store_img_div"></div>
+        </section>
+      </article>
+    </main>
+    <hr />
+    <footer class="footer">
+      <h4>Join us on</h4>
+      <div class="icons_container">
+        <a href="#"> <img src="./img/twitter-icon.svg" alt="twitter" /></a>
+        <a href="#"> <img src="./img/facebook-icon.svg" alt="Facebook" /></a>
+        <a href="#"> <img src="./img/instagram-icon.svg" alt="Instagram" /></a>
+      </div>
+      <h5 class="watermark">Karma mobility, Inc.</h5>
+    </footer>
+  </body>
+</html>

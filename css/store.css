@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+h1 {
+  font-size: 4.5vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
+h3 {
+  font-size: 2vw;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgb(233, 224, 224);
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ======================Header styles ========================*/
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+
+.nav {
+  width: 70%;
+  font-size: 1.5vw;
+  align-self: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: right;
+  padding: 0 0.5em;
+}
+
+.nav_li {
+  list-style: none;
+  font-weight: bolder;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: rgb(114, 113, 113);
+}
+.nav_link:hover {
+  color: rgb(255, 115, 0);
+}
+.nav_link:active {
+  color: black;
+}
+
+.logo_div {
+  padding-left: 3%;
+}
+
+.logo_div img {
+  width: 10%;
+  max-width: 50%;
+  margin-left: 10px;
+}
+
+/* ==================================Main Styles=============================== */
+/* ------------------Store Article */
+.store {
+  width: 100%;
+}
+.store_section {
+  width: 100%;
+  display: flex;
+}
+.store_form_div {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em 4em;
+}
+.store_form p {
+  font-size: 1.5vw;
+}
+.store_img_div {
+  width: 50%;
+  background-image: url("../img/store-image_by-andrew-neel-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.store_form_div h2 {
+  color: rgb(250, 94, 32);
+}
+.input {
+  font-size: 1.2vw;
+  border: 1px solid gray;
+  padding: 0.5em;
+  margin-top: 5px;
+}
+.names_item {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+.names_item label input {
+  width: 100%;
+}
+
+.address_first_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.address_first_item input {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 2%;
+  font-size: 1.5vw;
+}
+select {
+  border: 1px solid gray;
+  color: gray;
+}
+select,
+option {
+  margin-top: 5px;
+  padding: 0.5em;
+  font-size: 1.5vw;
+  width: 40%;
+  background: white;
+}
+select option:first-child {
+  color: gray;
+}
+option {
+  font-size: 2vw;
+  color: black;
+}
+.color_terms_div {
+  width: 100%;
+  flex-direction: column;
+}
+.radio_part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+.radio_item {
+  width: 70%;
+  display: flex;
+}
+.terms_link {
+  color: #e0633a;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 1px solid #e08a6e;
+  border-radius: 50%;
+  padding: 3px;
+  background: #e9e1e1;
+  background-clip: content-box !important;
+}
+input[type="radio"]:checked {
+  background: #e0633a;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 1px solid #e08a6e;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  background: #e9e1e1;
+  background-clip: content-box !important;
+}
+input[type="checkbox"]:checked {
+  color: #e0633a;
+  position: relative;
+  font-size: 1.5vw;
+}
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+}
+/* =================================Footer styles================== */
+.footer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons_container {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.icons_container a {
+  background-color: transparent;
+  display: block;
+  margin-left: 20px;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icons_container img {
+  max-width: 20px;
+}
+
+.watermark {
+  color: gray;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgb(233, 224, 224);
+  margin: 5% auto;
+}
+.form_btn {
+  padding: 1em 1.5em;
+  color: white;
+  background: #e0633a;
+  margin: 20px auto;
+  font-size: 1.5vw;
+}
