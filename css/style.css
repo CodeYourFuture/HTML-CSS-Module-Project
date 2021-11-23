@@ -100,6 +100,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
   /* The main image i.e. the 'hero' */ 
@@ -165,7 +166,8 @@ button:hover {
   /* --grey-light: #e4e4e4; */
   background-color:#e4e4e4;
   height:1px; /* Must set the height to show the coloured line -see https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php */
- }
+  margin-top:4rem;
+}
 
    /* FLEXBOX for three icons*/
 
@@ -191,34 +193,38 @@ button:hover {
     padding-bottom: 3rem;
  }
    
-/* Showing the 'extended section' of the woman and the quote */
+/* Showing the 'extended section' consisting of the woman and the quote */
 .ExtendedFlexBox {
+
   display: flex;
-  
-  /* margin-top:4rem;
-  gap:7rem;    
-  padding-bottom:6rem; */
+  /* align-self: flex-start; */
 }
+
+/*   
+ .ExtendedFlexBox > * :last-child {
+  width: 1250px;
+} */
 
 /* THE ACTUAL SIZE OF THE IMAGE IS 599 x 439 PIXELS, 37.44 x 27.44 rem */
 .SmilingWoman {
     width:37.44rem;
     height:27.44rem;
-    /* width: max-content; */
-    /* flex-grow: 1; */
 }
 
-.quote-container {
+.quote-button-container {
   background: rgba(224, 99, 58, 0.1);
   font-size:3rem;
   text-align: center;
   padding-top:2rem;
-  /* width:100%; */
-  /* flex-grow: 1; */
+  
+  /* flex-grow: 1; */ 
+  /* Couldn't get the 2nd quote to extend to the right using this
+     so I had to use width: calc(100vw - 37.44rem); instead */
 }
 
-.thequote {
-  position: relative;
+.ExtendedFlexBox .quote-button-container {
+    width: 1250px;
+    width: calc(100vw - 37.44rem);
 }
 
 /* Handle the blockquote */
@@ -245,7 +251,8 @@ blockquote::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:2rem;
+    /* gap:2rem; */
+    justify-content: space-between;
 }
 
      /* FLEXBOX for three social media icons*/
@@ -272,6 +279,7 @@ blockquote::after {
 .join-us {
       font-size: 1.375rem; /* 22px; */
       padding-top: 1em;
+      margin: auto;
 }
   
    
@@ -301,8 +309,9 @@ blockquote::after {
 {
   width: 50%;
 }
+
 /* THE ACTUAL SIZE OF THE IMAGE IS 632 x 948 PIXELS */
-.LadyAtDesk{
+.WomanAtDesk{
   width: 50%;
 }
 
