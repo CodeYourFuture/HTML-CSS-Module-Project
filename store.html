@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+    
+    <!--==================== HEADER ====================-->
+<header class="header" id="header">
+
+    <!--==================== NAVBAR ====================-->
+    <div>
+        <a href="#">
+            <img
+              src="img/karma-logo.svg"
+              alt="Karma official logo"
+              class="header_logo"
+            />
+          </a>
+    </div>
+
+    <nav class="container">
+        <a class="nav_icon-text">Meet Karma</a>
+            
+        <a class="nav_icon">How it Works</a>
+
+        <a class="nav_icon">Store</a>
+
+        <a class="nav_icon">Blog</a>
+
+        <a class="nav_icon">Help</a>
+
+        <a class="nav_icon">Login</a>
+    </nav>
+</header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+
+    <!--==================== BODY SECTION ====================-->
+    <section class="store-cols" >
+
+        <div class="store-col">
+            
+        <form name="myForm">
+            
+            <h1 class="intro">Order you Karma wifi device today!</h1>
+    
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" minlength="3" maxlength="36" required><br><br>
+
+            <br>
+        
+
+            <label for="adr" class="address">Address</label>
+            <input type="text" id="adr" name="address" >
+            <label for="adr" class="address">Address 2</label>
+            <input type="text" id="adr" name="address" >
+             <br>
+        
+             <label for="city">City:</label>
+        <select name="city" id="city" placeholder="select your city...">
+          <option value="london">London</option>
+          <option value="Bristol">Bristol</option>
+          <option value="Manchester">Manchester</option>
+          <option value="Birmingham">Birmingham</option>
+          <option value="Westminister">Westminister</option>
+          <option value="Southampton">Southampton</option>
+          <option value="Preston">Preston</option>
+          <option value="Exeter">Exeter</option>
+          <option value="Wells">Wells</option>
+          <option value="Oxford">Oxford</option>
+          <option value="Liverpool">Liverpool</option>
+          <option value="York">York</option>
+         </select>
+
+         <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode">
+           <br>
+
+           <label>Pick a colour:</label>
+           <input id="orange" type="radio" value="orange" name="colour">
+           <label for="orange">Karma orange</label>
+        
+           <input id="grey" type="radio" value="grey" name="colour">
+           <label for="grey">Space grey</label>
+      
+           <br>
+
+           <input id="agreement" type="checkbox" name="agreement" />
+           <label for="agreement">By placing your order you agree to karma's<a>Terms and Conditions.</a></label>
+           <br>
+           <button class="intro-btn">Place my order</button>
+
+        </form>
+        </div> <!-- end div-->
+
+        <div class="store-col">
+            <img
+              src="img/store-image.jpeg"
+              alt="Girl working at desk"
+              class="store-image"
+            />
+        </div>
+          
+
+    </section>
+    </main>
+    <hr>
+     <!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__content">
+        <p>
+            <strong>
+                Join us on 
+            </strong>
+        </p>
+    </div>
+
+    <div class="socials">
+        <div class="social">
+            <img
+             src="img/twitter-icon.svg"
+             alt="twitter"
+             class="social_icon"
+            />
+      </div>
+      
+      <div class="social">
+            <img
+             src="img/facebook-icon.svg"
+             alt="facebook"
+             class="social_icon"
+            />
+      </div>
+      
+      <div class="social">
+            <img
+             src="img/instagram-icon.svg"
+             alt="instagram"
+             class="social_icon"
+            />
+      </div>   
+    </div>
+        <p>© Karma Mobility,Inc.</p>
+</footer>
+</body>
+</html>

@@ -24,11 +24,13 @@ h1, h2, .about-text{
  .nav_icon-text{
   font-weight: 450;
   color:#6b6b6b;
+  padding: 15px;
 }
  
  .nav_icon{
   font-weight: 450;
   color:#9c9a9a;
+  padding: 15px;
  }
 
  .nav_icon:hover{
@@ -36,16 +38,12 @@ h1, h2, .about-text{
 
  }
 
- .nav_item{
+ .container{
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-right: 60px;
   list-style: none;
- }
-
- .nav_list{
-    padding: 0.5rem 1.3rem;
  }
 
  /*hamburger menu */
@@ -69,7 +67,7 @@ h1, h2, .about-text{
 
 
  h1{
-   margin-bottom:1rem;
+  margin-bottom:1rem;
   font-size: 3.5rem;
 }
 
@@ -156,4 +154,27 @@ h2 {
       justify-content: space-between;
     }
 
+  }
+
+
+  /* --==================== STORE CONTENT ====================-- */
+.intro{
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 58.59px;
+}
+  .store-image{
+    width: 701px;
+    height: auto;
+  }
+  
+  .store-cols{
+    display: flex;
+  }
+
+  .store-col {
+    width: 50%;
+  
+     /* Should be removed. Only for demonstration */
   }
