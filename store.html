@@ -46,51 +46,72 @@
   <!-- <main> -->
 
     <main class="store-main">
-        <section class="karma-order-form">
+      <section class="karma-order-form">
         <h1 class>Order your Karma wifi device today!</h1>
         
         <form>
           <div class="first-last-name">
             <div>
               <label for="fname">First name *</label><br>
-              <input type="text" id="fname" name="fname"><br>
+              <input type="text" id="fname" name="fname" required ><br>
             </div>
 
             <div>
               <label for="lname">Last name *</label><br>
-              <input type="text" id="lname" name="lname"><br>
-            </div>
-            
-            
+              <input type="text" id="lname" name="lname" required ><br>
+            </div>  
           </div>
 
-          <div class="adress">
+          <div class="address">
             <label for="address">Address *</label><br>
-            <input type="text" id="address" name="address"><br>
+            <input type="text" id="address" name="address" required ><br>
 
             <label for="address">Address 2</label><br>
             <input type="text" id="address" name="address"><br>
           </div>
 
 
-        <div class="city-postcode">  
-          <label for="City">City*</label>
-          <select id="city" name="city" form="cityform">
-            <option value="London">London</option>
-            <option value="Mancester">Mancester</option>
-            <option value="Birmingham">Birmingham</option>
-            <option value="Liverpool">Liverpool</option>
-          </select><br>
+        <div class="city-postcode"> 
+          <div class="city">
+            <label for="City">City*</label><br>
+            <select id="city" name="city" form="cityform" required>
+              <option value="" disabled selected hidden>Select your city...</option>
+              <option value="London">London</option>
+              <option value="Manchester">Manchester</option>
+              <option value="Birmingham">Birmingham</option>
+              <option value="Liverpool">Liverpool</option>
+            </select><br>
+          </div> 
+          
+          <div class="postcode">
+            <label for="postcode">Postcode *</label><br>
+            <input type="text" id="postcode" name="postcode" required ><br>
+          </div> 
+        </div>
+        
+        <fieldset>
+          <legend>Select a colour</legend>
 
-          <label for="postcode">Postcode *</label><br>
-          <input type="text" id="postcode" name="postcode"><br>
+          <input id="orange" type="radio" name="colour" value="Karma orange" checked/>
+          <label for="orange">Karma orange</label>
+
+          <input id="grey" type="radio" name="colour" value="Space Grey" />
+          <label for="grey">Space grey</label>
+       </fieldset>
+
+       <div class="checkbox-aggreement">
+          <input id="agreement" type="checkbox" name="agreement" required />   <label for="agreement">By placing your order you agree to Karma's <a href="#" >Terms and Conditions.</a> *</label>
+       </div>
+
+       <div class="btn">
+          <button>Place my order</button>
         </div>   
-    </section>
+      </section>
 
-    <section class="store-aside-img">
+      <section class="store-aside-img">
       <img src="./img/store-aside.svg" alt="girl working at desk">
       
-    </section>
+      </section>
       
     </main>
   <!-- <main> -->

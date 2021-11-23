@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,35 +15,34 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
- /* Header */
+/* Header */
 
- header {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 1rem 3rem;
- }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
 
- .svg-logo {
-     height: 2.5rem;
- }
+.svg-logo {
+  height: 2.5rem;
+}
 
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1rem 1.2rem;
+  }
 
-     header {
-     padding: 1rem 1.2rem;
-    }
-  
-   .svg-logo {
-     height: 2rem;
-    }
+  .svg-logo {
+    height: 2rem;
+  }
 }
 
 /* navbar*/
 
- .nav-bar {
-     width: 50%;
- }
+.nav-bar {
+  width: 50%;
+}
 
 .navigation__list {
   display: flex;
@@ -53,65 +51,61 @@ body {
   padding: 0;
 }
 
-
 .navigation__list li:hover {
-    color: rgb(255, 115, 0);
-    cursor: pointer;
+  color: rgb(255, 115, 0);
+  cursor: pointer;
 }
 
 .navigation__list li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-
 .active {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* hamburger menu*/
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #101010;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #101010;
 }
 
 @media only screen and (max-width: 768px) {
-  
-    .navigation__list{
-        display: none;
-    }
+  .navigation__list {
+    display: none;
+  }
 
-    .nav-bar {
-        display: flex;
-        justify-content: end;
-    }
+  .nav-bar {
+    display: flex;
+    justify-content: end;
+  }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 /* hero section */
 
 .hero-intro {
-    background-image: url("../img/first-background.jpg");
-    height: 45rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;      
+  background-image: url("../img/first-background.jpg");
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
- .hero-intro {
+  .hero-intro {
     height: 35rem;
     background-position-x: 60%;
     background-size: cover;
@@ -119,191 +113,259 @@ body {
 }
 
 .section-content {
-     text-align: center;
-     color: white;
+  text-align: center;
+  color: white;
 }
 
 .section-content h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 0;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 .section-content h3 {
-    font-size: 1.6rem;
-    font-weight: 200;
-    margin-top: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-top: 0.8rem;
 }
 
 button {
-    width: 140px;
-    border-radius: 4px;
-    color:white;
-    background-color: #f15d07;
-    padding: 0.8rem;
-    border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #f15d07;
+  padding: 0.7rem 2.2rem;
+  margin-top: 1.5rem;
+  border: none;
 }
 
 /* icon section */
 
 .main-icons {
-    margin:6rem 5rem ;
+  margin: 6rem 5rem;
 }
 
 .container-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 768px) {
- .container-icon{
+  .container-icon {
     flex-direction: column;
     align-items: center;
   }
 }
 
 .main-icons h2 {
-    text-align: center;
-    font-size: 3.5rem;
-    font-weight: 300;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
 }
 
 /*single icon+text container*/
 
 .karma-icon {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .karma-icon-svg {
-    height: 10rem;   
+  height: 10rem;
 }
 
 .karma-icon h2 {
-    font-weight: 400;
-    font-size: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 /* Addional Features section*/
 
 .additonal-features {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
- .additonal-features{
+  .additonal-features {
     display: none;
   }
 }
 
 .feature-img {
-    display: block;
+  display: block;
 }
 
 .karma-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgb(247, 225, 215);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(247, 225, 215);
 }
 
-.karma-content h2{  
-    width: 50%;             
-    font-style: italic;
-    font-size: 35px;
-    text-align: center; 
-    font-weight: 400;   
-}
-.features-btn{
-    width: 180px;
+.karma-content h2 {
+  width: 50%;
+  font-style: italic;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 400;
 }
 
 /* footer */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer h3 {
-    font-weight: 500;
-    font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .social-media-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .social-icon {
   height: 2rem;
-  border: 1px solid rgb(182, 179, 179); 
+  border: 1px solid rgb(182, 179, 179);
   border-radius: 50%;
   padding: 0.5rem;
   margin: 0.5rem;
 }
 
 footer p {
-    color:rgb(182, 179, 179);
+  color: rgb(182, 179, 179);
 }
 
 /* store page css */
 
-.karma-order-form h1 { 
-    font-size: 50px;
-    color:rgb(218, 86, 25); 
-    font-weight: 500;
-         
+.karma-order-form h1 {
+  font-size: 40px;
+  color: rgb(218, 86, 25);
+  font-weight: 500;
 }
 
 .store-header .svg-logo {
-    padding-left: 5rem;
+  padding-left: 5rem;
 }
 
 .store-main {
-    display: flex; 
-    width: 100%;  
+  display: flex;
+  width: 100%;
 }
-
 
 .karma-order-form {
-    width: 50%;
-    padding: 5rem 12rem;
+  width: 50%;
+  padding: 10rem 13rem;
 }
 
-.karma-order-form input {
-    padding: 0.3rem 2rem;
-    margin-top: 0.1rem;
+.karma-order-form input, 
+select {
+  padding: 0.3rem 0.2rem;
+  margin-top: 0.1rem;
+  border: 2px solid rgb(75, 71, 71);
+  border-radius: 4px;
 }
 
 .karma-order-form label {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .store-aside-img {
-    width: 50%;
+  width: 50%;
 }
 
 .first-last-name {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 0.2rem;
 }
 
-.adress input {
-    width: 60%;
+.address input {
+  width: -webkit-fill-available;
 }
 
+.city-postcode {
+  display: flex;
+  justify-content: space-between;
+}
 
+.city {
+  width: 65%;
+}
 
+.city-postcode select {
+  padding: 0.3rem 0.2rem;
+  margin-top: 0.1rem;
+  width: 100%;
+}
 
+.postcode {
+  width: 30%;
+}
 
+.postcode input {
+  width: -webkit-fill-available;
+}
 
- 
+label {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+fieldset {
+  border: 0;
+  padding-left: 0;
+  margin-top: 3rem;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+}
+
+.checkbox-aggreement {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.checkbox-aggreement label {
+  font-size: 15px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+fieldset label{
+  margin: 5px 30px 5px 7px;
+  font-size: 15px;
+}
+
+input[type="radio"]:checked:after {
+  border-radius: 11px;
+  width: 7.5px;
+  height: 7.5px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: " ";
+  display: block;
+  background: #ce650f;
+}
+
+label a {
+  color: rgb(218, 86, 25);
+}
