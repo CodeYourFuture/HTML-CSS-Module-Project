@@ -13,35 +13,81 @@
 
 <body>
   <!-- Header/Navbar -->
-	<header class="header">
-      <a href="#">
-        <img class="header-logo" src="img/karma-logo.svg" alt="Logo for Karma">
-      </a>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Meet Karma</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">How it Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="nav-mobile"><img src="img/menu-hamburger.svg"></a>
-    </header>
-  
+  <header class="header">
+    <a href="#">
+      <img class="header-logo" src="img/karma-logo.svg" alt="Logo for Karma">
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Meet Karma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">How it Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="nav-mobile"><img src="img/menu-hamburger.svg"></a>
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <section class="order-form">
+        <h1>Order your Karma wifi device today!</h1>
+        <form method="post" action="" id="customer-registration">
+          <label for="customer-first-name">First name <span class="required-astrix">&#42;</span></label>
+          <input type="text" name="customer-first-name" id="customer-first-name" required>
+          <label for="customer-last-name">Last name <span class="required-astrix">&#42;</span></label>
+          <input type="text" name="customer-last-name" id="customer-last-name" required>
+          <label for="customer-address">Address <span class="required-astrix">&#42;</span></label>
+          <input type="text" name="customer-address" id="customer-address" required>
+          <label for="customer-address">Address 2</label>
+          <input type="text" name="customer-address-two" id="customer-address-two" required>
+
+          <label for="cities">City <span class="required-astrix">&#42;</span></label>
+          <select name="cities" id="city-select">
+            <option value="">Select your city...</option>
+            <option value="london">London</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="lisbon">Lisbon</option>
+            <option value="berlin">Berlin</option>
+            <option value="paris">Paris</option>
+            <option value="istanbul">Istanbul</option>
+            <option value="amsterdam">Amsterdam</option>
+          </select>
+
+          <label for="postcode">Postcode <span class="required-astrix">&#42;</span></label>
+          <input type="text" for="postcode" id="postcode">
+          <fieldset>
+            <legend>Select a colour</legend>
+            <label for="karma-orange">Karma Orange</label>
+            <input type="radio" name="color" id="karma-orange" value="karma-orange" checked>
+            <label for="space-grey">Space Grey</label>
+            <input type="radio" name="color" id="space-grey" value="space-grey">
+          </fieldset>
+          <label for="terms-and-conditions">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a><span class="required-astrix">&#42;</span></label>
+          <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" value="">
+
+          <button>Place my order</button>
+        </form>
+      </section>
+      <section class="order-form-img">
+        <img src="img/store-image-andrew-neel-unsplash.jpg" alt="image of a women enjoying herself in a store">
+      </section>
+    </main>
+  </div>
 
 </body>
 
