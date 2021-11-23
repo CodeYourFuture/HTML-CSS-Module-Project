@@ -158,9 +158,27 @@ h2 {
 
 .advert-slogan {
   color: var(--grey-dark);
-  font-size: 34px;
+  font-size: 28px;
   font-style: italic;
   padding: 0 200px;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color: var(--orange-dark);
+  position: relative;
+  left: -5px;
+  top: -5px;
+}
+
+blockquote::after{
+  font-family:Arial;
+  content: "\201D";
+  color: var(--orange-dark);
+  position: relative;
+  right: -5px;
+  top: -5px;
 }
 
 .advert-section .btn {
@@ -255,7 +273,7 @@ h2 {
   }
 
   img {
-    max-width: 24rem;
+    max-width: 100vw;
   }
 
 }
