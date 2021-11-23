@@ -21,7 +21,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 1rem 0 1rem;
-    height: 5%;
+    /* height: 3%; */
 
 }
 /* company-logo */
@@ -64,15 +64,15 @@ li:hover {
 
 
 /* main section includes main image background and info*/
-main {
-    height: 80%;
+/* main {
+    height: 75%;
 
-}
+} */
 
 
 .intro {
     background: url('../img/first-background.jpg');
-    height: 40%;
+    /* height: 30%; */
     color: #fdffff;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ button:hover {
 .services-container{
     display: flex;
     flex-direction: row;
-    height: 80%;
+    /* height: 80%; */
     justify-content: space-around;
     width: 90%
     
@@ -144,15 +144,38 @@ button:hover {
     width: 100px;
     height: 100px
 }
+/* buy section  */
+.buy {
+    background: rgb(233, 199, 247);
+    display: flex;
+    justify-content: space-between;
+}
+/* image inside the buy section  */
+.buy img{
+    background: rgb(223, 129, 129);
+    width: 100%;
+    height: 100%;
+    
+}
+.quote-icon {
+    color: orangered;
+    font-size: 1.5rem;
+    
+}
+.buy-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    padding: 5%;
+    font-size: 1.5rem;
 
-.social-icon {
-    width: 15px;
-    height: 15px
 }
 
 footer {
     border-top: solid 0.5px rgba(0, 0, 0, 0.3);
-    height: 15%;
+    /* height: 5%; */
 }
 
 .footer {
@@ -168,6 +191,7 @@ footer {
     width: 20%;
 
 }
+
 .social-icon {
     border: solid 0.5px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
