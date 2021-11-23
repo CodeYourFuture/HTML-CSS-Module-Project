@@ -7,16 +7,15 @@ body {
 
 header {
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  padding: 50px;
+  padding: 40px;
+  margin-left: 100px;
 }
 
 /* Main Image*/
 .main_image {
   margin-bottom: 600px;
   position: relative;
-  top: -50px;
+  top: -70px;
 }
 
 */*Top Left Karma Logo*/
@@ -32,22 +31,21 @@ a:hover {
 
 .navigation__list {
   display: flex;
-  list-style: none;
+  position: relative;
+  bottom: 25px;
 }
 
 .navigation__item {
   color: gray;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
 }
 
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
   text-decoration: none;
-  margin: 8px;
+  margin: 30px;
 }
 
 /*Main*/
@@ -131,7 +129,7 @@ a:hover {
   text-align: center;
   position: relative;
   color: gray;
-  bottom: 900px;
+  bottom: 850px;
   margin-left: 1000px;
 }
 
@@ -156,7 +154,7 @@ a:hover {
   cursor: pointer;
   transition: 0.8s;
   position: relative;
-  top: 200px;
+  top: 50px;
 }
 
 /* Underline */
