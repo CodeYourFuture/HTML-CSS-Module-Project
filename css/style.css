@@ -1,6 +1,7 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 :root {
   --orange-karma: #f26639;
+  --cream-karma: #f2f2f3;
 }
 
 body {
@@ -64,7 +65,11 @@ a:hover {
   color: white;
   flex-direction: column;
   align-items: center;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 6rem;
 }
 
 /*Intro Text*/
@@ -74,6 +79,7 @@ h2,
 h3,
 .intro p {
   font-weight: lighter;
+  text-align: center;
 }
 
 h1 {
@@ -82,7 +88,7 @@ h1 {
 }
 
 .intro p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 /*Intro Button*/
@@ -96,31 +102,61 @@ button {
   margin-top: 2rem;
 }
 
-/*Karma Icon Images*/
+/*Main*/
+
+/*Main Text*/
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/*Karma Icon Style*/
+
+.karma_icon_style {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 3rem;
+}
+
+.karma_icon_direction {
+  display: flex;
+  flex-direction: column;
+}
 
 .karma_icon_images {
+  height: 50%;
+}
+
+hr {
+  width: 90%;
+  opacity: 25%;
+}
+
+/*footer*/
+
+/*Social Media Style*/
+
+.social_media {
   display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.karma_icon_devices {
-  height: 50%;
-}
-
-.karma_icon_coffee {
-  height: 50%;
-}
-
-.karma_icon_refill {
-  height: 50%;
-}
-
-/*Icon Text*/
-
-/*Social Media Images*/
-
-.social_media_instagram {
+.social_media_images {
   display: flex;
-  height: 10rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin: 0rem 0.5rem;
+  border: 2px solid var(--cream-karma);
+  border-radius: 30px;
+}
+
+.karma_mobility {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  opacity: 25%;
 }
