@@ -1,0 +1,25 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'M PLUS 1p', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+.form-section {
+  display: flex;
+}
+
+.form-image {
+  height: 49rem;
+  width: auto;
+}

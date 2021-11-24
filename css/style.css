@@ -52,7 +52,8 @@ header {
   justify-content: space-between;
   margin-right: 5rem;
   list-style: none;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .list-item {
@@ -78,7 +79,7 @@ main {
 }
 
 .home {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,14 +98,14 @@ main {
 }
 
 .content h2 {
-  font-size: 2.4rem;
-  font-weight: 550;
+  font-weight: 300;
+  font-size: 2.7rem;
   margin-bottom: 0;
 }
 .content p {
-  font-size: 1.4rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 1.2rem;
 }
 .content .learn-more {
   color: azure;
@@ -112,6 +113,7 @@ main {
   border: none;
   border-radius: 4px;
   padding: 8px 10px;
+  margin-top: 2.8rem;
   font-size: 0.9rem;
   font-family: sans-serif;
   font-weight: 500;
@@ -185,7 +187,16 @@ main {
 }
 
 .quoto-content span {
-  color: red;
+  color: #e0633a;
+  padding: 0 5px;
+}
+
+.get-karma {
+  background-color: #e0633a;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  margin-top: 2.5rem;
+  border-radius: 4px;
 }
 
 footer {

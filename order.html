@@ -4,8 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/order.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a class="header-logo" href="#">
+        <img
+          class="logo-image"
+          src="./img/karma-logo.svg"
+          alt="logo of karma"
+        />
+      </a>
+      <nav class="nav">
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <ul class="nav-menu">
+          <li class="list-item">
+            <a href="./index.html" class="nav-link nav-active">Meet Karma</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">How it Works</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">Store</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">Help</a>
+          </li>
+          <li class="list-item">
+            <a href="./order.html" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-section">
+        <form action="">
+          <label for="fname">First name</label>
+          <input
+            id="fname"
+            type="text"
+            name="fname"
+            minlength="3"
+            maxlength="10"
+            required
+          />
+          <label for="lname">Last name</label>
+          <input
+            id="lname"
+            type="text"
+            name="lname"
+            minlength="3"
+            maxlength="10"
+            required
+          />
+          <label for="address">Address</label>
+          <input id="address" type="text" name="address" required />
+          <label for="address2">Address 2</label>
+          <input id="address2" type="text" name="address2" />
+          <label for="city">City</label>
+          <input id="city" type="text" name="city" required />
+          <label for="postcode">Postcode</label>
+          <input id="postcode" type="text" name="postcode" required />
+          <label for="color">Select size:</label>
+          <div class="color">
+            <label for="karma-orange">Karma orange</label>
+            <input type="radio" id="karma-orange" name="karma-orange" />
+          </div>
+          <div class="color">
+            <label for="space-grey">Space Grey</label>
+            <input type="radio" id="space-grey" name="space-grey" />
+          </div>
+        </form>
+        <img
+          class="form-image"
+          src="./img/store-image_by-andrew-neel-unsplash.jpg"
+          alt="form image"
+        />
+      </section>
+    </main>
+  </body>
 </html>
