@@ -298,16 +298,23 @@ blockquote::after {
 
 /************************************** THE STORE PAGE **************************************/
 
+
 .StoreFlexBox {
     display: flex;
     flex-direction: row;
     align-items: center;
     width:100%;
+    font-size: 20px;
 }
  
-.order-container
+.order-container-flex
 {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Needed to ensure image takes up one half of the page */
+  /* justify-content: space-between; */
+  align-items: left;
+  gap:6rem;
 }
 
 /* THE ACTUAL SIZE OF THE IMAGE IS 632 x 948 PIXELS */
@@ -315,6 +322,104 @@ blockquote::after {
   width: 50%;
 }
 
+/*
+The form has been edited according to some of the guidelines at
+https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/
+
+Setting this will make the width of all the elements contain the padding.
+It also supports the :before and :after pseudo-elements. */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.order-heading {
+  font-family: "Roboto", Arial, sans-serif; 
+  font-size:4rem; /* = 64px; */
+  color: #ff6200;
+  padding-left:2rem;
+  margin-top:0;
+}
+
+.form-container {
+  border-radius: 5px;
+  padding: 20px;
+  border:none; 
+}
+
 .order-fieldset {
   border:none;
 }
+
+.row-flexbox {
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+}
+
+.names {
+  display:flex;
+  flex-direction: column;
+  width:30%;
+  gap:1rem;
+}
+
+.addresses {
+  display:flex;
+  flex-direction: column;
+  width:64%;
+  gap:1rem;
+}
+
+.city-flex
+{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.city-class {
+  margin-top:1rem;
+  padding-bottom: 1rem;
+}
+.postcode-flex
+{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.colours-flexbox {
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+  padding-top:1rem;
+}
+
+.colours-container {
+  margin-top:4rem;
+}
+
+.agreement-container {
+  margin-top:5rem;
+}
+
+input[type=text] {
+  padding:10px;
+  margin:10px 0 20px 0;
+  border-radius:10px;
+}
+
+  /* Buttons */
+
+  .submit-button {
+    background-color: #ff6200; 
+    color: #ffffff;
+    border: none;
+    padding: 20px 36px;
+    border-radius: 10px;
+    font-size:20px;
+    margin-top:3rem;
+    width: 25%
+  }
