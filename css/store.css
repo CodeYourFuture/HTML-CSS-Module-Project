@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 3%;
+}
+
+input[type="text"],
+#city {
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 2% 5px;
+}
+
+.form {
+  margin-left: 10%;
+}
+
+.form-title {
+  font-size: 50px;
+  color: #f15b2a;
+  font-weight: 500;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.form-names {
+  display: flex;
+}
+
+#address,
+#address2 {
+  width: 84%;
+}
+
+.form-location {
+  display: flex;
+}
+
+#city {
+  width: 100%;
+}
+
+#postcode {
+  width: 75%;
+}
+
+.postcode-container,
+#space-grey {
+  margin-left: 2%;
+}
+
+.form-colour-text,
+.check {
+  margin-bottom: 2%;
+}
+
+.form-colour {
+  margin-bottom: 10%;
+}
+
+.order-button {
+  color: #fff;
+  background-color: #f15b2a;
+  border-radius: 2px;
+  border: none;
+  padding: 15px 35px;
+}
+
+.image {
+  background-image: url("../img/store-image_by-andrew-neel-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 25% 60%;
+}
