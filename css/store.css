@@ -1,14 +1,15 @@
 .main{
     display: flex;
     width: 100%;
-    height: 800px;
-    background-color: dodgerblue;
+    height: 1235px;
+    padding-top: 90px;
 
 }
 
 .form{
     width: 50%;
-    background-color: cadetblue;
+    padding: 40px;
+    color: #666666;
 }
 
 .cover{
@@ -16,5 +17,85 @@
     background-repeat: no-repeat;
     background-image:url(../img/store-image_by-andrew-neel-unsplash.jpg);
     background-size:cover;
-    background-position-x: center;
 }
+
+h1{
+    font-weight:500;
+    font-size: 50px;
+    color: var(--orange);
+    padding: 50px 0 59px 0;
+
+}
+
+/* FIELDS */
+input[type=text], select, option.field-flex-item {
+  width: 100%;
+  padding: 18px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #666666;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field-flex{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+}
+
+
+.field-fname{
+    width: 50%;
+    margin-right: 10px;
+}
+.field-lname{
+    width: 50%;
+}
+
+.field-fcity{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.field-fpostcode {
+    width: auto;
+}
+
+/* FAKE RADIO */
+label > input[type="radio"] {
+  display: none;
+}
+label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  box-sizing: border-box;
+}
+
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(orange 0%, orange 50%, transparent 0%, transparent);
+  border-color: grey;
+}
+
+label{
+    color: gray;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.radio-span{
+    margin-left: 20px;
+}
+
+
+
+
+

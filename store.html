@@ -17,7 +17,7 @@
     <nav>
         <img class="logo" src="img/karma-logo.svg" alt="Meet Karma Logo">
         <ul class="nav__links">
-            <li><a href="#" class="nav__link_on">Meet Karma</a></li>
+            <li><a href="/index.html" class="nav__link_on">Meet Karma</a></li>
             <li><a href="#">How It Works</a></li>
             <li><a href="#">Store</a></li>
             <li><a href="#">Blog</a></li>
@@ -27,20 +27,68 @@
     </nav>
 
     <main class="main">
-        <!-- <hero class="hero">
-            <section class="hero-intro">
-                <h1>Introducing Karma</h1>
-                <h3>Bring WiFi with you, everywhere you go</h3>
-                <button>Learn More</button>
-            </section>
-        </hero> -->
-        <section class="form">
-            <div>my form</div>
-        </section>
 
-        <section class="cover">
-            <div>my cover</div>
-        </section>
+
+        <div class="form">
+            <h1>Order your Karma wifi device today!</h1>
+            <div class="field-flex">
+                <div class="field-fname">
+                    <label for="fname">First name *</label><br>
+                    <input type="text" id="fname" name="fname">
+                </div>
+
+                <div class="field-lname">
+                    <label for="lname">Last name *</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                </div>
+            </div>
+
+            <label for="faddress-1">Address *</label><br>
+            <input type="text" id="faddress-1" name="faddress-1"><br><br>
+            <label for="faddress-2">Address 2</label><br>
+            <input type="text" id="faddress-1" name="faddress-2"><br><br>
+
+            <div class="field-flex">
+                <div class="field-fcity">
+                    <label for="fcity">City *</label><br>
+                    <select id="fcity" name="fcity">
+                        <option value="select">Select your city ...</option>
+                        <option value="london">London</option>
+                        <option value="kent">Kent</option>
+                        <option value="glasgow">Glasgow</option>
+                    </select>
+                </div>
+
+                <div class="field-fpostcode">
+                    <div class="field-fpostcode">
+                        <label for="fpostcode">Postcode *</label><br>
+                        <input type="text" id="fpostcode" name="fpostcode">
+                    </div>
+                </div>
+            </div><br><br>
+
+
+            <label>Select a colour</label><br><br>
+            <label>
+                <input type="radio" name="radio-button" value="css" checked />
+                <span>Karma Organge</span>
+            </label>
+            <label>
+                <input type="radio" name="radio-button" value="no" />
+                <span class="radio-span">Space Grey</span>
+            </label>
+
+
+
+            </form>
+        </div>
+
+
+        <div class="cover">
+
+        </div>
+
+
     </main>
 
     <footer class="container">
