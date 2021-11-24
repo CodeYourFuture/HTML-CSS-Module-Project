@@ -6,15 +6,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
 
 body {
@@ -75,7 +66,7 @@ body {
         color:#ec5800; /* persimmon */
 }
 
-      /* always show 'Meet Karma' in black */
+   /* always show 'Meet Karma' in black */
 .meet-Karma {
       color: black;
       font-weight:500;
@@ -106,7 +97,7 @@ body {
   /* The main image i.e. the 'hero' */ 
  
   /* THE ACTUAL SIZE OF THE IMAGE IS 1600 x 735 PIXELS, 100 rem x 45.94 rem */
- .MainImage {
+.MainImage {
     background-image: url(../img/first-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -137,7 +128,7 @@ body {
 
   /* Buttons */
 
-.LearnMoreButton {
+.HomePageButton {
   background-color: #ff6200; 
   color: #ffffff;
   border: none;
@@ -176,7 +167,6 @@ button:hover {
       display: flex;
       gap:7rem;    
       padding-bottom:6rem;
-
 }
 
 .description {
@@ -195,15 +185,8 @@ button:hover {
    
 /* Showing the 'extended section' consisting of the woman and the quote */
 .ExtendedFlexBox {
-
   display: flex;
-  /* align-self: flex-start; */
 }
-
-/*   
- .ExtendedFlexBox > * :last-child {
-  width: 1250px;
-} */
 
 /* THE ACTUAL SIZE OF THE IMAGE IS 599 x 439 PIXELS, 37.44 x 27.44 rem */
 .SmilingWoman {
@@ -251,7 +234,6 @@ blockquote::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap:2rem; */
     justify-content: space-between;
 }
 
@@ -305,6 +287,7 @@ blockquote::after {
     align-items: center;
     width:100%;
     font-size: 20px;
+    margin-left:3rem; /* align this Flex Box with the horizontal line at the bottom of the page */
 }
  
 .order-container-flex
@@ -321,15 +304,6 @@ blockquote::after {
 .WomanAtDesk{
   width: 50%;
 }
-
-/*
-The form has been edited according to some of the guidelines at
-https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/
-
-Setting this will make the width of all the elements contain the padding.
-It also supports the :before and :after pseudo-elements. */
-
-
 
 
 .order-heading {
@@ -370,6 +344,7 @@ It also supports the :before and :after pseudo-elements. */
   gap:1rem;
 }
 
+
 .city-flex
 {
   display: flex;
@@ -403,15 +378,31 @@ It also supports the :before and :after pseudo-elements. */
   margin-top:5rem;
 }
 
+a.terms-conds:link {
+  color: red;
+}
+
+a.terms-conds:visited {
+  color: red;
+}
+
+
+
+
+
 input[type=text] {
   padding:10px;
   margin:10px 0 20px 0;
   border-radius:10px;
 }
 
+input:placeholder-shown{
+  font-style: italic;
+}
+
   /* Buttons */
 
-  .submit-button {
+.submit-button {
     background-color: #ff6200; 
     color: #ffffff;
     border: none;
@@ -421,3 +412,4 @@ input[type=text] {
     margin-top:3rem;
     width: 25%
   }
+
