@@ -1,3 +1,12 @@
+* {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -63,10 +72,21 @@ a {
   margin: 0;
 }
 
-.container {
-  position: relative;
+.hero {
+  width: 100%;
+  background-image: url("https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Coursework-Week2/master/img/first-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
   text-align: center;
+  padding: 6em 0;
 }
+
+.text-container {
+  text-shadow: 0 0 20px black;
+}
+
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -83,25 +103,21 @@ h5 {
   width: 100%;
 }
 
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-}
 
-.button1 {
-  background-color: orangered;
-  border: 2vw solid orangered;
-  border-radius: 3%;
-  width: 30%;
-  font-size: 1.5vw;
+
+.hero_btn {
+  background: orangered;
+  font-size: 2vw;
+  border-radius: 5px;
+  padding: 1em 1.5em;
+  margin-top: 5%;
 }
 
 .article-summary {
   text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #title-main {
@@ -116,12 +132,7 @@ h5 {
 }
 
 #thumbnail:hover {
-  position: relative;
-  top: -2vw;
-  left: -2vw;
-  width: 25vw;
-  height: auto;
-  display: block;
+  transform: scale(1.2);
 }
 
 .sub-title {
@@ -144,56 +155,36 @@ h5 {
   width: 100%;
   display: flex;
   margin-top: 50px;
+  padding: 2em 0;
 }
 
 .article-img {
-  width: 40%;
-  height: 439px;
-  top: 1200px;
+  width: 38%;
   background: url("https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Coursework-Week2/master/additional/feature-img.png");
 }
 
 .article-container {
-  width: 60%;
+  width: 62%;
   background-color: rgba(255, 171, 143, 0.1);
+  padding: 0 2.5em;
 }
 
-.article-text {
-  position: absolute;
-  width: 548px;
-  height: 141px;
-  left: 570px;
-  top: 1250px;
+.article-container p {
+  font-size: 4vw;
 
-  font-family: Roboto;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 42px;
-  line-height: 49px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #434242;
 }
 
-.article-button {
-  position: absolute;
-  width: 180px;
-  height: 70px;
-  left: 750px;
-  top: 1450px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 10%;
+.article-btn {
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  color: white;
+  background: orangered;
+  margin: 5% auto;
+  display: block;
 }
 
-/* styling the footer */
+/* ===================================Footer styles============================ */
 .footer {
   bottom: 0;
   margin-top: 10vw;
@@ -207,10 +198,9 @@ footer {
 
 hr {
   width: 80%;
-  height: 2px;
-  border-width: 0;
-  color: rgb(196, 196, 196);
-  background-color: rgb(196, 196, 196);
+  margin: 0 auto;
+  border: 1px solid rgba(128, 128, 128, 0.452);
+
 }
 
 .social_link {
@@ -228,13 +218,7 @@ p {
   margin-top: 3vw;
 }
 
-hr {
-  width: 80%;
-  height: 2px;
-  border-width: 0;
-  color: rgb(196, 196, 196);
-  background-color: rgb(196, 196, 196);
-}
+
 
 footer {
   display: flex;
