@@ -1,54 +1,63 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-.topnav {
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  margin-right: 60px;
+/* ========================Header Styles========================== */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 5%;
+  height: 5%;
+  align-items: center;
 }
 
 /* nav bar */
-.topnav a {
-  float: right;
-  color: #5a5a5a;
-  text-align: center;
-  padding: 1vw 2vw;
+
+nav {
+  display: block;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+a {
   text-decoration: none;
-  font-size: 2vw;
-  background-color: white;
-  margin-top: 2vw;
+  color: rgb(116, 114, 114);
 }
 
 /* the color of links on hover */
-.topnav a:hover {
+.nav__links li a:hover {
   color: orangered;
 }
 
 /* Adding bold font to the active/current link */
-.topnav a.active {
+.active {
   font-weight: bold;
 }
-.logo {
-  margin-left: 4vw;
-  margin-top: 2vw;
-  height: 3vw;
-  width: 2vw;
-}
-/* styling background image & texts on the image */
 
+/* logo */
+.logo {
+  height: 30px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.logo-top {
+  width: 25%;
+  padding: 10px;
+}
+
+/* ============================Main Styles============================== */
+/* ---Hero Styles */
 .big-image {
   width: 97%;
   margin: 0;
@@ -58,12 +67,14 @@ body {
   position: relative;
   text-align: center;
 }
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 50;
   font-size: 6vw;
   font-stretch: condensed;
 }
+
 h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 50;
@@ -71,6 +82,7 @@ h5 {
   font-stretch: condensed;
   width: 100%;
 }
+
 .text-container {
   position: absolute;
   top: 50%;
@@ -79,6 +91,7 @@ h5 {
   color: white;
   text-align: center;
 }
+
 .button1 {
   background-color: orangered;
   border: 2vw solid orangered;
@@ -96,10 +109,12 @@ h5 {
   text-align: center;
   margin-top: 10vw;
 }
+
 .icon {
   width: 15vw;
   height: 15vw;
 }
+
 #thumbnail:hover {
   position: relative;
   top: -2vw;
@@ -108,18 +123,21 @@ h5 {
   height: auto;
   display: block;
 }
+
 .sub-title {
   margin-top: 3vw;
   display: block;
   font-size: 2vw;
   color: rgb(70, 69, 69);
 }
+
 #item {
   vertical-align: top;
   display: inline-block;
   text-align: center;
   width: 30vw;
 }
+
 /* Get-Karma-today */
 
 .Get-Karma {
@@ -127,6 +145,7 @@ h5 {
   display: flex;
   margin-top: 50px;
 }
+
 .article-img {
   width: 40%;
   height: 439px;
@@ -138,6 +157,7 @@ h5 {
   width: 60%;
   background-color: rgba(255, 171, 143, 0.1);
 }
+
 .article-text {
   position: absolute;
   width: 548px;
@@ -184,6 +204,7 @@ footer {
   justify-content: center;
   margin-top: 200px;
 }
+
 hr {
   width: 80%;
   height: 2px;
@@ -191,22 +212,22 @@ hr {
   color: rgb(196, 196, 196);
   background-color: rgb(196, 196, 196);
 }
-.social {
-  max-height: 2vw;
-  width: 2vw;
-  padding: 0.2vw;
-  border-radius: 5vw;
-  border: solid #dddddd 0.1vw;
-  margin: 2vw;
+
+.social_link {
+  border: 1px solid gray;
+  padding: 0.5em;
+  border-radius: 50%;
 }
+
 .social_icon {
-  max-height: 2vw;
-  width: auto;
+  width: 30px;
 }
+
 p {
   text-align: center;
   margin-top: 3vw;
 }
+
 hr {
   width: 80%;
   height: 2px;
@@ -218,6 +239,13 @@ hr {
 footer {
   display: flex;
   justify-content: center;
+}
+
+.icons_div {
+  width: 20%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .footer-text {
