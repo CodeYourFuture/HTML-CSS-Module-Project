@@ -43,33 +43,44 @@
 
 <div class= "order_form_main_container">
     <div class = "store_form_background">
-        <div>
+        <div >
             <p class ="order_your_karma_text">Order your Karma wifi<br> devide today!</p>
 
         </div>
 
-        <div class= "form_width ">
+        <div >
             <fieldset>
                 <div >
                     <div class = "form_row " >
-                        <label for="firstname">First name*</label><br>
-                        <input id="firstname" type="text" name="firstname"/><br>
-                        <label for="lastname">Last name*</label><br>
-                        <input id="lastname" type="text" name="lastname"/>
-                    </div>       
-                <label for="address">Address*</label><br>
-                <input id="address" type="text" name="address"/><br>
-                <label for="address2">Address 2*</label><br>
-                <input id="address2" type="text" name="address2"/>   
+                        <div class = "form_column">
+                            <label for="firstname">First name*</label>
+                            <input id="firstname" type="text" size ="15"name="firstname"/><br>
+                        </div>
+                        <div class = "form_column">
+                            <label for="lastname">Last name*</label>
+                            <input id="lastname" type="text" size ="15" name="lastname"/>
+                        </div>
+                    </div> 
+                    <div class = "form_column">
+                        <label for="address">Address*</label>
+                        <input id="address" type="text" size ="25" name="address"/><br>
+                        <label for="address2">Address 2*</label>
+                        <input id="address2" type="text" size ="25" name="address2"/>  
+                    </div>
                     <div class = "form_row ">
                         <div class = "form_column">
-                            <label for="city">City*</label><br>
-                            <input id="city" type="text" name="city"/><br>
+                            <label for="city">City*</label>
+                            <select type= "text" class= "drop_down_city" >
+                                <option value="" disabled selected hidden><em>Select your city...</em></option>
+                                <option value = "London"></option>
+                                <option value = "Manchester"></option>
+                            </select>
+                            
 
                         </div>
                         <div class = "form_column">
-                            <label for="postcode">Postcode*</label><br>
-                            <input id="postcode" type="text" name="postcode"/>
+                            <label for="postcode">Postcode*</label>
+                            <input id="postcode" type="text" size ="10"name="postcode"/>
                         </div>
                        
                     </div>
@@ -83,9 +94,9 @@
 
             </fieldset> 
         </div>
-        <div>
+        <div class = "karma_select_colour_left">
             <p>Select a colour</p>
-            <div class = "form_row">
+            <div class = "karma_select_colour_flexbox">
                 <input id="karmaorange" type="radio" name="karmacolour" value="karmaorange" />
                 <label for="karmaorange">Karma orange</label>
                 <input id="spacegrey" type="radio" name="karmacolour" value="spacegrey" checked />
@@ -94,10 +105,10 @@
 
         </div>
         <div >
-            <input id="agreement" type="checkbox" name="agreement" />
+            <input id="agreement" type="checkbox" name="agreement" class = "styled_checkbox" />
             <label for="agreement">By placing your order you agree to Karma's <u>Terms and<br>Conditions</u> *</label>
         </div>
-        <div>
+        <div class= "align_item-left">
             <btn class ="place_order_btn">Place my order</btn>
         </div>    
             
@@ -147,7 +158,9 @@
                 <img src = "img/facebook-icon.svg" class = social_icons>  
             </div>
             <div class="circle-icons">
-                <img src = "img/instagram-icon.svg" class = social_icons>
+                <div>
+                    <img src = "img/instagram-icon.svg" class = social_icons>
+                </div>
             </div>
 
         </div>

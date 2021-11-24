@@ -174,20 +174,21 @@ q::after {
 .order_form_main_container {
   display: flex;
   flex-direction: row;
-  padding-bottom: -4rem;
+  align-items:center;
+  width:100%;
 }
 
 .store_form_background {
-  background-color: rgba(224, 99, 58, 0.1);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
-  margin: 3rem 4rem 3rem 4rem;
+  
 }
 
 .order_your_karma_text {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #e0633a;
   padding-bottom: 1.5rem;
 }
@@ -195,13 +196,12 @@ q::after {
 .form_row {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
 }
 
 .form_column {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.4rem;
 }
 
 label,
@@ -210,7 +210,7 @@ input {
   margin: 0;
   box-sizing: border-box;
   border-radius: 0.2rem;
-  padding: 0.1rem;
+  height: 2rem;
 }
 
 .place_order_btn {
@@ -222,7 +222,6 @@ input {
   border-radius: 6px;
   position: relative;
   display: flex;
-  align-content: flex-start;
 }
 
 fieldset {
@@ -231,9 +230,20 @@ fieldset {
   display: inline-block;
 }
 
-.form_width {
-  width: 100%;
+
+.karma_select_colour_left{
+  align-items:left;
+
 }
+
+
+.karma_select_colour_flexbox{
+  display:flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  gap:1.5rem;
+}
+
 
 /* Radio Button Styling */
 
@@ -269,4 +279,26 @@ input[type="radio"]:checked::before {
 
 :root {
   --form-control-colour: #e0633a;
+}
+
+/* Check box styling*/
+
+
+
+
+
+
+
+
+
+  
+
+.drop_down_city {
+  height: 2rem;
+  width: 13rem;
+  padding: 0;
+  margin: 0;
+  box-sizing:
+  border-radius: 0.2rem; 
+  
 }
