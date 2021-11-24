@@ -1,7 +1,8 @@
+
 /* General styles */
 
 :root {
-    --orange: #E0633A;
+    
     --grey: #616668;
 }
 
@@ -24,11 +25,11 @@ main {
     padding-top: 20px;
 }
 
-img{
+/* img{
     max-width: 100%;
     height: auto;
     display: block;
-}
+} */
 
 /* Navigation */
 
@@ -132,6 +133,126 @@ button {
 
 
 /* Section */
+
+.section-items {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.section-item img {
+    width: 160px;
+}
+
+hr {
+    width: 95%;
+    opacity: 0.3;    
+}
+
+/* Section: Feature */
+
+.feature {
+    width: 100%;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.feature img {
+    display: block;
+    width: 44.5%;   
+    width: 568px;
+}
+
+.feature_text-and-button {  
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin:0 auto;  
+    background-color: hsla(15, 73%, 55%, 0.1);
+  
+}
+
+blockquote {
+    font-size: 42px; 
+    font-weight: 400;
+    line-height: 49.22px;
+    font-style: italic;
+    text-align: center; 
+}
+
+
+q {
+    color: #E0633A;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    
+
+}
+
+span {
+    color: black;
+}
+
+.feature_text-and-button button {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 28.13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;   
+}
+
+.footer-icons img {
+    margin: 10px;
+}
+
+.footer-icons img {
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.75;    
+}
+
+footer p { 
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.credits {
+    opacity: 0.5;
+}
+
 
 .section-items {
     width: 100vw;
