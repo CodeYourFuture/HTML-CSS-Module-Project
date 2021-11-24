@@ -19,15 +19,24 @@
     background-size:cover;
 }
 
+/* FONTS */
 h1{
     font-weight:500;
     font-size: 50px;
     color: var(--orange);
     padding: 50px 0 59px 0;
-
+}
+h5{
+    font-size: 18px;
+    color:var(--grey-light);
+    margin-left: 10px;
 }
 
+
 /* FIELDS */
+fieldset{
+    border: none;
+}
 input[type=text], select, option.field-flex-item {
   width: 100%;
   padding: 18px 20px;
@@ -81,7 +90,7 @@ label > input[type="radio"] + *::before {
 }
 
 label > input[type="radio"]:checked + *::before {
-  background: radial-gradient(orange 0%, orange 50%, transparent 0%, transparent);
+  background: radial-gradient(#DE6E49 0%, #DE6E49 50%, transparent 0%, transparent);
   border-color: grey;
 }
 
@@ -91,11 +100,43 @@ label{
     font-size: 21px;
 }
 
+.label400{
+    color: gray;
+    font-weight: 300;
+    font-size: 21px;
+}
+
 .radio-span{
     margin-left: 20px;
 }
 
+.test{
+    height: 100px;
+    background-color: orange;
+}
 
+/* /BUTTONS */
+button{
+    width: 269px;
+    height: 70px;
+    font-size: 22px;
+}
+
+.link{
+    color: #DE6E49;
+;
+
+}
+.terms{
+    display: flex;
+    margin-top: 40px;
+}
+
+input[type="checkbox"]{
+  
+  width: 20px;
+  height: 20px;
+}
 
 
 

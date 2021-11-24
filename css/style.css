@@ -188,20 +188,37 @@ nav .nav__link_on{
 
 .social-icons{
     width: 25px;
-    margin: 40px 20px;
+    margin: 20px;
 }
 
 /* //General Elements */
 .divider{
     height: 1px;
     width: 95%;
-    margin: 100px 10px ;
+    margin: 30px 10px ;
     background-color:#d2d2d2;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer h5{
+margin-bottom: 30px;
+
+}
+
+.social{
+    justify-content: center;
 }
 
 .container{
-    justify-content: center;
-    text-align: center;
 
 }
