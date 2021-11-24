@@ -1,0 +1,136 @@
+/* MAIN */
+
+.main-container {
+    display:flex;
+}
+
+.form-section {
+    width: 50%;
+}
+
+.text-param {
+    color:#DE6E49 !important;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+
+.main-img {
+    width: 50%;
+}
+
+.img-dimensions {
+    width: 701px;
+    height: auto;
+}
+
+/* FORM */
+
+fieldset { 
+    border: none;
+    width: 30%;
+}
+
+.form-dimensions {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+
+.form-elem {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}   /* aligns text and input */
+
+.full-name {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+input[type=text] {
+    padding: 15px;   
+}
+
+input[id="postcode"] {
+    width: 140px;
+}
+
+form {
+    padding-left: 30px;
+    padding-right: 100px;
+}
+
+.box {
+    width: 300px;
+    height: 50px;
+}
+
+/* Radio */
+
+
+p {
+    color: black !important;
+    font-size: 20px !important;
+    padding-left: 10px !important;
+    margin-top: 50px;
+}
+
+.radio-section {
+    display: flex;
+    padding-left: 10px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+input[type="radio"] {  
+    margin-right: 10px;
+}
+
+.space {
+    padding-left: 50px;
+}
+
+/* CHECKBOX */
+
+.checkbox {
+    display:flex;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+
+label[for="checkbox"] {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+a {
+    color: chocolate;
+    text-decoration: none;
+}
+
+.button3 {
+    position: relative;
+padding: 15px 60px;
+background-color: chocolate;
+    border: chocolate solid;
+    border-radius: 2%;
+}

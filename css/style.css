@@ -22,22 +22,27 @@ body {
 /* HEADER */
 
 .wrapper {
-    width: 1170px;
-    margin: 0 auto;
+    width: 1440px;
+    margin: auto;
 }
 
-
+.banner-box {
+    display:flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
 header{
     height: 50px;
-    background: whitesmoke;
+    background: rgb(228, 228, 228);
     width: 100%;
     position:relative;
 }
 
 .header-logo {
-    width: 40px;
-    height: 40px;
-    float:left;
+    width: 30px;
+    height: 30px;
+    float: left;
+    
 }
 
 nav {
@@ -59,14 +64,35 @@ nav a:hover {color:chocolate;}
 
 
 
-/* MAIN (1st Section) */
+.hamburger {
+    
+    line-height: 30px;
+}
 
-.banner-area {
-    position: relative;
+@media (max-width: 350px) {
+    nav {
+        display:none;
+    }
+}
+
+@media (min-width: 350px) {
+    .hamburger {
+        display: none;
+    }
 }
 
 
 
+
+/* MAIN (1st Section) */
+
+.content-area {
+    margin-bottom: 100px;
+}
+
+.banner-area {
+    position: relative;
+}
 
 
 .img {
@@ -84,6 +110,8 @@ nav a:hover {color:chocolate;}
     text-align: center;
     font-weight: 20;
 }
+
+
 
 h1 {
     color: white;
@@ -118,7 +146,7 @@ p {
 
 
 
-/* 2nd SECTION SECTION */
+/* 2nd SECTION  */
 
 
 .h2 {
@@ -170,42 +198,38 @@ h2 {
 
 /* EXTENSION (3rd section) */
 
-
-@media (max-width: 1000px){
-    .extension {
-        flex-direction: column;
-
-    }
-    
+.ext-container-1 {
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(255, 223, 223);
+    width: 1440px;
+    margin-bottom: 100px;
 }
 
-
-
-.extension {
-    display: flex;
-    position: relative;
-    height: 450px;
-    width: 100%;
-    background-color: rgb(238, 212, 234);
-    margin-top: 200px;
-}
 
 .ext-image {
-    width:43%;
-    height:auto;
+    width:50%;
 }
+
+
+.ext-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .ext-text {
     text-align: center;
-    font-size:45px;
-    font-weight:300;
-    padding: 75px 150px;
+    font-size:35px;
+    padding: 30px 160px;
 }
+
+h3 {font-weight: 100;}
 
 .ext-button {
     display: flex;
     align-self: center;
-    flex-direction: column;
     font-size: 20px;
     color: white;
 }
@@ -217,13 +241,11 @@ h2 {
     border: chocolate solid;
     border-radius: 2%;
     font-weight: 500;
-    margin-top: -60px;
 }
 
-.ext-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: -30px;
+a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -233,8 +255,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    border-top: solid rgb(226, 226, 226);
+    border-top: solid rgb(226, 226, 226) 3px;
 }
 
 h4 {
@@ -245,21 +266,19 @@ h4 {
 
 .logo-container {
     display: flex;
+    justify-content: space-evenly;
 
 }
 
 .footer-logo {
     width: 20px;
-    height: auto;
+    height: 20px;
     margin: 10px 10px;
     border: rgb(212, 212, 212) solid;
     padding: 20px;
     border-radius: 100%;
 }
 
-.logo-color {
-    filter: hue-rotate(250deg);
-}
 
 h5 {
     color: silver;

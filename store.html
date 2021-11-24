@@ -11,7 +11,6 @@
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
     </head>
     <body>
-        <header>
             <header>
                 <div class="wrapper">
                     <div class="banner-box">
@@ -32,7 +31,6 @@
                     </div>
                 </div>
             </header>
-        </header>
         <main>
         <div class="wrapper">
             <div class="main-container">
@@ -42,19 +40,21 @@
                     </div>
                     <form>
                         <fieldset>
+                            <!-- details -->
+                            <div class="form-dimensions">
                                 <div class="full-name">
                                     <div class="form-elem">
-                                        <label for="first__name">First Name*</label>
-                                        <input type="text" name="first-name" id="first__name"/>
+                                        <label for="first__name">First Name *</label>
+                                        <input type="text" name="first-name" id="first__name" required="true"/>
                                     </div>
                                     <div class="form-elem">
-                                        <label for="last__name">Last Name*</label>
-                                        <input type="text" name="last-name" id="last__name"/>
+                                        <label for="last__name">Last Name *</label>
+                                        <input type="text" name="last-name" id="last__name" required="true"/>
                                     </div>
                                 </div>
                                 <div class="form-elem">
-                                    <label for="address">Address*</label>
-                                    <input type="text" name="address" id="address"/>
+                                    <label for="address">Address *</label>
+                                    <input type="text" name="address" id="address" required="true"/>
                                 </div>
                                 <div class="form-elem">
                                     <label for="address__2">Address 2</label>
@@ -62,14 +62,40 @@
                                 </div>
                                 <div class="full-name">
                                     <div class="form-elem">
-                                        <label for="city">City*</label>
-                                        <input type="text" name="city" id="city"/>
-                                    </div>
+                                        <label for="city">City *</label>
+                                        <select class="box" name="city" id="city" required="true">
+                                            <option selected>Select your City...</option>
+                                        </select>
+                                    </div>                           
                                     <div class="form-elem">
-                                        <label for="postcode">Postcode*</label>
-                                        <input type="text" name="postcode" id="postcode"/>
+                                        <label for="postcode">Postcode *</label>
+                                        <input type="text" name="postcode" id="postcode" required="true"/>
                                     </div>
-                                 </div>
+                                </div>
+                            </div>
+                                 <!-- radio section -->
+
+                                <p>Select a Colour *</p>
+
+                                <div class="radio-section">
+                                    <div class="radio">
+                                        <label for="color__1">Karma Orange</label>
+                                        <input type="radio" id="color__1" value="Radio" name="color"/>
+                                    </div>
+                                    <div class="radio space">
+                                        <label for="color__2">Space Grey</label>
+                                        <input type="radio" id="color__2" value="Radio" name="color"/>
+                                    </div>
+                                </div>
+                                <!-- Checkbox -->
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox" value="checkbox" name="checkbox"/>
+                                    <label for="checkbox">By placing your order, you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>                           
+                                </div>
+                                <!-- Button -->
+                                <div class="button">
+                                    <button class="button3">Place my order</button>
+                                </div>
                         </fieldset>
                     </form>
                 </div>
