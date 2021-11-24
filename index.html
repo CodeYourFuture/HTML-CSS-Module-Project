@@ -1,23 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< Updated upstream
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
-</body>
-=======
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,31 +10,8 @@
         <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
     </head>
     <body>
-        <header class="header">
-            <img src="./img/karma-logo.svg" alt="Karma logo" class="logoImg"/>
-            <nav>
-                <ul class="navList">
-                    <li class="navItem">
-                        <a href="#" class="navLink"><span class="makeBlack">Meet Karma</span></a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#" class="navLink">How It works</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#" class="navLink">store</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#" class="navLink">Blog</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#" class="navLink">Help</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#" class="navLink">Login</a>
-                    </li>
-                </ul>
-            </nav>
-            <img class="hamburgerMenu" src="./img/menu-hamburger.svg" alt="menu bar"/>
+        
+        <iframe src="./header.html" class="header-container-main"></iframe>
         </header>
         <main>
             <section class="introduction">
@@ -80,23 +39,17 @@
             <section class="getKarma">
                 <div class="getkarmaBackground">
                 </div>
-                <div class="getkarmaTitle">
-                    <h2><em>whenever I am,I just don't worry about my connection any more</em></h2>
-                    <button class="learnmoreBtn">Get karma today</button>
+                <div class="quoteContainer">
+                    <h2>
+                        <blockquote class="quote">
+                            whenever I am,I just don't worry about my connection anymore!
+                        </blockquote> 
+                    </h2>
+                    <button class="learnmoreBtn" onclick="window.location.href='./store.html'">Get karma today</button>
                 </div>  
             </section>
         </main>
-        <footer>
-            <h3>
-                join us on
-            </h3>
-            <section class="socialmediaLogo">
-                <a href="#"><img src="img/twitter-icon.svg" alt="Twitter logo"></a>  
-                <a href="#"><img src="img/facebook-icon.svg" alt="Facebook logo"></a>
-                <a href="#"><img src="img/instagram-icon.svg" alt="Instagram logo"></a>
-            </section>
-            <p>&#169; Karma Mobility,Inc.</p>
-        </footer>
+        <iframe src="./footer.html" class="footerContainer"></iframe>
     </body>
->>>>>>> Stashed changes
+
 </html>

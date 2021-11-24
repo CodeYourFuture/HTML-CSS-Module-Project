@@ -5,27 +5,22 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-<<<<<<< Updated upstream
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
-=======
 /*Header
 -----------------------------------------------------*/
+.header-container-main {
+    width: 100%;
+    border: none;
+   margin-bottom: -0.5rem;
+    height: 84px;
+  
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0.6rem 3rem ;
+    margin:0 3rem ;
 }
 
 .logoImg {
@@ -51,12 +46,12 @@ body {
     color: rgb(168, 162, 162); 
 }
 
-.makeBlack {
+.active-nav {
     color:rgb(105, 97, 97);
     font-weight:bold;
 } 
 
-.navLink:hover, .makeBlack:hover {
+.navLink:hover, .active-nav:hover {
     color: chocolate;
 }
 
@@ -70,7 +65,7 @@ body {
     height: 47vh;
     color: white;
     text-align: center;
-    padding:15% 0;
+    padding: 12rem 0;
 }
 
 .introduction h1 {
@@ -139,9 +134,8 @@ body {
     width: 45vw;
 }
 
-.getkarmaTitle {
-    width: 65vw;
-    height: 63vh;
+.quoteContainer {
+    width: 64%;
     background-color: rgb(246, 230, 227);
     display: flex;
     flex-direction: column;
@@ -155,10 +149,10 @@ body {
 }
 
 .getKarma h2 {
-    width: 40vW;
+    width: 48vW;
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 10;
+    font-weight:400;
     color: rgb(71, 67, 67);
 }
 
@@ -166,8 +160,39 @@ body {
     width: 9.4rem;
 }
 
+.quote {
+    font-style: italic;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+/*Quote Mark*/
+
+.quote:before {
+    color: rgb(238, 109, 4);
+    content: open-quote;
+    font-size: 4rem;
+    padding-right: 0.1rem;
+    line-height: 0.5rem;
+    vertical-align: -0.8rem;
+}
+
+.quote::after {
+    color: rgb(238, 109, 4);
+    content: close-quote;
+    font-size: 4rem;
+    padding-left: -0.3rem;
+    line-height: 0.7rem;
+    vertical-align: -0.8rem;  
+}
+
 /*footer
 -------------------------------------------------*/
+.footerContainer {
+    width: 100%;
+    border:none;
+    height:200px;
+}
+
 footer {
     text-align: center;
     border-top: rgb(238, 238, 238) solid 1px;
@@ -201,6 +226,5 @@ footer h3 {
     margin: 0.6rem; 
 }
 
-/*media query*/
-/*I am still working on that*/
->>>>>>> Stashed changes
+
+
