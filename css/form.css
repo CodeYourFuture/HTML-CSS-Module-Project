@@ -1,0 +1,93 @@
+nav {
+    background-color: hsla(0, 0%, 77%, 0.1);
+}
+main {
+    margin-top: 0;
+    padding-top: 0;;
+}
+section {
+    width: 50%;
+    
+}
+.flex-container {
+    display: flex;    
+}
+
+h1 {
+    text-align: center;
+    color: hsla(15, 69%, 58%, 1);
+}
+
+.flex-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+    max-width: 500px;
+    margin: 0 auto;       
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+form .two-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text], select, option{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.name input, .name label, legend {
+    display: block;
+    
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
+
+select:required:invalid {
+    color: #666;
+  }
+
+  option[value=""][disabled] {
+    display: none;
+  }
+
+  option {
+    color: #000;
+  }
+
+
+.radio-buttons {
+    display: flex;
+}
+
+.radio-orange {
+    display: flex;
+}
+
+/* #karmaOrange {
+    box-shadow: hsla(15, 69%, 58%, 1);   
+} */
+
+span a {
+    color: hsla(15, 69%, 58%, 1);
+}
+button {
+    float: left;
+}
+
