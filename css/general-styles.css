@@ -1,0 +1,85 @@
+/* General styles */
+
+:root {
+    --orange: #E0633A;
+    --grey: #616668;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;    
+    font-family: Roboto, sans-serif; 
+    overflow-x: hidden;  
+}
+
+main {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button */
+
+button {
+    background-color: #E0633A;  
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 22px 45px;
+    border-style: none;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;   
+}
+
+.footer-icons img {
+    margin: 10px;
+}
+
+.footer-icons img {
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.75;    
+}
+
+footer p { 
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.credits {
+    opacity: 0.5;
+}
+
