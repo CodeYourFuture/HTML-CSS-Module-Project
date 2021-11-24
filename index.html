@@ -13,7 +13,7 @@
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&family=Montserrat:wght@200&family=Work+Sans:wght@200&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -22,14 +22,17 @@
   </head>
   <body>
     <header>
-      <a class="header" href="#">
+      <a class="header-logo" href="#">
         <img
           class="logo-image"
           src="./img/karma-logo.svg"
           alt="logo of karma"
         />
       </a>
-      <nav>
+      <nav class="nav">
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
         <ul class="nav-menu">
           <li class="list-item">
             <a href="#" class="nav-link nav-active">Meet Karma</a>
@@ -55,13 +58,13 @@
     <main>
       <section class="home">
         <div class="content">
-          <h1 class="intro-karma">Introducing Karma</h1>
+          <h2 class="intro-karma">Introducing Karma</h2>
           <p class="slogan">Bring WiFi with you everywhere you go.</p>
           <button class="learn-more">Learn More</button>
         </div>
       </section>
       <section class="products">
-        <h1>Everyone needs a little Karma</h1>
+        <h2>Everyone needs a little Karma.</h2>
         <div class="product-cards">
           <article class="cards">
             <img
@@ -89,33 +92,51 @@
           </article>
         </div>
       </section>
+      <section class="quoto-section">
+        <img
+          class="quoto-image"
+          src="./img/homepage-feature.jpg"
+          alt="quoto image"
+        />
+        <article class="quoto-container">
+          <div class="quoto-content">
+            <p>
+              <span>“</span>Wherever I am, I just don’t worry about my
+              connection anymore!<span>”</span>
+            </p>
+            <button class="get-karma">Get Karma today</button>
+          </div>
+        </article>
+      </section>
     </main>
-    <footer class="footer-contacts">
-      <h3>Join us on</h3>
-      <div>
-        <a href="#">
-          <img
-            class="footer-icons"
-            src="./img/twitter-icon.svg"
-            alt="twitter-icon"
-          />
-        </a>
-        <a href="#">
-          <img
-            class="footer-icons"
-            src="./img/facebook-icon.svg"
-            alt="facebook-icon"
-          />
-        </a>
-        <a href="#">
-          <img
-            class="footer-icons"
-            src="./img/instagram-icon.svg"
-            alt="instagram-icon"
-          />
-        </a>
+    <footer>
+      <div class="footer-container">
+        <h3>Join us on</h3>
+        <div class="contact-icons">
+          <a href="#">
+            <img
+              class="footer-icons"
+              src="./img/twitter-icon.svg"
+              alt="twitter-icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="footer-icons"
+              src="./img/facebook-icon.svg"
+              alt="facebook-icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="footer-icons"
+              src="./img/instagram-icon.svg"
+              alt="instagram-icon"
+            />
+          </a>
+        </div>
+        <p>@Karma mobility, INC</p>
       </div>
-      <p>@Karma mobility, INC</p>
     </footer>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->

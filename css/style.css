@@ -1,8 +1,18 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'M PLUS 1p', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+}
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  text-align: center;
 }
 
 header,
@@ -14,17 +24,27 @@ footer {
 }
 
 header {
-  height: 4rem;
-  padding-top: 1rem;
+  height: 4.3rem;
   display: flex;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
+  overflow: hidden;
+  /* position: fixed; */
+  top: 0px;
+  background-color: rgb(253, 253, 253);
+  /* width: 1056px; */
 }
 
 .logo-image {
   height: 40px;
   width: auto;
   margin-left: 6rem;
+}
+
+.nav label,
+#hamburger {
+  display: none;
 }
 
 .nav-menu {
@@ -46,18 +66,23 @@ header {
 }
 
 .nav-link:hover {
-  color: rgb(226, 131, 7);
+  color: #e0633a;
 }
 
 .nav-active {
   color: rgb(32, 29, 29);
 }
 
+main {
+  /* margin-top: 5rem; */
+}
+
 .home {
-  font-family: "M PLUS 2", sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 35rem;
   display: flex;
   justify-content: center;
@@ -65,50 +90,62 @@ header {
 }
 
 .content {
-  max-width: 25rem;
+  min-width: 35rem;
   margin: auto;
   color: azure;
   padding-bottom: 3.5rem;
 }
 
-.content h1 {
+.content h2 {
   font-size: 2.4rem;
+  font-weight: 550;
   margin-bottom: 0;
 }
 .content p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
   margin-bottom: 2.5rem;
 }
 .content .learn-more {
   color: azure;
-  background-color: rgb(207, 85, 4);
+  background-color: #e0633a;
   border: none;
   border-radius: 4px;
   padding: 8px 10px;
   font-size: 0.9rem;
   font-family: sans-serif;
+  font-weight: 500;
+}
+
+.content .learn-more:hover {
+  color: #e0633a;
+  background-color: azure;
 }
 
 .products {
-  margin-top: 3.5rem;
+  margin: 4rem 0;
   text-align: center;
 }
 
 .product-cards {
   display: flex;
   justify-content: space-around;
-  margin: 0 9rem;
-  border-bottom: 1px solid rgb(221, 211, 211);
-  padding-bottom: 2rem;
+  margin: 0 5.5rem;
 }
 
-.products h1 {
-  font-family: "M PLUS 2", sans-serif;
-  font-size: 1.8rem;
+.products h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+
+.products p {
+  font-size: 1.2rem;
+  padding: 1.1rem 0;
 }
 
 .cards {
-  padding: 1rem 0;
+  padding: 1.3rem 0;
 }
 
 .card-logos {
@@ -117,37 +154,78 @@ header {
   padding-left: 1.5rem;
 }
 
+.quoto-section {
+  display: flex;
+  height: 350px;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.quoto-image {
+  height: 100%;
+  width: auto;
+}
+
+.quoto-section .quoto-container {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(224, 99, 58, 0.1);
+  padding: 0 4.5rem;
+}
+
+.quoto-content {
+  margin: auto;
+  padding-top: 2.5rem;
+  display: block;
+}
+.quoto-content p {
+  margin-top: 1.8rem;
+  font-style: italic;
+  font-size: 2.2rem;
+}
+
+.quoto-content span {
+  color: red;
+}
+
 footer {
   font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 3rem 0;
+  border-top: 1px solid rgb(230, 224, 224);
   text-align: center;
   padding: 1rem;
 }
-
 footer h3 {
   font-weight: 500;
 }
 
 footer a {
   text-decoration: none;
-  padding-left: 0.3rem;
+  padding-left: 0.8rem;
 }
 
-.footer-contacts {
-  padding: 1rem;
+.contact-icons {
+  margin: 20px 0;
 }
 
 .footer-icons {
   width: auto;
-  height: 14px;
-  border: 1px solid rgb(221, 211, 211);
+  height: 2.2rem;
+  border: 1px solid rgb(230, 224, 224);
   border-radius: 50%;
-  padding: 0.5rem;
-  color: grey;
+  padding: 0.4rem;
 }
 
 footer p {
-  color: rgb(138, 135, 135);
+  color: rgb(190, 180, 180);
 }
+
 /**
  * Add your custom styles below
  * 
@@ -157,3 +235,35 @@ footer p {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+@media only screen and (max-width: 600px) {
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  .nav-menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  .nav label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  .nav-menu {
+    display: none;
+  }
+  .nav input:checked ~ .nav-menu {
+    display: block;
+  }
+}
