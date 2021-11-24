@@ -48,25 +48,57 @@
          <section class="form_details">
             <form >
                 <fieldset>
-            
-                    <label for="fname">First name *</label>
-                    <input type="text" id="fname" name="fname">
+                    
+                    <label for="fname">First name *</label><br>
+                    <input type="text" id="fname" name="fname" required>
+                   
                     <label for="lname">Last name *</label>
-                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    
+                    <wrapper>
+                    <div class="align_form">
                     <label for="address">Address *</label>
-                    <input type="text" id="address" name="address"><br><br>
-            
+                    <input type="text" id="address" name="address" required><br><br>
+                    </div>
+                    <div class="align_form">
                     <label for="address 2">Address 2</label>
                     <input type="text" id="address" name="address"><br><br>
+                    </div>
+                    </wrapper>
+                    
                     <label for="city">City *</label>
-                    <input type="text" id="city" name="city" value="Select your city..">
+                    <input type="text" id="city" name="city" placeholder="Select your city.." required>
+                   
                     <label for="postcode">Postcode *</label>
-                    <input type="text" id="postcode" name="postcode"><br><br>
-            
+                    <input type="text" id="postcode" name="postcode" required><br><br>
+                    
                 </fieldset>
+
+               <div class="section-3">
+                    <p>Select a colour </p>
+                     <br>
+                    <input  type="radio" id="Karma orange" value="Karma orange" name="Select a colour">
+                    <label class="section-3" for="Karma orange">Karma orange </label>
+                    
+                    <input  type="radio" id="space grey" value="space grey" name="Select a colour">
+                    <label class="section-3" for="space grey">Space Grey</label>
+                
+                </div>
+                
             </form>
+
+           
             
          </section>
+
+    
+
+   <!-- <div class="terms">
+    <input type="checkbox" id="t-and-c" value="t=an-c" name="tea">
+    <label for="t-and-c"> By placing your order you agree to KArma's Terms and Conditions. */label>
+    </label>-->
+
+    
 
         <section class="section-2">
           <img class="working_desk" src="img\store-image_by-andrew-neel-unsplash.jpg" />

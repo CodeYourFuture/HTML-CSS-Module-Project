@@ -57,49 +57,29 @@ a:hover {
   margin-left: 150px;
   margin-right: 900px;
   position: relative;
-  top: 75px;
+  top: 50px;
+  color: orangered;
+}
+
+.head_title {
+  /*display: flex;*/
   color: orangered;
 }
 
 .form_details {
+  display: flex;
   position: relative;
-  top: 100px;
-  margin-left: -85px;
-  margin-right: 1000px;
+  top: 75px;
+  margin-left: -10px;
+  margin-right: -1000px;
 }
-.head_title {
+.align_form {
   display: flex;
-  color: orangered;
-}
-
-form {
-  border: none;
-  display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 fieldset {
-  background-color: white;
   border: none;
-  border-radius: 2px;
-  margin-bottom: 12px;
-  overflow: hidden;
-  padding: 0 0.625em;
-}
-input {
-  /*display: block;*/
-  margin: 25px;
-  height: 30px;
-  position: relative;
-  top: 40px;
-  margin-left: -50px;
-}
-
-label {
-  width: 100px;
-  /*display: block;*/
-  height: 25px;
-  position: relative;
-  margin-left: 50px;
+  margin-left: 150px;
 }
 
 /*image*/
@@ -107,16 +87,35 @@ label {
   display: flex;
   margin-left: 1020px;
   background-color: magenta;
-  margin-top: -545px;
+  margin-top: -400px;
   position: relative;
 }
-
 /*working at desk image*/
 .working_desk {
   width: 1000px;
   height: 900px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* Select a Colour*/
+.section-3 {
+  position: relative;
+  margin-left: 150px;
+  margin-right: -50px;
+}
+
+/*input[type="radio"],
+input.radio {
+  /*float: left;
+  /*margin: 50px;
+  margin-left: -50px;
+}*/
+
+.terms {
+  margin-left: 150px;
+  position: relative;
+  bottom: -150px;
 }
 
 /*footer*/
