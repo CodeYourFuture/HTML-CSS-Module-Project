@@ -1,68 +1,3 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-
-/* Header */
-
-header {
-    padding: 0 5rem;
-    justify-content: space-between;
-}
-
-
-/* Logo */
-
-header img {
-    height: 2rem;
-    width: 2rem;
-}
-
-
-/* Nav Links */
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    padding: 0.5rem;
-    align-self: center;
-}
-
-a {
-    text-decoration: none;
-    color: grey;
-}
-
-a:hover,
-span {
-    color: orangered;
-}
-
-span {
-    font-weight: 500;
-}
-
-li:nth-of-type(1) a {
-    color: rgb(68, 67, 67);
-}
-
-strong {
-    font-weight: 500;
-}
-
-
-/* Hamburger Menu */
-
-.hamburger-menu {
-    display: none;
-}
-
-
 /* Hero */
 
 .hero {
@@ -77,8 +12,7 @@ strong {
 /* Hero Text */
 
 h1,
-.hero p,
-button {
+.hero p {
     color: white;
 }
 
@@ -89,14 +23,6 @@ h1 {
 
 .hero p {
     font-size: 30px;
-}
-
-button {
-    background: rgb(255, 102, 0);
-    padding: 7px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
 }
 
 
@@ -155,64 +81,6 @@ h2 {
     width: 55%;
 }
 
-hr {
-    width: 90vw;
-    margin: auto;
-    height: 2px;
-    background-color: rgb(238, 238, 238);
-    border: none;
-}
-
-
-/* Footer */
-
-h3 {
-    font-weight: 400;
-    font-size: 22px;
-}
-
-footer a {
-    width: fit-content;
-    margin: 10px;
-    border: 1px solid rgb(238, 238, 238);
-    border-radius: 50%;
-    display: inline-flex;
-}
-
-footer img {
-    height: 20px;
-    padding: 15px;
-}
-
-footer p {
-    color: rgb(163, 159, 159);
-    font-size: 20px;
-    margin-bottom: 100px;
-}
-
-
-/* General Styling */
-
-.jus-cen {
-    justify-content: center;
-}
-
-.al-cen {
-    align-items: center;
-}
-
-.flex {
-    display: flex;
-}
-
-.tex-cen {
-    text-align: center;
-}
-
-.fon-wei {
-    font-weight: 300;
-}
-
 .quotes::before {
     content: "\201C";
 }
@@ -223,12 +91,8 @@ footer p {
 
 .quotes::before,
 .quotes::after {
-    color: orangered;
+    color: #e0633a;
     font-size: 50px;
-}
-
-.form-img {
-    width: 50vw;
 }
 
 @media screen and (max-width: 760px) {
@@ -286,17 +150,6 @@ footer p {
 }
 
 @media screen and (max-width: 570px) {
-    /* Header */
-    header {
-        padding: 1rem 3rem;
-    }
-    /* Nav Links */
-    nav {
-        display: none;
-    }
-    .hamburger-menu {
-        display: flex;
-    }
     /* Hero */
     .hero {
         background-position: right 35% top 50%;
@@ -332,22 +185,6 @@ footer p {
     }
     .column-container p {
         font-size: 20px;
-    }
-    /* Footer */
-    h3 {
-        font-weight: 400;
-        font-size: 22px;
-    }
-    footer a {
-        margin: 8px;
-    }
-    footer img {
-        height: 15px;
-        padding: 10px;
-    }
-    footer p {
-        font-size: 18px;
-        margin-bottom: 60px;
     }
 }
 

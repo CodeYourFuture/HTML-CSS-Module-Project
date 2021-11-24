@@ -1,12 +1,231 @@
 main {
-    display: flex;
+    width: 100vw;
+}
+
+
+/* Form Section */
+
+.form-side {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 50px;
 }
 
 h2 {
-    font-size: 50px;
-    color: orangered;
+    color: #e0633a;
+    padding-top: 0;
+    font-size: 45px;
 }
+
+
+/* Container for the form rows */
 
 fieldset {
     border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+legend {
+    margin: 10px 0;
+}
+
+
+/* Container for the label and input */
+
+.col {
+    flex-direction: column;
+    width: 100%;
+}
+
+.name {
+    width: 50%;
+    margin-right: 0%;
+}
+
+.name:first-of-type .half-width {
+    width: calc(100% - 15px);
+}
+
+.full-width {
+    width: 100%;
+}
+
+label {
+    width: fit-content;
+}
+
+input {
+    padding: 7px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+
+/* City */
+
+select {
+    height: auto;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    flex: 2 1 auto;
+    align-self: auto;
+}
+
+select:invalid {
+    color: grey;
+}
+
+.city-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.post {
+    width: fit-content;
+}
+
+.post label {
+    width: fit-content;
+    margin-left: 15px;
+}
+
+.postcode {
+    flex: 0 1 auto;
+    align-self: auto;
+    margin-left: 15px;
+}
+
+
+/* Radio */
+
+input[type="radio"] {
+    appearance: none;
+    background-color: white;
+    margin: 1px 5px 30px 0;
+    color: grey;
+    width: 15px;
+    height: 15px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 0 0 5px 5px orange;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"]:last-of-type {
+    margin-left: 20px;
+}
+
+
+/* Checkbox */
+
+input[type="checkbox"]:before {
+    content: "";
+    display: flex;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    background: white;
+    border: 2px solid grey;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:checked:before {
+    background-image: url(../img/checkmark.svg);
+    background-size: contain;
+}
+
+.checkbox a {
+    color: #e0633a;
+    text-decoration: underline;
+}
+
+.checkbox {
+    font-size: 12px;
+    color: rgb(70, 70, 70);
+    margin-left: 5px;
+}
+
+.form-img {
+    background: url("../img/store-image_by-andrew-neel-unsplash.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    background-position: right bottom;
+}
+
+@media screen and (max-width: 570px) {
+    main {
+        flex-direction: column;
+    }
+    /* Form Section */
+    .form-side {
+        width: 100%;
+        padding: 0 30px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    /* Container for the form rows */
+    fieldset {
+        flex-direction: column;
+    }
+    .name {
+        width: 100%;
+    }
+    .name:first-of-type .half-width {
+        width: 100%;
+    }
+    /* City */
+    select {
+        margin-bottom: 10px;
+    }
+    select:invalid {
+        color: grey;
+    }
+    .city-wrapper {
+        flex-direction: column;
+    }
+    .post {
+        width: 50%;
+    }
+    .post label {
+        margin-left: 0;
+    }
+    .postcode {
+        margin-left: 0;
+    }
+    input[type="radio"]:last-of-type {
+        margin-left: 0;
+    }
+    .form-img {
+        width: 100%;
+        height: 600px;
+    }
+    .row {
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
 }

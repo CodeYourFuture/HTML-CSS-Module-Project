@@ -7,8 +7,8 @@
     <title>Karma</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/store.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -18,13 +18,13 @@
         <nav>
             <ul class="flex">
                 <li>
-                    <a href="#"><strong>Meet Karma</strong></a>
+                    <a href="./index.html">Meet Karma</a>
                 </li>
                 <li>
                     <a href="#">How it Works</a>
                 </li>
                 <li>
-                    <a href="#">Store</a>
+                    <a href="./store.html" class="active-link">Store</a>
                 </li>
                 <li>
                     <a href="#">Blog</a>
@@ -40,20 +40,34 @@
         <img src="img/menu-hamburger.svg" class="hamburger-menu">
 
     </header>
-    <main>
-        <section>
+    <main class="flex">
+        <section class="form-side">
             <h2>Order your Karma wifi device today!</h2>
             <form action="">
-                <label for="first-name">First name *</label>
-                <input type="text" name="first-name" id="first-name" required>
-                <label for="last-name">Last name *</label>
-                <input type="text" name="last-name" id="last-name" required>
-                <label for="address-1">Address *</label>
-                <input type="text" name="address-1" id="address-1">
-                <label for="address-2">Address 2</label>
-                <input type="text" name="address-2" id="address-2">
-                <label for="city">City *</label>
-                <select name="city" id="city" required>
+                <fieldset class="flex">
+                    <fieldset class="flex  col name">
+                        <label for="first-name">First name *</label>
+                        <input type="text" name="first-name" id="first-name" class="half-width" required>
+                    </fieldset>
+                    <fieldset class="flex col name">
+                        <label for="last-name">Last name *</label>
+                        <input type="text" name="last-name" id="last-name" class="half-width" required>
+                    </fieldset>
+                </fieldset>
+                <fieldset class="flex">
+                    <fieldset class="flex col">
+                        <fieldset class="flex col full-width">
+                            <label for="address-1">Address *</label>
+                            <input type="text" name="address-1" id="address-1"></fieldset>
+                        <fieldset class="flex col full-width">
+                            <label for="address-2">Address 2</label>
+                            <input type="text" name="address-2" id="address-2"></fieldset>
+                    </fieldset>
+                </fieldset>
+                <fieldset class="flex city-wrapper">
+                    <fieldset class="flex  col">
+                        <label for="city">City *</label>
+                        <select name="city" id="city" required>
                     <option value="" disabled selected>Select your city...</option>
                     <option value="london">London</option>
                     <option value="manchester">Manchester</option>
@@ -64,21 +78,30 @@
                     <option value="bristol">Bristol</option>
                     <option value="leeds">Leeds</option>
                 </select>
-                <label for="postcode">Postcode *</label>
-                <input type="text" name="postcode" id="postcode" required>
-                <fieldset>
+                    </fieldset>
+                    <fieldset class="flex col post">
+                        <label for="postcode">Postcode *</label>
+                        <input type="text" name="postcode" id="postcode" required class="postcode">
+                    </fieldset>
+                </fieldset>
+                <fieldset class="flex">
                     <legend>Select a colour</legend>
-                    <input type="radio" name="colour" value="orange" id="orange" required>
-                    <label for="orange">Karma orange</label>
-                    <input type="radio" name="colour" value="grey" id="grey" required>
-                    <label for="grey">Space grey</label>
+                    <fieldset class="flex row">
+                        <input type="radio" name="colour" value="orange" id="orange" required>
+                        <label for="orange">Karma orange</label>
+                    </fieldset>
+                    <fieldset class="flex row">
+                        <input type="radio" name="colour" value="grey" id="grey" required>
+                        <label for="grey">Space grey</label>
+                    </fieldset>
                 </fieldset>
                 <input type="checkbox" required>
-                <label for="checkbox">By placing your order, you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
+                <label for="checkbox" class="checkbox">By placing your order, you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
+                <br/>
                 <input type="submit" value="Place my order">
             </form>
         </section>
-        <section><img src="./img/store-image_by-andrew-neel-unsplash.jpeg" alt="Image of a woman sitting drinking coffee while working" class="form-img" /></section>
+        <section class="form-img"></section>
     </main>
     <footer class="tex-cen">
         <hr>

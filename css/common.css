@@ -1,0 +1,166 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Header */
+
+header {
+    padding: 0 5rem;
+    justify-content: space-between;
+    background: rgba(196, 196, 196, 0.1);
+}
+
+
+/* Logo */
+
+header img {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+/* Nav Links */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0.5rem;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover,
+span {
+    color: #e0633a;
+}
+
+span {
+    font-weight: 500;
+}
+
+.active-link {
+    color: rgb(68, 67, 67);
+    font-weight: 500;
+}
+
+strong {
+    font-weight: 500;
+}
+
+
+/* Hamburger Menu */
+
+.hamburger-menu {
+    display: none;
+}
+
+hr {
+    width: 90vw;
+    margin: auto;
+    height: 2px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+}
+
+
+/* Footer */
+
+h3 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+footer a {
+    width: fit-content;
+    margin: 10px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+footer img {
+    height: 20px;
+    padding: 15px;
+}
+
+footer p {
+    color: rgb(163, 159, 159);
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+
+/* Button and submit */
+
+button,
+input[type="submit"] {
+    background: #e0633a;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+
+/* General Styling */
+
+.jus-cen {
+    justify-content: center;
+}
+
+.al-cen {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.tex-cen {
+    text-align: center;
+}
+
+.fon-wei {
+    font-weight: 300;
+}
+
+@media screen and (max-width: 570px) {
+    /* Header */
+    header {
+        padding: 1rem 3rem;
+    }
+    /* Nav Links */
+    nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    /* Footer */
+    h3 {
+        font-weight: 400;
+        font-size: 22px;
+    }
+    footer a {
+        margin: 8px;
+    }
+    footer img {
+        height: 15px;
+        padding: 10px;
+    }
+    footer p {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+}
