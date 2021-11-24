@@ -33,7 +33,7 @@ h5{
 }
 
 
-/* FIELDS */
+/* FORM FIELDS */
 fieldset{
     border: none;
 }
@@ -52,7 +52,6 @@ input[type=text], select, option.field-flex-item {
     justify-content:space-evenly;
     width: 100%;
 }
-
 
 .field-fname{
     width: 50%;
@@ -78,7 +77,7 @@ label > input[type="radio"] {
 label > input[type="radio"] + *::before {
   content: "";
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align:middle;
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -90,14 +89,14 @@ label > input[type="radio"] + *::before {
 }
 
 label > input[type="radio"]:checked + *::before {
-  background: radial-gradient(#DE6E49 0%, #DE6E49 50%, transparent 0%, transparent);
+  background: radial-gradient(#DE6E49 0%, #DE6E49 50%, transparent 60%);
   border-color: grey;
 }
 
 label{
     color: gray;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 19px;
 }
 
 .label400{
@@ -110,10 +109,7 @@ label{
     margin-left: 20px;
 }
 
-.test{
-    height: 100px;
-    background-color: orange;
-}
+
 
 /* /BUTTONS */
 button{
@@ -122,15 +118,6 @@ button{
     font-size: 22px;
 }
 
-.link{
-    color: #DE6E49;
-;
-
-}
-.terms{
-    display: flex;
-    margin-top: 40px;
-}
 
 input[type="checkbox"]{
   
@@ -138,5 +125,52 @@ input[type="checkbox"]{
   height: 20px;
 }
 
+/* FAKE CHECK BOX */
+[type="checkbox"]{
+    opacity:0;
+}
+[type="checkbox"] + label{
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    color:#DE6E49;
+    margin-left:-15px;
+    height: 0px;
+}
 
+[type="checkbox"] + label ::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    outline: 2px solid gray;
+    border-radius: 4px;
+    background: white;
 
+}
+
+[type="checkbox"]:checked + label ::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image:url(../img/tick_checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+ /* LINK CHECKBOX */
+.link{
+    color: #DE6E49;
+    display: inline-block;
+    font-size: 18px;
+}
+.terms{
+    display: flex;
+    margin-top: 40px;
+}
