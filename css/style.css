@@ -141,6 +141,39 @@ h3 {
   font-size: 15px;
 }
 
+/* additional image and button */
+
+.features {
+  background-image: url("../additional//feature-img.png");
+  width: 550px;
+  height: 440px;
+  left: 599px;
+}
+
+.rectangle {
+  width: 1500px;
+  height: 240px;
+  margin-left: 550px;
+  background: #e0633a31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.quote {
+  height: 100px;
+  width: 300px;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 200;
+}
+.button_color {
+  color: white;
+}
+
+
 /**
  * Add your custom styles below
  * 
