@@ -11,7 +11,6 @@ body {
   color: #e0633a;
 }
 header {
-  width: 1440px;
   background-color: #ebe4e4;
 }
 /* styling h1 */
@@ -22,11 +21,8 @@ h1 {
 
 /* styling the form and side image */
 .main {
-  width: 1440px;
   border: 1px solid red;
   background-color: white;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 /* styling the form */
 form {
@@ -119,6 +115,7 @@ input[type="radio"]:checked:after {
   display: inline-block;
   border: 2px solid white;
 }
+
 /* styling the terms and conditions */
 .terms {
   color: tomato;
@@ -135,7 +132,7 @@ input[type="radio"]:checked:after {
 }
 
 /* styling for tablet  */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1155px) {
   nav {
     font-size: 15px;
   }
@@ -144,5 +141,10 @@ input[type="radio"]:checked:after {
   }
   nav ul li {
     padding: 0 0.5rem;
+  }
+  .aside-image {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
 }
