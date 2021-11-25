@@ -5,40 +5,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* HEADER*//*
-.header {
-    display: flex;
-}
-
-.header-image {
-    height: 50px;
-    width: 50px;
-    padding-left: 160px;
-    padding-top: 15px;
-}*/
-
-/* NAVIGATION */
-/*
-.nav-list {
-    display: flex;
-    list-style: none;
-    margin-left: 900px;
-}
-
-.nav-item {
-    padding: 17px;
-}
-
-.nav-link:hover {
-    color: #eb6728;
-}
-
-.nav-link {
-   text-decoration: none; 
-   color: #888;
-} 
-*/
-
 /* BACKGROUND IMAGE, TEXT AND BUTTON */
 .page-top-half {
     position: relative;
@@ -65,7 +31,7 @@ body {
     font-weight: 100;
 }
 
-.page-top-half p {
+.page-top-half h2 {
     font-size: 34px;
     top: 45%;
     font-weight: 100;
@@ -87,11 +53,6 @@ button {
     position: absolute;
     left: 46%;
     top: 59%;
-    /* padding: 15px 40px;
-    background-color: #eb6728;
-    color: white;
-    border: none;
-    border-radius: 4px; */
 }
 
 /* BOTTOM HALF OF PAGE STYLING */
@@ -114,7 +75,6 @@ button {
 
 .icon-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -186,48 +146,3 @@ q::after {
     justify-content: center;
     margin-top: 30px;
 }
-
-/*FOOTER STYLING
-.footer-border-line {
-    border-top: 2px solid #dfdfdf;
-    margin: 0 150px 0 150px;
-} 
-
-.footer h6 {
-    text-align: center;
-    font-size: 23px;
-    font-weight: 400;
-    color: #3c3b3b;  
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-
-.footer-content {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}*/
-
-/* SOCIAL MEDIA ICONS/COPYRIGHT */
-/*
-.social {
-    max-height: 20px;
-    width: 20px;
-    padding: 8px;
-    border-radius: 50px;
-    border: solid #dddddd 1px;
-    margin: 10px;
-}
-
-.social-media-icons {
-    max-height: 20px;
-    width: auto;
-}
-
-.copyright {
-    text-align: center;
-    color: #b5b3b3;
-    margin-bottom: 100px;
-}
-*/
