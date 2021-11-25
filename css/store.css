@@ -1,0 +1,267 @@
+/*header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.header-logo {
+  display: flex;
+  max-height: 50px;
+  width: 100px;
+  margin-left: 15px;
+}
+
+/* Navigation */
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+}
+
+#active-nav {
+  color: rgb(116, 113, 113);
+  font-weight: 600;
+}
+.nav-link {
+  color: rgb(160, 155, 155);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.nav-link:hover {
+  color: rgb(255, 102, 0);
+  cursor: pointer;
+}
+
+/* page two */
+/* Get today section */
+
+main {
+  display: flex;
+  width: 1138px;
+  height: 820px;
+}
+
+.details {
+  width: 569px;
+  height: 820px;
+  padding: 80px;
+}
+
+.details p {
+  color: orange;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+/*  labels 
+.checks label {
+  margin-top: 0;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}  */
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.firstname,
+.lasname {
+  width: 200px;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+.city,
+.postcode {
+  width: 200px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+#address1,
+#address2 {
+  width: 400px;
+}
+input {
+  width: 180px;
+  padding: 0.5rem;
+  border: solid 1px #999;
+}
+.checks label {
+  margin-right: 30px;
+  margin-top: 12px;
+}
+
+legend {
+  margin-top: 3.5rem;
+}
+input[type="radio"] + label {
+  display: inline-block;
+}
+
+.t-cs input {
+  width: auto;
+}
+.t-cs {
+  display: inline-block;
+  margin-top: 55px;
+}
+
+label a {
+  color: orange;
+}
+
+#karma-orange,
+#space-grey,
+#checkbox {
+  width: auto;
+  margin-right: 3px;
+}
+/* radio buttons styling */
+
+[type="radio"] {
+  display: none;
+}
+[type="radio"] + label {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+}
+[type="radio"] + label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  outline: 2px solid #aaa;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+[type="radio"]:checked + label::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background: orange;
+  border-radius: 100%;
+  left: 2px;
+  top: 2px;
+}
+
+/* checkbox styling */
+[type="checkbox"] {
+  opacity: 0;
+}
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+}
+[type="checkbox"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  outline: 2px solid #aaa;
+  background: #fff;
+  left: 0;
+  top: 0;
+}
+[type="checkbox"]:checked + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  outline: 2px solid orange;
+  background: #fff;
+  left: 0;
+  top: 0;
+}
+[type="checkbox"]:checked + label::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/checkmark.svg);
+  background-size: contain;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+
+.details-style {
+  display: flex;
+  flex-direction: column;
+}
+.center-img {
+  display: absolute;
+  width: 569px;
+  height: 820px;
+}
+
+button {
+  font-size: 1rem;
+  margin-top: 22px;
+  padding: 14px 45px;
+  background-color: rgb(255, 102, 0);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  float: left;
+  width: 48%;
+}
+
+/* Footer */
+
+.footer {
+  border-top: 1px solid rgb(199, 196, 196);
+  margin: 0rem 6rem 4rem 7rem;
+  padding-top: 0.5rem;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  border: 1px solid rgb(228, 225, 225);
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+}
+
+footer img {
+  height: 20px;
+  padding: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-p {
+  color: rgb(156, 154, 154);
+  margin-top: 1rem;
+}
