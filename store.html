@@ -13,8 +13,8 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/common_style.css" />
+    <link rel="stylesheet" href="css/store_style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
@@ -26,7 +26,7 @@
       <nav>
         <ul class="navigation__list flex">
           <li class="navigation__item">
-            <a class="navigation__link font_bold text_base_color" href="index.html"
+            <a class="navigation__link text_color_med" href="index.html"
               >Meet Karma</a
             >
           </li>
@@ -34,7 +34,7 @@
             <a class="navigation__link text_color_med" href="#">How it Works</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link highlight_color" href="store.html">Store</a>
+            <a class="navigation__link font_bold text_base_color" href="store.html">Store</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link text_color_med" href="blog.html">Blog</a>
@@ -88,7 +88,7 @@
               <div class="flex direction city_box">
                 <label for="city" class="text_base_color2 label_pad required">City</label>
                 <select name="address" id="city" class="input_box text_base_color2 it_text" required>
-                    <option value="" disabled selected>Please select you city...</option>
+                    <option value="" disabled selected>Select you city...</option>
                     <option value='Abingdon'>Abingdon</option>
                     <option value='Accrington'>Accrington</option>
                     <option value='Acle'>Acle</option>
@@ -1056,9 +1056,9 @@
             </div>
 
             <!--Agree on terms-->
-            <div class="pad_top">
+            <div class="pad_top terms_box">
               <input type="checkbox" id="terms" value="agreed" name="terms" required=true>
-              <label for="terms" class="required text_base_color2">By placing your order you agree to Karma's Terms and Conditions.</label>
+              <label for="terms" class="required text_base_color2 terms_font">By placing your order you agree to Karma's <a href="#" class="highlight_color">Terms and Conditions</a>.</label>
             </div>
 
             <!--Submit-->
@@ -1067,12 +1067,8 @@
           </form>
         </section>
 
-      <!--Right side of the page (Main image)-->
+        <!--Right side of the page (Main image)-->
         <div class="img_box"> 
-          <img
-              src="img/store-image_by-andrew-neel-unsplash.jpg"
-              alt="girl working at dest"
-            />
         </div>
          
       </section>

@@ -3,7 +3,14 @@ body {
 }
 
 h1 {
-  width: 75%;
+  width: 80%;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+label,
+p {
+  font-size: 21px;
 }
 
 .pad_bot {
@@ -22,7 +29,7 @@ h1 {
 
 .form_box {
   width: 50%;
-  padding: 100px 100px 30px 100px;
+  padding: 118px 123px 40px 123px;
 }
 
 .required:after {
@@ -69,10 +76,10 @@ input[type="radio"] {
 input[type="radio"] + *::before {
   content: "";
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
   width: 1rem;
   height: 1rem;
-  margin-right: 0.3rem;
+  margin: 0 0.4rem 0.2rem 0;
   border-radius: 50%;
   border-style: solid;
   border-width: 0.1rem;
@@ -89,13 +96,26 @@ input[type="radio"]:checked + *::before {
   border-color: #666666;
 }
 /*styling image box*/
-
-img {
-  max-width: 100%;
-  max-height: 1235px;
+.img_box {
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/store-image_by-andrew-neel-unsplash.jpg);
 }
 
 /*styling T&C checkbox*/
+.terms_box {
+  width: 80%;
+}
+
+.terms_font {
+  font-size: 18px;
+  display: block;
+  padding-left: 25px;
+  text-indent: -25px;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -111,6 +131,8 @@ input[type="checkbox"] + *::before {
   border-width: 0.1rem;
   border-color: #666666;
   border-radius: 3px;
+  overflow: hidden;
+  position: relative;
 }
 input[type="checkbox"]:checked + *::before {
   background-image: url("../img/checkmark.svg");

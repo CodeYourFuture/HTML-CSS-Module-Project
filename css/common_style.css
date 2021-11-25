@@ -68,7 +68,7 @@ body {
 
 .header {
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 20px 123px;
 }
 
 .header_logo {
@@ -98,13 +98,16 @@ body {
 .underline {
   /*line separation main and footer */
   border-top: 1.5px solid #dddddd;
-  margin: 0px 100px;
+  margin: 0px 123px;
 }
 
 /* styling footer */
 h5 {
   text-align: center;
   font-size: 1.1rem; /* For "Join Us" located in the footer */
+}
+footer {
+  padding-bottom: 60px;
 }
 
 .social {
