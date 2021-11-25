@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.img--div {
+    display:flex;
+    width:50%
+}
+
+
+.form {
+    display:flex;
+    flex-flow: column;
+    gap: 10px;
+    width: 50%;
+    padding-left: 40px;
+    margin: 100px;
+}
+    
+    
+input {
+    height: 2em;
+}
+
+
+h2 {
+    color: #CC5500;
+}
+
+
+.parent--form {
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+
+.div--name {
+    display:flex;
+    flex-direction: column; 
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+
+.pform {
+    text-align: left;
+}
+
+
+.colour {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+
+.radio--content {
+    padding: 0;
+}
+
+
+.btn2 {
+    color:white;
+}
+
+
+.terms {
+    color:#CC5500;
+    padding: 0px;
+}
+
+
+footer {
+    margin-bottom: 200px;
+} 

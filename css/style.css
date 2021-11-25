@@ -19,7 +19,7 @@ body {
 a {
     margin: 20px;
     text-decoration: none;
-    color:grey;
+    color: gray;
 }
 
 
@@ -27,11 +27,15 @@ a:hover {
     color: darkorange;
 }
 
+
+
+
 .logo {
-  display: inline-flex;
-  height: auto;
-  width: 50%;
-  margin:5px;
+    display: inline-flex;
+    height: auto;
+    width: 600px;;
+    margin:5px;
+  
 
     }
 
@@ -49,9 +53,10 @@ a:hover {
 .insidecon {
     display: flex;
     flex-flow: column;
+    flex-grow: 1;
     align-items: center;
     color: whitesmoke;
-    margin-bottom: 40px;;
+    margin-bottom: 40px;
 }
 
 
@@ -76,7 +81,7 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-      
+     
 }
 
     
@@ -87,6 +92,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 120px;
     margin:auto;
+    
 
    
 }
@@ -119,14 +125,13 @@ h1 {
 
 
 p {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
-   
 }
 
 
 
-.pclass {
+h2 {
     text-align: center;
     font-size: 20px;
     padding: 60px;
@@ -142,6 +147,89 @@ p {
 .hum {
     margin: 20px;
 }
+
+
+.third--section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+
+.img--below {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+    
+}
+
+
+.qoute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    background: rgba(224, 99, 58, 0.1);
+    
+}
+
+
+
+blockquote {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 5rem;
+    padding: 5rem;
+    font-size: 1.5em;
+
+}
+
+
+blockquote::before {
+    content: "\201c";
+    top: 10px;
+    left: -40px;
+    
+}
+
+
+blockquote::after{
+    content: "\201d";
+    top: 10px;
+    left: -30px;
+    
+}
+
+
+blockquote::before,
+blockquote::after {
+    color: orangered;
+    font-size: 42px;
+}
+
+
+.updated--btn {
+    background: orangered;
+    color: white;
+    text-align: center;
+}
+
+
+footer {
+    
+    align-items: center;
+    margin: -20px;
+    width:100%;
+}
+  
+  
+
+
+
+
 
 
 @media (min-width: 600px) {
