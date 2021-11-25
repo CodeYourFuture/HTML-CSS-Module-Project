@@ -23,13 +23,13 @@
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><strong>Meet Karma</strong></a>
+                        <a class="nav-link" href="./index.html"><strong>Meet Karma</strong></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">How it Works</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Store</a> 
+                        <a class="nav-link" href="./registration.html">Store</a> 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a> 
@@ -47,90 +47,98 @@
         <!-- MAIN -->
         <main class="main-container">
             <section class="form-container">
-                <h2>Order your Karma wifi<br>device today!</h1>
+                <h1>Order your Karma wifi device today!</h1>
 
                 <!-- THE FORM -->
                 <form class="form">
-                    <div class="karma-form">
-
+                    <fieldset class="karma-form">
                         <!-- first/last name -->
-                        <div>
-                            <label for="first-name">First name *</label>
-                            <input type="text" name="full-name" required>
-                        
-                            <label for="last-name">Last name *</label>
-                            <input type="text" name="full-name" required>
+                        <div class="row">
+                            <div class="column">
+                                <label for="first-name" class="field-title" >First name *</label>
+                                <input type="text" name="first-name" required>
+                            </div>
+                            
+                            <div class="column">
+                                <label for="last-name" class="field-title">Last name *</label>
+                                <input type="text" name="last-name" required>
+                            </div>   
                         </div>
                         
                         <!-- home address -->
-                        <div>
-                            <label for="home-address">Address *</label>
+                        <div class="column">
+                            <label for="home-address" class="field-title" >Address *</label>
                             <input type="home-address" name="home-address" required>
                         </div>
                         
                         <!-- home address 2 -->
-                        <div>
-                            <label for="home-address">Address 2</label>
+                        <div class="column">
+                            <label for="home-address" class="field-title">Address 2</label>
                             <input type="home-address" name="home-address" required>
                         </div>
-                        
-                        <!-- city -->
-                        <div>
-                            <label for="city">City *</label>
-                            <select name="city" required>
-                            <option selected="selected" value="">Select your city</option>  
-                            <option value="birmingham">Birmingham</option>
-                            <option value="bradford">Bradford</option>
-                            <option value="leeds">Leeds</option>
-                            <option value="liverpool">Liverpool</option>
-                            <option value="london">London</option>
-                            <option value="manchester">Manchester</option>
-                            <option value="sheffield">Sheffield</option>
-                            </select>
+                           
+                        <div class="row">
+                            <!-- city -->
+                            <div class="column">
+                                <label for="city" class="field-title">City *</label>
+                                <select name="city" class="city" required>
+                                    <option disabled selected hidden>Select your city</option>  
+                                    <option value="birmingham">Birmingham</option>
+                                    <option value="bradford">Bradford</option>
+                                    <option value="leeds">Leeds</option>
+                                    <option value="liverpool">Liverpool</option>
+                                    <option value="london">London</option>
+                                    <option value="manchester">Manchester</option>
+                                    <option value="sheffield">Sheffield</option>
+                                </select>
+                            </div>
+                            
+                            <!-- postcode -->
+                            <div class="column">
+                                <label for="postcode" class="field-title" >Postcode *</label>
+                                <input type="postcode" name="postcode" class="postcode" required>
+                            </div>
                         </div>
-                        
-                        <!-- postcode -->
-                        <div>
-                            <label for="postcode">Postcode *</label>
-                            <input type="postcode" name="postcode" required>
-                        </div>
-                    
-                        <!-- radio buttons -->
-                        <div>
-                            <label for="karma-color">Select a color</label><br>
-                            <label for="radio">Karma orange</label>
-                            <input type="radio" name="karma-color" required>
 
-                            <label for="radio">Space grey</label>
-                            <input type="radio" name="karma-color">
+                        <!-- radio buttons -->
+                        <div class="radio-container">
+                            <label for="karma-color" class="field-title">Select a color</label>
+                            <div class="radio-group">
+                                <div class="row">
+                                    <input type="radio" name="karma-color" required>
+                                    <label for="radio">Karma orange</label>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="karma-color">
+                                    <label for="radio">Space grey</label>
+                                </div>
+                            </div> 
                         </div>
                         
                         <!-- checkbox -->
-                        <div>
+                        <div class='tc-container'>
                             <input type="checkbox" name="order_tc" id="order_tc" required/>
-                            <label for="checkbox">By placing your order you agree to Karma's Terms and Conditions. *</label>
+                            <span for="checkbox">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>. *</span>
                         </div>
-                    </div>
-            
-                    
-                    <!-- button -->
-                    <div class="form-button">
-                        <button type="submit" class="button">Place my order</button>
-                    </div>
-                        
+
+                        <!-- button -->
+                        <div class="form-button">
+                            <button type="submit" class="button">Place my order</button>
+                        </div>
+                    </fieldset>
                 </form>
             </section> 
 
             <!-- image -->
-            
-                <img class="form-image" src="img/store-image_by-andrew-neel-unsplash.jpg" alt="woman sitting at table working on laptop with coffee in hand"/>
-               
+            <div class="form-img">
+                <img class="img" src="img/store-image_by-andrew-neel-unsplash.jpg" alt="woman sitting at table working on laptop with coffee in hand"/>
+            </div>     
         </main>
 
         <!-- FOOTER -->
         <footer class="footer">
             <div class="footer-border-line"></div>
-            <h6>Join us on</h6>
+            <h1>Join us on</h1>
             <!-- SOCIAL MEDIA ICONS -->
             <div class="footer-content">
                 <div class="social">
