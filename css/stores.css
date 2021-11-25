@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgba(128, 128, 128, 0.582);
+
+  margin: 5% auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 4vw;
+}
+h2 {
+  font-size: 3vw;
+}
+h3 {
+  font-size: 1.5vw;
+}
+h4 {
+  font-size: 1vw;
+}
+
+/* ==================== Header Styles ===================== */
+.header {
+  width: 100%;
+  padding: 0 0.5em;
+}
+.header_nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 1em 0em;
+}
+.logo {
+  width: 10%;
+  max-width: 15%;
+}
+.header_list {
+  display: flex;
+  list-style: none;
+}
+.list_item {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+.list_div {
+  align-self: center;
+}
+.nav_link {
+  color: rgb(53, 51, 51);
+  text-decoration: none;
+}
+.nav_link:hover {
+  color: rgb(202, 118, 8);
+}
+
+/* =======================Main Style========================== */
+/* ------------store */
+.store {
+  width: 100%;
+  display: flex;
+}
+.store_form {
+  width: 50%;
+  padding: 3em 4em;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vw;
+}
+.store_form label {
+  margin: 8px 0;
+}
+.name_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.city_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.input,
+.store_select {
+  width: 100%;
+  border: 1px solid gray;
+  font-size: 1.5vw;
+  padding: 0.5em;
+}
+.address_item label {
+  width: 100%;
+}
+.name_item label {
+  width: 45%;
+}
+.name_item,
+.address_item,
+.city_item {
+  margin: 3% 0;
+}
+.color_item,
+.terms_conditions {
+  margin: 6% 0;
+}
+
+.color_item p {
+  margin: 0 0 10px 0;
+}
+.color_item label:last-child {
+  margin-left: 5%;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 3px;
+  background-clip: content-box !important;
+  border: 1px solid gray;
+}
+
+input[type="radio"]:checked {
+  background: orangered;
+}
+
+.terms_conditions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  position: relative;
+  color: orangered !important;
+  font-size: 30px;
+  text-align: center;
+}
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.store_image {
+  width: 50%;
+  background: url("../additional/store-image_by-andrew-neel-unsplash.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.city_item label:first-child {
+  width: 60%;
+}
+.city_item label:last-child {
+  width: 30%;
+}
+.terms_conditions {
+  line-height: 1.5em;
+}
+.terms_conditions a {
+  color: orangered;
+  text-decoration: none;
+}
+
+.store_btn {
+  font-size: 2vw;
+  color: white;
+  padding: 0.5em 1em;
+  background-color: orangered;
+  cursor: progress;
+}
+
+/* ============================Footer Styles============================= */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em 0em;
+}
+.social_icons_container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.social_icons {
+  margin-left: 20px;
+}
+.copy_right_text {
+  align-items: center;
+  color: gray;
+  margin-top: 5%;
+}
+.social_icons_page {
+  border: 1px solid gray;
+  padding: 1em;
+  border-radius: 50%;
+}
+.social_icons_page img {
+  width: 20px;
+}

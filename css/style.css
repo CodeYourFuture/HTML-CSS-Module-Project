@@ -125,12 +125,46 @@ h4 {
   justify-content: center;
   margin-top: 5%;
 }
+/* ===================================Why choosing us styles========================= */
+.why_us_container {
+  width: 100%;
+  display: flex;
+
+  margin-top: 5%;
+}
+.customer_image {
+  width: 37%;
+  background: url(../additional/feature-img.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.customer_review {
+  background: rgba(224, 99, 58, 0.1);
+  width: 60%;
+  text-align: center;
+  padding: 3em;
+  color: #434242;
+}
+.get_karma_btn {
+  font-size: 1.5vw;
+  background: orangered;
+  color: white;
+  padding: 1em;
+  border-radius: 5px;
+}
+.get_karma_btn:hover {
+  background: rgb(255, 47, 0);
+  transform: scale(1.2);
+}
 /* ============================Footer Styles============================= */
-.footer_header {
+.footer {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 1em 0em;
 }
 .social_icons_container {
   width: 100%;
@@ -143,7 +177,7 @@ h4 {
   margin-left: 20px;
 }
 .copy_right_text {
-  align-items: center;
+  text-align: center;
   color: gray;
   margin-top: 5%;
 }

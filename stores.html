@@ -5,8 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/stores.css" />
-    <title>Document</title>
+    <title>Store | Karma</title>
   </head>
 
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="header_nav">
+        <div class="logo_div">
+          <img class="logo" src="img/karma-logo.svg" alt="logo" />
+        </div>
+        <div class="list_div">
+          <ul class="header_list">
+            <li class="list_item">
+              <a class="nav_link" href="./index.html">Meet Karma</a>
+            </li>
+            <li class="list_item">
+              <a class="nav_link" href="#how_it_works">How it Works</a>
+            </li>
+            <li class="list_item">
+              <a class="nav_link" href="./stores.html">Stores</a>
+            </li>
+            <li class="list_item">
+              <a class="nav_link" href="#blog">Blog</a>
+            </li>
+            <li class="list_item">
+              <a class="nav_link" href="#help">Help</a>
+            </li>
+            <li class="list_item">
+              <a class="nav_link" href="#log_in">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <article class="store">
+        <section class="store_form">
+          <h1 style="color: orangered;">
+            Order your Karma wifi device today!
+          </h1>
+
+          <div class="name_item">
+            <label for="fist_name"
+              >First name*
+              <br />
+              <input type="text" class="input" />
+            </label>
+            <label for="last_name"
+              >Last name*
+              <br />
+              <input type="text" class="input" />
+            </label>
+          </div>
+
+          <div class="address_item">
+            <label for="Address_1"
+              >Address*
+              <br />
+
+              <input type="text" class="input" />
+            </label>
+            <label for="Address_2"
+              >Address 2*
+              <br />
+              <input type="text" class="input" />
+            </label>
+          </div>
+          <div class="city_item">
+            <label for="City"
+              >City*
+              <br />
+              <select name="City" class="store_select" id="City" value="">
+                <option value="none">Select your city</option>
+                <option value="London">London</option>
+                <option value="Leeds">Leeds</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Manchester">Manchester</option>
+              </select>
+            </label>
+            <label for="postcode">
+              Postcode* <br />
+              <input type="text" class="input" />
+            </label>
+          </div>
+
+          <div class="color_item">
+            <p>Select a colour</p>
+
+            <label for="form__karmaorange">
+              <input
+                type="radio"
+                id="form__karmaorange"
+                value="orange"
+                name="colour"
+              />
+              Karma orange
+            </label>
+            <label for="form__spacegrey">
+              <input
+                type="radio"
+                id="form__spacegrey"
+                value="grey"
+                name="colour"
+              />
+              Space Grey
+            </label>
+          </div>
+
+          <div class="terms_conditions">
+            <label for="form__terms_conditions">
+              <input
+                type="checkbox"
+                id="form__terms"
+                value="false"
+                name="policy"
+              />
+              By placing your order you agree to Karma's
+              <a href="Terms">Terms and Conditions</a>. *
+            </label>
+          </div>
+
+          <div class="btn_item">
+            <button type="submit" class="store_btn button">
+              Place my order
+            </button>
+          </div>
+        </section>
+        <section class="store_image"></section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_header">
+        <h3>Join us on</h3>
+      </div>
+
+      <div class="social_icons_container">
+        <div class="social_icons">
+          <a class="social_icons_page" href="https://twitter.com">
+            <img src="./img/twitter-icon.svg" alt="twitter icon" />
+          </a>
+        </div>
+        <div class="social_icons">
+          <a class="social_icons_page" href="https://facebook.com"
+            ><img src="./img/facebook-icon.svg" alt="facebook icon"
+          /></a>
+        </div>
+        <div class="social_icons">
+          <a class="social_icons_page" href="https://instagram.com">
+            <img src="./img/instagram-icon.svg" alt="instagram icon" />
+          </a>
+        </div>
+      </div>
+
+      <div class="copy_right_text">
+        <h4>©Karma Mobility.Inc</h4>
+      </div>
+    </footer>
+  </body>
 </html>
