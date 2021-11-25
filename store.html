@@ -54,13 +54,57 @@
                 <input type="text" name="address-2" id="addredd-2"/>
 
                 <label for="city">City *</label>
-                <input type="text" name="city" id="city" minlength="2" required/>
+                <select name="city" id="city" minlength="2" required>
+                    <option value="" disabled selected>Select your city...</option>
+                    <option value="london">London</option>
+                    <option value="manchester">Manchester</option>
+                    <option value="leeds">Leeds</option>
+                    <option value="swansea">Swansea</option>
+                    <option value="sheffield">Sheffield</option>
+                </select>               
 
                 <label for="postcode">Postcode *</label>
                 <input type="text" name="postcode" id="postcode" minlength="6" required/>
 
+                <p>Select a color:</p>
+                <input type="radio" name="color" id="Space Grey" value="Space Grey">
+                <label for="Space Grey">Space Grey</label>
+
+                <input type="radio" name="color" id="Karma orange" value="Karma orange">
+                <label for="Karma orange">Karma orange</label>
+
+
+                <input type="checkbox" name="checkbox" id="checkbox" value="checkbox">
+                <label for="checkbox">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
+                <img src="additional/checkmark.svg" alt="image of checkmark"/>
+
+
+
+
+                <button class="button">Place my order</button>
+
             </form>
         </section>
+        <section>
+        <img src="additional/store-image_by-andrew-neel-unsplash.jpg" alt="picture of an office"/>
+        </section>
+
+        <footer class="footer">
+            <hr />
+            <p>Join us on</p>
+            <div class="footer-icons">
+                <a href="#">
+                    <img src="img/twitter-icon.svg" alt="twitter-logo" class="footer-icon" />
+                </a>
+                <a href="#">
+                    <img src="img/facebook-icon.svg" alt="facebook-logo" class="footer-icon" />
+                </a>
+                <a href="#">
+                    <img src="img/instagram-icon.svg" alt="instagram-logo" class="footer-icon" />
+                </a>
+            </div>
+            <p class="copyright"><span>&#169;</span>Karma Mobility, Inc.</p>
+        </footer>
 
 
 
