@@ -7,10 +7,11 @@ main {
     margin-top: 0;
     padding-top: 0;;
 }
+
 section {
-    width: 50%;
-    
+    width: 50%;    
 }
+
 .flex-container {
     display: flex;    
 }
@@ -21,7 +22,6 @@ h1 {
     font-weight: 500;
     font-size: 50px;
     line-height: 58.59px;
-
 }
 
 .flex-container img {
@@ -47,26 +47,26 @@ form {
 
 form .two-inputs {
     display: flex;
-    justify-content: space-between;
-  
+    justify-content: space-between;  
 }
+
 input {
     border-width: 2px;
     border-color: #666;
-    border-radius: 4px;
-    
-   
+    border-radius: 4px;   
 }
+
 input[type=text]{
     padding: 10px 30px;
     margin-bottom: 20px;
 }
+
 select, option{
     padding: 10px 50px;
 }
+
 .name input, .name label, legend {
-    display: block;
-    
+    display: block;    
 }
 
 label {
@@ -79,25 +79,22 @@ label {
 
 select:required:invalid {
     color: #666;
-  }
+}
 
   option[value=""][disabled] {
     display: none;
-  }
+}
 
-  option {
+option {
     color: #000;
-  }
-
+}
 
 .radio-buttons {
-    display: flex;
-    
+    display: flex;    
 }
 
 .radio-orange {
     display: flex;
-
 }
 
 input[type='radio']::after {
@@ -120,13 +117,11 @@ input[type='radio']:checked::after {
     border-radius: 15px;
     top: -4px;
     left: -2px;
-    position: relative;
-    
+    position: relative;    
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid #666;
-    
+    border: 2px solid #666;    
 }
 
  #karma-orange:checked::after {
@@ -170,7 +165,5 @@ button {
     left: -6px;
     top: -2px;
     display: inline-block;  
-    /* background: #fff; */
-    background-image: url(../img/checkmark.svg);
-   
+    background-image: url(../img/checkmark.svg);   
 }
