@@ -19,137 +19,89 @@
 
 <header>
    <div class= "navigation_bar">
-
     <div class = "logo">
      <img src= img/karma-logo.svg>     
-    </div> 
-        
+    </div>   
     <nav class = "container_box">
         <ul>
             <li> Meet Karma   </li>
             <li class="gray"> How it Works   </li>
-            <li class="gray"> Store   </li>
+            <li class="gray"><a href = "stores.html">Store </a> </li>
             <li class= "gray"> Blog  </li>
             <li class="gray"> Help   </li>
             <li class="gray"> Login  </li>
         </ul>
     </nav>
-   </div>
-    
+   </div> 
 </header>
-
-
 <main>
-
 <div class= "order_form_main_container">
     <div class = "store_form_background">
         <div >
             <p class ="order_your_karma_text">Order your Karma wifi<br> devide today!</p>
-
         </div>
-
         <div >
             <fieldset>
                 <div >
-                    <div class = "form_row " >
+                    <div class = "form_row">
                         <div class = "form_column">
                             <label for="firstname">First name*</label>
-                            <input id="firstname" type="text" size ="15"name="firstname"/><br>
+                            <input id="firstname" type="text" required size ="15"name="firstname"/><br>
                         </div>
                         <div class = "form_column">
                             <label for="lastname">Last name*</label>
-                            <input id="lastname" type="text" size ="15" name="lastname"/>
+                            <input id="lastname" type="text" required size ="15" name="lastname"/>
                         </div>
                     </div> 
                     <div class = "form_column">
                         <label for="address">Address*</label>
-                        <input id="address" type="text" size ="25" name="address"/><br>
+                        <input id="address" type="text" required size ="25" name="address"/><br>
                         <label for="address2">Address 2*</label>
                         <input id="address2" type="text" size ="25" name="address2"/>  
                     </div>
                     <div class = "form_row ">
                         <div class = "form_column">
                             <label for="city">City*</label>
-                            <select type= "text" class= "drop_down_city" >
-                                <option value="" disabled selected hidden><em>Select your city...</em></option>
+                            <select type= "text" class= "drop_down_city" required >
+                                <option value="none"><em>Select your city...</em></option>
                                 <option value = "London"></option>
                                 <option value = "Manchester"></option>
-                            </select>
-                            
-
+                            </select>               
                         </div>
                         <div class = "form_column">
                             <label for="postcode">Postcode*</label>
-                            <input id="postcode" type="text" size ="10"name="postcode"/>
+                            <input id="postcode" type="text" required size ="10"name = "postcode"/>
                         </div>
-                       
-                    </div>
-                   
+                    </div>  
                 </div>
-               
-
-
-
-
-
             </fieldset> 
         </div>
-        <div class = "karma_select_colour_left">
-            <p>Select a colour</p>
+        <div class>
+            <p class = "karma_select_colour_flexbox">Select a colour</p>
             <div class = "karma_select_colour_flexbox">
                 <input id="karmaorange" type="radio" name="karmacolour" value="karmaorange" />
                 <label for="karmaorange">Karma orange</label>
                 <input id="spacegrey" type="radio" name="karmacolour" value="spacegrey" checked />
                 <label for="spacegrey">Space Grey</label>  
             </div>
-
         </div>
-        <div >
-            <input id="agreement" type="checkbox" name="agreement" class = "styled_checkbox" />
-            <label for="agreement">By placing your order you agree to Karma's <u>Terms and<br>Conditions</u> *</label>
+        <div class = "styled_checkbox">
+            <input id="agreement" type="checkbox" name="agreement"/>
+            <label for="agreement" class = "size_text_conditions">By placing your order you agree to Karma's <u class = "orange_text_conditions">Terms and Conditions</u> *</label>
         </div>
-        <div class= "align_item-left">
-            <btn class ="place_order_btn">Place my order</btn>
+        <div class ="styled_checkbox" >
+            <btn class ="place_my_order_btn">Place my order</btn>
         </div>    
-            
-        
-
-
     </div>
     <div class = "drink_coffee_container">
        <img src = "img/store-image_by-andrew-neel-unsplash (2).jpg" class = "drink_coffee_image "> 
-
-
-
-
     </div>
-
 </div>   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </main>
-
-
-
 <footer>
-
     <hr>
     <div class="footer_content">
-
-        <p id= "footer_join_us">Join us on</p>
-
+        <p class= "footer_join_us">Join us on</p>
         <div id = "footer_icons_container">
             <div class="circle-icons">
                 <img src = "img/twitter-icon.svg" class = social_icons>
@@ -162,13 +114,9 @@
                     <img src = "img/instagram-icon.svg" class = social_icons>
                 </div>
             </div>
-
         </div>
-        <p id="karma_footer"> &#169; Karma Mobility, Inc.</p>
-
+        <p class="karma_footer"> &#169; Karma Mobility, Inc.</p>
     </div>
-
 </footer>
-
 </body>
 </html>

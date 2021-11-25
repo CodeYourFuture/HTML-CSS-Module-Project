@@ -17,16 +17,31 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+a:link {
+  color:inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color:#E0633A;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 p {
   margin-top: 1 rem;
   margin-bottom: 0;
 }
 /* Hero Section */
-
 .hero {
   background-image: url("../img/first-background.jpg");
   background-color: aquamarine;
-
   width: 100%;
   height: 40rem;
   background-position: center;
@@ -36,7 +51,6 @@ p {
   margin: 0;
   margin-top: -2.5rem;
 }
-
 .hero-text {
   text-align: center;
   position: relative;
@@ -75,7 +89,6 @@ p {
 .div h2 {
   font-size: 10rem;
 }
-
 /* Icon Images Orange*/
 
 .icons_container_text {
@@ -83,7 +96,6 @@ p {
   flex-direction: row;
   justify-content: center;
   padding-top: 6rem;
-
   font-size: 3rem;
   font-weight: 200;
 }
@@ -94,13 +106,11 @@ p {
   align-content: center;
   padding-top: 4rem;
   padding-bottom: 6rem;
-
   justify-content: center;
 }
 
 .icons_images {
   display: flex;
-
   height: 6rem;
   width: 6rem;
   padding: 0 5rem 0 5rem;
@@ -108,7 +118,6 @@ p {
 
 .icons_container p {
   text-align: center;
-
   font-size: larger;
 }
 
@@ -122,23 +131,26 @@ hr {
 
 q {
   quotes: "\201C""\201D";
-  color: #e0633a;
+  color: black;
   font-weight: 400;
 }
 
 q::before {
   content: open-quote;
+  color:#e0633a;
 }
 
 q::after {
   content: close-quote;
+  color:#e0633a;
 }
+
+/* Store Order form Page */
 
 .get_karma_today_background {
   background-color: rgba(224, 99, 58, 0.1);
   display: flex;
   flex-direction: column;
-
   padding-top: 0.5rem;
   padding-bottom: 5rem;
   justify-content: center;
@@ -154,13 +166,13 @@ q::after {
 
 .get_karma_today_text {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-top: 2rem;
   justify-content: center;
 }
 
 .drink_coffee_container {
-  width: 50%;
+  width: 55%;
 }
 
 .drink_coffee_image {
@@ -169,28 +181,24 @@ q::after {
   object-fit: contain;
 }
 
-/* Store Order form Page */
-
 .order_form_main_container {
   display: flex;
   flex-direction: row;
-  align-items:center;
   width:100%;
 }
 
 .store_form_background {
-  
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding:0 0 0 4rem;
   width: 50%;
-  
 }
 
 .order_your_karma_text {
   font-size: 2.4rem;
   color: #e0633a;
   padding-bottom: 1.5rem;
+  padding-left: 1rem;
 }
 
 .form_row {
@@ -230,20 +238,13 @@ fieldset {
   display: inline-block;
 }
 
-
-.karma_select_colour_left{
-  align-items:left;
-
-}
-
-
 .karma_select_colour_flexbox{
   display:flex;
   flex-direction: row;
-  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
   gap:1.5rem;
 }
-
 
 /* Radio Button Styling */
 
@@ -281,17 +282,64 @@ input[type="radio"]:checked::before {
   --form-control-colour: #e0633a;
 }
 
-/* Check box styling*/
+/* Check box and Check box text styling*/
 
+.styled_checkbox{
+  padding:1rem;
+}
 
+.size_text_conditions{
+font-size: 0.75rem;
+padding:1rem;
+ 
+}
+.orange_text_conditions{
+  color:#E0633A;
+  font-size: 0.75rem;
+}
 
+input[type="checkbox"]{
+  appearance: none;
+}
 
+input[type="checkbox"]:before {
+  content: "";
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  background: white;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+}
 
+input[type="checkbox"]:checked:before {
+  background-image: url(../img/checkmark.svg);
+  background-size: contain;
+}
 
+.checkbox a {
+  color: #e0633a;
+  text-decoration: underline;
+}
 
+.checkbox {
+  font-size: 12px;
+  color: rgb(70, 70, 70);
+  margin-left: 5px;
+}
 
-
-  
+.place_my_order_btn{
+  margin-top: 4rem;
+  font-size: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #E0633A;
+  color: white;
+  border-radius: 6px;
+  position: relative;
+ 
+}
 
 .drop_down_city {
   height: 2rem;
@@ -300,5 +348,6 @@ input[type="radio"]:checked::before {
   margin: 0;
   box-sizing:
   border-radius: 0.2rem; 
-  
+  font-style:italic;
 }
+
