@@ -81,7 +81,7 @@ color: black;
 /* <!--text style--> */
 .intro h1{
     font-weight: 100;
-    font-size: 70px;                                                                                              px;
+    font-size:70px;                                                                                              px;
     margin-top: 15rem;
 }
 .intro h2{
@@ -108,8 +108,9 @@ color: black;
 button{
     background-color: orangered;
     color: white;
-    padding: 15px 5px;
-    width: 10rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
 }
 .tree_item{
     display: flex;
@@ -138,9 +139,89 @@ button{
     width: 10rem;
     height: 10rem;
 }
+.extention-container{
+    display: flex;
+    margin-top:2rem;
+    height: 439px;
+}
+.extention-image1{
+    background-color: rgba(224, 99, 58, 0.1);
+    width: 60%;
+    text-align: center;
+}
+.extention-image1 p{
+    margin-top: 10rem;
+    font-size: x-large;
+    font-style: italic;
+}
+.extention-image1 button{
+    background-color: orangered;
+    color: white;
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+.extention-image1 button a{
+    color: white;
+    text-decoration: none;
+}
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-form{
+    width: 50%;
+}
+.image{
+    background-image: url(../img/store-image_by-andrew-neel-unsplash.jpg);
+    background-size: cover;
+    background-position: right bottom;
+    width: 50%;
+}
+main{
+    width: 100vw;
+    display: flex;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    margin-bottom: 15px;
+    padding: 5px;
+}
+form{
+    padding:60px;
+}
+.name{
+    width: 48%;
+}
+.city{
+    width: 65%;
+}
+.postcode{
+    width:33%;
+}
+.color{
+    justify-content: start;
+    margin: 10px 0;
+}
+.colormargin{
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+select{
+    padding: 5px;
+}
+.terms{
+    color: orangered;
+}
+.orange-header{
+    color: orangered;
+   font-size: 40px;
+   font-weight: 400;
+}
