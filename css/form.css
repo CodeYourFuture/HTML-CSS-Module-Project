@@ -57,6 +57,7 @@ input {
     border-width: 2px;
     border-color: #666;
     border-radius: 4px;
+    
    
 }
 input[type=text]{
@@ -90,18 +91,47 @@ select, option{
 
 .radio-buttons {
     display: flex;
+    
 }
 
 .radio-orange {
     display: flex;
+
 }
 
+input[type='radio']:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -4px;
+    left: -2px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #666;    
+}
 
+input[type='radio']:checked:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -4px;
+    left: -2px;
+    position: relative;
+    background-color: var(--burnt-orange);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #666;
+    
+}
 
-  input[type=radio] {
-      opacity: 0;
-  }
-
+.radio-button label {
+   margin:  0 20px;
+   padding: 0 20px;
+}
 
 span a {
     color: hsla(15, 69%, 58%, 1);
