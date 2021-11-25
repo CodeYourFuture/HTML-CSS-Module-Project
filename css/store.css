@@ -26,16 +26,22 @@ header {
   padding: 20px 5%;
   height: 5%;
   align-items: center;
+  position: fixed;
+  background: white;
+  width: 100%;
 }
 
 /* nav bar */
 
 nav {
   display: block;
+
 }
 
 .nav__links {
   list-style: none;
+  width: 100%;
+  text-align: right;
 }
 
 .nav__links li {
@@ -75,12 +81,13 @@ a {
 .store-container {
   width: 100%;
   display: flex;
+
 }
 
 .store-image {
   background: url("../additional/store-image_by-andrew-neel-unsplash.jpg");
   width: 50%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -94,7 +101,7 @@ a {
   color: orangered;
 }
 
-/* form */
+/*============================================ form =================================================== */
 .form {
   width: 100%;
   display: flex;
@@ -141,7 +148,6 @@ fieldset {
 
 }
 
-
 .city_item {
   width: 100%;
   display: flex;
@@ -155,7 +161,6 @@ fieldset {
 .city_item label:last-child {
   width: 30%;
 }
-
 
 .form_select {
   width: 100%;
@@ -220,6 +225,17 @@ input[type="checkbox"]:checked::after {
   left: 0;
 }
 
+.submit-button {
+  width: 40%;
+  background: orangered;
+  font-size: 1w;
+  height: 50px;
+  color: white;
+  border-radius: 4%;
+  margin: 50px 20px;
+
+}
+
 /* ============================================footer===================================================== */
 .footer {
   bottom: 0;
@@ -229,7 +245,15 @@ input[type="checkbox"]:checked::after {
 footer {
   flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 15px;
+  display: flex;
+}
+
+hr {
+  width: 80%;
+  margin-left: 5%;
+  border: 1px solid rgba(128, 128, 128, 0.452);
+  margin-top: -2px;
 }
 
 .social_link {
@@ -246,12 +270,6 @@ p {
   text-align: center;
   margin-top: 3vw;
   margin-bottom: 3vw;
-}
-
-
-footer {
-  display: flex;
-  justify-content: center;
 }
 
 .icons_div {
