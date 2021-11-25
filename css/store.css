@@ -22,7 +22,6 @@ hr {
   border: 1px solid rgb(233, 224, 224);
   margin: 0 auto;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -131,6 +130,16 @@ body {
 .address_first_item input {
   width: 100%;
 }
+.address_second_item {
+  display: flex;
+  justify-content: space-between;
+}
+.address_second_item label:first-child {
+  width: 100%;
+}
+.address_second_item label:first-child select {
+  width: 100%;
+}
 
 label {
   display: block;
@@ -145,8 +154,8 @@ select,
 option {
   margin-top: 5px;
   padding: 0.5em;
-  font-size: 1.5vw;
-  width: 40%;
+  font-size: 1.2vw;
+
   background: white;
 }
 select option:first-child {

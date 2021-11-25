@@ -45,20 +45,35 @@
             <form class="store_form">
               <div class="names_item">
                 <label for="firstname"
-                  >Firs Name<span style="color: red;">*</span>
+                  >First Name<span style="color: red;">*</span>
 
-                  <input type="text" id="firstname" class="input firstname" />
+                  <input
+                    type="text"
+                    id="firstname"
+                    class="input firstname"
+                    required
+                  />
                 </label>
                 <label for="firstname"
                   >Last name<span style="color: red;">*</span>
 
-                  <input type="text" id="lastname" class="input lastname" />
+                  <input
+                    type="text"
+                    id="lastname"
+                    class="input lastname"
+                    required
+                  />
                 </label>
               </div>
               <div class="address_first_item">
                 <label for="address_first"
                   >Address<span style="color: red;">*</span><br />
-                  <input type="text" id="address_first" class="input" />
+                  <input
+                    type="text"
+                    id="address_first"
+                    class="input"
+                    required
+                  />
                 </label>
                 <label for="address_second"
                   >Address 2 <br />
@@ -75,6 +90,10 @@
                     <option value="London">Manchester</option>
                     <option value="London">Leeds</option>
                   </select>
+                </label>
+                <label for="postcode">
+                  Post Code<span style="color: red;"> *</span><br />
+                  <input type="text" class="input" required minlength="4" />
                 </label>
               </div>
               <div class="color_terms_div">
