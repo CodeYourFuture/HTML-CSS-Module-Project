@@ -90,9 +90,7 @@ body {
 .MainFlexBox {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-}
+ }
 
   /* The main image i.e. the 'hero' */ 
  
@@ -150,6 +148,7 @@ button:hover {
   font-size: 3.25rem; /* 52px; */
   color:black;
   padding-top:10rem;
+  text-align: center;
  }
 
 .drawaline {
@@ -167,6 +166,7 @@ button:hover {
       display: flex;
       gap:7rem;    
       padding-bottom:6rem;
+      justify-content: center; 
 }
 
 .description {
@@ -199,15 +199,11 @@ button:hover {
   font-size:3rem;
   text-align: center;
   padding-top:2rem;
-  
-  /* flex-grow: 1; */ 
-  /* Couldn't get the 2nd quote to extend to the right using this
-     so I had to use width: calc(100vw - 37.44rem); instead */
 }
 
 .ExtendedFlexBox .quote-button-container {
-    width: 1250px;
-    width: calc(100vw - 37.44rem);
+    /* width: 1250px; */
+    flex-grow:1;
 }
 
 /* Handle the blockquote */
@@ -379,14 +375,12 @@ blockquote::after {
 }
 
 a.terms-conds:link {
-  color: red;
+  color: #ff6200;
 }
 
 a.terms-conds:visited {
-  color: red;
+  color: #ff6200;
 }
-
-
 
 
 
@@ -413,3 +407,118 @@ input:placeholder-shown{
     width: 25%
   }
 
+/* Stretch goals
+   Change the colour of the radio buttons and checkbox to the matching ORANGE colour
+*/
+
+/* First step: hide the unstyleable radio */
+ 
+label > input[type="radio"] {
+  display: none;
+ }
+  
+ /* make our own radio button
+ Making an empty circle is easy with CSS, just put a border around a square element and give it a border radius of 50%.
+ ... we'll put this on the ::before pseudo-element to avoid extra markup. */
+  
+ label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+ }
+  
+ /* Last step: make our radio change when checked ... using :checked we can style our radio button to make it appear different when selected. */
+ /* use a radial-gradient to fill only a portion of the circle in. */
+  
+ label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(#ff6200 0%, #ff6200 40%, transparent 50%, transparent);
+  border-color:#ff6200;
+ }
+ /* However do NOT colour the text!
+  
+ label > input[type="radio"]:checked + * {
+  color: #ff6200;
+ }
+  
+ */
+
+ 
+ /* First step: hide the unstyleable checkbox */
+ 
+/* As pointed out in https://stackoverflow.com/questions/37666256/displaying-html5-validation-message-for-custom-checkbox
+  display: none
+ 
+  as HIDDEN the default HTML5 validation error message
+  So instead replaced with
+ 
+    opacity: 0;
+*/
+ 
+label > input[type="checkbox"] {
+  /* display: none; */
+  
+  opacity: 0;
+ }
+  
+ /* Second step: make our own checkbox
+ Making an empty square is easy with CSS, just put a border around an element with no content and set its width and height.
+ Let's also put it on the ::before psuedo-element to avoid adding unnecessary HTML. */
+  
+ /*
+ I made the following changes
+ 1) I changed the size of the original from 1rem to 1.3rem
+ 2) Added margin-right to position how the text appears
+ 3) Added margin-left to move the checkbox to the left
+ */
+  
+ label > input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+  margin-right:1rem;
+  margin-left:-1rem;
+ }
+  
+ /* Last step: make our checkbox change when checked */
+  
+ /*
+ I made the following changes
+ 1) Tick should be ORANGE on WHITE - the original code coloured the box and left the tick white.
+ 2) Made the tick 'bold'
+ 3) Added padding
+ */
+  
+ label > input[type="checkbox"]:checked + *::before {
+  content: "✓";
+  font-weight: bold;
+  color: #ff6200;;
+  text-align: center;
+  background: white;
+  border-color: grey;
+  padding-bottom:1px;
+  padding-right:1px;
+ }
+  
+ /* However do NOT colour the text!
+  
+ label > input[type="checkbox"]:checked + * {
+  color: #ff6200;
+ }
+  
+ */
+  
+ 
+  

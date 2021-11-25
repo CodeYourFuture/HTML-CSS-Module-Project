@@ -86,9 +86,15 @@
                                     <!-- Create a placeholder -->
                                     <option value="" disabled selected hidden><em>Select your city...</em></option>
 
-                                    <option value="australia">Australia</option>
-                                    <option value="canada">Canada</option>
-                                    <option value="usa">USA</option>
+                                    <option value="Birmingham">Birmingham</option>
+                                    <option value="Bristol">Bristol</option>
+                                    <option value="Leeds">Leeds</option>
+                                    <option value="Liverpool">Liverpool</option>
+                                    <option value="London">London</option>
+                                    <option value="Manchester">Manchester</option>
+                                    <option value="Nottingham">Nottingham</option>                                    
+                                    <option value="Portsmouth">Portsmouth</option>
+                                    <option value="York">York</option>                                   
                                 </select>
                             </div>
                         
@@ -103,16 +109,23 @@
                             <label for="form-colour">Select a colour</label>
                             
                             <div class="colours-flexbox">
-                                <input type=radio id="form-karma-orange" value="karma-orange" name="product-colour" required checked="checked">
-                                <label for="form-karma-orange">Karma Orange</label>
-                                <input type=radio id="form-space-grey" value="space-grey" name="product-colour">
-                                <label for="form_space-grey">Space Grey</label>
+  
+                                <label>
+                                  <input type="radio" name="product-colour" value="karma-orange" required checked />
+                                  <span>Karma Orange</span>
+                                </label>
+                                <label>
+                                  <input type="radio" name="product-colour" value="space-grey" />
+                                  <span>Space Grey</span>
+                                </label>
                             </div>
                         </section>
 
                         <section class="agreement-container">
-                            <input type="checkbox" name="form-agreement" value="agreed" required checked="checked">
-                            <label for="form-agreement">By placing your order you agree to Karma's <a href="#" class="terms-conds">Terms and Conditions</a>. *</label>
+                            <label>
+                              <input type="checkbox" name="form-agreement" value="agreed" required checked />
+                              <span>By placing your order you agree to Karma's <a href="#" class="terms-conds">Terms and Conditions</a>. *</span>
+                            </label>
                         </section>
 
                         <button class="submit-button">Place my order</button>
@@ -123,7 +136,7 @@
             
         </section>
 
-        <img src="img\store-image_by-andrew-neel-unsplash.jpg" alt="woman sitting at a table with right hand using the laptop                                                                    and a cup of presumably a hot drink in her left hand" class="WomanAtDesk">
+        <img src="img\store-image_by-andrew-neel-unsplash.jpg" alt="woman sitting at a table with right hand using the laptop and a cup of presumably a hot drink in her left hand" class="WomanAtDesk">
      </main>
 
      <hr class="drawaline">
