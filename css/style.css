@@ -64,7 +64,10 @@ p{
     font-size: 33px;
     color:var(--black)
 }
-
+a:link,:visited,:active+.btn-store {
+    color: white;
+    text-align: center;
+}
 /* //General Style */
 body {
     font-family: 'Roboto', sans-serif;
@@ -118,12 +121,13 @@ button{
 .nav__links, li, a{
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     height: 100%
 }
 
 .nav__links a{
-    color:var(--grey-light)
+    color:var(--grey-light);
 }
 nav .nav__link_on{
     font-style: normal;
@@ -132,6 +136,7 @@ nav .nav__link_on{
 }
 .nav__links a:hover{
     color:var(--orange);
+    
 }
 
 .nav__links li{
@@ -253,6 +258,7 @@ nav .nav__link_on{
     border-radius: 5px;
     border:none;
     background: #E0633A;
+
 
 }
 
