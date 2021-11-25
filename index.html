@@ -9,11 +9,119 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
-<body>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+<header id="header">
+    <img class ="logo"src="img/karma-logo.svg" alt="logo"  width="40px" height= "40px"/>
 
-</body>
-</html>
+<nav class ="navBar">
+    <a class="active" href="#Meet Karma">Meet Karma</a>
+    <a href="#How it Works">How it Works</a>
+    <a href="#Store">Store</a>
+    <a href="#Blog">Blog</a>
+    <a href="#Help">Help</a>
+    <a href="#Login">Login</a>
+      
+</nav>
+</header>
+<br><br><br><br><br>
+
+
+<style>
+    .container {
+        position: relative;
+        font-family: Arial;
+        text align:center;
+        width: 90%;
+        top: 30%;
+        left: 5%;
+        
+    }
+    
+    .text-block {
+        position: absolute;
+        text-align: center;
+        font-size: x-large;
+        color:white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .button1 {
+        background-color: orangered;
+        border: 0vw solid orangered;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 2%;
+        width: 50%;
+        font-size: 1vw;
+
+    </style>
+    
+     
+    
+    <div class="container">
+      <img src="img/first-background.jpg" alt="Karma page" style="width:100%;">
+      <div class="text-block">
+        <h1>Introducing Karma</h2>
+        <p>Bring WiFi with you, everywhere you go.</p>
+        <button class="button1">
+            Learn More
+          </button>
+      </div>
+    </div>
+
+    <p id="title-main">Everyone needs a little Karma</p>
+
+    <section>
+        <div class="adjustmentdeclaration">
+          <div id="item">
+          <img class="icon" id="thumbnail" src="img/icon-devices.svg" alt="devices"/>
+           <span class="sub-title">Internet for all devices</span> 
+        </div>
+        <div id="item">
+           <img class="icon" id="thumbnail" src="img/icon-coffee.svg" alt="coffee"/>
+           <span class="sub-title">Boost your productivity</span>
+        </div>
+        <div id="item">
+           <img class="icon" id="thumbnail" src="img/icon-refill.svg" alt="re-fill"/>
+           <span class="sub-title">Pay as you go</span>
+        </div>
+      </div>
+    </section>    
+
+ <br><br>
+      
+ 
+ <footer>
+      <hr>
+       <p>Join us on</p>
+       <footer>
+
+        <div class="social">
+          <img class="social_icon"
+           src="img/twitter-icon.svg"
+           alt="twitter"
+          />
+         </div>
+         <div class="social">
+          <img class="social_icon"
+           src="img/facebook-icon.svg"
+           alt="facebook"
+          />
+         </div>
+         <div class="social">
+          <img class="social_icon"
+           src="img/instagram-icon.svg"
+           alt="instagram"
+          />
+         </div>
+       </footer>
+       <p class="footer-text">
+         <span>©</span>
+         Karma Mobility, Inc
+       </p>
+
+    </div>
+   </footer>
+  </body>
+  </html>

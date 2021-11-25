@@ -6,10 +6,128 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+header { position:relative;    top:0px;    width:100%;   height:20px;  color: white; 
+    padding: 25px 0px;   display: flex;  justify-content:space-evenly; font-size: x-large;
+    align-items: center;  opacity: 0.7; z-index: 5; }
+
+    .navBar {
+        background-color: rgb(255, 255, 255);
+        margin-right: 60px;
+      }
+     
+      .navBar a {
+        color: #5a5a5a;
+        padding: 1vw 2vw;
+        text-decoration: none;
+        font-size:large;
+        text-align: center;
+        background-color: white;
+        margin-top: 2vw;
+      }
+    
+      .navBar a:hover {
+        color: orangered;
+      }
+   
+      .navBar a.active {
+        font-weight: bold;
+
+    }
+    #title-main {
+        text-align: center;
+        margin-top: 1vw;
+        font-size: x-large;
+        color: rgb(70, 69, 69);
+    }
+  
+      }
+      .adjustmentdeclaration{
+        text-align: center;
+    margin-left: 10%;}
+        
+
+      .icon {
+        width: 4vw;
+        height: 4vw;
+        
+      }
+      #thumbnail:hover {
+        position: relative;
+        top: -2vw;
+        left: -2vw;
+        width: 25vw;
+        height: auto;
+        display: block;
+      }
+      .sub-title {
+        margin-top: 3vw;
+        display: block; 
+        font-size: 2vw;
+        color: rgb(70, 69, 69);
+      }
+      #item {
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 30vw;
+      }   
+    
+      .footer {
+        bottom: 0;
+        margin-top: 10vw;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      
+      footer {
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 10%;
+        flex-direction: row;
+      }
+      hr {
+        width: 80%;
+        height: 2px;
+        border-width: 0;
+        color: rgb(196, 196, 196);
+        background-color: rgb(196, 196, 196);
+      }
+      .social {
+        max-height: 2vw;
+        width: 2vw;
+        padding: 0.2vw;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 5vw;
+        border: solid #dddddd 0.1vw;
+        align-items: center;
+        margin: 2vw;
+      }
+      .social_icon {
+        justify-content: center;
+        display: flex;
+        max-height: 2vw;
+        text-align: center;
+        flex-direction: row;
+        margin-left: auto;
+        width: auto;
+        align-items: center;
+      }
+      p {
+        text-align: center;
+        margin-top: 3vw;
+      }
+
+
+
 /**
- * Add your custom styles below
- * 
- * Remember: 
+ * Add your custom styles below* 
+ * Remember: work needs to be submitted
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
