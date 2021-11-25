@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Karma</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/store.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Karma</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/store.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
 </html>
+
 <body>
   <header>
     <img class="logo" src="img/karma-logo.svg" alt="logo" />
@@ -34,60 +30,37 @@
 
   <main>
     <article class="store-container">
-      <section class="store-image"></section>
+
       <section class="store-form">
-        <form>
+        <h1>Order your Karma wifi device today!</h1>
+        <form class="form">
           <!-- name -->
-          <fieldset class="name-container" class="name-box">
+          <fieldset class="name-item" class="name-box">
             <div>
-              <label for="fname">First Name:</label><br />
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-                required="true"
-              />
+              <label for="fname">First Name*</label><br />
+              <input type="text" id="fname" name="firstname" required class="input" />
             </div>
 
             <div>
-              <label for="lname">Last Name:</label><br />
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-                required="true"
-              />
+              <label for="lname">Last Name*</label><br />
+              <input type="text" id="lname" name="lastname" required class="input" />
             </div>
           </fieldset>
 
           <!-- address -->
-          <fieldset>
-            <label for="Address">Address</label><br />
-            <input
-              for="text"
-              id="adr1"
-              name="address1"
-              placeholder="first line of your address"
-              required="true"
-            />
-            <br />
-            <label for="Address">Address 2</label><br />
-            <input
-              for="text"
-              id="adr2"
-              name="address2"
-              placeholder="Second line of your address"
-              required="true"
-            />
+          <fieldset class="address_item">
+            <label for="Address">Address*<br />
+              <input for="text" id="adr1" name="address1" required class="input" />
+            </label>
+            <label for="Address">Address 2<br />
+              <input for="text" id="adr2" name="address2" required class="input" /></label>
           </fieldset>
           <!-- dropdown -->
-          <fieldset>
-            <div>
-              <label for="cities">City</label><br />
-              <select id="cities" name="cities">
-                <option value="select">Seclect</option>
+          <fieldset class="city_item">
+
+            <label for="cities">City *<br />
+              <select id="cities" name="cities" class="form_select">
+                <option value="select">Select Your City...</option>
                 <option value="london">London</option>
                 <option value="winchester">Winchester</option>
                 <option value="southampton">Southampton</option>
@@ -98,38 +71,60 @@
                 <option value="bath">Bath</option>
                 <option value="brighton">Brighton</option>
               </select>
-            </div>
-            <div>
-              <label for="postcode">Post Code</label><br />
-              <input
-                for="text"
-                id="number"
-                name="address2"
-                placeholder="Your PostCode"
-                required="true"
-              />
-            </div>
+            </label>
+
+
+            <label for="postcode">Post Code*<br />
+              <input for="text" id="number" name="address2" class="input postcode_input" required /></label>
+
           </fieldset>
           <!-- radio button  -->
-          <fieldset>
-            <p>Select a colour</p>
-            <div>
-              <input
-                type="radio"
-                id="form__orange"
-                value="orange"
-                name="colour"
-              />
-              <label for="form__orange">Karma Orange</label>
-
-              <input type="radio" id="form__grey" value="grey" name="colour" />
-              <label for="form__grey">Space Grey</label>
+          <fieldset class="radio_terms_item">
+            Select a colour*
+            <div class="radio_item">
+              <label for="form__orange">
+                <input type="radio" id="form__orange" value="orange" name="colour" />
+                Karma Orange
+              </label>
+              <label for="form__grey">
+                <input type="radio" id="form__grey" value="grey" name="colour" />
+                Space Grey
+              </label>
+            </div>
+            <div class="checkbox_item">
+              <label for="terms">
+                <input type="checkbox">
+                By placing your order you agree to Karma's <a href="#" style="color: orangered">Terms and
+                  Conditions</a>.*
+              </label>
             </div>
           </fieldset>
+          <button type="submit">Place my order</button>
         </form>
       </section>
+      <section class="store-image"></section>
     </article>
   </main>
 
-  <footer></footer>
+  <footer>
+    <p>Join us on</p>
+    <div class="icons_div">
+      <a class="social_link" href="https://twitter.com">
+        <img class="social_icon" src="img/twitter-icon.svg" alt="twitter" />
+      </a>
+      <a class="social_link" href="https://facebook.com">
+        <img class="social_icon" src="img/facebook-icon.svg" alt="facebook" />
+      </a>
+      <a class="social_link" href="https://instagram.com">
+        <img class="social_icon" src="img/instagram-icon.svg" alt="instagram" />
+      </a>
+    </div>
+
+    <p class="footer-text">
+      <span>©</span>
+      Karma Mobility, Inc
+    </p>
+
+
+  </footer>
 </body>

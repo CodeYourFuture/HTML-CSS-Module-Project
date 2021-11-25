@@ -1,3 +1,19 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2 {
+  font-size: 3vw;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,18 +27,22 @@ header {
   height: 5%;
   align-items: center;
 }
+
 /* nav bar */
 
 nav {
   display: block;
 }
+
 .nav__links {
   list-style: none;
 }
+
 .nav__links li {
   display: inline-block;
   padding: 0px 15px;
 }
+
 a {
   text-decoration: none;
   color: rgb(116, 114, 114);
@@ -37,12 +57,14 @@ a {
 .active {
   font-weight: bold;
 }
+
 /* logo */
 .logo {
   height: 30px;
   width: 25px;
   cursor: pointer;
 }
+
 .logo-top {
   width: 25%;
   padding: 10px;
@@ -51,22 +73,195 @@ a {
 /* main general design */
 
 .store-container {
-  display: flex;
   width: 100%;
+  display: flex;
 }
-.store-image {
-  background: url("store-image_by-andrew-neel-unsplash.jpg");
-  width: 50%;
-}
-.store-form {
-  margin-left: 100px;
-  width: 50%;
-}
-/* form */
 
-.name-container {
+.store-image {
+  background: url("../additional/store-image_by-andrew-neel-unsplash.jpg");
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.store-form {
+  width: 50%;
+  padding: 3em 2em;
+}
+
+.store-form h1 {
+  color: orangered;
+}
+
+/* form */
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+}
+
+.input,
+.form_select {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.5em;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+.name-item {
   display: flex;
   justify-content: space-between;
-  padding-right: 100px;
-  height: 35px;
+}
+
+.name-item div {
+  width: 45%;
+}
+
+.address_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.address_item label {
+  margin-top: 15px;
+
+}
+
+.address_item label input {
+  width: 100%;
+}
+
+fieldset {
+  margin-top: 5%;
+  border: 0;
+
+}
+
+
+.city_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.city_item label:first-child {
+  width: 60%;
+}
+
+.city_item label:last-child {
+  width: 30%;
+}
+
+
+.form_select {
+  width: 100%;
+  box-sizing: 100px;
+}
+
+.radio_terms_item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.radio_item {
+  margin: 5% 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(255, 94, 0);
+  border-radius: 50%;
+  background: rgb(175, 172, 172);
+  padding: 3px;
+  background-clip: content-box !important;
+
+}
+
+input[type="radio"]:checked {
+  background: orangered;
+}
+
+.checkbox_item {
+  padding-top: 30px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  color: orangered;
+  position: relative;
+
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ============================================footer===================================================== */
+.footer {
+  bottom: 0;
+  margin-top: 10vw;
+}
+
+footer {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.social_link {
+  border: 1px solid gray;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.social_icon {
+  width: 30px;
+}
+
+p {
+  text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.icons_div {
+  width: 20%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-text {
+  margin-top: 1vw;
+  color: rgb(196, 196, 196);
 }
