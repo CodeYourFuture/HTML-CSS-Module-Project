@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkbox-radio.css" >
+    <title>Karma form</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <!-- Hamburger menu -->
+            <div class="mobile-container">
+                <img class="logo-svg" src="img/karma-logo.svg">
+                <div class="topnav">
+
+                    <div id="myLinks">
+                        <strong><a class="nav-li" href="#">Meet Karma</a></strong>
+                        <a class="nav-li" href="#">How is work</a>
+                        <a class="nav-li" href="#">Store</a>
+                        <a class="nav-li" href="#">Blog</a>
+                        <a class="nav-li" href="#">Help</a>
+                        <a class="nav-li" href="#">Login</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Desktop menu -->
+            <ul class="flexboxrow navul">
+                <li><img class="logo-svg" src="./img/karma-logo.svg"></li>
+                <li class="li-space"></li>
+                <li><strong><a class="nav-li" href="#">Meet Karma</a></strong></li>
+                <li><a class="nav-li" href="#">How is work</a></li>
+                <li><a class="nav-li" href="#">Store</a></li>
+                <li><a class="nav-li" href="#">Blog</a></li>
+                <li><a class="nav-li" href="#">Help</a></li>
+                <li><a class="nav-li" href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form-image-girl-working">
+        <form style="width: 100%;">
+            <legend><h1 class="color-orange">Order your Karma wifi device today!</h1></legend>
+            <fieldset class="container-2-box">
+                <div class="display-flex-column">
+                    <label class="label-padding" for="name">First name *</label>
+                    <input class="      " type="text" id="name" name="name">
+                </div>
+                <div class="display-flex-column">
+                    <label class="label-padding" for="last_name">Last name *</label>
+                    <input class="       " type="text" id="last_name" name="last_name">
+                </div>
+            </fieldset>
+            <fieldset class="display-flex-column">
+                <label class="label-padding" for="address">Address *</label>
+                <input type="text" id="address" name="address">
+            </fieldset>
+            <fieldset class="display-flex-column">
+                <label class="label-padding" for="address">Address 2 *</label>
+                <input type="text" id="address" name="address">
+            </fieldset>
+            <fieldset class="container-city-postcode">
+                <div class="city">
+                    <label class="label-padding" for="city">City *</label>
+                    <select class="select-city" name="city" id="city" required>
+                        <option value="London">Select your city...</option>
+                        <option value="London">London</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Dublin">Dublin</option>
+                        <option value="Edinburgh">Edinburgh</option>
+                    </select>
+                </div>
+                <div class="postcode">
+                    <label class="label-padding" for="postcode">Postcode *</label>
+                    <input class="postcode-input" type="text" id="postcode" name="postcode">
+                </div>
+            </fieldset>
+            <fieldset>
+
+                <label class="label-padding" for="radio">Select a colour</label><br><br>
+                <input class="label-padding" type="radio" value="karmaorange" name="radio" id="karmaorange" required>
+                <label class="label-padding" for="karmaorange">Karma orange</label>
+                <input class="label-padding" type="radio" value="spacegrey" name="radio" id="spacegrey">
+                <label for="spacegrey">Space Grey</label><br><br><br><br>
+
+
+            </fieldset>
+            <fieldset>
+                <input id="checkbox" type="checkbox"/>
+                <label for="checkbox">By placing your order you agree to Karma's<span><a href="#" class="color-orange"> Terms and Conditions</a></span>.
+                    *</label>
+            </fieldset>
+            
+            <fieldset>
+                <button class="button-red-text-white">Place my order</button>
+            </fieldset>
+        </form>
+        <img class="image-girl-working" src="./additional/girl-working at desk.jpeg"> </img>
+
+
+    </main>
+    <footer>
+        <p>Join as on</p>
+        <nav>
+            <ul class="ul-footer">
+                <div class="size-div">
+                <li>
+                    <img class="size-icon-" src="img/twitter-icon.svg">
+                </li>
+            </div>
+                <div class="size-div">
+                <li>
+                    <img class="size-icon-" src="img/facebook-icon.svg">
+
+                </li>
+            </div>
+                <div class="size-div">
+                <li>
+                    <img class="size-icon-" src="img/instagram-icon.svg">
+                </li>
+            </div>
+            </ul>
+        </nav>
+        <p>© Karma Mobility, Inc.
+        </p>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

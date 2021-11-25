@@ -1,0 +1,64 @@
+.form-image-girl-working {
+  display: flex;
+  justify-content: center;
+}
+.image-girl-working {
+  height: auto;
+  width: 50%;
+}
+.form-image-girl-working form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 7%;
+}
+.color-orange {
+  color: #e0633a;
+}
+fieldset {
+  border: 0px;
+}
+.display-flex {
+  display: flex;
+}
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.container-2-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+input {
+  height: 30px;
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+select {
+  height: 37px;
+  border: 2px solid #666666;
+  border-radius: 4px;
+  margin-bottom: 3vw;
+  
+}
+
+.label-padding {
+  padding: 0.3vw;
+}
+.city {
+    display: flex;
+    flex-direction: column;
+  width: 70%;
+}
+.postcode {
+    display: flex;
+    flex-direction: column;
+   
+    width: 30%;
+  
+}
+.container-city-postcode{
+    display: flex;
+    gap: 10px;
+}
