@@ -132,7 +132,7 @@ header {
 button {
   border-radius: 4px;
   color: white;
-  background-color: #f15d07;
+  background-color:#E0633A;
   padding: 0.7rem 2.2rem;
   margin-top: 1.5rem;
   border: none;
@@ -204,7 +204,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgb(247, 225, 215);
+  background-color:rgba(224, 99, 58, 0.1);
 }
 
 .karma-content h2 {
@@ -250,7 +250,8 @@ footer p {
 
 .karma-order-form h1 {
   font-size: 40px;
-  color: rgb(218, 86, 25);
+  color: #DE6E49;
+
   font-weight: 500;
 }
 
@@ -276,9 +277,9 @@ select {
   border-radius: 4px;
 }
 
-.karma-order-form label {
+/* .karma-order-form label {
   margin-top: 0.5rem;
-}
+} */
 
 .store-aside-img {
   width: 50%;
@@ -300,7 +301,7 @@ select {
   justify-content: space-between;
 }
 
-.city {
+.city-dropdown {
   width: 65%;
 }
 
@@ -311,7 +312,7 @@ select {
 }
 
 .postcode {
-  width: 30%;
+  width:fit-content;
 }
 
 .postcode input {
@@ -327,7 +328,7 @@ label {
 fieldset {
   border: 0;
   padding-left: 0;
-  margin-top: 3rem;
+  margin-top: 0.8rem;
 }
 
 input[type="radio"] {
@@ -341,12 +342,6 @@ input[type="radio"] {
 
 .checkbox-aggreement label {
   font-size: 15px;
-}
-
-input[type="checkbox"] {
-  transform: scale(1.5);
-  margin-top: 10px;
-  margin-right: 5px;
 }
 
 fieldset label{
@@ -366,6 +361,16 @@ input[type="radio"]:checked:after {
   background: #ce650f;
 }
 
+.checkbox-aggreement input {
+    display:inline-block;
+    transform: scale(1.5);
+    margin-top: 17px;
+    margin-right: 10px;
+    width: 16px;
+    height:16px;     
+}
+
 label a {
   color: rgb(218, 86, 25);
 }
+
