@@ -1,5 +1,6 @@
 :root {
     --burnt-orange: #DE6E49;
+    --space-grey: #666;
 
 }
 
@@ -99,21 +100,21 @@ select, option{
 
 }
 
-input[type='radio']:after {
+input[type='radio']::after {
     width: 25px;
     height: 25px;
     border-radius: 15px;
     top: -4px;
     left: -2px;
     position: relative;
-    background-color: #d1d3d1;
+    background-color: #ffffff;
     content: '';
     display: inline-block;
     visibility: visible;
     border: 2px solid #666;    
 }
 
-input[type='radio']:checked:after {
+input[type='radio']:checked::after {
     width: 25px;
     height: 25px;
     border-radius: 15px;
@@ -141,3 +142,27 @@ button {
     float: left;
 }
 
+[type=checkbox]::after {
+    width: 18px;
+    height: 18px;
+    content: '';
+    position: relative;
+    left: -6px;
+    top: -2px;
+    display: inline-block;  
+    outline: 2px solid red;
+    background: #fff;
+}
+
+[type=checkbox]:checked::after {
+    width: 18px;
+    height: 18px;
+    content: '';
+    position: relative;
+    left: -6px;
+    top: -2px;
+    display: inline-block;  
+    /* background: #fff; */
+    background-image: url(../img/checkmark.svg);
+   
+}
