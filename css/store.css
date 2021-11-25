@@ -1,8 +1,22 @@
+:root {
+  --form-colour: #828282;
+}
+
+.header {
+  background-color: #f7f7f7;
+}
+
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Divides the main page into two */
   margin-bottom: 0;
   width: 100%;
+}
+
+.form {
+  margin: 0 10%;
+  color: var(--form-colour);
+  font-size: 25px;
 }
 
 label {
@@ -11,13 +25,9 @@ label {
 
 input[type="text"],
 #city {
-  border: 1px solid #000;
-  border-radius: 2px;
-  padding: 2% 5px;
-}
-
-.form {
-  margin-left: 10%;
+  border: 2px solid var(--form-colour);
+  border-radius: 5px;
+  padding: 10px 5px;
 }
 
 .form-title {
@@ -27,6 +37,7 @@ input[type="text"],
 }
 
 .form-element {
+  /* These styles are created so that the label and input remain together */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -36,38 +47,55 @@ input[type="text"],
 }
 
 .form-names {
+  /* Name section of the form */
   display: flex;
 }
 
-#address,
-#address2 {
-  width: 84%;
+.form-addresses {
+  /* Address section of the form */
+  display: flex;
+  flex-direction: column;
+}
+
+.address-input {
+  width: 84%; /* Controls the width of the address input element */
 }
 
 .form-location {
+  /* Location section of the form */
   display: flex;
 }
 
-#city {
+.city {
   width: 100%;
+  background-color: #fff;
 }
 
-#postcode {
+.postcode {
   width: 75%;
 }
 
 .postcode-container,
-#space-grey {
-  margin-left: 2%;
+.space-grey {
+  margin-left: 2%; /* Shared margins */
 }
 
-.form-colour-text,
-.check {
+.form-colour-text {
+  /* Order colour selector text */
   margin-bottom: 2%;
 }
 
 .form-colour {
+  /* Colour section of the form */
   margin-bottom: 10%;
+}
+
+.radio {
+  margin-right: 2%;
+}
+
+.check {
+  margin-bottom: 5%;
 }
 
 .order-button {
@@ -78,9 +106,14 @@ input[type="text"],
   padding: 15px 35px;
 }
 
+.terms {
+  color: #f15b2a;
+}
+
 .image {
   background-image: url("../img/store-image_by-andrew-neel-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 25% 60%;
+  margin-bottom: -8px;
 }

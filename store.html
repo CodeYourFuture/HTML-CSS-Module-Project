@@ -20,7 +20,9 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <img src="img/karma-logo.svg" alt="karma-logo" class="karma-icon" />
+      <a href="index.html">
+        <img src="img/karma-logo.svg" alt="karma-logo" class="karma-icon" />
+      </a>
       <img src="img/menu-hamburger.svg" class="menu-hamburger" />
       <nav>
         <ul class="nav">
@@ -66,24 +68,37 @@
         <div class="form-addresses">
           <div class="form-element">
             <label for="address">Address*</label>
-            <input type="text" id="address" name="address" />
+            <input
+              type="text"
+              id="address"
+              name="address"
+              class="address-input"
+            />
           </div>
           <div class="form-element">
-            <label for="address2">Address2</label>
-            <input type="text" id="address2" name="address2" />
+            <label for="address2">Address 2</label>
+            <input
+              type="text"
+              id="address2"
+              name="address2"
+              class="address-input"
+            />
           </div>
         </div>
 
         <div class="form-location">
           <div class="form-element">
             <label for="city">City*</label>
-            <select id="city" name="city">
+            <select id="city" name="city" class="city">
+              <option value="default" disabled selected>
+                Select your city...
+              </option>
               <option value="London">London</option>
             </select>
           </div>
           <div class="form-element postcode-container">
             <label for="postcode">Postcode*</label>
-            <input type="text" id="postcode" name="postcode" />
+            <input type="text" id="postcode" name="postcode" class="postcode" />
           </div>
         </div>
 
@@ -94,6 +109,7 @@
             id="karma-orange"
             name="colour"
             value="karma-orange"
+            class="radio karma-orange"
           />
           <label for="karma-orange">Karma orange</label>
           <input
@@ -101,6 +117,7 @@
             id="space-grey"
             name="colour"
             value="space-grey"
+            class="radio space-grey"
           />
           <label for="space-grey">Space Grey</label>
         </div>
@@ -113,8 +130,10 @@
             value="terms-and-conditions"
           />
           <label for="terms-and-conditions"
-            >By placing your order you agree to Karma's Terms and Conditions.
-            *</label
+            >By placing your order you agree to Karma's
+            <a href="#terms-and-conditions" class="terms">
+              Terms and Conditions </a
+            >. *</label
           >
         </div>
 
