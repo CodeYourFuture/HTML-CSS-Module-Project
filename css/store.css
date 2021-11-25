@@ -11,7 +11,8 @@ body {
 
 .img--div {
     display:flex;
-    width:50%
+    width: 50%;
+    overflow: hidden;
 }
 
 
@@ -30,10 +31,12 @@ input {
 }
 
 
-h2 {
+.h2--store {
     color: #CC5500;
+    text-align: left;
+    font-size: 30px;
+    padding: 0px;
 }
-
 
 .parent--form {
     display:flex;
@@ -63,14 +66,19 @@ h2 {
 }
 
 
+
 .radio--content {
-    padding: 0;
+    display: inline-flex;
+    align-content: center;
+    cursor: pointer;
+    margin-right: 10px;;
 }
 
 
 .btn2 {
     color:white;
 }
+
 
 
 .terms {

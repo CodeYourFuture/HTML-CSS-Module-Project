@@ -119,6 +119,7 @@ h1 {
     display: flex;
     flex-flow: row;
     justify-content: center;
+    margin: -40px;
     
 }
 
@@ -140,7 +141,8 @@ h2 {
 
 .copyright {
     text-align: center;
-    color:rgb(146, 151, 150)
+    color:rgb(146, 151, 150);
+    margin-top: 60px;
 }
 
 
@@ -181,11 +183,13 @@ blockquote {
     display: block;
     position: relative;
     width: 50%;
-    margin: 5rem;
-    padding: 5rem;
+    margin: 3.5rem;
+    padding: 3.4rem;
     font-size: 1.5em;
 
 }
+
+
 
 
 blockquote::before {

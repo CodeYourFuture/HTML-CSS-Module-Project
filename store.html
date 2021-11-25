@@ -38,23 +38,23 @@
   </nav>
     <section class="section">
         <form class="form" action="/action_page.php">
-          <h2>Order your Karma wifi<br>divice today!</h2>
+          <h2 class="h2--store">Order your Karma wifi<br>divice today!</h2>
                   <!-- note flex-->
           <div class="parent--form">
                 
             <div class="div--name"> 
                     <label class="name" for="fname">Name*</label>
-                    <input type="text" class="name" name="fname">
+                    <input type="text" class="name" name="fname" required>
             </div>
                     
                    
             <div class="div--name">
                 <label class="name" for="lname">Last Name*</label>
-                <input type="text" class="name" name="lname"></div>
+                <input type="text" class="name" name="lname" required></div>
             </div>
                     
             <label>Address*</label>
-            <input class="address" type="text"><br>
+            <input class="address" type="text" required><br>
                     
             <label>Address Line 2*</label>
             <input class="address" type="text"><br>
@@ -63,6 +63,7 @@
 <div class="parent--form ">
     <div class="div--name"> 
         <label for="city">City*</label>
+        <input class="city" type="">
                     <select id="cities" name="city" form="city_form">
                        <option value="london">London</option>
                        <option value="milton keynes">Milton Keynes</option>
@@ -84,7 +85,7 @@
 </div>           
                     
                     
- <p class="pform">Select a colour</p>        
+ <p class="pform">Select a colour</p>   
             <div class="colour">
                     
 
@@ -95,18 +96,18 @@
                     <div class="radio--content">
                     <input type="radio" id="Space-Grey" name="Space-Grey" >
                     <label for="html">Space Grey</label></div>
-                  
-                </div>
+                  </div><br>
                   
                 
-                    <div><input type="checkbox" id="checkbox" name="checkedbox">
-                <label for="checkbox">By placing your order, you agree to Karma's<a class="terms"href="#">Terms and Conditions</a></label>
-              </div>
+                  <div>
+                    <input type="checkbox" id="checkbox" name="checkedbox">
+                    <label for="checkbox">By placing your order, you agree to Karma's<a class="terms"href="#">Terms and Conditions</a></label>
+                  </div>
               
                 <button class="btn btn2" type="submit" value="ikaneng.khoza@gmail.com">Place Order</button>
      
             
-            </form>
+ </form>
               
      
      <div class="img--div">
@@ -118,7 +119,7 @@
 
 
 <footer class="footer--wrap">
-    <div><p>Join us on</p></div> 
+    <div><h2>Join us on</h2></div> 
 <div class="social">
    
 
