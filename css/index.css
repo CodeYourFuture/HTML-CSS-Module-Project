@@ -3,7 +3,6 @@ body {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   padding: 0%;
-  background-color: #ebe4e4;
   margin: 0;
 }
 /* styling the header */
@@ -19,11 +18,6 @@ h1 {
   color: #de6e49;
 }
 
-/* styling the form and side image */
-.main {
-  border: 1px solid red;
-  background-color: white;
-}
 /* styling the form */
 form {
   display: flex;
@@ -33,7 +27,6 @@ form {
   flex-direction: column;
   font-size: 15px;
   height: auto;
-  background-color: white;
 }
 .order-form {
   display: flex;
@@ -91,8 +84,8 @@ button {
   border-radius: 4px;
   background-color: #e0633a;
   cursor: pointer;
-  padding: 13px;
-  width: 100px;
+  padding: 15px;
+  width: 120px;
   color: white;
   border-style: none;
   font-size: 11px;
@@ -100,25 +93,93 @@ button {
 }
 
 /* styling radio */
-.radio-check {
-  display: flex;
+
+.radio-color {
+  display: inline-flex;
   flex-direction: row;
   margin-bottom: 30px;
+  justify-items: auto;
+}
+#space-grey {
+  margin-left: 18px;
 }
 /* changing the radio button color to orange when checked */
-input[type="radio"]:checked:after {
-  width: 7px;
-  height: 7px;
-  border-radius: 7px;
-  background-color: #ffa500;
-  content: "";
-  display: inline-block;
-  border: 2px solid white;
+
+input[type="radio"] {
+  cursor: pointer;
+  opacity: none;
+  background-color: white;
+  margin: 0;
+  color: grey;
+  width: 15px;
+  height: 15px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: grid;
+  place-content: center;
 }
 
-/* styling the terms and conditions */
+input[type="radio"]::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 0 0 5px 5px orange;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
 .terms {
-  color: tomato;
+  margin-top: 10px;
+}
+/* styling checkbox */
+
+[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  display: grid;
+}
+[type="checkbox"] + label {
+  position: relative;
+}
+[type="checkbox"] + label::before {
+  display: inline-flex;
+  /* position: absolute; */
+  left: 0px;
+  right: 0px;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background: white;
+  border: 1px solid lightgrey;
+}
+[type="checkbox"]:checked + label::before {
+  display: inline-flex;
+  /* position: absolute; */
+  left: 0;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background: white;
+  border: 1px solid orange;
+}
+[type="checkbox"]:checked + label::after {
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background-image: url(../img/check-mark.ico);
+  background-size: contain;
+}
+.terms {
+  color: orange;
 }
 
 /* styling the side image */
