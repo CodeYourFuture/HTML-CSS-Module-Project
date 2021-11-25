@@ -172,16 +172,88 @@ h3 {
 .button_color {
   color: white;
 }
-
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* page store website */
+.form_image {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.image {
+  width: 35%;
+}
+.form {
+  width: 65%;
+  height: 1155px;
+  position: relative;
+  margin-top: 75px;
+  align-content: center;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-style: none;
+}
+.device {
+  height: 100px;
+  width: 500px;
+  margin-left: 300px;
+  margin-top: 100px;
+  color: #de6e49;
+  font-size: 50px;
+  font-weight: 400;
+}
+.first_last_name {
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  margin-left: 150px;
+}
+.city_postcode {
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+  margin-top: 60px;
+}
+.colours_terms {
+  display: flex;
+  flex-direction: column;
+}
+.address_field {
+  margin-left: 150px;
+  margin-top: 50px;
+  width: 2250px;
+}
+#address {
+  margin-bottom: 50px;
+}
+.select_colour {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.colours {
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.terms {
+  margin-left: 150px;
+  margin-top: 100px;
+}
+.order_button {
+  margin-left: 400px;
+  color: white;
+}
+input {
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+#city {
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
 
 
