@@ -57,7 +57,7 @@ body {
 }
 
 .nav-link:hover {
-  color: rgb(255, 102, 0);
+  color: #e0633a;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ button {
   display: block;
   margin: auto;
   padding: 20px 35px;
-  background-color: rgb(255, 102, 0);
+  background-color: #e0633a;
   border: none;
   border-radius: 5px;
   color: white;
@@ -142,7 +142,7 @@ button {
 }
 .get-quote {
   padding: 20px;
-  background-color: rgb(231, 231, 228);
+  background-color: rgba(224, 99, 58, 0.1);
 }
 
 .get-quote p {
@@ -152,10 +152,14 @@ button {
 }
 
 q::before {
-  color: orangered;
+  color: #e0633a;
+  display: table-caption;
+  margin-right: 1px;
 }
-Q::after {
-  color: orangered;
+q::after {
+  color: #e0633a;
+  display: table-caption;
+  margin-left: 1px;
 }
 a.button {
   text-decoration: none;

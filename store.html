@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Karma</title>
+    <title>Karma store</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
       rel="stylesheet"
@@ -16,74 +16,84 @@
     <link rel="stylesheet" href="css/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
-  <header class="header">
-    <img class="header-logo" src="img/karma-logo.svg" alt="Karma logo" />
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a class="nav-link" href="/index.html">Meet Karma</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">How it Works</a>
-      </li>
-      <li class="nav-item">
-        <a id="active-nav" class="nav-link" href="#">Store</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Help</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-    </ul>
-  </header>
   <body>
+    <header class="header">
+      <img class="header-logo" src="img/karma-logo.svg" alt="Karma logo" />
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Meet Karma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">How it Works</a>
+        </li>
+        <li class="nav-item">
+          <a id="active-nav" class="nav-link" href="#">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+    </header>
     <main>
-      <div class="details">
-        <p>Order your Karma wifi device today!</p>
-        <div class="details-style">
-          <div class="name">
-            <div class="firstname">
-              <label for="first-name">First name *</label>
-              <input id="first-name" name="first-name" type="text" />
+      <div class="info">
+        <div class="details">
+          <p>Order your Karma wifi device today!</p>
+          <div class="details-style">
+            <div class="name">
+              <div class="firstname">
+                <label for="first-name">First name *</label>
+                <input id="first-name" name="first-name" type="text" required />
+              </div>
+              <div class="lastname">
+                <label for="last-name">Last name *</label>
+                <input id="last-name" name="last-name" type="text" required />
+              </div>
             </div>
-            <div class="lastname">
-              <label for="last-name">Last name *</label>
-              <input id="last-name" name="last-name" type="text" />
-            </div>
-          </div>
-          <label for="address1">Address *</label>
-          <input id="address1" name="address1" type="text" />
-          <label for="address2">Address 2</label>
-          <input id="address2" name="address2" type="text" />
+            <label for="address1">Address *</label>
+            <input id="address1" name="address1" type="text" required />
+            <label for="address2">Address 2</label>
+            <input id="address2" name="address2" type="text" />
 
-          <div class="location">
-            <div class="city">
-              <label for="city">City *</label>
-              <input id="city" type="text" placeholder="Select your city..." />
+            <div class="location">
+              <div class="city">
+                <label for="city">City *</label>
+                <select class="dropdown" name="city-name" id="city">
+                  <option value="1" name="city-name">
+                    Select your city...
+                  </option>
+                  <option value="london" name="city-name">London</option>
+                  <option value="manchester" name="city-name">
+                    Manchester
+                  </option>
+                </select>
+              </div>
+              <div class="postcode">
+                <label for="postcode">Postcode *</label>
+                <input id="postcode" type="text" required />
+              </div>
             </div>
-            <div class="postcode">
-              <label for="postcode">Postcode *</label>
-              <input id="postcode" type="text" />
+            <div class="checks">
+              <legend>Select a colour</legend>
+              <input id="karma-orange" type="radio" name="color" checked />
+              <label for="karma-orange">Karma orange</label>
+              <input id="space-grey" type="radio" name="color" />
+              <label for="space-grey">Space Grey</label>
             </div>
+            <div class="t-cs">
+              <input type="checkbox" id="checkbox1" checked />
+              <label for="checkbox1"
+                >By placing your order you agree to Karma's
+                <a href="#">Terms and Conditions</a>. *</label
+              >
+            </div>
+            <button>Place my order</button>
           </div>
-          <div class="checks">
-            <legend>Select a colour</legend>
-            <input id="karma-orange" type="radio" name="color" />
-            <label for="karma-orange">Karma orange</label>
-            <input id="space-grey" type="radio" name="color" />
-            <label for="space-grey">Space Grey</label>
-          </div>
-          <div class="t-cs">
-            <input type="checkbox" id="checkbox1" />
-            <label for="checkbox1"
-              >By placing your order you agree to Karma's
-              <a href="#">Terms and Conditions</a>. *</label
-            >
-          </div>
-          <button>Place my order</button>
         </div>
       </div>
       <div>
@@ -94,14 +104,16 @@
         />
       </div>
     </main>
+    <footer class="footer">
+      <p>Join us on</p>
+      <div class="footer-content">
+        <a href="#"><img src="img/twitter-icon.svg" alt="Twitter icon" /></a>
+        <a href="#"><img src="img/facebook-icon.svg" alt="Facebook icon" /></a>
+        <a href="#"
+          ><img src="img/instagram-icon.svg" alt="Instagram icon"
+        /></a>
+      </div>
+      <p class="footer-p">&copy; Karma Mobility, Inc.</p>
+    </footer>
   </body>
-  <footer class="footer">
-    <p>Join us on</p>
-    <div class="footer-content">
-      <a href="#"><img src="img/twitter-icon.svg" alt="Twitter icon" /></a>
-      <a href="#"><img src="img/facebook-icon.svg" alt="Facebook icon" /></a>
-      <a href="#"><img src="img/instagram-icon.svg" alt="Instagram icon" /></a>
-    </div>
-    <p class="footer-p">&copy; Karma Mobility, Inc.</p>
-  </footer>
 </html>
