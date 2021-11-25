@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,7 +11,7 @@ header {
   justify-content: space-between;
   height: 70px;
   padding-top: 7px;
-  background: white;
+  background: whitesmoke;
   position: fixed;
   width: 100%;
 }
@@ -43,6 +42,12 @@ a {
 
 .navigation__link__karma {
   color: rgb(83, 75, 75);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 550;
+}
+.navigation_link {
+  color: #de6e49;
   text-decoration: none;
   font-size: 17px;
   font-weight: 550;
@@ -140,7 +145,6 @@ h3 {
   font-weight: 250;
   font-size: 15px;
 }
-
 /* additional image and button */
 
 .features {
@@ -169,22 +173,38 @@ h3 {
   font-style: italic;
   font-weight: 200;
 }
+.quote_open {
+  color: #de6e49;
+  font-size: 40px;
+  font-weight: 600;
+  margin-right: 330px;
+  margin-bottom: -40px;
+  font-style: italic;
+}
+.quote_close {
+  color: #de6e49;
+  font-size: 40px;
+  font-weight: 900;
+  margin-left: 150px;
+  margin-top: -70px;
+  font-style: italic;
+}
 .button_color {
   color: white;
 }
 /* page store website */
+
 .form_image {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
 }
 .image {
-  width: 35%;
+  width: 55%;
 }
 .form {
   width: 65%;
   height: 1155px;
-  position: relative;
   margin-top: 75px;
   align-content: center;
 }
@@ -233,19 +253,25 @@ fieldset {
   margin-left: 150px;
   margin-top: 50px;
 }
-.colours {
+.orange {
   margin-left: 150px;
-  margin-top: 10px;
+}
+.grey {
+  margin-left: 350px;
+  margin-top: -17px;
 }
 .terms {
   margin-left: 150px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .order_button {
   margin-left: 400px;
   color: white;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-input {
+input[type="text"] {
   height: 30px;
   margin-top: 15px;
   border-radius: 4px;
@@ -254,6 +280,19 @@ input {
   height: 35px;
   margin-top: 15px;
   border-radius: 4px;
+  font-style: italic;
+}
+.details_form {
+  margin-left: 100px;
+}
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+.terms_orange {
+  color: #de6e49;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 
