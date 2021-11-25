@@ -17,7 +17,7 @@ section {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     color: var(--burnt-orange);
     font-weight: 500;
     font-size: 50px;
@@ -31,12 +31,14 @@ h1 {
     width: 50%;
 }
 
-form {
+/* form inputs */
+
+form {    
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;   
-    max-width: 500px;
+    max-width: 80%;
     margin: 0 auto;       
 }
 
@@ -45,24 +47,21 @@ form {
     flex-direction: column;
 }
 
-form .two-inputs {
+ .two-inputs {    
     display: flex;
     justify-content: space-between;  
 }
 
-input {
+input, select, option {
     border-width: 2px;
-    border-color: #666;
+    border-color: #666; /*why is this affecting background?*/
     border-radius: 4px;   
 }
 
-input[type=text]{
-    padding: 10px 30px;
+input[type=text], select, option{
+    display: block;
     margin-bottom: 20px;
-}
-
-select, option{
-    padding: 10px 50px;
+    height: 30px;
 }
 
 .name input, .name label, legend {
@@ -81,13 +80,15 @@ select:required:invalid {
     color: #666;
 }
 
-  option[value=""][disabled] {
+option[value=""][disabled] {
     display: none;
 }
 
 option {
     color: #000;
 }
+
+/* radio buttons */
 
 .radio-buttons {
     display: flex;    
@@ -124,7 +125,7 @@ input[type='radio']:checked::after {
     border: 2px solid #666;    
 }
 
- #karma-orange:checked::after {
+#karma-orange:checked::after {
     background-color: var(--burnt-orange);
 }
 
@@ -137,6 +138,9 @@ input[type='radio']:checked::after {
    padding: 0 20px;
 }
 
+
+/* T&C and button */
+
 span a {
     color: hsla(15, 69%, 58%, 1);
 }
@@ -144,6 +148,8 @@ span a {
 button {
     float: left;
 }
+
+/* Checkbox styling */
 
 [type=checkbox]::after {
     width: 18px;

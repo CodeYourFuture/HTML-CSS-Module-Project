@@ -22,7 +22,7 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Login</a></li>
         </ul>
-        <img id="hamburger" src="img/menu-hamburger.svg" alt=""/>
+        <img id="hamburger" src="img/menu-hamburger.svg" alt="hamburger-icon"/> <!--icon for hamburger menu-->
     </nav>
     <main>
         <div class="flex-container">
@@ -47,15 +47,13 @@
                        <div class="two-inputs">
                            <div class="name">
                             <label class="required" for="city">City</label>
-                            <select id="cities" name="cities"> 
-                                               
+                            <select id="cities" name="cities">                                                
                             <option value="" disabled selected>Choose a city</option>                
                               <option value="london">London</option>
                               <option value="birmingham">Birmingham</option>                         
                               <option value="manchester">Manchester</option>                         
                               <option value="birmingham">Glasgow</option>                
-                              <option value="brighton">Brighton</option>
-                            </select>
+                              <option value="brighton">Brighton</option>                            </select>
                            </div>
                            <div class="name">
                             <label class="required" for="postcode">Postcode</label>
@@ -63,9 +61,6 @@
                            </div>                      
                        </div>                  
                     </div>
-          
-                    
-                    <!-- <label for="">Select a colour</label> -->
                             <div>
                                 <legend>Select a colour</legend>    
                                 <div class="radio-buttons">                                                         
@@ -82,7 +77,7 @@
                             <div>
                                 <div class="T&C">
                                     <input type="checkbox" id="T&C" name="T&C" checked required> 
-                                    <label for="T&C">By placing your order you agree to <span><a href="#">Karma's Terms and Conditions</a></span>.</label>                                    
+                                    <label for="T&C" class="required">By placing your order you agree to <span><a href="#">Karma's Terms and Conditions</a></span>.</label>                                    
                                 </div>     
                                 <button>Place my order</button> 
                             </div>
