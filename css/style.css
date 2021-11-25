@@ -4,12 +4,17 @@
 
 :root {
  /* colors    */
-  --black: #000000;
-  --white: #ffffff;
-  --orange: #E0633A;
-  --grey-light: #8C909A;
-  --grey-dark: #4D5057;
+    --black: #000000;
+    --white: #ffffff;
+    --orange: #E0633A;
+    --grey-light: #8C909A;
+    --grey-dark: #4D5057;
 
+  /*  fw-fonts-weight */
+    --fw-600:600;
+    --fw-500:500;
+    --fw-400:400;
+    --fw-300:300;
 }
 /* RESET */
 *{
@@ -23,7 +28,7 @@
 
 /* FONTS */
 h1, h2, h3, h5{
-    font-weight:300;
+    font-weight:var(--fw-300);
 }
 h1{
     font-size: 76px;
@@ -40,7 +45,7 @@ h3{
 }
 
 h4{
-    font-weight: 500;
+    font-weight:var(--fw-500);
     font-size: 20px;
     color:var(--black)
 }
@@ -81,18 +86,28 @@ nav {
 hero{
     background-color: rgb(199, 84, 21);
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+footer h5{
+margin-bottom: 30px;
+
+}
 button{
     width: 199px;
     height: 68px;
-    font-size: 26px;
+    font-size: 22px;
     border-radius: 5px;
     border:none;
     background: #E0633A;
 }
 
 
-/* //LOGO */
+/* //Logo */
 .logo{
 
     height: 50px;
@@ -112,7 +127,7 @@ button{
 }
 nav .nav__link_on{
     font-style: normal;
-    font-weight: 500;
+    font-weight:var(--fw-500);
     color:var(--grey-dark)
 }
 .nav__links a:hover{
@@ -147,42 +162,41 @@ nav .nav__link_on{
     color:var(--white)
 }
 
-/* //Products */
-.products{
+/* //Features */
+.features{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 0;
-    min-width: 1058px;
+    padding: 170px 0;
 }
 
-.product-flex-parent {
+.feature-flex-parent {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.product-flex-item{
+.feature-flex-item{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 0 20px 0;
+    padding: 78px 0 0;
     width: 400px;
 }
 
-.product-flex-item img{
+.feature-flex-item img{
     height: 156px;    
 }
-.product-flex-item p{
+.feature-flex-item p{
     padding-top: 30px;    
 }
 
-
+ /* Quotes */
 .quotes{
     display: grid;
-    grid-template-columns: 6.268fr 8.8fr;
+    grid-template-columns: 4.268fr 8.8fr;
     height: 439px;
 }
 
@@ -195,51 +209,59 @@ nav .nav__link_on{
 }
 .quote-text{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     background-color: #FCEFEB;
     font-weight: 400;
     font-size: 42px;
     text-align: center;
     color:#434242;
-    padding: 0 156px 0;
-
+    padding: 0 156px;
 }
-.quote-flex{
-    display: flex;
-    align-items:center ;
-
-
+.blockquote{
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 80%;
 }
-.quote-open{
-    font-weight: 400;
+.blockquote::before{
+    content: '\201c';
+    left:-10px;
+    top: -1rem;
+}
+
+.blockquote::after{
+    content: '\201d';
+    padding-left: 10px;
+}
+
+.blockquote::before,.blockquote::after {
+    font-weight:var(--fs-400);
     font-size: 70px;
-    color: #E0633A;
-    margin-top: -90px;
+    color:var(--orange);
+    position: absolute;
 }
 
-.quote-close{
-    display: flex;
-    font-weight: 400;
-    font-size: 70px;
-    color: #E0633A;
-    margin-top: 130px;
-    margin-left: -20px;
+.blockquote  + button{
+    width: 264px;
+    height: 70px;
+    margin: auto;
+    margin-top: 56px;
+    font-size: 22px;
+    border-radius: 5px;
+    border:none;
+    background: #E0633A;
+
 }
 
-
-
-
-
-
-
-
-/* //Social */
+/* //Social - Footer */
 .social{
     display: flex;
     width: 100%;
+    justify-content: center;
 }
-
 
 .social-icons{
     width: 25px;
@@ -254,26 +276,5 @@ nav .nav__link_on{
     background-color:#d2d2d2;
     justify-content: center;
     align-items: center;
-
 }
 
-
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-footer h5{
-margin-bottom: 30px;
-
-}
-
-.social{
-    justify-content: center;
-}
-
-.container{
-
-}
