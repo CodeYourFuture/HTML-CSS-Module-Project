@@ -1,3 +1,8 @@
+:root {
+    --burnt-orange: #DE6E49;
+
+}
+
 nav {
     background-color: hsla(0, 0%, 77%, 0.1);
 }
@@ -15,7 +20,11 @@ section {
 
 h1 {
     text-align: center;
-    color: hsla(15, 69%, 58%, 1);
+    color: var(--burnt-orange);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58.59px;
+
 }
 
 .flex-container img {
@@ -42,26 +51,33 @@ form {
 form .two-inputs {
     display: flex;
     justify-content: space-between;
+  
 }
-
-input[type=text], select, option{
-    padding: 10px;
+input {
+    border-width: 2px;
+    border-color: #666;
+    border-radius: 4px;
+   
+}
+input[type=text]{
+    padding: 10px 30px;
     margin-bottom: 20px;
 }
-
+select, option{
+    padding: 10px 50px;
+}
 .name input, .name label, legend {
     display: block;
     
 }
 
 .required:after {
-    content:" *";
-    color: red;
+    content:" *";    
 }
 
-select:required:invalid {
+/* select:required:invalid {
     color: #666;
-  }
+  } */
 
   option[value=""][disabled] {
     display: none;
@@ -80,13 +96,17 @@ select:required:invalid {
     display: flex;
 }
 
-/* #karmaOrange {
-    box-shadow: hsla(15, 69%, 58%, 1);   
-} */
+
+
+  input[type=radio] {
+      opacity: 0;
+  }
+
 
 span a {
     color: hsla(15, 69%, 58%, 1);
 }
+
 button {
     float: left;
 }
