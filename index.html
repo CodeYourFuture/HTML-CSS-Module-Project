@@ -101,7 +101,10 @@
   </body>
 </html>
 
+
 <!-- Store page markup -->
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -135,7 +138,7 @@
               <a href="#">How It Works</a>
             </li>
             <li>
-              <a href="#">Store</a>
+              <a class="navigation_link" href="#">Store</a>
             </li>
             <li>
               <a href="#">Blog</a>
@@ -161,15 +164,17 @@
 
         <div class="form">
           <p class="device">Order your Karma wifi device today!</p>
-          <div class="first_last_name">
+
+          <section class="details_form">
+              <div class="first_last_name">
             <fieldset>
               <label for="first_name">First Name *</label>
               <input
                 type="text"
                 name="first_name"
                 id="first_name"
-                required="true"
-                minlength="2"
+                required=true
+                minlength=2
               />
             </fieldset>
 
@@ -179,8 +184,8 @@
                 type="text"
                 name="last_name"
                 id="last_name"
-                required="true"
-                minlength="2"
+                required=true
+                minlength=2
               />
             </fieldset>
           </div>
@@ -191,8 +196,8 @@
                 type="text"
                 name="address"
                 id="address"
-                required="true"
-                minlength="2"
+                required=true
+                minlength=2
               />
               <label for="address_two">Address 2</label>
               <input type="text" name="address_two" id="address_two" />
@@ -202,8 +207,8 @@
           <div class="city_postcode">
             <fieldset>
               <label for="city">City *</label>
-              <select name="city" id="city">
-                <option value="city">Select your city...</option>
+              <select name="city" id="city" required=true> 
+                <option value="Select your city">Select your city...</option>
                 <option value="Bristol">Bristol</option>
                 <option value="Cardiff">Cardiff</option>
                 <option value="Dorset">Dorset</option>
@@ -221,8 +226,8 @@
                 type="text"
                 name="postcode"
                 id="postcode"
-                required="true"
-                minlength="6"
+                required=true
+                minlength=6
               />
             </fieldset>
           </div>
@@ -230,24 +235,28 @@
           <p class="select_colour">Select a colour</p>
 
           <div class="colours_terms">
-            <div class="colours">
-              <input id="orange" type="radio" name="orange" value="orange" />
+            <div class="orange">
+              <input id="orange" type="radio" name="colour" value="orange" />
               <label for="orange">Karma Orange</label>
+            </div>
 
-              <input id="grey" type="radio" name="grey" value="grey" />
+            <div class="grey">
+                <input id="grey" type="radio" name="colour" value="grey" />
               <label for="grey">Space Grey</label>
             </div>
+              
+            
 
             <div class="terms">
               <input id="terms" type="checkbox" name="terms" />
-              <label for="terms"
-                >By placing your order you agree to Karma's Terms and
-                Conditions.*</label
-              >
+              <label for="terms">By placing your order you agree to Karma's </label>
+               <label for="terms" class="terms_orange">Terms and
+                Conditions.</label> <label for="terms">*</label>
             </div>
           </div>
           </div>
           </div>
+          </section>
         </div>
       </div>
       <button class="order_button">Place my order</button>
@@ -264,4 +273,3 @@
     </footer>
   </body>
 </html>
-
