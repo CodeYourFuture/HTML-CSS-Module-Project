@@ -1,76 +1,6 @@
 
 /* General styles */
 
-:root {
-    --burnt-orange: #E5E5E5;
-    --grey: #616668;
-}
-
-html, body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;    
-    font-family: Roboto, sans-serif; 
-    overflow-x: hidden;  
-}
-
-main {   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
-
-/* img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-} */
-
-/* Navigation */
-
-nav {
-    display: flex;   
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 20px 40px;
-    height: 90px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    font-size: 1.35rem;
-    font-weight: 500;
-    cursor: pointer;      
-}
-
-nav ul li {
-    padding: 0 20px;    
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #757e83;
-}
-
-nav ul li a:hover {
-    color: var(--orange);
-}
-
-.active {
-    color: black;
-}
-
-#hamburger {
-    display: none;
-}
 
 /* Hero */
 
@@ -338,39 +268,4 @@ span {
 }
 
 
-/* Footer */
 
-footer {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding-bottom: 70px;
-}
-
-.footer-icons {
-    display: flex;
-    flex-direction: row;   
-}
-
-.footer-icons img {
-    margin: 10px;
-}
-
-.footer-icons img {
-    border: 1px solid var(--grey);
-    border-radius: 50%;
-    padding: 15px;
-    opacity: 0.75;    
-}
-
-footer p { 
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
-.credits {
-    opacity: 0.5;
-}

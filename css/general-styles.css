@@ -1,19 +1,16 @@
 /* General styles */
 
 :root {
-    /* --orange: #E0633A; */
     --grey: #616668;
-    --burnt-orange: #E5E5E5;
+    --burnt-orange: #E0633A;
 }
 
 html, body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;    
-    font-family: Roboto, sans-serif; 
+    width: 100%;       
     overflow-x: hidden;  
 }
 
@@ -22,8 +19,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    
+    padding-top: 20px;    
 }
 
 img{
@@ -35,7 +31,7 @@ img{
 /* Button */
 
 button {
-    background-color: #E0633A;  
+    background-color: var(--burnt-orange);  
     font-size: 1.4rem;
     font-weight: 400;
     padding: 22px 45px;
@@ -47,40 +43,4 @@ button {
     color: #fff;
 }
 
-/* Footer */
-
-footer {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding-bottom: 70px;
-}
-
-.footer-icons {
-    display: flex;
-    flex-direction: row;   
-}
-
-.footer-icons img {
-    margin: 10px;
-}
-
-.footer-icons img {
-    border: 1px solid var(--grey);
-    border-radius: 50%;
-    padding: 15px;
-    opacity: 0.75;    
-}
-
-footer p { 
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
-.credits {
-    opacity: 0.5;
-}
 

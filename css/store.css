@@ -4,9 +4,6 @@
 
 }
 
-nav {
-    background-color: hsla(0, 0%, 77%, 0.1);
-}
 main {
     margin-top: 0;
     padding-top: 0;;
@@ -73,13 +70,17 @@ select, option{
     
 }
 
+label {
+    padding-bottom: 10px;
+}
+
 .required:after {
     content:" *";    
 }
 
-/* select:required:invalid {
+select:required:invalid {
     color: #666;
-  } */
+  }
 
   option[value=""][disabled] {
     display: none;
@@ -121,12 +122,20 @@ input[type='radio']:checked::after {
     top: -4px;
     left: -2px;
     position: relative;
-    background-color: var(--burnt-orange);
+    
     content: '';
     display: inline-block;
     visibility: visible;
     border: 2px solid #666;
     
+}
+
+ #karma-orange:checked::after {
+    background-color: var(--burnt-orange);
+}
+
+#space-grey:checked::after {
+    background-color: var(--space-grey);
 }
 
 .radio-button label {
@@ -150,7 +159,7 @@ button {
     left: -6px;
     top: -2px;
     display: inline-block;  
-    outline: 2px solid red;
+    outline: 2px solid var(--space-grey);
     background: #fff;
 }
 

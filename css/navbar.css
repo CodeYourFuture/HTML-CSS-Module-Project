@@ -7,6 +7,8 @@ nav {
     box-sizing: border-box;
     padding: 20px 40px;
     height: 90px;
+    background: hsla(0, 0%, 77%, 0.1);
+
 }
 
 nav ul {
@@ -28,7 +30,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--orange);
+    color: var(--burnt-orange);
 }
 
 .active {
@@ -38,3 +40,5 @@ nav ul li a:hover {
 #hamburger {
     display: none;
 }
+
+

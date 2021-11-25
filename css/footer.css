@@ -1,0 +1,36 @@
+/* Footer */
+
+footer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;   
+}
+
+.footer-icons img {
+    margin: 10px;
+}
+
+.footer-icons img {
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.75;    
+}
+
+footer p { 
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.credits {
+    opacity: 0.5;
+}
