@@ -95,9 +95,32 @@ fieldset label {
     font-weight: 300;
 }
 
-fieldset input {
-    height: auto;
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid rgb(110, 108, 108);
+    border-radius: 50%;
+    outline: none;
+    margin-bottom: -3px;
+    cursor: pointer;
 }
+
+/*change the color inside the radio button****************************/
+
+input[type='radio']::before {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: 0.1rem;   
+    border-radius: 50%;     
+}
+
+input[type='radio']:checked::before {
+    background: rgb(231, 139, 34);  
+}
+/*********************************************************************/
 
 form button {
     width: 10.6rem;
@@ -106,22 +129,54 @@ form button {
 }
 
 .agreement-field {
-    display: flex;
+    /*display: flex;*/
     font-size: 13px;
-    padding-top: 3rem;
-    padding-left: 7.7rem;
-}
-
-.agreement-field input {
-    height: auto;
-    margin-right: 0.4rem;
-    margin-bottom: 4rem;
+    /*padding-top: 3rem;
+    padding-left: 7.7rem;*/
 }
 
 .agreement-field a{
     color:rgb(240, 132, 44);
 }
 
+/*change the color inside the check box ****************************/
+input[type='checkbox'] {
+    opacity: 0;
+}
+
+input[type='checkbox'] + label {
+    position: relative;
+    padding-left:30px ;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 6.8rem;
+    margin-top: 5rem;
+}
+
+input[type='checkbox'] + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    outline:1px solid  rgb(110, 108, 108);
+    background:white;
+}
+
+input[type='checkbox']:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    outline:1px solid  rgb(110, 108, 108);
+    background-image: url(../img/checkmark.svg);
+    background-size: contain;
+    padding:0.1rem;  
+}
+/*********************************************************************/
 .karmaformImg {
     width:100%;
 }
