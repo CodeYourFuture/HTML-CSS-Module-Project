@@ -7,87 +7,172 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/order.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Karma-order</title>
   </head>
   <body>
     <header>
-      <a class="header-logo" href="#">
-        <img
-          class="logo-image"
-          src="./img/karma-logo.svg"
-          alt="logo of karma"
-        />
-      </a>
-      <nav class="nav">
-        <!-- (B) THE HAMBURGER -->
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger" />
-        <ul class="nav-menu">
-          <li class="list-item">
-            <a href="./index.html" class="nav-link nav-active">Meet Karma</a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="nav-link">How it Works</a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="nav-link">Store</a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="nav-link">Blog</a>
-          </li>
-          <li class="list-item">
-            <a href="#" class="nav-link">Help</a>
-          </li>
-          <li class="list-item">
-            <a href="./order.html" class="nav-link">Login</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header">
+        <a class="header-logo" href="#">
+          <img
+            class="logo-image"
+            src="./img/karma-logo.svg"
+            alt="logo of karma"
+          />
+        </a>
+        <nav class="nav">
+          <!-- (B) THE HAMBURGER -->
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ul class="nav-menu">
+            <li class="list-item">
+              <a href="./index.html" class="nav-link nav-active">Meet Karma</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="nav-link">How it Works</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="nav-link">Store</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="nav-link">Help</a>
+            </li>
+            <li class="list-item">
+              <a href="./order.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="form-section">
-        <form action="">
-          <label for="fname">First name</label>
-          <input
-            id="fname"
-            type="text"
-            name="fname"
-            minlength="3"
-            maxlength="10"
-            required
+        <div class="form-container">
+          <h1>Order your Karma wifi device today!</h1>
+          <form action="">
+            <div class="oneline-input">
+              <div class="borders">
+                <label for="fname"
+                  >First name<span class="required">*</span></label
+                >
+                <input
+                  id="fname"
+                  type="text"
+                  name="fname"
+                  minlength="3"
+                  maxlength="10"
+                  required
+                />
+              </div>
+              <div class="borders">
+                <label for="lname"
+                  >Last name<span class="required">*</span></label
+                >
+                <input
+                  id="lname"
+                  type="text"
+                  name="lname"
+                  minlength="3"
+                  maxlength="10"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="borders">
+              <label for="address"
+                >Address<span class="required">*</span></label
+              >
+              <input
+                id="address"
+                class="address"
+                type="text"
+                name="address"
+                required
+              />
+            </div>
+            <div class="borders">
+              <label for="address2">Address 2</label>
+              <input
+                id="address2"
+                class="address"
+                type="text"
+                name="address2"
+              />
+            </div>
+            <div class="oneline-input">
+              <div class="borders">
+                <label for="city">City<span class="required">*</span></label>
+                <select id="city" name="city">
+                  <option selected="selected" value="">
+                    Select your city...
+                  </option>
+                  <option value="florida">London</option>
+                  <option value="florida">Birmingham</option>
+                  <option value="florida">Paris</option>
+                  <option value="florida">New York</option>
+                  <option value="florida">Florida</option>
+                  <option value="texas">Texas</option>
+                </select>
+              </div>
+              <div class="borders">
+                <label for="postcode"
+                  >Postcode<span class="required">*</span></label
+                >
+                <input
+                  id="postcode"
+                  class="postcode"
+                  type="text"
+                  name="postcode"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="borders color-heading">
+              <label for="color">Select a colour:</label>
+              <div class="select-color">
+                <label class="container" for="karma-orange">
+                  <input
+                    type="radio"
+                    id="karma-orange"
+                    name="radio"
+                    checked="checked"
+                  />
+                  <span class="checkmark"></span>
+                  Karma orange</label
+                >
+                <label class="container" for="space-grey">
+                  <input type="radio" id="space-grey" name="radio" />
+                  <span class="checkmark"></span>
+                  Space Grey</label
+                >
+              </div>
+            </div>
+            <div class="terms-group">
+              <input
+                type="checkbox"
+                class="checkbox-custom"
+                id="terms"
+                required
+              />
+              <label for="terms"
+                >By placing your order you agree Karma's
+                <a href="#">Terms and Conditions</a> .
+                <span class="required">*</span>
+              </label>
+            </div>
+            <button class="get-karma">Place my order</button>
+          </form>
+        </div>
+        <div class="image-container">
+          <img
+            class="form-image"
+            src="./img/store-image_by-andrew-neel-unsplash.jpg"
+            alt="form image"
           />
-          <label for="lname">Last name</label>
-          <input
-            id="lname"
-            type="text"
-            name="lname"
-            minlength="3"
-            maxlength="10"
-            required
-          />
-          <label for="address">Address</label>
-          <input id="address" type="text" name="address" required />
-          <label for="address2">Address 2</label>
-          <input id="address2" type="text" name="address2" />
-          <label for="city">City</label>
-          <input id="city" type="text" name="city" required />
-          <label for="postcode">Postcode</label>
-          <input id="postcode" type="text" name="postcode" required />
-          <label for="color">Select size:</label>
-          <div class="color">
-            <label for="karma-orange">Karma orange</label>
-            <input type="radio" id="karma-orange" name="karma-orange" />
-          </div>
-          <div class="color">
-            <label for="space-grey">Space Grey</label>
-            <input type="radio" id="space-grey" name="space-grey" />
-          </div>
-        </form>
-        <img
-          class="form-image"
-          src="./img/store-image_by-andrew-neel-unsplash.jpg"
-          alt="form image"
-        />
+        </div>
       </section>
     </main>
   </body>

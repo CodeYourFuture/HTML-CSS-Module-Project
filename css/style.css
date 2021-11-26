@@ -18,28 +18,32 @@ body {
 header,
 main,
 footer {
-  padding: 0 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 header {
   height: 4.3rem;
+  align-items: center;
+  top: 0px;
+  background-color: rgb(248, 248, 248);
+}
+
+.header {
+  height: 4rem;
   display: flex;
   justify-content: space-between;
-  text-align: center;
   align-items: center;
-  overflow: hidden;
-  /* position: fixed; */
-  top: 0px;
-  background-color: rgb(253, 253, 253);
-  /* width: 1056px; */
+  /* background-color: teal;
+  position: fixed; */
+  z-index: 1;
+  margin: 0 7rem;
+  background-color: rgb(248, 248, 248);
 }
 
 .logo-image {
   height: 40px;
   width: auto;
-  margin-left: 6rem;
 }
 
 .nav label,
@@ -50,20 +54,19 @@ header {
 .nav-menu {
   display: flex;
   justify-content: space-between;
-  margin-right: 5rem;
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .list-item {
   margin-left: 25px;
-  padding: 0.5rem 0;
+  padding: 0.6rem 0;
 }
 
 .nav-link {
   text-decoration: none;
-  color: rgb(138, 135, 135);
+  color: rgb(148, 143, 143);
 }
 
 .nav-link:hover {
@@ -71,7 +74,8 @@ header {
 }
 
 .nav-active {
-  color: rgb(32, 29, 29);
+  color: rgb(75, 73, 73);
+  font-weight: 500;
 }
 
 main {
@@ -79,7 +83,6 @@ main {
 }
 
 .home {
-  font-family: "Roboto", sans-serif;
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
