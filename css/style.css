@@ -10,7 +10,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2rem 15rem;
+  background: rgba(196, 196, 196, 0.1);
+  padding: 1rem 15rem;
 }
 
 /* nav-list*/ /* Remove bullets */
@@ -156,6 +157,144 @@ a:hover {
   border-radius: 8px;
   color: rgb(255, 255, 255);
 }
+
+/* CSS for store.html */
+
+/* main section */
+main section {
+  display: flex;
+  flex-direction: row;
+}
+
+/* section p */
+form p {
+  font-size: 50px;
+  color: #de6e49;
+  width: 521px;
+  height: 118px;
+  margin-top: 170px;
+}
+
+/* store-section-img */
+.store-section-img {
+  width: 50%;
+}
+
+/* form-container */
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* input */
+input[type="text"],
+select {
+  height: 53px;
+}
+
+/* fieldset remove border */
+fieldset {
+  border: none;
+}
+
+/* name */
+.name {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 40px;
+}
+
+/* name-group */
+.name-group {
+  display: inline-block;
+}
+/* name-group input */
+.name-group input {
+  display: block;
+  width: 230px;
+}
+
+/* address */
+.address {
+  margin-top: 40px;
+}
+
+/* address input */
+.address input {
+  display: block;
+  width: 500px;
+}
+
+/* address2 */
+.address2 {
+  margin-top: 40px;
+}
+
+/* city */
+.city {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 40px;
+}
+
+/* city-group */
+.city-group {
+  display: inline-block;
+}
+
+/* city-group select */
+.city-group select {
+  display: block;
+  width: 300px;
+}
+
+/* city-group input */
+.city-group input {
+  display: block;
+  width: 130px;
+}
+
+/* select-color */
+.select-color {
+  width: 500px;
+  margin-top: 40px;
+}
+
+/* select-color input */
+.select-color input {
+  margin-right: 15px;
+}
+
+/* select-color label */
+.select-color label {
+  margin-right: 25px;
+}
+
+/* checkbox */
+.checkbox {
+  margin-top: 60px;
+}
+
+/* button-container */
+#button-container {
+  width: 500px;
+}
+
+/* button place my order */
+.button-place-my-order {
+  width: 269px;
+  height: 70px;
+  background: #e0633a;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+}
+
+/* CSS for store.html */
 
 /* footer */
 footer {
