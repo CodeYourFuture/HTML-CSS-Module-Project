@@ -32,9 +32,47 @@
     </header>
     <main>
       <section class="store-form">
-        <h1>Order your Karma Wifi device today!</h1>
-        <form class=>
+        <div class="order-message">
+          <h1>Order your Karma Wifi device today!</h1>
+        </div>
+        <form>
+          <div class="form-names">
+            <label for="first-name">First Name</label>
+            <input type="text" name="name" id="first-name" minlength="2" required=true/>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="name" id="last-name" minlength="2" required=true/>
+          </div>
+          <div class="form-address">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" minlength="10" required=true/>
+          </div>
+          <div class="form-address-2">
+            <label for="address-2">Address 2</label>
+            <input type="text" name="address-2" id="address-2" minlength="10" required=true/>
+          </div>
+          <div class="city-and-postcode">
+            <label for="city">City</label>
+            <select name="city" id="city">
+              <option value="london">london</option>
+              <option value="birmingham">Birmingham</option>
+              <option value="manchester">Manchester</option>
+            </select>            
 
+            <label for="postcode">Postcode</label>
+            <input type="text" name="postcode" id="postcode" minlength="6" required=true/>
+          </div>  
+          
+          <div class="colour-select">
+
+          </div>
+
+          <div class="disclaimer">
+
+          </div>
+
+          <div class="order-button">
+            <input type="submit" value="Place my order">
+          </div>
         </form>
       <div class="main-image">
         <img src="img/Girl working at desk.jpeg" alt="Photo of a girl working at desk">
