@@ -1,0 +1,146 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-top: -1rem;
+}
+
+/*content*/
+
+.logo {
+  width: 30px;
+  height: 65px;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 7rem;
+  margin-bottom: -3rem;
+}
+
+/* navbar */
+
+.navbar {
+  text-align: right;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  margin-top: -6rem;
+  padding-bottom: 2.5rem;
+  background-color: #f6f6f6;
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-left: 2rem;
+  padding-top: 8rem;
+  color: grey;
+}
+a:hover {
+  color: #dc582a;
+}
+
+.main_store {
+  display: flex;
+  margin-top: 7rem;
+}
+
+.text_store {
+  font-size: 1.9rem;
+  color: #dc582a;
+  padding-right: 15rem;
+  margin-left: 6rem;
+  margin-top: -5rem;
+  text-align: left;
+}
+.store_image {
+  margin-top: -7rem;
+  margin-left: -4rem;
+}
+
+/*form*/
+
+fieldset {
+  height: 130%;
+  width: 60%;
+  margin-top: -24rem;
+}
+
+.postcode {
+  display: inline-block;
+}
+.postcode > input {
+  display: block;
+  margin-left: 10rem;
+}
+.postcode > label {
+  margin-left: 10rem;
+}
+label {
+  font-size: 1.5rem;
+  color: grey;
+  display: inline;
+}
+input {
+  height: 2.7rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 1.3rem;
+}
+.ct {
+  color: grey;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.radio_button {
+  padding-left: 2rem;
+  padding-bottom: 0;
+  width: 1.5rem;
+  margin: 1rem;
+}
+/*terms & conditions*/
+.conditions {
+  margin-left: -2rem;
+}
+/* footer */
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  border-top: 0.5px solid lightgray; /*overline*/
+  margin-top: -5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 5rem;
+}
+
+.footer_paragraph {
+  margin-top: 5rem;
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.media_icon {
+  height: 50px;
+  width: 50px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+  background-color: white;
+  border: thin solid lightgray;
+}
+
+.media_icon > img {
+  width: 20px;
+  display: block;
+  margin: 1rem;
+}
+
+.copyright {
+  margin-top: 2.5rem;
+  margin-left: 2.2rem;
+  text-align: center;
+  color: grey;
+  font-size: 1.2rem;
+}
