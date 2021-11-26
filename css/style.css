@@ -1,7 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -17,7 +17,7 @@ body {
  */
 
 
- .logo{
+.logo {
     width: 2em;
     height: auto;
     padding-top: 2em;
@@ -27,39 +27,43 @@ body {
 header {
     height: 6em;
     padding-left: 6em;
+    background-color: rgba(196, 196, 196, 0.1);
 }
 
 nav {
     float: right;
     font-family: 'Roboto';
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 1.7em 4em 0em 0em;
 }
 
-nav a{
+nav a {
     color: rgb(146, 145, 145);
     padding-right: 1.3em;
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: rgba(224,99,58);
 }
 
-nav a.active{
-    color: rgb(48, 47, 47);
+nav a.active {
+    font-weight: 550;
+    color:rgb(117, 115, 115)
 }
 
-nav a.active:hover{
+nav a.active:hover {
     color: rgba(224,99,58);
 }
-.container{
+
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: white;
 }
+
 .banner {
     width: 100%;
     height: auto;
@@ -74,17 +78,23 @@ nav a.active:hover{
     font-weight: lighter;
 }
 
-h1{
+h1 {
     font-size: 3.6em;
     padding-bottom: 20%;
 }
 
-h2{
+h2 {
     font-size: 2em;
     padding-bottom: 7%;
 }
 
-button{
+.centered_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: lighter;
     background-color: rgba(224,99,58);
     border: none;
     border-radius: 0.3em;
@@ -94,12 +104,12 @@ button{
     transition: all 0.5s ease;
 }
 
-button:hover{
+.centered_button:hover {
     background-color: white;
     color: rgba(224,99,58);
 }
 
-.howitworks{
+.howitworks {
     color: black;
     font-weight: lighter;
     font-size: 2.6em;
@@ -107,37 +117,111 @@ button:hover{
     padding-top: 3.3em;
 }
 
-.outer_container{
+.outer_container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align:center;
 }
 
-.icons{
+.icons {
     height: auto;
     width: 9em;
 }
 
-.caption{
+.caption {
     font-size: 2em;
     font-weight: lighter;
     text-align: center;
     width: 15em;
 }
 
-h3{
+.container2 {
+    padding-top: 6em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.banner2 {
+    width: 41.597222%;
+    height: auto;
+}
+
+.rightside {
+    position: absolute;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+    font-weight: lighter;
+    padding-bottom: 3em;
+    min-width: 200px;
+    max-width: 700px;
+}
+
+blockquote:before {
+    content: '“';
+    color: rgba(224,99,58);
+    font-weight: bolder;
+  }
+
+blockquote:after {
+    content: '”';
+    padding-left: 0.6rem;
+    color: rgba(224,99,58);
+    font-weight: bolder;
+}
+
+.rightside_button {
+    position: absolute;
+    width: auto;
+    height: 7%;
+    background-color: rgba(224,99,58);
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 0.6em;
+    margin-top: 10%;
+    transition: all 0.5s ease;
+    text-align: center;
+    color: white;
+}
+
+.inner_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(224, 99, 58, 0.1);
+    width: 58.4027778%;
+}
+
+.rightside_button:hover {
+    background-color: white;
+    color: rgba(224,99,58);
+}
+
+h3 {
     text-align: center;
     font-weight: lighter;
     font-size: 2rem;
 }
 
-.social_container{
+.social_container {
     display: flex;
     justify-content: center;
 }
 
-.s_icons{
+.s_icons {
     width: 2rem;
     margin: 1rem;
     padding: 15px;
@@ -145,13 +229,176 @@ h3{
     border-radius: 2rem;
 }
 
-footer{
-    margin-top: 4rem;
-    margin-bottom: 2.5rem;
+footer {
+    margin-bottom: 1.5rem;
     width: 96%;
     border-top: 2px solid lightgray;
 }
 
-.karma_mobility{
+.karma_mobility {
     color:lightslategray;
+}
+
+/*
+Store Page Styling
+*/
+
+
+nav a.active2 {
+    color: rgba(224,99,58);
+}
+
+.orderkarma {
+    color: rgba(224,99,58);
+    text-align: left;
+}
+
+.outer_container_2 {
+display: flex;
+}
+
+.store_pic {
+    width: 100%;
+    height: auto;
+}
+
+.order_form {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    min-width: 54%;
+}
+
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+    padding-left: 40px;
+    max-width: 100%;
+}
+
+.city {
+    font-style: italic;
+}
+
+.citypcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+
+legend {
+    padding: 8px 0px;
+}
+
+select {
+    border: #666666 solid 2px;
+    border-radius: 4px;
+    padding: 14px 10px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+}
+
+
+form{
+    color: #666666;
+    list-style-type: none;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.orderkarma {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+input {
+    border: #666666 solid 2px;
+    border-radius: 4px;
+    padding: 14px 0px;
+    margin-top: 10px;
+}
+
+.fullname {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 95%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+input[class="pcode"]{
+    width: 70%;
+    min-width: 120px;
+    max-width: 200px;
+}
+
+.address_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 95%;
+}
+
+input[class="address"]{
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+}
+
+.address_1 {
+    width: 85%;
+}
+
+.address_2 {
+    width: 85%;
+    padding-top: 2%;
+}
+
+.select_color {
+	display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 5%;
+    padding-left: 50px;
+}
+
+.checkbox {
+padding: 8%;
+}
+
+label[for="t_c"]{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.t_c {
+    color: rgba(224,99,58);
+}
+
+.place_order {
+    color: white;
+    background-color: rgba(224,99,58);
+    width: 240px;
+    height: auto;
+    border: none;
+    padding: 20px;
+    margin-left: 50px;
 }
