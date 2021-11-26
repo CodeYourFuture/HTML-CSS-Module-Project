@@ -4,31 +4,15 @@
 body  {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    border: 2px solid red;
+    border: 2px solid rgb(248, 243, 243);
 }
 
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organized, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
- 
 body{
     width:100%;
     display: flex;
     flex-direction: column;
     margin:0 auto;
 }
-/* body  *{
-    border:1px solid black;
-} */
 
 /* *******HEADER******* */
 .header{
@@ -71,7 +55,7 @@ body{
     color:black;
 }
 #meet_karma:hover{
-    color:red;
+    color:rgb(245, 122, 21);
 }
 
 /** MAIN***/
@@ -156,9 +140,57 @@ button{
     width:25px;
     height: 25px; 
     padding:15px;
-    border: 1px solid lightgray;
-    border-radius:40%;
+    border: 3px solid rgb(184, 180, 180);
+    border-radius:45%;
 }
 hr{
-    width: 75%;
+    width:80%;
+    color:whitesmoke;
+}
+
+/**IMG  &  QUOTE */
+ .img_quote_container{
+     display: flex;
+     flex-flow: row wrap;
+     width:100%;
+     margin-bottom: 100px;
+     
+ }
+ .img_of_girl{
+     width:45%;
+
+ }
+ .quote{
+     width:55%;
+     padding-top: 10rem;
+     text-align: center;
+     background-color: rgb(245, 229, 232);
+ }
+ .quote p{
+     font-size: 35px;
+     font-weight: 45;
+ }
+ q{
+     display:inline;
+ }
+ q::before{
+     content: open-quote;
+ }
+ q::after{
+     content: close-quote;
+ }
+ .standing_quortation{
+
+        font-style: italic;
+        font-size: 56px;
+        color:#ce7508;
+        
+ }
+blockquote em {
+    color:rgb(77, 69, 69);
+    font-size: 50px;
+    
+}
+button{
+    margin-top:30px;
 }

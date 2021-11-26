@@ -1,0 +1,60 @@
+
+.main{
+    display: flex;
+    margin-left: 150px;
+    gap:100px;
+}
+img{
+    width:710px;
+    height:1235px;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 65px;
+    color: rgb(228, 109, 11);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.name_surname_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.city_postcode_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.size_container{
+    width:45%;
+
+}
+
+.size_of_city_container{
+    width:65%;
+}
+.size_of_postcode_container{
+    width:25%;
+}
+form input,
+form select{
+    margin-bottom: 30px;
+    padding:10px;
+}
+label{
+    margin-bottom: 10px;
+}
+fieldset{
+    border:none;
+    margin: 15px 0 25px 0;
+}
+a {
+    color:red;
+}

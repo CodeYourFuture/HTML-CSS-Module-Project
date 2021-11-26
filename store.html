@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico"> 
+    <link rel="stylesheet" href="css/store.css">
+ </head>
+    <body>
+      <header class="header">
+        
+           <img src="img/karma-logo.svg" alt="image-logo" class="logo"/>
+        
+         <nav class="nav_bar">
+            <ul class="navigation_list">
+                <li class="navigation_item">
+                    <a  id="meet_karma" class="navigation_link" href="#"><strong>Meet Karma</strong></a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">How it Works</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Store</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Blog</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Help</a> 
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Login</a> 
+                </li>
+            </ul>
+        </nav>
+        <!-- <div class="hamburger">
+            <a href="#" onclick="toggleMenu()">
+                <img src="./img/menu-hamburger.svg" alt="toolbar"/>
+            </a>
+        </div> -->
+    </header>
+      <main class="main">
+          <section class="form_container">
+              <h1>Order your Karma Wifi device today!</h1>
+              <form>
+                  <!--------- FIRST NAME & LAST NAME CONTAINER ---------->
+
+                  <div class="name_surname_container">
+                      <div class="container  size_container">
+                          <label for="first_name">First Name*</label>
+                          <input type="text" id="first_name" required/>
+                      </div>
+                      <div class="container  size_container">
+                        <label for="last_name">Last Name*</label>
+                        <input type="text" id="last_name" required/>
+                      </div>
+                  </div>
+                  <!----------ADDRESS1 & ADDRESS2 CONTAINER------------>
+
+                  <label for ="address">Address*</label>
+                  <input type="text" id="address" name="address" required/>
+                  <label for="address2">Address2</label>
+                  <input type="text" id="address2" name="address2"/>
+
+                  <!---------CITY & POSTCODE CONTAINER----------->
+
+                  <div class="city_postcode_container">
+                      <div class=" container   size_of_city_container">
+                          <label for="city" >City*</label>
+                          <select id="city" name="city" required>
+                              <option value="" disabled selected>Select your city...</option>
+                              <option>Albania</option>
+                              <option>Afghanistan</option>
+                              <option>Bulgaria</option>
+                              <option>Belfast</option>
+                          </select>
+                      </div>
+                      <div class="container  size_of_postcode_container">
+                          <label for="postcode">Postcode*</label>
+                          <input type="text" id="postcode" name="postcode" required/>
+                      </div>
+                  </div>
+
+                  <!---------FIELDSET CONTAINER (RADIOBUTTON)--------->
+                  <fieldset>
+                      <legend>Select a color</legend>
+                      <label for="orange" class="radio">
+                          <input type="radio" id="orange" value="orange"/>
+                          Karma orange
+                      </label>
+                      <label for="grey" class="radio">
+                          <input type="radio" id="grey" value="grey"/>
+                          Space grey
+                      </label>
+                  </fieldset>
+
+                  <!--------TERMS & CONDITIONS--------->
+
+                  <label for="terms" class="terms">
+                      <input type="checkbox" id="terms" name="terms" value="true"/>
+                      By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>*
+                  </label>
+                  <button type="submit">Place my order</button>
+                </form>
+          </section>
+
+          <!----------------IMAGE CONTAINER-------------->
+          <section class="img_container">
+              <img src="./additional/BeFunky-photo (1).jpg" alt=" girl using karma"/>
+          </section>
+      </main>
+      <hr>
+      
+      <footer class="footer">
+            <p>Join us</p>
+
+            <!----------SOCIAL MEDIA CONTAINER----------->
+
+          <div class="social_media">
+              <a href="#">
+                  <img src="img/twitter-icon.svg" alt="tweeter" class="find_us"/> 
+              </a>
+              <a href="#">
+                  <img src="img/facebook-icon.svg" alt="facebook" class="find_us"/>
+              </a>
+              <a href="#">
+                  <img src="img/instagram-icon.svg" alt="instagram" class="find_us"/>
+              </a>
+         </div>
+         <p>&#169; Karma Mobility, Inc</p>
+      </footer>
+    </body>
+ </html>
+ 
