@@ -68,18 +68,30 @@ a:hover {
 
 .form_details {
   display: flex;
-  position: relative;
-  top: 75px;
-  margin-left: -10px;
-  margin-right: -1000px;
+  justify-content: space-between;
+  top: 25px;
+  /*margin-left: -10px;*/
 }
 .align_form {
   display: flex;
   flex-direction: column;
 }
+
+.address_details {
+  display: flex;
+  flex-direction: column;
+  /*margin-left: -10px;*/
+}
+
 fieldset {
-  border: none;
+  /*border: none;*/
+  position: relative;
+  top: 50px;
   margin-left: 150px;
+  margin-right: 1200px;
+}
+input {
+  margin: -10px;
 }
 
 /*image*/
@@ -87,7 +99,7 @@ fieldset {
   display: flex;
   margin-left: 1020px;
   background-color: magenta;
-  margin-top: -400px;
+  margin-top: -573px;
   position: relative;
 }
 /*working at desk image*/
@@ -104,13 +116,6 @@ fieldset {
   margin-left: 150px;
   margin-right: -50px;
 }
-
-/*input[type="radio"],
-input.radio {
-  /*float: left;
-  /*margin: 50px;
-  margin-left: -50px;
-}*/
 
 .terms {
   margin-left: 150px;

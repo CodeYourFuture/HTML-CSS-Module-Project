@@ -45,47 +45,61 @@
         <h1 class="head_title">Order Your Karma wifi<br>device today! </h1>
         </section>
 
-         <section class="form_details">
-            <form >
-                <fieldset>
+         <section >
+            <form action="/action_page.php">
+                <fieldset class="fieldset">
                     
-                    <label for="fname">First name *</label><br>
-                    <input type="text" id="fname" name="fname" required>
-                   
-                    <label for="lname">Last name *</label>
-                    <input type="text" id="lname" name="lname" required><br><br>
-                    
-                    <wrapper>
+                <div class="form_details">
                     <div class="align_form">
-                    <label for="address">Address *</label>
+                    <label for="fname">First name<span> *</span></label><br>
+                    <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <br>
+                    <div class="align_form">
+                    <label for="lname">Last name<span> *</span></label><br>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    </div>
+                    <br>
+                </div>
+                   
+                <div class="address_details">
+                    <div class="align_form">
+                    <label for="address">Address<span> *</span></label><br>
                     <input type="text" id="address" name="address" required><br><br>
                     </div>
+                    <br>
+
                     <div class="align_form">
-                    <label for="address 2">Address 2</label>
+                    <label for="address 2">Address 2</label><br>
                     <input type="text" id="address" name="address"><br><br>
                     </div>
-                    </wrapper>
-                    
-                    <label for="city">City *</label>
-                    <input type="text" id="city" name="city" placeholder="Select your city.." required>
-                   
-                    <label for="postcode">Postcode *</label>
-                    <input type="text" id="postcode" name="postcode" required><br><br>
-                    
-                </fieldset>
-
-               <div class="section-3">
-                    <p>Select a colour </p>
-                     <br>
-                    <input  type="radio" id="Karma orange" value="Karma orange" name="Select a colour">
-                    <label class="section-3" for="Karma orange">Karma orange </label>
-                    
-                    <input  type="radio" id="space grey" value="space grey" name="Select a colour">
-                    <label class="section-3" for="space grey">Space Grey</label>
-                
+                    <br>
                 </div>
+
+                <div class="form_details">
+                    <div class="align_form">
+                    <label for="city">City<span> *</span></label><br>
+                    
+                     <select value=“”>
+                        <option value=“none”>Select Your City...</option>
+                        <option value=“London”>London</option>
+                        <option value=“Istanbul”>Birmingham</option>
+                        <option value=“Karagandy”>Manchester</option>
+                        <option value=“New York”>Newcastle</option>
+                     </select>
+                    </div>
+                   <br>
+                    <div class="align_form">
+                    <label for="postcode">Postcode<span> *</span></label><br>
+                    <input type="text" id="postcode" name="postcode" required><br><br>
+                    </div>
+                    <br>
+                </div>
+            </fieldset>
                 
             </form>
+          
+
 
            
             
