@@ -123,16 +123,20 @@ h2 {
    position: static;
  }
 
+ .feature-col-l{
+   max-width:50%
+ }
  .feature-col-r{
    background-color: rgba(224, 99, 58, 0.1);
-   width: 60%;
+   max-width: 60%;
 
    text-align: center;
    /*padding: 300px auto 0;*/
  }
 
  .feature-text{
-   text-align: center;
+   /*text-align: center;*/
+   margin-top: 120px;
    font-size: 30px;
  }
 
