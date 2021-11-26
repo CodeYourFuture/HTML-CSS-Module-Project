@@ -23,15 +23,15 @@ body {
   width: 30rem;
 }
 
-/* nav-link-meet-karma */
-.nav-link-meet-karma {
-  font-weight: bolder;
+/* nav-link */
+li a {
   text-decoration: none;
   color: rgb(34, 34, 34);
 }
 
-/* nav-link */
-.nav-link {
+/* nav-link-meet-karma */
+.nav-link-meet-karma {
+  font-weight: bolder;
   text-decoration: none;
   color: rgb(34, 34, 34);
 }
@@ -160,8 +160,8 @@ a:hover {
 
 /* CSS for store.html */
 
-/* main section */
-main section {
+/* store main section */
+#store-section {
   display: flex;
   flex-direction: row;
 }
@@ -307,9 +307,9 @@ footer {
 /* line */
 .line {
   border-top: 1px solid rgb(238, 234, 234);
-  width: 55rem;
-  height: 0.1rem;
-  margin: 1rem 20rem;
+  width: 80%;
+  margin: 0rem 3rem 0rem 3rem;
+  align-self: center;
 }
 
 /* footer h1 */
