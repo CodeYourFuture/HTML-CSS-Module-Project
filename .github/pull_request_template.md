@@ -16,9 +16,9 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name: Simon Lawrence
-- Your City: London
-- Your Slack Name: Simon-Trainee
+- Your Name:
+- Your City:
+- Your Slack Name:
 
 # Homework Details
 
