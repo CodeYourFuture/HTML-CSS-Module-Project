@@ -8,6 +8,10 @@ h1, h2, .about-text{
   font-weight: lighter;
 }
 
+a{
+  text-decoration: none;
+}
+
  /* --==================== HEADER ====================-- */
  .header_logo {
     height: 40px;
@@ -93,7 +97,8 @@ body{
     width: 50%;
     /*max-width: 680px;*/
     /*margin: 100px auto 0;*/
-    padding: 80px;
+    padding-left: 100px;
+    padding-top: 100px;
     box-sizing: border-box;
 }
 
@@ -109,7 +114,7 @@ body{
 .top-form, 
 .middle-form,
 .bottom-form{
-    width: 60%;
+    width: 100%;
     min-height: 65px;
     margin: 25px 0;
 }
@@ -218,6 +223,10 @@ input[type='checkbox'],
    footer{
     text-align: center;
     /*padding: 40px auto 100px;*/
+   }
+
+   .footer__content{
+     padding: 20px 0;
    }
    
    @media screen and (max-width: 767px) {
