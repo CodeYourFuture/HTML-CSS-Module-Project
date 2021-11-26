@@ -16,12 +16,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: var(--dark-grey);
-   
+    color: var(--dark-grey);   
 }
 
 
- 
   /*Header and navigation */
 
   .header {
@@ -137,7 +135,7 @@ body {
 
  }
 
- .feature-section-box {66, 135, 245
+ .feature-section-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,6 +173,11 @@ body {
     right: 15rem;
     top: 3rem;
     line-height: 1.6;
+}
+
+.get-karma-section a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h3 {
@@ -256,9 +259,11 @@ footer a {
    }
 }
  
+/* end of media queries*/
 
 
-/* Karma Store page*/
+
+/* Karma Store page CSS*/
 
 .store-header {
     display: flex;
@@ -268,4 +273,73 @@ footer a {
     background-color: var(--lightest-grey);
 }
 
+.store-h2 {
+    color: var(--orange);
+    font-weight: normal;
+    margin-bottom: 5rem;
+}
 
+fieldset {
+    border: 0;
+}
+
+.store-feature-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-feature-form {
+    width: 50%;
+}
+
+fieldset{
+    padding: 0 10rem;
+}
+
+
+.store-feature-img {
+    width: 50%;
+}
+
+.store-feature-image {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 1.2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkbox {
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+}
+
+input {
+    padding: 0.4rem 0;
+}
+
+label {
+    margin-bottom: 0.4rem;
+}
+
+select {
+    padding: 0.4rem 2.5rem 0.4rem 0;
+}
+
+.radio {
+    margin-top: 3rem;
+
+}
+
+.checkbox a {
+    color: var(--orange);
+}

@@ -36,58 +36,75 @@
                 </ul>
             </nav> 
         </header>
+        <main>
 
-        <section>
-            <h2>Order your Karma wifi device today!
-            </h2>
-            <form>
-                <label for="name">First name *</label>
-                <input type="text" name="first-name" id="first-name" minlength="2" required/>
+            <section class="store-feature-container">
+                <div  class="store-feature-form"> 
+                    <form>
+                        <fieldset>
+                            <h2 class="store-h2">Order your Karma wifi device today!
+                            </h2>
+                            <div class="row">   
+                                <div class="form">
+                                    <label for="name">First name *</label>
+                                    <input type="text" name="first-name" id="first-name" minlength="2" required/>
+                                </div>
+                                <div class="form">
+                                    <label for="name">Last name *</label>
+                                    <input type="text" name="last-name" id="last-name" minlength="2" required/>
+                                </div>  
+                            </div>
+                            <div class="form">                          
+                                <label for="address">Address *</label>
+                                <input type="text" name="address" id="adress" minlength="5" required/>
+                            </div>
+                            <div class="form">
+                                <label for="address-2">Address 2</label>
+                                <input type="text" name="address-2" id="addredd-2"/>
+                            </div>
 
-                <label for="name">Last name *</label>
-                <input type="text" name="last-name" id="last-name" minlength="2" required/>
+                            <div class="row">
+                                <div class="form"> 
+                                    <label for="city">City *</label>
+                                    <select name="city" id="city" minlength="2" required>
+                                        <option value="" disabled selected>Select your city...</option>
+                                        <option value="london">London</option>
+                                        <option value="manchester">Manchester</option>
+                                        <option value="leeds">Leeds</option>
+                                        <option value="swansea">Swansea</option>
+                                        <option value="sheffield">Sheffield</option>
+                                    </select> 
+                                </div>
+                           
+                            
+                                <div class="form">
+                                <label for="postcode">Postcode *</label>
+                                <input type="text" name="postcode" id="postcode" minlength="6" required/>
+                                </div>                            
+                            </div>
 
-                <label for="address">Address *</label>
-                <input type="text" name="address" id="adress" minlength="5" required/>
+                            <div class="radio">
+                                <p>Select a color:</p>
+                                <input type="radio" name="color" id="Space Grey" value="Space Grey">
+                                <label for="Space Grey">Space Grey</label>
 
-                <label for="address-2">Address 2</label>
-                <input type="text" name="address-2" id="addredd-2"/>
+                                <input type="radio" name="color" id="Karma orange" value="Karma orange">
+                                <label for="Karma orange">Karma orange</label>
+                            </div>
 
-                <label for="city">City *</label>
-                <select name="city" id="city" minlength="2" required>
-                    <option value="" disabled selected>Select your city...</option>
-                    <option value="london">London</option>
-                    <option value="manchester">Manchester</option>
-                    <option value="leeds">Leeds</option>
-                    <option value="swansea">Swansea</option>
-                    <option value="sheffield">Sheffield</option>
-                </select>               
-
-                <label for="postcode">Postcode *</label>
-                <input type="text" name="postcode" id="postcode" minlength="6" required/>
-
-                <p>Select a color:</p>
-                <input type="radio" name="color" id="Space Grey" value="Space Grey">
-                <label for="Space Grey">Space Grey</label>
-
-                <input type="radio" name="color" id="Karma orange" value="Karma orange">
-                <label for="Karma orange">Karma orange</label>
-
-
-                <input type="checkbox" name="checkbox" id="checkbox" value="checkbox">
-                <label for="checkbox">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
-                <img src="additional/checkmark.svg" alt="image of checkmark"/>
-
-
-
-
-                <button class="button">Place my order</button>
-
-            </form>
-        </section>
-        <section>
-        <img src="additional/store-image_by-andrew-neel-unsplash.jpg" alt="picture of an office"/>
-        </section>
+                            <div class="checkbox">                         
+                                <input type="checkbox" name="checkbox" id="checkbox" value="checkbox">
+                                <label for="checkbox">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
+                            </div>
+                        <button class="button">Place my order</button>
+                        
+                    </form>
+                </div>
+                <div class="store-feature-img">
+                    <img class="store-feature-image" src="additional/store-image_by-andrew-neel-unsplash.jpg" alt="picture of a person working in an office">
+                </div>
+            </section>
+        </main>
 
         <footer class="footer">
             <hr />
