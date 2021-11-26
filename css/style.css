@@ -267,12 +267,24 @@ nav .nav__link_on{
     display: flex;
     width: 100%;
     justify-content: center;
+    border-color: indianred;
+    padding: 20px 0;
 }
 
 .social-icons{
-    width: 25px;
-    margin: 20px;
+    width: 20px;
+    margin: 10px;
 }
+
+.social-circle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px; 
+    border:var(--grey-light) solid 2px;
+    margin: 0 10px;
+}
+
+
 
 /* //General Elements */
 .divider{

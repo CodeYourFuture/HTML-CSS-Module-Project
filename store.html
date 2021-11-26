@@ -12,10 +12,11 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-
 <body>
+
+
     <nav>
-        <img class="logo" src="img/karma-logo.svg" alt="Meet Karma Logo">
+        <a href="index.html"><img class="logo" src="img/karma-logo.svg" alt="Meet Karma Logo"></a>
         <ul class="nav__links">
             <li><a href="index.html">Meet Karma</a></li>
             <li><a href="#">How It Works</a></li>
@@ -26,9 +27,8 @@
         </ul>
     </nav>
 
+
     <main class="main">
-
-
         <div class="form">
             <h1>Order your Karma wifi device today!</h1>
             <form>
@@ -37,24 +37,24 @@
                         <div class="field-fname">
 
                             <label for="fname">First name *</label><br>
-                            <input type="text" id="fname" name="fname">
+                            <input type="text" id="fname" name="fname" required>
                         </div>
 
                         <div class="field-lname">
                             <label for="lname">Last name *</label><br>
-                            <input type="text" id="lname" name="lname"><br><br>
+                            <input type="text" id="lname" name="lname" required><br><br>
                         </div>
                     </div>
 
                     <label for="faddress-1">Address *</label><br>
-                    <input type="text" id="faddress-1" name="faddress-1"><br><br>
+                    <input type="text" id="faddress-1" name="faddress-1" required><br><br>
                     <label for="faddress-2">Address 2</label><br>
                     <input type="text" id="faddress-1" name="faddress-2"><br><br>
 
                     <div class="field-flex">
                         <div class="field-fcity">
                             <label for="fcity">City *</label><br>
-                            <select id="fcity" name="fcity">
+                            <select id="fcity" name="fcity" required>
                                 <option value="select">Select your city ...</option>
                                 <option value="london">London</option>
                                 <option value="kent">Kent</option>
@@ -65,11 +65,10 @@
                         <div class="field-fpostcode">
                             <div class="field-fpostcode">
                                 <label for="fpostcode">Postcode *</label><br>
-                                <input type="text" id="fpostcode" name="fpostcode">
+                                <input type="text" id="fpostcode" name="fpostcode" required>
                             </div>
                         </div>
                     </div><br><br>
-
 
                     <label>Select a colour</label><br><br>
                     <label>
@@ -93,21 +92,22 @@
             </form>
         </div>
 
-
         <div class="cover">
             <!-- here goes a background from css -->
         </div>
-
-
     </main>
+
 
     <footer class="container">
         <div class="divider"></div>
         <h4>Join us on</h4>
         <div class="social container">
-            <a href="#"><img src="img/twitter-icon.svg" alt="twitter icon" class="social-icons"></a>
-            <a href="#"><img src="img/facebook-icon.svg" alt="twitter icon" class="social-icons"></a>
-            <a href="#"><img src="img/instagram-icon.svg" alt="twitter icon" class="social-icons"></a>
+            <a href="#" class="social-circle"><img src="img/twitter-icon.svg" alt="twitter icon"
+                    class="social-icons"></a>
+            <a href="#" class="social-circle"><img src="img/facebook-icon.svg" alt="twitter icon"
+                    class="social-icons"></a>
+            <a href="#" class="social-circle"><img src="img/instagram-icon.svg" alt="twitter icon"
+                    class="social-icons"></a>
         </div>
         <h5>© Karma Mobility, Inc.</h5>
     </footer>
