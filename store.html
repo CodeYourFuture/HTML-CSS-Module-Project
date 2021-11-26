@@ -18,16 +18,16 @@
                 <form>
                     <div class="flex-field">
                         <div class="first-name-container">
-                            <label for="first-name">First name *</label>
+                            <label for="first-name" class="required">First name</label>
                             <input type="text" id="first-name" required/>
                         </div>
                         <div class="first-name-container">
-                            <label for="last-name">Last name *</label>
+                            <label for="last-name" class="required">Last name</label>
                             <input type="text" id="last-name" required />
                         </div>
                     </div>
                     <div class="address-container">
-                        <label for="main-address">Address *</label>
+                        <label for="main-address" class="required">Address</label>
                         <input type="text" id="main-address" required/>
 
                         <label for="address">Address2</label>
@@ -36,7 +36,7 @@
 
                     <div class="flex-field">
                         <div class="city-postcode-field">
-                            <label for="city">City *</label>
+                            <label for="city" class="required">City</label>
                             <select required>
                                 <option value="select city">Select your city...</option>
                                 <option value="london">London</option>
@@ -44,7 +44,7 @@
                             </select>
                         </div>
                         <div class="city-postcode-field">
-                            <label for="postcode">Postcode *</label>
+                            <label for="postcode" class="required">Postcode</label>
                             <input type="text" id="postcode" required/>
                         </div>
                     </div>

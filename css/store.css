@@ -15,6 +15,10 @@ main {
     border-top: solid 0.03rem lightgrey;
 }
 
+.required:after {
+    content: " *";
+}
+
 /* 2 sections in the main get 50% width each */
 main > section {
     width: 50%;
