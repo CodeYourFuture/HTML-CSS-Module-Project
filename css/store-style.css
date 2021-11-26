@@ -1,0 +1,110 @@
+
+/* Baseline */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+input, label, select, legend {
+  margin-top: 1em;
+}
+
+/* Labels */
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+/* Inputs */
+
+input, select {
+  padding: .5em;
+}
+
+/* Header */
+section h1 {
+  color: var(--orange-dark);
+  margin: 2em 0;
+}
+
+.store-main {
+  display: flex;
+  justify-content: space-between;
+  color:black;
+}
+
+.order-container {
+  margin-left: 8em;
+  width: 28vw;
+}
+
+/* Form */
+form > fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-by-side-field {
+  display: flex;
+  align-items: baseline;
+}
+
+/* Checkbox */
+
+.checks-input-fields {
+  display: inline-block;
+}
+
+input[type="text"], select {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-right: .5em;
+}
+
+input[type="checkbox"] + label {
+  margin-left: 10px;
+  background: url();
+}
+
+label > a {
+  color: var(--orange-dark);
+}
+
+/* Radio */
+input[type="radio"] {
+  margin-right: .5em;
+}
+
+.radio-icon-two {
+  margin: 0 .5em 0 .5em;
+}
+
+.side-by-side-field + p {
+  margin-top: 3em;
+}
+
+/* Button */
+
+button[type="submit"] {
+  width: 50%;
+  box-sizing: border-box;
+  margin: 1.2em 0;
+}
+
+/* Image */
+
+.order-form-img {
+  margin-bottom: -4px;
+}
+
+.order-img {
+  width:38vw;
+}
