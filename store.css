@@ -70,7 +70,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   top: 25px;
-  /*margin-left: -10px;*/
 }
 .align_form {
   display: flex;
@@ -80,15 +79,14 @@ a:hover {
 .address_details {
   display: flex;
   flex-direction: column;
-  /*margin-left: -10px;*/
 }
 
 fieldset {
-  /*border: none;*/
+  border: none;
   position: relative;
   top: 50px;
   margin-left: 150px;
-  margin-right: 1200px;
+  margin-right: 1300px;
 }
 input {
   margin: -10px;
@@ -99,7 +97,7 @@ input {
   display: flex;
   margin-left: 1020px;
   background-color: magenta;
-  margin-top: -573px;
+  margin-top: -650px;
   position: relative;
 }
 /*working at desk image*/
@@ -110,17 +108,50 @@ input {
   background-repeat: no-repeat;
 }
 
-/* Select a Colour*/
-.section-3 {
-  position: relative;
-  margin-left: 150px;
-  margin-right: -50px;
+/* Radio Buttons */
+.radio_select label {
+  margin-right: 50px;
+  margin-left: 20px;
+}
+.radio_select input {
+  width: 20px;
+  height: 15px;
+  margin-left: -3px;
 }
 
-.terms {
-  margin-left: 150px;
+/* Radio Button Position*/
+.radio_select {
   position: relative;
-  bottom: -150px;
+  top: 90px;
+  margin-left: 150px;
+}
+
+/* Checkbox */
+.terms {
+  position: relative;
+  margin-left: 150px;
+  bottom: -125px;
+}
+
+.terms input {
+  margin: 5px;
+  margin-left: 2px;
+}
+
+.terms a {
+  color: orangered;
+}
+
+/*Place Order Button*/
+.button {
+  position: relative;
+  margin-left: 150px;
+  bottom: -200px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 40px;
 }
 
 /*footer*/
