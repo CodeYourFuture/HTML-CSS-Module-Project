@@ -44,11 +44,16 @@
   </header>
 
   <div class="container">
+    <!-- Main -->
     <main class="store-main">
       <section class="order-container">
         <h1>Order your Karma wifi device today!</h1>
+
+        <!-- Form -->
         <form method="post" action="" id="customer-order">
           <fieldset>
+
+            <!-- Text name fields-->
             <div class="side-by-side-field">
               <div>
               <label for="customer-first-name">First name <span class="required-astrix">&#42;</span>
@@ -61,11 +66,14 @@
               </label>
             </div>
             </div>
+
+            <!-- Text address fields-->
             <label for="customer-address">Address <span class="required-astrix">&#42;</span></label>
             <input type="text" name="customer-address" id="customer-address" required>
             <label for="customer-address">Address 2</label>
             <input type="text" name="customer-address-two" id="customer-address-two" required>
 
+            <!-- Dropdown -->
             <div class="side-by-side-field">
               <label for="cities">City <span class="required-astrix">&#42;</span>
                 <select class="cities" name="cities" id="city-select">
@@ -85,6 +93,7 @@
               </label>
             </div>
 
+            <!-- Radio fields -->
             <p>Select a colour</p>
             <div class="side-by-side-field">
 
@@ -94,17 +103,21 @@
               <label for="space-grey"><input class="radio-icon-two" type="radio" name="color" id="space-grey"
                   value="space-grey">Space Grey</label>
             </div>
-            <div>
 
+            <!-- Checkbox field -->
+            <div>
               <label for="terms-and-conditions"><input type="checkbox" name="terms-and-conditions"
                   id="terms-and-conditions" value="">By placing your order you agree to Karma's <a href="#">Terms and
                   Conditions</a><span class="required-astrix">&#42;</span></label>
             </div>
           </fieldset>
         </form>
+
+        <!-- Submit button -->
         <button class="btn" type="submit" form="customer-order">Place my order</button>
       </section>
 
+      <!-- Image -->
       <section class="order-form-img">
         <img class="order-img" src="img/store-image-andrew-neel-unsplash.jpg"
           alt="image of a women enjoying herself in a store">
@@ -114,6 +127,7 @@
 
 </body>
 
+<!-- Footer -->
 <footer>
   <hr class="footer-topBorder">
   <h3 class="heading-footer">Join us on</h3>
