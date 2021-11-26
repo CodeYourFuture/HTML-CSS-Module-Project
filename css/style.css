@@ -10,7 +10,8 @@ header,
 main,
 footer {
   padding: 0 1.5rem;
-  max-width: 1100px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 /**
@@ -48,7 +49,7 @@ footer {
 .navbar {
     display: flex;
     justify-content: flex-end;
-    margin-right: 30px;   
+    margin-right: 70px;   
 
 }
 
@@ -56,7 +57,7 @@ footer {
 .navigation_item {
     text-decoration: none;
     color: rgb(128, 127, 127);
-    padding-left: 15px;
+    padding-left: 50px;
     
 }
 .navigation_item:hover {
@@ -106,7 +107,7 @@ a {
 }
 
 .button {
-    background-color: rgba(243, 134, 0, 0.849);
+    background-color: #f36100f1;
     color:white;
     border-radius: 5px;
     border: none;
@@ -124,9 +125,9 @@ a {
     text-align: center;
     justify-content: space-evenly ;
     flex-direction: column;
-    height: 300px;
+    height: 400px;
     margin-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
 
  /* .laptop is icons of laptop coffee and gas */
@@ -153,9 +154,51 @@ a {
    }
 
 
+   /*added new section "extenstion"*/
+.extension {
+   background-color:rgba(224, 99, 58, 0.1);
+   width:1200px;
+   height: 400px;
+   display:flex;
+   margin-bottom: 60px;
+       
+   }
+
+.rightbox {
+
+  width: 635px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  text-align:center ;
+  flex-direction: column;
+  justify-content: center;
+ 
+  
+   }
+
+.text {
+    width: 460px;
+    height: 120px;   
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    color: #434242;
+    
+   }
+
+.extrapic {
+    
+    width: 565px;
+    height: 400px;
+    
+   }
+
 footer a {
- text-decoration: none;
- margin-right: 10px;
+    text-decoration: none;
+    margin-right: 10px;
  
 }
 
@@ -184,12 +227,119 @@ footer h3  {
 }
 
 
-
 footer  {
     
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+/* css for store.html */
+
+.rightcontent {
+    width: 50% ;
+    height:auto;
+}
+ 
+.secondpic {
+    width:100%;
+    height:auto;   
+}
+
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.title {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 30px;
+    color: #f36100f1;
+    font-weight: 900;
+/* border:2 px solid black; */
 
 }
+
+.leftcontent {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 15px;
+    color: #666666;
+    padding-left: 30px;
+    width: 50%;
+    height: auto;
+    padding-right: 40px;
+}
+
+fieldset {
+    border: 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.checkboxterms a {
+    color:#f36100f1;
+}
+
+ 
+.details input {
+    width: 235px;
+    height: 38px;
+    margin-top:11px;
+    border-radius: 4px;
+    border: 2px solid #666666;
+}
+/* for city form */
+
+.details select {
+    width: 235px;
+    height: 45px;
+    margin-top:11px;
+    border-radius: 4px;
+    border: 2px solid #666666;
+}
+
+.address input {
+    width: 515px;
+    height: 38px;
+    margin-top:11px;
+    border-radius: 4px;
+    border: 2px solid #666666;
+}
+
+.radio_box {
+    margin: 45px 0px;
+    /* display: inline-flex; */
+    
+
+}
+.radio_box label{
+    margin-right: 50px;
+   margin-left: 7px;
+   
+}
+
+.radio_box input {
+    width: 20px;
+    height:20px; 
+
+}
+
+
+
+
+
