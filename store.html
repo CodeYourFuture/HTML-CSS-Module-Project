@@ -1,116 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Store</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Store</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="store.css">
+        <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+        <script>
+            $(document).ready(function(){
+
+            });
+        </script>
+    </head>
     <!--==================== HEADER ====================-->
-<header class="header" id="header">
-
-    <!--==================== NAVBAR ====================-->
-    <div>
-        <img
-            src="img/karma-logo.svg"
-            alt="Karma official logo"
-            class="header_logo"
-        />
-    </div>
-
-    <nav class="container">
-        <a class="nav_icon-text">Meet Karma</a>
-            
-        <a class="nav_icon">How it Works</a>
-
-        <a class="nav_icon">Store</a>
-
-        <a class="nav_icon">Blog</a>
-
-        <a class="nav_icon">Help</a>
-
-        <a class="nav_icon">Login</a>
-    </nav>
-</header>
-
-    <!--==================== MAIN ====================-->
-    <main>
-
-    <!--==================== BODY SECTION ====================-->
-    <section class="store-cols" >
-
-        <div class="store-col">
-            
-        <form name="myForm">
-            
-            <h1 class="intro">Order you Karma wifi device today!</h1>
+    <header class="header" id="header-store">
+        <div>
+            <img
+                src="img/karma-logo.svg"
+                alt="Karma official logo"
+                class="header_logo"
+            />
+        </div>
     
-                <label for="fname">First name *</label>
-                <input type="text" id="fname" name="fname" required>
-                <label for="lname">Last name *</label>
-                <input type="text" id="lname" name="lname" minlength="3" maxlength="36" required><br><br>
+        <nav class="container">
+            <a class="nav_icon-text">Meet Karma</a>
+                
+            <a class="nav_icon">How it Works</a>
+    
+            <a class="nav_icon">Store</a>
+    
+            <a class="nav_icon">Blog</a>
+    
+            <a class="nav_icon">Help</a>
+    
+            <a class="nav_icon">Login</a>
+        </nav>
+    </header>
 
-            <br>
-        
+    <!--==================== BODY ====================-->
+    <body class="store-body">
 
-            <label for="adr" class="address">Address *</label>
-            <input type="text" id="adr" name="address" required>
-            <label for="adr" class="address">Address 2</label>
-            <input type="text" id="adr" name="address" >
-             <br>
-        
-             <label for="city">City *</label>
-        <select name="city" id="city" required>
-          <option value="option">select your option...</option>
-          <option value="london">London</option>
-          <option value="Bristol">Bristol</option>
-          <option value="Manchester">Manchester</option>
-          <option value="Birmingham">Birmingham</option>
-          <option value="Westminister">Westminister</option>
-          <option value="Southampton">Southampton</option>
-          <option value="Preston">Preston</option>
-          <option value="Exeter">Exeter</option>
-          <option value="Wells">Wells</option>
-          <option value="Oxford">Oxford</option>
-          <option value="Liverpool">Liverpool</option>
-          <option value="York">York</option>
-         </select>
+    <div class="parent">
 
-         <label for="postcode">Postcode *</label>
-                <input type="text" id="postcode" name="postcode" required>
-           <br>
+        <div class="wrapper">
+            <div class="content">
+                <h1 class="intro">Order your Karma wifi device today!</h1>
+            </div>
 
-           <label>Pick a colour:</label>
-           <input id="orange" type="radio" value="orange" name="colour">
-           <label for="orange">Karma orange</label>
-        
-           <input id="grey" type="radio" value="grey" name="colour">
-           <label for="grey">Space grey</label>
-      
-           <br>
+            <div class="form">
+                <!--top form-->
+                <div class="top-form">
+                    <div class="inner-form">
+                        <label for="fname" class="label">First name *</label>
+                        <input id="fname" type="text" required="true">
+                    </div>
+                    <div class="inner-form">
+                        <label for="lname" class="label">Last name *</label>
+                        <input id="lname" type="text" required="true">
+                    </div>
+                </div>
+            <!--middle form-->
+                <div class="middle-form">
+                    <div class="inner-form">
+                        <label for="adr" class="label">Address *</label>
+                        <input id= "adr" type="text" required="true">
+                    </div>  
 
-           <input id="agreement" type="checkbox" name="agreement" />
-           <label for="agreement">By placing your order you agree to karma's <a href="#">Terms and Conditions</a>. *</label>
-           <br>
-           <button type="button" class="intro-btn">Place my order</button>
-        </form>
-        </div> <!-- end div -->
-        <div class="store-col">
+                </div>
+            
+                <div class="middle-form">
+                    <div class="inner-form">
+                        <label for="adr"class="label">Address 2</label>
+                        <input id="adr"type="text">
+                    </div>
+                </div>
+            <!--bottom form-->
+                <div class="bottom-form">
+                    <div class="inner-form">
+                        <label for="city" class="label">City *</label>
+                        <select id="city" name="city" type="select" required="true">
+                            <option value="option" selected>select your option...</option>
+                            <option value="london">London</option>
+                            <option value="Bristol">Bristol</option>
+                            <option value="Manchester">Manchester</option>
+                            <option value="Birmingham">Birmingham</option>
+                            <option value="Westminister">Westminister</option>
+                            <option value="Southampton">Southampton</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Exeter">Exeter</option>
+                            <option value="Wells">Wells</option>
+                            <option value="Oxford">Oxford</option>
+                            <option value="Liverpool">Liverpool</option>
+                            <option value="York">York</option>
+                        </select>
+                    </div>
+                    <div class="inner-form">
+                        <label for="postcode" class="label">Postcode *</label>
+                        <input id="postcode" type="text" required="true">
+                    </div>
+                </div>
+
+                <!--select form-->
+                <div class="select-form">
+                    <div class="inner-form">
+                        <label class="label">Select a colour *</label>
+                        <input id="orange" type="radio" value="orange" name="colour" required="true">
+                        <label for="orange" class="label">Karma orange</label>
+
+                        <input id="grey" type="radio" value="grey" name="colour">
+                        <label for="grey" class="label">Space grey</label> 
+                    </div>  
+
+                </div>
+            
+                <div class="select-form">
+                    <div class="inner-form">
+                        <input id="agreement" type="checkbox" name="agreement" required="true">
+                        <label for="agreement" class="label">By placing your order you agree to karma's <a class="link" href="#">Terms and Conditions</a>. *</label>
+                    </div>
+                </div>
+                
+                <button type="button" class="intro-btn">Place my order</button>
+            </div>
+
+        </div> <!-- div wrapper -->
+
+        <div class="background-image">
             <img
               src="img/store-image.jpeg"
               alt="Girl working at desk"
               class="store-image"
             />
         </div>
-    </section>
-    </main>
-    <hr>
-     <!--==================== FOOTER ====================-->
+    </div>
+
+    <hr> 
+    <!--==================== FOOTER ====================-->
 <footer class="footer">
     <div class="footer__content">
         <p>
@@ -147,5 +174,6 @@
     </div>
         <p>© Karma Mobility,Inc.</p>
 </footer>
+
 </body>
 </html>

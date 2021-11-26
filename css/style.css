@@ -3,7 +3,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    text-align: center;
 }
 
 h1, h2, .about-text{
@@ -61,7 +60,7 @@ h1, h2, .about-text{
   padding: 250px 0;
 }
 
-.backimage-text, h1 {
+.backimage-text, h1.backimage-text {
     text-align: center;
 }
 
@@ -116,7 +115,30 @@ h2 {
   text-align: center;
   font-size: 2rem;
 }
- /* --==================== KARMA CONTENT ====================-- */
+ /* --==================== FEATURE SECTION ====================-- */
+ .feature-cols{
+   display: flex;
+   position: static;
+ }
+
+ .feature-col-r{
+   background-color: rgba(224, 99, 58, 0.1);
+   width: 60%;
+
+   text-align: center;
+   /*padding: 300px auto 0;*/
+ }
+
+ .feature-text{
+   text-align: center;
+   font-size: 30px;
+ }
+
+ .feature-img{
+   height: 100%;
+ }
+
+ 
  /* --==================== FOOTER====================-- */
  .social {
   max-height: 20px;
@@ -143,6 +165,10 @@ h2 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 100px;
  }
+
+ footer{
+  text-align: center;
+ }
  
  @media screen and (max-width: 767px) {
     .columns {
@@ -154,27 +180,4 @@ h2 {
       justify-content: space-between;
     }
 
-  }
-
-
-  /* --==================== STORE CONTENT ====================-- */
-.intro{
-  font-weight: 500;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 58.59px;
-}
-  .store-image{
-    width: 701px;
-    height: auto;
-  }
-  
-  .store-cols{
-    display: flex;
-  }
-
-  .store-col {
-    width: 50%;
-  
-     /* Should be removed. Only for demonstration */
   }
