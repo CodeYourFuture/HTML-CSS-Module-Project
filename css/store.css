@@ -1,0 +1,146 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 300px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px; 
+    
+}
+
+.order-form {
+    margin-left: 50px;
+    
+}
+
+.flex-photo {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+}
+
+
+.nav-orange{
+    color: rgb(209, 91, 12);
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.orange-h1{
+    color: rgb(209, 91, 12);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 50px 0;
+    margin-left: 75px;
+}
+
+.agreement {
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+    
+}
+
+input {
+   
+    border: 2px solid #5c5c5c;
+    border-radius: 4px;
+    padding: 5px 5px;
+    width: 100%;
+    margin-left: 40px;
+}
+
+
+select {
+    border: 2px solid #5c5c5c;
+    border-radius: 4px;
+    padding: 5px 5px;
+    width: 100%;
+   
+}
+
+.field-city {
+    margin-left: 28px;
+    width: 230px;
+    
+}
+
+.field-form {
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+
+.address {
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 30px;
+}
+
+label > input[type="radio"] {
+    display: none;
+  }
+
+label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align:middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    box-sizing: border-box;
+  }
+  label > input[type="radio"]:checked + *::before {
+    background: radial-gradient(#DE6E49 0%, #DE6E49 50%, transparent 60%);
+    border-color: grey;
+  }
+  
+  .radio-color{
+      color: rgb(80, 80, 80); 
+      font-weight: 400;
+      font-size: 18px;
+      margin-left: 40px;
+      
+  }
+  .orange-link {
+      color: rgb(209, 91, 12);
+  }
+
+  label {
+    color: rgb(80, 80, 80); 
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 40px;
+  }
+
+.select-color {
+    margin-left: 80px; 
+}
+
+.terms {
+    margin-left: 40px; 
+}
+
+.place-order {
+    margin-left: 75px;
+}
