@@ -30,9 +30,8 @@ h4 {
 
 .header,
 .content_wrapper {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 15px 15px 0 15px;
 }
 
 .main {
@@ -42,8 +41,12 @@ h4 {
 /*  ____________  header______________________ */
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: var(--grey-light);
 }
 
 .logo {
@@ -51,7 +54,7 @@ h4 {
 }
 
 ul {
-  padding: 5px;
+  padding: 5px 50px 5px 0;
 }
 
 .nav {
@@ -60,12 +63,13 @@ ul {
 
 .nav_item {
   list-style: none;
-  padding: 5px 10px;
+  padding: 5px 28px;
 }
 
 .nav_list {
   color: var(--grey-mid);
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .nav_list:active {
@@ -80,6 +84,7 @@ ul {
 .hero {
   background-image: url("../img/first-background.jpg");
   background-color: var(--grey-light);
+  margin-top: 80px;
   margin-bottom: 50px;
   color: white;
   padding: 30px 10px;
@@ -163,11 +168,11 @@ q::after {
 }
 
 /**
- ********************
+ *****************************************************
  *
- *   desktop 
+ *       desktop 
  *
- *
+ ******
 */
 
 @media screen and (min-width: 600px) {
@@ -185,11 +190,15 @@ q::after {
     justify-content: space-evenly;
   }
 
+  .logo {
+    padding-left: 70px;
+  }
+
   .hamburger_menu {
     display: none;
   }
 
-  /*  ____________  products  ___________________ */
+  /*  ____________  products  ______________________ */
 
   .product_wrapper {
     display: flex;
@@ -217,35 +226,119 @@ q::after {
     margin: 0;
     padding: 100px 50px 50px;
   }
+
+  /*  ____________  store page and form   ___________________ */
+
+  .form_wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .form_poster {
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .form_field {
+    width: 75%;
+    margin: 20% auto;
+    text-align: left;
+    border: 0;
+  }
+
+  legend {
+    font-size: 38px;
+    color: var(--orange-dark);
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 40px;
+  }
+
+  input {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0 5px 5px;
+    border-color: var(--grey-light);
+    border-radius: 4px;
+  }
+  .name_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .first_name_wrapper {
+    width: 45%;
+  }
+
+  .last_name_wrapper {
+    width: 50%;
+  }
+
+  .city_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  .city {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .city_options {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 10px 5px 5px;
+    border-color: var(--grey-light);
+    border-radius: 4px;
+  }
+
+  .postcode {
+    width: 35%;
+  }
+  .radio_title {
+    font-weight: 400;
+  }
+  .radio_wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .radio {
+    width: 8%;
+    margin: 0;
+  }
+
+  .radio_label {
+    margin: 0 15px 0 0;
+  }
+
+  .checkbox_wrapper {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 80px 0 30px;
+  }
+  .checkbox {
+    width: 5%;
+    align-items: center;
+    margin: 0;
+  }
+  .terms {
+    color: var(--orange-dark);
+    text-decoration: underline;
+  }
+  .submit_btn {
+    width: 50%;
+  }
 }
-
-/**
- ********************
- *
- *  height: auto 
-   no height, adaptable 
-
-
-   max height 
-
-
-
-   weight: 100%
-   height: auto 
- *
- *
-
- __________flex direction: column; for mobile, flex direction row for desktop
- products and product features
- feature
- feature
- feature 
-
-
- section - big blok
-
-utility classes - small class
-
-> direct child 
-
-*/

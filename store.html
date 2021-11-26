@@ -58,7 +58,106 @@
     </header>
 
     <div class="content">
-      <main class="main"></main>
+      <main class="main">
+        <!--  __________________ form ___________________________ -->
+        <div class="form_wrapper">
+          <div class="form">
+            <form>
+              <fieldset class="form_field">
+                <legend>Order your Karma wifi device today!</legend>
+
+                <!--  __________________ text field type ___________________________ -->
+
+                <div class="name_wrapper">
+                    <div class="first_name_wrapper"
+                      <label for="first name">First name <span class="required">*</span></label>
+                      <input
+                        class="name"
+                        id="first name"
+                        type="text"
+                        name="first name"
+                        required
+                      />
+                    </div>
+                    <div class="last_name_wrapper"
+                      <label for="last name">Last name <span class="required">*</span></label>
+                      <input
+                        class="name"
+                        type="text"
+                        id="last name"
+                        name="last name"
+                        required
+                      />
+                    </div>
+                </div>
+
+                <label for="address">Address <span class="required">*</span></label>
+                <input type="text" id="address" name="address" required />
+
+                <label for="address2">Address 2</label>
+                <input type="text" id="address2" name="address2" />
+
+                <div class ="city_wrapper">
+                    <div class="city">
+                        <label for="city">City <span class="required">*</span></label>
+                        <select class ="city_options" name="city" id="city" required>
+                          <option value="select your city">Select your city...</option>
+                          <option value="london">London</option>
+                          <option value="paris">Paris</option>
+                          <option value="rome">Rome</option>
+                        </select>
+                    </div>
+                    <div class="postcode"> 
+                          <label for="postcode">Postcode <span class="required">*</span></label>
+                          <input type="text" id="postcode" name="postcode" required />
+                    </div>
+                </div>
+
+                 <!--  __________________ radio type ___________________________ -->
+
+                <div class = "select_color"> 
+
+                    <p class="radio_title">Select a color</p>
+
+                        <div class="radio_wrapper">
+                              <input class =  "radio"
+                                type="radio"
+                                id="karmaorange"
+                                value="karmaorange"
+                                name="color"
+                              />
+                              <label class="radio_label" for="orange">Karma orange</label>
+                              <input class =  "radio"
+                                type="radio"
+                                id="spacegray"
+                                value="space_gray"
+                                name="color"
+                              />
+                              <label for="gray">Space gray</label>
+                        </div>
+
+                </div>
+
+                <!--  __________________ checkbox type ___________________________ -->
+                <div class="checkbox_wrapper">
+                  <input class="checkbox" type="checkbox" id="conditions" value="check" name="conditions" required />
+                  <label for="conditions">By placing your order you agree to Karma's <a class="terms" href="＃">Terms and Conditions. </a><span class="required">*</span></label>
+                </div>
+
+                 <!--  __________________ submit button ___________________________ -->
+
+                <input class="button submit_btn" type="submit" value="Place my order" />
+              </fieldset>
+            </form>
+          </div>
+           <!--  __________________form side poster ___________________________ -->
+          <img
+            class="form_poster"
+            src="img/andrew-neel-QLqNalPe0RA-unsplash.jpg"
+            alt=" girl working at desk"
+          />
+        </div>
+      </main>
     </div>
     <!--  _______________ footer ________________________ -->
     <footer class="footer">
