@@ -1,0 +1,157 @@
+:root {
+  --orange-dark: #de6e49;
+}
+
+/*body*/
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  background: rgba(196, 196, 196, 0.1);
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+/*navbar*/
+nav {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+li {
+  align-self: center;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+a:hover {
+  color: orange;
+}
+/*main*/
+main {
+  display: flex;
+}
+
+.form-container {
+  margin: 7%;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.karma {
+  color: var(--orange-dark);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top:5px;
+}
+
+.fieldset {
+  border: none;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 40px;
+}
+
+.groupname {
+  display: inline-block;
+}
+.groupname input {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+.lastname input {
+  display: block;
+  height: 40px;
+  width: 200px;
+}
+
+.address-container {
+  margin-top: 90px;
+}
+
+.address1 input {
+  display: block;
+  margin-bottom: 40px;
+  width: 500px;
+  height: 40px;
+}
+
+.address2 input {
+  display: block;
+  width: 500px;
+  height: 40px;
+}
+
+.city-postcode {
+  display: flex;
+  margin-top: 65px;
+}
+.city select {
+  display: block;
+  margin-right: 40px;
+  width: 280px;
+  height: 40px;
+}
+.postcode input {
+  display: block;
+  height: 40px;
+}
+
+.colour {
+  display: flex;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.colour input {
+  margin-right: 7px;
+}
+
+.colour label {
+  margin-right: 25px;
+}
+
+
+}
+
+.image-container {
+  width: 50%;
+}
+
+.agrement {
+  margin-top: 10%;
+}
+
+.agrement a{
+  color:var(--orange-dark)
+}
+
+
+button {
+  margin-top: 10%;
+}
