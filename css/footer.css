@@ -1,0 +1,40 @@
+/* Footer  */
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:  center;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    
+}
+.social-media-icons .social-media-logo{
+    height: 21px;
+    width: 21px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    padding:5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-icons .social-media-logo:hover{
+    background-color: rgb(221, 219, 219);
+}
+
+/* @media codes to fit the page in a device screen max width of 932 */
+@media (max-width:932px){
+    footer>p{
+        font-size: x-small;
+    };
+}
+
+/* @media codes to fit the page in a device screen max width of 580 */
+@media (max-width:580px){
+    footer>p{
+        font-size: 0.55em;
+    };
+}

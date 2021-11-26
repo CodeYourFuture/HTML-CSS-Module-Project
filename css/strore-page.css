@@ -1,0 +1,199 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+:root{
+    --orange:#DE6E49;
+}
+/* main container div */
+ .main{
+     display: flex;
+     flex-flow: row wrap;
+     justify-content:space-between;
+ }
+h1{
+    color:var(--orange);
+    width: 521px;
+    height: 118px;
+    font-size: 50px;
+    font-weight: 500;
+}
+ .h1-and-form{
+     width: 540px;
+     height:auto;
+     padding:0 0 0 2em;
+ }
+/* names and city-postcode  div*/
+ .names,.city-and-postcode{
+     display: flex;
+     flex-flow: row;
+     justify-content:space-between;
+     margin-bottom: 2%;
+ }
+ /* lebel's styling */
+ .names label,.address label,.address-2 label,.city-and-postcode label,
+ .color label,.submit{
+     font-size: 21px;
+     padding:1%;
+     
+ }
+ /* names input boxes  */
+ .names input{
+    width: 235px;
+    height: 53px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 1%;
+    font-size: x-large;
+ }
+ /* address and postcode input boxes  */
+ .address input,.address-2 input,.postcode input{
+    width: 100%;
+    height: 53px; 
+    border: 2px solid #666666;
+    border-radius: 4px;
+    font-size: x-large;
+    margin:5px 0;
+ }
+ /* city and postcode + color divs spacing */
+ .city-and-postcode,.color{
+     margin-top: 3%;
+ }
+
+ /* Orange radio buttons */
+ input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+input[type="radio"]::after{
+    content:'';
+    width: 9px;
+    height: 9px;
+    outline: solid thin #666666;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid rgb(255, 255, 255);
+}
+input[type="radio"]:checked::after{
+    background:var(--orange);  
+}
+/* Orange checkbox  */
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+input[type="checkbox"]::before{
+    content:'';
+    width: 17px;
+    height: 17px;
+    padding:3px;
+    border: 1px solid #666666;;
+    display:grid;
+    background: rgb(255, 255, 255);  
+}
+input[type="checkbox"]:checked::before{
+    content:url('../img/checkmark.svg');
+}
+/* select city  */
+ .city select{
+    width: 300px;
+    height: 59px; 
+    border: 2px solid #666666;
+    border-radius: 4px;
+    font-size: large;
+    margin: 6px 25px 0 0;
+    background-color: transparent;
+ }
+ /* extra space created in for T&C */
+ .create-space{
+     height: 70px;
+ }
+ /* Terms and condition  */
+ .term-condition label{
+    font-size: 1.2rem;
+ }
+ /* submit button */
+ .submit{
+    margin-top: 5%;
+    text-align: center;
+    width: 269px;
+    height: 70px;
+    background: #E0633A;
+    border: none;
+    border-radius: 4px;
+    color:white;
+ }
+ .submit:hover{
+     opacity: 0.8;
+ }
+ hr{
+    width: 75%;
+}
+ /* side image */
+ .side-image{
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height:auto;
+ }
+ /* @media functionalities  */
+@media (max-width:530px){
+  
+    .main h1{
+        max-width: 70%;
+        font-size: 30px;
+        padding-top: 30%;
+    }
+    .names,.city-and-postcode{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    input {
+        max-width: 70%;
+    }
+    .names label,.address label,.address-2 label,.city-and-postcode label,
+    .color label,.submit{
+        font-size: 90%;
+        padding:2%;   
+    }
+    .city select{
+        width: 70%;
+        height: 100%; 
+        font-size: medium;
+        margin: 5% 0;
+    }
+    .term-condition label,.term-condition label a{
+        font-size: 1em;
+    }
+    input[type="submit"]{
+        width:80%;
+        height: 70%;
+    }
+    .side-image{
+        max-width:80%;
+        height:50%;
+        margin-top: 5%;
+        }
+}
+
+@media (max-width:900px){
+
+    h1{
+        max-width: 70%;
+        font-size: 30px;
+        padding-top: 25%;
+    }
+        .names,.city-and-postcode{
+        display: flex;
+        flex-flow: column; 
+    }
+    input {
+        max-width: 70%;
+    }
+    .side-image{
+        max-width:80%;
+        height:50%;
+    }
+}

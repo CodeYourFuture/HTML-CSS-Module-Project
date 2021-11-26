@@ -1,0 +1,85 @@
+/* Header section  */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    background-color:#C4C4C41A;    
+}
+
+.headerLogo{
+    height:50px;
+    width: auto;
+}
+/* Navbar  */
+
+/* Hamburger menu will not show on a bigger screen size, will only show on smaller device */
+.hamburgerMenu{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+/* Main navbar  that will be visible on bigger device like desktop*/
+.navigation-list{
+    display: flex;
+    list-style: none;
+}
+.navigation-item{
+    padding:0 5px;
+    margin: 0 10px;
+}
+.navigation-link,a{
+    text-decoration: none;
+    color:gray;
+    font-weight: 600;
+    font-size: large;
+}
+.active{
+    color:black;
+}
+.navigation-link:hover{
+    color:rgb(241, 111, 3);
+}
+
+/* @media codes to fit the page in a device screen max width of 932 */
+@media (max-width:932px){
+
+    .header{
+        margin-bottom: -8rem;
+        padding:1em;
+    }
+    .main>h1{
+        font-size: xx-large;
+    }
+    .h1Paragraph{
+        font-size:large;
+    }
+    .header>div{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: flex; 
+    }
+}
+
+/* @media codes to fit the page in a device screen max width of 580 */
+@media (max-width:580px){
+
+    .header{
+        margin-bottom: -11rem;
+        padding:1em;
+    }
+    
+    .main>h1{
+        font-size: x-large;
+    }
+    .h1Paragraph{
+        font-size:large;
+    }
+    .header>div{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: flex; 
+    }
+}
