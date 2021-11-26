@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -55,7 +56,8 @@
                     </div>
                     <div class="user-info-small">
                         <label for="city">City*</label><br>
-                        <select class="small-input" value="Select your city...">
+                        <select class="small-input">
+                            <option value="" disabled selected>Select your city..</option>
                             <option value="London">London</option>
                             <option value="Wolverhampton"></option>
                             <option value="Scotland"></option>
@@ -94,14 +96,14 @@
                         
                         
                     </div>
-                    <div class="user-info radio-inputs">
-                        <input type="checkbox">
-                        <p>By placing your order you agree to Karma's<a class="agreement-text">Terms and Conditions *</a></p>
+                    <div class="agreement-box">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox">By placing your order you agree to Karma's<a class="agreement-text">Terms and Conditions *</a></label>
                     </div>
                     
                 </fieldset>
                 <div>
-                    <button>Place may order</button>
+                    <button class="white-text">Place may order</button>
                 </div>
             </form>
             

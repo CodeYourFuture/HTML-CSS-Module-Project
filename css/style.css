@@ -19,6 +19,9 @@ a {
     color: black;
     text-decoration: none;
 }
+.white-text {
+    color: white;
+}
 /* header */
 header {
     display: flex;
@@ -199,7 +202,7 @@ footer {
     opacity: 0.25;
 }
 
-/* store page  */
+/* ...........store page ............. */
 .store-main {
     display: flex;
 
@@ -227,12 +230,13 @@ fieldset {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    padding: 10%;
     border: none;
     font-size: 1.5rem;
     color: rgb(41, 27, 27);
+    padding: 1% 25%
+
     
     
     
@@ -242,6 +246,7 @@ fieldset {
     color: orangered;
     font-weight: 2rem;
 }
+
 .form-image {
     background-image: url('../img/store-image_by-andrew-neel-unsplash.png');
     background-position: center;
@@ -249,17 +254,25 @@ fieldset {
     background-size: cover;
     width: 50%;
 }
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .user-info-small {
     width: 50%;
+    margin-bottom: 5%;
    
 }
 .user-info {
+    width: 100%;
+    height: 5%;
+    margin-bottom: 5%;
+}
+.user-info input{
     width: 100%;
 }
 
@@ -270,10 +283,7 @@ select {
 }
 
 
-.agreement-text {
-    color: orangered;
-    text-decoration: underline;
-}
+/* start of styling radio button  */
 .radio {
     display: inline-flex;
     align-items: center;
@@ -289,6 +299,7 @@ select {
 .radio__input {
     display: none
 }
+ /* span below the radio input  */
 .radio__radio {
     width: 1.25em;
     height: 1.25em;
@@ -310,11 +321,53 @@ select {
 .radio__input:checked + .radio__radio::after {
     transform: scale(0.75);
 }
+/* end of customizing radio button  */
 
-input:checked + .checkmark {
-    display: inline-block;
+
+/* start of customizing checkbox  */
+.agreement-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2%;
+}
+.agreement-text {
+    color: orangered;
+    text-decoration: underline;
+}
+.checkbox {
+    color: #4c4c4c;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 2.25rem;
+    height: 2rem;
+    align-self: flex-start;
+    margin-top: 3%;
+    /* display: none; */
+    background-color: #fff;
+    border: 0.5px solid gray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 25px;
+    color: orange;
+    display: none;
+    /* background-color: gray; */
+}
+input[type="checkbox"]:checked:after {
+    display: block;
 } 
-
+/* end of customizing checkbox  */
 
 
 /* mobile view */
