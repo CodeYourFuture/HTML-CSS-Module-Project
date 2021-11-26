@@ -67,16 +67,10 @@ li:hover {
 }
 
 
-/* main section includes main image background and info*/
-/* main {
-    height: 75%;
-
-} */
 
 
 .intro {
     background: url('../img/first-background.jpg');
-    /* height: 30%; */
     color: #fdffff;
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,7 +115,6 @@ button:hover {
 .services-container{
     display: flex;
     flex-direction: row;
-    /* height: 80%; */
     justify-content: space-around;
     width: 90%
     
@@ -205,6 +198,122 @@ footer {
 .light-text {
     opacity: 0.25;
 }
+
+/* store page  */
+.store-main {
+    display: flex;
+
+    justify-content: space-between;
+   
+    width:100vw ;
+
+}
+section.form {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: space-around;
+    padding: 1rem;
+   
+    
+}
+/* makes small and long inputs align properly  */
+fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    border: none;
+    font-size: 1.5rem;
+    color: rgb(41, 27, 27);
+    
+    
+    
+}
+
+.form h1{
+    color: orangered;
+    font-weight: 2rem;
+}
+.form-image {
+    background-image: url('../img/store-image_by-andrew-neel-unsplash.png');
+    background-position: center;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user-info-small {
+    width: 50%;
+   
+}
+.user-info {
+    width: 100%;
+}
+
+select {
+    width: 80%;
+    height: 30px;
+    
+}
+
+
+.agreement-text {
+    color: orangered;
+    text-decoration: underline;
+}
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px
+
+}
+
+.radio-inputs {
+    display: flex;
+    justify-content: space-between;
+} 
+.radio__input {
+    display: none
+}
+.radio__radio {
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #d8e4e2;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: 2px;
+}
+.radio__radio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: coral;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+.radio__input:checked + .radio__radio::after {
+    transform: scale(0.75);
+}
+
+input:checked + .checkmark {
+    display: inline-block;
+} 
 
 
 
