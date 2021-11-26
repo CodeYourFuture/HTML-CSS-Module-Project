@@ -1,154 +1,147 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+font-family: "Roboto", sans-serif;
+-webkit-font-smoothing: antialiased;
 }
 
-main,
-footer {
-  text-align: center;
+.page-top-half {
+  position: relative;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 200;
+.page-top-half .large-text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0; 
+  color: whitesmoke;
+  text-align: center; 
 }
 
-h2 {
-  font-size: 3.5rem;
-  padding-top: 60px;
-  font-weight: 300;
-}
-
-h3 {
-  font-size: 2.1rem;
+.page-top-half h1 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 60px;
+  top: 34%;
   font-weight: 100;
 }
 
-h4 {
-  font-size: 1.8rem; 
-  font-weight: 400;
+.page-top-half h2 {
+  font-size: 34px;
+  top: 45%;
+  font-weight: 100;
 }
 
-h5 {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
+.background-image {
+  width: 100%;
+} 
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 100px;
-}
-.header_logo {
-  max-height: 35px;
-  width: auto;
-}
-
-.navigation__list {
-  display: flex;
-  list-style: none;
-}
-
-.navigation__link {
-  padding: 0px 15px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #7f7f7f;
-}
-
-.navigation__link:hover {
-  color: #c05326;
-}
-
-.text_color_dark {
-  color: #4c4c4c;
-}
-
-.text_color_light {
-  color: whitesmoke;
-}
-
-.hero {
-  background-image: url("../img/first-background.jpg");
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-  padding: 200px;
-}
-
-.button {
-  background-color: #c05326;
+button {
+  padding: 15px 40px;
+  background-color: #eb6728;
+  color: white;
   border: none;
-  padding: 20px 30px;
-  border-radius: 3px;
-  margin-top: 30px;
-  font-size: 1.2rem;
+  border-radius: 4px;
 }
 
-.section1 {
-  padding-bottom: 60px;
+.page-top-half button {
+  position: absolute;
+  left: 46%;
+  top: 59%;
 }
-.direction_raw_center {
+
+/* BOTTOM HALF OF PAGE STYLING */
+.page-bottom-half {
+  margin-top: 150px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+.page-bottom-half h1 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 60px;
+  font-weight: 300;
+  color: #3c3b3b;
+}
+
+.icon-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.articles {
-  padding-top: 20px;
-}
-
-.direction_column_center {
+.icon {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.article_width {
-  width: 400px;
+.icon .img {
+  max-width: 200px;   
 }
 
-.article_thumbnail {
-  max-height: 150px;
-  width: auto;
-}
-.get_karma {
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  padding-bottom: 30px;
+.icon .txt {
+  font-size: 35px;
+  color: #3c3b3b;
 }
 
-.quote {
-  background: #fceae8;
-  width: 100vw;
-  height: auto;
-  justify-content: center;
+/* EXTENDED HOMEPAGE STYLING */
+.extended-feature {
+  background-color: #f7ece8;
+  display: flex; 
+  align-items: center;
+  margin-bottom: 120px; 
 }
 
-.quote_text {
-  width: 40%;
+.feature-img {
+  width: 840px;
+  padding-right: 250px;
+}
+
+.txt-and-button-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.txt-and-button-container p {
+   text-align: center;
+}
+
+.txt-quote {
   font-style: italic;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 100%;
+  color: #E0633A;
 }
 
-.social {
-  max-height: 20px;
-  width: 20px;
-  padding: 8px;
-  border-radius: 50px;
-  border: solid #dddddd 1px;
-  margin: 10px;
+q {
+  display: inline;
 }
 
-.social_icon {
-  max-height: 20px;
-  width: auto;
+q::before {
+  content: open-quote;
 }
 
-.copyright {
-  color: #7f7f7f;
-  font-size: 0.9rem;
+q::after {
+  content: close-quote;
 }
+
+.txt-quote em {
+  font-size: 50px;
+  line-height: 60px;
+  color:#3c3b3b;
+}
+
+.button-alignment {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+} 

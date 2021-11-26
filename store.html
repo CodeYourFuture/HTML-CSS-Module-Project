@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div>
+                <img class="header-image" src="img/karma-logo.svg" alt="karma logo"/>
+            </div> 
+
+            <!-- HEADER NAVIGATION -->
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html"><strong>Meet Karma</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How it Works</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registration.html">Store</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a> 
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <main class="main-container">
+            <section class="form-container">
+                <h1>Order your Karma wifi device today!</h1>
+
+                
+                <form class="form">
+                    <fieldset class="karma-form">
+                        <!-- First/Last name -->
+                        <div class="row">
+                            <div class="column">
+                                <label for="first-name" class="field-title" >First name *</label>
+                                <input type="text" name="first-name" required>
+                            </div>
+
+                            <div class="column">
+                                <label for="last-name" class="field-title">Last name *</label>
+                                <input type="text" name="last-name" required>
+                            </div>   
+                        </div>
+
+                        <!-- Address -->
+                        <div class="column">
+                            <label for="Address" class="field-title" >Address *</label>
+                            <input type="Address" name="Address" required>
+                        </div>
+
+                        <!-- Address 2 -->
+                        <div class="column">
+                            <label for="Address" class="field-title">Address 2</label>
+                            <input type="Address" name="Address" required>
+                        </div>
+
+                        <div class="row">
+                            <!-- City -->
+                            <div class="column">
+                                <label for="city" class="field-title">City *</label>
+                                <select name="city" class="city" required>
+                                    <option disabled selected hidden>Select your city</option>  
+                                    <option value="Ankara">Ankara</option>
+                                    <option value="Istanbul">Istanbul</option>
+                                    <option value="Izmir">Izmir</option>
+                                    <option value="Antalya">Antalya</option>
+                                    <option value="Bodrum">Bodrum
+                                    </option>
+                                    <option value="Denizli">Denizli</option>
+                                    <option value="Eskisehir">Eskisehir</option>
+                                </select>
+                            </div>
+
+                            <!-- postcode -->
+                            <div class="column">
+                                <label for="postcode" class="field-title" >Postcode *</label>
+                                <input type="postcode" name="postcode" class="postcode" required>
+                            </div>
+                        </div>
+
+                        <!-- radio buttons -->
+                        <div class="radio-container">
+                            <label for="karma-color" class="field-title">Select a color</label>
+                            <div class="radio-group">
+                                <div class="row">
+                                    <input type="radio" name="karma-color" required>
+                                    <label for="radio">Karma orange</label>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="karma-color">
+                                    <label for="radio">Space grey</label>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <!-- checkbox -->
+                        <div class='tc-container'>
+                            <input type="checkbox" name="order_tc" id="order_tc" required/>
+                            <span for="checkbox">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>. *</span>
+                        </div>
+
+                        <!-- button -->
+                        <div class="form-button">
+                            <button type="submit" class="button">Place my order</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section> 
+
+            <!-- image -->
+            <div class="form-img">
+                <img class="img" src="https://lh3.googleusercontent.com/n-IFFJD5MIXnVJiexWhUfh39c8CM9_GcG-xdHqkUqWja7cioC5XX27NjhLUIP16cBoRAvT8uEaCBCEU=w1349-h625"
+                alt="woman sitting at table working on laptop with coffee in hand"/>
+            </div>     
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-border-line"></div>
+            <h1>Join us on</h1>
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-content">
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="img/twitter-icon.svg" alt="twitter logo"/>
+                    </a>
+                </div>
+
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="img/facebook-icon.svg" alt="facebook logo"/>
+                    </a>
+                </div>
+
+                <div class="social">
+                    <a target="_blank" href="#">
+                        <img class="social-media-icons" src="img/instagram-icon.svg" alt="instagram logo"/>
+                    </a>
+                </div>
+            </div>  
+            <!-- COPYRIGHT SECTION -->
+            <div class="copyright">
+                <span>© Karma Mobility, Inc.</span>
+            </div>   
+        </footer>
+    </body>
+</html>
