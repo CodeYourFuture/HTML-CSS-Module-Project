@@ -58,10 +58,17 @@ main {
   width: 1440px;
   height: 820px;
 }
-.info {
+.side-img {
+  display: absolute;
   width: 720px;
   height: 820px;
 }
+.form-section {
+  width: 720px;
+  height: 820px;
+}
+
+/* right side styles */
 .details {
   padding: 50px 80px;
 }
@@ -72,6 +79,9 @@ main {
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: 15px;
+}
+.required::after {
+  content: " *";
 }
 .name {
   display: flex;
@@ -109,8 +119,7 @@ label {
   margin-bottom: 0.2rem;
 }
 
-#address1,
-#address2 {
+.address {
   width: 542px;
 }
 input {
@@ -183,6 +192,7 @@ label a {
 }
 
 /* checkbox styling */
+
 [type="checkbox"] {
   display: none;
 }
@@ -213,12 +223,6 @@ label a {
   top: 2px;
 }
 
-.center-img {
-  display: absolute;
-  width: 720px;
-  height: 820px;
-}
-
 button {
   font-size: 1.3rem;
   margin-top: 22px;
@@ -236,7 +240,7 @@ button {
 .footer {
   width: 100%;
   border-top: 1px solid rgb(199, 196, 196);
-  margin: 0rem 6rem 4rem 7rem;
+  margin: 0rem 6rem 4rem 0rem;
   padding-top: 0.5rem;
 }
 

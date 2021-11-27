@@ -19,50 +19,51 @@
   <body>
     <header class="header">
       <img class="header-logo" src="img/karma-logo.svg" alt="Karma logo" />
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="/index.html">Meet Karma</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">How it Works</a>
-        </li>
-        <li class="nav-item">
-          <a id="active-nav" class="nav-link" href="#">Store</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Help</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Meet Karma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How it Works</a>
+          </li>
+          <li class="nav-item">
+            <a id="active-nav" class="nav-link" href="#">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <div class="info">
+      <div class="form-section">
         <div class="details">
           <p>Order your Karma wifi device today!</p>
           <div class="details-style">
             <div class="name">
               <div class="firstname">
-                <label for="first-name">First name *</label>
+                <label for="first-name" class="required">First name</label>
                 <input id="first-name" name="first-name" type="text" required />
               </div>
               <div class="lastname">
-                <label for="last-name">Last name *</label>
+                <label for="last-name" class="required">Last name</label>
                 <input id="last-name" name="last-name" type="text" required />
               </div>
             </div>
-            <label for="address1">Address *</label>
-            <input id="address1" name="address1" type="text" required />
+            <label for="address1" class="required">Address</label>
+            <input id="address1" type="text" class="address" required />
             <label for="address2">Address 2</label>
-            <input id="address2" name="address2" type="text" />
-
+            <input id="address2" type="text" class="address" />
             <div class="location">
               <div class="city">
-                <label for="city">City *</label>
+                <label for="city" class="required">City</label>
                 <select class="dropdown" name="city-name" id="city">
                   <option value="1" name="city-name">
                     Select your city...
@@ -74,7 +75,7 @@
                 </select>
               </div>
               <div class="postcode">
-                <label for="postcode">Postcode *</label>
+                <label for="postcode" class="required">Postcode</label>
                 <input id="postcode" type="text" required />
               </div>
             </div>
@@ -89,8 +90,8 @@
               <input type="checkbox" id="checkbox1" checked />
               <label for="checkbox1"
                 >By placing your order you agree to Karma's
-                <a href="#">Terms and Conditions</a>. *</label
-              >
+                <a href="#">Terms and Conditions</a>. *
+              </label>
             </div>
             <button>Place my order</button>
           </div>
@@ -98,7 +99,7 @@
       </div>
       <div>
         <img
-          class="center-img"
+          class="side-img"
           src="img/store-image_by-andrew-neel-unsplash.jpg"
           alt="A lady working on her laptop!"
         />

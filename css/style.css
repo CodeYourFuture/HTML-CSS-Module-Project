@@ -63,7 +63,7 @@ body {
 
 /* main */
 
-.content p {
+.features p {
   text-align: center;
   font-size: 3rem;
   font-weight: 100;
@@ -71,12 +71,10 @@ body {
 
 .center {
   background-image: url("../img/first-background.jpg");
-  height: 40vw;
   background-repeat: no-repeat;
-  padding-top: 15.3rem;
-  background-size: 117%;
   background-position-x: center;
-  padding-right: 5%;
+  background-size: cover;
+  padding: 200px 0;
 }
 
 .center p {
@@ -87,11 +85,11 @@ body {
   margin-bottom: 2rem;
 }
 
-#p1 {
+.center > p:nth-child(1) {
   font-size: 4.1rem;
   margin-bottom: 1.2rem;
 }
-#p2 {
+.center > p:nth-child(2) {
   font-size: 2.2rem;
   margin-bottom: 3.1rem;
 }
@@ -106,19 +104,20 @@ button {
   color: white;
 }
 
+/* features */
 .more-info {
   display: flex;
   justify-content: space-evenly;
 }
 
-.article-title {
+.feature-title {
   font-size: 2rem;
   font-weight: 100;
   margin-top: 45px;
   font-weight: 400;
 }
 
-.article-img {
+.feature-img {
   max-width: 160px;
   display: block;
   margin-left: auto;
