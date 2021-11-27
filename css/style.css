@@ -25,6 +25,8 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--orange-light);
+    border-bottom: 1px solid var(--grey-light);
 }
 .logo {
     width: 20px;
@@ -101,7 +103,7 @@ button:hover{
     margin-bottom:1rem;
 }
 .main {
-    padding:2rem 2%;
+    padding:2rem 0;
     width:100%;
 }
 .main h3 {
@@ -178,7 +180,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top:solid 1px var(--grey-dark);
+    border-top:solid 1px var(--grey-light);
     width: 80%;
 }
 .social-container {
