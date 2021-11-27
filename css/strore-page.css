@@ -139,12 +139,14 @@ input[type="checkbox"]:checked::before{
     height:auto;
  }
  /* @media functionalities  */
+ /* for smaller screen max width 530px */
 @media (max-width:530px){
-  
+    
     .main h1{
         max-width: 70%;
         font-size: 30px;
         padding-top: 30%;
+        z-index: -1;
     }
     .names,.city-and-postcode{
         display: flex;
@@ -177,23 +179,42 @@ input[type="checkbox"]:checked::before{
         margin-top: 5%;
         }
 }
-
-@media (max-width:900px){
+/* for smaller screen max width 932px */
+@media (max-width:932px){
 
     h1{
-        max-width: 70%;
-        font-size: 30px;
+        max-width: 80%;
+        font-size: 35px;
         padding-top: 25%;
     }
-        .names,.city-and-postcode{
+    .names,.city-and-postcode{
         display: flex;
         flex-flow: column; 
     }
     input {
-        max-width: 70%;
+        max-width: 80%;
+    }
+    .names label,.address label,.address-2 label,.city-and-postcode label,
+    .color label,.submit{
+        font-size: 90%;
+        padding:2%;   
+    }
+    .city select{
+        width: 70%;
+        height: 100%; 
+        font-size: medium;
+        margin: 5% 0;
+    }
+    .term-condition label,.term-condition label a{
+        font-size: 1em;
+    }
+    input[type="submit"]{
+        width:80%;
+        height: 80%;
+        margin-bottom: 5%;
     }
     .side-image{
-        max-width:80%;
+        max-width:90%;
         height:50%;
     }
 }

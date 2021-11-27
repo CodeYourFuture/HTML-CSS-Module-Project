@@ -62,8 +62,8 @@
     }
 }
 
-/* @media codes to fit the page in a device screen max width of 580 */
-@media (max-width:580px){
+/* @media codes to fit the page in a device screen max width of 530 */
+@media (max-width:530px){
 
     .header{
         margin-bottom: -11rem;
@@ -81,5 +81,6 @@
     }
     .hamburgerMenu{
         display: flex; 
+        z-index: 1;
     }
 }
