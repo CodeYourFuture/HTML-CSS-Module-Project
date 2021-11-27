@@ -69,13 +69,12 @@ nav a:hover {color:chocolate;}
     line-height: 30px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
     nav {
         display:none;
-    }
 }
 
-@media (min-width: 350px) {
+@media (min-width: 375px) {
     .hamburger {
         display: none;
     }
@@ -267,7 +266,6 @@ h4 {
 .logo-container {
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .footer-logo {
