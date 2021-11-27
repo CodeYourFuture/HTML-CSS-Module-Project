@@ -8,28 +8,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-    <script>
-        function toggleMenu() {
-            var navBar=document.getElementById("navigation");
-            if (navBar.classList.contains("nav-mobile")) {
-                navBar.classList.remove("nav-mobile");
-                navBar.classList.add("navigation");
-            } else {
-                navBar.classList.remove("navigation");
-                navBar.classList.add("nav-mobile");
-            }
-            window.addEventListener("resize", function(event) {
-            if (navBar.classList.contains("nav-mobile")) {
-                navBar.classList.remove("nav-mobile");
-                navBar.classList.add("navigation");
-            }
-        })
-        }
-        
-    </script>
+    <script src="./scripts/script.js"></script>
 </head>
 <body>
-
     <header> 
         <div class="logo">
             <a href="./index.html">
@@ -47,7 +28,7 @@
             </ul>
         </nav>
         <div class="hamburger">
-            <a href="#" onclick="toggleMenu()">
+            <a href="#" id="menu-hamburger">
                 <img src="./img/menu-hamburger.svg" alt="Show Navigation"/>
             </a>
         </div>
@@ -103,10 +84,5 @@
         </div>
         <p class="footer-grey">&copy; Karma Mobility, Inc.</p>
     </footer>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-
-    <!-- All the images you need are in the 'img' folder -->
-
 </body>
 </html>

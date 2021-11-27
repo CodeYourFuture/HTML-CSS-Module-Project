@@ -9,23 +9,10 @@
     --orange-light: #FCEFEB;
     --white: #fff;
   }
- 
-
-
 body * {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 body {
     width:100%;
     display:flex;
@@ -39,15 +26,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     width: 20px;
 }
-
 nav {
     min-width: 50%;
 }
-
  .navigation {
      width:100%;
      padding: 0 15px;
@@ -55,35 +39,32 @@ nav {
      display:flex;
      justify-content: space-between;
  }
-
  .nav-mobile {
     width:100%;
     padding: 0;
     list-style: none;
- }
-
- .nav-mobile li {
+}
+.nav-mobile li {
     padding: 5px 0;
- }
+}
 
- .navigation a, .nav-mobile a {
+.navigation a, .nav-mobile a {
     text-decoration: none;
     color:var(--grey-dark);
 }
-
 .strong {
     color:var(--grey-darker);
     font-weight: 500;
 }
-
 .navigation a:hover, .nav-mobile a:hover{
     color: var(--orange-dark);
 } 
-
+.active{
+    color: var(--orange-dark) !important;
+} 
 .hamburger{
     display:none;
 }
-
 .hero {
     background-image: url("../img/first-background.jpg");
     background-size: cover;
@@ -105,40 +86,35 @@ button {
     border:0;
     color:var(--white)
 }
-
 button:hover{
     background-color:var(--grey-darker);
     color:var(--orange-light);
 }
-
 .hero h1 {
     font-weight: 400;
     font-size:56px;
     margin-bottom:0px;
 }
-
 .hero h2 {
     font-weight: 400;
-    font-size:31px;
-    margin-bottom:10px;
+    font-size:2rem;
+    margin-bottom:1rem;
 }
-
 .main {
-    padding:30px 7%;
+    padding:2rem 2%;
+    width:100%;
 }
-
 .main h3 {
     text-align:center;
     font-size: 3rem;
     font-weight: 400;
 }
-
 .feature-container {
     display:flex;
     justify-content: space-around;
     padding-bottom:2rem;
+    width:100%;
 }
-
 .feature {
     display: flex;
     flex-direction: column;
@@ -146,6 +122,7 @@ button:hover{
     font-size: 1.5rem;
     text-align:center;
     margin:0.5rem;
+    min-width:30%;
 }
 .feature-image {
     width: 10vw;
@@ -196,40 +173,37 @@ button:hover{
     text-align: center;
     margin:20px 20px 0 20px;
 }
-
 footer {
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top:solid 1px var(--grey-dark);
+    width: 80%;
 }
-
-
 .social-container {
     display:flex;
 }
 
 .social-container > a {
     display:flex;
-    padding:5px;
-    margin: 5px;
+    padding:0.25rem;
+    margin: 0.3rem;
     justify-content: center;
-    width: 45px;
-    height:45px;
-    border: solid 1px var(--grey-dark);
+    width: 2rem;
+    height:2rem;
+    border: solid 1px var(--grey-light);
     border-radius:50%;
     align-items: center;
     transition: 0.5s;
 }
-
 .social-container > a:hover {
     background-color: var(--orange-light);
+    border: solid 1px var(--grey-dark);
 }
-
 .social-logo {
-    width: 75%;
+    width: 55%;
 }
-
 @media screen and (max-width:850px) {
     .feature-image {
         width:30vw;

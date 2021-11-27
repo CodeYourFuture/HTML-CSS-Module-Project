@@ -6,6 +6,8 @@
     --orange-dark: #E0633A;
     --orange-light: #FCEFEB;
     --white: #fff;
+    --white-transparent: rgba(255,255,255,0.9); 
+
 }
 main {
     display:flex;
@@ -18,7 +20,6 @@ main > section {
 .form-container {
     margin: auto 7% auto 0; 
 }
-
 .image-container {
     text-align: right;
 }
@@ -38,13 +39,19 @@ label {
 }
 form input,
 form select {
-    margin-bottom: 15px;
-    padding:5px;
+    margin-bottom: 1rem;
+    padding:0.5rem;
     border: 1px solid var(--grey-darker);
-    border-radius: 4px;
+    border-radius: 0.3rem;
 }
 form select {
     background-color: var(--white);
+}
+form select {
+    font-style: italic;
+}
+form select option {
+    font-style: normal;
 }
 form button {
     width: 50%;
@@ -89,8 +96,8 @@ fieldset legend {
 }
 .radio, .terms {
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     user-select: none;
     margin-right: 1rem;
@@ -105,8 +112,8 @@ fieldset legend {
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
+    height: 1.2rem;
+    width: 1.2rem;
 }
 .radio-button {
     background-color: var(--grey-dark);
@@ -134,10 +141,10 @@ fieldset legend {
     background:var(--orange-dark);
 }
 .radio .radio-button:after{
-   top: 2px;
-   left: 2px;
-   width: 12px;
-   height: 12px;
+   top: 0.125rem;
+   left: 0.125rem;
+   width: 0.7rem;
+   height: 0.7rem;
    border-radius: 50%;
    background: var(--white);
    border:2px var(--white) solid;
@@ -156,15 +163,15 @@ fieldset legend {
     background-position-y: center;
 }
 .checkbox:after {
-    top: 0px;
-    left: 0px;
-    width: 20px;
-    height: 20px;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
     border: 2px solid var(--grey-darker);
-    border-radius: 4px;
+    border-radius: 0.2rem;
  }
 
- @media screen and (max-width:850px)  {
+ @media screen and (max-width:768px)  {
      .image-container{
          display: none;
      }
@@ -172,7 +179,7 @@ fieldset legend {
          width: 80%;
          padding:10px;
          margin:1rem auto;
-         background-color: rgba(255,255,255, 0.9);
+         background-color: var(--white-transparent);
          border-radius: 15px;
      }
      main {
