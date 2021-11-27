@@ -1,26 +1,28 @@
 main {
     width: 100vw;
+    flex-direction: column;
 }
 
 
 /* Form Section */
 
 .form-side {
-    width: 50%;
+    width: 100%;
     box-sizing: border-box;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 h2 {
     color: #e0633a;
     padding-top: 0;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 
 /* Container for the form rows */
 
 fieldset {
+    flex-direction: column;
     border: none;
     padding: 0;
     box-sizing: border-box;
@@ -39,12 +41,12 @@ legend {
 }
 
 .name {
-    width: 50%;
+    width: 100%;
     margin-right: 0%;
 }
 
 .name:first-of-type .half-width {
-    width: calc(100% - 15px);
+    width: 100%;
 }
 
 .full-width {
@@ -56,6 +58,7 @@ label {
 }
 
 input {
+    width: 100%;
     padding: 7px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -67,12 +70,12 @@ input {
 /* City */
 
 select {
+    margin-bottom: 10px;
     height: auto;
     padding: 5px;
     border: 1px solid grey;
     border-radius: 5px;
-    flex: 2 1 auto;
-    align-self: auto;
+    width: 100%;
 }
 
 select:invalid {
@@ -82,7 +85,7 @@ select:invalid {
 }
 
 .city-wrapper {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
@@ -90,18 +93,20 @@ select:invalid {
 }
 
 .post {
-    width: fit-content;
+    width: 50%;
 }
 
 .post label {
+    margin-left: 0;
     width: fit-content;
-    margin-left: 15px;
 }
 
 .postcode {
-    flex: 0 1 auto;
-    align-self: auto;
-    margin-left: 15px;
+    margin-left: 0;
+}
+
+.radio:last-of-type input[type="radio"] {
+    margin-left: 0;
 }
 
 
@@ -135,12 +140,12 @@ input[type="radio"]:checked::before {
     transform: scale(1);
 }
 
-.radio:last-of-type input[type="radio"] {
-    margin-left: 20px;
-}
-
 
 /* Checkbox */
+
+input[type="checkbox"] {
+    width: auto;
+}
 
 input[type="checkbox"]:before {
     content: "";
@@ -174,61 +179,76 @@ input[type="checkbox"]:checked:before {
     background: url("../img/store-image_by-andrew-neel-unsplash.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 100%;
     background-position: right bottom;
+    height: 600px;
 }
 
-@media screen and (max-width: 570px) {
+.form-img {
+    width: 100%;
+}
+
+.row {
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 570px) {
     main {
-        flex-direction: column;
+        flex-direction: row;
     }
     /* Form Section */
     .form-side {
-        width: 100%;
-        padding: 0 30px;
+        width: 50%;
+        padding: 0 50px;
     }
     h2 {
-        font-size: 35px;
+        font-size: 45px;
     }
     /* Container for the form rows */
     fieldset {
-        flex-direction: column;
+        flex-direction: row;
     }
     .name {
-        width: 100%;
+        width: 50%;
+        box-sizing: border-box;
     }
-    .name:first-of-type .half-width {
-        width: 100%;
+    .name:first-of-type {
+        margin-right: 7px;
+    }
+    .name:last-of-type {
+        margin-left: 7px;
     }
     /* City */
     select {
-        margin-bottom: 10px;
-        font-style: italic;
-    }
-    select:invalid {
-        color: grey;
+        margin-bottom: 0;
     }
     .city-wrapper {
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .city {
+        width: 60%;
+        margin-right: 7px;
+        box-sizing: border-box;
     }
     .post {
-        width: 50%;
-    }
-    .post label {
-        margin-left: 0;
+        width: 40%;
+        margin-left: 7px;
+        box-sizing: border-box;
     }
     .postcode {
         margin-left: 0;
     }
-    input[type="radio"]:last-of-type {
-        margin-left: 0;
+    input[type="radio"] {
+        margin-bottom: 0;
+    }
+    .radio:last-of-type input[type="radio"] {
+        margin-left: 20px;
     }
     .form-img {
-        width: 100%;
-        height: 600px;
-    }
-    .row {
-        flex-direction: row;
-        margin-bottom: 10px;
+        width: 50%;
+        height: auto;
     }
 }
