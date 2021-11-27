@@ -49,7 +49,7 @@
         </nav>
       </div>
     </header>
-    <store_main class="order_section">
+    <main class="order_section">
       <div class="form_image">
         <div class="image">
           <img
@@ -61,7 +61,7 @@
         <div class="form">
           <p class="device">Order your Karma wifi device today!</p>
 
-          <section class="details_form">
+          <form class="details_form">
               <div class="first_last_name">
             <fieldset>
               <label for="first_name">First Name *</label>
@@ -144,7 +144,7 @@
             
 
             <div class="terms">
-              <input id="terms" type="checkbox" name="terms" />
+              <input id="terms" type="checkbox" name="terms" required=true/>
               <label for="terms">By placing your order you agree to Karma's </label>
                <label for="terms" class="terms_orange">Terms and
                 Conditions.</label> <label for="terms">*</label>
@@ -152,11 +152,11 @@
           </div>
           </div>
           </div>
-          </section>
+          </form>
         </div>
       </div>
-      <button class="order_button">Place my order</button>
-    </store_main>
+      <input type="submit" value="Place my order"></input>
+    </main>
 
     <footer>
       <h3>Join us on</h3>
