@@ -61,7 +61,7 @@ a {
 
 /* Adding background picture and headings*/
 
-main {
+.landing_page {
   background-image: url("../img//first-background.jpg");
   height: 700px;
   background-size: cover;
@@ -264,12 +264,14 @@ fieldset {
   margin-left: 150px;
   margin-top: 80px;
 }
-.order_button {
-  margin-left: 400px;
+input[type="submit"] {
+  background: rgb(218, 83, 30);
+  font-size: 20px;
+  padding: 17px 30px 17px 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(218, 83, 30);
   color: white;
-  margin-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-left: 500px;
 }
 input[type="text"] {
   height: 30px;
