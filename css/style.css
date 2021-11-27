@@ -165,10 +165,70 @@ footer img {
 }
 
 .store-section {
-  border: 2px solid pink;
   display: flex;
+  justify-content: space-between;
+}
+
+.store-form {
+  padding: 50px 20px;
 }
 
 .store-section .main-image img {
   width: 100%;
+}
+
+.store-section .store-form .order-message h1 {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.store-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+input,
+label,
+select {
+  width: 200px;
+  margin: 0px 10px;
+}
+
+.form-names {
+  display: flex;
+  padding: 15px 0px;
+  border: 2px solid black;
+}
+
+.form-names label {
+  display: flex;
+}
+
+.first-name,
+.last-name {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  justify-content: space-between;
+}
+
+.form-names input {
+  display: flex;
+  width: 10em;
+}
+
+.form-address {
+  padding: 15px 0px;
+}
+
+.form-address-2 {
+  padding: 15px 0px;
+}
+
+.city-and-postcode {
+  padding: 15px 0px;
 }

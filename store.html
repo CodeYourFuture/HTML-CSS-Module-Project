@@ -38,28 +38,34 @@
         </div>
         <form>
           <div class="form-names">
-            <label for="first-name">First Name</label>
+           <div class="first-name">
+            <label for="first-name">First Name *</label>
             <input type="text" name="name" id="first-name" minlength="2" required=true/>
-            <label for="last-name">Last Name</label>
+           </div>
+
+
+           <div class="last-name">
+            <label for="last-name">Last Name *</label>
             <input type="text" name="name" id="last-name" minlength="2" required=true/>
           </div>
+          </div>
           <div class="form-address">
-            <label for="address">Address</label>
+            <label for="address">Address *</label>
             <input type="text" name="address" id="address" minlength="10" required=true/>
           </div>
           <div class="form-address-2">
             <label for="address-2">Address 2</label>
-            <input type="text" name="address-2" id="address-2" minlength="10" required=true/>
+            <input type="text" name="address-2" id="address-2" minlength="10"/>
           </div>
           <div class="city-and-postcode">
-            <label for="city">City</label>
+            <label for="city">City *</label>
             <select name="city" id="city">
               <option value="london">London</option>
               <option value="birmingham">Birmingham</option>
               <option value="manchester">Manchester</option>
             </select>            
 
-            <label for="postcode">Postcode</label>
+            <label for="postcode">Postcode *</label>
             <input type="text" name="postcode" id="postcode" minlength="6" required=true/>
           </div>  
           
