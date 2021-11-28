@@ -32,40 +32,40 @@
 
 <div class= "main_store">
 
-<p class= "text_store"> Order your Karma wifi device today!</p>
+<p class= "text_store"> Order your Karma wifi <br>device today!</p>
 
       </text_store> <!--end div main store-->
 
 <store_image class= "store_image">
-<img src= "img/store-image.jpeg" alt="Lady sitting at her desk, holding a coffee mug" style= "height: 168%">  
+<img src= "img/store-image.jpeg" alt="Lady sitting at her desk, holding a coffee mug" style= "height: 189%">  
 <!--image by neel andrew unsplash-->
 </store_image>
       </div> <!--end div main store-->
-
 <form>
   <fieldset>
   <label for= "form_firstname">First Name*</label> <br>
   <input type= "text" name="firstname" id= "form_name" required>
 
+<div class= "container_lastName">
   <label for= "form_lname" class= "last_name">Last Name*</label>
   <input type= "text" name="lname" id= "form_name" required>
   <br>
   <br>
+</div>
 
   <label for= "form_address">Address*</label> <br>
-  <input type= "text" name= "address" id= "form_address" required>
+  <input type= "text" name= "address" id= "form_address" class= "address" required>
  <br>
  <br>
 
   <label for= "form_address2">Address 2</label> <br>
-  <input type= "text" name= "address 2" id= "form_address 2">
+  <input type= "text" name= "address 2" id= "form_address 2" class= "address">
   <br>
   <br>
-  <div class= "city_postcode">
 
   <label for= "form_city">City*</label> <br>
   <select name= "city" id= "form_city">
-  <option value= "select your city" class= "ct">Select your city...</option>
+  <option value= "select your city">Select your city...</option>
   <option value= "london" class= "ct">London</option>
   <option value= "Manchester" class= "ct">Manchester</option>
   <option value= "Coventry" class= "ct">Birmingham</option>
@@ -76,24 +76,28 @@
   </select>
   </city>
 
-  <postcode class= "postcode">
-  <label for= "form_postcode">Postcode*</label>
+ <div class= "container_postcode">
+  <label for= "form_postcode" class= "post_code">Postcode*</label>
   <input type= "text" name= "postcode" id= "form_postcode">
- </postcode>
+ </div>
 
-<p>Select a colour</p>
+ <p>Select a colour</p>
+<div class= "radio_container">
 <input type= "radio" id= "form_karmaorange" value= "karmaorange" name="color" class= "radio_button">
-<label for= "form_karmaorange">Karma orange</label>
+<label for= "form_karmaorange" class= "radio_label">Karma orange</label>
 
 <input type= "radio" id= "form_spacegrey" value= "spacegrey" name="color" class="radio_button">
-<label for= "form_spacegrey">Space Grey</label>
+<label for= "form_spacegrey" class= "radio_label">Space Grey</label>
 <br>
 <br>
+</div>
 
-<input type= "checkbox" id="form_tc" value= "termsandconditions" name= "termsandcondition">
-<label for= "form_termsandconditions">By placing your order you agree to Karma's <a href="#" class= "conditions">Terms and Conditions</a>.*</label>
+<div class= "check_container"> 
+<input type= "checkbox" id="form_tc" value= "termsandconditions" name= "termsandcondition" class= "check_box">
+<label for= "form_termsandconditions" class= "check_label">By placing your order you agree to Karma's <a href="#" class= "conditions">Terms and Conditions</a>.*</label>
 <br>
 <br>
+</div>
 
 <button type= "submit" class= "place_order">Place my order</button>
   </fieldset>

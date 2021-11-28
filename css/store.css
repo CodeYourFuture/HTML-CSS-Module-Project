@@ -43,61 +43,123 @@ a:hover {
 }
 
 .text_store {
-  font-size: 1.9rem;
+  font-size: 3rem;
   color: #dc582a;
   padding-right: 15rem;
   margin-left: 6rem;
   margin-top: -5rem;
   text-align: left;
 }
+
 .store_image {
   margin-top: -7rem;
-  margin-left: -4rem;
+  margin-left: -6rem;
+  object-fit: cover;
 }
-
 /*form*/
-
 fieldset {
-  height: 130%;
+  height: 140%;
   width: 60%;
-  margin-top: -24rem;
+  margin-top: -20rem;
+  padding-left: 3rem;
+  border: 0;
 }
 
-.postcode {
+input,
+label {
   display: inline-block;
 }
-.postcode > input {
+
+.container_lastName {
+  padding-left: 20rem;
   display: block;
-  margin-left: 10rem;
+  width: 95%;
 }
-.postcode > label {
-  margin-left: 10rem;
+
+.last_name {
+  display: block;
+  margin-top: -5.4rem;
 }
+
+.container_postcode {
+  padding-left: 20rem;
+  display: block;
+  width: 70%;
+  margin-left: 5rem;
+}
+
+.post_code {
+  display: block;
+  margin-top: -4.5rem;
+}
+
 label {
   font-size: 1.5rem;
   color: grey;
-  display: inline;
 }
+
 input {
   height: 2.7rem;
   border-radius: 4px;
-  display: inline-block;
   margin-bottom: 1.3rem;
-}
-.ct {
-  color: grey;
+  width: 35%;
 }
 
+select {
+  color: grey;
+  width: 40%;
+  height: 6%;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 1.5rem;
+}
 p {
   font-size: 1.5rem;
 }
+.address {
+  width: 73%;
+}
+
+.radio_container {
+  display: flex;
+  padding-bottom: 4rem;
+}
 
 .radio_button {
-  padding-left: 2rem;
   padding-bottom: 0;
   width: 1.5rem;
-  margin: 1rem;
+  margin-right: 2rem;
+  margin-top: -0.5rem;
 }
+.radio_label {
+  margin-right: 4rem;
+  margin-left: -1rem;
+}
+
+.check_container {
+  display: flex;
+  padding-bottom: 20rem;
+}
+
+.check_box {
+  width: 45px;
+  height: 25px;
+  margin-right: 3rem;
+}
+.check_label {
+  margin-right: 9rem;
+}
+
+.place_order {
+  margin-top: -16rem;
+  margin-left: 0;
+  height: 7%;
+  width: 30%;
+  background-color: #dc582a;
+  color: white;
+  border-radius: 4px;
+}
+
 /*terms & conditions*/
 .conditions {
   margin-left: -2rem;
