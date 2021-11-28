@@ -16,6 +16,9 @@ You could also create a specific `store.css` file - just make sure you're not du
   - making the homepage's "Get Karma today" button navigate to the store page.
   - making the header navigation "Store" link navigate to the store page, and the "Meet Karma" link navigate to the homepage.
 
+**Stretch goal**
+- Custom radio buttons and checkbox: the 2 radio buttons and the checkbox in the store page design are tricky to style and will require you to do a little research. Focus on the rest of the form and layout first, and leave these until the end as a stretch goal.
+
 ### Submitting your work
  - Remember to **commit and push your code often**
  - Once you're ready to submit your homework for review, do a final push and **create a Pull Request**. If you're unsure how to do this, [have a look here](https://syllabus.codeyourfuture.io/git/cheatsheet/#i-want-to-send-my-code-to-volunteers-pushing).
