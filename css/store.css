@@ -1,70 +1,54 @@
 * {
+  border: 0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: 0;
-  border: 0;
 }
 
 h1 {
-  font-size: 4.5vw;
+  font-size: 9vw;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 6vw;
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 hr {
   width: 80%;
   border: 1px solid rgb(233, 224, 224);
   margin: 0 auto;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
-/* ======================Header styles ========================*/
-
+.burger_btn_container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.burger_top,
+.burger_middle,
+.burger_bottom {
+  padding: 2px 1rem;
+  background: rgb(255, 94, 0);
+  margin: 2px;
+}
+/* Header styles */
+.nav {
+  display: none;
+}
 .header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
-}
-
-.nav {
-  width: 70%;
-  font-size: 1.5vw;
-  align-self: center;
-}
-
-.nav ul {
-  display: flex;
-  justify-content: right;
-  padding: 0 0.5em;
-}
-
-.nav_li {
-  list-style: none;
-  font-weight: bolder;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.nav_link {
-  text-decoration: none;
-  color: rgb(114, 113, 113);
-}
-.nav_link:hover {
-  color: rgb(255, 115, 0);
-}
-.nav_link:active {
-  color: black;
 }
 
 .logo_div {
@@ -72,8 +56,8 @@ body {
 }
 
 .logo_div img {
-  width: 10%;
-  max-width: 50%;
+  min-width: 4vw;
+  max-width: 4vw;
   margin-left: 10px;
 }
 
@@ -92,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding: 1em 4em;
+  padding: 1em 1em;
 }
 .store_form p {
   font-size: 1.5vw;
@@ -109,7 +93,7 @@ body {
 }
 .input {
   font-size: 1.2vw;
-  border: 1px solid gray;
+  border: 1px solid rgb(161, 158, 158);
   padding: 0.5em;
   margin-top: 5px;
 }
@@ -183,8 +167,8 @@ option {
   color: #e0633a;
 }
 input[type="radio"] {
-  width: 20px;
-  height: 20px;
+  width: 1.5vw;
+  height: 1.5vw;
   appearance: none;
   border: 1px solid #e08a6e;
   border-radius: 50%;
@@ -196,8 +180,8 @@ input[type="radio"]:checked {
   background: #e0633a;
 }
 input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 1.5vw;
+  height: 1.5vw;
   appearance: none;
   border: 1px solid #e08a6e;
   font-size: 1.5vw;
@@ -236,7 +220,7 @@ input[type="checkbox"]:checked::after {
   display: block;
   margin-left: 20px;
   border: 1px solid rgb(187, 187, 187);
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
 }
 
@@ -258,4 +242,55 @@ hr {
   background: #e0633a;
   margin: 20px auto;
   font-size: 1.5vw;
+}
+
+@media screen and (min-width: 768px) {
+  /* ======================Header Styles==================== */
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 2vw;
+  }
+  /* =======================Header============== */
+  .burger_btn_container {
+    display: none;
+  }
+  .nav {
+    display: block;
+    align-self: center;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: right;
+    padding: 0 0.5em;
+    font-size: 2vw;
+  }
+
+  .nav_li {
+    list-style: none;
+    font-weight: bolder;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .nav_link {
+    text-decoration: none;
+    color: rgb(114, 113, 113);
+  }
+  .nav_link:hover {
+    color: rgb(255, 115, 0);
+  }
+  .nav_link:active {
+    color: black;
+  }
+  /* ========================Form=============== */
+  .store_form_div {
+    padding: 1em 3em;
+  }
 }

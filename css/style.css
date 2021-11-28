@@ -7,15 +7,15 @@
 }
 
 h1 {
-  font-size: 4.5vw;
+  font-size: 9vw;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 6vw;
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 hr {
   width: 80%;
@@ -23,19 +23,27 @@ hr {
   margin: 0 auto;
 }
 
-/* Html style trick */
-body,
-html {
-  min-height: 100vh;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
+.burger_btn_container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.burger_top,
+.burger_middle,
+.burger_bottom {
+  padding: 2px 1rem;
+  background: rgb(255, 94, 0);
+  margin: 2px;
+}
 /* Header styles */
-
+.nav {
+  display: none;
+}
 .header {
   width: 100%;
   display: flex;
@@ -43,43 +51,13 @@ body {
   padding: 1em;
 }
 
-.nav {
-  width: 70%;
-  font-size: 1.5vw;
-  align-self: center;
-}
-
-.nav ul {
-  display: flex;
-  justify-content: right;
-  padding: 0 0.5em;
-}
-
-.nav_li {
-  list-style: none;
-  font-weight: bolder;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.nav_link {
-  text-decoration: none;
-  color: rgb(114, 113, 113);
-}
-.nav_link:hover {
-  color: rgb(255, 115, 0);
-}
-.nav_link:active {
-  color: black;
-}
-
 .logo_div {
   padding-left: 3%;
 }
 
 .logo_div img {
-  width: 10%;
-  max-width: 50%;
+  min-width: 4vw;
+  max-width: 4vw;
   margin-left: 10px;
 }
 
@@ -90,21 +68,25 @@ body {
 
 #main_slide {
   width: 100%;
+  position: relative;
   background: url("../img/first-background.jpg");
-  height: 80vh;
+  min-height: 70vh;
   max-height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  background-position: right;
 }
 
 .main_overlay {
-  position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.664);
   display: flex;
-  justify-content: center;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-around;
   flex-direction: column;
   color: white;
   text-align: center;
@@ -117,10 +99,11 @@ body {
 
 .learnmore_btn {
   padding: 0.8em;
-  margin: 8% auto;
+  width: max-content;
+  margin: 0 auto;
   background: rgb(201, 97, 0);
   border-radius: 5px;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 /* ============================Features styles======================================= */
@@ -132,60 +115,61 @@ body {
 
 .features_container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   padding-top: 3em;
-  align-items: baseline;
 }
 
 .features_item {
-  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  margin-top: 20px;
   align-items: center;
 }
-
 .features_item img {
-  max-width: 40%;
+  min-width: 60px;
+  max-width: 120px;
 }
+
 /* ===================================Why Us Styles================ */
 .whyus {
-  width: 100%;
-  display: flex;
-  margin: 5% 0;
-  font-size: 2.5vw;
-  color: #434242;
-  text-align: center;
+  display: none;
 }
-.whyus a,
-.whyus i {
-  display: block;
+.whyus_mobile {
+  width: 100%;
+  position: relative;
+  background: url("../additional/feature-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem 0;
+}
+.whyus_overlay {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 2rem;
+  font-size: 6vw;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  text-shadow: 0 0 20px black;
+}
+.whyus_overlay span {
+  font-size: 6vw;
+  color: #e0633a;
 }
 .whyus_btn {
-  width: 50%;
-  margin: 0 auto;
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   background: #e0633a;
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   border-radius: 10px;
-  font-size: 2vw 1vw;
+  display: inline-block;
+  margin-top: 1rem;
 }
 .whyus_btn:hover {
   background: #e44d1a;
 }
-.whyus_text {
-  width: 92%;
-  background: rgba(224, 99, 58, 0.1);
-  padding: 1.5em 5em;
-}
-.whyus_img {
-  width: 50%;
-  background: url("../additional/feature-img.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+
 /* =================================Footer styles================== */
 .footer {
   width: 100%;
@@ -208,7 +192,7 @@ body {
   display: block;
   margin-left: 20px;
   border: 1px solid rgb(187, 187, 187);
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
 }
 
@@ -219,12 +203,107 @@ body {
 .watermark {
   color: gray;
 }
-@media screen and (max-width: 400px) {
-  .features_container {
-    flex-direction: column;
-    align-items: center;
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 6.5vw;
   }
-  .features_item {
-    margin-top: 10px;
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+  .learnmore_btn {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* ======================Header Styles==================== */
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 2vw;
+  }
+  .burger_btn_container {
+    display: none;
+  }
+  .nav {
+    display: block;
+    align-self: center;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: right;
+    padding: 0 0.5em;
+    font-size: 2vw;
+  }
+
+  .nav_li {
+    list-style: none;
+    font-weight: bolder;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .nav_link {
+    text-decoration: none;
+    color: rgb(114, 113, 113);
+  }
+  .nav_link:hover {
+    color: rgb(255, 115, 0);
+  }
+  .nav_link:active {
+    color: black;
+  }
+  .learnmore_btn {
+    font-size: 2vw;
+  }
+  /* =============================Features Styles=================== */
+  .features_container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .features_item img {
+    max-width: 150px;
+  }
+  .whyus_mobile {
+    display: none;
+  }
+  /* =============Why US===================== */
+  .whyus {
+    width: 100%;
+    display: flex;
+    margin: 5% 0;
+    font-size: 2.5vw;
+    color: #434242;
+    text-align: center;
+  }
+  .whyus a,
+  .whyus i {
+    display: block;
+  }
+
+  .whyus_text {
+    width: 92%;
+    background: rgba(224, 99, 58, 0.1);
+    padding: 1.5em 5em;
+  }
+  .whyus_img {
+    width: 50%;
+    background: url("../additional/feature-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .whyus_btn {
+    font-size: 1.5vw;
   }
 }
