@@ -46,74 +46,77 @@
   <!-- <main> -->
 
     <main class="store-main">
-      <section class="karma-order-form">
-        <h1 class>Order your Karma wifi device today!</h1>
-        
-        <form>
-          <div class="first-last-name">
-            <fieldset>
-              <label for="fname">First name *</label><br>
-              <input type="text" id="fname" name="fname" required ><br>
-            </fieldset>
-
-            <fieldset>
-              <label for="lname">Last name *</label><br>
-              <input type="text" id="lname" name="lname" required ><br>
-            </fieldset>  
+      <div class="karma-order-form-div">
+        <section class="karma-order-form">
+          <h1 class>Order your Karma wifi device today!</h1>
+          
+          <form>
+            <div class="first-last-name">
+              <fieldset>
+                <label for="fname">First name *</label><br>
+                <input type="text" id="fname" name="fname" required ><br>
+              </fieldset>
+  
+              <fieldset>
+                <label for="lname">Last name *</label><br>
+                <input type="text" id="lname" name="lname" required ><br>
+              </fieldset>  
+            </div>
+  
+            <div class="address">
+              <fieldset>
+                <label for="address">Address *</label><br>
+                <input type="text" id="address" name="address" required >
+              </fieldset>
+  
+              <fieldset>
+                <label for="address-2">Address 2</label><br>
+                <input type="text" id="address-2" name="address-2">
+              </fieldset>
+            </div>
+  
+          <div class="city-postcode"> 
+            <div class="city-dropdown">
+              <fieldset >
+                <label for="City">City*</label><br>
+                <select class="city" id="city" name="city" form="cityform" required>
+                  <option value="" disabled selected hidden>Select your city...</option>
+                  <option value="London">London</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="Birmingham">Birmingham</option>
+                  <option value="Liverpool">Liverpool</option>
+                </select><br>
+              </fieldset> 
+            </div>
+            <div class="postcode">
+              <fieldset >
+                <label for="postcode">Postcode *</label><br>
+                <input type="text" id="postcode" name="postcode" required >
+              </fieldset> 
+            </div>
           </div>
-
-          <div class="address">
-            <fieldset>
-              <label for="address">Address *</label><br>
-              <input type="text" id="address" name="address" required >
-            </fieldset>
-
-            <fieldset>
-              <label for="address-2">Address 2</label><br>
-              <input type="text" id="address-2" name="address-2">
-            </fieldset>
-          </div>
-
-
-        <div class="city-postcode"> 
-          <div class="city-dropdown">
-            <fieldset >
-              <label for="City">City*</label><br>
-              <select id="city" name="city" form="cityform" required>
-                <option value="" disabled selected hidden>Select your city...</option>
-                <option value="London">London</option>
-                <option value="Manchester">Manchester</option>
-                <option value="Birmingham">Birmingham</option>
-                <option value="Liverpool">Liverpool</option>
-              </select><br>
-            </fieldset> 
-          </div>
-          <div class="postcode">
-            <fieldset >
-              <label for="postcode">Postcode *</label><br>
-              <input type="text" id="postcode" name="postcode" required >
-            </fieldset> 
-          </div>
-        </div>
-        
-        <fieldset>
-          <legend>Select a colour</legend>
-
-          <input id="orange" type="radio" name="colour" value="Karma orange" checked/>
-          <label for="orange">Karma orange</label>
-
-          <input id="grey" type="radio" name="colour" value="Space Grey" />
-       </fieldset>
-
-       <div class="checkbox-aggreement">
-          <input id="agreement" type="checkbox" name="agreement" required />   <label for="agreement">By placing your order you agree to Karma's <a href="#" >Terms and Conditions.</a> *</label>
-          <span  class=""></span>
-       </div>
-
-       <div class="btn">
-          <button>Place my order</button>
-        </div>   
-      </section>
+          
+          <fieldset >
+            <legend>Select a colour</legend>
+  
+            <input id="orange" type="radio" name="colour" value="Karma orange" checked/>
+            <label for="orange">Karma orange</label>
+  
+            <input id="grey" type="radio" name="colour" value="Space Grey" />
+            <label for="grey">Space grey</label>
+         </fieldset>
+  
+         <div class="checkbox-aggreement">
+            <input id="agreement" type="checkbox" name="agreement" required />   
+            <label for="agreement">By placing your order you agree to Karma's <a href="#" >Terms and Conditions.</a> *</label>
+            <span  class=""></span>
+         </div>
+  
+         <div class="btn">
+            <button>Place my order</button>
+          </div>   
+        </section>
+      </div>
 
       <section class="store-aside-img">
         <img src="./img/store-aside.png" alt="girl working at desk">

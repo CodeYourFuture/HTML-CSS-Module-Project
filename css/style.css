@@ -273,9 +273,22 @@ footer p {
   width: 100%;
 }
 
-.karma-order-form {
+.karma-order-form-div {
   width: 50%;
-  padding: 10rem 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.karma-order-form {
+  /* width: 50%;
+  padding: 10rem 13rem; */
+  /* position: fixed; */
+width: 501px;
+height: 849px;
+left: 122px;
+top: 414px;
+
 }
 
 .karma-order-form input, 
@@ -291,12 +304,7 @@ select {
 }
 
 .store-aside-img img{
-  
-  width: 701px;
-  height: 1235px;
-  left: 739px;
-  top: 98px;
-
+  width: -webkit-fill-available;
 }
 
 .first-last-name {
@@ -398,19 +406,39 @@ label a {
     padding: 1rem 1rem;
   }
 
+  .karma-order-form-div {
+  width: 95%;
+
+}
   .karma-order-form {
-    width: auto;
+    width: 330px ;
+    height: 1069px ;
     padding: 2rem 1rem;
+  }
+
+  fieldset input {
+    width: -webkit-fill-available;
+  }
+
+  .city-dropdown {
+    width: auto;
+}
+
+  fieldset .city {
+    width: -webkit-fill-available;
   }
 
   .first-last-name  {
     flex-direction: column;
   }
 
-  /* .store-aside-img {
-    width: 373px;
-    height: 226px;
+  .city-postcode {
+    display: flex;
+    flex-direction: column;
+  }
 
-  } */
+  .store-aside-img {
+    width: 95%;
+  }
 
 }
