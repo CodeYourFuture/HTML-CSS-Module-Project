@@ -1,0 +1,58 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 9vw;
+}
+
+h2 {
+  font-size: 6vw;
+}
+
+h3 {
+  font-size: 3vw;
+}
+hr {
+  width: 80%;
+  border: 1px solid rgb(233, 224, 224);
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 6.5vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+  .learnmore_btn {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* ======================Header Styles==================== */
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 2vw;
+  }
+}

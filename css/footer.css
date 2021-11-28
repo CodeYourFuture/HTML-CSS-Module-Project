@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons_container {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.icons_container a {
+  background-color: transparent;
+  display: block;
+  margin-left: 20px;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.icons_container img {
+  max-width: 20px;
+}
+
+.watermark {
+  color: gray;
+}

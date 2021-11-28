@@ -1,0 +1,71 @@
+/* Hamburger Menu */
+.burger_btn_container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.burger_top,
+.burger_middle,
+.burger_bottom {
+  padding: 2px 1rem;
+  background: rgb(255, 94, 0);
+  margin: 2px;
+}
+/* Nav and Logo styles */
+.nav {
+  display: none;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.nav_link:hover {
+  color: rgb(255, 115, 0);
+}
+.logo_div {
+  padding-left: 3%;
+}
+
+.logo_div img {
+  min-width: 4vw;
+  max-width: 4vw;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger_btn_container {
+    display: none;
+  }
+  .nav {
+    display: block;
+    align-self: center;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: right;
+    padding: 0 0.5em;
+    font-size: 2vw;
+  }
+
+  .nav_li {
+    list-style: none;
+    font-weight: bolder;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .nav_link {
+    text-decoration: none;
+    color: rgb(114, 113, 113);
+  }
+
+  .nav_link:active {
+    color: black;
+  }
+  .learnmore_btn {
+    font-size: 2vw;
+  }
+}
