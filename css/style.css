@@ -1,8 +1,17 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+:root {
+  
+   --orange: rgb(255, 115, 0);
+   --grey: rgb(182, 179, 179);
+
+    
+ }
+
+
 body {
   font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased
 }
 
 /**
@@ -28,9 +37,9 @@ header {
   height: 2.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
   header {
-    padding: 1rem 1.2rem;
+    padding: 1rem 0.8rem;
   }
 
   .svg-logo {
@@ -52,7 +61,7 @@ header {
 }
 
 .navigation__list li:hover {
-  color: rgb(255, 115, 0);
+  color: var(--orange);
   cursor: pointer;
 }
 
@@ -78,7 +87,7 @@ header {
   background-color: #101010;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
   .navigation__list {
     display: none;
   }
@@ -104,7 +113,7 @@ header {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .hero-intro {
     height: 35rem;
     background-position-x: 60%;
@@ -151,7 +160,7 @@ button {
   align-items: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .container-icon {
     flex-direction: column;
     align-items: center;
@@ -188,7 +197,7 @@ button {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .additonal-features {
     display: none;
   }
@@ -236,14 +245,14 @@ footer h3 {
 
 .social-icon {
   height: 2rem;
-  border: 1px solid rgb(182, 179, 179);
+  border: 1px solid var(--grey);
   border-radius: 50%;
   padding: 0.5rem;
   margin: 0.5rem;
 }
 
 footer p {
-  color: rgb(182, 179, 179);
+  color: var(--grey);
 }
 
 /* store page css */
@@ -277,12 +286,17 @@ select {
   border-radius: 4px;
 }
 
-/* .karma-order-form label {
-  margin-top: 0.5rem;
-} */
-
 .store-aside-img {
   width: 50%;
+}
+
+.store-aside-img img{
+  
+  width: 701px;
+  height: 1235px;
+  left: 739px;
+  top: 98px;
+
 }
 
 .first-last-name {
@@ -374,3 +388,29 @@ label a {
   color: rgb(218, 86, 25);
 }
 
+@media screen and (max-width: 375px) {
+  .store-main {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .store-header .svg-logo {
+    padding: 1rem 1rem;
+  }
+
+  .karma-order-form {
+    width: auto;
+    padding: 2rem 1rem;
+  }
+
+  .first-last-name  {
+    flex-direction: column;
+  }
+
+  /* .store-aside-img {
+    width: 373px;
+    height: 226px;
+
+  } */
+
+}
