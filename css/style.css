@@ -120,6 +120,15 @@ h5 {
   justify-content: space-evenly;
 }
 
+/* ================================= mobile ==================================== */
+
+@media screen and (max-width: 400px) {
+  .article-summary {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 #title-main {
   color: rgb(70, 69, 69);
   text-align: center;
