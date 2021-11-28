@@ -1,6 +1,12 @@
 
 window.onload=function(){
     document.getElementById("menu-hamburger").addEventListener("click", toggleMenu);
+    window.addEventListener("resize", function(event) {
+        if (navBar.classList.contains("nav-mobile")) {
+            navBar.classList.remove("nav-mobile");
+            navBar.classList.add("navigation");
+        }
+    })
 }
 
 const toggleMenu = () => {
@@ -13,10 +19,5 @@ const toggleMenu = () => {
         navBar.classList.remove("navigation");
         navBar.classList.add("nav-mobile");
     }
-    window.addEventListener("resize", function(event) {
-    if (navBar.classList.contains("nav-mobile")) {
-        navBar.classList.remove("nav-mobile");
-        navBar.classList.add("navigation");
-    }
-})
+   
 }
