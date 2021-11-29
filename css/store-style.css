@@ -73,6 +73,10 @@ input[type="checkbox"] {
   top: 12px;
 }
 
+.my-check-box a {
+  color: var(--orange-dark);
+}
+
 /* Radio Buttons */
 .radio-btn-wrapper {
   display: flex;
@@ -169,6 +173,10 @@ hr {
     flex-direction: column;
     align-items: center;
     margin: 0;
+  }
+
+  select {
+    width: 14rem;
   }
 
   fieldset {
