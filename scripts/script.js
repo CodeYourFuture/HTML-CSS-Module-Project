@@ -1,6 +1,7 @@
 
-window.onload=function(){
+window.onload = () => {    
     document.getElementById("menu-hamburger").addEventListener("click", toggleMenu);
+    var navBar = document.getElementById("navigation");
     window.addEventListener("resize", function(event) {
         if (navBar.classList.contains("nav-mobile")) {
             navBar.classList.remove("nav-mobile");
@@ -8,10 +9,8 @@ window.onload=function(){
         }
     })
 }
-
 const toggleMenu = () => {
-    var navBar=document.getElementById("navigation");
-    console.log("clicked")
+    var navBar = document.getElementById("navigation");
     if (navBar.classList.contains("nav-mobile")) {
         navBar.classList.remove("nav-mobile");
         navBar.classList.add("navigation");
