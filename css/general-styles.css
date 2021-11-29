@@ -1,0 +1,46 @@
+/* General styles */
+
+:root {
+    --grey: #616668;
+    --burnt-orange: #E0633A;
+}
+
+html, body {
+    font-family: Roboto, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;       
+    overflow-x: hidden;  
+}
+
+main {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button */
+
+button {
+    background-color: var(--burnt-orange);  
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 22px 45px;
+    border-style: none;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: #fff;
+}
+
+

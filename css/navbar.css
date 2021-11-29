@@ -1,0 +1,43 @@
+/* Navigation */
+
+nav {
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    height: 90px;
+    background: hsla(0, 0%, 77%, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.35rem;
+    font-weight: 500;
+    cursor: pointer;      
+}
+
+nav ul li {
+    padding: 0 20px;    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #757e83;
+}
+
+nav ul li a:hover {
+    color: var(--burnt-orange);
+}
+
+.active {
+    color: black;
+}
+
+#hamburger {
+    display: none;
+}
+
+

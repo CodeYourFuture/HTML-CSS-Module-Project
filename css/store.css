@@ -1,0 +1,182 @@
+
+:root {
+    --burnt-orange: #DE6E49;
+    --space-grey: #666;
+}
+
+main {
+    margin-top: 0;
+    padding-top: 0;;
+}
+
+section {
+    width: 50%;    
+}
+
+.flex-container {
+    display: flex;    
+}
+
+h1 {
+    text-align: left;
+    color: var(--burnt-orange);
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58.59px;
+}
+
+.flex-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+
+/* form inputs */
+
+form {    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+    max-width: 80%;
+    margin: 0 auto;       
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+ .two-inputs {    
+    display: flex;
+    justify-content: space-between;      
+}
+
+input, select, option {
+    border-width: 2px;
+    border-color: #666; /*why is this affecting background?*/
+    border-radius: 4px;      
+}
+
+input[type=text], select, option{
+    display: block;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.name input, .name label, legend {
+    display: block;    
+}
+
+label {
+    padding-bottom: 6px;
+}
+
+.required:after {
+    content:" *";    
+}
+
+select:required:invalid {
+    color: #666;
+}
+
+option[value=""][disabled] {    
+    display: none;      
+}
+
+option[disabled][selected] {
+    font-style: italic; 
+} /*why this is not working? */
+
+option {
+    color: #000;
+    font-style: italic;
+}
+
+/* radio buttons */
+
+.radio-buttons {
+    display: flex;    
+}
+
+.radio-orange {
+    display: flex;
+}
+
+input[type='radio']::after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -4px;
+    left: -2px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #666;    
+}
+
+input[type='radio']:checked::after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -4px;
+    left: -2px;
+    position: relative;    
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #666;    
+}
+
+#karma-orange:checked::after {
+    background-color: var(--burnt-orange);
+}
+
+#space-grey:checked::after {
+    background-color: var(--space-grey);
+}
+
+.radio-button label {
+   margin:  10px 10px;
+   padding: 0 10px;
+}
+
+
+/* T&C and button */
+
+span a {
+    color: hsla(15, 69%, 58%, 1);
+}
+
+button {
+    float: left;
+}
+
+/* Checkbox styling */
+
+[type=checkbox]::after {
+    width: 18px;
+    height: 18px;
+    content: '';
+    position: relative;
+    left: -6px;
+    top: -2px;
+    display: inline-block;  
+    outline: 2px solid var(--space-grey);
+    background: #fff;
+}
+
+[type=checkbox]:checked::after {
+    width: 18px;
+    height: 18px;
+    content: '';
+    position: relative;
+    left: -6px;
+    top: -2px;
+    display: inline-block;  
+    background-image: url(../img/checkmark.svg);   
+}
+

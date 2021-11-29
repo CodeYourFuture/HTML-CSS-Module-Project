@@ -1,0 +1,116 @@
+
+/* Hero */
+
+.hero {
+    background-color: black; 
+    background-image: url(../img/first-background.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 162%;
+    background-position: center top 30%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 2.25rem; 
+    filter:saturate(0.7);     
+}
+
+.hero-text-and-button p {
+    font-weight: 300;
+}
+
+/* Typography */
+
+h1 {
+    font-weight: 200;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+
+h1, h2, h3 {
+    text-align: center;    
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    padding-top: 60px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 300;    
+}
+
+/* Section */
+
+.section-items {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.section-item img {
+    width: 160px;
+}
+
+/* Section: Feature */
+
+.feature {
+    width: 100%;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.feature img {
+    display: block;
+    width: 44.5%;    
+}
+
+.feature_text-and-button {  
+    margin:0 auto;  
+    background-color: hsla(15, 73%, 55%, 0.1);  
+}
+
+blockquote {
+    font-size: 42px; 
+    font-weight: 400;
+    line-height: 49.22px;
+    font-style: italic;
+    text-align: center; 
+}
+
+q {
+    color: var(--burnt-orange);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;    
+}
+
+span {
+    color: black;
+}
+
+.feature_text-and-button button {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 28.13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
