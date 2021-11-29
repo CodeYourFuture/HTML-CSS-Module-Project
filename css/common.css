@@ -1,4 +1,15 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* Variables */
+
+:root {
+    --orange: #e0633a;
+    --light-grey: rgba(196, 196, 196, 0.1);
+    --dark-grey: rgb(68, 67, 67);
+    --grey: grey;
+    --very-light-grey: rgb(238, 238, 238);
+    --text-grey: rgb(163, 159, 159);
+    --white: white;
+    --pink-orange: rgba(255, 162, 145, 0.637);
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -11,7 +22,7 @@ body {
 header {
     padding: 0 5rem;
     justify-content: space-between;
-    background: rgba(196, 196, 196, 0.1);
+    background: var(--light-grey);
 }
 
 
@@ -36,12 +47,12 @@ li {
 
 a {
     text-decoration: none;
-    color: grey;
+    color: var(--grey);
 }
 
 a:hover,
 span {
-    color: #e0633a;
+    color: var(--orange);
 }
 
 span {
@@ -49,7 +60,7 @@ span {
 }
 
 .active-link {
-    color: rgb(68, 67, 67);
+    color: var(--dark-grey);
     font-weight: 500;
 }
 
@@ -68,7 +79,7 @@ hr {
     width: 90vw;
     margin: auto;
     height: 2px;
-    background-color: rgb(238, 238, 238);
+    background-color: var(--very-light-grey);
     border: none;
 }
 
@@ -77,13 +88,13 @@ hr {
 
 h3 {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 footer a {
     width: fit-content;
     margin: 10px;
-    border: 1px solid rgb(238, 238, 238);
+    border: 1px solid var(--very-light-grey);
     border-radius: 50%;
     display: inline-flex;
 }
@@ -94,8 +105,8 @@ footer img {
 }
 
 footer p {
-    color: rgb(163, 159, 159);
-    font-size: 20px;
+    color: var(--text-grey);
+    font-size: 1.25rem;
     margin-bottom: 100px;
 }
 
@@ -104,12 +115,13 @@ footer p {
 
 button,
 input[type="submit"] {
-    background: #e0633a;
+    background: var(--orange);
     padding: 7px 15px;
     border: none;
+    width: fit-content;
     border-radius: 5px;
-    font-size: 15px;
-    color: white;
+    font-size: 1rem;
+    color: var(--white);
 }
 
 
@@ -150,7 +162,7 @@ input[type="submit"] {
     /* Footer */
     h3 {
         font-weight: 400;
-        font-size: 22px;
+        font-size: 1.375rem;
     }
     footer a {
         margin: 8px;
@@ -160,7 +172,7 @@ input[type="submit"] {
         padding: 10px;
     }
     footer p {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 60px;
     }
 }
