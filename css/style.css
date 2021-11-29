@@ -129,8 +129,9 @@ body {
 
  .feature-section-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 15rem;
+    padding: 0 5rem;
     margin-bottom: 3rem;
 
  }
@@ -155,24 +156,26 @@ body {
 
 
 .get-karma-section {
+    box-sizing: border-box;
     background-color: var(--light-orange);
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 439px;
     margin-bottom: 2rem;
 }
 
 .get-karma-section-text {
-    width: 450px;
-    position: absolute;
-    display: flex;
+    width: 70%;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    right: 15rem;
-    top: 3rem;
     line-height: 1.6;
+    
+}
+
+.get-karma-section-image {
+    width: 30%;
+    background-image: url(../additional/feature-img.png);
 }
 
 .get-karma-section a {
@@ -235,11 +238,11 @@ footer a {
 /* Media queries */
 
 
-@media screen and (max-width: 600px) {
-    .middle-section-container {
-        flex-direction: column;
-        display: inline;
+@media screen and (min-width: 768px) {
+    .feature-section-container {
+        flex-direction: row;
     }   
+    
 
    nav {
        display: none;
@@ -257,6 +260,8 @@ footer a {
        padding: 0 2rem;
        font-size: 2rem;    
    }
+
+
 }
  
 /* end of media queries*/
