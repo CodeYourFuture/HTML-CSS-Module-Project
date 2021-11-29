@@ -140,3 +140,58 @@ input[type="radio"]:checked ~ .check::before {
 hr {
   margin-top: 0;
 }
+
+/* Mobile Media queries */
+
+@media screen and (max-width: 480px) {
+
+  input {
+    width: 100%;
+  }
+  .header {
+    overflow-x: hidden;
+  }
+  .store-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .store-main > .order-form-wrapper h1 {
+    width: 62%;
+  }
+
+  .side-by-side-field {
+   flex-direction: column;
+  }
+
+  .order-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  fieldset {
+    flex-direction: column;
+  }
+
+  .my-check-box {
+    flex-direction: row;
+  }
+
+  input[type="checkbox"] {
+    width:18%;
+  }
+
+  .radio-btn-two {
+    margin: 0;
+  }
+
+  .btn-submit {
+    margin: 4rem 0;
+  }
+
+  .footer-top-border {
+    margin-top: 2rem;
+  }
+}
