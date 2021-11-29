@@ -118,6 +118,7 @@ h2 {
 
 .service-section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 2rem;
 }
@@ -182,7 +183,7 @@ blockquote::after{
 }
 
 .advert-section .btn {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* Footer */
@@ -222,61 +223,19 @@ footer > h3 {
   margin: 7px;
 }
 
-/* Media queries */
+/* Tablet Media queries */
 
-@media screen and (max-width: 992px) {
-  .container {
-    flex-direction: column;
-  }
-
+@media screen and (max-width: 768px) {
   .service-section {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-
-  .nav-mobile {
-    display: block;
-    padding: 15px;
-  }
-
-  .nav-list {
-    display: none;
-  }
-
-  .header {
-    padding: 0;
-  }
-
-  .header-logo {
-    max-height: 30px;
-    width: 60px;
-  }
-
-  .main h1 {
-    font-size: 50px;
-    font-weight: 300;
-  }
-
-  h2 {
-    font-size: 25px;
-    margin-bottom: 4rem;
-    font-weight: 100;
   }
 
   .advert-section {
-    display: block;
+    flex-direction: column;
+    align-items: normal;
   }
 
   .advert-slogan {
-    color: var(--grey-dark);
-    font-size: 34px;
-    font-style: italic;
-    padding: 0 28px;
+    padding: 2rem 0;
   }
-
-  img {
-    max-width: 100vw;
-  }
-
 }
