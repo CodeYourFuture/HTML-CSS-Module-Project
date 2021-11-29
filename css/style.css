@@ -91,7 +91,7 @@ a:hover {
     flex-flow: row;
     flex-wrap: wrap;
     gap: 120px;
-    margin:auto;
+    margin:auto 100px auto 100px;;
     
 
    
@@ -242,16 +242,20 @@ footer {
 
 
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 
     .hum {
         display: none;
         align-content: center;
     }
+
+    .parent {
+        display: column;
+    }
     
    }    
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     
     a {
         display:none;
