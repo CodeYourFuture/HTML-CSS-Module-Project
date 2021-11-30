@@ -131,23 +131,42 @@ p {
 }
 
 .karma_icon_images {
+  display: flex;
   height: 50%;
-  padding-left: 2.5rem;
+  margin: auto;
+  padding: 0rem 0.5rem;
 }
 
 /*Karma Feature*/
 
 .karma_feature {
   display: flex;
+  justify-content: center;
+}
+
+.karma_feature_image {
+  display: flex;
+  width: 100%;
 }
 
 .wherever_i_am {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: var(--linen-karma);
+  padding: 0rem 4rem;
 }
 
-i {
-  color: var(--orange-karma);
+q {
   font-size: 1.5rem;
+}
+
+q::before,
+q::after {
+  color: var(--orange-karma);
+  font-size: 2rem;
 }
 
 /*Horizontal Rule*/
