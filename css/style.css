@@ -2,6 +2,9 @@
 :root {
   --orange-karma: #f26639;
   --cream-karma: #f2f2f3;
+  --linen-karma: #fcefeb;
+  --navigation-karma: gray;
+  --text-karma: white;
 }
 
 body {
@@ -19,7 +22,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/*Header*/
+/*HEADER*/
 
 header {
   display: flex;
@@ -35,7 +38,7 @@ header img {
   margin-top: 10px;
 }
 
-/*Navigation*/
+/*NAVIGATION*/
 
 ul {
   display: flex;
@@ -48,7 +51,7 @@ li {
 }
 
 a {
-  color: gray;
+  color: var(--navigation-karma);
   text-decoration: none;
 }
 
@@ -62,7 +65,7 @@ a:hover {
   display: flex;
   background-image: url("../img/first-background.jpg");
   padding: 15.5rem 0;
-  color: white;
+  color: var(--text-karma);
   flex-direction: column;
   align-items: center;
   background-position: center;
@@ -96,13 +99,14 @@ h1 {
 button {
   padding: 0.75rem 1.25rem;
   background-color: var(--orange-karma);
+  color: var(--text-karma);
   border: none;
   border-radius: 5px;
   font-size: 0.75rem;
   margin-top: 2rem;
 }
 
-/*Main*/
+/*MAIN*/
 
 /*Main Text*/
 
@@ -123,26 +127,47 @@ p {
 }
 
 .karma_icon_direction {
-  display: flex;
   flex-direction: column;
 }
 
 .karma_icon_images {
   height: 50%;
+  padding-left: 2.5rem;
 }
+
+/*Karma Feature*/
+
+.karma_feature {
+  display: flex;
+}
+
+.wherever_i_am {
+  background-color: var(--linen-karma);
+}
+
+i {
+  color: var(--orange-karma);
+  font-size: 1.5rem;
+}
+
+/*Horizontal Rule*/
 
 hr {
   width: 90%;
   opacity: 25%;
 }
 
-/*footer*/
+/*FOOTER*/
 
 /*Social Media Style*/
 
 .social_media {
   display: flex;
   justify-content: center;
+}
+
+.social_media img {
+  height: 100%;
 }
 
 .social_media_images {
@@ -153,13 +178,27 @@ hr {
   border-radius: 30px;
 }
 
-.social_media_images img {
-  height: 100%;
-}
-
 .karma_mobility {
   text-align: center;
   font-size: 1rem;
   margin-bottom: 5rem;
   opacity: 25%;
+}
+
+/*MEDIA QUERY*/
+
+.media_query {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 480px) {
+  .media_query {
+    flex-direction: column;
+  }
+  .karma_icon_style {
+    flex-direction: column;
+  }
 }
