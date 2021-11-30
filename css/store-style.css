@@ -149,19 +149,27 @@ hr {
 
 @media screen and (max-width: 480px) {
 
-  input {
-    width: 100%;
-  }
+ 
   .header {
     overflow-x: hidden;
   }
+  
   .store-main {
     display: flex;
     flex-direction: column;
   }
 
   .store-main > .order-form-wrapper h1 {
-    width: 62%;
+    width: 90%;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  input, select {
+    border-radius: .3rem;
   }
 
   .side-by-side-field {
@@ -187,8 +195,14 @@ hr {
     flex-direction: row;
   }
 
+  .check-box {
+    padding: 0 5px;
+  }
+
   input[type="checkbox"] {
-    width:18%;
+    width: 7%;
+    padding-right: 60px;
+    margin: 0;
   }
 
   .radio-btn-two {
