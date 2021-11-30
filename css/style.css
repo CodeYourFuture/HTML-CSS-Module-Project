@@ -198,7 +198,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(212, 207, 207);
 }
 
 .quoto-image {
@@ -208,26 +209,25 @@ main {
 
 .quoto-container {
   width: 100%;
-  height: 350px;
+  height: 100%;
   margin: auto;
-  padding-top: 2.5rem;
   display: block;
   background-color: rgba(224, 99, 58, 0.1);
-  padding: 0 4.5rem;
+  padding: 2.5rem 3.5rem;
 }
 
 .quoto-container p {
-  margin-top: 1.8rem;
+  margin-top: 2.8rem;
   font-style: italic;
   font-size: 2.2rem;
 }
 
 .quoto-container span {
   color: #e0633a;
-  padding: 0 5px;
+  padding: 5px;
 }
 
-.get-karma {
+.primary-button {
   background-color: #e0633a;
   color: #fff;
   padding: 0.8rem 1.2rem;
@@ -236,19 +236,16 @@ main {
 }
 
 footer {
-  font-size: 0.8rem;
+  width: 100%;
+  padding: 1em;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-container {
-  width: 90%;
-  margin: 3rem 0;
-  border-top: 1px solid rgb(230, 224, 224);
-  text-align: center;
-  padding: 1rem;
-}
 footer h3 {
+  margin-top: 20px;
   font-weight: 500;
 }
 
@@ -270,6 +267,7 @@ footer a {
 }
 
 footer p {
+  margin-bottom: 10px;
   color: rgb(190, 180, 180);
 }
 
@@ -289,7 +287,7 @@ footer p {
   }
 
   .nav {
-    margin-left: 20rem;
+    margin-left: 35%;
   }
 
   .hamburger label,
@@ -299,7 +297,6 @@ footer p {
 
   .nav-menu {
     display: flex;
-    justify-content: space-between;
     list-style: none;
     text-decoration: none;
     font-size: 1rem;
@@ -310,15 +307,11 @@ footer p {
     border: none;
   }
   .quoto-section {
+    height: 350px;
     flex-direction: row;
   }
   .quoto-image {
     height: 100%;
     width: 45%;
-  }
-
-  .quoto-container {
-    height: 20rem;
-    width: 55%;
   }
 }

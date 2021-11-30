@@ -19,12 +19,6 @@
         />
       </div>
       <nav class="nav">
-        <!-- (B) THE HAMBURGER -->
-        <div>
-          <label for="hamburger">&#9776;</label>
-          <input type="checkbox" id="hamburger" />
-        </div>
-
         <ul class="nav-menu">
           <li class="list-item">
             <a href="./index.html" class="nav-link nav-active">Meet Karma</a>
@@ -46,125 +40,123 @@
           </li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger-input" />
+      </div>
     </header>
     <main>
       <section class="form-section">
         <div class="form-container">
           <h1>Order your Karma wifi device today!</h1>
           <form action="">
-            <div class="oneline-input">
-              <div class="borders">
+            <fieldset>
+              <div class="oneline-input">
                 <label for="fname"
-                  >First name<span class="required">*</span></label
-                >
-                <input
-                  id="fname"
-                  type="text"
-                  name="fname"
-                  minlength="3"
-                  maxlength="10"
-                  required
-                />
-              </div>
-              <div class="borders left-element">
-                <label for="lname"
-                  >Last name<span class="required">*</span></label
-                >
-                <input
-                  id="lname"
-                  type="text"
-                  name="lname"
-                  minlength="3"
-                  maxlength="10"
-                  required
-                />
-              </div>
-            </div>
+                  >First name<span class="required">*</span>
 
-            <div class="borders">
-              <label for="address"
-                >Address<span class="required">*</span></label
-              >
-              <input
-                id="address"
-                class="address"
-                type="text"
-                name="address"
-                required
-              />
-            </div>
-            <div class="borders">
-              <label for="address2">Address 2</label>
-              <input
-                id="address2"
-                class="address"
-                type="text"
-                name="address2"
-              />
-            </div>
-            <div class="oneline-input">
-              <div class="borders">
-                <label for="city">City<span class="required">*</span></label>
-                <select id="city" name="city">
-                  <option selected="selected" value="">
-                    Select your city...
-                  </option>
-                  <option value="florida">London</option>
-                  <option value="florida">Birmingham</option>
-                  <option value="florida">Paris</option>
-                  <option value="florida">New York</option>
-                  <option value="florida">Florida</option>
-                  <option value="texas">Texas</option>
-                </select>
-              </div>
-              <div class="borders">
-                <label for="postcode"
-                  >Postcode<span class="required">*</span></label
-                >
-                <input
-                  id="postcode"
-                  class="postcode"
-                  type="text"
-                  name="postcode"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="borders color-heading">
-              <label for="color">Select a colour:</label>
-              <div class="select-color">
-                <label class="container" for="karma-orange">
                   <input
-                    type="radio"
-                    id="karma-orange"
-                    name="radio"
-                    checked="checked"
+                    id="fname"
+                    type="text"
+                    name="fname"
+                    minlength="3"
+                    maxlength="10"
+                    required
                   />
-                  <span class="checkmark"></span>
-                  Karma orange</label
-                >
-                <label class="container" for="space-grey">
-                  <input type="radio" id="space-grey" name="radio" />
-                  <span class="checkmark"></span>
-                  Space Grey</label
-                >
+                </label>
+                <label class="left-element" for="lname"
+                  >Last name<span class="required">*</span>
+
+                  <input
+                    id="lname"
+                    type="text"
+                    name="lname"
+                    minlength="3"
+                    maxlength="10"
+                    required
+                  />
+                </label>
               </div>
-            </div>
-            <div class="terms-group">
-              <input
-                type="checkbox"
-                class="checkbox-custom"
-                id="terms"
-                required="true"
-              />
-              <label for="terms"
-                >By placing your order you agree Karma's
-                <a href="#">Terms and Conditions</a> .
-                <span class="required">*</span>
+
+              <label for="address"
+                >Address<span class="required">*</span>
+                <input
+                  id="address"
+                  class="address"
+                  type="text"
+                  name="address"
+                  required
+              /></label>
+              <label for="address2"
+                >Address 2
+                <input
+                  id="address2"
+                  class="address"
+                  type="text"
+                  name="address2"
+              /></label>
+              <div class="oneline-input">
+                <label for="city"
+                  >City<span class="required">*</span>
+                  <select id="city" name="city">
+                    <option selected="selected" value="">
+                      Select your city...
+                    </option>
+                    <option value="florida">London</option>
+                    <option value="florida">Birmingham</option>
+                    <option value="florida">Paris</option>
+                    <option value="florida">New York</option>
+                    <option value="florida">Florida</option>
+                    <option value="texas">Texas</option>
+                  </select>
+                </label>
+                <label class="left-element" for="postcode"
+                  >Postcode<span class="required">*</span>
+                  <input
+                    id="postcode"
+                    class="postcode"
+                    type="text"
+                    name="postcode"
+                    required
+                  />
+                </label>
+              </div>
+
+              <label class="color-heading" for="select-color"
+                >Select a colour:
+                <div class="karma-colors">
+                  <label class="container" for="karma-orange">
+                    <input
+                      type="radio"
+                      id="karma-orange"
+                      name="radio"
+                      checked="checked"
+                    />
+                    <span class="checkmark"></span>
+                    Karma orange</label
+                  >
+                  <label class="container" for="space-grey">
+                    <input type="radio" id="space-grey" name="radio" />
+                    <span class="checkmark"></span>
+                    Space Grey</label
+                  >
+                </div>
               </label>
-            </div>
-            <button class="get-karma">Place my order</button>
+              <div class="terms-group">
+                <input
+                  type="checkbox"
+                  class="checkbox-custom"
+                  id="terms"
+                  required="true"
+                />
+                <label for="terms"
+                  >By placing your order you agree Karma's
+                  <a href="#">Terms and Conditions</a> .
+                  <span class="required">*</span>
+                </label>
+              </div>
+              <button class="primary-button">Place my order</button>
+            </fieldset>
           </form>
         </div>
         <div class="image-container">
