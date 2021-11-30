@@ -6,9 +6,15 @@ font-family: 'Work Sans', sans-serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 0;
-  border: none;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,44 +24,71 @@ body {
 header,
 main,
 footer {
-  padding: 0 1.5rem;
-  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
 
 header {
+  width: 100%;
   height: 4.3rem;
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  overflow: hidden;
-  /* position: fixed; */
-  top: 0px;
   background-color: rgb(253, 253, 253);
-  /* width: 1056px; */
+}
+
+/* (A) BREAK INTO VERTICAL MENU */
+.nav-menu a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+
+/* (B) SHOW HAMBURGER ICON */
+.hamburger {
+  margin-right: 2rem;
+  position: relative;
+  width: 60px;
+  height: 40px;
+  align-items: center;
+}
+
+.hamburger label {
+  position: absolute;
+  top: 0;
+  left: 10;
+  display: inline-block;
+  color: rgb(49, 46, 46);
+  background: #f3f1f1;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+/* (C) TOGGLE SHOW/HIDE MENU */
+
+.hamburger input:checked ~ .nav-menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .logo-image {
   height: 40px;
   width: auto;
-  margin-left: 6rem;
-}
-
-.nav label,
-#hamburger {
-  display: none;
+  margin-left: 5rem;
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 5rem;
-  list-style: none;
-  font-size: 1rem;
-  font-weight: 400;
+  display: none;
 }
-
 .list-item {
   margin-left: 25px;
   padding: 0.5rem 0;
@@ -76,6 +109,7 @@ header {
 }
 
 main {
+  position: relative;
   /* margin-top: 5rem; */
 }
 
@@ -85,6 +119,8 @@ main {
   background-size: cover;
   background-position: center;
   height: 35rem;
+  min-width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -131,7 +167,7 @@ main {
 
 .product-cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0 5.5rem;
 }
 
@@ -157,36 +193,36 @@ main {
 }
 
 .quoto-section {
+  width: 100%;
+  height: auto;
   display: flex;
-  height: 350px;
+  flex-direction: column;
   align-items: center;
-  margin: 25px 0;
+  margin: 10px 0;
 }
 
 .quoto-image {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
-.quoto-section .quoto-container {
+.quoto-container {
   width: 100%;
   height: 350px;
+  margin: auto;
+  padding-top: 2.5rem;
+  display: block;
   background-color: rgba(224, 99, 58, 0.1);
   padding: 0 4.5rem;
 }
 
-.quoto-content {
-  margin: auto;
-  padding-top: 2.5rem;
-  display: block;
-}
-.quoto-content p {
+.quoto-container p {
   margin-top: 1.8rem;
   font-style: italic;
   font-size: 2.2rem;
 }
 
-.quoto-content span {
+.quoto-container span {
   color: #e0633a;
   padding: 0 5px;
 }
@@ -237,48 +273,52 @@ footer p {
   color: rgb(190, 180, 180);
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-@media only screen and (max-width: 600px) {
-}
-
 /* [ON SMALL SCREENS] */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
+  header,
+  main,
+  footer {
+    padding: 0 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
   .product-cards {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  /* (A) BREAK INTO VERTICAL MENU */
-  .nav-menu a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-top: 1px solid #333;
+
+  .nav {
+    margin-left: 20rem;
   }
 
-  /* (B) SHOW HAMBURGER ICON */
-  .nav label {
-    display: inline-block;
-    color: white;
-    background: #a02620;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
-
-  /* (C) TOGGLE SHOW/HIDE MENU */
-  .nav-menu {
+  .hamburger label,
+  #hamburger-input {
     display: none;
   }
-  .nav input:checked ~ .nav-menu {
-    display: block;
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .nav-menu a {
+    border: none;
+  }
+  .quoto-section {
+    flex-direction: row;
+  }
+  .quoto-image {
+    height: 100%;
+    width: 45%;
+  }
+
+  .quoto-container {
+    height: 20rem;
+    width: 55%;
   }
 }

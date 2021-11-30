@@ -22,39 +22,38 @@
   </head>
   <body>
     <header>
-      <div class="header">
-        <a class="header-logo" href="#">
-          <img
-            class="logo-image"
-            src="./img/karma-logo.svg"
-            alt="logo of karma"
-          />
-        </a>
-        <nav class="nav">
-          <!-- (B) THE HAMBURGER -->
-          <label for="hamburger">&#9776;</label>
-          <input type="checkbox" id="hamburger" />
-          <ul class="nav-menu">
-            <li class="list-item">
-              <a href="./index.html" class="nav-link nav-active">Meet Karma</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">How it Works</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">Store</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">Blog</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="nav-link">Help</a>
-            </li>
-            <li class="list-item">
-              <a href="./order.html" class="nav-link">Login</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="header-logo">
+        <img
+          class="logo-image"
+          src="./img/karma-logo.svg"
+          alt="logo of karma"
+        />
+      </div>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="list-item">
+            <a href="./index.html" class="nav-link nav-active">Meet Karma</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">How it Works</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">Store</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="nav-link">Help</a>
+          </li>
+          <li class="list-item">
+            <a href="./order.html" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger-input" />
       </div>
     </header>
     <main>
@@ -100,15 +99,13 @@
           src="./img/homepage-feature.jpg"
           alt="quoto image"
         />
-        <article class="quoto-container">
-          <div class="quoto-content">
-            <p>
-              <span>“</span>Wherever I am, I just don’t worry about my
-              connection anymore!<span>”</span>
-            </p>
-            <button class="get-karma">Get Karma today</button>
-          </div>
-        </article>
+        <blockquote class="quoto-container">
+          <p>
+            <span>“</span>Wherever I am, I just don’t worry about my connection
+            anymore!<span>”</span>
+          </p>
+          <button class="get-karma">Get Karma today</button>
+        </blockquote>
       </section>
     </main>
     <footer>
