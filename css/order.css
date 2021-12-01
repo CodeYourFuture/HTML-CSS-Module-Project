@@ -2,19 +2,6 @@
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'M PLUS 1p', sans-serif;
 font-family: 'Work Sans', sans-serif; */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: 0;
-  border: none;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  color: #666666;
-}
 
 .form-section {
   width: 100%;
@@ -32,13 +19,19 @@ body {
 
 .form-container {
   width: 50%;
+  height: 100%;
+  padding: 4rem;
   font-family: "M PLUS 1p", sans-serif;
   align-items: flex-start;
   text-align: start;
-  padding: 4rem 6rem;
 }
 
-.form-container h1 {
+fieldset {
+  padding-left: 1rem;
+  border: none;
+}
+
+.form-container .form-legend {
   color: #de6e49;
   font-size: 2.1rem;
   font-weight: 600;
@@ -49,58 +42,53 @@ body {
   border-radius: 4px;
 }
 
-.borders label {
-  display: flex;
-  margin-top: 18px;
-}
-
-.oneline-input {
-  display: flex;
-  justify-content: space-between;
+label,
+label > input {
+  color: #53514e;
+  font-size: 1.5vh;
+  display: block;
+  margin: 2%;
 }
 
 .required {
-  margin-left: 3px;
+  margin: 0 3px;
 }
+
+.left-element {
+  margin-left: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  min-width: 100%;
+}
+
 input[type="text"],
 input[type="email"],
 select {
-  width: 170px;
+  width: 100%;
   height: 35px;
   padding: 3px;
   margin: 8px 0;
-  display: inline-block;
+  display: block;
   border: 1px solid rgb(104, 101, 101);
   border-radius: 4px;
   box-sizing: border-box;
-  vertical-align: middle;
 }
 
-input.address {
-  width: 100%;
-}
-
-select {
-  width: 210px;
-  font-style: italic;
-  color: rgb(110, 107, 107);
-}
-
-input.postcode {
-  width: 130px;
-}
-
-.color {
+.select-color {
   display: flex;
   text-align: center;
 }
-.select-color {
+.karma-colors {
+  padding-top: 1rem;
   display: flex;
   justify-content: space-between;
   width: 80%;
 }
 
 .color-heading {
+  padding: 5px;
   margin: 30px 0;
 }
 
@@ -211,7 +199,7 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"]:checked + label:before {
   background-color: #fff;
   border: 2px solid #666666;
-  color: #e96f46;
+  color: #de6e49;
   font-weight: 700;
 }
 
