@@ -43,7 +43,7 @@
       </nav>
     </header>
     <main>
-      <div class="form-section">
+      <form class="form-section">
         <div class="details">
           <p>Order your Karma wifi device today!</p>
           <div class="details-style">
@@ -65,13 +65,11 @@
               <div class="city">
                 <label for="city" class="required">City</label>
                 <select class="dropdown" name="city-name" id="city">
-                  <option value="1" name="city-name">
+                  <option value="1" name="city-name" disabled selected>
                     Select your city...
                   </option>
+                  <option value="york" name="city-name">York</option>
                   <option value="london" name="city-name">London</option>
-                  <option value="manchester" name="city-name">
-                    Manchester
-                  </option>
                 </select>
               </div>
               <div class="postcode">
@@ -81,9 +79,20 @@
             </div>
             <div class="checks">
               <legend>Select a colour</legend>
-              <input id="karma-orange" type="radio" name="color" checked />
+              <input
+                id="karma-orange"
+                type="radio"
+                value="karma-orange"
+                name="color"
+                checked
+              />
               <label for="karma-orange">Karma orange</label>
-              <input id="space-grey" type="radio" name="color" />
+              <input
+                id="space-grey"
+                type="radio"
+                value="space-grey"
+                name="color"
+              />
               <label for="space-grey">Space Grey</label>
             </div>
             <div class="t-cs">
@@ -93,10 +102,10 @@
                 <a href="#">Terms and Conditions</a>. *
               </label>
             </div>
-            <button>Place my order</button>
+            <input type="submit" value="Place my order" />
           </div>
         </div>
-      </div>
+      </form>
       <div>
         <img
           class="side-img"

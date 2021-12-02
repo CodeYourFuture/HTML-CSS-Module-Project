@@ -55,11 +55,9 @@ body {
 
 main {
   display: flex;
-  width: 1440px;
-  height: 820px;
+  width: 100%;
 }
 .side-img {
-  display: absolute;
   width: 720px;
   height: 820px;
 }
@@ -223,7 +221,7 @@ label a {
   top: 2px;
 }
 
-button {
+input[type="submit"] {
   font-size: 1.3rem;
   margin-top: 22px;
   padding: 21px 34px;
@@ -270,4 +268,9 @@ footer img {
 .footer-p {
   color: rgb(156, 154, 154);
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  main {
+  }
 }
