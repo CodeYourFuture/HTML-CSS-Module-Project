@@ -51,7 +51,13 @@ p {
 .city_box {
   width: 65%;
 }
-
+select {
+  font-size: 1rem;
+}
+select:invalid {
+  color: #666666;
+  font-style: italic;
+}
 .post_box {
   width: 30%;
 }
