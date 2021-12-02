@@ -144,9 +144,21 @@ button a {
   margin: 1rem;
 }
 
-.social-icon {
+.social-container {
   display: flex;
   justify-content: center;
+}
+
+.social-container > a {
+    margin: 0 0.5em;
+    height: 1em;
+    border: solid 1px rgb(212, 212, 212);
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.social-container img {
+    height: 1em;
 }
 
 p {
