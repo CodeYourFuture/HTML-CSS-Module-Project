@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
@@ -44,7 +45,64 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section>
+        <div>
+          <h1>Order your Karma wifi device today!</h1>
+        </div>
+
+        <form action="">
+          <div>
+            <label for="first_name">First name *</label>
+            <input type="text" id="first_name" name="first_name" required />
+            <label for="last_name">Last name *</label>
+            <input type="text" id="last_name" name="last_name" required />
+          </div>
+          <div>
+            <label for="address">Address *</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div>
+            <label for="address2">Address 2</label>
+            <input type="text" id="address2" name="address2" />
+          </div>
+          <div>
+            <label for="city">City *</label>
+            <select id="city" name="city" required>
+              <option disabled hidden selected>Select your city...</option>
+              <option>London</option>
+            </select>
+            <label for="postcode">Postcode *</label>
+            <input type="text" id="postcode" name="postcode" required />
+          </div>
+          <div>
+            <p>Select a colour</p>
+            <label for="karma_orange"></label>
+            <input
+              type="radio"
+              id="karma_orange"
+              name="karma_orange-space_grey"
+            />
+            Karma Orange
+            <label for="space_grey"></label>
+            <input
+              type="radio"
+              id="space_grey"
+              name="karma_orange-space_grey"
+            />
+            Space Grey
+          </div>
+          <label>
+            <input type="checkbox" /> By placing your order you agree to Karma's
+            Terms and Conditions. *
+          </label>
+          <div>
+            <button type="submit">Place my order</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+    </main>
 
     <footer>
       <h3><b>Join us on</b></h3>
