@@ -11,6 +11,7 @@ body {
 /*header */
 .header {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 120px;
   background-color: rgb(233, 233, 233);
@@ -82,7 +83,7 @@ a:hover {
 }
 
 fieldset {
-  border: none;
+  border: solid 1px black;
   position: relative;
   top: 50px;
   margin-left: 150px;
@@ -96,7 +97,6 @@ input {
 .section-2 {
   display: flex;
   margin-left: 1020px;
-  background-color: magenta;
   margin-top: -650px;
   position: relative;
 }
@@ -108,29 +108,38 @@ input {
   background-repeat: no-repeat;
 }
 
-/* Radio Buttons */
-.radio_select label {
-  margin-right: 50px;
-  margin-left: 20px;
-}
-.radio_select input {
-  width: 20px;
-  height: 15px;
-  margin-left: -3px;
+/* Radio Button Position*/
+.radio_field {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+  margin-right: 1300px;
+  position: relative;
+  top: 70px;
 }
 
-/* Radio Button Position*/
-.radio_select {
-  position: relative;
-  top: 90px;
-  margin-left: 150px;
+.radio-button-wrapper {
+  margin: 45px 0px;
+}
+.radio-button-wrapper label {
+  margin-right: 140px;
+  margin-left: 10px;
+}
+.radio-button-wrapper input {
+  width: 15px;
+  height: 15px;
+  margin-left: -105px;
 }
 
 /* Checkbox */
 .terms {
+  display: flex;
+  border: solid 1px black;
   position: relative;
   margin-left: 150px;
-  bottom: -125px;
+  margin-right: 1300px;
+  bottom: -100px;
 }
 
 .terms input {
@@ -144,6 +153,7 @@ input {
 
 /*Place Order Button*/
 .button {
+  display: flex;
   position: relative;
   margin-left: 150px;
   bottom: -200px;
@@ -191,6 +201,4 @@ input {
   text-align: center;
   font-size: 15px;
   color: gray;
-  position: relative;
-  bottom: 30px;
 }

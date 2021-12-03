@@ -7,21 +7,23 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between;
   padding: 40px;
   margin-left: 100px;
 }
 
 /* Main Image*/
 .main_image {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 600px;
   position: relative;
-  top: -70px;
+  /*top: -70px;*/
 }
 
 */*Top Left Karma Logo*/
 .header__logo {
   height: 50px;
-  margin-right: 900px;
 }
 
 /*Top Right Navigation Links*/
@@ -71,17 +73,14 @@ a:hover {
   bottom: 75px;
 }
 .learn_more_button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   color: white;
   background-color: chocolate;
   border: none;
   border-radius: 5px;
-  padding: 20px 40px;
-  margin-left: 650px;
-  cursor: pointer;
-  transition: 0.8s;
-  position: relative;
-  bottom: 20px;
-  overflow: hidden;
+  padding: 20px 20px;
 }
 
 /*1st Section Heading*/
@@ -97,13 +96,16 @@ a:hover {
 /*1st Section Images*/
 .services_container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   max-height: 200px;
   padding: 100px;
   position: relative;
   bottom: 560px;
-  margin-left: 650px;
-  margin-right: 650px;
+}
+
+.align-img {
+  display: flex;
+  flex-direction: column;
 }
 
 /*1st Section Icon Descriptions*/
@@ -210,16 +212,28 @@ hr {
 }
 
 /*
-@media screen and (min-width: 992px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .main {
-    padding-right: 2rem;
-    padding-right: 10px;
-  }
+ /* Mobile Media Query*
+.services_container {
+  display: flex;
+  flex-direction: column;
 }
+
+*/
+/*
+@media screen and (min-width: 500px) {
+  .services_container {
+    display: flex;
+    flex-direction: row;
+  }
+}*/
+
+/*
+    Desktop
+    @media screen and (min-width: 800px) {
+        .services_container {
+
+        }
+    }
 */
 
 /**
