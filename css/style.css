@@ -16,9 +16,7 @@ header {
 .main_image {
   display: flex;
   flex-direction: column;
-  margin-bottom: 600px;
   position: relative;
-  /*top: -70px;*/
 }
 
 */*Top Left Karma Logo*/
@@ -34,7 +32,6 @@ a:hover {
 .navigation__list {
   display: flex;
   position: relative;
-  bottom: 25px;
 }
 
 .navigation__item {
@@ -51,7 +48,7 @@ a:hover {
 }
 
 /*Main*/
-.main_image {
+.hero {
   background-image: url("../img/first-background.jpg");
   padding: 200px;
   background-size: cover;
@@ -63,83 +60,81 @@ a:hover {
   font-size: 50px;
   letter-spacing: 0.8rem;
   position: relative;
-  bottom: 100px;
 }
 .wifi_promo {
   text-align: center;
   color: white;
   letter-spacing: 0.5rem;
   position: relative;
-  bottom: 75px;
+}
+
+.align_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .learn_more_button {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   color: white;
   background-color: chocolate;
   border: none;
   border-radius: 5px;
-  padding: 20px 20px;
+  padding: 25px 50px;
 }
 
 /*1st Section Heading*/
-.everyone_karma {
+
+.align_eve_karma_text {
+  display: flex;
+  justify-content: center;
   text-align: center;
+}
+.everyone_karma {
   position: relative;
   font-size: 50px;
   color: gray;
-  bottom: 500px;
   letter-spacing: 0.3rem;
 }
 
-/*1st Section Images*/
-.services_container {
+/*1st Section Images */
+.align-services-img {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  max-height: 200px;
-  padding: 100px;
-  position: relative;
-  bottom: 560px;
 }
 
-.align-img {
+.services_img {
   display: flex;
-  flex-direction: column;
+  max-height: 200px;
 }
 
 /*1st Section Icon Descriptions*/
 .icon_desc {
-  display: flex;
-  justify-content: space-evenly;
   letter-spacing: 3px;
-  position: relative;
   color: gray;
-  bottom: 660px;
-  margin-left: 250px;
-  margin-right: 350px;
+}
+
+.feature_logo_container {
+  display: flex;
 }
 
 /* Feature Section */
 .text_container {
   display: flex;
   flex-direction: row;
-  align-content: center;
+  justify-content: center;
 }
 /*Wherever Text*/
 .wherever_text {
   text-align: center;
   position: relative;
   color: gray;
-  bottom: 850px;
-  margin-left: 1000px;
 }
 
 /* Feature Logo */
 .feature_logo {
   background-color: rgb(247, 239, 244);
   position: relative;
-  bottom: 500px;
   height: auto;
 }
 
@@ -156,13 +151,12 @@ a:hover {
   cursor: pointer;
   transition: 0.8s;
   position: relative;
-  top: 50px;
 }
 
 /* Underline */
 hr {
   position: relative;
-  bottom: 350px;
+
   width: 80%;
   border: none;
   height: 1px;
@@ -176,8 +170,6 @@ hr {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  height: 100px;
-  margin-top: -200px;
 }
 
 /* Join Us On */
@@ -187,19 +179,18 @@ hr {
   color: gray;
   letter-spacing: 0.1rem;
   position: relative;
-  bottom: 75px;
 }
 
 /*  2nd Section Images */
 .media_icons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   max-height: 20px;
   max-width: 20px;
   margin-left: 425px;
   margin-right: -350px;
   position: relative;
-  bottom: 25px;
 }
 
 .footer_end {
@@ -208,7 +199,6 @@ hr {
   font-size: 15px;
   color: gray;
   position: relative;
-  bottom: 50px;
 }
 
 /*
