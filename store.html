@@ -11,100 +11,102 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Top Left Karma Logo -->
-   <header class="header">
-          <img src="img\karma-logo.svg" alt="karma logo"  class="header_logo"/>
-       <nav>
-        <ul class="navigation__list">
-            <li class="navigation__item">
-                <a class="navigation__link" style="color:darkslategrey" href="#">Meet Karma</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">How It Works</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Store</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Blog</a>
-            </li>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Help</a>
-            <li class="navigation__item">
-                <a class="navigation__link" href="#">Login</a>
-            </li>
-            </li>
-        </ul>
+    <header class="header">
+        <img src="img\karma-logo.svg" alt="karma logo" class="header_logo" />
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" style="color:darkslategrey" href="#">Meet Karma</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">How It Works</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Store</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Help</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Login</a>
+                </li>
+                </li>
+            </ul>
 
-       </nav>
-   </header>
-   
-   <main>
-       <section class="section-1">
-           
-        <h1 class="head_title">Order Your Karma wifi<br>device today! </h1>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main Title -->
+        <section class="section-1">
+            <h1 class="head_title">Order Your Karma wifi<br>device today! </h1>
         </section>
 
-            <section >
-                <form action="">
-                    <fieldset class="fieldset">
-                        
+        <!--Form FieldSet -->
+        <section>
+            <form action="">
+                <fieldset class="fieldset">
+
                     <div class="form_details">
                         <div class="align_form">
-                        <label for="fname">First name<span> *</span></label><br>
-                        <input type="text" id="fname" name="fname" required>
+                            <label for="fname">First name<span> *</span></label><br>
+                            <input type="text" id="fname" name="fname" required>
                         </div>
                         <br>
                         <div class="align_form">
-                        <label for="lname">Last name<span> *</span></label><br>
-                        <input type="text" id="lname" name="lname" required><br><br>
+                            <label for="lname">Last name<span> *</span></label><br>
+                            <input type="text" id="lname" name="lname" required><br>
                         </div>
                         <br>
                     </div>
-                    
+
                     <div class="address_details">
                         <div class="align_form">
-                        <label for="address">Address<span> *</span></label><br>
-                        <input type="text" id="address" name="address" required><br><br>
+                            <label for="address">Address<span> *</span></label><br>
+                            <input type="text" id="address" name="address" required><br><br>
                         </div>
                         <br>
 
                         <div class="align_form">
-                        <label for="address 2">Address 2</label><br>
-                        <input type="text" id="address" name="address"><br><br>
+                            <label for="address 2">Address 2</label><br>
+                            <input type="text" id="address" name="address"><br><br>
                         </div>
                         <br>
                     </div>
 
                     <div class="form_details">
                         <div class="align_form">
-                        <label for="city">City<span> *</span></label><br>
-                        
-                        <select value=“”>
-                            <option value="none">Select Your City...</option>
-                            <option value=">London">London</option>
-                            <option value="Birmingham">Birmingham</option>
-                            <option value="Manchester">Manchester</option>
-                            <option value="Newcastle">Newcastle</option>
-                        </select>
+                            <label for="city">City<span> *</span></label><br>
+
+                            <select value=“”>
+                                <option value="none">Select Your City...</option>
+                                <option value=">London">London</option>
+                                <option value="Birmingham">Birmingham</option>
+                                <option value="Manchester">Manchester</option>
+                                <option value="Newcastle">Newcastle</option>
+                            </select>
                         </div>
                         <br>
                         <div class="align_form">
-                        <label for="postcode">Postcode<span> *</span></label><br>
-                        <input type="text" id="postcode" name="postcode" required><br><br>
+                            <label for="postcode">Postcode<span> *</span></label><br>
+                            <input type="text" id="postcode" name="postcode" required><br><br>
                         </div>
                         <br>
                     </div>
-                    </fieldset>
-                
-                </form>
-                
-            </section>
-         
+                </fieldset>
+
+            </form>
+
+        </section>
+
         <!-- Radio Buttons for selecting color-->
         <section class="radio_field">
-        
+
             <legend>Select a colour </legend>
             <br>
             <div class="radio-button-wrapper">
@@ -112,37 +114,38 @@
                 <label for="orange">Karma orange</label>
                 <div class="check"></div>
             </div>
-        
+
             <div class="radio-button-wrapper">
                 <input type="radio" name="select-color" id="grey">
                 <label for="grey">Space Grey</label><br>
                 <div class="check"></div>
             </div>
         </section>
-           
-        
+
+
         <!-- Checkbox to accept Terms and Conditions-->
         <section class="terms">
             <input type="checkbox" id="terms" name="terms">
-            <label for="terms">By placing your order you agree to Karma's <a href=“#”>Terms and <br>Conditions.</a><span> *</span>
+            <label for="terms">By placing your order you agree to Karma's <a href=“#”>Terms and
+                    <br>Conditions.</a><span> *</span>
             </label>
         </section>
 
-       
+
         <button class="button">Place my order</button>
-    
+
 
         <!-- Image of woman working at a desk-->
         <section class="section-2">
-          <img class="working_desk" src="img\store-image_by-andrew-neel-unsplash.jpg" />
+            <img class="working_desk" src="img\store-image_by-andrew-neel-unsplash.jpg" />
         </section>
-       
-   </main>
+
+    </main>
     <!-- footer -->
     <footer class="footer_start">
         <!-- Join Us On -->
         <h6 class="footer_heading"> Join us on</h6>
-    
+
         <!-- Media Images -->
         <div class="media_icons">
             <img class="media_icons" src="img\twitter-icon.svg" alt="twitter-icon" />
@@ -153,4 +156,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -30,6 +30,7 @@ a:hover {
   color: orange;
 }
 
+/* Nav Bar */
 .navigation__list {
   display: flex;
   position: relative;
@@ -53,11 +54,12 @@ a:hover {
 
 /*first section order page*/
 .section-1 {
+  border: solid 1px black;
   display: flex;
+  justify-content: flex-start;
   margin-left: 150px;
-  margin-right: 900px;
   position: relative;
-  top: 50px;
+  /*top: 50px;*/
   color: orangered;
 }
 
@@ -89,7 +91,7 @@ fieldset {
   margin-right: 1300px;
 }
 input {
-  margin: -5px;
+  /*margin: -5px;*/
 }
 
 /*image*/

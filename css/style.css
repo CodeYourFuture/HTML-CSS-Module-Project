@@ -82,117 +82,129 @@ a:hover {
   padding: 25px 50px;
 }
 
-/*1st Section Heading*/
-
-.align_eve_karma_text {
+/* Services - Section Heading*/
+.align_services_karma_text {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.everyone_karma {
+
+/* h1 Everyone Karma */
+.heading_karma {
   position: relative;
   font-size: 50px;
   color: gray;
   letter-spacing: 0.3rem;
 }
 
-/*1st Section Images */
+/* Services Section Align */
 .align-services-img {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
+/* Services Section Images */
 .services_img {
   display: flex;
-  max-height: 200px;
+  height: auto;
+  padding: 5rem;
 }
 
-/*1st Section Icon Descriptions*/
-.icon_desc {
-  letter-spacing: 3px;
-  color: gray;
-}
-
-.feature_logo_container {
-  display: flex;
-}
-
-/* Feature Section */
-.text_container {
+/* Services Icon Description */
+.align_icon_desc {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-/*Wherever Text*/
-.wherever_text {
-  text-align: center;
-  position: relative;
+/* Services - Icon Descriptions */
+.service_icon_desc {
+  letter-spacing: 3px;
   color: gray;
 }
 
-/* Feature Logo */
-.feature_logo {
-  background-color: rgb(247, 239, 244);
+/* Extended Section Container */
+.extended_img_container {
+  display: flex;
+  justify-content: space-around;
+  /*margin: 2rem;*/
+}
+/* Extended Feature Img */
+.feature_img {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(153, 88, 139);
   position: relative;
-  height: auto;
 }
 
+/* Feature Text */
+.feature_text_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* Feature Section Text*/
+.feature_text {
+  text-align: center;
+  color: gray;
+  padding: 3rem;
+}
+/* Feature Section Button*/
 .get_more_button {
   background-color: chocolate;
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 12px 28px;
+  padding: 24px 40px;
+  margin: 5rem;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
   transition: 0.8s;
-  position: relative;
 }
 
 /* Underline */
 hr {
   position: relative;
-
   width: 80%;
   border: none;
   height: 1px;
   color: rgb(15, 15, 15);
-  background-color: ghostwhite;
+  background-color: rgb(10, 10, 10);
 }
 
-/*footer*/
+/* Footer- Start*/
 .footer_start {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  position: relative;
 }
 
-/* Join Us On */
+/* Footer - Join Us On */
 .footer_heading {
   text-align: center;
   font-size: 15px;
   color: gray;
   letter-spacing: 0.1rem;
-  position: relative;
 }
 
-/*  2nd Section Images */
-.media_icons {
+/* Footer Align Images */
+.media_image_align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+/* Footer Media Images */
+.media_icon_img {
   display: flex;
   flex-direction: row;
   justify-content: center;
   max-height: 20px;
   max-width: 20px;
-  margin-left: 425px;
-  margin-right: -350px;
-  position: relative;
 }
-
+/* Footer End Company Mark */
 .footer_end {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
