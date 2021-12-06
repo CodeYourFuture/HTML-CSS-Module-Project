@@ -12,13 +12,6 @@ header {
   margin-left: 100px;
 }
 
-/* Main Image*/
-.main_image {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 */*Top Left Karma Logo*/
 .header__logo {
   height: 50px;
@@ -47,13 +40,14 @@ a:hover {
   margin: 30px;
 }
 
-/*Main*/
+/* hero */
 .hero {
   background-image: url("../img/first-background.jpg");
   padding: 200px;
   background-size: cover;
 }
-.main_intro {
+/*main hero heading */
+.main_heading {
   text-align: center;
   padding-top: 100px;
   color: white;
@@ -61,6 +55,7 @@ a:hover {
   letter-spacing: 0.8rem;
   position: relative;
 }
+/* wifi promotion text */
 .wifi_promo {
   text-align: center;
   color: white;
@@ -68,6 +63,7 @@ a:hover {
   position: relative;
 }
 
+/*Learn More Button */
 .align_button {
   display: flex;
   flex-direction: row;
@@ -90,7 +86,7 @@ a:hover {
   text-align: center;
 }
 
-/* h1 Everyone Karma */
+/* h1 everyone karma */
 .heading_karma {
   position: relative;
   font-size: 50px;
@@ -103,12 +99,15 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
-/* Services Section Images */
+/*services section images */
 .services_img {
   display: flex;
-  height: auto;
-  padding: 10rem;
+  padding: 0 5rem 0 5rem;
+  width: 15rem;
+  height: 15rem;
 }
 
 /* Services Icon Description */
@@ -117,24 +116,25 @@ a:hover {
   flex-direction: row;
   justify-content: center;
 }
-/* Services - Icon Descriptions */
+/* services icons desc */
 .service_icon_desc {
-  letter-spacing: 3px;
-  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 /* Extended Section Container */
 .extended_img_container {
   display: flex;
-  justify-content: space-around;
-  /*margin: 2rem;*/
 }
 /* Extended Feature Img */
 .feature_img {
   display: flex;
   justify-content: flex-start;
-  background-color: rgb(153, 88, 139);
   position: relative;
+  width: 60%;
 }
 
 /* Feature Text */
