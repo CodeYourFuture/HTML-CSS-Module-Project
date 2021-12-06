@@ -11,18 +11,17 @@ body {
 /*header */
 .header {
   display: flex;
-  width: 100%;
-  height: 120px;
+  justify-content: space-between;
   background-color: rgb(233, 233, 233);
+  padding: 1rem;
 }
 
 /*header_logo*/
 .header_logo {
+  display: flex;
+  justify-content: flex-start;
   height: 75px;
   margin-left: 150px;
-  top: -25px;
-  position: relative;
-  top: 25px;
 }
 
 /*Top Right Navigation Links*/
@@ -33,10 +32,6 @@ a:hover {
 /* Nav Bar */
 .navigation__list {
   display: flex;
-  position: relative;
-  bottom: 25px;
-  margin-left: 750px;
-  top: 30px;
 }
 
 .navigation__item {
@@ -52,69 +47,46 @@ a:hover {
   margin: 30px;
 }
 
-/*first section order page*/
-.section-1 {
-  border: solid 1px black;
+.flex-container {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 150px;
-  position: relative;
-  /*top: 50px;*/
-  color: orangered;
 }
 
+.main-content {
+  margin: 1rem;
+}
+/*first section main title*/
+.head-title_container {
+  border: solid 1px black;
+  margin-left: 9rem;
+  margin-top: 2rem;
+  color: orangered;
+}
 .head_title {
-  /*display: flex;*/
   color: orangered;
 }
 
+/* Address Form */
+.fieldset {
+  margin-left: 9rem;
+}
 .form_details {
   display: flex;
   justify-content: space-between;
-  top: 25px;
 }
 .align_form {
   display: flex;
   flex-direction: column;
 }
-
-.address_details {
-  display: flex;
-  flex-direction: column;
-}
-
-fieldset {
-  border: solid 1px black;
-  position: relative;
-  top: 50px;
-  margin-left: 150px;
-  margin-right: 1300px;
-}
-input {
-  /*margin: -5px;*/
-}
-
-/*image*/
-.section-2 {
-  display: flex;
-  margin-left: 1020px;
-  margin-top: -740px;
-  position: relative;
-}
-/*working at desk image*/
-.working_desk {
-  width: 1000px;
-  height: 900px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+/*input,
+label {
+  margin-right: 1rem;
+}*/
 
 /* Radio Button Position*/
 .radio_field {
-  top: 50px;
   display: flex;
   flex-direction: row;
-  margin-left: 150px;
+  margin-left: 9rem;
   position: relative;
 }
 
@@ -176,15 +148,11 @@ input[type="radio"]:checked ~ .check::before {
 
 /* Checkbox */
 .terms {
-  bottom: -70px;
   display: flex;
   position: relative;
-  margin-left: 150px;
+  margin-left: 9rem;
 }
-.terms input {
-  margin: 2px;
-  margin-left: 2px;
-}
+
 .terms a {
   color: orangered;
 }
@@ -221,12 +189,14 @@ input[type="checkbox"]:checked {
   display: block;
 }*/
 
-/*Place Order Button*/
-.button {
+.button_container {
   display: flex;
   position: relative;
-  margin-left: 150px;
-  bottom: -100px;
+  margin: 3rem;
+  margin-left: 9rem;
+}
+/*Place Order Button*/
+.button {
   color: white;
   background-color: orangered;
   border: none;
@@ -234,45 +204,66 @@ input[type="checkbox"]:checked {
   padding: 20px 40px;
 }
 
-/*footer*/
-.footer_start {
+/*Image container*/
+.img-container {
+  margin-left: 13rem;
+}
+
+/*working at desk image*/
+.working_desk {
+  width: 1000px;
+  height: 900px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Underline 
+hr {
+  position: relative;
+  width: 80%;
+  border: none;
+  height: 1px;
+  color: rgb(15, 15, 15);
+  background-color: rgb(10, 10, 10); 
+}*/
+
+/* Footer- Start*/
+.footer_container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  position: relative;
   height: 100px;
   margin-top: 100px;
 }
-
-/* Join Us On */
+/* Footer - Join Us On */
 .footer_heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   text-align: center;
   font-size: 15px;
   color: gray;
   letter-spacing: 0.1rem;
-  position: relative;
-  bottom: 75px;
+  padding: 1rem;
 }
-
-/*  2nd Section Images */
-.media_icons {
+/* Footer Align Images */
+.media_image_align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Footer Media Images */
+.media_icon_img {
   display: flex;
   flex-direction: row;
   justify-content: center;
   max-height: 20px;
   max-width: 20px;
-  margin-left: 425px;
-  margin-right: -350px;
-  position: relative;
-  bottom: 30px;
+  padding: 1.5rem;
 }
-
+/* Footer End Company Mark */
 .footer_end {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 15px;
   color: gray;
+  position: relative;
+  padding: 1rem;
 }

@@ -80,6 +80,7 @@ a:hover {
   border: none;
   border-radius: 5px;
   padding: 25px 50px;
+  margin-top: 2rem;
 }
 
 /* Services - Section Heading*/
@@ -107,7 +108,7 @@ a:hover {
 .services_img {
   display: flex;
   height: auto;
-  padding: 5rem;
+  padding: 10rem;
 }
 
 /* Services Icon Description */
@@ -175,12 +176,11 @@ hr {
 }
 
 /* Footer- Start*/
-.footer_start {
+.footer_container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
 /* Footer - Join Us On */
 .footer_heading {
   text-align: center;
@@ -188,13 +188,11 @@ hr {
   color: gray;
   letter-spacing: 0.1rem;
 }
-
 /* Footer Align Images */
 .media_image_align {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1rem;
 }
 /* Footer Media Images */
 .media_icon_img {
@@ -203,6 +201,7 @@ hr {
   justify-content: center;
   max-height: 20px;
   max-width: 20px;
+  padding: 1.5rem;
 }
 /* Footer End Company Mark */
 .footer_end {
