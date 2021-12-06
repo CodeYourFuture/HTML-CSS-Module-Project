@@ -1,9 +1,15 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+  --orange-karma: #f26639;
+  --cream-karma: #f2f2f3;
+  --linen-karma: #fcefeb;
+  --navigation-karma: gray;
+  --text-karma: white;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +22,202 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*HEADER*/
 
+header {
+  display: flex;
+  padding: 0 5rem;
+  justify-content: space-between;
+}
+
+/*Karma Logo*/
+
+header img {
+  height: 3rem;
+  width: 3rem;
+  margin-top: 10px;
+}
+
+/*NAVIGATION*/
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+li {
+  padding: 0.5rem;
+}
+
+a {
+  color: var(--navigation-karma);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange-karma);
+}
+
+/*Intro Image*/
+
+.intro {
+  display: flex;
+  background-image: url("../img/first-background.jpg");
+  padding: 15.5rem 0;
+  color: var(--text-karma);
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 6rem;
+}
+
+/*Intro Text*/
+
+h1,
+h2,
+h3,
+.intro p {
+  font-weight: lighter;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 1.5rem;
+}
+
+/*Intro Button*/
+
+button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--orange-karma);
+  color: var(--text-karma);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+/*MAIN*/
+
+/*Main Text*/
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/*Karma Icon Style*/
+
+.karma_icon_style {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 3rem;
+}
+
+.karma_icon_direction {
+  flex-direction: column;
+}
+
+.karma_icon_images {
+  display: flex;
+  height: 50%;
+  margin: auto;
+  padding: 0rem 0.5rem;
+}
+
+/*Karma Feature*/
+
+.karma_feature {
+  display: flex;
+  justify-content: center;
+}
+
+.karma_feature_image {
+  display: flex;
+  width: 100%;
+}
+
+.wherever_i_am {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--linen-karma);
+  padding: 0rem 4rem;
+}
+
+q {
+  font-size: 1.5rem;
+}
+
+q::before,
+q::after {
+  color: var(--orange-karma);
+  font-size: 2rem;
+}
+
+/*Horizontal Rule*/
+
+hr {
+  width: 90%;
+  opacity: 25%;
+}
+
+/*FOOTER*/
+
+/*Social Media Style*/
+
+.social_media {
+  display: flex;
+  justify-content: center;
+}
+
+.social_media img {
+  height: 100%;
+}
+
+.social_media_images {
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin: 0rem 0.5rem;
+  border: 2px solid var(--cream-karma);
+  border-radius: 30px;
+}
+
+.karma_mobility {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  opacity: 25%;
+}
+
+/*MEDIA QUERY*/
+
+.media_query {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 480px) {
+  .media_query {
+    flex-direction: column;
+  }
+  .karma_icon_style {
+    flex-direction: column;
+  }
+}
