@@ -33,13 +33,11 @@ a:hover {
 .navigation__list {
   display: flex;
 }
-
 .navigation__item {
   color: silver;
   padding: 0;
   display: flex;
 }
-
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -47,13 +45,14 @@ a:hover {
   margin: 30px;
 }
 
+/* Main Flex Container */
 .flex-container {
   display: flex;
 }
-
 .main-content {
   margin: 1rem;
 }
+
 /*first section main title*/
 .head-title_container {
   border: solid 1px black;
@@ -77,74 +76,56 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-/*input,
-label {
-  margin-right: 1rem;
-}*/
 
 /* Radio Button Position*/
 .radio_field {
+  border: solid 1px black;
   display: flex;
   flex-direction: row;
   margin-left: 9rem;
-  position: relative;
 }
-
 .radio-button-wrapper {
   margin: 45px 0px;
 }
 .radio-button-wrapper label {
-  margin-right: 140px;
+  margin-right: 120px;
   margin-left: 10px;
 }
 .radio-button-wrapper input {
   width: 15px;
   height: 15px;
-  margin-left: -105px;
+  margin-left: -50px;
 }
-
-/*Hide the Radio Button 
 input[type="radio"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-div.check {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
+  appearance: none;
   background-color: #fff;
-  border: 2px solid #666666;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.1em solid currentColor;
   border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transform: translateY(0.2em);
 }
-
-div.check:hover input ~ .check {
-  background-color: #f0f0f0;
-}
-
-div.check:after {
+input[type="radio"]::before {
   content: "";
-  position: absolute;
-  display: none;
-}
-
-.radio_field input:checked ~ .check:after {
-  display: block;
-}
-.radio_field .check:after {
-  top: 2px;
-  left: 2px;
-  width: 12px;
-  height: 12px;
+  width: 0.65em;
+  height: 0.65em;
   border-radius: 50%;
-  background: #e0633a;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-colour);
+  background-color: CanvasText;
 }
-
-input[type="radio"]:checked ~ .check::before {
-  background-color: orangered;
-}*/
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+:root {
+  --form-control-colour: #e0633a;
+}
 
 /* Checkbox */
 .terms {
@@ -185,17 +166,14 @@ input[type="checkbox"]:hover {
 input[type="checkbox"]:checked {
   background-color: white;
 }
-/*input[type="checkbox"]:checked:after {
-  display: block;
-}*/
 
+/*Place Order Button*/
 .button_container {
   display: flex;
   position: relative;
   margin: 3rem;
   margin-left: 9rem;
 }
-/*Place Order Button*/
 .button {
   color: white;
   background-color: orangered;
