@@ -24,7 +24,7 @@ https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1-Solution
 
 ### 1.2) Using the Solutions Repo
 
-In these repositories you will find solutions to each weeks coursework. These solutions are example answers and will not be the exact solution that students give. You should use it to inform your feedback of the coursework.
+In these repositories you will find solutions to each week's coursework. These solutions are example answers and will not be the exact solution that students give. You should use it to inform your feedback of the coursework.
 
 Additionally, you will find marking guides in these places
 
@@ -48,7 +48,7 @@ https://syllabus.codeyourfuture.io/guides/marking-guide
 
 This guide should be used when you see a student making a common mistake so instead of writing out a reply you can send them to the a good resource.
 
-For example, if the student is leaving in lots of comments out code you could write
+For example, if the student is leaving in lots of commented out code you could write
 
 ```txt
 Great work so far!
