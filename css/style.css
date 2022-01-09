@@ -1,19 +1,179 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+  body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
+  }
+  /* Button */
+  button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #c05326;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px !important;
+    padding: 0.9rem;
+    letter-spacing: 1px;
+  }
+  button:hover {
+    background-color: #ee9d7a;
+    color: #000; 
+  }
+  /*Logo postion */
+  .navigation__logo {
+    margin-right: 26rem !important;
+  }
+  /* Navbar */
+   .navbar-light .navbar-toggler {
+     border: 0;
+     right: 0;
+   }
+   
+   .navbar-light .navbar-nav .nav-link {
+     color: #292b2c;
+     font-weight: 600;
+     font-size: 1.1rem;
+     margin: 0.6em;
+   }
+   .navbar-light a:hover { 
+       color: #d46c3f!important;
+    }
+   /* Banner */
+   .jumbotron {
+     background-image: url("../img/first-background.jpg");
+     background-size: 100% 100%;
+     border-radius: 0 !important;
+     color: #fff;
+     width: 100%;
+     height: 700px;
+     max-width: 1900px; 
+   }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+   .jumbotron__text {
+    text-align: center !important;
+    margin-top: 160px;
+    font-weight: 300 !important;
+    line-height: 2 !important;
+    letter-spacing: 2px;
+   }
+   .jumbotron__text h1 {
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+   }
+   .jumbotron__text p {
+     font-size: 1.2rem !important;
+     
+  }
+
+   /* Headings */
+   
+   .heading {
+     position: relative;
+     margin-bottom: 1em;
+     margin-top: 2em;
+     color: #1d1e21;
+     font-size: 2rem;
+     font-weight: 400;
+     text-align: center;
+   }
+   
+   /* Icon Main */
+  
+   .icon-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .icon {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     
+   }
+   
+   .icon__image {
+     object-fit: contain;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 8em;
+     height: 8em;
+   }
+   
+   .icon__body {
+     margin: 2em;
+     
+   }
+   .icon__title {
+     margin-bottom: 0.5em;
+     font-size: 1rem;
+     font-weight: 500;
+     margin-top: 1.2em;
+   }
+
+   /* Footer */
+   
+   .footer {
+     margin: 2em;
+   }
+   
+   .footer h2 {
+     border-top: 1px solid #dccdc6;
+     padding-top: 0.8em;
+     padding-bottom: 0.1em;
+     font-size: 1.5rem;
+   }
+   .media_icon{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+   }
+
+   .social_media {
+     margin: 8px;
+     width: 2.2em;
+     height: 2.2em;
+     border: 1px solid #90afce;
+     border-radius: 50px;
+     padding: 7px;
+   }
+   .footer p {
+     color: #65738a;
+     font-size: 1rem;
+  }
+  
+  @media (max-width: 1200px){
+    .jumbotron  {
+     background-image: url("../img/first-background.jpg");
+     background-size: 100% 100%;
+     border-radius: 0 !important;
+     color: #fff;
+     width: 100%;
+     height: 100%;
+     max-width: 1200px;              
+   }
+  }
+
+  @media (max-width: 992px){
+    .icon-content {
+      flex-direction: column;}
+  }
+
+  @media (max-width: 1200px){
+    .jumbotron__text {
+      text-align: center !important;
+      margin: 50px;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif !important;
+     }
+  }
+
+  @media (max-width: 1200px){
+    .navbar-light .navbar-nav .nav-link  {
+      font-size: 1rem !important;
+      margin: 0 !important;              
+   }
+  }
 
 
