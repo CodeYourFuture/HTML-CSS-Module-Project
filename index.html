@@ -1,63 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->    
+    <!-- All the images you need are in the 'img' folder -->
     <header>
-        <img src="img/karma-logo.svg">
-        <a href="#"><img src="img/menu-hamburger.svg"></a>
-        <nav>
-            <ul> 
-                <li><a href="#Login">Login</a></li>
-                <li><a href="#Help">Help</a></li>
-                <li><a href="#Blog">Blog</a></li>
-                <li><a href="#Store">Store</a></li>
-                <li><a href="#HowitWorks">How it Works</a></li>
-                <li>Meet Karma</li>
-            </ul>
-        </nav>
+      <img src="img/karma-logo.svg" />
+      <a href="#"><img src="img/menu-hamburger.svg" /></a>
+      <nav>
+        <ul>
+          <li><a href="#Login">Login</a></li>
+          <li><a href="#Help">Help</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="#HowitWorks">How it Works</a></li>
+          <li><a class="selected" href="index.html">Meet Karma</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <p>Introducing Karma</p>
-        <p>Bring WiFi with you, everywhere you go.</p>
-        <button>Learn More</button>
-    </main>    
+      <p>Introducing Karma</p>
+      <p>Bring WiFi with you, everywhere you go.</p>
+      <button>Learn More</button>
+    </main>
     <section>
-        <div class="section_header">
-            Everyone needs a little Karma.
+      <div class="section_header">
+        Everyone needs a little Karma.
+      </div>
+      <div class="section_content">
+        <div>
+          <img src="img/icon-devices.svg" />
+          <p>Internet for all devices</p>
         </div>
-        <div class="section_content">
-            <div>
-                <img src="img/icon-devices.svg">
-                <p>Internet for all devices</p>
-            </div>
-            <div>
-                <img src="img/icon-coffee.svg">
-                <p>Boost your productivity</p>
-            </div>
-            <div>
-                <img src="img/icon-refill.svg">
-                <p>Pay as You Go</p>
-            </div>
+        <div>
+          <img src="img/icon-coffee.svg" />
+          <p>Boost your productivity</p>
         </div>
+        <div>
+          <img src="img/icon-refill.svg" />
+          <p>Pay as You Go</p>
+        </div>
+      </div>
+    </section>
+    <section class="section_extended">
+      <div>
+        <img src="img/homepage-feature.png" />
+      </div>
+      <div>
+        <p>
+          <i>"</i>
+          Wherever I am, I just don’t worry about my connection anymore!
+          <i>"</i>
+        </p>
+        <button>Get Karma today</button>
+      </div>
     </section>
     <footer>
-        <hr>
-        <p>Join us on</p>
-        <a href="#"><img src="img/twitter-icon.svg"></a>
-        <a href="#"><img src="img/facebook-icon.svg"></a>
-        <a href="#"><img src="img/instagram-icon.svg"></a>
-        <p>@Karma Mobility, Inc.</p>
+      <hr />
+      <p>Join us on</p>
+      <div class="no_border">
+        <div>
+          <a href="#"><img src="img/twitter-icon.svg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/facebook-icon.svg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/instagram-icon.svg" /></a>
+        </div>
+      </div>
+      <p>@Karma Mobility, Inc.</p>
     </footer>
-</body>
+  </body>
 </html>

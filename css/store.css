@@ -1,0 +1,320 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+/* Mobile size */
+@media screen and (max-width: 836px) {
+  body {
+    width: fit-content;
+  }
+  header {
+    display: block;
+    margin: 0;
+    height: 70px;
+  }
+
+  header img {
+    height: 60%;
+    margin: -70px;
+  }
+
+  header img:last-child {
+    height: 20px;
+    right: 200px;
+    position: fixed;
+    width: max-content;
+    top: 109px;
+    display: block;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header a:hover {
+    color: lawngreen;
+  }
+
+  section {
+    margin: 50px 0px 50px;
+    text-align: center;
+  }
+
+  .section_header {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .section_content div {
+    font-size: 16px;
+    width: 180px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .section_content img {
+    padding: 0 46px;
+  }
+
+  .section_content div:hover {
+    transform: scale(1.2);
+  }
+
+  .section_content div {
+    transition: transform 750ms;
+    will-change: transform;
+  }
+
+  .section_extended {
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  main {
+    padding: 0;
+    flex-wrap: wrap;
+    margin: -24px -100px;
+  }
+  .sectionImage {
+    width: 100%;
+  }
+  .sectionForm {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 837px) {
+  header img {
+    height: 60%;
+    margin: 12px;
+  }
+
+  header img:last-child {
+    display: none;
+  }
+
+  main {
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+  .sectionImage {
+    width: 50%;
+  }
+  .sectionForm {
+    width: 50%;
+  }
+}
+
+header {
+  display: flex;
+  margin: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+header ul li {
+  float: right;
+  padding: 20px;
+  color: rgb(43, 43, 43);
+}
+
+header li a {
+  display: block;
+  color: gray;
+  text-decoration: none;
+}
+
+.selected {
+  color: black;
+}
+
+section {
+  margin: 100px 50px 25px;
+  text-align: center;
+}
+
+.section_header {
+  font-size: 46px;
+}
+.section_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section_content img {
+  padding: 0 20%;
+}
+
+.section_content div {
+  font-size: 1.4rem;
+  width: 15rem;
+  margin: 40px;
+}
+
+.section_extended {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.full {
+  width: 100%;
+}
+
+main p:first-child {
+  margin: 0;
+}
+
+.sectionForm {
+  color: #e0633a;
+  padding: 20px 122px;
+  left: 0px;
+}
+
+.sectionImage {
+  background-image: url('../img/store-image_by-andrew-neel-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-position: top right;
+  right: 0px;
+  height: 560px;
+}
+
+form {
+  color: black;
+}
+.name {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+select {
+  height: auto;
+  padding: 5px;
+  align-content: stretch;
+}
+
+.city {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.radio {
+  padding: 0px 6px;
+}
+
+input {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  box-sizing: border-box;
+}
+#grey,
+#orange {
+  padding: 0 15px;
+}
+
+input[type='checkbox'] {
+  margin-top: 20px;
+}
+
+button,
+input[type='submit'] {
+  background: orangered;
+  padding: 15px 20px;
+  border: none;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  margin-top: 40px;
+}
+
+footer {
+  margin: 0 10%;
+  text-align: center;
+}
+
+footer hr {
+  height: 1px;
+  border: none;
+  background-color: rgb(208, 208, 253);
+}
+
+footer div {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.no_border {
+  border: none;
+  width: auto;
+}
+
+footer img {
+  width: 20px;
+  padding: 10px;
+}
+
+footer p:last-child {
+  color: rgb(141, 141, 241);
+}

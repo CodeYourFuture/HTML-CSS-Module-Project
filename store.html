@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <header>
+      <img src="img/karma-logo.svg" />
+      <a href="#"><img src="img/menu-hamburger.svg" /></a>
+      <nav>
+        <ul>
+          <li><a href="#Login">Login</a></li>
+          <li><a href="#Help">Help</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a class="selected" href="#Store">Store</a></li>
+          <li><a href="#HowitWorks">How it Works</a></li>
+          <li><a href="index.html">Meet Karma</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex">
+      <div class="sectionForm">
+        <h1>Order your Karma wifi device today!</h1>
+        <form action>
+          <fieldset class="flex row">
+            <fieldset class="name flex col">
+              <label for="firstName">First Name *</label>
+              <input id="firstName" type="text" />
+            </fieldset>
+            <fieldset class="name flex col">
+              <label for="lastName">Last Name *</label>
+              <input id="lastName" type="text" />
+            </fieldset>
+          </fieldset>
+          <fieldset class="flex col">
+            <fieldset class="flex col full">
+              <label for="address">Address *</label>
+              <input id="address" type="text" />
+            </fieldset>
+            <fieldset class="flex col full">
+              <label for="address2">Address 2 *</label>
+              <input id="address2" type="text" />
+            </fieldset>
+          </fieldset>
+          <fieldset class="flex">
+            <fieldset class="flex col city">
+              <label for="city">City *</label>
+              <select name="city" id="city" required>
+                <option value="" disabled selected>Select your city...</option>
+                <option value="rome">Rome</option>
+                <option value="london">London</option>
+                <option value="madrid">Madrid</option>
+                <option value="berlin">Berlin</option>
+                <option value="paris">Paris</option>
+              </select>
+            </fieldset>
+            <fieldset class="flex col">
+              <label for="postcode">Postcode *</label>
+              <input
+                type="text"
+                name="postcode"
+                id="postcode"
+                required
+                class="postcode"
+              />
+            </fieldset>
+          </fieldset>
+          <fieldset class="flex">
+            <legend>Select a colour</legend>
+            <fieldset class="flex row radio">
+              <input
+                type="radio"
+                name="color"
+                value="orange"
+                id="orange"
+                required
+              />
+              <label for="orange">Karma orange</label>
+            </fieldset>
+            <fieldset class="flex row radio">
+              <input
+                type="radio"
+                name="color"
+                value="grey"
+                id="grey"
+                required
+              />
+              <label for="grey">Space grey</label>
+            </fieldset>
+          </fieldset>
+          <input type="checkbox" required />
+          <label for="checkbox" class="checkbox">
+            By placing your order, you agree to Karma's
+            <a href="#">Terms and Conditions.</a>
+            *
+          </label>
+          <input type="submit" value="Place my order" />
+        </form>
+      </div>
+      <div class="sectionImage"></div>
+    </main>
+    <footer>
+      <hr />
+      <p>Join us on</p>
+      <div class="no_border">
+        <div>
+          <a href="#"><img src="img/twitter-icon.svg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/facebook-icon.svg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="img/instagram-icon.svg" /></a>
+        </div>
+      </div>
+      <p>@Karma Mobility, Inc.</p>
+    </footer>
+  </body>
+</html>
