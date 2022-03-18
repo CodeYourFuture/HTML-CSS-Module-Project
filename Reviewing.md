@@ -6,7 +6,7 @@ https://github.com/CodeYourFuture/CYF-Coursework-Template
 
 # Grading
 
-All coursework is graded using the Marking Guide found on the Syllabus.
+All coursework is reviewed using the Marking Guide found on the Syllabus.
 
 http://syllabus.codeyourfuture.io/guides/marking-guide
 
@@ -14,6 +14,6 @@ If you have any questions on these guidelines - please ask.
 
 ## Coding Standards
 
-Your code should follow our Coding Standards or it will be marked poorly.
+Your code should follow our Coding Standards or it will be reviewed poorly.
 
 https://syllabus.codeyourfuture.io/guides/code-style-guide
