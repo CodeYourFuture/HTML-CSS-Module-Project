@@ -18,16 +18,13 @@ body {
 /* NAV BAR */
 
 nav img {
-  height: 60px;
-  width: 60px;
-  /* margin-left: 50px; */
-  /* padding: 10px 0; */
+  height: 40px;
+  width: 40px;
 }
 
 .navbar {
   margin: 0;
   display: flex;
-  border: 2px solid red;
   justify-content: space-around;
   padding: 0;
   align-items: center;
@@ -36,8 +33,7 @@ nav img {
 .main-menu {
   list-style: none;
   display: inline-flex;
-  /* margin-left: auto; */
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .main-menu li {
@@ -59,9 +55,7 @@ nav img {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  border: 2px solid blue;
-  height: 60vh;
+  height: 100vh;
   background-image: url(/img/first-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -70,6 +64,27 @@ nav img {
 
 .container {
   border: 2px solid gray;
-  color: white;
+  color: whitesmoke;
   text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 350;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-top: 10px;
+  font-weight: 80;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #e0633a;
+  font-size: 0.8rem;
+  margin-top: 25px;
+  border-radius: 5px;
 }
