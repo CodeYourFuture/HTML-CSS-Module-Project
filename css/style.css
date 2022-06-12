@@ -109,18 +109,55 @@ button {
 }
 
 .box {
-  padding: 80px 200px;
+  font-size: 1.8rem;
+}
+.box-image {
+  padding: 70px 200px 50px 200px;
+  margin-bottom: 0;
+}
+
+.box-text {
   text-align: center;
-  font-size: 1.5rem;
+  margin-bottom: 100px;
 }
 
 hr {
   width: 80%;
   border: solid 1px rgb(189, 189, 189);
+  opacity: 0.3;
 }
 
 @media only screen and (max-width: 1700px) {
   .box {
     padding: 80px 150px;
   }
+}
+
+.foot-title {
+  text-align: center;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.foot-img {
+  border: #c4c4c4 solid 2px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  margin: 10px 8px 25px 8px;
+  opacity: 0.8;
+}
+
+.foot-text {
+  text-align: center;
+  color: #b8b8b8;
+  font-size: 1.2rem;
+  margin-bottom: 120px;
+  font-weight: 380;
 }
