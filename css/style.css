@@ -16,4 +16,99 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+*{   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #ffffff;
+    
+}
+.logo{
+    width: 28px;
+    cursor: pointer;
+
+}
+.nav a{
+     list-style-type: none; 
+    text-decoration: none;
+    font-size: 18px ;
+    
+}
+ .nav li  {
+    display: inline-block;
+    padding: 0px 10px;
+    
+}  
+.main{ 
+    color:#5c5f66;
+  
+}
+ .links {
+    color: #9297a0;
+}
+body{
+/* background-image: url(/img/first-background.jpg); */
+    /* background-size: cover;
+    background-position: center; */
+   
+}
+
+.first-background{
+    max-width: 100%; 
+     height: auto; 
+}
+h1{
+    color: #ffffff;
+    position: absolute;
+    top: 39%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+}
+.head_p {
+    color: #ffffff;
+    position: absolute;
+    top: 56%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    font-size: 33px;
+}
+h2{
+    text-align: center;
+    padding: 40px;
+}
+.devices{
+    width: 160px;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 20px 80px 20px ;
+}
+
+footer{
+    text-align: center;
+    margin: 60px;
+}
+.icons{
+    width:30px;
+    padding-top: 15px ;
+    
+}
+
+hr {
+    border: none;
+    border-top: 1px solid lightgray;
+    width: 80%;
+    margin:auto;
+
+}
