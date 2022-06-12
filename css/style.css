@@ -46,8 +46,12 @@ nav img {
 }
 
 .nav-title a {
-  color: #525252;
-  font-weight: 500;
+  color: #7c7c7c;
+  font-weight: 600;
+}
+
+.main-menu a:hover {
+  color: #e0633a;
 }
 
 /* COVER */
@@ -63,7 +67,6 @@ nav img {
 }
 
 .container {
-  border: 2px solid gray;
   color: whitesmoke;
   text-align: center;
   width: 100%;
@@ -87,4 +90,33 @@ button {
   font-size: 0.8rem;
   margin-top: 25px;
   border-radius: 5px;
+}
+
+/* GRID */
+.products h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.products h2 {
+  margin: 200px 0 0 0;
+}
+
+.grid {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.box {
+  padding: 80px 180px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 1700px) {
+  .box {
+    padding: 80px 80px;
+    text-align: center;
+    font-size: 1rem;
+  }
 }
