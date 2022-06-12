@@ -109,14 +109,18 @@ button {
 }
 
 .box {
-  padding: 80px 180px;
+  padding: 80px 200px;
   text-align: center;
   font-size: 1.5rem;
 }
+
+hr {
+  width: 80%;
+  border: solid 1px rgb(189, 189, 189);
+}
+
 @media only screen and (max-width: 1700px) {
   .box {
-    padding: 80px 80px;
-    text-align: center;
-    font-size: 1rem;
+    padding: 80px 150px;
   }
 }
