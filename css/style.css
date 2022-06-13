@@ -35,12 +35,14 @@ html, body {
     width:100vw;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 20% 80% 80% 20%;
+    grid-template-rows: 20% 80% 30% 40% 40%;
     grid-template-areas: 
     "header header header"
     "hero hero hero"
-    "main main main"
+    "head2 head2 head2"
+    "section section section"
     "footer footer footer";
+    
  }
 
  header  {
@@ -67,7 +69,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: gray;
+    color:#5c5d5e;
 }
 
 nav a:hover {
@@ -102,43 +104,64 @@ h1 {
     border-radius: 5px;
     padding: 20px 30px;
     margin-top: 40px;
+    border: none;
 }
 
 
-main {
-    grid-area: main; 
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 40% 40%;
-    grid-template-areas: 
-    "head2 head2 head2"
-    "sec1 sec2 sec3";
-    background-color: blue;
-}
 
- h2 {
+h2 {
      grid-area: head2;
-     color: gray;
+     color:#5c5d5e;
      font-size: 2.5em;
      font-weight: 400;
      text-align: center;
-     padding: 30px 0;
- }
- article:nth-of-type(1) {
-     grid-area: sec1;
-     
+     margin-top: 150px;
  }
 
- article:nth-of-type(2) {
-     grid-area: sec2;
+.articlecontainer {
+    margin-top: 30px;
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+ article {
+    text-align: center;
+
+ }
+ article img {
+    display: inline-block;
+    width:150px;
+    height:auto;
+    text-align: center;
  }
 
-  article:nth-of-type(3) {
-     grid-area: sec3;
- }
+article p {
+    width: 300px;
+    text-align: center;
+      font-size: 1.5em;
+}
 
 footer {
     grid-area:footer;
-    width: 100%;
-    height: 20%;
+    text-align: center;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    padding:20px;
+    margin: 5px;
+    border: 1px solid rgba(230, 230, 230, 0.464);  
+    border-radius: 50%; 
+}
+
+hr {
+    width: 60%;
+    border: 0.5px solid rgba(203, 197, 197, 0.95); 
+}
+
+.copyright {
+    color: rgba(203, 197, 197, 0.95); 
 }
