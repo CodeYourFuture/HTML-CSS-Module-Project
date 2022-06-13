@@ -1,19 +1,317 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'M PLUS 1p', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
 
+header,
+main,
+footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 4.3rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(253, 253, 253);
+}
+
+/* (A) BREAK INTO VERTICAL MENU */
+.nav-menu a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+
+/* (B) SHOW HAMBURGER ICON */
+.hamburger {
+  margin-right: 2rem;
+  position: relative;
+  width: 60px;
+  height: 40px;
+  align-items: center;
+}
+
+.hamburger label {
+  position: absolute;
+  top: 0;
+  left: 10;
+  display: inline-block;
+  color: rgb(49, 46, 46);
+  background: #f3f1f1;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+/* (C) TOGGLE SHOW/HIDE MENU */
+
+.hamburger input:checked ~ .nav-menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  margin-left: 5.5rem;
+}
+
+.nav-menu {
+  display: none;
+}
+.list-item {
+  margin-left: 25px;
+  padding: 0.5rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(148, 143, 143);
+}
+
+.nav-link:hover {
+  color: #e0633a;
+}
+
+.nav-active {
+  color: rgb(75, 73, 73);
+  font-weight: 500;
+}
+
+main {
+  position: relative;
+  /* margin-top: 5rem; */
+}
+
+.home {
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35rem;
+  min-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  min-width: 35rem;
+  margin: auto;
+  color: azure;
+  padding-bottom: 3.5rem;
+}
+
+.content h2 {
+  font-weight: 300;
+  font-size: 2.7rem;
+  margin-bottom: 0;
+}
+.content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 1.2rem;
+}
+.content .learn-more {
+  color: azure;
+  background-color: #e0633a;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-top: 2.8rem;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.content .learn-more:hover {
+  color: #e0633a;
+  background-color: azure;
+}
+
+.products {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.product-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5.5rem;
+}
+
+.products h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+
+.products p {
+  font-size: 1.2rem;
+  padding: 1.1rem 0;
+}
+
+.cards {
+  padding: 1.3rem 0;
+}
+
+.card-logos {
+  width: auto;
+  height: 90px;
+  padding-left: 1.5rem;
+}
+
+.quoto-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(212, 207, 207);
+}
+
+.quoto-image {
+  height: auto;
+  width: 100%;
+}
+
+.quoto-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  background-color: rgba(224, 99, 58, 0.1);
+  padding: 2.5rem 3.5rem;
+}
+
+.quoto-container p {
+  margin-top: 2.8rem;
+  font-style: italic;
+  font-size: 2.2rem;
+}
+
+.quoto-container span {
+  color: #e0633a;
+  padding: 5px;
+}
+
+.primary-button {
+  background-color: #e0633a;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  margin-top: 2.5rem;
+  border-radius: 4px;
+}
+
+footer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h3 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 0.8rem;
+}
+
+.contact-icons {
+  margin: 20px 0;
+}
+
+.footer-icons {
+  width: auto;
+  height: 2.2rem;
+  border: 1px solid rgb(230, 224, 224);
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: rgb(190, 180, 180);
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (min-width: 850px) {
+  header,
+  main,
+  footer {
+    padding: 0 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .product-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nav {
+    margin-left: 35%;
+  }
+
+  .hamburger label,
+  #hamburger-input {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .nav-menu a {
+    border: none;
+  }
+  .quoto-section {
+    height: 350px;
+    flex-direction: row;
+  }
+  .quoto-image {
+    height: 100%;
+    width: 45%;
+  }
+}

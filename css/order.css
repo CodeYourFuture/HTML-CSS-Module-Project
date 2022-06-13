@@ -1,0 +1,215 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'M PLUS 1p', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+.form-section {
+  width: 100%;
+  display: flex;
+}
+
+.image-container {
+  width: 50%;
+}
+
+.form-image {
+  height: auto;
+  width: 100%;
+}
+
+.form-container {
+  width: 50%;
+  height: 100%;
+  padding: 4rem;
+  font-family: "M PLUS 1p", sans-serif;
+  align-items: flex-start;
+  text-align: start;
+}
+
+fieldset {
+  padding-left: 1rem;
+  border: none;
+}
+
+.form-container .form-legend {
+  color: #de6e49;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.form-container input {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+label,
+label > input {
+  color: #53514e;
+  font-size: 1.5vh;
+  display: block;
+  margin: 2%;
+}
+
+.required {
+  margin: 0 3px;
+}
+
+.left-element {
+  margin-left: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  min-width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  height: 35px;
+  padding: 3px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid rgb(104, 101, 101);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.select-color {
+  display: flex;
+  text-align: center;
+}
+.karma-colors {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.color-heading {
+  padding: 5px;
+  margin: 30px 0;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 8px #ebe8e5;
+  border: 1px solid #666666;
+}
+
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #53514e;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #f0f0f0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e0633a;
+}
+
+.terms-group {
+  font-size: 14px;
+}
+.terms-group a {
+  /* text-decoration: none; */
+  color: #de6e49;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin-right: 1em;
+  cursor: pointer;
+  padding: 0.2em;
+  font-family: "Arial";
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 2px solid #666666;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 0.9em;
+  height: 0.6em;
+  padding-left: 0.2em;
+  padding-bottom: 0.6em;
+  margin-right: 0.2em;
+  color: transparent;
+  transition: 0.2s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #fff;
+  border: 2px solid #666666;
+  color: #de6e49;
+  font-weight: 700;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #f7c28f;
+  border-color: #f7c28f;
+}
