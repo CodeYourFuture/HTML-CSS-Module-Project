@@ -16,4 +16,157 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+* {   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+/* NAV STYLES START */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #ffffff;
+    
+}
+.logo{
+    width: 28px;
+    cursor: pointer;
+
+}
+.nav a{
+     list-style-type: none; 
+    text-decoration: none;
+    font-size: 18px ;
+    
+}
+ .nav li  {
+    display: inline-block;
+    padding: 0px 10px;
+    
+}  
+.main{ 
+    color:#5c5f66;
+  
+}
+ .links {
+    color: #9297a0;
+}
+
+.nav li a:hover {
+    color: #e1643b;
+  }
+
+/* NAV STYLES END */
+
+/* HERO STYLES START */
+.hero_img{
+    max-width: 100%; 
+     height: auto; 
+
+} 
+
+h1{
+    color: #ffffff;
+    position: absolute;
+    top: 39%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    
+}
+
+.hero_p {
+    color: #ffffff;
+    position: absolute;
+    top: 56%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    font-size: 33px;
+}
+.btn{
+    position:absolute;
+    top: 70%;
+    left: 44%;
+    transform: translate(-50%, -45%);
+    z-index: 10;
+    text-decoration: none;
+    background-color: #e0633a;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+  
+}
+
+.btn:hover {
+    background-color: #c24015;
+  }
+
+/* HERO STYLES END */
+
+/* GENERAL STYLES START */
+h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.devices{
+    width: 120px; 
+    
+} 
+.container{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-bottom: 80px ;
+    font-size: 20px;
+    text-align:center;
+    align-content: center;
+    padding: 20px;
+}
+.img_p{
+    margin-top: 20px;
+}
+/* GENERAL STYLES END */
+
+/* FOOTER START */
+
+hr {
+    border: none;
+    border-top: 1px solid lightgray;
+    width: 80%;
+    margin:auto;
+
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.icons{
+    width:40px;
+    background-color:#fff;
+    border:1px solid lightgray;
+    height:40px;
+    border-radius:50%;
+     padding: 10px; 
+    margin:20px 4px;
+    cursor: pointer;
+    }
+    
+.icons:hover{
+  filter:contrast(90%);
+}
+
+.inc {
+    color: #9297a0;
+}
+
+/* FOOTER END */
