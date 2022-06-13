@@ -5,15 +5,29 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.navbar {
+    display: flex;
+    background-color: #00000000;
+    justify-content: flex-end;
+  }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+  .link_item {
+    display: flex;
+    padding: 10px 50px 0 0;
+    font-size: 2rem;
+    color: black;
+    margin-left: 40px;
+    margin-right: 10px;
+    
+    
+  }
+  
+  a:hover {
+    color: #ffcbb6;
+  }
+  .nav-title {
+    text-align: center;
+    margin-top: ;
+  }
 
 
