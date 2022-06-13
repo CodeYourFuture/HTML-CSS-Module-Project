@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 /**
@@ -29,17 +30,16 @@ html, body {
  Grid Info */
 
  body {
-     font-family: ;
+   
     height: 100vh;
     width:100vw;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 20% 80% 1fr 1fr 1fr;
+    grid-template-rows: 20% 80% 80% 20%;
     grid-template-areas: 
     "header header header"
     "hero hero hero"
-    "head2 head2 head2"
-    "sec1 sec2 sec3"
+    "main main main"
     "footer footer footer";
  }
 
@@ -72,21 +72,61 @@ nav a {
 
 nav a:hover {
     text-decoration: none;
-    color: rgb(232, 121, 24);
+    color:rgb(241 91 42);
 }
 
 .hero {
      grid-area: hero;
-     background-color: yellow;
      background-image: url(/img/first-background.jpg);
      background-size: cover;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     line-height: 0%;
  }
+
+h1 {
+     font-weight: 300;
+    font-size: 3.5em;
+}
+
+.hero p {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.hero button{
+    background-color:rgb(241 91 42);
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-top: 40px;
+}
+
+
+main {
+    grid-area: main; 
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: 
+    "head2 head2 head2"
+    "sec1 sec2 sec3";
+    background-color: blue;
+}
+
  h2 {
      grid-area: head2;
+     color: gray;
+     font-size: 2.5em;
+     font-weight: 400;
+     text-align: center;
+     padding: 30px 0;
  }
  article:nth-of-type(1) {
-     grid-area: sec1  ;
-     background-color: blue;
+     grid-area: sec1;
+     
  }
 
  article:nth-of-type(2) {
