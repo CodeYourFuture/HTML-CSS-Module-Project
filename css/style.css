@@ -1,19 +1,178 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/*GENERAL style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
+    background-color: #F8F8F8;
+    font-size: 1rem;
+    
+    
+    
+   
+    
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/*HEADER style*/
+header {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+    
+
+
+
+}
+.logo-img {
+    height: 3rem;
+    width: auto;
+    margin-left: 1rem;
+}
+/*Navbar styling*/
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.menu-item {
+    display: inline;
+    padding: 1rem;
+    
+    
+     
+}
+.menu-item a {
+    
+    text-decoration: none;
+    color: #a6a6a6;
+    text-align: center;
+    
+    
+}
+.menu-item .black-color {
+    color: #000;
+    font-weight: 500;
+}
+.menu-item a:hover {
+    color: #ff8533;
+} 
+
+
+/*MAIN style*/
+
+.hero {
+    background-image: url(../img/first-background.jpg ) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: ;
+    height: 52rem;
+    min-width: 100%;
+   
+    
+    
+}
+.hero-content {
+   
+    height: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+    color: #fff;
+}
+.hero-content h1 {
+    font-size: 4.3rem;
+    font-weight: 200;
+    height: auto;
+   
+}
+.hero-content p {
+    height: auto;
+    font-size: 2.3rem;
+    font-weight: 100;
+    
+}
+button {
+    background-color: #f76707;
+    width: 12rem;
+    height: 4rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    padding: 5px 8px;
+    margin-top: 3rem;
+}
+.products {
+    margin-top: 10rem;
+    
+    height: 500px;
+}
+.products h2 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+.products-content {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+}
+.img-product {
+height: 11rem;
+width: auto;
+}
+.products-item p {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+/*FOOTER style*/
+
+footer {
+  height: 20rem;
+}
+.join {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-icon {
+    height: 3.5rem;
+    width: auto;
+    border: 1px solid gray;
+    padding: 1rem;
+
+    color: lightblue;
+    border-radius: 50%;
+}
+.contact-icons a {
+    padding: 0.8rem;
+
+}
+.copy {
+    font-size: 1rem;
+    color: lightgray;
+    margin-top: 2rem;
+}
 
 
