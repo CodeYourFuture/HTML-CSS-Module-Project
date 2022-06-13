@@ -12,7 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 90% 80% 20%; 
+    grid-template-rows: 10% 90% 70% 30%; 
     grid-template-areas: 
     "header header header"
     "section section section"
@@ -123,17 +123,34 @@ h2 {
 }
 
 footer {
-    align-items: center;
     grid-area: footer;
+    margin-top:10px;
+    text-align: center;
+    font-weight: 300;
 }
 
-
-
-
-
-img {
-
+hr {
+    width: 70%;
+    margin-top: 10px;
 }
+
+.join {
+    font-weight: 400;
+}
+
+.copyright {
+    color: grey;
+}
+
+.social-media {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: 1px grey solid;
+    padding: 5px;
+    
+}
+
 
 /**
  * Add your custom styles below
