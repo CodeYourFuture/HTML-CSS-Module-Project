@@ -34,7 +34,7 @@ a{
     text-decoration: none;
 }
 
-/********************************header styles *********************/
+/*************************************header styles *********************************************/
 
 header{
     display: grid;
@@ -94,7 +94,7 @@ header .list{
     color: #ee0707;
 }
 
-/************************main styles*****************/
+/************************************main styles*****************************************/
 main{
    width: 100vw;
    display: flex;
@@ -147,10 +147,9 @@ main .details {
     border-radius: 3px;
 }
 
-/******************************section styles********************************/
+/*********************************section styles********************************/
 
 section{
-
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -222,6 +221,12 @@ footer .links {
     height: 25px;
     padding: 2px;
     border-radius: 50%;
-    border: 1px solid #eeeeee;
+    border: 1px solid rgba(196, 196, 196, .4);
     display: inline-block;
+}
+
+footer h5{
+    color: #c6c6c6;
+    font-weight: 300;
+    letter-spacing: 1.5px;
 }
