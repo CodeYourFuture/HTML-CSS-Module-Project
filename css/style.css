@@ -146,3 +146,82 @@ main .details {
     background: coral;
     border-radius: 3px;
 }
+
+/******************************section styles********************************/
+
+section{
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+section .karma1 {
+    flex: 1;
+    padding: 10px;
+    width: 100vw;
+}
+
+.karma1 h1 {
+    text-align: center;
+    letter-spacing: 2.3px;
+    font-size: 2.5rem;
+    font-weight: 90;
+    color: #2e2c2c;
+}
+
+.karma-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.karma-img div{
+    width: 14rem;
+}
+
+.karma-img p{
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/****************************************footer styles****************************************/
+
+footer {
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid rgba(195, 194, 194,.5);
+}
+footer h4 {
+    font-weight: 200;
+    margin: 1rem;
+}
+
+footer .links {
+    margin: 1rem;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+}
+.links a {
+    width: 10%;
+    padding: .555rem;
+}
+.links a img {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+    display: inline-block;
+}
