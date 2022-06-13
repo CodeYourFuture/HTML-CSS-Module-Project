@@ -5,46 +5,134 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
-    height: 100%vh;
+}
+
+body {
     display: grid;
-    grid-area: "header header header"
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90% 80% 20%; 
+    grid-template-areas: 
+    "header header header"
     "section section section"
-    "main main main"
-    "footer footer footer";
+    "main    main    main"
+    "footer footer  footer";
 }
 
 header {
-    display: flex;
     grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
-section {
-    justify-content: center;
-    grid-area: section;
+.logo {
+    width: 1.7em;
+    height: auto;
+    margin: 10px;
 }
 
+
+nav ul {
+     display: flex;
+     font-size: 1em; 
+     list-style: none;  
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: grey;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #f15b2a;
+}
+
+strong {
+    color: black;
+    font-weight:500
+}
+
+strong:hover {
+    color: #f15b2a;
+}
+
+.hero {
+    text-align: center;
+    grid-area: section;
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.5em;
+    color: white;
+    margin-top: 220px;
+}
+
+.tagline {
+    font-weight: 300;
+    font-size: 2em;
+    color: white;
+}
+
+button {
+    margin-top: 30px; 
+    height: 8%; 
+    width: 10%;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    background-color: #f15b2a;
+}
+
+
 main {
-    display: flex;
     grid-area: main;
+    
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    text-align: center;
+}
+
+.articles p {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.icon {
+    height: 130px;
+    width: auto;
 }
 
 footer {
     align-items: center;
     grid-area: footer;
-
 }
 
-h1 {
 
-}
 
-h2 {
 
-}
 
 img {
-    
+
 }
 
 /**
