@@ -4,6 +4,47 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+    height: 100%vh;
+    display: grid;
+    grid-area: "header header header"
+    "section section section"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+    display: flex;
+    grid-area: header;
+    
+}
+
+section {
+    justify-content: center;
+    grid-area: section;
+}
+
+main {
+    display: flex;
+    grid-area: main;
+}
+
+footer {
+    align-items: center;
+    grid-area: footer;
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+img {
+    
 }
 
 /**
@@ -15,5 +56,6 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
 
 
