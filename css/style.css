@@ -1,19 +1,169 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/*GENERAL style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 1rem;
+    width: 1550px;    
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/*HEADER style*/
+header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    column-gap: 33rem;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.logo-img {
+    height: 3rem;
+    width: auto;
+}        
+
+/*Navbar styling*/
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50rem;
+}
+.menu-item {
+    display: inline;
+    padding: 1rem;     
+}
+.menu-item a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #a6a6a6;
+    text-align: center;
+    font-weight: 400;    
+}
+.menu-item .gray-dark {
+    color: #595959;
+    font-weight: 500;
+}
+.menu-item a:hover {
+    color: #ff8533;
+} 
+
+/*MAIN style*/
+
+.hero {
+    background-image: url(../img/first-background.jpg ) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55rem;
+    min-width: 100%;
+    margin: 1rem;      
+}
+.hero-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.hero-content h1 {
+    font-size: 4.4rem;
+    font-weight: 100;
+    height: auto;
+    margin-top: -1rem; 
+}
+.hero-content p {
+    height: auto;
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin-top: -1.5rem;
+}
+
+button {
+    background-color: #e65c00;
+    width: 12.5rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    margin-top: 3rem;
+    
+}
+.products {
+    margin-top: 9rem; 
+    height: 500px;
+}
+.products h2 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+.products-content {
+    width: 75%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: auto;   
+}
+.products-item {
+  width: 23rem;
+  
+}
+.img-product {
+height: 11rem;
+width: auto;
+}
+.products-item p {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+/*FOOTER style*/
+hr {
+    background-color: #f1f1f1;
+    height: 1.5px;
+    border: 0;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: -2rem;
+}
+footer {
+  height: 10rem;
+}
+.join {
+    margin-top: 1.5rem;
+    margin-bottom: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.footer-icon {
+    height: 3.3rem;
+    width: auto;
+    border: 1px solid #eaeaea;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.contact-icons a {
+   padding: 0.7rem; 
+}
+.copy {
+    font-size: 1.2rem;
+    color: #a4a4a4;
+    margin-top: 2rem;
+    font-weight: lighter;
+}
 
 
