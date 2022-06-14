@@ -147,16 +147,19 @@ button {
 .products-content {
     
     width: 60%;
+    
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     margin: auto;
+    
      
     
 }
 .products-item {
   width: 23rem;
+  
 }
 .img-product {
 height: 11rem;
@@ -167,7 +170,14 @@ width: auto;
     margin-top: 2rem;
 }
 /*FOOTER style*/
-
+hr {
+    background-color: #f1f1f1;
+    height: 1.5px;
+    border: 0;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: -2rem;
+}
 footer {
   height: 20rem;
 }
