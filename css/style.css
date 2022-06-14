@@ -14,12 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-align: center;
     font-size: 1rem;
-    width: 1650px;
-    
-    
-    
-   
-    
+    width: 1550px;    
 }
 
 /*HEADER style*/
@@ -31,21 +26,11 @@ header {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    
-    
-
-
-
 }
 .logo-img {
     height: 3rem;
     width: auto;
-}    
-   
-    
-    
-    
-    
+}        
 
 /*Navbar styling*/
 .nav-menu {
@@ -53,22 +38,17 @@ header {
     margin: 0;
     padding: 0;
     width: 50rem;
-    
-    
 }
 .menu-item {
     display: inline;
     padding: 1rem;     
 }
 .menu-item a {
-    
     text-decoration: none;
     font-size: 1.4rem;
     color: #a6a6a6;
     text-align: center;
-    font-weight: 400;
-    
-    
+    font-weight: 400;    
 }
 .menu-item .gray-dark {
     color: #595959;
@@ -78,7 +58,6 @@ header {
     color: #ff8533;
 } 
 
-
 /*MAIN style*/
 
 .hero {
@@ -86,35 +65,24 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     height: 55rem;
     min-width: 100%;
-    margin: 1rem;
-   
-    
-    
+    margin: 1rem;      
 }
 .hero-content {
-   
     height: 100%;
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
-    
-    
     color: #fff;
 }
 .hero-content h1 {
     font-size: 4.4rem;
     font-weight: 100;
     height: auto;
-    margin-top: -1rem;
-   
+    margin-top: -1rem; 
 }
 .hero-content p {
     height: auto;
@@ -135,8 +103,7 @@ button {
     
 }
 .products {
-    margin-top: 9rem;
-    
+    margin-top: 9rem; 
     height: 500px;
 }
 .products h2 {
@@ -145,17 +112,12 @@ button {
     margin-bottom: 3rem;
 }
 .products-content {
-    
-    width: 60%;
-    
+    width: 75%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    margin: auto;
-    
-     
-    
+    margin: auto;   
 }
 .products-item {
   width: 23rem;
@@ -192,8 +154,6 @@ footer {
     width: auto;
     border: 1px solid #eaeaea;
     padding: 1rem;
-    
-    
     border-radius: 50%;
 }
 .contact-icons a {
