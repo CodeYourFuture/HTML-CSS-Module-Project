@@ -6,6 +6,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+
 /**
  * Add your custom styles below
  * 
@@ -15,5 +17,60 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8% 50% 15% 20% auto;
+    grid-template-areas: 
+        "header header  header  header  header  header"
+        "main   main    main    main    main    main"
+        "sect1  sect1   sect1   sect1   sect1   sect1"
+        "sect2  sect2   sect3   sect3   sect4   sect4"
+        "footer footer  footer  footer  footer  footer";
+}
+
+/* navbar section */
+
+header{
+    grid-area: header;
+    display: grid;
+    /* grid-template-columns: 10%; */
+    grid-template-areas: 
+        "logo logo  logo  list  list  list"
+
+}
+
+#logo{
+    grid-area: logo;
+    height: 6vh;
+    padding: 2% 20%;
+}
+
+#nav{
+    grid-area: list;
+    display: inline-block;
+   
+}
+
+#nav_list{
+    
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav_items{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav_items:hover{
+
+    color: #f15b2a;
+}
+ /* end of navbar section */
+
 
 
