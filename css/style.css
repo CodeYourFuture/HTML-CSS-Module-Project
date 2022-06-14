@@ -14,7 +14,7 @@ body {
     -webkit-font-smoothing: antialiased;
     text-align: center;
     font-size: 1rem;
-    width: 1600px;
+    width: 1650px;
     
     
     
@@ -96,52 +96,62 @@ header {
 }
 .hero-content {
    
-    height: ;
+    height: 100%;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    
+    
     
     
     color: #fff;
 }
 .hero-content h1 {
-    font-size: 4.3rem;
-    font-weight: 200;
+    font-size: 4.4rem;
+    font-weight: 100;
     height: auto;
+    margin-top: -1rem;
    
 }
 .hero-content p {
     height: auto;
     font-size: 2.3rem;
     font-weight: 100;
-    
+    margin-top: -1.5rem;
 }
+
 button {
-    background-color: #f76707;
-    width: 12rem;
-    height: 4rem;
+    background-color: #e65c00;
+    width: 12.5rem;
+    height: 4.4rem;
     border: none;
     border-radius: 0.3rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 5px 8px;
     margin-top: 3rem;
+    
 }
 .products {
-    margin-top: 10rem;
+    margin-top: 9rem;
     
     height: 500px;
 }
 .products h2 {
     font-size: 3.5rem;
     font-weight: lighter;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .products-content {
-    height: 8rem;
+
+    height: 7rem;
+    
     display: flex;
     justify-content: center;
+    
+    
 }
 .img-product {
 height: 11rem;
