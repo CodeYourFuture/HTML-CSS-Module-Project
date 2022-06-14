@@ -20,9 +20,10 @@ body {
 
 
 body{
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 8% 50% 15% 20% auto;
+    grid-template-rows: 8vh 50vh 15vh 20vh auto;
     grid-template-areas: 
         "header header  header  header  header  header"
         "main   main    main    main    main    main"
@@ -36,7 +37,6 @@ body{
 header{
     grid-area: header;
     display: grid;
-    /* grid-template-columns: 10%; */
     grid-template-areas: 
         "logo logo  logo  list  list  list"
 
@@ -44,8 +44,10 @@ header{
 
 #logo{
     grid-area: logo;
+    display: flex;
+    align-items: center;
     height: 6vh;
-    padding: 2% 20%;
+    margin: 1vh 20%;
 }
 
 #nav{
@@ -70,7 +72,32 @@ header{
 
     color: #f15b2a;
 }
- /* end of navbar section */
+ 
+/* end of navbar section */
 
+/* main (big image) section */
+
+main{
+    grid-area: main;
+    display: flex;
+    background-image: url("/img/first-background.jpg");
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    color: white;
+}
+
+h1{
+    line-height: 0%;
+}
+
+button{
+    background-color: #f15b2a;
+    border: #f15b2a;
+    padding: 1%;
+}
+
+/* end of main (big image) section */
 
 
