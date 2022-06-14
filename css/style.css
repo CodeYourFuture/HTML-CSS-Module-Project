@@ -13,8 +13,8 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-align: center;
-    background-color: #F8F8F8;
     font-size: 1rem;
+    width: 1600px;
     
     
     
@@ -25,10 +25,9 @@ body {
 /*HEADER style*/
 header {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     display: flex;
-    justify-content: space-between;
-    
+    column-gap: 33rem;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -41,33 +40,38 @@ header {
 .logo-img {
     height: 3rem;
     width: auto;
-    margin-left: 1rem;
-}
+}    
+   
+    
+    
+    
+    
+
 /*Navbar styling*/
 .nav-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 50rem;
     
     
 }
 .menu-item {
     display: inline;
-    padding: 1rem;
-    
-    
-     
+    padding: 1rem;     
 }
 .menu-item a {
     
     text-decoration: none;
+    font-size: 1.4rem;
     color: #a6a6a6;
     text-align: center;
+    font-weight: 400;
     
     
 }
-.menu-item .black-color {
-    color: #000;
+.menu-item .gray-dark {
+    color: #595959;
     font-weight: 500;
 }
 .menu-item a:hover {
@@ -82,9 +86,10 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: ;
-    height: 52rem;
+
+    height: 55rem;
     min-width: 100%;
+    margin: 1rem;
    
     
     
