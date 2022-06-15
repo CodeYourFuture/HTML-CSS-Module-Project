@@ -32,7 +32,6 @@ body {
  /* header */
  /* nav bar */
  .header {
-    background-color: aqua;
     height: 100vh;
  }
 
@@ -70,6 +69,35 @@ body {
     gap: 2em;
  }
 
+ /* intro section */
+ .intro {
+    background: url(../img/first-background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 92vh;
+    color: #fff;
+ }
+
+ .intro h1 {
+    font-weight: 400;
+ }
+
+ .intro h2 {
+    font-weight: 200;
+ }
+
+ .learn-btn {
+    margin-top: 2.5em;
+    padding: .45em;
+    background: rgb(216, 142, 5);
+    color: #fff;
+    border: none;
+    border-radius: .25em;
+    font-weight: 300;
+ }
 
 
 
