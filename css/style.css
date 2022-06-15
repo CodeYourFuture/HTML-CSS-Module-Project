@@ -5,7 +5,52 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.navbar {
+    align-items: center;
+    background-color: white;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
 
+}
+.list {
+    list-style-type: none;
+    display: inline-block;
+}
+.list :hover {
+    color: #E67E22;
+}
+.list-items {
+    display: inline-block;
+    padding: 20px;
+}
+.navbar a {
+    color: grey;
+    text-decoration:none
+}
+.picture {
+    background-image: url('/Users/admin/Documents/Ele clone/HTML-CSS-Module-Project/img/first-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px;
+    margin: 40px;
+    color: white;
+}
+.picture-content {
+padding-left: 300px;
+}
+.button {
+    background-color: #E67E22;
+    border-color: #E67E22;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+    margin-left: 100px;
+    padding: 8px;
+}
 /**
  * Add your custom styles below
  * 
