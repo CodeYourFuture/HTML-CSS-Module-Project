@@ -72,10 +72,8 @@ padding-left: 300px;
     text-align: center;
 }
 .fa {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     text-decoration: none;
+    margin: 20px;
 }
 .fa-twitter {
     color: #00acee;
@@ -85,6 +83,19 @@ padding-left: 300px;
 }
 .fa-instagram {
     color: #f09433;
+}
+.social-icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.socials {
+text-align: center;
+padding: 50px;
+}
+.copy-right {
+    color: grey;
+    font-weight: lighter;
 }
 /**
  * Add your custom styles below
