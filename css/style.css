@@ -5,6 +5,12 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+h1 {
+    font-weight:lighter;
+}
+h3 {
+    font-weight: lighter;
+}
 .navbar {
     align-items: center;
     background-color: white;
@@ -50,6 +56,35 @@ padding-left: 300px;
     color: white;
     margin-left: 100px;
     padding: 8px;
+}
+.promotion-logos {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+.promo-img {
+    width: 100px;
+    height: 100px;
+}
+.promotion {
+    text-align: center;
+}
+.fa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.fa-twitter {
+    color: #00acee;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-instagram {
+    color: #f09433;
 }
 /**
  * Add your custom styles below
