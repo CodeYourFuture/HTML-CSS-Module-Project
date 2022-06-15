@@ -17,3 +17,59 @@ body {
  */
 
 
+ /* default styling */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ li {
+    list-style: none;
+    font-size: .9em;
+ }
+
+ /* header */
+ /* nav bar */
+ .header {
+    background-color: aqua;
+    height: 100vh;
+ }
+
+ .nav-bar {
+    height: 8vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+ }
+
+ .nav-bar img {
+    width: 15px;
+ }
+
+ li:first-child > a {
+    font-weight: 500;
+ }
+
+ .nav-bar a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #444;
+ }
+
+ .nav-bar a:hover {
+    color: red;
+ }  
+
+ .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+ }
+
+
+
+
