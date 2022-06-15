@@ -16,4 +16,138 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Navbar Styling */
+#navbar {
+    background: #fff;
+    color: #000;
+    overflow: auto;
+    justify-content: space-around;
+  }
 
+#navbar img{
+        width: 70px;
+        height: 70px;
+}
+
+#navbar a {
+  color: #000;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-around;
+  padding-left: 25px;
+}
+
+/* Additional Current */
+#navbar ul li a:hover {
+  background: #fff;
+  color: #ff4500;
+}
+#navbar ul li a.current {
+  color: #000;
+}
+/* content */
+.hero .content {
+  background: url('/img/first-background.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  
+}
+.hero .karma {
+  font-size: 30px;
+}
+
+
+/* button styling */
+.btn {
+  background-color: #ff4500;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Cases */
+.cases img {
+  display: flex;
+  height: 70px;
+  width: 70px;
+}
+.section-header {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.flex-items {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Footer */
+
+.footer {
+  
+  padding: 20px;
+  margin: 40px;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+  align-items: center;
+}
+.footer .social > * {
+  margin-right: 30px;
+}
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  opacity: 0.01px;
+  font-weight: lighter;
+}
