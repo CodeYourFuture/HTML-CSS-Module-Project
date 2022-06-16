@@ -60,7 +60,7 @@ nav img {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(/img/first-background.jpg);
+  background-image: url(/HTML-CSS-Module-Project/img/first-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -106,10 +106,12 @@ button {
   margin: 0 100px;
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 10px;
 }
 
 .box {
   font-size: 1.8rem;
+  max-width: 100%;
 }
 .box-image {
   padding: 70px 200px 50px 200px;
@@ -128,8 +130,8 @@ hr {
 }
 
 @media only screen and (max-width: 1700px) {
-  .box {
-    padding: 80px 150px;
+  .box-image {
+    padding: 30%;
   }
 }
 /* END OF GRID FOR PRODUCTS */
