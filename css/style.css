@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+   font-family: 'Roboto', sans-serif;
+   -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -17,121 +16,171 @@ body {
  */
 
 
- /* default styling */
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+/* default styling */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
- li {
-    list-style: none;
-    font-size: .9em;
- }
+li {
+   list-style: none;
+   font-size: .9em;
+}
 
- /* header */
- /* nav bar */
- .header {
-    height: 100vh;
- }
+hr {
+   border: none;
+   background: #ddd;
+   height: .5px;
+}
 
- .nav-bar {
-    height: 8vh;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5em;
- }
+/* header */
+/* nav bar */
+.header {
+   height: 100vh;
+}
 
- .nav-bar img {
-    width: 15px;
- }
+.nav-bar {
+   height: 8vh;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 5em;
+}
 
- li:first-child > a {
-    font-weight: 500;
- }
+.nav-bar img {
+   width: 15px;
+}
 
- .nav-bar a {
-    text-decoration: none;
-    font-weight: 400;
-    color: #444;
- }
+li:first-child>a {
+   font-weight: 600;
+}
 
- .nav-bar a:hover {
-    color: red;
- }  
-
- .nav-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2em;
- }
-
- /* intro section */
- .intro {
-    background: url(../img/first-background.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 92vh;
-    color: #fff;
- }
-
- .intro h1 {
-    font-weight: 400;
- }
-
- .intro h2 {
-    font-weight: 200;
- }
-
- .learn-btn {
-    margin-top: 2.5em;
-    padding: .45em;
-    background: rgb(216, 142, 5);
-    color: #fff;
-    border: none;
-    border-radius: .25em;
-    font-weight: 300;
- }
-
- /* main styling */
- .main {
-    margin: 4em 0;
-    /* height: 100vh; */
- }
-
- .main > h1 {
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 2em;
- }
-
- .main section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
- }
-
- .main section > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
-
- .main section > div > h2 {
+.nav-bar a {
+   text-decoration: none;
    font-weight: 400;
- }
+   color: #444;
+}
+
+.nav-bar a:hover {
+   color: red;
+}
+
+.nav-list {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 2em;
+}
+
+/* intro section */
+.intro {
+   background: url(../img/first-background.jpg);
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 92vh;
+   color: #fff;
+}
+
+.intro h1 {
+   font-weight: 400;
+}
+
+.intro h2 {
+   font-weight: 200;
+}
+
+.learn-btn {
+   margin-top: 2.5em;
+   padding: .45em;
+   background: rgb(216, 142, 5);
+   color: #fff;
+   border: none;
+   border-radius: .25em;
+   font-weight: 300;
+   transition: ease-in .5s;
+}
+
+.learn-btn:hover {
+   margin-top: 2.5em;
+   padding: .45em;
+   background: rgb(139, 92, 3);
+   color: #fff;
+   opacity: .9;
+}
+
+/* main styling */
+.main {
+   margin: 4em 0;
+}
+
+.main>h1 {
+   text-align: center;
+   font-weight: 400;
+   margin-bottom: 2em;
+}
+
+.main section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.main section>div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+}
+
+.main section>div>h2 {
+   font-weight: 400;
+}
 
 
- .main img {
-    width: 100px;
- }
+.main img {
+   width: 100px;
+}
 
+/* footer style */
+.footer {
+   display: grid;
+   row-gap: 1em;
+   padding: 1em 0 3em 0;
+}
 
+.footer>h1 {
+   font-size: 1em;
+   text-align: center;
+}
 
+.socials {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1em;
+}
+
+.socials>img {
+   width: 30px;
+   border: solid .5px rgba(122, 118, 118, .9);
+   padding: 5px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.socials>img:hover {
+   border: solid .5px rgba(122, 118, 118, 1);
+   padding: 4px;
+}
+
+.footer>p {
+   color: grey;
+   text-align: center;
+}
