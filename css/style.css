@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,5 +14,87 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+nav {
+    width: 100%;
+    background-color: white;
+}
 
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+
+}
+
+.nav-item a {
+    margin-right: 2rem;
+    color: grey;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.info {
+    background-image: url("/img/first-background.jpg");
+    background-size: cover;
+    height: 480px;
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    padding: 40px;
+    margin: 20px;
+}
+
+.learn-more {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header {
+    font-size: 30px;
+}
+
+.karma2 {
+    text-align: center;
+    padding: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.icon-item {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footlogo {
+    padding: 20px;
+    margin: 20px;
+
+}
