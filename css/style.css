@@ -29,11 +29,14 @@ nav {
     display: flex;
     list-style: none;
     justify-content: flex-end;
+
 }
 
 .nav-item a {
     margin-right: 2rem;
     color: grey;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-item:first-child {
@@ -52,6 +55,7 @@ nav {
 
 p {
     padding: 40px;
+    margin: 20px;
 }
 
 .learn-more {
@@ -84,9 +88,9 @@ header {
 
 footer {
     flex-direction: row;
-flex-wrap: wrap;
-flex-direction: column;
-text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
 }
 
 #footlogo {
