@@ -23,7 +23,7 @@ body{
     margin: 0;
     width: 100%;
     display: grid;
-    grid-template-rows: 8vh 50vh 10vh 25vh auto;
+    grid-template-rows: 8vh 50vh 8vh 22vh auto;
     grid-template-areas: 
         "header"
         "main"
@@ -38,7 +38,7 @@ header{
     grid-area: header;
     display: grid;
     grid-template-areas: 
-        "logo logo  logo  list  list  list"
+        "logo list"
 
 }
 
@@ -160,4 +160,53 @@ p{
 
 .icons{
     width: 10vw;
+}
+
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+    "horizontal     horizontal      horizontal"
+    "footer_title   footer_title    footer_title"
+    "empty1         social_icons    empty2"
+    "empty1         copyright       empty2";
+    grid-template-columns: auto 25% auto;
+    grid-template-rows: 2% 30% 30% 30%;
+}
+
+hr{
+    grid-area: horizontal;
+    width: 75%;
+    height: 0.1vw;
+    background-color: #ecedee ;
+    /* border: 0.01vh solid pink; */
+    border: none;
+}
+
+footer > p{
+    grid-area: footer_title;
+
+}
+
+.socials_icons{
+    width:1.5vw;
+    padding: 0.8vw;
+    border: 0.1vw #ecedee  solid;
+    border-radius: 50%;
+}
+
+figure{
+    grid-area: social_icons;
+    /* width: 20%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+small{
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    color: #ecedee ;
 }
