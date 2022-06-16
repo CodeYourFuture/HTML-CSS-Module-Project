@@ -16,7 +16,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-
+/* General style */
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +34,7 @@ body {
     text-decoration: none;
   }
   
+  /* Header Style */
   header {
     display: flex;
     justify-content: space-between;
@@ -41,11 +42,13 @@ body {
     padding: 20px 10%;
   }
   
+ /* Logo Style */
   .logo {
     max-height: 40px;
     cursor: pointer;
   }
   
+  /* Nav Style */
   .nav__links {
     list-style: none;
   }
@@ -55,6 +58,7 @@ body {
     padding: 0px 20px;
   }
   
+  /* Container Style */
   .image__container {
     background-image: url(../img/first-background.jpg);
     background-position: center;
@@ -74,11 +78,20 @@ body {
     height: 450px;
   }
   
+  /* Heading and list Style*/
   h1 {
     font-size: 5rem;
     margin-top: 0%;
     margin-bottom: 2rem;
   
+  }
+
+  h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    padding-top: 7rem;
+    font-weight: normal;
   }
   
   .a-bold-1 {
@@ -89,6 +102,7 @@ body {
     color: rgb(206, 104, 9);
   }
   
+  /* Button Style */
   .btn    {
     display: inline-block;
     background: rgb(206, 104, 9);
@@ -111,14 +125,6 @@ body {
   }
   
   
-  h2 {
-    text-align: center;
-    width: 100%;
-    font-size: 3rem;
-    padding-top: 7rem;
-    font-weight: normal;
-  }
-  
   .image__center {
     display:flex;
     justify-content: space-around;
@@ -126,7 +132,7 @@ body {
     align-items: center;
   }
   
-  
+  /* Image Style */
   .image__center div img {
     width: 170px;
     height: 170px;
@@ -145,7 +151,7 @@ body {
     margin-bottom: 6rem;
   }
   
-  
+  /*Footer Style */
   footer {
     text-align: center;
     position: absolute;
@@ -156,6 +162,7 @@ body {
     justify-content: space-between;
   }
   
+  /* Social Media Icons Style */
   .icon {
     width: 20px;
     padding: 20px;
