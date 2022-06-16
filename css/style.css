@@ -21,15 +21,15 @@ body {
 
 body{
     margin: 0;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 8vh 50vh 15vh 20vh auto;
+    grid-template-rows: 8vh 50vh 10vh 25vh auto;
     grid-template-areas: 
-        "header header  header  header  header  header"
-        "main   main    main    main    main    main"
-        "sect1  sect1   sect1   sect1   sect1   sect1"
-        "sect2  sect2   sect3   sect3   sect4   sect4"
-        "footer footer  footer  footer  footer  footer";
+        "header"
+        "main"
+        "sect1"
+        "icons"
+        "footer";
 }
 
 /* navbar section */
@@ -81,15 +81,19 @@ main{
     grid-area: main;
     display: flex;
     background-image: url("/img/first-background.jpg");
-    background-position: center;
+    /* background-position: right center; */
+    background-size: contain;
     justify-content: center;
+    background-repeat: no-repeat;
     align-items: center;
     flex-flow: column wrap;
     color: white;
+    font-weight: lighter;
 }
 
 h1{
     line-height: 0%;
+    font-weight: lighter;
 }
 
 button{
@@ -99,5 +103,61 @@ button{
 }
 
 /* end of main (big image) section */
+h2{
+    font-weight: lighter;
+}
 
 
+.second_title{
+    grid-area: sect1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: purple;
+}
+
+#icons{
+    background-color: pink;
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: auto 25% 25% 25% auto;
+    grid-template-areas: 
+        "empty1 article1  article2  article3 empty2";
+}
+
+#empty1{
+    grid-area: empty1;
+}
+
+#empty2{
+    grid-area: empty2;
+}
+
+#article1{
+    grid-area: article1;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#article2{
+    grid-area: article2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#article3{
+    grid-area: article3;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+p{
+    text-align: center;
+}
+
+.icons{
+    width: 10vw;
+}
