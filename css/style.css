@@ -46,8 +46,8 @@ header{
     grid-area: logo;
     display: flex;
     align-items: center;
-    height: 6vh;
-    margin: 1vh 20%;
+    height: 4vh;
+    margin: 1.5vh 20%;
 }
 
 #nav{
@@ -82,7 +82,7 @@ main{
     display: flex;
     background-image: url("/img/first-background.jpg");
     /* background-position: right center; */
-    background-size: contain;
+    background-size: cover;
     justify-content: center;
     background-repeat: no-repeat;
     align-items: center;
@@ -113,18 +113,18 @@ h2{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-color: purple;
 }
 
 #icons{
-    background-color: pink;
     grid-area: icons;
     display: grid;
-    grid-template-columns: auto 25% 25% 25% auto;
+    grid-template-columns: 20% auto auto auto 20%;
     grid-template-areas: 
         "empty1 article1  article2  article3 empty2";
 }
 
+
+/* empty1 & empty2 used to create empty areas in grids*/
 #empty1{
     grid-area: empty1;
 }
@@ -159,7 +159,7 @@ p{
 }
 
 .icons{
-    width: 10vw;
+    width: 5em;
 }
 
 
@@ -180,7 +180,6 @@ hr{
     width: 75%;
     height: 0.1vw;
     background-color: #ecedee ;
-    /* border: 0.01vh solid pink; */
     border: none;
 }
 
@@ -198,7 +197,6 @@ footer > p{
 
 figure{
     grid-area: social_icons;
-    /* width: 20%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
