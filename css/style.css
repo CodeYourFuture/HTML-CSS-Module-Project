@@ -16,8 +16,28 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/* navigation */
-.top-navigation{
+/* html */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.logo {
+    position: fixed;
+    padding-bottom: 2px;
+
+}
+ /* navigation */
+
+ /* Right-aligned section inside top navigation */
+.top-navigation {
     background-color: #fff;
     position: fixed;
     width: 100%;
@@ -60,7 +80,7 @@ body {
     background-repeat: no-repeat;
     background-position: 10 bottom;
     overflow: auto;
-    height: 45.938rem;
+    height: 47.938rem;
 }
 
 .introduction .content {
@@ -77,6 +97,7 @@ button {
     padding: 1rem 1.5rem;
     color: white;
     border-style: none;
+    position: relative;
 }
 
 .stories {
@@ -95,6 +116,8 @@ button {
     margin-right: -5%;
 }
 
+/* footer */
+
 .social .icons {
     text-align: center;
 }
@@ -112,5 +135,5 @@ button {
 
 .social .twitter {
     color: #55acee;
-}
+    }
 
