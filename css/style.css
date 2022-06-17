@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,4 +15,210 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 240px;
+}
 
+.header-logo {
+    content: url("../img/karma-logo.svg");
+    width: 32px;
+    height: 48px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 480px;
+}
+
+.nav-item-meet-karma {
+    font-weight: bold;
+    text-decoration: none;
+    color: #222222;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+}
+
+/* nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+} */
+
+nav ul li a:hover,
+a:hover {
+    color: #de551d;
+}
+
+/* nav.fill ul li a {
+    position: relative;
+}
+
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+
+
+nav.fill ul li a {
+    transition: all 2s;
+}
+
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+} */
+
+.background-image {
+    background-image: url("../img/first-background.jpg");
+    height: 720px;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro-karma {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro-karma h1 {
+    font-size: 56px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+.intro-karma p {
+    color: #ccc9c5;
+    font-size: 32px;
+}
+
+.button {
+    background-color: #de551d;
+    color: white;
+    width: 128px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.info-karma h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 36.8px;
+    margin-top: 136px;
+}
+
+.info-karma img {
+    width: 192px;
+    height: 128px;
+}
+
+.info-karma-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 23.2px;
+    margin-top: 48px;
+    padding: 32px 368px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.horizontal-line {
+    border-top: 1px solid rgb(238, 234, 234);
+    width: 80%;
+    margin: 0rem 3rem 0rem 3rem;
+    align-self: center;
+}
+
+footer h1 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+footer p {
+    font-size: 0.88rem;
+    color: rgb(180, 180, 179);
+}
+
+.logo-container img {
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid rgb(224, 218, 218);
+    padding: 0.28rem;
+    border-radius: 1rem;
+}
+
+
+/* 
+@keyframes fill {
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        background: #de551d;
+    }
+} */
