@@ -17,3 +17,115 @@ body {
  */
 
 
+/* Navigation */
+.nav-list{
+    display: flex;
+    list-style: none;
+   
+    
+}
+
+.nav-item{
+background-color: white;
+padding-right: 4rem;
+float: right;
+
+}
+
+.navigation{
+float: right;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+      color: #ff8b27
+
+      ;
+  }
+
+/* body */
+
+
+
+/* hero */
+
+.hero{
+    background-image: url('../img/first-background.jpg');
+    padding: 10rem;
+    text-align: center;
+    color: white;
+    height: 400px;
+    
+    
+}
+
+.button-item{
+    background-color: #ff8b27;
+    
+}
+
+/* section */
+
+.icon-item{
+text-align: center;
+padding-top: 5rem;
+    }
+    
+
+.flex-container{
+display: flex;
+justify-content: center;
+
+
+}
+
+.icon-devices{
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.icon-coffee{
+    margin: 10px;
+    padding-right: 10px;
+    }
+
+.icon-refill{
+    margin: 10px;
+    padding-right: 10px;
+        }
+
+.para{
+    padding-top: 1rem;
+    padding-right: 3rem;
+}
+
+
+svg{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* footer */
+.footer{
+   text-align: center;
+   padding-top: 5rem;
+   font-weight: lighter;
+    
+}
+
+.footer-item{
+    text-align: center;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    
+    
+}
