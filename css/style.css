@@ -16,4 +16,38 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* navigation */
+.top-navigation{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
 
+.top-navigation .content{
+    color: #838994;
+    width: 970px;
+    height: 4.375rem;
+    margin: auto;
+}
+
+.top-navigation .links{
+    font-size: 1rem;
+    float: right
+    -webkit-font-smoothing: antialiased;
+    margin-top: 1.563rem; 
+}
+
+.top-navigation .links .active{
+    font-weight: 500;
+    color: #4c5058;
+}
+
+.top-navigation li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
