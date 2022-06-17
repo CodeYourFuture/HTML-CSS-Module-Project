@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,154 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* NAV BAR */
 
+nav img {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+}
+
+.main-menu {
+  list-style: none;
+  display: inline-flex;
+  font-size: 1rem;
+}
+
+.main-menu li {
+  padding: 0 25px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-title a {
+  color: #7c7c7c;
+  font-weight: 600;
+}
+
+.main-menu a:hover {
+  color: #e0633a;
+}
+
+/* COVER */
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(first-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  color: whitesmoke;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 350;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-top: 10px;
+  font-weight: 80;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: #e0633a;
+  font-size: 0.8rem;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+/* GRID */
+.products h2 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.products h2 {
+  margin: 200px 0 0 0;
+}
+
+.grid {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 10px;
+}
+
+.box {
+  font-size: 1.8rem;
+  max-width: 100%;
+}
+.box-image {
+  padding: 70px 200px 50px 200px;
+  margin-bottom: 0;
+}
+
+.box-text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+hr {
+  width: 80%;
+  border: solid 1px rgb(189, 189, 189);
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 1700px) {
+  .box-image {
+    padding: 30%;
+  }
+}
+/* END OF GRID FOR PRODUCTS */
+
+/* FOOTER */
+
+.foot-title {
+  text-align: center;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.foot-img {
+  border: #c4c4c4 solid 2px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  margin: 10px 8px 25px 8px;
+  opacity: 0.8;
+}
+
+.foot-text {
+  text-align: center;
+  color: #b8b8b8;
+  font-size: 1.2rem;
+  margin-bottom: 120px;
+  font-weight: 380;
+}
