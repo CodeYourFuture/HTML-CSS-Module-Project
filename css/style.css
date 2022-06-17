@@ -16,4 +16,128 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* html */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.logo {
+    position: fixed;
+    padding-bottom: 2px;
+
+}
+ /* navigation */
+
+ /* Right-aligned section inside top navigation */
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.top-navigation .content{
+    color: #838994;
+    width: 970px;
+    height: 4.375rem;
+    margin: auto;
+}
+
+.top-navigation .links{
+    font-size: 1rem;
+    float: right
+    -webkit-font-smoothing: antialiased;
+    margin-top: 1.563rem; 
+}
+
+.top-navigation .links .active{
+    font-weight: 500;
+    color: #4c5058;
+}
+
+.top-navigation li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+/* introduction */
+.introduction {
+    background-image: url(https://thinkful-ed.github.io/karma-clone/img/first-background.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10 bottom;
+    overflow: auto;
+    height: 47.938rem;
+}
+
+.introduction .content {
+    color: white;
+    text-align: center;
+    padding-top: 400px;
+}
+
+button {
+    text-shadow: none;
+    border-radius: 4px;
+    background-color: orange;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    color: white;
+    border-style: none;
+    position: relative;
+}
+
+.stories {
+    text-align: center;
+}
+
+/* devices */
+
+.devices > li {
+    width: 33%;
+    box-sizing: border-box;
+    height: 4em;
+    display: inline-block;
+    list-style: none;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+/* footer */
+
+.join {
+    position: center;
+}
+
+.social .icons {
+    text-align: center;
+}
+
+.social .icons >li {
+    border-radius: 1.25rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1.25rem 5px;
+    padding: 0.625rem 0;
+    border: 1px solid #eaebec;
+    text-align: center;
+}
+
+.social .twitter {
+    color: #55acee;
+    }
 
