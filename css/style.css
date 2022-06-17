@@ -19,12 +19,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: rgba(196, 196, 196, 0.1);
-    padding: 1rem 15rem;
+    padding: 16px 240px;
 }
 
 .header-logo {
-    content:url("../img/karma-logo.svg");
+    content: url("../img/karma-logo.svg");
     width: 32px;
     height: 48px;
 }
@@ -34,11 +33,11 @@ body {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-    width: 30rem;
+    width: 480px;
 }
 
 .nav-item-meet-karma {
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
     color: #222222;
 }
@@ -64,7 +63,8 @@ nav ul li a:before {
     transition: all .5s;
 } */
 
-nav ul li a:hover, a:hover {
+nav ul li a:hover,
+a:hover {
     color: #de551d;
 }
 
@@ -113,7 +113,7 @@ nav.fill ul li a:hover:after {
 
 .background-image {
     background-image: url("../img/first-background.jpg");
-    height: 45rem;
+    height: 720px;
     width: 100%;
     background-repeat: no-repeat;
     color: white;
@@ -121,7 +121,58 @@ nav.fill ul li a:hover:after {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  }
+}
+
+.intro-karma {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro-karma h1 {
+    font-size: 56px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+/* karma p */
+.intro-karma p {
+    color: #ccc9c5;
+    font-size: 32px;
+}
+
+/* button */
+.button {
+    background-color: #de551d;
+    color: white;
+    width: 128px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.info-karma h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 36.8px;
+    margin-top: 136px;
+}
+
+.info-karma img {
+    width: 192px;
+    height: 128px;
+}
+
+.info-karma-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 23.2px;
+    margin-top: 48px;
+    padding: 32px 368px;
+}
+
 
 /* 
 @keyframes fill {
