@@ -5,32 +5,138 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-  #navbar {
-  background-color: white;
-  color: #000;
-  padding: 10px;
+nav{
   display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  font-size: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  cursor: pointer;
+ }
+ 
+ nav ul{
+  display: inline-flex;
+ }
+
+ nav li{
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 20px;
+  color: rgba(0, 0, 0, 0.808)
+ }
+
+ nav li a{
+  font-weight: 400;
+ }
+  h1{
+    text-align: center;
+    height: 100px;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 20%;
+   }
+
+   p{
+    text-align: center;
+    height: 100px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: white;
+   }
+   .btn {
+    background-color: #F15B2A;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-top: 50px;
+    padding: 15px 40px;
+    justify-content: center;
+   }
+   .button {
+    position: absolute;
+    top:50%
 }
 
-  nav-bar a{
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 20px;
-  text-decoration: none;
-  color:black;
-  margin-right: 10px;
-  }
-  a:hover {
-    color: #ffcbb6;
-  }
-  .nav-title {
+ /* Section Content Start */
+   .content{
+    height: 85vh;
+    padding: 8rem 0;
     text-align: center;
-    margin-top: ;
-  }
+   }
+
+   .content ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 60px;
+   }
+
+   figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 40vh;
+    width: 30%;
+   }
+
+   figcaption{
+    font-size: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+   }
+
+   .img-icon{
+    height: 20vh;
+   }
 
 
+  /* Section Content End*/
+
+
+ /* Footer Start */
+ footer{
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.footer-content{
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;  
+}
+
+.footer-content h3{
+ font-size: 1.3rem;
+ font-weight: 400;
+ color: rgba(0, 0, 0, 0.808)
+}
+
+.footer-content ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socials-icon {
+ border-radius: 100%;
+ border: 1px solid rgb(224, 214, 214);
+ padding: 15px;
+ width: 70%;
+ height: 10vh;
+ margin: 20px 10px;
+}
+
+.footer-content p {
+ font-size: 20px;
+ font-weight: 300;
+ color: rgb(109, 103, 103);
+}
+
+/* Footer End*/
