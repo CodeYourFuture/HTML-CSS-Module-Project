@@ -136,13 +136,11 @@ nav.fill ul li a:hover:after {
     margin-bottom: 0px;
 }
 
-/* karma p */
 .intro-karma p {
     color: #ccc9c5;
     font-size: 32px;
 }
 
-/* button */
 .button {
     background-color: #de551d;
     color: white;
@@ -171,6 +169,38 @@ nav.fill ul li a:hover:after {
     font-size: 23.2px;
     margin-top: 48px;
     padding: 32px 368px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.horizontal-line {
+    border-top: 1px solid rgb(238, 234, 234);
+    width: 80%;
+    margin: 0rem 3rem 0rem 3rem;
+    align-self: center;
+}
+
+footer h1 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+footer p {
+    font-size: 0.88rem;
+    color: rgb(180, 180, 179);
+}
+
+.logo-container img {
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid rgb(224, 218, 218);
+    padding: 0.28rem;
+    border-radius: 1rem;
 }
 
 
