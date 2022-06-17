@@ -5,6 +5,164 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+header {
+    padding: 5px;
+    background-color: white;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    float: right;
+}
+
+#menu {
+    margin: 0;
+    color: grey;
+}
+
+.button:hover {
+    color: orangered
+}
+
+#top-header {
+ padding: 5px;
+}
+
+#logo {
+    height: 5px;
+    width: 5px;
+    margin-left: 10%;
+    position: relative;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+main, h1 {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: azure;
+}
+
+.introtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-button {
+    padding: 20px;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+#info-boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    justify-content: space-around;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    justify-content: space-around;
+}
+
+footer, p {
+    text-align: center;
+}
+
+.first-box {
+    width: 100px;
+    height: 100px;
+}
+
+.second-box {
+    width: 100px;
+    height: 100px;
+}
+
+.third-box {
+    width: 100px;
+    height: 100px;
+}
+
+hr {
+    width: 90%;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.twitter {
+    width: 60px;
+    height: 60px;
+}
+
+.facebook{
+    width: 60px;
+    height: 60px;
+}
+
+.instagram {
+    width: 60px;
+    height: 60px;
+}
+
+.twitter-media {
+  background-color: lightgrey;
+  border: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.facebook-media {
+  background-color: lightgrey;
+  border: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.instagram-media {
+  background-color: lightgrey;
+  border: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
 
 /**
  * Add your custom styles below
