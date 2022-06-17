@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0 70px 0 70px;
 }
 
 /**
@@ -15,5 +16,138 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+/* NAV */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-item {
+    padding-top:20px;
+
+    
+    text-decoration: none;
+    padding-left: 20px;
+    color: #858a94;
+    
+}
+
+.nav a:first-child {
+    font-weight: bold;
+    
+}
+
+.nav-item:hover {
+    color: #e26b43;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    color: white;
+    font-size: 1.7em;
+    background-image: url(/img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+
+}
+
+.content, h1, p, button {
+    margin-top: 12px;
+}
+
+
+.content div {
+    text-align: center;
+    padding-top: 150px;
+
+}
+
+
+.button {
+    background-color: #e0633a;    
+    border: 1px;
+    border-radius: 3px;
+    font-size: 15px;
+    border-color: #E67E22;
+
+
+    
+}
+
+/* KARMA */
+
+.karma {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size:40px;
+    font-weight: lighter;
+}
+
+
+
+.icon-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.image {
+    display: flex;
+    flex-direction:column;
+
+}
+
+.image p {
+    text-align:left;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    width: 200px;
+}
+
+
+.footer {
+    text-align: center;
+}
+
+.inner_footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icon {
+    width: 20px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid lightgrey;
+    border-radius: 50px;
+}
+
 
 
