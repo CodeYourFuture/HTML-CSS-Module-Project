@@ -4,7 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
+    background-image: url(../img/first-background.jpg);
+    
+} 
 
 /**
  * Add your custom styles below
@@ -17,3 +19,72 @@ body {
  */
 
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+
+   
+}
+
+a {
+    color: rgb(87, 81, 81);
+    text-decoration: none;
+
+}
+a:hover {
+   color: rgb(196, 77, 33);
+
+}
+
+.intro{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 50px;
+    color: white;
+}
+
+button {
+    display: block;
+    color: white;
+    background-color: rgb(196, 77, 33);
+    font-size: 12px;
+    padding: 10px 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container, .socials{
+
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 5px; */
+    justify-content: space-evenly;
+    background-color: white;
+    color: rgb(87, 81, 81);
+
+
+}
+
+h2, h5, footer {
+  display: flex;
+  justify-content: center;
+  color: rgb(87, 81, 81);
+  background-color: #fff;
+  margin-bottom: 0px;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  margin-top: 0px;
+
+}
+
+/* .socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+} */
