@@ -78,3 +78,19 @@ button {
     color: white;
     border-style: none;
 }
+
+.stories {
+    text-align: center;
+}
+
+/* devices */
+
+.devices > li {
+    width: 33%;
+    box-sizing: border-box;
+    height: 4em;
+    display: inline-block;
+    list-style: none;
+    margin-left: -5%;
+    margin-right: -5%;
+}
