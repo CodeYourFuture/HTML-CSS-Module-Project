@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 /**
@@ -16,4 +17,151 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* 
+ Reset */
 
+html, body {
+    margin:0;
+}
+
+/* *Navigation styles */
+
+/* 
+ Grid Info */
+
+ body {
+   
+    height: 100vh;
+    width:100vw;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 80% 30% 40% 40%;
+    grid-template-areas: 
+    "header header header"
+    "hero hero hero"
+    "head2 head2 head2"
+    "section section section"
+    "footer footer footer";
+    
+ }
+
+ header  {
+     grid-area: header;
+     display: flex;
+     justify-content: space-between;
+     padding: 40px;
+ }
+
+ .logo {
+     padding-left: 40px;
+ }
+
+ nav {
+    display: flex;
+    font-size: 1.5em;
+    padding-right: 40px;
+    
+ }
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color:#5c5d5e;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color:rgb(241 91 42);
+}
+
+.hero {
+     grid-area: hero;
+     background-image: url(/img/first-background.jpg);
+     background-size: cover;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     line-height: 0%;
+ }
+
+h1 {
+     font-weight: 300;
+    font-size: 3.5em;
+}
+
+.hero p {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.hero button{
+    background-color:rgb(241 91 42);
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-top: 40px;
+    border: none;
+}
+
+
+
+h2 {
+     grid-area: head2;
+     color:#5c5d5e;
+     font-size: 2.5em;
+     font-weight: 400;
+     text-align: center;
+     margin-top: 150px;
+ }
+
+.articlecontainer {
+    margin-top: 30px;
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+ article {
+    text-align: center;
+
+ }
+ article img {
+    display: inline-block;
+    width:150px;
+    height:auto;
+    text-align: center;
+ }
+
+article p {
+    width: 300px;
+    text-align: center;
+      font-size: 1.5em;
+}
+
+footer {
+    grid-area:footer;
+    text-align: center;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    padding:20px;
+    margin: 5px;
+    border: 1px solid rgba(230, 230, 230, 0.464);  
+    border-radius: 50%; 
+}
+
+hr {
+    width: 60%;
+    border: 0.5px solid rgba(203, 197, 197, 0.95); 
+}
+
+.copyright {
+    color: rgba(203, 197, 197, 0.95); 
+}
