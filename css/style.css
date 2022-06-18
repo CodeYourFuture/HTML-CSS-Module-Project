@@ -6,6 +6,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+
 /**
  * Add your custom styles below
  * 
@@ -17,3 +19,192 @@ body {
  */
 
 
+body{
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 8vh 50vh 8vh 22vh auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "sect1"
+        "icons"
+        "footer";
+}
+
+/* navbar section */
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+        "logo list"
+
+}
+
+#logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    margin: 1.5vh 20%;
+}
+
+#nav{
+    grid-area: list;
+    display: inline-block;
+   
+}
+
+#nav_list{
+    
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav_items{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav_items:hover{
+
+    color: #f15b2a;
+}
+ 
+/* end of navbar section */
+
+/* main (big image) section */
+
+main{
+    grid-area: main;
+    display: flex;
+    background-image: url("/img/first-background.jpg");
+    /* background-position: right center; */
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    flex-flow: column wrap;
+    color: white;
+    font-weight: lighter;
+}
+
+h1{
+    line-height: 0%;
+    font-weight: lighter;
+}
+
+button{
+    background-color: #f15b2a;
+    border: #f15b2a;
+    padding: 1%;
+}
+
+/* end of main (big image) section */
+h2{
+    font-weight: lighter;
+}
+
+
+.second_title{
+    grid-area: sect1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#icons{
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: 20% auto auto auto 20%;
+    grid-template-areas: 
+        "empty1 article1  article2  article3 empty2";
+}
+
+
+/* empty1 & empty2 used to create empty areas in grids*/
+#empty1{
+    grid-area: empty1;
+}
+
+#empty2{
+    grid-area: empty2;
+}
+
+#article1{
+    grid-area: article1;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#article2{
+    grid-area: article2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#article3{
+    grid-area: article3;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+p{
+    text-align: center;
+}
+
+.icons{
+    width: 5em;
+}
+
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:
+    "horizontal     horizontal      horizontal"
+    "footer_title   footer_title    footer_title"
+    "empty1         social_icons    empty2"
+    "empty1         copyright       empty2";
+    grid-template-columns: auto 25% auto;
+    grid-template-rows: 2% 30% 30% 30%;
+}
+
+hr{
+    grid-area: horizontal;
+    width: 75%;
+    height: 0.1vw;
+    background-color: #ecedee ;
+    border: none;
+}
+
+footer > p{
+    grid-area: footer_title;
+
+}
+
+.socials_icons{
+    width:1.5vw;
+    padding: 0.8vw;
+    border: 0.1vw #ecedee  solid;
+    border-radius: 50%;
+}
+
+figure{
+    grid-area: social_icons;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+small{
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    color: #ecedee ;
+}
