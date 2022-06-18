@@ -4,7 +4,153 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90% 70% 30%; 
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "main    main    main"
+    "footer footer  footer";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 1.7em;
+    height: auto;
+    margin: 10px;
+}
+
+
+nav ul {
+     display: flex;
+     font-size: 1em; 
+     list-style: none;  
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: grey;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #f15b2a;
+}
+
+strong {
+    color: black;
+    font-weight:500
+}
+
+strong:hover {
+    color: #f15b2a;
+}
+
+.hero {
+    text-align: center;
+    grid-area: section;
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.5em;
+    color: white;
+    margin-top: 220px;
+}
+
+.tagline {
+    font-weight: 300;
+    font-size: 2em;
+    color: white;
+}
+
+button {
+    margin-top: 30px; 
+    height: 8%; 
+    width: 10%;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    background-color: #f15b2a;
+}
+
+
+main {
+    grid-area: main;
+    
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    text-align: center;
+}
+
+.articles p {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.icon {
+    height: 130px;
+    width: auto;
+}
+
+footer {
+    grid-area: footer;
+    margin-top:10px;
+    text-align: center;
+    font-weight: 300;
+}
+
+hr {
+    width: 70%;
+    margin-top: 10px;
+}
+
+.join {
+    font-weight: 400;
+}
+
+.copyright {
+    color: grey;
+}
+
+.social-media {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: 1px grey solid;
+    padding: 5px;
+    
+}
+
 
 /**
  * Add your custom styles below
@@ -15,5 +161,6 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
 
 
