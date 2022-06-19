@@ -15,5 +15,192 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
 
+   section{
+    min-height: 70vh;
+   }
 
+   li {
+    list-style: none;
+   }
+
+   a {
+    text-decoration: none;
+    color: rgb(121, 121, 119);
+   }
+
+   a:hover{
+    color:  #F15B2A;
+   }
+
+  a[type="button"] {
+    color: #fff;
+   }
+ 
+   h1{
+    font-weight: 300;
+    font-size: 60px;
+    color: #fff;
+   }
+
+   h2{
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.774);
+   }
+
+  /* Header */
+ 
+   .logo{
+    padding: 20px 0;
+    width: 3%;
+   }
+      /* Nav */
+   nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    cursor: pointer;
+   }
+   
+   nav ul{
+    display: inline-flex;
+   }
+ 
+   nav li{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0 20px;
+    color: rgba(0, 0, 0, 0.808)
+   }
+
+   nav li a{
+    font-weight: 400;
+   }
+
+  /* End of Header */
+
+  /* Section Hero */ 
+   .hero-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/first-background.jpg);
+   }
+
+   .hero-container p{
+    font-size: 35px;
+    font-weight: 300;
+    color: #fff;
+   }
+
+   .hero-content{
+    background-color: beige;
+    text-align: center;
+   }
+
+   .btn{
+    background-color: #F15B2A;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-top: 50px;
+    padding: 15px 40px;
+   }
+
+  /* End of Section Hero */
+
+   /* Section Contnent */
+   .content{
+    height: 85vh;
+    padding: 8rem 0;
+    text-align: center;
+   }
+
+   .content ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+   }
+
+   figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 30vh;
+    width: 27%;
+   }
+
+   figcaption{
+    font-size: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.808);
+   }
+
+   .img-icon{
+    height: 20vh;
+   }
+ 
+   hr{
+     margin: 0 5rem;
+   }
+
+  /* End of Section Content */
+
+   /* Footer */
+   footer{
+     height: 40vh;
+     margin: 0 auto;
+   }
+ 
+   .footer-content{
+     line-height: 2;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 10px;
+   }
+ 
+   .footer-content h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.808)
+   }
+
+   .footer-content ul{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+   }
+
+   .socials-icon {
+    border-radius: 100%;
+    border: 1px solid rgb(224, 214, 214);
+    padding: 15px;
+    width: 70%;
+    height: 10vh;
+    margin: 20px 10px;
+   }
+
+   .footer-content p {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(109, 103, 103);
+   }
+
+  /* End of Footer */
