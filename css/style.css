@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 5%;
 }
 
 /**
@@ -16,4 +17,42 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* Style the top section */
+.top-section{
+    display: flex;
+}
+/* Style the navigation */
+nav{
+    padding-left: 50%;
+}
 
+a{
+    float: left;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a:hover{
+    color: coral;
+}
+a:active{
+    font-weight: bold;
+}
+
+/* Style logo */
+.logo{
+    width: 2%;
+}
+
+/* Style the container */
+.container{
+    background-image: url("/img/first-background.jpg");
+    }
+
+.content{
+    color: white;
+    padding-top: 20%;
+    padding-left: 40%;
+    padding-bottom: 20%;
+}
