@@ -1,9 +1,15 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    line-height: 1.1;
 }
 
 /**
@@ -16,4 +22,170 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.navbar {
+    height: 2.5rem;
 
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+
+
+
+}
+
+.navbar .logo {
+    height: 1.2rem;
+
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul li {
+
+    margin-left: 2.5rem;
+    list-style: none;
+    padding-right: 0.5rem;
+    flex-grow: 1;
+}
+
+
+a {
+    color: rgb(87, 81, 81);
+    text-decoration: none;
+
+
+}
+
+a:hover {
+    color: rgb(196, 77, 33);
+
+}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    color: white;
+    font-size: 140%;
+    font-weight: lighter;
+    background-image: url("/img/first-background.jpg");
+    height: 100vh;
+    background-position: center;
+
+}
+
+.intro h1 {
+    font-size: 120%;
+    font-weight: lighter;
+
+}
+
+button {
+    display: block;
+    color: white;
+    background-color: rgb(196, 77, 33);
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+}
+
+.boxes {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(87, 81, 81);
+    height: 18rem;
+
+}
+
+
+
+.box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.8rem;
+
+}
+
+.box {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+
+
+}
+
+p {
+    margin: 1.5rem 0 0;
+    font-weight: 500;
+}
+
+
+
+.img {
+    width: 45px;
+    height: 45px;
+    ;
+
+}
+
+
+.social_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(87, 81, 81);
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.social_content ul {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+.social_content li {
+    text-decoration: none;
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.icons {
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    width: 1rem;
+}
