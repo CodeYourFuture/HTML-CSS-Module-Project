@@ -16,4 +16,134 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*logo sizing*/
+#logo{
+    height: 2.5em;
+    width: 2.5em;
+    ;
+}
 
+/*styling for the navigation section*/
+#top{
+    margin: 2em 0 0 15em;
+
+}
+nav{
+    display: flex;
+    width: 84%;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    text-decoration: none;
+    color: gray
+}
+
+/* styling for the links in the nav_bar*/
+a{
+    color: gray;
+}
+
+a:link{
+    text-decoration: none;  
+}
+
+a:active{
+    color: gray
+}
+
+a:hover{
+    color: orange;
+}
+
+span{
+    color: black;
+}
+
+/*styling for the main section*/
+#main_image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+#main_image .btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 22px 28px;
+    margin:  90px 0 0 0;
+}
+
+.center_text{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    padding: 40px 0 130px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.heading_text{
+    font-size:50px;
+    margin-bottom: 37px;
+}
+
+.under_heading{
+    font-size: 30px;
+}
+
+.icons_heading{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 3.5em;
+}
+
+.icon{
+    height: 10em;
+    width: 10em;
+   
+}
+
+.icon_text{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#container_with_icons{
+    display: grid;
+    grid-template-columns: 25em 25em 25em;
+    justify-content: center;
+    margin-left: 14%;
+    margin-top: 5%;
+    
+    
+}
+
+.social_media_icons{
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
+}
+
+hr{
+    width: 75%;
+    color: gray;
+    opacity: 0.30;
+    
+}
