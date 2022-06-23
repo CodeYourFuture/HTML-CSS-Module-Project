@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    /* margin: 5%; */
 }
 
 /**
@@ -16,4 +17,108 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* Style the top section */
+ h1{
+    font-weight: normal;
+ }
+.top-section{
+    display: flex;
+    padding: 2%;
+}
 
+/* Style the navigation */
+nav{
+    padding-left: 50%;
+}
+
+a{
+    float: left;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a:hover{
+    color: coral;
+}
+a:active{
+    font-weight: bold;
+}
+
+/* Style logo */
+.logo{
+    width: 2%;
+}
+
+/* Style the container */
+.container-one{
+    background-image: url("/img/first-background.jpg");
+    }
+
+.content-one{
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
+}
+
+/* Style the learn more button */
+.learn-more{
+    background-color: coral;
+    padding: 1%;
+    border: none;
+    border-radius: 5%;
+    margin-top: 2%;
+}
+
+/* Style second container */
+.images{
+    display: flex;
+}
+
+/* Style content-two images */
+.content-two img{
+    width: 20%;
+    padding: 7%;
+    /* padding-top: 10%; */
+}
+
+/* Style content-two text */
+
+.text{
+    display: flex;
+}
+
+.content-two p{
+    padding-right: 14%;
+    /* padding-left: 10%; */
+    padding-bottom: 2%;
+    margin-left: 9%;
+    text-align: center;
+}
+
+/* Style heading */
+.header-two{
+    text-align: center;
+}
+
+/* Style footer */
+
+.footer{
+    border-top: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.footer img{
+    width: 2%;
+    padding: 1%;
+}
+
+.footer-text{
+    font-size: small;
+    color: rgb(151, 144, 144);
+}
