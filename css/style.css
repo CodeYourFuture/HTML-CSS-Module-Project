@@ -4,7 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    margin: 5%;
+    /* margin: 5%; */
 }
 
 /**
@@ -18,10 +18,14 @@ body {
  */
 
  /* Style the top section */
+ h1{
+    font-weight: normal;
+ }
 .top-section{
     display: flex;
     padding: 2%;
 }
+
 /* Style the navigation */
 nav{
     padding-left: 50%;
@@ -54,8 +58,17 @@ a:active{
 .content-one{
     color: white;
     padding-top: 20%;
-    padding-left: 40%;
     padding-bottom: 20%;
+    text-align: center;
+}
+
+/* Style the learn more button */
+.learn-more{
+    background-color: coral;
+    padding: 1%;
+    border: none;
+    border-radius: 5%;
+    margin-top: 2%;
 }
 
 /* Style second container */
@@ -67,7 +80,7 @@ a:active{
 .content-two img{
     width: 20%;
     padding: 7%;
-    padding-top: 10%;
+    /* padding-top: 10%; */
 }
 
 /* Style content-two text */
@@ -77,13 +90,35 @@ a:active{
 }
 
 .content-two p{
-    padding-right: 15%;
-    padding-left: 10%;
-
+    padding-right: 14%;
+    /* padding-left: 10%; */
+    padding-bottom: 2%;
+    margin-left: 9%;
+    text-align: center;
 }
 
 /* Style heading */
 .header-two{
     text-align: center;
-    padding-top: 10%;
+}
+
+/* Style footer */
+
+.footer{
+    border-top: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.footer img{
+    width: 2%;
+    padding: 1%;
+}
+
+.footer-text{
+    font-size: small;
+    color: rgb(151, 144, 144);
 }
