@@ -20,6 +20,7 @@ body {
  /* Style the top section */
 .top-section{
     display: flex;
+    padding: 2%;
 }
 /* Style the navigation */
 nav{
@@ -46,13 +47,43 @@ a:active{
 }
 
 /* Style the container */
-.container{
+.container-one{
     background-image: url("/img/first-background.jpg");
     }
 
-.content{
+.content-one{
     color: white;
     padding-top: 20%;
     padding-left: 40%;
     padding-bottom: 20%;
+}
+
+/* Style second container */
+.images{
+    display: flex;
+}
+
+/* Style content-two images */
+.content-two img{
+    width: 20%;
+    padding: 7%;
+    padding-top: 10%;
+}
+
+/* Style content-two text */
+
+.text{
+    display: flex;
+}
+
+.content-two p{
+    padding-right: 15%;
+    padding-left: 10%;
+
+}
+
+/* Style heading */
+.header-two{
+    text-align: center;
+    padding-top: 10%;
 }
