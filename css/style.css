@@ -1,27 +1,41 @@
+*{
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
 }
+body{
+   font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+ header{
+    width: 90%;
+    height: 90px;
+    margin: auto;
+ }
+ #headerSvg{
+    position: relative;
+    top: 40px;
+    left:80px;
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
- ul{
+ }
+ ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin-left: 550px;
+    font-size: 1.5em;
     margin-right: 150px;
-
+    border-radius: .5em;
+    
+}
+li{
+    list-style: none;
+    padding: 4px;
+    color: black;
+    width: 160px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: .5em;
+    text-align: center;
   }
    a:hover{
       background-color: rgb(255, 217, 0);
@@ -30,37 +44,95 @@ body {
 .main-class {
 background-image: url("../img/first-background.jpg");
 background-repeat: no-repeat;
-width: 100%;
+width: 80%;
+border-radius: .5em;
+margin: auto;
 height: 700px;
+position: relative;
+top: 10px;
 }
 #id1{
 display:block ;
 text-align : center;
 color: white;
 padding: 100px;
+font-size: 1.5em;
+
+}#id1 button{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(156, 122, 3, 0.97);
+    border-radius: 1em;
+    color: blanchedalmond;
+    margin: 30px;
+    border: none;
+}.section1{
+margin: auto;
+    font-size: 1.5em;
+    margin-top: 150px ;
 }
 .section1 :first-child{
     text-align: center;
-}
-.section1{
-    margin-top: 150px ;
-
+    margin: 30px;
 }
 .div-main {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .section2{
-margin-top: 150px;
+margin: 150px 15px;
+font-size: 1.4em;
 }
 .section2 :first-child{
     text-align: center;
+    margin: 10px;
 }
 .section2 :last-child{
     text-align: center;
 }
 #div2 {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content:  center;
+}
+@media screen and (max-width: 440px) {
+  header{
+    height: 200px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+}  header ul a{
+display: inline; 
+   margin-top: 100px;
+   left: 50px;
+   width: 400px;
+   height: 200px;
+    border-radius: .5em;
+    background-color: blue;
+
+} a{
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(156, 122, 3, 0.97);
+}
+}
+@media  screen and (max-width: 440px) {
+    .div-main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: aqua;
+    }
+}@media  screen and (max-width: 440px) {
+    .section2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: aqua;
+    }
 }
