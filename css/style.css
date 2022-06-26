@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+
 }
 
 /**
@@ -17,6 +18,8 @@ body {
  */
 
 /*navigation style */
+
+/* header secction */
 
 * {
     margin: 0px;
@@ -57,4 +60,14 @@ a{
 
 /* Header Section */
 
- 
+/* main section */
+
+.container{
+display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 250px;
+    background-image: url();
+
+}
