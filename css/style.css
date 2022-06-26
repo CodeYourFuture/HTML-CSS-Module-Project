@@ -16,7 +16,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/* Genreal style  */
+/*navigation style */
 
 * {
     margin: 0;
@@ -24,10 +24,21 @@ body {
     box-sizing: border-box;
 }
 
-li {
-    list-style: none;
-    font-size: 17px;
+.navbar{
+    background-color:cornsilk;
+    margin:0%;
+    list-style-type: none;
+    display: flex;
+    
+
 }
+
+.navbar-links{
+display :flex;
+justify-content: flex-start;
+
+}
+
 /* Header Section */
 
 
