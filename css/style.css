@@ -68,11 +68,16 @@ body {
  }
 
  .content {
-    position:absolute;
-    top:50%;
-    left:50%
-    transform: translate(-50%, -50%)
+    position: absolute;
+    top:35%;
+    left:35%
+    
 
+
+ }
+ .image {
+    width:90%;
+    height: 70%;
  }
 
 
@@ -129,28 +134,44 @@ body {
 
   }
   .twitter {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
 .facebook {
-    width: 60px;
-    height: 60px;
-
-
+    width: 40px;
+    height: 40px;
 }
+
 .instagram {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 
 
 
-.twitter {
+.twitter-social {
     background-color: lightgray;
     border: 10px;
     color: white;
-    padding: 20px;
+    padding: 5px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    
+
+
+}
+
+
+.facebook-social {
+    background-color: lightgray;
+    border: 10px;
+    color: white;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -160,27 +181,11 @@ body {
 
 
 }
-
-
-.facebook {
+.instagram-social {
     background-color: lightgray;
     border: 10px;
     color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-
-
-}
-.instagram {
-    background-color: lightgray;
-    border: 10px;
-    color: white;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
