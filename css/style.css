@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,6 +7,7 @@ body {
 
 /**
  * Add your custom styles below
+
  * 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
@@ -16,4 +16,105 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.header,
+.content,
+.footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.header__logo {
+    max-height: 90px;
+    width: auto;
+}
+
+/* Navigation */
+
+.navigation__list {
+    display: flex;
+    list-style: none;
+}
+
+.navigation__item {
+    padding: 0.5rem;
+}
+
+.navigation__item:hover {
+    padding: 0.5rem;
+    color: darkorange;
+}
+
+.navigation__link {
+    color: var(--grey-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+
+.introducing_karma_text {
+    position: absolute;
+    font: 'roboto';
+    font-size: 45px;
+    top: 45%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.icons {
+    padding: 2rem;
+    font: 'roboto';
+    color: black;
+}
+
+.everyone_text {
+    position: relative;
+    font: 'roboto';
+    font-size: 45px;
+    top: 80%;
+    left: 70%;
+    padding: 100px;
+    color: black;
+    transform: translate(-50%, -50%);
+}
+
+.wifi_text {
+    position: absolute;
+    font: 'roboto';
+    font-size: 30px;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.learn_more {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    background-color: darkorange;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    bottom: 100%;
+    left: 50%;
+    padding: 10px;
+}
