@@ -4,6 +4,11 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+h1,
+h2,
+h5 {
+  font-weight: normal;
+}
 /*    NAVIGATION    */
 .logo-icon {
   display: flex;
@@ -39,10 +44,6 @@ header {
   color: #e1643b;
 }
 /*      BACKGROUND SECTION       */
-main {
-  text-align: center;
-  width: 100vw;
-}
 .bg-img {
   width: 100%;
 }
@@ -50,8 +51,10 @@ main {
   width: 100%;
   position: relative;
   color: white;
+  text-align: center;
 }
 .background-content {
+  font-weight: normal;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -59,26 +62,57 @@ main {
 }
 #bg-button {
   background-color: #e1643b;
+  border: solid 1px #e1643b;
   padding: 0.5rem 1rem;
   font-size: 0.55rem;
-  border-radius: 0.25rem;
+  border-radius: 0.15rem;
 }
 /*      ARTICLES SECTION        */
+main {
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: #4e5157;
+}
 .articles {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding: 0.4rem 1rem;
+  margin: 0rem 1rem 0rem 0rem;
 }
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 33%;
-  padding: 0rem 0.5rem;
-  margin: 0rem 1rem;
+  font-size: 0.75rem;
 }
 .karma-icons {
-  width: 5rem;
+  width: 4rem;
+}
+hr {
+  margin-top: 1rem;
+  height: 0.01rem;
+  background-color: #f1f1f2;
+  border: none;
+}
+/*      FOOTER       */
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h5 {
+  font-size: 0.5rem;
+}
+.signature {
+  color: #898d97;
+  font-size: 0.5rem;
 }
 /**
  * Add your custom styles below
