@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
 /**
  * Add your custom styles below
  * 
@@ -16,4 +17,104 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .karmalog{
+    padding-left: 10rem;
+    padding-right: 45rem;
+    width: 1.4em
 
+ }
+
+
+
+ .navigation__list {
+    list-style: none;
+    display: flex;
+    text-align: right;
+    color: #d3d3d3;
+ 
+  }
+  
+  .navigation__item {
+    padding: 0.0rem 2rem;
+  }
+  
+
+
+  .navigation__link {
+    color: var(--grey-dark);
+    /*font-weight: 600; */
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+  }
+
+
+  .image-background1{
+    width:96%;
+    margin-left: 2%;
+    margin-right: 2%;
+   
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .centered2 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-family:  sans-serif;
+  }
+
+  .learnmore{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5em 1.0em;
+    background-color: #e0633a;
+    border: 0;
+    border-radius: 0.2em;
+    color: white;
+  }
+
+
+  .section1{
+    margin-top: 5em;
+    font-family: 'Courier New', Courier, monospace;
+  }
+ 
+  .container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+
+  .image-container2{
+    width: 15%;
+  }
+  a:hover{
+   color: #e0633a;
+  }
+
+  .container-footer{
+    display: block;
+    flex-direction: row;
+    width:100%;
+  }
+
+  .image-ccontainer-footer{
+    width: 4%;
+    align-content: center;
+  }
