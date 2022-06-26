@@ -15,5 +15,178 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ header {
+    padding: 5px;
+    background-color:white;
+ }
+ nav {
+    display:flex;
+    flex-direction: row;
+    align-items: auto;
+    float: right;
+ }
+ #nav-bar {
+    margin:0;
+    color:grey;
+ }
+ .button:hover {
+    color: orangered;
+
+ }
+ #header {
+    padding:5px;
+ }
+
+ .logo {
+    height:5px;
+    width:5px;
+    margin-left: 10%;
+    position:relative;
+
+ }
+ .nav-item{
+    background-color: white;
+    border:none;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+
+ }
+
+ main, h1 {
+    text-align: center;
+ }
+
+ .container {
+    position: relative;
+    text-align: center;
+    color:azure;
+
+ }
+
+ .content {
+    position:absolute;
+    top:50%;
+    left:50%
+    transform: translate(-50%, -50%)
+
+ }
 
 
+ .btn-primary {
+    padding: 20px;
+    background-color: orangered;
+    border-radius: 5px;
+
+ }
+
+ #info-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    justify-content: space-around;
+
+ }
+ #contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: auto;
+    justify-content: space-around;
+
+ }
+
+
+ footer, p {
+    text-align: center;
+ }
+
+
+ .first-icon {
+    width:100px;
+    height:100px;
+
+ }
+ .second-icon {
+    width: 100px;
+    height: 100px;
+
+
+
+ }
+  .third-icon {
+    width: 100px;
+    height: 100px;
+
+  }
+
+  hr {
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+
+  }
+  .twitter {
+    width: 60px;
+    height: 60px;
+  }
+.facebook {
+    width: 60px;
+    height: 60px;
+
+
+}
+.instagram {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+.twitter {
+    background-color: lightgray;
+    border: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+
+
+}
+
+
+.facebook {
+    background-color: lightgray;
+    border: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+
+
+}
+.instagram {
+    background-color: lightgray;
+    border: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+
+
+}
