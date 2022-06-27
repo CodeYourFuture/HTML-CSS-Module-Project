@@ -16,21 +16,23 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name:irina mihai
+- Your City: west midlands
+- Your Slack Name: irinamihai150
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:html
+- Week:1
 
 # Notes
 
 - What did you find easy?
 
 - What did you find hard?
+Hard to guess the font, some page settings, 
 
 - What do you still not understand?
+I understand the basic but need more practice.
 
 - Any other notes?
