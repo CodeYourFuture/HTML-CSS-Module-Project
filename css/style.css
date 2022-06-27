@@ -1,177 +1,183 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+   /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+   body {
+      font-family: 'Roboto', sans-serif;
+      -webkit-font-smoothing: antialiased;
+   }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
- header {
-    padding: 5px;
-    background-color:white;
-  
- }
- nav {
-    display:flex;
-   justify-content: flex-end;
- }
- #nav-bar {
-    margin:0;
- }
+   /**
+   * Add your custom styles below
+   * 
+   * Remember: 
+   * - Be organised, use comments and separate your styles into meaningful chunks
+   *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+   * 
+   * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+   */
 
- .button:hover {
-    color: orangered;
- }
 
- #header {
-    padding:5px;
+   /* Navigation */
+   nav {
+      display:flex;
+      justify-content: flex-end;
+   }
+   
+   #nav-bar {
+      margin:0;
+   }
+   .nav-item {
+      background-color: white;
+      border: none;
+      color: gray;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+   }
+
+   .nav-item:hover {
+      color: rgb(224, 99, 58);
+   }
+
+   /* Headings */
+   header {
+      padding: 5px;
+      background-color: white;
+   }
+   #header {
+      padding: 5px;
       display: flex;
       justify-content: space-around;
+      width: 90%;
+      margin: 0 auto;
+   }
+   .logo {
+      height: 5px;
+      width: 5px;
+   }
+
+   .button:hover {
+      color: orangered;
+   }
+   .heading {
+      font-size: 50px;
+      font-weight: 150;
+   }
+
+   .sub_heading {
+      font-size: 30px;
+      font-weight: 50;
+   }
+
+   /* main */
+   main, h1 {
+      text-align: center;
+   }
+   main {
+      width: 70%;
+      margin:auto;
+   }
+   .description {
+      font-size: 20px;
+   }
+
+   .container {
+      position: relative;
+      text-align: center;
+      color:azure;
+   }
+
+   .content {
+      position: absolute;
+      top:35%;
+      left:35%
+   }
+
+   
+   .image {
       width:90%;
-      margin:0 auto;
- }
+      height: 70%;
+   }
 
- .logo {
-    height:5px;
-    width:5px;
- }
+   .btn-primary {
+      padding: 15px 25px;
+      background-color: rgb(224, 99, 58);
+      border-radius: 5px;
+      border:none;
+      margin-top: 25px;
+   }
 
- .nav-item{
-    background-color: white;
-    border:none;
-    color:gray;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-    font-size: 16px;
- }
+   #info-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: auto;
+      justify-content: space-around;
 
- .nav-item:hover {
-   color:rgb(224, 99, 58); 
- }
- main, h1 {
-    text-align: center;
- }
- main {
-   width: 70%;
-   margin:auto;
- }
+   }
+   #karma_heading {
+      margin-top: 80px;
+      margin-bottom: 50px;
+      font-size: 40px;
+      font-weight: 100;
+   }
 
- .container {
-    position: relative;
-    text-align: center;
-    color:azure;
- }
+   #contacts {
+      width:70%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+   }
 
- .content {
-    position: absolute;
-    top:35%;
-    left:35%
- }
+   /* Footer */
+   footer, p {
+      text-align: center;   
+   }
 
- .heading{
-   font-size: 50px;
-   font-weight: 150;
- }
+   footer {
+      width: 30%;
+      margin:auto;
+   }
 
- .sub_heading {
-   font-size:30px;
-   font-weight: 50;
- }
- .image {
-    width:90%;
-    height: 70%;
- }
+   .icon {
+      width:120px;
+      height:120px;
+   }
+   
+   hr {
+      width: 70%;
+      height: 0.2px;
+      color: rgb(236, 234, 234);
+      margin-top: 30px;
+      font-weight:lighter;
+   }
+   .img_social {
+      width: 20px;
+      height:20px;
+   }
 
- .btn-primary {
-    padding: 15px 25px;
-    background-color: rgb(224, 99, 58);
-    border-radius: 5px;
-    border:none;
-    margin-top: 25px;
- }
+   .container-social {
+      background-color: white;
+      border: 1px solid rgb(236, 234, 234);
+      color: white;
+      padding: 10px;
+      text-align:center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 10px;
+      border-radius: 50%; 
+   }
 
- #info-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: auto;
-    justify-content: space-around;
+   #paragraph_join {
+      margin-bottom: 0px;
+   }
 
- }
-#karma_heading {
-   margin-top: 80px;
-   margin-bottom: 50px;
-   font-size: 40px;
-   font-weight: 100;
-}
+   .copyright{
+      color:gray;
+      margin-top: 0;
 
- #contacts {
-   width:70%;
-   margin: 0 auto;
-    display: flex;
-    align-items: center;
-   justify-content:center;
- }
-
- footer, p {
-    text-align: center;   
- }
-
-footer {
-   width: 30%;
-   margin:auto;
-}
-
- .icon {
-    width:120px;
-    height:120px;
- }
- 
-  hr {
-    width: 70%;
-    height: 0.2px;
-    color: rgb(236, 234, 234);
-    margin-top: 30px;
-    font-weight:lighter;
-  }
-  .img_social {
-   width: 20px;
-   height:20px;
-  }
-
-.container-social {
-    background-color: white;
-    border: 1px solid rgb(236, 234, 234);
-    color: white;
-    padding: 10px;
-    text-align:center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 10px;
-    border-radius: 50%; 
-}
-
-.description {
-   font-size: 20px;
-}
-#paragraph_join {
-   margin-bottom: 0px;
-}
-
-.copyright{
-   color:gray;
-   margin-top: 0;
-
-}
+   }
 
 
