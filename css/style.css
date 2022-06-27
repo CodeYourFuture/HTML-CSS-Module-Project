@@ -18,36 +18,37 @@ body {
  header {
     padding: 5px;
     background-color:white;
+  
  }
  nav {
     display:flex;
-    flex-direction: row;
-    align-items: auto;
-    float: right;
+   justify-content: flex-end;
  }
  #nav-bar {
     margin:0;
-    color:grey;
  }
+
  .button:hover {
     color: orangered;
-
  }
+
  #header {
     padding:5px;
+      display: flex;
+      justify-content: space-around;
+      width:90%;
+      margin:0 auto;
  }
 
  .logo {
     height:5px;
     width:5px;
-    margin-left: 10%;
-    position:relative;
-
  }
+
  .nav-item{
     background-color: white;
     border:none;
-    color:black;
+    color:gray;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -55,42 +56,49 @@ body {
     font-size: 16px;
  }
 
-
  .nav-item:hover {
    color:rgb(224, 99, 58); 
  }
-
-
  main, h1 {
     text-align: center;
+ }
+ main {
+   width: 70%;
+   margin:auto;
  }
 
  .container {
     position: relative;
     text-align: center;
     color:azure;
-
  }
 
  .content {
     position: absolute;
     top:35%;
     left:35%
-    
+ }
 
+ .heading{
+   font-size: 50px;
+   font-weight: 150;
+ }
 
+ .sub_heading {
+   font-size:30px;
+   font-weight: 50;
  }
  .image {
     width:90%;
     height: 70%;
  }
 
-
  .btn-primary {
-    padding: 20px;
+    padding: 15px 25px;
     background-color: rgb(224, 99, 58);
     border-radius: 5px;
-
+    border:none;
+    margin-top: 25px;
  }
 
  #info-icons {
@@ -100,103 +108,70 @@ body {
     justify-content: space-around;
 
  }
+#karma_heading {
+   margin-top: 80px;
+   margin-bottom: 50px;
+   font-size: 40px;
+   font-weight: 100;
+}
+
  #contacts {
+   width:70%;
+   margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    align-items: auto;
-    justify-content: space-around;
-
+    align-items: center;
+   justify-content:center;
  }
-
 
  footer, p {
-    text-align: center;
+    text-align: center;   
  }
 
+footer {
+   width: 30%;
+   margin:auto;
+}
 
- .first-icon {
-    width:100px;
-    height:100px;
-
+ .icon {
+    width:120px;
+    height:120px;
  }
- .second-icon {
-    width: 100px;
-    height: 100px;
-
-
-
- }
-  .third-icon {
-    width: 100px;
-    height: 100px;
-
-  }
-
+ 
   hr {
-    width: 90%;
-    height: 1px;
-    background-color: lightgray;
-
+    width: 70%;
+    height: 0.2px;
+    color: rgb(236, 234, 234);
+    margin-top: 30px;
+    font-weight:lighter;
   }
-  .twitter {
-    width: 40px;
-    height: 40px;
+  .img_social {
+   width: 20px;
+   height:20px;
   }
-.facebook {
-    width: 40px;
-    height: 40px;
-}
 
-.instagram {
-    width: 40px;
-    height: 40px;
-}
-
-
-
-
-.twitter-social {
-    background-color: lightgray;
-    border: 10px;
+.container-social {
+    background-color: white;
+    border: 1px solid rgb(236, 234, 234);
     color: white;
-    padding: 5px;
+    padding: 10px;
     text-align:center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-    
+    margin: 4px 10px;
+    border-radius: 50%; 
+}
 
+.description {
+   font-size: 20px;
+}
+#paragraph_join {
+   margin-bottom: 0px;
+}
+
+.copyright{
+   color:gray;
+   margin-top: 0;
 
 }
 
 
-.facebook-social {
-    background-color: lightgray;
-    border: 10px;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-
-
-}
-.instagram-social {
-    background-color: lightgray;
-    border: 10px;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-
-
-}
