@@ -17,7 +17,10 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
+/* body  */
+body {
+    margin: 0;
+}
  /* header */
 .header {
   display: flex;
@@ -29,11 +32,13 @@ body {
   padding-top: 1rem;
 }
 /* log */
-.logo {
-  max-height: 90px;
-  width: auto;
+/* .logo {
+  max-height: 90px; */
+  /* width: auto;
+  background-color: white;
+  color: c05326;
    
-}
+} */
 /* Nav */
  
 .nav-list {
@@ -59,10 +64,10 @@ body {
   /* opacity: 0.5; */
 }
 /* main */
-.main {
+/* .main {
     display: flex;
     justify-content: space-around;
-}
+} */
 
 .image {
   position: relative;
@@ -78,7 +83,17 @@ body {
   height: 100%;
   margin-bottom: auto;
   margin-top: auto;
+  transform: translate(-5%, -15%)
   
+}
+.text p {
+  font-size: 30px;
+  text-align: center;
+  font-size: 2em;
+    margin: 0.67em 0;
+}
+.p-1 {
+  font-size: 0.1px;
 }
 .button {
   position: absolute;
@@ -94,6 +109,8 @@ body {
   display: inline-flex;
   font-size: 16px;
   cursor: pointer;
+  margin-left: 200px;
+  
 }
  
 /* article */
@@ -116,30 +133,36 @@ section {
   display: flex;
   justify-content: space-around;
 }
-.article-1,
-.article-2,
-.article-3 {
+.article {
   display: inline-block;
-  width: 250px;
-  justify-content: space-around;
+  width: 170px;
+  /* justify-content: space-around; */
 }
+.article-p {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 2em;
+    margin: 0.67em 0;
+}
+ 
  /* footer */
  .footer-p {
   text-align: center;
+  font-size: 2em;
+  margin: 0.67em 0;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
  }
- /* .footer-1,
- .footer-2,
- .footer-3 {
-  display: inline-block;
-  width: 100px;
-  justify-content: space-around;
- } */
+ 
  .footer {
   display: inline-block;
   width: 100px;
   text-align: center;
-  justify-content: ;
-  background-color: black;
+  justify-content: center;
+   
  }
 
  

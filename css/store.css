@@ -1,0 +1,94 @@
+  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+ 
+
+
+ 
+body {
+    margin: 0;
+}
+ /* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  height: 5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+/* log */
+.logo {
+  max-height: 90px;
+  width: auto;
+   
+}
+/* Nav */
+ 
+.nav-list {
+  display: flex;
+  list-style: none;  
+}
+.nav-item {
+  padding: 0.5rem 0;
+}
+.nav-link {
+  color: rgb(182, 172, 172);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 1em;
+  transition: opacity 0.15s;
+}
+.nav-link:hover {
+  color: #c86f49;
+  /* opacity: 0.8; */
+}
+.nav-link:active {
+  color: black;
+  /* opacity: 0.5; */
+}
+/* .title {
+    
+  color: red;
+  width: 60%;
+  border-radius: 15px;
+  margin: auto;
+} */
+
+/* button */
+/* .button {
+  position: absolute;
+  background-color: #c05326;
+  color: white;
+  border: none;
+  border-radius: 3px;
+   margin: 4px 2px;
+  padding: 15px 32px; 
+  /* text-align: center;
+  justify-content: center; */
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  cursor: pointer;
+  
+} */
+/* footer */
+ .footer-p {
+  text-align: center;
+  font-size: 2em;
+  margin: 0.67em 0;
+  margin-top: 100px;
+  margin-bottom: 30px;
+ }
+ 
+ .footer {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  justify-content: center;
+   
+ }
