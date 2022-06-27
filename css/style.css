@@ -28,31 +28,33 @@ body {
   justify-content: space-around;  
   height: 5rem;
   width: 100%;
-  margin-bottom: 1rem;
-  padding-top: 1rem;
+  /* margin-bottom: 1rem; */
+  /* padding-top: 1rem; */
 }
 /* log */
-/* .logo {
-  max-height: 90px; */
-  /* width: auto;
-  background-color: white;
-  color: c05326;
+.logo {
+  max-height: 90px;
+  width: auto;
    
-} */
+}
 /* Nav */
- 
+ nav {
+  margin-left: 300px;
+ }
 .nav-list {
   display: flex;
-  list-style: none;  
+  list-style: none;
 }
 .nav-item {
   padding: 0.5rem 0;
+   
 }
 .nav-link {
   color: rgb(182, 172, 172);
   font-weight: 600;
   text-decoration: none;
   padding: 0 1em;
+  margin-right: 10px;
   transition: opacity 0.15s;
 }
 .nav-link:hover {
@@ -64,10 +66,10 @@ body {
   /* opacity: 0.5; */
 }
 /* main */
-/* .main {
+.main {
     display: flex;
     justify-content: space-around;
-} */
+}
 
 .image {
   position: relative;
@@ -79,22 +81,18 @@ body {
   align-items: center;
   justify-content: center;
    color: white;
-  width: 100%;
-  height: 100%;
-  margin-bottom: auto;
-  margin-top: auto;
-  transform: translate(-5%, -15%)
+  /* width: 100%;
+  height: 100%; */
+  margin-top: 300px;
   
+  /* transform: translate(-5%, -15%) */
 }
 .text p {
-  font-size: 30px;
   text-align: center;
   font-size: 2em;
     margin: 0.67em 0;
 }
-.p-1 {
-  font-size: 0.1px;
-}
+/* button  */
 .button {
   position: absolute;
   background-color: #c05326;
@@ -109,60 +107,46 @@ body {
   display: inline-flex;
   font-size: 16px;
   cursor: pointer;
-  margin-left: 200px;
-  
+  margin-left: 170px;
 }
  
-/* article */
- 
-
-
-/* .article {
-  display: inline-block;
-  justify-content: space-around;
-   
-  width: 300px;
-  
-} */
-/* .article-h1 {
-  display: block;
-  align-items: center;
-  justify-content: center;
-} */
+ /* article  */
 section {
   display: flex;
   justify-content: space-around;
 }
 .article {
   display: inline-block;
-  width: 170px;
+  width: 250px;
+  margin-bottom: 120px;
   /* justify-content: space-around; */
 }
 .article-p {
   margin-top: 70px;
   margin-bottom: 30px;
   font-size: 2em;
-    margin: 0.67em 0;
+  margin: 0.67em 0;
+     
 }
- 
  /* footer */
+ 
  .footer-p {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   margin: 0.67em 0;
-  margin-top: 100px;
+  margin-top: 5px;
   margin-bottom: 30px;
-  width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
  }
  
  .footer {
   display: inline-block;
-  width: 100px;
+  /* width: 100px; */
   text-align: center;
   justify-content: center;
-   
+  opacity: 0.6;
+  margin-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 15px;
  }
 
  
