@@ -15,5 +15,90 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+header,
+main,
+footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+header {
+    margin-top: 10px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
 
+.nav-list {
+    margin-left: 25px;
+    padding: 0.5rem 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+}
+
+.nav-item:hover {
+    color: rgb(231, 51, 51);
+}
+
+.home {
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(253, 250, 250);
+}
+
+.learn {
+    background-color: rgb(228, 97, 10);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.about {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.middle-article {
+    padding: 1rem 0;
+}
+
+.about-divs {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 3rem;
+}
+
+.top-logo {
+    height: 40px;
+    width: auto;
+}
+
+.middle-logo {
+    height: 160px;
+    width: auto;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+}
+
+.copyright {
+    color: rgb(145, 145, 145);
+    font-size: 0.8rem;
+}
