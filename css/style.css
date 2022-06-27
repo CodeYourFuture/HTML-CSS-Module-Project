@@ -53,8 +53,13 @@ body {
     text-decoration: none;
     display:inline-block;
     font-size: 16px;
-
  }
+
+
+ .nav-item:hover {
+   color:rgb(224, 99, 58); 
+ }
+
 
  main, h1 {
     text-align: center;
@@ -83,7 +88,7 @@ body {
 
  .btn-primary {
     padding: 20px;
-    background-color: orangered;
+    background-color: rgb(224, 99, 58);
     border-radius: 5px;
 
  }
