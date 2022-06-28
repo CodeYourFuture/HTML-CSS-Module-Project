@@ -1,6 +1,6 @@
 :root {
     --grey-dark: #292b2c;
-    --grey-light: #e4e4e4;
+    --grey-light: #d0cdcd;
     --orange-dark: #F15B2A;
     --orange-light: #f7eae4;
     --white: #fff;
@@ -178,4 +178,39 @@ body, button {
     font-size: 3rem;
     font-weight: 500;
     color: var(--orange-dark);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    border-top: 1px solid var(--grey-light);
+    margin: 4rem 2rem 0;
+
+}
+
+.footer__text {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer__links__icon {
+    width: 30px;
+    height: auto;
+    padding: 0 2rem;
+}
+
+.footer__text--muted {
+    padding: 2rem;
+    font-size: 1rem;
+    color: var(--grey-light);
 }
