@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,114 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+  margin-right: 5rem;
+}
+
+.nav-item {
+  color: hsla(0, 0%, 26%, 0.573);
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 3rem;
+}
+
+.header {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+main,
+h1 {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 100%;
+  color: white;
+  font-size: 1em;
+  height: 700px;
+  margin-top: 1.5rem;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin-top: 18rem;
+}
+h2 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.LearnMore_button {
+  padding: 10px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  border: 1px;
+  font-size: 1rem;
+  background-color: rgba(255, 119, 0, 0.825);
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 2rem;
+  color: rgb(80, 78, 78);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.social-media {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 50rem;
+  margin-right: 50rem;
+}
+
+footer {
+  font-weight: lighter;
+  font-size: 1rem;
+  text-align: center;
+  color: hsla(0, 0%, 26%, 0.573);
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+a:hover {
+  color: rgba(255, 119, 0, 0.825);
+}
