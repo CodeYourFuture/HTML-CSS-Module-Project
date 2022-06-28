@@ -18,10 +18,14 @@ padding: 5px 10px;
 text-decoration: none;
 }
 
-.background {
+.first-background {
  background-image: url("img/first-background.jpg");
  background-color: light-gray;  
  text-align: center ;
+}
+
+h2 , h4, h5 {
+    text-align: center;
 }
 
 .more-button {
@@ -34,12 +38,21 @@ text-decoration: none;
 .img-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+}
+.img-fig {
+    align-content: center;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .images {
-width: 25%;
+width: 30%;
 padding: 10px;
 
 }
