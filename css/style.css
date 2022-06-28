@@ -18,7 +18,7 @@ a {
     text-decoration: none;
 }
 
-body {
+body, button {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -68,6 +68,16 @@ body {
     flex-direction: column;
 }
 
+/* Buttons */
+.btn--primary {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background-color: var(--orange-dark);
+    color: var(--orange-light);
+}
+
+
 /* Hero section */
 .hero {
     display: flex;
@@ -84,13 +94,13 @@ body {
 }
 
 .hero__title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     font-size: 3.5rem;
     font-weight: 300;
 }
 
 .hero__subtitle {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     font-size: 2rem;
     font-weight: 100;
 }
