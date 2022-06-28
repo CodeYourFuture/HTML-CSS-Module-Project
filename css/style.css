@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
     color: var(--grey-dark);
-
 }
 
 a {
@@ -38,7 +37,7 @@ body {
     height: auto;
 }
 
-.nav {}
+/* .nav {} */
 
 .nav__list {
     display: flex;
@@ -61,4 +60,24 @@ body {
 .nav__list__item:focus {
     font-weight: bold;
     color: initial;
+}
+
+/* Main section */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background-color: var(--grey-light);
+    background-image: url("../img/first-background.jpg");
+    /* background-size: contain; */
+}
+
+.description {
+    height: 100vh;
+    background-color: var(--white);
+
 }
