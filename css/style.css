@@ -1,19 +1,143 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+
+
 body {
+
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/* Header */
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.header {
+    padding: 1rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.header-logo {
+height: 70px;
+width: 70px;
+}
+
+ /* navigation */
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-item{
+padding: 1rem 1rem;
+margin: 0.3rem;
+
+}
+
+.nav-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: #8e929a;
+}
+.nav-link:hover{
+    color:#d06a45;
+}
+ .meet-karma{
+    color: rgb(48, 48, 48);
+ }
+/* hero */
+
+.hero {
+    background-image: url("../img/first-background.jpg");
+    background-repeat:no-repeat ;
+    height:90vh;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+.hero h1{
+    padding-top: 18.5rem;
+    font-size: 80px;
+    font-weight:300 ;
+
+}
+.hero p{
+    font-size:45px;
+    font-weight: 100;
+
+}
+/* button */
+
+.learn-btn{
+    background-color:#d06a45 ;
+    width: 14rem;
+    height: 5rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    border: none;
+}
+/* content */
+.article{
+
+    text-align: center;
+    margin-top: 10rem;
+    color: rgb(48, 48, 48);
+}
+.article h2{
+    font-size: 60px;
+    font-weight: 300;
+}
+.content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container{
+    margin:1rem 5rem;
+    padding: 1rem;
+    
+}
+.thumbnail{
+    width:10rem;
+    height:10rem;
+}
+
+.container p{
+    color: rgb(48, 48, 48);
+    font-size:30px;
+}
+/* border */
+.border{
+    margin-top: 3rem;
+    border-bottom: 2px solid lightgray;
+}
 
 
+/* footer */
+.footer{
+    text-align: center;
+}
+.footer p{
+    font-size: 30px;
+    margin: 3rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    margin:0 1rem;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+
+}
+.copyright{
+    color:#8e929a; 
+    font-size: 30px;
+    padding-bottom: 5rem;
+}
