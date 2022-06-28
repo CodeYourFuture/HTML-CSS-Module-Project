@@ -3,6 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: #fff;
 }
 
 
@@ -16,22 +17,146 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-.header {}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* min-height: 80vh; */
+    height: 10vh;
+    /* position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        height: 90px;
+        width: 70rem;
+        */
+}
 
-.header__logo {}
+.header-logo {
+    height: 6vh;
+    margin: 0 15vh;
+    /* half of the width to the left side and the same to the height: */
+    /* margin: 20px 110px; */
+}
 
-.navigation__list {}
+.navigation__list {
+    display: flex;
+    list-style: none;
+    margin: 0 15vh;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+}
 
-.navigation__item {}
 
-.navigation__list {}
+/* .navigation__link:first-child {
+        color: #000;
+    } */
+
+.navigation__item {
+    padding: 0 0.8rem;
+}
+
+.navigation__link {
+    color: rgb(121, 121, 121);
+    font-weight: 400;
+    text-decoration: none;
+    /* align-items: flex-end; */
+}
 
 .main {}
 
-.intro {}
+.intro {
+    display: flex;
+    height: 90vh;
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
 
-.karma {}
+.intro h1,
+h3 {
+    color: #fff;
+    font-weight: 300;
+    margin: 1.5rem;
+}
 
-.option {}
+.intro h1 {
+    font-size: 3.4rem;
+}
 
-.footer {}
+.intro h3 {
+    font-size: 1.8rem;
+}
+
+.intro-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    text-align: center;
+}
+
+.btn-more {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(205, 100, 50);
+    color: #fff;
+    margin: 1.7rem;
+}
+
+.karma {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.karma h2,
+h4 {
+    color: #000;
+    font-weight: 200;
+}
+
+.karma h2 {
+    font-size: 2.4rem;
+}
+
+.karma h4 {
+    font-size: 1.6rem;
+}
+
+.karma-content {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.karma-option {
+    display: flex;
+    justify-content: center;
+}
+
+.karma_icons {
+    height: 17vh;
+    width: auto;
+    margin: 3vh 6vw;
+}
+
+.footer {
+    display: flex;
+    height: 30vh;
+}
+
+.network_icons {
+    height: 25px;
+    width: auto;
+}
