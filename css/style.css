@@ -70,9 +70,10 @@ body, button {
 
 /* Buttons */
 .btn--primary {
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 2rem;
+    border: none;
     border-radius: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: var(--orange-dark);
     color: var(--orange-light);
 }
@@ -106,6 +107,7 @@ body, button {
 }
 
 /* Description section */
+
 .description {
     display: flex;
     flex-direction: column;
@@ -141,4 +143,39 @@ body, button {
 .description__article__caption {
     padding: 1.5rem 0;
     font-size: 1.5rem;
+}
+
+/* Subscription section*/
+
+.subscription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+}
+
+.subscription__quotation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-light);
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+}
+
+.subscription__quotation__text {
+    display: block;
+    width: 50%;
+    margin: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.text__span {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--orange-dark);
 }
