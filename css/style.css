@@ -16,4 +16,52 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.navbar{
+    overflow:hidden;
+    margin-right: 100px;
+}
 
+.navbar a{
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    color: grey;
+}
+
+.navbar a:hover{
+    color:orange;
+}
+
+
+.container{
+    position: relative;
+    text-align: center;
+
+}
+
+.pic1{
+position: absolute;
+top: 20%;
+left: 45%;
+color: white;
+
+}
+
+.pic2{
+position: absolute;
+top: 35%;
+left: 50%;
+color: white;
+}
+
+.pic3{
+position: absolute;
+top: 50%;
+left: 40%;
+}
+
+img{
+
+}
