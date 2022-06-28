@@ -70,7 +70,7 @@ body, button {
 
 /* Buttons */
 .btn--primary {
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
     font-size: 1.2rem;
     background-color: var(--orange-dark);
@@ -105,8 +105,40 @@ body, button {
     font-weight: 100;
 }
 
+/* Description section */
 .description {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
     background-color: var(--white);
+}
 
+.description__title {
+    margin: 6rem 3rem 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.description_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.description__article {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    padding: 0 2rem;
+}
+
+.description__article__image {
+    height: 200px;
+    width: auto;
+}
+
+.description__article__caption {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
 }
