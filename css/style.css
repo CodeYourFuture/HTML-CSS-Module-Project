@@ -37,8 +37,6 @@ body, button {
     height: auto;
 }
 
-/* .nav {} */
-
 .nav__list {
     display: flex;
     flex-direction: row;
@@ -71,11 +69,16 @@ body, button {
 /* Buttons */
 .btn--primary {
     padding: 0.8rem 2rem;
-    border: none;
+    border: 1px solid var(--orange-dark);
     border-radius: 0.5rem;
     font-size: 1rem;
     background-color: var(--orange-dark);
     color: var(--orange-light);
+}
+
+.btn--primary:hover {
+    color: var(--grey-dark);
+    background-color: var(--orange-light);
 }
 
 
