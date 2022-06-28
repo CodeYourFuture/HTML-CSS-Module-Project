@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Add your HTML markup here -->
@@ -25,7 +29,11 @@
       <img src="img/karma-logo.svg" alt="Karma logo" width="40" height="40" />
       <nav>
         <ul class="nav-list">
-          <ls class="nav-item"><a class="nav-link" href="#">Meet Karma</a></ls>
+          <ls class="nav-item"
+            ><a id="onlink" class="nav-link" href="index.html"
+              >Meet Karma</a
+            ></ls
+          >
           <ls class="nav-item"
             ><a class="nav-link" href="#">How it works</a></ls
           >
@@ -45,19 +53,18 @@
         </div>
         <div class="overlay">
           <div class="text">
-            <p>Introducing Karma</p>
-            <p>Bring WiFi With you,everywhere you go</p>
+            <h1>Introducing Karma</h1>
+            <h3>Bring WiFi With you, everywhere you go</h3>
             <button class="button">Learn More</button>
           </div>
         </div>
       </section>
-      <section>
-        <div class="article-p">
-          <p>Everyone needs a little Karma.</p>
-        </div>
-      </section>
 
-      <section>
+      <div class="commercial-header">
+        <h2>Everyone needs a little Karma</h2>
+      </div>
+
+      <section class="commercial">
         <article class="article">
           <a href="#"><img src="img/icon-devices.svg" alt="" /></a>
 
@@ -74,58 +81,44 @@
           <p>Pay as You go</p>
         </article>
       </section>
-      <section>
-        <!-- <div>
-          <img
-            src="../HTML-CSS-Module-Project/level-2/homepage-feature.png"
-            alt=""
-          />
-        </div> -->
-      </section>
     </main>
     <footer>
-      <hr>
-      <section>
-        
-        <div class="footer-p">
-          
-          <p>Join us on</p>
+      <hr />
+
+      <div class="footer-p">
+        <p>Join us on</p>
+      </div>
+
+      <div class="icons-wrapper">
+        <div class="icons">
+          <a href="https://twitter.com/?lang=en"
+            ><img
+              src="img/twitter-icon.svg"
+              alt="twitter"
+              width="25pt"
+              height="25pt"
+          /></a>
         </div>
-      </section>
-      <section>
-        <div>
-          <div class="footer">
-            <a href="#"
-              ><img
-                src="img/twitter-icon.svg"
-                alt="twitter"
-                width="25pt"
-                height="25pt"
-            /></a>
-          </div>
-          <div class="footer">
-            <a href="#"
-              ><img
-                src="img/facebook-icon.svg"
-                alt="facebook"
-                width="25pt"
-                height="25pt"
-            /></a>
-          </div>
-          <div class="footer">
-            <a href="#"
-              ><img
-                src="img/instagram-icon.svg"
-                alt="instagram"
-                width="25pt"
-                height="25"
-            /></a>
-          </div>
+        <div class="icons">
+          <a href="https://en-gb.facebook.com/"
+            ><img
+              src="img/facebook-icon.svg"
+              alt="facebook"
+              width="25pt"
+              height="25pt"
+          /></a>
         </div>
-      </section>
-      <section>
+        <div class="icons">
+          <a href="https://www.instagram.com/"
+            ><img
+              src="img/instagram-icon.svg"
+              alt="instagram"
+              width="25pt"
+              height="25"
+          /></a>
+        </div>
         <p style="opacity: 0.4">&copy;Karma Mobile.Inc</p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
