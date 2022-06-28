@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -11,20 +10,29 @@ body {
     flex-direction: row;
     justify-content: right;
     flex-wrap: wrap;
-   
+
 }
+
 .nav-link {
-padding: 5px 10px;
-text-decoration: none;
+    padding: 5px 10px;
+    text-decoration: none;
 }
 
 .first-background {
- background-image: url("img/first-background.jpg");
- background-color: light-gray;  
- text-align: center ;
+    background-image: url("/img/first-background.jpg");
+    background-color: light-gray;
+   text-align: center;
+   padding-top: 5rem;
+   padding-bottom: 7rem;
 }
 
-h2 , h4, h5 {
+.first-background h2, .first-background p {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 ,h4 ,h5 {
     text-align: center;
 }
 
@@ -41,6 +49,7 @@ h2 , h4, h5 {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .img-fig {
     align-content: center;
     text-align: center;
@@ -52,8 +61,8 @@ figcaption {
 }
 
 .images {
-width: 30%;
-padding: 10px;
+    width: 30%;
+    padding: 10px;
 
 }
 
@@ -74,5 +83,3 @@ padding: 10px;
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
