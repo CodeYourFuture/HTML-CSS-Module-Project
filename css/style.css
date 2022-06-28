@@ -70,16 +70,29 @@ body {
 
 /* Hero section */
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background-color: var(--grey-light);
     background-image: url("../img/first-background.jpg");
-    text-align: center;
 }
 
 .hero__title, .hero__subtitle {
-    font-weight: normal;
     color: var(--white);
+}
 
+.hero__title {
+    margin-bottom: 0.5rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.hero__subtitle {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 100;
 }
 
 .description {
