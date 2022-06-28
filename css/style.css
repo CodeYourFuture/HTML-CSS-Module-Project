@@ -73,7 +73,13 @@ body {
     height: 100vh;
     background-color: var(--grey-light);
     background-image: url("../img/first-background.jpg");
-    /* background-size: contain; */
+    text-align: center;
+}
+
+.hero__title, .hero__subtitle {
+    font-weight: normal;
+    color: var(--white);
+
 }
 
 .description {
