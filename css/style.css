@@ -99,6 +99,7 @@ h3 {
     position: absolute;
     top: 55%;
     left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -156,7 +157,48 @@ h4 {
     height: 30vh;
 }
 
+.footer-content {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* .footer-line {
+    display: flex;
+    width: 80vw;
+    border-top: 2px solid rgb(232, 232, 232);
+} */
+
+.footer-network {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 .network_icons {
     height: 25px;
     width: auto;
+    margin: 7px;
+    padding: 7px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 100px;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(135, 135, 135);
+}
+
+.line {
+    border-top: 1px solid rgb(232, 232, 232);
+    width: 70vw;
 }
