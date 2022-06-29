@@ -1,10 +1,12 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #000;
     -webkit-font-smoothing: antialiased;
+    background-color: #fff;
 }
+
 
 /**
  * Add your custom styles below
@@ -17,3 +19,174 @@ body {
  */
 
 
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.header-logo {
+    height: 6vh;
+    margin-left: 8vw;
+}
+
+
+/* navigation */
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    margin-right: 8vw;
+}
+
+.navigation-item {
+    padding: 0 0.8rem;
+}
+
+.karma-link,
+.navigation-link {
+    color: rgb(121, 121, 121);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.karma-link {
+    color: #000;
+}
+
+.karma-link:hover,
+.navigation-link:hover {
+    color: rgb(200, 50, 50);
+}
+
+.intro {
+    display: flex;
+    height: 90vh;
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.intro h1 {
+    font-size: 3.4rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 1.5rem;
+}
+
+.intro h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 1.5rem;
+}
+
+.intro-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* button */
+
+.btn-more {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(205, 100, 50);
+    color: #fff;
+    margin: 1.7rem;
+}
+
+
+/* section karma styles */
+
+.karma {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.karma h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.karma h4 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.karma-content {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.karma-option {
+    display: flex;
+    justify-content: center;
+}
+
+.karma_icons {
+    height: 7.8rem;
+    width: auto;
+    margin: 1rem 5rem;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    height: 30vh;
+}
+
+.footer-content {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer-network {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.network_icons {
+    height: 25px;
+    width: auto;
+    margin: 7px;
+    padding: 7px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 100px;
+}
+
+.line {
+    border-top: 1px solid rgb(232, 232, 232);
+    width: 65vw;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(135, 135, 135);
+}
