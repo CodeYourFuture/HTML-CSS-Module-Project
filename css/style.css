@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-size:24px;
 }
 
 /**
@@ -16,9 +17,22 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .small-icon{
+    width:20px;
+ padding-top: 10px;
+ margin: none;
+ border: none;
+
+
+
+
+ }
+
 .navbar{
     overflow:hidden;
+    
     margin-right: 100px;
+    padding-left: 200px;
 }
 
 .navbar a{
@@ -31,40 +45,23 @@ body {
 }
 
 .navbar a:hover{
-    color:orange;
+    color:#c05326;
 }
 
 
-.container{
-    position: relative;
-    text-align: center;
-
+.main{
+    background-image: url(/img/first-background.jpg);
+    height:500px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
 }
 
-.pic1{
-position: absolute;
-top: 20%;
-left: 38%;
+.image-text{
 color: white;
+text-align:center;
+padding-top: 70px;
 
-}
-
-.pic2{
-position: absolute;
-top: 35%;
-left: 37%;
-color: white;
-}
-
-.pic3{
-position: absolute;
-top: 50%;
-left: 45%;
-}
-
-img{
-max-width: 100%;
-height: auto;
 }
 
 .container2{
@@ -95,6 +92,18 @@ h1{
     padding-bottom: 20px;
 }
 
+button {
+    background-color: #c05326;
+    font-size: 1rem;
+    border: 0;
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+   margin-top: 30px;
+
+}
+
 footer{
     text-align: center;
+    font-size: 14px;
 }
