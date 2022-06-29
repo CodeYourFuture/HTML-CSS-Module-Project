@@ -18,15 +18,35 @@ body {
 /* header presentation */
 header {
     display: flex;
+    width: auto;
+    height: 40px;
+    margin-top: 5px;
+
 }
 
 .logo {
-    width: 1%;
+    width: 15px;
     padding-left: 40px;
 }
+
+.navigation {
+    text-align: center;
+}
 .nav-bar {
+    
     flex-direction: row;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-link {
+    color: grey;
+    justify-content: center;
+    align-content: space-between;    
+}
+
+.nav-link:hover {
+    color: #c05326;
 }
 
 /* introduction  */
@@ -51,11 +71,12 @@ header {
 }
 
 button {
-    font-weight: ;
+    font-size: 1rem;
     background-color: #c05326;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 10px 10px;
     margin: 15px 0;
+    border: none;
+    border-radius: 3px;
     
 }
 
@@ -68,10 +89,38 @@ button {
 #sub {
     padding: 25px 0;
     margin-top: 20px;
+    font-size: larger;
 }
 
 .column {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+
+/* footer layout */
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon {
+    width: 20px;
+    margin: 0 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+}
+
+#copyright {
+    color: lightgrey;
+    font-weight: lighter;
 }
