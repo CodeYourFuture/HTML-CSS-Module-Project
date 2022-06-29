@@ -44,7 +44,7 @@ body {
 .pic1{
 position: absolute;
 top: 20%;
-left: 45%;
+left: 38%;
 color: white;
 
 }
@@ -52,16 +52,49 @@ color: white;
 .pic2{
 position: absolute;
 top: 35%;
-left: 50%;
+left: 37%;
 color: white;
 }
 
 .pic3{
 position: absolute;
 top: 50%;
-left: 40%;
+left: 45%;
 }
 
 img{
+max-width: 100%;
+height: auto;
+}
 
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 img{
+    height:100px;
+    width: 120px;
+}
+
+.icon{
+    font-size: 18px;
+    Padding-right: 50px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.karma{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+footer{
+    text-align: center;
 }
