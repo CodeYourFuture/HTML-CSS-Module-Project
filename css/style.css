@@ -1,19 +1,225 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+ :root {
+    --grey-dark: #292b2c;
+    --grey-light: #e4e4e4;
+    --orange-dark: #c05326;
+    --white: #fff;
+  }
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .header,
+  .content,
+  .footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  } 
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .header__logo {
+    max-height: 90px;
+    width: 2rem;
+    padding-left: 130px;
+  } 
+ /* button */
+  button {
+    background-color: #c05326;
+    color: var(--white);
+    padding: 12px 30PX 12PX 30PX;
+    border-radius: 4px;
+    font-size: 1rem;
+    
+  }
+  button:hover {
+    background-color: #fff;
+    color: #c05326;
+  }
+
+
+  /* karma */
+
+.karma {
+    background-image: url("../img/first-background.jpg");
+    height: 650px;
+    background-color: var(--grey-light);
+    margin-bottom: 75px;
+    justify-content: center;
+  }
+  
+  .karama_button {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .karma h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 300px;
+    font-weight: 200;
+    text-align: center;
+  }
+  
+  .karma p {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+  }
+
+/* Navigation */
+
+.navigation__list {
+    display: flex;
+    list-style: none;
+
+  }
+  
+  .navigation__item {
+    padding: 0.5rem 0;
+  }
+
+  
+  .navigation__link {
+    color: rgb(96, 96, 96);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px;
+  }
+
+  .navigation__link:hover {
+    color: #c05326;
+  }
+  .active {
+    color: black;
+  }
+/* Article */
+
+.article-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 75px 10px;
+  }
+  
+  .article {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+   }
+  
+  .article__title-link {
+    text-decoration: none;
+    color: var(--grey-dark) ;
+  }
+
+  .article__title {
+    text-align: center;
+    font-weight: 300;
+  }
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .article__thumbnail {
+    object-fit: contain;
+    width: 7rem;
+  }
+
+
+/* Footer */
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  .footer__content {
+    border-top: 2px solid var(--orange-light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .footer p {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.85rem;
+    justify-content: center;
+  }
+
+  .footer__sm_icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .media_icon_container { 
+    display:flex;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border-style: ridge;
+    justify-content: center;
+    align-items: center;
+  }
+  .media_icon {
+    width: 1rem;
+    height: 1rem;
+    object-fit: contain;
+  }
+  .footer__content > p {
+    color: rgb(154, 152, 152);
+   }
+  .footer__content > p:first-child {
+    font-weight: 450;
+    color: #292b2c;
+  }
+  
+ 
+  .footer__content > .article__thumbnail {
+    width: 2rem;
+
+  }
+  hr {
+    width: 60%;
+  }
+  
+  /* Media queries */
+  
+  @media screen and (min-width: 992px) {
+    .content {
+      flex-direction: row;
+    }
+}
 
 
