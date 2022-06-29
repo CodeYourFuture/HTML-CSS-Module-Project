@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #000;
     -webkit-font-smoothing: antialiased;
     background-color: #fff;
 }
@@ -17,59 +18,49 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+/* header */
+
 .header {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    /* min-height: 80vh; */
+    justify-content: space-between;
     height: 10vh;
-    /* position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: stretch;
-        height: 90px;
-        width: 70rem;
-        */
 }
 
 .header-logo {
     height: 6vh;
-    margin: 0 15vh;
-    /* half of the width to the left side and the same to the height: */
-    /* margin: 20px 110px; */
+    margin-left: 8vw;
 }
 
-.navigation__list {
+
+/* navigation */
+
+.navigation-list {
     display: flex;
     list-style: none;
-    margin: 0 15vh;
-    /* align-items: flex-end; */
-    /* justify-content: flex-end; */
+    margin-right: 8vw;
 }
 
-
-/* .navigation__link:first-child {
-        color: #000;
-    } */
-
-.navigation__item {
+.navigation-item {
     padding: 0 0.8rem;
 }
 
-.navigation__link {
+.karma-link,
+.navigation-link {
     color: rgb(121, 121, 121);
     font-weight: 400;
     text-decoration: none;
-    /* align-items: flex-end; */
 }
 
-.main {}
+.karma-link {
+    color: #000;
+}
+
+.karma-link:hover,
+.navigation-link:hover {
+    color: rgb(200, 50, 50);
+}
 
 .intro {
     display: flex;
@@ -80,19 +71,18 @@ body {
     background-position: bottom;
 }
 
-.intro h1,
-h3 {
+.intro h1 {
+    font-size: 3.4rem;
     color: #fff;
     font-weight: 300;
     margin: 1.5rem;
 }
 
-.intro h1 {
-    font-size: 3.4rem;
-}
-
 .intro h3 {
     font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 1.5rem;
 }
 
 .intro-content {
@@ -103,6 +93,9 @@ h3 {
     text-align: center;
 }
 
+
+/* button */
+
 .btn-more {
     padding: 0.8rem 1.5rem;
     border: none;
@@ -112,6 +105,9 @@ h3 {
     margin: 1.7rem;
 }
 
+
+/* section karma styles */
+
 .karma {
     display: flex;
     height: 70vh;
@@ -119,18 +115,14 @@ h3 {
     justify-content: center;
 }
 
-.karma h2,
-h4 {
-    color: #000;
-    font-weight: 200;
-}
-
 .karma h2 {
-    font-size: 2.4rem;
+    font-weight: 300;
+    font-size: 2.5rem;
 }
 
 .karma h4 {
-    font-size: 1.6rem;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 .karma-content {
@@ -147,10 +139,13 @@ h4 {
 }
 
 .karma_icons {
-    height: 17vh;
+    height: 7.8rem;
     width: auto;
-    margin: 3vh 6vw;
+    margin: 1rem 5rem;
 }
+
+
+/* footer */
 
 .footer {
     display: flex;
@@ -165,22 +160,15 @@ h4 {
     text-align: center;
 }
 
-
-/* .footer-line {
-    display: flex;
-    width: 80vw;
-    border-top: 2px solid rgb(232, 232, 232);
-} */
-
 .footer-network {
     display: flex;
-    justify-content: center;
     flex-direction: row;
 }
 
 .footer h6 {
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 1rem;
 }
 
 .network_icons {
@@ -192,13 +180,13 @@ h4 {
     border-radius: 100px;
 }
 
+.line {
+    border-top: 1px solid rgb(232, 232, 232);
+    width: 65vw;
+}
+
 .copyright {
     font-size: 0.9rem;
     font-weight: 400;
     color: rgb(135, 135, 135);
-}
-
-.line {
-    border-top: 1px solid rgb(232, 232, 232);
-    width: 70vw;
 }
