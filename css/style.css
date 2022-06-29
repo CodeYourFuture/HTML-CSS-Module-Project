@@ -1,19 +1,156 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+nav
+{
+    padding-right: 4em;
+}
+
+.logo
+{
+    margin: 1em 8em;
+    width: 30px;
+}
+
+.option-buttons
+{
+    float: right; 
+    line-height: 50px;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-right: 30px;
+    border:0px;
+    background-color: white;
+}
 
 
+.option-buttons:hover
+{
+    color:orangered;
+}
+
+.container
+{
+    position: relative;
+    color: white;
+}
+
+.bg-image
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-text
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.p-1
+{
+    font-size: 40px;
+}
+
+.p-2
+{
+    font-size: 20px;
+}
+
+.btn-learn-more
+{
+    height: 60px;
+    width: 150px;
+    background-color: rgb(255, 99, 43);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btn-learn-more:hover
+{
+    background-color: rgb(206, 55, 0);
+}
+
+
+.p-3
+{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.img-1
+{
+    height: 100px;
+}
+
+.image-1
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;   
+}
+
+.p-4
+{
+    padding-bottom: 5em;
+}
+
+hr.hl 
+{
+    width: 90%;
+    opacity: 0.25;
+}
+
+.p-5
+{
+    text-align: center;
+    font-size: 15px;
+    margin: 0%;
+    padding-bottom: 12px;
+}
+
+
+.b-c-img
+{
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.075);
+    border-width: 1px;
+    background-color: white;
+
+}
+
+.b-c-img:hover
+{
+    background-color: rgb(200, 200, 200);
+}
+
+.i-c-img
+{
+    height: 10px;
+}
+
+.btn-icon
+{
+    text-align: center;
+}
+
+.p-6
+{
+    text-align: center;
+    font-size: 11px;
+    opacity: 0.5;
+    padding-bottom: 65px;
+}
