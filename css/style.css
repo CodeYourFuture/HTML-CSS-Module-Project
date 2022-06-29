@@ -70,6 +70,7 @@ a{
 
 .container img{
 width:96%;
+
     
 }
 .text-block{
@@ -105,9 +106,48 @@ width:96%;
 .icon{
     display: flex;
     justify-items: flex-end;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content:space-evenly;
+    margin-top: 50px;
+    margin-bottom: 30px;
 
 }
-  
+    
+/* end of main section */
 
+/* social media icons*/
+
+.join-us{
+    font-size:15px;
+    text-align: center;
+     
+}
+.social{
+text-align:center ;
+padding: 17px;
+border: 2px solid lightgray;
+}
+.fa{
+    padding:20px;
+    font: size 30px;
+    text-align: center;
+    text-decoration: none;
+    margin:10px;
+    border-radius: 50%;
+}
+.fa-facebook{
+    background-color: blue;
+    color: white;
+}
+
+.fa-twitter{
+    background-color:rgb(132, 116, 219) ;
+    color:white;
+}
+.fa-instagram{
+    background-color:blue ;
+    color:white;
+}
+footer p{
+    text-align: center;
+    font-weight: lighter ;
+}
