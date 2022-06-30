@@ -1,19 +1,192 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+h1 {
+    font-size: 3px;
+    margin: 05px;
+}
+.header {
+    min-width: 37.5rem;
+    height: 4.375rem;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #DDD;
+}
+.header .logo {
+    justify-content: left;
+    height: 4rem;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #838994;
+    font-size: 1.2rem;
+    list-style: none;
+}
+.navigation__item:hover {
+    cursor: pointer;
+    color: red;
+}
+.navigation__item--active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.intro {
+    background-image: url("../img/first-background.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro__h1,
+.intro__h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 3.125rem;
+    margin-bottom: 1rem;
+}
+.intro__h3 {
+    font-size: 1.563rem;
+}
+.intro__buttons {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cases__content {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #838994;
+}
+.cases__content>h2 {
+    font-size: 3.5rem;
+    margin: 1.625rem 0 4.125rem;
+    margin-left: 6rem;
+    font-weight: 300;
+    align-self: center;
+}
+.cases__devices {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.cases__devices>li {
+    display: flex;
+    flex-direction: column;
+}
+.cases__devices>li:not(:last-child) {
+    margin-right: 10rem;
+}
+.cases__img {
+    width: 190px;
+    height: 160px;
+    align-self: center;
+}
+.cases__caption>h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 2.5rem 5px 1.875rem;
+    text-align: center;
+}
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social__content {
+    width: 40%;
+    flex-direction: center;
+    font-size: 25px;
+}
+.social__content>hr {
+    border: 10;
+    border-top: 1px solid #eaebec;
+    margin: 1rem 0 0 6;
+}
+.social__collections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social__icons>li {
+    border-radius: 1rem;
+    width: 4rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social__icons>li:hover {
+    cursor: pointer;
+}
+.social__twitter {
+    color: #55acee;
+    background-image: url("/img/twitter-icon.svg");
+}
+.social__facebook {
+    color: #4c66a4;
+    background-image: url("/img/facebook-icon.svg");
+}
+.social__instagram {
+    color: #3f729b;
+    background-image: url("/img/instagram-icon.svg");
+}
+.social .copy {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #838994;
+}
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
+    
