@@ -1,12 +1,8 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-size:24px;
-    text-align: center;
-}
+ font-family: 'Roboto', sans-serif;
+ -webkit-font-smoothing: antialiased;
 
 /**
  * Add your custom styles below
@@ -18,6 +14,12 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ body {
+    font-size: 24px;
+        text-align: center;
+ }
+   
+ }
  .small-icon{
     width:20px;
  padding-top: 10px;
@@ -129,12 +131,17 @@ p{
     border: 1px solid #dcdcdc;
     margin: 5px;
 
+
 }
 
 .container3 img{
     height: 20px;
     width:20px;
    
+}
+
+.fa{
+    
 }
 
 
