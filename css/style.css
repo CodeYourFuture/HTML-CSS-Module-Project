@@ -202,11 +202,15 @@ body, button {
 .footer__links__icon {
     width: 30px;
     height: auto;
-    padding: 0 2rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid var(--grey-light);
+    border-radius: 50%;
 }
 
 .footer__text--muted {
+    opacity: 0.8;
     padding: 2rem;
-    font-size: 1rem;
-    color: var(--grey-light);
+    font-size: 1.2rem;
+    color: var(--grey-dark);
 }
