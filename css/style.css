@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    border: 2px solid navy;
 }
 
 
@@ -17,6 +18,14 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+ *{
+  font-family: sans-serif;
+ }
+
+
+
+ /* Logo style*/
  .karmalog{
     padding-left: 10rem;
     padding-right: 45rem;
@@ -25,7 +34,7 @@ body {
  }
 
 
-
+/* navigation container*/
  .navigation__list {
     list-style: none;
     display: flex;
@@ -34,12 +43,13 @@ body {
  
   }
   
+  /* Navigation items*/
   .navigation__item {
     padding: 0.0rem 2rem;
   }
   
 
-
+/*link of each navigation item */
   .navigation__link {
     color: var(--grey-dark);
     /*font-weight: 600; */
@@ -47,40 +57,74 @@ body {
     text-decoration: none;
   }
 
-
+/*
   .image-background1{
     width:96%;
     margin-left: 2%;
     margin-right: 2%;
    
   }
+*/
 
-  .centered {
+/* first Backgroun dof landing page */
+.background1{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  /*margin-left: 2%;*/
+  /*margin-right: 2%;*/
+  align-content: center;
+  color: white;
+  text-align: center
+}
+
+
+
+/* text on background */
+.title1background1 {
+color: white;
+text-align: center;
+position: absolute;
+top: 32%;
+left: 32%;
+
+}
+
+
+
+h1{
+  font-size: 4em;
+  font-family: "Roboto";
+  font-weight: lighter;
+  line-height: 1.0;
+}
+
+h2{
+  font-size: 2em;
+  font-family: "Roboto";
+  font-weight: lighter;
+  line-height: 1.0;
+}
+
+  .title2background2 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 17%;
+    left: 10%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3em;
-    font-family:Arial, Helvetica, sans-serif;
-  }
-
-  .centered2 {
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2em;
+    font-size: 0.7em;
     font-family:  sans-serif;
   }
 
+
   .learnmore{
     position: absolute;
-    top: 67%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0.5em 1.0em;
+    padding: 0.8em 1.2em;
     background-color: #e0633a;
     border: 0;
     border-radius: 0.2em;
@@ -97,24 +141,65 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 1em;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
   }
 
+
+
   .image-container2{
-    width: 15%;
+    width: 10%;
+    align-content: center;
   }
   a:hover{
    color: #e0633a;
   }
 
   .container-footer{
-    display: block;
+    display: flex;
     flex-direction: row;
     width:100%;
+   justify-content: center;
+    
   }
 
-  .image-ccontainer-footer{
-    width: 4%;
-    align-content: center;
+  .image-container-footer{
+    width: 20px;
+
   }
+
+  .logocontainer{
+    width: 20px;
+    border: 1px solid #EBEBE4;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  h4{
+    font-family: "Roboto";
+    font-weight: lighter;
+    line-height: 1.0;
+    text-align: center;
+  }
+  
+
+  hr{
+  margin-left: 5em;
+  margin-right: 5em;
+  border: 1px solid #EBEBE4;
+  }
+
+footer{
+  padding-bottom: 2%;
+}
+
+input {display: none;}
+ul li a {text-decoration: none; padding: 3px 10px; }
+.nav ul li input:checked + a {color: brown;}
