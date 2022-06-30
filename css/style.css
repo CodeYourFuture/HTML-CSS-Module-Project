@@ -110,24 +110,27 @@ a:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(222, 200, 92);;
+    background-color: rgb(255, 255, 255);;
 }
 .section-services
 {
-    background-color:rgb(222, 200, 92);
+    
     text-align: center;
     padding-top: 90px;
 }
 
-.service-container>div {
-    background-color: #f1f1f1;
-    width: 300px;
-    height: 300px;
-    margin: 30px;
+.service-container>figure {
+    margin: 80px;
+    width: 150px;
+    padding: 50px;
+}
+.service-container>figure>figcaption
+{
+    width: 200px;
 }
 .services-title
 {
-    font-size: 30px;
+    font-size: 50px;
 }
 footer{
     background-color:rgb(212, 90, 41);
