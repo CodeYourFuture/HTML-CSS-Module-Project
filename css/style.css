@@ -97,7 +97,16 @@ body {
 /* Section 2 */
 
 .section2 {
+    border-style: dashed;
+    border-color: yellow;
     text-align: center;
+    font-size: 150%;
+    color: darkslategray;
+    padding-top: 120px;
+}
+
+.section2-title {
+    font-weight: lighter;
 }
 
 .section2-articles {
@@ -106,9 +115,13 @@ body {
     align-items: center;
 }
 
-.article-icon {
+.section2-article-icon {
     height: 250px;
 }
+
+
+
+/* Footer */
 
 .footer {
     display: flex;
