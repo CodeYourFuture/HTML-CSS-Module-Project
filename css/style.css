@@ -110,7 +110,7 @@ a:hover
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);;
+   
 }
 .section-services
 {
@@ -133,17 +133,23 @@ a:hover
     font-size: 50px;
 }
 footer{
-    background-color:rgb(212, 90, 41);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.footer-times
+.footer-copyright
 {
-    background-color: #f1f1f1;
-    padding: 10px;
+   margin-bottom: 100px;
+}
+.footer-items>img
+{
+    width: 30px;
+    height: 30px;
     margin: 10px;
+    border-radius: 50%;
+    border: 2px solid #c5c5c5;
+    padding: 10px;
 }
 #line {
     width: 80%;
