@@ -35,7 +35,7 @@ body {
 
 
 /* navigation container*/
- .navigation__list {
+ #navigation__list {
     list-style: none;
     display: flex;
     text-align: right;
@@ -200,6 +200,7 @@ footer{
   padding-bottom: 2%;
 }
 
-input {display: none;}
-ul li a {text-decoration: none; padding: 3px 10px; }
-.nav ul li input:checked + a {color: brown;}
+.active {
+  background-color: rgb(177, 13, 13);
+  color: rgb(0, 0, 0);
+}
