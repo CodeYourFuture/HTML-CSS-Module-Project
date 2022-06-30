@@ -21,7 +21,7 @@ body {
 .header {
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .header-logo {
@@ -47,6 +47,11 @@ body {
     opacity: 70%;
 }
 
+.header-nav-link:hover {
+    color: coral;
+    opacity: 1;
+}
+
 .header-nav-link:first-child {
     opacity: 1;
 }
@@ -63,11 +68,30 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    font-size: 200%;
+    font-weight: lighter;
+}
+
+.section1-article {
+    -ms-transform: translateY(115%);
+    transform: translateY(115%);
+}
+
+.section1-title {
+    font-weight: lighter;
+}
+
+.section1-text {
+    font-weight: lighter;
+    margin-bottom: 75px;
 }
 
 .section1-button {
     background-color: coral;
     border: none;
+    border-radius: 5px;
+    font-size: 80%;
+    padding: 20px 40px;
 }
 
 /* Section 2 */
