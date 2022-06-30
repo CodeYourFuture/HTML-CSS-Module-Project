@@ -16,32 +16,42 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header - logo and nav */
 
 .header {
-    border-style: dashed;
-    border-color: yellow;
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 .header-logo {
-    border-style: dashed;
-    border-color: green;
-    margin-right: 500px;
+    margin-right: 400px;
 }
 
 .logo {
-    height: 50px;
+    height: 75px;
 }
 
 .header-nav {
-    border-style: dashed;
-    border-color: hotpink;
     display: flex;
     justify-content: space-between;
     width: 40%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
 }
+
+.header-nav-link {
+    text-decoration: none;
+    font-size: 120%;
+    color: darkslategray;
+    opacity: 70%;
+}
+
+.header-nav-link:first-child {
+    opacity: 1;
+}
+
+/* Section 1 */
 
 .section1 {
     background-image: url("/img/first-background.jpg");
@@ -54,6 +64,13 @@ body {
     text-align: center;
     color: white;
 }
+
+.section1-button {
+    background-color: coral;
+    border: none;
+}
+
+/* Section 2 */
 
 .section2 {
     text-align: center;
