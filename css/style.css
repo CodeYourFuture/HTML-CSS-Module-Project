@@ -16,34 +16,44 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 /* header presentation */
-header {
-    display: flex;
-    width: auto;
-    height: 40px;
-    margin-top: 5px;
+ 
 
-}
+
 
 .logo {
     width: 15px;
-    padding-left: 40px;
+    height: 23px;
+    padding-left: 100px;
+    margin-top: 10px;
+    
+} 
+
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    
 }
 
-.navigation {
-    text-align: center;
+.navbar li {
+    display: inline-block;
 }
-.nav-bar {
-    
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+
+.navbar a {
+    text-decoration: none;
+    color: gray;
+    width: 100px;
+    display: block;
+    padding: 2px 5px;
+    text-align: center;
 }
 
 .nav-link {
-    color: grey;
-    justify-content: center;
-    align-content: space-between;    
-}
+    color: gray;
+    }
 
 .nav-link:hover {
     color: #c05326;
@@ -71,7 +81,7 @@ header {
 }
 
 button {
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: #c05326;
     padding: 10px 10px;
     margin: 15px 0;
