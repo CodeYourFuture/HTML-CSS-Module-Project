@@ -134,9 +134,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .footer-icons{
     display: flex;
+    
+    
     
 }
 .footer-line {
@@ -148,11 +151,18 @@ body {
     margin-top: 4rem;
     margin-bottom: 3rem;
     color: rgb(212, 212, 212);
-
+}
+.footer-msg{
+    font-weight: 400;
+    font-size: 1.9rem;
 }
 .footer-icon-images{
-    height: 10rem;
-    width: 18rem;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
+    height: 3rem;
+    width: 5rem;
+    
+}
+.footer-license{
+    color: rgb(177, 176, 176);
+    margin-top: 2.2rem;
+    margin-bottom: 5rem;
 }
