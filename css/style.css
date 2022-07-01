@@ -97,9 +97,32 @@ body {
     align-items: center;
 }
 .feature-box{
+    display: flex;
+    flex-direction: column;
     height: 20rem;
     width: 20rem;
     justify-content: center;
     align-items: center;
-    
+
+}
+.feature-images{
+    height: 10rem;
+    width: 18rem;
+}
+.feature-text{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.feature-box-holder{
+    display: flex;
+    flex-direction: row;
+}
+#coffee-box{
+    height: 20rem;
+    width: 30rem;
+}
+.slogan{
+    font-weight: 200;
+    font-size: 3.3rem;
+    margin-top: 8rem;
 }
