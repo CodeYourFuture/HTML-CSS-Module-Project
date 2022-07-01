@@ -30,11 +30,12 @@ body {
 .logo {
     width: 15px;
     height: 23px;
-    margin-left: 5rem;
-    
-    
+    margin-left: 5rem;    
 } 
 
+.logo:hover {
+    cursor: pointer;
+}
 
  .nav-links {
     list-style: none;
@@ -97,19 +98,24 @@ body {
 }
 
 button {
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: #c05326;
-    padding: 15px 15px;
+    padding: 10px 10px;
     margin: 15px 0;
     border: none;
-    border-radius: 3px;
-    
+    border-radius: 5px;  
+}
+
+button:hover {
+    background-color:#4c66a4;
+    cursor: pointer;
 }
 
 /* grid  design*/
 
 .container {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 #sub {
@@ -118,10 +124,16 @@ button {
     font-size: larger;
 }
 
-.column {
+.columns {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    
+    /* align-items: center; */
+}
+
+.column img {
+    width: 90px;
+    height: 90px;
 }
 
 
@@ -133,12 +145,14 @@ button {
     overflow: auto;
     padding-bottom: 9rem;
     text-align: center;
+    
 }
 
 .social hr {
     order: 0;
-    border-top: 1px solid lightgrey;
+    border-top: 0 solid lightgrey;
     margin: 1.3rem 0;
+    padding: 10px 0;
 }
 
 .social .icons > li {
