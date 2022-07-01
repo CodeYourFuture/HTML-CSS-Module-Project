@@ -17,3 +17,114 @@ body {
  */
 
 
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 250px;
+}
+.leftposition {
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    float: right; 
+    margin-right: 175px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: hsl(34, 41%, 60%);
+}
+
+.introduction {
+    clear: left;
+    background-position: center; 
+    margin-top: 20px;
+    margin-right: 30px;
+    background-image: url("/img/first-background.jpg");
+    height: 700px;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.introduction div{
+    margin-left: 40%;
+    color: white;
+    padding-top: 300px;
+
+}
+
+button {
+    background-color: #fc7f03;
+    height: 40px;
+    width: 110px;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+.devicesimg{
+    width: 150px;
+    height: 150px;
+}
+
+.devices div{
+    float: left;
+    margin-right: 100px;
+    color: gray;
+    
+}
+.devices div h3 {
+    font-weight: lighter;
+}
+
+.devices {
+    margin-left: 30%;
+}
+
+.devices h2 {
+    margin-left: 15%;
+    color: gray;
+    font-weight: lighter;
+}
+.clear {
+    clear: both;
+}
+.social-img {
+    width: 20px;
+    height: 20px;
+}
+.socialimg div {
+    float: left;
+    margin-right: 50px;
+}
+.socialimg {
+    margin-left: 30%;
+}
+
+.socialimg h4 {
+    margin-left: 24%;
+    color: gray;
+    font-weight: lighter;
+}
+.socialsection {
+    margin-left: 22%;
+}
+hr {
+    width: 80%;
+    margin-left: 10%;
+}
+
