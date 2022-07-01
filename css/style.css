@@ -126,3 +126,33 @@ body {
     font-size: 3.3rem;
     margin-top: 8rem;
 }
+
+
+/**Footer section*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons{
+    display: flex;
+    
+}
+.footer-line {
+    display: flex;
+    border-top: solid;
+    width: 87em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: rgb(212, 212, 212);
+
+}
+.footer-icon-images{
+    height: 10rem;
+    width: 18rem;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
