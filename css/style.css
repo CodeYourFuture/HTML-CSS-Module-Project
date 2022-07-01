@@ -1,10 +1,11 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+ 
+
 
 /**
  * Add your custom styles below
@@ -15,5 +16,136 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/* body  */
+body {
+    margin: 0;
+}
+ /* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  height: 5rem;
+  width: 100%;
+}
+/* log */
+.logo {
+  max-height: 90px;
+  width: auto;
+   
+}
+/* Nav */
+ nav {
+  margin-left: 300px;
+ }
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  padding: 0.5rem 0;
+   
+}
+.nav-link {
+  color: rgb(182, 172, 172);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 1em;
+  margin-right: 10px;
+  transition: opacity 0.15s;
+}
+.nav-link:hover {
+  color: #c86f49;
+}
+#onlink {
+  color: black;
+}
+/* main */
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+  position: relative;
+  
+}
+.overlay {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+   color: white;
+  top: 275px;
+}
+.text {
+  text-align: center; 
+}
+.text h1 {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+.text h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+/* button  */
+.button {
+  background-color: #c05326;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 32px; 
+  text-decoration: none; 
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+   
+}
+ 
+ /* article  */
+ 
+.commercial-header h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: 100;
+   text-align: center;  
+
+}
+.commercial {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+.article img {
+  width: 150px;
+  margin-bottom: 20px;
+}
 
 
+ /* footer */
+ footer {
+  margin-bottom: 4rem;
+ }
+ .footer-p {
+  text-align: center;
+  font-size: 1em;
+  margin: 0.67em 0;
+  margin-top: 5px;
+  margin-bottom: 30px;
+ }
+ .icons-wrapper {
+  text-align: center;
+ }
+ .icons {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.6;
+  margin-bottom: 5px;
+  padding: 15px;
+  border: 2px solid #eaebec;
+  border-radius: 100%;
+ }
