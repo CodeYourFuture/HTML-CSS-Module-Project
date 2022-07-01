@@ -105,6 +105,7 @@ body {
        text-align: center;
        font-size: 2rem;
        margin-top: 5rem;
+     margin-bottom: 0;
   }
   .article img {
     
@@ -117,5 +118,37 @@ body {
   .article p {
            font-size: 1rem;
            margin-top: 0.5rem;
+           text-align: center;
+           display: flex;
+           flex-direction: row;
   }
- 
+   .thumbnail {
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           
+ }
+ .article {
+   margin: 5%;
+   text-align: center;
+ }
+ .icons img {
+       width:20px;
+       height: 20px;
+ }
+  h5{
+      font-size: 1rem;
+  }
+  .footer-content {
+         text-align: center;
+  }
+   .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;
+   }
+   .icons li {
+        list-style: none;
+
+   }
