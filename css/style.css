@@ -19,20 +19,26 @@ body {
      display: flex;
      flex-direction: row;
      flex-wrap: nowrap;
-     max-height: 3rem;
+     max-height: 5rem;
+     max-width: 100vmax;
      justify-content: flex-end;
  }
  .free-space{
-     margin: 21%;
+     margin: 17%;
+ }
+ .free-space2{
+    margin: 4.5%;
  }
 .nav-icon{
     display: flex;
-    max-width: 2rem;
+    max-width: 2.5rem;
+    margin-top: 10px;
 }
 .nav-buttons{
     background-color: white;
     border: none;
     margin: 1rem;
+    margin-top: 2.5rem;
 }
 .nav-buttons:hover{
     color: yellowgreen;
