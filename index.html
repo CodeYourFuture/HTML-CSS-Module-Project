@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-<header>
+<header class="header">
     <img class="logo" src="img/karma-logo.svg" alt="karma-logo">
     
         <nav class="navbar">
-            <ul>
+            <ul class="nav-links">
                <li><a class="nav-link"><strong>Meet Karma</strong></a></li>
                 <li><a class="nav-link">How it Works</a></li>
                 <li><a class="nav-link">Store</a></li>
@@ -30,11 +32,14 @@
         
     
 </header>
+
+
+
 <main>
     <section class="intro">
         <div class="intro-text">
             <h1>Introducing Karma</h1>
-            <p>Bring WiFi with you, everywhere you go.</p>
+            <h3>Bring WiFi with you, everywhere you go.</h3>
             <button href="">Learn More</button>
         </div>
 
@@ -64,14 +69,36 @@
     </section>
     
 </main>
-<footer>
-    <p>Join us on</p>
+
+<!-- footer -->
+
+<footer class="social">
+    <div class="content">
+        <hr />
+        <h5>Join us on</h5>
+        <ul class="icons">
+            <li class="twitter">
+                <i class="fa fa-twitter"> </i>
+            </li>
+            <li class="facebook">
+                <i class="fa fa-facebook"> </i>
+            </li>
+            <li class="instagram">
+                <i class="fa fa-instagram"> </i>
+            </li>
+        </ul>
+        <span class="copy"> © Karma Mobility, Inc. </span>
+    </div>
+</footer>
+    <!-- <p>Join us on</p>
     <div class="icons">
         <img class="icon" src="img/twitter-icon.svg" alt="Twitter logo">
         <img class="icon" src="img/facebook-icon.svg" alt="Facebook logo">
         <img class="icon" src="img/instagram-icon.svg" alt="Instagram logo">
     </div>
-    <p id="copyright">© Karma Mobility, Inc.</p>
-</footer>
+    <p id="copyright">© Karma Mobility, Inc.</p> -->
+
+    
+
 </body>
 </html>

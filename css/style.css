@@ -17,52 +17,58 @@ body {
  */
 /* header presentation */
  
-
+.header {
+    display: flex;
+    width: 100%;
+    height: 4.375rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+}
 
 
 .logo {
     width: 15px;
     height: 23px;
-    padding-left: 100px;
-    margin-top: 10px;
+    margin-left: 5rem;
+    
     
 } 
 
 
-.navbar ul {
+ .nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: right;
+    margin-right: 5rem;
+
+    /* overflow: hidden;
+    text-align: center; */
+    
     
 }
 
-.navbar li {
+.nav-links li {
     display: inline-block;
-}
-
-.navbar a {
-    text-decoration: none;
     color: gray;
-    width: 100px;
-    display: block;
-    padding: 2px 5px;
-    text-align: center;
 }
 
 .nav-link {
+    text-decoration: none;
     color: gray;
-    }
+    padding: 2px 5px;
+    
+} 
+
+
 
 .nav-link:hover {
     color: #c05326;
+    cursor: pointer;
 }
 
-/* introduction  */
+/* introduction  layout*/
 
 .intro {
-    background-image: url("/img/first-background.jpg");
+    background-image: url("../img/first-background.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,24 +79,34 @@ body {
 }
 
 .intro-text {
-    font-size: 1rem;
-    font-weight: 100;
+
+    
     color: white;
     text-align: center;
     padding-top: 100px;
 }
 
+.intro-text h1 {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.intro-text h3 {
+    font-weight: 200;
+    font-size: 2rem;
+}
+
 button {
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: #c05326;
-    padding: 10px 10px;
+    padding: 15px 15px;
     margin: 15px 0;
     border: none;
     border-radius: 3px;
     
 }
 
-/* grid */
+/* grid  design*/
 
 .container {
     text-align: center;
@@ -104,14 +120,65 @@ button {
 
 .column {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 
 /* footer layout */
 
-footer {
+
+.social {
+    background-color: white;
+    overflow: auto;
+    padding-bottom: 9rem;
+    text-align: center;
+}
+
+.social hr {
+    order: 0;
+    border-top: 1px solid lightgrey;
+    margin: 1.3rem 0;
+}
+
+.social .icons > li {
+    border: 0.5px solid lightgrey;
+    border-radius: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1.25rem 1.25rem;
+    padding: 0.5rem 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.social .icons > li i {
+    font-size: 2rem;
+}
+
+.social .icons > li:hover {
+    cursor: pointer;
+}
+
+.twitter {
+    color: #55acee;
+}
+
+.facebook {
+    color: #4c66a4;
+}
+
+.instagram {
+    color: #3f729b;
+}
+
+.social .copy {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: grey;
+}
+
+/* footer {
     text-align: center;
     margin-top: 60px;
 }
@@ -133,4 +200,4 @@ footer {
 #copyright {
     color: lightgrey;
     font-weight: lighter;
-}
+} */
