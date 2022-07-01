@@ -15,5 +15,27 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
+ .nav{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     max-height: 3rem;
+     justify-content: flex-end;
+ }
+ .free-space{
+     margin: 21%;
+ }
+.nav-icon{
+    display: flex;
+    max-width: 2rem;
+}
+.nav-buttons{
+    background-color: white;
+    border: none;
+    margin: 1rem;
+}
+.nav-buttons:hover{
+    color: yellowgreen;
+    
+}
 
