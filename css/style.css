@@ -1,19 +1,214 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+h1 {
+    font-size: 3px;
+    margin: 05px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    min-width: 37.5rem;
+    height: 4.375rem;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #DDD;
+    border: 1px solid white;
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+}
+.header .logo {
+    justify-content: left;
+    height: 23px;
+    width: 15px;
+    padding: 75px;
+    margin:10px;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 1rem;
+    list-style: none;
+    
+    margin-right: 2rem;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    color: red;
+}
+.nav__item--active {
+    color: #4C5058;
+    font-weight: 500;
+}
+.intro {
+    background-image: url("../img/first-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.intro-text{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
 
 
+
+.intro__h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.intro__h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+.intro__buttons {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+button {
+    width: 9.688rem;
+    background-color: #F15A29;
+    border-color: #F15A29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+    background-color: #D9400E;
+    border-color: #CF3D0E;
+    cursor: pointer;
+}
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cases__content {
+    margin-top: 7.875rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #1D1E21;
+}
+.cases__content>h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 4.125rem;
+    margin-left: 6rem;
+    font-weight: 300;
+    align-self: center;
+}
+.cases__devices {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.cases__devices>li {
+    display: flex;
+    flex-direction: column;
+}
+.cases__devices>li:not(:last-child) {
+    margin-right: 2rem;
+}
+.cases__img {
+    width: 130px;
+    height: 130px;
+    align-self: center;
+}
+.cases__caption>h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+    text-align: center;
+}
+.text-footer1 {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .social{
+    background-color: white;
+    overflow: auto;
+    padding-bottom: 9rem;
+    text-align: center;
+}
+
+.social hr{
+    order: 0;
+    border-top: 1px solid lightgrey;
+    margin: 1.3rem 0;
+ 
+}
+.social .icons > li {
+border-radius: 50%;
+height: 2.25rem;
+width: 2.25rem;
+display: inline-block;
+margin: 1.25rem 5px;
+border: 3px solid gray;
+padding: 0.6rem;
+text-align: center;
+
+}
+
+.social .icons > li i{
+    font-size: 2rem;
+}
+
+.social .icons > li:hover{
+    cursor: pointer;
+}
+
+.twitter{
+    color: #55acee;
+    
+}
+
+.facebook{
+    color: #4c66a4;
+}
+.instagram{
+    color: #3f729b;
+}
+
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
