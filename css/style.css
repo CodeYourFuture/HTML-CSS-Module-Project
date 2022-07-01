@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 /**
@@ -15,5 +16,86 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ 
+ .logo {
+    max-height: 50px;
+    width: 60px;
+    float: left;
+ }
+ .container {
+     width: 90%;
+     margin: 0 auto;
+ }
+ .navbar {
+     width: 100%;
+     overflow: hidden;
+     height: 70px;
+     line-height: 70px;
+     background: #fff;
+ }
 
-
+ .menu {
+     float: right;
+ }  
+ .menu li {
+     float: left;
+     width: 120px;
+     height: 70px;
+     line-height: 70px;
+     text-align: center;
+     list-style: none;
+ }
+ .menu li a {
+     color: rgba(0, 0, 0, 0.527);
+     text-decoration: none;
+ }
+ .menu li a:hover {
+     color:orangered;
+ }
+ 
+ .hero-image {
+    background: url("../img/first-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    position: relative;
+ }
+ .hero-image h1 {
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+   
+  }
+  .hero-image p {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    color: white;
+    top: 35%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-image .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .hero-image .btn:hover {
+    background-color: black;
+  }
