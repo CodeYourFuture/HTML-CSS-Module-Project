@@ -5,21 +5,136 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
+
 }
 
-header {
+.header,
+.content,
+.footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* navigation */
+
+.header {
     display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 5rem;
-        margin-bottom: 1rem;
-        
+    align-items: center;
+    justify-content: space-between;
+    height: 0.5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    
+    
 }
 
-.header-icon {
-    max-height: 90px;
-    width: auto;
+.header-logo {  
+    display: flex;  
+    max-width: 1.25rem;
+    padding: 0rem 0rem 0rem 1rem;
+        margin: 0rem 0rem 0rem 1.5rem;
 }
+
+.navigation-list {
+    display: flex;
+   
+}
+
+.navigation-item {
+    list-style-type: none;
+        flex-direction: row;
+        font-size: 0.75rem;
+        padding: 0rem 1rem 0rem 0rem;
+        color: gray;
+
+}
+
+.navigation-item-karma {
+    color: black !important;
+}
+
+.navigation-link {
+    color: var(--grey-dark);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+.navigation-link:hover {
+    color: orange;
+}
+
+/* body with background picture*/
+
+.main {
+    background-image: url(/img/first-background.jpg);
+    height:700px;
+    background-position: center;
+    background-size: cover;
+    color: azure;
+    text-align: center;
+}
+
+.button {
+    background-color: orangered;
+    color: white;
+    border-radius: 1px;
+    padding: 5px 15px;
+    font-size: 11px;
+    border: none;
+}
+
+.karma {
+    padding-top: 150px;
+    font-size: 1.2rem;    
+}
+
+.karma-intro {
+    font-size: 2rem;
+}
+
+.second-heading {
+    text-align: center;
+    margin: 90px 0px 40px;
+    font-size: 2rem;
+}
+
+.underbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.join-us{
+    border-top: 2px solid lightgray;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    max-width: 15px;
+    padding: 3px;
+    border-radius: 50%;
+    border: solid lightgray;
+    margin: 0px 5px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px 0px 80px;
+    color: lightgray;
+    font-size: 0.5rem;
+}
+
+
 /**
  * Add your custom styles below
  * 
