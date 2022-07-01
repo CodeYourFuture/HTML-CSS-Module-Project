@@ -15,7 +15,7 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
+/*header*/
  .main-header {
     margin: 0;
  }
@@ -53,7 +53,7 @@ cursor: pointer;
  .nav-item:active {
     color:black
  }
-
+/*introduction*/
  .intro {
     background-image: url("../img/first-background.jpg");
     background-size: cover;
@@ -67,16 +67,30 @@ cursor: pointer;
    }
 
  h1 {
+   font-size: 40px;
+   letter-spacing: 2px;
+   font-weight: lighter;
+ }
+
+ 
+ p {
+    font-size: 24px;
     letter-spacing: 2px;
+    font-weight: lighter;
  }
 
  button {
     background-color: rgb(244, 83, 39);
     margin-top: 30px;
     padding: 10px 20px;
-    border-radius: 5%;
+    border-radius: 6%;
  }
 
+ button:hover{
+   background-color: orange;
+ }
+
+ /*services*/
  .services {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -88,6 +102,8 @@ cursor: pointer;
 
  .services h2 {
     margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 300;
  }
 
  .container {
@@ -98,17 +114,24 @@ cursor: pointer;
  .icon {
     width: 32%;
     display: inline-block;
-    font-size: 16px;
 }
 
  .icon img {
-    width: 80px;
+    width: 100px;
+ }
+
+ .icon-text{
+   font-size: 22px;
+   color: black;
+   font-weight: 400;
+   
  }
 
  a {
     text-decoration: none;
  }
 
+/*footer*/
  footer, h3 {
     text-align: center;
     font-size: 24px;
@@ -123,7 +146,7 @@ cursor: pointer;
      margin: 10px;
      border-radius: 50%;
      display: inline;
-     
+     cursor: pointer;
  }
 
  .fa:hover {
@@ -131,19 +154,19 @@ cursor: pointer;
  }
 
  .fa-facebook {
-     background: #3B5998;
-     color: white;
+     background: #dbdde0;
+     color: #1a439b;;
 
  }
 
  .fa-twitter {
-     background: #55ACEE;
-     color: white;
+     background: #dbdde0;
+     color: #55ACEE;
  }
 
  .fa-instagram {
-    background-color: rgb(247, 71, 71) ;
-    color: white;
+    background-color: #dbdde0;
+    color: rgb(23, 27, 152);
  }
 
  footer p {
