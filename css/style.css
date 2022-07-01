@@ -25,7 +25,6 @@ h1,h2,h3,h4,h5,h6 {
   .content,
   .footer {
     padding: 0 1.5rem;
-    max-width: 1200px;
     margin: 0 auto;
   } 
 
@@ -41,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
   .header__logo {
     max-height: 90px;
     width: 2rem;
-    padding-left: 130px;
+    padding-left: 100px;
   } 
  /* button */
   button {
@@ -66,9 +65,11 @@ h1,h2,h3,h4,h5,h6 {
     background-color: var(--grey-light);
     margin-bottom: 75px;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
-  .karama_button {
+  .karma_button {
     display: flex;
     justify-content: center;
   }
