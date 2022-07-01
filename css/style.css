@@ -1,11 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
 /**
  * Add your custom styles below
  * 
@@ -15,13 +12,10 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
 .body{
     display: flex;
     flex-direction: column;
 }
-
-
 /** Nav section*/
  .nav{
      display: flex;
@@ -52,7 +46,6 @@ body {
 }
 .nav-buttons:hover{
     color: rgb(231, 121, 47);
-    
 }
 #nav-btn-meet{
     color: black;
@@ -60,7 +53,6 @@ body {
 #nav-btn-meet:hover{
     color: rgb(231, 121, 47);
 }
-
 /**Intro section*/
 .intro{
     display: flex;
@@ -103,7 +95,6 @@ body {
     width: 20rem;
     justify-content: center;
     align-items: center;
-
 }
 .feature-images{
     height: 10rem;
@@ -126,21 +117,15 @@ body {
     font-size: 3.3rem;
     margin-top: 8rem;
 }
-
-
 /**Footer section*/
 .footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .footer-icons{
-    display: flex;
-    
-    
-    
+    display: flex;  
 }
 .footer-line {
     display: flex;
@@ -149,7 +134,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: rgb(212, 212, 212);
 }
 .footer-msg{
@@ -157,9 +142,13 @@ body {
     font-size: 1.9rem;
 }
 .footer-icon-images{
-    height: 3rem;
-    width: 5rem;
-    
+    height: 2rem;
+    width: 2rem;
+    border: solid;
+    color: rgb(212, 212, 212);
+    border-radius: 50%;
+    padding: 1.4rem;
+    margin-left: 1.6rem;
 }
 .footer-license{
     color: rgb(177, 176, 176);
