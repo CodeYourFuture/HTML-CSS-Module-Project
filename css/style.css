@@ -47,15 +47,23 @@ body {
         flex-direction: row;
         font-size: 0.75rem;
         padding: 0rem 1rem 0rem 0rem;
+        color: gray;
 
+}
+
+.navigation-item-karma {
+    color: black !important;
 }
 
 .navigation-link {
     color: var(--grey-dark);
     font-weight: 600;
-    text-transform: uppercase;
     text-decoration: none;
     padding: 0.5rem 0;
+}
+
+.navigation-link:hover {
+    color: orange;
 }
 
 /* body with background picture*/
@@ -69,8 +77,22 @@ body {
     text-align: center;
 }
 
+.button {
+    background-color: orangered;
+    color: white;
+    border-radius: 1px;
+    padding: 5px 15px;
+    font-size: 11px;
+    border: none;
+}
+
 .karma {
     padding-top: 150px;
+    font-size: 1.2rem;    
+}
+
+.karma-intro {
+    font-size: 2rem;
 }
 
 .second-heading {
@@ -88,6 +110,8 @@ body {
 .join-us{
     border-top: 2px solid lightgray;
     text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
 }
 
 .icon-footer {
@@ -100,7 +124,7 @@ body {
     padding: 3px;
     border-radius: 50%;
     border: solid lightgray;
-    margin: 0px 2px;
+    margin: 0px 5px;
 }
 
 .copyright {
