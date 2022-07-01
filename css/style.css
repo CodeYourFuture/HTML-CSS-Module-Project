@@ -9,6 +9,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin:0 auto;
+    
 }
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
@@ -24,8 +26,7 @@ h1,h2,h3,h4,h5,h6 {
   .header,
   .content,
   .footer {
-    padding: 0 1.5rem;
-    margin: 0 auto;
+        margin: 0 auto;
   } 
 
 .header {
@@ -97,7 +98,7 @@ h1,h2,h3,h4,h5,h6 {
 .navigation__list {
     display: flex;
     list-style: none;
-
+    margin-right: 70px;
   }
   
   .navigation__item {
