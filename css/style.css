@@ -15,6 +15,14 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/** Nav section*/
  .nav{
      display: flex;
      flex-direction: row;
@@ -22,6 +30,7 @@ body {
      max-height: 5rem;
      max-width: 100vmax;
      justify-content: flex-end;
+     margin-bottom: 1.4rem;
  }
  .free-space{
      margin: 17%;
@@ -50,4 +59,12 @@ body {
 }
 #nav-btn-meet:hover{
     color: rgb(231, 121, 47);
+}
+
+/**Intro section*/
+.intro{
+    display: flex;
+     height: 45rem;
+     width: 100vmax;
+    
 }
