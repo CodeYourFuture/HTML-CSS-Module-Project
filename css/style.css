@@ -17,6 +17,7 @@ body {
  */
 header,
 main,
+
 footer {
     padding: 0 1.5rem;
     max-width: 1200px;
@@ -24,19 +25,24 @@ footer {
 }
 
 header {
-    margin-top: 10px;
+    margin-top: 30px;
 }
+
 .nav-menu {
     display: flex;
-    justify-content: space-between;
     list-style: none;
-}
+    flex-direction:row;
+    justify-content: end;
+    
+}  
 
 .nav-list {
-    margin-left: 25px;
-    padding: 0.5rem 0;
-}
+    margin-left: 15px;
+    padding: 0.rem 0;
+   font-family: 'sans-serif';
+   padding-bottom:0px; ;
 
+}
 .nav-item {
     text-decoration: none;
     color: rgb(153, 153, 153);
@@ -45,7 +51,9 @@ header {
 .nav-item:hover {
     color: rgb(231, 51, 51);
 }
-
+.content{
+    margin-top:70px;
+}
 .home {
     background-image: url("../img/first-background.jpg");
     background-size: cover;
@@ -64,27 +72,32 @@ header {
 }
 
 .about {
-    margin-top: 3rem;
+    margin-top: 4rem;
     text-align: center;
+    
 }
 
 .middle-article {
-    padding: 1rem 0;
+    padding: 1rem 1;
 }
 
 .about-divs {
     display: flex;
     justify-content: space-around;
     margin: 0 3rem;
+          
 }
 
 .top-logo {
-    height: 40px;
-    width: auto;
+    height: 30px;
+    width: 30px;
+    margin-right: 650px;
+
+  
 }
 
 .middle-logo {
-    height: 160px;
+    height: 100px;
     width: auto;
 }
 
@@ -101,4 +114,10 @@ footer {
 .copyright {
     color: rgb(145, 145, 145);
     font-size: 0.8rem;
+}
+.h2-everyone{
+margin-left: 50px;
+font:caption;
+font-size:3rem;
+color:rgb(29, 27, 26);
 }
