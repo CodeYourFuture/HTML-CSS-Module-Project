@@ -1,10 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 /**
  * Add your custom styles below
@@ -16,4 +10,147 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.header {
+  display: flex;
+  width: 100%;
+  height: 4.375rem;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo {
+  width: 15px;
+  height: 23px;
+  margin-left: 5rem;
+  padding-left: 100px;
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  margin-right: 5rem;
+  display: flex;
+}
+
+.nav-link li {
+  display: inline-block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: gray;
+  padding: 2px 5px;
+}
+
+.nav-link:hover {
+  color: #c05326;
+}
+
+/* Introduction */
+
+.intro {
+  background-image: url("/img/first-background.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+}
+
+.intro-text {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+button {
+  font-size: 1rem;
+  background-color: #c05326;
+  padding: 20px 20px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 3px;
+}
+
+.container {
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#sub {
+  padding: 25px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 100px;
+}
+
+/* Socials Media Icons */
+
+.social {
+  background-color: white;
+  overflow: auto;
+  padding-bottom: 9rem;
+  text-align: center;
+}
+
+.social hr {
+  order: 0;
+  border-top: 1px solid lightgrey;
+  margin: 1.3rem 0;
+}
+
+.social .icons > li {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-block;
+  margin: 1.25rem 5px;
+  border: 1px solid gray;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.social .icons > li i {
+  font-size: 2rem;
+}
+
+.social .copy {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
+}
+
+.social .icons > li:hover {
+  cursor: pointer;
+}
+
+.twitter {
+  color: #55acee;
+}
+
+.facebook {
+  color: #4c66a4;
+}
+
+.instagram {
+  color: #3f729b;
+}
