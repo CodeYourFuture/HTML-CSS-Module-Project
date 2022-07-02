@@ -1,14 +1,152 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
 
-.bg_pic {
-    width: 100%;
+@media screen and (max-width: 820px) {
+    header {
+        margin: 0;
+        height: 50px;
+    }
+
+    header img {
+        height: 70%;
+        float: left;
+        margin: 5px;
+    }
+    header img:first-child {
+        display: block;
+    }
+    header nav ul{
+        display: none;        
+    }
+
+    section div {
+        font-size: medium;
+        width: 20%;
+        display: inline-table;
+        flex-direction: row;
+        padding: 5%;
+    }  
 }
+@media screen and (min-width: 820px) {
+    header {
+        margin: 0 100px;
+        height: 50px;
+    }
+
+    header img {
+        height: 70%;
+        float: left;
+        margin: 5px;
+    }
+
+    header img:first-child {
+        display: none;
+    }    
+    header nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    header ul li {
+        float: right;
+        padding: 20px;
+        color: rgb(43, 43, 43);
+    }
+
+    header li a {
+        display: block;
+        color: gray;
+        text-decoration: none;    
+    }
+
+    header li a:hover {
+        color: orange;
+    }
+    section div {
+        font-size: medium;
+        width: 13%;
+        display: inline-table;
+        flex-direction: row;
+        padding: 5%;
+    }  
+
+ }
+
+ @media screen and (max-width: 500px) {
+    section div {
+        font-size: 16px;
+        width: 180px;
+        margin: auto;
+    }  
+
+ }
+main {
+    display: block;
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 12rem 0 8rem;
+    height: 200px;
+}
+main p:first-child {
+    font-size: 40px;
+    margin: 0;
+}
+
+main button {
+    background-color: coral;
+    border-block-style: none;
+    border-radius: 4px;
+    padding: 1.2rem 2rem;
+    margin: 20px;
+    font-size: large;
+}
+
+section {
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    margin: 5% 5% 0;
+}
+
+footer {
+    margin: 0 10%;
+    text-align: center;
+}
+footer hr {
+    height: 1px; 
+    border: none;
+    background-color: rgb(208, 208, 253);
+}
+footer img {
+    width: 20px;
+    padding: 10px;
+}
+footer p:last-child {
+    color: rgb(141, 141, 241);
+} 
+
 
 /**
  * Add your custom styles below
