@@ -6,7 +6,17 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
+.main-header{
+    margin: 0;
+}
+.Karma-logo{
+    width: 20px;
+    position: relative;
+    left: 150px;
+    top:20px;
+
+}
+/*
  * Add your custom styles below
  * 
  * Remember: 
@@ -15,5 +25,95 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.nav-lists{
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    right: 100px;
+    bottom: 20px;
 
+}
 
+.nav-item {
+    float: right;
+    display: block;
+    padding-left: 30px;
+    cursor: pointer;
+
+}
+.nav-item:hover{
+    color: red;
+}
+.nav-item:active{
+    color: black;
+}
+.intro{
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: auto;
+    width: 96%;
+    text-align: center;
+}
+h1{
+    letter-spacing: 3px;
+}
+button{
+    background-color:rgb(red, green, blue);
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5%;
+
+}
+.services{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+
+}
+.icon{
+    width: 32%;
+    display: inline-block;
+    font-size: 16px;
+}
+.icon img{
+    width: 80px;
+}
+a{
+    text-decoration: none;
+}
+footer, h3{
+    text-align: center;
+    font-size: 24px;
+}
+ footer p{
+    text-align: center;
+    font-size: 12px;
+ }
+.fa{
+    padding: 20px;
+    font-size: 50 px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 50%;
+    display: inline;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook{
+    background: navy;
+}
+}
