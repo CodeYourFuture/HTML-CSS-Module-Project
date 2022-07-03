@@ -82,8 +82,11 @@ button {
   margin-top: 24px;
   width: 150px;
   height: 45px;
-  background-color: #c05326;
-  border-radius: 6%;
+  background-color: #E0633A;
+  border-radius: 5%;
+  border: none;
+  color: #FFFFFF;
+  
 }
 
 /* Second section */
@@ -115,15 +118,56 @@ h2 {
   margin-top: 5%;
 }
 
+/* Third section */
+
+.third_section{
+  width: 100%;
+  margin-top: 4.5%;
+  display: flex;
+  background: rgba(224, 99, 58, 0.1);
+}
+
+
+.third_section p{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 49.22px;
+  text-align: center;
+}
+
+#paragraph_div{
+  width: 80%;
+  
+}
+
+.quotes{
+  color: #E0633A;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 56px;
+}
+
+.third_section > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
 /* Footer */
 
 footer {
-  width: 100%;
+  width: 65%;
   border: 2px solid rgb(238, 234, 234);
   border-right: 0;
   border-left: 0;
   border-bottom: 0;
-  margin-top: 7%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
