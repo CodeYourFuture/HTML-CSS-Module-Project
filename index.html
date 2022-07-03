@@ -8,153 +8,80 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <script src="https://kit.fontawesome.com/a6d80728cd.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- Add your HTML markup here -->
-    <header class="header">
 
-      
-          <img class="header_logo" id="logo"
-        src="img/karma-logo.svg"
-        alt="Karma logo"
-          />
+  <body>
 
-    
-        
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Meet Karma</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">How it works</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Store</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Blog</a>
-            </li>
-             <li class="navigation__item">
-              <a class="navigation__link" href="#">Help</a>
-            </li>
-             <li class="navigation__item">
-              <a class="navigation__link" href="#">Login</a>
-            </li>
-          </ul>
-        
-
+    <header>
+      <img src="img/karma-logo.svg" alt="karma logo" />
+      <nav>
+        <a href="">Meet Karma</a>
+        <a href="">How it Works</a>
+        <a href="">Store</a>
+        <a href="">Blog</a>
+        <a href="">Help</a>
+        <a href="">Login</a>
+      </nav>
     </header>
 
-    <section>
-        <a href="#">
-          <img
-        src="img/first-background.jpg"
-        alt="first-background"
-        class="first-background"
-          />
-        </a>
-        
-        <p class="introducing_karma_text" class="body">
-            Introducing Karma
-        </p>
+    <main>
 
-        <p class="wifi_text" class="body">
-            Bring WiFi with you, everywhere you go.
-        </p>
+      <section class="first_section">
+        <h1>Introducing Karma</h1>
+        <p>Bring WiFi with you, everywhere you go</p>
+        <button>Learn More</button>
+      </section>
 
-        <button class="learn_more">Learn More</button>
-
-
-        <main>
-            <p class="everyone_text">
-                Everyone needs a little Karma
-            </p>
-
-            <section>
-                <a href="#">
-            <img
-            src="img/icon-devices.svg"
-            alt="icon-devices"
-            width="150"
-            height="150"
-            class="icons"
-            />
-            <a>Internet for all devices</a>
-           
-
-            <a href="#">
-            <img
-            src="img/icon-coffee.svg"
-            alt="icon-devices"
-             width="150"
-            height="150"
-            class="icons"
-            /> <a>Boost your productivity
-            </a>
-
-            <a href="#">
-            <img
-            src="img/icon-refill.svg"
-            alt="icon-devices"
-             width="150"
-            height="150"
-            class="icons"
-            /> <a>Pay as you go
-            </a>
-            </section>
-            
-            
-        </main>
+      <section class="second_section">
+        <h2>Everyone needs a little Karma</h2>
+        <div class="karma_imgs_wrapper">
+          <div class="img_container">
+            <img src="img/icon-devices.svg" alt="icon for devices" />
+            <p>Internet for all devices</p>
+          </div>
+          <div class="img_container">
+            <img src="img/icon-coffee.svg" alt="coffee icon" />
+            <p>Boost your productivity</p>
+          </div>
+          <div class="img_container">
+            <img src="img/icon-refill.svg" alt="refill icon" />
+            <p>Pay as you go</p>
+          </div>
+        </div>
 
 
-        <footer class="footer">
-            <p> 
-                Join us on
-            </p>
+      <div class="extended_feature">
+        <div class="homepage_feature">
+          <img src="/img/homepage-feature.png" alt="homepage-feature" />
+        </div>
+        <div class="text-button-container">
+          <h2>
+            <span style="color:#E0633A;">"</span>Wherever I am, I just dont worry about my connection anymore!<span style="color:#E0633A;">"</span>
+          </h2>
+          <button>Get Karma today</button>
+        </div>
+      </div>
 
-             <section>
-                <a href="#">
-            <img
-            src="img/twitter-icon.svg"
-            alt="twitter"
-            width="30"
-            height="30"
-            class="small_icons"
-            />
-            </a>
+      </section>
 
-            <a href="#">
-            <img
-            src="img/facebook-icon.svg"
-            alt="facebook"
-            width="30"
-            height="30"
-            class="small_icons"
-            />
-            </a>
+    </main>
 
-            <a href="#">
-            <img
-            src="img/instagram-icon.svg"
-            alt="instagram"
-            width="30"
-            height="30"
-            class="small_icons"
-            />
-            </a>
+    <footer>
+      <p id="footer_text1">Join us on</p>
+      <div class="footer_imgs_wrapper">
+        <div>
+          <img src="img/twitter-icon.svg" alt="" />
+        </div>
+        <div>
+          <img src="img/facebook-icon.svg" alt="" />
+        </div>
+        <div>
+          <img src="img/instagram-icon.svg" alt="" />
+        </div>
+      </div>
 
-            </section>
-
-             <p> 
-                © Karma Mobility, Inc.
-            </p>
-
-        </footer>
-
-    </section>
-
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
+      <p id = "footer_text2"> <i class="fa-regular fa-copyright"></i>Karma Mobility, Inc</p>
+    </footer>
 </body>
 </html>
