@@ -50,9 +50,9 @@ cursor: pointer;
     color: red;
  }
 
- .nav-item:active {
+/* .nav-item:active {
     color:black
- }
+ }*/
 /*introduction*/
  .intro {
     background-image: url("../img/first-background.jpg");
@@ -130,6 +130,27 @@ cursor: pointer;
  a {
     text-decoration: none;
  }
+
+ .features {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
+   margin-bottom: 20px;
+}
+ 
+.feature-txt {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-weight: 600;
+   padding: 0 100px;
+   background-color: #f5c0c0;
+  
+ }
+ 
 
 /*footer*/
  footer, h3 {
