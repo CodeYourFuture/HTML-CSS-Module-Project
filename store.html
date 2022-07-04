@@ -37,73 +37,91 @@
         <h1 class="form__title">Order your Karma wifi device today!</h1>
         <div class="wrap--rows">
           <fieldset class="fieldset fieldset--name">
-            <label
-              class="label label--name"
+            <label class="label label--name" for="first-name"
+              >First name *</label
+            >
+            <input
+              class="input input--name"
               type="text"
               name="first-name"
               id="first-name"
-              >First name *</label
-            >
-            <input class="input input--name" for="first-name" required />
+              required
+            />
           </fieldset>
           <fieldset class="fieldset fieldset--name">
-            <label
-              class="label label--name"
+            <label class="label label--name" for="last-name">Last name *</label>
+            <input
+              class="input input--name"
               type="text"
               name="last-name"
               id="last-name"
-              >Last name *</label
-            >
-            <input class="input input--name" for="last-name" required />
+              required
+            />
           </fieldset>
         </div>
         <div class="wrap--column">
           <fieldset class="fieldset fieldset--address">
-            <label
-              class="label label--address"
+            <label class="label label--address" for="address">Address *</label>
+            <input
+              class="input input--address"
               type="text"
               name="address"
               id="address"
-              >Address *</label
-            >
-            <input class="input input--address" for="address" required />
+              required
+            />
           </fieldset>
           <fieldset class="fieldset fieldset--address">
-            <label
-              class="label label--address"
+            <label class="label label--address" for="address2">Address 2</label>
+            <input
+              class="input input--address"
               type="text"
               name="address2"
               id="address2"
-              >Address 2</label
-            >
-            <input class="input input--address" for="address2" />
+            />
           </fieldset>
         </div>
         <div class="wrap--rows">
           <fieldset class="fieldset fieldset--city">
-            <label class="label label--city" type="text" name="city" id="city"
-              >City *</label
-            >
-            <select class="input input--city">
+            <label class="label label--city" for="city">City *</label>
+            <select class="input input--city" id="city">
               <option value="-1">Select your city ...</option>
               <option value="1">Birmingham</option>
               <option value="2">Coventry</option>
               <option value="3">Solihull</option>
               <option value="4">Dudley</option>
             </select>
-            <!-- <input class="input input--city" for="city" required /> -->
           </fieldset>
           <fieldset class="fieldset fieldset--postcode">
-            <label
-              class="label label--postcode"
+            <label class="label label--postcode" for="postcode"
+              >Postcode *</label
+            >
+            <input
+              class="input input--postcode"
               type="text"
               name="postcode"
               id="postcode"
-              >Postcode *</label
-            >
-            <input class="input input--postcode" for="postcode" />
+            />
           </fieldset>
         </div>
+        <fieldset class="fieldset">
+          <p>Select a colour</p>
+          <label class="label label--radio" for="karma-orange"
+            >Karma orange</label
+          >
+          <input
+            class="input input--radio"
+            type="radio"
+            name="karma-orange"
+            id="color"
+          />
+          <label class="label label--radio" for="space-grey">Space Greye</label>
+          <input
+            class="input input--radio"
+            type="radio"
+            name="space-grey"
+            id="color"
+          />
+        </fieldset>
       </form>
       <img
         class="aside__image"
