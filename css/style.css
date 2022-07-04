@@ -261,6 +261,17 @@ body, button {
     margin-top: 1rem;
 }
 
+/* wraps */
+.wrap--rows {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap--column {
+    display: flex;
+    flex-direction: column;
+}
+
 /* label reset */
 .label {
     display: block;
@@ -271,14 +282,11 @@ body, button {
 
 .input {
     height: 3rem;
+    padding-left: 0.5rem;
     border-radius: 0.5rem;
 }
 
 /* Name field */
-.wrap--name {
-    display: flex;
-    flex-direction: row;
-}
 
 .fieldset--name {
     width: 50%;
@@ -289,14 +297,16 @@ body, button {
 }
 
 /* Address field */
-.wrap--address {
-    display: flex;
-    flex-direction: column;
-}
 
-/* .fieldset--address {} */
 .input--address {
     width: 32rem;
+}
+
+/* City field */
+
+.input--city {
+    width: 20rem;
+    font-style: italic;
 }
 
 /* aside section */
