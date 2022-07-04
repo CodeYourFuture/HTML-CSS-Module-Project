@@ -70,14 +70,21 @@ body {
   margin-left: 100px;
   width: 100%;
 }
+.title {
+  position: absolute;
+  color: #c05326;
+  font-size: 75px;
+  margin-top: 60px;
+
+}
 form {
    height: 100vh;
   width: 700vh;
   /* width: 450px; */
-  /* margin-right: 440px; */
+  margin-top: 300px;
 }
 .form-img {
-  height: 100vh;
+  height: 135vh;
   width: 700vh;
   /* margin-right: 20px; */
 }
@@ -89,11 +96,12 @@ form label {
   display: flex;
   position: relative;
   /* margin-left: 1rem; */
-
+  font-size: 35px;
 }
 
 .fname {
   margin-right: 2rem;
+  
 }
 .fname input,
 .lname input {
@@ -104,15 +112,17 @@ form label {
 }
 .address {
   margin-top: 3rem;
+  font-size: 35px;
 }
 .address-2 {
     margin-top: 3rem;
-
+  font-size: 35px;
 }
 .address input {
    width: 740px;
   height: 50px;
   margin-top: 1rem;
+  
 } 
 
 .city-container {
@@ -123,7 +133,58 @@ form label {
 }
 .city {
   margin-right: 2rem;
+  font-size: 35px;
   
+}
+.city select {
+   width: 450px;
+  height: 50px;
+  margin-top: 1rem;
+  font-size: 35px;
+}
+ 
+.postcode input {
+   width: 250px;
+  height: 45px;
+  margin-top: 1rem;
+  
+  
+}
+.postcode label {
+  font-size: 35px;
+}
+.radio p {
+  margin-top: 3rem;
+  font-size: 35px;
+}
+
+.radio input {
+   /* width: 450px;
+  height: 50px; */
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: #c05326;
+  
+}
+.radio label {
+  margin-right: 2rem;
+font-size: 35px;
+
+}
+.checkbox {
+  margin-top: 5rem;
+  font-size: 35px;
+  
+}
+.checkbox input {
+  padding: 1rem;
+}
+.submit button {
+  margin-top: 4rem;
+  font-size: 35px;
+  background-color: #c05326;
+  color: white;
+  padding: 1.5rem 6rem;
 }
 
 
