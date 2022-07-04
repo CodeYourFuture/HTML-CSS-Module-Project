@@ -23,8 +23,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 50px;
+  height: 60px;
   width: 100vw;
+  background: rgba(196, 196, 196, 0.1);
 }
 
 header img {
@@ -37,6 +38,7 @@ nav {
   display: flex;
   margin-left: 20px;
   gap: 25px;
+  
 }
 nav :first-child {
   font-weight: bold;
@@ -176,7 +178,7 @@ footer {
 .footer_imgs_wrapper {
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  width: 20%;
 }
 
 .footer_imgs_wrapper div {

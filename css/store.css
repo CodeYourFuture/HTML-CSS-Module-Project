@@ -1,0 +1,181 @@
+/* Store page styling */
+main{
+  display: flex;
+}
+
+ h1{
+  color: #DE6E49;
+  width: 75%;
+  font-size: 2.7rem;
+  margin: 50px auto;
+}
+
+section{
+  width: 55%;
+  height: 770px;
+ 
+}
+
+aside{
+  width: 43%;
+  background-image: url(/level-2/store-image_by-andrew-neel-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+aside>img{
+  width: 100%;
+}
+
+form{
+  display: grid;
+  row-gap: 3.5%;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+input{
+  height: 45px;
+ 
+}
+
+select{
+  height: 50px;
+}
+
+legend{
+  margin-bottom: 10px;
+}
+
+
+/* removing default styling from fieldset */
+fieldset{
+  margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+    margin-top: 20px;
+    display: flex;
+  gap: 10%;
+  
+}
+
+.label_input{
+  display:flex;
+  flex-direction: column;
+}
+
+/* Aligning the name /city postcode */
+
+.name_wrapper{
+  width: 100%;
+  display:flex;
+justify-content: space-between;
+  
+}
+.city_postcode{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2%;
+  justify-content: space-between;
+}
+
+/* Styling custom radio buttons */
+
+.radio_label{
+  display: flex;
+  align-items: center;
+}
+
+.radio_input{
+  position: absolute;
+  display: none;
+}
+
+.radio_radio_orange, .radio_radio_grey{
+  width: 0.8em;
+  height: 0.8em;
+  border: 1.5px solid #666666;
+  border-radius: 50%;
+  padding: 1px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio_radio_orange::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #DE6E49;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.radio_radio_grey::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: grey;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.radio_input:checked + .radio_radio_orange::after{
+  transform: scale(1);
+}
+
+.radio_input:checked + .radio_radio_grey::after{
+  transform: scale(1);
+}
+
+/* Styling custom checkbox */
+
+.checkbox {
+  display: flex;
+  align-items: center; 
+  margin-top: 10px;
+}
+
+.checkbox_input{
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox_box{
+  width: 0.9rem;
+  height: 0.9rem;
+   border: 1.5px solid #666666;
+  border-radius: 3px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.checkbox_box::after{
+  content: "\2714";
+  width: 25px;
+  height: 22px;
+  color: #DE6E49;
+
+  transform: scale(0);
+}
+
+.checkbox_input:checked + .checkbox_box::after{
+  transform: scale(1);
+}
+
+.checkbox span{
+  color: #E0633A;
+  text-decoration: underline;  
+} 
