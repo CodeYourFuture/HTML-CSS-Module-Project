@@ -128,6 +128,8 @@ body, button {
     height: 100vh;
     background-color: var(--grey-light);
     background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero__title, .hero__subtitle {
@@ -242,13 +244,46 @@ body, button {
     flex-direction: column;
     align-items: center;
     width: 50vw;
+    margin: 0 6rem;
+
 }
 
 .form__title {
     color: var(--orange-dark);
     font-weight: 500;
     font-size: 3.5rem;
-    padding: 0 5rem;
+}
+
+/* Fieldset reset */
+.fieldset {
+    border: none;
+}
+
+/* label reset */
+.label {
+    display: block;
+    padding: 0 5px 10px;
+    font-size: 1.3rem;
+
+}
+
+.input {
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+/* Name field */
+.wrap--name {
+    display: flex;
+    flex-direction: row;
+}
+
+.fieldset {
+    width: 50%;
+}
+
+.input--name {
+    width: 15rem;
 }
 
 /* aside section */
