@@ -1,3 +1,7 @@
+/* ==========================================================================
+                                      Common styles
+========================================================================== */
+
 :root {
     --grey-dark: #292b2c;
     --grey-light: #d0cdcd;
@@ -64,7 +68,6 @@ body, button {
     color: var(--orange-dark);
 }
 
-
 /* Main section */
 .main {
     display: flex;
@@ -86,6 +89,40 @@ body, button {
     background-color: var(--orange-light);
 }
 
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--grey-light);
+    margin: 4rem 2rem 0;
+
+}
+
+.footer__text {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer__links__icon {
+    width: 30px;
+    height: auto;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid var(--grey-light);
+    border-radius: 50%;
+}
+
+.footer__text--muted {
+    opacity: 0.8;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--grey-dark);
+}
+
+/* ==========================================================================
+                                      Homepage 
+========================================================================== */
 
 /* Hero section */
 .hero {
@@ -188,34 +225,6 @@ body, button {
     color: var(--orange-dark);
 }
 
-/* Footer */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid var(--grey-light);
-    margin: 4rem 2rem 0;
-
-}
-
-.footer__text {
-    padding: 2rem;
-    font-size: 1.5rem;
-}
-
-.footer__links__icon {
-    width: 30px;
-    height: auto;
-    margin: 0 1rem;
-    padding: 1rem;
-    border: 1px solid var(--grey-light);
-    border-radius: 50%;
-}
-
-.footer__text--muted {
-    opacity: 0.8;
-    padding: 2rem;
-    font-size: 1.2rem;
-    color: var(--grey-dark);
-}
+/* ==========================================================================
+                                     Store page
+========================================================================== */
