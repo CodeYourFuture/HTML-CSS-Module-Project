@@ -52,14 +52,18 @@ body, button {
     cursor: pointer;
 }
 
+.nav__list__item:first-child {
+    font-weight: bold;
+}
+
 .nav__list__item:hover {
     color: var(--orange-dark);
 }
 
 .nav__list__item:focus {
-    font-weight: bold;
-    color: initial;
+    color: var(--orange-dark);
 }
+
 
 /* Main section */
 .main {
