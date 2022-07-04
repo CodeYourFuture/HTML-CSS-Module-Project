@@ -16,14 +16,14 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Petar Nikolov
+- Your City: Tamworth, Birmingham
+- Your Slack Name: Petar Nikolov
 
 # Homework Details
 
 - Module:
-- Week:
+- Week: 2
 
 # Notes
 

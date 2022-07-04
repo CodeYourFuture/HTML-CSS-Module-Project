@@ -17,3 +17,142 @@ body {
  */
 
 
+.bar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+.pic {
+    justify-content: center;
+    width: 30%;
+    display: flex;
+}
+
+.logo {
+width: 35px;
+height: 70px;
+margin-left: 30%; 
+margin-right: 80%;
+}
+
+.bar-right {
+    width: 50%;
+    height: 60px;
+    display: flex  ;
+    align-items: center;
+    margin-left: 20%;
+    background-color: white;
+}
+
+
+.bar-links {
+    list-style-type: none;
+}
+
+.links  {
+    color: black;
+    float: left;
+    margin-left: 4em;
+    color: #aeb1b6;
+    font-size: 18px;
+    
+}
+ 
+.links :hover {
+    color: #ff6600;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+          <!--MAIN-->
+.main {
+    width: 100%;
+    
+}
+
+.b-img {
+    width: 100%;
+    height: 90vh;
+}
+ 
+.text{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 35vh;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0%;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+   
+
+}
+
+.button {
+    background-color: #ff6600;
+    border-radius: 6px;
+    font-size: 30px;
+    padding: 0.5%;
+    text-decoration: none;
+    color: white;
+}
+
+
+.one p{
+    margin-top: 90px;
+    font-size: 45px;
+}
+      
+
+.everyone{
+    text-align: center;
+   
+}
+
+.things {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    margin: 4%;
+    display: inline-block;
+
+    
+}
+ 
+
+.alo {
+    position: absolute;
+    text-align: center;
+    
+
+}
+
+.f-footer {
+    width: 60%;
+    height: 100%;
+    margin: 0px 20%;
+    text-align: center;
+  
+}
+
+.icon {
+-ms-flex-item-align: ;
+font-size: 25px;
+}
