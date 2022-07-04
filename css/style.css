@@ -2,8 +2,11 @@
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+   font-family: 'Roboto', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   width: 1434px;
+   height: 1572px;
+   margin: 0 auto;
 }
 
 /*
@@ -15,9 +18,11 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ 
 /*header*/
  .main-header {
-    margin: 0;
+   width: 1440px;
+   height: 89px; 
  }
 
  .Karma-logo {
@@ -136,7 +141,7 @@ cursor: pointer;
    flex-direction: row;
    justify-content: center;
    width: 100%;
-   margin-bottom: 20px;
+   margin: 20px auto;
 }
  
 .feature-txt {
@@ -150,7 +155,161 @@ cursor: pointer;
    background-color: #f5c0c0;
   
  }
- 
+
+ /*styling for store.html starts here */
+.main-page {
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+}
+
+ .order-form{
+   width: 501px;
+   height: 841px;
+   margin-left: 122px;
+   margin-right: 118px;
+   
+}
+
+.order-form h1{
+   width: 1448px;
+   height: 96px;
+   font-family: Roboto;
+   font-style: Medium;
+   font-size: 50px;
+   line-height: 59px;
+   text-align: left;
+   color: #de6e49;
+   margin-bottom: 50px;
+
+}
+.label{
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 21px;
+   color:#666666;
+   line-height: 24.61px;
+   margin-top: 32px;
+   margin-bottom: 12px;
+}
+
+ .name-last-name input{
+   width: 90%;
+}
+
+.postcode input{
+   width: 165px;
+   
+}
+
+.postcode{
+   margin-left: 27px;
+}
+.address,
+.address2{
+   width:  499px;
+
+}
+
+ .user-name,
+ .last-name,
+ .address,
+ .address2,
+ .city,
+ .postcode{
+   display: flex;
+   flex-direction: column;
+ }
+ .user-name,
+ .last-name{
+   width: 235px;
+ }
+ .last-name{
+   margin-left: 27px;
+ }
+
+
+
+.name-last-name{
+   display: flex;
+   flex-direction: row;
+}
+#city{
+   width: 307px;
+   margin-bottom: 85px;
+   padding: 2px;
+}
+
+.city-postcode {
+   display: flex;
+   flex-direction: row;
+   
+}
+
+.color-fieldset{
+   margin-bottom: 97px;
+}
+
+.color-fieldset p{
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 21px;
+   color: #666666;
+   line-height: 24.61px;
+   margin-top: 70px;
+   
+}
+.color-fieldset label{
+   width: 132px;
+   height: 25px;
+   font-family: Roboto;
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 24.61px;
+}
+#grey{
+   margin-left: 30px;
+}
+#orange {
+   color: #de6e49;  
+}
+
+.terms-conditions a{
+   color: #DE6E49;
+}
+   
+.terms-conditions label{
+   width: 466.04px;
+   height: 50px;
+   font-family: Roboto;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25.2px;
+}
+
+.button button{
+   width: 269px;
+   height: 70px;
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 21px;
+   font-style: normal;
+   border: none;
+   border-radius: 4%;
+   text-align: left;
+   background-color: #de633a;
+   color: #ffffff;
+   padding: 22px 60px 22px 61px;
+}
+
+.form-img img {
+   width: 701px;
+   height: 1235px;
+}
+
+
+ /*styling for store.html ends here */
 
 /*footer*/
  footer, h3 {
@@ -159,15 +318,17 @@ cursor: pointer;
  }
 
  .fa {
-     padding: 20px;
-     font-size: 50px;
-     width: 20px;
-     text-align: center;
-     text-decoration: none;
-     margin: 10px;
-     border-radius: 50%;
-     display: inline;
-     cursor: pointer;
+   background: #f8f9f9;
+   padding: 20px;
+   font-size: 50px;
+   width: 20px;
+   text-align: center;
+   text-decoration: none;
+   margin: 10px;
+   border-radius: 50%;
+   border: 1px solid rgb(206, 205, 205) ;
+   display: inline;
+   cursor: pointer;
  }
 
  .fa:hover {
@@ -175,18 +336,17 @@ cursor: pointer;
  }
 
  .fa-facebook {
-     background: #dbdde0;
      color: #1a439b;;
 
  }
 
  .fa-twitter {
-     background: #dbdde0;
+     
      color: #55ACEE;
  }
 
  .fa-instagram {
-    background-color: #dbdde0;
+    
     color: rgb(23, 27, 152);
  }
 
