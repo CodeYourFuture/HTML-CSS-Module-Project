@@ -39,12 +39,12 @@
                         
                             <article class="name-last-name">
                                 <div class="user-name">
-                                    <label class="label" for="name" required>First name</label>
-                                    <input id="name" type="text" name="name">
+                                    <label class="label" for="name">First name</label>
+                                    <input id="name" type="text" name="name" required >
                                 </div>
                                 <div class="last-name">
                                 <label class="label" for="last-name">Last name</label>
-                                <input id="last-name" type="text" name="last-name">
+                                <input id="last-name" type="text" name="last-name" required >
                                 </div>
                             </article>
                             <article class="address">
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="postcode">
                                     <label class="label" for="postcode" >Postcode</label>
-                                    <input id="postcode" type="text" name="postcode">
+                                    <input id="postcode" type="text" name="postcode" required >
                                 </div>
                             </article>
                         <article class="color-fieldset">
@@ -78,11 +78,11 @@
                             <label for="grey"> Space Grey</label>
                         </article>
                         <article class="terms-conditions">
-                            <input type="checkbox" id="checkbox" name="checkbox">
+                            <input type="checkbox" id="checkbox" name="checkbox" required >
                             <label for="checkbox">By placing order you agree to karma's <a href="#">Terms and conditions.</a> </label>
                         </article>
                         
-                            <button class="myOrder-btn">Place my order</button>
+                            <button type="submit" class="myOrder-btn">Place my order</button>
                         
                     </form>
                 </article>
