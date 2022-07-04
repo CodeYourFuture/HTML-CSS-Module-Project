@@ -36,72 +36,78 @@
       </nav>
     </header>
     <main>
-        <div class="name">
-            <div class="title">Order your Karma wifi device today</div>
-                <form>
-                    <div>
-                        <div>
-                            <label for="name">First Name</label><br />
-                            <input type="text" />
-                        </div>
-                        <div>
-                            <label for="last-name">Last Name</label><br />
-                            <input type="text" />
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <label for="address">Address</label><br />
-                            <input type="text" />
-                        </div>
-                        <div>
-                            <label for="address">Address</label><br />
-                            <input type="text" />
-                        </div>
-                    </div>
-            <div>
-                <div>
-                    <p>City</p>
-                        <select class="dropdown">
-                            <option value="">Select Your City</option>
-                            <option value="">Coventry</option>
-                            <option value="">London</option>
-                            <option value="">Birmingham</option>
-                            <option value="">Leeds</option>
-                            <option value="">Brighten</option>
-                        </select>
-                </div>
-                <div>
-                    <label for="address">PostCode</label><br />
-                    <input type="text" />
-                </div>
-                <div>
-                    <p>Select a color</p>
-                    <input type="radio" id="Karma-orange" name="recommend" value="Karma Orange">
-                    <label for="karma organe">Karma Orange</label>
-                    <input type="radio" id="Space-gray" name="recommend" value="Space Gray">
-                    <label for="space gray">Space Gray</label>
+      <div class="form-container">
 
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" id="font-end" value="front-end">
-                    <label for="checkbox">By placing your order you agree to Karma's<a href="#"> Terms and Conditions</a></label>
-                </div>
-                <div class="submit">
-                    <button id="submit" type="submit">Place my order</button>
-                </div>
-                </form>
-        
-            </div>
       
+      <form action="">
+        <div class="name">
+          <div class="fname">
+            <label for="fname">First Name:</label><br />
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div class="lname">
+            <label for="lname">Last Name:</label><br />
+            <input type="text" id="lname" name="lname" />
+          </div>
         </div>
+        <div class="address">
+          <div>
+            <label for="address">Address:</label><br />
+            <input type="text" id="address" name="address" />
+          </div>
+          <div class="address-2">
+            <label for="address">Address 2</label><br />
+            <input type="text" id="address" name="address" />
+          </div>
+        </div>
+        <div class="city-container">
+          <div class="city">
+            <label for="city">City</label><br />
+            <select id="city" name="city">
+              <option value="1" selected>Select your city</option>
+              <option value="2">Birmingham</option>
+              <option value="3">Coventry</option>
+              <option value="4">Manchester</option>
+              <option value="5">London</option>
+              <option value="6">Brighten</option>
+              <option value="7">Southampton</option>
+               
+            </select>
+          </div>
+          <div class="postcode">
+            <label for="postcode">PostCode:</label><br />
+            <input type="text" id="postcode" name="postcode" />
+          </div>
+        </div>
+
+        <div class="radio">
+          <p>Select a color</p>
+          <input type="radio" id="Karma-orange" name="recommend" value="Karma Orange"/>
+          <label for="karma organe">Karma Orange</label>
+          <input type="radio" id="Space-gray" name="recommend" value="Space Gray"/>
+          <label for="space gray">Space Gray</label>
+        </div>
+        <br />
+        <div class="checkbox">
+          <input type="checkbox" id="font-end" value="front-end" />
+          <label for="checkbox"
+            >By placing your order you agree to Karma's<a href="#">
+              Terms and Conditions</a
+            ></label>
+        </div>
+        <br />
+        <div class="submit">
+          <button id="submit" type="submit">Place my order</button>
+        </div>
+
+      </form>
+      <img class="form-img" src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="" >
+      </div>
     </main>
-     <footer>
-      <hr>
+    <footer>
+      <hr />
       <section>
-        
         <div class="footer-p">
-          
           <p>Join us on</p>
         </div>
       </section>

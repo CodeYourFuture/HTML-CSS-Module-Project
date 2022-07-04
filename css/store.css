@@ -1,4 +1,5 @@
-  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -7,7 +8,16 @@ body {
  
 
 
- 
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+/* body  */
 body {
     margin: 0;
 }
@@ -18,8 +28,6 @@ body {
   justify-content: space-around;  
   height: 5rem;
   width: 100%;
-  margin-bottom: 1rem;
-  padding-top: 1rem;
 }
 /* log */
 .logo {
@@ -28,50 +36,101 @@ body {
    
 }
 /* Nav */
- 
+ nav {
+  margin-left: 300px;
+ }
 .nav-list {
   display: flex;
-  list-style: none;  
+  list-style: none;
 }
 .nav-item {
   padding: 0.5rem 0;
+   
 }
 .nav-link {
   color: rgb(182, 172, 172);
   font-weight: 600;
   text-decoration: none;
   padding: 0 1em;
+  margin-right: 10px;
   transition: opacity 0.15s;
 }
 .nav-link:hover {
   color: #c86f49;
-  /* opacity: 0.8; */
 }
 #onlink {
   color: black;
-  /* opacity: 0.5; */
 }
-/* .title {
-    
-  color: red;
-  width: 60%;
-  border-radius: 15px;
-  margin: auto;
-} */
+/* main */
+/* form */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-left: 100px;
+  width: 100%;
+}
+form {
+   height: 100vh;
+  width: 700vh;
+  /* width: 450px; */
+  /* margin-right: 440px; */
+}
+.form-img {
+  height: 100vh;
+  width: 700vh;
+  /* margin-right: 20px; */
+}
+/* name */
+form label {
+  margin-top: 3rem;
+}
+.name {
+  display: flex;
+  position: relative;
+  /* margin-left: 1rem; */
 
-/* button */
- .button {
-   position: absolute;
-  background-color: #c05326;
-  color: white;
-  border: none;
-  border-radius: 3px;
-   margin: 4px 2px;
-  padding: 15px 32px; 
-   
+}
+
+.fname {
+  margin-right: 2rem;
+}
+.fname input,
+.lname input {
+  width: 350px;
+  height: 50px;
+  margin-top: 1rem;
+
+}
+.address {
+  margin-top: 3rem;
+}
+.address-2 {
+    margin-top: 3rem;
+
+}
+.address input {
+   width: 740px;
+  height: 50px;
+  margin-top: 1rem;
+} 
+
+.city-container {
+  display: flex;
+  position: relative;
+  /* margin-right: 3rem; */
+  margin-top: 3rem;
+}
+.city {
+  margin-right: 2rem;
+  
+}
+
+
+ /* footer */
+ footer {
+  margin-bottom: 4rem;
  }
-/* footer */
- 
  .footer-p {
   text-align: center;
   font-size: 1em;
@@ -79,14 +138,19 @@ body {
   margin-top: 5px;
   margin-bottom: 30px;
  }
- 
- .footer {
+ .icons-wrapper {
+  text-align: center;
+ }
+ .icons {
   display: inline-block;
-  /* width: 100px; */
   text-align: center;
   justify-content: center;
   opacity: 0.6;
   margin-bottom: 5px;
-  padding-right: 20px;
-  padding-left: 15px;
+  padding: 15px;
+  border: 2px solid #eaebec;
+  border-radius: 100%;
  }
+
+ 
+
