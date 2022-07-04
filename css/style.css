@@ -1,8 +1,12 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+:root
+{
+    --orange:#e0633a;
+}
 body {
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-weight: 200;
 }
 
 /**
@@ -52,7 +56,7 @@ a {
 }
 
 a:hover {
-    color: orange;
+    color:var(--orange);
 }
 
 #SiteName {
@@ -90,20 +94,21 @@ a:hover {
     margin: 25px;
 }
 
-.introduction-button {
+button {
     margin: 20px;
-    background-color: orange;
+    background-color:var(--orange);
     border: none;
+    color: white;
     border-radius: 5px;
-    height: 40px;
-    width: 120px;
+    padding: 20px 20px;
+    font-size: 20px;
 }
 
-.introduction-button:hover {
+button:hover {
     background-color: transparent;
     border: 2px;
     background-color: white;
-    color: orange;
+    color: var(--orange);
 }
 
 /*Services section*/
@@ -134,6 +139,32 @@ a:hover {
     font-size: 50px;
 }
 
+/*--------------get-start section---------------*/
+.get-start {
+    width: 100%;
+    display: flex;
+}
+
+.get-start-portion {
+    width: 60%;
+    background-color: #fcefeb;
+    font-size: 40px;
+    padding: 0 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get-start-portion>p>span {
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--orange);
+}
+
+
+
+/*--------------End of section---------------*/
 /*Footer section*/
 footer {
     text-align: center;
@@ -146,7 +177,7 @@ footer {
     margin-bottom: 100px;
 }
 
-.footer-items>img {
+.footer-items>a>img {
     width: 30px;
     height: 30px;
     margin: 10px;
