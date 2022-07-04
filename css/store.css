@@ -57,7 +57,7 @@ body {
   transition: opacity 0.15s;
 }
 .nav-link:hover {
-  color: #c86f49;
+  color: #f9461D;
 }
 #onlink {
   color: black;
@@ -73,7 +73,7 @@ body {
 }
 .title {
   position: absolute;
-  color: #fa6525;
+  color: #f9461D;
   font-size: 75px;
   margin-top: 60px;
   margin-left: 220px;
@@ -81,8 +81,6 @@ body {
 }
 .form {
    height: 100vh;
-  /* width: 100em; */
-  /* width: 450px; */
   margin-top: 300px;
   margin-left: 220px;
 
@@ -175,10 +173,12 @@ form label {
   margin-right: 1rem;
   height: 25px;
   width: 25px;
+  background-color: #f9461D;
 }
+ 
 .radio label {
   margin-right: 2rem;
-font-size: 30px;
+  font-size: 30px;
 }
 /* checkbox */
 .checkbox {
@@ -191,15 +191,16 @@ font-size: 30px;
    width: 30px;
    height: 30px;
    border-radius: 2rem; 
+   background-color: #f9461D;
 }
 .checkbox a {
-  color: #fa6525;
+  color: #f9461D;
 }
 /* button */
 .submit button {
   margin-top: 4rem;
   font-size: 30px;
-  background-color: #fa6525;
+  background-color: #f9461D;
   color: white;
   padding: 1.5rem 6rem;
   border: none;
