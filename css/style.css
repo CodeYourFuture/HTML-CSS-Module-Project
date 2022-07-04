@@ -1,8 +1,13 @@
-body {
+body 
+{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
+main
+{
+    padding-bottom: 1.5em;
+}
 nav
 {
     padding-right: 4em;
@@ -69,6 +74,7 @@ nav
 
 .btn-learn-more
 {
+    color: white;
     height: 60px;
     width: 150px;
     background-color: rgb(255, 99, 43);
@@ -101,6 +107,16 @@ nav
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;   
+}
+
+.addition-1
+{
+    background-color: rgb(255, 240, 234);
+}
+
+.img-2
+{
+    width: 43%;
 }
 
 .p-4
@@ -153,4 +169,50 @@ hr.hl
     font-size: 11px;
     opacity: 0.5;
     padding-bottom: 65px;
+}
+
+.aside-1
+{
+    font-size: 25px;
+    padding-top: 4%;
+    width: 57%;
+    text-align: center;
+    float: right;
+}
+
+.get-karma-today
+{
+    color: white;
+    height: 60px;
+    width: 200px;
+    background-color: rgb(255, 99, 43);
+    border: 0px solid;
+    border-radius: 10px;
+
+}    
+
+.get-karma-today:hover
+{
+    background-color: rgb(206, 55, 0);
+}
+
+.p-new:before 
+{
+  color: rgb(255, 99, 43);
+  content: "“";
+}
+
+.p-new::after 
+{
+  color: rgb(255, 99, 43);
+  content: "”";
+}
+
+.aside-2
+{
+    font-size: 18px;
+    padding-top: 4%;
+    width: 57%;
+    text-align: center;
+    float: right;
 }
