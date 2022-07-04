@@ -117,6 +117,40 @@ body {
     font-size: 3.3rem;
     margin-top: 8rem;
 }
+/**Get Karma section*/
+.get-karma{
+    display: flex;
+    flex-direction: row;
+}
+.get-karma-text {
+    display: flex;
+    background-color: #fceeeb;
+    width: 100vw;
+}
+.get-karma-btn{
+    color: white;
+    background-color: #e0633a;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.get-karma-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get-karma-text-holder{
+    display: flex;
+    font-weight: 400;
+    font-size: 2rem;
+    background-color: #e0633a;
+}
 /**Footer section*/
 .footer{
     display: flex;
