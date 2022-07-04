@@ -1,9 +1,12 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root
+{
+    --orange:#e0633a;
+}
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-weight: 200;
 }
 
 /**
@@ -15,5 +18,176 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/*Header section*/
+header {
+    margin: 0px;
+    display: flex;
+}
+
+#logo-space {
+    width: 300px;
+    height: 100px;
+}
+
+#site-logo {
+    width: 300px;
+    height: 70px;
+    margin: 10px 0px;
+}
+
+#navLink {
+    width: 100%;
+    height: 100px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav {
+    margin: 2.2rem;
+}
+
+a {
+    padding: 0px 30px;
+    text-decoration: none;
+    font-style: normal;
+    color: gray;
+}
+
+a:hover {
+    color:var(--orange);
+}
+
+#SiteName {
+    color: black;
+}
+
+/*Introduction section*/
+.section-introduction {
+    width: 100%;
+    height: 750px;
+    background-image: url("../img/first-background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction {
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introduction-title {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.introduction-tagline {
+    font-size: 30px;
+    margin: 25px;
+}
+
+button {
+    margin: 20px;
+    background-color:var(--orange);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px;
+    background-color: white;
+    color: var(--orange);
+}
+
+/*Services section*/
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-services {
+
+    text-align: center;
+    padding-top: 90px;
+}
+
+.service-container>figure {
+    margin: 80px;
+    width: 150px;
+    padding: 50px;
+}
+
+.service-container>figure>figcaption {
+    width: 200px;
+}
+
+.services-title {
+    font-size: 50px;
+}
+
+/*--------------get-start section---------------*/
+.get-start {
+    width: 100%;
+    display: flex;
+}
+
+.get-start-portion {
+    width: 60%;
+    background-color: #fcefeb;
+    font-size: 40px;
+    padding: 0 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get-start-portion>p>span {
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--orange);
+}
 
 
+
+/*--------------End of section---------------*/
+/*Footer section*/
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-copyright {
+    margin-bottom: 100px;
+}
+
+.footer-items>a>img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid #c5c5c5;
+    padding: 10px;
+}
+
+#line {
+    width: 80%;
+    height: 10px;
+    border-bottom: 1px solid black;
+}
