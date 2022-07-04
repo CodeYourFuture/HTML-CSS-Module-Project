@@ -28,6 +28,7 @@ body {
   justify-content: space-around;  
   height: 5rem;
   width: 100%;
+  background-color: rgb(238, 231, 231);
 }
 /* log */
 .logo {
@@ -66,8 +67,8 @@ body {
 .form-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
-  margin-left: 100px;
+  /* padding: 0 90px; */
+  
   width: 100%;
 }
 .title {
@@ -75,18 +76,22 @@ body {
   color: #c05326;
   font-size: 75px;
   margin-top: 60px;
+  margin-left: 220px;
 
 }
-form {
+.form {
    height: 100vh;
-  width: 700vh;
+  /* width: 100em; */
   /* width: 450px; */
   margin-top: 300px;
+  margin-left: 220px;
+
+   
 }
 .form-img {
-  height: 135vh;
-  width: 700vh;
-  /* margin-right: 20px; */
+  /* position: absolute; */
+  height: 100em;
+   
 }
 /* name */
 form label {
@@ -154,7 +159,7 @@ form label {
   font-size: 35px;
 }
 .radio p {
-  margin-top: 3rem;
+  margin-top: 5rem;
   font-size: 35px;
 }
 
@@ -190,14 +195,15 @@ font-size: 35px;
 
  /* footer */
  footer {
-  margin-bottom: 4rem;
+  /* margin-top: 9em; */
+  margin-bottom: 4em;
  }
  .footer-p {
   text-align: center;
   font-size: 1em;
   margin: 0.67em 0;
-  margin-top: 5px;
-  margin-bottom: 30px;
+  /* margin-top: 5px;
+  margin-bottom: 30px; */
  }
  .icons-wrapper {
   text-align: center;
