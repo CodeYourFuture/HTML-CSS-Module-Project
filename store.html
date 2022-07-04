@@ -36,7 +36,7 @@
       <form class="form">
         <h1 class="form__title">Order your Karma wifi device today!</h1>
         <div class="wrap--name">
-          <fieldset class="fieldset">
+          <fieldset class="fieldset fieldset--name">
             <label
               class="label label--name"
               type="text"
@@ -46,7 +46,7 @@
             >
             <input class="input input--name" for="first-name" required />
           </fieldset>
-          <fieldset class="fieldset">
+          <fieldset class="fieldset fieldset--name">
             <label
               class="label label--name"
               type="text"
@@ -55,6 +55,28 @@
               >Last name*</label
             >
             <input class="input input--name" for="last-name" required />
+          </fieldset>
+        </div>
+        <div class="wrap--address">
+          <fieldset class="fieldset fieldset--address">
+            <label
+              class="label label--address"
+              type="text"
+              name="address"
+              id="address"
+              >Address*</label
+            >
+            <input class="input input--address" for="address" required />
+          </fieldset>
+          <fieldset class="fieldset fieldset--address">
+            <label
+              class="label label--address"
+              type="text"
+              name="address2"
+              id="address2"
+              >Address 2</label
+            >
+            <input class="input input--address" for="address2" />
           </fieldset>
         </div>
       </form>

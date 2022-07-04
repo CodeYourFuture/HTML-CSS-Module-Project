@@ -244,7 +244,8 @@ body, button {
     flex-direction: column;
     align-items: center;
     width: 50vw;
-    margin: 0 6rem;
+    margin: 5rem 6rem 0;
+    background-color: var(--grey-light);
 
 }
 
@@ -257,6 +258,7 @@ body, button {
 /* Fieldset reset */
 .fieldset {
     border: none;
+    margin-top: 1rem;
 }
 
 /* label reset */
@@ -278,12 +280,23 @@ body, button {
     flex-direction: row;
 }
 
-.fieldset {
+.fieldset--name {
     width: 50%;
 }
 
 .input--name {
     width: 15rem;
+}
+
+/* Address field */
+.wrap--address {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .fieldset--address {} */
+.input--address {
+    width: 32rem;
 }
 
 /* aside section */
