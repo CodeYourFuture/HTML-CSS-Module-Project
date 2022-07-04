@@ -84,14 +84,14 @@ cursor: pointer;
     font-weight: lighter;
  }
 
- button {
+ .intro-btn {
     background-color: rgb(244, 83, 39);
     margin-top: 30px;
     padding: 10px 20px;
     border-radius: 6%;
  }
 
- button:hover{
+ .intro-btn:hover{
    background-color: orange;
  }
 
@@ -112,12 +112,17 @@ cursor: pointer;
  }
 
  .container {
+   width: 1437px;
+   height: 473px;
     margin: 0 auto;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
  .icon {
-    width: 32%;
+    width: 416px;
+    height: 354px;
+    margin-top: 102px;
+    margin-bottom: 17px;
     display: inline-block;
 }
 
@@ -140,11 +145,17 @@ cursor: pointer;
    display: flex;
    flex-direction: row;
    justify-content: center;
-   width: 100%;
+   width: 1440px;
    margin: 20px auto;
+}
+.feature-img{
+   width: 599px;
+   height: 439px;
 }
  
 .feature-txt {
+   width: 841px;
+   height: 439px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -152,9 +163,20 @@ cursor: pointer;
    text-align: center;
    font-weight: 600;
    padding: 0 100px;
-   background-color: #f5c0c0;
+   background-color: rgba(224, 99, 58, 0.1);
   
  }
+ .getKarma-btn{
+   width: 205.46px;
+   height: 28px;
+   font-weight: 400;
+   background-color: #de633a;
+   border: none;
+   border-radius: 4%;
+   color: #ffffff;
+   padding: 21px 29px 21px 29px;
+ }
+
 
  /*styling for store.html starts here */
 .main-page {
@@ -175,8 +197,8 @@ cursor: pointer;
 .order-form h1{
    width: 1448px;
    height: 96px;
-   font-family: Roboto;
    font-style: Medium;
+   font-weight: 500;
    font-size: 50px;
    line-height: 59px;
    text-align: left;
@@ -194,21 +216,32 @@ cursor: pointer;
    margin-bottom: 12px;
 }
 
- .name-last-name input{
-   width: 90%;
+.name-last-name{
+   width: 497px;
 }
+
+ .user-name input,
+ .last-name input{
+   width: 228px;
+   height: 53px;
+}
+ .last-name {
+    margin-left: 27px;
+ }
 
 .postcode input{
    width: 165px;
+   height: 53px;
    
 }
 
 .postcode{
    margin-left: 27px;
 }
-.address,
-.address2{
-   width:  499px;
+.address input,
+.address2 input{
+   width:  497px;
+   height: 53px;
 
 }
 
@@ -221,13 +254,6 @@ cursor: pointer;
    display: flex;
    flex-direction: column;
  }
- .user-name,
- .last-name{
-   width: 235px;
- }
- .last-name{
-   margin-left: 27px;
- }
 
 
 
@@ -237,6 +263,7 @@ cursor: pointer;
 }
 #city{
    width: 307px;
+   height: 53px;
    margin-bottom: 85px;
    padding: 2px;
 }
