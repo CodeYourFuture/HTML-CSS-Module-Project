@@ -70,7 +70,7 @@ body {
 
 .main {
     background-image: url(/img/first-background.jpg);
-    height:700px;
+    height:500px;
     background-position: center;
     background-size: cover;
     color: azure;
@@ -80,7 +80,7 @@ body {
 .button {
     background-color: orangered;
     color: white;
-    border-radius: 1px;
+    border-radius: 2px;
     padding: 5px 15px;
     font-size: 11px;
     border: none;
@@ -97,7 +97,7 @@ body {
 
 .second-heading {
     text-align: center;
-    margin: 90px 0px 40px;
+    margin: 90px 0px 80px;
     font-size: 2rem;
 }
 
@@ -105,7 +105,38 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    margin-bottom: 50px;
 }
+
+/*Additional feature for week 2 with Get Karma today button */
+.karma-today {
+    display: flex;
+}
+
+.karma-today-pic {
+    height: 250px;
+}
+
+.karma-today-block {
+    background-color: rgb(246, 219, 210);
+    padding: 50px 70px;
+    text-align: center;
+    font-style: italic;
+}
+
+.karma-today-button {
+    border: none;
+    background-color: orangered;
+    border-radius: 2px;
+    padding: 5px 15px;
+    font-size: 11px;
+    color: white;
+}
+
+.quote-mark {
+    color: orangered;
+}
+
 
 .join-us{
     border-top: 2px solid lightgray;
