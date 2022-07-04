@@ -73,7 +73,7 @@ body {
 }
 .title {
   position: absolute;
-  color: #c05326;
+  color: #fa6525;
   font-size: 75px;
   margin-top: 60px;
   margin-left: 220px;
@@ -101,7 +101,7 @@ form label {
   display: flex;
   position: relative;
   /* margin-left: 1rem; */
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .fname {
@@ -116,13 +116,14 @@ form label {
   border: 3px solid rgb(177, 174, 174);
   border-radius: 5px;
 }
+/* address */
 .address {
   margin-top: 3rem;
-  font-size: 35px;
+  font-size: 30px;
 }
 .address-2 {
     margin-top: 3rem;
-  font-size: 35px;
+  font-size: 30px;
 }
 .address input {
    width: 740px;
@@ -131,7 +132,7 @@ form label {
   border: 3px solid rgb(177, 174, 174);
   border-radius: 5px;
 } 
-
+/* city-container */
 .city-container {
   display: flex;
   position: relative;
@@ -140,48 +141,46 @@ form label {
 }
 .city {
   margin-right: 2rem;
-  font-size: 35px;
+  font-size: 30px;
   
 }
 .city select {
    width: 450px;
-  height: 50px;
+  height: 60px;
   margin-top: 1rem;
-  font-size: 35px;
+  font-size: 30px;
   border: 3px solid rgb(177, 174, 174);
   border-radius: 5px;
 }
  
 .postcode input {
    width: 250px;
-  height: 45px;
+  height: 50px;
   margin-top: 1rem;
   border: 3px solid rgb(177, 174, 174);
   border-radius: 5px;
   
 }
 .postcode label {
-  font-size: 35px;
+  font-size: 30px;
 }
+/* radio */
 .radio p {
   margin-top: 5rem;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .radio input {
-   /* width: 450px;
-  height: 50px; */
   margin-top: 1rem;
   margin-right: 1rem;
-  /* color: #c05326; */
   height: 25px;
   width: 25px;
 }
 .radio label {
   margin-right: 2rem;
-font-size: 35px;
-
+font-size: 30px;
 }
+/* checkbox */
 .checkbox {
   margin-top: 5rem;
   font-size: 35px;
@@ -191,14 +190,20 @@ font-size: 35px;
   padding: 1rem;
    width: 30px;
    height: 30px;
-   background-color: ;
+   border-radius: 2rem; 
 }
+.checkbox a {
+  color: #fa6525;
+}
+/* button */
 .submit button {
   margin-top: 4rem;
-  font-size: 35px;
-  background-color: #c05326;
+  font-size: 30px;
+  background-color: #fa6525;
   color: white;
   padding: 1.5rem 6rem;
+  border: none;
+  border-radius: 5px;
 }
 
 
@@ -209,7 +214,6 @@ font-size: 35px;
  .footer-p {
   text-align: center;
   font-size: 1em;
-  margin: 0.67em 0;
   margin-top: 5px;
   margin-bottom: 30px;
  }

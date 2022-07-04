@@ -56,7 +56,7 @@ body {
   transition: opacity 0.15s;
 }
 .nav-link:hover {
-  color: #c86f49;
+  color: #fa6525;
 }
 #onlink {
   color: black;
@@ -91,7 +91,7 @@ body {
 }
 /* button  */
 .button {
-  background-color: #c05326;
+  background-color: #fa6525;
   color: white;
   border: none;
   border-radius: 3px;
@@ -124,7 +124,40 @@ body {
   width: 150px;
   margin-bottom: 20px;
 }
+.about-container {
+  display: flex;
+  position: relative;
+  /* justify-content: space-around; */
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.about-container img {
+  width: 750px;
+}
+.about {
+  background-color: #ebd3c9;
+  width: 850px;
+  text-align: center;
+  padding-right: 50px;
+}
+.about p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 170px 200px 0 200px;
+}
 
+.about button {
+  background-color: #fa6525;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 32px; 
+  text-decoration: none; 
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  
+}
 
  /* footer */
  footer {
