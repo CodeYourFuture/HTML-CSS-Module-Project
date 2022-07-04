@@ -89,7 +89,7 @@ body {
     border: none;
 }
 
-button:hover {
+.button:hover {
     background-color: white;
     color: orangered;
 }
@@ -177,6 +177,21 @@ button:hover {
     color: lightgray;
     font-size: 0.5rem;
 }
+
+
+/*Bellow style sheet for the store.html  */
+
+.main-store {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.store-img {
+    width: 350px;
+    height: 600px;
+}
+
 
 
 /**
