@@ -36,10 +36,8 @@
       <form class="form">
         <h1 class="form__title">Order your Karma wifi device today!</h1>
         <div class="wrap--rows">
-          <fieldset class="fieldset fieldset--name">
-            <label class="label label--name" for="first-name"
-              >First name *</label
-            >
+          <fieldset class="fieldset">
+            <label class="label" for="first-name">First name *</label>
             <input
               class="input input--name"
               type="text"
@@ -48,8 +46,8 @@
               required
             />
           </fieldset>
-          <fieldset class="fieldset fieldset--name">
-            <label class="label label--name" for="last-name">Last name *</label>
+          <fieldset class="fieldset">
+            <label class="label" for="last-name">Last name *</label>
             <input
               class="input input--name"
               type="text"
@@ -60,8 +58,8 @@
           </fieldset>
         </div>
         <div class="wrap--column">
-          <fieldset class="fieldset fieldset--address">
-            <label class="label label--address" for="address">Address *</label>
+          <fieldset class="fieldset">
+            <label class="label" for="address">Address *</label>
             <input
               class="input input--address"
               type="text"
@@ -70,8 +68,8 @@
               required
             />
           </fieldset>
-          <fieldset class="fieldset fieldset--address">
-            <label class="label label--address" for="address2">Address 2</label>
+          <fieldset class="fieldset">
+            <label class="label" for="address2">Address 2</label>
             <input
               class="input input--address"
               type="text"
@@ -81,26 +79,19 @@
           </fieldset>
         </div>
         <div class="wrap--rows">
-          <fieldset class="fieldset fieldset--city">
-            <label class="label label--city" for="city">City *</label>
+          <fieldset class="fieldset">
+            <label class="label" for="city">City *</label>
             <select class="input input--city" id="city">
-              <option value="-1">Select your city ...</option>
+              <option value="-1" selected>Select your city ...</option>
               <option value="1">Birmingham</option>
               <option value="2">Coventry</option>
               <option value="3">Solihull</option>
               <option value="4">Dudley</option>
             </select>
           </fieldset>
-          <fieldset class="fieldset fieldset--postcode">
-            <label class="label label--postcode" for="postcode"
-              >Postcode *</label
-            >
-            <input
-              class="input input--postcode"
-              type="text"
-              name="postcode"
-              id="postcode"
-            />
+          <fieldset class="fieldset">
+            <label class="label" for="postcode">Postcode *</label>
+            <input class="input" type="text" name="postcode" id="postcode" />
           </fieldset>
         </div>
         <fieldset class="fieldset wrap--rows">

@@ -257,7 +257,7 @@ body, button {
     margin-top: 1rem;
 }
 
-/* wraps */
+/* Wraps */
 .wrap--rows {
     display: flex;
     flex-direction: row;
@@ -268,41 +268,41 @@ body, button {
     flex-direction: column;
 }
 
-/* label reset */
+/* Label reset */
 .label {
     display: block;
     padding: 0 0.5rem 1rem;
     font-size: 1.3rem;
-
 }
 
+/* Input reset */
 .input {
     height: 3rem;
     padding-left: 0.5rem;
     border-radius: 0.5rem;
 }
 
-/* Name field */
-.fieldset--name {
-    width: 50%;
-}
-
+/* Name input */
 .input--name {
     width: 15rem;
 }
 
-/* Address field */
+/* Address input */
 .input--address {
     width: 32rem;
 }
 
-/* City field */
+/* City input */
 .input--city {
     width: 20rem;
     font-style: italic;
 }
+.input--city> option  {
+    width: 20rem;
+    font-style: initial;
+}
 
-/* Radio buttons field */
+/* Radio buttons fieldset */
 .legend {
     font-size: 1.3rem;
 }
@@ -322,8 +322,8 @@ body, button {
 
 /* Checkbox field */
 .input--checkbox {
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 1.4rem;
+    width: 1.4rem;
     appearance: none;
     border: 1px solid var(--grey-dark);
     border-radius: 4px;
