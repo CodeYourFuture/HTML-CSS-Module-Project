@@ -196,6 +196,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem;
+}
+.order-karma-title{
+    color: #e0633a;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.9rem;
 }
 .order-form{
     display: flex;
@@ -206,10 +214,16 @@ body {
 .form-items-holder{
     display: flex;
     flex-direction: column;
+    
+    font-size: 1.4em;
+}
+.store-free-space{
+    width: 2.5rem;
 }
 .form-line{
     display: flex;
     flex-direction: row;
+    padding-top: 4.2rem;
 }
 
 
