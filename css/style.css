@@ -26,6 +26,16 @@ body {
      justify-content: flex-end;
      margin-bottom: 1.4rem;
  }
+ .nav-store{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-height: 5rem;
+        max-width: 100vmax;
+        justify-content: flex-end;
+        margin-bottom: 1.4rem;
+        background-color: #f8f8f8;
+ }
  .free-space{
      margin: 17%;
  }
@@ -44,13 +54,30 @@ body {
     margin-top: 2.5rem;
     color: rgb(146, 145, 145);
 }
+#nav-buttons-store{
+    background-color: #f8f8f8;
+        border: none;
+        margin: 1rem;
+        margin-top: 2.5rem;
+        color: rgb(146, 145, 145);
+}
 .nav-buttons:hover{
+    color: rgb(231, 121, 47);
+}
+#nav-buttons-store:hover {
     color: rgb(231, 121, 47);
 }
 #nav-btn-meet{
     color: black;
 }
+#nav-btn-meet-store {
+    color: black;
+    background-color: #f8f8f8;
+}
 #nav-btn-meet:hover{
+    color: rgb(231, 121, 47);
+} 
+#nav-btn-meet-store:hover {
     color: rgb(231, 121, 47);
 }
 /**Intro section*/
@@ -155,6 +182,40 @@ body {
 .qout{
     font-size:3.5rem;
 }
+/**Main section of store page*/
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.store-img{
+    width: 50%;
+}
+.form-items{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-form{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.form-items-holder{
+    display: flex;
+    flex-direction: column;
+}
+.form-line{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
 /**Footer section*/
 .footer{
     display: flex;

@@ -12,64 +12,83 @@
 </head>
 
 <body class="body">
-    <nav class="nav">
+    <nav class="nav-store">
         <img src="img/karma-logo.svg" alt="karma-logo" class="nav-icon">
         <div class="free-space"></div>
-        <a href="" target=”_blank”>
-            <button id="nav-btn-meet" class="nav-buttons">Meet Karma</button>
+        <a href="" target=”_blank” >
+            <button id="nav-btn-meet-store" class="nav-buttons">Meet Karma</button>
         </a>
         <a href="" target=”_blank”>
-            <button class="nav-buttons">How it Works</button>
+            <button class="nav-buttons" id="nav-buttons-store">How it Works</button>
         </a>
         <a href="" target=”_blank”>
-            <button class="nav-buttons">Store</button>
+            <button class="nav-buttons" id="nav-buttons-store">Store</button>
         </a>
         <a href="" target=”_blank”>
-            <button class="nav-buttons">Blog</button>
+            <button class="nav-buttons" id="nav-buttons-store">Blog</button>
         </a>
         <a href="" target=”_blank”>
-            <button class="nav-buttons">Help</button>
+            <button class="nav-buttons" id="nav-buttons-store">Help</button>
         </a>
         <a href="" target=”_blank”>
-            <button class="nav-buttons">Login</button>
+            <button class="nav-buttons" id="nav-buttons-store">Login</button>
         </a>
         <div class="free-space2"></div>
     </nav>
 
     <main class="form">
         <section class="form-items">
-            <h1 class="order-karma">Order your Karma wifi <br> device today!</h1>
-            <form class="form"  action="">
+            <form class="order-form"  action="">
+                <h1 class="order-karma">Order your Karma wifi <br> device today!</h1>
                 <div class="form-line">
+                    <div class="form-items-holder">
                  <label for="">First name *</label>
                  <input type="text">
+                    </div>
+                    <div class="form-items-holder">
                  <label for="">Last name *</label>
                  <input type="text">
+                    </div>
                  </div>
                 <div class="form-line">
+                    <div class="form-items-holder">
                  <label for="">Address *</label>
                  <input type="text">   
+                    </div>
                 </div>
                 <div class="form-line">
+                    <div class="form-items-holder">
                  <label for="">Address 2</label>
                  <input type="text">
+                    </div>
                 </div>
                 <div class="form-line">
+                    <div class="form-items-holder">
                  <label for="">City *</label>
                  <input type="text">
+                    </div>
+                    <div class="form-items-holder">
                 <label for="">Postcode *</label>
                 <input type="text">
+                    </div>
                 </div>
                 <div class="form-line">
-                 <input type="radio">
-                 <label for="">Karma orange</label>
-                 <input type="radio">
-                 <label for="">Space Grey</label>
+                    <div class="form-items-holder">
+                     <label for="">Select a colour</label>
+                      <div class="radio-btns">
+                        <input type="radio">
+                        <label for="">Karma orange</label>
+                        <input type="radio">
+                        <label for="">Space Grey</label>
+                     </div>
+                    </div>
                 </div>
-                <div class="form-line">
+                <div class="form-line" id="checkbox-items">
                  <input type="checkbox">
                  <p class="terms">By placing your order you agree to Karma's <span style="color:#e0633a">Terms and</span><br><span style="color:#e0633a">Conditions.</span> *</p>
-                 <button class="place-order">Place my order</button>
+                </div>
+                <div class="form-line">
+                    <button class="place-order">Place my order</button>
                 </div>
             </form>
         </section>
