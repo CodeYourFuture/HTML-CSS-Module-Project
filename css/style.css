@@ -8,6 +8,7 @@ main
 {
     padding-bottom: 1.5em;
 }
+
 nav
 {
     padding-right: 4em;
@@ -19,7 +20,7 @@ nav
     width: 30px;
 }
 
-.option-buttons
+.a-options
 {
     float: right; 
     line-height: 50px;
@@ -30,12 +31,13 @@ nav
     padding-right: 30px;
     border:0px;
     background-color: white;
+    text-decoration:none
 }
 
 
-.option-buttons:hover
+.a-options:hover
 {
-    color:orangered;
+    color:rgb(255, 99, 43);
 }
 
 .container
@@ -78,7 +80,7 @@ nav
     height: 60px;
     width: 150px;
     background-color: rgb(255, 99, 43);
-    border: 1px solid black;
+    border: 0px solid;
     border-radius: 10px;
 }
 
@@ -183,17 +185,18 @@ hr.hl
 .get-karma-today
 {
     color: white;
-    height: 60px;
-    width: 200px;
     background-color: rgb(255, 99, 43);
     border: 0px solid;
     border-radius: 10px;
-
-}    
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}   
 
 .get-karma-today:hover
 {
-    background-color: rgb(206, 55, 0);
+    background-color: rgb(255, 99, 43);
 }
 
 .p-new:before 
