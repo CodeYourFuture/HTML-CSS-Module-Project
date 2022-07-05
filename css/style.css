@@ -240,13 +240,9 @@ body, button {
 
 /* Form section */
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 50vw;
     margin: 5rem 6rem 0;
     background-color: var(--grey-light);
-
 }
 
 .form__title {
@@ -275,7 +271,7 @@ body, button {
 /* label reset */
 .label {
     display: block;
-    padding: 0 5px 10px;
+    padding: 0 0.5rem 1rem;
     font-size: 1.3rem;
 
 }
@@ -287,7 +283,6 @@ body, button {
 }
 
 /* Name field */
-
 .fieldset--name {
     width: 50%;
 }
@@ -297,16 +292,32 @@ body, button {
 }
 
 /* Address field */
-
 .input--address {
     width: 32rem;
 }
 
 /* City field */
-
 .input--city {
     width: 20rem;
     font-style: italic;
+}
+
+/* Radio buttons field */
+.legend {
+    font-size: 1.3rem;
+}
+
+.label--radio {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    margin-right: 1rem ;
+}
+
+.input--radio {
+    width: 1.2rem;
+    accent-color: var(--orange-dark);
 }
 
 /* aside section */
