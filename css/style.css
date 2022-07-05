@@ -1,11 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
 /**
  * Add your custom styles below
  * 
@@ -15,5 +12,351 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
+.body{
+    display: flex;
+    flex-direction: column;
+}
+/** Nav section*/
+ .nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 5rem;
+    max-width: 100vmax;
+    justify-content: flex-end;
+    margin-bottom: 1.4rem;
+ }
+ .nav-store{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 5rem;
+    max-width: 100vmax;
+    justify-content: flex-end;    
+    background-color: #f8f8f8;
+    padding-bottom: 1.5rem;    
+ }
+ .free-space{
+    margin: 17%;
+ }
+ .free-space2{
+    margin: 4.5%;
+ }
+.nav-icon{
+    display: flex;
+    max-width: 2.5rem;
+    margin-top: 10px;
+}
+.nav-buttons{
+    background-color: white;
+    border: none;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    color: rgb(146, 145, 145);
+}
+#nav-buttons-store{
+    background-color: #f8f8f8;
+    border: none;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    color: rgb(146, 145, 145);
+}
+.nav-buttons:hover{
+    color: rgb(231, 121, 47);
+}
+#nav-buttons-store:hover {
+    color: rgb(231, 121, 47);
+}
+#nav-btn-meet{
+    color: black;
+}
+#nav-btn-meet-store {
+    color: black;
+    background-color: #f8f8f8;
+}
+#nav-btn-meet:hover{
+    color: rgb(231, 121, 47);
+} 
+#nav-btn-meet-store:hover {
+    color: rgb(231, 121, 47);
+}
+/**Intro section*/
+.intro{
+    display: flex;
+    height: 45rem;
+    width: 100vmax;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleh1-on-background{
+    font-weight: 395;
+    font-size: 3rem;
+}
+.titleh2-on-background{
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+.btn-on-background{
+    margin-top: 2rem;
+    color: white;
+    background-color: #e0633a;
+    border-radius: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
+/**Feature section*/
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature-box{
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+.feature-images{
+    height: 10rem;
+    width: 18rem;
+}
+.feature-text{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.feature-box-holder{
+    display: flex;
+    flex-direction: row;
+}
+#coffee-box{
+    height: 20rem;
+    width: 30rem;
+}
+.slogan{
+    font-weight: 200;
+    font-size: 3.3rem;
+    margin-top: 8rem;
+}
+/**Get Karma section*/
+.get-karma{
+    display: flex;
+    flex-direction: row;
+}
+.get-karma-text {
+    display: flex;
+    background-color: #fceeeb;
+    width: 100vw;
+}
+.get-karma-btn{
+    color: white;
+    background-color: #e0633a;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 3.5rem;
+}
+.get-karma-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get-karma-text-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+.homepage-text{
+    margin: 0;
+}
+#homepage-text{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.qout{
+    font-size:3.5rem;
+}
+/**Main section of store page*/
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.store-img{
+    width: 50%;
+}
+.form-items{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-top: solid;
+    border-color: rgb(232, 232, 232);
+}
+.order-karma-title{
+    color: #e0633a;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.9rem;
+    margin-top: 6rem;
+}
+.order-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-items-holder{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+.store-free-space{
+    width: 2.5rem;
+}
+.form-input{
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+#select-colour{
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-color:transparent;
+    margin-left:0;
+}
+.radio-label{
+    font-size: 1.4rem;
+}
+.form-line{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+.radio-btns{
+    display: flex;
+}
+.radio-lebel-holder{
+    width: 16rem;
+    
+}
+.checkbox-btn{
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.4rem;
+}
+#checkbox-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 1rem;
+}
+.terms{
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.place-order-btn{
+    color: white;
+    background-color: #e0633a;
+    border-color: transparent;
+    border-radius: 0.2rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-left: 1.7rem;
+}
+#place-order-btn{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+#city{
+    padding-right: 4rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    padding-left: 0.2rem;
+}
+.address{
+    width: 30vw;
+    height: 4vh;
+    border-radius: 0.05rem;
+}
+#firstname{
+    height: 4vh;
+    border-radius: 0.05rem;
+}
+#lastname{
+    height: 4vh;
+    width: 13.45rem;
+    border-radius: 0.05rem;
+}
+#city{
+    border-width: 0.14rem;
+    border-color: black;
+    height: 2.2rem;
+}
+#postcode{
+    border-radius: 0.05rem;
+    height: 3.8vh;
+    width: 12.1rem;
+}
+/**Footer section*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons{
+    display: flex;  
+}
+.footer-line {
+    display: flex;
+    border-top: solid;
+    width: 87em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    color: rgb(212, 212, 212);
+}
+.footer-msg{
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+.footer-icon-images{
+    height: 2rem;
+    width: 2rem;
+    border: solid;
+    color: rgb(212, 212, 212);
+    border-radius: 50%;
+    padding: 1.4rem;
+    margin-left: 1.6rem;
+}
+.footer-license{
+    color: rgb(177, 176, 176);
+    margin-top: 2.2rem;
+    margin-bottom: 5rem;
+}

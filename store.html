@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="body">
+    <nav class="nav-store">
+        <img src="img/karma-logo.svg" alt="karma-logo" class="nav-icon">
+        <div class="free-space"></div>
+        <a href="" target=”_blank” >
+            <button id="nav-btn-meet-store" class="nav-buttons">Meet Karma</button>
+        </a>
+        <a href="" target=”_blank”>
+            <button class="nav-buttons" id="nav-buttons-store">How it Works</button>
+        </a>
+        <a href="" target=”_blank”>
+            <button class="nav-buttons" id="nav-buttons-store">Store</button>
+        </a>
+        <a href="" target=”_blank”>
+            <button class="nav-buttons" id="nav-buttons-store">Blog</button>
+        </a>
+        <a href="" target=”_blank”>
+            <button class="nav-buttons" id="nav-buttons-store">Help</button>
+        </a>
+        <a href="" target=”_blank”>
+            <button class="nav-buttons" id="nav-buttons-store">Login</button>
+        </a>
+        <div class="free-space2"></div>
+    </nav>
+    <main class="form">
+        <section class="form-items">
+            <form class="order-form"  action="">
+                <h1 class="order-karma-title">Order your Karma wifi <br> device today!</h1>
+                <div class="form-line">
+                    <div class="form-items-holder">
+                 <label for="firstname" class="form-input">First name *</label>
+                 <input id="firstname" type="text" name="firstname" required maxlength="15">
+                    </div>
+                    <div class="store-free-space"></div>
+                    <div class="form-items-holder">
+                 <label for="lastname" class="form-input">Last name *</label>
+                 <input id="lastname" type="text" name="lastname" required maxlength="15">
+                    </div>
+                 </div>
+                <div class="form-line">
+                    <div class="form-items-holder">
+                 <label for="address" class="form-input">Address *</label>
+                 <input id="address" type="text" name="address" required class="address">   
+                    </div>
+                </div>
+                <div class="form-line">
+                    <div class="form-items-holder">
+                 <label for="address2" class="form-input">Address 2</label>
+                 <input id="address2" type="text" name="address2" class="address">
+                    </div>
+                </div>
+                <div class="form-line">
+                    <div class="form-items-holder">
+                 <label for="city" class="form-input">City *</label>
+                 <select id="city" name="city" required>
+                    <option value="-1" selected>Select your city...</option>
+                    <option value="london">London</option>
+                    <option value="milan">Milan</option>
+                    <option value="birmingham">Birmingham</option>
+                    <option value="paris">Paris</option>
+                 </select>
+                    </div>
+                    <div class="store-free-space"></div>
+                    <div class="form-items-holder">
+                <label for="postcode" class="form-input">Postcode *</label>
+                <input id="postcode" type="text" name="postcode" maxlength="8" style="text-transform:uppercase">
+                    </div>
+                </div>
+                <div class="form-line">
+                     <fieldset class="form-input" id="select-colour">
+                        <legend>Select a colour</legend>
+                      <div class="radio-btns">
+                          <div class="radio-lebel-holder">
+                            <input id="orange" type="radio" name="orange" value="orange">
+                            <label for="orange" class="radio-label">Karma orange</label>
+                          </div>
+                          <div class="radio-lebel-holder">
+                           <input id="grey" type="radio" name="orange" value="grey">
+                           <label for="grey" class="radio-label">Space Grey</label>
+                          </div>
+                     </div>
+                    </fieldset>
+                </div>
+                <div class="form-line" id="checkbox-items">
+                 <p class="terms"> <input type="checkbox" class="checkbox-btn" required>By placing your order you agree to Karma's <span style="color:#e0633a">Terms and</span><br><span style="color:#e0633a">Conditions.</span> *</p>
+                </div>
+                <div class="form-line" id="place-order-btn">
+                    <button class="place-order-btn">Place my order</button>
+                </div>
+            </form>
+        </section>
+        <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="store-image" class="store-img">
+    </main>
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <h2 class="footer-msg">Join us on</h2>
+        <div class="footer-icons">
+            <img src="img/twitter-icon.svg" alt="twitter-icon" class="footer-icon-images">
+            <img src="img/facebook-icon.svg" alt="facebook-icon" class="footer-icon-images">
+            <img src="img/instagram-icon.svg" alt="instagram-icon" class="footer-icon-images">
+        </div>
+        <p class="footer-license">© Karma Mobility. Inc</p>
+    </footer>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+</body>
+</html>
