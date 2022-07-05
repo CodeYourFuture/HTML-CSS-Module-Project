@@ -164,6 +164,28 @@ form label {
   font-size: 30px;
 }
 /* radio */
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+input[type="radio"]:checked {
+  background-color: #f9461D;
+}
+input[type="checkbox"]:checked {
+  accent-color: #f9461D;
+}
 .radio p {
   margin-top: 5rem;
   font-size: 30px;
