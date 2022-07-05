@@ -73,22 +73,25 @@ body {
 }
 .title {
   position: absolute;
-  color: #f9461D;
-  font-size: 75px;
+  color: #DE6E49;
+  font-size: 65px;
   margin-top: 60px;
   margin-left: 220px;
-
+  
 }
 .form {
    height: 100vh;
-  margin-top: 300px;
+  margin-top: 250px;
   margin-left: 220px;
 
    
 }
 .form-img {
-  /* position: absolute; */
-  height: 100em;
+  position: absolute;
+  width: 727px;
+  height: 1235px;
+  left: 1105px;
+   
    
 }
 /* name */
@@ -99,7 +102,8 @@ form label {
   display: flex;
   position: relative;
   /* margin-left: 1rem; */
-  font-size: 30px;
+  font-size: 21px;
+  line-height: 25px;
 }
 
 .fname {
@@ -108,7 +112,7 @@ form label {
 }
 .fname input,
 .lname input {
-  width: 350px;
+  width: 320px;
   height: 50px;
   margin-top: 1rem;
   border: 3px solid rgb(177, 174, 174);
@@ -116,16 +120,18 @@ form label {
 }
 /* address */
 .address {
-  margin-top: 3rem;
-  font-size: 30px;
+  margin-top: 1.5rem;
+  font-size: 21px;
+  line-height: 25px;
 }
 .address-2 {
-    margin-top: 3rem;
-  font-size: 30px;
+    margin-top: 1.5rem;
+    font-size: 21px;
+    line-height: 25px;
 }
 .address input {
-   width: 740px;
-  height: 50px;
+  width: 685px;
+  height: 53px;
   margin-top: 1rem;
   border: 3px solid rgb(177, 174, 174);
   border-radius: 5px;
@@ -135,33 +141,39 @@ form label {
   display: flex;
   position: relative;
   /* margin-right: 3rem; */
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 .city {
   margin-right: 2rem;
-  font-size: 30px;
+  font-size: 21px;
+  line-height: 25px;
   
 }
 .city select {
-   width: 450px;
-  height: 60px;
-  margin-top: 1rem;
-  font-size: 30px;
-  font-style: italic;
-  border: 3px solid rgb(177, 174, 174);
-  border-radius: 5px;
+   width: 405px;
+   height: 50px;
+   margin-top: 1rem;
+   font-family: 'Roboto';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 25px;
+   color: #666666;
+   border: 3px solid rgb(177, 174, 174);
+   border-radius: 5px;
 }
  
 .postcode input {
    width: 250px;
-  height: 50px;
+  height: 45px;
   margin-top: 1rem;
   border: 3px solid rgb(177, 174, 174);
   border-radius: 5px;
   
 }
 .postcode label {
-  font-size: 30px;
+  font-size: 21px;
+  line-height: 25px;
 }
 /* radio */
 input[type="radio"] {
@@ -177,7 +189,7 @@ input[type="radio"] {
   /* background-color only for content */
   background-clip: content-box;
   border: 2px solid #bbbbbb;
-  background-color: #e7e6e7;
+  /* background-color: #e7e6e7; */
   border-radius: 50%;
 }
 input[type="radio"]:checked {
@@ -187,8 +199,9 @@ input[type="checkbox"]:checked {
   accent-color: #f9461D;
 }
 .radio p {
-  margin-top: 5rem;
-  font-size: 30px;
+  margin-top: 3rem;
+  font-size: 21px;
+line-height: 25px;
 }
 
 .radio input {
@@ -201,19 +214,21 @@ input[type="checkbox"]:checked {
 
  
 .radio label {
-  margin-right: 2rem;
-  font-size: 30px;
+  margin-right: 1rem;
+  font-size: 21px;
+  line-height: 25px;
 }
 /* checkbox */
 .checkbox {
-  margin-top: 5rem;
-  font-size: 35px;
+  margin-top: 2rem;
+  font-size: 21px;
+  line-height: 25px;
   
 }
 .checkbox input {
-  padding: 1rem;
-   width: 30px;
-   height: 30px;
+   padding: 1rem;
+   width: 20px;
+   height: 20px;
    border-radius: 2rem; 
    background-color: #f9461D;
 }
@@ -222,18 +237,22 @@ input[type="checkbox"]:checked {
 }
 /* button */
 .submit button {
-  margin-top: 4rem;
-  font-size: 30px;
-  background-color: #f9461D;
-  color: white;
-  padding: 1.5rem 6rem;
+  margin-top: 4rem; 
+  background: #E0633A;;
+  color: white; 
   border: none;
-  border-radius: 5px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  width: 269px;
+  height: 70px;
+  border-radius: 4px;
 }
 
 
  /* footer */
  footer {
+  margin-top: 37px;
   margin-bottom: 4rem;
  }
  .footer-p {
