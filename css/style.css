@@ -204,6 +204,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 2.9rem;
+    margin-top: 6rem;
 }
 .order-form{
     display: flex;
@@ -233,15 +234,46 @@ body {
 .form-line{
     display: flex;
     flex-direction: row;
-    padding-top: 4.2rem;
+    padding-top: 3rem;
 }
 .radio-btns{
     display: flex;
 }
 .radio-lebel-holder{
     width: 16rem;
+    
 }
+.checkbox-btn{
+height: 0.9rem;
+width: 0.9rem;
+margin-right: 0.4rem;
+}
+#checkbox-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
+}
+.terms{
+    line-height: 2.3rem;
+}
+.place-order-btn{
+    color: white;
+    background-color: #e0633a;
+    border-color: transparent;
+    border-radius: 0.2rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+#place-order-btn{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
 
 
 
