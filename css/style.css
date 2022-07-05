@@ -307,17 +307,35 @@ body, button {
     font-size: 1.3rem;
 }
 
+.input--radio {
+    width: 1.2rem;
+    accent-color: var(--orange-dark);
+}
+
 .label--radio {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 2rem;
     padding: 0.5rem 2rem 0.5rem 0.5rem;
-    margin-right: 1rem ;
+    margin-right: 1rem;
 }
 
-.input--radio {
+/* Checkbox field */
+.input--checkbox {
     width: 1.2rem;
     accent-color: var(--orange-dark);
+}
+
+.label--checkbox {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.span__consent {
+    color: var(--orange-dark);
+    text-decoration: underline;
 }
 
 /* aside section */
