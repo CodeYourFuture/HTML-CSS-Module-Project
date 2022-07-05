@@ -241,7 +241,8 @@ body, button {
 /* Form section */
 .form {
     width: 50vw;
-    margin: 5rem 6rem 0;
+    margin: 4rem 4rem 0;
+    padding: 1em 2rem 0;
     background-color: var(--grey-light);
 }
 
@@ -255,6 +256,7 @@ body, button {
 .fieldset {
     border: none;
     margin-top: 1rem;
+    padding-left: 0;
 }
 
 /* Wraps */
@@ -271,7 +273,7 @@ body, button {
 /* Label reset */
 .label {
     display: block;
-    padding: 0 0.5rem 1rem;
+    padding: 0 0.5rem 1rem 0;
     font-size: 1.3rem;
 }
 
@@ -297,7 +299,8 @@ body, button {
     width: 20rem;
     font-style: italic;
 }
-.input--city> option  {
+
+.input--city>option {
     width: 20rem;
     font-style: initial;
 }
@@ -334,6 +337,7 @@ body, button {
 }
 
 .label--checkbox {
+    padding-left: 0.5rem;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5rem;
