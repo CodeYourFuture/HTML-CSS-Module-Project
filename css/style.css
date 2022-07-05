@@ -322,14 +322,20 @@ body, button {
 
 /* Checkbox field */
 .input--checkbox {
-    width: 1.2rem;
-    accent-color: var(--orange-dark);
+    height: 1.3rem;
+    width: 1.3rem;
+    appearance: none;
+    border: 1px solid var(--grey-dark);
+    border-radius: 4px;
+}
+
+.input--checkbox:checked {
+    content: url("../level-2/checkmark.svg");
 }
 
 .label--checkbox {
     font-size: 1.2rem;
     font-weight: 300;
-    padding-top: 0.5rem;
     line-height: 1.5rem;
 }
 
