@@ -1,0 +1,176 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+nav
+{
+    padding-right: 4em;
+}
+
+.logo
+{
+    margin: 1em 8em;
+    width: 30px;
+}
+
+header
+{
+    background-color: rgb(248, 248, 248);
+}
+
+.a-options
+{
+    float: right; 
+    line-height: 50px;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-right: 30px;
+    border:0px;
+    background-color: rgb(248, 248, 248);
+    text-decoration:none
+}
+
+.a-options:hover
+{
+    color:rgb(255, 99, 43);
+}
+
+.store-options
+{
+    float: right; 
+    line-height: 50px;
+    list-style: none;
+    color:rgb(255, 99, 43);
+    font-size: 15px;
+    padding-top: 15px;
+    padding-right: 30px;
+    border: 0px;
+    background-color: rgb(248, 248, 248);
+    text-decoration:none
+}
+
+.img-1
+{
+    float: right;
+    width: 50%;
+}
+
+fieldset
+{
+    width: 50%;
+    margin: 0;
+    border: 0px;
+    width: 50%;
+    float: left;
+    padding: 0;
+}
+
+.fieldset-h
+{
+    padding: 50px;
+    font-size: xx-large;
+    color: rgb(255, 99, 43);
+}
+
+form
+{
+    padding: 50px;
+}
+
+input
+{
+    height: 30px;
+}
+
+.p-4
+{
+    padding-bottom: 5em;
+}
+
+hr.hl 
+{
+    margin-top: 0px;
+    width: 90%;
+    opacity: 0.25;
+}
+
+.p-5
+{
+    text-align: center;
+    font-size: 15px;
+    margin: 0%;
+    padding-bottom: 12px;
+}
+
+
+.b-c-img
+{
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.075);
+    border-width: 1px;
+    background-color: white;
+}
+
+.b-c-img:hover
+{
+    background-color: rgb(200, 200, 200);
+}
+
+.i-c-img
+{
+    height: 10px;
+}
+
+.btn-icon
+{
+    text-align: center;
+}
+
+.p-6
+{
+    text-align: center;
+    font-size: 11px;
+    opacity: 0.5;
+    padding-bottom: 65px;
+}
+
+.text-full
+{
+    width: 45%;
+}
+
+.select-your-city 
+{
+    font-style: italic;
+}
+
+.select-city
+{
+    height: 36px;
+    width: 220px;
+}
+
+.text-postcode
+{
+    margin-left: 10px;
+    width: 150px;
+}
+
+.submit
+{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(255, 99, 43);
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+.terms-and-conditions
+{
+    color: rgb(255, 99, 43);
+}
