@@ -59,7 +59,9 @@ body {
     
 } 
 
-
+.nav-links:active {
+    color:#c05326;
+}
 
 .nav-link:hover {
     color: #c05326;
@@ -103,7 +105,8 @@ button {
     padding: 10px 10px;
     margin: 15px 0;
     border: none;
-    border-radius: 5px;  
+    border-radius: 5px; 
+    color: white; 
 }
 
 button:hover {
@@ -115,13 +118,15 @@ button:hover {
 
 .container {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    height: 500px;
 }
 
 #sub {
     padding: 25px 0;
     margin-top: 20px;
-    font-size: larger;
+    font-size: 40px;
+    font-weight: 200;
 }
 
 .columns {
@@ -132,18 +137,71 @@ button:hover {
 }
 
 .column img {
+    padding-top: 20px;
     width: 90px;
     height: 90px;
 }
 
+.feature {
+    display: flex;
+    background-color: rgba(224, 99, 58, 0.1);
+    text-align: center;
+}   
+
+.getkarma {
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 90px;
+}
+
+.getkarma h3 {
+    font-weight: 400;
+    font-size: 36px;
+    /* text-align: center; */
+    /* padding-left: 100px; */
+}
+
+.getkarma button {
+    padding: 15px 15px;
+    /* text-align: center; */
+    
+    
+}
+
+/* store.html styles */
+
+.con {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    padding: 0 20px;
+    margin: 0 20px;
+    color: #666666;
+    
+    
+}
+
+.con img {
+    width: 50%px;
+    height: 100%;
+}
+
+.order-text {
+    color: #DE6E49;
+}
+
+#tnc {
+    color: #DE6E49;
+    font-weight: 200;
+    font-size: 12px;
+}
 
 /* footer layout */
-
 
 .social {
     background-color: white;
     overflow: auto;
-    padding-bottom: 9rem;
+    padding: 3rem;
     text-align: center;
     
 }
@@ -152,16 +210,16 @@ button:hover {
     order: 0;
     border-top: 0 solid lightgrey;
     margin: 1.3rem 0;
-    padding: 10px 0;
+    
 }
 
 .social .icons > li {
-    border: 0.5px solid lightgrey;
-    border-radius: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 1.25rem;
     width: 2.5rem;
-    height: 2.5rem;
-    margin: 1.25rem 1.25rem;
-    padding: 0.5rem 3px;
+    height: 1.75rem;
+    margin: 1.25rem 5px;
+    padding: 0.5rem 0;
     text-align: center;
     display: inline-block;
 }
@@ -188,15 +246,12 @@ button:hover {
 
 .social .copy {
     font-size: 0.7rem;
-    font-weight: 300;
+    font-weight: 200;
     color: grey;
 }
 
-/* footer {
-    text-align: center;
-    margin-top: 60px;
-}
 
+/* 
 .icons {
     display: flex;
     justify-content: center;
