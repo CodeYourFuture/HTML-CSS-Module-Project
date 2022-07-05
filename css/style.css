@@ -33,7 +33,7 @@ body {
         max-height: 5rem;
         max-width: 100vmax;
         justify-content: flex-end;
-        margin-bottom: 1.4rem;
+        
         background-color: #f8f8f8;
  }
  .free-space{
@@ -214,16 +214,32 @@ body {
 .form-items-holder{
     display: flex;
     flex-direction: column;
-    
     font-size: 1.4em;
 }
 .store-free-space{
     width: 2.5rem;
 }
+.form-input{
+    margin-bottom: 1.2rem;
+}
+#select-colour{
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+.radio-label{
+    font-size: 1.2rem;
+}
 .form-line{
     display: flex;
     flex-direction: row;
     padding-top: 4.2rem;
+}
+.radio-btns{
+    display: flex;
+}
+.radio-lebel-holder{
+    width: 16rem;
 }
 
 
