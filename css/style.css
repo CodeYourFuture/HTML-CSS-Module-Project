@@ -18,27 +18,26 @@ body {
 }
 /** Nav section*/
  .nav{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     max-height: 5rem;
-     max-width: 100vmax;
-     justify-content: flex-end;
-     margin-bottom: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 5rem;
+    max-width: 100vmax;
+    justify-content: flex-end;
+    margin-bottom: 1.4rem;
  }
  .nav-store{
     display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        max-height: 5rem;
-        max-width: 100vmax;
-        justify-content: flex-end;
-        
-        background-color: #f8f8f8;
-        
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 5rem;
+    max-width: 100vmax;
+    justify-content: flex-end;    
+    background-color: #f8f8f8;
+    padding-bottom: 1.5rem;    
  }
  .free-space{
-     margin: 17%;
+    margin: 17%;
  }
  .free-space2{
     margin: 4.5%;
@@ -57,10 +56,10 @@ body {
 }
 #nav-buttons-store{
     background-color: #f8f8f8;
-        border: none;
-        margin: 1rem;
-        margin-top: 2.5rem;
-        color: rgb(146, 145, 145);
+    border: none;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    color: rgb(146, 145, 145);
 }
 .nav-buttons:hover{
     color: rgb(231, 121, 47);
@@ -84,8 +83,8 @@ body {
 /**Intro section*/
 .intro{
     display: flex;
-     height: 45rem;
-     width: 100vmax;
+    height: 45rem;
+    width: 100vmax;
     color: white;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +108,7 @@ body {
     padding-right: 1.2rem;
     padding-left: 1.2rem;
 }
-/**Intro section*/
+/**Feature section*/
 .features{
     display: flex;
     flex-direction: column;
@@ -189,7 +188,6 @@ body {
     margin: 0;
     margin-bottom: 1rem;
 }
-
 .qout{
     font-size:3.5rem;
 }
@@ -222,8 +220,6 @@ body {
 .order-form{
     display: flex;
     flex-direction: column;
-
-
 }
 .form-items-holder{
     display: flex;
@@ -253,7 +249,6 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 3rem;
-    
 }
 .radio-btns{
     display: flex;
@@ -263,17 +258,15 @@ body {
     
 }
 .checkbox-btn{
-height: 0.9rem;
-width: 0.9rem;
-margin-right: 0.4rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.4rem;
 }
 #checkbox-items{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-left: 1rem;
-    
-
 }
 .terms{
     line-height: 2.3rem;
@@ -329,7 +322,6 @@ margin-right: 0.4rem;
     height: 3.8vh;
     width: 12.1rem;
 }
-
 /**Footer section*/
 .footer{
     display: flex;
