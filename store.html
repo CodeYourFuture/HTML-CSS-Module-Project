@@ -63,18 +63,18 @@
                 <div class="form-line">
                     <div class="form-items-holder">
                  <label for="city" class="form-input">City *</label>
-                 <select id="city" name="city">
-                    <option value="scottish" selected>Scottish</option>
-                    <option value="italian">Italian</option>
-                    <option value="french">French</option>
-                    <option value="polish">Polish</option>
-                    <option value="romanian">Romanian</option>
+                 <select id="city" name="city" required>
+                    <option value="-1" selected>Select your city...</option>
+                    <option value="london">London</option>
+                    <option value="milan">Milan</option>
+                    <option value="birmingham">Birmingham</option>
+                    <option value="paris">Paris</option>
                  </select>
                     </div>
                     <div class="store-free-space"></div>
                     <div class="form-items-holder">
-                <label for="" class="form-input">Postcode *</label>
-                <input type="text">
+                <label for="postcode" class="form-input">Postcode *</label>
+                <input id="postcode" type="text" name="postcode" maxlength="8" style="text-transform:uppercase">
                     </div>
                 </div>
                 <div class="form-line">
@@ -93,7 +93,7 @@
                     </fieldset>
                 </div>
                 <div class="form-line" id="checkbox-items">
-                 <p class="terms"> <input type="checkbox" class="checkbox-btn">By placing your order you agree to Karma's <span style="color:#e0633a">Terms and</span><br><span style="color:#e0633a">Conditions.</span> *</p>
+                 <p class="terms"> <input type="checkbox" class="checkbox-btn" required>By placing your order you agree to Karma's <span style="color:#e0633a">Terms and</span><br><span style="color:#e0633a">Conditions.</span> *</p>
                 </div>
                 <div class="form-line" id="place-order-btn">
                     <button class="place-order-btn">Place my order</button>
