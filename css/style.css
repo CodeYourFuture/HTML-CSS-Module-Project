@@ -237,6 +237,7 @@ body {
 }
 .form-input{
     margin-bottom: 1.2rem;
+    font-size: 1.3rem;
 }
 #select-colour{
     margin-bottom: 1.2rem;
@@ -246,7 +247,7 @@ body {
     margin-left:0;
 }
 .radio-label{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 .form-line{
     display: flex;
@@ -304,7 +305,30 @@ margin-right: 0.4rem;
     padding-bottom: 0.15rem;
     padding-left: 0.2rem;
 }
-
+.address{
+    width: 30vw;
+    height: 4vh;
+    border-radius: 0.05rem;
+}
+#firstname{
+    height: 4vh;
+    border-radius: 0.05rem;
+}
+#lastname{
+    height: 4vh;
+    width: 13.45rem;
+    border-radius: 0.05rem;
+}
+#city{
+    border-width: 0.14rem;
+    border-color: black;
+    height: 2.2rem;
+}
+#postcode{
+    border-radius: 0.05rem;
+    height: 3.8vh;
+    width: 12.1rem;
+}
 
 /**Footer section*/
 .footer{
