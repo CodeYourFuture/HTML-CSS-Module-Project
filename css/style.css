@@ -35,6 +35,7 @@ body {
         justify-content: flex-end;
         
         background-color: #f8f8f8;
+        
  }
  .free-space{
      margin: 17%;
@@ -206,7 +207,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin-bottom: 2rem;
+    border-top: solid;
+    border-color: rgb(232, 232, 232);
 }
 .order-karma-title{
     color: #e0633a;
@@ -277,7 +280,8 @@ margin-right: 0.4rem;
     padding-right: 1.8rem;
     padding-left: 1.8rem;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
 }
 #place-order-btn{
     display: flex;
