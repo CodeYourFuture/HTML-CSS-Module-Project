@@ -1,19 +1,136 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: gray;
+  -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+header {
+  width: 100%;
+}
 
+header .header-bar-container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
 
+.logo-container img {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+nav .links-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .links-list li {
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+nav .links-list li:first-child {
+  font-weight: 500;
+}
+
+nav .links-list li:hover {
+  color: #f05a29;
+}
+
+header .header-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  background-image: url(../img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header .header-intro p:first-child {
+  font-size: 5rem;
+  margin-bottom: 50px;
+}
+
+header .header-intro p:nth-child(2) {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+header .header-intro button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f05a29;
+  color: #fff;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  padding-top: 200px;
+  color: #000;
+}
+
+section .title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+section img {
+  width: 150px;
+  height: 150px;
+}
+
+section .options-container {
+  display: flex;
+  width: 50%;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  padding-bottom: 200px;
+  padding-top: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+footer p:first-child {
+  color: #000;
+  font-weight: 500;
+}
+footer .icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
