@@ -165,6 +165,7 @@ body {
     padding-left: 1.4rem;
     font-weight: 400;
     font-size: 1.2rem;
+    margin-top: 3.5rem;
 }
 .get-karma-text{
     display: flex;
@@ -174,11 +175,20 @@ body {
 }
 .get-karma-text-holder{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 400;
     font-size: 2.2rem;
 }
+.homepage-text{
+    margin: 0;
+}
+#homepage-text{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
 .qout{
     font-size:3.5rem;
 }
