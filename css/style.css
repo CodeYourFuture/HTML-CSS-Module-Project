@@ -23,30 +23,20 @@ body {
  .main-header {
    width: 1440px;
    height: 89px; 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
  }
 
  .Karma-logo {
     width: 20px;
-    position: relative;
-    left: 150px;
-    top: 20px;
-
-
- }
-
- .nav-lists {
-    list-style-type: none;
-    overflow: hidden;
-    position: relative;
-    right: 100px;
-    bottom: 20px;
-    
  }
 
  .nav-item {
-float: right;
-display: block;
-padding-left: 30px;
+display: inline;
+list-style: none;
+margin-left: 20px;
 cursor: pointer;
 
  }
