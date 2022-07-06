@@ -27,8 +27,36 @@
     </header>
     <main>
         <section class="main-container">
-            <form action="post"></form>
-            <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="">
+            <div>
+                <h2>Order your Karma wifi device today!</h2>
+                <form action="post">
+                    <label for="first-name" required>First name *</label><br>
+                    <input type="text" id="first-name" name="first-name"><br>
+                    <label for="last-name">Last name *</label><br>
+                    <input type="text" id="last-name" required name="last-name"><br> 
+                    <label for="address">Address *</label><br>
+                    <input type="text" id="address" required name="address"><br>
+                    <label for="address2">Address 2</label><br>
+                    <input type="text" id="address2" name="address2"><br>
+    
+                    <label for="postcode">Postcode *</label><br>
+                    <input type="text" id="postcode" required name="postcode"><br>
+                    <p>Select a colour</p>
+                    <input type="radio" id="karmaorange" name="color" value="karmaorange">
+                    <label for="karmaorange">Karma orange</label><br>
+                    <input type="radio" id="spacegrey" name="color" value="spacegrey">
+                    <label for="spacegrey">Space Grey</label><br>
+                    <input type="checkbox" id="terms" name="terms" value="terms" required>
+                    <label for="terms"> By placing your order you agree to Karma's Terms and Conditions *</label><br>
+                    <button input type="submit" value="submit">Place my order</button>
+
+                
+                </form>
+            </div>
+            
+            <div>
+                <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="woman sat at computer working">
+            </div>
         </section>
         <hr>
         <p>Join us on</p>

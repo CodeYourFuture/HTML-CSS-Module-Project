@@ -196,3 +196,6 @@ footer{
     color:#dcdcdc;
 }
 
+  .required input::before {
+      content: "*";
+  }
