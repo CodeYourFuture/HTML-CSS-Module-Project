@@ -31,8 +31,11 @@
     
     margin-right: 100px;
     padding-left: 200px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+   
 }
-
+ 
 .navbar a{
     float: right;
     text-align: center;
@@ -43,7 +46,7 @@
 }
 
 .navbar a:hover{
-    color:#c05326;
+    color:#E0633A;
 }
 
 
@@ -92,7 +95,7 @@ h1{
 }
 
 button {
-    background-color: #c05326;
+    background-color: #E0633A;
     border: 0;
     padding: 1rem;
     border-radius: 4px;
@@ -184,9 +187,15 @@ a{
 
 .main-container img{
     display:flex;
-    height: 800px;
-    align-items: flex-end;
-    
+    height: 800px;   
+}
+.main-container h2{
+    font-family: Roboto;
+    font-style:normal;
+    font-weight: 300;
+    font-size: 35px;
+
+    color:#E0633A;
 }
 
 
@@ -196,6 +205,9 @@ footer{
     color:#dcdcdc;
 }
 
-  .required input::before {
-      content: "*";
-  }
+.form{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+
+}
