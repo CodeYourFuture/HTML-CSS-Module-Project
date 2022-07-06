@@ -19,7 +19,6 @@
         text-align: center;
  }
    
- }
  .small-icon{
     width:20px;
  padding-top: 10px;
@@ -100,6 +99,7 @@ button {
     font-weight: 600;
    margin-top: 30px;
    font-size: 16px;
+   color:white
 
 }
 
@@ -110,6 +110,7 @@ hr{
 
 p{
     font-size: 16px;
+    text-align: center;
 
 }
 
@@ -137,8 +138,43 @@ p{
 .container3 img{
     height: 20px;
     width:20px;
+    
    
 }
+
+.container4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fae5df;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.container4 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;}
+    
+a{
+    text-decoration: none;;
+}
+
+.container4 img{
+    width:440px;
+    height: auto;
+}
+
+.container4 p{
+   text-align: center;
+   font-size: 30px;
+   padding-left: 100px;
+   padding-right: 100px;
+   font-weight: 200;
+
+}
+
 
 .fa{
     
