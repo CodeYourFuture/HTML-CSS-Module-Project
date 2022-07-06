@@ -3,10 +3,10 @@
 
 body {
    font-family: 'Roboto', sans-serif;
-   -webkit-font-smoothing: antialiased;
-   width: 1434px;
-   height: 1572px;
+   /*-webkit-font-smoothing: antialiased;*/
+   width: 96%;
    margin: 0 auto;
+   
 }
 
 /*
@@ -21,7 +21,7 @@ body {
  
 /*header*/
  .main-header {
-   width: 1440px;
+   width: 96%;
    height: 89px; 
    display: flex;
    flex-direction: row;
@@ -50,15 +50,16 @@ cursor: pointer;
  }*/
 /*introduction*/
  .intro {
-    background-image: url("../img/first-background.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    margin: auto;
-    width: 96%;
-    text-align: center;
+   width: 96%;
+   margin: 0 auto;
+   background-image: url("../img/first-background.jpg");
+   background-size: cover;
+   background-position: center;
+   color: #ffffff;
+   padding-top: 150px;
+   padding-bottom: 150px;
+   margin: auto;
+   text-align: center;
    }
 
  h1 {
@@ -89,29 +90,26 @@ cursor: pointer;
  .services {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 100%;
-    text-align: center;
+   text-align: center;
     word-spacing: 10px;
     letter-spacing: 1px;
  }
 
  .services h2 {
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     font-size: 32px;
     font-weight: 300;
  }
 
  .container {
-   width: 1437px;
-   height: 473px;
+   
     margin: 0 auto;
     padding: 0 20px;
 }
 
  .icon {
-    width: 416px;
+    width: 32%;
     height: 354px;
-    margin-top: 102px;
     margin-bottom: 17px;
     display: inline-block;
 }
@@ -131,28 +129,25 @@ cursor: pointer;
     text-decoration: none;
  }
 
+ /*features starts here*/
+
  .features {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   width: 1440px;
-   margin: 20px auto;
-}
-.feature-img{
-   width: 599px;
-   height: 439px;
+   width: 96%;
+   margin-bottom: 60px;
 }
  
 .feature-txt {
-   width: 841px;
-   height: 439px;
+   width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
    font-weight: 600;
-   padding: 0 100px;
+   
    background-color: rgba(224, 99, 58, 0.1);
   
  }
@@ -166,6 +161,90 @@ cursor: pointer;
    padding: 21px 28px 21px 29px;
   
  }
+ .getKarma-btn a{
+   color: #ffffff;
+ }
+
+ /* media Queries*/
+
+@media only screen and (max-width: 1000px) {
+   
+      .services {
+         margin-top: 100px;
+         margin-bottom: 100px;
+         text-align: center;
+         word-spacing: 5px;
+         letter-spacing: 1px;
+      }
+      .icon {
+         width: 30%;
+         height: 354px;
+         margin-bottom: 17px;
+      
+      }
+   
+      .icon img {
+         width: 90px;
+      }
+   
+      .icon-text {
+         font-size: 16px;
+         color: black;
+         font-weight: 400;
+   
+      }
+   
+      a {
+         text-decoration: none;
+      }
+}
+
+@media only screen and (max-width: 800px) {
+   .features {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 96%;
+      }
+   .feature-txt {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         width: auto;
+         font-weight: 600;
+         padding: 20px 40px;
+         background-color: rgba(224, 99, 58, 0.1);
+      
+      }
+}
+
+ @media only screen and (max-width: 600px) {
+   
+       .icon {
+          width: 60%;
+          height: 354px;
+          margin-bottom: 20px;
+   
+       }
+   
+       .icon img {
+          width: 200px;
+       }
+   
+       .icon-text {
+          font-size: 26px;
+          color: black;
+          font-weight: 400;
+   
+       }
+   
+       a {
+          text-decoration: none;
+       }
+}
+ 
 
 
  /*styling for store.html starts here */
@@ -174,13 +253,14 @@ cursor: pointer;
    margin: 0 auto;
    display: flex;
    flex-direction: row;
+   justify-content: space-around;
 }
 
  .order-form{
    width: 501px;
    height: 841px;
-   margin-left: 122px;
-   margin-right: 118px;
+   
+   
    
 }
 
@@ -277,6 +357,9 @@ cursor: pointer;
    margin-top: 70px;
    
 }
+input[type="radio"] {
+   background-color: #de633a;
+}
 .color-fieldset label{
    width: 132px;
    height: 25px;
@@ -330,6 +413,10 @@ cursor: pointer;
  /*styling for store.html ends here */
 
 /*footer*/
+footer {
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
  footer, h3 {
     text-align: center;
     font-size: 24px;
@@ -371,6 +458,10 @@ cursor: pointer;
  footer p {
      text-align: center;
      font-size: 12px;
+ }
+ a.back-top-page {
+   width: 200px;
+   height: 200px;
  }
 
 
