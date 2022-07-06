@@ -36,6 +36,7 @@
       <div class="order-karma"> Order your Karama wifi<br/> device today.</div>
          
          <form action="">
+         <!--name section-->
          <div class="name">
          <div class="first-name">
         <label for="fname">First name</label><br/>
@@ -45,6 +46,10 @@
          <label for="lname">Last name:</label><br/>
          <input type="text" id="lname" name="lname">
          </div>
+         <!--end of name section-->
+
+         <!--address section-->
+      
          
       <div class="address">
          <div class="address-1">
@@ -52,14 +57,18 @@
         <input type="text" id="adddress" name="address"></br>
       </div>
       <div class="address-2">
-         <label for=" address-2"> Adddress 2</label></br>
-         <input type="text" id="address-2" name="adddress-2"><br/>
+         <label for=" address-2"> Address 2</label></br>
+         <input type="text" id="address-2" name="address-2"><br/>
       </div>
+      <!-- end of address-->
+
+      <!--city and postcode-->
+  
       <div class="select-city">
          <div class="city">
-         <label for="city"> City</label><br/>
+         <label for="city"> City*</label><br/>
          <select id="city" name="city-list">
-            <option value="" disabled selected>Select your city</option>
+            <option  value="0" disabled selected>Select your city</option>
             <option value="Northampton">Northampton</option>
             <option value="London">London</option>
             <option value="birmingham">birmingham</option>
@@ -70,7 +79,9 @@
       <input type="text" id="postcode" name="postcode">
          </div>
       </div>
-      
+      <!--- end of city and postcode section-->
+   
+      <!--- order placing section-->
 
        <div class="radio"> <p> Select color </p>
          <input type="radio" id="select-color-1" name="colors">
@@ -84,6 +95,8 @@
          <label for="term-condition">By placing your order  you agree to term and conditions</label>
          </div>
          <button class="btn"> Place your order</button>
+
+         <!--end of order placing section-->
         
       </form>
       </section>
@@ -95,11 +108,7 @@
 </div>
    
       <hr/>
-  
-  
-     
-    
-     <footer>
+   <footer>
    <div class="social">
       <p class="join-us">Join us</p>
       <a href="#" class="fa fa-facebook"></a>
