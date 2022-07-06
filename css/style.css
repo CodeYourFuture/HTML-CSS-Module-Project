@@ -156,7 +156,7 @@ p{
     align-items: center;
     justify-content: center;
     margin-left: 200px;}
-    
+
 a{
     text-decoration: none;;
 }
@@ -175,8 +175,17 @@ a{
 
 }
 
+.main-container{
+    display:flex;
+    columns: 600px 2;
+    column-width: 600px;
+   
+}
 
-.fa{
+.main-container img{
+    display:flex;
+    height: 800px;
+    align-items: flex-end;
     
 }
 
