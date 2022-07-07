@@ -15,7 +15,7 @@ You could also create a specific `store.css` file, but make sure you don't repea
 - Connect the 2 pages by:
   - making the homepage's "Get Karma today" button navigate to the store page.
   - making the header navigation "Store" link navigate to the store page, and the "Meet Karma" link navigate to the homepage.
-
+ margin:1rem 5rem;
 ### Stretch goal
 
 **Custom radio buttons and checkbox**
