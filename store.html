@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+          <img
+            src="img/karma-logo.svg"
+            alt="Logo of the website"
+            class="header__logo"
+          />
+        </a>
+
+        <div>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link active" href="./index.html">Meet Karma</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">How it Works</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Store</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Blog</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Help</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+    </header>
+   <section class="order_section">
+    <div class="order_col1">
+        <h1>Order your Karma wifi device today!</h1>
+        <form class="form_container">
+            <fieldset>
+             <div class="row row_1">
+                <div class="col_fname">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="fname" placeholder="">
+                </div> 
+                &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                <div class="col col_lname">
+                  <label for="lname">Last name</label>
+                  <input type="text" id="lname" name="lname" placeholder="">
+                </div>
+              </div>
+            
+              <div class="row"> 
+                <div class="col col_address">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="">
+                  </div>
+              </div>  
+              <div class="row"> 
+                <div class="col col_address2">
+                    <label for="address2">Address 2</label>
+                    <input type="text" id="address2" name="address2" placeholder="">
+                  </div>
+              </div> 
+              <div class="row row_1">
+                <div class="col_city">
+                  <label for="city">City</label>
+                  <select id="city" name="city">
+                    <option value="london">London</option>
+                    <option value="birmingham">Birmingham</option>
+                    <option value="leeds">Leeds</option>
+                    <option value="manchester">Manchester</option>
+                  </select>
+                </div>
+                <div class="col_postcode">
+                  <label for="postcode">Postcode</label>
+                  <input type="text" id="postcode" name="postcode" placeholder="">
+                </div>
+              </div>
+              <div class="row"> 
+                <p><b>Select a Colour</b></p>
+                <div class="col_select">
+                    <input type="radio" id="orange" name="select_colour" value="ORANGE">
+                    <label for="orange">Karma Orange</label>
+
+                    <input type="radio" id="grey" name="select_colour" value="GREY">
+                    <label for="grey">Space Grey</label>
+                </div>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="order" name="order" value="karma_order">
+                    <label for="order"> By placing your order you agree to Karma's <a href="" target="">Terms and Conditions</a></label>. *
+                </div>
+                <div class="karma_button">
+                    <button class="button">Place my order</button>
+                    </div>
+            </fieldset>
+        </form>
+        </div> 
+        <div class="order_col2">
+
+            <div class="store_image">
+            
+            </div>
+        </div>    
+    </section>
+  </br>    
+<hr/>
+    <footer class="footer">
+      <div class="footer__content">
+        <p>
+          Join Us On
+        </p>
+       <div class="footer__sm_icons"> 
+       <div class="media_icon_container"> 
+        <img
+            class="media_icon"
+            src="/img/instagram-icon.svg"
+            alt=""
+            />
+       </div>
+       <div class="media_icon_container"> 
+            <img
+            class="media_icon"
+            src="/img/facebook-icon.svg"
+            alt=""
+            />
+        </div>
+        <div class="media_icon_container">     
+            <img
+            class="media_icon"
+            src="/img/twitter-icon.svg"
+            alt=""
+            />
+        </div>   
+        </div>    
+        <p>@ Karma Mobility Inc</p>
+      </div>
+    </footer>
+  </body>
+</html>

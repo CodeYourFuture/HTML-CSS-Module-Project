@@ -10,10 +10,146 @@
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
+    <header class="header">
+        <a href="#">
+          <img
+            src="img/karma-logo.svg"
+            alt="Logo of the website"
+            class="header__logo"
+          />
+        </a>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+        <div>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link active" href="#">Meet Karma</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">How it Works</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./store.html">Store</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Blog</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Help</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </header>
 
-</body>
+    <div class="content">
+        <main class="main">
+          <div class="karma">
+            <h1>Introducing Karma</h1>
+            <p>
+              Bring WiFi with you, everywhere you go.
+            </p>
+            <div class="karma_button">
+            <button class="button">Learn More</button>
+            </div>
+          </div>
+
+          <div>
+            <h1 class="article__title">
+                Everyone needs a little Karma.
+            </h1>
+            <section class="article-container">
+                <article class="article">
+                    <img
+                      class="article__thumbnail"
+                      src="/img/icon-devices.svg"
+                      alt=""
+                    />
+                    <div class="article__content">
+                      <h3>
+                        Internet for all devices
+                      </h3>
+                    </div>
+                </article>
+                <article class="article">
+                    <img
+                      class="article__thumbnail"
+                      src="/img/icon-coffee.svg"
+                      alt=""
+                    />
+                    <div class="article__content">
+                      <h3>
+                        Boots your productivity
+                      </h3>
+                    </div>
+                </article>
+                <article class="article">
+                    <img
+                      class="article__thumbnail"
+                      src="/img/icon-refill.svg"
+                      alt=""
+                    />
+                    <div class="article__content">
+                      <h3>
+                        Pay as you go
+                      </h3>
+                    </div>
+                  </article>
+            </section>
+
+            <div class="store">
+
+              <div class="store_image">
+                <img
+                src="/img/homepage-feature.png"
+                alt=""/>
+              </div>
+
+             <div class="store_body">
+                <p>"Wherever I am, I just don't worry about my connection anymore"!</p>
+                <a href="./store.html" class="button"><button>Get Karma Today</button></a>
+             </div>
+
+            </div>
+
+          </div>
+          </main>
+        </main>
+       
+    </div>
+  </br>    
+<hr/>
+    <footer class="footer">
+      <div class="footer__content">
+        <p>
+          Join Us On
+        </p>
+       <div class="footer__sm_icons"> 
+       <div class="media_icon_container"> 
+        <img
+            class="media_icon"
+            src="/img/instagram-icon.svg"
+            alt=""
+            />
+       </div>
+       <div class="media_icon_container"> 
+            <img
+            class="media_icon"
+            src="/img/facebook-icon.svg"
+            alt=""
+            />
+        </div>
+        <div class="media_icon_container">     
+            <img
+            class="media_icon"
+            src="/img/twitter-icon.svg"
+            alt=""
+            />
+        </div>   
+        </div>    
+        <p>@ Karma Mobility Inc</p>
+      </div>
+    </footer>
+  </body>
 </html>
