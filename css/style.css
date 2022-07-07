@@ -103,24 +103,43 @@ hr {
 .addition {
   display: grid;
   margin: 0;
-  padding: 0;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #fcf0ec;
 }
-figure {
+/* figure {
   margin: 0;
   padding: 0;
-  grid-column: 1;
-}
+  grid-column: span 3;
+  background: url(img/homepage-feature.png);
+  background-size: cover;
+  background-color: #e1643b;
+} */
 .figure-img {
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  grid-column: span 3;
+  background-color: #e1643b;
+  width: 40vw;
   height: auto;
 }
-fig-caption {
-  grid-column: 2;
-  padding: 0 6rem;
+aside {
+  grid-column: span 5;
+  line-height: 1.25rem;
 }
-
+span {
+  color: #e1643b;
+  font-size: 1.75rem;
+}
+.fig-h {
+  font-weight: normal;
+  font-style: italic;
+  padding: 0rem 4rem;
+}
 /*      FOOTER       */
 footer {
   text-align: center;
