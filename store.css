@@ -1,0 +1,56 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h5 {
+  font-weight: normal;
+}
+/*    NAVIGATION    */
+.logo-icon {
+  max-width: 1.25rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 1.5rem;
+}
+#logo {
+  padding: 0rem 0rem 0rem 1rem;
+  margin: 0rem 0rem 0rem 1.5rem;
+}
+/*    MAIN     */
+hr {
+  margin-top: 1rem;
+  height: 0.01rem;
+  background-color: #f1f1f2;
+  border: none;
+}
+/*      FOOTER       */
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-link {
+  margin: 0.25rem;
+}
+.socials-icon {
+  max-width: 0.55rem;
+  padding: 0.45rem;
+  border: #d8d9dc solid 1px;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+h5 {
+  font-size: 0.5rem;
+}
+.signature {
+  color: #898d97;
+  font-size: 0.5rem;
+}
