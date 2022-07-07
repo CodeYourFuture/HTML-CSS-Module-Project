@@ -59,8 +59,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#bg-button {
+.bg-button {
   background-color: #e1643b;
+  color: white;
   border: solid 1px #e1643b;
   padding: 0.5rem 1rem;
   font-size: 0.55rem;
@@ -72,6 +73,8 @@ main {
   padding: 2rem;
   text-align: center;
   color: #4e5157;
+  margin: 0;
+  padding: 0;
 }
 .articles {
   display: flex;
@@ -96,6 +99,28 @@ hr {
   background-color: #f1f1f2;
   border: none;
 }
+/*    WEBSITE ADDITION 7/7/22    */
+.addition {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  grid-column: 1;
+}
+.figure-img {
+  width: 100%;
+  height: auto;
+}
+fig-caption {
+  grid-column: 2;
+  padding: 0 6rem;
+}
+
 /*      FOOTER       */
 footer {
   text-align: center;
@@ -126,9 +151,9 @@ h5 {
 /**
  * Add your custom styles below
  */
- /*     STORE CSS    */
- 
- /*
+/*     STORE CSS    */
+
+/*
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.

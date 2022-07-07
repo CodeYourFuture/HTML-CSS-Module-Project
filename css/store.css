@@ -20,6 +20,29 @@ header {
   padding: 0rem 0rem 0rem 1rem;
   margin: 0rem 0rem 0rem 1.5rem;
 }
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  list-style-type: none;
+  flex-direction: row;
+  font-size: 0.75rem;
+  padding: 0rem 1rem 0rem 0rem;
+}
+.nav-header {
+  text-decoration: none;
+  color: #4e5157;
+}
+.nav-link {
+  text-decoration: none;
+  color: #898d97;
+}
+.nav-link:hover {
+  color: #e1643b;
+}
+.nav-link:active {
+  color: #e1643b;
+}
 /*    MAIN     */
 hr {
   margin-top: 1rem;
