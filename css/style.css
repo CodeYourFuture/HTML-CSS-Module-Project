@@ -11,10 +11,13 @@ body {
 /* Header */
 
 .header {
+    
+    Height:96px;
     padding: 1rem;
     display: flex;
     justify-content:space-around;
     align-items: center;
+    background-color: #C4C4C41A;
 }
 
 .header-logo {
@@ -42,9 +45,12 @@ margin: 0.3rem;
 .nav-link:hover{
     color:#d06a45;
 }
- .meet-karma{
-    color: rgb(48, 48, 48);
- }
+
+.navigation li:first-child a {
+ color: rgb(48, 48, 48);
+}
+
+
 /* hero */
 
 .hero {
@@ -70,12 +76,25 @@ margin: 0.3rem;
 /* button */
 
 .learn-btn{
-    background-color:#d06a45 ;
+    background-color:#E0633A ;
     width: 14rem;
     height: 5rem;
     border-radius: 5px;
     margin-top: 1.5rem;
     border: none;
+}
+/* link button */
+.get-karma{
+
+    text-decoration: none;
+    padding: 25px 40px;
+    font-Size:24px;
+    font-weight:400px;
+    text-align: center;
+    background-color: #E0633A;
+    border-radius: 8px;
+    color: white;
+
 }
 /* content */
 .article{
@@ -106,7 +125,46 @@ margin: 0.3rem;
 .container p{
     color: rgb(48, 48, 48);
     font-size:30px;
+    
 }
+
+/* extended section */
+.extend-img{
+    width:599px;
+    height: 439px;
+}
+.connection{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding-left: 17rem;
+}
+
+ .new-sec{
+    display: flex;
+    background-color: rgba(224, 99, 58, 0.1);
+ }
+ .new-sec p{
+    width: 548px;
+    height: 141px;
+    font-style: italic; 
+    font-Weight:400; 
+    font-Size:42px; 
+    Line-height: 49.22px;
+   
+    text-align: center;
+    color: #434242;
+  
+ }
+
+ .sign{
+    color: #E0633A;
+    font-weight: 400px;
+    width: 25px;
+    height: 79px;
+}
+
 /* border */
 .border{
     margin-top: 3rem;
@@ -119,8 +177,7 @@ margin: 0.3rem;
     text-align: center;
 }
 .footer p{
-    font-size: 30px;
-    margin: 3rem;
+    font-size: 20px;
 }
 .icons{
     display: flex;
@@ -130,8 +187,8 @@ margin: 0.3rem;
 .icon{
     width: 30px;
     height: 30px;
-    padding: 1rem;
-    margin:0 1rem;
+    padding: 10px;
+    margin:0 5px;
     border-radius: 50%;
     border: 1px solid lightgray;
 
