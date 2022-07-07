@@ -88,6 +88,10 @@
       text-align: center;
       color:azure;
    }
+   .container2 {
+      display:flex;
+      background:rgb(252, 239, 235);
+   }
 
    .content {
       position: absolute;
@@ -108,13 +112,31 @@
       border:none;
       margin-top: 25px;
    }
+   .btn-secondary {
+      background-color: rgb(224, 99, 58);
+      border-radius: 5px;
+      margin-top: 25px;
+      color:white;
+      padding: 15px 25px;
+      border:none;
+      
+   }
+   .content2 {
+      text-align: center;
+      margin-top: 30px;
+   }
+   .info_connection {
+      font-size:40px;
+      text-align: center;
+      font-weight:40;
+      justify-content: space-around;
+   }
 
    #info-icons {
       display: flex;
       flex-direction: row;
       align-items: auto;
       justify-content: space-around;
-
    }
    #karma_heading {
       margin-top: 80px;
