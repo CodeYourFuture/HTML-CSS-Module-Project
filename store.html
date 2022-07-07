@@ -74,15 +74,20 @@
               <div class="row row_1">
                 <div class="col_city">
                   <label for="city">City</label>
-                  <input type="text" id="city" name="city" placeholder="">
+                  <select id="city" name="city">
+                    <option value="london">London</option>
+                    <option value="birmingham">Birmingham</option>
+                    <option value="leeds">Leeds</option>
+                    <option value="manchester">Manchester</option>
+                  </select>
                 </div>
-                <div class="col col_postcode">
+                <div class="col_postcode">
                   <label for="postcode">Postcode</label>
                   <input type="text" id="postcode" name="postcode" placeholder="">
                 </div>
               </div>
               <div class="row"> 
-                <p>Select a Colour</p>
+                <p><b>Select a Colour</b></p>
                 <div class="col_select">
                     <input type="radio" id="orange" name="select_colour" value="ORANGE">
                     <label for="orange">Karma Orange</label>
@@ -93,7 +98,7 @@
                 </div>
                 <div class="row">
                     <input type="checkbox" id="order" name="order" value="karma_order">
-                    <label for="order"> By placing your order you agree to Karma's Terms and Conditions. *</label>
+                    <label for="order"> By placing your order you agree to Karma's <a href="" target="">Terms and Conditions</a></label>. *
                 </div>
                 <div class="karma_button">
                     <button class="button">Place my order</button>

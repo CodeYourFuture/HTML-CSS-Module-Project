@@ -3,7 +3,7 @@
 
 
 :root {
-    --grey-dark: #292b2c;
+    --grey-dark: #666666;
     --grey-light: #e4e4e4;
     --orange-dark: #c05326;
     --white: #fff;
@@ -12,6 +12,8 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin:0 auto;
+    color: #666666;
+    letter-spacing: .5px;
 }
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
@@ -75,10 +77,14 @@ h1,h2,h3,h4,h5,h6 {
     color: black;
   }
   /* section */
+ h1 {
+    letter-spacing: 1.5px;
+    color: #c05326;
+    margin: 70px 70px 70px;
+ }
   .order_section {
     display: flex;
-    border-style: ridge;
-    border-width: 2px;
+
   }
   .order_col1 {
     width: 60%;
@@ -89,7 +95,12 @@ h1,h2,h3,h4,h5,h6 {
     background-size: cover;
     height: 1235px;
   }
+  
   /* fieldset */
+  fieldset {
+    border: none;
+  }
+
   .row {
     padding: 20px 0;
     text-align:left;  
@@ -109,15 +120,30 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 10px;
     padding: 16px ;
     }
-
+select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px ;
+    }
+   
+ .col_postcode {
+    margin-right: 25px;
+    width: 40%;
+ }
 .col_fname  {
     margin-right: 90px;
 }
 .col_city {
     margin-right: 110px;
+    width: 60%;
 }
 .col {
     margin-right: 25px;
+}
+/* radio select */ 
+.row p {
+    padding-bottom: 20px;
+     
 }
 
 
