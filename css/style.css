@@ -104,8 +104,8 @@ button {
 
 .homepage-feature{
     background-color:rgb(193, 164, 164);
-      display: flex;
-       text-align: center;
+    display: flex;
+    text-align: center;
   
 }
 
@@ -134,9 +134,21 @@ footer {
     color: rgb(145, 145, 145);
     font-size: 0.8rem;
 }
-.h2-everyone{
+.h2-everyone {
 margin-left: 50px;
 font:caption;
 font-size:3rem;
 color:rgb(29, 27, 26);
 }
+
+
+.store-container img{
+    width: 100%;
+    height: auto;
+}
+
+.store-container {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+}
+
