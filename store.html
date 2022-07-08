@@ -45,22 +45,21 @@
     <main>
 
         <form action="" method="GET">
-            <h1>Order your Karma WiFi device today!</h1>
+            <h1 class="form-h">Order your Karma WiFi device today!</h1>
             <section class="names">
                 <label for="first-name">
                     First name*
                     <input type="text" name="first-name" id="first-name" required>
                 </label>
 
-                <label for="last-name">Last Name*</label>
-                <input type="text" name="last-name" id="last-name" required>
+                <label for="last-name">Last Name*
+                    <input type="text" name="last-name" id="last-name" required>
                 </label>
             </section>
             <section class="address">
                 <label for="address">Address*
                     <input type="text" name="address" id="address" required>
                 </label>
-
                 <label for="address-2">Address 2
                     <input type="text" name="address-2" id="address-2">
                 </label>
@@ -69,27 +68,29 @@
                 <label for="city">City
                     <select name="city" id="city">
                         <option value="0"></option>
-                        <option value="1"></option>
-                        <option value="2"></option>
+                        <option value="1">Manchester</option>
+                        <option value="2">Coventry</option>
+                        <option value="3">Birmingham</option>
+                    </select>
                 </label>
 
                 <label for="postcode">Postcode*
                     <input type="text" name="postcode" required>
                 </label>
             </section>
-            <fieldset class="cl">
+            <fieldset class="colors">
                 <label for="color">Select a colour</label>
-                <input type="radio" name="color" id="orange">
-                <input type="radio" name="color" id="grey">
+                <input type="radio" name="color" id="orange">Karma Orange
+                <input type="radio" name="color" id="grey">Space Grey
             </fieldset>
-            <section class="tm">
+            <section class="terms">
                 <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>
                     *</label>
                 <input type="checkbox" name="terms" id="terms" required>
             </section>
-            <button>Place my order</button>
+            <button class="form-button">Place my order</button>
         </form>
-        <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Store Image by Andrew Neel" class="form-pic">
+        <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Store Image by Andrew Neel" class="main-pic">
     </main>
     <footer>
         <hr>
