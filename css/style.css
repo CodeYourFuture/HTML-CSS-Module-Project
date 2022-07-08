@@ -15,7 +15,8 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-/* header presentation */
+
+ /* header presentation */
  
 .header {
     display: flex;
@@ -26,27 +27,27 @@ body {
     border: 1px solid lightgray;
 }
 
-
+/* styling of the logo */
 .logo {
     width: 15px;
     height: 23px;
     margin-left: 5rem;    
 } 
+/* to change the cursor to a pointer */
 
 .logo:hover {
     cursor: pointer;
 }
 
+/* to space the navigation links */
  .nav-links {
     list-style: none;
     margin-right: 5rem;
 
     /* overflow: hidden;
-    text-align: center; */
-    
-    
+    text-align: center; */    
 }
-
+/* to change the visual display of lists to block */
 .nav-links li {
     display: inline-block;
     color: gray;
@@ -99,6 +100,7 @@ body {
     font-size: 2rem;
 }
 
+/* the styling of the buttons on the pages except when specifically redesigned */
 button {
     font-size: 0.8rem;
     background-color: #c05326;
@@ -110,18 +112,18 @@ button {
 }
 
 button:hover {
-    background-color:#4c66a4;
+    background-color:#030e28;
     cursor: pointer;
 }
 
-/* grid  design*/
+/* grid  design for the container on index.html page*/
 
 .container {
     text-align: center;
     padding-bottom: 50px;
     height: 500px;
 }
-
+/* the sub-title text design */
 #sub {
     padding: 25px 0;
     margin-top: 20px;
@@ -136,12 +138,19 @@ button:hover {
     /* align-items: center; */
 }
 
+.column {
+    width: 415px;
+    height: 354px;
+}
+
+/* to give the images specific measurement for easier styling */
 .column img {
     padding-top: 20px;
     width: 90px;
     height: 90px;
 }
 
+/* the new feature display as a flex */
 .feature {
     display: flex;
     flex-direction: row;
@@ -153,6 +162,7 @@ button:hover {
     height: 439px;
 }
 
+/* styling the div contents to display as the one on Figma */
 .getkarma {
     width: 839px;
     height: 350px;
@@ -180,15 +190,13 @@ button:hover {
     height: 70px;
     font-weight: 400;
     font-size: 24px;
-
     /* padding: 15px 15px; */
-
-    /* text-align: center; */
-    
-    
+    /* text-align: center; */  
 }
 
-/* store.html styles */
+/* store.html page styles */
+
+/* the container display as flex */
 .con {
     display: flex;
     flex-direction: row;
@@ -201,7 +209,7 @@ button:hover {
     font-size: 50px;
     font-weight: 500;
 }
-
+/* the styling of the div containing the fname & lname to display as flex */
 .fname_lname {
     display: flex;
     flex-direction: row;
@@ -229,6 +237,7 @@ button:hover {
     margin-left: 8%;
 }
 
+/* styling the text boxes to have similar designs */
 .fname_lname input,
 .address input,
 .address2 input,
@@ -292,6 +301,11 @@ button:hover {
     margin-bottom: 97px;
 }
 
+/* giving the radio button and checkbox a pointer */
+
+#karma-orange, #space-gray, #terms {
+    cursor: pointer;
+}
 .space_gray {
     padding-left: 27px;
 }
@@ -312,72 +326,18 @@ button:hover {
     font-size: 22px;
     font-weight: 500;
 }
-
+/* giving the radio button and checkbox an orange background */
 input {
     accent-color: #de633a;
         
 }
-
-
-
-
-
-/* .con {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-     height: 900px; 
-    padding: 0 20px;
-    margin: 0 20px;
-    color: #666666;
-    
-    
-}
-
-/* .con img {
-    width: 50%px;
-    height: 100%;
-} */
-/* 
-.order-text {
-    color: #DE6E49;
-}
-
-#tnc {
-    color: #DE6E49;
-    font-weight: 200;
-    font-size: 12px;
-}
-
-#button {
-    color: whitesmoke;
-    padding: 15px;
-    font-size: 14px;
-    font-weight: 100;
-}
-
-.check {
-    width: 15px;
-    height: 15px;
-    border: 5px; 
-    padding: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    cursor: pointer;
- }  */
-
-
-/* .check:checked { 
-    background: #DE6E49;
-} */
 
 /* footer layout */
 
 .social {
     background-color: white;
     overflow: auto;
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
     
 }
@@ -392,8 +352,8 @@ input {
 .social .icons > li {
     border: 1px solid lightgrey;
     border-radius: 1.25rem;
-    width: 2.5rem;
-    height: 1.75rem;
+    width: 2.88rem;
+    height: 1.8rem;
     margin: 1.25rem 5px;
     padding: 0.5rem 0;
     text-align: center;
@@ -425,24 +385,3 @@ input {
     font-weight: 200;
     color: grey;
 }
-
-
-/* 
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.icon {
-    width: 20px;
-    margin: 0 1rem;
-    border: 1px solid lightgrey;
-    border-radius: 40px;
-}
-
-#copyright {
-    color: lightgrey;
-    font-weight: lighter;
-} */
