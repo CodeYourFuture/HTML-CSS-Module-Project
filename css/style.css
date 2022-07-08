@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  border: 2px solid navy;
+  /*border: 2px solid navy;*/
 }
 
 /**
@@ -18,9 +18,10 @@ body {
 
 /* Logo style*/
 .karmalog {
-  padding-left: 10rem;
-  padding-right: 45rem;
+  padding-left: 15%;
+  margin-right: 50vw;
   width: 1.4em;
+  /* border: 2px solid navy;*/
 }
 
 /* navigation container*/
@@ -28,7 +29,16 @@ body {
   list-style: none;
   display: flex;
   text-align: right;
+  flex-direction: row;
   color: #d3d3d3;
+  /*border: 2px solid rgb(57, 214, 64);*/
+}
+
+header {
+  /* border: 2px solid rgb(241, 23, 59);*/
+  width: 100%;
+  height: 5vh;
+  margin-bottom: 0em;
 }
 
 /* Navigation items*/
@@ -173,6 +183,8 @@ hr {
 
 footer {
   padding-bottom: 2%;
+  color: #a0a0a0;
+  font-size: 1.5em;
 }
 
 .active {
@@ -183,10 +195,39 @@ footer {
   width: 100%;
   display: flex;
   direction: row;
-  margin-top: 3em;
-  border: 3px solid red;
+  margin-top: 15vh;
+  /* border: 3px solid red;*/
+  align-items: center;
+  background-color: rgba(224, 99, 58, 0.1);
+  margin-bottom: 5vh;
 }
 
 .section-week3 img {
-  width: 50%;
+  width: 45%;
+  height: 70vh;
+}
+.section-week3-text {
+  text-align: center;
+
+  width: 55%;
+  font-size: 3em;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section-week3-text span {
+  color: #e0633a;
+}
+
+.section-week3-text button {
+  padding: 1em 1em;
+  background-color: #e0633a;
+  border: 0;
+  border-radius: 0.2em;
+  color: white;
+  width: 20vw;
+  height: 12vh;
+  font-size: 0.7em;
+  margin-top: 2em;
 }
