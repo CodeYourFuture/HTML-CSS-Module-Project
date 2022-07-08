@@ -246,10 +246,12 @@ footer {
   width: 50%;
   font-size: 1.5em;
   color: rgb(110, 110, 110);
-  border: 5px solid purple;
+  /*border: 5px solid purple;*/
   justify-items: center;
   padding-left: 7%;
   padding-right: 7%;
+  justify-content: center;
+  margin-top: 5%;
 }
 
 #form-store h1 {
@@ -265,7 +267,7 @@ footer {
 
 .main-store img {
   width: 50%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/
 }
 
 input[type="text"] {
@@ -378,4 +380,17 @@ input[type="radio"] {
 
 .container a {
   color: #e0633a;
+}
+
+#place-my-order {
+  background-color: #e0633a;
+  color: white;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  border: 0px solid transparent;
+  align-content: flex-end;
+  width: 40%;
+  margin-top: 5%;
+  opacity: 0.6;
 }

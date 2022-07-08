@@ -26,14 +26,14 @@
         <li>
           <img src="img/karma-logo.svg" alt="Karma logo" class="karmalog" />
         </li>
-        <li class="navigation__item active">
-          <a class="navigation__link" href="#">Meet Karma</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Meet Karma</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">How it Works</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Store</a>
+        <li class="navigation__item active">
+          <a class="navigation__link" href="store.html">Store</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">Blog</a>
@@ -56,16 +56,17 @@
           style="margin-right: 26%; width: 35%"
           type="text"
           name="first-name"
+          required
         />
-        <input type="text" name="last-name" style="width: 35%" /><br />
+        <input type="text" name="last-name" style="width: 35%" required /><br />
         <label for="address"> Address *</label> <br />
-        <input type="text" name="address" style="width: 100%" /> <br />
+        <input type="text" name="address" style="width: 100%" required /> <br />
         <label for="address"> Address 2</label> <br />
         <input type="text" name="address" style="width: 100%" />
 
         <label for="City" style="margin-right: 59%"> City *</label>
-        <label for="Postcode"> Postcode *</label> <br />
-        <div class="city-postcode">
+        <label for="Postcode" required> Postcode *</label> <br />
+        <div class="city-postcode" required>
           <select>
             <option value="0">Select your city...</option>
             <option value="1">London</option>
@@ -83,7 +84,7 @@
           id="karma-orange"
           name="radio-color"
           value="orange"
-          checked="checked"
+          checked
         />
          
         <label for="karma-orange" style="padding-right: 2em">
@@ -98,9 +99,18 @@
           <a href="https://www.linkedin.com/in/kawa-manmi-5244ab53/">
             Terms and Condition</a
           >. *
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            id="checkbox-placeorder"
+            onclick="activebutton()"
+            required
+          />
           <span class="checkmark"></span>
         </label>
+
+        <button class="place-my-order" id="place-my-order">
+          Place my order
+        </button>
       </form>
       <img
         src="img/store-image_by-andrew-neel-unsplash.jpg"

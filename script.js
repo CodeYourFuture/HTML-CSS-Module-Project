@@ -12,3 +12,12 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function activebutton() {
+  var cc = document.getElementById("checkbox-placeorder").checked;
+  if (cc === true) {
+    document.getElementById("place-my-order").style.opacity = 1;
+  } else {
+    document.getElementById("place-my-order").style.opacity = 0.6;
+  }
+}
