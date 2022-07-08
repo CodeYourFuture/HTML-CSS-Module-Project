@@ -1,19 +1,475 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+   font-family: 'Roboto', sans-serif;
+   /*-webkit-font-smoothing: antialiased;*/
+   width: 96%;
+   margin: 0 auto;
+
 }
 
 /**
+/*
  * Add your custom styles below
  * 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be organized, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+/*header*/
+ .main-header {
+   width: 96%;
+   height: 89px; 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ .Karma-logo {
+    width: 20px;
+ }
+
+ .nav-item {
+display: inline;
+list-style: none;
+margin-left: 20px;
+cursor: pointer;
+
+ }
+
+ .nav-item:hover {
+    color: red;
+ }
+
+/* .nav-item:active {
+    color:black
+ }*/
+/*introduction*/
+ .intro {
+   width: 96%;
+   margin: 0 auto;
+   background-image: url("../img/first-background.jpg");
+   background-size: cover;
+   background-position: center;
+   color: #ffffff;
+   padding-top: 150px;
+   padding-bottom: 150px;
+   margin: auto;
+   text-align: center;
+   }
+
+ h1 {
+   font-size: 40px;
+   letter-spacing: 2px;
+   font-weight: lighter;
+ }
+
+
+ p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+ }
+
+ .intro-btn {
+    background-color: rgb(244, 83, 39);
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 6%;
+ }
+
+ .intro-btn:hover{
+   background-color: orange;
+ }
+
+ /*services*/
+ .services {
+    margin-top: 100px;
+    margin-bottom: 100px;
+   text-align: center;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+ }
+
+ .services h2 {
+    margin-bottom: 120px;
+    font-size: 32px;
+    font-weight: 300;
+ }
+
+ .container {
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ .icon {
+    width: 32%;
+    height: 354px;
+    margin-bottom: 17px;
+    display: inline-block;
+}
+
+ .icon img {
+    width: 100px;
+ }
+
+ .icon-text{
+   font-size: 22px;
+   color: black;
+   font-weight: 400;
+
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ /*features starts here*/
+
+ .features {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 96%;
+   margin-bottom: 60px;
+}
+
+.feature-txt {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-weight: 600;
+
+   background-color: rgba(224, 99, 58, 0.1);
+
+ }
+ .getKarma-btn{
+   width: 205.46px;
+   font-weight: 400;
+   background-color: #de633a;
+   border: none;
+   border-radius: 4%;
+   color: #ffffff;
+   padding: 21px 28px 21px 29px;
+
+ }
+ .getKarma-btn a{
+   color: #ffffff;
+ }
+
+ /* media Queries*/
+
+@media only screen and (max-width: 1000px) {
+
+      .services {
+         margin-top: 100px;
+         margin-bottom: 100px;
+         text-align: center;
+         word-spacing: 5px;
+         letter-spacing: 1px;
+      }
+      .icon {
+         width: 30%;
+         height: 354px;
+         margin-bottom: 17px;
+
+      }
+
+      .icon img {
+         width: 90px;
+      }
+
+      .icon-text {
+         font-size: 16px;
+         color: black;
+         font-weight: 400;
+
+      }
+
+      a {
+         text-decoration: none;
+      }
+}
+
+@media only screen and (max-width: 800px) {
+   .features {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 96%;
+      }
+   .feature-txt {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         width: auto;
+         font-weight: 600;
+         padding: 20px 40px;
+         background-color: rgba(224, 99, 58, 0.1);
+
+      }
+}
+
+ @media only screen and (max-width: 600px) {
+
+       .icon {
+          width: 60%;
+          height: 354px;
+          margin-bottom: 20px;
+
+       }
+
+       .icon img {
+          width: 200px;
+       }
+
+       .icon-text {
+          font-size: 26px;
+          color: black;
+          font-weight: 400;
+
+       }
+
+       a {
+          text-decoration: none;
+       }
+}
+
+
+
+ /*styling for store.html starts here */
+.main-page {
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+ .order-form{
+   width: 501px;
+   height: 841px;
+
+
+
+}
+
+.order-form h1{
+   width: 1448px;
+   height: 96px;
+   font-style: Medium;
+   font-weight: 500;
+   font-size: 50px;
+   line-height: 59px;
+   text-align: left;
+   color: #de6e49;
+   margin-bottom: 50px;
+
+}
+.label{
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 21px;
+   color:#666666;
+   line-height: 24.61px;
+   margin-top: 32px;
+   margin-bottom: 12px;
+}
+
+.name-last-name{
+   width: 497px;
+}
+
+ .user-name input,
+ .last-name input{
+   width: 228px;
+   height: 53px;
+}
+ .last-name {
+    margin-left: 27px;
+ }
+
+.postcode input{
+   width: 165px;
+   height: 53px;
+
+}
+
+.postcode{
+   margin-left: 27px;
+}
+.address input,
+.address2 input{
+   width:  497px;
+   height: 53px;
+
+}
+
+ .user-name,
+ .last-name,
+ .address,
+ .address2,
+ .city,
+ .postcode{
+   display: flex;
+   flex-direction: column;
+ }
+
+
+
+.name-last-name{
+   display: flex;
+   flex-direction: row;
+}
+#city{
+   width: 307px;
+   height: 53px;
+   margin-bottom: 85px;
+   padding: 2px;
+}
+
+.city-postcode {
+   display: flex;
+   flex-direction: row;
+
+}
+
+.color-fieldset{
+   margin-bottom: 97px;
+}
+
+.color-fieldset p{
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 21px;
+   color: #666666;
+   line-height: 24.61px;
+   margin-top: 70px;
+
+}
+input{
+   accent-color: #de633a;
+}
+.color-fieldset label{
+   width: 132px;
+   height: 25px;
+   font-family: Roboto;
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 24.61px;
+}
+#grey{
+   margin-left: 30px;
+}
+#orange {
+   color: #de6e49;  
+}
+
+.terms-conditions a{
+   color: #DE6E49;
+}
+
+.terms-conditions label{
+   width: 466.04px;
+   height: 50px;
+   font-family: Roboto;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25.2px;
+}
+
+.myOrder-btn{
+   width: 269px;
+   height: 70px;
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 21px;
+   font-style: normal;
+   border: none;
+   border-radius: 4%;
+   text-align: left;
+   background-color: #de633a;
+   color: #ffffff;
+   padding: 22px 60px 22px 61px;
+   margin-top: 36px;
+}
+
+.form-img img {
+   width: 701px;
+   height: 1235px;
+}
+
+
+ /*styling for store.html ends here */
+
+/*footer*/
+footer {
+   margin-top: 60px;
+   margin-bottom: 60px;
+}
+ footer, h3 {
+    text-align: center;
+    font-size: 24px;
+ }
+
+ .fa {
+   background: #f8f9f9;
+   padding: 20px;
+   font-size: 50px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   margin: 10px;
+   border-radius: 50%;
+   border: 1px solid rgb(206, 205, 205) ;
+   display: inline;
+   cursor: pointer;
+ }
+
+ .fa:hover {
+     opacity: 0.7;
+ }
+
+ .fa-facebook {
+     color: #1a439b;;
+
+ }
+
+ .fa-twitter {
+
+     color: #55ACEE;
+ }
+
+ .fa-instagram {
+
+    color: rgb(23, 27, 152);
+ }
+
+ footer p {
+     text-align: center;
+     font-size: 12px;
+ }
+ a.back-top-page {
+   width: 200px;
+   height: 200px;
+ }
+
+
+
+
+
+
+
 
 
