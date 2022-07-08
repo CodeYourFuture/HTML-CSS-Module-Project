@@ -45,19 +45,19 @@
     <main>
 
         <form action="" method="GET">
-            <h1 class="form-h">Order your Karma WiFi device today!</h1>
+            <h1 class="form-h">Order your Karma wifi device today!</h1>
             <section class="names">
-                <label for="first-name">
+                <label for="first-name" class="name">
                     First name*
-                    <input type="text" name="first-name" id="first-name" required>
+                    <input type="text" name="first-name" cid="first-name" required>
                 </label>
 
-                <label for="last-name">Last Name*
+                <label for="last-name" class="name">Last Name*
                     <input type="text" name="last-name" id="last-name" required>
                 </label>
             </section>
             <section class="addresses">
-                <label for="address">Address*
+                <label for="address" class="line-1">Address*
                     <input type="text" name="address" id="address" required>
                 </label>
                 <label for="address-2">Address 2
@@ -79,9 +79,12 @@
                 </label>
             </section>
             <fieldset class="colors">
-                <label for="color">Select a colour</label>
-                <input type="radio" name="color" id="orange">Karma Orange
-                <input type="radio" name="color" id="grey">Space Grey
+                <p>Select a colour</p>
+                <label for="orange" class="color">
+                    <input type="radio" name="color" id="orange" selected>Karma Orange</label>
+                <label for="grey" class="color">
+                    <input type="radio" name="color" id="grey">Space Grey
+                </label>
             </fieldset>
             <section class="terms">
                 <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>
