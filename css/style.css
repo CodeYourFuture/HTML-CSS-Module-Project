@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,5 +14,234 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+header,
+main,
+
+footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+.nav-list {
+    margin-left: 15px;
+    padding: 0.rem 0;
+    font-family: 'sans-serif';
+    padding-bottom: 0px;
+    ;
+
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+}
+
+.nav-item:hover {
+    color: rgb(231, 51, 51);
+}
+
+.home-content {
+    margin-top: 70px;
+}
+
+.home {
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(253, 250, 250);
+}
+
+button {
+    background-color: rgb(228, 97, 10);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about {
+    margin-top: 4rem;
+    text-align: center;
+
+}
+
+.middle-article {
+    padding: 1rem 1;
+}
+
+.about-divs {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 3rem;
+
+}
+
+.top-logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 650px;
 
 
+}
+
+.middle-logo {
+    height: 100px;
+    width: auto;
+}
+
+.homepage-feature {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-feature img{
+    width: 100%;
+}
+
+.feature-content {
+    background-color:rgba(252, 179, 190, 0.235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.feature-content p {
+    display: block;
+    font-style: italic;
+    width: 50%;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.feature-content span {
+    color: rgb(228, 97, 10);
+    font-size:  3rem;
+    font-weight: 400;
+}
+
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+}
+
+.copyright {
+    color: rgb(145, 145, 145);
+    font-size: 0.8rem;
+}
+
+.h2-everyone {
+    margin-left: 50px;
+    font: caption;
+    font-size: 3rem;
+    color: rgb(29, 27, 26);
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(169, 166, 166);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.store-container img {
+    width: 100%;
+    height: auto;
+}
+
+.store-container {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    padding: 20px;
+    gap: 30px;
+    color: rgb(81, 81, 81);
+}
+.store-container h1, a {
+    color: rgb(228, 97, 10);
+}
+.store-container h1{
+    font: 400;
+}
+
+.colour {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+input[type='radio'] {
+    accent-color: rgb(228, 97, 10);
+}
+
+.place-order-content button{
+    margin-top: 40px;
+}
+
+
+
+form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px;
+    gap:10px;
+}
+
+.first-name {
+    grid-column: 1/4;
+}
+
+.last-name {
+    grid-column: 4/-1;
+}
+
+.Address {
+    grid-column: 1/-1;
+}
+
+.Address2 {
+    grid-column: 1/-1;
+}
+
+.city {
+    grid-column: 1/5;
+}
+
+.Postcode {
+    grid-column: 5/-1;
+}
+
+ 
