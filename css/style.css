@@ -144,36 +144,189 @@ button:hover {
 
 .feature {
     display: flex;
-    background-color: rgba(224, 99, 58, 0.1);
+    flex-direction: row;
     text-align: center;
 }   
 
+.img {
+    width: 599px;
+    height: 439px;
+}
+
 .getkarma {
+    width: 839px;
+    height: 350px;
+    background-color: rgba(224, 99, 58, 0.1);
     text-align: center;
     padding-left: 200px;
     padding-top: 90px;
 }
 
 .getkarma h3 {
+    width: 543px;
+    height: 141px;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 42px;
+    font-style: italic;
+    margin-bottom: 50px;
+    margin-top: 30px;
     /* text-align: center; */
     /* padding-left: 100px; */
 }
 
 .getkarma button {
-    padding: 15px 15px;
+    color: #fff;
+    width: 264px;
+    height: 70px;
+    font-weight: 400;
+    font-size: 24px;
+
+    /* padding: 15px 15px; */
+
     /* text-align: center; */
     
     
 }
 
 /* store.html styles */
-
 .con {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.order-title {
+    color: #DE6E49;
+    margin-bottom: 82px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.fname_lname {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 32px;
+}
+
+.lname {
+    padding-left: 27px;
+}
+
+.fname input,
+.lname input {
+    width: 235px;
+}
+
+.form {
+    padding-right: 100px;
+    color: #666;
+    width: 47%;
+    margin-left: 9%;
+}
+
+.con img {
+    width: 42%;
+    margin-left: 8%;
+}
+
+.fname_lname input,
+.address input,
+.address2 input,
+.pcode input {
+    margin-top: 10px;
+    height: 53px;
+    
+}
+
+.form label {
+    font-size: 21px;
+    font-weight: 500;
+}
+.address, .address2 {
+    margin-bottom: 32px;
+    
+}
+
+.address input,
+.address2 input {
+    width: 499px;
+}
+
+#city {
+    margin-top: 10px;
+    height: 53px;
+    width: 307px;
+}
+
+.city {
+    margin-bottom: 32px;
+}
+
+.city_pcode {
+    display: flex;
+    flex-direction: row;
+}
+
+.pcode {
+    padding-left: 27px;
+}
+
+.pcode input {
+    width: 165px;
+}
+
+#pcode {
+    height: 47px;
+}
+
+.form h3 {
+    font-size: 21px;
+    font-weight: 500;
+    width: 140px;
+    height: 25px;
+}
+
+.radio_btn {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 97px;
+}
+
+.space_gray {
+    padding-left: 27px;
+}
+
+.terms {
+    margin-bottom: 36px;
+}
+
+#tnc{
+    color: #DE6E49;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#button {
+    padding: 22px 60px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+input {
+    accent-color: #de633a;
+        
+}
+
+
+
+
+
+/* .con {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 900px;
+     height: 900px; 
     padding: 0 20px;
     margin: 0 20px;
     color: #666666;
@@ -181,11 +334,11 @@ button:hover {
     
 }
 
-.con img {
+/* .con img {
     width: 50%px;
     height: 100%;
-}
-
+} */
+/* 
 .order-text {
     color: #DE6E49;
 }
@@ -195,6 +348,29 @@ button:hover {
     font-weight: 200;
     font-size: 12px;
 }
+
+#button {
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+    border: 5px; 
+    padding: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+ }  */
+
+
+/* .check:checked { 
+    background: #DE6E49;
+} */
 
 /* footer layout */
 
