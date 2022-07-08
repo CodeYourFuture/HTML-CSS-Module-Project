@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -31,18 +30,20 @@ header {
 .nav-menu {
     display: flex;
     list-style: none;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: end;
-    
-}  
+
+}
 
 .nav-list {
     margin-left: 15px;
     padding: 0.rem 0;
-   font-family: 'sans-serif';
-   padding-bottom:0px; ;
+    font-family: 'sans-serif';
+    padding-bottom: 0px;
+    ;
 
 }
+
 .nav-item {
     text-decoration: none;
     color: rgb(153, 153, 153);
@@ -51,9 +52,11 @@ header {
 .nav-item:hover {
     color: rgb(231, 51, 51);
 }
-.content{
-    margin-top:70px;
+
+.content {
+    margin-top: 70px;
 }
+
 .home {
     background-image: url("../img/first-background.jpg");
     background-size: cover;
@@ -75,7 +78,7 @@ button {
 .about {
     margin-top: 4rem;
     text-align: center;
-    
+
 }
 
 .middle-article {
@@ -86,7 +89,7 @@ button {
     display: flex;
     justify-content: space-around;
     margin: 0 3rem;
-          
+
 }
 
 .top-logo {
@@ -94,7 +97,7 @@ button {
     width: 30px;
     margin-right: 650px;
 
-  
+
 }
 
 .middle-logo {
@@ -102,23 +105,28 @@ button {
     width: auto;
 }
 
-.homepage-feature{
-    background-color:rgb(193, 164, 164);
+.homepage-feature {
     display: flex;
-    text-align: center;
-  
+    justify-content: center;
+
 }
 
 .feature-content {
-    
-    
-    }
-  
-.feature-content p {
-    font-style: italic;
-    margin-left: ;
+    background-color: rgb(238, 234, 197);
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
-    
+
+.feature-content p {
+    display: block;
+    font-style: italic;
+}
+
+.feature-content span {
+    color: var(--orange-dark);
+}
+
 
 .footer-icon {
     width: 30px;
@@ -134,15 +142,28 @@ footer {
     color: rgb(145, 145, 145);
     font-size: 0.8rem;
 }
+
 .h2-everyone {
-margin-left: 50px;
-font:caption;
-font-size:3rem;
-color:rgb(29, 27, 26);
+    margin-left: 50px;
+    font: caption;
+    font-size: 3rem;
+    color: rgb(29, 27, 26);
 }
 
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(169, 166, 166);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
 
-.store-container img{
+.store-container img {
     width: 100%;
     height: auto;
 }
@@ -150,5 +171,64 @@ color:rgb(29, 27, 26);
 .store-container {
     display: grid;
     grid-template-columns: 1fr 50%;
+    padding: 20px;
+    gap: 30px;
+    color: rgb(81, 81, 81);
+}
+.store-container h1, a {
+    color: rgb(228, 97, 10);
+}
+.store-container h1{
+    font: 400;
 }
 
+.colour {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+input[type='radio'] {
+    accent-color: rgb(228, 97, 10);
+}
+
+.place-order-content button{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 40px;
+}
+
+
+
+form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px;
+    gap:10px;
+}
+
+.first-name {
+    grid-column: 1/4;
+}
+
+.last-name {
+    grid-column: 4/-1;
+}
+
+.Address {
+    grid-column: 1/-1;
+}
+
+.Address2 {
+    grid-column: 1/-1;
+}
+
+.city {
+    grid-column: 1/5;
+}
+
+.Postcode {
+    grid-column: 5/-1;
+}
+
+ 

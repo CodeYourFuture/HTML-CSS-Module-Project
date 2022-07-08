@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,88 +8,100 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
     <header>
-     <div class="nav-menu">
-          <img class="top-logo" src="img\karma-logo.svg" alt="karma-logo" />
-        <nav >
-         <ul class="nav-menu">
-            <li class="nav-list">
-                <a href="#" class="nav-item">Meet Karma</a>
-            </li>
-            <li class="nav-list">
-                <a href="#" class="nav-item">How it works</a>
-            </li>
-            <li class="nav-list">
-                <a href="#" class="nav-item">Store</a>
-            </li>
-            <li class="nav-list">
-                <a href="#" class="nav-item">Blog</a>
-            </li>
-            <li class="nav-list">
-                <a href="#" class="nav-item">Help</a>
-            </li>
-            <li class="nav-list">
-                <a href="#" class="nav-item">Login</a>
-            </li>
-         </ul>
-       </nav>
-     </div>
-     </header>
+        <div class="nav-menu">
+            <img class="top-logo" src="img\karma-logo.svg" alt="karma-logo" />
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-list">
+                        <a href="#" class="nav-item">Meet Karma</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-item">How it works</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-item">Store</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-item">Blog</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-item">Help</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-item">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <div class="store-container">
             <div class="store-content">
-                <div>
-                    <h3>Order your Karma wifi device today!</h3>
+                <h1>Order your Karma wifi device today!</h1>
+                <div class="form-content">
+
                     <form>
-                        
-                        <label for="first-name">First name *</label>
-                        <input id="first-name" type="text" required />
-                      
-                        <label for="last-name">Last name *</label>
-                        <input id="last-name" type="text" required />
-        
-                        <label for="Address">Address *</label>
-                        <input id="Address" type="text" required />
-        
-                        <label for="Address2">Address 2</label>
-                        <input id="Address2" type="text" />
-        
-                        <label for="city">City *</label>
-                        <select id="city" name="city">
-                        <option value="initial" selected>Select your city...</option>
-                        <option value="italian">London</option>
-                        <option value="french">Birmingham</option>
-                        <option value="polish">Manchestr</option>
-                        <option value="romanian">Bristol</option>
-                        </select> 
-        
-                        <label for="Postcode">Postcode *</label>
-                        <input id="Postcode" type="text" required />
+                        <div class="first-name">
+                            <label for="first-name">First name *</label>
+                            <input id="first-name" type="text" required />
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name">Last name *</label>
+                            <input id="last-name" type="text" required />
+                        </div>
+                        <div class="Address">
+                            <label for="Address">Address *</label>
+                            <input id="Address" type="text" required />
+                        </div>
+                            
+                        <div class="Address2">
+                            <label for="Address2">Address 2</label>
+                            <input id="Address2" type="text" />
+                        </div>
+
+                        <div class="city">
+                            <label for="city">City *</label>
+                            <select id="city" name="city">
+                                <option value="initial" selected>Select your city...</option>
+                                <option value="italian">London</option>
+                                <option value="french">Birmingham</option>
+                                <option value="polish">Manchester</option>
+                                <option value="romanian">Bristol</option>
+                            </select>
+                        </div>
+                        <div class="Postcode">
+                            <label for="Postcode">Postcode *</label>
+                            <input id="Postcode" type="text" required />
+                        </div>
+
                     </form>
                 </div>
-                <div>       
+                <div class="colour">
                     <p><strong>Select a colour</strong></p>
-                    <input id="orange" type="radio" name="colour" value="orange" checked/>
+                    <input id="orange" type="radio" name="colour" value="orange" checked />
                     <label for="orange">Karma orange</label>
-        
-                    <input id="grey" type="radio" name="colour" value="grey"  />
+
+                    <input id="grey" type="radio" name="colour" value="grey" />
                     <label for="grey">Space grey</label>
-                    <div class="place-order-content">
+                </div>
+                <div class="place-order-content">
                         <input id="agreement" type="checkbox" name="agreement" />
-                        <label for="agreement">By placing your order you agree to Karma's <a>Terms and Conditions</a>. *</label>
+                        <label for="agreement">By placing your order you agree to Karma's <a href="">Terms and Conditions</a>.
+                            *</label>
                         <button class="place-order-button">Place my order</button>
-                    </div>
                 </div>
             </div>
             <div>
-                <img  class="store-image" src="img\store-image_by-andrew-neel-unsplash.jpg" alt="Store image">
+                <img class="store-image" src="img\store-image_by-andrew-neel-unsplash.jpg" alt="Store image">
             </div>
         </div>
     </main>
@@ -98,12 +111,15 @@
         <hr>
         <p>Join us on</p>
         <div>
-            <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="img\twitter-icon.svg" alt="twitter-icon" /></a>
-            <a href="https://facebook.com/" target="_blank"><img class="footer-icon" src="img\facebook-icon.svg" alt="facebook-icon" /></a>
-            <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="img\instagram-icon.svg" alt="instagram-icon" /></a>
+            <a href="https://twitter.com/" target="_blank"><img class="footer-icon" src="img\twitter-icon.svg"
+                    alt="twitter-icon" /></a>
+            <a href="https://facebook.com/" target="_blank"><img class="footer-icon" src="img\facebook-icon.svg"
+                    alt="facebook-icon" /></a>
+            <a href="https://instagram.com/" target="_blank"><img class="footer-icon" src="img\instagram-icon.svg"
+                    alt="instagram-icon" /></a>
         </div>
         <p class="copyright">&copy; KarmaMobility, Inc.</p>
     </footer>
 </body>
-</html>
 
+</html>
