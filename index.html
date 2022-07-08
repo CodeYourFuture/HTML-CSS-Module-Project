@@ -11,9 +11,106 @@
 </head>
 <body>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+  <header class="header"> 
+    <section class="header">
+        <div class="container">
+            <img class="logo" src="img/karma-logo.svg" alt="Logo Image" width="26" />
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item navigation__item--active">Meet Karma</li>
+                    <li class="navigation__item">How it Works</li>
+                    <li class="navigation__item" ><a href="store.html" >Store </a> </li>
+                    <li class="navigation__item">Blog</li>
+                    <li class="navigation__item">Help</li>
+                    <li class="navigation__item">Login</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    </header>
 
-</body>
+    <main>
+    <section class="intro">
+        <div class="intro__content">
+            <h1 class="intro__h1">Introducing Karma</h1>
+            <h3 class="intro__h3">Bring WiFi with you, everywhere you go.</h3>
+            <div class="intro__buttons">
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cases">
+        <div class="cases__content">
+            <h2>Everyone needs a little Karma.</h2>
+            <ul class="cases__devices">
+                <li>
+                    <img class="cases__img" src="img/icon-devices.svg" alt="Internet for all devices image">
+                    <div class="cases__caption">
+                        <h3>Internet for all devices</h3>
+                    </div>
+                </li>
+
+                <li>
+                    <img class="cases__img" src="img/icon-coffee.svg" alt="Boost your productivity image">
+                    <div class="cases__caption">
+                        <h3>Boost your productivity</h3>
+                    </div>
+                </li>
+
+                <li>
+                    <img class="cases__img" src="img/icon-refill.svg" alt="Pay as You Go image">
+                    <div class="cases__caption">
+                        <h3>Pay as You Go</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section class="get-karma">
+      <img src="./img/homepage-feature.png" alt="" class="feature-img" />
+      <div class="rect-get-karma">
+        <p>
+          <span style="color: #e0633a">"</span>Wherever I am, I just don't
+          worry about my connection anymore!<span style="color: #e0633a">"</span>
+        </p>
+        <button onclick="window.location.href='store.html'" class="button-get-karma">
+          Get Karma today
+        </button>
+      </div>
+    </section>
+    </main>
+
+
+    <footer class="footer">
+      <p class="footer__text">Join us on</p>
+      <div class="footer__links">
+        <a href="#"
+          ><img
+            class="footer__links__icon"
+            src="./img/twitter-icon.svg"
+            alt="twitter icon"
+          />
+        </a>
+        <a href="#"
+          ><img
+            class="footer__links__icon"
+            src="./img/facebook-icon.svg"
+            alt="facebook icon"
+          />
+        </a>
+        <a href="#"
+          ><img
+            class="footer__links__icon"
+            src="./img/instagram-icon.svg"
+            alt="instagram icon"
+          />
+        </a>
+      </div>
+      <p class="footer__text--muted">© Karma Mobility Inc.</p>
+    </footer>
+  </body>
 </html>

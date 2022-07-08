@@ -1,19 +1,411 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+h1 {
+    font-size: 3px;
+    margin: 05px;
+}
+.header {
+    min-width: 37.5rem;
+    height: 4.375rem;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #DDD;
+}
+.header .logo {
+    justify-content: left;
+    height: 4rem;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #838994;
+    font-size: 1.2rem;
+    list-style: none;
+}
+.navigation__item:hover {
+    cursor: pointer;
+    color: red;
+}
+.navigation__item--active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.intro {
+    background-image: url("../img/first-background.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro__h1,
+.intro__h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 3.125rem;
+    margin-bottom: 1rem;
+}
+.intro__h3 {
+    font-size: 1.563rem;
+}
+.intro__buttons {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cases__content {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #838994;
+}
+.cases__content>h2 {
+    font-size: 5rem;
+    margin: 1.625rem 0 4.125rem;
+    margin-left: 6rem;
+    font-weight: 200;
+    align-self: center;
+}
+.cases__devices {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.cases__devices>li {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.cases__devices>li:not(:last-child) {
+    margin-right: 19rem;
+}
+.cases__img {
+    width: 170px;
+    height: 160px;
+    align-self: center;
+}
+.cases__caption>h3{
+    color: black;
+font-weight: 400;
+font-size: 2.563rem;
+margin: 2.5rem 0px 1.875rem;
+text-align: center;
+}
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* get-karma */
+.get-karma {
+    display: flex;
+    flex-direction: row;
+    margin: 123px 0px;
+}
+/* feature-img */
+.feature-img {
+    width: 1000px;
+    height: 500px;
+    left: 0px;
+    top: 1758px;
+}
+/* rect-get-karma */
+.rect-get-karma {
+    background-color: rgba(224, 99, 58, 0.1);
+    width:1500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* rect-get-karma p */
+.rect-get-karma p {
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+    width: 548px;
+    height: 141px;
+    text-align: center;
+}
+
+/* button-get-karma */
+.button-get-karma {
+    width: 264px;
+    height: 70px;
+    background: #e0633a;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+}
 
 
+
+
+
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    padding-left: 75px;
+}
+
+.form-container h1 {
+    margin-top: 6rem;
+    margin-left: 7rem;
+    width: 700px;
+    height: 200px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #E0633A;
+    max-width: 800px;
+}
+
+/* Form styling */
+
+.karma-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 6rem;
+    width: 700px;
+}
+
+.karma-form label {
+    color: #666;
+    font-weight: normal;
+}
+
+.karma-form .field-title {
+    color: #666;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+input[type=text],
+[type=home-address],
+[type=postcode],
+select {
+    padding: 12px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 280px;
+}
+
+/* city field styling */
+
+.city {
+    width: 390px;
+    background-color: white;
+    color: #666;
+    font-style: italic;
+}
+
+.city option {
+    color: black;
+    font-style: normal;
+}
+
+/* postcode field styling */
+
+.postcode {
+    width: 80px;
+    padding: 12px 8px;
+    min-width: 170px;
+}
+
+/* radio button styling */
+
+.radio-container {
+    padding-top: 60px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.radio-group .row {
+    gap: 10px
+}
+
+.radio-group label {
+    color: #666;
+    font-weight: normal;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 50%;
+    outline-color: rgb(118, 118, 118);
+    outline-style: auto;
+    outline-width: thin;
+}
+
+input[type='radio']:hover {
+    box-shadow: 0 0 5px 0px orange inset;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+input[type='radio']:checked:before {
+    background: #E0633A;
+}
+
+input[type=radio],
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* terms and conditions */
+
+.tc-container {
+    max-width: 420px;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.tc-container span {
+    max-width: 420px;
+    margin-left: 10px;
+    color: #666;
+    font-weight: normal;
+}
+
+.tc-container a {
+    color: #E0633A;
+}
+
+input[type='checkbox']:checked {
+    background-color: white;
+}
+
+input[type='checkbox']:checked:after {
+    content: '\2714';
+    color: #E0633A;
+}
+
+input[type='checkbox'] {
+    text-align: center;
+    vertical-align: middle;
+    width: 22px !important;
+    height: 20px !important;
+    appearance: none;
+    border-radius: 20%;
+    border: 2px solid rgb(118, 118, 118);
+    box-shadow: none;
+    font-size: 1em;
+}
+
+/* image sytyling */
+
+.form-img {
+    width: 800px;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    border-top: 1px solid var(--grey-light);
+    margin: 4rem 2rem 0;
+}
+.footer__text {
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer__links__icon {
+    width: 30px;
+    height: auto;
+    padding: 0 2rem;
+}
+.footer__text--muted {
+    padding: 2rem;
+    font-size: 1rem;
+    color: var(--grey-light);
+}

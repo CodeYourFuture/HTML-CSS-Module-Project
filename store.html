@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header class="header">
+        <section class="header">
+            <div class="container">
+                <img class="logo" src="img/karma-logo.svg" alt="Logo Image" width="26" />
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item" ><a href="index.html">Meet Karma </a></li>
+                        <li class="navigation__item">How it Works</li>
+                        <li class="navigation__item navigation__item--active">Store</li>
+                        <li class="navigation__item">Blog</li>
+                        <li class="navigation__item">Help</li>
+                        <li class="navigation__item">Login</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-container">
+        <section class="form-container">
+            <br> <br> 
+            <h1>Order your Karma wifi device today!</h1>
+    
+            <!-- THE FORM -->
+            <form class="form">
+                <fieldset class="karma-form">
+        <!-- first/last name -->
+        <div class="row">
+            <div class="column">
+                <label for="first-name" class="field-title">First name *</label>
+                <input type="text" name="first-name" required>
+            </div>
+        
+            <div class="column">
+                <label for="last-name" class="field-title">Last name *</label>
+                <input type="text" name="last-name" required>
+            </div>
+        </div>
+        
+        <!-- home address -->
+        <div class="column">
+
+            <label for="home-address" class="field-title">Address *</label>
+            <input type="home-address" name="home-address" required>
+            </div>
+            
+            <!-- home address 2 -->
+            <div class="column">
+                <label for="home-address" class="field-title">Address 2</label>
+                <input type="home-address" name="home-address" required>
+            </div>
+            
+            <div class="row">
+                <!-- city -->
+                <div class="column">
+                    <label for="city" class="field-title">City *</label>
+                    <select name="city" class="city" required>
+                        <option disabled selected hidden>Select your city</option>
+
+                        <option value="Birmingham">Birmingham</option>
+                        <option value="london">London</option>
+                        <option value="Istanbul">Istanbul</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Munchen">Munchen</option>
+                        <option value="Rome">Rome</option>
+                        </select>
+                        </div>
+                        
+                        <!-- postcode -->
+                        <div class="column">
+                            <label for="postcode" class="field-title">Postcode *</label>
+                            <input type="postcode" name="postcode" class="postcode" required>
+                        </div>
+                        </div>
+                        <!-- radio buttons -->
+                        <div class="radio-container">
+                            <label for="karma-color" class="field-title">Select a color</label>
+                            <div class="radio-group">
+                                <div class="row">
+                                    <input type="radio" name="karma-color" required>
+                                    <label for="radio">Karma orange</label>
+                                </div>
+                                <div class="row">
+                                    <input type="radio" name="karma-color">
+                                    <label for="radio">Space grey</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- checkbox -->
+                        <div class='tc-container'>
+                            <input type="checkbox" name="order_tc" id="order_tc" required />
+                            <span for="checkbox">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>. *</span>
+                        </div>
+                        
+                        <!-- button -->
+                        <div class="form-button">
+                            <button type="submit" class="button">Place my order</button>
+                        </div>
+                        </fieldset>
+                        </form>
+                        </section>
+                        
+                        <!-- image -->
+                        <div class="form-img">
+                            <img class="img" src="img/store-image_by-andrew-neel-unsplash.jpg"
+                                alt="woman sitting at table working on laptop with coffee in hand" />
+                        </div>
+                        </main>
+    
+
+
+    
+    <footer class="footer">
+        <p class="footer__text">Join us on</p>
+        <div class="footer__links">
+            <a href="#"><img class="footer__links__icon" src="./img/twitter-icon.svg" alt="twitter icon" />
+            </a>
+            <a href="#"><img class="footer__links__icon" src="./img/facebook-icon.svg" alt="facebook icon" />
+            </a>
+            <a href="#"><img class="footer__links__icon" src="./img/instagram-icon.svg" alt="instagram icon" />
+            </a>
+        </div>
+        <p class="footer__text--muted">© Karma Mobility Inc.</p>
+    </footer>
+</body>
+
+</html>
