@@ -222,6 +222,126 @@ hr {
     box-sizing: content-box;
     height: 0;
 }
+* Main section */
+.main__store {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Form section */
+.form {
+    width: 50vw;
+    margin: 4rem 4rem 0;
+    padding: 1em 2rem 0;
+    background-color: var(--grey-light);
+}
+
+.form__title {
+    color: var(--orange-dark);
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+/* Fieldset reset */
+.fieldset {
+    border: none;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+/* Wraps */
+.wrap--rows {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap--column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label reset */
+.label {
+    display: block;
+    padding: 0 0.5rem 1rem 0;
+    font-size: 1.3rem;
+}
+
+/* Input reset */
+.input {
+    height: 3rem;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Name input */
+.input--name {
+    width: 15rem;
+}
+
+/* Address input */
+.input--address {
+    width: 32rem;
+}
+
+/* City input */
+.input--city {
+    width: 20rem;
+    font-style: italic;
+}
+
+.input--city>option {
+    width: 20rem;
+    font-style: initial;
+}
+
+/* Radio buttons fieldset */
+.legend {
+    font-size: 1.3rem;
+}
+
+.input--radio {
+    width: 1.2rem;
+    accent-color: var(--orange-dark);
+}
+
+.label--radio {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    margin-right: 1rem;
+}
+
+/* Checkbox fieldset */
+.input--checkbox {
+    height: 1.4rem;
+    width: 1.4rem;
+    appearance: none;
+    border: 1px solid var(--grey-dark);
+    border-radius: 4px;
+}
+
+.input--checkbox:checked {
+    content: url("../level-2/checkmark.svg");
+}
+
+.label--checkbox {
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.span__consent {
+    color: var(--orange-dark);
+    text-decoration: underline;
+}
+
+/* aside section */
+.aside__image {
+    width: 50vw;
+} 
 
 /**
  * Contain overflow in all browsers.
