@@ -1,0 +1,77 @@
+/* header and footer sytles imported form sytle.css */
+:root {
+    --orange: #e0633a;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+}
+
+.form-container {
+    margin: 0px 10%;
+    display: grid;
+    grid-template: repeat(9, 1fr)/repeat(2, 1fr);
+}
+
+.address,.address1,.color,.tc,.submit
+{
+    grid-column: 1/3;
+}
+input,label
+{
+    display: block;
+    margin: 10px;
+    width: 90%;
+}
+
+
+
+
+
+
+
+.container>div:nth-child(1n) {
+    background-color: cadetblue;
+}
+
+.container>div:nth-child(2n) {
+    background-color: #e0633a;
+}
+
+.form-container>div:nth-child(1n) {
+    background-color: aquamarine;
+    
+}
+
+.form-container>div:nth-child(2n) {
+    background-color: chartreuse;
+}
+
+.form-container>div:nth-child(3n) {
+    background-color: chocolate;
+}
+
+.form-container>div:nth-child(4n) {
+    background-color: yellow;
+}
+
+.form-container>div:nth-child(5n) {
+    background-color: violet;
+}
+
+.form-container>div:nth-child(6n) {
+    background-color: wheat;
+}
+
+.form-container>div:nth-child(7n) {
+    background-color: turquoise;
+}
+
+.form-container>div:nth-child(8n) {
+    background-color: teal;
+}
+
+.form-container>div:nth-child(9n) {
+    background-color: slateblue;
+}
