@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -89,8 +88,8 @@ main {
   text-align: center;
   color: #4e5157;
 }
-.bg-content p{
-    font-size: 30px;
+.bg-content p {
+  font-size: 30px;
 }
 .articles {
   display: flex;
@@ -98,6 +97,7 @@ main {
   flex-direction: row;
   padding: 0.4rem 1rem;
   margin: 0rem 1rem 0rem 0rem;
+  margin-top: 5%;
 }
 article {
   display: flex;
@@ -120,27 +120,20 @@ footer {
   text-align: center;
   padding-bottom: 2rem;
 }
-.logo-icon{
-    margin-left: 10px;
-    margin-right: 10px;
+.logo-icon {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-  
-  
-
-.socialmedia{
+.socialmedia {
   display: flex;
   flex-direction: row;
   justify-content: center;
- 
-     
- }
-
-footer p{
-  font-size: 11px;
 }
 
-  
+footer p {
+  font-size: 11px;
+}
 
 /**
  * Add your custom styles below
@@ -161,3 +154,50 @@ h5 {
   font-weight: normal;
 }
 /*    NAVIGATION    */
+
+  .about-container {
+  display: flex;
+  position: relative;
+  margin-top: 7%;
+  
+  /* justify-content: space-around; */
+
+}
+.about-container img {
+  width: 40%;
+  
+}
+.about{
+  width: 60%;
+}
+.about {
+  background-color: #fff2ed;
+  width: 60%px;
+  text-align: center;
+  /* padding-right: 50px; */
+}
+.about p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 170px 200px 0 200px;
+  font-style: italic;
+}
+
+.about button {
+  background-color: #f9461d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 3.5rem;
+}
+.about button a {
+  color: white;
+  text-decoration: none;
+}
+.bond{
+  width:100%;
+}
