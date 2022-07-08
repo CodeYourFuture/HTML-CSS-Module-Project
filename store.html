@@ -18,6 +18,7 @@
             <div class="logo">
                 <img src="favicon.ico" alt="logo Karma" />
             </div>
+         </div>   
 <nav>
     <div id="nav-bar">
         <a class="nav-item" href="index.html"><strong>Meet Karma</strong></a>
@@ -59,8 +60,8 @@
         </div>
 
            <div class="wrap_rows">
-            <fieldset id="city" name="city" minlength="3" required>
-                <label for="city">City *</label>
+            <fieldset id="city" name="city">
+                <label for="city"  minlength="3" required>City *</label>
                 <select class="input_city" id="city">
                 <option value="city" selected>Select your city ...</option>
                 <option value="birmingham">Birmingham</option>
@@ -77,18 +78,18 @@
         </fieldset>
             </div>
 
-        <fieldset class="wrap_row">
+        <fieldset class="wrap_rows">
             <legend class="legend">Select a colour</legend>
-            <input class= "input_radio" id="karma_orange" type="radio" name="size" checked />
+            <input class= "input_radio" id="karma_orange" type="radio" name="color" checked />
             <label for="karma_orange">Karma Orange</label>
 
-            <input id="space_grey" type="radio" name="size"/>
+            <input id="space_grey" type="radio" name="color"/>
             <label for="space_grey">Space Grey</label>
         </fieldset>
 
         <fieldset>
             <input id="agreement" type="checkbox" name="agreement"  checked />
-            <label for="agreement">By placing your order you agree to karma's terms and conditions</label>
+            <label  class="agreement_label"for="agreement">By placing your order you agree to karma's<span class="span_agreement">Terms and conditions</span></label>
         </fieldset>
             <button class="btn_primary">Place my order</button>
         
@@ -123,7 +124,7 @@
 
 
     </div>
-    <br>
+
 
     <p class="copyright">© Karma Mobility.Inc</p>
 

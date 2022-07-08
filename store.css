@@ -1,7 +1,15 @@
 
 .aside_image {
-    width: 600px;
-    height:600px;
+    width: 800px;
+    height:900px;
+}
+.logo {
+    height: 5px;
+    width: 5px;
+    float: left;
+    position: fixed;
+    top: 20px;
+    left: 80px;
 }
 fieldset {
     border:none;
@@ -18,14 +26,14 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-top: 40px;
+    
 }
 .wrap_rows {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin:auto;
-    /* height: fit-content; */
-    /* align-self: stretch; */
 }
 .wrap_column {
     display: flex;
@@ -38,16 +46,14 @@ h1 {
     margin-top: 20px;
     border-radius: 5px;
     border:none;
-    font-size:20px;
+    font-size:22px;
     padding: 30px;
-
 }
 .form {
     text-align: left;
     color:grey-light;
     width:50vw;
-    margin: 4rem 4rem 0;
-    padding: 1rem 2rem 0;
+    margin-bottom: 40px;
 
 }
 .form_title {
@@ -62,4 +68,9 @@ h1 {
      
 }
 .legend {
-    font-size: 1.3rem;}
+    font-size: 1.3rem;
+    padding:2 px;
+}
+.input_radio {
+    padding-left: 5px;
+}
