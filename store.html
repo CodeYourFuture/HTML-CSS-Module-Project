@@ -50,12 +50,33 @@
     <main class="main-store">
       <form id="form-store">
         <h1>Order your Karma wifi device today!</h1>
-        <label for="first-name" style="margin-right: 39%"> First name *</label>
+        <label for="first-name" style="margin-right: 42%"> First name *</label>
         <label for="last-name"> Last name *</label> <br />
-        <input style="margin-right: 20%" type="text" name="first-name" />
-        <input type="text" name="last-name" /><br />
+        <input
+          style="margin-right: 26%; width: 35%"
+          type="text"
+          name="first-name"
+        />
+        <input type="text" name="last-name" style="width: 35%" /><br />
         <label for="address"> Address *</label> <br />
-        <input type="text" name="address" />
+        <input type="text" name="address" style="width: 100%" /> <br />
+        <label for="address"> Address 2</label> <br />
+        <input type="text" name="address" style="width: 100%" />
+
+        <label for="City" style="margin-right: 5%"> City *</label>
+        <label for="Postcode"> Postcode *</label> <br />
+        <div class="city-postcode">
+          <select>
+            <option value="0">Select your city...</option>
+            <option value="1">London</option>
+            <option value="2">Birmingham</option>
+            <option value="3">Manchester</option>
+            <option value="4">Coventry</option>
+            <option value="5">Liverpool</option>
+          </select>
+
+          <input type="text" name="Postcode" />
+        </div>
       </form>
       <img
         src="img/store-image_by-andrew-neel-unsplash.jpg"

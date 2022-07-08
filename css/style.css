@@ -244,21 +244,23 @@ footer {
 
 #form-store {
   width: 50%;
-  padding-left: 8%;
   font-size: 1.5em;
-  margin-right: 6%;
-  padding-right: 0px;
-  color: rgb(65, 63, 63);
+  color: rgb(158, 158, 158);
+  border: 5px solid purple;
+  justify-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 #form-store h1 {
-  text-align: left;
-
+  text-align: justify;
   color: #e0633a;
-  border: 5px solid rgb(68, 206, 14);
+
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2.3em;
+  width: 100%;
+  background-color: white;
 }
 
 .main-store img {
@@ -267,8 +269,31 @@ footer {
 }
 
 input[type="text"] {
-  padding: 0.4em;
-  width: 35.5%;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
   border-radius: 0.2em;
   margin-bottom: 2em;
+}
+
+select {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius: 0.2em;
+  margin-bottom: 2em;
+  padding-right: 20%;
+  font-size: 1em;
+  color: #a0a0a0;
+  margin-right: 10%;
+  width: 70%;
+}
+
+.city-postcode {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.city-postcode input[type="text"] {
+  width: 30%;
 }
