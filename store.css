@@ -1,0 +1,65 @@
+
+.aside_image {
+    width: 600px;
+    height:600px;
+}
+fieldset {
+    border:none;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+h1 {
+    color:rgb(224, 99, 58);
+    font-weight: 500;
+    margin-top: 50px;
+}
+.main_store {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.wrap_rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:auto;
+    /* height: fit-content; */
+    /* align-self: stretch; */
+}
+.wrap_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.btn_primary {
+    background-color: rgb(224, 99, 58);
+    color:white;
+    margin-top: 20px;
+    border-radius: 5px;
+    border:none;
+    font-size:20px;
+    padding: 30px;
+
+}
+.form {
+    text-align: left;
+    color:grey-light;
+    width:50vw;
+    margin: 4rem 4rem 0;
+    padding: 1rem 2rem 0;
+
+}
+.form_title {
+    font-size: 3.5rem;
+}
+.first_name { 
+    margin-bottom: 20px;
+
+}
+.last_name {
+    margin-bottom: 20px;
+     
+}
+.legend {
+    font-size: 1.3rem;}
