@@ -2,46 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' 
+    rel='stylesheet' 
+    type='text/css'>
+    <link 
+    rel="stylesheet" 
+    href="css/normalize.css"
+    />
+    <link 
+    rel="stylesheet" 
+    href="css/style.css"
+    />
+    <link 
+    rel="shortcut icon" 
+    type="image/x-icon"  
+    href="favicon.ico"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 </head>
+
+
 <body>
-    <section class = "header">
-        <div class = "container">
-            <img class = "logo" src = "img/karma-logo.svg" alt = "Logo Image" width = "26"/>
+
+<!--Header-->
+
+<section class="header">
+    <div class="nav-container">
+        <img class="logo" 
+        src="img/karma-logo.svg" 
+        alt="Logo Image" 
+        width="26" />
+    </div>
+
+    <!--Navigation-->
+    <nav>
+        
+            <ul class='nav-ul'>
+                <li class='nav__item'>
+                    <a class='nav__item--active' 
+                    href='#'>Meet Karma</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav-link' 
+                    href='#'>How it Works</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav-link' 
+                    href='store.html'>Store</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav-link' 
+                    href='#'>Blog</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav-link' 
+                    href='#'>Help</a>
+                </li>
+                <li class='nav__item'>
+                    <a class='nav-link' 
+                    href='#'>Login</a>
+                </li>
+            </ul>
         </div>
-    
-<nav class = "nav">
-    <ul class = "nav__lists">
-    <li class = "nav__item nav__item--active">Meet Karma</li>
-    <li class = "nav__item">How it Works</li>
-    <li class="nav__item">Store</li>
-    <li class="nav__item">Blog</li>
-    <li class="nav__item">Help</li>
-    <li class="nav__item">Login</li>
-    </ul>
-</nav>
-</section>
+    </nav>
+    </section>
 
 
 <!--Introduction-->
+
 <section class = "intro">
     <div class = "intro__content">
         <h1 class = "intro__h1">Introducing Karma </h1>
         <h3 class = "intro__h3">Bring WIFI with you, everywhere you go.</h3>
         <div class = "intro__buttons">
-            <button>Learn More</button>
+            <button><a href="https://www.youtube.com/">Learn More</a></button>
         </div>
     </div>
 </section>
 
 
-<!--Cases-->
+<!--Content-->
 <section class="cases">
     <div class="cases__content">
         <h2>Everyone needs a little Karma.</h2>
@@ -68,7 +114,19 @@
     </div>
 </section>
 
-
+<!--Hero section-->
+<section class="get-karma">
+    <img src="./img/homepage-feature.png" alt="" class="feature-img" />
+    <div class="rect-get-karma">
+        <p>
+            <span style="color: #E0633A">"</span>Wherever I am, I just don't
+            worry about my connection anymore!<span style="color: #E0633A">"</span>
+        </p>
+        <button onclick="window.location.href='store.html'" class="button-get-karma">
+            Get Karma today
+        </button>
+    </div>
+</section>
 <!-- Footer -->
 <footer class="social">
     <div class="content">
