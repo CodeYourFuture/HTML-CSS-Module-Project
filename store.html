@@ -56,7 +56,7 @@
                     <input type="text" name="last-name" id="last-name" required>
                 </label>
             </section>
-            <section class="address">
+            <section class="addresses">
                 <label for="address">Address*
                     <input type="text" name="address" id="address" required>
                 </label>
@@ -65,17 +65,17 @@
                 </label>
             </section>
             <section class="ct-pc">
-                <label for="city">City
+                <label for="city" class="ct">City
                     <select name="city" id="city">
-                        <option value="0"></option>
+                        <option value="0"><em>Select your city...</em></option>
                         <option value="1">Manchester</option>
                         <option value="2">Coventry</option>
                         <option value="3">Birmingham</option>
                     </select>
                 </label>
 
-                <label for="postcode">Postcode*
-                    <input type="text" name="postcode" required>
+                <label for="postcode" class="pc">Postcode*
+                    <input type="text" name="postcode" id="post-code" required>
                 </label>
             </section>
             <fieldset class="colors">
@@ -85,7 +85,7 @@
             </fieldset>
             <section class="terms">
                 <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>
-                    *</label>
+                    * </label>
                 <input type="checkbox" name="terms" id="terms" required>
             </section>
             <button class="form-button">Place my order</button>
