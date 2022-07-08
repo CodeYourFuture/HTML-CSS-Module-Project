@@ -53,7 +53,7 @@ header {
     color: rgb(231, 51, 51);
 }
 
-.content {
+.home-content {
     margin-top: 70px;
 }
 
@@ -72,7 +72,9 @@ button {
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .about {
@@ -108,23 +110,37 @@ button {
 .homepage-feature {
     display: flex;
     justify-content: center;
+}
 
+.homepage-feature img{
+    width: 100%;
 }
 
 .feature-content {
-    background-color: rgb(238, 234, 197);
+    background-color:rgba(252, 179, 190, 0.235);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
     text-align: center;
     justify-content: center;
+    width: 100%;
+    margin-bottom: 4px;
 }
 
 .feature-content p {
     display: block;
     font-style: italic;
+    width: 50%;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 .feature-content span {
-    color: var(--orange-dark);
+    color: rgb(228, 97, 10);
+    font-size:  3rem;
+    font-weight: 400;
 }
 
 
@@ -192,9 +208,6 @@ input[type='radio'] {
 }
 
 .place-order-content button{
-    padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
     margin-top: 40px;
 }
 
