@@ -100,34 +100,34 @@ button {
 
 /* Second section */
 
-
-
-.second_section {
-    display: flex;
-    flex-direction: column;
+section.second_section{
     align-items: center;
-}
-
-
-
-.karma_imgs_wrapper {
-    width: fit-content;
     display: flex;
-    justify-content: space-around;
+        justify-content: center;
 }
 
-.img_container {
-    width: 60%;
+.icons{
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.img_container img {
-    width: 30%;
+.icon_banner 
+{
+    flex-direction: row;
+    padding: 5rem;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+            
+    }
+
+.icon_banner a {
+    font-size: 19px;
 }
 
-h2 {
+.second_section h2 {
+    display: flex;
+    justify-content: center;
     font-weight: lighter;
     font-size: 1.7rem;
     margin-top: 5%;
@@ -159,6 +159,14 @@ h2 {
     border: none;
 }
 
+.text-button-container h2{
+    display: flex;
+    text-align: center;
+}
+
+.text-button-container h2 p{
+    color: #E0633A;
+}
 
 /* Footer */
 
