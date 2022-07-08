@@ -1,10 +1,10 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
- 
+
 
 
 /**
@@ -18,34 +18,40 @@ body {
  */
 /* body  */
 body {
-    margin: 0;
+  margin: 0;
 }
- /* header */
+
+/* header */
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;  
+  justify-content: space-around;
   height: 5rem;
   width: 100%;
 }
+
 /* log */
 .logo {
   max-height: 90px;
   width: auto;
-   
+
 }
+
 /* Nav */
- nav {
+nav {
   margin-left: 300px;
- }
+}
+
 .nav-list {
   display: flex;
   list-style: none;
 }
+
 .nav-item {
   padding: 0.5rem 0;
-   
+
 }
+
 .nav-link {
   color: rgb(182, 172, 172);
   font-weight: 600;
@@ -54,64 +60,74 @@ body {
   margin-right: 10px;
   transition: opacity 0.15s;
 }
+
 .nav-link:hover {
   color: #c86f49;
 }
+
 #onlink {
   color: black;
 }
+
 /* main */
 .main {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .image {
   position: relative;
-  
+
 }
+
 .overlay {
   position: absolute;
   align-items: center;
   justify-content: center;
-   color: white;
+  color: white;
   top: 275px;
 }
+
 .text {
-  text-align: center; 
+  text-align: center;
 }
+
 .text h1 {
   font-size: 3.5rem;
   font-weight: 100;
 }
+
 .text h3 {
   font-size: 2rem;
   font-weight: 300;
 }
+
 /* button  */
 .button {
   background-color: #c05326;
   color: white;
   border: none;
   border-radius: 3px;
-  padding: 15px 32px; 
-  text-decoration: none; 
+  padding: 15px 32px;
+  text-decoration: none;
   font-size: 1.25rem;
   cursor: pointer;
   margin-top: 1.5rem;
-   
+
 }
- 
- /* article  */
- 
+
+/* article  */
+
 .commercial-header h2 {
   margin-top: 100px;
   margin-bottom: 30px;
   font-size: 3rem;
   font-weight: 100;
-   text-align: center;  
+  text-align: center;
 
 }
+
+
 .commercial {
   display: flex;
   justify-content: space-evenly;
@@ -119,27 +135,29 @@ body {
   margin: auto;
   margin-bottom: 6rem;
 }
+
 .article img {
   width: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 
- /* footer */
- footer {
+/* footer */
+footer {
   margin-bottom: 4rem;
- }
- .footer-p {
+  margin-top: 420px;
+  margin-left: 100px;
+}
+
+.footer_p {
   text-align: center;
   font-size: 1em;
-  margin: 0.67em 0;
-  margin-top: 5px;
-  margin-bottom: 30px;
- }
- .icons-wrapper {
-  text-align: center;
- }
- .icons {
+  margin-bottom: 300px;
+}
+
+
+
+.icons {
   display: inline-block;
   text-align: center;
   justify-content: center;
@@ -148,4 +166,229 @@ body {
   padding: 15px;
   border: 2px solid #eaebec;
   border-radius: 100%;
- }
+}
+.icons-wrapper {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.title {
+  position: absolute;
+  color: #DE6E49;
+  font-size: 50px;
+  margin-top: 60px;
+  margin-left: 100px;
+
+}
+
+form {
+  height: 100vh;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+
+.form-img {
+  position: absolute;
+  width: 627px;
+  height: 1235px;
+  left: 700px;
+
+
+}
+
+/* name */
+form label {
+  margin-top: 3rem;
+}
+
+.name {
+  display: flex;
+  position: relative;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.fname {
+  margin-right: 1rem;
+
+}
+
+.fname input,
+.lname input {
+  width: 225px;
+  height: 50px;
+  margin-top: 1rem;
+  border: 3px solid rgb(177, 174, 174);
+  border-radius: 5px;
+}
+
+/* address */
+.address {
+  margin-top: 1.5rem;
+  font-size: 21px;
+}
+
+.address input {
+  width: 480px;
+  height: 53px;
+  margin-top: 1rem;
+  border: 3px solid rgb(177, 174, 174);
+  border-radius: 5px;
+}
+
+/* city-container */
+.city-container {
+  display: flex;
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.city {
+  margin-right: 1rem;
+  
+
+
+}
+
+.city select {
+  width: 305px;
+  height: 50px;
+  margin-top: 1rem;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 21px;
+  color: #705858;
+  border: 3px solid rgb(179, 124, 124);
+  border-radius: 5px;
+}
+
+.postcode input {
+  width: 160px;
+  height: 45px;
+  margin-top: 0.5rem;
+  border: 3px solid rgb(166, 119, 119);
+  border-radius: 5px;
+
+}
+
+.postcode label {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+/* radio */
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  /* background-color: #e7e6e7; */
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: #f9461D;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #f9461D;
+}
+
+.radio p {
+  margin-top: 3rem;
+  font-size: 21px;
+}
+
+.radio input {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  height: 25px;
+  width: 25px;
+
+}
+
+
+.radio label {
+  margin-right: 1rem;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+/* checkbox */
+.checkbox {
+  margin-top: 2rem;
+  font-size: 21px;
+  line-height: 25px;
+
+}
+
+.checkbox input {
+  padding: 1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 2rem;
+  background-color: #b77465;
+}
+
+.checkbox a {
+  color: #aa7d73;
+}
+
+/* button */
+.submit button {
+  margin-top: 4rem;
+  background: #ac4d2d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 22px;
+  width: 269px;
+  height: 70px;
+  
+}
+.text_1{
+  display: flex;
+  width: 100%;
+  /* position: absolute; */
+  text-align: center;
+  /* margin-top: 45px; */
+  font-style: italic;
+}
+.text_2{
+  background-color: pink;
+  width: 100%;
+  
+  
+}
+.text_2 p{
+  margin-top: 100px;
+  font-size: 25px;
+  
+}
+.btn_1{
+  background-color: #f9461D;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-top: 1.5
+}
+  
