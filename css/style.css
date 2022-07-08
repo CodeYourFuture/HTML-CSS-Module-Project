@@ -21,7 +21,8 @@ body {
 
 .nav_bar {
     width: 100%;
-    height: 50px;
+    height: 80px;
+    background-color:#d0d0d0;
 }
 .logo{
     margin: 20px 150px;
@@ -44,6 +45,19 @@ body {
 .list:hover{
     color:orangered;
 }
+.link {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+.link-button{
+    color: white;
+    list-style: none;
+    text-decoration:none ;
+}
+.link:hover {
+    color: orangered;
+}
 
 /*Hero Style*/
 .main{
@@ -51,11 +65,8 @@ body {
 }
 .background-image{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
+        width: 100%;
         height: 50%;
-        margin: 20px auto;
 }
 .background-text{
     position:absolute;
@@ -74,10 +85,11 @@ body {
 }
 .button1{
     background-color: orangered;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 30px;
     border-radius: 8px;
     margin: 30px 0;
+    border:none;
 }
 .p3{
     font-size: 40px;
@@ -100,11 +112,47 @@ body {
     font-size: 20px;
     
 }
+/* New section Style for karma store page*/
+
+.new-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(242, 227, 224);
+    margin: 50px 0;
+}
+.new-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 15%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+em{
+    color: orangered;
+    font-size: 30px;
+}
+.new-text p{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+.new-text button{
+    background-color: orangered;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
 
 /*Footer Style*/
 .footer{
     border-top: 1px solid #f0f0f0;
-    margin: 75px 100px;
+    margin: 0 100px;
 }
 .p5{
     text-align: center;
@@ -127,4 +175,148 @@ body {
     text-align: center;
     font-size: 13px;
     color:#c8c8c8 ;
+}
+
+/*Karma store page style*/
+.form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%; 
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 100px;
+}
+h1{
+    color: orangered;
+    padding: 40px; ;
+}
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,100px);
+    grid-column-gap: 100px;
+    padding: 50px;
+    
+}
+.item1{
+    grid-column: 1 /span 3 ;
+    grid-row: 1;
+}
+.item2 {
+    grid-column: 3 /span 4;
+    grid-row: 1;
+}
+.item3 {
+    grid-column: 1 /span 4;
+    grid-row:2 ;
+}
+.item4 {
+    grid-column: 1 /span 4;
+    grid-row: 3;
+}
+.item5 {
+    grid-column: 1 /span 3;
+    grid-row: 4;
+}
+.item6 {
+    grid-column: 3/Span 4;
+    grid-row: 4;
+}
+.item7 {
+    grid-column: 1/Span 4;
+    grid-row: 5;
+    margin-top: 50px;
+}
+.item8 {
+    grid-column: 1/Span 4;
+    grid-row: 6;
+    margin-top: 80px;
+}
+.item9 {
+    grid-column: 1/Span 4;
+    grid-row: 7;
+    margin-top: 80px;
+
+}
+
+#address  {
+    width: 98%;
+}
+#address2 {
+    width: 98%;
+}
+#city{
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 40px;
+    width: 80%;
+    border: 2px solid gray;
+    }
+input[type=text] {
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 40px;
+    border: 2px solid gray;
+}
+label{
+    font-size: 20px;
+}
+ .radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+ }
+ .radio_input{
+    display: none;
+ }
+ .radio1{
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #a0a0a0;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+
+ }
+ .radio1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background:orangered ;
+    border-radius: 50%;
+    transform: scale(0);
+
+ }
+ .radio_input:checked + .radio1::after{
+    transform: scale(1);
+}
+[type="checkbox"]{
+    display: none;
+}
+svg{
+    border: 2px solid #a0a0a0;
+    border-radius: 5px;
+    padding: 2px;
+}
+#link2{
+    color:orangered;
+}
+
+.item9 button{
+    background-color: orangered;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    }
+.checkbox-label{
+    font-size: 16px;
 }
