@@ -1,19 +1,173 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
-
+h1,
+h2,
+h5 {
+  font-weight: normal;
+}
+/*    NAVIGATION    */
+.logo-icon {
+  max-width: 1.25rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 1.5rem;
+}
+#logo {
+  padding: 0rem 0rem 0rem 1rem;
+  margin: 0rem 0rem 0rem 1.5rem;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  list-style-type: none;
+  flex-direction: row;
+  font-size: 0.75rem;
+  padding: 0rem 1rem 0rem 0rem;
+}
+.nav-header {
+  text-decoration: none;
+  color: #4e5157;
+}
+.nav-link {
+  text-decoration: none;
+  color: #898d97;
+}
+.nav-link:hover {
+  color: #e1643b;
+}
+/*      BACKGROUND SECTION       */
+.bg-img {
+  width: 100%;
+}
+.background-section {
+  width: 100%;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.background-content {
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-button {
+  background-color: #e1643b;
+  color: white;
+  border: solid 1px #e1643b;
+  padding: 0.5rem 1rem;
+  font-size: 0.55rem;
+  border-radius: 0.15rem;
+}
+/*      ARTICLES SECTION        */
+main {
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: #4e5157;
+  margin: 0;
+  padding: 0;
+}
+.articles {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.4rem 1rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  font-size: 0.75rem;
+}
+.karma-icons {
+  width: 4rem;
+}
+hr {
+  margin-top: 1rem;
+  height: 0.01rem;
+  background-color: #f1f1f2;
+  border: none;
+}
+/*    WEBSITE ADDITION 7/7/22    */
+.addition {
+  display: grid;
+  margin: 2rem 0rem 0rem 0rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #fcf0ec;
+}
+.figure-img {
+  margin: 0;
+  padding: 0;
+  grid-column: span 3;
+  background-color: #e1643b;
+  width: 40vw;
+  height: auto;
+}
+aside {
+  grid-column: span 5;
+  line-height: 1.25rem;
+}
+span {
+  color: #e1643b;
+  font-size: 1.75rem;
+}
+.fig-h {
+  font-weight: normal;
+  font-style: italic;
+  padding: 0rem 4rem;
+}
+/*      FOOTER       */
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-link {
+  margin: 0.25rem;
+}
+.socials-icon {
+  max-width: 0.55rem;
+  padding: 0.45rem;
+  border: #d8d9dc solid 1px;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+h5 {
+  font-size: 0.5rem;
+}
+.signature {
+  color: #898d97;
+  font-size: 0.5rem;
+}
 /**
  * Add your custom styles below
- * 
+ */
+/*     STORE CSS    */
+
+/*
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
