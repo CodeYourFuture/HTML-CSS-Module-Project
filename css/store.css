@@ -118,23 +118,21 @@
     color:#DE6E49 ;
 }
 
-/*  */
+  
 #karma-orange, #space-gray{
-    display: inline;
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     border: 2px solid #666666;
 }
 
-
-[type="checkbox"]:checked, 
-[type="checkbox"]:not(:checked){
-    border: 2px solid #666666;
+.radio-box input,
+.terms input{
+    accent-color:#DE6E49;
+    block-size: 30px;
+    inline-size: 30px;
     border-radius: 4px;
-    width: 24px;
-    height: 24px;
+    margin-top: 5px;
 }
-
 
 
 /* button */
