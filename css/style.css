@@ -245,7 +245,7 @@ footer {
 #form-store {
   width: 50%;
   font-size: 1.5em;
-  color: rgb(158, 158, 158);
+  color: rgb(110, 110, 110);
   border: 5px solid purple;
   justify-items: center;
   padding-left: 7%;
@@ -279,21 +279,103 @@ select {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   border-radius: 0.2em;
-  margin-bottom: 2em;
-  padding-right: 20%;
+  padding-right: 10%;
   font-size: 1em;
-  color: #a0a0a0;
-  margin-right: 10%;
-  width: 70%;
+  margin-right: 0%;
+  width: 60%;
+  margin-bottom: 2em;
 }
 
 .city-postcode {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0;
+  padding-bottom: 2em;
 }
 
 .city-postcode input[type="text"] {
   width: 30%;
+  margin-bottom: 2em;
+}
+
+input[type="radio"] {
+  border: 0;
+  width: 0.7em;
+  height: 0.7em;
+  accent-color: #e0633a;
+}
+
+/* style checkbox*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 2em;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 2px;
+  width: 5px;
+  height: 16px;
+  border: solid #e0633a;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container a {
+  color: #e0633a;
 }
