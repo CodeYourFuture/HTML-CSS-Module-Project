@@ -42,59 +42,60 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <div class="wrapper">
+        <main>
+            <form action="" method="GET">
+                <h1 class="form-h">Order your Karma wifi device today!</h1>
+                <section class="names">
+                    <label for="first-name" class="name">
+                        First name *
+                        <input type="text" name="first-name" id="first-name" required>
+                    </label>
 
-        <form action="" method="GET">
-            <h1 class="form-h">Order your Karma wifi device today!</h1>
-            <section class="names">
-                <label for="first-name" class="name">
-                    First name*
-                    <input type="text" name="first-name" cid="first-name" required>
-                </label>
-
-                <label for="last-name" class="name">Last Name*
-                    <input type="text" name="last-name" id="last-name" required>
-                </label>
-            </section>
-            <section class="addresses">
-                <label for="address" class="line-1">Address*
-                    <input type="text" name="address" id="address" required>
-                </label>
-                <label for="address-2">Address 2
-                    <input type="text" name="address-2" id="address-2">
-                </label>
-            </section>
-            <section class="ct-pc">
-                <label for="city" class="ct">City
-                    <select name="city" id="city">
-                        <option value="0"><em>Select your city...</em></option>
-                        <option value="1">Manchester</option>
-                        <option value="2">Coventry</option>
-                        <option value="3">Birmingham</option>
-                    </select>
-                </label>
-
-                <label for="postcode" class="pc">Postcode*
-                    <input type="text" name="postcode" id="post-code" required>
-                </label>
-            </section>
-            <fieldset class="colors">
-                <p>Select a colour</p>
-                <label for="orange" class="color">
-                    <input type="radio" name="color" id="orange" selected>Karma Orange</label>
-                <label for="grey" class="color">
-                    <input type="radio" name="color" id="grey">Space Grey
-                </label>
-            </fieldset>
-            <section class="terms">
-                <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>
-                    * </label>
-                <input type="checkbox" name="terms" id="terms" required>
-            </section>
-            <button class="form-button">Place my order</button>
-        </form>
-        <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Store Image by Andrew Neel" class="main-pic">
-    </main>
+                    <label for="last-name" class="name">Last Name *
+                        <input type="text" name="last-name" id="last-name" required>
+                    </label>
+                </section>
+                <section class="addresses">
+                    <label for="address" class="line-1">Address *
+                        <input type="text" name="address" id="address" required>
+                    </label>
+                    <label for="address-2">Address 2
+                        <input type="text" name="address-2" id="address-2">
+                    </label>
+                </section>
+                <section class="ct-pc">
+                    <label for="city" class="ct">City *
+                        <select name="city" id="city">
+                            <option value="0" selected disabled><em>Select your city...</em></option>
+                            <option value="1">Manchester</option>
+                            <option value="2">Coventry</option>
+                            <option value="3">Birmingham</option>
+                        </select>
+                    </label>
+                    <label for="postcode" class="pc">Postcode*
+                        <input type="text" name="postcode" id="post-code" required>
+                    </label>
+                </section>
+                <fieldset class="colors">
+                    <p>Select a colour</p>
+                    <label for="orange" class="color">
+                        <input type="radio" name="color" id="orange" checked="checked">Karma Orange</label>
+                    <label for="grey" class="color">
+                        <input type="radio" name="color" id="grey">Space Grey
+                    </label>
+                </fieldset>
+                <section class="terms">
+                    <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>
+                        * </label>
+                    <input type="checkbox" name="terms" id="terms" required>
+                </section>
+                <button class="form-button">Place my order</button>
+            </form>
+            <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Store Image by Andrew Neel"
+                class="main-pic">
+        </main>
+    </div>
     <footer>
         <hr>
         <h5>Join us on</h5>
