@@ -8,12 +8,114 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+<!-- header -->
+
+<header class="header">
+    <img class="logo" src="img/karma-logo.svg" alt="karma-logo">
+    
+        <nav class="navbar">
+            <ul class="nav-links">
+               <li><a href="index.html" target="_blank" class="nav-link"><strong>Meet Karma</strong></a></li>
+                <li><a href="" target="_blank" class="nav-link">How it Works</a></li>
+                <li><a href="store.html" target="_blank" class="nav-link">Store</a></li>
+                <li><a href="" target="_blank" class="nav-link">Blog</a></li>
+                <li><a href="" target="_blank" class="nav-link">Help</a></li>
+                <li><a href="" target="_blank" class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+        
+    
+</header>
+
+<!-- main -->
+
+<main>
+    <!-- this section adds the introduction contents to the page -->
+    <section class="intro"> 
+        <div class="intro-text">
+            <h1>Introducing Karma</h1>
+            <h3>Bring WiFi with you, everywhere you go.</h3>
+            <button href="">Learn More</button>
+        </div>
+
+    </section>
+    <!-- This section is a container for the various image contents and the wordings  -->
+    <section class="container">
+        <p id="sub">Everyone needs a little Karma.</p>
+        <!-- This div content is to make the styling of the images easier -->
+        <div class="columns"> 
+            
+            <div class="column">
+                <img src="./img/icon-devices.svg" alt="Internet of Devices">
+                <p>Internet for all devices</p>
+            </div>
+            
+            <div class="column">
+                <img src="img/icon-coffee.svg" alt="cup of hot coffee">
+                <p>Boost your productivity</p>
+            </div>
+            
+            <div class="column">
+                <img src="./img/icon-refill.svg" alt="refill pump">
+                <p>Pay as you Go</p>
+            </div>
+        </div>
+        
+    </section>
+<!-- this section contains the new feature introduced into the webpage for week2 HTML & CSS -->
+    <section class="feature">
+        <div class="img">
+            <img src="./level-2/homepage-feature.png" alt="happy customer">
+        </div>
+        
+<!-- The div elements are used to add the various contents to make the styling into flex display easier -->
+        <div class="getkarma">
+        <h3><em>"Wherever I am, I just don't worry about my connection anymore!"</em></h3>
+        <a href="store.html" target="_blank">
+            <button>Get Karma today</button>
+        </a>
+        </div>
+    </section>
+    
+</main>
+
+<!-- footer contents: the i element represents the icons and are called into the page with the link on line 11-->
+
+<footer class="social">
+    <div class="content">
+        <hr/>
+        <h5>Join us on</h5>
+        <ul class="icons">
+            <li class="twitter">
+                <i class="fa fa-twitter"> </i>
+            </li>
+            <li class="facebook">
+                <i class="fa fa-facebook"> </i>
+            </li>
+            <li class="instagram">
+                <i class="fa fa-instagram"> </i>
+            </li>
+        </ul>
+        <span class="copy"> © Karma Mobility, Inc. </span>
+    </div>
+</footer>
+    <!-- <p>Join us on</p>
+    <div class="icons">
+        <img class="icon" src="img/twitter-icon.svg" alt="Twitter logo">
+        <img class="icon" src="img/facebook-icon.svg" alt="Facebook logo">
+        <img class="icon" src="img/instagram-icon.svg" alt="Instagram logo">
+    </div>
+    <p id="copyright">© Karma Mobility, Inc.</p> -->
+
+    
 
 </body>
 </html>

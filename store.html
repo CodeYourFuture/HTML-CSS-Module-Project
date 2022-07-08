@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- header contains the logo and the navigation bar -->
+
+    <header class="header">
+        <img class="logo" src="img/karma-logo.svg" alt="karma-logo">
+    <!-- the navigation bar -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html" target="_blank" class="nav-link"><strong>Meet Karma</strong></a></li>
+                <li><a href="" target="_blank" class="nav-link">How it Works</a></li>
+                <li><a href="" target="_blank" class="nav-link">Store</a></li>
+                <li><a href="" target="_blank" class="nav-link">Blog</a></li>
+                <li><a href="" target="_blank" class="nav-link">Help</a></li>
+                <li><a href="" target="_blank" class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+<!-- main consists of the container carrying the form and the image by the side -->
+<main>
+    <div class="con">
+        <!-- this container is for the form contents, and the image is added just at the close of the form tag -->
+        <form action="" method="get" target="_blank" class="form">
+            <h1 class="order-title">Order your Karma wifi <br> device today!</h1>
+            <div class="fname_lname">
+                <div class="fname">
+                    <label for="fname">First name *</label><br>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                
+                
+                <div class="lname">
+                    <label for="lname">Last name *</label><br>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+            </div>
+            <div class="address">
+                <label for="address">Address *</label><br>
+                <input type="text" id="address" name="address" required>
+            </div>
+            
+            <div class="address2">
+                <label for="address2">Address 2</label><br>
+                <input type="text" id="address2" name="address2">
+            </div>
+            <div class="city_pcode">
+                <div class="city">
+                    <label for="city">City *</label><br>
+                    <select id="city" name="city" required>
+                        <option value="0" selected><em>select your city..</em></option>
+                        <option value="1" name="city">London</option>
+                        <option value="2" name="city">Leeds</option>
+                        <option value="3" name="city">Bristol</option>
+                    </select>
+                </div>
+                
+                <div class="pcode">
+                    <label for="pcode">Postcode *</label><br>
+                    <input type="text" id="pcode" name="pcode" required>
+                </div>
+            </div>
+                <!-- <fieldset> -->
+                <h3>Select a colour</h3>
+                <div class="radio_btn">
+                    <div class="karma_orange">
+                        <input type="radio" id="karma-orange" name="color" value="karma-orange" checked>
+                        <label for="karma-orange">karma orange</label>
+                    </div>
+                    <div class="space_gray">
+                        <input type="radio" id="space-gray" name="color" value="space-gray">
+                        <label for="space-gray">Space Gray</label>
+                    </div>
+                    
+                </div>
+                
+                <!-- </fieldset> -->
+            
+
+            
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" checked >
+                <label for="terms">By placing your order you agree to Karma's <a href="" id="tnc">Terms and conditions</a>. *
+                </label>
+            </div>
+
+            
+
+            <button id="button">Place my order</button>
+
+        </form>
+
+        <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store image">
+    </div>
+</main>
+
+<!-- footer section is same as that of the index.html page-->
+
+<footer class="social">
+    <div class="content">
+        <hr />
+        <h5>Join us on</h5>
+        <ul class="icons">
+            <li class="twitter">
+                <i class="fa fa-twitter"> </i>
+            </li>
+            <li class="facebook">
+                <i class="fa fa-facebook"> </i>
+            </li>
+            <li class="instagram">
+                <i class="fa fa-instagram"> </i>
+            </li>
+        </ul>
+        <span class="copy"> © Karma Mobility, Inc. </span>
+    </div>
+</footer>
+
+</body>
+</html>
