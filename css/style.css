@@ -153,7 +153,7 @@ body {
 
 
 .join-us{
-    border-top: 2px solid lightgray;
+    border-top: 2px solid rgb(236, 234, 234);
     text-align: center;
     margin-top: 30px;
     padding-top: 20px;
@@ -206,12 +206,20 @@ body {
     display: flex;
     flex-direction: column;
     
-    padding: 50px;
+    padding: 0px 40px ;
 }
 
 .first-last {
     display: flex;
     flex-direction: row;
+    
+}
+
+#firstname {
+
+}
+
+#lastname {
     
 }
 
@@ -221,19 +229,57 @@ input {
     box-sizing: border-box;
     border: 2px solid #666666;
     border-radius: 4px;
-    margin: 8px 0px;    
+    margin:  8px 0;    
 }
 
+select {
+    margin: 8px 0;
+}
 
+.radio {
+    padding: 20px 0px 0px 0px;
+}
 
 .radio-fieldset {
     border: none;
     display: flex;
-
+    flex-direction: row;
+    max-width: 150px;
+    max-height: 30px;
+    
 }
 
-.checkbox-input {
-    background-image: url(/level-2/checkmark.svg);
+
+
+    
+    
+.button-store {
+    border: none;
+    background-color: #E0633A;
+    padding: 10px 15px;
+    color: white;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.city-pcode {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    font-size: 10px;
+}
+
+#city {
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 25px;
+    border: 2px solid #666666;
+}
+
+.terms-cond {
+    color: #DE6E49;
 }
 
 /**
