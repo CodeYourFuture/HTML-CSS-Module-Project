@@ -12,7 +12,8 @@ body {
 .main,
 .footer {
     padding: 0 1.5rem;
-    max-width: 1200px;
+    max-width: 1440px;
+    max-height: 2551px;
     margin: 0 auto;
 }
 
@@ -81,7 +82,7 @@ body {
 }
 
 .button {
-    background-color: orangered;
+    background-color: #E0633A;
     color: white;
     border-radius: 2px;
     padding: 5px 15px;
@@ -91,7 +92,7 @@ body {
 
 .button:hover {
     background-color: white;
-    color: orangered;
+    color: #E0633A;
 }
 
 .karma {
@@ -126,7 +127,7 @@ body {
 }
 
 .karma-today-block {
-    background-color: rgb(246, 219, 210);
+    background-color: rgba(224, 99, 58, 0.1);
     padding: 50px 70px;
     text-align: center;
     font-style: italic;
@@ -187,12 +188,53 @@ body {
     justify-content:center;
 }
 
+.order-head {
+    color: #DE6E49;
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px;
+}
+
 .store-img {
-    width: 350px;
+    width: 450px;
     height: 600px;
 }
 
 
+
+.store-form {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 50px;
+}
+
+.first-last {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    margin: 8px 0px;    
+}
+
+
+
+.radio-fieldset {
+    border: none;
+    display: flex;
+
+}
+
+.checkbox-input {
+    background-image: url(/level-2/checkmark.svg);
+}
 
 /**
  * Add your custom styles below
