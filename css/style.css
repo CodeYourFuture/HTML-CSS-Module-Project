@@ -211,8 +211,66 @@ footer {
 
 /* store */
 
+.store_header{
+    color: rgba (196, 196, 196, 0.1);
+}
 
 .store_order {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.store-form{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+
+.storehdr{
+    color: #DE6E49;
+    font-weight: 500;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[name=address], input[name=address2],
+select {
+    width: 100%;
+}
+
+input[name=pcode]{
+    width: 40%;
+}
+
+input[type=radio], input[type=checkbox] {
+    accent-color: #E0633A;
+}
+
+button.order{
+    color: white;
+    border: none;
+    font-weight: 200;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.storeimg{
+    max-width: 100%;
+    height: auto;
 }
