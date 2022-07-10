@@ -46,7 +46,7 @@ body {
   align-items: center;
   display: flex;
 }
-main,
+
 h1 {
   text-align: center;
 }
@@ -91,6 +91,7 @@ h3 {
   font-weight: lighter;
   font-size: 2rem;
   color: rgb(80, 78, 78);
+  text-align: center;
 }
 
 .contact {
@@ -125,4 +126,20 @@ footer {
 
 a:hover {
   color: rgba(255, 119, 0, 0.825);
+}
+
+.form-container {
+  padding-left: 75px;
+}
+
+.form-container h1 {
+  color: rgba(255, 89, 0, 0.825);
+  margin-top: 5rem;
+  width: 500px;
+  margin-left: 5rem;
+  margin-right: 35rem;
+}
+
+.main-section img {
+  margin-right: 2rem;
 }
