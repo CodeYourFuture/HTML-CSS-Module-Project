@@ -93,13 +93,14 @@ button {
 .column {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 
 #sub {
   padding: 25px;
   margin-top: 20px;
   font-size: 30px;
-  font-weight: 100px;
+  font-weight: 300;
 }
 
 /* Social Media Icons */
@@ -139,3 +140,50 @@ footer {
   color: black;
   font-weight: 500;
 }
+
+/* Hero Container */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero_container {
+  margin-bottom: 80px;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  flex: 30%;
+  }
+
+.flex-item-right {
+  background-color: #e39573;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
+  align-items: center;
+
+}
+
+.hero_text {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.hero_button {
+  font-size: 1rem;
+  background-color: #c05326;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+
+</head>
+<body>
+
+<!-- Navigation and Logo-->
+
+  
+    <header class="header">
+      <img class="logo" src="img/karma-logo.svg" alt="karma logo" />
+      <nav class="nav_bar">
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link"><strong>Meet Karma</strong></a>
+          </li>
+          <li><a class="nav-link">How it Works</a></li>
+          <li><a class="nav-link">Store</a></li>
+          <li><a class="nav-link">Blog</a></li>
+          <li><a class="nav-link">Help</a></li>
+          <li><a class="nav-link">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+<!-- main consists of the container carrying the form and the image by the side -->
+
+    <div class="main_section">
+        <!-- this container is for the form contents, and the image is added just at the close of the form tag -->
+        <form class="form">
+            <h1 class="main_title">Order your Karma wifi<br>device today!</h1>
+            <div class="firstname_lastname">
+                <div class="firstname">
+                    <label for="firstname">First name *</label><br>
+                    <input type="text" id="firstname" name="firstname" maxlength="20" required>
+                </div>
+                
+                
+                <div class="lastname">
+                    <label for="lastname">Last name *</label><br>
+                    <input type="text" id="lastname" name="lastname" maxlength="20" required>
+                </div>
+            </div>
+            <div class="first_address">
+                <label for="first_address">Address *</label><br>
+                <input type="text" id="first_address" name="first_address" maxlength="70"  required>
+            </div>
+            
+            <div class="second_address">
+                <label for="second_address">Address 2</label><br>
+                <input type="text" id="second_address" name="second_address" maxlength="70">
+            </div>
+            <div class="city-postcode">
+                <div class="city">
+                    <label for="city">City *</label><br>
+                    <select id="city" name="city" required>
+                        <option value="select your city" selected><em>select your city..</em></option>
+                        <option value="birmingham" name="birmingham">Birmingham</option>
+                        <option value="bath" name="bath">Bath</option>
+                        <option value="brighton" name="brighton">Brighton</option>
+                        <option value="bradford" name="bradford">Bradford</option>
+                        <option value="coventry" name="coventry">Coventry</option>
+                        <option value="leeds" name="leeds">Leeds</option>
+                        <option value="liverpool" name="liverpool">Liverpool</option>
+                        <option value="manchester" name="manchester">Manchester</option>
+                        <option value="nottingham" name="nottingham">Nottingham</option>
+                        <option value="oxford" name="oxford">Oxford</option>
+                        <option value="portsmouth" name="portsmouth">Portsmouth</option>
+                        <option value="plymouth" name="plymouth">Plymouth</option>
+                        <option value="peterborough" name="peterborough">Peterborough</option>
+                        <option value="preston" name="preston">Preston</option>
+                        <option value="sheffield" name="sheffield">Sheffield</option>
+                        <option value="worcester" name="worcester">Worcester</option>
+                    </select>
+                </div>
+                
+                <div class="postcode">
+                    <label for="postcode">Postcode *</label><br>
+                    <input type="text" id="postcode" name="postcode" maxlength="8" required>
+                </div>
+            </div>
+
+                <!-- <fieldset> -->
+                <h3>Select a colour</h3>
+                <div class="radio">
+                    <div class="karma_orange">
+                        <input type="radio" id="karma-orange" name="radio_button" value="karma-orange" checked>
+                        <label for="karma-orange">Karma orange</label>
+                     
+                    </div>
+                    <div class="space_grey">
+                        <input type="radio" id="space-grey" name="radio_button" value="space-grey">
+                        <label for="space-grey">Space Grey</label>
+                        
+                    </div>
+                     </div>
+                
+                <!-- </fieldset> -->   
+
+            
+            <div class="terms_conditions">
+                <input type="checkbox" id="terms_conditions" name="terms_conditions" checked >
+                <label for="terms_conditions">By placing your order you agree to Karma's <a href="" class="link">Terms and<br>Conditions</a>. *
+                </label>
+            </div>
+
+            
+            <!--Button-->
+            <button class="button">Place my order</button>
+
+        </form>
+
+        <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store image">
+    </div>
+
+
+
+
+    <!--Social Media Icons-->
+    <hr/>
+    <p class="social">Join us on</p>
+    <section class="container_social">
+      <button><img src="img/twitter-icon.svg"class="fa fa-twitter"></img></button>
+      <button><img src="img/facebook-icon.svg" class="fa fa-facebook"></img></button>
+      <button><img src="img/instagram-icon.svg" class="fa fa-instagram"></img></button>
+    </section>
+      
+</main>
+<footer>
+<p>© Karma Mobility, Inc</p>
+</footer>
+
+
+</body>
+</html>
