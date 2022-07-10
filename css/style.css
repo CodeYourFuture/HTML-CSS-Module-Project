@@ -127,7 +127,7 @@ p {
 }
 
 .things {
-    width: 150px;
+    width: 210px;
     height: 200px;
     background-color: white;
     margin: 4%;
@@ -144,6 +144,79 @@ p {
 
 }
 
+.block {
+
+    display: flex;
+    margin-top: 10px;
+    margin-right: 0px;
+    
+}
+
+.feature {
+    height: 470px;
+    margin-left: 0.9px;
+    width: 850px;
+}
+
+
+.article2 {
+    height: 450px;
+    width: 1035px;
+    padding: 9px;
+    border: solid rgb(254, 254, 255); 
+    background-color: rgba(224, 99, 58, 0.1);
+   
+}
+
+.article2 p {
+    font-style: italic;
+    font-family: 'Roboto';
+    margin-left: 0px;
+    margin-right: 0px;
+
+    Font size: 45px;
+    Line height: 49px;
+    fill: solid;
+    font-size: 42px;
+    
+}
+
+.today-btn{
+    height: 5%;
+    margin-left: 34%;
+    margin-bottom: 20%;
+
+}
+
+
+.get-today{
+    color: white;
+    text-align: ;
+}
+
+.get {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #ff6600;
+    border-radius: 6px;
+    font-size: 29px;
+    padding: 0.5%;
+    position: absolute;
+    
+    
+}
+
+
+    
+
+    ol a {
+        text-decoration: none;
+        color: rgb(253, 251, 251);
+       text-align: center;
+    }
+
+
+
 .f-footer {
     width: 60%;
     height: 100%;
@@ -155,4 +228,5 @@ p {
 .icon {
 -ms-flex-item-align: ;
 font-size: 25px;
+text-align: center;
 }
