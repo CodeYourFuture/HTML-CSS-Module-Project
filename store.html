@@ -80,15 +80,19 @@
                     </div>
                     <fieldset>
                         <legend>Select a colour</legend>
-                        <input id="orange" type="radio" name="colour" value="orange" checked="checked" />
-                        <label for="orange">Karma Orange</label>
+                        <div class="radio-btns">
+                            <input id="orange" type="radio" name="colour" value="orange" class="radio-btn" checked="checked" />
+                            <label class="radio-label" for="orange">Karma Orange</label>
 
-                        <input id="grey" type="radio" name="colour" value="grey" />
-                        <label for="grey">Space Grey</label>
+                            <input id="grey" type="radio" name="colour" value="grey" class="radio-btn" />
+                            <label for="grey">Space Grey</label>
+                        </div>
                     </fieldset>
                     <div>
-                        <input id="agreement" type="checkbox" name="agreement" />
-                        <label for="agreement">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
+                        <label class="checkbox-label">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *
+                            <input id="agreement" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>                    
                     </div> 
                     <div>
                         <button class="btn-order">Place my order</button>
