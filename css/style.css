@@ -168,7 +168,7 @@ header {
     /* background-position: bottom; */
 }
 
-.order-now p {
+.order-slogan {
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 400;
@@ -179,17 +179,19 @@ header {
     width: 548px;
 }
 
-/* blockquote {
-  quotes: '"' '"' "'" "'";
-  font-size: 56px;
-  color: #E0633A;
-}
-blockquote::before {
+blockquote .order-slogan::before {
   content: open-quote;
+  color: red;
 }
-blockquote::after {
+blockquote .order-slogan::after {
   content: close-quote;
-} */
+  color: red;
+  
+}
+.order-now blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
 
 
 /* section form */
