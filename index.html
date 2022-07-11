@@ -1,19 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
 
-</body>
+    <header class="header">
+      <img src="img/karma-logo.svg" alt="Karma logo" width="40" height="40" />
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a id="onlink" class="nav-link" href="index.html">Meet Karma</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
+          <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main">
+        <div class="image">
+          <img src="./img/first-background.jpg" alt="" />
+        </div>
+        <div class="overlay">
+          <div class="text">
+            <h1>Introducing Karma</h1>
+            <h3>Bring WiFi With you, everywhere you go</h3>
+            <button class="button">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="commercial-header">
+        <h2>Everyone needs a little Karma</h2>
+      </div>
+
+      <section class="commercial">
+        <article class="article">
+          <a href="#"><img src="img/icon-devices.svg" alt="" /></a>
+
+          <p>Internet for all devices</p>
+        </article>
+        <article class="article">
+          <a href="#"><img src="img/icon-coffee.svg" alt="" /></a>
+
+          <p>Boost your productivity</p>
+        </article>
+        <article class="article">
+          <a href="#"><img src="img/icon-refill.svg" alt="" /></a>
+
+          <p>Pay as You go</p>
+        </article>
+      </section>
+      <div class="about-container">
+        <img src="./level-2/homepage-feature.png" alt="">
+        <div class="about">
+          <P>"Wherever I am, I just don't worry about my connection anymore!"</P>
+          <button><a href="store.html">Get Karma today</a> </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <hr />
+
+      <div class="footer-p">
+        <p>Join us on</p>
+      </div>
+
+      <div class="icons-wrapper">
+        <div class="icons">
+          <a href="https://twitter.com/?lang=en"
+            ><img
+              src="img/twitter-icon.svg"
+              alt="twitter"
+              width="25pt"
+              height="25pt"
+          /></a>
+        </div>
+        <div class="icons">
+          <a href="https://en-gb.facebook.com/"><img
+              src="img/facebook-icon.svg"
+              alt="facebook"
+              width="25pt"
+              height="25pt"/></a>
+        </div>
+        <div class="icons">
+          <a href="https://www.instagram.com/"><img
+              src="img/instagram-icon.svg"
+              alt="instagram"
+              width="25pt"
+              height="25"/></a>
+        </div>
+        <p style="opacity: 0.4">&copy;Karma Mobile.Inc</p>
+      </div>
+    </footer>
+  </body>
 </html>
