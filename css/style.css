@@ -6,11 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
    
 }
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    font-size: 4rem;
-}
+
 /* header section----------------------------------------- */
 li, a{
     color: gray; 
@@ -29,6 +25,7 @@ svg{
     height: 50px; 
     width: 50px;
     cursor: pointer;
+    padding-left: 0;
     
    
 }
@@ -52,6 +49,7 @@ svg{
     color: #FF5F00;
 }
 
+
 /* Introduction section----------------------------------------------------- */
 
 .intro{
@@ -68,6 +66,11 @@ svg{
    
 }
 
+.intro h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 4rem;
+}
 .intro p{
     font-weight: lighter;
     font-size: 2.3rem;
@@ -81,4 +84,66 @@ button{
     background-color: #FF5F00;
     margin: 20px;
     
+}
+
+/* Features section----------------------------------------------------------- */
+
+.features-title{
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
+   
+}
+
+.items-div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+   
+}
+
+svg{
+    height: 100px;
+    width: 100px;
+    margin: 0px 100px;
+}
+
+.features-items > p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* footer------------------- */
+footer{
+    margin-bottom: 6rem;
+}
+
+hr{
+    width: 80%;
+}
+
+footer > p{
+    text-align: center;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    height: 25px;
+    width: 25px;
+    align-items: center;
+    padding: 10px 20px ;
+    color: #1F4690;
+}
+
+.copy{
+    font-weight: lighter;
 }
