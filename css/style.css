@@ -189,9 +189,11 @@ a{
     width: 48%;
 }
 
+.store form{
+    padding: 60px;
+}
 
-
-.store-form h2{
+.store h2{
     font-family: Roboto;
     font-style:normal;
     font-weight: 300;
@@ -206,27 +208,22 @@ footer{
     color:#dcdcdc;
 }
 
-.store-form{
-    justify-content: center;
-    width: 48%;
-    padding: 60px;
+
+
+.firstname{
+    float:left;
+    width: 49%;
 }
 
-
-
-.store-form p{
-text-align: left;
+.citypostcode{
+    display: flex;
+    flex-direction: row;
 }
 
-.city-postcode{
-display:flex;
-flex-direction: row;
-padding:25px;
-justify-content: space-evenly;
+.thecity{
+    width: 49%;
 }
 
-
-
-label, input{
-    display:flex:blockflex-direction: column;
+.addresstext{
+    width: 100%;
 }

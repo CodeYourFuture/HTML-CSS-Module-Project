@@ -25,36 +25,37 @@
             <a href="">Meet Karma</a>
         </nav>
     </header>
-    <section class="store">
-    
-    <form class="store-form" action="post">
+    <section class="store" >
+    <form  action="post">
         <h2>Order your Karma wifi device today!</h2>
-        <div class="flname"><label for="first-name" required>First name *</label><br>
-        <input type="text" id="first-name" name="first-name"><br>
-        <label for="last-name">Last name *</label><br>
-        <input type="text" id="last-name" required name="last-name"><br></div>
-     
-        <label for="address">Address *</label><br>
-        <input type="text" id="address" required name="address"><br>
-        <label for="address2">Address 2</label><br>
-        <input type="text" id="address2" name="address2"><br>
-        <div class="city-postcode"><label for="city">City *</label><br>
+       <div class="firstname"><label for="first-name" required>First name *</label><br>
+    <input type="text" id="first-name" name="first-name"><br></div>
+       <div class="lastname"><label for="last-name">Last name *</label><br>
+    <input type="text" id="last-name" required name="last-name"><br></div>
+       <div class="theaddress"><label for="address">Address *</label><br>
+    <input type="text" id="address" required name="address-text"><br></div>
+       <div class="theaddress2"><label for="address2">Address 2</label><br>
+    <input type="text" id="address2" name="address2"><br></div>
+       <div class="citypostcode"><div class="thecity"><label for="city">City *</label><br>
         <select id="city" name="city">
             <option value="placeholder" selected>Select your city</option>
             <option value="birmingham">Birmingham</option>
             <option value="london">London</option>
             <option value="bristol">Bristol</option>
         </select>
-        <label for="postcode">Postcode *</label><br>
-        <input type="text" id="postcode" required name="postcode"><br></div>
-      <fieldset><p>Select a colour</p><input type="radio" id="karmaorange" name="color" value="karmaorange">
+    </div>
+    <div class="thepostcode"><label for="postcode">Postcode *</label><br>
+        <input type="text" id="postcode" required name="postcode"><br>
+    </div></div>
+       <div class="thecolor"><p>Select a colour</p><input type="radio" id="karmaorange" name="color" value="karmaorange">
     <label for="karmaorange">Karma orange</label><br>
     <input type="radio" id="spacegrey" name="color" value="spacegrey">
-    <label for="spacegrey">Space Grey</label><br></fieldset>
+    <label for="spacegrey">Space Grey</label><br></div>
+    <div class="thecheckbox"><input type="checkbox" id="terms" name="terms" value="terms" required>
+    <label for="terms"> By placing your order you agree to Karma's Terms and Conditions *</label><br></div>
     
      
-        <input type="checkbox" id="terms" name="terms" value="terms" required>
-        <label for="terms"> By placing your order you agree to Karma's Terms and Conditions *</label><br>
+        
         <button input type="submit" value="submit">Place my order</button>
     </form>
     <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="woman sat at computer working">
