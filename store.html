@@ -38,8 +38,8 @@
         <input type="text" id="address" required name="address"><br>
         <label for="address2">Address 2</label><br>
         <input type="text" id="address2" name="address2"><br>
-        <div class="city-postcode"><label for="city">City *</label>
-        <select id="project" name="project">
+        <div class="city-postcode"><label for="city">City *</label><br>
+        <select id="city" name="city">
             <option value="placeholder" selected>Select your city</option>
             <option value="birmingham">Birmingham</option>
             <option value="london">London</option>
@@ -47,12 +47,12 @@
         </select>
         <label for="postcode">Postcode *</label><br>
         <input type="text" id="postcode" required name="postcode"><br></div>
-      
-    <p>Select a colour</p>
-        <input type="radio" id="karmaorange" name="color" value="karmaorange">
-        <label for="karmaorange">Karma orange</label><br>
-        <input type="radio" id="spacegrey" name="color" value="spacegrey">
-        <label for="spacegrey">Space Grey</label><br>
+      <fieldset><p>Select a colour</p><input type="radio" id="karmaorange" name="color" value="karmaorange">
+    <label for="karmaorange">Karma orange</label><br>
+    <input type="radio" id="spacegrey" name="color" value="spacegrey">
+    <label for="spacegrey">Space Grey</label><br></fieldset>
+    
+     
         <input type="checkbox" id="terms" name="terms" value="terms" required>
         <label for="terms"> By placing your order you agree to Karma's Terms and Conditions *</label><br>
         <button input type="submit" value="submit">Place my order</button>

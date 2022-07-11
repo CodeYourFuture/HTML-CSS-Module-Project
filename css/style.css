@@ -209,13 +209,24 @@ footer{
 .store-form{
     justify-content: center;
     width: 48%;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top:60px;
-
-
+    padding: 60px;
 }
+
+
 
 .store-form p{
 text-align: left;
+}
+
+.city-postcode{
+display:flex;
+flex-direction: row;
+padding:25px;
+justify-content: space-evenly;
+}
+
+
+
+label, input{
+    display:flex:blockflex-direction: column;
 }
