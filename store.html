@@ -32,37 +32,43 @@
     </div>
   </header>
 
-  <main>
+  <main class="container">
       
     <section class="form-container">
-      <h1>Order your Karma wifi device today!</h1>
+      <p class="title">Order your Karma wifi device today!</p>
 
       <form class="form">
         <fieldset class="form-karma">
-          <div class="FirstName">
+
+ <div class="row">
+          <div class="column">
             <label for="first-name" class="field">Fist Name*</label>
             <input type="text" name="first-name" required />
           </div>
 
-          <div class="LastName">
-            <label for="last-name" class="field">Last name</label>
+          <div class="column">
+            <label for="last-name" class="field">Last name *</label>
             <input type="text" name="last-name" required />
           </div>
+          </div>
+</div>
 
-          <div class="HomeAddress">
+
+          <div class="column">
             <label for="home-address" class="field">Address *</label>
             <input type="home-address" name="home-address" required />
           </div>
 
-          <div class="HomeAddress">
+          <div class="column">
             <label for="home-address" class="field">Address 2</label>
             <input type="home-address" name="home-address" required />
           </div>
 
-          <div class="city">
+          <div class="row">
+          <div class="column">
             <label for="city" class="field">City *</label>
             <select name="city" class="city" required>
-              <option disabled selected hidden>Select your city</option>
+              <option disabled selected hidden>Select your city...</option>
 
               <option value="Birmingham">Birmingham</option>
               <option value="London">London</option>
@@ -72,21 +78,29 @@
             </select>
           </div>
 
-          <div class="postcode">
+          <div class="column">
             <label for="postcode" class="field">Postcode</label>
-            <input type="postcode" name="postcode" required />
+            <input type="postcode" name="postcode" class="postcode" required />
           </div>
+</div>
+
 
           <div class="KarmaOrange">
             <label for="color" class="field">Select a color</label>
-            <input type="radio" name="color" required />
+            
+            <div class="radio-group">
+<div class="row">
+            
+            <input type="radio" name="karma-color" required />
             <label for="radio">Karma orange</label>
           </div>
 
-          <div class="SpaceGrey">
+          <div class="row">
             <input type="radio" name="karma-color" />
             <label for="radio">Space grey</label>
           </div>
+</div>
+</div>
 
           <div class="term-conditions">
             <input
@@ -97,7 +111,7 @@
             />
             <span for="checkbox"
               >By placing your order you agree to Karma's
-              <a href="#">Terms and Conditions</a>*</span
+              <a href="#" class="terms-link">Terms and Conditions</a>*</span
             >
           </div>
           <div class="button">
@@ -108,9 +122,10 @@
       
     </section>
 
- 
- <img class="img" src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store-image" width="400" height="600"/>
- 
+ <div class="store-image">
+ <img class="store-image" src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store-image" width="550" height="920"/>
+ </div>
+
 </main>
 
 
@@ -151,7 +166,7 @@
       </section>
     
     <footer>
- © Karma Mobility Inc. 
+ <p>© Karma Mobility Inc. </p>
     </footer>
 
 </html>

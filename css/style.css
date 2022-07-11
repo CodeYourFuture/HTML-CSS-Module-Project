@@ -16,10 +16,9 @@ body {
  */
 
 .logo {
-  width: 20px;
-  height: 20px;
-  margin-left: 5rem;
-  margin-top: 1rem;
+  width: 30px;
+  height: 30px;
+  margin-left: 29rem;
 }
 
 .navbar {
@@ -28,7 +27,8 @@ body {
   justify-content: space-between;
   align-items: center;
   float: right;
-  margin-right: 5rem;
+  margin-right: 30rem;
+  margin-top: 1rem;
 }
 
 .nav-item {
@@ -39,6 +39,11 @@ body {
   display: inline-block;
   font-size: 15px;
   margin-left: 3rem;
+}
+
+.page-header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 20px;
 }
 
 .header {
@@ -61,14 +66,16 @@ h1 {
   background-size: 100%;
   color: white;
   font-size: 1em;
-  height: 700px;
-  margin-top: 1.5rem;
+  height: 450px;
+  margin-right: 27rem;
+  margin-left: 27rem;
+  margin-top: 2rem;
 }
 
 h1 {
   font-weight: lighter;
   font-size: 2.5rem;
-  margin-top: 18rem;
+  margin-top: 8rem;
 }
 h2 {
   font-weight: lighter;
@@ -99,6 +106,8 @@ h3 {
   justify-content: center;
   flex-direction: row;
   justify-content: space-around;
+  margin-right: 30rem;
+  margin-left: 30rem;
 }
 
 h4 {
@@ -128,18 +137,140 @@ a:hover {
   color: rgba(255, 119, 0, 0.825);
 }
 
-.form-container {
-  padding-left: 75px;
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
-.form-container h1 {
-  color: rgba(255, 89, 0, 0.825);
-  margin-top: 5rem;
-  width: 500px;
-  margin-left: 5rem;
-  margin-right: 35rem;
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-section img {
-  margin-right: 2rem;
+.form {
+  color: rgb(82, 82, 82);
+  font-size: 15px;
+}
+
+.title {
+  color: rgb(220, 91, 45);
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  max-width: 450px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  margin-left: 1rem;
+}
+
+.form-karma {
+  border: none;
+}
+
+input[type="text"],
+[type="home-address"],
+[type="postcode"],
+select {
+  padding: 10px 15px;
+  margin: 1rem 0;
+}
+
+.city {
+  width: 280px;
+}
+
+.postcode {
+  width: 10px;
+  min-width: 140px;
+}
+
+.field {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.KarmaOrange {
+  padding-top: 2rem;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  gap: 80px;
+}
+
+input {
+  accent-color: rgb(220, 91, 45);
+  margin-right: 1rem;
+}
+
+.term-conditions {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+.term-conditions span {
+  margin-left: 10px;
+  max-width: 460px;
+}
+
+.button {
+  font-size: 1rem;
+  background-color: rgb(220, 91, 45);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  width: 10rem;
+}
+
+.terms-link {
+  color: rgb(220, 91, 45);
+}
+
+.get-karma-today {
+  display: flex;
+  flex-direction: row;
+  margin-left: 430px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.get-karma {
+  width: 1300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252, 236, 252);
+  margin-right: 430px;
+}
+
+.WhereverIam {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.GetKarma_button {
+  font-size: 1rem;
+  background-color: rgb(220, 91, 45);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  width: 10rem;
 }
