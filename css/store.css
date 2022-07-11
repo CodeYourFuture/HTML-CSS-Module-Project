@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+.colour-radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(238, 231, 231);
+  }
+
+  .navigation-menu{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+padding: 16px 0;
+      
+ }
+.nav-header{
+        color: grey;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 0 1em;
+        margin-right: 10px;
+        transition: opacity 0.25s;
+ }
+ .nav-header:hover {
+        color: orangered;
+      }
