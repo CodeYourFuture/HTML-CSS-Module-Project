@@ -178,23 +178,24 @@ a{
 
 }
 
-.main-container{
-    display:flex;
-    columns: 600px 2;
-    column-width: 600px;
-   
+.store{
+    display: flex;
+    flex-direction: row;
+    
 }
 
-.main-container img{
-    display:flex;
-    height: 800px;   
+.store img{
+    height:auto;
+    width: 48%;
 }
-.main-container h2{
+
+
+
+.store-form h2{
     font-family: Roboto;
     font-style:normal;
     font-weight: 300;
     font-size: 35px;
-
     color:#E0633A;
 }
 
@@ -205,9 +206,16 @@ footer{
     color:#dcdcdc;
 }
 
-.form{
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 60px;
+.store-form{
+    justify-content: center;
+    width: 48%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top:60px;
 
+
+}
+
+.store-form p{
+text-align: left;
 }
