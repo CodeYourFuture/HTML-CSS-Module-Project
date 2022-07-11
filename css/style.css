@@ -1,5 +1,3 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #000;
@@ -8,24 +6,14 @@ body {
 }
 
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
 /* header */
 
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 10vh;
+    background-color: rgba(196, 196, 196, 0.1);
 }
 
 .header-logo {
@@ -42,24 +30,24 @@ body {
     margin-right: 8vw;
 }
 
+.navigation-list li:first-child a {
+  color: #000;
+}
+
 .navigation-item {
     padding: 0 0.8rem;
 }
 
-.karma-link,
+/* .karma-link, */
 .navigation-link {
     color: rgb(121, 121, 121);
     font-weight: 400;
     text-decoration: none;
 }
 
-.karma-link {
-    color: #000;
-}
-
-.karma-link:hover,
+.navigation-list a:first-child:hover,
 .navigation-link:hover {
-    color: rgb(200, 50, 50);
+    color: #DE6E49;
 }
 
 .intro {
@@ -94,15 +82,17 @@ body {
 }
 
 
-/* button */
+/* buttons */
 
-.btn-more {
+.btn-order,
+.btn-intro,
+.btn-store {
     padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 3px;
-    background-color: rgb(205, 100, 50);
+    border-radius: 4px;
+    background-color: #E0633A;
     color: #fff;
-    margin: 1.7rem;
+    margin: 1.7rem 0;
 }
 
 
@@ -138,23 +128,222 @@ body {
     justify-content: center;
 }
 
-.karma_icons {
+.karma-icon {
     height: 7.8rem;
     width: auto;
     margin: 1rem 5rem;
 }
 
+/* section order styles */
+
+.order-content {
+    display: flex;
+    flex-direction: row;
+    height: 439px;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+    /* margin-bottom: 2.8rem; */
+}
+
+.order-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsla(15, 73%, 55%, 0.1);
+    width: 841px;
+    height: 439px;
+}
+
+.order-imgbox {
+    display: flex;
+    height: 439px;
+    width: 599px;
+    background-image: url("../img/homepage-feature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+    /* background-position: bottom; */
+}
+
+.order-now p {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 49px;
+    color: #434242;
+    margin: 0;
+    width: 548px;
+}
+
+/* blockquote {
+  quotes: '"' '"' "'" "'";
+  font-size: 56px;
+  color: #E0633A;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+} */
+
+
+/* section form */
+
+/* form  { display: table;      }
+label { display: table-cell; }
+input { display: table-cell; } */
+
+.form-section {
+    display: flex;
+    height: 1235px;
+    width: 100vw;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+    /* height: 1235px;
+    width: 100vw; */
+    /* width: 1318px; */
+}
+
+.form-content {
+    display: flex;
+    /* height: 1235px; */
+    width: 50vw;
+    min-width: 505px;
+    /* align-items: center; */
+    justify-content: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    color: #666666;
+    line-height: 25px;
+}
+
+.form-content a {
+    color: #DE6E49
+}
+
+.form-content h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #DE6E49;
+    /* margin-top: 60px; */
+}
+
+.form-imgbox {
+    display: flex;
+    /* height: 1235px; */
+    width: 50vw;
+    background-image: url("../img/store-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-order {
+    display: flex;
+    flex-direction: column;
+    width: 501px;
+    height: 849px;
+    row-gap: 35px;
+}
+
+
+.form-fields-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field-firstname,
+.form-field-lastname {
+  width: 235px;
+}
+
+.form-fields-city-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-field-city {
+  width: 307px;
+}
+
+.form-field-post {
+  width: 165px;
+}
+
+.form-order fieldset {
+    border: 0;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#first-name,
+#last-name,
+#address,
+#address2,
+#city,
+#postcode {
+  height: 53px;
+  border: 2px solid #666666;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.form-order input[type = radio],
+.form-order input[type = checkbox] {
+    accent-color: #DE6E49;
+    margin: 15px 5px 15px 0;
+    width: 25px;
+    border-radius: 25px;
+    /* border: 2px solid #666666; */
+}
+
+#grey {
+  margin-left: 15px;
+}
+
+#first-name,
+#last-name {
+    width: 235px;
+}
+
+#address,
+#address2 {
+    width: 499px;
+}
+
+#city {
+  width: 307px;
+  height: 58px
+}
+
+#postcode {
+    width: 165px;
+}
 
 /* footer */
 
 .footer {
     display: flex;
-    height: 30vh;
+    height: 250px;
+    /* height: 354px; */
 }
 
 .footer-content {
     position: relative;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -181,8 +370,9 @@ body {
 }
 
 .line {
-    border-top: 1px solid rgb(232, 232, 232);
-    width: 65vw;
+    border: 1px solid rgb(232, 232, 232);
+    width: 1200px;
+    /* margin: 0; */
 }
 
 .copyright {
