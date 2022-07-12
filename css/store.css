@@ -7,6 +7,12 @@
     cursor: pointer;
     margin-right: 10px;
 }
+.grey-radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
 .header {
     display: flex;
     align-items: center;
@@ -36,3 +42,22 @@ padding: 16px 0;
  .nav-header:hover {
         color: orangered;
       }
+/*form section*/
+.form-container {
+margin: 0px 10%;
+display: flex;
+justify-content: space-between;
+    }
+
+.title {
+    position: absolute;
+    color: orangered;
+    align-self: flex-start;
+    font-size: 27px;
+
+}
+form {
+height: 700px;
+margin-top: 15%;
+ }
+
