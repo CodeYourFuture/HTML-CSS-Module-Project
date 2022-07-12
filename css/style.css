@@ -50,6 +50,7 @@
 }
 
 
+
 .main{
     background-image: url(/img/first-background.jpg);
     height:500px;
@@ -179,17 +180,20 @@ a{
 }
 
 .store{
-    display: flex;
-    flex-direction: row;
-  justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 800px;
+    align-items: center;
 
     
 }
 
 .store img{
-    height:auto;
-    width: 48%;
+    height:800px;
+    width: 100%;
 }
+
+
 
 .store form{
     padding: 80px;
