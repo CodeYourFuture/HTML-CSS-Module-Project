@@ -1,10 +1,8 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+ font-family: 'Roboto', sans-serif;
+ -webkit-font-smoothing: antialiased;
 
 /**
  * Add your custom styles below
@@ -16,4 +14,331 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ body {
+    font-size: 24px;
+        text-align: center;
+ }
 
+ /* navbar */
+   
+ .small-icon{
+    width:20px;
+ padding-top: 10px;
+ margin: none;
+ border: none;
+ }
+
+.navbar{
+    overflow:hidden;
+    
+    margin-right: 100px;
+    padding-left: 200px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+   
+}
+ 
+.navbar a{
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    color: grey;
+}
+
+.navbar a:hover{
+    color:#E0633A;
+}
+
+/* home page main image section */
+
+.main{
+    background-image: url(/img/first-background.jpg);
+    height:500px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-text{
+color: white;
+text-align:center;
+padding-top: 70px;
+
+}
+
+/* home page icons ad */
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 img{
+    height:100px;
+    width: 120px;
+    font-size: 14px;
+}
+
+.icon{
+    font-size: 18px;
+    Padding-right: 50px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.karma{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #E0633A;
+    border: 0;
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+   margin-top: 30px;
+   font-size: 16px;
+   color:white
+
+}
+
+hr{
+    margin: 50px 80px 30px 80px;
+    color: #dcdcdc;
+}
+
+/* home page slogan */
+
+.container4 {
+    display: flex;
+    align-items: center;
+
+    background-color: #fae5df;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.container4 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    ;
+}
+
+.container4 img {
+    width: 40%;
+    height: auto;
+}
+
+.container4 p {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 200;
+
+}
+
+/* footer section */
+
+p{
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+
+.container3 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 600px;
+    border: 1px solid #dcdcdc;
+    margin: 5px;
+
+
+}
+
+.container3 img{
+    height: 20px;
+    width:20px;
+    
+   
+}
+
+/* store page main section */
+
+.store{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 800px;
+    align-items: center;
+
+    
+}
+
+.store img{
+    width: 100%;
+    height: 800px;
+    
+}
+
+
+.store h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #E0633A;
+}
+
+/* form */
+.store form{
+    padding: 80px;
+   
+ 
+}
+
+.form input{
+    border-radius: 4px;
+}
+
+.citypostcode{
+    display: flex;
+    flex-direction: row;
+   margin-bottom: 40px;
+    
+}
+
+.firstnamelastname {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#city{
+    padding-right: 100px;
+    height: 37px;
+}
+
+#address{
+    padding-right: 230px;
+    height: 30px;
+}
+
+#address2{
+    padding-right: 230px;
+    margin-right: 20px;
+    height: 30px;
+}
+
+#first-name{
+    height: 30px;
+    padding-right: 25px;
+}
+
+#last-name{
+    height:30px;
+    padding-right: 25px;
+   
+}
+
+#postcode{
+height: 30px;
+    width: 155px;
+}
+
+.thepostcode{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.thecity{
+    padding-top: 20px;
+}
+
+.theaddress2{
+    padding-top: 20px;
+}
+
+.theaddress{
+    padding-top: 20px;
+}
+
+.lastname{
+    margin-left: 10px;
+}
+
+/* buttons and check boxes */
+
+.thecolor{
+    padding-top:40px;
+    display:flex;
+    flex-direction: row;
+}
+
+.thecolor p{
+    justify-content: left;
+    text-align: left;
+}
+
+.thecheckbox{
+    padding-top:30px;
+}
+
+a{
+    color: #E0633A;
+    text-decoration: underline;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 75px;
+    font-size: 14px;
+    font-weight: 200;
+
+}
+
+.space-grey{
+    padding-left: 55px;
+}
+
+input{
+    accent-color: #E0633A;
+}
+
+h3{
+    font-size: 14px;
+    font-weight:500;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #dcdcdc;
+}
