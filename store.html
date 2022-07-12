@@ -49,15 +49,28 @@
     <div class="thepostcode"><label for="postcode">Postcode *</label><br>
         <input type="text" id="postcode" required name="postcode"><br>
     </div></class>
+    <!--
        <div class="thecolor"><p>Select a colour</p><input type="radio" id="karmaorange" name="color" value="karmaorange">
     <label for="karmaorange">Karma orange</label><br>
     <input checked type="radio" id="spacegrey" name="color" value="spacegrey">
     <label for="spacegrey">Space Grey</label><br></div>
     <div class="thecheckbox"><input type="checkbox" id="terms" name="terms" value="terms" required>
     <label for="terms"> By placing your order you agree to Karma's <a href="blank" target="#">Terms and Conditions</a> *</label><br></div>
-    
-     
-        
+    -->
+     <h3>Select a colour</h3>
+     <div class="radio">
+        <div class="karma-orange">
+            <input type="radio" id="karma-orange" name="radio-button" value="karma-orange" checked>
+           <label for="karma-orange">Karma orange</label>
+        </div> 
+        <div class="space-grey">
+            <input type="radio" id="space-grey" name="radio-button" value="space-grey">
+            <label for="space-grey">Space Grey</label>
+        </div>
+     </div>
+        <input type="checkbox" id="terms" name="terms" value="terms" required>
+        <label for="terms"> By placing your order you agree to Karma's <a href="blank" target="#">Terms and Conditions</a>
+            *</label><br>
         <button input type="submit" value="submit">Place my order</button>
     </form>
     <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="woman sat at computer working">

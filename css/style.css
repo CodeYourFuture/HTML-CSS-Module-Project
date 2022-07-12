@@ -226,7 +226,7 @@ footer{
 .citypostcode{
     display: flex;
     flex-direction: row;
-   
+   margin-bottom: 40px;
     
 }
 
@@ -292,6 +292,8 @@ height: 30px;
 
 .thecolor{
     padding-top:40px;
+    display:flex;
+    flex-direction: row;
 }
 
 .thecolor p{
@@ -308,3 +310,27 @@ a{
     text-decoration: underline;
 }
 
+
+ 
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 75px;
+    font-size: 14px;
+    font-weight: 200;
+
+}
+
+.space-grey{
+    padding-left: 55px;
+}
+
+input{
+    accent-color: #E0633A;
+}
+
+h3{
+    font-size: 14px;
+    font-weight:500;
+}
