@@ -57,15 +57,6 @@ a {
 
 /* First Section */
 
-h1 {
-    font-weight: lighter;
-    font-size: 2.95rem;
-    margin: 0;
-    padding: 0;
-  }
-
-
-
 .first_section {
   display: flex;
   flex-direction: column;
@@ -79,6 +70,12 @@ h1 {
   background-repeat: no-repeat;
 }
 
+h1 {
+  font-weight: lighter;
+  font-size: 2.95rem;
+  margin: 0;
+  padding: 0;
+}
 
 .first_section p {
   letter-spacing: 0.07rem;
@@ -128,18 +125,6 @@ h2 {
 
 /* Third section */
 
-
-.third_section p{
-    font-style: italic;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 49.22px;
-    text-align: center;
-  }
-
-
-
-
 .third_section{
   width: 100%;
   margin-top: 4.5%;
@@ -148,6 +133,13 @@ h2 {
 }
 
 
+.third_section p{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 49.22px;
+  text-align: center;
+}
 
 #paragraph_div{
   width: 80%;
@@ -172,9 +164,6 @@ h2 {
 
 /* Footer */
 
-
-
-
 footer {
   width: 65%;
   border: 2px solid rgb(238, 234, 234);
@@ -189,15 +178,11 @@ footer {
   align-items: center;
 }
 
-
 .footer_imgs_wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-  }
-
-
-
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
 
 .footer_imgs_wrapper div {
   width: 30px;
@@ -223,3 +208,5 @@ footer img {
   color: rgb(201, 189, 189);
   font-size: small;
 }
+
+
