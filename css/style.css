@@ -200,6 +200,7 @@ cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
+   
    .features {
          display: flex;
          flex-direction: column;
@@ -221,6 +222,18 @@ cursor: pointer;
 }
 
  @media only screen and (max-width: 600px) {
+
+      .main-header {
+            width: 96%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+      .nav-item {
+            display: block;
+      }
    
        .icon {
           width: 60%;
@@ -437,7 +450,7 @@ footer {
  }
 
  .fa:hover {
-     opacity: 0.7;
+     opacity: 0.5;
  }
 
  .fa-facebook {
