@@ -212,14 +212,11 @@ footer{
     color:#dcdcdc;
 }
 
-
-
-.firstname{
-    float:left;
-    width: 49%;
-   
-   
+.form input{
+    border-radius: 4px;
 }
+
+
 
 
 .citypostcode{
@@ -229,26 +226,48 @@ footer{
     
 }
 
+.firstnamelastname {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
 #city{
     padding-right: 100px;
+    height: 37px;
 }
 
 #address{
     padding-right: 230px;
+    height: 30px;
 }
 
 #address2{
     padding-right: 230px;
     margin-right: 20px;
+    height: 30px;
+}
+
+#first-name{
+    height: 30px;
+    padding-right: 25px;
+}
+
+#last-name{
+    height:30px;
+    padding-right: 25px;
+   
 }
 
 #postcode{
-
-    width: 100px;
+height: 30px;
+    width: 155px;
 }
 
 .thepostcode{
     padding-top: 20px;
+    padding-left: 10px;
 }
 
 .thecity{
@@ -258,3 +277,30 @@ footer{
 .theaddress2{
     padding-top: 20px;
 }
+
+.theaddress{
+    padding-top: 20px;
+}
+
+.lastname{
+    margin-left: 10px;
+}
+
+.thecolor{
+    padding-top:40px;
+}
+
+.thecolor p{
+    justify-content: left;
+    text-align: left;
+}
+
+.thecheckbox{
+    padding-top:30px;
+}
+
+a{
+    color: #E0633A;
+    text-decoration: underline;
+}
+
