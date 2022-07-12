@@ -43,21 +43,145 @@ padding: 16px 0;
         color: orangered;
       }
 /*form section*/
+.main{
+position: absolute;
+width: 1318px;
+height: 1235px;
+left: 122px;
+top: 98px;
+
+}
 .form-container {
-margin: 0px 10%;
+margin: 0px 5%;
 display: flex;
 justify-content: space-between;
+width: 70%;
+height: 50%;
     }
+
+.image-form{
+position: absolute;
+width: 701px;
+height: 1235px;
+left: 739px;
+top: 98px;
+}
 
 .title {
     position: absolute;
-    color: orangered;
-    align-self: flex-start;
-    font-size: 27px;
+    width: 521px;
+    height: 118px;
+    left: 123px;
+    top: 214px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    
+    color: #DE6E49;
+}
+
+.form {
+    position: absolute;
+    width: 501px;
+    height: 849px;
+    left: 122px;
+    top: 414px;    
+ }
+.first-name {
+    position: absolute;
+    width: 235px;
+    height: 90px;
+    left: 122px;
+    top: 414px;
+}
+.Last-name {
+position: absolute;
+width: 235px;
+height: 90px;
+left: 384px;
+top: 414px;
+}
+
+.first-name input,
+.Last-name input{
+  width: 320px;
+  height: 50px;
+  margin-top: 1rem;
+  border: 3px solid rgb(177, 174, 174);
+  border-radius: 5px;
+}
+
+.Address {
+position: absolute;
+width: 499px;
+height: 90px;
+left: 122px;
+top: 536px;
+}
+.Address input{
+width: 685px;
+height: 53px;
+margin-top: 1rem;
+border: 3px solid rgb(177, 174, 174);
+border-radius: 4px;
+}
+.Address-2{
+position: absolute;
+width: 499px;
+height: 90px;
+left: 122px;
+top: 658px;
+}
+.Address-2 input{
+    width: 685px;
+    height: 53px;
+    margin-top: 1rem;
+    border: 3px solid rgb(177, 174, 174);
+    border-radius: 5px;
+}
+
+.city{
+position: absolute;
+width: 250px;
+height: 90px;
+left: 122px;
+top: 780px;
+}
+.city select {
+width: 405px;
+    height: 50px;
+    margin-top: 1rem;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    color: #666666;
+    border: 3px solid rgb(177, 174, 174);
+    border-radius: 5px;
 
 }
-form {
-height: 700px;
-margin-top: 15%;
- }
+.Postcode{
+position: absolute;
+width: 165px;
+height: 90px;
+left: 456px;
+top: 790px;
+}
+.Postcode input{
+    width: 200px;
+    height: 45px;
+    margin-top: 0.2rem;
+    border: 3px solid rgb(177, 174, 174);
+    border-radius: 5px;
+} 
+.colour-radio {
+position: absolute;
+width: 353px;
+height: 70px;
+left: 122px;
+top: 940px;
+}
 
