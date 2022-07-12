@@ -181,6 +181,8 @@ a{
 .store{
     display: flex;
     flex-direction: row;
+  justify-content: space-between;
+
     
 }
 
@@ -190,14 +192,16 @@ a{
 }
 
 .store form{
-    padding: 60px;
+    padding: 80px;
+   
+ 
 }
 
 .store h2{
     font-family: Roboto;
     font-style:normal;
-    font-weight: 300;
-    font-size: 35px;
+    font-weight: 400;
+    font-size: 40px;
     color:#E0633A;
 }
 
@@ -213,17 +217,44 @@ footer{
 .firstname{
     float:left;
     width: 49%;
+   
+   
 }
+
 
 .citypostcode{
     display: flex;
     flex-direction: row;
+   
+    
+}
+
+#city{
+    padding-right: 100px;
+}
+
+#address{
+    padding-right: 230px;
+}
+
+#address2{
+    padding-right: 230px;
+    margin-right: 20px;
+}
+
+#postcode{
+
+    width: 100px;
+}
+
+.thepostcode{
+    padding-top: 20px;
 }
 
 .thecity{
-    width: 49%;
+    padding-top: 20px;
 }
 
-.addresstext{
-    width: 100%;
+.theaddress2{
+    padding-top: 20px;
 }
