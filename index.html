@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+    <meta charset="UTF-8">
     <title>Karma</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/a6d80728cd.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <img src="img/karma-logo.svg" alt="karma logo" />
-      <nav>
-        <a href="">Meet Karma</a>
-        <a href="">How it Works</a>
-        <a href="/store.html">Store</a>
-        <a href="">Blog</a>
-        <a href="">Help</a>
-        <a href="">Login</a>
-      </nav>
-    </header>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
 
-    <div>
-    <main>
-      <section class="first_section">
-        <h1>Introducing Karma</h1>
-        <p>Bring WiFi with you, everywhere you go</p>
-        <button>Learn More</button>
-      </section>
-    </div>
 
-      <section class="second_section">
-        <h2>Everyone needs a little Karma</h2>
-        <div class="karma_imgs_wrapper">
-          <div class="img_container">
-            <img src="img/icon-devices.svg" alt="icon for devices" />
-            <p>Internet for all devices</p>
-          </div>
-          <div class="img_container">
-            <img src="img/icon-coffee.svg" alt="coffee icon" />
-            <p>Boost your productivity</p>
-          </div>
-          <div class="img_container">
-            <img src="img/icon-refill.svg" alt="refill icon" />
-            <p>Pay as you go</p>
-          </div>
-        </div>
-      </section>
 
-      <section class="third_section">
-        <div>
-          <img src="/level-2/homepage-feature.png" alt="" />
+<body>
+    <nav class="top-navigation">
+        <div class="content">
+            <ul class="links">
+                <li class="active">Meet Karma</li>
+                <li>How it Works</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Login</li>
+            </ul>
+            <img class="logo"  src="img/karma-logo.svg" alt="Logo Image" width="27"/>
         </div>
-        <div>
-          <div id="paragraph_div">
-            <p> <span class="quotes">"</span> Wherever I am, I don't just worry about my connection anymore!<span class="quotes">"</span></p>
-          </div>
-          <button onclick= "location.href='store.html';">Get Karma Today</button>
+    </nav>
+    <section class="introduction">
+        <div class="content">
+            <h1>Introducing Karma</h1>
+            <h3>Bring WiFi with you, everywhere you go.</h3>
+            <div class="buttons">
+                <button class="bigbutton">Learn More</button>
+            </div>
         </div>
-      </section>
-    </main>
-    <div>
-    <footer>
-      <p id="footer_text1">Join us on</p>
-      <div class="footer_imgs_wrapper">
-        <div>
-          <img src="img/twitter-icon.svg" alt="" />
+    </section>
+    <section class="cases">
+        <div class="content">
+            <h2>Everyone needs a little Karma.</h2>
+            <ul class="devices">
+                <li>
+                    <img width="126" height="126" src="img/icon-devices.svg" alt="Internet for all devices image">
+                    <div class="caption">
+                        <h3>Internet for all devices</h3>
+                    </div>
+                </li>
+                <li>
+                    <img width="126" height="126" src="img/icon-coffee.svg" alt="Boost your productivity image">
+                    <div class="caption">
+                        <h3>Boost your productivity</h3>
+                    </div>
+                </li>
+                <li>
+                    <img width="127" height="127" src="img/icon-refill.svg" alt="Pay as You Go image">
+                    <div class="caption">
+                        <h3>Pay as You Go</h3>
+
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div>
-          <img src="img/facebook-icon.svg" alt="" />
+    </section>
+         
+    <footer class="social">
+        <div class="content">
+            
+            <hr>
+            <h5>Join us on</h5>
+            <ul class="icons">
+                <li class="twitter">
+                    <i class="fa fa-twitter"></i>
+                </li>
+                <li class="facebook">
+                    <i class="fa fa-facebook"></i>
+                </li>
+                <li class="instagram">
+                    <i class="fa fa-instagram"></i>
+                </li>
+            </ul>
+            <span class="copy">
+                &copy; Karma Mobility, Inc.
+            </span>
         </div>
-        <div>
-          <img src="img/instagram-icon.svg" alt="" />
-        </div>
-      </div>
-      
-      <p id="footer_text2">
-        <i class="fa-regular fa-copyright"></i>Karma Mobility, Inc
-      </p>
     </footer>
-  </body>
+</body>
 </html>
