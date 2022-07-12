@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/a6d80728cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/karma-logo.svg" alt="karma logo" />
+      <nav>
+        <a href="/index.html">Meet Karma</a>
+        <a href="">How it Works</a>
+        <a href="">Store</a>
+        <a href="">Blog</a>
+        <a href="">Help</a>
+        <a href="">Login</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Order your Karma wifi device today!</h1>
+        <form action="">
+          
+          <div class="name_wrapper">
+            <div class="label_input">
+              <label for="f_name">First name<span>*</span></label>
+              <input type="text" id="f_name" />
+            </div>
+            <div class="label_input">
+              <label for="l_name">Last name<span>*</span></label>
+              <input type="text" id="l_name" />
+            </div>
+            
+          </div>
+          <div class="label_input">
+            <label for="address">Address<span>*</span></label>
+            <input type="text" id="address" />
+          </div>
+
+          <div class="label_input">
+            <label for="address2">Address 2</label>
+            <input type="text" id="address2" />
+          </div>
+
+          <div class="city_postcode">
+            <div class="label_input">
+              <label for="city">City</label>
+              <select name="city" id="city">
+                <option value="-1" selected disabled>Select your city</option>
+                <option value="1">West Midlands</option>
+                <option value="2">Scotland</option>
+                <option value="3">London</option>
+                <option value="4">Northwest</option>
+              </select>
+            </div>
+
+            <div class="label_input">
+              <label for="postcode">Postcode<span>*</span> </label>
+              <input type="text" id="postcode" />
+            </div>
+          </div>
+           
+          <div>
+          <fieldset>
+            <legend>Select a colour</legend>
+        </div>
+             
+             <div>
+            <label class="radio_label">
+              <input type="radio" name="colour" class="radio_input" checked />
+              <div class="radio_radio_orange"></div>
+              Karma Orange
+            </label>
+            </div>
+             
+            <div>
+            <label class="radio_label">
+              <input type="radio" name="colour" class="radio_input" />
+              <div class="radio_radio_grey" id="radio_grey"></div>
+              Space Grey
+            </label>
+          </fieldset>
+           </div>
+
+          <label class="checkbox">
+            
+            <div>
+            <input type="checkbox" name="" class="checkbox_input" checked/>
+            <div class="checkbox_box"></div>
+            <div> By placing your order you agree to Karma's
+              <span> Terms and Conditions</span>. *</div>
+            </div>
+             
+            
+          </label>
+
+          <button>Place my order</button>
+        </form>
+      </section>
+
+      <aside></aside>
+    </main>
+
+    <footer>
+      <p id="footer_text1">Join us on</p>
+      <div class="footer_imgs_wrapper">
+        <div>
+          <img src="img/twitter-icon.svg" alt="" />
+        </div>
+        <div>
+          <img src="img/facebook-icon.svg" alt="" />
+        </div>
+        <div>
+          <img src="img/instagram-icon.svg" alt="" />
+        </div>
+      </div>
+
+      <p id="footer_text2">
+        <i class="fa-regular fa-copyright"></i>Karma Mobility, Inc
+      </p>
+    </footer>
+  </body>
+</html>
