@@ -18,6 +18,8 @@
     font-size: 24px;
         text-align: center;
  }
+
+ /* navbar */
    
  .small-icon{
     width:20px;
@@ -49,7 +51,7 @@
     color:#E0633A;
 }
 
-
+/* home page main image section */
 
 .main{
     background-image: url(/img/first-background.jpg);
@@ -65,6 +67,8 @@ text-align:center;
 padding-top: 70px;
 
 }
+
+/* home page icons ad */
 
 .container2{
     display: flex;
@@ -112,6 +116,45 @@ hr{
     color: #dcdcdc;
 }
 
+/* home page slogan */
+
+.container4 {
+    display: flex;
+    align-items: center;
+
+    background-color: #fae5df;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.container4 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    ;
+}
+
+.container4 img {
+    width: 40%;
+    height: auto;
+}
+
+.container4 p {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 200;
+
+}
+
+/* footer section */
+
 p{
     font-size: 16px;
     text-align: center;
@@ -146,38 +189,7 @@ p{
    
 }
 
-.container4{
-    display:flex;
-    align-items: center;
-        
-    background-color: #fae5df;
-    margin-bottom: 60px;
-    margin-top: 100px;
-}
-
-.container4 button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;}
-
-a{
-    text-decoration: none;;
-}
-
-.container4 img{
-    width:40%;
-    height: auto;
-}
-
-.container4 p{
-   text-align: center;
-   font-size: 30px;
-   padding-left: 100px;
-   padding-right: 100px;
-   font-weight: 200;
-
-}
+/* store page main section */
 
 .store{
     display: grid;
@@ -195,34 +207,24 @@ a{
 }
 
 
+.store h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #E0633A;
+}
 
+/* form */
 .store form{
     padding: 80px;
    
  
 }
 
-.store h2{
-    font-family: Roboto;
-    font-style:normal;
-    font-weight: 400;
-    font-size: 40px;
-    color:#E0633A;
-}
-
-
-footer{
-    text-align: center;
-    font-size: 14px;
-    color:#dcdcdc;
-}
-
 .form input{
     border-radius: 4px;
 }
-
-
-
 
 .citypostcode{
     display: flex;
@@ -291,6 +293,8 @@ height: 30px;
     margin-left: 10px;
 }
 
+/* buttons and check boxes */
+
 .thecolor{
     padding-top:40px;
     display:flex;
@@ -310,9 +314,6 @@ a{
     color: #E0633A;
     text-decoration: underline;
 }
-
-
- 
 
 .radio{
     display: flex;
@@ -334,4 +335,10 @@ input{
 h3{
     font-size: 14px;
     font-weight:500;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #dcdcdc;
 }
