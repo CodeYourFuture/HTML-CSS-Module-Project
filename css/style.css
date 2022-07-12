@@ -6,13 +6,13 @@ body {
 }
 
 
-/* header */
+/* header: */
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 80px;
     background-color: rgba(196, 196, 196, 0.1);
 }
 
@@ -22,7 +22,7 @@ header {
 }
 
 
-/* navigation */
+/* navigation: */
 
 .navigation-list {
     display: flex;
@@ -38,7 +38,6 @@ header {
     padding: 0 0.8rem;
 }
 
-/* .karma-link, */
 .navigation-link {
     color: rgb(121, 121, 121);
     font-weight: 400;
@@ -52,7 +51,7 @@ header {
 
 .intro {
     display: flex;
-    height: 90vh;
+    height: 610px;
     background-image: url("../img/first-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,8 +80,7 @@ header {
     text-align: center;
 }
 
-
-/* buttons */
+/* buttons: */
 
 .btn-order,
 .btn-intro,
@@ -96,11 +94,11 @@ header {
 }
 
 
-/* section karma styles */
+/* karma section: */
 
 .karma {
     display: flex;
-    height: 70vh;
+    height: 550px;
     flex-direction: column;
     justify-content: center;
 }
@@ -117,7 +115,7 @@ header {
 
 .karma-content {
     position: relative;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -134,16 +132,13 @@ header {
     margin: 1rem 5rem;
 }
 
-/* section order styles */
+/* order section: */
 
 .order-content {
     display: flex;
     flex-direction: row;
-    height: 439px;
-    /* align-items: center;
-    justify-content: center;
-    text-align: center; */
-    /* margin-bottom: 2.8rem; */
+    height: 475px;
+    margin-bottom: 36x;
 }
 
 .order-now {
@@ -164,8 +159,6 @@ header {
     background-image: url("../img/homepage-feature.png");
     background-repeat: no-repeat;
     background-size: cover;
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
-    /* background-position: bottom; */
 }
 
 .order-slogan {
@@ -192,34 +185,22 @@ blockquote .order-slogan::after {
   quotes: "“" "”" "‘" "’";
 }
 
-
-
-/* section form */
-
-/* form  { display: table;      }
-label { display: table-cell; }
-input { display: table-cell; } */
+/* form section: */
 
 .form-section {
     display: flex;
     height: 1235px;
     width: 100vw;
     flex-direction: row;
-    /* align-items: center;
-    justify-content: center; */
-    /* height: 1235px;
-    width: 100vw; */
-    /* width: 1318px; */
+    /* align-items: center; */
 }
 
 .form-content {
     display: flex;
-    /* height: 1235px; */
+    height: 1235px;
     width: 50vw;
     min-width: 505px;
-    /* align-items: center; */
     justify-content: center;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -239,12 +220,12 @@ input { display: table-cell; } */
     font-size: 50px;
     line-height: 59px;
     color: #DE6E49;
-    /* margin-top: 60px; */
+    margin-top: 100px;
 }
 
 .form-imgbox {
     display: flex;
-    /* height: 1235px; */
+    height: 1235px;
     width: 50vw;
     background-image: url("../img/store-image.jpg");
     background-repeat: no-repeat;
@@ -291,6 +272,10 @@ input { display: table-cell; } */
     margin: 20px 0;
 }
 
+.select-city {
+    font-style: italic;
+}
+
 #first-name,
 #last-name,
 #address,
@@ -303,7 +288,7 @@ input { display: table-cell; } */
   margin-top: 10px;
 }
 
-/* custom radio buttons */
+/* custom radio buttons: */
 
 .radio-btns {
     display: flex;
@@ -317,11 +302,11 @@ input { display: table-cell; } */
   margin: 15px 15px 15px 0;
 }
 
-#grey {
-  margin-left: 50px;
+.radio-label {
+  margin-right: 70px;
 }
 
-/* custom checkbox */
+/* custom checkbox: */
 
 .checkbox-label {
   display: block;
@@ -375,7 +360,7 @@ input { display: table-cell; } */
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/*end checkbox*/
+/* end checkbox */
 
 #first-name,
 #last-name {
@@ -395,13 +380,13 @@ input { display: table-cell; } */
 #postcode {
     width: 165px;
 }
+/* end form section */
 
-/* footer */
+/* footer: */
 
 .footer {
     display: flex;
-    height: 250px;
-    /* height: 354px; */
+    height: 230px;
 }
 
 .footer-content {
@@ -432,10 +417,15 @@ input { display: table-cell; } */
     border-radius: 100px;
 }
 
+.line-container {
+    display: flex;
+    justify-content: center;
+}
+
 .line {
     border: 1px solid rgb(232, 232, 232);
     width: 1200px;
-    /* margin: 0; */
+    margin: 0;
 }
 
 .copyright {
