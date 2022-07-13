@@ -66,14 +66,21 @@
 
 <div> 
 
+
     <div class="colour-radio">
-        <p><b>Select color</b></p>
-        <label for="karma-orange">Karma-orange</label>
-         <input type="radio" value="Karma-orange" name="Karma-orange" id="karma-orange" checked/>
-            <label for="karma-grey">Karma-grey</label>
-             <input type="radio" value="Karma-grey" name="Karma-grey" id="karma-grey" checked/>
+    <p><b>Select color</b></p>
     <br />
- <div>
+        <label class="karma-orange">Karma Orange
+         <input type="radio" value="Karma-orange" name="Karma-orange" id="karma-orange" checked>
+         <span class="checkmark"></span>
+        </label>
+        <label class="Space-grey">Space Grey
+        <input type="radio" value="Space-grey" name="Space-grey" id="Space-grey">
+        <span class="checkmark"></span>
+        </label>
+    </div>
+    <br />
+    <div class="checkbox">
     <label for="checkbox-label">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *
     <input id="agreement" type="checkbox" name="checked">
      <span class="checkmark"></span>
@@ -81,10 +88,9 @@
 </div> 
 
 <br />
-<button type="reset">Reset</button>
-<div class="submit"></div>
+<div class="submit">
 <button id ="submit" type="submit">Place My Order</button>
-</div>
+</div> 
 
 
 </form>
