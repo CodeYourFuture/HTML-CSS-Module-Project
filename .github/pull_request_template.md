@@ -33,6 +33,7 @@ Please complete the details below this message
 Hard to guess the font, some page settings, 
 
 - What do you still not understand?
+
 I understand the basic but need more practice.
 
 - Any other notes?

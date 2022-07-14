@@ -50,12 +50,14 @@
       padding: 5px;
       display: flex;
       justify-content: space-around;
+      align-items: flex-start;
       width: 90%;
       margin: 0 auto;
    }
    .logo {
       height: 5px;
       width: 5px;
+      text-align: left;
    }
 
    .button:hover {
@@ -91,18 +93,24 @@
    .container2 {
       display:flex;
       background:rgb(252, 239, 235);
+      min-width:100%;
+
    }
 
    .content {
       position: absolute;
       top:35%;
       left:35%
-   }
 
-   
+   }
    .image {
-      width:90%;
-      height: 70%;
+      min-width:100%;
+      min-width: 1024px;
+      height: auto;
+      display:flex;
+      width: 100%;
+      background-size: cover;
+     
    }
 
    .btn-primary {
@@ -143,6 +151,7 @@
       margin-bottom: 50px;
       font-size: 40px;
       font-weight: 100;
+      text-align: center;
    }
 
    #contacts {
