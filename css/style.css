@@ -1,9 +1,127 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+}
+
+.nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-content: center;
+        height: 2.7em;
+        margin: 0px 10px;
+       }
+
+.nav-container {
+    text-align: right;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.karma-icon {
+   width: 1.5em; 
+   height: fit-content;
+   margin: 2px 0px  0px 10px ;
+}
+
+.nav-link {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+color:  orangered;
+}
+
+.first-background {
+    background-image: url("/img/first-background.jpg");
+    background-color: light-gray;
+    background-size: cover;
+   text-align: center;
+   padding-top: 7em;
+   padding-bottom: 12em;
+   margin: 0em 0em 4em 0em;
+}
+
+ .first-background h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 2px ;
+}
+
+.first-background h1
+{
+   color: #fff;
+   text-align: center;
+   margin-bottom: 1rem;
+   font-size: 40px;
+   font-weight: 200;
+   letter-spacing: 2px;
+}
+
+
+h2 ,h4 ,h5 {
+    text-align: center;
+}
+
+.more-button {
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    padding: 10px 25px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-fig {
+    align-content: center;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.images {
+    width: 30%;
+    padding: 10px;
+
+}
+
+.social-container {
+    width: 25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.social-img {
+   
+   height: 1em;
+  padding: 5px;
+}
+
+.karma-inc {
+    color: grey;
+}
+.karma-inc:hover {
+    color: #000;
 }
 
 /**
@@ -15,5 +133,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-

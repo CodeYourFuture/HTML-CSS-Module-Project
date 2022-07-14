@@ -1,0 +1,52 @@
+
+body {
+   background-color: #fff;
+
+}
+/*  check colours match       */
+
+h1 {
+  color: #ec7644;  
+    }   
+    
+.container  {
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    text-align: center;
+}
+.form-section {
+    display: flex;
+        flex-direction: column;
+        text-align: left;
+      
+}
+
+.single-input {
+    display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+    }
+.double-input {
+display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.order-button {
+    margin: auto;
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    text-align: center;
+    padding: 10px 25px;
+    width: 150px;
+}
+
+
+.store-image {
+    max-width: 100%;
+}
