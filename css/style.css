@@ -102,12 +102,27 @@ figcaption {
 }
 
 .social-container {
+    width: 25em;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
+
 }
 
+.social-img {
+   
+   height: 1em;
+  padding: 5px;
+}
+
+.karma-inc {
+    color: grey;
+}
+.karma-inc:hover {
+    color: #000;
+}
 
 /**
  * Add your custom styles below
