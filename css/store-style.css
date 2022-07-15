@@ -6,72 +6,78 @@
 .container {
     display: grid;
     grid-template: repeat(1, 1fr)/repeat(2, 1fr);
+    grid-row: auto;
 }
 
 .form-container {
-    margin: 0px 10%;
+    margin: 0px 9%;
     display: grid;
-    grid-template: repeat(9, 1fr)/repeat(2, 1fr);
+    grid-template: repeat(10, auto)/repeat(2, 1fr);
 }
 
-.address,.address1,.color,.tc,.submit
-{
+.title {
+    font-size: 38px;
+    text-align: justify;
+    color: var(--orange);
+
+}
+
+.title,
+.address,
+.address1,
+.color,
+.tc,
+.submit {
     grid-column: 1/3;
 }
-input,label
-{
+
+input[type=text],
+label {
     display: block;
     margin: 10px;
     width: 90%;
+    font-size: 20px;
+
 }
 
-
-
-
-
-
-
-.container>div:nth-child(1n) {
-    background-color: cadetblue;
+input[type=text],
+select {
+    margin: 3%;
+    width: 90%;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 4px;
 }
 
-.container>div:nth-child(2n) {
-    background-color: #e0633a;
+select {
+    margin-top: 2px;
+    height: 30px;
 }
 
-.form-container>div:nth-child(1n) {
-    background-color: aquamarine;
-    
+input[type=radio],
+input[type=checkbox] {
+    display: inline;
+    margin: 30px 5px;
+    color: var(--orange);
 }
 
-.form-container>div:nth-child(2n) {
-    background-color: chartreuse;
+.inline_block {
+    display: inline;
 }
 
-.form-container>div:nth-child(3n) {
-    background-color: chocolate;
+fieldset {
+    border: none;
+    margin: 20px 0;
 }
 
-.form-container>div:nth-child(4n) {
-    background-color: yellow;
+.tc>label>a {
+    padding: 0;
+    text-decoration: underline;
+
 }
 
-.form-container>div:nth-child(5n) {
-    background-color: violet;
-}
+#store-img {
+    background-image: url(../img/store-image_by-andrew-neel-unsplash.jpeg);
+    background-size: auto;
 
-.form-container>div:nth-child(6n) {
-    background-color: wheat;
-}
-
-.form-container>div:nth-child(7n) {
-    background-color: turquoise;
-}
-
-.form-container>div:nth-child(8n) {
-    background-color: teal;
-}
-
-.form-container>div:nth-child(9n) {
-    background-color: slateblue;
-}
+}`
