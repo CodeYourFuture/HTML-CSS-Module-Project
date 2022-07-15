@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -40,66 +41,68 @@
         </nav>
     </header>
     <main>
-        <section class="form-section">
-            <div class="form-content">
-                <form class="form-order">
-                    <div><h1>Order your Karma wifi device today!</h1></div>
-                    <div class="form-fields-name">
-                        <div class="form-field-firstname">
-                            <label for="first-name">First name *</label>
-                            <input id="first-name" type="text" name="first-name" />
+        <section class="section-form">
+            <div class="form">
+                <div class="form-content">
+                    <form class="form-order">
+                        <div><h1>Order your Karma wifi device today!</h1></div>
+                        <div class="form-fields-name">
+                            <div class="form-field-firstname">
+                                <label for="first-name">First name *</label>
+                                <input id="first-name" type="text" name="first-name" />
+                            </div>
+                            <div class="form-field-lastname">
+                                <label for="last-name">Last name *</label>
+                                <input id="last-name" type="text" name="last-name" />
+                            </div>
                         </div>
-                        <div class="form-field-lastname">
-                            <label for="last-name">Last name *</label>
-                            <input id="last-name" type="text" name="last-name" />
+                        <div class="form-field-address">
+                            <label for="address">Address *</label>
+                            <input id="address" type="text" name="address" />
                         </div>
-                    </div>
-                    <div class="form-field-address">
-                        <label for="address">Address *</label>
-                        <input id="address" type="text" name="address" />
-                    </div>
-                    <div class="form-field-address2">
-                        <label for="address2">Address 2</label>
-                        <input id="address2" type="text" name="address2" />
-                    </div>
-                    <div class="form-fields-city-post">
-                        <div class="form-field-city">
-                            <label for="city">City</label>
-                            <select id="city" class="select-city" name="city">
-                                <option value="-1" selected>Select your city ...</option>
-                                <option value="1">London</option>
-                                <option value="2">Birmingham</option>
-                                <option value="3">Manchester</option>
-                                <option value="4">Glasgow</option>
-                            </select>
+                        <div class="form-field-address2">
+                            <label for="address2">Address 2</label>
+                            <input id="address2" type="text" name="address2" />
                         </div>
-                        <div class="form-field-post">
-                            <label for="postcode">Postcode *</label>
-                            <input id="postcode" type="text" name="postcose" />
+                        <div class="form-fields-city-post">
+                            <div class="form-field-city">
+                                <label for="city">City</label>
+                                <select id="city" class="select-city" name="city">
+                                    <option value="-1" selected>Select your city ...</option>
+                                    <option value="1">London</option>
+                                    <option value="2">Birmingham</option>
+                                    <option value="3">Manchester</option>
+                                    <option value="4">Glasgow</option>
+                                </select>
+                            </div>
+                            <div class="form-field-post">
+                                <label for="postcode">Postcode *</label>
+                                <input id="postcode" type="text" name="postcose" />
+                            </div>
                         </div>
-                    </div>
-                    <fieldset>
-                        <legend>Select a colour</legend>
-                        <div class="radio-btns">
-                            <input id="orange" type="radio" name="colour" value="orange" class="radio-btn" checked="checked" />
-                            <label class="radio-label" for="orange">Karma Orange</label>
+                        <fieldset>
+                            <legend>Select a colour</legend>
+                            <div class="radio-btns">
+                                <input id="orange" type="radio" name="colour" value="orange" class="radio-btn" checked="checked" />
+                                <label class="radio-label" for="orange">Karma Orange</label>
 
-                            <input id="grey" type="radio" name="colour" value="grey" class="radio-btn" />
-                            <label for="grey">Space Grey</label>
+                                <input id="grey" type="radio" name="colour" value="grey" class="radio-btn" />
+                                <label for="grey">Space Grey</label>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <label class="checkbox-label">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *
+                                <input id="agreement" type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>                    
+                        </div> 
+                        <div>
+                            <button class="btn-order">Place my order</button>
                         </div>
-                    </fieldset>
-                    <div>
-                        <label class="checkbox-label">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *
-                            <input id="agreement" type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>                    
-                    </div> 
-                    <div>
-                        <button class="btn-order">Place my order</button>
-                    </div>
-                </form>
-            </div>
-            <div class="form-imgbox">
+                    </form>
+                </div>
+                <div class="form-imgbox">
+                </div>
             </div>
         </section>
     </main>

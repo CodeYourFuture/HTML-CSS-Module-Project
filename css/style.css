@@ -1,3 +1,8 @@
+html {
+/* percentage of user's browse font-size setting */
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #000;
@@ -5,20 +10,19 @@ body {
     background-color: #fff;
 }
 
-
 /* header: */
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 8rem;
     background-color: rgba(196, 196, 196, 0.1);
 }
 
 .header-logo {
-    height: 6vh;
-    margin-left: 8vw;
+    height: 4.6rem;
+    margin-left: 11rem;
 }
 
 
@@ -27,7 +31,7 @@ header {
 .navigation-list {
     display: flex;
     list-style: none;
-    margin-right: 8vw;
+    margin-right: 11rem;
 }
 
 .navigation-list li:first-child a {
@@ -35,10 +39,11 @@ header {
 }
 
 .navigation-item {
-    padding: 0 0.8rem;
+    padding: 0 1.3rem;
 }
 
 .navigation-link {
+    font-size: 1.8rem;
     color: rgb(121, 121, 121);
     font-weight: 400;
     text-decoration: none;
@@ -49,32 +54,32 @@ header {
     color: #DE6E49;
 }
 
-.intro {
+.section-intro {
     display: flex;
-    height: 610px;
+    height: 63.2rem;
     background-image: url("../img/first-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 
-.intro h1 {
-    font-size: 3.4rem;
+.section-intro h1 {
+    font-size: 5.4rem;
     color: #fff;
     font-weight: 300;
-    margin: 1.5rem;
+    margin: 2.4rem;
 }
 
-.intro h3 {
-    font-size: 1.8rem;
+.section-intro h3 {
+    font-size: 2.9rem;
     color: #fff;
     font-weight: 300;
-    margin: 1.5rem;
+    margin: 2.4rem;
 }
 
 .intro-content {
-    position: absolute;
-    top: 55%;
+    position: relative;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -85,37 +90,38 @@ header {
 .btn-order,
 .btn-intro,
 .btn-store {
-    padding: 0.8rem 1.5rem;
+    font-size: 2rem;
+    padding: 1.3rem 2.4rem;
     border: none;
     border-radius: 4px;
     background-color: #E0633A;
     color: #fff;
-    margin: 1.7rem 0;
+    margin: 2.7rem 0;
 }
 
 
 /* karma section: */
 
-.karma {
+.section-karma {
     display: flex;
-    height: 550px;
+    height: 55rem;
     flex-direction: column;
     justify-content: center;
 }
 
-.karma h2 {
+.section-karma h2 {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 4.2rem;
 }
 
-.karma h4 {
-    font-weight: 300;
-    font-size: 1.5rem;
+.section-karma h4 {
+    font-weight: 400;
+    font-size: 2.6rem;
 }
 
 .karma-content {
     position: relative;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -127,9 +133,9 @@ header {
 }
 
 .karma-icon {
-    height: 7.8rem;
+    height: 14.5rem;
     width: auto;
-    margin: 1rem 5rem;
+    margin: 1.6rem 8.5rem;
 }
 
 /* order section: */
@@ -137,8 +143,8 @@ header {
 .order-content {
     display: flex;
     flex-direction: row;
-    height: 475px;
-    margin-bottom: 36x;
+    height: 47.5rem;
+    margin-bottom: 3.6rem;
 }
 
 .order-now {
@@ -148,14 +154,14 @@ header {
     align-items: center;
     text-align: center;
     background-color: hsla(15, 73%, 55%, 0.1);
-    width: 841px;
-    height: 439px;
+    width: 84.1rem;
+    height: 43.9rem;
 }
 
 .order-imgbox {
     display: flex;
-    height: 439px;
-    width: 599px;
+    height: 43.9rem;
+    width: 59.9rem;
     background-image: url("../img/homepage-feature.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,11 +171,11 @@ header {
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 400;
-    font-size: 42px;
-    line-height: 49px;
+    font-size: 4.2rem;
+    line-height: 4.9rem;
     color: #434242;
     margin: 0;
-    width: 548px;
+    width: 54.8rem;
 }
 
 blockquote .order-slogan::before {
@@ -187,26 +193,44 @@ blockquote .order-slogan::after {
 
 /* form section: */
 
-.form-section {
+.form {
     display: flex;
-    height: 1235px;
-    width: 100vw;
+    /* height: 123.5rem;
+    width: 100vw; */
     flex-direction: row;
     /* align-items: center; */
-}
+ }
+
+ .form > * {
+    display: flex;
+    height: 123.5rem;
+    /* width: 50vw; */
+    /* flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 0; */
+    /* flex: 1; */
+    flex-basis: 100%;
+ }
+
+/* .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 123.5rem;
+    width: 100vw;
+} */
 
 .form-content {
-    display: flex;
-    height: 1235px;
-    width: 50vw;
-    min-width: 505px;
+    /* display: flex;
+    height: 123.5rem;
+    width: 50vw; */
     justify-content: center;
+ /* align-items: center; */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 2.1rem;
     color: #666666;
-    line-height: 25px;
+    line-height: 2.5rem;
 }
 
 .form-content a {
@@ -217,16 +241,16 @@ blockquote .order-slogan::after {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 59px;
+    font-size: 5rem;
+    line-height: 5.9rem;
     color: #DE6E49;
-    margin-top: 100px;
+    margin-top: 9rem;
 }
 
 .form-imgbox {
-    display: flex;
-    height: 1235px;
-    width: 50vw;
+    /* display: flex;
+    height: 123.5rem;
+    width: 50vw; */
     background-image: url("../img/store-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -236,9 +260,9 @@ blockquote .order-slogan::after {
 .form-order {
     display: flex;
     flex-direction: column;
-    width: 501px;
-    height: 849px;
-    row-gap: 35px;
+    width: 50.1rem;
+    height: 84.9rem;
+    row-gap: 3.5rem;
 }
 
 
@@ -249,7 +273,7 @@ blockquote .order-slogan::after {
 
 .form-field-firstname,
 .form-field-lastname {
-  width: 235px;
+  width: 23.5rem;
 }
 
 .form-fields-city-post {
@@ -259,17 +283,17 @@ blockquote .order-slogan::after {
 }
 
 .form-field-city {
-  width: 307px;
+  width: 30.7rem;
 }
 
 .form-field-post {
-  width: 165px;
+  width: 16.5rem;
 }
 
 .form-order fieldset {
     border: 0;
     padding: 0;
-    margin: 20px 0;
+    margin: 2rem 0;
 }
 
 .select-city {
@@ -282,10 +306,10 @@ blockquote .order-slogan::after {
 #address2,
 #city,
 #postcode {
-  height: 53px;
+  height: 5.3rem;
   border: 2px solid #666666;
   border-radius: 4px;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 /* custom radio buttons: */
@@ -296,14 +320,14 @@ blockquote .order-slogan::after {
 }
 
 .radio-btn {
-  height: 25px;
-  width: 25px;
+  height: 2.5rem;
+  width: 2.5rem;
   accent-color: #DE6E49;
-  margin: 15px 15px 15px 0;
+  margin: 1.5rem 1.5rem 1.5rem 0;
 }
 
 .radio-label {
-  margin-right: 70px;
+  margin-right: 7rem;
 }
 
 /* custom checkbox: */
@@ -311,8 +335,8 @@ blockquote .order-slogan::after {
 .checkbox-label {
   display: block;
   position: relative;
-  padding-left: 40px;
-  margin-bottom: 12px;
+  padding-left: 4rem;
+  margin-bottom: 1.2rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -332,8 +356,8 @@ blockquote .order-slogan::after {
   position: absolute;
   top: 0;
   left: 0;
-  height: 24px;
-  width: 24px;
+  height: 2.4rem;
+  width: 2.43rem;
   background-color: #fff;
   border: 2px solid #666666;
   border-radius: 4px;
@@ -350,10 +374,10 @@ blockquote .order-slogan::after {
 }
 
 .checkbox-label .checkmark:after {
-  left: 7px;
-  top: 0px;
-  width: 8px;
-  height: 18px;
+  left: 0.7rem;
+  top: 0;
+  width: 0.8rem;
+  height: 1.8rem;
   border: 1px solid #DE6E49;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
@@ -364,21 +388,21 @@ blockquote .order-slogan::after {
 
 #first-name,
 #last-name {
-    width: 235px;
+    width: 23.5rem;
 }
 
 #address,
 #address2 {
-    width: 499px;
+    width: 49.9rem;
 }
 
 #city {
-  width: 307px;
-  height: 58px
+  width: 30.7rem;
+  height: 5.8rem
 }
 
 #postcode {
-    width: 165px;
+    width: 16.5rem;
 }
 /* end form section */
 
@@ -386,7 +410,7 @@ blockquote .order-slogan::after {
 
 .footer {
     display: flex;
-    height: 230px;
+    height: 23rem;
 }
 
 .footer-content {
@@ -403,16 +427,16 @@ blockquote .order-slogan::after {
 }
 
 .footer h6 {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
 }
 
 .network_icons {
-    height: 25px;
+    height: 2.5rem;
     width: auto;
-    margin: 7px;
-    padding: 7px;
+    margin: 0.7rem;
+    padding: 0.7rem;
     border: 1px solid rgb(232, 232, 232);
     border-radius: 100px;
 }
@@ -424,12 +448,12 @@ blockquote .order-slogan::after {
 
 .line {
     border: 1px solid rgb(232, 232, 232);
-    width: 1200px;
+    width: 120rem;
     margin: 0;
 }
 
 .copyright {
-    font-size: 0.9rem;
+    font-size: 1.45rem;
     font-weight: 400;
     color: rgb(135, 135, 135);
 }
