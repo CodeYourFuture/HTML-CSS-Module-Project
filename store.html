@@ -19,19 +19,19 @@
                                     <a class="nav_link" id= "meet_karma"href=""><strong>Meet Karma</strong></a>
                                 </li>
                                 <li class="nav_item">
-                                    <a class="nav_link" href="">How It Works</a>
+                                    <a class="nav_link" href="">how It Works</a>
                                 </li>
                                 <li>
-                                    <a class="nav_link" href="">Store</a>
+                                    <a class="nav_link" href="">store</a>
                                 </li class="nav_item">
                                 <li>
-                                    <a class="nav_link" href="">Blog</a>
+                                    <a class="nav_link" href="">blog</a>
                                 </li class="nav_item">
                                 <li>
-                                    <a class="nav_link" href="">Help</a>
+                                    <a class="nav_link" href="">help</a>
                                 </li class="nav_item"> 
                                 <li>
-                                    <a class="nav_link" href="">Login</a>
+                                    <a class="nav_link" href="">login</a>
                                 </li>
                             </ul>
                         </nav>
@@ -41,60 +41,60 @@
                     <form>
                         <h2 class="orange-header">Order your Karma wifi device today!</h2>
                         <div class="row">
-                            <div class="column name">
-                                <label for="first-name">First name *</label>
+                            <fieldset class="column name">
+                                <label class="required" for="first-name">First name</label>
                                 <input type="text" id="first-name" name="first-name"required>
-                            </div>
-                            <div class="column name">
-                                <label for="last -name">Last name *</label>
+                            </fieldset>
+                            <fieldset class="column name">
+                                <label class="required" for="last-name">Last name</label>
                                 <input type="text" id="last-name" name="last-name"required>
-                            </div>
+                            </fieldset>
                          
                         </div>
                         <!--Address-->
-                        <div class="column">
-                            <label for="address" class="address">Address *</label>
+                        <fieldset class="column">
+                            <label class="required" for="address" class="address">Address</label>
                             <input type="text" id="adress"required>
-                        </div>
+                        </fieldset>
                         <!--Address 2-->
-                        <div class="column">
-                            <label for="address2" class="address2">Address2 *</label>
+                        <fieldset class="column">
+                            <label class="required" for="address2" class="address2">Address2</label>
                             <input type="text" id="address2"required>
-                        </div>
+                        </fieldset>
                         <!--city-->
                         <div class="row">
-                            <div class="city column">
-                                <label for="city">City *</label>
-                                <select id="city1">
+                            <fieldset class="city column">
+                                <label class="required" for="city">City</label>
+                                <select id="city">
                                     <option value="select-city">Select your city...</option>
                                 </select>
-                            </div>
+                            </fieldset>
                             <!--postcode-->
-                            <div class="postcode column">
-                                <label for="postcode">Postcode *</label>
+                            <fieldset class="postcode column">
+                                <label class="required" for="postcode">Postcode</label>
                                 <input type="text" id="postcode" name="postcode"required>
-                            </div>
+                            </fieldset>
                         </div>
                         <div class="row color">
-                            <div class="row colormargin">
+                            <fieldset class="row colormargin">
                                 <input type="radio" id="karma-orange" value="karma-orange" name="color">
                                 <label for="karma-orange">Karma orange</label>
-                            </div>
-                            <div class="row colormargin">
+                            </fieldset>
+                            <fieldset class="row colormargin">
                                 <input type="radio" id="space-grey" value="space-grey" name="color">
                                 <label for="space-grey">Space grey</label>
-                            </div>
+                            </fieldset>
                         </div>
-                        <div class="checkbox">
+                        <fieldset class="checkbox">
                             <input type="checkbox" id="terms" name="terms" value="terms">
                             <label for="terms">By placing your order you agree to karma's<a href="index.html" class="terms">Terms and conditions.</a>*</label>
-                        </div>
+                        </fieldset>
                         <button>Place my order</button>
                     </form>
                 </div>
                 <div class="image"></div>
             </main>
-        <!--fotter-->
+        <!--footer-->
         <footer class="footer">
             <p>Join us on</p>
             <div class="for_join">
@@ -110,7 +110,7 @@
         
 
             </div>
-            <p>&#169; Karma Mobilty, Inc</p>
+            <p> &copy; Karma Mobilty, Inc</p>
         </footer>
     </body>
 </html>

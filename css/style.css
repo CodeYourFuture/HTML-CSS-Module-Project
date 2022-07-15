@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 
 body {
@@ -16,39 +15,43 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-.header{
+.header {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
-.karma_logo{
+.karma_logo {
     width: 80px;
     height: 80px;
     padding-left: 3rem;
     margin: 2.5rem 0 2.5rem 0;
     border: none;
 }
-nav{
+
+nav {
     margin-top: 50px;
 }
-.nav_list{
-    display:flex;
+
+.nav_list {
+    display: flex;
     list-style: none;
-    padding-right:5rem;
+    padding-right: 5rem;
 }
 
-.nav_link{
-    color:gray;
+.nav_link {
+    color: gray;
     font-weight: 550;
     font-size: 23px;
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
 }
-.nav_link:hover{
-color:orangered
+
+.nav_link:hover {
+    color: orangered
 }
+
 /* .karma_link{
     color: black;
     font-weight: 550;
@@ -57,17 +60,22 @@ color:orangered
     text-decoration: none;
     padding: 10px;
 } */
-#meet_karma{
-color: black;
+#meet_karma {
+    color: black;
 
 }
-#meet_karma:hover{
+
+#meet_karma:hover {
     color: green;
 }
-.intro{
+.required:after {
+    content:" *";
+  }
+
+.intro {
     width: 100%;
     background-image: url("../img/first-background.jpg");
-    background-size:cover;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,50 +83,62 @@ color: black;
     color: white;
     margin-bottom: 50px;
 }
-.everyone{
+fieldset{
+    border: none;
+}
+.everyone {
     padding: 50px;
 }
+
 /* <!--text style--> */
-.intro h1{
+.intro h1 {
     font-weight: 100;
-    font-size:70px;                                                                                              px;
+    font-size: 70px;
     margin-top: 15rem;
 }
-.intro h2{
-    font-weight:50;
-    font-size: 40px;                                                                                               px;
+
+.intro h2 {
+    font-weight: 50;
+    font-size: 40px;
     margin-bottom: 50px;
 }
-.intro h3{
-    font-weight:50;
-    font-size: 40px;                                                                                               px;
+
+.intro h3 {
+    font-weight: 50;
+    font-size: 40px;
     margin-bottom: 15rem;
 }
-.everyone h3{
-    text-align:center;
+
+.everyone h3 {
+    text-align: center;
     font-size: 65px;
     font-weight: 40;
-    color:rgb(46, 48, 51);
+    color: rgb(46, 48, 51);
 }
-.everyone p{
+
+.everyone p {
     color: black;
     font-size: 25px;
 }
+
 /* button */
-button{
+button {
     background-color: orangered;
     color: white;
     padding: 15px 30px;
     border: none;
     border-radius: 4px;
 }
-.tree_item{
+
+.tree_item {
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: space-around;
     margin-bottom: 50px;
 }
-.item{
-    display:flex;
+
+.item {
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
@@ -128,100 +148,131 @@ button{
     /* width: 10rem;
     height: 10rem; */
 }
-.social_media{
+
+.social_media {
     width: 20px;
     height: 20px;
     padding: 15px;
     border: 1px solid lightgray;
     border-radius: 40%;
 }
-.icon{
+
+.icon {
     width: 10rem;
     height: 10rem;
 }
-.extention-container{
+
+.extention-container {
     display: flex;
-    margin-top:2rem;
+    margin-top: 2rem;
     height: 439px;
 }
-.extention-image1{
+
+.extention-image1 {
     background-color: rgba(224, 99, 58, 0.1);
     width: 60%;
     text-align: center;
 }
-.extention-image1 p{
+
+.extention-image1 p {
     margin-top: 10rem;
     font-size: x-large;
     font-style: italic;
 }
-.extention-image1 button{
+
+.extention-image1 button {
     background-color: orangered;
     color: white;
     padding: 15px 5px;
     border-radius: 5px;
 }
-.extention-image1 button a{
+
+.extention-image1 button a {
     color: white;
     text-decoration: none;
 }
-.footer{
+
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
 }
-.wrapper-form{
+
+.wrapper-form {
     width: 50%;
 }
-.image{
+
+.image {
     background-image: url(../img/store-image_by-andrew-neel-unsplash.jpg);
     background-size: cover;
     background-position: right bottom;
     width: 50%;
 }
-main{
+
+main {
     width: 100vw;
-    display: flex;
+
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
 }
-input{
+
+input {
     margin-bottom: 15px;
     padding: 5px;
 }
-form{
-    padding:60px;
+
+form {
+    padding: 60px;
 }
-.name{
+
+.name {
     width: 48%;
 }
-.city{
+
+.city {
     width: 65%;
 }
-.postcode{
-    width:33%;
+
+.postcode {
+    width: 33%;
 }
-.color{
+
+.color {
     justify-content: start;
     margin: 10px 0;
 }
-.colormargin{
+
+.colormargin {
     margin-right: 50px;
     margin-bottom: 50px;
 }
-select{
+
+select {
     padding: 5px;
 }
-.terms{
+
+.terms {
     color: orangered;
 }
-.orange-header{
+
+.orange-header {
     color: orangered;
-   font-size: 40px;
-   font-weight: 400;
+    font-size: 40px;
+    font-weight: 400;
+}
+<!--
+@media screen and (min-width: 768px) {
+    .tree_item {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
 }
