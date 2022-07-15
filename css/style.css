@@ -16,4 +16,97 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ html{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+*
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+/* navbar */
+.navbar{
+    width:100%;
+    background-color: white;
+    position: fixed;
+}
+.navbar .nav-items{
+    color: #838994;
+    width: 990px;
+    height:4.4rem;
+    margin: 0 auto;
+}
+.navbar .nav-links{
+    float: right;
+    font-size: 1rem;
+    margin-top: 1.563rem; /* === 25px */
+    -webkit-font-smoothing: antialiased;
+}
+.navbar li{
+    display: inline-block;
+    margin-left: 25px;
+}
 
+.navbar .nav-links .karma {
+    color: #4c5058;
+    font-weight: 500;
+}
+.navbar .nav-links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+.section1{
+    background-image: url('/img/first-background.jpg');
+    background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.938rem;
+  background-position: 10 bottom;
+  overflow: auto;
+}
+.section1 .content{
+    color: white;
+    text-align: center;
+    padding-top: 400px;
+}
+button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+    background-color: rgba(218, 92, 19, 0.959);
+    color: white;
+  }
+.section2{
+    text-align: center;
+}
+
+.icons > li {
+    width: 33%;
+    box-sizing: border-box;
+    height: 4em;
+    display: inline-block;
+    list-style: none;
+    box-sizing: border-box;
+    margin-left:-5%;
+    margin-right: -5%;
+  }
+  .social-links .twitter {
+    color: #55acee;
+  }
+  .social-links .links {
+    text-align: center;
+  }
+  .social-links .links > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+  }
