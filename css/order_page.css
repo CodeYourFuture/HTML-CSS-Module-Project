@@ -1,0 +1,102 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background-color: #f9f9f9;
+}
+h1 {
+  color: #de6e49;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-decoration: dashed;
+}
+
+span {
+  color: #de6e49;
+  text-decoration: underline;
+}
+/* form section ---------------- */
+.first-last-name {
+  display: flex;
+  width: 400px;
+  gap: 25px;
+}
+
+.label-input .name {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 25px;
+}
+
+img {
+  height: 1100px;
+  width: 650px;
+}
+.order-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+input,
+select {
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+select {
+  width: 207px;
+  height: 30px;
+}
+
+.address {
+  width: 400px;
+  height: 30px;
+}
+
+.city-pcode {
+  display: flex;
+  width: 400px;
+  gap: 25px;
+}
+
+.location .city {
+  display: flex;
+  flex-direction: column;
+  width: 165px;
+  height: 25px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 50px;
+  margin-left: 200px;
+}
+.orange{
+    display: flex;
+    align-items: baseline; 
+    margin-left: 1rem;
+}
+
+.radio-btn {
+  display: flex;
+}
+
+.radio-btn input,
+.radio-btn label {
+  display: block;
+}
+
+.postcode {
+  width: 165px;
+  height: 30px;
+}
