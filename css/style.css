@@ -143,8 +143,8 @@ header {
 .order-content {
     display: flex;
     flex-direction: row;
-    height: 47.5rem;
-    margin-bottom: 3.6rem;
+    /* height: 43.9rem; */
+    /* margin-bottom: 3.6rem; */
 }
 
 .order-now {
@@ -195,22 +195,16 @@ blockquote .order-slogan::after {
 
 .form {
     display: flex;
-    /* height: 123.5rem;
-    width: 100vw; */
     flex-direction: row;
     /* align-items: center; */
  }
 
- .form > * {
+ /* .form > * {
     display: flex;
     height: 123.5rem;
-    /* width: 50vw; */
-    /* flex-shrink: 1;
-    flex-grow: 1;
-    flex-basis: 0; */
-    /* flex: 1; */
     flex-basis: 100%;
- }
+ } */
+
 
 /* .form {
     display: grid;
@@ -220,11 +214,13 @@ blockquote .order-slogan::after {
 } */
 
 .form-content {
-    /* display: flex;
-    height: 123.5rem;
-    width: 50vw; */
+    display: flex;
+    /* height: 123.5rem; */
+    /* height: 100vh; */
+    width: 50vw;
     justify-content: center;
- /* align-items: center; */
+    align-items: center;
+    /* align-self: center; */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -244,13 +240,14 @@ blockquote .order-slogan::after {
     font-size: 5rem;
     line-height: 5.9rem;
     color: #DE6E49;
-    margin-top: 9rem;
+    /* margin-top: 9rem; */
 }
 
 .form-imgbox {
-    /* display: flex;
+    display: flex;
     height: 123.5rem;
-    width: 50vw; */
+    /* flex-basis: 100%; */
+    width: 50vw;
     background-image: url("../img/store-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,7 +258,7 @@ blockquote .order-slogan::after {
     display: flex;
     flex-direction: column;
     width: 50.1rem;
-    height: 84.9rem;
+    /* height: 84.9rem; */
     row-gap: 3.5rem;
 }
 
@@ -408,17 +405,12 @@ blockquote .order-slogan::after {
 
 /* footer: */
 
-.footer {
-    display: flex;
-    height: 23rem;
-}
-
 .footer-content {
-    position: relative;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
 }
 
 .footer-network {
@@ -426,24 +418,19 @@ blockquote .order-slogan::after {
     flex-direction: row;
 }
 
-.footer h6 {
+.footer-content h6 {
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 1.6rem;
 }
 
-.network_icons {
+.network-icons {
     height: 2.5rem;
     width: auto;
     margin: 0.7rem;
     padding: 0.7rem;
     border: 1px solid rgb(232, 232, 232);
     border-radius: 100px;
-}
-
-.line-container {
-    display: flex;
-    justify-content: center;
 }
 
 .line {
