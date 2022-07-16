@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+
+    <header>
+      <ul id="navigation__list">
+        <li>
+          <img src="img/karma-logo.svg" alt="Karma logo" class="karmalog" />
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Meet Karma</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">How it Works</a>
+        </li>
+        <li class="navigation__item active">
+          <a class="navigation__link" href="store.html">Store</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Blog</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Help</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Login</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main-store">
+      <form id="form-store">
+        <h1>Order your Karma wifi device today!</h1>
+        <label for="first-name" style="margin-right: 42%"> First name *</label>
+        <label for="last-name"> Last name *</label> <br />
+        <input
+          style="margin-right: 26%; width: 35%"
+          type="text"
+          name="first-name"
+          required
+        />
+        <input type="text" name="last-name" style="width: 35%" required /><br />
+        <label for="address"> Address *</label> <br />
+        <input type="text" name="address" style="width: 100%" required /> <br />
+        <label for="address"> Address 2</label> <br />
+        <input type="text" name="address" style="width: 100%" />
+
+        <label for="City" style="margin-right: 59%"> City *</label>
+        <label for="Postcode" required> Postcode *</label> <br />
+        <div class="city-postcode" required>
+          <select>
+            <option value="0">Select your city...</option>
+            <option value="1">London</option>
+            <option value="2">Birmingham</option>
+            <option value="3">Manchester</option>
+            <option value="4">Coventry</option>
+            <option value="5">Liverpool</option>
+          </select>
+          <input type="text" name="Postcode" />
+        </div>
+        <label for="radio-color"> Select a color</label>
+        <br />
+        <input
+          type="radio"
+          id="karma-orange"
+          name="radio-color"
+          value="orange"
+          checked
+        />
+         
+        <label for="karma-orange" style="padding-right: 2em">
+          Karma-orange</label
+        >
+        <input type="radio" id="space-Grey" name="radio-color" value="grey" />  
+        <label for="space-Grey" style="margin-bottom: 2em">space-Grey</label
+        ><br />
+
+        <label class="container"
+          >By placing your order you agree to Karma's
+          <a href="https://www.linkedin.com/in/kawa-manmi-5244ab53/">
+            Terms and Condition</a
+          >. *
+          <input
+            type="checkbox"
+            id="checkbox-placeorder"
+            onclick="activebutton()"
+            required
+          />
+          <span class="checkmark"></span>
+        </label>
+
+        <button class="place-my-order" id="place-my-order">
+          Place my order
+        </button>
+      </form>
+      <img
+        src="img/store-image_by-andrew-neel-unsplash.jpg"
+        alt="A woman on Piano"
+      />
+    </main>
+
+    <hr />
+    <footer>
+      <h4>Join us on</h4>
+      <div class="container-footer">
+        <div class="logocontainer">
+          <a href="https://twitter.com/KAWA_MANMI"
+            ><img
+              src="img/twitter-icon.svg"
+              class="image-container-footer"
+              alt="twitter logo"
+          /></a>
+        </div>
+        <div class="logocontainer">
+          <a href="https://www.facebook.com/kawama2007">
+            <img
+              src="img/facebook-icon.svg"
+              class="image-container-footer"
+              alt="facebook logo"
+          /></a>
+        </div>
+        <div class="logocontainer">
+          <img
+            src="img/instagram-icon.svg"
+            class="image-container-footer"
+            alt="instagram logo"
+          />
+        </div>
+      </div>
+      <h4>&copy;Karma Mobility, Inc.</h4>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
