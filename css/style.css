@@ -1,19 +1,430 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+html {
+    font-size: 62.5%;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #000;
     -webkit-font-smoothing: antialiased;
+    background-color: #fff;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* header: */
+
+header {
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+}
+
+.header-logo {
+    height: 4.6rem;
+    margin-left: 11rem;
+}
 
 
+/* navigation: */
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    margin-right: 11rem;
+}
+
+.navigation-list li:first-child a {
+  color: #000;
+}
+
+.navigation-item {
+    padding: 0 1.3rem;
+}
+
+.navigation-link {
+    font-size: 1.8rem;
+    color: rgb(121, 121, 121);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navigation-list a:first-child:hover,
+.navigation-link:hover {
+    color: #DE6E49;
+}
+
+/* intro section*/
+
+.section-intro {
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.intro-content {
+    display: flex;
+    height: 63.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.intro-content h1 {
+    font-size: 5.4rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 2.4rem;
+}
+
+.intro-content h3 {
+    font-size: 2.9rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 2.4rem;
+}
+
+/* buttons: */
+
+.btn-order,
+.btn-intro,
+.btn-store {
+    font-size: 2rem;
+    padding: 1.3rem 2.4rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #E0633A;
+    color: #fff;
+    margin: 2.7rem 0;
+}
+
+/* karma section: */
+
+.karma-content {
+    display: flex;
+    height: 55rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.karma-content h2 {
+    font-weight: 300;
+    font-size: 4.2rem;
+}
+
+.karma-content h4 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.karma-option {
+    display: flex;
+    flex-direction: row;
+}
+
+ .karma-icons-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+ }
+
+.karma-icon {
+    height: 14.5rem;
+    width: auto;
+    margin: 1.6rem 8.5rem;
+}
+
+/* order section: */
+
+.section-order {
+    background-color: hsla(15, 73%, 55%, 0.1);
+}
+
+.order-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 84.1rem;
+    height: 43.9rem;
+}
+
+.order-img-box {
+    display: flex;
+    height: 43.9rem;
+    width: 59.9rem;
+    background-image: url("../img/homepage-feature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.order-slogan {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 4.9rem;
+    color: #434242;
+    margin: 0;
+    width: 54.8rem;
+    text-align: center;
+}
+
+blockquote .order-slogan::before {
+  content: open-quote;
+  color: red;
+}
+blockquote .order-slogan::after {
+  content: close-quote;
+  color: red;
+  
+}
+.order-now blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+/* form section: */
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+ }
+
+.form-box {
+    display: flex;
+    height: 123.5rem;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.1rem;
+    color: #666666;
+    line-height: 2.5rem;
+}
+
+.form-box a {
+    color: #DE6E49
+}
+
+.form-box h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 5.9rem;
+    color: #DE6E49;
+}
+
+.form-img-box {
+    display: flex;
+    height: 123.5rem;
+    width: 50vw;
+    background-image: url("../img/store-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    width: 50.1rem;
+    row-gap: 3.5rem;
+}
+
+
+.form-fields-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field-firstname,
+.form-field-lastname {
+  width: 23.5rem;
+}
+
+.form-fields-city-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-field-city {
+  width: 30.7rem;
+}
+
+.form-field-post {
+  width: 16.5rem;
+}
+
+.form-order fieldset {
+    border: 0;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.select-city {
+    font-style: italic;
+}
+
+#first-name,
+#last-name,
+#address,
+#address2,
+#city,
+#postcode {
+  height: 5.3rem;
+  border: 2px solid #666666;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* custom radio buttons: */
+
+.radio-btns {
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn {
+  height: 2.5rem;
+  width: 2.5rem;
+  accent-color: #DE6E49;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.radio-label {
+  margin-right: 7rem;
+}
+
+/* custom checkbox: */
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.4rem;
+  width: 2.43rem;
+  background-color: #fff;
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-label .checkmark:after {
+  left: 0.7rem;
+  top: 0;
+  width: 0.8rem;
+  height: 1.8rem;
+  border: 1px solid #DE6E49;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* end checkbox */
+
+#first-name,
+#last-name {
+    width: 23.5rem;
+}
+
+#address,
+#address2 {
+    width: 49.9rem;
+}
+
+#city {
+  width: 30.7rem;
+  height: 5.8rem
+}
+
+#postcode {
+    width: 16.5rem;
+}
+/* end form section */
+
+/* footer: */
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+}
+
+.footer-network {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content h6 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+
+.network-icons {
+    height: 2.5rem;
+    width: auto;
+    margin: 0.7rem;
+    padding: 0.7rem;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 100px;
+}
+
+.line {
+    border: 1px solid rgb(232, 232, 232);
+    width: 120rem;
+    margin: 0;
+}
+
+.copyright {
+    font-size: 1.45rem;
+    font-weight: 400;
+    color: rgb(135, 135, 135);
+}
