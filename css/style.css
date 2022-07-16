@@ -1,5 +1,4 @@
 html {
-/* percentage of user's browse font-size setting */
     font-size: 62.5%;
 }
 
@@ -13,11 +12,14 @@ body {
 /* header: */
 
 header {
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+.header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 8rem;
-    background-color: rgba(196, 196, 196, 0.1);
 }
 
 .header-logo {
@@ -54,35 +56,36 @@ header {
     color: #DE6E49;
 }
 
+/* intro section*/
+
 .section-intro {
-    display: flex;
-    height: 63.2rem;
     background-image: url("../img/first-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 
-.section-intro h1 {
+.intro-content {
+    display: flex;
+    height: 63.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.intro-content h1 {
     font-size: 5.4rem;
     color: #fff;
     font-weight: 300;
     margin: 2.4rem;
 }
 
-.section-intro h3 {
+.intro-content h3 {
     font-size: 2.9rem;
     color: #fff;
     font-weight: 300;
     margin: 2.4rem;
-}
-
-.intro-content {
-    position: relative;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 /* buttons: */
@@ -99,38 +102,38 @@ header {
     margin: 2.7rem 0;
 }
 
-
 /* karma section: */
 
-.section-karma {
+.karma-content {
     display: flex;
     height: 55rem;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.section-karma h2 {
+.karma-content h2 {
     font-weight: 300;
     font-size: 4.2rem;
 }
 
-.section-karma h4 {
+.karma-content h4 {
     font-weight: 400;
     font-size: 2.6rem;
-}
-
-.karma-content {
-    position: relative;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .karma-option {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
+
+ .karma-icons-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+ }
 
 .karma-icon {
     height: 14.5rem;
@@ -140,25 +143,25 @@ header {
 
 /* order section: */
 
+.section-order {
+    background-color: hsla(15, 73%, 55%, 0.1);
+}
+
 .order-content {
     display: flex;
     flex-direction: row;
-    /* height: 43.9rem; */
-    /* margin-bottom: 3.6rem; */
 }
 
-.order-now {
+.order-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: hsla(15, 73%, 55%, 0.1);
     width: 84.1rem;
     height: 43.9rem;
 }
 
-.order-imgbox {
+.order-img-box {
     display: flex;
     height: 43.9rem;
     width: 59.9rem;
@@ -176,6 +179,7 @@ header {
     color: #434242;
     margin: 0;
     width: 54.8rem;
+    text-align: center;
 }
 
 blockquote .order-slogan::before {
@@ -193,34 +197,17 @@ blockquote .order-slogan::after {
 
 /* form section: */
 
-.form {
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
- }
-
- /* .form > * {
-    display: flex;
-    height: 123.5rem;
-    flex-basis: 100%;
- } */
-
-
-/* .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 123.5rem;
-    width: 100vw;
-} */
-
 .form-content {
     display: flex;
-    /* height: 123.5rem; */
-    /* height: 100vh; */
+    flex-direction: row;
+ }
+
+.form-box {
+    display: flex;
+    height: 123.5rem;
     width: 50vw;
     justify-content: center;
     align-items: center;
-    /* align-self: center; */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -229,24 +216,22 @@ blockquote .order-slogan::after {
     line-height: 2.5rem;
 }
 
-.form-content a {
+.form-box a {
     color: #DE6E49
 }
 
-.form-content h1 {
+.form-box h1 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 5rem;
     line-height: 5.9rem;
     color: #DE6E49;
-    /* margin-top: 9rem; */
 }
 
-.form-imgbox {
+.form-img-box {
     display: flex;
     height: 123.5rem;
-    /* flex-basis: 100%; */
     width: 50vw;
     background-image: url("../img/store-image.jpg");
     background-repeat: no-repeat;
@@ -254,11 +239,10 @@ blockquote .order-slogan::after {
     background-position: center;
 }
 
-.form-order {
+.order-form {
     display: flex;
     flex-direction: column;
     width: 50.1rem;
-    /* height: 84.9rem; */
     row-gap: 3.5rem;
 }
 
