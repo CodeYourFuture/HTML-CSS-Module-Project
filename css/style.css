@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+
 }
 
 /**
@@ -16,4 +17,183 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*navigation style */
 
+/* header section */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+     color: bisque;
+     margin-top:20px;
+    
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 150px;
+    margin-bottom: 5px;
+}
+.nav_links {
+    list-style:none;
+} 
+
+.nav_links li {
+    display:-webkit-inline-flex;
+    padding:0px 40px 0px 10px;
+    
+}
+    
+ .nav_links li a:hover{
+  color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* end of  Header Section */
+
+/* main section */
+
+.container{
+position: relative;
+ text-align: center;
+  
+}
+
+.container img{
+width:96%;
+
+
+    
+}
+.text-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    
+    
+}
+
+ .main{
+    color: beige;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    color: white;
+ }
+
+ .btn{
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: #c05326;
+  color: bisque;
+  border: none;
+  border-radius: 3px;
+  font-weight: lighter;
+  }
+
+  .karma-1{
+   color:#837676;
+   margin-top: 30px;
+   text-align: center;
+   font-size:40px;
+   font-weight: lighter;
+  }
+.icon{
+    display: flex;
+    justify-items: flex-end;
+    justify-content:space-evenly;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.icon p {
+ color: black;
+ 
+}
+
+.img-girl{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    
+
+}
+.get-us{
+display: flex;
+padding: 10px;
+
+ }
+
+.text{
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    background: rgb(224, 99, 58 0.1);
+    font-size: large;
+}
+.bt-2{
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: #c05326;
+  color: bisque;
+  border: none;
+  border-radius: 3px;
+  font-weight: lighter;
+}
+
+
+    
+/* end of main section */
+
+/* social media icons*/
+
+.join-us{
+    font-size:20px;
+    text-align: center;
+    margin-top: 10px;
+    
+     
+}
+.social{
+text-align:center ;
+padding: 17px;
+
+}
+.fa{
+    padding:20px;
+    font: size 30px;
+    text-align: center;
+    text-decoration: none;
+    margin:10px;
+    border-radius: 50%;
+}
+.fa-facebook{
+    background-color: blue;
+    color: white;
+}
+
+.fa-twitter{
+    background-color:rgb(132, 116, 219) ;
+    color:white;
+}
+.fa-instagram{
+    background-color:blue ;
+    color:white;
+}
+footer p{
+    text-align: center;
+    font-weight: lighter ;
+}
