@@ -25,6 +25,10 @@
    
    #nav-bar {
       margin:0;
+      list-style-type: none;
+      display: flex;
+      
+   
    }
    .nav-item {
       background-color: white;
@@ -35,10 +39,15 @@
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
+      align-items: left;
    }
 
    .nav-item:hover {
       color: rgb(224, 99, 58);
+   }
+   .header-nav-item {
+      list-style-type: none;
+
    }
 
    /* Headings */
