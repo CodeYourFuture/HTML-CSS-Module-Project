@@ -10,7 +10,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    text-align: right;
+    text-align: center;
+    
 }
 .nav-links li {
     display: inline-block;
@@ -26,6 +27,11 @@
 }
 .nav-link:hover {
     color: #c05326;
+}
+.intro {
+   background-image: url("/img/first-background.jpg");
+   height: 500px;
+   background-position: center; 
 }
 
 body {
