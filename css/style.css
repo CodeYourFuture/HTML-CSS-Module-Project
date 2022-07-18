@@ -114,6 +114,54 @@ button:hover {
   justify-content: center;
 }
 
+/* New Image and Text */
+.background_colour
+{
+    background-color: rgba(224, 99, 58, 0.1);
+    margin-bottom: 5%;
+}
+
+.get_karma_button
+{
+    color: white;
+    cursor: pointer;
+    background-color: #E0633A;
+    border: 0px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 15px;
+      
+}   
+
+.new_image
+{
+    width: 35%;
+}
+
+.new_paragraph:before 
+{
+  color: #E0633A;
+  content: "''";
+}
+
+.new_paragraph:after 
+{
+  color: #E0633A;
+  content: "''";
+}
+
+.new_image_paragraph_container
+{
+    width: 60%;
+    text-align: center;
+    float: right;
+    font-size:28px;
+    padding-top: 5%;
+}
+
 /* Line Break */
 .line_break {
   width: 80%;
