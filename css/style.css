@@ -12,6 +12,21 @@
     overflow: hidden;
     text-align: right;
 }
+.nav-link {
+    display: inline-block;
+    color: gray;
+}
+.nav-link a {
+    text-decoration: none;
+    color: gray;
+    width: 100px;
+    display: block;
+    padding: 2px 5px;
+    text-align: center;
+}
+.nav-link:hover {
+    color: #c05326;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
