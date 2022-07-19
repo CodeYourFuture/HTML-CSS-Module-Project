@@ -16,21 +16,24 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Abdirahim Sharif Hussein
+- Your City: Birmingham
+- Your Slack Name:Abdirahim Sharif Hussein
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML-CSS-Module-Project
+- Week: 2
 
 # Notes
 
 - What did you find easy?
 
+
 - What did you find hard?
+indenting the code
 
 - What do you still not understand?
+
 
 - Any other notes?

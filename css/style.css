@@ -1,11 +1,176 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2.75em;
+  outline:0;
+  padding:0;
+  margin:0;
+  border:0;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  flex-direction:row;
+  justify-content: end;
+
+}
+.nav-list {
+  margin-left: 15px;
+  padding: 0.rem 0;
+ font-family: 'sans-serif';
+ padding-bottom:0px;
+}
+.karma-logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 10px 2px;
+  position:absolute;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 10%;
+  list-style: none;
+  line-height: 3em;
+}
+.header-nav ul, .nav-list{
+  display: flex;
+}
+.header-nav a:hover, 
+.header-nav a:focus{
+color: red;
+}
+.main-img {
+  background-image :url("../img/first-background.jpg");
+  background-origin: unset;
+  background-size: cover;
+  background-color: rgb(rgb(43, 35, 35), green, blue);
+  background-position: 60%;
+}
+.I.Karma-text-intro{
+  height: 325px;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 225px;
+  max-height: fit-content;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.learn-more-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change:auto;
 }
 
+.learn-more-28:disabled {
+  pointer-events: none;
+}
+
+.learn-more-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.learn-more28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.Karma-abilities{
+  padding-top: 1.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Karma-abilities div h2{
+  font-weight: normal;
+  font-style: none;
+  font-size: 32px;
+  padding: 1em;
+}
+.Karma-abilities li{
+ font-size: 1em;
+ margin-top: 32px;
+margin-bottom: auto;
+}
+#device {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+#coffee {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+#refill {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+sast-class{
+background: rgba(224, 99, 58, 0.1);
+}
+.homepage-feature{
+  background-color:rgb(193, 164, 164);
+    display: flex;
+     text-align: center;
+
+}
+footer{
+  font-size: 1rem
+  }
 /**
  * Add your custom styles below
  * 
