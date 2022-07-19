@@ -42,14 +42,15 @@ login {
   display: flex;
   align-items: center; 
   justify-content: space-between; 
-  padding-top: 30px;
  
 }
 
 .logo {
-  margin-left: 30px;
+  padding-top: 20px;
+  margin-left: 150px;
 
-}
+  }
+  
 
 .nav-right {
   display: flex;
@@ -65,7 +66,8 @@ login {
   font-weight: 400;
   font-size: 1.2rem;
   text-decoration: none;
-  margin-left: 30px; 
+  margin-left: 30px;  
+  
 }
 
 .navigation__link1 {
@@ -74,7 +76,8 @@ login {
   font-weight: 400;
   font-size: 1.2rem;
   text-decoration: none;
-  margin-left: 30px; 
+  justify-content: center;
+  /* margin-left: 30px;  */
 }
 
 a:hover {
@@ -101,8 +104,8 @@ a:hover {
   color: #fff;
   font-size: 4.2rem;
   font-weight: 200;
-  padding-top: 230px;
-  /* display: block; */
+  padding-top: 200px;
+ 
 }
 
 .hero p {
@@ -160,13 +163,47 @@ a:hover {
 
 }
 
-/* footer */ 
+/* footer */
+
+ hr {
+   margin-top: 120px;
+ }
+
+ .text {
+   text-align: center;
+   font-weight: 500;
+   font-size: 1.3em;
+
+   
+ }
+ 
+ .social-links {
+   justify-content: center;
+   margin-left: 37rem;
+   margin-top: 2.3rem;
+ }
 
 
-hr {
-  margin-top: 120px;
-}
+ .circle {
+   list-style-type: none;
+   text-align: center;
+   display: inline;
+   border-radius: 33px;
+   border: 2px solid #cbcac7;
+   padding: 12px;
+   width: 100px;
+   height: 150px;
+   margin-left: 11px;
+ }
 
+ .copyright {
+   margin-top: 32px;
+   margin-left: 1rem;
+   font-size: 1.2em;
+   color: rgb(106, 101, 101);
+ }
+ 
+ 
 
 
 
