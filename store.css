@@ -22,7 +22,6 @@ body {
   background-color: white;
   position: fixed;
   z-index: 100;
-  
 }
 
 .pic {
@@ -68,8 +67,6 @@ li a {
   color: black;
 }
 
-
-
 .b-img {
   width: 100%;
   height: 90vh;
@@ -97,18 +94,14 @@ h1 {
 
 p {
   font-size: 18px;
-  
 }
-
 
 /*--------MAIN-ROW-COLUMN-GIRL---------*/
 .row {
   display: flex;
-
 }
 
 .column {
-  
   float: none;
 }
 
@@ -118,14 +111,12 @@ p {
   margin-left: 107%;
 }
 
-
-     /* --- tex p in row ---*/
+/* --- tex p in row ---*/
 
 .order p {
   color: #de6e49;
   font-family: "Roboto", sans-serif;
   font-size: 300%;
-  
 }
 
 .order {
@@ -139,115 +130,96 @@ p {
   clear: both;
 }
 
-     /* --------labels-------- */
-    .labels {
-     font-family: roboto;
-     
-    }
- 
-    .names-box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; 
+/* --------labels-------- */
+.labels {
+  font-family: roboto;
+}
 
-    }
+.names-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .inputfild2 {
-      margin-inline-end: -10%;
-    }
+.inputfild2 {
+  margin-inline-end: -10%;
+}
 
-    #lname {
-      width: 80%;
-      padding: 10px 20px;
-    }
-    ::placeholder {
-      color: #666666;
-      font-style: italic;
-    }
+#lname {
+  width: 80%;
+  padding: 10px 20px;
+}
+::placeholder {
+  color: #666666;
+  font-style: italic;
+}
 
-    #add-box {
-      width: 100%;
-      padding: 10px 20px;
-      
-    }
+#add-box {
+  width: 100%;
+  padding: 10px 20px;
+}
 
+.inputfild p {
+  color: #666666;
+  font-size: 20px;
+}
 
+.citypost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .inputfild p {
-      color: #666666;
-      font-size: 20px;
-    }
-      
+.post {
+  margin-inline-end: -5%;
+  width: 150px;
+}
 
+.city {
+  width: 350px;
+}
 
+/* -- select-color -- */
 
-      .citypost {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-      }
-      
-    
+.color {
+  margin-top: 80px;
+}
 
-      .post{
-        margin-inline-end: -5%;
-        width: 150px;
-      }
+.color p {
+  color: #666666;
+  font-size: 21px;
+}
 
-      .city {
-        width: 350px;
-      }
+.colors p {
+  color: #666666;
+  font-size: 18px;
+}
 
+#space-grey- {
+  margin-left: 50px;
+  color: #666666;
+}
 
+.agree {
+  display: flex;
+}
+/* -- select-color-end -- */
 
+/* -------BUTTON-------- */
 
-        /* -- select-color -- */
-          
-        .color {
-         margin-top: 80px;  
-        }
+.button {
+  background-color: #e0633a;
+  border-radius: 4px;
+  font-size: 25px;
+  padding: 16px 35px;
+  text-decoration: none;
+  color: white;
+}
 
-         .color p {
-          color: #666666;
-          font-size: 21px;
-         }
+/* -------BUTTON-END---- */
 
-       .colors p{
-         color: #666666;
-         font-size: 18px;        
-       }
-         
-          
-        
-         
-        #space-grey-{
-          margin-left: 50px;
-          color: #666666;
-        }
-
-        .agree {
-          display: flex;
-        }
-         /* -- select-color-end -- */
-
-                 /* -------BUTTON-------- */
-
-                 .button {
-                  background-color: #E0633A;
-                  border-radius: 4px;
-                  font-size: 25px;
-                  padding: 16px 35px;
-                  text-decoration: none;
-                  color: white;
-                  }
-              
-              
-
-              /* -------BUTTON-END---- */
-
-
-     /* --------footer-------- */
- .f-footer {
+/* --------footer-------- */
+.f-footer {
   width: 60%;
   height: 100%;
   margin: 0px 20%;
