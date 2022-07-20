@@ -16,9 +16,9 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name:  
+- Your City:  
+- Your Slack Name:  
 
 # Homework Details
 
