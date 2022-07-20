@@ -1,16 +1,26 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 .logo {
     width: 15px;
     height: 23px;
-    padding-left: 100px;
-    margin-top: 10px;
+   
 
 }
+
+
 .nav-links {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    text-align: center;
+  /*  overflow: hidden;
+    text-align: center;*/
     
 }
 .nav-links li {
@@ -23,7 +33,7 @@
     width: 100px;
     display: block;
     padding: 2px 5px;
-    text-align: center;
+    
 }
 .nav-link:hover {
     color: #c05326;
@@ -31,7 +41,8 @@
 .intro {
    background-image: url("/img/first-background.jpg");
    height: 500px;
-   background-position: center; 
+   background-position: center;
+   background-repeat: no-repeat; 
 }
 
 body {
