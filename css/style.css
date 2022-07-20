@@ -17,3 +17,222 @@ body {
  */
 
 
+.bar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+.pic {
+    justify-content: center;
+    width: 30%;
+    display: flex;
+}
+
+.logo {
+width: 35px;
+height: 70px;
+margin-left: 30%; 
+margin-right: 80%;
+}
+
+.bar-right {
+    width: 50%;
+    height: 60px;
+    display: flex  ;
+    align-items: center;
+    margin-left: 20%;
+    background-color: white;
+}
+
+
+.bar-links {
+    list-style-type: none;
+}
+
+.links  {
+    color: black;
+    float: left;
+    margin-left: 4em;
+    color: #aeb1b6;
+    font-size: 18px;
+    
+}
+ 
+.links :hover {
+    color: #ff6600;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+          <!--MAIN-->
+.main {
+    width: 100%;
+    
+}
+
+.b-img {
+    width: 100%;
+    height: 90vh;
+}
+ 
+.text{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 35vh;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+.text :first-child {
+    font-size: 70px;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+.text :nth-child(2) {
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0%;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+   
+
+}
+
+.button {
+    background-color: #ff6600;
+    border-radius: 6px;
+    font-size: 30px;
+    padding: 0.5%;
+    text-decoration: none;
+    color: white;
+}
+
+
+.one p{
+    margin-top: 90px;
+    font-size: 45px;
+}
+      
+
+.everyone{
+    text-align: center;
+   
+}
+
+.things {
+    width: 210px;
+    height: 200px;
+    background-color: white;
+    margin: 4%;
+    display: inline-block;
+
+    
+}
+ 
+
+.alo {
+    position: absolute;
+    text-align: center;
+    
+
+}
+
+.block {
+
+    display: flex;
+    margin-top: 10px;
+    margin-right: 0px;
+    
+}
+
+.feature {
+    height: 470px;
+    margin-left: 0.9px;
+    width: 850px;
+}
+
+
+.article2 {
+    height: 450px;
+    width: 1035px;
+    padding: 9px;
+    border: solid rgb(254, 254, 255); 
+    background-color: rgba(224, 99, 58, 0.1);
+   
+}
+
+.article2 p {
+    font-style: italic;
+    font-family: 'Roboto';
+    margin-left: 0px;
+    margin-right: 0px;
+
+    Font size: 45px;
+    Line height: 49px;
+    fill: solid;
+    font-size: 42px;
+    
+}
+
+.today-btn{
+    height: 5%;
+    margin-left: 34%;
+    margin-bottom: 20%;
+
+}
+
+
+.get-today{
+    color: white;
+    text-align: center;
+}
+
+.get {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #ff6600;
+    border-radius: 6px;
+    font-size: 29px;
+    padding: 0.5%;
+    position: absolute;
+
+}
+
+
+    
+
+    ol a {
+        text-decoration: none;
+        color: rgb(253, 251, 251);
+       text-align: center;
+    }
+
+    <!-------footer-------->
+
+.f-footer {
+    width: 60%;
+    height: 100%;
+    margin: 0px 20%;
+    text-align: center;
+  
+}
+
+.icon {
+gfont-size: 25px;
+text-align: center;
+}
+
+
