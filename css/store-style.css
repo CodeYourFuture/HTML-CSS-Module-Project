@@ -1,83 +1,102 @@
-/* header and footer sytles imported form sytle.css */
 :root {
+
     --orange: #e0633a;
+
 }
 
-.container {
-    display: grid;
-    grid-template: repeat(1, 1fr)/repeat(2, 1fr);
-    grid-row: auto;
+h1 {
+    font-size: 40px;
+    color: var(--orange);
 }
 
-.form-container {
-    margin: 0px 9%;
-    display: grid;
-    grid-template: repeat(10, auto)/repeat(2, 1fr);
+#form {
+    display: flex;
+    flex-direction: row;
 }
 
-.title {
-    font-size: 38px;
+#form-img {
+    width: 50%;
+}
+
+#names,
+form>div:nth-child(3) {
+    display: flex;
+}
+
+#names>div:nth-child(1),
+form>div:nth-child(2),
+#names>div:nth-child(2),
+#address-detail>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+#address-detail>div:nth-child(2) {
+    width: 30%;
+}
+
+#address-detail>div:nth-child(1) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+label,
+input[type=checkbox],
+input[type=radio] {
+    margin: 20px 20px 20px 0;
     text-align: justify;
-    color: var(--orange);
+
 
 }
 
-.title,
-.address,
-.address1,
-.color,
-.tc,
-.submit {
-    grid-column: 1/3;
+
+#terms-condition {
+    padding: 0px;
+}
+
+#submit {
+    margin: 40px 0;
+    padding: 20px 40px;
 }
 
 input[type=text],
-label {
-    display: block;
-    margin: 10px;
-    width: 90%;
+select {
     font-size: 20px;
-
-}
-
-input[type=text],
-select {
-    margin: 3%;
-    width: 90%;
-    height: 25px;
-    border: 2px solid gray;
+    padding: 5px;
+    margin-right: 15px;
+    border: 1.5px solid rgb(156, 155, 155);
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
-select {
-    margin-top: 2px;
-    height: 30px;
+input[type=checkbox],
+input[type=radio] {
+    transform: scale(1.5);
 }
 
-input[type=radio],
-input[type=checkbox] {
-    display: inline;
-    margin: 30px 5px;
-    color: var(--orange);
-}
-
-.inline_block {
-    display: inline;
-}
 
 fieldset {
     border: none;
+    margin: 40px 0;
+    padding: 0;
+}
+
+legend {
     margin: 20px 0;
 }
 
-.tc>label>a {
-    padding: 0;
-    text-decoration: underline;
-
+#terms-container {
+    display: flex;
 }
 
-#store-img {
-    background-image: url(../img/store-image_by-andrew-neel-unsplash.jpeg);
-    background-size: auto;
 
-}`
+
+
+
+section>div:nth-child(1) {
+    width: 50%;
+    padding: 7%;
+
+}

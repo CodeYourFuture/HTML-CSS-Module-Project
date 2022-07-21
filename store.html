@@ -27,65 +27,78 @@
         </div>
     </header>
     <!-- main section contains Form and Validations -->
-
     <main>
         <article>
-            <section>
-                <div class="container">
+            <section id="form">
 
-                    <div class="form-container">
-                        <div class="title">
-                            <h1>Order your Karma wifi device today!</h1>
+                <div>
+                    <h1>Order your Karma wifi device today!</h1>
+                    <form action="" method="POST">
+                        <div id="names">
+                            <div>
+                                <label for="fname">First Name *</label>
+                                <input type="text" id="fname" required>
+
+                            </div>
+                            <div>
+                                <label for="lname">Last Name *</label>
+                                <input type="text" id="lname" required>
+
+                            </div>
                         </div>
                         <div>
-                            <label for="fname">First Name*</label>
-                            <input type="text" name="" id="fname">
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" required>
+                            <label for="address2">Address2</label>
+                            <input type="text" id="address2">
                         </div>
-                        <div><label for="lname">Last Name*</label>
-                            <input type="text" name="" id="lname">
-                        </div>
-                        <div class="address"><label for="add">Address*</label>
-                            <input type="text" name="" id="add">
-                        </div>
-                        <div class="address1"><label for="fname">Adress 2</label>
-                            <input type="text" name="" id="fname">
+                        <div id="address-detail">
+                            <div id="city">
+                                <label for="city">City *</label>
+                                <select name="" id="city" required>
+                                    <option value="-1">--select city--</option>
+                                    <option value="1">London</option>
+                                    <option value="2">West Midlands</option>
+                                    <option value="3">Solihull</option>
+                                    <option value="4">Norwich</option>
+                                    <option value="5">Oxford</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="postcode">Postcode *</label>
+                                <input type="text" id="postcode" required>
+                            </div>
                         </div>
                         <div>
-                            <label for="city">City*</label>
-                            <select name="" id="city">
-                                <option value="">selct city</option>
-                            </select>
-                        </div>
-                        <div><label for="fname">Postcode*</label>
-                            <input type="text" name="" id="fname">
-                        </div>
-                        <div class="color">
                             <fieldset>
-                                <legend>select color</legend>
-                                <input type="radio" name="color" id="orange">
-                                <label class="inline_block" for="orange">Karma Orange</label>
-                                <input type="radio" name="color" id="gray">
-                                <label class="inline_block" for="gray">Space Gray</label>
+                                <legend>Select a color</legend>
+                                <input type="radio" name="color" id="orange" checked>
+                                <label for="orange">Karma Orange</label>
+                                <input type="radio" name="color" id="grey">
+                                <label for="grey">Space Grey</label>
                             </fieldset>
                         </div>
-                        <div class="tc">
-                            <input type="checkbox" name="" id="">
-                            <label for="" class="inline_block">By placing your order you agree to karma's <a
-                                    href="">Terms and Conditions</a></label>
+                        <div id="terms-container">
+                            <div>
+                                <input type="checkbox" name="" id="tc" required>
+                            </div>
+                            <label for="tc">By placing your order you are agree with Karma's <a href=""
+                                    id="terms-condition">Terms and Conditions</a>.*</label>
                         </div>
-                        <div class="submit">
-                            <button>Place my order</button>
+                        <div>
+                            <button id="submit">Place my order</button>
                         </div>
-                    </div>
-                    <div id="store-img">
 
-                    </div>
+
+                    </form>
                 </div>
+
+                <img id="form-img" src="./img/store-image_by-andrew-neel-unsplash.jpeg" alt="">
+
             </section>
-
         </article>
-
     </main>
+
     <footer>
         <div id="line"></div>
         <!--social media section-->
