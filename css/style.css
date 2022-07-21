@@ -43,7 +43,57 @@
    height: 500px;
    background-position: center;
    background-repeat: no-repeat; 
+   background-size: cover;
+   position: relative;
+
+
 }
+
+.intro-text {
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+button {
+    font-size: 0.8rem;
+    background-color: #c05326;
+    padding: 10px 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 3px;
+
+}
+
+/*grid*/
+
+.container {
+    text-align: center;
+
+}
+#sub {
+    padding: 25px 0;
+    margin-top: 20px;
+    font-size: larger;
+
+}
+
+.column {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* footer layout */
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
