@@ -40,19 +40,19 @@
             <form class="store-form">
                 <label class="label">
                     First name *
-                <input id="first-name" type="text" name="first-name" class="form-input"/>
+                <input id="first-name" type="text" name="first-name" class="form-input" minlength="1" maxlength="30" required />
                 </label>
                 <label class="label">
                     Last name *
-                <input id="last-name" type="text" name="last-name" class="form-input"/>
+                <input id="last-name" type="text" name="last-name" class="form-input" minlength="2" maxlength="50" required />
                 </label>
                 <label class="label">
                     Address *
-                <input id="address" type="text" name="address" class="form-input"/>
+                <input id="address" type="text" name="address" class="form-input" minlength="10" maxlength="100" required />
                 </label>
                 <label class="label">
                     Address 2
-                <input id="address2" type="text" name="address2" class="form-input"/>
+                <input id="address2" type="text" name="address2" class="form-input" minlength="10" maxlength="100" required />
                 </label>
                 <label class="label">
                     City *
@@ -64,7 +64,7 @@
                 </label>
                 <label class="label">
                     Postcode *
-                <input id="postcode" type="text" name="postcode" class="form-input"/>
+                <input id="postcode" type="text" name="postcode" class="form-input" minlength="5" maxlength="15" required />
                 </label>
                 <fieldset class="fieldset">
                     <legend>Select a colour</legend>
@@ -77,7 +77,10 @@
                     <input id="space-grey" type="radio" name="space-grey" value="space grey" />
                         </label>
                 </fieldset>
-            </form>
+                    <input id="checkbox" type="checkbox" name="checkbox" required/>
+                    <label for="checkbox" class="label">By placing your order you agree to Karma's <span class="t-and-c">Terms and Conditions</span> *</label>
+                <button class="store-button">Place my order</button>
+                </form>
         </section>
         <img src="img/girl-working-at-desk.jpg" alt="a woman working at a desk" class="store-image" />
     </div>
