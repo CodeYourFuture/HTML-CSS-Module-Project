@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store-style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Place your Order</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo-space">
+            <a href="index.html"><img id="site-logo" src="img/karma-logo.svg" alt="logo"></a>
+        </div>
+        <div id="navLink">
+            <nav>
+                <a id="SiteName" href="index.html">Meet Karma</a></b>
+                <a href="">How it works</a>
+                <a href="store.html">Store</a>
+                <a href="">Block</a>
+                <a href="">Help</a>`
+                <a href="">Log in</a>
+            </nav>
+        </div>
+    </header>
+    <!-- main section contains Form and Validations -->
+    <main>
+        <article>
+            <!-- form section -->
+            <section id="form">
+                <div>
+                    <!-- karma's title -->
+                    <h1>Order your Karma wifi device today!</h1>
+                    <form action="" method="POST">
+                        <div id="names">
+                            <div>
+                                <label for="fname">First Name *</label>
+                                <input type="text" id="fname" required>
+                            </div>
+                            <div>
+                                <label for="lname">Last Name *</label>
+                                <input type="text" id="lname" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" required>
+                            <label for="address2">Address2</label>
+                            <input type="text" id="address2">
+                        </div>
+                        <div id="address-detail">
+                            <div id="city">
+                                <label for="city">City *</label>
+                                <select name="" id="city" required>
+                                    <option value="-1">--select city--</option>
+                                    <option value="1">London</option>
+                                    <option value="2">West Midlands</option>
+                                    <option value="3">Solihull</option>
+                                    <option value="4">Norwich</option>
+                                    <option value="5">Oxford</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="postcode">Postcode *</label>
+                                <input type="text" id="postcode" required>
+                            </div>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend>Select a color</legend>
+                                <input type="radio" name="color" id="orange" checked>
+                                <label for="orange">Karma Orange</label>
+                                <input type="radio" name="color" id="grey">
+                                <label for="grey">Space Grey</label>
+                            </fieldset>
+                        </div>
+                        <div id="terms-container">
+                            <div>
+                                <input type="checkbox" name="" id="tc" required>
+                            </div>
+                            <label for="tc">By placing your order you are agree with Karma's <a href=""
+                                    id="terms-condition">Terms and Conditions</a>.*</label>
+                        </div>
+                        <div>
+                            <button id="submit">Place my order</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- left image -->
+                <img id="form-img" src="./img/store-image_by-andrew-neel-unsplash.jpeg" alt="Image for store page">
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div id="line"></div>
+        <!--social media section-->
+        <div class="footer-items">
+            <p>Join us on</p>
+        </div>
+        <div class="footer-items">
+            <a href="https://www.twitter.com"><img src="img/twitter-icon.svg" alt="twitter"></a>
+            <a href="https://www.facebook.com"><img src="img/facebook-icon.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram-icon.svg" alt="Instagram"></a>
+        </div>
+        <!--copyright section-->
+        <div class="footer-items">
+            <P class="footer-copyright">&copy; Karma Mobility, Inc.</P>
+        </div>
+    </footer>
+
+</body>
+
+</html>
