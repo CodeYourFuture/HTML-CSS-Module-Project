@@ -38,6 +38,7 @@
         <section class="order-section">
             <h1 class="form-title">Order your Karma wifi device today!</h1>
             <form class="store-form">
+                <div class="form-names">
                 <label class="label">
                     First name *
                 <input id="first-name" type="text" name="first-name" class="form-input" minlength="1" maxlength="30" required />
@@ -46,6 +47,7 @@
                     Last name *
                 <input id="last-name" type="text" name="last-name" class="form-input" minlength="2" maxlength="50" required />
                 </label>
+                </div>
                 <label class="label">
                     Address *
                 <input id="address" type="text" name="address" class="form-input" minlength="10" maxlength="100" required />
@@ -56,7 +58,8 @@
                 </label>
                 <label class="label">
                     City *
-                    <select id="city" name="city" class="form-input">
+                    <select id="city" name="city" class="form-input" required>
+                        <option value="" disabled selected hidden><em>Select your city...</em></option>
                         <option value="Birmingham">Birmingham</option>
                         <option value="Leeds">Leeds</option>
                         <option value="Brighton">Brighton</option>

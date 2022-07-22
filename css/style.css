@@ -56,21 +56,6 @@ body {
     opacity: 1;
 }
 
-.order-section {
-    border-style: dashed;
-    border-color: yellow;
-}
-
-.form-title {
-    border-style: dashed;
-    border-color: hotpink;
-}
-
-.store-form {
-    border-style: dashed;
-    border-color: blue;
-}
-
 /* Section 1 */
 
 .section1 {
@@ -196,6 +181,43 @@ body {
 .fieldset {
     border: none;
 }
+
+.order-section {
+    margin-left: 120px;
+    width: 125%;
+    font-size: 200%;
+    border-style: dashed;
+    border-color: yellow;
+}
+
+.form-title {
+    color: coral;
+    font-weight: lighter;
+    margin-top: 75px;
+    border-style: dashed;
+    border-color: hotpink;
+}
+
+.store-form {
+    border-style: dashed;
+    border-color: blue;
+    margin-top: 50px;
+    color: #666666;
+    font-size: 75%;
+    width: 80%;
+}
+
+.form-names {
+    display: flex;
+    justify-content: space-between;
+    border-style: dashed;
+    border-color: green;
+}
+
+.label {
+    line-height: 50px;
+}
+
 
 /* Seperator */
 
