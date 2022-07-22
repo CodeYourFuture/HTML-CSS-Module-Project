@@ -17,3 +17,76 @@ body {
  */
 
 
+
+.nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #838994;
+    /* position: fixed;
+    z-index: 9999; */
+    
+
+}
+
+.logo {
+    height: 3rem;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    
+
+}
+
+.active {
+    text-decoration: none;
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+    color: #838994;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+.link:hover {
+    color: #333;
+}
+
+.background-image {
+    
+}
+
+.learn-more-button {
+
+}
+
+.device-image {
+    width: 7%;
+}
+
+.coffee-image {
+    width: 7%;
+}
+
+.fuel-pump-image {
+    width: 7%;
+}
+
