@@ -129,13 +129,51 @@ body {
 
 /* Section 3 */
 
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(224, 99, 58, 0.1);
+}
 
+.section3-image {
+    width: 60%;
+}
+
+.section3-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 160%;
+}
+
+.section3-text {
+    font-weight: lighter;
+    opacity: 0.9;
+    width: 65%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.section3-quotes {
+    color: coral;
+}
+
+.section3-button {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 80%;
+    padding: 20px 40px;
+    /* margin-top: 150px; */
+}
 
 .seperator {
-    border: solid 1px darkslategray;
+    border-bottom: solid 1px darkslategray;
     opacity: 0.2;
     width: 90%;
     margin: auto;
+    padding-top: 50px;
 }
 
 /* Footer */
