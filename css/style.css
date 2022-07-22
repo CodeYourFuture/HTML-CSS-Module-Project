@@ -124,7 +124,7 @@ button:hover {
 /*Services section*/
 .service-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -136,15 +136,20 @@ button:hover {
 }
 
 .service-container>figure {
-    margin: 80px;
     width: 150px;
     padding: 50px;
 }
 
 .service-container>figure>figcaption {
-    width: 200px;
+    white-space: nowrap;
+    margin: 30px 0;
 }
 
+/* #refill
+{
+    width: 150px;
+    height: 150px;
+} */
 .services-title {
     font-size: 50px;
 }
@@ -191,8 +196,10 @@ footer {
     width: 30px;
     height: 30px;
     margin: 10px;
+    border-collapse: separate;
+    border-spacing: 15px;
     border-radius: 50%;
-    border: 2px solid #c5c5c5;
+    box-shadow: 0 0 2px #888;
     padding: 10px;
 }
 

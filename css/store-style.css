@@ -2,15 +2,17 @@
     /* color variable  */
     --orange: #e0633a;
 }
-*
-h1 {
+
+* h1 {
     font-size: 40px;
     color: var(--orange);
 }
+
 #form {
     display: flex;
     flex-direction: row;
 }
+
 #form-img {
     width: 50%;
 }
@@ -19,6 +21,7 @@ h1 {
 form>div:nth-child(3) {
     display: flex;
 }
+
 /* set the form divs display to flex and direction to column */
 #names>div:nth-child(1),
 form>div:nth-child(2),
@@ -27,10 +30,12 @@ form>div:nth-child(2),
     display: flex;
     flex-direction: column;
 }
+
 /* set postcode div width */
 #address-detail>div:nth-child(2) {
     width: 30%;
 }
+
 /* set style for city drop down list */
 #address-detail>div:nth-child(1) {
     width: 90%;
@@ -41,7 +46,7 @@ form>div:nth-child(2),
 label,
 input[type=checkbox],
 input[type=radio] {
-    margin: 20px 20px 20px 0;
+    margin: 20px;
     text-align: justify;
 }
 
@@ -53,19 +58,20 @@ input[type=radio] {
 }
 
 #submit {
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 
 input[type=text],
 select {
+
     font-size: 20px;
     padding: 5px;
     color: var(--orange);
-    margin-right: 15px;
+    margin: 0 20px;
     border: 1.5px solid rgb(156, 155, 155);
     border-radius: 4px;
-    box-sizing: border-box;
 }
+
 /* set the size for checkbox and radio */
 input[type=checkbox],
 input[type=radio] {
@@ -85,7 +91,7 @@ button:hover {
 }
 
 legend {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 #terms-container {
