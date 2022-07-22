@@ -16,4 +16,278 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header - logo and nav */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.header-logo {
+    margin-right: 400px;
+}
+
+.logo {
+    height: 75px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+}
+
+.header-nav-link {
+    text-decoration: none;
+    font-size: 120%;
+    color: darkslategray;
+    opacity: 70%;
+}
+
+.header-nav-link:hover {
+    color: coral;
+    opacity: 1;
+}
+
+.header-nav-link:first-child {
+    opacity: 1;
+}
+
+/* Section 1 */
+
+.section1 {
+    background-image: url("/img/first-background.jpg");
+    background-color: white;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    font-weight: lighter;
+}
+
+.section1-article {
+    -ms-transform: translateY(115%);
+    transform: translateY(115%);
+}
+
+.section1-title {
+    font-weight: lighter;
+}
+
+.section1-text {
+    font-weight: lighter;
+    margin-bottom: 75px;
+}
+
+.section1-button {
+    background-color: coral;
+    border: none;
+    border-radius: 5px;
+    font-size: 80%;
+    padding: 20px 40px;
+}
+
+
+/* Section 2 */
+
+.section2 {
+    text-align: center;
+    font-size: 150%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.section2-title {
+    font-weight: lighter;
+    padding-bottom: 25px;
+    opacity: 0.9;
+}
+
+.section2-articles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section2-article-icon {
+    height: 250px;
+    opacity: 0.8;
+}
+
+.section2-article-text {
+    font-weight: lighter;
+    opacity: 0.9;
+}
+
+/* Section 3 */
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(224, 99, 58, 0.1);
+}
+
+.section3-image {
+    width: 60%;
+}
+
+.section3-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 160%;
+}
+
+.section3-text {
+    font-weight: lighter;
+    opacity: 0.9;
+    width: 65%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.section3-quotes {
+    color: coral;
+}
+
+.section3-button {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 80%;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+/* Store Page */
+
+.store-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input {
+    display: block;
+    height: 50px;
+}
+
+.fieldset {
+    border: none;
+}
+
+.order-section {
+    margin-left: 120px;
+    width: 125%;
+    font-size: 200%;
+}
+
+.form-title {
+    color: coral;
+    font-weight: lighter;
+    margin-top: 75px;
+}
+
+.store-form {
+    margin-top: 100px;
+    color: #666666;
+    font-size: 75%;
+    width: 80%;
+}
+
+.form-names,
+.form-city-postcode {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    line-height: 50px;
+}
+
+#address,
+#address2 {
+    width: 600px;
+}
+
+#city {
+    width: 300px;
+}
+
+#space-grey {
+    margin-left: 50px;
+}
+
+#checkbox-text {
+    /* font-size: 23px; */
+    opacity: 0.7;
+}
+
+.t-and-c {
+    color: coral;
+    text-decoration: underline;
+}
+
+.store-button {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 80%;
+    width: 300px;
+    padding: 20px 40px;
+}
+
+/* Seperator */
+
+.seperator {
+    border-bottom: solid 1px darkslategray;
+    opacity: 0.2;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 135%;
+}
+
+.footer-icon {
+    height: 17px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.footer-icon-border {
+    border-style: solid;
+    border-color: darkslategray;
+    border-width: 1px;
+    opacity: 0.5;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.footer-text2 {
+    color: darkslategray;
+    opacity: 0.5;
+}
 
