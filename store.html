@@ -56,10 +56,11 @@
                     Address 2
                 <input id="address2" type="text" name="address2" class="form-input" minlength="10" maxlength="100" required />
                 </label>
+                <div class="form-city-postcode">
                 <label class="label">
                     City *
                     <select id="city" name="city" class="form-input" required>
-                        <option value="" disabled selected hidden><em>Select your city...</em></option>
+                        <option value="" disabled selected>Select your city...</option>
                         <option value="Birmingham">Birmingham</option>
                         <option value="Leeds">Leeds</option>
                         <option value="Brighton">Brighton</option>
@@ -69,19 +70,16 @@
                     Postcode *
                 <input id="postcode" type="text" name="postcode" class="form-input" minlength="5" maxlength="15" required />
                 </label>
+                </div><br><br>
                 <fieldset class="fieldset">
                     <legend>Select a colour</legend>
-                    <label class="label">
-                        Karma orange
                     <input id="karma-orange" type="radio" name="karma-orange" value="karma orange" />
-                        </label>
-                        <label class="label">
-                        Space grey
+                        <label for="karma-orange" class="label">Karma orange</label>
                     <input id="space-grey" type="radio" name="space-grey" value="space grey" />
-                        </label>
+                        <label for="space-grey" class="label">Space grey</label><br><br><br>
                 </fieldset>
                     <input id="checkbox" type="checkbox" name="checkbox" required/>
-                    <label for="checkbox" class="label">By placing your order you agree to Karma's <span class="t-and-c">Terms and Conditions</span> *</label><br><br>
+                    <label for="checkbox" class="label" id="checkbox-text">By placing your order you agree to Karma's <span class="t-and-c">Terms and Conditions</span> *</label><br><br>
                 <button class="store-button">Place my order</button>
                 </form>
         </section>
