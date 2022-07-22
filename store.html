@@ -35,8 +35,49 @@
 
     <main class="main">
     <div class="store-container">
-        <section class="store-form">
+        <section class="order-section">
             <h1 class="form-title">Order your Karma wifi device today!</h1>
+            <form class="store-form">
+                <label class="label">
+                    First name *
+                <input id="first-name" type="text" name="first-name" class="form-input"/>
+                </label>
+                <label class="label">
+                    Last name *
+                <input id="last-name" type="text" name="last-name" class="form-input"/>
+                </label>
+                <label class="label">
+                    Address *
+                <input id="address" type="text" name="address" class="form-input"/>
+                </label>
+                <label class="label">
+                    Address 2
+                <input id="address2" type="text" name="address2" class="form-input"/>
+                </label>
+                <label class="label">
+                    City *
+                    <select id="city" name="city" class="form-input">
+                        <option value="Birmingham">Birmingham</option>
+                        <option value="Leeds">Leeds</option>
+                        <option value="Brighton">Brighton</option>
+                    </select>
+                </label>
+                <label class="label">
+                    Postcode *
+                <input id="postcode" type="text" name="postcode" class="form-input"/>
+                </label>
+                <fieldset class="fieldset">
+                    <legend>Select a colour</legend>
+                    <label class="label">
+                        Karma orange
+                    <input id="karma-orange" type="radio" name="karma-orange" value="karma orange" />
+                        </label>
+                        <label class="label">
+                        Space grey
+                    <input id="space-grey" type="radio" name="space-grey" value="space grey" />
+                        </label>
+                </fieldset>
+            </form>
         </section>
         <img src="img/girl-working-at-desk.jpg" alt="a woman working at a desk" class="store-image" />
     </div>

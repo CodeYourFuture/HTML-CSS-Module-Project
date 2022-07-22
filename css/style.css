@@ -168,6 +168,23 @@ body {
     text-decoration: none;
 }
 
+/* Store Page */
+
+.store-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input {
+    display: block;
+}
+
+.fieldset {
+    border: none;
+}
+
+/* Seperator */
+
 .seperator {
     border-bottom: solid 1px darkslategray;
     opacity: 0.2;
@@ -211,3 +228,4 @@ body {
     color: darkslategray;
     opacity: 0.5;
 }
+
