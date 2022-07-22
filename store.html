@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header">
+        <div class="logo">
+          <img src="favicon.ico" alt="logo Karma" />
+        </div>
+      </div>
+      <nav>
+        <!-- <div id="nav-bar"> -->
+          <a class="nav-item" href="index.html"><strong>Meet Karma</strong></a>
+          <a class="nav-item" href="#">How it works</a>
+          <a class="nav-item" href="store.html">Store</a>
+          <a class="nav-item" href="#">Blog</a>
+          <a class="nav-item" href="#">Help</a>
+          <a class="nav-item" href="#">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main_store">
+      <form class="form">
+        <h1 class="form__title">Order your Karma wifi device today!</h1>
+
+        <div class="wrap_rows">
+          <fieldset class="fieldset">
+            <label class="first_name" for="first_name">First Name *</label>
+            <input
+              id="first_name"
+              type="text"
+              name="firstname"
+              minlength="3"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <label class="last_name" for="last_name">Last Name *</label>
+            <input
+              id="lastname"
+              type="text"
+              name="lastname"
+              minlength="3"
+              required
+            />
+          </fieldset>
+        </div>
+        <div class="wrap_column">
+          <fieldset class="fieldset">
+            <label for="adress">Address *</label>
+          </fieldset>
+          <input
+            id="adress"
+            type="text"
+            name="address"
+            minlength="3"
+            required
+          />
+
+          <fieldset class="fieldset">
+            <label for="adress2">Address 2</label>
+          </fieldset>
+          <input id="adress2" type="text" name="address2" minlength="3" />
+        </div>
+
+        <div class="wrap_rows">
+          <fieldset id="city" name="city">
+            <label for="city" minlength="3" required>City *</label>
+            <select class="input_city" id="city">
+              <option value="city" selected>Select your city ...</option>
+              <option value="birmingham">Birmingham</option>
+              <option value="manchester">Manchester</option>
+              <option value="dudley">Dudley</option>
+              <option value="bristol">Bristol</option>
+              <option value="coventry">Coventry</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <label for="postocode"> Postcode * </label>
+            <input
+              id="postcode"
+              type="text"
+              name="postcode"
+              minlength="3"
+              maxlength="8"
+              required
+            />
+          </fieldset>
+        </div>
+        <fieldset class="wrap_rows">
+          <legend class="legend">Select a colour</legend>
+          <input
+            class="input_radio"
+            id="karma_orange"
+            type="radio"
+            name="color"
+            checked
+          />
+          <label for="karma_orange">Karma Orange</label>
+
+          <input id="space_grey" type="radio" name="color" />
+          <label for="space_grey">Space Grey</label>
+        </fieldset>
+
+        <fieldset>
+          <input
+            class="agreement"
+            id="agreement"
+            type="checkbox"
+            name="agreement"
+            checked
+          />
+          <label class="agreement_label" for="agreement"
+            >By placing your order you agree to karma's
+            <span class="span_agreement">Terms and conditions</span>.*</label
+          >
+        </fieldset>
+        <button class="btn_primary">Place my order</button>
+      </form>
+      <img
+        class="aside_image"
+        src="level-2/store-image_by-andrew-neel-unsplash.jpg"
+        alt="a person sitting on a desk"
+      />
+    </main>
+    <footer>
+      <p id="paragraph_join">Join us on</p>
+      <br />
+
+      <div id="contacts">
+        <div>
+          <button class="container-social">
+            <img
+              class="img_social"
+              src="img/twitter-icon.svg"
+              alt="twitter symbol"
+            />
+          </button>
+        </div>
+
+        <div>
+          <button class="container-social">
+            <img
+              class="img_social"
+              src="img/facebook-icon.svg"
+              alt="facebook symbol"
+            />
+          </button>
+        </div>
+
+        <div>
+          <button class="container-social">
+            <img
+              class="img_social"
+              src="img/instagram-icon.svg"
+              alt="instagram symbol"
+            />
+          </button>
+        </div>
+      </div>
+      <p class="copyright">© Karma Mobility.Inc</p>
+    </footer>
+  </body>
+</html>

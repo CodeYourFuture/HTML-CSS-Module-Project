@@ -1,19 +1,223 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+   /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+   body {
+      font-family: 'Roboto', sans-serif;
+      -webkit-font-smoothing: antialiased;
+   }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+   /**
+   * Add your custom styles below
+   * 
+   * Remember: 
+   * - Be organised, use comments and separate your styles into meaningful chunks
+   *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+   * 
+   * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+   */
+
+
+   /* Navigation */
+   nav {
+      display:flex;
+      justify-content: flex-end;
+   }
+   
+   #nav-bar {
+      margin:0;
+      list-style-type: none;
+      display: flex;
+      
+   
+   }
+   .nav-item {
+      background-color: white;
+      border: none;
+      color: gray;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      align-items: left;
+   }
+
+   .nav-item:hover {
+      color: rgb(224, 99, 58);
+   }
+   .header-nav-item {
+      list-style-type: none;
+
+   }
+
+   /* Headings */
+   header {
+      padding: 5px;
+      background-color: white;
+   }
+   #header {
+      padding: 5px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 90%;
+      margin: 0 auto;
+   }
+   .logo {
+      height: 5px;
+      width: 5px;
+      text-align: left;
+   }
+
+   .button:hover {
+      color: orangered;
+   }
+   .heading {
+      font-size: 50px;
+      font-weight: 150;
+   }
+
+   .sub_heading {
+      font-size: 30px;
+      font-weight: 50;
+   }
+
+   /* main */
+   main, h1 {
+      text-align: center;
+   }
+   main {
+      width: 70%;
+      margin:auto;
+   }
+   .description {
+      font-size: 20px;
+   }
+
+   .container {
+      position: relative;
+      text-align: center;
+      color:azure;
+   }
+   .container2 {
+      display:flex;
+      background:rgb(252, 239, 235);
+      min-width:100%;
+
+   }
+
+   .content {
+      position: absolute;
+      top:35%;
+      left:35%
+
+   }
+   .image {
+      min-width:100%;
+      min-width: 1024px;
+      height: auto;
+      display:flex;
+      width: 100%;
+      background-size: cover;
+     
+   }
+
+   .btn-primary {
+      padding: 15px 25px;
+      background-color: rgb(224, 99, 58);
+      border-radius: 5px;
+      border:none;
+      margin-top: 25px;
+   }
+   .btn-secondary {
+      background-color: rgb(224, 99, 58);
+      border-radius: 5px;
+      margin-top: 25px;
+      color:white;
+      padding: 15px 25px;
+      border:none;
+      
+   }
+   .content2 {
+      text-align: center;
+      margin: 60px 30px;
+   }
+   .info_connection {
+      font-size:40px;
+      text-align: center;
+      font-weight:40;
+      justify-content: space-around;
+   }
+
+   #info-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: auto;
+      justify-content: space-around;
+   }
+   #karma_heading {
+      margin-top: 80px;
+      margin-bottom: 50px;
+      font-size: 40px;
+      font-weight: 100;
+      text-align: center;
+   }
+
+   #contacts {
+      width:70%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+   }
+
+   /* Footer */
+   footer, p {
+      text-align: center;   
+   }
+
+   footer {
+      width: 30%;
+      margin:auto;
+   }
+
+   .icon {
+      width:120px;
+      height:120px;
+   }
+   
+   hr {
+      width: 70%;
+      height: 0.2px;
+      color: rgb(236, 234, 234);
+      margin-top: 30px;
+      font-weight:lighter;
+   }
+   .img_social {
+      width: 20px;
+      height:20px;
+   }
+
+   .container-social {
+      background-color: white;
+      border: 1px solid rgb(236, 234, 234);
+      color: white;
+      padding: 10px;
+      text-align:center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 10px;
+      border-radius: 50%; 
+   }
+
+   #paragraph_join {
+      margin-bottom: 0px;
+   }
+
+   .copyright{
+      color:gray;
+      margin-top: 0;
+
+   }
 
 

@@ -1,0 +1,109 @@
+/* main section */
+h1 {
+    color: rgb(224, 99, 58);
+    font-weight: 500;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+.logo {
+    height: 5px;
+    width: 5px;
+    /* float: left; */
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+.aside_image {
+    width: 800px;
+    height:900px;
+}
+fieldset {
+    border:none;
+    margin-top: 1rem;
+    padding-left: 0;
+
+}
+/* form section */
+.main_store {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+.form {
+    text-align:left;
+    color: grey-light;
+    width: auto;
+    margin:auto;
+}
+.form_title {
+    font-size: 3.5rem;
+}
+/* wraps */
+.wrap_rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:auto;  
+}
+.wrap_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* inputs */
+.first_name { 
+    margin-bottom: 20px; 
+}
+#first_name {
+    margin-top: 1.3rem;
+}
+.last_name {
+    margin-bottom: 1.3rem;
+    width:200px;   
+}
+#lastname{
+    margin-top:1.3rem ;
+    margin-right: 1rem;
+}
+.input_city {
+    margin-top: 1.3rem;
+}
+#postcode {
+    margin-top: 1.3rem;
+}
+.legend {
+    font-size: 1.3rem;
+    padding:2 px;
+    margin-bottom: 1rem;
+}
+label {
+    padding-right: 35px;
+}
+#adress {
+    width:385px;
+}
+#adress2 {
+    width:385px;
+}
+/* buttons */
+.btn_primary {
+    background-color: rgb(224, 99, 58);
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    padding: 30px;
+}
+.span_agreement {
+
+ color: rgb(224, 99, 58);
+text-decoration: underline;
+}
+.agreement_label {
+    font-size: 10px;
+}
+.agreement {
+    content: url("level-2/checkmark.svg;)
+}
