@@ -17,3 +17,190 @@ body {
  */
 
 
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 400px;
+    
+}
+.leftposition {
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+    float: right; 
+    margin-right: 175px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: hsl(34, 41%, 60%);
+}
+
+.introduction {
+    clear: left;
+    background-position: center; 
+    margin-top: 20px;
+    margin-right: 30px;
+    background-image: url("/img/first-background.jpg");
+    height: 700px;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.introduction div{
+    margin-left: 40%;
+    color: white;
+    padding-top: 300px;
+
+}
+
+button {
+    background-color: #fc7f03;
+    height: 40px;
+    width: 110px;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+.devicesimg{
+    width: 150px;
+    height: 150px;
+}
+
+.devices div{
+    float: left;
+    margin-right: 100px;
+    color: gray;
+    
+}
+.devices div h3 {
+    font-weight: lighter;
+}
+
+.devices {
+    margin-left: 30%;
+}
+
+.devices h2 {
+    margin-left: 15%;
+    color: gray;
+    font-weight: lighter;
+}
+.clear {
+    clear: both;
+}
+.social-img {
+    width: 20px;
+    height: 20px;
+}
+.socialimg div {
+    float: left;
+    margin-right: 50px;
+}
+.socialimg {
+    margin-left: 30%;
+}
+
+.socialimg h4 {
+    margin-left: 24%;
+    color: gray;
+    font-weight: lighter;
+}
+.socialsection {
+    margin-left: 22%;
+}
+hr {
+    width: 80%;
+    margin-left: 10%;
+}
+.input_text {
+    float: left;
+    margin-right: 20px;
+}
+input {
+    height: 30px;
+}
+
+.form_div {
+    margin-left: 20%;
+    float: left;
+    margin-top: 70px;
+    margin-right: 40px;
+    
+    }
+.form_div h1 {
+    color: #fc7f03
+}
+form div {
+    padding: 20px;
+}
+
+.address {
+    width: 78%;
+}
+.city {
+    height: 35px;
+}
+.form_div h1 {
+    margin: 0px;
+}
+.store_button {
+    background-color: #e0633a;
+    height: 40px;
+    width: 170px;
+    margin-left: 0px;
+    border-radius: 2px;
+    color: white;
+    border: none;
+}
+
+form div {
+    padding-bottom: 20px;
+}
+.store_nav {
+    margin-right: 9%;
+}
+.homepage_feature {
+    float: left;
+    margin-right: 70px;
+}
+.feature {
+    margin-left: 10%;
+}
+.terms {
+    color: #e0633a;
+}
+.Karma_action {
+    height: 280px;
+    padding-top: 10%;
+    background-color: #fcf0ec;
+    width: 90%;
+}
+.submit_button {
+        background-color: #e0633a;
+        height: 40px;
+        width: 140px;
+        margin-left: 10%;
+        border-radius: 3px;
+        border: none;
+        color: white;
+    }
+    .quotation_mark {
+        color: #e0633a;
+        font-size: 30px;
+    }
