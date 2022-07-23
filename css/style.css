@@ -16,4 +16,30 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ * {
+    margin: 0 auto;
+ }
 
+.logo {
+    width: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* nav */
+
+
+li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+
+li a {
+    text-decoration: none;
+}
