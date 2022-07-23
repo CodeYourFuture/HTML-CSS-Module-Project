@@ -74,11 +74,12 @@ body {
 
 .main {
     background-image: url(/img/first-background.jpg);
-    height:500px;
+    height:500px; 
     background-position: center;
     background-size: cover;
     color: azure;
     text-align: center;
+    width: 100%;
 }
 
 .button {
@@ -119,7 +120,8 @@ body {
 
 /*Additional feature for week 2 with Get Karma today button */
 .karma-today {
-    display: flex;
+    display: flex; 
+    justify-content: center;  
 }
 
 .karma-today-pic {
