@@ -16,10 +16,14 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* general */ 
+
  * {
 margin: 0 auto;
  }
 
+/* header */
+ 
 .logo img {
     width: 20px;
 }
@@ -32,12 +36,7 @@ header {
     align-items: center;
 }
 
-
-
-/* nav */
-nav {
-
-}
+/* nav within header */
 
 ul {
     padding: 15px;
@@ -68,7 +67,9 @@ li a:hover {
     font-weight:bold;
 }
 
-main {
+/* hero section */ 
+
+.hero {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -81,20 +82,6 @@ main {
 }
 
 
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    font-weight:lighter;
-}
-
-h2 {
-    color: white;
-    font-size: 20px;
-    font-weight:lighter;
-    margin-bottom: 40px;
-}
-
 button {
     border: none;
     width: 120px;
@@ -106,12 +93,8 @@ button {
     
 }
 
-h3 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 40px;
-    font-weight: lighter;
-}
+
+/* main section */ 
 
 .icon_container {
     width: 60%;
@@ -138,6 +121,15 @@ img.icon {
     height: 100px;
 }
 
+
+
+/* f00ter */
+
+hr {
+    width: 80%;
+    margin-top: 25px;
+}
+
 footer {
     padding-top: 20px;
     display: flex;
@@ -145,16 +137,15 @@ footer {
     padding-bottom: 40px;
 }
 
-hr {
-    width: 80%;
-    margin-top: 25px;
-}
+/* f00ter icon container  */
 .footer-icons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
+/* individual icons */
 .footer_icon {
     width: 20px;
     height: 20px;
@@ -164,8 +155,22 @@ hr {
     margin: 5px;
 }
 
-.svg {
-    fill: gray;
+
+
+/* font styles  */
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight:lighter;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    font-weight:lighter;
+    margin-bottom: 40px;
 }
 
 h4 {
@@ -183,4 +188,11 @@ p {
 
 h5 {
     font-weight: initial;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: lighter;
 }
