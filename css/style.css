@@ -156,9 +156,16 @@ hr {
 }
 
 .footer_icon {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.svg {
+    fill: gray;
 }
 
 h4 {
@@ -170,4 +177,10 @@ h4 {
 p {
     color: darkgray;
     font-size: 12px;
+    padding-top: 10px;
+}
+
+
+h5 {
+    font-weight: initial;
 }
