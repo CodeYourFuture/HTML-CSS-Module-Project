@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,6 +7,7 @@ body {
 
 /**
  * Add your custom styles below
+
  * 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
@@ -17,3 +17,202 @@ body {
  */
 
 
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+/* Header styles */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 100vw;
+}
+
+
+
+#logo {
+    display: flex;
+    max-width: 1.5rem;
+
+}
+
+/* Nav and Links */
+
+nav {
+    display: flex;
+    margin-left: 20px;
+    gap: 25px;
+}
+
+nav :first-child {
+    font-weight: bold;
+}
+
+a:hover {
+    color: #c05326;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(137, 134, 134);
+}
+
+/* First Section */
+
+.first_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    height: 90vh;
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 2.95rem;
+    margin: 0;
+    padding: 0;
+}
+
+.first_section p {
+    letter-spacing: 0.07rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+button {
+    margin-top: 24px;
+    width: 150px;
+    height: 45px;
+    background-color: #c05326;
+    border-radius: 6%;
+}
+
+/* Second section */
+
+section.second_section{
+    align-items: center;
+    display: flex;
+        justify-content: center;
+}
+
+.icons{
+    display: flex;
+}
+
+.icon_banner 
+{
+    flex-direction: row;
+    padding: 5rem;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+            
+    }
+
+.icon_banner a {
+    font-size: 19px;
+}
+
+.second_section h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 1.7rem;
+    margin-top: 5%;
+}
+
+/* extended feature */
+
+.extended_feature {
+    display: flex;
+}
+
+.text-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0633A1A;
+}
+
+.text-button-container h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 42px;
+    display: flex;
+
+}
+
+.text-button-container button {
+    color: white;
+    border: none;
+}
+
+.text-button-container h2{
+    display: flex;
+    text-align: center;
+}
+
+.text-button-container h2 p{
+    color: #E0633A;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    border: 2px solid rgb(238, 234, 234);
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_imgs_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.footer_imgs_wrapper div {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(238, 234, 234);
+    border-radius: 50%;
+}
+
+
+#footer_text1 {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: rgb(110, 107, 107);
+    letter-spacing: 0.06rem;
+}
+
+#footer_text2 {
+    color: rgb(201, 189, 189);
+    font-size: small;
+}
+
+
+/* store */
+
+
+.store_order {
+    display: flex;
+    flex-direction: row;
+}
