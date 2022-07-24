@@ -6,14 +6,36 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+nav {
+    display: flex;
+    padding: 10px 150px;
+}
 
+.nav-section {
+    width: 100%;
+}
 
+.nav-section-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #E16337;
+}
+
+.active {
+    color: #52555B;
+}
