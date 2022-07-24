@@ -1,19 +1,151 @@
+/* ==========default============ */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+:root {
+  --clr-orange: #e0633a;
+  --clr-black: #333;
+  --clr-gray: #878787;
+  --clr-white: rgb(238, 238, 238);
+  --clr-light-gray: #aeaeae;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+*,
+*::before,
+*::after,
+h1 {
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
+/* ============Header============ */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 120px;
+}
+
+header img {
+  width: 1.2em;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  list-style: none;
+  font-weight: 500;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--clr-gray);
+}
+header ul a:hover {
+  color: var(--clr-orange);
+}
+header ul a:focus {
+  color: var(--clr-black);
+}
+
+/* =============Hero============ */
+
+.hero {
+  position: relative;
+  color: var(--clr-white);
+}
+
+.hero img {
+  width: 100%;
+}
+
+.h1-wraper {
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  text-align: center;
+}
+
+.h1-wraper h1 {
+  font-weight: 300;
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+.h1-wraper h3 {
+  font-weight: 100;
+  font-size: clamp(10px, 2.6vw, 2.8vw);
+  margin-bottom: 6vw;
+}
+
+.h1-wraper button {
+  background-color: var(--clr-orange);
+  padding: 1.4vw 2.6vw;
+  border: none;
+  border-radius: 4px;
+  font-size: clamp(12px, 2.2vw, 2.2vw);
+}
+
+.h1-wraper button:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-orange);
+}
+
+/* ====second-section-container===== */
+
+.second-section-container {
+  margin: 100px auto 20px;
+  text-align: center;
+  color: var(--clr-black);
+  border-bottom: var(--clr-light-gray) solid 1px;
+  padding-bottom: 80px;
+}
+
+.second-section-container h2 {
+  font-weight: 300;
+  font-size: clamp(22px, 3.8vw, 4vw);
+  margin-bottom: 48px;
+}
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.article-container img {
+  max-width: 14vw;
+  margin-bottom: 34px;
+}
+
+/* ============Footer============= */
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer p {
+  color: var(--clr-black);
+}
+
+footer img {
+  width: 2rem;
+  margin: 12px 10px;
+  border: var(--clr-light-gray) 1px solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+footer p:last-child {
+  color: var(--clr-light-gray);
+  margin-bottom: 40px;
+}
