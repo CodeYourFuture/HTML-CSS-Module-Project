@@ -1,19 +1,169 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.header-nav {
+ width: 15px;
+ height: 10px;
+ padding: left;
+ margin:10px; 
+}
+
+.logo {
+  width: 15px;
+  height: 10px;
+  padding: left;
+  margin-top: 10px;
+}
+
+.main {
+  width: 15px;
+  height: 10px;
+  padding: left;
+  margin-top: 10px;
+}
+
+.first-child {
+  display: block;
+  margin-left:20px;
+  margin-right: 20px;
+  width: 10%;
+}
+
+.second-child {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 10%;
+}
+
+.footer {
+  position: fixed;
+  left: auto;
+  bottom: auto;
+  width: 200%;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+
+.span {
+position: absolute;
+text-align: center;
+padding-bottom: 20px;
+}
+
+.header-nav {
+position: absolute;
+width: 1448px;
+height: 96px;
+left: -3px;
+top: 0px;
+}
+
+.legend {
+position: absolute;
+width: 521px;
+height: 118px;
+left: 123px;
+top: 214px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 59px;
+
+color: #DE6E49;
+}
+
+.first-name {
+  position: absolute;
+  visibility: hidden;
+  width: 32.17px;
+  height: 32.01px;
+  left: 1051.83px;
+  top: 52.56px;
+  
+  transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+}
+
+.last-name {
+  position: absolute;
+  width: 128px;
+  height: 25px;
+  left: 384px;
+  top: 414px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #666666;
+}
+
+.mobile-img {
+  position: absolute;
+  width: 701px;
+  height: 1235px;
+  left: 739px;
+  top: 98px;
+  }
 
 
+.mobile-nav {
+position: absolute;
+width: 1440px;
+height: 77px;
+left: 0px;
+top: 20px;
+
+background: url(.png);
+}
+
+.mobile-main {
+  position: absolute;
+  width: 1318px;
+  height: 1235px;
+  left: 122px;
+  top: 98px; 
+}
+
+.mobile-heading {
+  position: absolute;
+  width: 521px;
+  height: 118px;
+  left: 123px;
+  top: 214px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  
+  color: #DE6E49;
+}
+
+.mobile-form {
+  position: absolute;
+  width: 501px;
+  height: 849px;
+  left: 122px;
+  top: 414px;  
+}
+
+
+.mobile-footer {
+  position: absolute;
+  width: 1434px;
+  height: 370px;
+  left: 4px;
+  top: 1264px;
+  
+  background: url(.png
+}
