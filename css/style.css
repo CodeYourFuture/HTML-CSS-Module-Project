@@ -1,16 +1,11 @@
-html {
-    height: 100%;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    height: 100%;
 }
 
 nav {
     display: flex;
-    padding: 10px 150px;
+    padding: 20px 150px;
 }
 
 .nav-section {
@@ -28,7 +23,7 @@ nav {
 }
 
 .nav-link {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     color: gray;
     text-decoration: none;
@@ -42,12 +37,8 @@ nav {
     color: #52555B;
 }
 
-main {
-    height: 100%;
-}
-
 .hero {
-    height: 90%;
+    height: 850px;
     background-image: url('../img/first-background.jpg');
     background-size: cover;
     color: white;
@@ -77,4 +68,32 @@ main {
     padding: 20px 50px;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+.section-info {
+    text-align: center;
+    font-weight: 300;
+    padding: 50px 0px;
+}
+
+.section-info-title {
+    font-size: 50px;
+    font-weight: inherit;
+    margin-bottom: 70px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 150px;
+}
+
+.card p {
+    font-size: 30px;
+    font-weight: 400;
 }
