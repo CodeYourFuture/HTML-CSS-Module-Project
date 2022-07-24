@@ -1,9 +1,11 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+html {
+    height: 100%;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
 }
 
 nav {
@@ -38,4 +40,41 @@ nav {
 
 .active {
     color: #52555B;
+}
+
+main {
+    height: 100%;
+}
+
+.hero {
+    height: 90%;
+    background-image: url('../img/first-background.jpg');
+    background-size: cover;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 70px;
+    font-weight: inherit;
+    margin-bottom: -10px;
+}
+
+.hero-slogan {
+    font-weight: inherit;
+    font-size: 35px;
+}
+
+.btn-hero {
+    text-decoration: none;
+    color: inherit;
+    background-color: #E16337;
+    font-size: 30px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
