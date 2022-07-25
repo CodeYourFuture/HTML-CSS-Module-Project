@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,88 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* header & nav */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  flex-basis: 20%;
+  margin-left: 20px;
+}
+.nav {
+  flex-basis: 80%;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.nav ul li {
+  margin: 10px;
+}
+.nav ul a {
+  text-decoration: none;
+  color: #000;
+}
 
+/* <main> */
+/* section img */
+.img {
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  /* align-items: center; */
+  justify-content: center;
+  align-content: center;
+}
+
+/* article */
+.article {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.article-icon {
+  display: flex;
+  text-align: center;
+}
+
+/* </main> */
+.hr {
+  width: 90%;
+  text-align: centerد;
+}
+
+footer {
+  text-align: center;
+  margin: 0;
+  font-size: 11px;
+}
+.footer-icon {
+  display: flex;
+}
+.fa-twitter {
+  color: blue;
+}
+.fa-instagram {
+  color: rgb(243, 139, 191);
+}
+.fa-facebook {
+  color: rgb(45, 122, 238);
+}
+.fa-facebook:before {
+  content: "";
+  margin: 10px;
+}
