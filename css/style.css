@@ -15,6 +15,7 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ /* body */
 header{
     display: flex;
     flex-direction: row;
@@ -25,11 +26,13 @@ header{
 img{
     width: 40%;
 }
+/* logo style */
 #karmalogo{
  height: 5%;
  width: 5%;
  display: block;
 }
+/* Navigation styles */
 nav{
     width: 60%;
 }
@@ -42,8 +45,56 @@ ul{display: flex;
      color: black;   
 }
 
-main section{
-    border: 2px solid black;
-    height: 200%;
+/* body first section */
+#firstOne{
+    height: 100vh;
+    display: block;
+    background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/1676D/production/_113931029_composite.jpg');
+    border: 1px solid black;
+    position: relative;
 }
+#firstOne > article{
+    position: relative;
+    text-align: center;
+    border: 1px solid red;
+    vertical-align: middle;
+    padding: 2%;
+    margin: 10%;
+ }
+ /* button style */
+#submit-btn{
+    background-color: darkorange;
+    color: white;
+    border-radius: 4px;
+    border: orange;
+    font-size: 14px;
+    padding: 2%;
+
+ }
+ /* body second section */
+ #second-one-headline{
+    border: 1px solid black;
+    height: 50vh; 
+
+ }
+ #second-one-headline, p{
+   text-align: center;
+   font-size: 1rem;
+   font-weight: normal;
+ } 
+ /* body- second section - article  */
+ #second-one-description{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-top:2%;
+    padding-left: 5%;
+    padding-right: 5%;
+ }
+ .secondOneArticle{
+    border: 1px solid black;
+    height:10%;
+    width: 30%;
+ }
+
 
