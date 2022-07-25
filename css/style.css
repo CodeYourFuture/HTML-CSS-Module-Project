@@ -74,8 +74,30 @@ body {
     
 }
 
-.learn-more-button {
+.main-headers {
+    display: flex;
+    align-items: center;
+}
 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.learn-more-button {
+    background-color: #F15A29;
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    padding: 16px 24px;
 }
 
 .device-image {
