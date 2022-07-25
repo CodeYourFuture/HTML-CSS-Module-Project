@@ -19,6 +19,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  height: 5rem;
 }
 .logo {
   flex-basis: 20%;
@@ -43,11 +44,14 @@ header {
 
 /* <main> */
 /* section img */
-.img {
+main {
+  margin-bottom: 60px;
+}
+main .img {
   background-image: url("../img/first-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 95%;
+  width: 90%;
   height: 500px;
   margin: auto;
   color: #fff;
@@ -56,6 +60,7 @@ header {
   /* align-items: center; */
   justify-content: center;
   align-content: center;
+  margin-bottom: 60px;
 }
 
 /* article */
@@ -74,9 +79,35 @@ header {
 }
 
 /* </main> */
+/* section- level2*/
+.level2 {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+.level2 .img {
+  width: 40%;
+  background-image: url("../level-2/homepage-feature.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+.level2-content {
+  width: 60%;
+  height: 350px;
+  background-color: #ffe5b4;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.qut {
+  color: rgb(238, 118, 88);
+}
+
 .hr {
   width: 90%;
-  text-align: centerد;
+  text-align: center;
 }
 
 footer {
