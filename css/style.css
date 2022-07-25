@@ -25,7 +25,13 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  height: 5rem;
+  height: 4rem;
+  background-color: #f9f9f9;
+  width: 90%;
+  margin: auto;
+}
+header nav ul .store a {
+  color: var(--orange-dark);
 }
 .logo {
   flex-basis: 20%;
@@ -68,7 +74,17 @@ main .img {
   align-content: center;
   margin-bottom: 60px;
 }
-
+.btn-main-img {
+  color: #fff;
+  background-color: var(--orange-dark);
+  width: 7rem;
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  position: relative;
+  left: 81px;
+  top: 24px;
+}
 /* article */
 .article {
   width: 100%;
