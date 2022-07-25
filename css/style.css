@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -15,5 +14,79 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/* --------below this line is the header section-------------------------------------------------- */
+header {
+  display: flex;
+   justify-content: space-between;
+ }
+.navigation {
+  margin-right: 9%;
+  padding: 10px;
 
+}
+#logo-image-id {
+  align-self: flex-start;
+  width: 2%;
+  margin-top: 1%;
+  margin-left: 3%;
+}
+/* --------above this line is the header section-------------------------------------------------- */
 
+/* --------below this line is the main section--------------------------------------------------- */
+/* The main section has two sub-sections 1. background image, h1 title, paragraph and button. 
+2. second sub-section is h2 title, services images  */
+.main-section {
+  width: 100%;
+  height: fit-content;
+}
+
+.backgroundImage-and-title {
+  color: white;
+  text-align: center;
+  color: white;
+  text-align: center;
+}
+.intro-section {
+  margin-top: -15%;
+  margin-bottom: 7%;
+}
+button {
+  padding: 10px;
+}
+.background-image {
+  height: 300px;
+  width: 98%;
+}
+
+.learn-more-btn {
+  background-color: rgb(232, 178, 78);
+  border: none;
+}
+/* ---------------above this line is first sub-section of the main section--------------- */
+
+/* ---------------below this line is second sub-section of the main section--------------- */
+.product-section {
+  text-align: center;
+}
+.sub-product-container {
+  display: flex;
+  justify-content: center;
+}
+.product-image {
+  width: 30%;
+}
+/* ---------------above this line is second sub-section of the main section--------------- */
+
+/* ---------------below this line is the footer------------------------------------------- */
+footer {
+  display: block;
+  text-align: center;
+}
+
+.footer-socialMedia-image {
+  display: flex;
+  justify-content: center;
+}
+.socialMedia-image {
+  width: 2%;
+}
