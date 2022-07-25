@@ -15,5 +15,35 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    align-items: center; 
+}
+img{
+    width: 40%;
+}
+#karmalogo{
+ height: 5%;
+ width: 5%;
+ display: block;
+}
+nav{
+    width: 60%;
+}
+ul{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    border: 1px solid red;
+    list-style: none;
+     color: black;   
+}
 
+main section{
+    border: 2px solid black;
+    height: 200%;
+}
 
