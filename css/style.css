@@ -17,3 +17,166 @@ body {
  */
 
 
+
+.nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #838994;
+    /* position: fixed;
+    z-index: 9999; */
+    
+
+}
+
+.logo {
+    height: 3rem;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    
+
+}
+
+.active {
+    text-decoration: none;
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+    color: #838994;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+.link:hover {
+    color: #333;
+}
+
+.background-image {
+    width: 100%;
+}
+
+.main-headers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+   
+}
+
+.h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+
+.h2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.learn-more-button {
+    background-color: #F15A29;
+    border-color: #F15A29;
+    color: white;
+    font-family: arial;
+    font-size: 18px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+
+}
+
+.icon-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.icon-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.icon-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.device-image {
+    width: 20%;
+}
+
+.coffee-image {
+    width: 20%;
+}
+
+.fuel-pump-image {
+    width: 20%;
+}
+
