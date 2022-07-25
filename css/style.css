@@ -14,7 +14,13 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 /* header & nav */
 header {
   display: flex;
@@ -101,6 +107,13 @@ main .img {
   align-items: center;
   justify-content: center;
 }
+.btn-level2-content {
+  color: #fff;
+  background-color: var(--orange-dark);
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
 .qut {
   color: rgb(238, 118, 88);
 }
@@ -109,7 +122,7 @@ main .img {
   width: 90%;
   text-align: center;
 }
-
+/* footer */
 footer {
   text-align: center;
   margin: 0;
