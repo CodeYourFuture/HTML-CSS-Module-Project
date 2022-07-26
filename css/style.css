@@ -72,46 +72,7 @@ header nav ul .store a {
   border-radius: 5px;
 }
 
-@media (max-width: 550px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  .article-icon {
-    display: flex;
-    flex-direction: column;
-  }
-  .level2-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .level2-txt {
-    font-size: 13px;
-    font-weight: bold;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-  }
-  .logo {
-    display: inline-flex;
-    justify-content: center;
-  }
-  .nav ul {
-    display: flex;
-    padding: 0;
-  }
-  .nav ul li {
-    margin-right: 13px;
-  }
-  .nav ul a {
-    font-size: 11px;
-    font-weight: bold;
-  }
-}
-
-/* <main> */
+/* START <main> */
 /* section img */
 main {
   margin-bottom: 60px;
@@ -244,3 +205,95 @@ footer {
   content: "";
   margin: 10px;
 }
+
+/* START @media (max-width: 650px) */
+@media (max-width: 650px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-icon {
+    display: flex;
+    flex-direction: column;
+  }
+  .level2-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .level2-content h2 {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  /* .level2-txt {
+    font-size: 13px;
+    font-weight: bold;
+  } */
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+  }
+  .logo {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .nav ul {
+    display: flex;
+    padding: 0;
+  }
+  .nav ul li {
+    margin-right: 28px;
+  }
+  .nav ul li a {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  /* .svg {
+    width: 500px;
+  } */
+}
+/* END OF @media (max-width: 650px) */
+/* START @media (max-width: 920px) */
+@media (max-width: 920px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+  }
+  .logo {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .nav ul li {
+    margin-right: 28px;
+  }
+  .nav ul a {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .level2-txt {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .svg {
+    width: 250px;
+  }
+  .main-art-icon-txt {
+    font-size: 18px;
+  }
+  .article-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* END OF @media (max-width: 920px) */
