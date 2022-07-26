@@ -46,19 +46,27 @@ position: relative;
 }
 .on-background {
     position: absolute;
-    left: 40%;
+    left: 30%;
     top: 30%;
     color: white;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 .h {
+    text-align: center;
     font-size: 40px;
 }
 .p1 {
     font-size: 30px;
+    text-align: center;
 }
-
+.p2 {
+background-color: #F15B2A;
+padding: 3% 5% 3% 5%;
+white-space: nowrap;
+display: block;
+margin: auto;
+}
 
 /**
  * Add your custom styles below
