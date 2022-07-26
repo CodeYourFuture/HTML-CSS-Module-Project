@@ -1,0 +1,123 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
+/* header & nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: #f9f9f9;
+  width: 90%;
+  margin: auto;
+}
+header nav ul .store a {
+  color: var(--orange-dark);
+}
+.logo {
+  flex-basis: 20%;
+  margin-left: 20px;
+}
+.nav {
+  flex-basis: 80%;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+.nav ul li {
+  margin: 10px;
+}
+.nav ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* main */
+.main {
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
+  width: 90%;
+  margin: auto;
+  height: 53rem;
+}
+.main h1 {
+  margin: auto;
+  padding: 60px 0;
+  color: #e68d67;
+  width: 20rem;
+}
+.img-main {
+  background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 908px;
+}
+
+/* form */
+.form-main {
+  width: 50%;
+  height: 908px;
+}
+.form-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name-form-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+}
+.form-group input {
+  margin-top: 7px;
+  padding: 7px;
+  width: 121px;
+}
+
+/* break */
+.hr {
+  margin-top: 60px;
+  width: 90%;
+  text-align: center;
+  color: #f5eeee;
+}
+/* footer */
+footer {
+  text-align: center;
+  margin: 0;
+  /* font-size: 11px; */
+  margin-top: 15px;
+}
+.footer-icon {
+  display: flex;
+}
+.fab {
+  font-size: 20px;
+  padding: 10px;
+}
+.fa-twitter {
+  color: blue;
+}
+.fa-instagram {
+  color: rgb(243, 139, 191);
+}
+.fa-facebook {
+  color: rgb(45, 122, 238);
+}
+.fa-facebook:before {
+  content: "";
+  margin: 10px;
+}

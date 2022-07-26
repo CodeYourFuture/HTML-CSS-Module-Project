@@ -13,7 +13,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -21,60 +21,60 @@
     />
   </head>
   <body>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
     <header>
       <div class="logo">
         <iframe src="./img/karma-logo.svg" frameborder="0"></iframe>
       </div>
       <nav class="nav">
         <ul>
-          <li class="li-nav"><a href="#">Meet Karma</a></li>
+          <li class="li-nav"><a href="./index.html">Meet Karma</a></li>
           <li class="li-nav"><a href="#">How it Works</a></li>
-          <li class="li-nav store"><a href="./store.html">Store</a></li>
+          <li class="li-nav store"><a href="#">Store</a></li>
           <li class="li-nav"><a href="#">Blog</a></li>
           <li class="li-nav"><a href="#">Help</a></li>
           <li class="li-nav"><a href="#">Login</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="img">
-        <h1>Introdusing Karma</h1>
-        <p>Bring WiFi with you, everywhere you go.</p>
-        <button class="btn-main-img">Learn More</button>
-      </section>
-      <article class="article">
-        <h1>Everyone need a little Karma.</h1>
-        <div class="article-icon">
-          <div>
-            <iframe src="./img/icon-devices.svg" frameborder="0"></iframe>
-            <p>Internet for all devices</p>
+    <main class="main">
+      <div class="form-main">
+        <h1>Order your Karma wifi device today!</h1>
+        <form id="form-info">
+          <div class="name-form-group">
+            <div>
+              <label class="label" for="name">Name *</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label class="label" for="lastName">Last name *</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="lastname"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </div>
           </div>
-          <div>
-            <iframe src="./img/icon-coffee.svg" frameborder="0"></iframe>
-            <p>Bost your Productivity</p>
-          </div>
-          <div>
-            <iframe src="./img/icon-refill.svg" frameborder="0"></iframe>
-            <p>Py as You Go</p>
-          </div>
-        </div>
-      </article>
-    </main>
-    <section class="level2">
-      <div class="img"></div>
-      <div class="level2-content">
-        <h2><span class="qut">" </span> Wherever I am, I just don't</h2>
-        <h2>worry about my conection</h2>
-        <h2>anymore! <span class="qut"> "</span></h2>
-        <button class="btn-level2-content"">Get Karma today</button>
+        </form>
       </div>
-    </section>
+      <div class="img-main"></div>
+    </main>
     <hr class="hr" />
     <footer>
-      <p> <small> <strong>Jouin us on</strong> </small></p>
+      <p>
+        <small> <strong>Jouin us on</strong> </small>
+      </p>
       <div footer-icon>
         <!-- <iframe src="./img/twitter-icon.svg" frameborder="0"></iframe>
         <iframe src="./img/facebook-icon.svg" frameborder="0"></iframe> -->
