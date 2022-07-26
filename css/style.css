@@ -16,25 +16,27 @@ body {
     margin-left: 25px;
 }
 .navmenu {
-    position:absolute;
-    right: 0%;
+    float: right;
     display:flex;
     justify-content:space-between;
+    margin-right: 10%;
     
 }
 .karma {
     color: black;
     margin-right: 5%;
-    width: 100%;
+    white-space: nowrap;
     
 }
 .stnd {
     color: darkolivegreen;
     margin-right: 5%;
+    white-space: nowrap;
 }
 .store {
 color: #F15B2A;
 margin-right: 5%;
+white-space: nowrap;
 }
 
 
