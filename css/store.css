@@ -48,6 +48,7 @@ header nav ul .store a {
   display: flex;
   /* flex-direction: column;
   justify-content: center; */
+
   width: 90%;
   margin: auto;
   height: 53rem;
@@ -71,10 +72,10 @@ header nav ul .store a {
   width: 50%;
   height: 908px;
 }
-.form-info {
+#form-info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
 }
 .name-form-group {
   display: flex;
@@ -84,9 +85,64 @@ header nav ul .store a {
 .form-group input {
   margin-top: 7px;
   padding: 7px;
-  width: 121px;
+  width: 137px;
+  margin-bottom: 20px;
+}
+#address {
+  padding: 7px;
+  width: 312px;
+}
+.dropdown-city-option {
+  margin-top: 7px;
+  padding: 7px;
+  width: 137px;
+}
+#dropdown {
+  margin-top: 7px;
+  padding: 7px;
+  width: 196px;
+}
+#postcode {
+  width: 95px;
+}
+.radio {
+  display: flex;
+  justify-content: center;
+}
+#input-radio {
+  width: 76px;
 }
 
+#input-checkbox {
+  width: 22px;
+}
+#lable-checkbox {
+  width: 330px;
+  line-height: 27px;
+}
+.text-checkbox {
+  color: var(--orange-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#form-group-radio {
+  margin-top: 15px;
+}
+#form-group-checkbox {
+  margin-top: 65px;
+}
+.form-group-submit {
+  margin-top: 25px;
+}
+#submit {
+  width: 12rem;
+  padding: 14px;
+  border-radius: 4px;
+  background-color: #c05326;
+  color: #fff;
+  border: none;
+}
 /* break */
 .hr {
   margin-top: 60px;

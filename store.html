@@ -40,6 +40,7 @@
       <div class="form-main">
         <h1>Order your Karma wifi device today!</h1>
         <form id="form-info">
+          <!--name and last name-->
           <div class="name-form-group">
             <div>
               <label class="label" for="name">Name *</label>
@@ -60,13 +61,122 @@
                   type="text"
                   name="name"
                   id="lastname"
-                  placeholder="Enter your name"
+                  placeholder="Enter your lastName"
                   required
                 />
               </div>
             </div>
           </div>
+
+          <label class="label" for="address">Address *</label>
+          <div class="form-group">
+            <input
+              type="address"
+              name="address"
+              id="address"
+              placeholder="Enter your address"
+              required
+            />
+          </div>
+          <label class="label" for="address">Address 2</label>
+          <div class="form-group">
+            <input
+              type="address"
+              name="address"
+              id="address"
+              placeholder="Enter your address"
+            />
+          </div>
+          <!--option select citey-->
+          <div class="name-form-group">
+            <div>
+              <label class="label" for="city">City *</label>
+              <div class="form-group">
+                <select id="dropdown" required>
+                  <option class="dropdown-city-option" disabled selected value>
+                    Select your city...
+                  </option>
+
+                  <option value=" London">London</option>
+                  <option value=" Birmingham">Birmingham</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="Liverpool">Liverpool</option>
+                  <option value="Glasgow">Glasgow</option>
+                  <option value=" Sheffield">Sheffield</option>
+                  <option value=" Edinburgh">Edinburgh</option>
+                  <option value="Leeds">Leeds</option>
+                  <option value="Sheffield">Sheffield</option>
+                  <option value="Bristol">Bristol</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="label" for="postcode">Postcode *</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="postcode"
+                  placeholder="postcode"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <!--select a color   type="radio"-->
+          <div id="form-group-radio">
+            <p>Select a color</p>
+            <div class="radio">
+              <div>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="Karma-orange"
+                    type="radio"
+                    id="input-radio"
+                    checked
+                  />Karma orange</label
+                >
+              </div>
+              <div>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="Space-grey"
+                    type="radio"
+                    id="input-radio"
+                  />Space grey</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--check box-->
+          <div id="form-group-checkbox">
+            <div id="lable-checkbox">
+              <label>
+                <input
+                  id="input-checkbox"
+                  name="prefer"
+                  value="karma-projects"
+                  type="checkbox"
+                />
+                By placing your order you agree to Karma's
+                <span class="text-checkbox">Terms and conditions</span>. *
+              </label>
+            </div>
+          </div>
+
+          <!--submit-->
+          <div class="form-group-submit">
+            <button type="submit" id="submit" class="submit-button">
+              Place my order
+            </button>
+          </div>
         </form>
+
+        <!--End of form-->
       </div>
       <div class="img-main"></div>
     </main>
