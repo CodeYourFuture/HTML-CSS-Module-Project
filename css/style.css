@@ -6,9 +6,37 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: aliceblue;
 }
-.navmenu {
-    text-align: right;
+
+#logo {
+    position:absolute;
+    left: 2%;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 25px;
 }
+.navmenu {
+    position:absolute;
+    right: 0%;
+    display:flex;
+    justify-content:space-between;
+    
+}
+.karma {
+    color: black;
+    margin-right: 5%;
+    width: 100%;
+    
+}
+.stnd {
+    color: darkolivegreen;
+    margin-right: 5%;
+}
+.store {
+color: #F15B2A;
+margin-right: 5%;
+}
+
 
 /**
  * Add your custom styles below
