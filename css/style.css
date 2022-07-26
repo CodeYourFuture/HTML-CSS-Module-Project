@@ -21,30 +21,31 @@ header{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    border: 1px solid black;
     align-items: center; 
+    height: 15vh;
 }
-img{
+header> img{
     width: 40%;
 }
 /* logo style */
 #karmalogo{
- height: 2%;
- width: 2%;
+ height: 40%;
+ width: 40%;
  display: block;
+ 
 }
 /* Navigation styles */
 nav{
     width: 60%;
+    margin-right: 5%;
 }
 ul{display: flex;
     flex-direction: row;
     justify-content:flex-end;
     align-content:space-between;
-    border: 1px solid red;
     list-style: none;
      color: black;  
-     gap: 10px; 
+     gap: 5%; 
     
 }
 ul>li{
@@ -53,15 +54,15 @@ ul>li{
 
 /* body first section */
 .firstOne{
-    height: 75vh;
+    height: 70vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    margin-top: 5%; 
 }
 .article{
-    border: 1px solid red;
     position: absolute;
     color: white;
     text-align: center; 
@@ -89,7 +90,7 @@ ul>li{
  }
  /* body second section */
  #second-one-headline{
-    border: 1px solid black;
+    padding-top: 10%;
     height: 45vh; 
 
  }
@@ -99,22 +100,22 @@ ul>li{
    font-weight: normal;
     
  } 
+ .secondOneArticle > img{
+    width: 30%;
+    height: 50%;
+ }
  /* body- second section - article  */
  #second-one-description{
     display: flex;
     flex-direction:row;
     justify-content: center;
-    gap: 20px;
     padding-top:2%;
     padding-left: 5%;
     padding-right: 5%;
     border-bottom: 1px solid lightgrey;
+    margin-bottom: 10%;
  }
  .secondOneArticle{
-    border: 1px solid black;
-    height: 10%;
-    width: 15%;
-    margin-bottom: 2%;
     font-size: 1rem;
     text-align: center;
  }
@@ -122,8 +123,8 @@ ul>li{
 
 
 .footer-icon{
-    height: 5%;
-    width: 5%;
+    height: 2%;
+    width: 2%;
     display: block;
     
 }
@@ -131,6 +132,7 @@ ul>li{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 footer,P{
     font-size: 1rem;
