@@ -72,6 +72,45 @@ header nav ul .store a {
   border-radius: 5px;
 }
 
+@media (max-width: 550px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-icon {
+    display: flex;
+    flex-direction: column;
+  }
+  .level2-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .level2-txt {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  .logo {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .nav ul {
+    display: flex;
+    padding: 0;
+  }
+  .nav ul li {
+    margin-right: 13px;
+  }
+  .nav ul a {
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+
 /* <main> */
 /* section img */
 main {
