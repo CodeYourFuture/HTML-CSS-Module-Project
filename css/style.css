@@ -135,17 +135,24 @@ main .img {
 }
 
 .hr {
+  margin-top: 60px;
   width: 90%;
   text-align: center;
+  color: #f5eeee;
 }
 /* footer */
 footer {
   text-align: center;
   margin: 0;
-  font-size: 11px;
+  /* font-size: 11px; */
+  margin-top: 15px;
 }
 .footer-icon {
   display: flex;
+}
+.fab {
+  font-size: 20px;
+  padding: 10px;
 }
 .fa-twitter {
   color: blue;
