@@ -15,12 +15,12 @@
     <nav class="Navbar">
         <img
         class="logo"
-        src="../HTML-CSS-Module-Project/img/karma-logo.svg"
+        src="img/karma-logo.svg"
         alt="karma-logo"
       />
      <ul class="Nav__list">
     <li class="Nav__items">
-        <a class="navigation__link" href="#">Meet Karma</a></li>
+        <a class="navigation__link" id="MeetKarma" href="#">Meet Karma</a></li>
     <li class="Nav__items">
         <a class="navigation__link" href="#">How it Works</a></li>
     <li class="Nav__items">
@@ -33,17 +33,24 @@
         <a class="navigation__link" href="#">Login</a></li>
      </ul>   
     </nav>
+    <!-- Nav Menu Bar -->
 </header>
+ <!-- Main -->
 <main>
+ <!-- Hero -->    
     <section class="hero">
-        <h1>Introducing Karma</h1>
-        <h4>Bring Wifi with you, everywhere you go.</h4>
-        <button>Learn More</button>
+        <div>
+        <h1 class="heroH1">Introducing Karma</h1>
+        <h3 class="heroP">Bring Wifi with you, everywhere you go.</h3>
+        <button class="herobutton">Learn More</button>
+    </div>
     </section>
+     <!-- Hero --> 
+      <!-- Product info --> 
+    <h2 class="Producttext">Everyone needs a little Karma</h2>
     <section class="productDetails">
         <div class="product-items">
-        <h2>Everyone needs a little Karma</h2>
-        <img class="productDetailsImg" src="img/icon-devices.svg" alt="icon-devices" />
+        <img class="productDetailsImg" src="img/icon-devices.svg" alt="icon-devices"/>
         <div class="product__content">
           <p class="product__title">
             Internet for all devices
@@ -67,23 +74,20 @@
         </div>
       </div>
     </section>
+<!-- Product info -->
 </main>
+<!-- Main -->
+<!-- Footer -->
     <footer>
-        <p> Join us on</p>
+        <hr class="solid">
+        <p class="footertext"> Join us on</p>
         <div class="socialMedia">
-            <img class="SocialMediaIcon" src="img/twitter-icon.svg" alt="twitter-icon" />
+            <img class="SocialMediaIcon" src="img/twitter-icon.svg" alt="twitter-icon"/>
+            <img class="SocialMediaIcon" src="img/facebook-icon.svg" alt="facebook-icon"/>
+            <img class="SocialMediaIcon" src="img/instagram-icon.svg" alt="facebook-icon"/>
         </div>  
-        <div class="socialMedia">
-            <img class="SocialMediaIcon" src="img/facebook-icon.svg" alt="facebook-icon" />
-        </div> 
-        <div class="socialMedia">
-            <img class="SocialMediaIcon" src="img/instagram-icon.svg" alt="facebook-icon" />
-        </div>
-        <p>© Karma Mobility.Inc.</p> 
+        <p class="footerCP">© Karma Mobility.Inc.</p> 
     </footer>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
+<!-- Footer -->
     </body>
 </html>

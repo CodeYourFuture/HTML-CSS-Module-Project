@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: #FFFFFF;
 }
 
 
@@ -17,4 +18,113 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Header Start */
+.logo{
+    width: 30px;
+    height: 30px;
+}
+.Navbar{
+    display: flex;
+    background-color: white; 
+    align-items: center; 
+    justify-content: space-around;  
+}
+.Nav__items{
+    display: inline;
+    
+}
+.navigation__link{
+color: #929290;
+padding: 10px;
+font-size: 13px;
+text-decoration: none;
+}
+#MeetKarma{
+color: #45484d;
+font-weight: 500;   
+}
+.navigation__link:hover{
+    color: #E1643B;
+}
+/* Header End */
+/* Main Start */
+.hero{
+background-image: url(../img/first-background.jpg);
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 500px;
+text-align: center; 
+}
+.heroH1{
+font-weight: 400;
+color: white; 
+}
+.heroP{ 
+    font-weight: 400;
+    color: white;  
+    justify-content: center;    
+}
+.herobutton{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    background-color: #E1643B;
+    color: white;
+}
+/* Product Details */
+.Producttext{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight:300;
+    
+}
+.productDetails{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
+    text-align: center; 
+}
+.productDetailsImg{
+    width: 90px;
+}
+/* Product Details */
+/* Main End */
+/* Footer Start */
+.solid{
+width: 70%;
+border-top: 1px solid rgba(187, 187, 187, 0.143);
+}
+.footertext{
+    text-align: center;
+    font-size: 10px;   
+}
+.SocialMediaIcon{
+    width: 10px;
+    border: solid 1px rgba(187, 187, 187, 0.611);
+    border-radius: 100%;
+    padding: 5px;
 
+}   
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:5px; 
+}
+.footerCP{
+    text-align: center;
+    font-size: 10px; 
+    color: rgba(0, 0, 0, 0.345);  
+}
+/* Footer End */
