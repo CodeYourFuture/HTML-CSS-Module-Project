@@ -4,7 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 #logo {
@@ -37,6 +37,26 @@ body {
 color: #F15B2A;
 margin-right: 5%;
 white-space: nowrap;
+}
+#background-img {
+    width: 100%;
+}
+.background {
+position: relative;
+}
+.on-background {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.h {
+    font-size: 40px;
+}
+.p1 {
+    font-size: 30px;
 }
 
 
