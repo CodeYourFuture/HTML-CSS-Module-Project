@@ -1,6 +1,11 @@
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+} */
+body {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
 }
 
 :root {
@@ -19,7 +24,8 @@ header {
   width: 90%;
   margin: auto;
 }
-header nav ul .store a {
+
+header nav ul .meet-karma a {
   color: var(--orange-dark);
 }
 .logo {
@@ -36,11 +42,16 @@ header nav ul .store a {
   margin-right: 40px;
 }
 .nav ul li {
-  margin: 10px;
+  margin-right: 2.8rem;
 }
 .nav ul a {
   text-decoration: none;
   color: #000;
+}
+.nav ul li a:hover {
+  color: var(--orange-dark);
+  background-color: #f7f7f7;
+  border-radius: 5px;
 }
 
 /* main */
@@ -58,6 +69,7 @@ header nav ul .store a {
   padding: 60px 0;
   color: #e68d67;
   width: 20rem;
+  font-size: 29px;
 }
 .img-main {
   background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
@@ -110,7 +122,7 @@ header nav ul .store a {
   justify-content: center;
 }
 #input-radio {
-  width: 76px;
+  width: 58px;
 }
 
 #input-checkbox {

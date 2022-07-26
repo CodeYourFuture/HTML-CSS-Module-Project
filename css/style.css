@@ -1,8 +1,9 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
 }
 
 /**
@@ -30,6 +31,18 @@ header {
   width: 90%;
   margin: auto;
 }
+/* @media (max-width: 650px) {
+  header {
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: space-around;
+  }
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+  }
+} */
 header nav ul .store a {
   color: var(--orange-dark);
 }
@@ -47,11 +60,16 @@ header nav ul .store a {
   margin-right: 40px;
 }
 .nav ul li {
-  margin: 10px;
+  margin-right: 2.8rem;
 }
 .nav ul a {
   text-decoration: none;
   color: #000;
+}
+.nav ul li a:hover {
+  color: var(--orange-dark);
+  background-color: #f7f7f7;
+  border-radius: 5px;
 }
 
 /* <main> */
@@ -78,14 +96,34 @@ main .img {
   color: #fff;
   background-color: var(--orange-dark);
   width: 7rem;
-  padding: 5px;
+  padding: 10px;
   border-radius: 6px;
   border: none;
   position: relative;
-  left: 81px;
-  top: 24px;
+  left: 137px;
+  top: 36px;
 }
 /* article */
+.main-sec-txt-h1 {
+  font-size: 38px;
+  font-weight: 250;
+}
+.main-sec-txt-p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+}
+.main-art-txt {
+  font-size: 38px;
+  color: #5a5a5a;
+  margin-bottom: 47px;
+}
+.main-art-icon-txt {
+  font-size: 22px;
+  font-weight: 800;
+  color: #5a5a5a;
+  margin-top: 41px;
+}
 .article {
   width: 100%;
   height: auto;
