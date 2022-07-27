@@ -27,7 +27,8 @@ text-decoration: none;
 
 
 .contents{
-    display: inline-block;
+    display:block;
+    
 
 }
 
@@ -70,14 +71,10 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
- h1 {
-
-margin-top: 17.5rem;
-}
-
-.align h2 {
+.align h2  h1{
 
     margin-top: 17.5rem;
+
 }
 
 
@@ -118,6 +115,9 @@ margin-top: 17.5rem;
     margin-right: 20px;
     margin-left: 20px;
     text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    margin-top: 100px;
 
 }
 
@@ -147,5 +147,15 @@ margin-top: 17.5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+}
+
+hr{
+width: 50%;
+
+}
+
+footer{
+    color: gray;
 
 }
