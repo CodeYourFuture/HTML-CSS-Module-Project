@@ -4,16 +4,25 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+.karma__logo{
+    max-height: 30px;
+    width: auto;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
+.img__head{
+    background-image: url(/img/first-background.jpg);
+    
+}
+.section__thumbnail{
+    object-fit: contain;
+    width: 5rem;
+}
+.footer__icons{
+    border:1px grey solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 3px;
+}
