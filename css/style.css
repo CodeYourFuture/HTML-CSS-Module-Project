@@ -59,7 +59,7 @@ main {
   background-image: url("../img/first-background.jpg");
   background-size: cover;
   color: white;
-  font-weight: 300;
+  font-weight: 250;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,64 +89,64 @@ main {
   justify-content: center;
 }
 
-                                /* INFO */
+/* INFO */
 
 .info {
-    text-align: center;
-    font-weight: 300;
-    padding: 50px 0px;
+  text-align: center;
+  font-weight: 250px;
+  padding: 60px 0px;
 }
 .info-title {
-    font-size: 50px;
-    font-weight: inherit;
-    margin-bottom: 70px;
+  font-size: 50px;
+  font-weight: inherit;
+  margin-bottom: 5rem;
 }
 .cards-container {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .card img {
-    width: 150px;
+  width: 9rem;
 }
 
 .card p {
-    font-size: 30px;
-    font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
-                       /* footer */
+/* footer */
 
 .footer {
-    text-align: center;
-    padding: 20px 0px 50px 0px;
+  text-align: center;
+  padding: 2.5rem 0rem 3rem 0rem;
 }
 
 .container-social {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    width: 12%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 13%;
+  margin: 0 auto;
 }
 
-.card-social {
-    border: 1px solid #bdc3c7;
-    border-radius: 100%;
-    padding: 10px 12px;
+.social {
+  border: 1px solid #bdc3c7;
+  border-radius: 100%;
+  padding: 0.6rem ;
 }
 
-.card-social img {
-    width: 20px;
+.social img {
+  width: 1.4rem;
 }
 
 .footer-join {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .footer-text {
-    color: #bdc3c7;
-    margin-top: 20px;
+  color: #acb0b2;
+  margin-top: 1.5rem;
 }
