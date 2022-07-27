@@ -25,12 +25,12 @@ text-decoration: none;
 
 }
 
-
-.contents{
-    display:block;
-    
+.icon1{
+height: 25%;
+width: 25%;
 
 }
+
 
 
 ul{
@@ -51,15 +51,10 @@ a{
 }
 .topBar{
     display: flex;
-
+    flex-direction: row-reverse;
 }
 
-.image{
 
-    width: 5%;
-    height:5%;
-
-}
 
 .middle {
     background-image: url("/img/first-background.jpg");
@@ -69,11 +64,16 @@ a{
     height: 735px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
-.align h2  h1{
+.mid{
 
-    margin-top: 17.5rem;
+    font-weight: 75;
 
 }
 
