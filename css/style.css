@@ -17,3 +17,111 @@ body {
  */
 
 
+.links{
+display: flex;
+flex-direction: row-reverse;
+float: right;
+text-decoration: none;
+
+}
+
+
+.contents{
+    display: inline-block;
+
+}
+
+
+ul{
+
+    list-style: none;
+    display: flex;
+}
+li{
+    margin: 10px;
+    text-decoration: none;
+
+
+}
+a{
+    text-decoration: none;
+
+
+}
+.topBar{
+    display: flex;
+
+}
+
+.image{
+
+    width: 5%;
+    height:5%;
+
+}
+
+.middle {
+    background-image: url("/img/first-background.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 735px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+ h1 {
+
+margin-top: 17.5rem;
+}
+
+.align h2 {
+
+    margin-top: 17.5rem;
+}
+
+
+
+.learnMore{
+    background-color: rgb(252, 109, 57);
+    border: 2px solid rgb(252, 109, 57);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bottom{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.bottomImages{
+
+    height: 100px;
+    width: 100px;
+
+}
+
+.internet, .coffee, .refill{
+    padding:25px;
+    margin: 50px;
+    display: block;
+    align-items: center;
+    
+
+}
+
+.h2o h2 {
+
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+
+}
+
+.hygge .bottom{
+    text-align: center;
+
+}
