@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: white;
+    white-space: nowrap;
 }
 
 #logo {
@@ -25,18 +26,15 @@ body {
 .karma {
     color: black;
     margin-right: 5%;
-    white-space: nowrap;
     
 }
 .stnd {
     color: darkolivegreen;
     margin-right: 5%;
-    white-space: nowrap;
 }
 .store {
 color: #F15B2A;
 margin-right: 5%;
-white-space: nowrap;
 }
 #background-img {
     width: 100%;
@@ -70,10 +68,21 @@ border-radius: 5px;
 }
 .container2{
 color: black;
-text-align: center;
 }
 .s1{
     font-size: 40px;
+    text-align: center;
+}
+.icons {
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    margin: 0% 20% 0% 20%;
+}
+.icon {
+    width: 20%;
+    
+   
 }
 
 /**
