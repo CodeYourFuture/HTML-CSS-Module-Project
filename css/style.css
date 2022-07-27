@@ -40,32 +40,33 @@ white-space: nowrap;
 }
 #background-img {
     width: 100%;
+    left: 0%;
+    top: 20px;
 }
-.background {
+.container {
 position: relative;
+text-align: center;
+color: white;
 }
-.on-background {
+.over {
     position: absolute;
-    left: 30%;
-    top: 30%;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
 }
-.h {
-    text-align: center;
+.over1 {
     font-size: 40px;
+    
 }
-.p1 {
+.over2 {
     font-size: 30px;
-    text-align: center;
 }
-.p2 {
+.over3 {
 background-color: #F15B2A;
 padding: 3% 5% 3% 5%;
-white-space: nowrap;
-display: block;
-margin: auto;
+border-radius: 5px;
 }
 
 /**
