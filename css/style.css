@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 1%;
 }
 
 /**
@@ -22,8 +23,8 @@ header {
 .navigation {
   margin-right: 9%;
   padding: 10px;
-
 }
+
 #logo-image-id {
   align-self: flex-start;
   width: 2%;
@@ -34,10 +35,6 @@ header {
 /* --------below this line is the main section--------------------------------------------------- */
 /* The main section has two sub-sections 1. background image, h1 title, paragraph and button. 
 2. second sub-section is h2 title, services images  */
-.main-section {
-  width: 100%;
-  height: fit-content;
-}
 
 .backgroundImage-and-title {
   text-align: center;
