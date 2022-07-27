@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,76 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* header */
+nav {
+  display: flex;
+  padding: 0.5rem 8rem;
+}
 
+.nav-logo {
+  width: 100%;
+}
+.nav-logo-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.karma-logo {
+  width: 2rem;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #c16718;
+}
+.active {
+  color: #2b3956;
+}
+/* main - Freedom */
+
+main {
+  height: 100%;
+  padding: 2rem;
+}
+
+.freedom {
+  height: 100%;
+  padding: 10%;
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  color: white;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.freedom-title {
+  font-size: 5rem;
+  font-weight: inherit;
+  margin-bottom: -1rem;
+}
+.freedom-description {
+  font-weight: inherit;
+  font-size: 2rem;
+}
+.btn-freedom {
+  text-decoration: none;
+  color: white;
+  background-color: #ae6325;
+  font-size: 3rem;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
