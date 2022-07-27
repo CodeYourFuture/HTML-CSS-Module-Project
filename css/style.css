@@ -102,41 +102,52 @@ display: block;
 padding: 25px;
 margin: 35px;
 align-items: center;
-
+text-align: center;
 }
  
 .karma {
     text-align: center;
+    margin-bottom: 10px;
     }
 .table {
     display: flex;
     justify-content: center;
 }
-
+a {
+    text-decoration: none;
+    color: #333333;
+}
 .images {
     height: 50px;
     width: 50px;
 }
 .mobile {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
+.twitter {
+    height: 30px;
+    width: 30px;
+}  
+
 .facebook {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 .instagram {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 .never, .ever {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #838994;
 }
 .inc {
     text-align: center;
     font-size: 0.8rem;
+    color: #838994;
 }
 
 /**
