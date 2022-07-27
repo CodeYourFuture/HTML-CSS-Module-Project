@@ -5,7 +5,152 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.main1{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    border: 1px solid black;
 
+    
+
+}
+/* menu */
+.menu{
+    border: 1px solid black;
+    display:flex;
+    justify-content:right;
+     
+   
+}
+.lo{
+    margin: 30px;
+    height: 30px;
+    width: 60px;
+   
+}
+.img_logo{
+    /* margin: 10px;
+    height: 100px;
+    width: 20px; */
+    height: 35px;
+    width: 35px;
+    right: 0;
+    max-height: 90px;
+    width: auto;
+height: 35px;
+    width: 35px;
+    right: 0;
+    max-height: 90px;
+    width: auto;
+}
+nav{
+
+}
+
+.active {
+    background-color: #04AA6D;
+  }
+.home{
+   
+} 
+/* body 1*/
+.body1{
+    color: rgb(190, 186, 180);
+    border: 1px solid black;
+    background-image: url("../img/first-background.jpg");
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+    margin: 30px;
+height: 300px;
+}
+/* body 2*/
+.body2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.body3{
+    margin: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    
+}
+
+.text2{
+    /* border: 1px solid black;
+    display: flex;
+    flex-direction: row; */
+}
+/* footer */
+.end{
+   
+    text-align: center;
+    align-items: center;
+}
+.footer_logo{
+    /* margin: 80px;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px; */
+    display:inline-flex;
+    flex-direction: row;
+    height: 35px;
+    width: 35px;
+    right: 0;
+    max-height: 90px;
+    width: auto;
+   
+}
+.instagram{
+    /* display: flex;
+    
+    height: 50px;
+    width: 50px;
+    border: 3px solid rgb(64, 63, 63);
+    border-radius:70%; */
+    display: flex;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    border: 1px solid rgb(183, 181, 181);
+}
+.twitter{
+    /* display: flex;
+    height: 50px;
+    width: 50px;
+    border: 3px solid rgb(64, 63, 63);
+    border-radius:70%; */
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    border: 1px solid rgb(183, 181, 181);
+    
+}
+.t1{
+   
+    height: 50px;
+    width: 50px;
+}
+
+.facebook{
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    border: 1px solid rgb(183, 181, 181);
+}
+.copytext{
+    margin-top: 30px ;
+    color: rgb(174, 177, 177);
+}
 /**
  * Add your custom styles below
  * 
