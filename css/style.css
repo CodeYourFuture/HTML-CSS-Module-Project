@@ -94,16 +94,50 @@ overflow: auto;
     cursor: pointer;
     border-radius: 4px;
 }
+
+
+
+.middlenav, .coffee, .admit  {
+display: block;
+padding: 25px;
+margin: 35px;
+align-items: center;
+
+}
+ 
 .karma {
-text-align: center;
+    text-align: center;
+    }
+.table {
+    display: flex;
+    justify-content: center;
 }
-.karma .karmas {
-    flex-direction: row;
 
-
+.images {
+    height: 50px;
+    width: 50px;
 }
-    
-
+.mobile {
+    height: 50px;
+    width: 50px;
+}
+.facebook {
+    height: 50px;
+    width: 50px;
+}
+.instagram {
+    height: 50px;
+    width: 50px;
+}
+.never, .ever {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.inc {
+    text-align: center;
+    font-size: 0.8rem;
+}
 
 /**
  * Add your custom styles below
