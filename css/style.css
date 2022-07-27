@@ -19,7 +19,7 @@ body {
 
 .links{
 display: flex;
-flex-direction: row-reverse;
+flex-direction: row;
 float: right;
 text-decoration: none;
 
@@ -81,6 +81,8 @@ a{
     background-size: cover ;
     background-repeat: no-repeat;
     color: #fff;
+    
+
     height: 735px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -90,7 +92,7 @@ a{
     justify-content: center;
    
 }
-
+/*something random*/
 .mid{
 
     font-weight: 75px;
@@ -195,4 +197,13 @@ footer{
     font-size: 35px;
     font-weight: 100;
 
+}
+
+.karmaLogo{
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right:800px; 
+    margin-top: 30px;
 }
