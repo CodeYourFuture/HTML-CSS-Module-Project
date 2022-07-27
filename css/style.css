@@ -4,7 +4,106 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
 }
+.content{
+    padding: 0 0.938rem;
+margin: 0 auto;
+min-width: 37.5rem;
+
+}
+:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.topnav {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;  
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.topnav > .content{
+    height: 4.375rem;
+}
+.topnav .logo{
+height: 4.375rem;
+}
+.topnav .link{
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+}
+.topnav .link li{
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.topnav .link li.active{
+    color: #4c5058;
+    font-weight: 500;
+}
+.topnav .link li:hover{
+cursor: pointer;
+color: #333333;
+}
+.introduction {
+background-image: url("../img/first-background.jpg");
+background-size: cover;
+height: 45.938rem;
+overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+
+.introduction .button {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+
+
+
+.halfbutton {
+    background-color: #ce1616;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.karma {
+text-align: center;
+}
+.karma .karmas {
+    flex-direction: row;
+
+
+}
+    
+
 
 /**
  * Add your custom styles below
