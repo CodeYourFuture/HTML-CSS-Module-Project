@@ -45,19 +45,15 @@ header {
   color: white;
 }
 .intro-section {
-  margin-top: -15%;
-  margin-bottom: 7%;
+ background-image: url(/img/first-background.jpg);
+ background-size: 100% 100%;
+ padding: 7%;
 }
 .learn-more-btn {
   padding: 10px;
   background-color: green !important;
+  border-radius: 3px;
 }
-.background-image {
-  height: 300px;
-  width: 98%;
-  aspect-ratio: 1/1;
-}
-
 .learn-more-btn {
   background-color: rgb(232, 178, 78);
   border: none;
