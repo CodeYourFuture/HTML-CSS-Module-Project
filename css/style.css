@@ -5,19 +5,21 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-/* logo */
 
-.karma-logo-img {
+/* karma-logo */
+.karma-logo-icon{
     width: 30px;
     padding: 20px;
 }
 
 /* nav bar */
-.links{
+.nav-links{
     display: flex;
     flex-direction: row;
     float: right;
     text-decoration: none;
+    padding-top: 20px;
+    padding-right: 100px;
 } 
 
 ul{
@@ -25,13 +27,9 @@ ul{
     list-style-type: none;
 }
 
-li{
-
-}
-
 a{  
-    color:black;
-    padding: 10px;
+    color:gray;
+    padding: 15px;
     text-decoration: none;
 }
 
@@ -40,21 +38,20 @@ a:hover{
 }
 
 
-/* main image */
+/* background image */
 
 .background-image{
    background-image: url("../img/first-background.jpg");
-   height: 500px; 
+   height: 650px; 
    margin: 10px;
    font-family:'Roboto', sans-serif;
    font-size: 25px; 
    text-align: center;
-
 }
 
 .background-image h1, p{
     color: aliceblue;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .background-image p{
@@ -64,14 +61,15 @@ a:hover{
 .btn{
     background-color: orangered;
     color: white;
-    font-size: 20px;
+    margin: 10px;
     padding: 10px;
+    font-size: 20px;
     border: none;
     border-radius: 3px;
 }
 
 
-/* icon section */
+/* icons section */
 
 h2{
    padding-top: 100px;
@@ -81,33 +79,25 @@ h2{
    color: gray;
 }
 
-.container{
+.icon-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.first-section{
-    padding: 20px;
-    margin-left: 300px;
-}
-
-.second-section{
-    padding: 20px;
-}
-
-.third-section{
+.icon-images{
     width: 150px;
     height: 150px;
-    margin-right: 300px;
-    padding: 20px;
+    padding: 50px;
+    text-align: center;
 }
 
-
-.container p{
+.icon-container p{
     color: black;
-    margin: 0%;
+    margin: auto;
     padding-top: 0%;
+    font-size: 20px;
+    text-align: center;
 }
 
 
