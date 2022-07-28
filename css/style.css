@@ -3,7 +3,6 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  margin: 1%;
 }
 
 /**
@@ -18,7 +17,7 @@ body {
 /* --------below this line is the header section-------------------------------------------------- */
 header {
   display: flex;
-   justify-content: space-between;
+  justify-content: space-between;
  }
 .navigation {
   margin-right: 9%;
@@ -39,20 +38,16 @@ header {
 .backgroundImage-and-title {
   text-align: center;
   color: white;
+  background-image: url(/img/first-background.jpg);
+  background-size:cover;
+  padding: 11%;
 }
-.intro-section {
- background-image: url(/img/first-background.jpg);
- background-size: 100% 100%;
- padding: 7%;
-}
-.learn-more-btn {
-  padding: 10px;
-  background-color: green !important;
-  border-radius: 3px;
-}
+
 .learn-more-btn {
   background-color: rgb(232, 178, 78);
   border: none;
+  border-radius: 3px;
+  padding: 3px;
 }
 /* ---------------above this line is first sub-section of the main section--------------- */
 
