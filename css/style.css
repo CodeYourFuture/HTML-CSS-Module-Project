@@ -5,6 +5,112 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/* logo */
+
+.karma-logo-img {
+    width: 30px;
+    padding: 20px;
+}
+
+/* nav bar */
+.links{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    text-decoration: none;
+} 
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+
+}
+
+a{  
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orangered;
+}
+
+
+/* main image */
+
+.background-image{
+   background-image: url("../img/first-background.jpg");
+   height: 500px; 
+   margin: 10px;
+   font-family:'Roboto', sans-serif;
+   font-size: 25px; 
+   text-align: center;
+
+}
+
+.background-image h1, p{
+    color: aliceblue;
+    padding-top: 100px;
+}
+
+.background-image p{
+    padding-top: 5px;
+}
+
+.btn{
+    background-color: orangered;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+/* icon section */
+
+h2{
+   padding-top: 100px;
+   font-family:'Roboto', sans-serif;
+   font-size: 25px;
+   text-align: center;
+   color: gray;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first-section{
+    padding: 20px;
+    margin-left: 300px;
+}
+
+.second-section{
+    padding: 20px;
+}
+
+.third-section{
+    width: 150px;
+    height: 150px;
+    margin-right: 300px;
+    padding: 20px;
+}
+
+
+.container p{
+    color: black;
+    margin: 0%;
+    padding-top: 0%;
+}
+
+
 
 /**
  * Add your custom styles below
