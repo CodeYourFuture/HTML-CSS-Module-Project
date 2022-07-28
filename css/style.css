@@ -1,19 +1,150 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
+  }
+  
+  /**
+  * Add your custom styles below
+  * 
+  * Remember: 
+  * - Be organised, use comments and separate your styles into meaningful chunks
+  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+  * 
+  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+  */
+  nav {
+    display: flex;
+    padding: 0.5rem 8rem;
+  }
+  
+  .nav-logo {
+    width: 100%;
+  }
+  .nav-logo-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .karma-logo {
+    width: 2rem;
+  }
+  
+  .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #c16718;
+  }
+  .active {
+    color: #2b3956;
+  }
+  /* main - Freedom */
+  
+  main {
+  padding: 2rem;
+  }
+  
+  .freedom {
+    padding: 10%;
+    background-image: url("../img/first-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+  
+  .freedom-title {
+    font-size: 5rem;
+    font-weight: inherit;
+    margin-bottom: -1rem;
+  }
+  .freedom-description {
+    font-weight: inherit;
+    font-size: 2rem;
+  }
+  .btn-freedom {
+    text-decoration: none;
+    color: white;
+    background-color: #FF5F1F;
+    font-size: 3rem;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    margin-top: 1.25rem;
+    
+  
+  }
+  
+  /* INFO */
+  
+  .info {
+    text-align: center;
+    font-weight: 250px;
+    padding: 60px 0px;
+  }
+  .info-title {
+    font-size: 40px;
+    font-weight: inherit;
+    margin-bottom: 5rem;
+  }
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .card img {
+    width: 8.5rem;
+  }
+  
+  .card p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  
+  /* footer */
+  
+  .footer {
+    text-align: center;
+    padding: 2.5rem 0rem 3rem 0rem;
+  }
+  
+  .container-social {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 13%;
+    margin: 0 auto;
+  }
+  
+  .social {
+    border: 1px solid #bdc3c7;
+    border-radius: 100%;
+    padding: 0.6rem ;
+  }
+  
+  .social img {
+    width: 1.4rem;
+  }
+  
+  .footer-join {
+    font-size: 20px;
+  }
+  
+  .footer-text {
+    color: #acb0b2;
+    margin-top: 1.5rem;
+  }
+  
+  
