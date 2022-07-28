@@ -12,60 +12,66 @@
 <body>
     <!--Header-->
     <header class="header">
-        <a href="#">
-            <img src="/img/karma-logo.svg" alt="karma logo with orange color" class="karma__logo">
+        <a href="#logo" class="logo__link">
+            <img src="/img/karma-logo.svg" alt="karma logo" class="karma__logo"/>
         </a>
-    
-    <!--Navbar-->
-    <nav>
-        <div>
-            <a href="#meet" class="navigation__link">Meet Karma</a>
-            <a href="#How" class="navigation__link">How it Works</a>
-            <a href="#Store" class="navigation__link">Store</a>
-            <a href="#Blog" class="navigation__link">Blog</a>
-            <a href="#Help" class="navigation__link">Help</a>
+        <nav class="navigation">
+            <a href="#meet" class="navigation__link meet">Meet Karma</a>
+            <a href="#how" class="navigation__link">How it Works</a>
+            <a href="#store" class="navigation__link">Store</a>
+            <a href="#blog" class="navigation__link">Blog</a>
+            <a href="#help" class="navigation__link">Help</a>
             <a href="#login" class="navigation__link">Login</a>
-        </div>
-    </nav>
-</header>
+
+        </nav>
+    </header>
+<!--main-->
     <main class="main">
         <div class="head_content">
+          
+            <div class="hero">
             <section class="img__head">
-                <h1>Introducing Karma</h1>
-                <p>Bring WiFi with you, everywhere you go.</p>
+                <p class="introduce">Introducing Karma</p>
+                <p class="bring">Bring WiFi with you, everywhere you go.</p>
                 <button class="btn__learn">Learn More</button>
             </section>
+        </div>
             <div class="body__content">
                 <section class="section__content">
-                    <h1>Everyone needs a little Karma.</h1>
+                    <p>Everyone needs a little Karma.</p>
                 </section>
+                <div class="icones">
                 <section class="sections">
                     <img class="section__thumbnail" src="/img/icon-devices.svg" alt="devices Icon"/>
-                    <div class="section__content">
+                    <div class="section__content1">
                         <p>Internet for all devices</p>
                     </div>
                 </section>
                 <section class="sections">
                     <img class="section__thumbnail" src="/img/icon-coffee.svg" alt="coffe icon"/>
-                    <div class="section__content">
+                    <div class="section__content1">
                         <p>Boost your productivity</p>
                     </div>
                 </section>
                 <section class="sections">
                     <img class="section__thumbnail" src="/img/icon-refill.svg" alt="refill icon"/>
-                    <div class="section__content">
+                    <div class="section__content1">
                         <p>Pay as You Go</p>
                     </div>
+                </div>
                 </section>
             </div>
         </div>
     </main>
+    <!--footer-->
 <footer class="footer">
-    <p>Join us on</p>
-    <div >
-        <img src="img/twitter-icon.svg" alt="twitter icon" class="footer__icons"/>
-        <img src="/img/facebook-icon.svg" alt="facebook icon" class="footer__icons"/>
-        <img src="/img/instagram-icon.svg" alt="insta icon" class="footer__icons"/>
+    <div class="footer__content">
+        <p><strong>Join us on</strong> </p>
+    </div>
+    <div class="footer__img">
+       <a href="https://twitter.com"> <img src="img/twitter-icon.svg" alt="twitter icon" class="footer__icons"/></a>
+       <a href="https://facebook.com"> <img src="/img/facebook-icon.svg" alt="facebook icon" class="footer__icons"/></a>
+       <a href="https://instagram.com"><img src="/img/instagram-icon.svg" alt="insta icon" class="footer__icons"/></a>
         <p class="copyright">©Karma Mobility,Inc.</p>
     </div>
 </footer>

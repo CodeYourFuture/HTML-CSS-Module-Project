@@ -4,25 +4,121 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    margin: 0;
 }
+.main,
+.footer {
+  max-width: 1024px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  }
+/*header*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+/*logo*/
 .karma__logo{
-    max-height: 30px;
-    width: auto;
+    width: 30px;
+    height: 30px;
+    margin-right: 500px;
+}
+/*navigation*/
+.navigation{
+    margin-top: 5px;
+}
+.navigation__link{
+    text-decoration: none;
+    color: #9FA3AA;
+    padding: 8px;
+    font-size: small;
+}
+.navigation__link:hover{
+    color: #E88B6D;
+}
+.meet{
+    color: #52555B;
 }
 
-.img__head{
+/*main*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero{
     background-image: url(/img/first-background.jpg);
-    
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+.introduce{
+    font-size: 3em;
+}
+.bring{
+    font-size: 1.75em;
+    }
+.section__content{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: xx-large;
+}
+.section__content1 p{
+    margin-left: -31px;
+}
+.icones{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
 }
 .section__thumbnail{
     object-fit: contain;
     width: 5rem;
 }
+.img__head{
+    text-align: center;
+    
+}
+/*button*/
+.btn__learn{
+    background-color: #E0633A;
+    border-style: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 9px;
+}
+.footer__content{
+    border-top: 1px solid lightgray;
+    margin-top: 50px;
+    text-align: center;
+}
+.footer__img{
+    text-align: center;
+}
 .footer__icons{
-    border:1px grey solid;
-    width: 15px;
-    height: 15px;
+    border:1px lightgrey solid;
+    width: 19px;
+    height: 25px;
     border-radius: 50%;
-    padding: 3px;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+}
+.copyright{
+    color: #A6AAB1;
 }
