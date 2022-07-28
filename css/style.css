@@ -17,3 +17,145 @@ body {
  */
 
 
+
+ /* nav and logo styles*/
+ .logo {
+    width: 25px;
+    display: flex;
+    cursor: pointer;
+    
+    
+}
+ nav {
+    display: flex;
+    padding: 10px 50px;
+
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-bar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+
+.nav-list {
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+
+.nav-list:hover {
+    color: #E16337;
+}
+
+.strong {
+    color: #02050b;
+} 
+
+
+/* karma styles*/
+.intro-karma{
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/first-background.jpg');
+    background-size: cover;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.karma-title {
+    font-size: 55px;
+    font-weight: inherit;
+    margin-bottom: -10px;
+}
+
+.karma-slogan {
+    font-weight: inherit;
+    font-size: 25px;
+}
+
+.btn-karma {
+    text-decoration: none;
+    color: inherit;
+    background-color: #E16337;
+    font-size: 20px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+} 
+/* section info styles*/
+.section-karma{
+    text-align: center;
+    font-weight: 300;
+    padding: 50px 0px;
+}
+
+.section-karma-title {
+    font-size: 35px;
+    font-weight: inherit;
+    margin-bottom: 55px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 75px;
+}
+
+.manu p {
+    font-size: 25px;
+    font-weight: 400;
+} 
+/*footer styles*/
+.footer {
+    text-align: center;
+    padding: 30px 0px 40px 0px;
+}
+
+.social-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: 0 auto;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.menu-social {
+    border: 1px solid #bdc3c7;
+    border-radius: 100%;
+    padding: 10px 12px;
+}
+
+.menu-social img {
+    width: 15px;
+}
+
+.footer-h {
+    font-size: 15px;
+}
+
+.footer-copyright-text {
+    color: #bdc3c7;
+    margin-top: 15px;
+} 
