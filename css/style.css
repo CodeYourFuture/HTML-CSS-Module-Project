@@ -16,4 +16,48 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+* {margin:0;
+   padding:0;
+}
+ 
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 4rem;
+    align-items: center;
+}
+
+
+ nav {
+    flex: basis 80%;
+   
+ }
+
+ .logo {
+    flex-basis:20%;
+ }
+
+ ul{
+    display:flex;
+
+
+}
+
+ul li{
+list-style: none;
+line-height:100%;
+}
+
+ul li a { text-decoration: none;
+ dispaly: block;
+    font-size: 14px;
+ font-family: arial;
+ color: gray;
+padding:0 20px;
+}
 
