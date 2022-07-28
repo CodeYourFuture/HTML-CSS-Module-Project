@@ -21,13 +21,25 @@ body {
 
 /* CSS -  Media icons */
 
+footer {
+    margin: 20px;
+    text-align: center;
+    
+}
+
 .fa {
     padding: 20px;
     width: 50px;
     text-align: center;   
+    text-decoration: none;
 }
 
 .social {
     width: 20px;
-    justify-items: center;
+    border: solid 1px rgb(219, 219, 219);
+    padding: 10px;
+    border-radius: 20px;
+}
+.copyright {
+    color: rgb(219, 219, 219);
 }
