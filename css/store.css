@@ -2,6 +2,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -9,11 +11,11 @@ body {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-   
+    background: rgba(196, 196, 196, 0.1);;
   }
   
 .logo {
-    padding-top: 20px;
+    padding: 40px;
     margin-left: 150px;
   
     }
@@ -44,10 +46,61 @@ body {
     font-size: 1.2rem;
     text-decoration: none;
     justify-content: center;
-    /* margin-left: 30px;  */
+   
   }
   
   a:hover {
     color: #c05326;
   }
   
+  /* main */
+
+  fieldset {
+     border: none;
+     position: absolute;
+     width: 148px;
+     height: 25px;
+     left: 122px;
+     top: 414px;
+     font-family: 'Roboto', sans-serif; 
+     font-style: normal;
+     font-weight: 500;
+     font-size: 21px;
+     line-height: 25px;
+     color: #666666;
+
+
+  }
+
+  .image3 {
+    position: absolute;
+    left: 739px;
+    top: 140px;
+
+  }
+
+  .store-h1 {
+    position: absolute;
+    width: 521px;
+    height: 118px;
+    left: 123px; 
+    top: 214px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px; 
+    color: #DE6E49;
+  }
+
+  input{
+      position: ;
+      width: 235px;
+      height: 53px;
+      left: 122px;
+      top: 451px;
+
+border: 2px solid #666666;
+border-radius: 4px;
+
+  }
