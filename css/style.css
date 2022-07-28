@@ -158,3 +158,101 @@ body {
     display: flex;
     justify-content: center;
 }
+
+
+/*store page*/
+
+.store-main {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-side {
+  background-color: #f85c2c;
+ /* display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(21, 1fr) ;*/
+  /*grid-template-areas: 
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      "3 . o o o o o o o o . ."
+      "4 . . . . . . . . . . ."
+      "5 . . . . . . . . . . ."
+      "6 . . . . . . . . . . ."
+      "7 . . . . . . . . . . ."
+      "8 . . . . . . . . . . ."
+      "9 . . . . . . . . . . ."
+      "10 . . . . . . . . . . ."
+      "11 . . . . . . . . . . ."
+      "12 . . . . . . . . . . ."
+      "13 . . . . . . . . . . ."
+      "14 . . . . . . . . . . ."
+      "15 . . . . . . . . . . ."
+      "16 . . . . . . . . . . ."
+      "17 . . . . . . . . . . ."
+      "18 . . . . . . . . . . ."
+      "19 . . . . . . . . . . ."
+      "20 . . . . . . . . . . ."
+      "f f f f f f f f f f f f ";*/
+ 
+
+}
+.order {
+  font-weight: 400;
+  text-align: center;
+}
+form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: auto;
+  
+}
+input {
+  height: 2em;
+  border-radius: 5px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.first {
+  grid-area: f;
+}
+.last {
+  grid-area: l;
+}
+.address {
+  grid-area: 1;
+}
+.address-2 {
+  grid-area: 2;
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+.city {
+  grid-area: c;
+}
+.postcode {
+  grid-area: p;
+}
+.K-O {
+  grid-area: k;
+}
+.S-G {
+  grid-area: sg;
+}
+.T-C {
+  grid-area: t;
+}
+.submit {
+  grid-area: s;
+}
+.right-side {
+background-color: aqua;
+}
+.store-img {
+  width: 955px;
+}

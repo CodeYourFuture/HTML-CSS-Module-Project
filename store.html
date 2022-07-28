@@ -1,50 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Karma</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <header>
-      
-      <nav class="nav-bar">
-        <img
-        class="logo"
-        src="/img/karma-logo.svg"
-        alt="Karma Logo"
-        />
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><strong>Meet Karma</strong></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">How it works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="store.html">Store</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Help</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Login</a>
-          </li>
-        </ul>
-      </nav>
+
+    <nav class="nav-bar">
+      <img class="logo" src="/img/karma-logo.svg" alt="Karma Logo" />
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><strong>Meet Karma</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">How it works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Login</a>
+        </li>
+      </ul>
+    </nav>
     </div>
   </header>
-  <main>
-   
-    
-    
+  <main class="store-main">
+    <section class="left-side">
+      <h1 class="order">Order your Karma wifi device today!</h1>
+      <form action="/action_page.php">
+        <div class="name">
+          <div class="first-name">
+            <label for="first">First name:</label><br>
+            <input type="text" id="first" name="first"><br>
+          </div>
+          <div class="last-name">
+            <label for="last">Last name:</label><br>
+            <input type="text" id="last" name="last"><br>
+          </div>
+        </div>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="address-2">Address 2:</label><br>
+        <input type="text" id="address-2" name="address-2"><br>
+        <div class="location">
+          <div class="city-container">
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br>
+          </div>
+          <div class="postcode-container">
+            <label for="postcode">Postcode:</label><br>
+            <input type="text" id="postcode" name="postcode"><br>
+          </div>
+        </div>
+        <p>select a color</p>
+        <div class="colors">
+          <input type="radio" id="karma" name="karma">
+          <label for="karma" class="K-O">Karma Orange
+          </label>
+          <input type="radio" id="space" name="space">
+          <label for="space"  class="S-G">Space grey
+          </label>
+        </div>
+        <br>
+        <input class="T-C" type="checkbox"> By placing your order you agree to Karma's Terms and Conditions
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section class="right-side">
+      <img class="store-img" src="/level-2/store-image_by-andrew-neel-unsplash.jpg">
+    </section>
+
+
   </main>
   <footer>
     <p class="join">join us on</p>
@@ -55,9 +97,10 @@
     </div>
     <p class="INC">© Karma Mobility, Inc.</p>
   </footer>
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+  <!-- Add your HTML markup here -->
+  <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+  <!-- All the images you need are in the 'img' folder -->
 
 </body>
+
 </html>
