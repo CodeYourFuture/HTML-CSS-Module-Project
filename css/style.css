@@ -6,6 +6,146 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+body{
+    font-family: 'roboto' , sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+ nav{
+    display: flex;
+    padding: 10px 150px;
+    }
+
+.logo{
+    width: 30px;
+    padding: 10px 150px;
+}
+
+.nav-section{
+    width: 100%;
+}
+.nav-section-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(72, 76, 79);
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: brown;
+}
+
+main{
+    height: 100%;
+}
+
+.hero {
+    height: 80%;
+    background-image: url('../img/first-background.jpg');
+    background-size: cover;
+    color: aliceblue;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title{
+    font-size: 70px;
+    font-weight: inherit;
+    margin-bottom: -10px;
+}
+
+.hero-slogan{
+    font-weight: inherit;
+    font-size: 50px;
+
+}
+
+.btn-hero{
+    text-decoration: none;
+    color: inherit;
+    background-color: orange;
+    font-size: 30px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.section-info{
+    text-align: center;
+    font-weight: 300;
+    padding: 50px 0px;
+}
+
+.section-info-title{
+    font-size: 50px;
+    font-weight: inherit;
+    margin-bottom: 70px;
+}
+
+
+
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card img{
+  width: 150px;    
+}
+
+.card p{
+    font-size: 30px;
+    font-weight: 40;
+}
+
+.footer{
+    text-align: center;
+    padding: 20 px 0px 50px 0px;
+}
+.container-social{
+    display: flex;
+    justify-content: space-between;
+    width: 10px;
+    margin: 0px auto;
+}
+
+.card-social{
+    border: 1px; solid #b1b4b7;
+    border-radius: 100%;
+    padding: 10px 12px;
+
+}
+
+.card-social img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.footer-heading{
+    font-size: 20px;
+}
+
+.footer-copyrighter-text{
+    color: #b1b4b7;
+    margin-top: 20px;
+}
 /**
  * Add your custom styles below
  * 
