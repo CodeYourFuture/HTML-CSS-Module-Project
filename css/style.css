@@ -1,5 +1,14 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ /**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -101,15 +110,29 @@ h2{
 }
 
 
+/*soical media icons*/
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.media-container{ 
+    text-align: center;
+}
+
+.media-icons{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+
+footer h3{
+    color: #333030;
+    padding-top: 100px;
+}
+
+footer p{
+    color: gray;
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+}
+
 
 
