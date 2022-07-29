@@ -114,11 +114,8 @@ button {
 
 .features {
     width: auto;
-    height: 300px;    
-}
-
-img {
-    width:100%;
+    height: 300px; 
+    
 }
 
 .article-content {
@@ -127,6 +124,13 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.devices, .coffee, .refill {
+  max-height: 40%;
+  min-width: 40%;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
 hr {
