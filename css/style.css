@@ -42,6 +42,7 @@ header, main, footer {
 
 .logo {
     width: 20px;
+    padding-left: 60px;
 }
 
 ul {
@@ -55,7 +56,7 @@ ul {
 
 .navigation_link {
     color: var(--grey-light);
-    padding-right: 20px;
+    padding-right: 40px;
     text-decoration: none;
 }
 
@@ -105,19 +106,29 @@ button {
     padding: 10px;
 }
 
+.feature_subtitle {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 34px;
+    text-align: center;
+}
+
 .features {
-    text-align: center;
+    width: auto;
+    height: 300px;    
+}
+
+img {
+    width:100%;
+}
+
+.article-content {
     display: flex;
-    
-
-}
-
-figure, figcaption {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    
 }
-
-
 
 hr {
     width: 80%;
@@ -129,24 +140,25 @@ hr {
 /* CSS -  Media icons */
 
 footer {
-    margin: 20px;
+    padding-left: auto;
     text-align: center;
     
 }
 
 .fa {
-    padding: 20px;
-    width: 50px;
+    padding: 5px;
     text-align: center;   
     text-decoration: none;
 }
 
-.social {
-    width: 20px;
+.social, img {
+    width: 10px;
     border: solid 1px var(--grey-light);
     padding: 10px;
     border-radius: 20px;
+    
 }
 .copyright {
     color: var(--grey-light);
+    font-size: small
 }
