@@ -61,6 +61,7 @@ a:hover {
     padding: 100px;
     margin: 5px;
     height: 300px;
+    background-repeat: no-repeat;
     
 }
 .p1{
@@ -72,6 +73,7 @@ a:hover {
     color: wheat;
     background-color: rgba(255, 68, 0, 0.822);
     border-radius: 5px;
+    border: none;
     
 }
 /* body 2*/
@@ -88,7 +90,6 @@ a:hover {
     /* align-items: center; */
     justify-content: space-around;
     height: 300px;
-    border: 3px solid black;
     margin-bottom: 60px;
     
 }
@@ -106,13 +107,11 @@ margin: auto;
 
 /* footer */
 .end{ 
-    border: 3px solid blue; 
     text-align: center;
     align-items: center;
 }
 .footer_logo{
 
-    border: 3px solid yellow;
     display:inline-flex;
     flex-direction: row;
     height: 100px;
