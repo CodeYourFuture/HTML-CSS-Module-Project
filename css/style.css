@@ -1,4 +1,8 @@
-
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
@@ -15,5 +19,399 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ header {
+     display: flex;
+     justify-content: space-between;
+ }
 
+.brand-img {
+    width: 30px;
+    margin: 5px 0 0 70px;
+    line-height: 70px;
+    
+}
+
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+
+}
+
+@media screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+        background: #fff;
+    }
+    .menu a:hover {
+        background-color: #E06239;
+        color: #fff;
+    }
+
+    span {
+        display: block;
+        background-color: #fff;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
+
+/* hero section */
+.hero {
+    background: url("../img/first-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.hero-text {
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+    height: 16rem;
+    margin-top: 3rem;
+}
+
+.hero-title {
+    font-size: 2rem;
+    padding: .2rem 2rem;
+}
+
+.hero-text p {
+    padding: .2rem 3rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+
+.all-btns {
+    color: #fff;
+    background-color: #E06239;
+    border: none;
+    padding: .7rem;
+    font-size: .9rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+.all-btns:hover {
+    color: #E06239;
+    background-color: #fff;
+}
+/* end of hero section */
+
+@media screen and (min-width: 400px) {
+    .hero {
+        padding: 160px 0;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+        padding: .2rem 2rem;
+    }
+    .hero-text p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-title {
+        font-size: 4rem;    
+    }
+    .hero-text p {
+        padding: .2rem 3rem;
+        font-size: 1.6rem;
+    }
+    .hero-btn {
+        font-size: 1.2rem;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .hero-btn {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .all-btns {
+        font-size: 3rem;   
+    }  
+    .hero-title {
+        font-size: 6rem;
+    }
+    .hero-text p {
+    font-size: 2rem;
+    }
+}
+
+
+
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* article section  */
+.intro-header h2 {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 0 4rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.intro-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.intro-imgs p {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.intro-left-img {
+    width: 115px;
+}
+
+.intro-middle-img {
+    width: 115px;
+}
+
+.intro-right-img {
+    width: 115px;
+}
+
+@media screen and (min-width: 400px) {
+    .intro-header h2 {
+        font-size: 1.8rem;
+    }
+    .hero-btn {
+        font-size: 1rem;
+    }
+    .intro-imgs p {
+        font-size: .9rem;
+    }
+    .intro-left-img {
+        width: 150px;
+    }
+    .intro-middle-img {
+        width: 150px;
+    }
+    .intro-right-img {
+        width: 150px;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .intro-header h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .intro-header h2 {
+        font-size: 2.8rem;
+    }
+    .intro-imgs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .intro-imgs p {
+        font-size: 1rem;
+    }
+    .intro-left-img {
+        width: 180px;
+        margin: 0 4rem;
+    }
+    .intro-middle-img {
+        width: 180px;
+        margin: 0 4rem;
+    }
+    .intro-right-img {
+        width: 180px;
+        margin: 0 4rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .intro-header h2 {
+        font-size: 3.8rem;
+    }
+    .intro-imgs p {
+        font-size: 1.8rem;
+    }
+    .intro-left-img {
+        width: 300px;
+    }
+    .intro-middle-img {
+        width: 300px;
+    }
+    .intro-right-img {
+        width: 300px;
+    }  
+}
+
+/* article section end  */
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* 
+/* get section */
+.get-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #FCEFEB;
+}
+
+
+.get-img img {
+    width: 100vw;
+}
+
+.get-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.get-text p {
+    margin: 3rem 5rem 0 5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (min-width:700px) {
+    .get-section {
+        flex-direction: row;
+    }
+    .get-img img {
+        width: 50vw;
+    }
+    .get-text p {
+        margin-top: 1rem;
+        font-size: 1.5rem;  
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .get-text p {
+         margin-top: 7rem;
+        font-size: 2rem;  
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .get-text p {
+        margin-top: 15rem;
+        font-size: 2rem;  
+    }
+}
+
+@media screen and (min-width:2050px) {
+    .get-text p {
+        margin-top: 15rem;
+        font-size: 5.7rem;   
+    }
+}
+
+
+
+/* line break section  */
+.line-break { 
+    display: flex;
+    justify-content: center;
+}
+
+.line-break hr {
+    background-color: #292929;
+    margin: 2.5rem 0;
+}
+/* line break section end */
+
+
+/* footer section */
+.join-text {
+    display: flex;
+    justify-content: center;
+}
+
+.join-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.join-icons img {
+    width: 20px;
+    margin: 3px;
+    border: 2px #29292946 solid;
+    border-radius: 40px;
+    
+}
+
+/* footer end */
 
