@@ -19,6 +19,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.btn {
+  padding: 1rem;
+  border-radius: 0.5em;
+  border-color: transparent;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.orange-color {
+  background-color: var(--orange-dark);
+  color: white;
+}
+
 /**
  * Add your custom styles below
  * 
@@ -58,7 +71,7 @@ ul {
 .navbar ul li {
   margin-left: 1.5rem;
   font-size: 1.2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* Header Hero Section */
@@ -75,6 +88,19 @@ header .container {
   justify-content: center;
 }
 
+header .container h2,
+header .container button {
+  margin: 1.3rem;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+}
 /* Section */
 
 .boxes .container {
@@ -84,15 +110,22 @@ header .container {
   justify-content: space-between;
 }
 
-.boxes p {
-  text-align: center;
+.boxes h2 {
+  font-size: 2.3rem;
+  font-weight: lighter;
   padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  text-align: center;
 }
 
 .boxes img {
   width: 12rem;
 }
 
+.boxes p {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
 /* Footer */
 
 footer img {
