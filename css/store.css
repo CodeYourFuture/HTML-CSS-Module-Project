@@ -56,9 +56,10 @@ body {
   /* main */
 
   fieldset {
+     display: flex;
      border: none;
      position: absolute;
-     width: 148px;
+     width: 300px;
      height: 25px;
      left: 122px;
      top: 414px;
@@ -70,6 +71,10 @@ body {
      color: #666666;
 
 
+  }
+
+  .right {
+      flex: right;
   }
 
   .image3 {
@@ -93,14 +98,98 @@ body {
     color: #DE6E49;
   }
 
-  input{
-      position: ;
-      width: 235px;
-      height: 53px;
-      left: 122px;
-      top: 451px;
 
-border: 2px solid #666666;
-border-radius: 4px;
+  input {
+    width: 300px;
+    height: 25px;
+    left: 200px;
+    width: 235px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+  
+  }
+  #dropdown{
+    width: 300px;
+    height: 25px;
+    left: 200px;
+    width: 235px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+  }
+
+  .radio {
+
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 12px;
+    top: 500px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #666666;
+  }
+
+  .radio input{
+       width: 25px;
+       height: 15px;
+       left: 122px;
+       top: 985px;
+       border: 2px solid #666666;
+       cursor: pointer;
+  }
+
+  /* .radio input:checked ~ .radio input { */
+      /* background-color: #DE6E49; }*/
+
+  .checkbox{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    left: 1px;
+    top: 740px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #666666;
 
   }
+
+  .checkbox input {
+    width: 25px;
+    height: 15px;
+    left: 122px;
+    top: 905px;
+    border: 2px solid #666666;
+    cursor: pointer
+    
+
+  }
+
+  span {
+    color: #c05326;
+    text-decoration-line: underline;
+  }
+
+  .button3 {
+    align-content: center;
+    background-color: #c05326;
+    color: #fff;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 1.2rem
+
+  }
+
+/* footer */
+
+  hr {
+    margin-top: 1235px;
+  }
+ 
