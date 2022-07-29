@@ -4,8 +4,22 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: black;
 }
-
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+.join {
+    display: flex;
+    gap: 15px;
+    
+}
+.join img{
+    width: 20px;
+    height: 20px;
+}
 /**
  * Add your custom styles below
  * 
@@ -16,4 +30,53 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ 
 
+ nav {
+ justify-content: flex-end;
+ }
+    
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    color: grey;
+    text-decoration: none; 
+    margin: 0px 20px;
+
+
+
+}
+
+ul li a:hover{
+color: orangered;
+}
+
+
+main {
+text-align: center;
+    background-image: url('./../img/first-background.jpg');
+    background-size: cover;
+    padding: 150px 0;
+    color: white;
+}
+
+ .image-icon {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+h1 {
+    margin-top: 50px;
+}
+
+
+ button {
+    background-color: tomato;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+
+ }
