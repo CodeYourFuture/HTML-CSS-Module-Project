@@ -1,11 +1,133 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+.logo-img {
+  width: 10%;
+  margin-top: 20px;
+
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: flex-end;
+
+
+}
+
+.navigation__item {
+  padding: 0.5rem 0;
+  margin: 10px;
+
+
+}
+
+.navigation__link {
+  color: rgb(154, 150, 150);
+  font-family: 'Uchen', serif;
+  font-weight: 200px;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: chocolate;
+  cursor: pointer;
+}
+
+.section1 {
+  background: url(../img/first-background.jpg);
+  height: 600px;
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  font-family: 'Uchen', serif;
+}
+
+.learn {
+  color: rgb(235, 226, 220);
+  background-color: chocolate;
+  border: 0;
+  margin: 50px;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: x-large;
+  margin-top: 100px;
+
+}
+
+.section-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 50px;
+
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.img-style {
+  display: flex;
+  flex-direction: column;
+  ;
+}
+
+.section-bottom p {
+  width: 200px;
+}
+
+.haeder-two {
+  margin-left: 100px;
+  ;
+}
+
+.khat {
+  margin: 0px;
+  size: 90%;
+}
+
+.footer-img {
+  width: 20px
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  margin-left: 600px;
+
+}
+
+button {
+  padding: 6px;
+  cursor: pointer;
+}
+
+.footer-1 {
+  display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Open+Sans:ital@1&family=Roboto:ital,wght@1,100;1,300&display=swap') @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital,wght@1,100;1,300&display=swap');
 /**
  * Add your custom styles below
  * 
@@ -15,5 +137,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
