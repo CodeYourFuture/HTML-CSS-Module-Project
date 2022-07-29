@@ -1,5 +1,19 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,17 +40,19 @@ ul {
   width: 95%;
   margin: 20px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   width: 3rem;
+  margin-left: 4rem;
 }
 
 .navbar ul {
   display: flex;
-  /* flex-grow: 1; */
+  margin-right: 5rem;
+  /* flex-grow: 1 2; */
 }
 
 .navbar ul li {
@@ -61,6 +77,18 @@ header .container {
 
 /* Section */
 
+.boxes .container {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxes p {
+  text-align: center;
+  padding-top: 1.4rem;
+}
+
 .boxes img {
   width: 12rem;
 }
@@ -74,4 +102,34 @@ footer img {
 header h1,
 header h2 {
   color: white;
+}
+
+footer .container {
+  /* width:95% */
+  margin: 20px auto;
+  width: 95%;
+  border-top: 2px solid var(--grey-light);
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .social-media li img {
+  /* margin: 4rem;
+  padding: 5rem; */
+
+  /* padding: 0.7rem; */
+  box-sizing: content-box;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 100px;
 }
