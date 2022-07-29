@@ -6,6 +6,271 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+
+
+
+/**
+* Add your custom styles below
+* 
+* Remember: 
+* - Be organised, use comments and separate your styles into meaningful chunks
+*    for example: General styles, Navigation styles, Hero styles, Footer etc.
+* 
+* - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+*/
+
+
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif; 
+}
+
+login {
+  text-align: center;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+ 
+}
+
+.logo {
+  padding-top: 20px;
+  margin-left: 150px;
+
+  }
+  
+
+.nav-right {
+  display: flex;
+  list-style: none;
+  padding-right: 5rem;
+}
+
+
+  
+.navigation__link {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(185, 182, 182);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-left: 30px;  
+  
+}
+
+.navigation__link1 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(121, 118, 118);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-decoration: none;
+  justify-content: center;
+  /* margin-left: 30px;  */
+}
+
+a:hover {
+  color: #c05326;
+}
+
+
+
+
+/* hero */
+
+.hero {
+  background-image: url("https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Module-Project/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg");
+  background-color: var(--grey-light);
+  width: 100%;
+  height: 46rem;
+
+}  
+
+
+ .hero h1 { 
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 4.2rem;
+  font-weight: 200;
+  padding-top: 200px;
+ 
+}
+
+.hero p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 100;
+  /* display: block; */
+  padding: 10px 40px 5px 30px;
+}
+
+.button {
+  align-content: center;
+  background-color: #c05326;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-left: 45%;
+
+}
+
+
+/* main */
+
+.main-text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 3.2rem;
+  font-weight: 300;
+  padding-top: 100px;
+}
+
+.table {
+  text-align: center;
+  margin-left: 12rem;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 100px;
+  padding-bottom: 10rem;
+}
+
+.icons {
+  width: 23rem;
+}
+
+.icons1 {
+  padding-right: 30px; 
+
+}
+
+/* article */
+
+.store{
+  display: flex;
+   margin-top: 7rem; 
+
+}
+
+.article-right-p {
+position: absolute;
+width: 600px;
+height: 244px;
+left: 599px;  
+padding: 96px 137px 100px 156px;
+top: 1354px;
+background: rgba(224, 99, 58, 0.1);
+font-family: 'Roboto', sans-serif;;
+weight: 400;
+font-style: italic;
+font-size: 42px;
+line-height: 49.22px;
+text-align: center;
+color: #434242;
+}
+
+.article-left {
+position: absolute;
+width: 599px;
+height: 439px;
+left: 599px;
+top: 1758px;
+   }
+
+.button2 {
+
+position: absolute;
+width: 264px;
+height: 70px;
+left: 888px;
+top: 1680px;
+background: #E0633A;
+border-radius: 8px;
+border-style: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+
+
+
+}   
+
+
+
+
+/* footer */
+
+ hr {
+   margin-top: 120px;
+ }
+
+ .text {
+   text-align: center;
+   font-weight: 500;
+   font-size: 1.3em;
+
+   
+ }
+ 
+ .social-links {
+   justify-content: center;
+   margin-left: 37rem;
+   margin-top: 2.3rem;
+ }
+
+
+ .circle {
+   list-style-type: none;
+   text-align: center;
+   display: inline;
+   border-radius: 33px;
+   border: 2px solid #cbcac7;
+   padding: 12px;
+   width: 100px;
+   height: 150px;
+   margin-left: 11px;
+ }
+
+ .copyright {
+   margin-top: 32px;
+   margin-left: 1rem;
+   font-size: 1.2em;
+   color: rgb(106, 101, 101);
+ }
+ 
+ 
+
+
+
+
+
+
+
+
+
 /**
  * Add your custom styles below
  * 
@@ -15,5 +280,8 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+
+
 
 
