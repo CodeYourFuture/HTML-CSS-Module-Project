@@ -1,9 +1,18 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+  :root {
+   --grey-dark: #292b2c;
+   --grey-light: #e4e4e4;
+   --orange-dark: #c05326;
+   --orange-light: #f7eae4;
+   --white: #fff;
+ }
+
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Edu VIC WA NT Beginner', 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 /**
@@ -15,5 +24,80 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ /*headr*/
+ .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+ }
+ .nav-List{
+    display:flex;
+    list-style: none;
+
+ }
+.navigation__item {
+  padding: 0.5rem 0.5rem;
+}
+
+.navigation__link {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: none;
+  text-decoration: none;
+}
 
 
+
+ /*main*/
+ .first-part{
+    background-image: url("../img/first-background.jpg");
+    background-color: grey;
+    height:450px;
+    padding-top: 100px;
+    text-align: center;
+    color:#fff;
+ }
+ .main-button{
+    color:var(--white);
+    background-color: var(--orange-dark);
+    margin-top: 35px;
+ }
+
+ h2{
+    text-align:center;
+    
+ }
+.options{
+    display: flex;
+    justify-content:center;
+    
+}
+.svg-one{
+    margin:25px 65px;
+
+}
+.sec-section{
+    display: flex;
+    justify-content: center;
+
+}
+.little-explanation{
+    margin-right: 55px;
+    margin-left: 15px;
+}
+
+
+
+/*footer*/
+.foot{
+    text-align: center;
+    margin-top: 55px;
+
+}
+.sec-svg{
+    border: 2px solid grey;
+    border-radius: 25px;
+}
