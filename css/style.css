@@ -16,6 +16,107 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+:root {
+    --grey-light: rgb(219, 219, 219);
+    --black: black;
+    --orange: orange;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    overflow:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 20px;
+}
+
+header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 20px
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    list-style: none;
+    padding: 20px;
+    
+}
+
+.navigation_link {
+    color: var(--grey-light);
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.karma {
+    color: var(--black);
+}
+
+/* a child class */
+ul li > a:hover {
+    color: var(--orange);
+}
+
+/* Main */
+
+.main {
+    width: 100%;
+    display: block;
+}
+
+
+.intro {
+    max-width: 800px;
+    max-height: 300px;
+    text-align: center;
+    background-image: url(/img/first-background.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    
+}
+
+.features {
+    text-align: center;
+
+}
+
+figure, figcaption {
+    text-align: center;
+    
+}
+
+
+.devices, .coffee, .refill{
+    max-height: 90px;
+    width: auto;
+    
+ }
+
+
+
+button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid var(--grey-light);
+}
 
 /* Footer */
 
@@ -36,10 +137,10 @@ footer {
 
 .social {
     width: 20px;
-    border: solid 1px rgb(219, 219, 219);
+    border: solid 1px var(--grey-light);
     padding: 10px;
     border-radius: 20px;
 }
 .copyright {
-    color: rgb(219, 219, 219);
+    color: var(--grey-light);
 }
