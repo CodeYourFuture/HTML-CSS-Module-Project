@@ -1,12 +1,19 @@
+/* Body */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
+/* Nav */
+
 nav {
     display: flex;
     padding: 30px 200px;
+}
+
+.logo {
+    width: 40px;
 }
 
 .nav-section-first {
@@ -17,10 +24,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    width: 40px;
 }
 
 .nav-link {
@@ -37,6 +40,8 @@ nav {
 .active {
     color: #5f6064;
 }
+
+/*First Section*/
 
 .top {
     height: 1000px;
@@ -72,6 +77,8 @@ nav {
     margin-top: 20px;
 }
 
+/*Second Section*/
+
 .info {
     text-align: center;
     font-weight: 300;
@@ -100,9 +107,16 @@ nav {
     font-weight: 400;
 }
 
+/*Line between main and footer*/
+
 hr {
     width: 70%;
+    border:0;
+    border-top: 1px solid #c9c3c3;
 }
+
+
+/*Footer*/
 
 .footer {
     text-align: center;
@@ -124,11 +138,6 @@ hr {
 
 .card-social img {
     width: 20px;
-}
-
-hr {
-    border:0;
-    border-top: 1px solid #c9c3c3;
 }
 
 .footer-title {
