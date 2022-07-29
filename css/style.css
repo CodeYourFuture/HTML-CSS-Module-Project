@@ -4,7 +4,131 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 4rem;
+    align-items: center;
+}
+
+
+ nav {
+    flex: basis 70%;
+   
+ }
+
+ .logo {
+    flex-basis:20%;
+ }
+
+ ul{
+    display:flex;
+}
+
+ul li{
+list-style: none;
+line-height:100%;
+}
+
+ul li a { 
+    text-decoration: none;
+ dispaly: block;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: fff;
+ padding:0 10px;
+}
+
+.text{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: verdana;
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.flexbox-item{
+    width: 15%;
+    height: 15%;
+}
+
+.main-img{
+ background-image: url("../img/first-background.jpg") ;
+ background-size: cover;   
+ background-repeat: no-repeat ;
+ width: 90%;
+ height: 500px;
+ margin: auto;
+ color: white;
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: center;
+ align-content: center;
+ margin-bottom: 60px;
+}
+
+.btn1{
+    background-color: red;
+    border:none;
+    border-radius:12px;
+    font-size: 15px;
+    padding: 16px ;
+    width: 150px;
+    text-decoration: none;
+    margin:auto;
+}
+
+.head{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20rem;
+}
+
+
+.container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* *footer* */
+  .footer{
+    margin-top: 5rem;
+  }
+
+  .footer p {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .flexbox2{
+    display: flex;
+    justify-content: center;
+    
+
+  }
+
+  .box{
+    width: 5%;
+    height: 5%;
+    margin: 5px;
+    border: 1px solid blue;
+  }
 
 /**
  * Add your custom styles below
