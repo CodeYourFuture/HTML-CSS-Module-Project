@@ -6,14 +6,153 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.icon_log{
+    width: 50px;
+    height: 50px;
+   }
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+  
+   .nav_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin-left: 50%;
+    height: 80px;
+    justify-content: space-between;
+    text-decoration: none !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+  
+  
+   .header{
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* background-color: rgb(236, 232, 232); */
+  
+   }
+  
+   li a {
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+  
+   li a:hover {
+     background-color: #111;
+   }
+  .section1{
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end;
+      height: 400px;
+      margin: 60px;
+      padding: 40px;
+      background-image: url("../img/first-background.jpg");
+      background-repeat: no-repeat;
+  
+  }
+  
+  .data_body{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+  }
+  button{
+    background-color: rgb(233, 55, 55);
+  }
+  
+  
+  .lemo{
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+   .section2{
+      height: 400px;
+      margin: 60px;
+      padding: 0px;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  
+   }
+   .img_1{
+    width: 100px;
+    height: 100px;
+   }
+  
+   .img3{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 500px;
+  
+  
+   }
+   .icon3{
+   display:flex;
+   padding: 7px ;
+   justify-content: space-around; 
+   width: 60px;
+   height: 60px;
+   border-radius: 70px;
+   justify-content: center;
+  
+   }
+  
+  
+  
+  .body3{
+      height: auto;
+      margin: auto;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  
+  
+      }
+  
+  .icon_3{
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    justify-content: center;
+    width: 500px;
+    height: 70px;
+    padding-right: 50px;
+  }
+  
+  
+  .t3{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-header{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+  } 
+
 
 
