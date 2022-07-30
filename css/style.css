@@ -34,34 +34,34 @@ ul {
 /**
  * Navigation Section
  */
-.top-navigation {
+.top-nav {
 	background-color: #fff;
 	position: fixed;
 	width: 100%;
 	border-bottom: 1px solid #ddd;
 	z-index: 9999;
 }
-.top-navigation > .content {
+.top-nav > .content {
 	height: 4.375rem;
 }
-.top-navigation .logo {
+.top-nav .logo {
 	height: 4.375rem;
 }
-.top-navigation .links {
+.top-nav .links {
 	float: right;
 	color: #838994;
 	font-size: 1.04rem;
 	margin-top: 1.7rem;
 }
-.top-navigation .links li {
+.top-nav .links li {
 	display: inline-block;
 	margin-left: 1.563rem;
 }
-.top-navigation .links li.active {
+.top-nav .links li.active {
 	color: #4c5058;
 	font-weight: 500;
 }
-.top-navigation .links li:hover {
+.top-nav .links li:hover {
 	cursor: pointer;
 	color: #333333;
 }
@@ -109,32 +109,32 @@ ul {
 /**
  * The Three Case Images
  */
-.cases {
+.box {
 	background-color: #fff;
 	overflow: hidden;
 	padding-bottom: 5rem;
 }
-.cases .content {
+.box .content {
 	margin-top: 7.875rem;
 	padding: none;
 	color: #1d1e21;
 	text-align: center;
 }
-.cases h2 {
+.box h2 {
 	font-size: 2.75rem;
 	margin: 1.625rem 0 3.125rem;
 	font-weight: 300;
 }
-.cases .devices > li {
+.box .devices > li {
 	width: 33.3333333%;
 	float: left;
 }
-.cases .devices h3 {
+.box .devices h3 {
 	font-weight: 400;
 	font-size: 1.563rem;
 	margin: 2.5rem 0px 1.875rem;
 }
-.cases .devices p {
+.box .devices p {
 	font-weight: 300;
 	font-size: 1.313rem;
 }
