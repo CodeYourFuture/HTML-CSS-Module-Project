@@ -36,18 +36,23 @@ header {
 2. second sub-section is h2 title, services images  */
 
 .backgroundImage-and-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: white;
   background-image: url(/img/first-background.jpg);
   background-size:cover;
-  padding: 11%;
+  width: 100%;
+  height: 350px;
 }
 
-.learn-more-btn {
+.learn-more-btn, .btn {
   background-color: rgb(232, 178, 78);
   border: none;
   border-radius: 3px;
-  padding: 3px;
+  padding: 5px;
+  color: white;
 }
 /* ---------------above this line is first sub-section of the main section--------------- */
 
@@ -63,6 +68,27 @@ header {
   width: 30%;
 }
 /* ---------------above this line is second sub-section of the main section--------------- */
+
+/*  */
+.connection_coverage{
+  display: flex;
+}
+
+.image_for_homepage_feature{
+  width: 400px;
+  height: 200px;
+}
+
+.go_karma_today_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(224, 99, 58, 0.1);
+  
+}
+/*  */
 
 /* ---------------below this line is the footer------------------------------------------- */
 footer {
