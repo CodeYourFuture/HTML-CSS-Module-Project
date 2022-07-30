@@ -16,4 +16,40 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .navbar{
+    display: inline;
+    align-content:left;
+    }
+    
+    .navigation__list {
+      display: flex;
+      list-style: none;
+       ;
+    }
+    
+    .navigation__item {
+      padding: 5rem 15px;
+    }
+    .top_main{
+          
+    }
+    .icones{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
 
+    }
+   /** .navigation__link {
+      color: var(--grey-dark);
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+    }**/
+ svg {
+    max-height: 90px;
+    width: auto;
+ }
+.footer{
+    align-items: center;
+    border-top: solid;
+}
