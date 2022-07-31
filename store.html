@@ -30,19 +30,19 @@
                     <div class="div_for_firstName">
                         <label for="first_name" class="lbls">First name*</label>
                         <input type="text" name="first_name" class="input_field" id="first_name" minlength="3"
-                            maxlength="30" required />
+                            maxlength="30" required aria-required="true"/>
                     </div>
 
                     <div class="div_for_lastName">
                         <label for="last_name" class="lbls">Last name*</label>
                         <input type="text" name="last_name" class="input_field" id="last_name" minlength="3"
-                            maxlength="30" required />
+                            maxlength="30" required aria-required="true"/>
                     </div>
                 </div>
 
                 <div class="address1">
                     <label for="address1" class="lbls">Address*</label>
-                    <input type="text" name="address1" class="input_field" id="address1" required />
+                    <input type="text" name="address1" class="input_field" id="address1" required aria-required="true"/>
                 </div>
                 <div class="address2">
                     <label for="address2" class="lbls">Address 2</label>
@@ -52,8 +52,9 @@
                 <div class="city_postcode_container">
                     <div class="div_for_cities_option">
                         <label for="cities">City</label>
-                        <select name="cities" id="cities" class="input_field" required>
-                            <option value="Liverpool" selected>Liverpool</option>
+                        <select name="cities" id="cities" class="input_field" aria-required="true">
+                            <option value=""></option>
+                            <option value="Liverpool">Liverpool</option>
                             <option value="manchester">Manchester</option>
                             <option value="birmingham">Birmingham</option>
                             <option value="London">London</option>
@@ -68,9 +69,9 @@
 
                 <div class="color_selection_container">
                     <p>Select a color</p>
-                    <div class="color_options" name="color" required>
+                    <div class="color_options" name="color" required aria-required="true">
                         <div class="div_for_orange_color">
-                            <input type="radio" name="color" id="orange_color" value="Orange" checked/>
+                            <input type="radio" name="color" id="orange_color" value="Orange" required/>
                             <label for="orange_color">Orange</label>
                         </div>
 
