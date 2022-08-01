@@ -77,16 +77,22 @@ button {
 }
 
 
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
 .form {
     width: 50%;
 }
 
-.aside {
-    width: 50%;
+aside {
+width: 701px;
+height: 1235px;
+background-image: url('/img/store-image_by-andrew-neel-unsplash.jpeg');
+object-fit:contain;
+background-size: 100%;
+background-repeat: no-repeat;
 }
-
-
-form {
-    display: flex;
-    flex-direction: column;
-}
+ 
