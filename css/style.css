@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 /**
@@ -47,7 +49,7 @@ li {
     list-style: none;
     text-decoration: none;
     padding-left: 10px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 li a {
@@ -83,13 +85,14 @@ li a:hover {
 
 
 button {
-    border: none;
-    width: 120px;
-    padding: 10px;
-    background-color: coral;
+    width: 264px;
+    height: 70px;
+    padding: 20px;
+    background-color: #E0633A;
     color: white;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 24px;
+    border:none;
     
 }
 
@@ -97,14 +100,17 @@ button {
 /* main section */ 
 
 .icon_container {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-content: center;
+    justify-content: space-around;
     padding: 40px;
+    margin-top: 80px;
 }
 
 .icon_box {
+    width: 416px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,8 +123,8 @@ img {
 }
 
 img.icon {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -162,21 +168,22 @@ footer {
 h1 {
     color: white;
     text-align: center;
-    font-size: 35px;
+    font-size: 62px;
     font-weight:lighter;
 }
 
 h2 {
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     font-weight:lighter;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 30px;
     font-weight: initial;
-    padding-top: 10px;
+    padding-top: 30px;
+    font-family: 'Roboto';
 }
 
 p {
@@ -195,4 +202,61 @@ h3 {
     margin-top: 100px;
     font-size: 40px;
     font-weight: lighter;
+}
+
+
+.quote-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.quote-image  {
+    width: 599px;
+    height: 439px;
+    background-image: url('/img/homepage-feature.png');
+    background-size: 100%;
+    object-fit: fill;
+    margin: 0;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 841px;
+    height: 439px;
+    background-color: rgb(224, 99, 58, 0.1);
+    margin: 0;
+}
+
+
+.quote-text {
+    font-size: 42px;
+    font-style: italic;
+    text-align: center;
+    background-color: none;
+    margin: 0;
+    line-height: 49.22px;
+    color: #434242;
+    padding: 0px 120px 0px 120px;
+
+}
+
+span {
+    color: #E0633A;
+    font-size: 56px;
+
+}
+
+.get-karma-btn {
+    margin-top: 50px;
+    width: 264px;
+    height: 70px;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+
 }
