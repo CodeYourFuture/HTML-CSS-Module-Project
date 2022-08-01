@@ -81,21 +81,36 @@ button {
 main {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 form {
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 3;
     grid-template-rows: 9;
-    grid-template-areas: "h1 h1"
-                         "firstnamelabel lastnamelabel"
-                         "firstnameinput lastnameinput"
-                        "addresslabel addresslabel"
-                        "addressinput addressinput"
-                        "address2label address2label "
-                        "address2input address2input"
-                       "citylabel postcodelabel"
-                        "cityinput postcodeinput";
+    grid-template-areas: "h1 h1 h1"
+                         "firstnamelabel lastnamelabel lastnamelabel"
+                         "firstnameinput lastnameinput lastnameinput"
+                        "addresslabel addresslabel addresslabel"
+                        "addressinput addressinput addressinput" 
+                        "address2label address2label address2label"
+                        "address2input address2input address2input"
+                       "citylabel citylabel postcodelabel"
+                        "cityinput cityinput postcodeinput";
+    padding: 100px;
+    gap: 20px;
+
+}
+
+label {
+    font-size: 18px;
+
+}
+
+input {
+    height: 40px;
+    border: 2px solid #666666;
+    border-radius: 4px;
 }
 
 .firstnamelabel {
@@ -138,17 +153,77 @@ form {
     grid-area: postcodelabel;
 }
 
+.cityinput {
+    grid-area: cityinput;
+}
+
+.citylabel {
+    grid-area: citylabel;
+}
+
+
 h1 {
     grid-area: h1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #DE6E49;
 }
 
 
 aside {
-width: 701px;
-height: 1235px;
+width: 80%;
+height: auto;
 background-image: url('/img/store-image_by-andrew-neel-unsplash.jpeg');
 object-fit:contain;
 background-size: 100%;
 background-repeat: no-repeat;
 }
  
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* f00ter */
+
+hr {
+    width: 80%;
+    margin-top: 0px;
+}
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+/* f00ter icon container  */
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* individual icons */
+.footer_icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
