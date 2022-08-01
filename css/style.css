@@ -120,22 +120,45 @@ nav {
 
 .section-buy {
     display: flex;
+    height: 439px;
 }
 
-.section-buy > div:nth-child(2) p {
-    font-size: 30px;
+.section-buy-1 {
+    width: 30%;
+    background-image: url('../img/buy-now-bg-1.png');
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-.section-buy > div:nth-child(2) span {
+.section-buy-2 {
+    width: 70%;
+    background-color: #FCEFEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-buy-2 p {
+    font-size: 42px;
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.section-buy-2 p span {
     color: var(--color-main);
 }
 
-.section-buy > div:nth-child(2) a {
+.section-buy-2 a {
     color: white;
+    margin-top: -50px;
 }
 
 hr {
     width: 70%;
+    margin-top: 40px;
 }
 
 /*footer*/
