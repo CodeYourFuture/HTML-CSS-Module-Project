@@ -52,11 +52,13 @@ a:hover{
 
 .background-image{
    background-image: url("../img/first-background.jpg");
-   height: 650px; 
+   height: 650px;
+   background-size: cover;
    margin: 10px;
    font-family:'Roboto', sans-serif;
    font-size: 25px; 
    text-align: center;
+   
 }
 
 .background-image h1, p{
@@ -72,7 +74,7 @@ a:hover{
     background-color: orangered;
     color: white;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 20px;
     border: none;
     border-radius: 3px;
@@ -92,7 +94,7 @@ h2{
 .icon-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .icon-images{
@@ -110,6 +112,41 @@ h2{
     text-align: center;
 }
 
+/* added new section */
+.newsection-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    
+}
+
+.homepage-feature{
+    display: flex;
+}
+
+
+.side{
+    background-color: peachpuff;
+    text-align: center;
+}
+
+.newsection-container p{
+    color: #333030;
+    font-size: 40px;
+    font-style: italic;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.btn1{
+    color: aliceblue;
+    background-color: orangered;
+    padding: 20px 30px;
+    text-decoration: none;
+    
+    border-radius: 5px;
+    
+}
 
 /*soical media icons*/
 
