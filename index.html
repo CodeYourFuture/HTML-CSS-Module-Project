@@ -1,19 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+    <header>
+      <div class="logo">
+        <img src="./img/karma-logo.svg" alt="karma">
+      </div>
+      <nav class="nav">
+        <ul>
+          <li class="li-nav"><a href="#">Meet Karma</a></li>
+          <li class="li-nav"><a href="#">How it Works</a></li>
+          <li class="li-nav store"><a href="./store.html">Store</a></li>
+          <li class="li-nav"><a href="#">Blog</a></li>
+          <li class="li-nav"><a href="#">Help</a></li>
+          <li class="li-nav"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="img">
+        <h1 class="main-sec-txt-h1">Introdusing Karma</h1>
+        <p class="main-sec-txt-p">Bring WiFi with you, everywhere you go.</p>
+        <button class="btn-main-img">Learn More</button>
+      </section>
+      <article class="article">
+        <h1 class="main-art-txt">Everyone need a little Karma.</h1>
+        <div class="article-icon">
+          <div class="svg">
+            <iframe src="./img/icon-devices.svg" frameborder="0"></iframe>
+            <p class="main-art-icon-txt">Internet for all devices</p> 
+          </div>
+          <div class="svg">
+            <iframe src="./img/icon-coffee.svg" frameborder="0"></iframe>
+            <p class="main-art-icon-txt">Bost your Productivity</p>
+          </div>
+          <div class="svg">
+            <iframe src="./img/icon-devices.svg" frameborder="0"></iframe>
+            <p class="main-art-icon-txt">Py as You Go</p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <section class="level2">
+      <div class="img"></div>
+      <div class="level2-content">
+        <h2 class="level2-txt"><span class="qut">" </span> Wherever I am, I just don't</h2>
+        <h2 class="level2-txt">worry about my conection</h2>
+        <h2 class="level2-txt">anymore! <span class="qut"> "</span></h2>
+        <button class="btn-level2-content"">Get Karma today</button>
+      </div>
+    </section>
+    <hr class="hr" />
+    <footer>
+      <p> <small> <strong>Jouin us on</strong> </small></p>
+      <div footer-icon>
+        <!-- <iframe src="./img/twitter-icon.svg" frameborder="0"></iframe>
+        <iframe src="./img/facebook-icon.svg" frameborder="0"></iframe> -->
+        <!-- <iframe src="./img/instagram-icon.svg" frameborder="0"></iframe> -->
 
-</body>
+        <span class="fab fa-twitter" aria-hidden="true"></span>
+        <span class="fab fa-facebook" aria-hidden="true"></span>
+        <span class="fab fa-instagram" aria-hidden="true"></span>
+      </div>
+      <p><small>&copy; 2022 Jul Karma Mobility INC </small></p>
+    </footer>
+  </body>
 </html>
