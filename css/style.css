@@ -55,7 +55,7 @@ body {
  .first-part{
     background-image: url("../img/first-background.jpg");
     background-color: grey;
-    height:450px;
+    height:350px;
     padding-top: 100px;
     text-align: center;
     color:#fff;
@@ -89,7 +89,30 @@ body {
     margin-left: 15px;
 }
 
+.img{
+    background-image: url("../level-2/homepage-feature.png");
+    background-color: #292b2c;
+    height: 430px;
+    width:600px;
+}
+.third-sec{
+    display:flex;
+    background-color: pink;
+}
+.third-sec-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+    background-color: pink;
 
+}
+.third-sec-button{
+    background-color: var(--orange-dark);
+    color:var(--grey-light);
+    padding-top:15px;
+    padding-bottom: 15px;
+}
 
 /*footer*/
 .foot{
@@ -101,3 +124,61 @@ body {
     border: 2px solid grey;
     border-radius: 25px;
 }
+.container{
+    display:flex;
+
+}
+.form-h1{
+    width:50%;
+    height:908px;
+}
+
+.img-store{
+    background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height:908px;
+}
+form{margin-left: 55px;
+}
+.first-line {
+    display:flex;
+}
+
+.first-name {
+    display:flex;
+    flex-direction: column;
+}
+.last-name{ display:flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+
+
+.address-bar {
+    margin-top: 25px;
+}
+
+#address1 , #address2{
+    width: 426px;
+}
+.post{display: flex;
+flex-direction:row ;
+}
+
+section{display:flex;
+flex-direction: column;
+margin-top:25px;
+}
+#city{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.post-code{
+    margin-left: 165px;
+}
+
+
+
