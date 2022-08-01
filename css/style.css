@@ -1,19 +1,358 @@
+/* ==========default============ */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+:root {
+  --clr-orange: #e0633a;
+  --clr-black: #333;
+  --clr-gray: #878787;
+  --clr-white: rgb(255, 255, 255);
+  --clr-light-gray: #aeaeae;
+  --clr-orange-light: #fcefeb;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+*,
+*::before,
+*::after,
+h1 {
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
+/* ============Header============ */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10vw;
+  background-color: #f9f9f9;
+}
+
+header img {
+  width: 1.2em;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  list-style: none;
+  font-weight: 500;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--clr-gray);
+}
+header ul a:hover {
+  color: var(--clr-orange);
+}
+.active-link {
+  color: var(--clr-black);
+}
+
+/* =============Hero============ */
+
+.hero {
+  position: relative;
+  color: var(--clr-white);
+}
+
+.hero img {
+  width: 100%;
+}
+
+.h1-wraper {
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  text-align: center;
+}
+
+.h1-wraper h1 {
+  font-weight: 300;
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
+.h1-wraper h3 {
+  font-weight: 100;
+  font-size: clamp(10px, 2.6vw, 2.8vw);
+  margin-bottom: 6vw;
+}
+
+.h1-wraper button,
+.feature-section-wrapper a,
+form button {
+  background-color: var(--clr-orange);
+  padding: 1.4vw 2.6vw;
+  border: none;
+  border-radius: 7px;
+  font-size: clamp(12px, 1.6vw, 1.8vw);
+  color: var(--clr-white);
+}
+
+.h1-wraper button:hover,
+.feature-section-wrapper a:hover,
+form button:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-orange);
+}
+
+/* ====second-section-container===== */
+
+.second-section-container {
+  margin: 100px auto 20px;
+  text-align: center;
+  color: var(--clr-black);
+
+  padding-bottom: 80px;
+}
+
+.second-section-container h2 {
+  font-weight: 300;
+  font-size: clamp(22px, 3.8vw, 4vw);
+  margin-bottom: 1.6em;
+}
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.article-container img {
+  width: 12vw;
+  margin-bottom: 34px;
+}
+
+.article-container p {
+  font-size: 1.5rem;
+}
+/* =======feature section ======== */
+.feature-section {
+  display: flex;
+  background-color: var(--clr-orange-light);
+  margin: 20px 0 50px;
+}
+
+.feature-section img {
+  width: 40vw;
+}
+
+.feature-section-wrapper {
+  padding: 8em 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-section-wrapper h3 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin: 0 0 1.2em;
+  text-align: center;
+}
+
+.feature-section-wrapper h3::before {
+  content: "“";
+  font-size: 2.4rem;
+  color: var(--clr-orange);
+}
+
+.feature-section-wrapper h3::after {
+  content: "”";
+  font-size: 2.4rem;
+  color: var(--clr-orange);
+}
+
+.feature-section-wrapper a {
+  text-decoration: none;
+}
+/* ============Footer============= */
+
+footer {
+  margin: 0 auto;
+  width: 88%;
+  border-top: #d4d4d4 solid 1px;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px 0 10px;
+}
+
+footer p {
+  color: var(--clr-black);
+}
+
+footer img {
+  width: 2rem;
+  margin: 12px 10px;
+  border: var(--clr-light-gray) 1px solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+footer p:last-child {
+  color: var(--clr-light-gray);
+  margin-bottom: 40px;
+}
+
+/* ///////////////////////// store page //////////////////////////// */
+
+/* ============== main ============== */
+
+.store-page-main {
+  display: flex;
+}
+.store-page-main img {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-container {
+  width: 50vw;
+  padding: 5em 5em 0 5em;
+}
+
+.form-container h1 {
+  font-size: 2.3rem;
+  color: var(--clr-orange);
+  font-weight: 500;
+  margin-bottom: 1.8em;
+}
+
+label,
+form p {
+  color: rgb(91, 91, 91);
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+
+input,
+select {
+  border: 2px solid rgb(91, 91, 91);
+  border-radius: 6px;
+  padding: 10px 0px 10px 10px;
+  font-size: 1.2rem;
+  color: rgb(91, 91, 91);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-input {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.small-input div {
+  width: 47.5%;
+}
+.city-postcode-container {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.city {
+  width: 62.5%;
+}
+.postcode {
+  width: 31.5%;
+}
+
+/* ========= form radio buttons ======= */
+
+.select-color-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-control {
+  color: rgb(91, 91, 91);
+  font-weight: 400;
+  line-height: 1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 14px;
+}
+
+[for="space-grey"] {
+  margin-left: 80px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid currentColor;
+  display: grid;
+  place-content: center;
+  transform: translateY(-0.095em);
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--clr-orange);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* =========== checkbox & button  ============ */
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--clr-orange);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.checkbox-container {
+  margin: 40px 0 30px;
+  display: inline-block;
+}
+
+.checkbox-container label {
+  display: inline-flex;
+}
+.checkbox-container p {
+  display: inline;
+}
+
+form a {
+  color: var(--clr-orange);
+}
