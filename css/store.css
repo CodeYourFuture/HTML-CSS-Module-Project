@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* karma-logo */
+.karma-logo{
+    width: 30px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+/* nav bar */
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-right: 100px;
+} 
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+a{  
+    color:gray;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orangered;
+}
+
+
+/* main section form and image */
+.container{
+    display: flex;
+}
+
+.form-container{
+    flex: 50%;
+    
+}
+
+.store-image{
+    flex: 50%;
+}
+
+
+
+
+/*soical media icons*/
+
+.media-container{ 
+    text-align: center;
+}
+
+.media-icons{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+
+footer h3{
+    color: #333030;
+    padding-top: 100px;
+}
+
+footer p{
+    color: gray;
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+}
+
