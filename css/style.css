@@ -7,6 +7,18 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.btn
+{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--color-main);
+}
+
+.btn-bg {
+    font-size: 30px;
+    padding: 20px 50px;
+}
+
 /*header*/
 
 nav {
@@ -68,13 +80,9 @@ nav {
     font-size: 35px;
 }
 
-.btn-hero {
-    text-decoration: none;
+.hero > a {
+    
     color: inherit;
-    background-color: var(--color-main);
-    font-size: 30px;
-    padding: 20px 50px;
-    border-radius: 10px;
     margin-top: 20px;
 }
 
@@ -120,6 +128,10 @@ nav {
 
 .section-buy > div:nth-child(2) span {
     color: var(--color-main);
+}
+
+.section-buy > div:nth-child(2) a {
+    color: white;
 }
 
 hr {
