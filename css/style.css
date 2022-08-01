@@ -1,3 +1,7 @@
+:root {
+    --color-main: #E16337;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -30,7 +34,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: #E16337;
+    color: var(--color-main);
 }
 
 .active {
@@ -63,7 +67,7 @@ nav {
 .btn-hero {
     text-decoration: none;
     color: inherit;
-    background-color: #E16337;
+    background-color: var(--color-main);
     font-size: 30px;
     padding: 20px 50px;
     border-radius: 10px;
