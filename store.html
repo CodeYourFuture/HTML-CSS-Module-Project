@@ -26,184 +26,210 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/e428625613.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <iframe src="./img/karma-logo.svg" frameborder="0"></iframe>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li class="li-nav meet-karma">
-            <a href="./index.html">Meet Karma</a>
-          </li>
-          <li class="li-nav"><a href="#">How it Works</a></li>
-          <li class="li-nav"><a href="#">Store</a></li>
-          <li class="li-nav"><a href="#">Blog</a></li>
-          <li class="li-nav"><a href="#">Help</a></li>
-          <li class="li-nav"><a href="#">Login</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="form-main">
-        <h1>Order your Karma wifi device today!</h1>
-        <form id="form-info">
-          <!--name and last name-->
-          <div class="name-form-group">
-            <div>
-              <label class="label" for="name">Name *</label>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <label class="label" for="lastName">Last name *</label>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  id="lastname"
-                  placeholder="Enter your lastName"
-                  required
-                />
-              </div>
-            </div>
+    <div id="contanore">
+      <header>
+        <div class="responsive-header">
+          <div class="logo">
+            <iframe src="./img/karma-logo.svg" frameborder="0"></iframe>
           </div>
 
-          <label class="label" for="address">Address *</label>
-          <div class="form-group">
-            <input
-              type="address"
-              name="address"
-              id="address"
-              placeholder="Enter your address"
-              required
-            />
+          <div class="menu-hamburger">
+            <a
+              href="#main-menu"
+              id="main-menu-toggle"
+              class="menu-toggle"
+              aria-label="Open main menu"
+            >
+              <span class="sr-only">Open main menu</span>
+              <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
           </div>
-          <label class="label" for="address">Address 2</label>
-          <div class="form-group">
-            <input
-              type="address"
-              name="address"
-              id="address"
-              placeholder="Enter your address"
-            />
-          </div>
-          <!--option select citey-->
-          <div class="name-form-group">
-            <div>
-              <label class="label" for="city">City *</label>
-              <div class="form-group">
-                <select id="dropdown" required>
-                  <option class="dropdown-city-option" disabled selected value>
-                    Select your city...
-                  </option>
+        </div>
 
-                  <option value=" London">London</option>
-                  <option value=" Birmingham">Birmingham</option>
-                  <option value="Manchester">Manchester</option>
-                  <option value="Liverpool">Liverpool</option>
-                  <option value="Glasgow">Glasgow</option>
-                  <option value=" Sheffield">Sheffield</option>
-                  <option value=" Edinburgh">Edinburgh</option>
-                  <option value="Leeds">Leeds</option>
-                  <option value="Sheffield">Sheffield</option>
-                  <option value="Bristol">Bristol</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label class="label" for="postcode">Postcode *</label>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  id="postcode"
-                  placeholder="postcode"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-          <!--select a color   type="radio"-->
-          <div id="form-group-radio">
-            <p>Select a color</p>
-            <div class="radio">
+        <nav class="nav">
+          <ul>
+            <li class="li-nav meet-karma">
+              <a href="./index.html">Meet Karma</a>
+            </li>
+            <li class="li-nav"><a href="#">How it Works</a></li>
+            <li class="li-nav"><a href="#">Store</a></li>
+            <li class="li-nav"><a href="#">Blog</a></li>
+            <li class="li-nav"><a href="#">Help</a></li>
+            <li class="li-nav"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="form-main">
+          <h1>Order your Karma wifi device today!</h1>
+          <form id="form-info">
+            <!--name and last name-->
+            <div class="name-form-group">
               <div>
-                <label>
+                <label class="label" for="name">Name *</label>
+                <div class="form-group">
                   <input
-                    name="user-recommend"
-                    value="Karma-orange"
-                    type="radio"
-                    id="input-radio"
-                    checked
-                  />Karma orange</label
-                >
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
               </div>
               <div>
-                <label>
+                <label class="label" for="lastName">Last name *</label>
+                <div class="form-group">
                   <input
-                    name="user-recommend"
-                    value="Space-grey"
-                    type="radio"
-                    id="input-radio"
-                  />Space grey</label
-                >
+                    type="text"
+                    name="name"
+                    id="lastname"
+                    placeholder="Enter your lastName"
+                    required
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <!--check box-->
-          <div id="form-group-checkbox">
-            <div id="lable-checkbox">
-              <label>
-                <input
-                  id="input-checkbox"
-                  name="prefer"
-                  value="karma-projects"
-                  type="checkbox"
-                />
-                By placing your order you agree to Karma's
-                <span class="text-checkbox">Terms and conditions</span>. *
-              </label>
+            <label class="label padd" for="address">Address *</label>
+            <div class="form-group">
+              <input
+                type="address"
+                name="address"
+                id="address"
+                placeholder="Enter your address"
+                required
+              />
             </div>
-          </div>
+            <label class="label" for="address">Address 2</label>
+            <div class="form-group">
+              <input
+                type="address"
+                name="address"
+                id="address"
+                placeholder="Enter your address"
+              />
+            </div>
+            <!--option select citey-->
+            <div class="name-form-group">
+              <div>
+                <label class="label" for="city">City *</label>
+                <div class="form-group">
+                  <select id="dropdown" required>
+                    <option
+                      class="dropdown-city-option"
+                      disabled
+                      selected
+                      value
+                    >
+                      Select your city...
+                    </option>
 
-          <!--submit-->
-          <div class="form-group-submit">
-            <button type="submit" id="submit" class="submit-button">
-              Place my order
-            </button>
-          </div>
-        </form>
+                    <option value=" London">London</option>
+                    <option value=" Birmingham">Birmingham</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Liverpool">Liverpool</option>
+                    <option value="Glasgow">Glasgow</option>
+                    <option value=" Sheffield">Sheffield</option>
+                    <option value=" Edinburgh">Edinburgh</option>
+                    <option value="Leeds">Leeds</option>
+                    <option value="Sheffield">Sheffield</option>
+                    <option value="Bristol">Bristol</option>
+                  </select>
+                </div>
+              </div>
 
-        <!--End of form-->
-      </div>
-      <div class="img-main"></div>
-    </main>
-    <hr class="hr" />
-    <footer>
-      <p>
-        <small> <strong>Jouin us on</strong> </small>
-      </p>
-      <div footer-icon>
-        <!-- <iframe src="./img/twitter-icon.svg" frameborder="0"></iframe>
+              <div class="postcode">
+                <label class="label" for="postcode">Postcode *</label>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    id="postcode"
+                    placeholder="postcode"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <!--select a color   type="radio"-->
+            <div id="form-group-radio">
+              <p>Select a color</p>
+              <div class="radio">
+                <div>
+                  <label>
+                    <input
+                      name="user-recommend"
+                      value="Karma-orange"
+                      type="radio"
+                      id="input-radio"
+                      checked
+                    />Karma orange</label
+                  >
+                </div>
+                <div>
+                  <label>
+                    <input
+                      name="user-recommend"
+                      value="Space-grey"
+                      type="radio"
+                      id="input-radio"
+                    />Space grey</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--check box-->
+            <div id="form-group-checkbox">
+              <div id="lable-checkbox">
+                <label>
+                  <input
+                    id="input-checkbox"
+                    name="prefer"
+                    value="karma-projects"
+                    type="checkbox"
+                  />
+                  By placing your order you agree to Karma's
+                  <span class="text-checkbox">Terms and conditions</span>. *
+                </label>
+              </div>
+            </div>
+
+            <!--submit-->
+            <div class="form-group-submit">
+              <button type="submit" id="submit" class="submit-button">
+                Place my order
+              </button>
+            </div>
+          </form>
+
+          <!--End of form-->
+        </div>
+        <div class="img-main"></div>
+      </main>
+      <hr class="hr" />
+      <footer>
+        <p>
+          <small> <strong>Jouin us on</strong> </small>
+        </p>
+        <div footer-icon>
+          <!-- <iframe src="./img/twitter-icon.svg" frameborder="0"></iframe>
         <iframe src="./img/facebook-icon.svg" frameborder="0"></iframe> -->
-        <!-- <iframe src="./img/instagram-icon.svg" frameborder="0"></iframe> -->
+          <!-- <iframe src="./img/instagram-icon.svg" frameborder="0"></iframe> -->
 
-        <span class="fab fa-twitter" aria-hidden="true"></span>
-        <span class="fab fa-facebook" aria-hidden="true"></span>
-        <span class="fab fa-instagram" aria-hidden="true"></span>
-      </div>
-      <p><small>&copy; 2022 Jul Karma Mobility INC </small></p>
-    </footer>
+          <span class="fab fa-twitter" aria-hidden="true"></span>
+          <span class="fab fa-facebook" aria-hidden="true"></span>
+          <span class="fab fa-instagram" aria-hidden="true"></span>
+        </div>
+        <p><small>&copy; 2022 Jul Karma Mobility INC </small></p>
+      </footer>
+    </div>
   </body>
 </html>
