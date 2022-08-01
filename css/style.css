@@ -119,6 +119,30 @@ ul>li{
     font-size: 1rem;
     text-align: center;
  }
+
+/* homepage-feature section */
+ .homepage-feature{
+    border: 2px solid black;
+    height: 45vh;
+    display: flex; 
+
+ }
+.homepage-feature-img{
+    width: 40%;
+    border: 2px solid red;
+    background-image: url("../img/homepage-feature.png");
+    background-size:100% 100%;
+  
+ }
+ .homepage-feature-description{  
+    border: 2px solid blue;
+    width: 60%;
+    background: rgba(224, 99, 58, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+ }
 /* footer */
 
 
