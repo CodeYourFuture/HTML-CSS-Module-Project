@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img id="karmalogo" src="img/karma-logo.svg" alt="karma-logo">
+        <nav>
+            <ul>
+                <li>Meet Karma</li>
+                <li>How it works</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="order-form-story">
+        <div class="order-form-description">
+            <h1> Order your Karma wifi device today!</h1>
+            <form>
+                <label for="firstname"> First name *</label>
+                <input id="firstame" type="text" minlength="3" maxlength="8" required />
+
+                <label for="lastname"> Last name *</label>
+                <input id="lastname" type="text" minlength="3" maxlength="8" required />
+                <br>
+
+                <label for="address1"> Address *</label>
+                <input id="address1" type="text-number" required />
+                <br>
+
+                <label for="address2"> Address 2 </label>
+                <input id="address2" type="text-number" required />
+                <br>
+
+                <label for="city">City</label>
+                <select id="city" name="city">
+                    <option value="manchester" selected>Manchester</option>
+                    <option value="london">London</option>
+                    <option value="bradford">Bradford</option>
+                    <option value="chester">Chester</option>
+                    <option value="trafford">Trafford</option>
+                    <option value="ashton">Ashton</option>
+                </select>
+
+                <label for="postcode"> Postcode * </label>
+                <input id="postcode" type="text-number" name="postcode" required minlength="6" maxlength="6">
+
+                <fieldset>
+                    <legend> Select a colour </legend>
+
+                    <input id="karmaorange" type="radio" name="size" value="" />
+                    <label for="karmaorange">Karma Orange</label>
+
+                    <input id="spacegrey" type="radio" name="size" value="" />
+                    <label for="spacegrey">Space Grey</label>
+                </fieldset>
+
+                <input id="agreement" type="checkbox" name="agreement" />
+                <label for="agreement"> By placing your order you agree to karma's Terms and conditions *</label>        
+                <span> <button id="submit-btn" name="submit"> Get Karma Today </button> </span>
+
+            </form>
+        </div>
+        <div class="store-image"> </div>
+    </section>
+
+</body>
+
+</html>

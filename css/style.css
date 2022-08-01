@@ -143,6 +143,40 @@ ul>li{
     justify-content: center;
     align-items: center; 
  }
+ .homepage-feature-description > p{
+    font-size: 2rem;
+    color: black;
+ }
+
+q> #b{
+    quotes: """ """;
+    color: #E0633A;
+   
+ }
+
+ /* store.html - order-form */
+ .order-form-story {
+    border: 2px solid black;
+    height: 80vh;
+    display: flex;
+ }
+ .order-form-description, .store-image{
+    border: 1px solid red;
+    height: 75vh;
+    margin: 2%;
+    flex-basis: 50%;
+
+ }
+ .store-image{
+    background-image: url("../img/store-image_by-andrew-neel-unsplash.jpg");
+    background-size:100% 100%;
+ }
+ 
+
+
+
+
+
 /* footer */
 
 
