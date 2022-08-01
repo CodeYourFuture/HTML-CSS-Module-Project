@@ -83,9 +83,65 @@ main {
     flex-direction: row;
 }
 
-.form {
-    width: 50%;
+form {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 9;
+    grid-template-areas: "h1 h1"
+                         "firstnamelabel lastnamelabel"
+                         "firstnameinput lastnameinput"
+                        "addresslabel addresslabel"
+                        "addressinput addressinput"
+                        "address2label address2label "
+                        "address2input address2input"
+                       "citylabel postcodelabel"
+                        "cityinput postcodeinput";
 }
+
+.firstnamelabel {
+    grid-area: firstnamelabel;
+}
+
+.firstnameinput {
+    grid-area: firstnameinput;
+}
+
+
+.lastnamelabel {
+    grid-area: lastnamelabel;
+}
+
+.lastnameinput {
+    grid-area: lastnameinput;
+}
+
+.addresslabel {
+    grid-area: addresslabel;
+}
+.addressinput {
+    grid-area: addressinput;
+}
+
+.address2label {
+    grid-area: address2label;
+}
+
+.address2input {
+    grid-area: address2input;
+}
+
+.postcodeinput {
+    grid-area: postcodeinput;
+}
+
+.postcodelabel {
+    grid-area: postcodelabel;
+}
+
+h1 {
+    grid-area: h1;
+}
+
 
 aside {
 width: 701px;
