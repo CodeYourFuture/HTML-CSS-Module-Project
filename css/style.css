@@ -102,8 +102,16 @@ nav {
     font-weight: 400;
 }
 
+.section-buy {
+    display: flex;
+}
+
 .section-buy > div:nth-child(2) p {
     font-size: 30px;
+}
+
+.section-buy > div:nth-child(2) span {
+    color: var(--color-main);
 }
 
 hr {
