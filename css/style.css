@@ -14,6 +14,7 @@ body {
     text-decoration: none;
     border-radius: 10px;
     background-color: var(--color-main);
+    color: white;
 }
 
 .btn-bg {
@@ -26,6 +27,8 @@ body {
 nav {
     display: flex;
     padding: 20px 150px;
+    background-color: #C4C4C41A;
+    ;
 }
 
 .nav-section {
@@ -83,8 +86,6 @@ nav {
 }
 
 .hero > a {
-    
-    color: inherit;
     margin-top: 20px;
 }
 
@@ -154,7 +155,6 @@ nav {
 }
 
 .section-buy-2 a {
-    color: white;
     margin-top: -50px;
 }
 
@@ -248,8 +248,44 @@ form > div:nth-child(5) {
     margin-top: 70px;
 }
 
+form > div:nth-child(6) {
+    margin-top: 97px;
+}
+
+form > div:nth-child(7) {
+    margin-top: 36px;
+}
+
 input[type=radio] {
-    width: 50px;
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+label.form-inline {
+    margin-left: 12px;
+}
+
+input.form-inline:nth-child(4) {
+    margin-left: 41px;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+form a {
+    color: var(--color-main);
+}
+
+form button {
+    border: none;
+}
+
+.hr-order {
+    margin-top: 0px;
 }
 
 /*footer*/
