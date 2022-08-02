@@ -64,6 +64,9 @@ body {
     color:var(--white);
     background-color: var(--orange-dark);
     margin-top: 35px;
+    margin-left: 550px;
+    margin-right: 550px;
+
  }
 
  h2{
@@ -85,8 +88,8 @@ body {
 
 }
 .little-explanation{
-    margin-right: 55px;
-    margin-left: 15px;
+    margin-right: 65px;
+    margin-left: 25px;
 }
 
 .img{
@@ -138,7 +141,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
-    height:908px;
+    height:808px;
 }
 form{margin-left: 55px;
 }
@@ -166,9 +169,10 @@ form{margin-left: 55px;
 }
 .post{display: flex;
 flex-direction:row ;
+margin-top: 25px;
 }
 
-section{display:flex;
+.city-part , .post-code{display:flex;
 flex-direction: column;
 margin-top:25px;
 }
@@ -177,8 +181,17 @@ margin-top:25px;
     padding-right: 15px;
 }
 .post-code{
-    margin-left: 165px;
+    margin-left: 70px;
 }
+.s-color{
+    margin-top: 35px;
+}
+#terms{margin-top:35px;}
 
+.llast-button{
+    margin-top:35px;
+    color:#fff;
+    background-color: var(--orange-dark);
+}
 
 
