@@ -183,14 +183,15 @@ border-top: 1px solid rgba(187, 187, 187, 0.143);
     }
     .sideImage{ 
     background-image: url(../img/store-image_by-andrew-neel-unsplash.jpeg);
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
     grid-area: s;
     }
-    .form{   
+    .form{  
+    width: 90%;         
     font-family: 'Roboto', sans-serif;
     grid-area: f;
     margin-left: 50px;
@@ -207,7 +208,8 @@ border-top: 1px solid rgba(187, 187, 187, 0.143);
     }
     form > div {
         color: #45484d;
-    }
+        font-size: 15px;
+    }  
     form > div > label {
         display: block;
         font-size: 15px;
@@ -224,7 +226,7 @@ border-top: 1px solid rgba(187, 187, 187, 0.143);
     }
     .twoinput {
       display: flex;  
-      justify-content: space-between;
+      justify-content: flex-start;
       margin-bottom: 20px;
     }
    #fname{
@@ -242,21 +244,24 @@ border-top: 1px solid rgba(187, 187, 187, 0.143);
         margin-bottom: 20px;
     }
     .addressinfo2{
-        display: flex;  
+        display: flex;
         flex-direction: column;
         width: 90%;
         margin-bottom: 20px;
     }
     #city{
-    padding-right: 40px;  
+    display: block; 
+    padding-right: 70px;  
     }
     #pcode{
+     display: block;
      width: 70%;
      padding: 3px;   
     }
     .cityandpost{
     display: flex; 
-    flex-direction: row; 
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 3px;
     margin-bottom: 40px;
