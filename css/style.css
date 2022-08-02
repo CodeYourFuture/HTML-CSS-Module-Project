@@ -25,7 +25,7 @@ body {
 }
 .Navbar{
     display: flex;
-    background-color: white; 
+    background-color: #d1d1d127; 
     align-items: center; 
     justify-content: space-around;  
 }
@@ -169,3 +169,130 @@ border-top: 1px solid rgba(187, 187, 187, 0.143);
     color: rgba(0, 0, 0, 0.345);  
 }
 /* Footer End */
+/* Page Store */
+.formformat{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "f f f f f f s s s s s s"
+    "f f f f f f s s s s s s"
+    "f f f f f f s s s s s s"
+    }
+    .sideImage{ 
+    background-image: url(../img/store-image_by-andrew-neel-unsplash.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    grid-area: s;
+    }
+    .form{   
+    font-family: 'Roboto', sans-serif;
+    grid-area: f;
+    margin-left: 50px;
+    margin-right: 20px;
+    gap:5px;
+    }
+    .formtitle{
+    color: #E1643B;
+    font-size: 30px;
+    font-weight: 500; 
+    margin-left: 0px;
+    margin-right: 20px;
+    grid-area: t;
+    }
+    form > div {
+        color: #45484d;
+    }
+    form > div > label {
+        display: block;
+        font-size: 15px;
+    }
+    form > div > input {
+      border-radius: 3px;
+      border: 2px solid #666666; 
+      border-radius: 4px;
+      padding: 3px;
+    }
+    #city{
+        border-radius: 3px;
+        padding: 3px;   
+    }
+    .twoinput {
+      display: flex;  
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+   #fname{
+    width: 75%;
+    padding: 3px;
+   } 
+   #lname{
+    width: 75%;
+    padding: 3px;
+} 
+    .addressinfo{
+        display: flex;  
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .addressinfo2{
+        display: flex;  
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #city{
+    padding-right: 40px;  
+    }
+    #pcode{
+     width: 70%;
+     padding: 3px;   
+    }
+    .cityandpost{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 3px;
+    margin-bottom: 40px;
+    }
+    .select-color{
+    display: flex; 
+    flex-direction: row;
+    gap:30px;
+    margin-bottom: 40px;
+    }
+    input[name="color"] {
+        accent-color: #E1643B; 
+    }
+    .terms{
+    margin-bottom: 20px;
+    font-size: 12px;   
+    }
+.formsumbit{
+    padding: 10px 20px 10px 20px;
+    background-color: #E1643B;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+input[type=checkbox] {
+
+}
+/* Page Store */
+
+    
+
+
+     
+  
+
+
+
