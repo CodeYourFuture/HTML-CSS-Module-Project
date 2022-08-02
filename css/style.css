@@ -161,6 +161,33 @@ hr {
     margin-top: 40px;
 }
 
+/*order page*/
+.order-section
+{
+    height: 1235px;
+    display: flex;
+}
+
+.order-section > div {
+    width: 50%;
+}
+
+.order-section-1 {
+    padding: 123px 214px;
+}
+
+.order-section-1 h2 {
+    color: var(--color-main);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.order-section-2 {
+    background-image: url('../img/girl-working-at-desk.png');
+    background-size: 100%;
+    background-position-y: 50%;
+}
+
 /*footer*/
 
 .footer {
