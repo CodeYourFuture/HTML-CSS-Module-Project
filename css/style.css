@@ -1,9 +1,18 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+  :root {
+   --grey-dark: #292b2c;
+   --grey-light: #e4e4e4;
+   --orange-dark: #c05326;
+   --orange-light: #f7eae4;
+   --white: #fff;
+ }
+
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Edu VIC WA NT Beginner', 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
 }
 
 /**
@@ -15,5 +24,174 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ /*headr*/
+ .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+ }
+ .nav-List{
+    display:flex;
+    list-style: none;
+
+ }
+.navigation__item {
+  padding: 0.5rem 0.5rem;
+}
+
+.navigation__link {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: none;
+  text-decoration: none;
+}
+
+
+
+ /*main*/
+ .first-part{
+    background-image: url("../img/first-background.jpg");
+    background-color: grey;
+    height:350px;
+    padding-top: 100px;
+    text-align: center;
+    color:#fff;
+ }
+ .main-button{
+    color:var(--white);
+    background-color: var(--orange-dark);
+    margin-top: 35px;
+    margin-left: 550px;
+    margin-right: 550px;
+
+ }
+
+ h2{
+    text-align:center;
+    
+ }
+.options{
+    display: flex;
+    justify-content:center;
+    
+}
+.svg-one{
+    margin:25px 65px;
+
+}
+.sec-section{
+    display: flex;
+    justify-content: center;
+
+}
+.little-explanation{
+    margin-right: 65px;
+    margin-left: 25px;
+}
+
+.img{
+    background-image: url("../level-2/homepage-feature.png");
+    background-color: #292b2c;
+    height: 430px;
+    width:600px;
+}
+.third-sec{
+    display:flex;
+    background-color: pink;
+}
+.third-sec-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+    background-color: pink;
+
+}
+.third-sec-button{
+    background-color: var(--orange-dark);
+    color:var(--grey-light);
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+/*footer*/
+.foot{
+    text-align: center;
+    margin-top: 55px;
+
+}
+.sec-svg{
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+.container{
+    display:flex;
+
+}
+.form-h1{
+    width:50%;
+    height:908px;
+}
+
+.img-store{
+    background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height:808px;
+}
+form{margin-left: 55px;
+}
+.first-line {
+    display:flex;
+}
+
+.first-name {
+    display:flex;
+    flex-direction: column;
+}
+.last-name{ display:flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+
+
+.address-bar {
+    margin-top: 25px;
+}
+
+#address1 , #address2{
+    width: 426px;
+}
+.post{display: flex;
+flex-direction:row ;
+margin-top: 25px;
+}
+
+.city-part , .post-code{display:flex;
+flex-direction: column;
+margin-top:25px;
+}
+#city{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.post-code{
+    margin-left: 70px;
+}
+.s-color{
+    margin-top: 35px;
+}
+#terms{margin-top:35px;}
+
+.llast-button{
+    margin-top:35px;
+    color:#fff;
+    background-color: var(--orange-dark);
+}
 
 
