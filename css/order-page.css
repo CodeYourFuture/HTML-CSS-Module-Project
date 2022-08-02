@@ -87,7 +87,7 @@ main {
 form {
     display: grid;
     grid-template-columns: 3;
-    grid-template-rows: 9;
+    grid-template-rows: 12;
     grid-template-areas: "h1 h1 h1"
                          "firstnamelabel lastnamelabel lastnamelabel"
                          "firstnameinput lastnameinput lastnameinput"
@@ -96,16 +96,18 @@ form {
                         "address2label address2label address2label"
                         "address2input address2input address2input"
                        "citylabel citylabel postcodelabel"
-                        "cityinput cityinput postcodeinput";
+                        "cityinput cityinput postcodeinput"
+                        "colourinput colourinput colourinput"
+                        "termsandconditions termsandconditions termsandconditions"
+                        "submitbutton submitbutton submitbutton";
     padding: 100px;
     gap: 20px;
 
 }
 
-label {
-    font-size: 18px;
+form label {
 
-}
+  }
 
 input {
     height: 40px;
@@ -161,6 +163,17 @@ input {
     grid-area: citylabel;
 }
 
+.termsandconditions {
+    grid-area: termsandconditions;
+}
+
+.colourinput {
+    grid-area: colourinput;
+}
+
+.submitbutton {
+    grid-area: submitbutton;
+}
 
 h1 {
     grid-area: h1;
