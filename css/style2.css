@@ -1,0 +1,124 @@
+
+
+/* Body */
+body{
+}
+.contener{
+    border: 2px solid black;
+    display: grid;
+    row-gap: 2px;
+    grid-auto-rows: minmax(auto,auto);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "form form img img"
+    "form form img img"
+    "form form img img"
+    "foot foot foot foot";
+
+
+}
+/* Nav area */
+.nav1{
+    background: rgba(196, 196, 196, 0.1);
+    grid-area:nav ;
+    display: flex;
+    border: 2px solid rgb(122, 122, 100);
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    
+    height: auto;
+    width: auto;
+
+}
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    margin-top: 8px;
+    height: 35px;
+    width: 35px;
+}
+.nav_bar{
+    align-items: center;
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    justify-content: space-around;
+    /* height: 300px; */
+    list-style: none;
+    margin-left: 200px;
+    list-style-type: none;
+    overflow: hidden;
+}
+a:hover {
+    background-color: rgb(247, 66, 0);
+  }
+.home{
+    /* display: inline-block; */
+    color: #827f7f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid beige ;
+    font-size:x-large;
+    /* font-style:initial; */
+    /* font-weight: lighter; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Form area */
+.form1{
+    border: 2px solid rgb(30, 75, 210);
+    text-align: center;
+    grid-area:form ;
+    height: 700px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    display:flex;
+    flex-direction: column;
+
+}
+/* img area */
+.img1{
+    border: 2px solid red;
+}
+.img2{
+display: flex;
+height: 700px;
+width: 467px;
+margin-left: 160px;
+}
+
+/* Footer area  */
+.foot{
+    
+    grid-area: foot;
+    text-align: center;
+    align-items: center;
+     
+}
+.footer_logo{
+    display:inline-flex;
+    flex-direction: row;
+    height: 100px;
+    right: 0;
+    max-height: 90px;
+    width: auto;
+}
+.g4{
+    display: flex;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    border: 1px solid rgb(183, 181, 181);
+}
