@@ -76,7 +76,9 @@ button {
     border-radius: 12px;
     padding: 1rem 2rem;
     margin: 2rem;
-   
+    border: none;
+    color: white;
+   font-size: 20px;
 }
 
 .figure {
@@ -100,6 +102,85 @@ summary {
     text-align: center;
     font-weight: 300;
     padding: 50px 0px;
+}
+
+.connection-info {
+    display: flex;
+}
+
+.connection-info .woman {
+    width: 700px;
+}
+
+.connection-info .wherever-Iam {
+    width: 750px;
+    background: rgba(224, 99, 58, 0.1);
+    padding-top: 150px; 
+}
+
+.wherever-Iam {
+    text-align: center;
+    font-size: 45px;
+    font-family: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.order-page {
+    display: flex;
+}
+
+.karma-device {
+    color: #E1643B;
+    font-size: 35px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.form {
+    width: 800px;
+    padding: 0px 150px;
+}
+
+#firstname {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    right: 92px;
+}
+
+#surname {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    right: 92px;
+}
+
+#address {
+    display: block;
+    padding: 60px 0px;
+}
+
+#address2 {
+    display: block;
+    padding: 20px 0px;
+}
+
+#city {
+    margin-top: 25px;
+}
+
+.form-button {
+    background-color: orange;
+    border: none;
+    color: white;
+   font-size: 15px;
+
+}
+
+.img{
+    width: 600px;
+  
 }
 
 footer {
