@@ -1,5 +1,7 @@
 :root {
     --color-main: #E16337;
+    --form-font-size: 21px;
+    --form-color: #666666;
 }
 
 body {
@@ -186,6 +188,34 @@ hr {
     background-image: url('../img/girl-working-at-desk.png');
     background-size: 100%;
     background-position-y: 50%;
+}
+
+label {
+    font-size: var(--form-font-size);
+    color: var(--form-color);
+    margin-bottom: 12px;
+}
+
+input {
+    height: 53px;
+    width: 100%;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    color: var(--form-color);
+    font-size: var(--form-font-size);
+}
+
+label, input {
+    display: block;
+}
+
+.form-container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+form > div:nth-child(2-3) {
+    margin-top: 32px;
 }
 
 /*footer*/
