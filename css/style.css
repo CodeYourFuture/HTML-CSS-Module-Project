@@ -175,13 +175,14 @@ hr {
 }
 
 .order-section-1 {
-    padding: 123px 214px;
+    padding: 118px 214px;
 }
 
 .order-section-1 h2 {
     color: var(--color-main);
     font-size: 50px;
     font-weight: 400;
+    margin: 0px;
 }
 
 .order-section-2 {
@@ -190,13 +191,17 @@ hr {
     background-position-y: 50%;
 }
 
-label {
+form {
+    margin-top: 82px;
+}
+
+label, form p {
     font-size: var(--form-font-size);
     color: var(--form-color);
     margin-bottom: 12px;
 }
 
-input {
+input[type=text], select {
     height: 53px;
     width: 100%;
     border: 2px solid #666666;
@@ -209,13 +214,42 @@ label, input {
     display: block;
 }
 
-.form-container-1 {
+.form-inline {
+    display: inline;
+}
+
+select {
+    background-color: white;
+    height: 58px;
+}
+
+.form-container-1, .form-container-2 {
     display: flex;
     justify-content: space-between;
 }
 
-form > div:nth-child(2-3) {
+.form-container-1 div {
+    width: 40%;
+}
+
+.form-container-2 div:nth-child(1) {
+    width: 60%;
+}
+
+.form-container-2 div:nth-child(2) {
+    width: 30%;
+}
+
+form > div:nth-child(2), form > div:nth-child(3), form > div:nth-child(4) {
     margin-top: 32px;
+}
+
+form > div:nth-child(5) {
+    margin-top: 70px;
+}
+
+input[type=radio] {
+    width: 50px;
 }
 
 /*footer*/

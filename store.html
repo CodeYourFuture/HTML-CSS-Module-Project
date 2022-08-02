@@ -49,6 +49,27 @@
                         <label for="address-2">Address 2</label>
                         <input id="address-2" type="text" name="address-2" minlength="3" maxlength="50" />
                     </div>
+                    <div class="form-container-2">
+                        <div>
+                            <label for="city">City</label>
+                            <select id="city" type="select" name="city" required>
+                                <option value="">Select your city...</option>
+                                <option value="manchester">Manchester</option>
+                                <option value="leeds">Leeds</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="post-code">Post Code *</label>
+                            <input id="post-code" type="text" name="post-code" minlength="3" maxlength="10" required />
+                        </div>
+                    </div>
+                    <div>
+                        <p>Select a colour</p>
+                        <input class="form-inline" id="orange" type="radio" name="color" value="orange" required />
+                        <label class="form-inline" for="orange">Karma orange</label>
+                        <input class="form-inline" id="grey" type="radio" name="color" value="grey" required />
+                        <label class="form-inline" for="grey">Space Grey</label>
+                    </div>
                 </form>
             </div>
             <div class="order-section-2"></div>
