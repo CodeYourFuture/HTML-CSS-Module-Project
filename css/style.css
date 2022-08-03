@@ -1,10 +1,13 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+:root{
+    accent-color:#DE6E49;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.header,
 .main,
 .footer {
   max-width: 1024px;
@@ -15,16 +18,18 @@ body {
 .header{
     display: flex;
     justify-content: center;
+    height: 40px;
 }
 /*logo*/
 .karma__logo{
     width: 30px;
     height: 30px;
     margin-right: 500px;
+    margin-top: 7px;
 }
 /*navigation*/
 .navigation{
-    margin-top: 5px;
+    margin-top: 7px;
 }
 .navigation__link{
     text-decoration: none;
@@ -97,6 +102,10 @@ article{
     height: 439px;
     margin-right: 50px;
  }
+ .img__section img{
+    width: 550px;
+    height: 439px;
+ }
  .text__section{
     display: flex;
     flex-direction: column;
@@ -111,51 +120,139 @@ article{
     font-family: 'Roboto';
     font-style: italic;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 49px;
+    font-size: x-large;
+    line-height: 39px;
     color: #434242;
     text-align: center;
     margin-bottom: 20px;
     
  }
- .text__section button{
-    background-color: #E0633A;
-    color: white;
-    padding: 17px;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: medium;
-    text-align: center;
- }
-/* .last__section{
-    max-width:1028px;
-    height: 439px;
-    background-color: #E0633A1A;
-    margin-top: 70px;
-}
-.img__content{
-    background-image: url(/img/homepage-feature.png);    
-    width: 599px;
-    height: 439px;
-    display: flex;
+ .store__main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 800px;
     align-items: center;
-    justify-content: space-between;
+    margin: auto 10rem;
+    gap: 20px;
+    grid-template-areas: 'form img';
+ }
+ .title{
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #DE6E49;
+ }
+ form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px;
+    grid-template-areas: "fname lname"
+    "ad1 ad1"
+    "ad2 ad2"
+    "city post"
+    "color color"
+    "term term"
+    "btn btn"
+    ;
+ 
+    text-align: left;
+    padding-left: 50px;
+    grid-area: form;
+ }
+ .fname{
+    grid-area: fname;
+ }
+ .lname{
+    grid-area: lname;
+ }
+ .add1{
+    grid-area: ad1;
+ }
+ .add2{
+    grid-area: ad2;
+ }
+ .city{
+    grid-area: city;
+    margin-top: 2px;
+ }
+ .postcode{
+    grid-area: post;
+ }
+ .color{
+   grid-area: color;
+ }
+ .term{
+    grid-area: term;
+ }
+ .form_btn{
+    grid-area: btn;
+ }
+.main_store_img{
+    background-image: url(/img/store-image_by-andrew-neel-unsplash.jpg);
+    background-size: cover;
+    grid-area: img;
+    height: 810px;
 }
-.quotation{
-    width: 548px;
-    height: 141px;
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 49px;
-    color: #434242;
-    
-    text-align: center; }*/
+form label ,legend,fieldset{
+    color: #666666;
+    font-weight: 500;
+    font-size: 17px;
+}
+form input{
+    margin-top: 10px;
+}
+select {
+    font-size: medium;
 
-
+}
+select .option0{
+    text-align: center;
+}
+.label__select,select,.add1>label,#address1,.add2>label,#address2{
+    display: block;
+    margin-top: 10px;
+}
+.required::after{
+    content: "*";
+    color:#DE6E49;
+}
+#firstname,#lastname,#postcode,select ,option{
+    width: 197px;
+    height: 33px;
+}
+select,option {
+    width:197px;
+    height: 43px;
+}
+#address1,#address2{
+    width: 425px;
+    height: 33px;
+}
+fieldset span{
+    width:17px;
+    height: 17px;
+    margin-right: 25px;
+   }
+fieldset{
+    border: 0;
+    margin-top: 20px;
+    padding-left: 0;
+    }
+fieldset label {
+    font-weight: 500;
+    font-size: 15px;
+}
+.term a{
+    color:#DE6E49 ;
+}
+.term label{
+    font-size: 13px;
+}
+.term input{
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+}
 /*button*/
 .btn__learn{
     background-color: #E0633A;
@@ -166,7 +263,28 @@ article{
     margin-top: 10px;
     
 }
-
+.text__section button{
+    background-color: #E0633A;
+    color: white;
+    padding: 17px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: medium;
+    text-align: center;
+ }
+ .form_btn{
+    width: 200px;
+    height: 50px;
+    background-color:#E0633A ;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius:3px ;
+    font-size: small;
+    margin-top: 5px;
+ }
 /*footer*/
 .footer{
     display: flex;
