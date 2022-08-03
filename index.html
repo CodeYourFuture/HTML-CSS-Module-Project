@@ -23,8 +23,8 @@
         <nav>
             <ul>
                 <li>Meet Karma</li>
-                <li>How it works</li>
-                <li>Store</li>
+                <li> How it works</li>
+                <li onclick="run()" >Store</li>
                 <li>Blog</li>
                 <li>Help</li>
                 <li>Login</li>
@@ -68,7 +68,7 @@
             <div class="homepage-feature-img"></div>
             <div class="homepage-feature-description"> 
                 <p> <q id="b">Wherever I am, I just dont worry about my connection anymore!</q></p>
-                <span> <button id="submit-btn" name="submit"> Get Karma Today </button> </span>
+                <div><button onclick="run()" id="submit-btn" name="submit">Get Karma Today</button> </div>
             </div>
         </section>
 
@@ -82,14 +82,13 @@
             <p> &copy;Karma Mobility Inc.</p>
         </footer>
 
-
-
-
-
-
-
     </main>
-
+     
+    <script> 
+        function run(){
+            document.location.href="store.html";
+        }
+        </script>
 </body>
 
 </html>
