@@ -58,39 +58,82 @@ body {
 .nav-link:hover {
     color: #c05326;
 }
+.nav_item {
+    cursor: pointer;
+    color: red;
+}
+.nav_item-active {
+    color: #4c5058;
+    font-weight: 500;
+}
 .intro {
    background-image: url("/img/first-background.jpg");
    height: 500px;
    background-position: center;
    background-repeat: no-repeat; 
    background-size: cover;
-   position: relative;
+   overflow: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
 
 }
 
 .intro-text {
-    font-size: 1rem;
-    font-weight: 100;
     color: white;
     text-align: center;
     padding-top: 100px;
 }
 
-button {
-    font-size: 0.8rem;
-    background-color: #c05326;
-    padding: 10px 10px;
-    margin: 15px 0;
-    border: none;
-    border-radius: 3px;
+.intro_h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.intro_h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+.intro_buttons {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
 
+button {
+    width: 9.688rem;
+    font-size: 1.125rem;
+    background-color: #F15A29;
+    border-color: #F15A29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+}
+button:hover {
+    background-color: #D9400E;
+    border-color: #CF3D0E;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*grid*/
 
-.container {
-    text-align: center;
+/* .container {
+    text-align: center; */
 
 }
 #sub {
