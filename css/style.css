@@ -116,7 +116,6 @@ ul>li{
     padding-top:2%;
     padding-left: 5%;
     padding-right: 5%;
-    border-bottom: 1px solid lightgrey;
     margin-bottom: 10%;
  }
  .secondOneArticle{
@@ -126,20 +125,20 @@ ul>li{
 
 /* homepage-feature section */
  .homepage-feature{
-    border: 2px solid black;
-    height: 45vh;
+    height: 50vh;
     display: flex; 
+    padding-bottom: 2%;
+    border-bottom: 1px solid lightgrey;
 
  }
 .homepage-feature-img{
     width: 40%;
-    border: 2px solid red;
     background-image: url("../img/homepage-feature.png");
     background-size:100% 100%;
+   
   
  }
  .homepage-feature-description{  
-    border: 2px solid blue;
     width: 60%;
     background: rgba(224, 99, 58, 0.1);
     display: flex;
@@ -152,7 +151,7 @@ ul>li{
     color: black;
  }
 
-q> #b{
+q >#b{
     quotes: """ """;
     color: #E0633A;
    
@@ -163,6 +162,7 @@ q> #b{
     height: 80vh;
     display: flex;
     margin: 0 10% 2% 10%;
+    border-bottom: 1px solid lightgrey;
     
  }
  .order-form-description{
@@ -242,11 +242,14 @@ q> #b{
 
 /* footer */
 
-
+footer{
+  
+}
 .footer-icon{
     height: 2%;
     width: 2%;
     display: block;
+    margin-top: 2%;
     
 }
 #footer{
@@ -259,6 +262,7 @@ q> #b{
 footer,P{
     font-size: 1rem;
     text-align: center;
+    margin-top: 2%;
 }
 
 
