@@ -1,19 +1,317 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+:root{
+    accent-color:#DE6E49;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.header,
+.main,
+.footer {
+  max-width: 1024px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  }
+/*header*/
+.header{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+/*logo*/
+.karma__logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 500px;
+    margin-top: 7px;
+}
+/*navigation*/
+.navigation{
+    margin-top: 7px;
+}
+.navigation__link{
+    text-decoration: none;
+    color: #9FA3AA;
+    padding: 8px;
+    font-size: small;
+}
+.navigation__link:hover{
+    color: #E88B6D;
+}
+.meet{
+    color: #52555B;
+}
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/*main*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero{
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+.introduce{
+    font-size: 3em;
+}
+.bring{
+    font-size: 1.75em;
+    }
+.section__content{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: xx-large;
+}
+.section__content1 p{
+    margin-left: -31px;
+}
+.icones{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.section__thumbnail{
+    object-fit: contain;
+    width: 5rem;
+}
+.img__head{
+    text-align: center;
+    
+}
+article{
+    width:1028px ;
+      height: 439px ;
+      background-color:#E0633A1A ;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem auto;
+    }
+ .img__section{
+    width: 570px;
+    height: 439px;
+    margin-right: 50px;
+ }
+ .img__section img{
+    width: 550px;
+    height: 439px;
+ }
+ .text__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 841px;
+    height: 142px;
+    margin-right: 20px;
+ }
+ .quotation{
+    
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: x-large;
+    line-height: 39px;
+    color: #434242;
+    text-align: center;
+    margin-bottom: 20px;
+    
+ }
+ .store__main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 800px;
+    align-items: center;
+    margin: auto 10rem;
+    gap: 20px;
+    grid-template-areas: 'form img';
+ }
+ .title{
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #DE6E49;
+ }
+ form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px;
+    grid-template-areas: "fname lname"
+    "ad1 ad1"
+    "ad2 ad2"
+    "city post"
+    "color color"
+    "term term"
+    "btn btn"
+    ;
+ 
+    text-align: left;
+    padding-left: 50px;
+    grid-area: form;
+ }
+ .fname{
+    grid-area: fname;
+ }
+ .lname{
+    grid-area: lname;
+ }
+ .add1{
+    grid-area: ad1;
+ }
+ .add2{
+    grid-area: ad2;
+ }
+ .city{
+    grid-area: city;
+    margin-top: 2px;
+ }
+ .postcode{
+    grid-area: post;
+ }
+ .color{
+   grid-area: color;
+ }
+ .term{
+    grid-area: term;
+ }
+ .form_btn{
+    grid-area: btn;
+ }
+.main_store_img{
+    background-image: url(/img/store-image_by-andrew-neel-unsplash.jpg);
+    background-size: cover;
+    grid-area: img;
+    height: 810px;
+}
+form label ,legend,fieldset{
+    color: #666666;
+    font-weight: 500;
+    font-size: 17px;
+}
+form input{
+    margin-top: 10px;
+}
+select {
+    font-size: medium;
 
-
+}
+select .option0{
+    text-align: center;
+}
+.label__select,select,.add1>label,#address1,.add2>label,#address2{
+    display: block;
+    margin-top: 10px;
+}
+.required::after{
+    content: "*";
+    color:#DE6E49;
+}
+#firstname,#lastname,#postcode,select ,option{
+    width: 197px;
+    height: 33px;
+}
+select,option {
+    width:197px;
+    height: 43px;
+}
+#address1,#address2{
+    width: 425px;
+    height: 33px;
+}
+fieldset span{
+    width:17px;
+    height: 17px;
+    margin-right: 25px;
+   }
+fieldset{
+    border: 0;
+    margin-top: 20px;
+    padding-left: 0;
+    }
+fieldset label {
+    font-weight: 500;
+    font-size: 15px;
+}
+.term a{
+    color:#DE6E49 ;
+}
+.term label{
+    font-size: 13px;
+}
+.term input{
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+}
+/*button*/
+.btn__learn{
+    background-color: #E0633A;
+    border-style: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.text__section button{
+    background-color: #E0633A;
+    color: white;
+    padding: 17px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: medium;
+    text-align: center;
+ }
+ .form_btn{
+    width: 200px;
+    height: 50px;
+    background-color:#E0633A ;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius:3px ;
+    font-size: small;
+    margin-top: 5px;
+ }
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 9px;
+}
+.footer__content{
+    border-top: 1px solid lightgray;
+    margin-top: 50px;
+    text-align: center;
+}
+.footer__img{
+    text-align: center;
+}
+.footer__icons{
+    border:1px lightgrey solid;
+    width: 19px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+}
+.copyright{
+    color: #A6AAB1;
+}
