@@ -159,32 +159,36 @@ q> #b{
 
  /* store.html - order-form */
  .order-form-story {
-    border: 2px solid black;
     height: 80vh;
     display: flex;
-    margin: 0 10% 0 0;
+    margin: 0 10% 2% 10%;
+    
  }
- .order-form-description, .store-image{
-    border: 1px solid red;
-    height: 75vh;
+ .order-form-description{
+    height: 80vh;
     flex-basis: 40%;
  }
  .store-image{
     background-image: url("../img/store-image_by-andrew-neel-unsplash.jpg");
     background-size:100% 100%;
     flex-basis: 60%;
+    height: 80vh;
  }
- .order-form-description> h1{
-    text-align: center; 
+ .order-form-description> h2{
+    text-align: left; 
     color:  #DE6E49;
+    margin: 0 10% 0 10%;
+    font-size: 2rem;
  }
-
+ #form{
+  margin: 5% 10% 0 10%;
+ }
  .form-group {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     flex: 1 1 auto;
-    
+   
   }
   .input-control{
     margin-top: 2%;
@@ -202,9 +206,10 @@ q> #b{
   #postcode{
     width: 80px;
   }
-  .colour{
-    display: block;
-    
+.colour{
+
+    margin-top: 5%;
+    width: auto;
   }
 #spacegrey{
     margin-left: 12px;
@@ -212,17 +217,19 @@ q> #b{
 
 
  .agreement{
-    border: 1px solid black;
-    margin: 10% 0 10% 2%;
+    
+    margin: 10% 0 10% 0;
  }
+ 
   #order-btn{
-   margin-top: 10%;
-   background-color: #E0633A;
+    margin-top: 10%;
+    background-color: #E0633A;
     color: white;
     border-radius: 4px;
     border: #E0633A;
     font-size: 1rem;
     padding: 12px 28px;
+
   }
 
 

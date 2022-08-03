@@ -27,10 +27,10 @@
     </header>
     <section class="order-form-story">
         <div class="order-form-description">
-            <h1> Order your Karma wifi
+            <h2> Order your Karma wifi
                 <br>
                 device today!
-            </h1>
+            </h2>
             <form id="form">
                 <div class="form-group">
                     <fieldset>
@@ -56,15 +56,15 @@
                 <div class="form-group">
                     <fieldset>
                         <label for="address2"> Address 2 </label>
-                        <input class="input-control" id="address2" type="text-number" required />
+                        <input class="input-control" id="address2" type="text-number"/>
                         <br>
                     </fieldset>
                 </div>
                 <div class="form-group">
                     <fieldset>
-                        <label for="city">City</label>
-                        <select id="city" name="city" class="input-control">
-                            <option value="manchester" selected>Manchester</option>
+                        <label for="city">City *</label>
+                        <select id="city" name="city" required>
+                            <option value=""> Select Your City...</option>
                             <option value="london">London</option>
                             <option value="bradford">Bradford</option>
                             <option value="chester">Chester</option>
@@ -76,14 +76,15 @@
                     <fieldset>
                         <label for="postcode"> Postcode * </label>
                         <input class="input-control" id="postcode" type="text-number" name="postcode" required
-                            minlength="6" maxlength="6">
+                            minlength="7" maxlength="7">
                     </fieldset>
                 </div>
 
                 <div class="form-group colour">
                     <fieldset  >
                         <legend> Select a colour </legend>
-                        <input  id="karmaorange" type="radio" name="size" value="" />
+
+                        <input   id="karmaorange" type="radio" name="size" value="" />
                         <label for="karmaorange">Karma Orange</label>
                     
                         <input id="spacegrey" type="radio" name="size" value="" />
@@ -92,18 +93,29 @@
                 </div>
 
                 <div class="form-group agreement">
-                    <input id="agreement" type="checkbox" name="agreement" />
+                    <input id="agreement" type="checkbox" name="agreement" required />
                     <label for="agreement"> By placing your order you agree to karma's Terms and conditions *</label>
                     
                 </div>
-                <div class="form-group">
-                <span> <button id="order-btn" name="place-order"> Get Karma Today </button> </span>
+                <div class="button">
+                <span> <button id="order-btn" name="place-order"> Place my order </button> </span>
                 </div>
                 
             </form>
         </div>
         <div class="store-image"> </div>
     </section>
+
+    <footer>
+        <p> Join us on</p>
+        <section id="footer">
+            <img class="footer-icon"src="img/twitter-icon.svg" alt="twitter">
+            <img class="footer-icon"src="img/facebook-icon.svg" alt="facebook">
+            <img class="footer-icon"src="img/instagram-icon.svg" alt="instagram">
+        </section>
+    <p> &copy;Karma Mobility Inc.</p>
+</footer>
+
 
 </body>
 
