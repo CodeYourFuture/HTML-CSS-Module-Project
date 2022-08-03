@@ -6,6 +6,246 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.header {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.karma-image {
+    width: 30px;
+    height: 30px;
+}
+.nav-bar1 {
+        list-style-type: none;
+        display: inline block;
+        padding-left: 20px;
+        padding-right: 20px;
+        float: right;
+}
+.nav-bar2 {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline block;
+    float: right;
+}
+.nav-bar3 {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline block;
+    float: right;
+}
+.nav-bar4 {
+    list-style-type: none;
+    display: inline block;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+}
+.nav-bar5 {
+    list-style-type: none;
+    display: inline block;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+}
+
+.hero {
+    background-image: url(../img/first-background.jpg);
+    height: 500px;
+    color: white;
+    float: inline;
+    border: none;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 150px;
+    background-color: #E1643B;
+}
+.h1 .h2 {
+    font-weight: 400;
+    color: white;  
+    justify-content: center; 
+}
+
+button {
+    background-color: orange;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border: none;
+    color: white;
+   font-size: 20px;
+}
+
+.figure {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.info img {
+    width: 150px;
+}
+
+.karma {
+    font-size: 50px;
+    font-weight: inherit;
+    margin-bottom: 70px;
+}
+
+summary {
+    text-align: center;
+    font-weight: 300;
+    padding: 50px 0px;
+}
+
+.connection-info {
+    display: flex;
+}
+
+.connection-info .woman {
+    width: 700px;
+}
+
+.connection-info .wherever-Iam {
+    width: 750px;
+    background: rgba(224, 99, 58, 0.1);
+    padding-top: 150px; 
+}
+
+.wherever-Iam {
+    text-align: center;
+    font-size: 45px;
+    font-family: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.order-page {
+    display: flex;
+}
+
+.karma-device {
+    color: #E1643B;
+    font-size: 35px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.form {
+    width: 800px;
+    padding: 0px 150px;
+}
+
+#firstname {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    right: 92px;
+    margin-bottom: 60px;
+}
+
+#surname {
+    display: block;
+    position: relative;
+    left: 260px;
+    bottom: 60px;
+}
+
+#address {
+    display: block;
+    padding-right: 275px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#address2 {
+    display: block;
+    padding-right: 275px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+#city {
+    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    right: 42px;
+    padding-right: 140px;
+    padding-bottom: 10px;
+}
+
+#postcode {
+    display: inline-block;
+    position: relative;
+    left: 290px;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 80px;
+    border: none;
+    padding: 20px 40px 0px 0px;
+}
+
+#grey {
+    margin-left: 60px;
+}
+
+.form-button {
+    background-color: orange;
+    border: none;
+    color: white;
+   font-size: 15px;
+   display: block;
+}
+
+.img{
+    width: 700px;
+    height: 800px;
+    margin-right: 210px;
+  
+}
+
+footer {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-weight: inherit;
+    margin-bottom: 5px;
+    font-size: 12px;
+
+}
+.social-all {
+    display: flex;
+    justify-content: space-between;
+    width: 0.5px;
+    margin-left: 550px;
+}       
+
+.social {
+    border: 1px solid #bdc3c7;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.end-link {
+    text-align: center;
+    font-weight: inherit;
+    margin-top: 5px;
+    font-size: x-small;
+}
+
 /**
  * Add your custom styles below
  * 
