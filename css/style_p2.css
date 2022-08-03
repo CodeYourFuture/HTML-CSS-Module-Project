@@ -1,0 +1,126 @@
+  ############################################################ p2
+  
+  .nuv_bar{
+    display: flex;
+    border: 3px solid rebeccapurple;
+    background-color: rgba(218, 211, 211, 0.159);
+  }
+  
+  .nav_ul_p2{
+    display: flex;
+    width: 700px;
+    height: 30px;
+    list-style: none;
+    border: 2px solid rgba(198, 253, 35, 0.473);
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 90px;
+    align-items: center;  
+    
+  }
+  .icon_nav_p2{
+    height:50px; 
+    width:auto;
+    margin: auto;
+    padding-left: 90px;
+    
+       
+  }
+/* .contener{
+    display: flex;
+    width: 100%;
+    height: 7%;
+  
+} */
+/* .form_p2{
+  height: 700px;
+  width: 400px;
+  border: 3px solid red;
+}  
+.img_nav_p2{
+  height: 700px;
+  width: 400px;
+  border: 3px solid red;
+  
+
+} */
+
+.contener{
+    
+    border: 2px solid yellow;
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+    "f2 i2"
+    "f2 i2"
+    "f2 i2"
+    "f2 i2"
+    "f2 i2"
+    ". i2"
+    ". i2"
+    ;
+}
+
+
+.form_p2{
+    /* grid-area: f2;
+    border: 2px solid rgba(60, 160, 150, 0.473);
+    height: 100%;
+    width: 100%; */
+
+}
+
+.img_body_p2{
+    grid-area: i2;
+    height: auto;
+    width: 700px;
+    margin-right: auto;
+    border: 2px solid rgba(253, 49, 35, 0.473);
+
+}
+
+.main_p2{
+    display: flex;
+}
+
+.three_imgs{
+  
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:auto;
+    width: 90%;
+    margin-bottom: 200px;
+    
+  }
+
+  .footer_ico{
+    border:3px solid rgb(218, 219, 218);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 70px;
+    padding: 15px;
+    
+    
+    
+  }
+
+  hr{
+    margin-top: 150px;
+  }
+
+  .join_us{
+    text-align: center;
+  }
+
+  .footer_imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+  }

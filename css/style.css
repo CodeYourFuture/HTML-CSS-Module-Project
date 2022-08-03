@@ -1,6 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -50,6 +51,7 @@ hr{
   justify-content: space-around;
   margin:auto;
   width: 90%;
+  margin-bottom: 200px;
   
 }
 
@@ -80,13 +82,18 @@ hr{
   }
 
   .nav_ul{
-   list-style: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     
     
   }
+
+
+
+  /* ######################################################b2 */
+
   
   a {
     color: rgb(1, 1, 1);
@@ -98,14 +105,28 @@ hr{
   }
 
   .ad_back_img{
-    width: 300px;
-    border-radius: 5px;
+    
+    width: auto;
+    /* border-radius: 5px; */
     text-align: center;
-    padding: 100px;
-    margin: auto;
-    height: 80px;
+    padding: 20px;
+    margin-bottom: 200px;
+
+    height: auto;
     border: 4px solid yellow;
     
+  }
+
+  h3{
+
+    margin-top: 20px;
+    font-size: 60px;
+    font-family: 'Catamaran', sans-serif;
+  }
+
+  h4{
+    font-size: 50px;
+    font-family: 'Catamaran', sans-serif;
   }
 
   .main_back_img {
@@ -152,9 +173,23 @@ hr{
   }
 
   button{
-  background-color: rgb(244, 54, 54);
+    background-color: rgb(228, 92, 19);
+    color: #fff;
+    border-radius: 17px;
+    font-size: 50px;
+    /* padding: 30px;
+    width: 500px; */
+    border-color: rgb(228, 92, 19);
+    }
+
+  .bget_garma_1{
+  background-color: rgb(228, 92, 19);
   color: #fff;
-  border-radius: 10px;
+  border-radius: 17px;
+  font-size: 50px;
+  padding: 30px;
+  width: 500px;
+  border-color: rgb(228, 92, 19);
   }
 
   hr{
@@ -184,5 +219,46 @@ hr{
     
     
   }
+  .contener{
+    display: grid;
+    
+    grid-template-areas: 
+    "b_img b_img b_text b_text b_text"
+    "b_img b_img b_text b_text b_text"
+    "b_img b_img b_text b_text b_text"
+    "b_img b_img b_text b_text b_text"
+    
+    ;
+
+    
+  }
+
+  .contener_img{
+    grid-area: b_img;
+    width: 100%;
+  }
+  
+  .block_text{
+    background-color: #FBF2EF;
+    grid-area: b_text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    padding: 3px;
+    text-align: center;
+    font-family: Sarabun;
+    font-style: italic;
+    
+    
+  }
+  .quote_mark{
+    color: orange;
+    margin: 15px;
+  }
+
+
+  
 
 
