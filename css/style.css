@@ -43,13 +43,14 @@ height: 4.375rem;
     margin-left: 1.563rem;
 }
 .topnav .link li.active{
-    color: #4c5058;
+    color: #333;
     font-weight: 500;
 }
 .topnav .link li:hover{
 cursor: pointer;
 color: #333333;
 }
+
 .introduction {
 background-image: url("../img/first-background.jpg");
 background-size: cover;
@@ -121,11 +122,21 @@ a {
     height: 50px;
     width: 50px;
 }
-.mobile {
-    height: 30px;
-    width: 30px;
+
+.ever {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #838994;
+    
+    
 }
-.twitter {
+.inc {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #838994;
+}
+/*.twitter {
     height: 30px;
     width: 30px;
 }  
@@ -143,12 +154,11 @@ a {
     justify-content: center;
     text-align: center;
     color: #838994;
+    margin-top: 20px;
 }
-.inc {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #838994;
-}
+
+.
+}*/
 
 /**
  * Add your custom styles below
