@@ -99,36 +99,43 @@ color: white;
 }
 /* Product Details */
 /* Quote Section */
-.container{  
-height: 300px;    
+.container{ 
+width: 100%;              
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 600px 200px 40px;
-flex-direction: column;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: 150px auto 150px ;
+grid-template-areas: 
+"i i i t t t"
+"i i i t t t"
+"i i i . b b"
+
+;
+grid-auto-flow: dense;
 background-color: #E0633A1A;
 }
 .imgcon{
-grid-row: 1 / 3;  
+grid-area: i;
 background-image: url(/img/homepage-feature.png);
 background-size: contain;
 background-repeat: no-repeat;
-width: 409px;
+width: 100%;
 }
 .orangq{
 color: #E1643B; 
 font-size: 35px;
 }
-.textcon{  
-grid-column: 2 / -1; 
+.textcon{    
+grid-area: t;
+justify-content: center;
 text-align: center;
 font-style: italic;
-padding: 40px 40px 40px 40px;
+padding: 40px 60px 40px 60px;
 font-weight: 300;
 font-size: 25px;
 }
 .btn5{
-grid-column: 2 / -1;  
-padding-top: 30px;
+grid-area: b; 
+padding-top: 10px;
 }
 .GetKarmaToday{ 
  font-style: normal;    
