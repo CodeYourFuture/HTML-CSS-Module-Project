@@ -8,7 +8,8 @@ body{
     /* border: 2px solid black; */
     display: grid;
     row-gap: 2px;
-    grid-auto-rows: minmax(auto,auto);
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    /* grid-auto-rows: minmax(auto,auto); */
     grid-template-areas: 
     "nav nav nav nav"
     "form form img img"
