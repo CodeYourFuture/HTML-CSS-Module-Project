@@ -1,0 +1,306 @@
+.contener{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 3fr 3fr 0.5fr ;
+    grid-template-areas: 
+        "nav nav nav nav nav nav"
+        ". form form img img img"
+        ". form form img img img"
+        ". hr hr hr hr hr"
+        ". foot foot foot foot foot"
+    ;
+
+}
+
+.nav_all{
+    display: flex;
+    width: 100%;   
+    grid-area: nav;
+    grid-column: 1/-1;
+}
+
+.icon_nav_p2{
+    display: flex;
+    width: 100%;
+    height:80px;
+    margin-top: auto;
+    background-color: rgb(238, 237, 237);
+    
+    
+    
+    
+}
+
+.nuv_bar {
+    display: flex;
+    background-color: rgb(238, 237, 237);
+    width: auto;
+    height: 30px;
+    width: auto;
+    height: auto;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nav;
+    
+
+    
+  }
+
+.nav_ul_p2{
+    display: flex;
+    list-style: none;
+    font-weight:initial;
+    width: 700px;
+    height: 30.60px;
+    justify-content: space-between;
+    padding: 5px;
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: rgb(217, 73, 16);
+}
+
+li{
+    padding-top: 5px;
+}
+
+img{
+    width: 100%;
+}
+
+.img_contener{
+    display:flex;
+    grid-area: img;
+    
+    
+    
+    
+
+}
+
+.title{
+    
+    color: rgb(223, 125, 89);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.form{
+    
+    
+    grid-area: form;
+    justify-items: center;
+    grid-row: 2/ 4;
+       
+}
+
+.first_last{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.first_name{
+    width: 100%;
+    height: 100%;
+}
+
+#name_input{
+    width: 90%;
+    margin-top: 3px;
+}
+
+
+
+.last_name{
+    width: 100%;
+    height: 100%;
+}
+
+#last_name_input{
+    width: 95%;
+    margin-top: 3px;
+}
+
+.address{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#addres_input{
+    width: 97%;
+    margin-top: 3px;
+}
+
+.address_2{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#address_input_2{
+    width: 97%;
+    margin-top: 3px;
+}
+
+.city_postcode{
+    margin-top: 15px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#city{
+    
+    width: 450px;
+    height: 60%;
+    margin-top: 5px;
+}
+
+
+.postcode{
+    width: 40%;
+    margin-left:40px;
+}
+
+
+#postcode_input{
+    width: 91%;
+    margin-top: 3px;
+}
+
+.color_radio{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.karma_orange{
+    display: flex;
+    width: 50%;
+    height: 40px;
+}
+#orange{
+    padding-bottom: 3px;
+    accent-color:#DE6E49;
+}
+.lab_1{
+    margin-top: 6px;
+}
+.karma_grey{
+    display: flex;
+    width: 50%;
+    accent-color:#DE6E49;
+}
+#gray{
+    padding-bottom: 5px;
+    
+}
+
+.lab_2{
+    margin-top: 6px;
+    
+}
+
+.checkbox_1{
+    display: flex;
+    margin-bottom: 40px;
+    accent-color:#DE6E49;
+    
+}
+
+.term{
+    display: flex;
+    font-size: 15px;
+    
+
+}
+
+#term_input{
+    margin-top: 1px;
+    
+}
+
+.term_text{
+    display: flex;
+    padding-top: 5px ;
+    width: auto;
+}
+
+span{
+    color: rgb(217, 73, 16);
+}
+
+button{
+    padding: 10px;
+    width: 150px;
+    /* border-radius: 3px; */
+    background-color: rgb(240, 113, 29);
+    color: #fff;
+    /* margin-left: 35%; */
+    border: 2px solid #afafaf;
+    border-radius: 4px;
+    
+}
+
+button:hover{
+    color: rgb(217, 73, 16);
+}
+
+
+input {
+    border-radius: 3px;
+    height: 25px;
+    border: 2px solid #afafaf;
+    border-radius: 4px;
+}
+select{
+    border-radius: 3px;
+    height: 25px;
+    border: 2px solid #afafaf;
+    border-radius: 4px;
+
+}
+
+footer{
+    grid-area: foot;
+}
+
+.join_us{
+    text-align: center;
+    
+  }
+
+.footer_imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .footer_ico{
+    border:3px solid rgb(218, 219, 218);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 70px;
+    padding: 10px;
+      
+  }
+
+  .hr{
+    
+    grid-area: hr;
+    width: 100%;
+    
+  }
+
+
+
