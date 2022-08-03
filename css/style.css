@@ -1,11 +1,213 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+ @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,100&display=swap');
+ 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+/* menu */
+.main1{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    border: 1px solid rgb(236, 230, 230);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 
+    
+
+}
+.img_logo{
+    margin-top: 8px;
+    height: 35px;
+    width: 35px;
+}
+nav{
+display:inline-block;
+margin-top: 20px;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(252, 250, 250);
+}
+a:hover {
+color: rgb(247, 66, 0);
+  }
+.home{
+    display: inline-block;
+    color: #827f7f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid beige ;
+    font-size:x-large;
+    font-style:initial;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.active {
+    background-color: #303a37;
+        }
+/* body 1*/
+.body1{
+    color: rgb(190, 186, 180);
+    border: 1px solid black;
+    background-image: url("../img/first-background.jpg");
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+    margin: 5px;
+    height: 300px;
+    background-repeat: no-repeat;
+    
+    
+}
+.p1{
+     font-size: 50px;
+     font-weight: 500;
+     font-family: Sarabun;
+    }
+.button1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+    color: wheat;
+    background-color: rgba(255, 68, 0, 0.822);
+    border-radius: 5px;
+    border: none;
+    font-style: italic;
+    
+}
+/* body 2*/
+.body2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.body3{
+    margin: 80px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 60px;
+    
+}
+.img3{
+    
+height: 200px;
+width: 200px;
+margin: auto;
+}
+.refill{
+    margin-top: 50px;
+}
+.coffe{
+    margin-bottom: 20px;
+}
+/* Contener */
+.contener{
+display: grid;
+
+grid-template-areas: 
+"img img tx tx tx"
+"img img tx tx tx"
+"img img tx tx tx"
+;
+margin-top: 150px;
+
+
+}
+.img_2{
+    grid-area: img;
+    /* width: 100%;
+    height: 100%; */
+    width: 100%;
+    height: 100%;
+}
+.text2{
+    margin-right: 200px;
+    width: 100%;
+    grid-area: tx;
+    background-color: rgb(242, 231, 233);
+    /* border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    /* grid-area: tx; */
+    /* justify-content: center; */
+}
+
+.contentquote{
+ font-family: Sarabun;
+ align-items: center;
+ text-align: center;
+ font-size: 40px;
+ margin-top: 100px;
+}
+.quote {
+    color: rgba(255, 68, 0, 0.822);
+
+
+    margin: 5px;
+
+  }
+
+.t6{
+  
+    padding-top: 10px;
+    margin-left: 120px;
+    display: flex;
+    text-align: center;
+    border: 2px solid red;
+    /* width: 200px;
+    height:100px; */
+    align-items: center;
+}
+.button2{
+    grid-area: bt;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    font-family: Sarabun;
+    font-style: italic;
+}
+.button1{
+    padding: 20px;
+}
+
+/* footer */
+.end{ 
+    text-align: center;
+    align-items: center;
+}
+.footer_logo{
+
+    display:inline-flex;
+    flex-direction: row;
+    height: 100px;
+    right: 0;
+    max-height: 90px;
+    width: auto;  
+}
+.g4{
+    display: flex;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    border: 1px solid rgb(183, 181, 181);
+}
+
+
+.copytext{
+    margin-top: 30px ;
+    color: rgb(174, 177, 177);
+}
 /**
  * Add your custom styles below
  * 
