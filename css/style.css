@@ -45,7 +45,7 @@ nav {
 
 .top {
     height: 1000px;
-    margin: 0px 50px;
+    margin: 0px 0px;
     background-image: url('../img/first-background.jpg');
     background-size: cover;
     color: white;
@@ -69,7 +69,7 @@ nav {
 
 .top-btn {
     text-decoration: none;
-    color: inherit;
+    color: white;
     background-color: #E16337;
     font-size: 30px;
     padding: 20px 50px;
@@ -106,6 +106,60 @@ nav {
     font-size: 30px;
     font-weight: 400;
 }
+
+/*Third section - with cards img*/
+.bottom-card-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 600px;
+}
+
+.bottom-card1 {
+    grid-column: span 4;
+}
+
+.bottom-card2 {
+    grid-column: span 6;
+}
+
+.bottom-card1 {
+    background-image: url('../img/homepage-feature.png');
+    background-size: cover;
+}
+
+.bottom-card2 {
+    font-family: 'arial';
+    background-color: rgba(224, 99, 58, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-card-text {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    font-style: italic;
+    color: #434242;
+    font-size: 50px;
+    font-weight: inherit;
+}
+
+.change-color{
+    color: #E16337;
+}
+
+.bottom-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #E16337;
+    font-size: 30px;
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
 
 /*Line between main and footer*/
 
