@@ -129,13 +129,38 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-
+.container_content {
+    margin-top: 7.875rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #1D1E21;
+}
+.container_content-h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 4.125rem;
+    margin-left: 6rem;
+    font-weight: 300;
+    align-self: center;
+}
+.container_devices {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.container_devices-li {
+    display: flex;
+    flex-direction: column;
+}
+.container_devices-li-last-child {
+    
+}
 /*grid*/
 
 /* .container {
     text-align: center; */
 
-}
+
 #sub {
     padding: 25px 0;
     margin-top: 20px;
