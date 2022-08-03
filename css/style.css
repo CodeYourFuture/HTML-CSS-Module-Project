@@ -19,8 +19,9 @@ body {
 :root {
     --grey-light: rgb(219, 219, 219);
     --black: black;
-    --orange: #c05326;
+    --orange: rgb(224,99,58);
     --dirty-white: rgba(255, 255, 255, 0.844);
+
 }
 
 
@@ -132,6 +133,31 @@ button {
   object-fit: cover;
   vertical-align: bottom;
 }
+
+/* Extension get karma today */
+
+.get_karma {
+    display: grid;
+    
+    align-items: center;
+    text-align: center;
+    
+}
+
+.getkarma {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.button_getkarma {
+    padding: 20px;
+}
+
+q::before, q::after {
+    color: var(--orange);
+}
+
+
 
 hr {
     width: 80%;
