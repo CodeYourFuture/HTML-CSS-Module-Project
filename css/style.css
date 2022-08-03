@@ -194,10 +194,15 @@ form {
     margin-top: 82px;
 }
 
-label, form p {
+label, legend {
     font-size: var(--form-font-size);
     color: var(--form-color);
     margin-bottom: 12px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
 }
 
 input[type=text], select {
