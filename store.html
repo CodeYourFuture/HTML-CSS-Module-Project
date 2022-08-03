@@ -16,51 +16,76 @@
             <nav>
                 <img src="img/karma-logo.svg" class="logo">
                 <ul class="nav_bar">
-                    <a href="#" class="home"> <strong>Meet Karma</strong></a>
+                    <a href="index.html" class="home"> <strong>Meet Karma</strong></a>
                     <a href="#" class="home">How it Works</a>
                     <a class="home" id="active" href="#" class="home">Store</a>
                     <a href="#" class="home">Blog</a>
                     <a href="#" class="home">Help</a>
-                    <a href="#" class="home">Login</a
-                </ul>
+                    <a href="#" class="home">Login</a </ul>
             </nav>
         </div>
         <div class="form1">
 
             <h1>Order your Karma wifi device today!</h1>
             <form>
-                <label for="username">First name *</label>
-                <input id="username" type="text" name="username" />
-                <label for="lastname">Last name *</label>
-                <input id="lastname" type="text" name="username" />
-                <label for="address">Address *</label>
+                <div class="f">
+                    <label for="username1">First name *</label>
+                    <label for="username2">Last name *</label>
+                </div>
+
+                <div class="f1">
+                    <input id="username1" type="text" name="username" />
+
+                    <input id="username2" type="text" name="username" />
+                </div>
+
+                <label for="address" class="text_ad">Address *</label>
                 <input id="address" type="text" name="address" />
-                <label for="address2">Address 2 *</label>
-                <input id="address2" type="text" name="address2" />
-                <label for="city">City *</label>
-                <select id="city" name="city">
-                    <option value="Select" selected>Select your city...</option>
-                    <option value="Kartoum">Kartoum</option>
-                </select>
-                <label for="postcode">Postcode *</label>
-                <input id="postcode" type="text" name="postcode" />
-                <label for="color">Select a colour</label>
-                <input id="orange" type="radio" name="size" value="Karma orange" />
-                <label for="small">Karma orange</label>
 
-                <input id="grey" type="radio" name="size" value="Space Grey" checked />
-                <label for="grey">Space Grey</label>
+                <label for="address" class="text_ad">Address 2 *</label>
+                <input id="address" type="text" name="address2" />
 
-                <input id="order" type="checkbox" name="order" />
-                <label for="order">By placing your order you agree to Karma's Terms and Conditions. *</label>
+                <div class="form_c_p">
+                    <label for="city" class="city5">City *</label>
+                    <label for="postcode" class="post5">Postcode *</label>
+                </div>
 
+                <div class="input_c_p">
+                    <select id="city" name="city">
+                        <option value="Select" selected>Select your city...</option>
+                        <option value="Kartoum">Kartoum</option>
+                        <option value="Kartoum">London</option>
+                    </select>
+
+                    <input id="postcode" type="text" name="postcode" />
+                </div>
+                <br>
+                <label for="color" class="color">Select a colour</label>
+                <div class="color_radio">
+                    <input id="orange" class="orange" type="radio" name="size" value="Karma orange" />
+                    <div class="lab_1"><label for="small">Karma orange</label></div>
+
+                    <input id="grey" type="radio" name="size" value="Space Grey" checked />
+                    <div class="lab_2"> <label for="grey">Space Grey</label></div>
+                </div>
+                <br>
+                <div class="checkbox1">
+                    <div class="order_main">
+                        <input id="order1" type="checkbox" name="order" />
+                    </div>
+                    <label class="order_leble" for="order">By placing your order you agree to Karma's <a href="#"
+                            class="term">Terms and Conditions.</a> *</label>
+                </div>
+                <br>
+
+                <button>Place my order</button>
             </form>
-            <button>Place my order</button>
+
         </div>
         <div class="img1">
             <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" class="img2">
         </div>
-        
+
         <div class="foot">
             <hr>
             <footer>
