@@ -147,27 +147,57 @@ summary {
     position: relative;
     top: 30px;
     right: 92px;
+    margin-bottom: 60px;
 }
 
 #surname {
-    display: inline-block;
+    display: block;
     position: relative;
-    top: 30px;
-    right: 92px;
+    left: 260px;
+    bottom: 60px;
 }
 
 #address {
     display: block;
-    padding: 60px 0px;
+    padding-right: 275px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
 #address2 {
     display: block;
-    padding: 20px 0px;
+    padding-right: 275px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #city {
-    margin-top: 25px;
+    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    right: 42px;
+    padding-right: 140px;
+    padding-bottom: 10px;
+}
+
+#postcode {
+    display: inline-block;
+    position: relative;
+    left: 290px;
+    bottom: 35px;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 80px;
+    border: none;
+    padding: 20px 40px 0px 0px;
+}
+
+#grey {
+    margin-left: 60px;
 }
 
 .form-button {
@@ -175,11 +205,13 @@ summary {
     border: none;
     color: white;
    font-size: 15px;
-
+   display: block;
 }
 
 .img{
-    width: 600px;
+    width: 700px;
+    height: 800px;
+    margin-right: 210px;
   
 }
 
