@@ -147,15 +147,19 @@ ul>li{
     align-items: center; 
  }
  .homepage-feature-description > p{
-    font-size: 2rem;
+    font-size: 25px;
     color: black;
+    padding-left: 22px;
  }
-
-q >#b{
-    quotes: """ """;
-    color: #E0633A;
-   
- }
+.quote{
+  color: #E0633A;
+  font-size: 2.2em;
+  position: absolute;
+  margin-top: -16px;
+}
+.quote:first-of-type {
+  margin-left: -22px;
+}
 
  /* store.html - order-form */
  .order-form-story {
