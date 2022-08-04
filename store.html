@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body class="store_body">
+    <header class="header store_header">
+        <img src="/img/karma-logo.svg" id="logo-image-id" class="logo-image" alt="image_of_logo" />
+        <nav class="navigation">
+            <a href="/index.html" class="nav-links">Meet Karma</a>&nbsp;
+            <a href="#" class="nav-links">How it Works</a>&nbsp;
+            <a href="#" class="nav-links">Store</a>&nbsp;
+            <a href="#" class="nav-links">Blog</a>&nbsp;
+            <a href="#" class="nav-links">Help</a>&nbsp;
+            <a href="#" class="nav-links">Logic</a>
+        </nav>
+    </header>
+
+    <section class="store_main_section">
+        <div class="form_container">
+            <fieldset class="form_container">
+                <legend>Order Form</legend>
+            <form class="order_form">
+                <h1 class="h1_color title_font">Order your Karma wifi device today!</h1>
+                <div class="firstAndSecondNames_container">
+                    <div class="div_for_firstName">
+                        <label for="first_name" class="lbls">First name*</label>
+                        <input type="text" name="first_name" class="input_field" id="first_name" minlength="3"
+                            maxlength="30" required aria-required="true"/>
+                    </div>
+
+                    <div class="div_for_lastName">
+                        <label for="last_name" class="lbls">Last name*</label>
+                        <input type="text" name="last_name" class="input_field" id="last_name" minlength="3"
+                            maxlength="30" required aria-required="true"/>
+                    </div>
+                </div>
+
+                <div class="address1">
+                    <label for="address1" class="lbls">Address*</label>
+                    <input type="text" name="address1" class="input_field" id="address1" required aria-required="true"/>
+                </div>
+                <div class="address2">
+                    <label for="address2" class="lbls">Address 2</label>
+                    <input type="text" name="address2" class="input_field" id="address2" />
+                </div>
+
+                <div class="city_postcode_container">
+                    <div class="div_for_cities_option">
+                        <label for="cities">City</label>
+                        <select name="cities" id="cities" class="input_field" aria-required="true" required>
+                            <option value="">**Select your city**</option>
+                            <option value="Liverpool">Liverpool</option>
+                            <option value="manchester">Manchester</option>
+                            <option value="birmingham">Birmingham</option>
+                            <option value="London">London</option>
+                        </select>
+                    </div>
+
+                    <div class="div_for_postcode" id="id_for_postcode">
+                        <label for="postcode" class="lbls">Postcode</label>
+                        <input type="text" name="postcode" class="input_field" id="postcode" required />
+                    </div>
+                </div>
+
+                <div class="color_selection_container">
+                    <p>Select a color</p>
+                    <div class="color_options" name="color" required aria-required="true">
+                        <div class="div_for_orange_color">
+                            <input type="radio" name="color" id="orange_color" value="Orange" required/>
+                            <label for="orange_color">Orange</label>
+                        </div>
+
+                        <div class="div_for_spaceGray_color">
+                            <input type="radio" name="color" id="spaceGrey_color" value="space Grey" />
+                            <label for="spaceGrey_color">space Grey</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terms_section">
+                    <input type="checkbox" class="color_checkbox" name="terms_checkbox" id="terms_checkbox" checked />
+                    <label for="terms_checkbox">By placing order you agree to Karma's
+                        <a href="" class="terms_and_condition_link">Terms and conditions</a></label>
+                </div>
+                <button type="submit" name="submit" class="order_btn btn">place my order</button>
+            </form>
+            </fieldset>
+        </div>
+
+        <div class="image_container">
+            <img src="/level-2/store-image_by-andrew-neel-unsplash.jpg" class="picture_of_girl_in_office_desk"
+                alt="picture_of_girl_in_office_desk" />
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-paragraph">Join us on</p>
+        <div class="footer-socialMedia-image">
+            <img src="/img/twitter-icon.svg" class="socialMedia-image" alt="logo_of_twitter" />
+            <img src="/img/facebook-icon.svg" class="socialMedia-image" alt="logo_of_facebook" />
+            <img src="/img/instagram-icon.svg" class="socialMedia-image" alt="logo_of_instagram" />
+        </div>
+        <p>©️Karma Mobility.Inc</p>
+    </footer>
+</body>
+
+</html>

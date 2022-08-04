@@ -1,19 +1,222 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be organized, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/* --------below this line is the header section-------------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  margin-right: 9%;
+  padding: 10px;
+}
+
+#logo-image-id {
+  align-self: flex-start;
+  width: 2%;
+  margin-left: 3%;
+}
+/* --------above this line is the header section-------------------------------------------------- */
+
+/* --------below this line is the main section--------------------------------------------------- */
+/* The main section has two sub-sections 1. background image, h1 title, paragraph and button. 
+2. second sub-section is h2 title, services images  */
+
+.backgroundImage-and-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url(/img/first-background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+
+.learn-more-btn,
+.btn {
+  background-color: rgb(232, 178, 78);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+/* ---------------above this line is first sub-section of the main section--------------- */
+
+/* ---------------below this line is second sub-section of the main section--------------- */
+.product-section {
+  text-align: center;
+}
+.sub-product-container {
+  display: flex;
+  justify-content: center;
+}
+.product-image {
+  width: 30%;
+}
+/* ---------------above this line is second sub-section of the main section--------------- */
+
+/*  */
+.connection_coverage {
+  display: flex;
+}
+
+.image_for_homepage_feature {
+  width: 400px;
+  height: 200px;
+}
+
+.go_karma_today_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(224, 99, 58, 0.1);
+}
+/* got Karma button */
+.Go_karma_btn{
+  color: white;
+  text-decoration: none;
+}
+
+/* ---------------below this line is the footer------------------------------------------- */
+footer {
+  display: block;
+  text-align: center;
+}
+
+.footer-socialMedia-image {
+  display: flex;
+  justify-content: center;
+}
+.socialMedia-image {
+  width: 2%;
+}
 
 
+/* ----------------------------------------------------------------------- */
+/* -----------this section is store page--------- */
+
+/* main section, this code helps the form and picture layout side-by-side */
+.store_body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    height: 100%;
+}
+/* store header  */
+.store_header{
+  height: 50px;
+}
+
+/* form and picture section */
+.store_main_section {
+  display: flex;
+  justify-content: space-between;
+  height: initial;
+}
+
+/* this is form container */
+.form_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* form */
+.order_form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 370px;
+}
+/* Names section */
+.firstAndSecondNames_container {
+  display: flex;
+  justify-content: space-between;
+}
+.div_for_firstName,
+.div_for_lastName {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Address section */
+.addressOneAndTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* picture */
+.picture_of_girl_in_office_desk {
+  width: 500px;
+  height: inherit;
+  left: 739px;
+  top: 90px;
+  border: solid;
+}
+
+.color_options {
+  display: flex;
+  gap: 20px;
+}
+
+.city_postcode_container {
+  display: flex;
+  justify-content: space-between;
+}
+.div_for_cities_option,
+.div_for_postcode {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#id_for_postcode {
+  width: 20%;
+}
+/* this helps the size of the input field and the city options */
+.input_field {
+  height: 25px;
+  border-radius: 4px;
+}
+#cities {
+  border-width: 2px;
+}
+/* terms link and the title color */
+.h1_color,
+.terms_and_condition_link {
+  color: red;
+}
+
+/* title font weight and size */
+.title_font {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.address1,
+.address2 {
+  display: flex;
+  flex-direction: column;
+}
+.order_btn {
+  align-self: flex-start;
+  padding: 10px;
+  width: 150px;
+  background-color: green;
+}
