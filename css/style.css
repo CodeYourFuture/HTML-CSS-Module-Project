@@ -281,7 +281,7 @@ footer,P{
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
-    color: #666;
+    
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
@@ -323,6 +323,7 @@ footer,P{
 .form-control {
   font-family: system-ui, sans-serif;
   font-size: 10px;
+
   line-height: 1.1;
   display: grid;
   grid-template-columns: 1fr auto;
