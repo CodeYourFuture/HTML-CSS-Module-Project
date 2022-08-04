@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>store</title>
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="../index.html">
+      <img class="logo-img" src="../img/karma-logo.svg" alt="karma logo"></a>
+    <nav>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Meet Karma</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">How it works</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="./level-3/store.html">Store</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Blog</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Help</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="section-store">
+    <article class="article-store">
+      <p>Order your karma wifi device today!</p>
+      <form class="form-store">
+        <section class="divname">
+          <div class="divi">
+            <label for="firstname">First name:*</label>
+            <input type="text" name="firstname" id="firstname" required>
+          </div>
+          <div class="divi">
+            <label for="lastname">Last name:*</label>
+            <input type="text" name="lastname" id="lastname" required>
+          </div>
+        </section>
+        <label for="adress1">Adress:*</label>
+        <input type="text" name="adress" id="adress1" required>
+        <label for="adress2">Adress2:</label>
+        <input type="text" name="adress2" id="adress2">
+        <section class="divname">
+          <div class="divi">
+            <label for="city">City:*</label>
+            <select id="browsers" placeholder="select your city" required>
+              <option value="selectcity">Select your city</option>
+              <option value="london">London</option>
+              <option value="paris">Paris</option>
+              <option value="rome">Rome</option>
+              <option value="tehran">Tehran</option>
+            </select>
+          </div>
+          <div class="divi">
+            <label for="postcode">Postcode:*</label>
+            <input type="text" name="postcode" id="postcode" type="text" pattern="[0-9]{5}" title="Five digit zip code"
+              required>
+          </div>
+        </section>
+        <section>
+          <p>Select your color</p>
+          <form>
+            <input type="radio" name="color" id="scolor">
+            <lable for="scolor">Karma orange</lable>
+            <input type="radio" name="color" id="scolor">
+            <lable for="scolor">space gray</lable>
+          </form>
+        </section>
+        <input type="checkbox" name="condition" id="condition" checked>
+        <label for="condition">By placing your order you agree to Karma's <a class="ahref"href="#">terms and conditions*</a></label>
+        <div>
+          <input type="submit" value="place my order" id="myorder">
+        </div>
+      </form>
+    </article>
+    <section class="img-store">
+      <img src="../level-2/store-image_by-andrew-neel-unsplash.jpg" alt="girl working at desk image">
+    </section>
+  </section>
+  <hr>
+  <footer class="footer">
+    <p>join us today</p>
+    <div class="footer-1">
+      <img class="footer-img" src="../img/twitter-icon.svg">
+      <img class="footer-img" src="../img/facebook-icon.svg">
+      <img class="footer-img" src="../img/instagram-icon.svg">
+    </div>
+    <p>@karma mobility,inc</p>
+  </footer>
+</body>
+</html>

@@ -4,13 +4,16 @@
 .logo-img {
   width: 10%;
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: 30px;
 
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  background-color: rgb(244, 242, 242);
 
 
 }
@@ -36,10 +39,11 @@
   font-family: 'Uchen', serif;
   font-weight: 200px;
   text-decoration: none;
+  font-size: larger;
 
 }
 
-a:hover {
+.navigation__link:hover {
   color: chocolate;
   cursor: pointer;
 }
@@ -52,11 +56,10 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
-  font-family: 'Uchen', serif;
 }
 
 .learn {
-  color: rgb(235, 226, 220);
+  color: rgb(13, 6, 2);
   background-color: chocolate;
   border: 0;
   margin: 50px;
@@ -107,27 +110,52 @@ a:hover {
 }
 
 .footer-img {
-  width: 20px
+  width: 20px;
+
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  font-size: 10px;
-  margin-left: 600px;
-
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
   padding: 6px;
   cursor: pointer;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #FFFFFF;
 }
 
 .footer-1 {
   display: flex;
 }
 
+.footer-img {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 2px;
+  margin: 5px;
+  ;
+
+}
+
+.section1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Open+Sans:ital@1&family=Roboto:ital,wght@1,100;1,300&family=Uchen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Open+Sans:ital@1&family=Roboto:ital,wght@1,100;1,300&display=swap') @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital,wght@1,100;1,300&display=swap');
+
 /**
  * Add your custom styles below
  * 
@@ -137,3 +165,205 @@ button {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.article-store>p {
+
+
+  width: 521px;
+  height: 118px;
+  left: 123px;
+  top: 214px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300px;
+  font-size: 50px;
+  line-height: 59px;
+
+  color: #DE6E49;
+  margin: 50px;
+}
+
+.img-store img {
+  width: 701px;
+  height: 1235px;
+  left: 739px;
+  top: 98px;
+
+}
+
+.form-store {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  border: #efe8e5 solid 1px;
+
+}
+
+.form-store * {
+  padding: 5px;
+  margin: 5px;
+  ;
+}
+
+.form-store>div {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-store {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  color: #1c1918;
+  text-decoration: none;
+
+}
+
+#myorder {
+  color: aliceblue;
+  background-color: #DE6E49;
+  border: #DE6E49;
+  padding: 20px;
+  margin: 50px;
+  font-size: larger;
+
+}
+
+span {
+  color: #DE6E49;
+}
+
+.extended-hpage {
+  display: flex;
+  flex-direction: row;
+  background: rgba(224, 99, 58, 0.1)
+}
+
+img-extended {
+  width: 1434px;
+  height: 370px;
+  left: 3px;
+  top: 2181px;
+  margin-left: 10px;
+
+}
+
+.final-section {
+  /* background-color: rgb(221, 156, 156); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 841px;
+  height: 439px;
+  left: 599px;
+  top: 1758px;
+  ;
+}
+
+.final-section p {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #434242;
+}
+
+.postcode {
+  display: flex;
+  flex-direction: row;
+}
+
+#condition {
+  margin-left: 50px;
+  margin-top: 100px;
+
+}
+
+hr {
+  width: 80%;
+  margin: 0px;
+  ;
+}
+
+.divi {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.divname {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+#scolor,
+#scolor1 {
+  padding: 0px;
+  margin: 0px;
+  accent-color: ;
+
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* input[type='radio']:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #e98f2d;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid rgb(213, 203, 203);
+} */
+
+
+#adress1,
+#adress2 {
+  margin-right: 150px;
+
+}
+
+.ahref {
+  color: chocolate;
+}
+
+/* input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid gray;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+} */
+
+a:visited {
+  color: #cf4618;
+}
+
+:root {
+  accent-color: #DE6E49;
+}
+
+footer :nth-last-child(1) {
+  color: #6a615d;
+}
