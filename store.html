@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <header class="header">
+
+        <a href="#">
+            <img src="img/karma-logo.svg" alt="Logo of karma" class="header__logo" />
+        </a>
+
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    Meet Karma
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">How it works</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Store</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Help</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="store_content">
+        <h1>Order your Karma wifi device today!</h1>
+
+        <form>
+            <div>
+                <label for="first_name">First name*</label>
+                <input type="text" name="firstname" value="" id="first_name" required />
+
+                <label for="last_name">Last name*</label>
+                <input type="text" name="lastname" value="" id="last_name" required />
+            </div>
+            <div>
+                <label for="address1">Address*</label>
+                <input type="text" name="address1" value="" id="address1" required />
+            </div>
+            <div>
+                <label for="address2">Address 2</label>
+                <input type="text" name="address2" value="" id="address2" />
+            </div>
+            <div>
+                <label for="city">City*</label>
+                <select name="city" value="" id="city" placeholder="Select your city..." required>
+                    <option>London</option>
+                    <option>Birmingham</option>
+                    <option>Glasgow</option>
+                    <option>Liverpool</option>
+                    <option>Bristol</option>
+                    <option>Manchester</option>
+                    <option>Sheffield</option>
+                    <option>Leeds</option>
+                </select>
+
+                <label for="postcode">Postcode*</label>
+                <input type="text" name="postcode" value="" id="postcode" required />
+            </div>
+
+
+            <div>
+                <p>Select a colour</p>
+                <input type="radio" name="color" value="orange" id="orange" checked />
+                <label for="orange">Karma orange</label>
+                <input type="radio" name="color" value="grey" id="grey" />
+                <label for="grey">Space grey</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="t&c" value="ok" id="t&c" checked required />
+                <label for="t&c">By placing your order you agree to Karma's Terms and Conditions.*</label>
+            </div>
+
+            <div>
+                <button type="button">Place my order</button>
+            </div>
+        </form>
+
+        <div>
+            <img class="decor_photo" src="level-2/store-image_by-andrew-neel-unsplash.jpg"
+                alt="Photo decoration only." />
+        </div>
+    </main>
+
+    <br><br><br>
+    <footer class="footer">
+
+        <div class="footer__content">
+            <p class="p1">
+                Join us on
+            </p>
+
+            <div class="icons">
+                <img class="circle" src="img/twitter-icon.svg" alt="twitter icon" />
+                <img class="circle" src="img/facebook-icon.svg" alt="facebook icon" />
+                <img class="circle" src="img/instagram-icon.svg" alt="instagram icon" />
+            </div>
+
+            <p class="p2">@Karma Mobility Inc.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
