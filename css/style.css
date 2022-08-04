@@ -123,12 +123,12 @@ a {
     width: 50px;
 }
 
-.ever {
+.socials {
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #838994;
-    
+
     
 }
 .inc {
@@ -136,30 +136,48 @@ a {
     font-size: 0.8rem;
     color: #838994;
 }
-/*.twitter {
-    height: 30px;
-    width: 30px;
-}  
-
-.facebook {
-    height: 30px;
-    width: 30px;
-}
-.instagram {
-    height: 30px;
-    width: 30px;
-}
-.never, .ever {
+.container{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.45rem;
+  }
+ 
+.buttonk {
+    background-color: #E0633A;;
+    color: white;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #838994;
-    margin-top: 20px;
 }
+.container p {
+    margin-top: 14.5rem;
+    font-size: 1.125rem;
+    font-style: italic;
+    display: flex;
+align-items: center;
+text-align: center;
+font-family: 'Roboto';
+}
+.container buttonk {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+       
+}
+.kform {
+    margin-top: 70px;
+}
+.container2 {
+    position: absolute;
+width: 301px;
+height: 335px;
+left: 739px;
+top: 98px;
 
-.
-}*/
-
+background: url("../img/store-image_by-andrew-neel-unsplash.jpg"); 
+}
 /**
  * Add your custom styles below
  * 
