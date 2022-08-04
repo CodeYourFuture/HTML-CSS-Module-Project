@@ -137,12 +137,38 @@ button {
 /* Extension get karma today */
 
 .get_karma {
-    display: grid;
     
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 20px 0 20px 0;
+    background-color: rgb(252,239,235);
+    background-size: contain;
     
 }
+
+.woman {
+    grid-column: 1/1;
+}
+.woman_txt {
+    border: solid 2px red;
+    grid-column: 2/3;
+    background-color: rgb(252,239,235);
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 0 50px 0 50px;
+    
+}
+
+.get_karma > .woman_txt {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
 
 .getkarma {
     font-weight: normal;
@@ -151,6 +177,7 @@ button {
 
 .button_getkarma {
     padding: 20px;
+    margin-top: 20px;
 }
 
 q::before, q::after {
@@ -190,4 +217,13 @@ footer {
 .copyright {
     color: var(--grey-light);
     font-size: small
+}
+
+/* Store page */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
