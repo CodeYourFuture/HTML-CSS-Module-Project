@@ -4,7 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: #FFFFFF;
 }
+
 
 /**
  * Add your custom styles below
@@ -15,5 +17,288 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+/* Header Start */
+.logo{
+    width: 30px;
+    height: 30px;
+}
+.Navbar{
+    display: flex;
+    background-color: #d1d1d127; 
+    align-items: center; 
+    justify-content: space-around;  
+}
+.Nav__items{
+    display: inline;
+    
+}
+.navigation__link{
+color: #929290;
+padding: 10px;
+font-size: 13px;
+text-decoration: none;
+}
+#MeetKarma{
+color: #45484d;
+font-weight: 500;   
+}
+.navigation__link:hover{
+    color: #E1643B;
+}
+/* Header End */
+/* Main Start */
+.hero{
+background-image: url(../img/first-background.jpg);
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 500px;
+text-align: center; 
+}
+.heroH1{
+font-weight: 400;
+color: white; 
+}
+.heroP{ 
+    font-weight: 400;
+    color: white;  
+    justify-content: center;    
+}
+.herobutton{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    background-color: #E1643B;
+    color: white;
+}
+/* Product Details */
+.Producttext{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight:300;
+    
+}
+.productDetails{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
+    text-align: center; 
+}
+.productDetailsImg{
+    width: 90px;
+}
+/* Product Details */
+/* Quote Section */
+.container{ 
+    background-color: #E0633A1A;
+    height: 300px;
+    display: flex;    
+}
+.imgcon{
+    background-image: url(../img/homepage-feature.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 2;
+}
+span{
+    color: #E1643B; 
+    font-size: 35px;
+}
+.text-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+    flex: 2; 
+}
+.textcon{    
+    padding: 50px 50px 0px 50px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+.btn5{
+    margin-bottom: 60px;
+    font-style: normal;    
+    background-color: #E1643B;  
+    color: #FFFFFF; 
+    padding: 10px 20px 10px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* Main End */
+/* Footer Start */
+.solid{
+width: 70%;
+border-top: 1px solid rgba(187, 187, 187, 0.143);
+}
+.footertext{
+    text-align: center;
+    font-size: 10px;   
+}
+.SocialMediaIcon{
+    width: 10px;
+    border: solid 1px rgba(187, 187, 187, 0.611);
+    border-radius: 100%;
+    padding: 5px;
+
+}   
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:5px; 
+}
+.footerCP{
+    text-align: center;
+    font-size: 10px; 
+    color: rgba(0, 0, 0, 0.345);  
+}
+/* Footer End */
+/* Page Store */
+.formformat{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "f f f f f f s s s s s s"
+    "f f f f f f s s s s s s"
+    "f f f f f f s s s s s s"
+    }
+    .sideImage{ 
+    background-image: url(../img/store-image_by-andrew-neel-unsplash.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    grid-area: s;
+    }
+    .form{  
+    width: 90%;         
+    font-family: 'Roboto', sans-serif;
+    grid-area: f;
+    margin-left: 50px;
+    margin-right: 20px;
+    gap:5px;
+    }
+    .formtitle{
+    color: #E1643B;
+    font-size: 30px;
+    font-weight: 500; 
+    margin-left: 0px;
+    margin-right: 20px;
+    grid-area: t;
+    }
+    form > div {
+        color: #45484d;
+        font-size: 15px;
+    }  
+    form > div > label {
+        display: block;
+        font-size: 15px;
+    }
+    form > div > input {
+      border-radius: 3px;
+      border: 2px solid #666666; 
+      border-radius: 4px;
+      padding: 3px;
+    }
+    #city{
+        border-radius: 3px;
+        padding: 3px;   
+    }
+    .twoinput {
+      display: flex;  
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
+   #fname{
+    width: 75%;
+    padding: 3px;
+   } 
+   #lname{
+    width: 75%;
+    padding: 3px;
+} 
+    .addressinfo{
+        display: flex;  
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .addressinfo2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #city{
+    display: block; 
+    padding-right: 70px;  
+    }
+    #pcode{
+     display: block;
+     width: 70%;
+     padding: 3px;   
+    }
+    .cityandpost{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px;
+    margin-bottom: 40px;
+    }
+    .select-color{
+    display: flex; 
+    flex-direction: row;
+    gap:30px;
+    margin-bottom: 40px;
+    }
+    input[name="color"] {
+        accent-color: #E1643B; 
+    }
+    .terms{
+    margin-bottom: 20px;
+    font-size: 12px;   
+    }
+.formsumbit{
+    padding: 10px 20px 10px 20px;
+    background-color: #E1643B;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+input[type=checkbox] {
+
+}
+/* Page Store */
+
+    
+
+
+     
+  
+
 
 
