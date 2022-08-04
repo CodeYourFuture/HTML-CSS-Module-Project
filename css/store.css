@@ -1,0 +1,47 @@
+body{
+
+
+}
+
+.header{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.imageLeft{
+    grid-column: 1/2;
+    /* background-image: url('/img/karma-logo.svg'); */
+}
+
+.karmaIcon{
+    width: 40px;
+    height:40px;
+
+}
+
+.navBar{
+    grid-column: 2/3;
+    margin-left: 10px;
+    /* padding-left: 100px; */
+    align-self: center;
+
+}
+
+
+.nav1{
+
+    grid-column: 7/14;
+
+
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 6fr;
+
+}
+
+.footer{}
