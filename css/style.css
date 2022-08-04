@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+   
 }
 
 /**
@@ -17,3 +17,297 @@ body {
  */
 
 
+
+
+*{
+    margin:0 auto;
+}
+
+
+
+.logo img{
+    width: 20px;
+}
+ header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ li{
+    display: inline-block;
+    padding-left: 10px;
+    font-weight: 100;
+    /* text-transform: none;
+    text-decoration: none; */
+    font-size: medium;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+    
+ 
+ li a{
+    text-decoration: none;
+    color: #434242;
+    height: 96px;
+width: 1448px;
+
+
+ }
+
+ li a:hover{ 
+    color: coral;
+
+ }
+ nav{
+   /* background: #C4C4C41A; */
+   margin-top: 5px;
+   display: block;
+   
+
+ }
+
+ .karma{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("/img/first-background.jpg");
+    height:70vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+ }
+
+ .icon-container{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 40px;
+    justify-content: center;
+    
+
+ }
+
+ img.icon{
+    width: 100px;
+    height: 100px;
+    
+ }
+
+ .icon-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ h3{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 40px;
+    font-weight: lighter;
+ }
+ /* h2{
+   font-weight: lighter;
+ } */
+
+ footer{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .footer{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .footer_icon{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+
+ }
+
+ img{
+    max-height: 100%;
+
+ }
+
+ hr{
+    width: 80%;
+ }
+
+ h5{
+
+    padding: 10px;
+    font-size: medium;
+ }
+ 
+ 
+
+
+ button{
+    background-color:rgb(253, 67, 5);
+    margin-top: 80px;
+    padding: 10px;
+ }
+
+ .feature {
+   position: left;
+   width: 120%;
+   height: 439px;
+   left: 599px;
+   top: 1758px;
+   
+
+}
+
+header{
+   background-color:lightgray;
+   ;
+}
+
+#container {
+   display:flex;
+   background-color:antiquewhite;
+   
+}
+
+.box {
+
+  text-align: center;
+   width: 50%;
+   text-emphasis:center;
+   flex-direction: row;
+   
+}
+
+.text{
+   margin-top: 120px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 400px;
+   font-size: 42px;
+   line-height: 49px;
+   color: #434242;
+  
+ }
+
+ .button5{
+   border:none;
+   color: white;
+   padding:10px 20px 10px 20px;
+   border-radius: 5px;
+ }
+
+ .imgg{
+   display: flex;
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 50%;
+   height:808px;
+ 
+  
+ }
+
+ .containerrr{
+   display: flex;
+   flex-direction: row;
+
+ }
+ .form *{
+  
+   padding: 10px;
+   
+ } 
+ .form input{
+   border-radius: 5px;
+ }
+ option{
+   border-radius: 5px;
+ }
+/* 
+ .form{
+   width: 50%;
+
+ } */
+ .firstline{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   /* padding: 30px; */
+   
+ }
+.radioo{
+   margin-left: 50px;
+}
+ .labell{
+   margin-left: 0;
+ }
+
+ .firstname{
+   display:flex;
+    flex-direction: column;
+ }
+ #firstname{
+
+border-radius: 4px;
+
+ }
+
+ .lastname{
+   display:flex;
+    flex-direction: column;
+    
+ }
+ .address{
+   margin-top: 25px;
+   margin-left: 50px;
+
+ }
+ 
+#addressLines , #addressLines{
+   width: 426px;
+}
+.postcity{
+   display: flex;
+   margin-top: 35px;
+}
+.radio{
+   margin-top: 35px;
+   margin-left: 50px;
+}
+.checkbox{
+   margin-top: 35px;
+}
+.radio{
+   margin-top: 35px;
+}
+.bu{
+   margin-top:35px;
+    color: white;
+    background-color:#E0633A;
+    font-size: medium;
+    height: 70px;
+width: 169px;
+border-radius: 4px;
+   
+}
+#city{
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.postcode{
+   /* margin-left: 70px; */
+}
+.order{
+   height: 118px;
+width: 521px;
+color: #DE6E49;
+font-size: 50px;
+border-radius: nullpx;
+margin-bottom: 35px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
