@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the Karma store page">
-    <link rel="stylesheet" href="/css/store.css">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the Karma store page" />
+    <link rel="stylesheet" href="/css/store.css" />
+    <title>Karma Store</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="imageLeft">
-            <img class="karmaIcon" src="/img/karma-logo.svg" alt="">    
-        </div>
-        <nav class="navBar">
-            <a class="nav1" href="">Meet Karma</a>
-            <a class="nav2" href="">Meet Karma</a>
-            <a class="nav3" href="">Meet Karma</a>
-            <a class="nav4" href="">Meet Karma</a>
-            <a class="nav5" href="">Meet Karma</a>
-            <a class="nav6" href="">Meet Karma</a>
-
-        </nav>
-
+      <div class="imageLeft">
+        <img class="karmaIcon" src="/img/karma-logo.svg" alt="" />
+      </div>
+      <nav class="navBar">
+        <a class="nav1 linkStyle" href="">Meet Karma</a>
+        <a class="nav2 linkStyle" href="">How It Works</a>
+        <a class="nav3 linkStyle" href="">Store</a>
+        <a class="nav4 linkStyle" href="">Blog</a>
+        <a class="nav5 linkStyle" href="">Help</a>
+        <a class="nav6 linkStyle" href="">Login</a>
+      </nav>
     </header>
 
     <main class="main">
+      <div class="formDiv">
+        <h1 class="formh1">Order your Karma wifi device today!</h1>
+        <br><br>
+        
+        <form class="form" action="">
+          <div class="horizontalFlex double">
+            <div class="verticalFlex">
+              <label class="labelGap" for="">First Name *</label>
+              <input type="text" placeholder="" />
+            </div>
+            <br />
+            <div class="verticalFlex">
+              <label class="labelGap" for="">Last Name *</label>
+              <input type="text" placeholder="" />
+            </div>
+          </div>
+          <br />
+          <div class="verticalFlex">
+            <label class="labelGap" for="">Address *</label>
+            <input type="text" placeholder="" />
+          </div>
+          <br />
+          <div class="verticalFlex">
+            <label class="labelGap" for="">Address 2</label>
+            <input type="text" placeholder="" />
+          </div>
+          <br />
+          <div class="verticalFlex">
+            <label class="labelGap" for="">City *</label>
+            <input type="text" placeholder="" />
+          </div>
+          <br />
+          <div class="verticalFlex">
+            <label class="labelGap" for="">Postcode *</label>
+            <input type="text" placeholder="" />
+          </div>
+          <br /> <br>
+          <div class="verticalFlex">
+            <label class="labelGap" for="">Select a colour *</label>
+            <div class="horizontalFlex">
+              <input type="radio" placeholder="" />
+              <label for="">Karma Orange</label>
+              <input type="radio" placeholder="" />
+              <label for="">Space Grey</label>
+            </div>
+          </div>
+          <br /> <br> <br>
+          <div class="horizontalFlex">
+            <input type="checkbox" placeholder="" />
+            <label class="labelGap" for=""
+              >By placing your order you agree to Karma's
+              <a href>Terms and Conditions</a> *
+            </label>
+          </div>
+          <br />
 
-        <form class="form" action=""></form>
-        <img class="mainImage" src="" alt="">
-
+          <button class="placeOrderButton" type="submit">Place my order</button>
+        </form>
+      </div>
+      <div class="mainImageDiv">
+        <!-- <img class="mainImage" src="/level-2/storeImage.jpg" alt="" /> -->
+      </div>
     </main>
 
-    <footer class="footer"></footer>
-</body>
+    <footer class="footer">
+      <p>Join us on</p>
+      <div class="footerIconsDiv">
+        <img class="footerIcons" src="/img/twitter-icon.svg" alt="twitter" />
+        <img class="footerIcons" src="/img/facebook-icon.svg" alt="fb" />
+        <img class="footerIcons" src="/img/instagram-icon.svg" alt="insta" />
+      </div>
+
+      <p>&copy Karma Mobility Inc</p>
+    </footer>
+  </body>
 </html>

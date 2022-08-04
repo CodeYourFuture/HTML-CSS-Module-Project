@@ -1,47 +1,146 @@
-body{
-
-
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.header{
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: rgb(223, 219, 219); */
 }
 
-.imageLeft{
-    grid-column: 1/2;
-    /* background-image: url('/img/karma-logo.svg'); */
+.imageLeft {
+  grid-column: 1/2;
+  /* background-image: url('/img/karma-logo.svg'); */
 }
 
-.karmaIcon{
-    width: 40px;
-    height:40px;
-
+.karmaIcon {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
 }
 
-.navBar{
-    grid-column: 2/3;
-    margin-left: 10px;
-    /* padding-left: 100px; */
-    align-self: center;
-
+.navBar {
+  grid-column: 2/3;
+  margin-left: 10px;
+  /* padding-left: 100px; */
+  align-self: center;
+  /* text-decoration: none; */
 }
 
+.linkStyle {
+  text-decoration: none;
+  margin-right: 20px;
+}
 
-.nav1{
+.nav1 {
+  grid-column: 7/14;
+  color: black;
+}
 
+.nav2 {
     grid-column: 7/14;
+    color: grey;
+  }
 
+  .nav3 {
+    grid-column: 7/14;
+    color: rgb(252, 109, 57);
+  }
+  
+  .nav4 {
+    grid-column: 7/14;
+    color: gray;
+  }
+  
+  .nav5 {
+    grid-column: 7/14;
+    color: gray;
+  }
+  
+  .nav6 {
+    grid-column: 7/14;
+    color: gray;
+  }
+  
+
+.main {
+  display: grid;
+  grid-template-columns: 10% 30% 10% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.formDiv {
+  grid-column: 2/3;
+}
+
+.formh1 {
+  color: rgb(252, 109, 57);
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+.mainImageDiv {
+  grid-column: 4/5;
+  grid-row: 1/6;
+  background-image: url("/level-2/storeImage.jpg");
+  background-size: auto auto;
+  background-repeat: no-repeat;
+}
+.mainImage {
+  /* background-image: url('/level-2/storeImage.jpg'); */
+}
+
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px ;
 
 }
 
+.horizontalFlex {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    row-gap: 10px;
+  }
 
-.main{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 6fr;
+.double{
+
+    justify-content: space-between;
+}
+
+.labelGap{
+    margin-bottom: 10px;
+    margin-top: 15px;
 
 }
 
-.footer{}
+.placeOrderButton{
+    color: white;
+    background-color: rgb(252, 109, 57);
+    border: 2px solid rgb(252, 109, 57);
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.footerIconsDiv {
+  text-align: center;
+}
+
+.footerIcons {
+  width: 50px;
+  height: 50px;
+}
