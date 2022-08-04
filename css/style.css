@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,273 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*? header */
+nav {
+  display: flex;
+  padding: 1rem 14rem;
+  background-color:rgba(196, 196, 196, 0.1) ;
+  
+}
 
+.nav-logo {
+  width: 100%;
+}
+.nav-logo-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.karma-logo {
+  width: 2rem;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #c16718;
+}
+.active {
+  color: #2b3956;
+}
+/*? main - Freedom */
+
+main {
+  height: 100%;
+  padding: 2rem;
+}
+
+.freedom {
+  height: 100%;
+  padding: 10%;
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  color: white;
+  font-weight: 250;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.freedom-title {
+  font-size: 4rem;
+  font-weight: inherit;
+  margin-bottom: -1rem;
+}
+.freedom-description {
+  font-weight: inherit;
+  font-size: 2rem;
+  color:white;
+  margin-top: 2rem;
+}
+.btn-freedom {
+  text-decoration: none;
+  color: white;
+  background-color:#E0633A;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*? INFO */
+
+.info {
+  text-align: center;
+  font-weight: 250px;
+  padding: 60px 0px;
+}
+.info-title {
+  font-size: 50px;
+  font-weight: inherit;
+  margin-bottom: 5rem;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.card img {
+  width: 9rem;
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/*? footer */
+
+.footer {
+  text-align: center;
+  padding: 2.5rem 0rem 3rem 0rem;
+}
+
+.container-social {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 13%;
+  margin: 0 auto;
+}
+
+.social {
+  border: 1px solid #bdc3c7;
+  border-radius: 100%;
+  padding: 0.6rem;
+}
+
+.social img {
+  width: 1.4rem;
+}
+
+.footer-join {
+  font-size: 20px;
+}
+
+.footer-text {
+  color: #acb0b2;
+  margin-top: 1.5rem;
+}
+      /* ! STORE  CSS */
+
+.store{
+  width: 100%;
+}      
+.store-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 439px;
+}
+.store-container > div:nth-child(1) {
+  width: 40%;
+}
+.store-container > div:nth-child(2) {
+  width: 100%;
+}
+.store-container-1 {
+  padding: 100px 200px;
+}
+ h2 {
+  margin: 0px;
+  color: #434242;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+.store-container-2{
+  display: flex;
+  height: 1130px;
+}
+.store-image {
+  width: 40%;
+}
+.store-text {
+  width: 60%;
+  background-color:  rgba(224, 99, 58, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form {
+  margin-top: 75px;
+}
+fieldset {
+  border: none;
+  padding: 0;
+}
+label,
+legend {
+  margin-bottom: 10px;
+  color: #6f6d6d;
+  font-size: 20px;
+}
+label,
+input {
+  display: block;
+}
+.form-control {
+  display: inline;
+}
+.form-1,
+.form-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.form-1 div {
+  width: 40%;
+}
+.form2 div:nth-child(1) {
+  width: 60%;
+  
+}
+.form2 div:nth-child(2) {
+  width: 40%;
+}
+form > div:nth-child(2),
+form > div:nth-child(3),
+form > div:nth-child(4) {
+  margin-top: 30px;
+}
+form > div:nth-child(5) {
+  margin-top: 70px;
+}
+form > div:nth-child(6) {
+  margin-top: 90px;
+}
+form > div:nth-child(7) {
+  margin-top: 35px;
+}
+form button {
+  border: none;
+}
+label.form-control {
+  margin-left: 10px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+input[type="text"],
+select {
+  height: 50px;
+  width: 100%;
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+.btn-place{
+  text-decoration: none;
+  color: white;
+  background-color: #E0633A;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#city{
+ height: 53px;
+  width: 15rem;
+}
+#post-code{
+
+}
