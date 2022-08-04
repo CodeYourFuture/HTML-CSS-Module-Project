@@ -31,49 +31,63 @@
         <form class="form" action="">
           <div class="horizontalFlex double">
             <div class="verticalFlex">
-              <label class="labelGap" for="">First Name *</label>
-              <input type="text" placeholder="" />
+              <label class="labelGap" for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="" required/>
             </div>
             <br />
             <div class="verticalFlex">
-              <label class="labelGap" for="">Last Name *</label>
-              <input type="text" placeholder="" />
+              <label class="labelGap" for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="" required/>
             </div>
           </div>
           <br />
           <div class="verticalFlex">
-            <label class="labelGap" for="">Address *</label>
-            <input type="text" placeholder="" />
+            <label class="labelGap" for="address">Address *</label>
+            <input type="text" id="address1" name="address1" placeholder="" required/>
           </div>
           <br />
           <div class="verticalFlex">
-            <label class="labelGap" for="">Address 2</label>
-            <input type="text" placeholder="" />
+            <label class="labelGap" for="address2">Address 2</label>
+            <input type="text" id="address2" name="address2" placeholder="" />
+          </div>
+          <br />
+          <div class="horizontalFlex double">
+          <div class="verticalFlex">
+            <label class="labelGap" for="city">City *</label>
+            <select id="city" name="city" placeholder="Select your city" required>
+                <option value="none">Select your city</option>
+
+                <option value="sheffield">Sheffield</option>
+                <option value="manchester">Manchester</option>
+                <option value="birmingham">Birmingham</option>
+                <option value="leeds">Leeds</option>
+                <option value="liverpool">Liverpool</option>
+                <option value="london">London</option>
+
+            </select>    
           </div>
           <br />
           <div class="verticalFlex">
-            <label class="labelGap" for="">City *</label>
-            <input type="text" placeholder="" />
+            <label class="labelGap" for="postCode">Postcode *</label>
+            <input type="text" id="postcode" name="postcode" placeholder="" required/>
           </div>
-          <br />
-          <div class="verticalFlex">
-            <label class="labelGap" for="">Postcode *</label>
-            <input type="text" placeholder="" />
           </div>
           <br /> <br>
           <div class="verticalFlex">
-            <label class="labelGap" for="">Select a colour *</label>
-            <div class="horizontalFlex">
-              <input type="radio" placeholder="" />
-              <label for="">Karma Orange</label>
-              <input type="radio" placeholder="" />
-              <label for="">Space Grey</label>
+            <fieldset>
+            <legend class="labelGap">Select a colour *</legend>
+            <div class="horizontalFlex ">
+              <input class="accent" id="radio1" name="radio1" type="radio" placeholder="" />
+              <label for="radio1">Karma Orange</label>
+              <input class="accent" id="radio2" name="radio1" type="radio" placeholder="" />
+              <label for="radio2">Space Grey</label>
             </div>
+        </fieldset>
           </div>
           <br /> <br> <br>
           <div class="horizontalFlex">
-            <input type="checkbox" placeholder="" />
-            <label class="labelGap" for=""
+            <input class="accent" id="checkbox" name="checkbox" type="checkbox" placeholder="" />
+            <label class="labelGap" for="checkbox"
               >By placing your order you agree to Karma's
               <a href>Terms and Conditions</a> *
             </label>

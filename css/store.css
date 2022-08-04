@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
 .header {
@@ -15,9 +16,9 @@ body {
 }
 
 .karmaIcon {
-  width: 40px;
-  height: 40px;
-  margin-left: 50px;
+  width: 35px;
+  height: 35px;
+  margin-left: 150px;
 }
 
 .navBar {
@@ -39,30 +40,29 @@ body {
 }
 
 .nav2 {
-    grid-column: 7/14;
-    color: grey;
-  }
+  grid-column: 7/14;
+  color: grey;
+}
 
-  .nav3 {
-    grid-column: 7/14;
-    color: rgb(252, 109, 57);
-  }
-  
-  .nav4 {
-    grid-column: 7/14;
-    color: gray;
-  }
-  
-  .nav5 {
-    grid-column: 7/14;
-    color: gray;
-  }
-  
-  .nav6 {
-    grid-column: 7/14;
-    color: gray;
-  }
-  
+.nav3 {
+  grid-column: 7/14;
+  color: rgb(252, 109, 57);
+}
+
+.nav4 {
+  grid-column: 7/14;
+  color: gray;
+}
+
+.nav5 {
+  grid-column: 7/14;
+  color: gray;
+}
+
+.nav6 {
+  grid-column: 7/14;
+  color: gray;
+}
 
 .main {
   display: grid;
@@ -76,8 +76,9 @@ body {
 
 .formh1 {
   color: rgb(252, 109, 57);
-  font-weight: 400;
+  font-weight: 800;
   margin-top: 100px;
+  transform: scaleY(1.1);
 }
 
 .mainImageDiv {
@@ -94,39 +95,59 @@ body {
 .verticalFlex {
   display: flex;
   flex-direction: column;
-  row-gap: 0px ;
-
+  row-gap: 0px;
 }
 
 .horizontalFlex {
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    row-gap: 10px;
-  }
-
-.double{
-
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  row-gap: 10px;
 }
 
-.labelGap{
-    margin-bottom: 10px;
-    margin-top: 15px;
-
+.double {
+  justify-content: space-between;
 }
 
-.placeOrderButton{
-    color: white;
-    background-color: rgb(252, 109, 57);
-    border: 2px solid rgb(252, 109, 57);
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 100;
+.labelGap {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
 
+input,
+select {
+  /* line-height: 15px; */
+  padding: 10px;
+  font-size: medium;
+}
+
+.accent:checked {
+  /* background-color: rgb(252, 109, 57); */
+  accent-color: purple;
+  filter: invert(1);
+  filter: drop-shadow(white);
+  background-color: #fff;
+
+  /* 
+    appearance:none;
+  width:20px;
+  height:20px;
+  border:1px solid orangered;
+  border-radius:5px;
+  outline:none;
+  box-shadow:0 0 5px 0px rgb(0, 0, 0) inset; */
+}
+
+.placeOrderButton {
+  color: white;
+  background-color: rgb(252, 109, 57);
+  border: 2px solid rgb(252, 109, 57);
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 100;
 }
 
 .footer {
@@ -141,6 +162,8 @@ body {
 }
 
 .footerIcons {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
+  border: 2px solid grey;
+  border-radius: 50%;
 }
