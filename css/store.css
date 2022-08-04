@@ -1,12 +1,30 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+     width: 100%; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+main{
+    width: 100%;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: start;
+}
+
+.nav-bar{
+    margin-left: auto;
 }
 
 /* karma-logo */
 .karma-logo{
-    width: 30px;
-    margin-left: 30px;
+    width: 70px;
+    margin-left: 50px;
     padding: 20px;
 }
 
@@ -37,34 +55,84 @@ a:hover{
 
 
 /* main section form and image */
-.container{
-    display: flex;
+.main-container{ 
+    display: flex; 
+    width: 100%;
 }
 
-.form-container{
+.sub-container{
     flex: 50%;
-    max-width: 500px;
-    max-height: 500px; 
+}
+
+.form-order{
+    display: grid;
+    color: gray;
+    height: 750px;
+    padding: 30px;
+    grid:
+    "t t t t t t"
+    "f f f l l l"
+    "a1 a1 a1 a1 a1 a1"
+    "a2 a2 a2 a2 a2 a2"
+    "c c c p p p"
+    "r r r r . ."
+    "ch ch ch ch ch ch"
+    "b b . . . .";
+    border: solid;
     
 }
 
-label{
-    display: block;
-    width: auto;
-}
-
-label{
-
+.title{
+    grid-area: t;
+    color: orangered;
+    text-align: center;
 
 }
-.image{
-    background-size: cover;
-    max-width: 500px;
-    max-height: 500px;
-    
+.firstName{
+    grid-area:f;
+}
+.lastName{
+    grid-area: l;
+}
+.address1{
+    grid-area: a1;
+}
+.address2{
+    grid-area: a2;
+}
+.city{
+    grid-area: c;
+}
+.postcode{
+    grid-area: p;
+}
+
+.color{
+    grid-area: r;
+}
+.agreement{
+    grid-area: ch;
+}
+.btn{
+    grid-area: b;
+    background-color: orangered;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 5px;
+    border-style: none;
 }
 
 
+input[type="text"]{ 
+    padding: 10px 10px; 
+    line-height: 15px; 
+    color: gray;
+    border-radius: 5px;
+}
+
+#orange, #grey{
+  margin-left: 20px;
+}
 
 
 /*soical media icons*/
@@ -74,8 +142,8 @@ label{
 }
 
 .media-icons{
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 80px;
     padding: 20px;
 }
 
