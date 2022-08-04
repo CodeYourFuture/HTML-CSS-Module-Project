@@ -32,13 +32,83 @@
         </div>
       </nav>
     </header>
+
     <main>
       <section class="store-container">
-        <div class="">
-          <h1>Order your Karma wifi device today!</h1>
-          <label></label>
+        <div class="store-container-1">
+          <h2>Order your Karma wifi device today!</h2>
+          <form class="form-1">
+            <div>
+              <div>
+                <label for="first-name">First Name *</label>
+                <input
+                  id="first-name"
+                  type="text"
+                  name="first-name"
+                  minlength="2"
+                  maxlength="15"
+                  required
+                />
+              </div>
+              <div>
+                <label for="last-name">Last Name *</label>
+                <input
+                  id="last-name"
+                  type="text"
+                  name="last-name"
+                  minlength="2"
+                  maxlength="15"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label for="address">Address *</label>
+              <input
+                id="address"
+                type="text"
+                name="address"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+            </div>
+            <div>
+              <label for="address-2">Address-2 *</label>
+              <input
+                id="address-2"
+                type="text"
+                name="address-2"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+            </div>
+            <div class="form-2">
+              <div>
+                <label class="city">City *</label>
+                <select id="city" text="City" name="city" required>
+                  <option value="">Select your city...</option>
+                  <option value="manchester">Manchester</option>
+                  <option value="london">London</option>
+                  <option value="leeds">Leeds</option>
+                </select>
+              </div>
+              <div>
+                <label for="post-code">Post Code *</label>
+                <input
+                  id="post-code"
+                  type="text"
+                  name="post-code"
+                  minlength="2"
+                  maxlength="10"
+                  required
+                />
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="">
+        <div class="store-container-2">
           <img src="img/store-image_by-andrew-neel-unsplash.jpg" />
         </div>
       </section>
