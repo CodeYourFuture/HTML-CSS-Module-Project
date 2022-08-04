@@ -18,7 +18,9 @@ body {
 /*? header */
 nav {
   display: flex;
-  padding: 0.5rem 8rem;
+  padding: 1rem 14rem;
+  background-color:rgba(196, 196, 196, 0.1) ;
+  
 }
 
 .nav-logo {
@@ -167,7 +169,10 @@ main {
   font-size: 50px;
   font-weight: 400;
 }
-
+.store-container-2{
+  display: flex;
+  height: 1130px;
+}
 .store-image {
   width: 40%;
 }
@@ -210,6 +215,7 @@ input {
 }
 .form2 div:nth-child(1) {
   width: 60%;
+  
 }
 .form2 div:nth-child(2) {
   width: 40%;
@@ -244,8 +250,27 @@ input[type="radio"] {
 }
 input[type="text"],
 select {
-  height: 53px;
+  height: 50px;
   width: 100%;
   border: 2px solid #666666;
   border-radius: 4px;
+}
+.btn-place{
+  text-decoration: none;
+  color: white;
+  background-color: #E0633A;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#city{
+ height: 53px;
+  width: 15rem;
+}
+#post-code{
+
 }
