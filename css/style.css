@@ -121,19 +121,17 @@ nav {
 /*buy section*/
 
 .section-buy {
-    display: flex;
-    height: 439px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 439px;
 }
 
 .section-buy-1 {
-    width: 30%;
     background-image: url('../img/buy-now-bg-1.png');
     background-size: cover;
-    background-position: 50% 50%;
 }
 
 .section-buy-2 {
-    width: 70%;
     background-color: #FCEFEB;
     display: flex;
     flex-direction: column;
