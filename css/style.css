@@ -137,47 +137,39 @@ button {
 /* Extension get karma today */
 
 .get_karma {
-    
+    height: 100%;
+    margin: 20px 0 20px 0;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 60%;
     grid-template-rows: auto;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 20px 0 20px 0;
-    background-color: rgb(252,239,235);
-    background-size: contain;
-    
 }
 
-.woman {
-    grid-column: 1/1;
+.woman, img {
+    width: 100%;
+    height: inherit;
+    grid-column: 1/2;
+
 }
 .woman_txt {
-    border: solid 2px red;
-    grid-column: 2/3;
+    height: inherit;
     background-color: rgb(252,239,235);
-    background-size:contain;
-    background-repeat: no-repeat;
-    padding: 0 50px 0 50px;
-    
+    grid-column: 2/2;
 }
-
-.get_karma > .woman_txt {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-}
-
 
 .getkarma {
     font-weight: normal;
     font-style: italic;
+    padding: 70px 70px 0 70px;
+    align-self: center;
 }
 
 .button_getkarma {
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 50px;
+
 }
 
 q::before, q::after {
