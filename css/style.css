@@ -15,7 +15,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/* header */
+/*? header */
 nav {
   display: flex;
   padding: 0.5rem 8rem;
@@ -46,7 +46,7 @@ nav {
 .active {
   color: #2b3956;
 }
-/* main - Freedom */
+/*? main - Freedom */
 
 main {
   height: 100%;
@@ -89,7 +89,7 @@ main {
   justify-content: center;
 }
 
-/* INFO */
+/*? INFO */
 
 .info {
   text-align: center;
@@ -117,7 +117,7 @@ main {
   font-weight: 400;
 }
 
-/* footer */
+/*? footer */
 
 .footer {
   text-align: center;
@@ -150,18 +150,102 @@ main {
   color: #acb0b2;
   margin-top: 1.5rem;
 }
-/* STORE */
+/* ! STORE  CSS */
 .store-container {
   display: flex;
+  height: 1300px;
 }
+.store-container > div {
+  width: 60%;
+}
+.store-container-1 {
+  padding: 100px 200px;
+}
+.store-container-1 h2 {
+  margin: 0px;
+  color: #c3542c;
+  font-size: 50px;
+  font-weight: 400;
+}
+
 .store-image {
   width: 40%;
 }
 .store-text {
   width: 70%;
-    background-color: #FCEFEB;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: #fcefeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form {
+  margin-top: 75px;
+}
+fieldset {
+  border: none;
+  padding: 0;
+}
+label,
+legend {
+  margin-bottom: 10px;
+  color: #6f6d6d;
+  font-size: 20px;
+}
+label,
+input {
+  display: block;
+}
+.form-control {
+  display: inline;
+}
+.form-1,
+.form-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.form-1 div {
+  width: 40%;
+}
+.form2 div:nth-child(1) {
+  width: 60%;
+}
+.form2 div:nth-child(2) {
+  width: 40%;
+}
+form > div:nth-child(2),
+form > div:nth-child(3),
+form > div:nth-child(4) {
+  margin-top: 30px;
+}
+form > div:nth-child(5) {
+  margin-top: 70px;
+}
+form > div:nth-child(6) {
+  margin-top: 90px;
+}
+form > div:nth-child(7) {
+  margin-top: 35px;
+}
+form button {
+  border: none;
+}
+label.form-control {
+  margin-left: 10px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+input[type="text"],
+select {
+  height: 53px;
+  width: 100%;
+  border: 2px solid #666666;
+  border-radius: 4px;
 }
