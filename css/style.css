@@ -1,6 +1,9 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+*{
+    box-sizing: border-box;
+    
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -13,6 +16,7 @@ header {
 }
 .join {
     display: flex;
+    justify-content: space-between;
     gap: 15px;
     
 }
@@ -45,43 +49,129 @@ ul li a {
     color: grey;
     text-decoration: none; 
     margin: 0px 20px;
-
-
-
 }
+ 
 
 ul li a:hover{
 color: orangered;
 }
 
+.high {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+    
+.low {
+    background-color: rgb(245, 190, 184); display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.low p{
+    font-size: 21px;
+    font-style: italic;
 
-main {
+}
+.main {
 text-align: center;
     background-image: url('./../img/first-background.jpg');
     background-size: cover;
     padding: 150px 0;
     color: white;
 }
+.store-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
 
+}
+.store-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+display: block;
+}
+.icons {
+     display: flex;
+    justify-content: center
+}
+.images {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
  .image-icon {
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 20px;
+
+}
+.image-icon img{
+height: 170px;
+
+
 }
 h1 {
     margin-top: 50px;
+    font-family: Roboto;
+    color: 
+#DE6E49;
 }
-
-
- button {
-    background-color: tomato;
-    padding: 10px 25px;
-    border-radius: 5px;
+.grid-2 {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+.store {
+    color: #DE6E49;
+}
+input[type="text"], input[type="number"], select { display: block; padding: 7px; border: 2px solid #efefef;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+     box-sizing: border-box;
+    border-color: 
+#666666
+ } 
+ form {
+    text-align: left;
+    padding: 50px 80px;
     border: none;
-
  }
 
-      
+ .term {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+ }
+ .terms {
+     font-family: 'Roboto';
+    color: 
+#DE6E49;
+ }
+ button {
+    background-color: tomato;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+ }
+
+ .radio {
+    margin: 15px 0;
+ }
+ .checkbox {
+    margin-bottom: 15px;
+ }
+ .check {
+    color: 
+#DE6E49;
+ }
+      h2 {
+margin-bottom: 30px;
+font-size: 25px;
+font-weight: 400;
+      }
 
 .icons img{
  width: 20px;
@@ -91,7 +181,12 @@ h1 {
  
 }
 .icons {
-    border: 1px solid red;
     border-radius: 50%;
     padding: 20px;
+}
+.cons {
+    display: flex;
+    justify-content: center;
+    
+
 }
