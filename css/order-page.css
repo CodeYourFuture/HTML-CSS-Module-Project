@@ -73,7 +73,7 @@ button {
     border-radius: 3px;
     font-size: 24px;
     border:none;
-    
+    margin-right: 180px;   
 }
 
 
@@ -105,9 +105,6 @@ form {
 
 }
 
-form label {
-
-  }
 
 input {
     height: 40px;
@@ -117,6 +114,7 @@ input {
 
 .firstnamelabel {
     grid-area: firstnamelabel;
+    margin: 0px;
 }
 
 .firstnameinput {
@@ -126,6 +124,7 @@ input {
 
 .lastnamelabel {
     grid-area: lastnamelabel;
+    margin: 0px;
 }
 
 .lastnameinput {
@@ -134,6 +133,7 @@ input {
 
 .addresslabel {
     grid-area: addresslabel;
+    margin: 0px;
 }
 .addressinput {
     grid-area: addressinput;
@@ -141,6 +141,7 @@ input {
 
 .address2label {
     grid-area: address2label;
+    margin: 0px;
 }
 
 .address2input {
@@ -153,6 +154,7 @@ input {
 
 .postcodelabel {
     grid-area: postcodelabel;
+    margin: 0px;
 }
 
 .cityinput {
@@ -161,28 +163,64 @@ input {
 
 .citylabel {
     grid-area: citylabel;
+    margin: 0px;
 }
 
 .termsandconditions {
     grid-area: termsandconditions;
+    font-size: 15px;
+    width: 100%;
+    display: inline;
+    justify-self: center;
+    padding: 10px;
 }
+
+.termsandconditions label {
+    position: relative;
+    bottom: 13px;
+    line-height: 1.5rem;
+}
+
+span {
+    color:#E0633A;
+    text-decoration: underline;
+} 
 
 .colourinput {
     grid-area: colourinput;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
 }
 
 .submitbutton {
     grid-area: submitbutton;
 }
 
+fieldset {
+    border: none;
+}
+
+
+
 h1 {
     grid-area: h1;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 59px;
     color: #DE6E49;
+}
+
+fieldset label {
+    margin-left: 15px;
+}
+
+legend {
+    margin: 0px;
 }
 
 
