@@ -42,64 +42,134 @@ nav {
 }
 
 
-/*Grid page */
-
-.grid-page {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2100px;
+/*order page*/
+.section
+{
+    height: 1235px;
+    display: flex;
 }
 
-.grid1 {
-    grid-column: span 1;
+.section > div {
+    width: 50%;
 }
 
-.grid2 {
-    grid-column: span 1;
+.section-1 {
+    padding: 118px 214px;
 }
 
-/*Grid1*/
-
-.grid1 {
-    display:grid;
-    grid-template-rows: repeat(20, 1fr);
+.section-1 h2 {
+    color: var(--color-main);
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0px;
 }
 
-.form-title {
-    grid-row: span 1;
-}
-
-.user-details{
-    grid-row: span 18;
-}
-
-.form-btn{
-    grid-row: span 1;
-}
-
-.input-box {
-    width: 100%;
-    height: 150px;
-}
-
-
-
-.form-btn {
-    text-decoration: none;
-    color: white;
-    background-color: #E16337;
-    font-size: 30px;
-    padding: 20px 50px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-
-/*Grid2*/
-
-.grid2 {
+.section-2 {
     background-image: url('../img/unsplash.jpg');
-    background-size: cover;
+    background-size: 100%;
+    background-position-y: 50%;
+}
+
+form {
+    margin-top: 82px;
+}
+
+label, legend {
+    font-size: var(--form-font-size);
+    color: var(--form-color);
+    margin-bottom: 12px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+}
+
+input[type=text], select {
+    height: 53px;
+    width: 100%;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    color: var(--form-color);
+    font-size: var(--form-font-size);
+}
+
+label, input {
+    display: block;
+}
+
+.form-inline {
+    display: inline;
+}
+
+select {
+    background-color: white;
+    height: 58px;
+}
+
+.form-container-1, .form-container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container-1 div {
+    width: 40%;
+}
+
+.form-container-2 div:nth-child(1) {
+    width: 60%;
+}
+
+.form-container-2 div:nth-child(2) {
+    width: 30%;
+}
+
+form > div:nth-child(2), form > div:nth-child(3), form > div:nth-child(4) {
+    margin-top: 32px;
+}
+
+form > div:nth-child(5) {
+    margin-top: 70px;
+}
+
+form > div:nth-child(6) {
+    margin-top: 97px;
+}
+
+form > div:nth-child(7) {
+    margin-top: 36px;
+}
+
+input[type=radio] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+label.form-inline {
+    margin-left: 12px;
+}
+
+input.form-inline:nth-child(4) {
+    margin-left: 41px;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+form a {
+    color: var(--color-main);
+}
+
+form button {
+    border: none;
+}
+
+.hr-order {
+    margin-top: 0px;
 }
 
 /*Line between main and footer*/
