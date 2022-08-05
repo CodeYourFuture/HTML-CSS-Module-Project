@@ -1,12 +1,6 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-/**
+ /**
  * Add your custom styles below
  * 
  * Remember: 
@@ -15,5 +9,169 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* karma-logo */
+.karma-logo{
+    width: 30px;
+    margin-left: 30px;
+    padding: 20px;
+}
+
+/* nav bar */
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-right: 100px;
+} 
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+a{  
+    color:gray;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orangered;
+}
+
+
+/* background image */
+
+.background-image{
+   background-image: url("../img/first-background.jpg");
+   height: 650px;
+   background-size: cover;
+   margin: 10px;
+   font-family:'Roboto', sans-serif;
+   font-size: 25px; 
+   text-align: center;
+   
+}
+
+.background-image h1, p{
+    color: aliceblue;
+    padding-top: 200px;
+}
+
+.background-image p{
+    padding-top: 5px;
+}
+
+.btn{
+    background-color: orangered;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+
+/* icons section */
+
+h2{
+   padding-top: 100px;
+   font-family:'Roboto', sans-serif;
+   font-size: 25px;
+   text-align: center;
+   color: gray;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon-images{
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    text-align: center;
+}
+
+.icon-container p{
+    color: black;
+    margin: auto;
+    padding-top: 0%;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* added new section */
+.newsection-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    
+}
+
+.homepage-feature{
+    display: flex;
+}
+
+
+.side{
+    background-color: peachpuff;
+    text-align: center;
+}
+
+.newsection-container p{
+    color: #333030;
+    font-size: 40px;
+    font-style: italic;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.btn1{
+    color: aliceblue;
+    background-color: orangered;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.btn1:hover{
+    background-color: greenyellow;
+}
+
+/*soical media icons*/
+
+.media-container{ 
+    text-align: center;
+}
+
+.media-icons{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+
+footer h3{
+    color: #333030;
+    padding-top: 100px;
+}
+
+footer p{
+    color: gray;
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+}
+
 
 
