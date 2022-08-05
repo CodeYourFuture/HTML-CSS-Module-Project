@@ -215,19 +215,86 @@ footer {
 
 .container {
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px 0 20px;
+    justify-content:flex-start;
+    align-items:flex-start;
+
 }
 
 .content_form {
-    width: 50%;
+    width: 100%;
+    padding: 20px 10px 20px 20px;
+
 }
 
-.content_pic, img {
+.content_pic {
     width: 100%;
     height: 50%;
+    align-self: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+
+}
+
+.content_pic > img {
+    height: 1235px;
+
+}
+
+.terms {
+    color: var(--orange)
+}
+
+.button_order {
+    margin: 40px 0 40px 0;
+    padding: 20px 40px;
+}
+
+.order_title {
+    color: var(--orange)
+}
+
+div > label, input {
+    display: block;
+}
+.order {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: left;
+    gap: 10px;
+    grid-template-areas:
+        "Name Name"
+        "Address1 Address1"
+        "Address2 Address2"
+        "City City"
+        "Select Select"
+        "Terms Terms"
+        "Button .";
+
+}
+
+.row1 .row2 {
+    grid-area: Name;
+}
+.row3 {
+    grid-area: Address1;
+}
+.row4 {
+    grid-area: Address2;
+}
+.row5 .row6 {
+    grid-area: City;
+}
+.row7 {
+    grid-area: Select;
+}
+.row8 {
+    grid-area: Terms;
+}
+.row9 {
+    grid-area: Button;
 }
