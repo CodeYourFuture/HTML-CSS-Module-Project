@@ -1,9 +1,9 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 /**
@@ -16,4 +16,406 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 350;
+  font-size: 2.5rem;
+  text-align: center;
 
+}
+
+h3 {
+  width: 521px;
+  height: 118px;
+  left: 123px;
+  top: 214px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #DE6E49;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  color: #434242;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 350;
+}
+
+.content {}
+
+.header,
+/*.content,*/
+.footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.header__logo {
+  height: 35px;
+  width: 35px;
+}
+
+/* Navigation */
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__item {
+  padding: 10px;
+}
+
+.navigation__link {
+  color: grey;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #c05326;
+}
+
+/* Buttons */
+button {
+  border: #c05326 solid 1px;
+  border-radius: 8%;
+  background-color: #c05326;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* hero */
+
+.hero {
+  background-image: url(/img/first-background.jpg);
+  width: 100%;
+  height: 859px;
+  left: 0px;
+  top: 0px;
+  left: 0px;
+  top: 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-size: cover
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section */
+
+.article {
+  margin-bottom: 1rem;
+  border: grey solid 1px;
+  padding: 10px;
+}
+
+
+.section__thumbnail {
+  object-fit: contain;
+  width: 5rem;
+  width: 100px;
+  height: 100px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+}
+
+.section__content {
+  color: black;
+  text-align: center;
+}
+
+.decor_pic {
+  width: 1200px;
+  left: 439px;
+  top: 1758px;
+  background: url(/level-2/homepage-feature.png);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-size: cover;
+}
+
+.get_today {
+  width: 264px;
+  height: 70px;
+  left: 888px;
+  top: 2045px;
+  background: #E0633A;
+  border-radius: 8px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sectionbg {
+  width: 100%;
+  height: 439px;
+  left: 599px;
+  top: 1758px;
+  background: rgba(224, 99, 58, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+
+}
+
+.orangecolor {
+  color: #E0633A;
+}
+
+
+
+/* Store */
+.store_content {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 250px;
+}
+
+
+.decor_photo {
+  width: 701px;
+  height: 1235px;
+  left: 739px;
+  top: 98px;
+}
+
+label {
+  width: 148px;
+  height: 25px;
+  left: 122px;
+  top: 414px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #666666;
+}
+
+select:invalid {
+  color: gray;
+  font-style: italic;
+}
+
+.order_button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+
+  width: 269px;
+  height: 70px;
+  left: 122px;
+  top: 1193px;
+  background: #E0633A;
+  border-radius: 4px;
+}
+
+.p3 {
+  width: 140px;
+  height: 25px;
+  left: 122px;
+  top: 940px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #666666;
+}
+
+.tc {
+  width: 466.04px;
+  height: 50px;
+  left: 156.96px;
+  top: 1107px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #666666;
+}
+
+.tc_highlight {
+  color: #DE6E49;
+}
+
+.rect_1 {
+  width: 235px;
+  height: 53px;
+  left: 122px;
+  top: 451px;
+
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+
+.rect_2 {
+  width: 499px;
+  height: 53px;
+  left: 122px;
+  top: 573px;
+
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+
+.rect_3 {
+  width: 307px;
+  height: 53px;
+  left: 122px;
+  top: 817px;
+
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+
+
+.rect_4 {
+  width: 165px;
+  height: 53px;
+  left: 456px;
+  top: 817px;
+
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  left: 122px;
+  top: 985px;
+  border: 2px solid #666666;
+  accent-color: #DE6E49;
+  ;
+}
+
+.tickbox {
+  width: 24px;
+  height: 24px;
+  left: 123px;
+  top: 1106px;
+
+  border: 2px solid #666666;
+  border-radius: 4px;
+  accent-color: #DE6E49;
+
+
+}
+
+.gap {
+  color: #FFFFFF;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 2rem;
+}
+
+.footer__content {
+  border-top: 1px solid grey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer p {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.p1 {
+  color: black;
+}
+
+.p2 {
+  color: gray;
+}
+
+.icons {
+  display: flex;
+  /*height: 16px;*/
+  /*width: 16px;*/
+  margin-bottom: 20px;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.circle {
+  border: 2px solid lightgrey;
+  background-color: #FFFFFF;
+  height: 20px;
+  border-radius: 50%;
+  width: 20px;
+  background-clip: content-box;
+  padding: 1em;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 992px) {
+  .content {
+    flex-direction: row;
+  }
