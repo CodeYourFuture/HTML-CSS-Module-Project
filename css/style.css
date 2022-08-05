@@ -17,39 +17,93 @@ body {
  */
 
  .navbar{
-    display: inline;
-    align-content:left;
+    /*float: right;*/
     }
     
     .navigation__list {
-      display: flex;
+      display:flex;
+      flex-direction:row;
+      justify-content:right;
       list-style: none;
-       ;
     }
-    
+  
     .navigation__item {
-      padding: 5rem 15px;
+      padding: 2rem 15px;
     }
     .top_main{
-          
+      position:relative;
+     
+    }
+    .text_block{
+      position:absolute;
+      color:rgb(247, 244, 244);
+      top:150px;
+      left:500px;
+      text-align: center;
+    }
+    .b_learn{
+      background-color: rgb(180, 50, 50);
+    }
+    .karma{
+      text-align:center;
     }
     .icones{
-        display:flex;
-        flex-direction:row;
-        justify-content: space-between;
-
+      display:flex;
+      justify-content: center;
+      justify-content: space-around;
     }
+    #computer_icone,#coffee_icone,#fuel-icone{
+      display:flex;
+      flex-direction: column;
+    }
+    .bottom_main{
+    /** background-color: rgb(222, 205, 183);
+      display: grid;
+      grid-template-areas:
+      "img p"
+      "img b";**/
+    } 
+    .bottom_img{
+     /** float:left;**/
+      width:40%;
+      height:40%;
+    }
+    .bottom-text{
+     display:inline;
+     text-align:center;
+    }
+    .b_bottom {
+       align-self:center;
+       color:white;
+       background-color: rgb(236, 138, 138);
+       }
    /** .navigation__link {
       color: var(--grey-dark);
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: none;
     }**/
- svg {
-    max-height: 90px;
+  svg {
+    max-height: 50px;
     width: auto;
+    display: block; 
  }
 .footer{
-    align-items: center;
-    border-top: solid;
+ display:flex;
+ flex-direction:column;
+ align-items:center; 
+}
+.social_media_icones{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around; 
+}
+/** sotor page**/
+.form{
+  float:left;
+  height:100%;
+}
+.p_order{
+  color:white;
+  background-color: rgb(240, 152, 143);
 }
