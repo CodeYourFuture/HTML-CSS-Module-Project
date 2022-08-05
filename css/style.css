@@ -20,9 +20,9 @@ ul{
     padding: 0;
 }
 .topnav {
-    position: fixed;
+    position: relative;
     width: 100%;
-    z-index: 9999;  
+    /* z-index: 9999;   */
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
@@ -83,7 +83,7 @@ overflow: auto;
 
 
 .halfbutton {
-    background-color: #ce1616;
+    background-color: #E0633A;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -122,6 +122,7 @@ a {
     height: 50px;
     width: 50px;
 }
+/* footer for both */
 
 .socials {
     align-items: center;
@@ -136,47 +137,75 @@ a {
     font-size: 0.8rem;
     color: #838994;
 }
-.container{
-    display: flex;
-    justify-content: space-between;
-    column-gap: 1.45rem;
-  }
- 
-.buttonk {
-    background-color: #E0633A;;
-    color: white;
-    align-items: center;
-}
-.container p {
-    margin-top: 14.5rem;
-    font-size: 1.125rem;
-    font-style: italic;
-    display: flex;
-align-items: center;
-text-align: center;
-font-family: 'Roboto';
-}
-.container buttonk {
-    margin-top: 1.25rem;
-    font-size: 1.563rem;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-       
-}
-.kform {
-    margin-top: 70px;
-}
-.container2 {
-    position: absolute;
-width: 301px;
-height: 335px;
-left: 739px;
-top: 98px;
+/* footer for both */
 
-background: url("../img/store-image_by-andrew-neel-unsplash.jpg"); 
+.storefooter {
+    position: relative;
+    bottom: 0;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+/* middle section for index */
+.quote {
+    color: #ce1616;
+}
+.qoute2 {
+    color: #ce1616
+}
+
+ 
+.btn {
+    background-color: #E0633A;
+    color: white;
+}
+.qoute col-6 {
+    text-align: center;
+    align-self: center;
+    
+}
+/* middle section for index */
+
+/* middle section store */
+
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 10% 30% 10% 50%;
+
+}
+
+.LHS{
+grid-column: 2/3;
+/* grid-row: 1/2; */
+
+}
+.LHS h3 {
+    color: #DE6E49;
+grid-column: 2/5;
+}
+/* .lhsForm{
+
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+} */
+
+.RHS{
+grid-column: 4/5;
+    /* background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg'); */
+
+}
+
+.rhsImage{
+
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.endbutton {
+    background-color: #E0633A;
+    color: white;
 }
 /**
  * Add your custom styles below

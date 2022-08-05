@@ -1,62 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-   <header></header> 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <header></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-<nav class="topnav">
-<div class="content">
-    <ul class="link">
-    <li class="active"><a href="index.html">Meet Karma</a></li>
-    <li>How it Works</li>
-    <li><a href="store.html">Store</a></li> 
-    <li>Blog</li>
-    <li>Help</li>
-    <li>Log in</li>
-    </ul>
-    <img class="logo" src="img/karma-logo.svg" alt="karma-logo" width="26"/>
-  </div>
-</nav>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- ANOSH added the following:
+        1. Header tag above nav
+        2. Main tag in the centre, wrapping up the section
+        3. Grid with 2 columns in the centre,
+            LHS for from and RHS for image
+    
+    -->
+    <header>
+      <nav class="topnav">
+        <div class="content">
+          <ul class="link">
+            <li class="active"><a href="index.html">Meet Karma</a></li>
+            <li>How it Works</li>
+            <li><a href="store.html">Store</a></li>
+            <li>Blog</li>
+            <li>Help</li>
+            <li>Log in</li>
+          </ul>
+          <img
+            class="logo"
+            src="img/karma-logo.svg"
+            alt="karma-logo"
+            width="26"
+          />
+        </div>
+      </nav>
+    </header>
+    <!-- middle section -->
 
-<div class="container2">
-    
-    <div class="form">
-        <h1>Order your Karma wifi device today!</h1>
-    </div>
-    <div class="form1">
-    <form class="info">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" required>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" required>
-        <label for="address">Address 1:</label>
-        <input type="text" id="address1" name="address1" required>
-        <label for="address2">Address 2:</label>
-        <input type="text" id="address2" name="address2" required>
-    </form>
-    </div>
-</div>
+    <main>
+      <section>
+          
 
-<section class="never">
-    <div class="socials">
-      <p>Join us on</p>
-    
-    
-    <img src="/img/twitter-icon.svg" alt="twitter icon" width="30" height="30">
-    <img src="/img/facebook-icon.svg" alt="facebook icon" width="30" height="30">
-    <img src="/img/instagram-icon.svg" alt="instagram icon" width="30" height="30">
-  
-  </div>
-  </section>
-  <footer class="inc">
-    <p>@Karma Mobility,Inc</p>
-  </footer>
+        <div class="mainGrid">
+
+
+            <!-- LHS contains the form on the left -->
+            <div class="LHS" >
+                <h3>Order your Karma wifi device today!</h3>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="fname" class="form-label">First Name*</label>
+                          <input type="name" class="form-control" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="Lname" class="form-label">Last Name*</label>
+                          <input type="name" class="form-control" id="lname" required>
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address 1*</label>
+                          <input type="text" class="form-control" id="inputAddress" required>
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-md-8">
+                            <label for="inputcity" class="form-label">City*</label>
+                            <select id="inputcity" class="form-select" required>
+                              <option selected>Select your city...</option>
+                              <option>Sheffield</option>
+                              <option>London</option>
+                              <option>Manchester</option>
+                              <option>Leeds</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputZip" class="form-label">Postcode*</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                          <div class="radios">
+                            <p>Select a colour</p>
+                            <label class="radio-inline">
+                                <input type="radio" name="optradio" checked>Karma orange</label>
+                              
+                              <label class="radio-inline">
+                                <input type="radio" name="optradio">Space Grey</label>
+                              
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault"> 
+                                By placing your order you agree to Karma's <p style="color: #DE6E49">Terms and Conditions. *</p></label>
+                               
+                            
+                            </div>
+       </form>
+       <button class="endbutton">Place my order</button>
+            </div>
+            
+            
+            <!-- RHS contains the form on the right -->
+            <div class="RHS">
+                <img class="rhsImage" src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="">
+
+            </div>
+
+
+        </div>
+      </section>
+    </main>
+
+    <!-- middle section -->
+
+    <footer class="inc storefooter">
+      <section class="never">
+        <div class="socials">
+          <p>Join us on</p>
+
+          <img
+            src="/img/twitter-icon.svg"
+            alt="twitter icon"
+            width="30"
+            height="30"
+          />
+          <img
+            src="/img/facebook-icon.svg"
+            alt="facebook icon"
+            width="30"
+            height="30"
+          />
+          <img
+            src="/img/instagram-icon.svg"
+            alt="instagram icon"
+            width="30"
+            height="30"
+          />
+        </div>
+      </section>
+
+      <p>@Karma Mobility,Inc</p>
+    </footer>
   </body>
-  </html>
+</html>
