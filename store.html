@@ -46,59 +46,70 @@
         </nav>
     </header>
     <main class="store_content">
-        <h1>Order your Karma wifi device today!</h1>
-
-        <form>
-            <div>
-                <label for="first_name">First name*</label>
-                <input type="text" name="firstname" value="" id="first_name" required />
-
-                <label for="last_name">Last name*</label>
-                <input type="text" name="lastname" value="" id="last_name" required />
-            </div>
-            <div>
-                <label for="address1">Address*</label>
-                <input type="text" name="address1" value="" id="address1" required />
-            </div>
-            <div>
-                <label for="address2">Address 2</label>
-                <input type="text" name="address2" value="" id="address2" />
-            </div>
-            <div>
-                <label for="city">City*</label>
-                <select name="city" value="" id="city" placeholder="Select your city..." required>
-                    <option>London</option>
-                    <option>Birmingham</option>
-                    <option>Glasgow</option>
-                    <option>Liverpool</option>
-                    <option>Bristol</option>
-                    <option>Manchester</option>
-                    <option>Sheffield</option>
-                    <option>Leeds</option>
-                </select>
-
-                <label for="postcode">Postcode*</label>
-                <input type="text" name="postcode" value="" id="postcode" required />
-            </div>
-
-
-            <div>
-                <p>Select a colour</p>
-                <input type="radio" name="color" value="orange" id="orange" checked />
-                <label for="orange">Karma orange</label>
-                <input type="radio" name="color" value="grey" id="grey" />
-                <label for="grey">Space grey</label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="t&c" value="ok" id="t&c" checked required />
-                <label for="t&c">By placing your order you agree to Karma's Terms and Conditions.*</label>
-            </div>
-
-            <div>
-                <button type="button">Place my order</button>
-            </div>
-        </form>
+        <div class="left">
+            <h3>Order your Karma wifi device today!</h3>
+            <br>
+            <form>
+                <div>
+                    <label for="first_name">First name*</label><span class="gap">aaaaaaaaaaaaaaaaaa</span><label
+                        for="last_name">Last name*</label>
+                    <br>
+                    <input type="text" class="rect_1" name="firstname" value="" id="first_name" required /><span
+                        class="gap">aa</span> <input type="text" class="rect_1" name="lastname" value="" id="last_name"
+                        required />
+                </div>
+                <br><br>
+                <div>
+                    <label for="address1">Address*</label>
+                    <br>
+                    <input type="text" class="rect_2" name="address1" value="" id="address1" required />
+                </div>
+                <br><br>
+                <div>
+                    <label for="address2">Address 2</label>
+                    <br>
+                    <input type="text" class="rect_2" name="address2" value="" id="address2" />
+                </div>
+                <br><br>
+                <div>
+                    <label for="city">City*</label> <span class="gap">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span><label
+                        for="postcode">Postcode*</label>
+                    <br>
+                    <select name="city" class="rect_3" value="" id="city"required>
+                        <option value="" disabled selected hidden>Select your city...</option>
+                        <option>London</option>
+                        <option>Birmingham</option>
+                        <option>Glasgow</option>
+                        <option>Liverpool</option>
+                        <option>Bristol</option>
+                        <option>Manchester</option>
+                        <option>Sheffield</option>
+                        <option>Leeds</option>
+                    </select><span class="gap">aaa</span>
+                    <input type="text" class="rect_4" name="postcode" value="" id="postcode" required />
+                </div>
+                <br><br><br><br><br>
+                <div>
+                    <p class="p3">Select a colour</p>
+                    <br>
+                    <input type="radio" class="circle" name="color" value="orange" id="orange" checked />
+                    <label for="orange">Karma orange</label>
+                    <span class="gap">aaaaaa</span>
+                    <input type="radio" class="circle" name="color" value="grey" id="grey" />
+                    <label for="grey">Space grey</label>
+                </div>
+                <br><br><br><br><br>
+                <div>
+                    <input type="checkbox" class="tickbox" name="t&c" value="ok" id="t&c" checked required />
+                    <label for="t&c" class="tc">By placing your order you agree to Karma's <span
+                            class="tc_highlight">Terms and Conditions.</span>*</label>
+                </div>
+                <br><br>
+                <div>
+                    <button type="button" class="order_button">Place my order</button>
+                </div>
+            </form>
+        </div>
 
         <div>
             <img class="decor_photo" src="level-2/store-image_by-andrew-neel-unsplash.jpg"
@@ -106,7 +117,6 @@
         </div>
     </main>
 
-    <br><br><br>
     <footer class="footer">
 
         <div class="footer__content">
