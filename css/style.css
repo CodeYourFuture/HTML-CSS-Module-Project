@@ -15,5 +15,171 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/*navbar element.............*/
+.navbar{ 
+    float:right;
+    font-size: 150%;
+     
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin-left: 50px;
+    
+}
+
+.navbar li a{
+    transition: all 0.3s ease 0s;
+    color: black; 
+    text-decoration: none;
+    
+}
+.navbar li a:hover{
+    color:rgb(247, 74, 11)
+}
+.nav-t{
+    text-align: start;
+}
+/*header element.............*/
+.header1{
+    height: 96px;
+    background: rgba(196, 196, 196, 0.1);
+    }
+/*body element.............*/
+body{
+    width: 100%;
+    height: auto;
+    background-color: beige;
+    text-align: center;
+}
 
 
+
+.back{
+    background-image: url(../img/first-background.jpg);
+    background-size: cover;
+    padding:300px 100px;
+    color: #fff;
+}
+.karma{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:55px;;
+}
+.karma1{
+    font-size:35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*button element.............*/
+.button{
+    background-color: orangered;
+    
+}
+.button1{
+background: #E0633A;
+border-radius: 8px;
+}
+/*image element.............*/
+ .main-image{
+    align-content:center;
+    position:flex;
+    margin: auto;
+  
+ }
+
+ /*logo element.............*/
+
+.all-devices{
+    display: flex;
+    margin-left: 30%;
+    align-items: center; 
+    flex-direction: row;
+    justify-self:center;
+    list-style:none;
+
+}
+.device{
+    height: 50%;
+    width: 50%;
+}
+.coffee{
+    height: 50%;
+    width: 50%;
+}
+.gaspomp{
+    height: 50%;
+    width: 50%;
+}
+/*footer element.............*/
+.inst-icon{
+    width:20px;
+    height: 20px;
+}
+.fac-icon{ 
+    width:20px;
+    height: 20px;
+
+}
+.twitter-icon{ 
+    width:20px;
+    height: 20px;
+}
+.footer{
+    justify-items: space-between;
+   
+}
+.par{
+    text-align: center;
+    margin-left: 40px;
+}
+
+.photo2{
+display: flex;
+width:100%;
+/*grid-column: 1/1;*/
+
+}
+.paragragh2{
+display: flex;
+font-size: 42px;
+font-family: 'Roboto';
+font-style: italic;
+color: #434242;
+width: 520px;
+padding-left:250px;
+padding-top:10%;
+
+/*border: solid 2px red;
+grid-column: 2/3;
+background-color: rgb(252,239,235);
+background-size:contain;
+background-repeat: no-repeat;
+padding: 0 50px 0 50px;*/
+
+}
+
+.red2{
+width:100%;
+background: rgba(224, 99, 58, 0.1);
+
+}
+.pic{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2px;
+ /* display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    background-color: rgb(252,239,235);
+    background-size: contain;*/
+}
+.footer1{
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
