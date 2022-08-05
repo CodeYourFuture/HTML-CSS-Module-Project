@@ -51,7 +51,9 @@
       <section class="main-container">
 
         <section class="sub-container">
-          <form class="form-order">
+          <form class="form-container">
+            <!-- <fieldset> -->
+              <!-- <legend>Karma wifi</legend> -->
                 <h1 class="title">Order your Karma wifi device today!</h1>
             
                 <div class="firstName">
@@ -67,18 +69,18 @@
             
                 <div class="address1">
                    <label for="address1">Address *</label>
-                   <input type="text" name="address1"  id="address1" size="40" required/>
+                   <input type="text" name="address1"  id="address1"  size="45"required/>
                 </div>
 
                 <div class="address2">
                    <label for="address2">Address 2</label>
-                   <input type="text" name="address2"  id="address2" size="40"/>
+                   <input type="text" name="address2"  id="address2" size="45"/>
                 </div>
            
                 <div class="city">
                     <label for="city">City</label>
                     <select name="city" id="city" required>
-                        <option value="">**Select your city**</option>
+                        <option value="">Select your city</option>
                         <option value="liverpool">Liverpool</option>
                         <option value="manchester">Manchester</option>
                         <option value="birmingham">Birmingham</option>
@@ -95,8 +97,8 @@
                 <div class="color">
                     <p>Select a color</p>
 
-                    <input type="radio" name="color" id="orange" value="orange" required/>
-                    <label for="orange">Karma orange</label>
+                    <input type="radio" name="color" id="orange" value="orange" checked required/>
+                    <label for="orange">Karma Orange</label>
                     
                     <input type="radio" name="color" id="grey" value="grey" />
                     <label for="grey">Space Grey</label>
@@ -110,13 +112,12 @@
                 </div>
 
                 <button type="submit" name="submit" class="btn">Place my order</button>
+            <!-- </fieldset> -->
            </form>
         </section>
 
         <section class="sub-container">
-          
-            <img class="image" src="level-2/store-image_by-andrew-neel-unsplash.jpg" style="width: 100%"> 
-          
+            <img class="image" src="level-2/store-image_by-andrew-neel-unsplash.jpg" > 
         </section>
 
      </section>

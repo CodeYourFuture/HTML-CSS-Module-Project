@@ -54,20 +54,23 @@ a:hover{
 }
 
 
-/* main section form and image */
+/* parent container for form and image */
 .main-container{ 
     display: flex; 
     width: 100%;
 }
 
+/* two sub containers for form and image */
 .sub-container{
     flex: 50%;
+    border: 1px solid gray; */
 }
 
-.form-order{
+/* form container  */
+.form-container{
     display: grid;
     color: gray;
-    height: 750px;
+    height: 100%;
     padding: 30px;
     grid:
     "t t t t t t"
@@ -78,7 +81,7 @@ a:hover{
     "r r r r . ."
     "ch ch ch ch ch ch"
     "b b . . . .";
-    border: solid;
+    /* border: solid; */
     
 }
 
@@ -113,28 +116,49 @@ a:hover{
 .agreement{
     grid-area: ch;
 }
+
+/* button height */
+
 .btn{
     grid-area: b;
     background-color: orangered;
     color: white;
-    padding: 3px 20px;
+    height: 50px;
+    padding: 10px 40px;
     border-radius: 5px;
     border-style: none;
 }
 
+/* input boxes height */
 
-input[type="text"]{ 
+input[type="text"], #city{ 
     padding: 10px 10px; 
     line-height: 15px; 
     color: gray;
+    margin-left: 10px;
     border-radius: 5px;
 }
 
-#orange, #grey{
+#orange, #grey {
   margin-left: 20px;
+  width: 30px;
+  height: 20px;
 }
 
+#agreement{
+    width: 30px;
+    height: 20px;
+}
+.color > p{
+    font-size: 20px;
+    font-style: bold;
+    margin-left: 20px;
+}
 
+.image{
+    width: 100%;
+    height: 100%;
+}
 /*soical media icons*/
 
 .media-container{ 
