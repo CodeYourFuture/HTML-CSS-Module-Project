@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
+    <title>Store</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/store_page.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -22,9 +22,9 @@
                 <img class="logo" src="img/karma-logo.svg" />
             </div>
             <div class="nav-section-first nav-section-second">
-                <a class="nav-link active" href="#">Meet Karma</a>
+                <a class="nav-link strong" href="#">Meet Karma</a>
                 <a class="nav-link" href="#">How it Works</a>
-                <a class="nav-link" href="#">Store</a>
+                <a class="nav-link active" href="#">Store</a>
                 <a class="nav-link" href="#">Blog</a>
                 <a class="nav-link" href="#">Help</a>
                 <a class="nav-link" href="#">Login</a>
@@ -34,70 +34,70 @@
 
     <!--Main-->
     <main>
-        
+
 
         <section class="section">
-                <div class="section-1">
-                    <h2 class="form-title">Order your Karma wifi device today!</h2>
-                    <form>
-                        <div class="form-container-1">
-                            <div>
-                                <label for="first_name">First Name*</label>
-                                <input type="text" name="first_name" value="" id="first_name"/>
-                            </div>
-                            <div>
-                                <label for="last_name">Last Name*</label>
-                                <input type="text" name="last_name" value="" id="last_name"/>
-                            </div>
+            <div class="section-1">
+                <h2 class="form-title">Order your Karma wifi device today!</h2>
+                <form>
+                    <div class="form-container-1">
+                        <div>
+                            <label for="first_name">First Name*</label>
+                            <input type="text" name="first_name" value="" id="first_name" />
                         </div>
                         <div>
-                            <label for="address1">Address*</label>
-                            <input type="text" name="address1" value="" id="address1"/>
+                            <label for="last_name">Last Name*</label>
+                            <input type="text" name="last_name" value="" id="last_name" />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="address1">Address*</label>
+                        <input type="text" name="address1" value="" id="address1" />
+                    </div>
+                    <div>
+                        <label for="address2">Address 2</label>
+                        <input type="text" name="address2" value="" id="address2" />
+                    </div>
+                    <div class="form-container-2">
+                        <div>
+                            <label for="city">City *</label>
+                            <select id="city" name="city">
+                                <option value="bristol" selected>Bristol</option>
+                                <option value="leeds">Leeds</option>
+                                <option value="liverpool">Liverpool</option>
+                                <option value="londres">Londres</option>
+                                <option value="manchester">Manchester</option>
+                            </select>
                         </div>
                         <div>
-                            <label for="address2">Address 2</label>
-                            <input type="text" name="address2" value="" id="address2"/>
+                            <label for="postcode">Postcode *</label>
+                            <input type="text" name="postcode" value="" id="postcode" />
                         </div>
-                        <div class="form-container-2">
-                            <div>
-                                <label for="city">City *</label>
-                                <select id="city" name="city">
-                                    <option value="bristol" selected>Bristol</option>
-                                    <option value="leeds">Leeds</option>
-                                    <option value="liverpool">Liverpool</option>
-                                    <option value="londres">Londres</option>
-                                    <option value="manchester">Manchester</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="postcode">Postcode</label>
-                                <input type="text" name="postcode" value="" id="postcode"/>
-                            </div>
-                        </div>
-                        <div>
-                            <fieldset>
-                                <legend>Select a colour</legend>
-                                <input class="form-inline" id="orange" type="radio" name="color" value="orange" required />
-                                <label class="form-inline" for="orange">Karma orange</label>
-                                <input class="form-inline" id="grey" type="radio" name="color" value="grey" required />
-                                <label class="form-inline" for="grey">Space Grey</label>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <input class="form-inline" id="terms" type="checkbox" name="terms" value="agree" required />
-                            <label class="form-inline" for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
-                        </div>
-                        <div>
-                            <button class="bottom-btn">Place my order</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="section-2"></div>
-            </section>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Select a colour</legend>
+                            <input class="form-inline" id="orange" type="radio" name="color" value="orange" required />
+                            <label class="form-inline" for="orange">Karma orange</label>
+                            <input class="form-inline" id="grey" type="radio" name="color" value="grey" required />
+                            <label class="form-inline" for="grey">Space Grey</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <input class="form-inline" id="terms" type="checkbox" name="terms" value="agree" required />
+                        <label class="form-inline" for="terms">By placing your order you agree to Karma's <a
+                                href="#">Terms and Conditions.</a> *</label>
+                    </div>
+                    <div>
+                        <button class="btn">Place my order</button>
+                    </div>
+                </form>
+            </div>
+            <div class="section-2"></div>
+        </section>
     </main>
 
-    <br><br><br>
-    <hr>
+    <hr class="hr-order">
 
     <!--Footer with cards-->
     <footer class="footer">
