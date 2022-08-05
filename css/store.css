@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 4rem;
+    align-items: center;
+}
+
+
+ nav {
+    flex: basis 70%;
+   
+ }
+
+ .logo {
+    flex-basis:20%;
+ }
+
+ ul{
+    display:flex;
+}
+
+ul li{
+list-style: none;
+line-height:100%;
+}
+
+ul li a { 
+    text-decoration: none;
+ dispaly: block;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: fff;
+ padding:0 10px;
+}
+
+main{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 53rem;
+    /* border: 1px solid red; */
+
+}
+
+.name{
+    width: 50%;
+    height: 908px;
+    margin-right: auto;
+}
+
+form{
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.name h1{
+    margin: auto;
+    padding: 60px 0;
+    color: #e68d67;
+    width: 20rem;
+    font-size: 29px;
+}
+
+
+.img{
+background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+width: 50%;
+height: 848px;
+
+}
+.a{
+    display: flex;
+}
+
+.city{
+    display: flex;
+}
+
+.address{
+    width: 348px;
+}
+
+.address2{
+    width: 348px;
+}
+
+.Last-name{
+ margin-left: 1rem;
+}
+
+.select-your-city{
+    width: 153px;
+}
+
+
+button{
+    background-color: red;
+    width: 269px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+
+
+.footer{
+    margin-top: 6rem;
+  }
+
+  .footer p {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .flexbox2{
+    display: flex;
+    justify-content: center;
+
+  }
