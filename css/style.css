@@ -126,6 +126,37 @@ h1 {
   margin-top: 1.2rem;
   font-size: 1.2rem;
 }
+
+/* storefeature Section */
+
+.storefeature {
+  width: 95%;
+  margin: 50px auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storefeature__box {
+  min-height: 438px;
+  flex-grow: 1;
+  background-color: rgb(252, 239, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.storefeature h2 {
+  font-size: 2.1rem;
+  color: rgb(67, 66, 66);
+  line-height: 120%;
+}
+
+.storefeature span {
+  color: var(--orange-dark);
+}
+
 /* Footer */
 
 footer img {
