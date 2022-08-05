@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,13 +8,90 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
 
+    <main>
+    <header>
+        <img id="karmalogo" src="img/karma-logo.svg" alt="karma-logo">
+        <nav>
+            <ul>
+                <li>Meet Karma</li>
+                <li> How it works</li>
+                <li onclick="run()" >Store</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+        <section class ="firstOne">
+            <img id="background-image" src="img/first-background.jpg" alt="backgorund-image" style="width: 100%">
+            <article class="article">
+                <p>Introducing Karma</p>
+                <p>Bring WiFi with you, everywhere you go.</p>
+                <span> <button id="submit-btn" name="submit"> Learn More </button> </span> 
+            </article>
+            
+            
+        </section>
+
+        <section id="second-one-headline">
+            <p> Everyone needs a little Karma </p>
+
+            <section id="second-one-description">
+                <article class="secondOneArticle">
+                    <img src="img/icon-devices.svg" alt="icon-devices">
+                    <p> Internet for all devices</p>
+                </article>
+
+                <article class="secondOneArticle">
+                    <img src="img/icon-coffee.svg" alt="icon-coffee">
+                    <p> Boost your productivity</p>
+                </article>
+                <article class="secondOneArticle">
+                    <img src="img/icon-refill.svg" alt="icon-refills">
+                    <p> Pay as You go</p>
+                </article>
+            </section>
+
+        </section>
+        <section class="homepage-feature" >
+            <div class="homepage-feature-img"></div>
+            <div class="homepage-feature-description"> 
+                <p> <span class="quote">&ldquo;</span> Wherever I am, I just dont
+                    <br> worry about my connection
+                    <br> anymore!
+                    <span class="quote"> &ldquo;</span></p>
+                <div><button onclick="run()" id="submit-btn" name="submit">Get Karma Today</button> </div>
+            </div>
+        </section>
+
+        <footer>
+                <p> Join us on</p>
+                <section id="footer">
+                    <img class="footer-icon"src="img/twitter-icon.svg" alt="twitter">
+                    <img class="footer-icon"src="img/facebook-icon.svg" alt="facebook">
+                    <img class="footer-icon"src="img/instagram-icon.svg" alt="instagram">
+                </section>
+            <p> &copy;Karma Mobility Inc.</p>
+        </footer>
+
+    </main>
+     
+    <script> 
+        function run(){
+            document.location.href="store.html";
+        }
+        </script>
 </body>
+
 </html>

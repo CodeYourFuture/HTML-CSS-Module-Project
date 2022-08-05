@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img id="karmalogo" src="img/karma-logo.svg" alt="karma-logo">
+        <nav>
+            <ul>
+                <li>Meet Karma</li>
+                <li>How it works</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="order-form-story">
+        <div class="order-form-description">
+            <h2> Order your Karma wifi
+                <br>
+                device today!
+            </h2>
+            <form id="form">
+                <div class="form-group">
+                    <fieldset>
+                        <label for="firstname"> First name *</label>
+                        <input class="input-control" id="firstame" type="text" minlength="3" maxlength="8" required />
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="lastname"> Last name *</label>
+                        <input class="input-control" id="lastname" type="text" minlength="3" maxlength="8" required />
+                    </fieldset>
+                    <br>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <label for="address1"> Address *</label>
+                        <input class="input-control" id="address1" type="text-number" required />
+                        <br>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <label for="address2"> Address 2 </label>
+                        <input class="input-control" id="address2" type="text-number" />
+                        <br>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <label for="city" class="input-control">City *</label>
+                        <select id="city" name="city" required>
+                            <option value=""> Select Your City...</option>
+                            <option value="london">London</option>
+                            <option value="bradford">Bradford</option>
+                            <option value="chester">Chester</option>
+                            <option value="trafford">Trafford</option>
+                            <option value="ashton">Ashton</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="postcode"> Postcode * </label>
+                        <input class="input-control" id="postcode" type="text-number" name="postcode" required
+                            minlength="7" maxlength="7">
+                    </fieldset>
+                </div>
+
+                <div class="form-group colour ">
+                    <fieldset>
+                        <legend> Select a colour </legend>
+                        <section class="radio-btn-grid">
+
+
+                            <label for="karmaorange" class="form-control1">
+
+                                <input id="karmaorange" type="radio" name="radio-group" checked />
+                                Karma Orange
+                            </label>
+
+                            <label for="spacegrey" class="form-control1">
+                                <input id="spacegrey" type="radio" name="size" />
+
+                                Space Grey
+                            </label>
+                        </section>
+                    </fieldset>
+                </div>
+
+                <div class="form-group agreement">
+
+                    <label class="form-control" for="agreemnet1"><input id="agreemnet1" type="checkbox" name="checkbox"
+                            required /> By placing your order you agree to karma's Terms and
+                        conditions *
+
+                    </label>
+
+                </div>
+
+
+                <div class="button">
+                    <span> <button id="order-btn" name="place-order"> Place my order </button> </span>
+                </div>
+
+            </form>
+        </div>
+        <div class="store-image"> </div>
+    </section>
+
+    <footer>
+        <p> Join us on</p>
+        <section id="footer">
+            <img class="footer-icon" src="img/twitter-icon.svg" alt="twitter">
+            <img class="footer-icon" src="img/facebook-icon.svg" alt="facebook">
+            <img class="footer-icon" src="img/instagram-icon.svg" alt="instagram">
+        </section>
+        <p> &copy;Karma Mobility Inc.</p>
+    </footer>
+
+
+</body>
+
+</html>

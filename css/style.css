@@ -1,9 +1,13 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+*{
+    margin: 0%;
+    padding: 0%;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-size: 62.5%;
 }
 
 /**
@@ -15,5 +19,357 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ /* body */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center; 
+    height: 15vh;
+}
+header> img{
+    width: 40%;
+}
+/* logo style */
+#karmalogo{
+ height: 40%;
+ width: 40%;
+ display: block;
+ 
+}
+/* Navigation styles */
+nav{
+    width: 60%;
+    margin-right: 5%;
+}
+ul{display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-content:space-between;
+    list-style: none;
+     color: black;  
+     gap: 5%; 
+    
+}
+ul>li{
+    font-size: 1rem;
+}
+
+/* body first section */
+.firstOne{
+    height: 70vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5%; 
+}
+.article{
+    position: absolute;
+    color: white;
+    text-align: center; 
+
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* color: white; */
+    /* text-align: center; */
+ }
+.article > p{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing:normal;
+    font-style: normal; 
+
+}
+ /* button style */
+#submit-btn{
+    background-color: #E0633A;
+    color: white;
+    border-radius: 4px;
+    border: #E0633A;
+    font-size: 1rem;
+    padding: 12px 28px;
+ }
+ /* body second section */
+ #second-one-headline{
+    padding-top: 10%;
+    height: 45vh; 
+
+ }
+ #second-one-headline > p{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: normal;
+    
+ } 
+ .secondOneArticle > img{
+    width: 30%;
+    height: 50%;
+ }
+ /* body- second section - article  */
+ #second-one-description{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding-top:2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+ }
+ .secondOneArticle{
+    font-size: 1rem;
+    text-align: center;
+ }
+
+/* homepage-feature section */
+ .homepage-feature{
+    height: 50vh;
+    display: flex; 
+    padding-bottom: 2%;
+    border-bottom: 1px solid lightgrey;
+
+ }
+.homepage-feature-img{
+    width: 40%;
+    background-image: url("../img/homepage-feature.png");
+    background-size:100% 100%;
+   
+  
+ }
+ .homepage-feature-description{  
+    width: 60%;
+    background: rgba(224, 99, 58, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+ }
+ .homepage-feature-description > p{
+    font-size: 25px;
+    color: black;
+    padding-left: 22px;
+ }
+.quote{
+  color: #E0633A;
+  font-size: 2.2em;
+  position: absolute;
+  margin-top: -16px;
+}
+.quote:first-of-type {
+  margin-left: -22px;
+}
+
+ /* store.html - order-form */
+ .order-form-story {
+    height: 80vh;
+    display: flex;
+    margin: 0 10% 2% 10%;
+    border-bottom: 1px solid lightgrey;
+    
+ }
+ .order-form-description{
+    height: 80vh;
+    flex-basis: 40%;
+ }
+ .store-image{
+    background-image: url("../img/store-image_by-andrew-neel-unsplash.jpg");
+    background-size:100% 100%;
+    flex-basis: 60%;
+    height: 80vh;
+ }
+ .order-form-description> h2{
+    text-align: left; 
+    color:  #DE6E49;
+    margin: 0 10% 0 10%;
+    font-size: 2rem;
+ }
+ #form{
+  margin: 5% 10% 0 10%;
+ }
+ .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+   
+  }
+  .input-control{
+    margin-top: 2%;
+    display: block;
+  }
+  fieldset{
+    border: none;
+  }
+  #address1, #address2{
+    width: 250px;
+  }
+  #city{
+    width: 100px;
+  }
+  #postcode{
+    width: 80px;
+  }
+.colour{
+
+    margin-top: 5%;
+    width: auto;
+  }
+#spacegrey{
+    margin-left: 12px;
+}
 
 
+ .agreement{
+    margin: 10% 0 10% 0;
+ }
+ 
+  #order-btn{
+    margin-top: 10%;
+    background-color: #E0633A;
+    color: white;
+    border-radius: 4px;
+    border: #E0633A;
+    font-size: 1rem;
+    padding: 12px 28px;
+
+  }
+
+
+
+
+
+
+
+
+/* footer */
+.footer-icon{
+    height: 2%;
+    width: 2%;
+    display: block;
+    margin-top: 2%;
+    
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+
+}
+footer,P{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+/* custom radio button */
+:root {
+  --form-control-color: #E0633A;;
+}
+.radio-btn-grid{
+  display: grid;
+  grid-template-areas: "k s";
+}
+
+.form-control1 {
+  font-family: system-ui, sans-serif;
+  font-size: 10px;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1em;
+}
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: #E0633A;;
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/* custom style for checkbox */
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 10px;
+
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5em;
+}
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: #E0633A;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+  
