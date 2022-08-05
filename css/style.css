@@ -57,7 +57,7 @@ h6 {
     width: 50px;
 }
 
-#learn_more {
+.buttons {
     background-color: rgb(255, 115, 0);
     color:white;
     border: none;
@@ -116,4 +116,82 @@ h6 {
 
 .icons {
     margin-right: 10px;
+}
+
+.mark {
+    color: orange;
+}
+
+#features_1 {
+margin-top: 90px;
+margin-bottom: 90px;
+display: flex;
+width: 100%;
+}
+
+.features_boxes {
+    background-color: rgb(255, 243, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get_karma {
+    width: 175px;
+}
+
+.quote {
+    padding: 70px;
+    width: 100%;
+}
+
+.wherever {
+    color: gray;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#store {
+   text-decoration: none;
+   color: black;
+}
+
+.orange_type {
+    color: rgb(255, 115, 0);
+    text-align: left;
+    
+}
+
+.que {
+    display: flex;
+}
+
+.section_1 {
+    padding: 0 20px;
+    margin-right: 100px;
+}
+
+.margin_box {
+    margin-bottom: 30px;
+}
+
+.titles {
+    font-weight: bold;
+}
+
+.left_margin {
+    margin-left: 30px;
+}
+
+.main_design {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button_align {
+    display: flex;
+    justify-content: center;
 }
