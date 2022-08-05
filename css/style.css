@@ -262,6 +262,29 @@ footer {
 div > label, input {
     display: block;
 }
+input, select {
+    width: 250px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.row3 > input, .row4 > input {
+    width: 579.10px;
+    height: 40px;
+}
+
+select, option {
+    border-radius: 5px;
+    width: 280px;
+    height: 46px;
+}
+
+.row7 > input, .row7 > label, .row8 > input, .row8 > label {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding-right: 30px;
+}
 .order {
     height: 100%;
     display: grid;
