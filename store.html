@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+    <header id="head">
+        <img id="karma_logo" src="img\karma-logo.svg"></img>
+        <nav>
+            <ul>
+                <li>Meet Karma</li>
+                <li>How It Works</li>
+                <li>Store</li>
+                <li>Blog</li>
+                <li>Help</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_design">
+        <section class="section_1">
+            <h1 class="orange_type">Order your Karma wifi device today</h1>
+            <form>
+                <div class="que margin_box">
+                    <div >
+                        <label for="fname" class="titles">First name *</label><br>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="left_margin">
+                        <label for="lname" class="titles">Last name *</label><br>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </div>
+                <div class="margin_box">
+                    <label for="adress" class="titles">Adress *</label><br>
+                    <input type="text" name="adress" id="adress">
+                </div>
+                <div class="margin_box">
+                    <label for="adress2" class="titles">Adress 2</label><br>
+                    <input type="text" name="adress2" id="adress2">
+                </div>
+                <div class="que margin_box">
+                    <div>
+                        <label for="city" class="titles">City *</label><br>
+                        <select name="city" id="city" autofocus>
+                            <option selected disabled hidden id="default_value">Choose your city</option>
+                        </select>
+                    </div>
+                    <div class="left_margin">
+                        <label for="postcode" class="titles">Postcode *</label><br>
+                        <input type="text" name="postcode" id="postcode">
+                    </div>   
+                </div> 
+                <div class="margin_box">
+                    <p class="titles">Select a colour</p>
+                    <input id="karmaorange" type="radio" value="karma" name="pick">
+                    <label for="karmaOrange">Karma Orange</label>
+                    <input id="spacegrey" type="radio" value="space" name="pick">
+                    <label for="spacegrey">Space Grey</label>
+                </div>
+                <div class="que margin_box">
+                    <input type="checkbox">
+                    <p>By placing your order you agree to Karma's Terms and Conditions. *</p>
+                </div> 
+                <div class="button_align">
+                    <button class="get_karma buttons">
+                        Place my order
+                    </button> 
+                </div>
+                           
+            </form>
+        </section>
+        <section>
+            <img src="store-image_by-andrew-neel-unsplash.jpg">
+        </section>
+    </main>
+    <footer>
+        <h6>Join us on</h6>
+        <div id="footer_icons">
+            <img class="icons" src="img\facebook-icon.svg" id="facebook_icon" alt="">
+            <img class="icons" src="img\instagram-icon.svg" id="instagram_icon" alt="">
+            <img class="icons" src="img\twitter-icon.svg" id="twitter_icon" alt="">
+        </div>
+        <h6>@ Karma mobility inc.</h6>
+    </footer>
+</body>
+</html>

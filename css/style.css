@@ -4,16 +4,194 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ul {
+    list-style: none;
+    display: flex;
+}
 
+li {
+    margin-right: 20px;
+}
 
+article {
+    margin: 50px;
+}
+
+#head {
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+h1,
+h3 {
+    color: rgb(248, 248, 248);
+    font-weight: 200;
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+#main_page {
+    background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    height:600px;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#karma_logo {
+    width: 50px;
+}
+
+.buttons {
+    background-color: rgb(255, 115, 0);
+    color:white;
+    border: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    padding: 2px;
+    font-family:'Roboto';
+}
+
+#features_part {
+    margin-top: 50px;
+}
+
+#features {
+    display:flex;
+}
+
+#title_features {
+    color:rgb(87, 87, 87) ;
+}
+
+#devices {
+    width: 100px;
+}
+
+#coffee {
+    width:100px;
+}
+
+#refill {
+    width:100px;
+}
+
+#facebook_icon {
+    width:20px;
+}
+#instagram_icon {
+    width: 20px;
+}
+#twitter_icon {
+    width: 20px;
+}
+
+.box {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer_icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    margin-right: 10px;
+}
+
+.mark {
+    color: orange;
+}
+
+#features_1 {
+margin-top: 90px;
+margin-bottom: 90px;
+display: flex;
+width: 100%;
+}
+
+.features_boxes {
+    background-color: rgb(255, 243, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get_karma {
+    width: 175px;
+}
+
+.quote {
+    padding: 70px;
+    width: 100%;
+}
+
+.wherever {
+    color: gray;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#store {
+   text-decoration: none;
+   color: black;
+}
+
+.orange_type {
+    color: rgb(255, 115, 0);
+    text-align: left;
+    
+}
+
+.que {
+    display: flex;
+}
+
+.section_1 {
+    padding: 0 20px;
+    margin-right: 100px;
+}
+
+.margin_box {
+    margin-bottom: 30px;
+}
+
+.titles {
+    font-weight: bold;
+}
+
+.left_margin {
+    margin-left: 30px;
+}
+
+.main_design {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button_align {
+    display: flex;
+    justify-content: center;
+}
