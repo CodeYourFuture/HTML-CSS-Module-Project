@@ -39,7 +39,7 @@ ul {
 	position: fixed;
 	width: 100%;
 	border-bottom: 1px solid #ddd;
-	z-index: 9999;
+	/* z-index: 9999; */
 }
 .top-nav > .content {
 	height: 4.375rem;
@@ -54,9 +54,13 @@ ul {
 	margin-top: 1.7rem;
 }
 
-.top-nav a {
+a {
 	text-decoration: none;
 	color: #333;
+}
+
+.store-nav {
+	color: #e65423;
 }
 
 .top-nav .links li {
@@ -148,6 +152,104 @@ ul {
 /**
  * The quote
  */
+
+.col-6 {
+	background-color: #f4e2dc;
+}
+
+.quotes-text {
+	margin-top: 110px;
+	font-size: 20px;
+}
+
+.quotation {
+	color: #e65423;
+}
+
+.btn {
+	background-color: #d9400e;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.store-redirect {
+	color: #fff;
+}
+
+/**
+ * store section
+ */
+
+.store-img {
+	margin-top: 50px;
+}
+
+.store-h1 {
+	margin-top: 120px;
+	color: #de6e49;
+}
+
+.g-3 {
+	margin-top: 30px;
+}
+
+.form-label1,
+.form-label2 {
+	position: relative;
+	right: 110px;
+}
+
+.form-label3,
+.form-label4 {
+	position: relative;
+	right: 280px;
+}
+
+.form-label5 {
+	position: relative;
+	right: 190px;
+}
+
+.form-label6 {
+	position: relative;
+	right: 60px;
+}
+
+.store-para {
+	margin-top: 30px;
+	position: relative;
+	right: 270px;
+}
+
+.form-check-label {
+	position: relative;
+	right: 70px;
+	margin-top: 18px;
+}
+
+.form-check-input {
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.store-span {
+	text-decoration: underline;
+	color: #e65423;
+}
+
+.store-btn {
+	background-color: #e65423;
+	color: #fff;
+	position: relative;
+	right: 240px;
+}
+
+.store-svg {
+	position: relative;
+	right: 85px;
+	margin-bottom: 5px;
+	width: 15px;
+}
 
 /**
  * Footer

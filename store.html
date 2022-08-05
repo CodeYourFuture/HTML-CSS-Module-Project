@@ -16,6 +16,12 @@
 			href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -29,7 +35,7 @@
 				<ul class="links">
 					<li class="active"><a href="index.html">Meet Karma</a></li>
 					<li>How it Works</li>
-					<li><a href="store.html">Store</a></li>
+					<li><a class="store-nav" href="store.html">Store</a></li>
 					<li>Blog</li>
 					<li>Help</li>
 					<li>Login</li>
@@ -42,6 +48,94 @@
 				/>
 			</div>
 		</nav>
+		<section>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col">
+						<h2 class="store-h1">Order your Karma wifi<br />device today!</h2>
+						<form class="row g-3">
+							<div class="col-md-6">
+								<label for="firstname" class="form-label1">First name*</label>
+								<input type="text" class="form-control" id="firstname" />
+							</div>
+							<div class="col-md-6">
+								<label for="lastname" class="form-label2">Last name*</label>
+								<input type="text" class="form-control" id="lastname" />
+							</div>
+							<div class="col-12">
+								<label for="inputAddress" class="form-label3">Address*</label>
+								<input
+									type="text"
+									class="form-control"
+									id="inputAddress"
+									placeholder="1234 Main St"
+								/>
+							</div>
+							<div class="col-12">
+								<label for="inputAddress2" class="form-label4">Address 2</label>
+								<input
+									type="text"
+									class="form-control"
+									id="inputAddress2"
+									placeholder="Apartment, studio, or floor"
+								/>
+							</div>
+							<div class="col-md-8">
+								<label for="inputState" class="form-label5">City*</label>
+								<select id="inputState" class="form-select">
+									<option selected>Select your city...</option>
+									<option>London</option>
+									<option>Sheffield</option>
+									<option>Leeds</option>
+									<option>Manchester</option>
+									<option>Liverpool</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<label for="postcode" class="form-label6">Postcode*</label>
+								<input type="text" class="form-control" id="postcode" />
+							</div>
+							<div class="col-12">
+								<div class="form-check">
+									<input class="form-check-input" id="gridCheck" />
+									<svg
+										class="store-svg"
+										width="17"
+										height="17"
+										viewBox="0 0 17 17"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M15.3624 0.500781L15.3622 0.50079C15.018 0.515038 14.7397 0.712028 14.5632 0.962878L5.80398 13.1336L2.44018 8.45967C2.3505 8.33105 2.23519 8.21634 2.09472 8.13198C1.95137 8.04589 1.78691 7.99482 1.61264 7.99235C1.43827 7.98989 1.27215 8.03635 1.12618 8.11916C0.98155 8.2012 0.862485 8.31531 0.769755 8.44416C0.67702 8.57301 0.609113 8.71844 0.564752 8.86942C0.520316 9.02065 0.498888 9.17939 0.500044 9.33735C0.501201 9.49529 0.52495 9.6537 0.571762 9.80419C0.617958 9.9527 0.687269 10.0955 0.780954 10.2216L4.97435 16.0482L4.97441 16.0483C5.15845 16.3039 5.44947 16.5 5.80398 16.5C6.15848 16.5 6.4495 16.3039 6.63355 16.0483L6.63361 16.0482L16.2225 2.72471C16.3634 2.53308 16.4489 2.30339 16.4829 2.07016C16.5171 1.83492 16.5001 1.58974 16.4309 1.36263C16.3621 1.13681 16.239 0.920931 16.057 0.758695C15.8718 0.593603 15.6297 0.48983 15.3624 0.500781Z"
+											fill="#DE6E49"
+											stroke="#DE6E49"
+										/>
+									</svg>
+									<label class="form-check-label" for="gridCheck">
+										By placing your order you agree to Karma's
+										<span class="store-span">Terms and Conditions.</span>*
+									</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn store-btn">
+									Place my order
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="col">
+						<img
+							class="store-img"
+							src="/level-2/store-image_by-andrew-neel-unsplash.jpg"
+							alt="Store Image"
+							width="100%"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- Create your section here -->
 		<footer class="social">
 			<div class="content">
