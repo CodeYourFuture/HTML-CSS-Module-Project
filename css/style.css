@@ -1,9 +1,35 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 0.5em;
+  border-color: transparent;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.orange-color {
+  background-color: var(--orange-dark);
+  color: white;
 }
 
 /**
@@ -16,4 +42,176 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* General properties*/
+ul {
+  list-style-type: none;
+}
 
+/* Navigation bar */
+
+.navbar .container {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+}
+
+.logo {
+  width: 3rem;
+  margin-left: 4rem;
+}
+
+.navbar ul {
+  display: flex;
+  margin-right: 5rem;
+  /* flex-grow: 1 2; */
+}
+
+.navbar ul li {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+}
+
+/* Header Hero Section */
+
+header .container {
+  height: 75vh;
+  width: 95%;
+  margin: 20px auto;
+  background-image: url(/img/first-background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container h2,
+header .container button {
+  margin: 1.3rem;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+}
+/* Section */
+
+.boxes .container {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxes h2 {
+  font-size: 2.3rem;
+  font-weight: lighter;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  text-align: center;
+}
+
+.boxes img {
+  width: 12rem;
+}
+
+.boxes p {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+/* storefeature Section */
+
+.storefeature {
+  width: 95%;
+  margin: 50px auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storefeature__box {
+  min-height: 438px;
+  flex-grow: 1;
+  background-color: rgb(252, 239, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.storefeature h2 {
+  font-size: 2.1rem;
+  font-style: italic;
+  color: rgb(67, 66, 66);
+  line-height: 120%;
+}
+
+.storefeature span {
+  font-size: 2.7rem;
+  color: var(--orange-dark);
+}
+
+/* Store Page */
+
+.storepage .container {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.storepage .storeform {
+  border: 1px solid black;
+  flex-grow: 1;
+}
+.storepage img {
+  width: 40%;
+}
+
+.storeform label {
+  display: block;
+}
+
+/* Footer */
+
+footer img {
+  width: 1.2rem;
+}
+
+header h1,
+header h2 {
+  color: white;
+}
+
+footer .container {
+  margin: 20px auto;
+  width: 95%;
+  border-top: 2px solid var(--grey-light);
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .social-media li img {
+  box-sizing: content-box;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 100px;
+}

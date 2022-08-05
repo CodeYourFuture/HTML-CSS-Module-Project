@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Karma Store</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <img
+          class="logo"
+          src="/img/karma-logo.svg"
+          alt="Karma corportation logo"
+        />
+        <ul class="nav">
+          <li>Meet Karma</li>
+          <li>How it Works</li>
+          <li>Store</li>
+          <li>Blog</li>
+          <li>Help</li>
+          <li>Login</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="storepage">
+      <div class="container">
+        <div class="storeform">
+          <h2>Order your Karma wifi device today!</h2>
+          <form>
+            <div class="name">
+              <label for="firstname">First Name *</label>
+              <input type="text" name="firstname" id="firstname" />
+              <label for="lasttname">Last Name *</label>
+              <input type="text" name="lastname" id="lastname" />
+            </div>
+            <label for="address">Adress *</label>
+            <input type="text" name="address" id="address" />
+            <label for="address2">Adress 2</label>
+            <input type="text" name="address2" id="address2" />
+            <label for="city">City *</label>
+            <select name="city" id="city">
+              <option value="London">London</option>
+              <option value="Manchester">Manchester</option>
+              <option value="Leeds">Leeds</option>
+              <option value="Birmingham">Birmingham</option>
+            </select>
+            <label for="postcode">Post code *</label>
+            <input type="text" name="postcode" id="postcode" />
+            <fieldset>
+              <legend>Select a color</legend>
+
+              <input id="orange" type="radio" name="color" value="orange" />
+              <label for="orange">Karma orange</label>
+
+              <input id="grey" type="radio" name="color" value="grey" />
+              <label for="grey">Space Grey</label>
+            </fieldset>
+
+            <input id="agreement" type="checkbox" name="agreement" />
+            <label for="agreement"
+              >By placing your order you agree to Karma terms and conditions.
+              *</label
+            >
+            <button class="btn orange-color">Place my order</button>
+          </form>
+        </div>
+        <img src="./img/store-image.jpg" alt="Karma store image" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Join us on</p>
+        <ul class="social-media">
+          <li><img src="img/twitter-icon.svg" alt="Join us on twiter" /></li>
+          <li><img src="img/facebook-icon.svg" alt="Join us on facebook" /></li>
+          <li>
+            <img src="img/instagram-icon.svg" alt="Join us on instagram" />
+          </li>
+        </ul>
+        <p>© Karma Mobility, Inc.</p>
+      </div>
+    </footer>
+  </body>
+</html>
