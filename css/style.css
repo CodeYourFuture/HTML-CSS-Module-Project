@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 /**
@@ -16,4 +18,245 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* general */ 
 
+ * {
+margin: 0 auto;
+ }
+
+/* header */
+ 
+.logo img {
+    width: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* nav within header */
+
+ul {
+    padding: 15px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: darkgray;
+
+}
+
+li a:hover {
+    text-decoration: none;
+    color: coral;
+
+}
+
+#meet-karma {
+    color:darkslategrey;
+    font-weight:bold;
+}
+
+/* hero section */ 
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background-image: url("/img/first-background.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    width: 264px;
+    height: 70px;
+    padding: 20px;
+    background-color: #E0633A;
+    color: white;
+    border-radius: 3px;
+    font-size: 24px;
+    border:none;
+    
+}
+
+
+/* main section */ 
+
+.icon_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.icon_box {
+    width: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img.icon {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+/* f00ter */
+
+hr {
+    width: 80%;
+    margin-top: 25px;
+}
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+/* f00ter icon container  */
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* individual icons */
+.footer_icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+
+/* font styles  */
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 62px;
+    font-weight:lighter;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    font-weight:lighter;
+    margin-bottom: 60px;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: initial;
+    padding-top: 30px;
+    font-family: 'Roboto';
+}
+
+p {
+    color: darkgray;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+
+h5 {
+    font-weight: initial;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+
+.quote-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.quote-image  {
+    width: 599px;
+    height: 439px;
+    background-image: url('/img/homepage-feature.png');
+    background-size: 100%;
+    object-fit: fill;
+    margin: 0;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 841px;
+    height: 439px;
+    background-color: rgb(224, 99, 58, 0.1);
+    margin: 0;
+}
+
+
+.quote-text {
+    font-size: 42px;
+    font-style: italic;
+    text-align: center;
+    background-color: none;
+    margin: 0;
+    line-height: 49.22px;
+    color: #434242;
+    padding: 0px 120px 0px 120px;
+
+}
+
+span {
+    color: #E0633A;
+    font-size: 56px;
+
+}
+
+.get-karma-btn {
+    margin-top: 50px;
+    width: 264px;
+    height: 70px;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+
+}

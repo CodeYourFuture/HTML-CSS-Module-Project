@@ -1,0 +1,280 @@
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+ /* general */ 
+
+ * {
+margin: 0 auto;
+ }
+
+/* header */
+ 
+.logo img {
+    width: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* nav within header */
+
+ul {
+    padding: 15px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: darkgray;
+
+}
+
+li a:hover {
+    text-decoration: none;
+    color: coral;
+
+}
+
+button {
+    width: 264px;
+    height: 70px;
+    padding: 20px;
+    background-color: #E0633A;
+    color: white;
+    border-radius: 3px;
+    font-size: 24px;
+    border:none;
+    margin-right: 180px;   
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 12;
+    grid-template-areas: "h1 h1 h1"
+                         "firstnamelabel lastnamelabel lastnamelabel"
+                         "firstnameinput lastnameinput lastnameinput"
+                        "addresslabel addresslabel addresslabel"
+                        "addressinput addressinput addressinput" 
+                        "address2label address2label address2label"
+                        "address2input address2input address2input"
+                       "citylabel citylabel postcodelabel"
+                        "cityinput cityinput postcodeinput"
+                        "colourinput colourinput colourinput"
+                        "termsandconditions termsandconditions termsandconditions"
+                        "submitbutton submitbutton submitbutton";
+    padding: 100px;
+    gap: 20px;
+
+}
+
+
+input {
+    height: 40px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+.firstnamelabel {
+    grid-area: firstnamelabel;
+    margin: 0px;
+}
+
+.firstnameinput {
+    grid-area: firstnameinput;
+}
+
+
+.lastnamelabel {
+    grid-area: lastnamelabel;
+    margin: 0px;
+}
+
+.lastnameinput {
+    grid-area: lastnameinput;
+}
+
+.addresslabel {
+    grid-area: addresslabel;
+    margin: 0px;
+}
+.addressinput {
+    grid-area: addressinput;
+}
+
+.address2label {
+    grid-area: address2label;
+    margin: 0px;
+}
+
+.address2input {
+    grid-area: address2input;
+}
+
+.postcodeinput {
+    grid-area: postcodeinput;
+}
+
+.postcodelabel {
+    grid-area: postcodelabel;
+    margin: 0px;
+}
+
+.cityinput {
+    grid-area: cityinput;
+}
+
+.citylabel {
+    grid-area: citylabel;
+    margin: 0px;
+}
+
+.termsandconditions {
+    grid-area: termsandconditions;
+    font-size: 15px;
+    width: 100%;
+    display: inline;
+    justify-self: center;
+    padding: 10px;
+}
+
+.termsandconditions label {
+    position: relative;
+    bottom: 13px;
+    line-height: 1.5rem;
+}
+
+span {
+    color:#E0633A;
+    text-decoration: underline;
+} 
+
+.colourinput {
+    grid-area: colourinput;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.submitbutton {
+    grid-area: submitbutton;
+}
+
+fieldset {
+    border: none;
+}
+
+
+
+h1 {
+    grid-area: h1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    color: #DE6E49;
+}
+
+fieldset label {
+    margin-left: 15px;
+}
+
+legend {
+    margin: 0px;
+}
+
+
+aside {
+width: 80%;
+height: auto;
+background-image: url('/img/store-image_by-andrew-neel-unsplash.jpeg');
+object-fit:contain;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+ 
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* f00ter */
+
+hr {
+    width: 80%;
+    margin-top: 0px;
+}
+
+footer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+/* f00ter icon container  */
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* individual icons */
+.footer_icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
