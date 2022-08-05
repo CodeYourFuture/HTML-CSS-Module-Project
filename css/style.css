@@ -17,34 +17,35 @@ body {
  */
 /*navbar element.............*/
 .navbar{ 
-     flex-direction: row;
-     font-weight:500;
-     font-size: 150%;
-     list-style: none;
+    float:right;
+    font-size: 150%;
+     
 }
 
 .navbar li{
     display: inline-block;
     padding: 0px 20px;
-    margin-right: 10px;
+    margin-left: 50px;
     
 }
 
 .navbar li a{
     transition: all 0.3s ease 0s;
     color: black; 
+    text-decoration: none;
     
 }
 .navbar li a:hover{
     color:rgb(247, 74, 11)
 }
-/*header element.............*/
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px 10px;
+.nav-t{
+    text-align: start;
 }
+/*header element.............*/
+.header1{
+    height: 96px;
+    background: rgba(196, 196, 196, 0.1);
+    }
 /*body element.............*/
 body{
     width: 100%;
@@ -59,7 +60,6 @@ body{
     background-image: url(../img/first-background.jpg);
     background-size: cover;
     padding:300px 100px;
-    margin: 100px;
     color: #fff;
 }
 .karma{
@@ -73,14 +73,16 @@ body{
 /*button element.............*/
 .button{
     background-color: orangered;
+    
+}
+.button1{
+background: #E0633A;
+border-radius: 8px;
 }
 /*image element.............*/
  .main-image{
-    display: flex;
-    justify-content: center;
     align-content:center;
-    
-    position: relative;
+    position:flex;
     margin: auto;
   
  }
@@ -129,6 +131,51 @@ body{
 .par{
     text-align: center;
     margin-left: 40px;
+}
+
+.photo2{
+display: flex;
+width:100%;
+/*grid-column: 1/1;*/
+
+}
+.paragragh2{
+display: flex;
+font-size: 42px;
+font-family: 'Roboto';
+font-style: italic;
+color: #434242;
+width: 520px;
+padding-left:250px;
+padding-top:10%;
+
+/*border: solid 2px red;
+grid-column: 2/3;
+background-color: rgb(252,239,235);
+background-size:contain;
+background-repeat: no-repeat;
+padding: 0 50px 0 50px;*/
+
+}
+
+.red2{
+width:100%;
+background: rgba(224, 99, 58, 0.1);
+
+}
+.pic{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2px;px;
+ /* display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    background-color: rgb(252,239,235);
+    background-size: contain;*/
 }
 .footer1{
     list-style: none;

@@ -1,0 +1,187 @@
+  
+/*header element.............*/
+.header1{
+    display: flex;
+    height: 96px;
+    background: rgba(196, 196, 196, 0.1);
+}
+
+
+/*nav elements..................................................*/
+.navbar{ 
+    display: flex;
+    float:right;
+    font-size: 70%;
+}
+
+.navbar li{
+   display: inline-block;
+   padding: 0px 20px;
+   margin-left: 50px;
+   
+}
+
+.navbar li a{
+   transition: all 0.3s ease 0s;
+   color: black; 
+   text-decoration: none;
+   
+   
+}
+.navbar li a:hover{
+   color:rgb(247, 74, 11);
+}
+
+.image-logo{
+   flex-basis: 5%;
+
+}
+
+ 
+
+/* body elements........................................................*/
+.st-paragragh{
+font-family: 'Roboto';
+font-style: normal;
+font-weight:normal;
+font-size: 25px;
+line-height: 59px;
+color: #DE6E49;
+
+}
+/*........grid elements.....................................................................*/
+
+.container{
+    grid-template-columns:1fr 1fr; 
+    grid-template-rows:0.3fr 1fr 0.5fr; 
+    grid-template-areas: 
+    "nav nav nav nav"
+    "f f im im"
+    "foo foo foo foo"
+    ;
+}
+
+.nav{
+    grid-area: nav;
+    border:2PX solid rgb(55, 24, 228);
+
+}
+
+.form{
+    display: flex;
+        margin: 205px;
+        float: left;
+        
+        }
+        
+ .f-left {
+          width: 50%;
+          float: right;
+          height:450px;
+        }
+
+.column2{
+        background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
+        background-size:cover;
+        display: flex;
+        justify-content: right;
+         width: 50%;
+        height: 450px;
+        
+      }
+    
+    
+
+.im{
+    display: flex;
+    justify-content: right;
+    background-size: cover;
+    width: 50%;
+
+}
+/* adresss form............................ */
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    width: 235px;
+    left: 122px;
+    top: 414px;
+    border-radius: 4px;
+  }
+  .address2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    width: 470px;
+    border-radius: 4px;
+  }
+  #city {
+    display: flex;
+  }
+  .name1{
+    display: flex;
+  }
+/* .column1{
+    display: flex;
+    float: left;
+    width: 50%;
+  }
+  */
+
+  /*grid picture element........................................................*/
+/* .column2{
+    float: right;
+    display: block;
+    height: 100px;
+
+} */
+
+/* #address{
+    display:inline-block;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer element......................................*/
+
+.footer1{
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.inst-icon{
+    width:20px;
+    height: 20px;
+}
+.fac-icon{ 
+    width:20px;
+    height: 20px;
+
+}
+.twitter-icon{ 
+    width:20px;
+    height: 20px;
+}
+.footer{
+    justify-items: space-between;
+   
+}
+.par{
+    text-align: center;
+    margin-left: 40px;
+}
