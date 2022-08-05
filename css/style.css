@@ -55,6 +55,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(249, 249, 249);
 }
 
 .logo {
@@ -149,12 +150,35 @@ h1 {
 
 .storefeature h2 {
   font-size: 2.1rem;
+  font-style: italic;
   color: rgb(67, 66, 66);
   line-height: 120%;
 }
 
 .storefeature span {
+  font-size: 2.7rem;
   color: var(--orange-dark);
+}
+
+/* Store Page */
+
+.storepage .container {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.storepage .storeform {
+  border: 1px solid black;
+  flex-grow: 1;
+}
+.storepage img {
+  width: 40%;
+}
+
+.storeform label {
+  display: block;
 }
 
 /* Footer */
@@ -169,7 +193,6 @@ header h2 {
 }
 
 footer .container {
-  /* width:95% */
   margin: 20px auto;
   width: 95%;
   border-top: 2px solid var(--grey-light);
@@ -177,7 +200,6 @@ footer .container {
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -187,10 +209,6 @@ footer .social-media {
 }
 
 footer .social-media li img {
-  /* margin: 4rem;
-  padding: 5rem; */
-
-  /* padding: 0.7rem; */
   box-sizing: content-box;
   margin: 0.5rem;
   padding: 0.5rem;
