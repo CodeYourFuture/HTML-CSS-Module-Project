@@ -31,6 +31,7 @@ ul{
 }
 .topnav .logo{
 height: 4.375rem;
+margin-left: 10%;
 }
 .topnav .link{
     float: right;
@@ -153,21 +154,20 @@ a {
 .qoute2 {
     color: #ce1616
 }
+.bigcontainer qoute col-6 {
+background-color: #DE6E49;
 
- 
+}
 .btn {
     background-color: #E0633A;
     color: white;
 }
-.qoute col-6 {
-    text-align: center;
-    align-self: center;
+
+.firstGrid {
+    display: grid;
+    grid-column: 10% 30% 10% 50%;
     
 }
-/* middle section for index */
-
-/* middle section store */
-
 
 .mainGrid{
     display: grid;
@@ -182,19 +182,26 @@ grid-column: 2/3;
 }
 .LHS h3 {
     color: #DE6E49;
-grid-column: 2/5;
+margin-top: 10rem;
 }
-/* .lhsForm{
+.radios {
+    margin-top: 2.5rem;
+}
+.form-check {
+    margin-top: 5.5rem;
+}
+.qouteall {
+    grid-column: 2/5; 
+    margin-top: 10rem; 
+    justify-items: center;
+    margin-left: 7.5rem;
+    font-weight: 400;
+    justify-content: stretch;
+}
 
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-} */
-
-.RHS{
+.RHS {
 grid-column: 4/5;
-    /* background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg'); */
-
+    
 }
 
 .rhsImage{
@@ -206,7 +213,9 @@ grid-column: 4/5;
 .endbutton {
     background-color: #E0633A;
     color: white;
+    padding: 12px 25px;
 }
+
 /**
  * Add your custom styles below
  * 
