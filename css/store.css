@@ -1,0 +1,295 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: rgb(223, 219, 219); */
+}
+
+.imageLeft {
+  grid-column: 1/2;
+  /* background-image: url('/img/karma-logo.svg'); */
+}
+
+.karmaIcon {
+  width: 35px;
+  height: 35px;
+  margin-left: 150px;
+}
+
+.navBar {
+  grid-column: 2/3;
+  margin-left: 10px;
+  /* padding-left: 100px; */
+  align-self: center;
+  /* text-decoration: none; */
+}
+
+.linkStyle {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav1 {
+  grid-column: 7/14;
+  color: black;
+}
+
+.nav2 {
+  grid-column: 7/14;
+  color: grey;
+}
+
+.nav3 {
+  grid-column: 7/14;
+  color: rgb(252, 109, 57);
+}
+
+.nav4 {
+  grid-column: 7/14;
+  color: gray;
+}
+
+.nav5 {
+  grid-column: 7/14;
+  color: gray;
+}
+
+.nav6 {
+  grid-column: 7/14;
+  color: gray;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 10% 30% 10% 50%;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+}
+
+.formDiv {
+  grid-column: 2/3;
+}
+
+.formh1 {
+  color: rgb(252, 109, 57);
+  font-weight: 800;
+  margin-top: 100px;
+  transform: scaleY(1.1);
+}
+
+.mainImageDiv {
+  grid-column: 4/5;
+  grid-row: 1/5;
+  /* background-image: url("/level-2/storeImage.jpg"); */
+  /* background-size: auto auto; */
+  background-repeat: no-repeat;
+}
+.mainImage {
+  background-image: url('/level-2/storeImage.jpg');
+  background-size: cover ;
+  height: 100%;
+  width: 100%;
+}
+
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+}
+
+.horizontalFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.double {
+  justify-content: space-between;
+}
+
+.labelGap {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+input,
+select {
+  /* line-height: 15px; */
+  padding: 10px;
+  font-size: medium;
+}
+
+.accent:checked {
+  /* background-color: rgb(252, 109, 57); */
+  accent-color: rgb(252, 109, 57);
+  /* filter: invert(1); */
+  filter: drop-shadow(white);
+  background-color: #fff;
+
+}
+.accent{
+  /* accent-color: rgb(252, 109, 57); */
+/* filter: invert(); */
+/* appearance: none;
+/* background-color: green; */
+/* accent-color: rgb(252, 109, 57); */
+/* background-image: url('/level-2/checkmark.svg'); */
+/* background-repeat: no-repeat; */ 
+transform: scale(1.1);
+
+}
+
+
+.checkboxxx{
+  appearance: none;
+  /* background-color: green; */
+  /* accent-color: rgb(252, 109, 57); */
+  /* background-image: url('/level-2/checkmark.svg'); */
+  color: white;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
+.checkboxxx:checked{
+  appearance: none;
+  /* background-color: green; */
+  /* accent-color: rgb(252, 109, 57); */
+  background-image: url('/level-2/checkmark.svg');
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+select:nth-child(1){
+  /* appearance: none; */
+  font-style: italic;
+  /* color: orangered; */
+
+  /* 
+    appearance:none;
+  width:20px;
+  height:20px;
+  border:1px solid orangered;
+  border-radius:5px;
+  outline:none;
+  box-shadow:0 0 5px 0px rgb(0, 0, 0) inset; */
+}
+
+fieldset{
+    border-radius: 5px;
+
+}
+
+.placeOrderButton {
+  color: white;
+  background-color: rgb(252, 109, 57);
+  border: 2px solid rgb(252, 109, 57);
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.footerIconsDiv {
+  text-align: center;
+}
+
+.footerIcons {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+
+
+
+
+/* MEDIA QUERY FOR MOBILE DEVICES - STARTS BELOW*/
+
+@media screen and (max-width: 500px) {
+
+body{
+
+  /* display: flex;
+  flex-direction: column;
+ */
+
+}
+
+/* HEADER STARTS BELOW */
+
+.mediaHeader{}
+
+.mediaImageLeft{}
+
+.mediaKarmaIcon{}
+
+.mediaNavBar{
+  display: none;
+
+}
+
+.mediaLinkStyle{}
+
+.mediaNav1{}
+.mediaNav2{}
+.mediaNav3{}
+.mediaNav4{}
+.mediaNav5{}
+.mediaNav6{}
+
+/* HEADER ENDS ABOVE */
+
+
+/* MAIN STARTS HERE */
+
+.mediaMain{}
+
+.mediaFormDiv{}
+
+.mediaForm{}
+
+.mediaHorizontalFlex{}
+
+.mediaDouble{}
+
+.mediaVerticalFlex{}
+
+.mediaLabelGap{}
+
+.mediaCheckBoxxx{
+
+
+}
+
+.mediaPlaceOrderButton{}
+
+.mediaMainImageDiv{}
+
+.mediaMainImage{}
+
+.mediaFooter{}
+
+.mediaFooterIconsDiv{}
+
+
+/* MAIN ENDS ABOVE */
+
+}

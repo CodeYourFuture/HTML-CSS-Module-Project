@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,203 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.links {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  text-decoration: none;
+}
 
+.topLinks {
+  color: gray;
+}
+
+.topLinks:hover {
+  color: orangered;
+}
+
+.topLinks:active,
+.active {
+  color: black;
+}
+
+.icon1 {
+  height: 25%;
+  width: 25%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-right: 150px;
+}
+li {
+  margin: 10px;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.topBar {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.middle {
+  background-image: url("/img/first-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
+  height: 735px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*something random*/
+.mid {
+  font-weight: 75px;
+}
+
+.learnMore {
+  background-color: rgb(252, 109, 57);
+  border: 2px solid rgb(252, 109, 57);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.bottom {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomImages {
+  height: 100px;
+  width: 100px;
+}
+
+.internet,
+.coffee,
+.refill {
+  padding: 25px;
+  margin: 35px;
+  display: block;
+  align-items: center;
+}
+
+.h2o h2 {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+  margin-top: 100px;
+}
+
+.hygge .bottom {
+  text-align: center;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.footer {
+}
+
+.footerCombined {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+}
+
+footer {
+  color: gray;
+}
+
+.fontType {
+  font-size: 55px;
+  font-weight: 100;
+}
+
+.fontType2 {
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.karmaLogo {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-right: 800px;
+  margin-top: 30px;
+}
+
+.section3 {
+}
+
+.extendedSection {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  background-color: rgba(250, 229, 233, 0.76);
+}
+
+.extendedSectionImage {
+  grid-column: 1/3;
+  grid-row: 1/5;
+  background-image: url("/level-2/homepage-feature.png");
+  background-size: cover;
+
+  height: 550px;
+}
+
+.extendedSectionRight {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  /* background-color: rgba(250, 229, 233, 0.76); */
+  text-align: center;
+  align-items: center;
+  /* align-self: center; */
+}
+
+.extendedSectionText {
+  grid-row: 2/3;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.extendedSectionButton {
+  grid-row: 3/4;
+  color: white;
+  background-color: rgb(252, 109, 57);
+  border: 3px solid rgb(252, 109, 57);
+  border-radius: 5px;
+}
+
+span {
+  color: rgb(252, 109, 57);
+  /* font-weight: bolder; */
+  font-size: 30px;
+}
+
+.storeLink{
+
+    text-decoration: none;
+    color:white;
+
+}
