@@ -1,10 +1,9 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
+/* body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
+} */
 
 /**
  * Add your custom styles below
@@ -16,4 +15,389 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+body {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+.content {
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
+:focus {
+	outline: none;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+/**
+ * Navigation Section
+ */
+.top-nav {
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	z-index: 9999;
+}
+.top-nav > .content {
+	height: 4.375rem;
+}
+.top-nav .logo {
+	height: 4.375rem;
+}
+.top-nav .links {
+	float: right;
+	color: #838994;
+	font-size: 1.04rem;
+	margin-top: 1.7rem;
+}
 
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+.store-nav {
+	color: #e65423;
+}
+
+.top-nav .links li {
+	display: inline-block;
+	margin-left: 1.563rem;
+}
+.top-nav .links li.active {
+	color: #333;
+	font-weight: 500;
+}
+.top-nav .links li:hover {
+	cursor: pointer;
+	color: #333333;
+}
+
+/**
+ * Introduction Section
+ */
+.introduction {
+	background: url('../img/first-background.jpg') no-repeat center bottom;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+}
+.introduction h1,
+.introduction h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+/**
+ * The buttons
+ */
+.introduction .buttons {
+	color: white;
+	text-align: center;
+	margin-top: 1.563rem;
+}
+.introduction .half {
+	width: 49%;
+	padding: 0 0.938rem;
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 1.125rem;
+	line-height: 1.2;
+}
+
+/**
+ * The Three Case Images
+ */
+.box {
+	background-color: #fff;
+	overflow: hidden;
+	padding-bottom: 5rem;
+}
+.box .content {
+	margin-top: 7.875rem;
+	padding: none;
+	color: #1d1e21;
+	text-align: center;
+}
+.box h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+.box .devices > li {
+	width: 33.3333333%;
+	float: left;
+}
+.box .devices h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
+.box .devices p {
+	font-weight: 300;
+	font-size: 1.313rem;
+}
+
+/**
+ * The quote
+ */
+
+.col-6 {
+	background-color: #f4e2dc;
+}
+
+.quotes-text {
+	margin-top: 110px;
+	font-size: 20px;
+}
+
+.quotation {
+	color: #e65423;
+}
+
+.btn {
+	background-color: #d9400e;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.store-redirect {
+	color: #fff;
+}
+
+/**
+ * store section
+ */
+
+.store-img {
+	margin-top: 50px;
+}
+
+.store-h1 {
+	margin-top: 120px;
+	color: #de6e49;
+}
+
+.g-3 {
+	margin-top: 30px;
+}
+
+.form-label1,
+.form-label2 {
+	position: relative;
+	right: 110px;
+}
+
+.form-label3,
+.form-label4 {
+	position: relative;
+	right: 280px;
+}
+
+.form-label5 {
+	position: relative;
+	right: 190px;
+}
+
+.form-label6 {
+	position: relative;
+	right: 60px;
+}
+
+.form-check-label {
+	position: relative;
+	right: 70px;
+	margin-top: 18px;
+}
+
+.form-check-input {
+	margin-top: 20px;
+	border-radius: 5px;
+	appearance: none;
+	background-image: url(/level-2/checkmark.svg);
+}
+
+.form-check-input:checked {
+	background-color: #fff;
+	background-image: url(/level-2/checkmark.svg);
+}
+
+.store-span {
+	text-decoration: underline;
+	color: #e65423;
+}
+
+input[type='radio'] {
+	display: none;
+}
+
+input[type='radio'] + label:before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 1.8px;
+	margin-right: 3px;
+	background-clip: content-box;
+	border: 1px solid black;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+input[type='radio']:checked + label:before {
+	background-color: #e65423;
+}
+
+/* label {
+	display: flex;
+	align-items: center;
+} */
+
+/* input[name='terms'] {
+	background-image: url('/level-2/checkmark.svg');
+} */
+
+.store-btn {
+	background-color: #e65423;
+	color: #fff;
+	position: relative;
+	right: 240px;
+}
+
+.store-svg {
+	position: relative;
+	right: 85px;
+	margin-bottom: 5px;
+	width: 15px;
+}
+
+.store-para {
+	margin-top: 40px;
+	position: relative;
+	right: 270px;
+}
+
+.store-colour1 {
+	position: relative;
+	right: 42px;
+}
+
+.store-colour2 {
+	position: relative;
+	right: 100px;
+}
+
+/**
+ * Footer
+ */
+.social {
+	background-color: #fff;
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	text-align: center;
+	padding-bottom: 0;
+}
+.social hr {
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0;
+}
+.social .icons > li {
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	margin: 1.25rem 5px;
+	border: 1px solid #eaebec;
+	padding: 0.625rem 0;
+	text-align: center;
+	box-sizing: border-box;
+}
+.social .icons > li:hover {
+	cursor: pointer;
+}
+.social .twitter {
+	color: #55acee;
+}
+.social .facebook {
+	color: #4c66a4;
+}
+.social .instagram {
+	color: #3f729b;
+}
+.social .copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
+}
+
+/**
+ * Responsive Design
+ */
+@media (min-width: 48rem) {
+	.content {
+		width: 46rem;
+	}
+}
+@media (min-width: 62rem) {
+	.content {
+		width: 60rem;
+	}
+}
+@media (min-width: 75rem) {
+	.content {
+		width: 60%;
+	}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bounce {
+	0%,
+	100% {
+		margin-top: 0px;
+	}
+	50% {
+		margin-top: 2rem;
+	}
+}
+/* Standard syntax */
+@keyframes bounce {
+	0%,
+	100% {
+		margin-top: 0px;
+	}
+	50% {
+		margin-top: 2rem;
+	}
+}
+
+/**
+ * button
+ */
+button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size: 1.125rem;
+}
+button:hover {
+	background-color: #d9400e;
+	border-color: #cf3d0e;
+	cursor: pointer;
+}
