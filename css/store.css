@@ -217,3 +217,39 @@ fieldset{
   border: 2px solid grey;
   border-radius: 50%;
 }
+
+
+
+
+/* MEDIA QUERY FOR MOBILE DEVICES - STARTS BELOW*/
+
+@media screen and (max-width: 500px) {
+
+body{
+
+  /* display: flex;
+  flex-direction: column;
+ */
+
+}
+
+ .header{
+  display: flex;
+  flex-direction: row ;
+}
+
+.navBar{
+  display: none;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+
+}
+.formDiv{
+  display: flex;
+  flex-direction: column;
+}
+  
+}
