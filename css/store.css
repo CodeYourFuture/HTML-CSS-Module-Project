@@ -67,7 +67,7 @@ body {
 .main {
   display: grid;
   grid-template-columns: 10% 30% 10% 50%;
-  grid-template-rows: ;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
 }
 
 .formDiv {
@@ -126,10 +126,51 @@ select {
 
 .accent:checked {
   /* background-color: rgb(252, 109, 57); */
-  accent-color: purple;
-  filter: invert(1);
+  accent-color: rgb(252, 109, 57);
+  /* filter: invert(1); */
   filter: drop-shadow(white);
   background-color: #fff;
+
+}
+.accent{
+  /* accent-color: rgb(252, 109, 57); */
+/* filter: invert(); */
+/* appearance: none;
+/* background-color: green; */
+/* accent-color: rgb(252, 109, 57); */
+/* background-image: url('/level-2/checkmark.svg'); */
+/* background-repeat: no-repeat; */ 
+transform: scale(1.1);
+
+}
+
+
+.checkboxxx{
+  appearance: none;
+  /* background-color: green; */
+  /* accent-color: rgb(252, 109, 57); */
+  /* background-image: url('/level-2/checkmark.svg'); */
+  color: white;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
+.checkboxxx:checked{
+  appearance: none;
+  /* background-color: green; */
+  /* accent-color: rgb(252, 109, 57); */
+  background-image: url('/level-2/checkmark.svg');
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+select:nth-child(1){
+  /* appearance: none; */
+  font-style: italic;
+  /* color: orangered; */
 
   /* 
     appearance:none;
