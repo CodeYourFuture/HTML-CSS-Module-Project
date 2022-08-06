@@ -33,14 +33,14 @@
   }
   
   .nav-link {
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 500;
     color: gray;
     text-decoration: none;
   }
   
   .nav-link:hover {
-    color: #c16718;
+    color: #FF5F1F ;
   }
   
   .active {
@@ -67,21 +67,23 @@
   
   .freedom-title {
     font-size: 5rem;
-    font-weight: inherit;
-    margin-bottom: -1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
   }
   .freedom-description {
-    font-weight: inherit;
-    font-size: 2rem;
-  }
+    font-weight: 400;
+    font-size: 50px,
+    }
+
   .btn-freedom {
     text-decoration: none;
     color: white;
     background-color: #FF5F1F;
-    font-size: 3rem;
+    font-size: 40px;
     padding: 1.5rem 3rem;
-    border-radius: 2rem;
-    margin-top: 1.25rem;
+    border-radius: 20px;
+    border-color: white;
+    margin-top: 40px;
     
   
   }
@@ -114,11 +116,134 @@
     font-weight: 400;
   }
   
+
+  
+  /* ! STORE  CSS */
+
+  .store{
+    width: 100%;
+  }      
+  .store-container {
+      display: flex;
+      flex-direction: row;
+      color: #FF5F1F;
+      font-size:x-large;
+  }
+ 
+  .store-container-1 {
+    padding-left: 100px;
+    padding-right: 250px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+ 
+  .store-container-2{
+    margin-right: 30px;
+    height: auto;
+    
+  }
+ 
+ 
+  form {
+    margin-top: 80px;
+  }
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  label,
+  legend {
+    margin-bottom: 10px;
+    color: #6f6d6d;
+    font-size: 20px;
+  }
+  label,
+  input {
+    display: block;
+  }
+  .form-control {
+    display: inline;
+  }
+  .form-1,
+  .form-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-1 div {
+    width: 45%;
+  }
+ 
+  .form-2 div {
+    width: 45%;
+  }
+  
+  form > div:nth-child(2),
+  form > div:nth-child(3),
+  form > div:nth-child(4) {
+    margin-top: 30px;
+  }
+  form > div:nth-child(5) {
+    margin-top: 70px;
+  }
+  form > div:nth-child(6) {
+    margin-top: 90px;
+  }
+  form > div:nth-child(7) {
+    margin-top: 35px;
+  }
+  form button {
+    border: none;
+  }
+  label.form-control {
+    margin-left: 10px;
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+  input[type="text"],
+  select {
+    height: 50px;
+    width: 100%;
+    border: 2px solid #666666;
+    border-radius: 4px;
+  }
+  .btn-place{
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #FF5F1F;
+    font-size: 20px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #city{
+    height: 53px;
+    width: 15rem;
+    font-size: 21px;
+  }
+  #post-code{
+    height: 48x;
+    width: 15rem;
+    font-size: 21px;
+  }
   /* footer */
   
   .footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
     text-align: center;
-    padding: 2.5rem 0rem 3rem 0rem;
+    
   }
   
   .container-social {
@@ -147,5 +272,3 @@
     color: #acb0b2;
     margin-top: 1.5rem;
   }
-  
-  
