@@ -42,6 +42,7 @@
   .nav-link:hover {
     color: #c16718;
   }
+  
   .active {
     color: #2b3956;
   }
@@ -99,13 +100,13 @@
   }
   .cards-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 60%;
     margin: 0 auto;
   }
   
   .card img {
-    width: 8.5rem;
+    width: 8rem;
   }
   
   .card p {
