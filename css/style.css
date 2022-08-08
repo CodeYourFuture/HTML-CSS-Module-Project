@@ -4,6 +4,221 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
+}
+.content{
+    padding: 0 0.938rem;
+margin: 0 auto;
+min-width: 37.5rem;
+
+}
+:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.topnav {
+    position: relative;
+    width: 100%;
+    /* z-index: 9999;   */
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.topnav > .content{
+    height: 4.375rem;
+}
+.topnav .logo{
+height: 4.375rem;
+margin-left: 10%;
+}
+.topnav .link{
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+}
+.topnav .link li{
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.topnav .link li.active{
+    color: #333;
+    font-weight: 500;
+}
+.topnav .link li:hover{
+cursor: pointer;
+color: #333333;
+}
+
+.introduction {
+background-image: url("../img/first-background.jpg");
+background-size: cover;
+height: 45.938rem;
+overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+
+.introduction .button {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+
+
+
+.halfbutton {
+    background-color: #E0633A;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+.middlenav, .coffee, .admit  {
+display: block;
+padding: 25px;
+margin: 35px;
+align-items: center;
+text-align: center;
+}
+ 
+.karma {
+    text-align: center;
+    margin-bottom: 10px;
+    }
+.table {
+    display: flex;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+.images {
+    height: 50px;
+    width: 50px;
+}
+/* footer for both */
+
+.socials {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #838994;
+
+    
+}
+input[name="optradio"] {
+accent-color: rgb(214, 78, 25);
+
+}
+.inc {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #838994;
+}
+/* footer for both */
+
+.storefooter {
+    position: relative;
+    bottom: 0;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+/* middle section for index */
+.quote {
+    color: #ce1616;
+}
+.qoute2 {
+    color: #ce1616
+}
+.bigcontainer qoute col-6 {
+background-color: #DE6E49;
+
+}
+.btn {
+    background-color: #E0633A;
+    color: white;
+}
+
+.firstGrid {
+    display: grid;
+    grid-column: 10% 30% 10% 50%;
+
+    
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 10% 30% 10% 50%;
+
+}
+
+.LHS{
+grid-column: 2/3;
+/* grid-row: 1/2; */
+
+}
+.LHS h3 {
+    color: #DE6E49;
+margin-top: 10rem;
+}
+.radios {
+    margin-top: 2.5rem;
+}
+.form-check {
+    margin-top: 5.5rem;
+}
+.qouteall {
+    grid-column: 2/5; 
+    margin-top: 10rem; 
+    justify-items: center;
+    margin-left: 7.5rem;
+    font-weight: 400;
+    justify-content: stretch;
+}
+
+.RHS {
+grid-column: 4/5;
+    
+}
+
+.rhsImage{
+
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.endbutton {
+    background-color: #E0633A;
+    color: white;
+    padding: 12px 25px;
 }
 
 /**
