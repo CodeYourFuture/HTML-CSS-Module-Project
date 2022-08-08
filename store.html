@@ -27,6 +27,7 @@
     </header>
 
     <main>
+        <!--
         <section class="order-section">
             <div class="order-section-1">
                 <h2>Order your Karma wifi device today!</h2>
@@ -82,6 +83,62 @@
                 </form>
             </div>
             <div class="order-section-2"></div>
+        </section>
+        -->
+
+        <section class="order-section">
+            <div class="order-section-1">
+                <h2>Order your Karma wifi device today!</h2>
+                <form>
+                    <div class="form-c-first-name">
+                        <label for="first-name">First name *</label>
+                        <input id="first-name" type="text" name="first-name" minlength="3" maxlength="10" required />
+                    </div>
+                    <div class="form-c-last-name">
+                        <label for="last-name">Last name *</label>
+                        <input id="last-name" type="text" name="last-name" minlength="3" maxlength="10" required />
+                    </div>
+                    <div class="form-c-address-1">
+                        <label for="address">Address *</label>
+                        <input id="address" type="text" name="address" minlength="3" maxlength="50" required />
+                    </div>
+                    <div class="form-c-address-2">
+                        <label for="address-2">Address 2</label>
+                        <input id="address-2" type="text" name="address-2" minlength="3" maxlength="50" />
+                    </div>
+                    <div class="form-c-city">
+                        <label for="city">City</label>
+                        <select id="city" type="select" name="city" required>
+                            <option value="">Select your city...</option>
+                            <option value="manchester">Manchester</option>
+                            <option value="leeds">Leeds</option>
+                        </select>
+                    </div>
+                    <div class="form-c-post-code">
+                        <label for="post-code">Post Code *</label>
+                        <input id="post-code" type="text" name="post-code" minlength="3" maxlength="10" required />
+                    </div>
+                    <div class="form-c-color">
+                        <fieldset>
+                            <legend>Select a colour</legend>
+                            <input id="orange" type="radio" name="color" value="orange" required />
+                            <label for="orange">Karma orange</label>
+                            <input id="grey" type="radio" name="color" value="grey" required />
+                            <label for="grey">Space Grey</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-c-terms">
+                        <input class="form-inline" id="terms" type="checkbox" name="terms" value="agree" required />
+                        <label class="form-inline" for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions.</a> *</label>
+                    </div>
+                    <div class="form-c-submit">
+                        <button class="btn btn-bg">Place my order</button>
+                    </div>
+                </form>
+            </div>
+            <div class="order-section-2">
+
+            </div>
         </section>
     </main>
 

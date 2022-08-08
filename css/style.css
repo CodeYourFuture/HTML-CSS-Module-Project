@@ -161,6 +161,8 @@ hr {
 }
 
 /*order page*/
+
+/*
 .order-section
 {
     height: 1235px;
@@ -284,6 +286,145 @@ form a {
 
 form button {
     border: none;
+}
+*/
+
+.order-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1235px;
+}
+
+.order-section-1 {
+    padding: 118px 95px;
+}
+
+.order-section-1 h2 {
+    color: var(--color-main);
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 82px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    grid-template-areas:
+        "fn fn ln ln"
+        "ad1 ad1 ad1 ad1"
+        "ad2 ad2 ad2 ad2"
+        "city city city post-code"
+        "color color color color"
+        "terms terms terms terms"
+        "submit submit submit submit";
+}
+
+.form-c-first-name {
+    grid-area: fn;
+    padding-right: 20px;
+}
+
+.form-c-last-name {
+    grid-area: ln;
+    padding-left: 20px;
+}
+
+.form-c-address-1 {
+    grid-area: ad1;
+}
+
+.form-c-address-2 {
+    grid-area: ad2;
+}
+
+.form-c-city {
+    grid-area: city;
+    padding-right: 40px;
+}
+
+.form-c-post-code {
+    grid-area: post-code;
+}
+
+.form-c-color {
+    grid-area: color;
+    padding-top: 50px;
+}
+
+.form-c-terms {
+    grid-area: terms;
+    padding-top: 50px;
+}
+
+.form-c-submit {
+    grid-area: submit;
+    padding-top: 50px;
+}
+
+label, legend {
+    font-size: var(--form-font-size);
+    color: var(--form-color);
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+input[type=text], select {
+    height: 53px;
+    width: 100%;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    color: var(--form-color);
+    font-size: var(--form-font-size);
+    margin-top: 10px;
+}
+
+select {
+    display: block;
+    background-color: white;
+    height: 58px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+}
+
+input[type=radio] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+label[for="orange"], label[for="grey"] {
+    margin-left: 12px;
+}
+
+#grey {
+    margin-left: 41px;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+form a {
+    color: var(--color-main);
+}
+
+form button {
+    border: none;
+}
+
+.order-section-2 {
+    background-image: url('../img/girl-working-at-desk.png');
+    background-size: 100%;
+    background-position-y: 50%;
 }
 
 .hr-order {
