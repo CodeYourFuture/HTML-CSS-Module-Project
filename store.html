@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-    <header id="head">
-        <img id="karma_logo" src="img\karma-logo.svg"></img>
-        <nav>
-            <ul>
-                <li>Meet Karma</li>
-                <li>How It Works</li>
-                <li>Store</li>
-                <li>Blog</li>
-                <li>Help</li>
-                <li>Login</li>
-            </ul>
-        </nav>
+    <header id="header_store">
+        <div>
+            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 216">
+                <path fill="#F15B2A"
+                    d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z" />
+            </svg>
+        </div>
+        <div>
+            <nav class="navmenu">
+                <p class="karma">Meet Karma</p>
+                <p class="stnd"> How It Works</p>
+                <p> <a class="store" href="store.html">Store</a></p>
+                <p class="stnd">Blog</p>
+                <p class="stnd">Help</p>
+                <p class="stnd">Login</p>
+            </nav>
+        </div>
+        <br>
     </header>
+    <br>
     <main class="main_design">
         <section class="section_1">
             <h1 class="orange_type">Order your Karma wifi device today</h1>
             <form>
                 <div class="que margin_box">
-                    <div >
+                    <div>
                         <label for="fname" class="titles">First name *</label><br>
                         <input type="text" name="fname" id="fname">
                     </div>
@@ -58,8 +65,8 @@
                     <div class="left_margin">
                         <label for="postcode" class="titles">Postcode *</label><br>
                         <input type="text" name="postcode" id="postcode">
-                    </div>   
-                </div> 
+                    </div>
+                </div>
                 <div class="margin_box">
                     <p class="titles">Select a colour</p>
                     <input id="karmaorange" type="radio" value="karma" name="pick">
@@ -71,17 +78,17 @@
                     <label name="checkbox" id="checkbox"></label>
                     <input type="checkbox" id="checkbox">
                     <p>By placing your order you agree to Karma's Terms and Conditions. *</p>
-                </div> 
+                </div>
                 <div class="button_align">
                     <button class="get_karma buttons">
                         Place my order
-                    </button> 
+                    </button>
                 </div>
-                           
+
             </form>
         </section>
         <section>
-            <img src="store-image_by-andrew-neel-unsplash.jpg">
+            <img src="level-2/store-image_by-andrew-neel-unsplash.jpg">
         </section>
     </main>
     <footer>
@@ -94,4 +101,5 @@
         <h6>@ Karma mobility inc.</h6>
     </footer>
 </body>
+
 </html>
