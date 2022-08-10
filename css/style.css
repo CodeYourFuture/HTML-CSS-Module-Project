@@ -1,10 +1,230 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: white;
+    
 }
+
+#logo {
+    position:absolute;
+    left: 2%;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.navmenu {
+    float: right;
+    display:flex;
+    justify-content:space-between;
+    margin-right: 10%;
+    white-space: nowrap;
+}
+.karma {
+    color: black;
+    margin-right: 5%;
+    
+}
+.stnd {
+    color: darkolivegreen;
+    margin-right: 5%;
+}
+.store {
+text-decoration: none;
+color: #F15B2A;
+margin-right: 7px;
+}
+#background-img {
+    width: 100%;
+    left: 0%;
+    top: 20px;
+}
+.container {
+position: relative;
+text-align: center;
+color: white;
+white-space: nowrap;
+}
+.over {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+.over1 {
+    font-size: 40px;
+    white-space: nowrap;
+}
+.over2 {
+    font-size: 30px;
+    white-space: nowrap;
+}
+.over3 {
+background-color: #F15B2A;
+padding: 3% 5% 3% 5%;
+border-radius: 5px;
+white-space: nowrap;
+}
+.container2{
+color: black;
+white-space: nowrap;
+}
+.s1{
+    font-size: 40px;
+    text-align: center;
+    white-space: nowrap;
+}
+.icons {
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    margin: 0% 20% 0% 20%;
+}
+.icon {
+    width: 15%;
+    
+}
+.underIcon {
+    font-size: 20px;
+}
+.underIcons {
+    text-align: center;
+    display: flex;
+    justify-content:space-between;
+    margin: 0% 20% 0% 17%;
+    white-space: nowrap;
+}
+footer {
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    white-space: nowrap;
+    border-top: rgb(195, 195, 195) solid ;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.join {
+    color: black;
+    white-space: nowrap;
+}
+.socials {
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    margin: 0% 45% 0% 45%;
+    white-space: nowrap;
+}
+.social {
+    width: 10px;
+    
+}
+.end {
+    font-size: medium;
+    color: darkgray;
+    white-space: nowrap;
+}
+
+.features_1{
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas: "features_img features_boxes features_boxes";
+    
+}
+.features_boxes {
+    background-color: rgb(255, 243, 221);
+    flex-direction: column;
+    display: flex;
+align-items: center;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
+
+}
+.features_img{
+min-width: 100%;
+}
+.mark {
+    color: orange;
+}
+
+.wherever {
+    color: gray;
+    font-weight:100;
+    font-style: italic;
+    margin-left: 25%;
+    align-items: center;
+    margin-right: 25%;
+    text-align: center;
+}
+.over4 {
+    background-color: #F15B2A;
+padding: 3% 5% 3% 5%;
+border-radius: 5px;
+border: 0cm;
+color: white;
+}
+
+#header_store{
+display: grid;
+background-color:rgb(245, 245, 245);
+height: fit-content;
+border-bottom: rgb(195, 195, 195) solid ;
+
+}
+.img_str {
+width: 100%;
+height: 100%;
+}
+.grid2{
+   padding-left: 5%;
+   padding-right: 5%;
+}
+.main_design {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: black;
+}
+.orange_type {
+    color: rgb(255, 115, 0);
+    text-align: left;
+    
+}
+.que {
+    display: flex;
+}
+.margin_box {
+    margin-bottom: 30px;
+}
+.titles {
+    font-weight: bold;
+}
+.left_margin {
+    margin-left: 30px;
+}
+#default_value {
+    font-style: italic;
+    
+}
+
+.button_align {
+    display: flex;
+    justify-content: center;
+}
+.terms{
+    color: rgb(255, 115, 0);
+    text-decoration: underline;
+}
+
+
 
 /**
  * Add your custom styles below
