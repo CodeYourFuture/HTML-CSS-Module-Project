@@ -1,19 +1,465 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+    --color-main: #E16337;
+    --form-font-size: 21px;
+    --form-color: #666666;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.btn
+{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--color-main);
+    color: white;
+}
 
+.btn-bg {
+    font-size: 30px;
+    padding: 20px 50px;
+}
 
+/*header*/
+
+nav {
+    display: flex;
+    padding: 20px 150px;
+    background-color: #C4C4C41A;
+}
+
+.nav-section {
+    width: 100%;
+}
+
+.nav-section-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--color-main);
+}
+
+.active {
+    color: #52555B;
+}
+
+/*hero*/
+
+.hero {
+    height: 850px;
+    background-image: url('../img/first-background.jpg');
+    background-size: cover;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 70px;
+    font-weight: inherit;
+    margin-bottom: -10px;
+}
+
+.hero-slogan {
+    font-weight: inherit;
+    font-size: 35px;
+}
+
+.hero > a {
+    margin-top: 20px;
+}
+
+/*info section*/
+
+.section-info {
+    text-align: center;
+    font-weight: 300;
+    padding: 50px 0px;
+}
+
+.section-info-title {
+    font-size: 50px;
+    font-weight: inherit;
+    margin-bottom: 70px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 150px;
+}
+
+.card p {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*buy section*/
+
+.section-buy {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 439px;
+}
+
+.section-buy-1 {
+    background-image: url('../img/buy-now-bg-1.png');
+    background-size: cover;
+}
+
+.section-buy-2 {
+    background-color: #FCEFEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-buy-2 p {
+    font-size: 42px;
+    width: 50%;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.section-buy-2 p span {
+    color: var(--color-main);
+}
+
+.section-buy-2 a {
+    margin-top: -50px;
+}
+
+hr {
+    width: 70%;
+    margin-top: 40px;
+}
+
+/*order page*/
+
+/*
+.order-section
+{
+    height: 1235px;
+    display: flex;
+}
+
+.order-section > div {
+    width: 50%;
+}
+
+.order-section-1 {
+    padding: 118px 214px;
+}
+
+.order-section-1 h2 {
+    color: var(--color-main);
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.order-section-2 {
+    background-image: url('../img/girl-working-at-desk.png');
+    background-size: 100%;
+    background-position-y: 50%;
+}
+
+form {
+    margin-top: 82px;
+}
+
+label, legend {
+    font-size: var(--form-font-size);
+    color: var(--form-color);
+    margin-bottom: 12px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+}
+
+input[type=text], select {
+    height: 53px;
+    width: 100%;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    color: var(--form-color);
+    font-size: var(--form-font-size);
+}
+
+label, input {
+    display: block;
+}
+
+.form-inline {
+    display: inline;
+}
+
+select {
+    background-color: white;
+    height: 58px;
+}
+
+.form-container-1, .form-container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container-1 div {
+    width: 40%;
+}
+
+.form-container-2 div:nth-child(1) {
+    width: 60%;
+}
+
+.form-container-2 div:nth-child(2) {
+    width: 30%;
+}
+
+form > div:nth-child(2), form > div:nth-child(3), form > div:nth-child(4) {
+    margin-top: 32px;
+}
+
+form > div:nth-child(5) {
+    margin-top: 70px;
+}
+
+form > div:nth-child(6) {
+    margin-top: 97px;
+}
+
+form > div:nth-child(7) {
+    margin-top: 36px;
+}
+
+input[type=radio] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+label.form-inline {
+    margin-left: 12px;
+}
+
+input.form-inline:nth-child(4) {
+    margin-left: 41px;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+form a {
+    color: var(--color-main);
+}
+
+form button {
+    border: none;
+}
+*/
+
+.order-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1235px;
+}
+
+.order-section-1 {
+    padding: 118px 95px;
+}
+
+.order-section-1 h2 {
+    color: var(--color-main);
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 82px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    grid-template-areas:
+        "fn fn ln ln"
+        "ad1 ad1 ad1 ad1"
+        "ad2 ad2 ad2 ad2"
+        "city city city post-code"
+        "color color color color"
+        "terms terms terms terms"
+        "submit submit submit submit";
+}
+
+.form-c-first-name {
+    grid-area: fn;
+    padding-right: 20px;
+}
+
+.form-c-last-name {
+    grid-area: ln;
+    padding-left: 20px;
+}
+
+.form-c-address-1 {
+    grid-area: ad1;
+}
+
+.form-c-address-2 {
+    grid-area: ad2;
+}
+
+.form-c-city {
+    grid-area: city;
+    padding-right: 40px;
+}
+
+.form-c-post-code {
+    grid-area: post-code;
+}
+
+.form-c-color {
+    grid-area: color;
+    padding-top: 50px;
+}
+
+.form-c-terms {
+    grid-area: terms;
+    padding-top: 50px;
+}
+
+.form-c-submit {
+    grid-area: submit;
+    padding-top: 50px;
+}
+
+label, legend {
+    font-size: var(--form-font-size);
+    color: var(--form-color);
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+input[type=text], select {
+    height: 53px;
+    width: 100%;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    color: var(--form-color);
+    font-size: var(--form-font-size);
+    margin-top: 10px;
+}
+
+select {
+    display: block;
+    background-color: white;
+    height: 58px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+}
+
+input[type=radio] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+label[for="orange"], label[for="grey"] {
+    margin-left: 12px;
+}
+
+#grey {
+    margin-left: 41px;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--color-main);
+}
+
+form a {
+    color: var(--color-main);
+}
+
+form button {
+    border: none;
+}
+
+.order-section-2 {
+    background-image: url('../img/girl-working-at-desk.png');
+    background-size: 100%;
+    background-position-y: 50%;
+}
+
+.hr-order {
+    margin-top: 0px;
+}
+
+/*footer*/
+
+.footer {
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+}
+
+.container-social {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: 0 auto;
+}
+
+.card-social {
+    border: 1px solid #bdc3c7;
+    border-radius: 100%;
+    padding: 10px 12px;
+}
+
+.card-social img {
+    width: 20px;
+}
+
+.footer-heading {
+    font-size: 20px;
+}
+
+.footer-copyright-text {
+    color: #bdc3c7;
+    margin-top: 20px;
+}
