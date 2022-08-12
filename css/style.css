@@ -1,6 +1,6 @@
 :root {
     --color-main: #E0633A;
-    --form-font-size: 28px;
+    --form-font-size: 22px;
     --form-color: #666666;
 }
 
@@ -24,7 +24,7 @@ body {
 
 nav {
     display: flex;
-    padding: 30px 200px;
+    padding: 22px 170px;
 }
 
 .logo {
@@ -42,7 +42,7 @@ nav {
 }
 
 .nav-link {
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 500;
     color: rgb(141, 141, 141);
     text-decoration: none;
@@ -59,7 +59,7 @@ nav {
 /*First Section*/
 
 .top {
-    height: 1600px;
+    height: 1000px;
     margin: 0px 0px;
     background-image: url('../img/background.jpg');
     background-size: cover;
@@ -72,14 +72,14 @@ nav {
 }
 
 .top-title {
-    font-size: 90px;
+    font-size: 55px;
     font-weight: inherit;
     margin-bottom: 20px;
 }
 
 .top-text {
     font-weight: inherit;
-    font-size: 55px;
+    font-size: 40px;
 }
 
 .top>.btn {
@@ -93,8 +93,8 @@ nav {
     background-color: var(--color-main);
     border-color: var(--color-main);
     color: white;
-    font-size: 30px;
-    padding: 25px 50px;
+    font-size: 20px;
+    padding: 20px 50px;
 }
 
 /*Second Section - with cards*/
@@ -106,13 +106,13 @@ nav {
 }
 
 .info-title {
-    font-size: 130px;
+    font-size: 70px;
     font-weight: inherit;
     margin-bottom: 70px;
 }
 
 .card-container {
-    padding: 200px 0px;
+    padding: 120px 0px;
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -120,11 +120,11 @@ nav {
 }
 
 .card img {
-    width: 350px;
+    width: 170px;
 }
 
 .card p {
-    font-size: 60px;
+    font-size: 34px;
     font-weight: 400;
 }
 
@@ -132,7 +132,7 @@ nav {
 .bottom-card-container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1000px;
+    grid-template-rows: 500px;
 }
 
 .bottom-card1 {
@@ -158,12 +158,12 @@ nav {
 }
 
 .bottom-card-text {
-    padding-left: 100px;
+    padding-left: 50px;
     padding-right: 100px;
     text-align: center;
     font-style: italic;
     color: #434242;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: inherit;
 }
 
@@ -330,7 +330,7 @@ hr {
 .container-social {
     display: flex;
     justify-content: space-between;
-    width: 10%;
+    width: 12%;
     margin: 0 auto;
 }
 
@@ -341,15 +341,15 @@ hr {
 }
 
 .card-social img {
-    width: 40px;
+    width: 25px;
 }
 
 .footer-title {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .footer-bottom {
     color: #bdc3c7;
     margin-top: 30px;
-    font-size: 32px;
+    font-size: 22px;
 }
