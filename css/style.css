@@ -1,10 +1,15 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+body{
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-size: large;
 }
+    *,
+    *:before
+    *::after{
+        box-sizing: inherit;
+    }
 
 /**
  * Add your custom styles below
@@ -17,3 +22,156 @@ body {
  */
 
 
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.main-nav{
+    background-color:white;
+    position: fixed;
+    width: 100%;
+}
+
+.main-nav.content {
+    width: 9.70px;
+    height: 4.375rem;
+    margin: 0 auto;
+    color: #838994;
+    
+}
+
+.main-nav.links {
+   float: right;
+    font: 1rem;
+    margin-top: 25px;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+    
+    
+}
+
+.main-nav.links.active{
+    color: black;
+    font-weight: 500;
+}
+
+.main-nav.links li:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.introduction {
+    background-image:url('https://thinkful-ed.github.io/karma-clone/img/first-background.jpg');
+
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.introduction .content {
+    color: white;
+    text-align: center;
+    padding-top: 400px;
+    font-family: "Open Sans";
+}
+
+button{
+    
+    border-style: none;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    margin: auto;
+    background-color: orange;
+    color: #fff;
+}
+
+.cases {
+    text-align: center;
+}
+
+/*devices*/
+
+.devices>li {
+    width:30% ;
+
+    height: 4em;
+    display: inline-block;
+    list-style: none;
+    box-sizing: border-box;
+    margin-right: -4%;
+    margin-left: -4%;
+}
+
+footer{
+    background-color: #fff;
+    height: auto;
+    width: 100w;
+    font-family:"Opem Sans";
+    padding-top: 10px;
+}
+
+.footer-content{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.footer-content h3{
+font-size: 1.8rem;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #838994;
+
+}
+
+
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+.socials   {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+}
+
+
+.footer-bottom{
+    width: 100vw;
+    padding: 20px 0 ;
+    text-align: center;
+
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
