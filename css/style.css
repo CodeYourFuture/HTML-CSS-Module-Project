@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  height: 7vh;
   width: 100%;
 }
 
@@ -35,6 +35,57 @@ span {
   color: #55575e;
 }
 
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9a9ea6;
+}
+
+nav ul li a:hover {
+  color: #e0633a;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.banner img {
+  margin: 0;
+  width: 100;
+}
+
+.banner h1 {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  widows: 100%;
+  text-align: center;
+}
+
+.banner h3 {
+  color: white;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 50%;
+}
+
+.banner button {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
 button {
   color: white;
   background-color: #e0633a;
@@ -44,18 +95,13 @@ button {
   cursor: pointer;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
+.container {
+  width: 100%;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #9a9ea6;
+.card {
+  width: 200px;
+  text-align: center;
+  float: left;
+  margin: 30px;
 }
-
-nav ul li a:hover {
-    color: #e0633a;
-}
-
