@@ -1,19 +1,107 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+}
 
+header {
+  height: 7vh;
+  width: 100%;
+}
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#logo {
+  display: flex;
+  max-width: 1.5rem;
+}
+
+span {
+  font-weight: bold;
+  color: #55575e;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #9a9ea6;
+}
+
+nav ul li a:hover {
+  color: #e0633a;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.banner img {
+  margin: 0;
+  width: 100;
+}
+
+.banner h1 {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  widows: 100%;
+  text-align: center;
+}
+
+.banner h3 {
+  color: white;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 50%;
+}
+
+.banner button {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: #e0633a;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+  float: left;
+  margin: 30px;
+}
