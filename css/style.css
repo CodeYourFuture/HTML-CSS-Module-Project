@@ -16,4 +16,130 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* header style */
 
+nav {
+    display: flex;
+    padding: 0.5rem 8rem;
+}
+.nav-logo {
+    width: 100%;
+}
+
+.nav-logo-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.karma-logo {
+    width: 2rem;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: gray;
+    text-decoration: none;
+}
+
+/* Main Style */
+
+main {
+    height: 100%;
+    padding: 2rem;
+}
+.freedom {
+    height: 100%;
+    padding: 10%;
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    color: white;
+    font-weight: 250;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.freedom-title {
+    font-size: 5rem;
+    font-weight: inherit;
+    margin-bottom: -1rem;
+}
+
+.freedom-description {
+    font-weight: inherit;
+    font-size: 2rem;
+}
+
+.btn-freedom {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(192, 67, 22);
+    font-size: 3rem;
+    padding: 1.5rem 3rem;
+    border-radius: 2rem;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Info Style */
+
+.info {
+    text-align: center;
+    font-weight: 200px;
+    padding: 60px 0px;
+}
+
+.info-title {
+    font-size: 50px;
+    margin-bottom: 5rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.card img {
+    width: 100px;
+}
+
+/* Footer Style */ 
+
+.footer {
+    text-align: center;
+}
+
+.container-social {
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
+    margin: 0 auto;
+}
+
+.social {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.social img {
+    width: 30px;
+    margin: 15px;
+}
+
+.footer-join {
+    font-size: 40px;
+}
+
+.footer-text {
+color: #acb0b2;
+margin-top: 1.5rem;
+}
