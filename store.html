@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma - Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+  <!-- I have deliberately completed this WITHOUT any IDs or Classes for Specificity/Selector Practise -->
+  <header>
+    <a href="./index.html"><img src="./img/karma-logo.svg" alt="Karma Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Meet Karma</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="./store.html">Store</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+   <section>
+    <h1>Order your Karma wifi device today!</h1>
+    <form action="">
+      <div>
+        <label for="first-name">First name *</label>
+        <input 
+          type="text" 
+          id="first-name"
+          value = ""
+          pattern="^(\w\w+)$"
+          title="A valid first name has 2+ characters"
+          required
+        />
+      </div>
+      <div>
+        <label for="last-name">Last name *</label>
+        <input 
+          type="text" 
+          id="last-name"
+          value = ""
+          pattern="^(\w\w+)$"
+          title="A valid last name has 2+ characters"
+          required
+        />
+      </div>
+      <div>
+        <label for="address-line-one">Address *</label>
+        <input 
+          type="text"
+          id="address-line-one"
+          value = ""
+          required
+        />
+      </div>
+      <div>
+        <label for="address-line-two">Address 2</label>
+        <input 
+          type="text"
+          id="address-line-two"
+          value = ""
+        />
+      </div>
+      <div>
+        <label for="address-city">City *</label>
+        <input 
+          type="text"
+          id="address-city"
+          value = ""
+          required
+        />
+      </div>
+      <div>
+        <label for="address-postcode">Postcode *</label>
+        <input 
+          type="text"
+          id="address-postcode"
+          value = ""
+          required
+        />
+      </div>
+      <fieldset>
+        <legend>Select a colour</legend>
+        <ul>
+          <li>
+              <input type="radio" id="karma-orange" name="colour" value="karma-orange" checked/>
+              <label for="karma-orange">Karma Orange</label>
+          </li>
+          <li>
+            <input type="radio" id="space-grey" name="colour" value="space-grey"/>
+            <label for="karma-orange">Space Grey</label>
+        </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <input type="checkbox" id="termsandconditions" required>
+        <label for="termsandconditions">By placing your order you agree to <a href="">Karma's Terms and Conditions</a> *</label>
+      </fieldset>
+      <input type="submit" value="Place my order">
+    </form>
+   </section>
+   <section>
+   </section>
+  </main>
+  <footer>
+    <span>Join us on</span>
+    <ul>
+      <li><a href="https://twitter.com" target="_blank"><img src="./img/twitter-icon.svg" alt="Twitter Logo"></a></li>
+      <li><a href="https://facebook.com" target="_blank"><img src="./img/facebook-icon.svg" alt="Facebook Logo"></a></li>
+      <li><a href="https://instagram.com" target="_blank"><img src="./img/instagram-icon.svg" alt="Instagram Logo"></a></li>
+    </ul>
+    <span>© Karma Mobility, Inc.</span>
+  </footer>
+</body>
+</html>

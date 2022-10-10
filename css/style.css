@@ -1,4 +1,7 @@
 /* I have deliberately completed this WITHOUT any IDs or Classes for Specificity/Selector Practise*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  border-bottom: 0.1rem solid hsl(0, 0%, 75%); 
+  border-bottom: 0.1rem solid hsl(0, 0%, 88%); 
 }
 
 header > a {
@@ -47,75 +50,6 @@ nav > ul > li:first-child > a {
   font-weight: 500;
 }
 
-/* HERO SECTION */
-main > section:nth-child(1) {
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-  background-image: url("../img/first-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
-}
-
-main > section:nth-child(1) > h1 {
-  margin: 0; 
-  /* this shouldn't be neccessary when i globally set margin to 0 at the top.. */
-  /* is normalize messing with this? but styles.css is loaded AFTER normalize? */
-  font-size: 2.8rem;
-}
-
-main > section:nth-child(1) > h3 {
-  font-size: 1.6rem;
-}
-
-main > section:nth-child(1) > a {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 0.3rem;
-  background-color: hsl(15, 87%, 55%);
-  color: inherit;
-  text-decoration: none;
-}
-
-/* SECTION TWO */
-main > section:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 6rem 0;
-}
-
-main > section:nth-child(2) > h2 {
-  font-size: 2.2rem;
-  align-self: center;
-}
-
-main > section:nth-child(2) > ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-
-main > section:nth-child(2) > ul > li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-main > section:nth-child(2) > ul > li > img {
-  width: 7rem;
-}
-
-main > section:nth-child(2) > ul > li > span {
-  font-size: 1.4rem;
-}
-
 /* FOOTER */
 footer {
   display: flex;
@@ -123,7 +57,7 @@ footer {
   align-items: center;
   gap: 1.5rem;
   padding: 2rem 0;
-  border-top: 0.1rem solid hsl(0, 0%, 75%);
+  border-top: 0.1rem solid hsl(0, 0%, 88%);
 }
 
 footer > span:first-child {
