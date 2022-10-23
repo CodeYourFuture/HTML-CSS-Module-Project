@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-image: url("img/first-background.jpg");
 }
 
 /**
@@ -26,4 +27,24 @@ body {
 nav li {
   display: inline;
   justify-content: flex-end;
+  text-align: center;
+}
+
+/*CONTENT STYLES*/
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  display: flex;
+  align-content: center;
+  color: white;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
 }
