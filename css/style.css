@@ -1,19 +1,120 @@
+/* I have deliberately completed this WITHOUT any IDs or Classes for Specificity/Selector Practise*/
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* HEADER & NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 0.1rem solid hsl(0, 0%, 88%); 
+}
 
+header > a {
+  display: block;
+}
 
+header > a > img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
+
+nav > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav > ul > li > a {
+  color: hsl(222, 6%, 55%);
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  color: hsl(15, 87%, 55%);
+}
+
+nav > ul > li:first-child > a {
+  font-weight: 500;
+}
+
+/* Hamburger Menu */
+nav > a {
+  display: none;
+}
+
+nav > a > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-top: 0.1rem solid hsl(0, 0%, 88%);
+}
+
+footer > span:first-child {
+  font-weight: 500;
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+footer > ul > li > a {
+  display: block;
+  padding: 1rem;
+  border: 0.1rem solid hsl(210, 6%, 83%);
+  border-radius: 50%;
+}
+
+footer > ul > li > a > img {
+  display: block;
+  max-width: 1.2rem;
+}
+
+footer > span:last-child {
+  color: hsl(225, 5%, 70%);
+}
+
+@media screen and (max-width: 767px) {
+
+  /* Shrink the header padding to better fit Mobile */
+  header {
+    padding: 1rem;
+  }
+
+  /* Nav Text List */
+  nav > ul {
+    display: none;
+  }
+
+  /* Nav Hamburger Menu */
+  nav > a {
+    display: block;
+  }
+
+  footer {
+    /* any adjustments? */
+  }
+
+}

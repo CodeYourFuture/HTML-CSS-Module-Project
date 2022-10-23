@@ -1,0 +1,159 @@
+/* I have deliberately completed this WITHOUT any IDs or Classes for Specificity/Selector Practise*/
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* ^ im not totally happy with the way this resizes */
+  /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
+  grid-template-areas: "order-form image";
+}
+
+main > section:nth-child(1) {
+  grid-area: order-form;
+  padding: 5rem 3rem;
+}
+
+main > section:nth-child(1) > h1 {
+  color:hsl(15, 87%, 55%);
+  font-weight: 500;
+}
+
+main > section:nth-child(1) > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  grid-template-areas:
+  "first-name last-name"
+  "address-line-one address-line-one"
+  "address-line-two address-line-two"
+  "city postcode"
+  "select-colour select-colour"
+  "terms-and-conditions terms-and-conditions"
+  "place-order .";
+  font-size: 0.9rem;
+}
+
+main > section:nth-child(1) > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main > section:nth-child(1) > form > div > label {
+  color: hsl(0, 0%, 40%);
+}
+
+main > section:nth-child(1) > form > div > input {
+  border: 0.1rem solid hsl(0, 0%, 40%);
+  border-radius: 0.25rem;
+  font-size: 1.1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+main > section:nth-child(1) > form > div:nth-child(1) {
+  grid-area: first-name;
+}
+
+main > section:nth-child(1) > form > div:nth-child(2) {
+  grid-area: last-name;
+}
+
+main > section:nth-child(1) > form > div:nth-child(3) {
+  grid-area: address-line-one;
+}
+
+main > section:nth-child(1) > form > div:nth-child(4) {
+  grid-area: address-line-two;
+}
+
+main > section:nth-child(1) > form > fieldset:nth-of-type(1) {
+  grid-area: select-colour;
+  border: 0;
+}
+
+main > section:nth-child(1) > form > fieldset:nth-of-type(1) > legend {
+  color: hsl(0, 0%, 40%);
+}
+
+main > section:nth-child(1) > form > fieldset:nth-of-type(1) > ul {
+  display: flex;
+  gap : 2rem;
+  list-style: none;
+}
+
+main > section:nth-child(1) > form > fieldset:nth-of-type(1) > ul > li > input[type='radio'] {
+  filter: hue-rotate(-215deg);
+}
+
+main > section:nth-child(1) > form > fieldset:nth-of-type(2) {
+  grid-area: terms-and-conditions;
+  border: 0;
+}
+
+main > section:nth-child(1) > form > fieldset:nth-of-type(2) > input[type="checkbox"] {
+  filter: hue-rotate(-215deg);
+}
+
+main > section:nth-child(1) > form > fieldset:nth-of-type(2) a {
+  color: hsl(15, 87%, 55%);
+}
+
+main > section:nth-child(1) > form > input:last-child {
+  grid-area: place-order;
+  padding: 1rem 0.5rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(15, 87%, 55%);
+  font-size: 1.1rem;
+}
+
+main > section:nth-child(1) > form > label {
+  border: 1px solid red;
+}
+
+main > section:nth-child(1) > form > input {
+  border: 1px solid blue;
+}
+
+main > section:nth-child(2) {
+  grid-area: image;
+  background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+
+  main {
+    grid-template-rows: 1fr 0.75fr;
+    grid-template-columns: 1fr;
+    /* ^ im not totally happy with the way this resizes */
+    /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
+    grid-template-areas: 
+    "order-form"
+    "image";
+  }
+
+  main > section:nth-child(1) {
+    padding: 0rem 3rem 3rem 3rem;
+  }
+
+  main > section:nth-child(1) > form {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "first-name"
+    "last-name"
+    "address-line-one"
+    "address-line-two"
+    "city"
+    "postcode"
+    "select-colour"
+    "terms-and-conditions"
+    "place-order";
+  }
+  
+}
