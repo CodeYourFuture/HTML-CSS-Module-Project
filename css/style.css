@@ -50,6 +50,16 @@ nav > ul > li:first-child > a {
   font-weight: 500;
 }
 
+/* Hamburger Menu */
+nav > a {
+  display: none;
+}
+
+nav > a > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 /* FOOTER */
 footer {
   display: flex;
@@ -84,4 +94,27 @@ footer > ul > li > a > img {
 
 footer > span:last-child {
   color: hsl(225, 5%, 70%);
+}
+
+@media screen and (max-width: 767px) {
+
+  /* Shrink the header padding to better fit Mobile */
+  header {
+    padding: 1rem;
+  }
+
+  /* Nav Text List */
+  nav>ul {
+    display: none;
+  }
+
+  /* Nav Hamburger Menu */
+  nav>a {
+    display: block;
+  }
+
+  footer {
+    /* any adjustments? */
+  }
+
 }

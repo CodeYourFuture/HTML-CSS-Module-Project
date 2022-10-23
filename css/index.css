@@ -70,6 +70,7 @@ main > section:nth-child(2) > ul > li > span {
 /* SECTION THREE */
 main > section:nth-child(3) {
   display: grid;
+  grid-template-rows: auto;
   grid-template-columns: 1.5fr 2fr;
 }
 
@@ -108,4 +109,49 @@ main > section:nth-child(3) > div:nth-child(2) > a {
   background-color: hsl(15, 87%, 55%);
   color: white;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+
+  main > section:nth-child(1) {
+    padding: 4rem;
+    text-align: center;
+  }
+
+  main > section:nth-child(2) {
+    padding: 4rem;
+  }
+
+  main > section:nth-child(2) > h2 {
+    text-align: center;
+  }
+
+  main > section:nth-child(2) > ul {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  main > section:nth-child(3) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  main > section:nth-child(3) > div:nth-child(2) {
+    padding: 4rem;
+  }
+
+  main > section:nth-child(3) > div:nth-child(2) > h3 {
+    font-size: 1.6rem;
+  }
+
+  main > section:nth-child(3) > div:nth-child(2) > h3 > span:nth-child(1),
+  main > section:nth-child(3) > div:nth-child(2) > h3 > span:nth-child(3) {
+    font-size: 2rem;
+  }
+
+  main > section:nth-child(3) > div:nth-child(2) > a {
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+  }
+
 }
