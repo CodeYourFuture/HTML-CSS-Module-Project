@@ -8,11 +8,8 @@ body {
 }
 
 .header-1 {
-  background-position: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('img\first-background.jpg');
+  background-image: url(/img/first-background.jpg);
 }
 
 .sec {
@@ -44,6 +41,10 @@ li {
   margin-right: 24px;
   margin-bottom: 0;
   padding-top: 2px;
+}
+
+li:hover {
+    color: rgb(230, 103, 19);
 }
 
 .icon {
