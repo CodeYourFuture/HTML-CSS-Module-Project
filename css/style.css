@@ -4,31 +4,34 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
+  color: rgba(152, 154, 155, 0.852);
 }
 
-header {
-  background-image: url("img\first-background.jpg");
+.header-1 {
+  background-position: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('img\first-background.jpg');
 }
 
-.m {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+.sec {
+  width: 10%;
+  
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin-right: 80px;
-  margin-left: 80px;
+  align-items: center; 
+  margin-left: 87px;
+  margin-right: 40px;
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
-  margin: 20px;
+  width: 45px;
+  height: 45px;
+  margin: 16px;
 }
 
 ul {
@@ -43,9 +46,17 @@ li {
   padding-top: 2px;
 }
 
-.social-icon {
+.icon {
   width: 1rem;
   height: 1rem;
+}
+
+button {
+    color: white;
+    background-color: rgb(230, 103, 19);
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 25px 12px 25px;
 }
 /**
  * Add your custom styles below
