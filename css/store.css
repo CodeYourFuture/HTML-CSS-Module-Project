@@ -122,3 +122,36 @@ main > section:nth-child(2) {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media screen and (max-width: 767px) {
+
+  main {
+    grid-template-rows: 1fr 0.75fr;
+    grid-template-columns: 1fr;
+    /* ^ im not totally happy with the way this resizes */
+    /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
+    grid-template-areas: 
+    "order-form"
+    "image";
+  }
+
+  main > section:nth-child(1) {
+    padding: 0rem 3rem 3rem 3rem;
+  }
+
+  main > section:nth-child(1) > form {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "first-name"
+    "last-name"
+    "address-line-one"
+    "address-line-two"
+    "city"
+    "postcode"
+    "select-colour"
+    "terms-and-conditions"
+    "place-order";
+  }
+  
+}
