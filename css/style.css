@@ -13,7 +13,8 @@ body {
 }
 
 .sec {
-  width: 10%;
+display: flex;
+justify-content: space-around;
   
 }
 
@@ -58,6 +59,12 @@ button {
     border: 0;
     border-radius: 4px;
     padding: 12px 25px 12px 25px;
+}
+
+.sec-icons {
+    width: 150px;
+    height: 150px;
+    padding-bottom: 100px;
 }
 /**
  * Add your custom styles below
