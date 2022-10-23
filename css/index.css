@@ -1,3 +1,5 @@
+/* I have deliberately completed this WITHOUT any IDs or Classes for Specificity/Selector Practise*/
+
 /* HERO SECTION */
 main > section:nth-child(1) {
   display: flex;
@@ -14,9 +16,7 @@ main > section:nth-child(1) {
 }
 
 main > section:nth-child(1) > h1 {
-  margin: 0; 
-  /* this shouldn't be neccessary when i globally set margin to 0 at the top.. */
-  /* is normalize messing with this? but styles.css is loaded AFTER normalize? */
+  margin: 0;
   font-size: 2.8rem;
 }
 
