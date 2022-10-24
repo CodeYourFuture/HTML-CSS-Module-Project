@@ -79,20 +79,22 @@ button {
   background-color: rgba(231, 98, 49, 0.877);
 }
 
+button:hover {
+  color: rgba(231, 98, 49, 0.877);
+  background: white;
+}
 /* section 2*/
 
 .section-2 {
-  padding-bottom: 200px;
-  padding-top: 100px;
+  margin-bottom: 200px;
+  margin-top: 100px;
 }
 
-.section-2 p {
+.section-2-heading {
   font-size: 2.5em;
   text-align: center;
   font-weight: lighter;
-}
-ul {
-  list-style: none;
+  margin-bottom: 50px;
 }
 
 .section-2-icons {
@@ -103,11 +105,17 @@ ul {
 .section-2-img {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .section-2-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.5em;
+  text-align: left;
+  font-weight: lighter;
+  padding-right: 87px;
 }
