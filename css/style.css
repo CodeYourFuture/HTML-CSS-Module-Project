@@ -15,17 +15,47 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-.background-picture {
-  background-image: url("/home/natalie/Documents/HTML-CSS-Module-Project?organization=nataliiazab&organization=nataliiazab/img/first-background.jpg");
-}
-
+/** Navigation */
 .navigation__list {
   display: flex;
   list-style: none;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  height: 2rem;
+  height: 10px;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  padding-right: 80px;
+}
+
+#Karma_logo {
+  width: 40px;
+  height: 40px;
+  padding-right: 800px;
+}
+
+/** Introduction section with bacground photo */
+
+.Introduction {
+  background-image: url("/home/natalie/Documents/CYF/HTML-CSS-Module-Project/img/first-background.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 400px;
+}
+
+.Introduction h1 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Introduction p {
+  font-size: 16px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
