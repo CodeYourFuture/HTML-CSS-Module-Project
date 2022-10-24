@@ -126,6 +126,7 @@ button:hover {
   padding-top: 58px;
 }
 
+/*section3*/
 .section3 {
   display: flex;
   flex-direction: row;
@@ -163,6 +164,7 @@ button:hover {
   height: auto;
 }
 
+/*footer*/
 footer {
   margin: 100px 0;
 }
@@ -220,4 +222,34 @@ footer .footer-box .icons .facebook-icon {
 
 footer .footer-box .icons .instagram-icon {
   color: #4a7297;
+}
+
+/*responsive design*/
+@media (max-width: 1400px) {
+  .menu {
+    padding: 15px 20px 15px 20px;
+  }
+
+  .navbar .navbar-collapse .nav-text {
+    padding: 0 10px;
+  }
+
+  .section1 .box {
+    padding-top: 270px;
+    padding-bottom: 220px;
+  }
+
+  .section3 .text-section-3 {
+    margin: 0 100px;
+  }
+
+  .section3 p {
+    font-size: 44px;
+    padding-bottom: 20px;
+  }
+
+  .section3 img {
+    width: 120%;
+    height: auto;
+  }
 }
