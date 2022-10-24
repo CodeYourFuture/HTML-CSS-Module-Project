@@ -91,12 +91,12 @@ body {
   
   .karma-intro h1 {
     margin-bottom: 1rem;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 400;
   }
   
   .karma-intro p {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
   }
 
@@ -107,3 +107,42 @@ body {
     margin-top: 10px;
     padding: 15px;
   }
+
+  /* Headings */
+
+.heading-underline {
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 22%;
+    padding-top: 5%;
+    border-bottom: 2px solid var(--orange-light);
+    font-size: 3.8rem;
+    font-weight: 300;
+  }
+  
+  .article__thumbnail {
+    object-fit: contain;
+    width: 10rem;
+    padding-left: 35px;
+  }
+
+  .flex-article{
+    display: flex;
+    gap: 15px; 
+    justify-content: space-evenly;
+  }
+
+  .article {
+    margin-bottom: 1rem;
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .article__summary {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
