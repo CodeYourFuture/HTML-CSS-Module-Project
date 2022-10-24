@@ -131,10 +131,31 @@ button:hover {
 .section3 {
   display: flex;
   flex-direction: row;
+  background-color: #fcefeb;
 }
 
-.section3 .box {
+.section3 .text-section-3 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 0 200px;
+}
+
+.section3 p {
+  font-size: 54px;
+  font-weight: 400;
+  color: #434242;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section3 span {
+  color: var(--main-color);
+}
+
+.section3 img {
+  width: 110%;
+  height: auto;
 }
