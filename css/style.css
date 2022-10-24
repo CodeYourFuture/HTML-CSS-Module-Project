@@ -36,13 +36,17 @@ body {
 }
 
 /*section1*/
+.section1 .box {
+  padding-top: 300px;
+  padding-bottom: 470px;
+}
+
 .section1 h1 {
   text-align: center;
-  font-size: 98px;
+  font-size: 96px;
   font-weight: 300;
   color: white;
   margin: 0;
-  padding-top: 315px;
   padding-bottom: 40px;
 }
 
@@ -57,7 +61,7 @@ body {
 .section1 button {
   display: block;
   margin: 0 auto;
-  margin-bottom: 116px;
+  /* margin-bottom: 116px; */
 }
 
 button {
@@ -84,14 +88,11 @@ button:hover {
   object-fit: cover;
 }
 
+/*section2*/
 .section2 {
-  padding: 550px 0;
-}
-
-.section2 h2 {
-  text-align: center;
-  font-size: 76px;
-  font-weight: 300;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .section2 .container {
@@ -100,6 +101,12 @@ button:hover {
 
 .section2 .row {
   margin-top: 80px;
+}
+
+.section2 h2 {
+  text-align: center;
+  font-size: 76px;
+  font-weight: 300;
 }
 
 .section2 .icon {
@@ -119,4 +126,15 @@ button:hover {
 .icons img {
   width: 20px;
   height: auto;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.section3 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
