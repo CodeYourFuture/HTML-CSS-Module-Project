@@ -1,6 +1,7 @@
 :root {
   --main-color: #f15b2a;
   --text-color: rgba(0, 0, 0, 0.5);
+  --secondary-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -123,11 +124,6 @@ button:hover {
   padding-top: 58px;
 }
 
-.icons img {
-  width: 20px;
-  height: auto;
-}
-
 .section3 {
   display: flex;
   flex-direction: row;
@@ -158,4 +154,63 @@ button:hover {
 .section3 img {
   width: 110%;
   height: auto;
+}
+
+footer {
+  margin: 100px 0;
+}
+
+footer hr {
+  width: 80%;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+footer .footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-box .text-1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+footer .footer-box .text-2 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+footer .footer-box .icons {
+  margin: 20px 0;
+}
+
+footer .footer-box .icons i {
+  font-size: 28px;
+  margin: 0 10px;
+  padding: 18px 21px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .footer-box .icons i:hover {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-box .icons .twitter-icon {
+  color: #68ace8;
+}
+
+footer .footer-box .icons .facebook-icon {
+  color: #50679f;
+}
+
+footer .footer-box .icons .instagram-icon {
+  color: #4a7297;
 }
