@@ -1,3 +1,22 @@
+:root {
+  --main-color: #f15b2a;
+  --text-color: rgba(0, 0, 0, 0.5);
+  --secondary-color: rgba(0, 0, 0, 0.2);
+}
+
 main {
-  margin-top: 200px;
+  margin-top: 100px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.form-box {
+  padding: 120px 120px;
 }

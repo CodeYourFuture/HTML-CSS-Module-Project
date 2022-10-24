@@ -58,66 +58,78 @@
     </header>
 
     <main>
-        <h1>Order your Karma wifi device today!</h1>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="first_name">First name *</label>
-                    <input type="text" class="form-control" id="first_name" name="first_name" required />
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="last_name">Last name *</label>
-                    <input type="text" class="form-control" id="last_name" name="last_name" required />
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Address *</label>
-                <input type="text" class="form-control" id="inputAddress" name="inputAddress" required>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" name="inputAddress2">
-            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 form-box">
+                    <h1>Order your Karma wifi device today!</h1>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="first_name">First name *</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="last_name">Last name *</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address *</label>
+                            <input type="text" class="form-control" id="inputAddress" name="inputAddress" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" name="inputAddress2">
+                        </div>
 
-            <div class="form-row">
-                <div class="form-group col-md-8">
-                    <label for="inputCity">City</label>
-                    <select id="inputCity" class="form-control" name="inputCity">
-                        <option value="" disabled selected hidden>Select your city...</option>
-                        <option>Choose...</option>
-                        <option>...</option>
-                    </select>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="inputCity">City</label>
+                                <select id="inputCity" class="form-control" name="inputCity">
+                                    <option value="" disabled selected hidden>Select your city...</option>
+                                    <option>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputPostcode">Postcode *</label>
+                                <input type="text" class="form-control" id="inputPostcode" name="inputPostcode"
+                                    required>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <legend>Select a colour</legend>
+                            <div class="form-group checkbox-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="karmaOrange" id="karmaOrange"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="karmaOrange">Karma orange</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="spaceGrey" id="spaceGrey"
+                                        value="option2">
+                                    <label class="form-check-label" for="spaceGrey">Space Grey</label>
+                                </div>
+                        </fieldset>
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                                <label class="form-check-label" for="gridCheck">
+                                    By placing your order you agree to Karma's <span>Terms and Conditions</span>.*
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Place my order</button>
+                    </form>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputPostcode">Postcode *</label>
-                    <input type="text" class="form-control" id="inputPostcode" name="inputPostcode" required>
+                <div class="col-md-6">
+                    <img src="level-2/store-image_by-andrew-neel-unsplash-cropped.jpg"
+                        alt="The girl is sitting with the computer.">
                 </div>
             </div>
-
-            <fieldset>
-                <legend>Select a colour</legend>
-                <div class="form-group checkbox-group">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="karmaOrange" id="karmaOrange" value="option1"
-                            checked>
-                        <label class="form-check-label" for="karmaOrange">Karma orange</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="spaceGrey" id="spaceGrey" value="option2">
-                        <label class="form-check-label" for="spaceGrey">Space Grey</label>
-                    </div>
-            </fieldset>
-
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" checked>
-                    <label class="form-check-label" for="gridCheck">
-                        By placing your order you agree to Karma's <span>Terms and Conditions</span>.*
-                    </label>
-                </div>
-            </div>
-            <button type="submit" class="submit-button">Place my order</button>
-        </form>
+        </div>
     </main>
 
 </body>
