@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Karma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,40 +15,64 @@
 
 <body>
     <header>
-        <img src="img/karma-logo.svg" alt="Logo">
-        <nav>
-            <ul>
-                <li>Meet Karma</li>
-                <li>How It Works</li>
-                <li>Store</li>
-                <li>Blog</li>
-                <li>Help</li>
-                <li>Login</li>
-            </ul>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="img/karma-logo.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Meet Karma<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="section_1">
+            <img class="section1_image" src="img/first-background.jpg" alt="The laptop is laying on table.">
             <h1>Introducing Karma</h1>
             <h3>Bring WiFi with you, everywhere you go.</h3>
             <button>Learn more</button>
         </section>
+
         <section class="section_2">
             <h1>Everyone needs a little Karma.</h1>
             <div class="part">
-                <img src="img/icon-devices.svg" alt="Devices icon.">
+                <img class="icon" src="img/icon-devices.svg" alt="Devices icon.">
                 <p>Internet for all devices</p>
             </div>
             <div class="part">
-                <img src="img/icon-coffee.svg" alt="Coffee icon.">
+                <img class="icon" src="img/icon-coffee.svg" alt="Coffee icon.">
                 <p>Boost your productivity.</p>
             </div>
             <div class="part">
-                <img src="img/icon-refill.svg" alt="Refill fuel icon.">
+                <img class="icon" src="img/icon-refill.svg" alt="Refill fuel icon.">
                 <p>Pay as You Go</p>
             </div>
         </section>
+
         <section class="section_3">
             <img src="level-2/homepage-feature.png" alt="The girl is smiling">
             <div class="text-section-3">
