@@ -1,10 +1,41 @@
+:root {
+  --main-color: #f15b2a;
+  --text-color: rgba(0, 0, 0, 0.5);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
-.icon,
-.logo {
+/* navbar*/
+.menu {
+  margin: 20px 120px 0 120px;
+  font-size: 28px;
+  color: var(--text-color);
+}
+
+.navbar .navbar-brand .logo {
+  width: 45px;
+  height: auto;
+}
+
+.navbar .navbar-collapse .nav-text {
+  padding: 0 20px;
+  color: var(--text-color);
+}
+
+.navbar .navbar-collapse .nav-item .karma-text {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.navbar .navbar-collapse .nav-item .nav-link:hover {
+  color: var(--main-color);
+}
+
+.icon {
   width: 100px;
   height: auto;
 }
