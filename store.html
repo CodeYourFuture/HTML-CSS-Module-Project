@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Karma</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img class="karma-logo" src="./img/karma-logo.svg" />
+            </div>
+            <div class="nav-logo nav-logo-right">
+                <a class="nav-link" href="index.html">Meet Karma</a>
+                <a class="nav-link" href="#">How It Works</a>
+                <a class="nav-link active" href="#">Store</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link" href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="store-container">
+            <div class="store-container-1">
+                <h2>Order your Karma wifi device today!</h2>
+                <form>
+                    <div class="form-1">
+                        <div>
+                            <label for="first-name">First Name *</label>
+                            <input id="first-name" type="text" name="first-name" minlength="2" maxlength="15"
+                                required />
+                        </div>
+                        <div>
+                            <label for="last-name">Last Name *</label>
+                            <input id="last-name" type="text" name="last-name" minlength="2" maxlength="15" required />
+                        </div>
+                    </div>
+                    <div>
+                        <label for="address">Address *</label>
+                        <input id="address" type="text" name="address" minlength="2" maxlength="40" required />
+                    </div>
+                    <div>
+                        <label for="address-2">Address-2 *</label>
+                        <input id="address-2" type="text" name="address-2" minlength="2" maxlength="40" required />
+                    </div>
+                    <div class="form-2">
+                        <div>
+                            <label class="city">City *</label>
+                            <select id="city" text="City" name="city" required>
+                                <option value="">Select your city...</option>
+                                <option value="manchester">Manchester</option>
+                                <option value="london">York</option>
+                                <option value="leeds">Glasgow</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="post-code">Post Code *</label>
+                            <input id="post-code" type="text" name="post-code" minlength="2" maxlength="10" required />
+                        </div>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Select a colour</legend>
+                            <input class="form-control" id="orange" type="radio" name="colour" value="orange"
+                                required />
+                            <label for="orange" class="form-control">Karma orange</label>
+                            <input class="form-control" id="grey" type="radio" name="colour" value="grey" required />
+                            <label for="grey" class="form-control">Space Grey</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <input class="form-control" id="terms" type="checkbox" name="terms" value="terms" required />
+                        <label for="terms" class="form-control">By placing your order you agree to Karma's 
+                            <a href = "#">Terms and Conditions.</a></label>
+                    </div>
+                    <div>
+                        <button class="btn-place">Place my order</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="store-container-2">
+                <img src="img/store-image_by-andrew-neel-unsplash.jpg" />
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-join">Join us on</p>
+        <div class="container-social">
+            <div class="social">
+                <img src="img/twitter-icon.svg" alt="twitter" />
+            </div>
+            <div class="social">
+                <img src="img/facebook-icon.svg" alt="facebook" />
+            </div>
+            <div class="social">
+                <img src="img/instagram-icon.svg" alt="instagram" />
+            </div>
+        </div>
+        <p class="footer-text">&copy; Karma Mobility, Inc.</p>
+    </footer>
+</body>
+
+</html>
