@@ -519,3 +519,50 @@ footer .footer-box .icons .instagram-icon {
     padding: 14px 17px;
   }
 }
+
+@media (max-width: 576px) {
+  .section1 .box {
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section1 .box {
+    padding-top: 90px;
+    padding-bottom: 120px;
+  }
+
+  .section1 h1 {
+    font-size: 30px;
+    padding-bottom: 16px;
+  }
+
+  .section1 h3 {
+    font-size: 18px;
+    padding-bottom: 26px;
+  }
+
+  button {
+    padding: 10px 38px;
+    font-size: 16px;
+  }
+
+  .section2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section2 h2 {
+    font-size: 28px;
+  }
+
+  .section3 p {
+    font-size: 24px;
+  }
+
+  .section3 .mobile-button {
+    padding: 14px 44px;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
