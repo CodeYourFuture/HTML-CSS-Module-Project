@@ -86,7 +86,7 @@ button:hover {
 /* section 2*/
 
 .section-2 {
-  margin-bottom: 200px;
+  margin-bottom: 80px;
   margin-top: 100px;
 }
 
@@ -118,4 +118,39 @@ button:hover {
   text-align: left;
   font-weight: lighter;
   padding-right: 87px;
+}
+
+/*footer*/
+#line {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+#JoinUs {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-icons {
+  height: 20px;
+  width: 20px;
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid gray;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#Author {
+  font-weight: lighter;
+  color: gray;
+  text-align: center;
+  margin-bottom: 80px;
 }
