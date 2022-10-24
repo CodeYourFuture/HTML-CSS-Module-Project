@@ -1,6 +1,6 @@
 :root {
   --main-color: #f15b2a;
-  --text-color: rgba(0, 0, 0, 0.5);
+  --text-color: rgba(0, 0, 0, 0.6);
   --secondary-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -13,10 +13,38 @@ main img {
   height: auto;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .container-fluid {
   padding: 0 !important;
 }
 
 .form-box {
-  padding: 120px 120px;
+  padding: 130px 160px;
+  padding-right: 130px;
+}
+
+.form-box h1 {
+  font-size: 68px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+form {
+  padding-top: 50px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+form input {
+  line-height: 2.5 !important;
+  border: 2px solid var(--text-color) !important;
+}
+
+form select {
+  height: 55px !important;
+  border: 2px solid var(--text-color) !important;
 }

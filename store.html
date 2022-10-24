@@ -60,7 +60,7 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 form-box">
+                <div class="col-md-6 form-box no-padding">
                     <h1>Order your Karma wifi device today!</h1>
                     <form>
                         <div class="form-row">
@@ -84,8 +84,8 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="inputCity">City</label>
-                                <select id="inputCity" class="form-control" name="inputCity">
+                                <label for="inputCity">City *</label>
+                                <select id="inputCity" class="form-control" name="inputCity" required>
                                     <option value="" disabled selected hidden>Select your city...</option>
                                     <option>Choose...</option>
                                     <option>...</option>
@@ -115,7 +115,7 @@
 
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                                <input class="form-check-input" type="checkbox" id="gridCheck" checked required>
                                 <label class="form-check-label" for="gridCheck">
                                     By placing your order you agree to Karma's <span>Terms and Conditions</span>.*
                                 </label>
@@ -124,7 +124,7 @@
                         <button type="submit" class="submit-button">Place my order</button>
                     </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 no-padding">
                     <img src="level-2/store-image_by-andrew-neel-unsplash-cropped.jpg"
                         alt="The girl is sitting with the computer.">
                 </div>
@@ -132,6 +132,18 @@
         </div>
     </main>
 
+    <footer>
+        <hr>
+        <div class="footer-box">
+            <p class="text-1">Join us on</p>
+            <div class="icons">
+                <i class="fa-brands fa-twitter twitter-icon"></i>
+                <i class="fa-brands fa-facebook-f facebook-icon"></i>
+                <i class="fa-brands fa-instagram instagram-icon"></i>
+            </div>
+            <p class="text-2">© Karma Mobility, Inc.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
