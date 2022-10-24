@@ -15,12 +15,17 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-svg {
-  width: 40;
-  height: 40;
+.background-picture {
+  background-image: url("/home/natalie/Documents/HTML-CSS-Module-Project?organization=nataliiazab&organization=nataliiazab/img/first-background.jpg");
 }
 
-#Karma_logo {
-  width: 20px;
-  height: 20px;
+.navigation__list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
 }
