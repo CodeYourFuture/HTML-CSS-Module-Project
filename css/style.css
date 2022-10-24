@@ -36,6 +36,10 @@ body {
   color: var(--main-color);
 }
 
+.changed-toggler {
+  border: none;
+}
+
 /*section1*/
 .section1 .box {
   position: relative;
@@ -310,5 +314,69 @@ footer .footer-box .icons .instagram-icon {
   .section3 p {
     font-size: 38px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-brand .logo {
+    width: 25px;
+    height: auto;
+  }
+
+  .section1 .box {
+    padding-top: 180px;
+    padding-bottom: 190px;
+  }
+
+  .section1 h1 {
+    font-size: 46px;
+    padding-bottom: 20px;
+  }
+
+  .section1 h3 {
+    font-size: 28px;
+    padding-bottom: 46px;
+  }
+
+  button {
+    padding: 15px 49px;
+    font-size: 18px;
+  }
+
+  .section2 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .section2 .row {
+    margin-top: 70px;
+  }
+
+  .section2 h2 {
+    font-size: 38px;
+  }
+
+  .section2 p {
+    font-size: 22px;
+    padding-top: 28px;
+  }
+
+  .section3 .text-section-3 {
+    margin: 30px 90px;
+  }
+
+  .section3 p {
+    font-size: 38px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .section3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    margin: 60px 0;
   }
 }
