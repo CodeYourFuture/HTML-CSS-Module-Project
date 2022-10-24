@@ -12,7 +12,7 @@ body {
 
 /* navbar*/
 .menu {
-  margin: 15px 90px 15px 120px;
+  padding: 15px 90px 15px 120px;
   font-size: 28px;
   color: var(--text-color);
 }
@@ -38,11 +38,13 @@ body {
 
 /*section1*/
 .section1 .box {
-  padding-top: 300px;
+  position: relative;
+  padding-top: 430px;
   padding-bottom: 470px;
 }
 
 .section1 h1 {
+  position: relative;
   text-align: center;
   font-size: 96px;
   font-weight: 300;
@@ -57,6 +59,14 @@ body {
   font-weight: 300;
   color: white;
   padding-bottom: 86px;
+}
+
+.section1_image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
 }
 
 .section1 button {
@@ -79,14 +89,6 @@ button {
 button:hover {
   color: var(--main-color);
   background-color: white;
-}
-
-.section1_image {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-  object-fit: cover;
 }
 
 /*section2*/
@@ -146,6 +148,7 @@ button:hover {
 .section3 p {
   font-size: 54px;
   font-weight: 400;
+  line-height: 62px;
   color: #434242;
   text-align: center;
   padding-bottom: 40px;
