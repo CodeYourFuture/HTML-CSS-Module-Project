@@ -23,17 +23,27 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   height: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
   padding-top: 1rem;
-  padding-right: 80px;
+  padding-right: 150px;
 }
 
 #Karma_logo {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   padding-right: 800px;
+  padding-left: 30px;
+  padding-top: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+li a:hover {
+  color: rgba(231, 98, 49, 0.877);
+}
 /** Introduction section with bacground photo */
 
 .Introduction {
@@ -42,20 +52,29 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 400px;
+  padding-top: 150px;
+  padding-bottom: 300px;
+  text-align: center;
 }
 
 .Introduction h1 {
   margin-bottom: 16px;
-  font-size: 32px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 3em;
+  font-weight: lighter;
 }
 
 .Introduction p {
   font-size: 16px;
   margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-bottom: 80px;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  background-color: rgba(231, 98, 49, 0.877);
 }
