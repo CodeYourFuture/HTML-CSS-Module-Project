@@ -47,6 +47,9 @@ body {
 
  .nav-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
 
  }
@@ -102,6 +105,7 @@ body {
 .hero h2 {
     font-weight: 200;
     font-size: 35px;
+    text-align: center;
 }
 
 .hero h5 {
