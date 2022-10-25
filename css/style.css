@@ -1,9 +1,12 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+body,
+button {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  margin: 40px;
 }
 
 /**
@@ -15,5 +18,81 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.header,
+.content,
+.footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/*main*/
+main {
+  margin-bottom: 200px;
+}
+
+/*Navigation*/
+
+.navigation_list {
+  display: flex;
+  list-style: none;
+}
+.navigation_item {
+  padding: 0.5em 0;
+}
+.navigation_link {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 8px;
+}
+.navigation_link:hover {
+  background: #c05326;
+}
+
+/*wifi*/
+.wifi {
+  background-image: url("/img/first-background.jpg");
+  background-color: var(--grey-light);
+  height: 635px;
+  color: #fff;
+  padding-top: 100px;
+  padding-left: 30px;
+  margin-bottom: 35px;
+}
+.more {
+  text-align: center;
+}
+.three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*footer*/
+.footer {
+  margin-top: 2rem;
+}
+
+.footer_content {
+  border-top: 1px solid var(--grey-light);
+  padding-top: 2rem;
+  padding-left: 550px;
+  padding-bottom: 2rem;
+}
+.footer p {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
