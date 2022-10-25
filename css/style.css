@@ -3,7 +3,6 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-image: url("img/first-background.jpg");
 }
 
 /**
@@ -60,7 +59,37 @@ button {
   margin-top: 50px;
 }
 
-section {
-  background-image: url("HTML-CSS-MODULE-PROJECT/img/first-background.jpg");
+#first-page {
+  background-image: url("img/first-background.jpg");
   margin-top: 200px;
+}
+
+/*STYLING FOR PAGE WITHOUT BACKGROUND IMAGE*/
+
+.icons {
+  width: 100px;
+}
+
+#icon-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#next-page {
+  margin-top: 200px;
+}
+
+/*STYLING  FOR FOOTER*/
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: overline;
+}
+
+.smicon {
+  width: 20px;
 }
