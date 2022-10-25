@@ -40,11 +40,62 @@ form {
 }
 
 form input {
-  line-height: 2.5 !important;
-  border: 2px solid var(--text-color) !important;
+  line-height: 3.5 !important;
+  border: 2.5px solid var(--text-color) !important;
 }
 
 form select {
-  height: 55px !important;
+  height: 73px !important;
   border: 2px solid var(--text-color) !important;
+}
+
+.form-group {
+  margin-bottom: 45px;
+}
+
+.form-row .padding-left {
+  padding-left: 18px;
+}
+
+.form-row .padding-right {
+  padding-right: 18px;
+}
+
+.italic-text {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset legend {
+  padding-top: 30px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+fieldset .form-check-label {
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.terms-box {
+  margin-top: 40px;
+}
+
+.terms-box .form-check .terms-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.terms-box .form-check .terms-text a {
+  color: var(--main-color);
+  text-decoration: underline;
 }

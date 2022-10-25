@@ -64,11 +64,11 @@
                     <h1>Order your Karma wifi device today!</h1>
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 padding-right">
                                 <label for="first_name">First name *</label>
                                 <input type="text" class="form-control" id="first_name" name="first_name" required />
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6 padding-left">
                                 <label for="last_name">Last name *</label>
                                 <input type="text" class="form-control" id="last_name" name="last_name" required />
                             </div>
@@ -83,15 +83,20 @@
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group col-md-8">
+                            <div class="form-group col-md-8 padding-right">
                                 <label for="inputCity">City *</label>
-                                <select id="inputCity" class="form-control" name="inputCity" required>
-                                    <option value="" disabled selected hidden>Select your city...</option>
-                                    <option>Choose...</option>
-                                    <option>...</option>
+                                <select id="inputCity" class="form-control italic-text" name="inputCity" required>
+                                    <option value="" disabled selected hidden>Select your city...
+                                    </option>
+                                    <option value="london">London</option>
+                                    <option value="liverpool">Liverpool</option>
+                                    <option value="edinburgh">Edinburgh</option>
+                                    <option value="manchester">Manchester</option>
+                                    <option value="bristol">Bristol</option>
+                                    <option value="otherCity">Other city</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-4 padding-left">
                                 <label for="inputPostcode">Postcode *</label>
                                 <input type="text" class="form-control" id="inputPostcode" name="inputPostcode"
                                     required>
@@ -113,11 +118,13 @@
                                 </div>
                         </fieldset>
 
-                        <div class="form-group">
+                        <div class="form-group terms-box">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck" checked required>
-                                <label class="form-check-label" for="gridCheck">
-                                    By placing your order you agree to Karma's <span>Terms and Conditions</span>.*
+                                <label class="form-check-label terms-text" for="gridCheck">
+                                    By placing your order you agree to Karma's
+                                    <a href="https://karmamobility.com/terms_and_conditions" target="_blank">Terms and
+                                        Conditions</a>.*
                                 </label>
                             </div>
                         </div>
