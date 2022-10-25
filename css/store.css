@@ -94,7 +94,26 @@ fieldset legend {
 
 fieldset .form-check-label {
   font-weight: 400;
-  padding-left: 10px;
+  padding-left: 20px;
+}
+
+/* customising radio button*/
+fieldset input[type="radio"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 4px;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--main-color);
+}
+
+input[type="radio"]:checked ~ .check::before {
+  background: var(--main-color);
 }
 
 .terms-box {
