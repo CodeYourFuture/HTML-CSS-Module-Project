@@ -106,8 +106,8 @@ header {
     font-size: 50px;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-
 }
+
 .hero h5 {
     margin-top: -1rem;
     margin-bottom: 2rem;
@@ -134,4 +134,44 @@ header {
 .hero button a {
     text-decoration: none;
     color: var(--white);
+}
+
+/* Second section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-weight: 200;
+    font-size: 45px;
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+article h5 {
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+article img {
+    width: 120px;
+    height: 120px;
+}
+
+.context {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
 }
