@@ -16,7 +16,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
- *{
+ * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -25,7 +25,7 @@ body {
 :root {
     --grey-dark: #363434;
     --grey: #adadad;
-    --orange: #f05a28;
+    --orange: #f05a28c4;
     --white: #fff;
  }
 
@@ -78,3 +78,60 @@ header {
  .nav-items:first-child > a:hover{
     color: var(--orange);
  }
+
+ /* main */
+ main {
+    display: flex;
+    flex-direction: column;
+ }
+
+ /* First section */
+
+.hero {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 5rem 0 5rem;
+}
+
+.hero h2 {
+    font-weight:100;
+    font-size: 50px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.hero h5 {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.hero button {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 15px;
+}
+
+.hero button>a {
+    padding: 0 1rem;
+}
+
+.hero button:hover {
+    background-color: var(--grey-dark);
+}
+
+.hero button a {
+    text-decoration: none;
+    color: var(--white);
+}
