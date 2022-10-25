@@ -5,7 +5,57 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    text-align: center;
+}
+.main {
+    width: 80%;
+    height: auto;
+    
+    margin: 80px auto;
+}
+.section {
+    width: 100%;
+    height:auto;
+}
+.article {
+    width: 25%;
+    height: auto;
+    
+    display: inline-block;
+    margin-right: 50px;
+}
+.btn {
+    width: 80px;
+    height: 50px;
 
+}
+.btn a {
+   text-decoration: none;
+
+} 
+.btn:hover {
+    background-color: red;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    text-align:center;
+
+}
+.article:first-child {
+color: blue;
+
+}
+.summery {
+    
+    background-color: pink;
+    cursor: pointer;
+}
 /**
  * Add your custom styles below
  * 
