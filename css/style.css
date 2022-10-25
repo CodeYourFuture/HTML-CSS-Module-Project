@@ -17,3 +17,35 @@ body {
  */
 
 
+header{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4em;
+}
+
+img{
+    margin-left: 4rem;
+    display: fle;
+    align-items: center;
+}
+
+
+nav{
+    margin-right: 4rem;
+
+}  
+
+nav ul li {
+    display: inline-block;
+    flex-direction: inline-block;
+    justify-content:space-between;
+    list-style: none;
+    margin-top: 1.5rem;
+    margin-right: 4rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* padding-inline-start: 2.8; */
+}
