@@ -99,3 +99,16 @@ fieldset .form-check-label {
   color: var(--main-color);
   text-decoration: underline;
 }
+
+.submit-button {
+  padding: 22px 70px;
+  font-size: 28px;
+  font-weight: 400;
+  border: 2px solid var(--main-color);
+}
+
+.submit-button:hover {
+  color: var(--main-color);
+  background-color: white;
+  border: 2px solid var(--main-color);
+}
