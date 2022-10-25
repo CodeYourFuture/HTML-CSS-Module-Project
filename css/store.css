@@ -121,6 +121,7 @@ input[type="radio"]:checked ~ .check::before {
 }
 
 .terms-box .form-check .terms-text {
+  padding-left: 35px;
   font-size: 24px;
   font-weight: 400;
 }
@@ -128,6 +129,24 @@ input[type="radio"]:checked ~ .check::before {
 .terms-box .form-check .terms-text a {
   color: var(--main-color);
   text-decoration: underline;
+}
+
+/*Customising checkbox */
+.terms-box input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--text-color);
+  border-radius: 20%;
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.terms-box input[type="checkbox"]:checked {
+  background-image: url(/level-2/check-solid.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.1rem top 50%;
+  background-size: 1.5rem auto;
 }
 
 .submit-button {
