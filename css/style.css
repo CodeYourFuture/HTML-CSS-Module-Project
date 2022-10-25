@@ -5,65 +5,125 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-.header {
+.nav ul li {
+width: 90px;
+height: 80px;
+display: inline-block;
+
+
+}
+.nav {
     width: 100%;
-    height: 80px;
-    background-color: gray;
+    direction:rtl;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+#meetkarma {
+    margin-right: 30px;
+}
+.bg-img{
+    background-image: url("../img/first-background.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 600px;
+}
+.heading {
+    color: white;
     text-align: center;
 }
-.main {
-    width: 80%;
-    height: auto;
-    
-    margin: 80px auto;
-}
-.section {
-    width: 100%;
-    height:auto;
-}
-.article {
-    width: 25%;
-    height: auto;
-    
-    display: inline-block;
-    margin-right: 50px;
+#heading2 {
+    padding-top: 200px;
+
 }
 .btn {
-    width: 80px;
-    height: 50px;
-
+    width: 130px;
+    height: 40px;
+   margin-left: 45%;
+   background-color: orange;
+   color: white;
 }
-.btn a {
-   text-decoration: none;
-
+.div2 {
+    width: 80%;
+    margin: 100px auto;
+   
+    
+    
+    
 } 
-.btn:hover {
-    background-color: red;
+.img1 {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    
+}
+.img2 {
+    
+        width: 150px;
+        height: auto;
+        display: inline-block;
+       
+    
+}
+.img3 {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+}
+.icon2 {
+    margin-left: 330px;
+    margin-right: 330px;
+    
+    width: 150px;
+    display: inline-block;
+} 
+.icon1 {
+    width: 150px;
+    display:inline-block;
+}
+.icon3 {
+    width: 150px;
+    display: inline-block;
+}
+.icon1 h4 {
+    width: 200px;
+    
+}
+.icon2 h4 {
+    width: 200px;
+    
+}
+.icon3 h4 {
+    width: 150px;
+    
+}
+.div2 h2{
+    text-align: center;
+    margin-bottom: 80px;
 }
 .footer {
-    width: 100%;
-    height: 100px;
-    background-color: lightgray;
-    text-align:center;
-
-}
-.article:first-child {
-color: blue;
-
-}
-.summery {
+    width: 80%;
+    margin:0 auto ;
     
-    background-color: pink;
-    cursor: pointer;
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.footer-img1 {
+    width: 30px;
+    height: auto;
+    margin-left: 45%;
+}
+.footer-img2 {
+    width: 30px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.footer-img3 {
+    width: 30px;
+    height: auto;
+}
+.footer h4{
+    text-align: center;
+}
 
 
