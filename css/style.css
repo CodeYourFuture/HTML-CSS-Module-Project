@@ -38,7 +38,8 @@ h6 {
 
 /*main*/
 main {
-  margin-bottom: 200px;
+  padding-bottom: 150px;
+  border-bottom: 1px solid lightgrey;
 }
 
 /*Navigation*/
@@ -46,19 +47,23 @@ main {
 .navigation_list {
   display: flex;
   list-style: none;
+  padding-left: 100px;
 }
 .navigation_item {
   padding: 0.5em 0;
 }
 .navigation_link {
   color: var(--grey-dark);
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
   margin: 8px;
 }
 .navigation_link:hover {
-  background: #c05326;
+  color: #c05326;
+}
+
+.navigation_item-l {
+  margin-right: 625px;
+  background: #fff;
+  color: #c05326;
 }
 
 /*wifi*/
@@ -71,13 +76,63 @@ main {
   padding-left: 30px;
   margin-bottom: 35px;
 }
+.intro {
+  margin-top: 148px;
+  margin-left: 500px;
+  margin-bottom: 1rem;
+  font-size: 3.9rem;
+  font-weight: 300;
+}
+.bring {
+  margin-top: 5px;
+  margin-left: 470px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.wifi button {
+  margin-top: 38px;
+  margin-left: 660px;
+  background: #c05326;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5%;
+}
+
 .more {
   text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 120px;
 }
 .three {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.l {
+  margin-right: 80px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c {
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.r {
+  margin-left: 80px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*footer*/
@@ -88,11 +143,39 @@ main {
 .footer_content {
   border-top: 1px solid var(--grey-light);
   padding-top: 2rem;
-  padding-left: 550px;
+  padding-left: auto;
+  padding-right: auto;
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer p {
   padding-bottom: 1rem;
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.karma {
+  color: gray;
+}
+
+.twitter {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-right: 5px;
+}
+.facebook {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.instagram {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-left: 5px;
 }
