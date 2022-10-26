@@ -167,3 +167,56 @@ footer {
   margin: 0;
   margin-bottom: 100px;
 }
+
+@media (max-width: 1400px) {
+  .form-box h1 {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-box {
+    padding-top: 80px;
+  }
+
+  .form-row .padding-left {
+    padding-left: 0.75rem;
+  }
+
+  .form-row .padding-right {
+    padding-right: 0.75rem;
+  }
+
+  .form-box h1 {
+    font-size: 62px;
+    text-align: center;
+  }
+
+  .submit-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-box {
+    padding-top: 20px;
+  }
+
+  .form-box h1 {
+    font-size: 54px;
+  }
+
+  .form-row .padding-left {
+    padding-left: 0;
+  }
+
+  .form-row .padding-right {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
