@@ -5,27 +5,15 @@ body {
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
+  margin: 1rem;
+  text-align: center;
   align-items: center;
+
+  /*align-items: center;
+  
+  margin: 1rem 1rem;*/
 }
-header,
-main {
-  padding: 0 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 /**
  * Add your custom styles below
  * 
@@ -36,67 +24,128 @@ p {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 /* header*/
+
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 1rem 1rem 1rem 1rem;
+  justify-content: space-between;
 }
+/*nav {
+  padding-left: 5rem;
+}*/
 
 .logo_header {
-  width: 1rem;
-  height: 1 rem;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0rem;
+  padding-right: 2rem;
 }
+
 .navigation_list {
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
+
 .navigation_link {
   display: flex;
   justify-content: space-between;
   margin-left: 1.5rem;
+  text-decoration: none;
+  color: gray;
+  font-size: 1rem;
 }
 
 /*hero*/
+
 hero {
   display: flex;
   background-image: url("https://github.com/CodeYourFuture/HTML-CSS-Module-Project/blob/master/img/first-background.jpg?raw=true");
-  color: #fff;
+  background-size: cover;
   flex-direction: column;
+  color: #fff;
   align-items: center;
-  width: 569px;
-  height: 320px;
-  justify-content: center;
+  padding: 3rem;
 }
-div {
-  text-align: center;
-  padding: 2rem;
+#hero_title {
+  font-weight: lighter;
+  margin: 6rem 8rem 0rem 8rem;
+  font-size: 3.5rem;
+}
+
+#hero_prg {
+  margin: 0.5rem 2rem 3rem 2rem;
   font-size: 2rem;
+  font-weight: lighter;
 }
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+.button_style1 {
+  margin: 2rem 2rem 5rem 2rem;
+  background-color: rgb(255, 119, 0);
+  padding: 1rem 2rem;
+}
+
+#title_section {
+  font-size: 2.5rem;
+  margin: 3rem 2rem 1rem 2rem;
+  font-weight: lighter;
 }
 
 article {
   display: flex;
   flex-direction: column;
+  margin: 2rem;
+  align-items: center;
 }
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+summary {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+.img_section {
+  width: 100px;
+  height: 100px;
+
+  margin-bottom: 1rem;
+}
+
 /*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-top: 0.5px solid rgb(202, 200, 200);
+  padding-left: 17rem;
+  padding-right: 17rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.navigation_list_footer {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0rem;
+}
 
 .logo_footer {
   display: flex;
-  width: 2rem;
-  height: 2rem;
+  margin: 0rem;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.75rem;
+  border: 0.25px solid rgb(202, 200, 200);
+  border-radius: 100%;
+  margin: 0.5rem;
 }
-@media screen and (min-width: 992px) {
-  /*.content {
-    flex-direction: row;
-  }*/
 
-  main {
-    padding-right: 2rem;
-  }
+.footer_email {
+  color: rgb(202, 200, 200);
+  font-style: non;
 }
