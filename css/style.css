@@ -171,6 +171,23 @@ button:hover {
   height: auto;
 }
 
+.section3 .submit-button {
+  padding: 22px 56px;
+  color: white;
+  background-color: var(--main-color);
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 300;
+  border-radius: 8px;
+  border: none;
+  transition: all ease-in-out 200ms;
+}
+
+.section3 .submit-button:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
 /*footer*/
 footer {
   margin: 100px 0;
