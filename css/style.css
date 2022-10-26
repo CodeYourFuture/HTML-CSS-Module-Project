@@ -1,7 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -15,5 +15,96 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+
+
+header{ 
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+img{
+    padding-top: 1rem;
+    margin-left: 4rem;
+}
+
+nav {
+    padding-top: 1rem;
+    width: 50rem;
+    margin-right: 4rem;
+    /* background-color: yellow; */
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+    list-style: none; 
+}
+
+.karma{
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(121, 139, 145);
+}
+
+
+a:hover {color: rgb(243, 112, 56);}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-image: url("/img/first-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin: 1rem 4rem 1rem 4rem; */
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    padding-top: 11rem;
+    color: rgb(246, 241, 241);
+}
+
+h2{
+    /* color: white; */
+    font-size: 4rem;
+    font-weight: 350;
+    margin-bottom: 0rem;
+}
+
+p{
+    /* color: white; */
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 200;
+}
+
+.btn {
+    background-color:rgb(243, 112, 56);
+    margin-bottom: 1rem;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 0.2rem;
+    font-size: 17px;
+}
 
 
