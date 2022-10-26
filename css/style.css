@@ -29,6 +29,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 /*nav {
   padding-left: 5rem;
@@ -37,14 +38,16 @@ header {
 .logo_header {
   width: 2rem;
   height: 2rem;
-  margin-bottom: 0rem;
-  padding-right: 2rem;
+  margin-right: 5rem;
+  padding: 1rem;
 }
 
 .navigation_list {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  margin-left: 2rem;
+  margin-left: auto;
 }
 
 .navigation_link {
@@ -53,7 +56,7 @@ header {
   margin-left: 1.5rem;
   text-decoration: none;
   color: gray;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /*hero*/
@@ -65,11 +68,11 @@ hero {
   flex-direction: column;
   color: #fff;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 #hero_title {
   font-weight: lighter;
-  margin: 6rem 8rem 0rem 8rem;
+  margin: 6rem 13rem 0rem 13rem;
   font-size: 3.5rem;
 }
 
@@ -80,10 +83,14 @@ hero {
 }
 
 .button_style1 {
-  margin: 2rem 2rem 5rem 2rem;
+  margin: 1rem 2rem 8rem 2rem;
   background-color: rgb(255, 119, 0);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  border: none;
 }
+
+/*section*/
 
 #title_section {
   font-size: 2.5rem;
