@@ -131,8 +131,14 @@ a:active {
   font-weight: normal;
 }
 
+.line {
+  width: auto;
+  height: 47px;
+  border-bottom: 1px solid grey;
+  position: relative;
+}
+
 .footer {
-  border-top: 1px solid #555;
   display: flex;
   flex-direction: column;
   align-content: center;
