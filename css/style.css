@@ -105,27 +105,37 @@ li:hover {
 .little-karma {
   text-align: center;
   font-size: 2.5em;
-  margin: 2;
-  padding: 10px 30px 30px;
+  margin-top: 10%;
   font-weight: normal;
 }
 
-.svg-photos {
+.icon-devices,
+.icon-coffee,
+.icon-refill {
+  width: 45%;
+  padding: 60px;
+}
+
+.svg-img {
   display: flex;
   flex-direction: row;
   align-content: center;
+  justify-content: space-around;
 }
 
-.devices,
-.coffee,
-.refill {
-  margin: 65px;
-}
-
-.device-photo {
+.main-links {
   display: flex;
   flex-direction: column;
   align-content: center;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+  margin-top: 0%;
+  margin-bottom: 80px;
+  font-weight: normal;
+}
+
+.footer {
+  border-top: 1px solid #555;
 }
 
 .join-us {
@@ -155,7 +165,6 @@ li:hover {
   flex-direction: row;
   justify-content: center;
   padding: 10px;
-  border-top: 1px solid #555;
   opacity: 80%;
 }
 
