@@ -31,6 +31,10 @@ h6 {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
 }
 
 /*main*/
@@ -42,6 +46,9 @@ main {
 
 .nav1 {
   display: flex;
+  justify-content: center;
+align-items: center;
+flex-wrap: wrap;
   list-style: none;
 }
 .nav2 {
@@ -61,13 +68,17 @@ main {
 
 /*wifi*/
 .main1 {
-  background-image: url("/img/first-background.jpg");
-  background-color: var(--grey-light);
-  height: 635px;
-  color: #fff;
-  padding-top: 100px;
-  padding-left: 30px;
-  margin-bottom: 35px;
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
 }
 .main2 {
   text-align: center;
