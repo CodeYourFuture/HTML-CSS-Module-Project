@@ -56,14 +56,20 @@ header {
   margin-left: 1.5rem;
   text-decoration: none;
   color: gray;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+#navigation_link_1 {
+  color: black;
+}
+.navigation_link:hover {
+  color: rgb(255, 119, 0);
 }
 
 /*hero*/
 
 hero {
   display: flex;
-  background-image: url("https://github.com/CodeYourFuture/HTML-CSS-Module-Project/blob/master/img/first-background.jpg?raw=true");
+  background-image: url("https://raw.githubusercontent.com/BoshraM/HTML-CSS-Module-Project/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg");
   background-size: cover;
   flex-direction: column;
   color: #fff;
@@ -72,7 +78,7 @@ hero {
 }
 #hero_title {
   font-weight: lighter;
-  margin: 6rem 13rem 0rem 13rem;
+  margin: 6rem 0rem 0rem 0rem;
   font-size: 3.5rem;
 }
 
