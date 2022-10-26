@@ -182,6 +182,7 @@ button:hover {
   text-decoration: none;
   font-size: 32px;
   font-weight: 300;
+  text-align: center;
   border-radius: 8px;
   border: none;
   transition: all ease-in-out 200ms;
@@ -476,8 +477,8 @@ footer .footer-box .icons .instagram-icon {
 @media (max-width: 576px) {
   .section1 .box {
     margin: 0 70px;
-    padding-top: 150px;
-    padding-bottom: 260px;
+    padding-top: 200px;
+    padding-bottom: 150px;
   }
 
   .section1 h1 {
@@ -491,9 +492,7 @@ footer .footer-box .icons .instagram-icon {
   }
 
   .section1_image {
-    margin-left: -150px;
-    width: 140%;
-    height: auto;
+    content: url("/img/first-background-cropped-more.jpg");
   }
 
   .section2 {
@@ -548,11 +547,20 @@ footer .footer-box .icons .instagram-icon {
     margin: 0 5px;
     padding: 14px 17px;
   }
+
+  footer .footer-box .icons .twitter-icon {
+    padding: 14px 15px;
+  }
+
+  footer .footer-box .icons .facebook-icon {
+    padding: 15px 19px;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 465px) {
   .section1 .box {
-    padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 

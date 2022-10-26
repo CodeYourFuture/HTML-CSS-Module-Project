@@ -98,7 +98,7 @@ fieldset .form-check-label {
   padding-left: 20px;
 }
 
-/* customising radio button*/
+/* customizing radio button*/
 fieldset input[type="radio"] {
   appearance: none;
   width: 30px;
@@ -111,10 +111,6 @@ fieldset input[type="radio"] {
 
 input[type="radio"]:checked {
   background-color: var(--main-color);
-}
-
-input[type="radio"]:checked ~ .check::before {
-  background: var(--main-color);
 }
 
 .terms-box {
@@ -222,5 +218,36 @@ footer {
   .form-row .padding-right {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  form {
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  .form-box {
+    padding: 0 50px 100px 50px;
+  }
+
+  .form-box h1 {
+    font-size: 46px;
+  }
+
+  .submit-button {
+    font-size: 24px;
+  }
+
+  .italic-text {
+    font-size: 24px;
+  }
+
+  fieldset legend {
+    font-size: 24px;
+  }
+
+  .terms-box .form-check .terms-text {
+    font-size: 20px;
   }
 }
