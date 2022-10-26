@@ -21,29 +21,30 @@ header{
     display:flex;
     justify-content: space-between;
     width: 100%;
-    height: 5em;
+    height: 4em;
 }
 
 img{
     margin-left: 9rem;
-    display: fle;
-    align-items: center;
+    padding-top: 1rem;
 }
 
 
 nav{
     margin-right: 4rem;
+    
 
 }  
 
 nav ul li {
     display: inline-block;
-    flex-direction: inline-block;
+    flex-direction:inline-block;
     justify-content:space-between;
     list-style: none;
     margin-top: 1rem;
     margin-right: 2.5rem;
 }
+
 
 .navbold{
 font-weight: 900;
@@ -61,21 +62,39 @@ a:hover{
 
 .container1{
     margin: 20px auto;
-    width: 90vw;
-    height: 80vh;
+    width: 95vw;
+    height: 90vh;
     display: flex;
     align-items: center;
-    justify-self:center;
+    justify-content:center;
     background-size: cover;
     background: url(/img/first-background.jpg);
     text-align: center;
 }
 
-.text{
+.container1 div{
+    color:white;
     display:block;
     align-items: auto;
     justify-content: center;
-    
-    color:white;
+}
+
+.container1 h1{
+    font-size: 5rem;
+    font-weight: 350;
+}
+
+.container1 p{
+font-size: 2.7rem;
+font-weight: 200;
+}
+
+button{
+    background-color: rgb(243, 112, 56);
+    padding: 1.2rem 2.5rem;
+    border: 0;
+    border-radius: .3rem;
+    font-size: 16.5;
+    font-weight: 200rem;
 
 }
