@@ -15,241 +15,81 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
- main > section:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 8rem 0;
-    background-image: url("../img/first-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-  }
-  
-  main > section:nth-child(1) > h1 {
-    margin: 0; 
-    /* this shouldn't be neccessary when i globally set margin to 0 at the top.. */
-    /* is normalize messing with this? but styles.css is loaded AFTER normalize? */
-    font-size: 2.8rem;
-  }
-  
-  main > section:nth-child(1) > h3 {
-    font-size: 1.6rem;
-  }
-  
-  main > section:nth-child(1) > a {
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 0.3rem;
-    background-color: hsl(15, 87%, 55%);
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  /* SECTION TWO */
-  main > section:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 6rem 0;
-  }
-  
-  main > section:nth-child(2) > h2 {
-    font-size: 2.2rem;
-    align-self: center;
-  }
-  
-  main > section:nth-child(2) > ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-  }
-  
-  main > section:nth-child(2) > ul > li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  
-  main > section:nth-child(2) > ul > li > img {
-    width: 7rem;
-  }
-  
-  main > section:nth-child(2) > ul > li > span {
-    font-size: 1.4rem;
-  }
-  
-  /* SECTION THREE */
-  main > section:nth-child(3) {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-  }
-  
-  main > section:nth-child(3) > div:nth-child(1) {
-    background-image: url("../level-2/homepage-feature.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  main > section:nth-child(3) > div:nth-child(2) {
-    background-color: hsl(21, 54%, 95%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 4rem;
-  }
-  
-  main > section:nth-child(3) > div:nth-child(2) > h3 {
-    text-align: center;
-    font-size: 1.4rem; 
-    font-style: italic;
-  }
-  
-  main > section:nth-child(3) > div:nth-child(2) > h3 > span:nth-child(1),
-  main > section:nth-child(3) > div:nth-child(2) > h3 > span:nth-child(3) {
-    color:hsl(15, 87%, 55%);
-    font-size: 1.6rem;
-  }
-  
-  main > section:nth-child(3) > div:nth-child(2) > a {
-    display: block;
-    padding: 1rem 2rem;
-    border-radius: 0.3rem;
-    background-color: hsl(15, 87%, 55%);
-    color: white;
-    text-decoration: none;
-  }
-   124  
-  css/store.css
-  @@ -0,0 +1,124 @@
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* ^ im not totally happy with the way this resizes */
-    /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
-    grid-template-areas: "order-form image";
-  }
-  
-  main > section:nth-child(1) {
-    grid-area: order-form;
-    padding: 5rem 3rem;
-  }
-  
-  main > section:nth-child(1) > h1 {
-    color:hsl(15, 87%, 55%);
-    font-weight: 500;
-  }
-  
-  main > section:nth-child(1) > form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 1rem;
-    column-gap: 1rem;
-    grid-template-areas:
-    "first-name last-name"
-    "address-line-one address-line-one"
-    "address-line-two address-line-two"
-    "city postcode"
-    "select-colour select-colour"
-    "terms-and-conditions terms-and-conditions"
-    "place-order .";
-    font-size: 0.9rem;
-  }
-  
-  main > section:nth-child(1) > form > div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  main > section:nth-child(1) > form > div > label {
-    color: hsl(0, 0%, 40%);
-  }
-  
-  main > section:nth-child(1) > form > div > input {
-    border: 0.1rem solid hsl(0, 0%, 40%);
-    border-radius: 0.25rem;
-    font-size: 1.1rem;
-    padding: 0.25rem 0.5rem;
-  }
-  
-  main > section:nth-child(1) > form > div:nth-child(1) {
-    grid-area: first-name;
-  }
-  
-  main > section:nth-child(1) > form > div:nth-child(2) {
-    grid-area: last-name;
-  }
-  
-  main > section:nth-child(1) > form > div:nth-child(3) {
-    grid-area: address-line-one;
-  }
-  
-  main > section:nth-child(1) > form > div:nth-child(4) {
-    grid-area: address-line-two;
-  }
-  
-  main > section:nth-child(1) > form > fieldset:nth-of-type(1) {
-    grid-area: select-colour;
-    border: 0;
-  }
-  
-  main > section:nth-child(1) > form > fieldset:nth-of-type(1) > legend {
-    color: hsl(0, 0%, 40%);
-  }
-  
-  main > section:nth-child(1) > form > fieldset:nth-of-type(1) > ul {
-    display: flex;
-    gap : 2rem;
-    list-style: none;
-  }
-  
-  main > section:nth-child(1) > form > fieldset:nth-of-type(1) > ul > li > input[type='radio'] {
-    filter: hue-rotate(-215deg);
-  }
-  
-  main > section:nth-child(1) > form > fieldset:nth-of-type(2) {
-    grid-area: terms-and-conditions;
-    border: 0;
-  }
-  
-  main > section:nth-child(1) > form > fieldset:nth-of-type(2) > input[type="checkbox"] {
-    filter: hue-rotate(-215deg);
-  }
-  
-  main > section:nth-child(1) > form > fieldset:nth-of-type(2) a {
-    color: hsl(15, 87%, 55%);
-  }
-  
-  main > section:nth-child(1) > form > input:last-child {
-    grid-area: place-order;
-    padding: 1rem 0.5rem;
-    border: 0;
-    border-radius: 0.25rem;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(15, 87%, 55%);
-    font-size: 1.1rem;
-  }
-  
-  main > section:nth-child(1) > form > label {
-    border: 1px solid red;
-  }
-  
-  main > section:nth-child(1) > form > input {
-    border: 1px solid blue;
-  }
-  
-  main > section:nth-child(2) {
-    grid-area: image;
-    background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+ h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header,
+.content,
+.footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*main*/
+main {
+  margin-bottom: 200px;
+}
+
+/*Navigation*/
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+.nav2 {
+  padding: 0.5em 0;
+}
+.nav3 {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 8px;
+}
+.nav3:hover {
+  background: #c05326;
+}
+
+/*wifi*/
+.main1 {
+  background-image: url("/img/first-background.jpg");
+  background-color: var(--grey-light);
+  height: 635px;
+  color: #fff;
+  padding-top: 100px;
+  padding-left: 30px;
+  margin-bottom: 35px;
+}
+.main2 {
+  text-align: center;
+}
+.main3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*footer*/
+.footer1 {
+  margin-top: 2rem;
+}
+
+.footer2 {
+  border-top: 1px solid var(--grey-light);
+  padding-top: 2rem;
+  padding-left: 550px;
+  padding-bottom: 2rem;
+}
+.footer 3 {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
