@@ -21,6 +21,7 @@ body {
   width: 25px;
   margin-left: 50px;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -31,21 +32,36 @@ nav {
 
 nav a {
   margin-right: 40px;
+  text-decoration: none;
+  color: gray;
+}
+
+#karma-meet {
+  font-weight: bold;
+}
+a:hover {
+  color: #c05326;
 }
 
 /*CONTENT STYLES*/
 h1 {
   text-align: center;
+  color: white;
+  font-size: 75px;
+  font-weight: lighter;
 }
 
 h2 {
   text-align: center;
+  color: white;
+  font-weight: lighter;
+  font-size: 40px;
 }
 
 button {
   align-content: center;
   color: white;
-  background-color: #e09200;
+  background-color: #c05326;
   border: none;
   border-radius: 5px;
   padding: 15px 20px;
@@ -54,11 +70,15 @@ button {
 }
 
 #first-page {
-  background-image: url("first-background.jpg");
-  margin-top: 200px;
+  background-image: url("../img/first-background.jpg");
+  padding-bottom: 165px;
+  padding-top: 200px;
 }
 
-/*STYLING FOR PAGE WITHOUT BACKGROUND IMAGE*/
+.need-karma {
+  color: black;
+  font-size: 55px;
+}
 
 .icons {
   width: 100px;
@@ -73,17 +93,27 @@ button {
 }
 
 #next-page {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 /*STYLING  FOR FOOTER*/
 
 footer {
   text-align: center;
-  margin-top: 50px;
-  text-decoration: overline;
+  margin: 50px 70px 0 70px;
+  border-top: 1px solid #ebebeb;
 }
 
 .smicon {
   width: 20px;
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+#copyright {
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 20px;
 }
