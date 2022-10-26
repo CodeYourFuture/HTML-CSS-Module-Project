@@ -171,7 +171,7 @@ button:hover {
   height: auto;
 }
 
-.section3 .submit-button {
+.section3 .mobile-button {
   padding: 22px 56px;
   color: white;
   background-color: var(--main-color);
@@ -183,7 +183,7 @@ button:hover {
   transition: all ease-in-out 200ms;
 }
 
-.section3 .submit-button:hover {
+.section3 .mobile-button:hover {
   color: var(--main-color);
   background-color: white;
 }
@@ -227,7 +227,7 @@ footer .footer-box .icons i {
   padding: 18px 21px;
   border-radius: 50%;
   border: 1px solid var(--secondary-color);
-  transition: all 100ms ease-in-out;
+  transition: all ease-in-out 100ms;
 }
 
 footer .footer-box .icons i:hover {
@@ -237,10 +237,12 @@ footer .footer-box .icons i:hover {
 }
 
 footer .footer-box .icons .twitter-icon {
+  padding: 18px 19px;
   color: #68ace8;
 }
 
 footer .footer-box .icons .facebook-icon {
+  padding: 18px 24px;
   color: #50679f;
 }
 
@@ -303,7 +305,8 @@ footer .footer-box .icons .instagram-icon {
     padding-bottom: 66px;
   }
 
-  button {
+  button,
+  .section3 .mobile-button {
     padding: 18px 52px;
     font-size: 24px;
   }
@@ -358,7 +361,8 @@ footer .footer-box .icons .instagram-icon {
     padding-bottom: 46px;
   }
 
-  button {
+  button,
+  .section3 .mobile-button {
     padding: 15px 49px;
     font-size: 18px;
   }
@@ -417,7 +421,8 @@ footer .footer-box .icons .instagram-icon {
     padding-bottom: 26px;
   }
 
-  button {
+  button,
+  .section3 .mobile-button {
     padding: 12px 42px;
     font-size: 18px;
   }
