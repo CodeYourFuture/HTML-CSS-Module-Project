@@ -19,6 +19,12 @@ button {
   border: 0px;
   background: none;
 }
+
+a,
+li:hover {
+  text-decoration: none;
+}
+
 #navbar-button {
   padding: 10px;
 }
@@ -29,7 +35,6 @@ button {
   justify-content: space-around;
   align-items: center;
 }
-
 .navbar-logo {
   width: 1%;
 }
@@ -37,8 +42,6 @@ button {
 .navbar-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-image {
@@ -51,10 +54,10 @@ button {
 
 .first-txt {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0;
+  margin: 0px;
   padding: 0;
   color: white;
   font-weight: normal;
@@ -64,7 +67,7 @@ button {
 
 .second-txt {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -84,7 +87,7 @@ button {
   color: white;
   font-size: 1.2em;
   background-color: #f05a29;
-  border-radius: 15px;
+  border-radius: 5px;
   display: inline-block;
 }
 
@@ -93,51 +96,36 @@ button {
   color: white;
 }
 
-.main-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .article-two {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  align-content: center;
 }
 
 .little-karma {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 2;
   padding: 10px 30px 30px;
   font-weight: normal;
 }
 
-.devices {
+.svg-photos {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
 }
 
-.productivity {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.devices,
+.coffee,
+.refill {
+  margin: 65px;
 }
 
-.pay-as-you-go {
+.device-photo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  align-content: center;
 }
 
 .join-us {
@@ -166,22 +154,31 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 10px;
+  border-top: 1px solid #555;
+  opacity: 80%;
 }
 
 .twitter-handle {
   padding: 10px;
   border: 1px solid #555;
   border-radius: 50px;
+  border-radius: 50%;
+  opacity: 80%;
 }
 
 .facebook-handle {
   padding: 10px;
   border: 1px solid #555;
   border-radius: 50px;
+  border-radius: 50%;
+  opacity: 80%;
 }
 
 .instagram-handle {
   padding: 10px;
   border: 1px solid #555;
   border-radius: 50px;
+  border-radius: 50%;
+  opacity: 80%;
 }
