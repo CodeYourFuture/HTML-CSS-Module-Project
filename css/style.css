@@ -21,8 +21,11 @@ button {
 }
 
 a,
-li:hover {
+li:hover,
+:focus,
+a:active {
   text-decoration: none;
+  color: black;
 }
 
 #navbar-button {
@@ -83,17 +86,11 @@ li:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  padding: 20px 30px 0;
   color: white;
   font-size: 1.2em;
   background-color: #f05a29;
   border-radius: 5px;
   display: inline-block;
-}
-
-.learn-more-button:hover {
-  background-color: #4caf50; /* Green */
-  color: white;
 }
 
 .article-two {
@@ -136,40 +133,28 @@ li:hover {
 
 .footer {
   border-top: 1px solid #555;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .join-us {
   text-align: center;
   font-size: 15px;
-  padding: 10px 30px 30px;
-  font-weight: normal;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px;
-}
-
-.karma-mobility {
-  text-align: center;
-  font-size: 15px;
-  padding: 10px 30px 30px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .social-media-handles {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
+  gap: 30px;
   opacity: 80%;
 }
 
 .twitter-handle {
-  padding: 10px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #555;
   border-radius: 50px;
   border-radius: 50%;
@@ -177,7 +162,8 @@ li:hover {
 }
 
 .facebook-handle {
-  padding: 10px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #555;
   border-radius: 50px;
   border-radius: 50%;
@@ -185,9 +171,18 @@ li:hover {
 }
 
 .instagram-handle {
-  padding: 10px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #555;
   border-radius: 50px;
   border-radius: 50%;
   opacity: 80%;
+}
+
+.karma-mobility {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 30px 30px;
+  font-weight: normal;
+  color: rgb(104, 103, 103);
 }
