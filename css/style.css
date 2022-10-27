@@ -65,14 +65,18 @@ button {
   border: none;
   border-radius: 5px;
   padding: 15px 20px;
-  margin-left: 650px;
+  /*margin-left: 650px;*/
   margin-top: 50px;
 }
 
 #first-page {
   background-image: url("../img/first-background.jpg");
-  padding-bottom: 165px;
+  padding-bottom: 130px;
   padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .need-karma {
@@ -94,6 +98,16 @@ button {
 
 #next-page {
   margin-top: 100px;
+}
+
+#third-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-button {
+  background-color: orange;
 }
 
 /*STYLING  FOR FOOTER*/
