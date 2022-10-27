@@ -134,3 +134,37 @@ a:hover {
   justify-content: space-around;
   margin-left: 10%;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jon-us {
+  display: flex;
+  justify-content: center;
+}
+
+.socialmedia-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 3%;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.mobility {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
