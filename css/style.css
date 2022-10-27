@@ -98,3 +98,19 @@ p {
   font-size: 22px;
   margin: 0%;
 }
+button {
+  border: none;
+  background-color: #e06339;
+  display: inline-block;
+  margin-top: 36px;
+  line-height: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 12px;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: white;
+  color: #e06339;
+}
