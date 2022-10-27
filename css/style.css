@@ -34,13 +34,17 @@ body{
     list-style: none;
 }
 
-.nav_link{
+.nav_list a{
     text-decoration: none;
     padding: 20px;
     color: var(--gray);
 }
 
-.nav_link:hover{
+.nav_link{
+    font-weight: 500;   
+}
+
+.nav_list a:hover{
     color: var(--orange);
 }
 
@@ -49,7 +53,7 @@ body{
 .introducing{
     background: url("../img/first-background.jpg");
     background-color: var(--gray);
-    padding: 200px 0px;
+    padding: 150px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);
@@ -57,11 +61,13 @@ body{
     }
 
 .title_1{
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: lighter;
 }
 
 .title_2{
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: lighter;
 }
 
 .learn_button{
