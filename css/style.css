@@ -18,7 +18,6 @@ body {
 
 
 header{
-    background-color: yellow;
     display:flex;
     justify-content: space-between;
     width: 100%;
@@ -64,7 +63,6 @@ a:hover{
 
 /* 2nd Section 1rst Container - background image */
 .container1{
-    background-color: rgb(255, 0, 230);
     margin: 1rem auto;
     width: 88rem;
     height: 52rem;
@@ -140,7 +138,45 @@ section{
 .container2 div img{
     width: 50%;
     margin: 0 auto;
+}
+hr{
+    color:rgb(59, 50, 50);
+    width: 78rem;
+}   
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
 
+footer ul{
+    width: 20%;
+    height: 1%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ footer ul li{
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+    border-radius: 100%;
+    border-color: rgb(41, 35, 35);
+    
+ }
+ footer ul li a img{
+margin: auto ;
+ }
 
+ footer .p{
+color:black;
+font-weight: 500;
+ }
 
+footer p{
+    color:rgb(73, 65, 65)
 }
