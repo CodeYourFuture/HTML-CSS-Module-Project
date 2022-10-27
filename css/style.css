@@ -18,6 +18,7 @@ body {
 
 
 header{
+    background-color: yellow;
     display:flex;
     justify-content: space-between;
     width: 100%;
@@ -26,7 +27,7 @@ header{
 
 img{
     margin-left: 9rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 
@@ -59,17 +60,24 @@ nav ul li a {
 a:hover{
     color: rgb(243, 112, 56);
 }
+/* End of Header & navs */
 
+/* 2nd Section 1rst Container - background image */
 .container1{
-    margin: 20px auto;
-    width: 95vw;
-    height: 90vh;
+    background-color: rgb(255, 0, 230);
+    margin: 1rem auto;
+    width: 88rem;
+    height: 52rem;
     display: flex;
     align-items: center;
     justify-content:center;
-    background-size: cover;
-    background: url(/img/first-background.jpg);
     text-align: center;
+    background: url(/img/first-background.jpg);
+    background-size:cover;
+    position: relative;
+    background-position:center;
+    background-repeat: no-repeat;
+    
 }
 
 .container1 div{
@@ -80,12 +88,13 @@ a:hover{
 }
 
 .container1 h1{
-    font-size: 5rem;
+    font-size: 4.7rem;
     font-weight: 350;
+    margin-bottom:;
 }
 
 .container1 p{
-font-size: 2.7rem;
+font-size: 2.5rem;
 font-weight: 200;
 }
 
@@ -96,5 +105,42 @@ button{
     border-radius: .3rem;
     font-size: 16.5;
     font-weight: 200rem;
+    margin-bottom: 8rem;
+}
+
+/* 3rd section - 2nd container  with Icons */
+section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subtittle{
+    font-size: 3.7rem;
+    font-weight: 200;
+    color: rgb(69, 57, 57);
+    padding-bottom: 0rem;
+    padding-top: 2.5rem;
+}
+.container2{
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container2 div{
+    width: 20rem;
+    height: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.container2 div img{
+    width: 50%;
+    margin: 0 auto;
+
+
 
 }
