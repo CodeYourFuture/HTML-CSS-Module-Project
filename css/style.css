@@ -15,9 +15,23 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-a,
 h1 {
   color: black;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+  text-align: center;
+  font-size: 24px;
+  top: 30%;
+}
+
+h5 {
 }
 
 #navbar-button {
@@ -91,4 +105,32 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(204, 82, 38);
+}
+
+.article-two {
+}
+
+.little-karma {
+  display: flex;
+  justify-content: center;
+}
+.icones-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.devices,
+.coffee,
+.refill {
+  width: 50%;
+  height: 50%;
+}
+
+.photo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10%;
 }
