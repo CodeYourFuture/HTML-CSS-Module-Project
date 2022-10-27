@@ -60,7 +60,7 @@ ul li a:hover {
 
 /* Hero Styles*/
 
-.section1 {
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,14 +74,14 @@ ul li a:hover {
     font-weight: 12;
 }
 
-.section1-phrase1 {
+.main-container-phrase1 {
     margin-bottom: 0;
     font-size: 40px;
     font-weight: 10;
 
 }
 
-.section1-phrase2 {
+.main-container-phrase2 {
     display: flex;
     justify-content: space-around;
 }
@@ -97,7 +97,7 @@ button {
 
 /*  General Styles*/
 
-.section2 {
+.secondary-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,13 +106,13 @@ button {
     color:rgb(63, 57, 57);
 }
 
-.section2-phrase1 {
+.secondary-container-phrase1 {
     margin-bottom: 0;
     font-size: 27px;
     font-weight: 10;
 }
 
-.section2-imgs-text {
+.secondary-imgs-text {
     display: flex;
     flex-direction: row;
 }
