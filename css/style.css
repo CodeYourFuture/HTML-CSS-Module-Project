@@ -16,6 +16,10 @@ body {
  */
 
 /* header style*/
+body {
+  padding: 0;
+  margin: 0%;
+}
 header {
   width: 100%;
   position: fixed;
@@ -25,6 +29,7 @@ header {
   align-items: center;
   padding: 20px 0px;
   color: #65686d;
+  margin: 20px 20px;
 }
 .logo > img {
   width: 100%;
@@ -54,4 +59,42 @@ a {
 }
 a:hover {
   color: #ea9377;
+}
+
+/* section Introducing Karma*/
+
+main {
+  margin-top: 120px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("file:///Users/elena/Documents/GIT/HTML-CSS-Module-Project/img/first-background.jpg");
+  background-size: 100% 100%;
+  color: white;
+}
+.intro {
+  height: 128px;
+  text-align: center;
+  background-color: aquamarine;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  margin: 20px;
+  color: white;
+  margin-top: 40px;
+  display: flex;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2.2em;
+  margin: 0%;
+}
+p {
+  font-size: 22px;
+  margin: 0%;
 }
