@@ -1,11 +1,123 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ :root{
+    --white: #fff;
+    --orange: #d2691e;
+    --gray: #808080;
+    --light-gary: #e4e4e4;
+ }
+
+body{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
 
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    font-size: large;
+}
+
+.karma_logo{
+    height: 40px;
+}
+
+/* Navigation */
+
+.nav_list{
+    display: flex;
+    list-style: none;
+}
+
+.nav_link{
+    text-decoration: none;
+    padding: 20px;
+    color: var(--gray);
+}
+
+.nav_link:hover{
+    color: var(--orange);
+}
+
+/* Main */
+
+.introducing{
+    background: url("../img/first-background.jpg");
+    background-color: var(--gray);
+    padding: 200px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    overflow-wrap: break-word;
+    }
+
+.title_1{
+    font-size: 70px;
+}
+
+.title_2{
+    font-size: 40px;
+}
+
+.learn_button{
+    background-color: var(--orange);
+    padding: 15px 40px;
+    border-radius: 1ch;
+    margin-top: 40px;
+}
+
+.needs_title{
+    font-size: 40px;
+    padding: 50px;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    padding: 0px 200px;
+}
+
+.icons img{
+    width: 150px;
+    height: 150px;
+}
+
+.icon_title{
+    font-size: 20px;
+}
+
+/* Footer */
+.footer{
+    margin: 40px 250px;
+    border-top: 2px solid var(--light-gary);
+}
+
+.footer img{
+    width: 15px;
+    height: 15px;
+    margin: 7px;
+    padding: 7px;
+    border: solid var(--light-gary);
+    border-radius: 50%;
+}
+
+.copyright{
+    font-size: 12px;
+    color: var(--gray);
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 992px) {
+
+}
 /**
  * Add your custom styles below
  * 
