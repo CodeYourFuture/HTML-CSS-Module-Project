@@ -55,3 +55,40 @@ h1 {
 a:hover {
   color: red;
 }
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+
+.article-one {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.line-one {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.line-two {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(204, 82, 38);
+}
