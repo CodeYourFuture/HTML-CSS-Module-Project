@@ -28,13 +28,13 @@ header{
 
 img{
     padding-top: 1rem;
-    margin-left: 4rem;
+    margin-left: 5rem;
 }
 
 nav {
     padding-top: 1rem;
     width: 50rem;
-    margin-right: 4rem;
+    margin-right: 5rem;
     /* background-color: yellow; */
 }
 
@@ -56,7 +56,7 @@ li {
 
 a {
     text-decoration: none;
-    color: rgb(121, 139, 145);
+    color: rgb(118, 123, 125);
 }
 
 
@@ -74,37 +74,63 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* margin: 1rem 4rem 1rem 4rem; */
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30rem;
-    padding-top: 11rem;
+    height: 35rem;
+    padding-top: 13rem;
     color: rgb(246, 241, 241);
 }
 
-h2{
-    /* color: white; */
+main h2{
     font-size: 4rem;
     font-weight: 350;
     margin-bottom: 0rem;
 }
 
-p{
-    /* color: white; */
+main p{
     font-size: 2rem;
-    margin-bottom: 4rem;
-    font-weight: 200;
+    font-weight: 150;
 }
 
 .btn {
     background-color:rgb(243, 112, 56);
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     border: none;
-    padding: 15px 32px;
+    padding: 20px 32px;
     border-radius: 0.2rem;
     font-size: 17px;
 }
 
+h3{
+    font-size: 3rem;
+    font-weight: 200;
+    padding-top: 5rem;
+    margin: 0px;
+}
+
+
+.content{
+    width: 80%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content div {
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    color:  rgb(16, 15, 15);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+div img{
+    padding-top: 2rem;
+    width: 40%;
+    margin: auto;
+}
 
