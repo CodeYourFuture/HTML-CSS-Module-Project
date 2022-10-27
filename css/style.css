@@ -17,12 +17,18 @@ body {
  */
 
 /* navgivation */
-
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .nav-ul{
     display: flex;
     list-style: none;
-    justify-content: flex-end;
-    padding-right:100px;
     gap:25px;
 }
 
@@ -30,8 +36,12 @@ body {
     color: var(--grey-dark);
   font-weight: 300;
   text-decoration: none;
-  
 }
+
+a:hover{
+color:#c05326;
+  }
+
 #karma{
     font-weight:bold;
 }
@@ -39,22 +49,93 @@ body {
 .logo{
     display:flex;
     width:20px;
-    padding-left:50px;
-    padding-top:5px;
 }
-/* 
-.background{
-    width:500;
-    height:600;
-} */
+
+
 .gallery {
+   position:relative;
+   height:50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction:column;
+       
+  }
+  .gallery>img{
+    width: 100%;
+    height: 100%;
+   object-fit:cover;
+  }
+  .background{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+   left:0;
+  }
+
+  .words-center{
+    color:white;
+    z-index: 3;
+    display: inline;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .image-row{
+    display:flex;
+
+  }
+  .icons{
+    width:250px;
+    height:150px;
+  }
+  .text-align-center{
+    text-align:center;
+  }
+
+  button{
+    background-color:rgb(223,100,58);
+    border:none;
+  border-radius:5px;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:white;
+  }
+
+  h1,h2,p{
+    font-weight:normal;
+  }
+  .icons2{
+    width: 20px;
+    height: 15px;
+    border-radius: 90%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    opacity: 1.5;
+  }
+
+  .icon-border{
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .footer-opacity{
+    opacity: 0.40;
+    font-size:10px;
+  }
+  h4{
+    font-size:15px;
+    font-weight: normal;
+    border-top:1px solid #ccc;
+  }
+  .line{
     
   }
-  .gallery img {
-    width: 100%;
-    height: 300px;
-  }
+  
   
