@@ -40,8 +40,14 @@ form {
 }
 
 form input {
-  line-height: 3.5 !important;
+  /* line-height: 3.5 !important; */
   border: 2.5px solid var(--text-color) !important;
+}
+
+form .input-text {
+  font-size: 24px;
+  line-height: 2.3;
+  color: var(--text-color);
 }
 
 form select {
@@ -53,16 +59,8 @@ form select {
   margin-bottom: 45px;
 }
 
-.row .padding-left {
-  padding-left: 18px;
-}
-
-.row .padding-right {
-  padding-right: 18px;
-}
-
 .italic-text {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   color: var(--text-color);
   font-style: italic;
@@ -182,14 +180,6 @@ footer {
 @media (max-width: 1200px) {
   .form-box {
     padding-top: 80px;
-  }
-
-  .row .padding-left {
-    padding-left: 0.75rem;
-  }
-
-  .row .padding-right {
-    padding-right: 0.75rem;
   }
 
   .form-box h1 {
