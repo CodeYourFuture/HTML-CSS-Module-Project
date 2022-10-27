@@ -93,6 +93,10 @@ fieldset legend {
   color: var(--text-color);
 }
 
+fieldset .form-check {
+  padding: 0;
+}
+
 fieldset .form-check-label {
   font-weight: 400;
   padding-left: 20px;
@@ -106,7 +110,7 @@ fieldset input[type="radio"] {
   border: 2px solid var(--text-color);
   border-radius: 50%;
   background-clip: content-box;
-  padding: 0;
+  padding: 4px;
 }
 
 fieldset input[type="radio"]:checked {
