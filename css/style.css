@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,101 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+header img {
+  height: 3rem;
+}
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style-type: none;
+}
+nav li {
+  color: #888;
+}
+nav li:hover {
+  color: darkorange;
+  cursor: pointer;
+}
+nav li:first-child {
+  font-weight: 500;
+  color: #555;
+}
 
+main {
+  height: calc(100vh - 80px);
+}
+.s1Container {
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.section1 {
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  color: #fff;
+  font-weight: lighter;
+  height: 735px;
+}
+.section1 button {
+  background-color: rgb(226, 124, 0);
+  border: transparent;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.title {
+  font-size: 4rem;
+}
+.subtitle {
+  font-size: 2rem;
+}
+.section2,
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.s2Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.iconContainer img {
+  height: 10rem;
+}
+.footer {
+  border-top: 2px solid #555;
+  text-align: center;
+  padding: 5rem 0;
+}
+.footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 1rem;
+}
+.footer img {
+  height: 1.5rem;
+}
+.join {
+  font-size: 1.5rem;
+}
+.copyright {
+  font-size: 1.5rem;
+  color: #aaa;
+}
