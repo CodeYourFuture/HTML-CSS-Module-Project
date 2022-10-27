@@ -1,19 +1,169 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. 
+ This has already been added to your HTML header */
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
+/*Header*/
+
+.header {
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  max-width: 80%;
+  height: 8rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  width: auto;
+}
+
+svg {
+  padding-left: 15%;
+}
+/* Navigation */
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__item {
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+.navigation__link {
+  color: var(--grey-dark);
+  font-weight: 400;
+  text-decoration: none;
+}
+.navigation__item:hover {
+  color: #c05326;
+}
+nav {
+  margin-right: -300px;
+}
+/* Main */
+.content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.introducing {
+  margin-top: 12%;
+  font-size: 4rem;
+  color: #fff;
+}
+.bring {
+  margin-top: 1%;
+  font-size: 2.5rem;
+  color: #fff;
+}
+.learn_more {
+  margin-top: 1%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+button {
+  padding: 14px;
+  margin-left: 2px;
+  background-color: #c05326;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #e9e0dc;
+  border-radius: 7px;
+  color: #c05326;
+}
+.hero {
+  background-image: url("../img/first-background.jpg");
+  background-size: contain;
+  margin: 0 auto;
+  width: 1500px;
+  height: 690px;
+}
+
+.everyone {
+  color: gray;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 7%;
+  font-size: 4rem;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.article-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.article__title {
+  margin: 2rem;
+}
+
+.article__summary {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+/*Footer*/
+.hr {
+  width: 60%;
+  color: gray;
+  margin-top: 6rem;
+}
+.join {
+  color: gray;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2%;
+  font-size: 2rem;
+}
+.social_media {
+  display: flex;
+
+  justify-content: center;
+}
+
+.twitter,
+.facebook,
+.instagram {
+  padding: 30px;
+  margin: 30px;
+
+  border: rgb(194, 189, 189) solid 1px;
+  border-radius: 50%;
+}
+
+.copy {
+  color: rgb(194, 189, 189);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2%;
+  font-size: 1.6rem;
+}
+.copy:hover {
+  color: #c05326;
+}
 /**
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ *- Be organised, use comments and separate your styles into meaningful chunks
+ *  for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ * - When using Flexbox, remember the items you want to move 
+ around need to be inside a parent container set to 'display: flex'
  */
-
-
