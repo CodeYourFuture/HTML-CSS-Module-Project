@@ -1,19 +1,115 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+ html {
+    font-family: sans-serif;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+  .logo1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    padding: 0 1.6rem;
+    max-width: 25px;
+  }
+  .list {
+    list-style-type: none;
+    display: flex;
+  }
+  .navlist {
+    padding: 1.5rem;
+  }
+  .navlink {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .navlist:first-child > a {
+    color: var(--grey-dark);
+  }
+  
+  .navlink:hover,
+  .list:focus {
+    color: orange;
+  }
+
+  /* main */
+
+  main{
+    background-image: url(/img/first-background.jpg);
+    padding: 12rem;
+    background-position: center;
+  }
+  main div{
+    text-align: center;
+    color: white
+  }
+  main div h2{
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  main div button {
+    background-color: rgb(175, 56, 23);
+    border: none
+    
+  }
+main div button a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* Article */
+
+article{
+    display: flex;
+    justify-content: space-around;
+}
+article img{
+    width: 60%;
+    height: 60%;
+    
+}
+h5{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+hr{
+    width: 90%;
+    color: lightgrey;
+}
+
+/* footer */
+
+p{
+    text-align:center;
+    font-size: 23px;
+}
+
+.media ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;    
+    list-style: none;
+
+}
+.media img{
+    width: 1.3rem;
+    height: 1.3rem;
+
+}
+footer ul li{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    padding: 1rem;
+}
+h6{
+    color:darkgrey;
+    text-align: center;
+    font-weight: 250;
+    font-size: 15px;
+
+}
 
 
