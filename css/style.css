@@ -102,8 +102,39 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 5rem;
   }
 
   .icons {
     padding: 5rem;
+    height: 10rem;
+  }
+
+  .sep_line {
+    padding:0 12rem;
+  }
+
+  /* Footer */
+
+  .footer_text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer_icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .icon_img {
+    height: 10px;
+    width: 10px;
+    border: solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 20px;
+
   }
