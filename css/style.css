@@ -1,5 +1,13 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +26,7 @@ body {
 }
 
 header {
-  background-color: rgb(213, 213, 235);
+  background-color: #fff;
 }
 
 .header {
@@ -26,7 +34,8 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 3rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto 0rem;
+  padding: 0rem 4rem;
 }
 
 .body_block {
@@ -50,6 +59,10 @@ a:link {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--orange-dark);
+}
+
 .navigation_item {
   padding-top: 0.5rem;
   padding-right: 0rem;
@@ -62,12 +75,11 @@ a:link {
   padding: 3rem 2rem 4rem;
   background-image: url(/img/first-background.jpg);
   background-repeat: no-repeat;
-
   background-size: cover;
+  margin: 0 4rem;
 }
 .main_div div {
   border: 2px solid rgb(255, 255, 255);
-  padding: 25px;
   color: aliceblue;
   flex-direction: column;
   display: flex;
@@ -102,6 +114,10 @@ a:link {
 .fab_button {
   display: flex;
   flex-direction: column;
+}
+
+nav {
+  padding: 0 auto;
 }
 
 ul {
