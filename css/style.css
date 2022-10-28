@@ -16,4 +16,110 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* Navigation styles */
 
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap:25px;
+}
+.navLink{
+    color: darkgrey;
+    font-weight: 300;
+    text-decoration: none;
+}
+a:hover{
+    color: #c05326;
+}
+#karma{
+    font-weight: bold;
+}
+ .logo {
+    display: flex;
+    width: 20px;
+ }
+
+ /*main*/
+
+.mainpage{
+    background-image: url(/img/first-background.jpg);
+    padding:15rem;
+    background-position: center;
+}
+.intro{
+    text-align: center;
+    color:white;
+    font-weight: lighter;
+}
+.btn{
+    background-color: #c05326;
+    border:none;
+    border-radius: 5px;
+    padding:15px 30px;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 40px 30px;
+}
+
+/*article*/
+
+article{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+}
+article img{
+    width:50%;
+    height:50%;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*footer*/
+
+
+hr{
+    opacity: 20%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactimages{
+    width:15px;
+    height:15px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding:5px;
+}
+.contact{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:5px;
+}
+.footertext{
+    color:black;
+}
+h6{
+    color:darkgrey;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+}
