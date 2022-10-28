@@ -14,24 +14,20 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
 h1 {
-  color: black;
+  margin: auto;
+  margin-top: auto;
+  font-size: 40px;
 }
-
 h2 {
+  margin: auto;
+  margin-top: auto;
+  font-size: 20px;
 }
-
 h3 {
-}
-
-h4 {
   text-align: center;
   font-size: 24px;
   top: 30%;
-}
-
-h5 {
 }
 
 #navbar-button {
@@ -42,21 +38,15 @@ h5 {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
+  align-content: space-between;
+  margin: 15px;
 }
 
 .navbar-logo {
   display: flex;
   margin: auto;
-  width: 3%;
-  margin-top: 20px;
-}
-
-.navbar-top {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
+  width: 2%;
+  margin-left: 200px;
 }
 
 .navbar-list {
@@ -64,6 +54,8 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+  font-size: smaller;
+  margin-right: 60px;
 }
 
 a:hover {
@@ -75,12 +67,24 @@ a:hover {
   background-size: 50% 100%;
 }
 
+.main-articles {
+  display: flex;
+  flex-direction: column;
+}
+
 .article-one {
   position: relative;
   display: flex;
   flex-direction: column;
+  column-gap: 50px;
   justify-content: space-between;
   align-content: center;
+}
+
+.article-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .line-one {
@@ -119,36 +123,39 @@ a:hover {
   text-align: center;
 }
 
-.article-two {
-}
-
 .little-karma {
   display: flex;
   justify-content: center;
+
   font-weight: lighter;
 }
 .icones-list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3%;
 }
 
 .devices,
 .coffee,
 .refill {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 .photo-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-left: 10%;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px;
 }
 a {
   text-decoration: none;
+  color: black;
 }
 hr {
   display: block;
@@ -162,7 +169,8 @@ hr {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
+  margin: -10px;
 }
 
 .join-us {
@@ -178,7 +186,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 16px;
+  margin-right: 45px;
 }
 
 .twitter-icon,
@@ -188,6 +196,7 @@ hr {
   height: 20px;
   border-radius: 50%;
   opacity: 0.5;
+  margin-left: 8px;
 }
 
 .mobility {
@@ -196,41 +205,4 @@ hr {
   justify-content: center;
   font-style: normal;
   opacity: 0.5;
-}
-
-<!-- HTML !-->
-<button class="button-1" role="button">Button 1</button>
-
-/* CSS */
-.button-1 {
-  background-color: #ea4c89;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-1:hover,
-.button-1:focus {
-  background-color: #f082ac;
 }
