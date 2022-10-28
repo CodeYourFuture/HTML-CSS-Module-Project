@@ -169,3 +169,43 @@ article img {
     gap: 1.5rem;
     
 }
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--grey);
+    margin: 0 9rem;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+footer ul li a {
+    display: block;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+footer ul li a img{
+    max-width: 1rem;
+    max-height: 1rem;
+} 
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer h5 {
+    font-weight: 200;
+    color: var(--grey);
+}
