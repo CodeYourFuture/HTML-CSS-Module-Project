@@ -16,4 +16,92 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ header img {
+    width: 50px;
+    height: 50px;
+ }
+ ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  ul li a {
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul li:first-child a {
+    color:black;
+  }
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: orange;
+  }
+  #section1 {
+    background-image: url("../img/first-background.jpg");
+    padding-bottom: 100px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    color:#fff;
+  }
+  h2{
+    color:#fff;
+  }
+  button {
+    align-content: center;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    /*margin-left: 650px;*/
+    margin-top: 50px;
+  }
+  #text1 {
+    color:black;
+    text-align: center;
+  }
+  #section2 {
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+.icons{
+    width: 100px;
+    height: 100px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    text-align: center;
+    margin: 10px 90px 0 10px;
+    border-top: 1px solid grey;
+  }
+  .social {
+    width: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  #copyright {
+    color: grey;
+    text-align: center;
+  }
