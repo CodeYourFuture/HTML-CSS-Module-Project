@@ -17,3 +17,249 @@ body {
  */
 
 
+
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  
+  
+  .header,
+  .content,
+  .footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .header__logo {
+    max-height: 5px;
+    width: 5 px;
+  }
+  
+  /* Navigation */
+  
+  .navigation__list {
+    display: flex;
+    list-style:none;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  .navigation__item {
+    padding: 0.5rem 0;
+  }
+  
+  .navigation__link {
+    color: var(--grey-dark);
+    font-weight: 60;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px;
+  }
+  
+  .container{
+    width :1%;
+    margin: 0 auto;
+  }
+  
+  /* Text styles */
+  
+  .text-highlight {
+    color: var(--orange-dark);
+    
+  }
+  
+  .arrow-right {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 6px solid var(--white);
+    border-left-color: var(--orange-dark);
+  }
+  
+  
+  /* Buttons */
+  
+    /* INSERT BUTTON STYLES HERE */
+    .button {
+      border: none;
+      color: rgb(241, 23, 23);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    
+  
+  /* Content */
+  
+  /* Alert */
+  
+  .alert {
+    background-color: var(--orange-light);
+    border-left: 4px solid var(--orange-dark);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* hero */
+  
+  .hero {
+    background-image: url("/home/sana/Documents/GitHub/HTML-CSS-Module-Project/img/first-background.jpg");
+    background-color: var(--grey-light);
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    background-position:cover;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+      
+  }
+  
+  .hero p {
+    
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color:white;
+    
+  }
+  
+  
+  /* Headings */
+  
+  .heading-underline {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--orange-light);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .heading-underline:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 25%;
+    height: 2px;
+    max-width: 100px;
+    background: var(--orange-dark);
+  }
+  
+  
+  /* Article */
+  
+  .article {
+    margin-bottom: 1rem;
+  }
+  
+  .article__title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .article__title-link {
+    text-decoration: none;
+    color: var(--orange-dark);
+  }
+  
+  .article__summary {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .article__thumbnail {
+    object-fit: contain;
+    width: 5rem;
+  }
+  
+  .article__read-more {
+    margin-top: 0;
+  }
+  
+  .article__read-more a {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--orange-dark);
+    text-decoration: none;
+  }
+  
+  .article__read-more a:hover,
+  .article__read-more a:focus {
+    text-decoration: underline;
+  }
+  
+  .fa {
+    margin-right: 0.5rem;
+    color: var(--orange-dark);
+  }
+  
+  .facebook-link {
+    color: var(--orange-dark);
+  }
+  
+  
+  
+  /* Footer */
+  
+  .footer {
+    margin-top: 2rem;
+  }
+  
+  .footer__content {
+    border-top: 2px solid var(--orange-light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .footer p {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  /* Media queries */
+  
+  @media screen and (min-width: 992px) {
+    .content {
+      flex-direction: row;
+    }
+  
+    .main {
+      padding-right: 2rem;
+    }
+  }
