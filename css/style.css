@@ -7,14 +7,89 @@ body {
 }
 
 /**
- * Add your custom styles below
- * 
+ * Add your custom styles below 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ .header,
+.content,
+.footer,
+.article {
+  padding: 0 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+ #nav{
+    display: flex;
+    width: 100%;
+ }
+.nav_ul{
+    display: flex;
+    list-style: none;  
+    
+ }
+ .nav_li-a{
+    margin: 20px;
+    text-decoration: none;
+ }
+ .nav_li-a:hover{
+    color: orange;
+ }
  
+ #karma-logo{
+    max-height: 40px;
+    width: auto;
 
+ }
+ .icons{
+    max-height: 100px;
+    width: auto;
+ }
+ .content{
+    background-image: url("../img/first-background.jpg") ;
+    height: 500px;
+    background-size:cover;
+    color:white;
+    text-align: center;
+    
+    
+ }
+#content-btn{
+    
+    background-color: rgb(235, 114, 66);
+}
+.article{
+    display: flex;
+    justify-content: space-around;
+}
+.icon-footer
+{
+    max-height: 20px;
+    justify-content: center;
+    border: solid 1px rgb(224, 229, 229);
+    border-radius: 15px;
+    margin-left: 30px;
+}
+.footer,
+.article-p1{ 
+    text-align: center;
+}
+.article-p1,
+#content-p{
+    text-align: center;
+    font-size: 40px;
+}
 
+#footer-p{
+    font-weight: bold;
+}

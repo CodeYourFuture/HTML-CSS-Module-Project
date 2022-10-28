@@ -14,41 +14,75 @@
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-
-
-    <nav>
-        <ul class="nav_ul">
-            <li class="nav_li"> Meet Karma</li>
-            <li class="nav_li">How it Works</li>
-            <li class="nav_li">Store</li>
-            <li class="nav_li">Blog</li>
-            <li class="nav_li">Help</li>
-            <li class="nav_li">Login</li>
-        </ul>
-
-    </nav>
-
-    <content id="content">
-        <p id="content-p">Introducing Karma</p>
-        <p id="content-p1">Bring WiFi with you, everywhere you go.</p>
-        <button id="content-btn">Learn More</button>
-    </content>
-    <article>
+    <header class="header">
+        <img
+        src="./img/karma-logo.svg"
+        id="karma-logo"
+        alt="logo-Karma"
+        >
+        <nav id="nav">
+            <ul class="nav_ul">
+                <li class="nav_li"><a class="nav_li-a" href="#">Meet Karma</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">How it Works</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Store</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Blog</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Help</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="content">
+                <p id="content-p">Introducing Karma</p>
+                <p id="content-p1">Bring WiFi with you, everywhere you go.</p>
+                <button id="content-btn">Learn More</button>
+            </div>
+        </section>
         <div class="article-div">
             <p class="article-p1">Everyone needs a little Karma</p>
         </div>
-        <div class="article-div">
-            <p class="article-p">Internet for all devices</p>
+
+        <article class="article">
+        
+            <div class="article-div">
+                <img 
+                class="icons"
+                src="./img/icon-devices.svg"
+                alt="icon-devices"
+                >
+
+                <p class="article-p">Internet for all devices</p>
+            </div>
+            
+            <div class="article-div">
+                <img 
+                class="icons"
+                src="./img/icon-coffee.svg"
+                alt="icon-coffees"
+                >
+                <p class="article-p">Boost your productivity</p>
+            </div >
+            
+            <div class="article-div">
+                <img 
+                class="icons"
+                src="./img/icon-refill.svg"
+                alt="icon-refill"
+                >
+                <p class="article-p">Pay as You Go</p>
+            </div>
+        </article>  
+    </main>
+    <footer class="footer">
+
+        <p id="footer-p">Join as on</p>
+        
+        <div id="footer-div">
+            <img class="icon-footer" src="./img/twitter-icon.svg" alt="Tweeter-icon">
+            <img class="icon-footer" src="./img/facebook-icon.svg" alt="Facebook-icon">
+            <img class="icon-footer" src="./img/instagram-icon.svg" alt="instagram-icon">
         </div>
-        <div class="article-div">
-            <p class="article-p">Boost your productivity</p>
-        </div >
-        <div class="article-div">
-            <p class="article-p">Pay as You Go</p>
-        </div>
-    </article>
-    <footer>
-        <p>Join as on </p>
     </footer>
 
 </body>
