@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 1rem;
+padding-top:1rem;
+   
+}
+
+
+
+/* nav */
+.nav-list {
+    display: flex;
+    list-style:none;
+   
+    
+}
+.nav-item {
+    display: flex;
+    justify-content:space-around;
+    margin: 5px;
+    text-align: center;
+    padding: 14px 16px;
+   
+   
+}
+.nav-link {
+color: black;
+text-decoration: none;
+background-image:10px 10px;
+}
