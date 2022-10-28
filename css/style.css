@@ -101,10 +101,45 @@ h3 {
 /* main */
 p {
   margin-left: -25px;
+  text-align: center;
 }
 .main {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
+}
+/* footer */
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: rgb(242, 242, 242);
+}
+.footer {
+  /* border-radius: 50%;
+  border: 1px solid rgb(204, 203, 203); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social_media {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.end {
+  font-size: small;
+  text-align: center;
+  margin: 5px;
+  color: rgb(166, 162, 162);
+}
+#twitter,
+#facebook,
+#instagram {
+  border-radius: 50%;
+  border: 1px solid rgb(211, 205, 205);
+  margin: 8px;
+  padding: auto;
 }
