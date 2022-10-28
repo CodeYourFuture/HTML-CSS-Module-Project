@@ -110,9 +110,13 @@ a:hover {
   color: white;
   appearance: none;
   border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
   box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
 }
 
 .article-two {
@@ -143,7 +147,9 @@ a:hover {
   justify-content: space-around;
   margin-left: 10%;
 }
-
+a {
+  text-decoration: none;
+}
 hr {
   display: block;
   margin-top: 0.5em;
@@ -173,7 +179,6 @@ hr {
   flex-direction: row;
   justify-content: center;
   gap: 16px;
-  margin-right: 6%;
 }
 
 .twitter-icon,
@@ -194,57 +199,38 @@ hr {
 }
 
 <!-- HTML !-->
-<button class="button-3" role="button">Button 3</button>
+<button class="button-1" role="button">Button 1</button>
 
 /* CSS */
-.button-3 {
-  appearance: none;
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+.button-1 {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
   box-sizing: border-box;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  height: 40px;
   line-height: 20px;
-  padding: 6px 16px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
   position: relative;
   text-align: center;
   text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
 }
 
-.button-3:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-.button-3:hover {
-  background-color: #2c974b;
-}
-
-.button-3:focus {
-  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
-  outline: none;
-}
-
-.button-3:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, 0.1);
-  color: rgba(255, 255, 255, 0.8);
-  cursor: default;
-}
-
-.button-3:active {
-  background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+.button-1:hover,
+.button-1:focus {
+  background-color: #f082ac;
 }
