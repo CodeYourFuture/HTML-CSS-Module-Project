@@ -1,19 +1,54 @@
+:root{
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --white: #fff;
+    --orange: #f05a28;
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-bottom: 0.1rem solid hsl(0, 0%, 75%);
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.logo{
+    width: 20px;
+    height: 20px;
+}
 
+.list{
+    display: flex;
+    padding: none;
+}
+.items{
+    display: flex;
+    padding: 0 1.5rem;
+} 
+}
 
+.links{
+color: var(--grey);
+text-decoration: none;
+}
+
+.links:hover{
+    color: var(--orange);
+}
+
+.items:first-child > a{
+color: var(--grey-darkdark);
+}
+.items:first-child > a:hover{
+    color: var(--orange);
+}
