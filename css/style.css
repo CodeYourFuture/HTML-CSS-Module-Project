@@ -38,7 +38,7 @@ header {
 .logo_header {
   width: 2rem;
   height: 2rem;
-  margin-right: 5rem;
+
   padding: 1rem;
 }
 
@@ -74,22 +74,23 @@ hero {
   flex-direction: column;
   color: #fff;
   align-items: center;
-  padding: 1rem;
+  padding: 5rem;
+  justify-content: center;
 }
 #hero_title {
   font-weight: lighter;
-  margin: 6rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
   font-size: 3.5rem;
 }
 
 #hero_prg {
-  margin: 0.5rem 2rem 3rem 2rem;
+  margin: 0.5rem 2rem 1rem 2rem;
   font-size: 2rem;
   font-weight: lighter;
 }
 
 .button_style1 {
-  margin: 1rem 2rem 8rem 2rem;
+  margin: 1rem 2rem 1rem 2rem;
   background-color: rgb(255, 119, 0);
   padding: 0.5rem 1.5rem;
   border-radius: 8px;
@@ -104,19 +105,19 @@ hero {
   font-weight: lighter;
 }
 
-article {
+figure {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 0;
   align-items: center;
 }
 
 section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
-summary {
+figcaption {
   margin: 0px;
   font-size: 1.5rem;
 }
