@@ -25,39 +25,77 @@
         <img src="img/karma-logo.svg" alt="karma karma-logo" width="50px" />
       </div>
       <div class="navlinks">
-      <nav id="nav-bar">
-        <ul>
-          <li>
-            <a class="nav-link" href="#MeetKarma"
-              ><strong>Meet Karma</strong></a
-            >
-          </li>
-          <li><a class="nav-link" href="#HowItWorks">How it works</a></li>
-          <li><a class="nav-link" href="#Store">Store</a></li>
-          <li><a class="nav-link" href="#Blog">Blog</a></li>
-          <li><a class="nav-link" href="#SHelp">Help</a></li>
-          <li><a class="nav-link" href="#Login">Login</a></li>
-        </ul>
-      </nav>
+        <nav id="nav-bar">
+          <ul class="nav-bar">
+            <li>
+              <a class="nav-link" href="#MeetKarma"
+                ><strong>Meet Karma</strong></a
+              >
+            </li>
+            <li><a class="nav-link" href="#HowItWorks">How it works</a></li>
+            <li><a class="nav-link" href="#Store">Store</a></li>
+            <li><a class="nav-link" href="#Blog">Blog</a></li>
+            <li><a class="nav-link" href="#SHelp">Help</a></li>
+            <li><a class="nav-link" href="#Login">Login</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main>
-      <div class="Intro">
-        <section>
-          <br><h1>Introducing Karma</h1></section></br>
-          <p>Bring Wi-Fi with you, everywhere you go.</p>
-          <button onclick="window.location.href='https://github.com/CodeYourFuture/HTML-CSS-Module-Project';">Learn More</button>
-        </section>
-        <article>
+      <section class="Intro">
+        <div id="Content-Intro">
+        <h1>Introducing Karma</h1>
+        <p class="bringWiFi">Bring Wi-Fi with you, everywhere you go.</p>
+        <button
+          onclick="window.location.href='https://github.com/CodeYourFuture/HTML-CSS-Module-Project';"
+        >
+          Learn More
+        </button>
+        </div>
+      </section>
 
-        </article>
-      </div>
-      <section title="Advantages Karma"></section>
-
+      <section class="Advantages">
+        <br>
+        <h2>Everyone needs a little Karma</h2></br>
+        <div class="icon">
+          <ul class="ul">
+            <li>
+          <img
+            src="../HTML-CSS-Module-Project/img/icon-devices.svg"
+            alt="device"
+          />
+          <p>Internet for all devices</p>
+        </li>
+        <li>
+          <img
+            src="../HTML-CSS-Module-Project/img/icon-coffee.svg"
+            alt="coffee"
+          />
+          <p>Boost your productivity</p>
+        </li>
+        <li>
+          <img
+            src="../HTML-CSS-Module-Project/img/icon-refill.svg"
+            alt="refill"
+          />
+          <p>Pay as You Go</p>
+          </li>
+        </ul>
+        </div>
+      </section>
     </main>
     <footer>
-      <nav></nav>
+      <hr>
+      <p>Join us on</p>
+      <nav id="nav-social">
+        <ul class="socialmedia">
+         <li class="sm"><a class="social-media" href="#twitter" ><img src="../HTML-CSS-Module-Project/img/twitter-icon.svg" width="25" height="25" alt="twitterIcon"></a></li>
+            <li class="sm"><a class="social-media" href="#facebook"><img src="../HTML-CSS-Module-Project/img/facebook-icon.svg" width="25" height="25" alt="facebookIcon"></a></li>
+            <li class="sm"><a class="social-media" href="#instagram"><img src="../HTML-CSS-Module-Project/img/instagram-icon.svg" width="25" height="25" alt="instagramIcon"></a></li>
+        </ul>
+      </nav>
+      <p id="companyName">@Karma mobility, Inc.</p>
     </footer>
   </body>
 </html>
