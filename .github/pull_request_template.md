@@ -16,14 +16,14 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Zahraa
+- Your City: London Turing
+- Your Slack Name: Zahraa Tayyar
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML/ CSS 1
+- Week: 2
 
 # Notes
 
