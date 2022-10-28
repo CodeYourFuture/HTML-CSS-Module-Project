@@ -16,6 +16,15 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
  
+
+ /* text */
+
+/* .header,
+.main,
+.footer {
+    font-weight: 5px;
+} */
+
  /* Header */
 
  .header {
@@ -42,17 +51,27 @@ body {
     list-style: none;
     gap: 1rem;
     float:right;
-    padding-right: 100px;
+    padding-right: 7rem;
+    color: grey;
+  }
+
+  .nav_item:hover,
+  .nav_item:focus {
+    color: orangered;
   }
 
   .nav_item {
-    padding: 0.5rem 0;
-    margin: 0 30px 0 30px;
+    padding: 0.1rem 0;
+    margin: 0 20px 0 20px;
   }
   
   .nav_link {
     color: var(--grey-dark);
     text-decoration: none;
+  }
+
+  .navmeetkarma {
+    font-weight: bold;
   }
 
   /* Main */
@@ -64,10 +83,27 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: none;
+    margin-bottom: 10rem;
   }
 
   .introtext {
     color: white;
     text-align: center;
     padding: 24rem;
+  }
+
+  /* article */
+
+  .title {
+    text-align: center;
+  }
+
+  .main_article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .icons {
+    padding: 5rem;
   }
