@@ -28,13 +28,83 @@ body {
 }
 
 /* Navbar */
+
 .nav_list {
   display: flex;
   list-style: none;
 }
+
 .nav_link {
   text-decoration: none;
+  color: grey;
 }
+
+.nav_link:hover {
+  color: #f05a29;
+}
+
 .nav_item {
   padding: 14px;
+}
+/* Hero */
+h1 {
+  margin-bottom: -2px;
+  font-weight: lighter;
+  font-size: xx-large;
+  padding-bottom: 4px;
+  margin-right: -10px;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: x-large;
+  font-style: normal;
+  margin-right: 40px;
+}
+
+.btn_learn_more {
+  background-color: #f05a29;
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: medium;
+}
+
+.hero {
+  display: block;
+  color: white;
+  font-weight: lighter;
+  background-color: rgb(36, 6, 106);
+  background-image: url(/img/first-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 500px;
+  padding-left: 50px;
+  margin-left: 90px;
+}
+
+.hero_wrapper {
+  text-align: center;
+  padding-top: 8rem;
+  padding-left: 100px;
+}
+/* article */
+h3 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: xx-large;
+  padding-top: 40px;
+}
+
+/* main */
+p {
+  margin-left: -25px;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
 }
