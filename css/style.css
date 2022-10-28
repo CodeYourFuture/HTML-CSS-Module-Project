@@ -17,3 +17,132 @@ body {
  */
 
 
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+}
+
+ .logo-image {
+    width: 20px;
+    height: 20px;
+    padding: 15px 100px;
+}
+
+a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.nav-text {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 15px 100px;
+}
+
+
+
+.bg-img {
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    z-index: -1;
+}
+
+.text-img {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.background-img {
+    position:relative;
+}
+
+h1, p {
+    color: white;
+}
+
+.text-img  button {
+    background-color: orangered;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+ 
+.section-down h1 {
+    justify-content: center;
+}
+
+.device-img,
+.coffee-img,
+.refill-img {
+    width: 100px;
+    height: 100px;
+}
+
+.section-down {
+    padding-left: 35%;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.part-two {
+    color: black;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.section-down h3 {
+    font-size: 10px;
+}
+
+.footer-img {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border: solid gray 1px;
+    border-radius: 50%;
+}
+
+
+h5 {
+    display: flex;
+    justify-content: center;
+    color: rgb(151, 150, 150);
+}
+
+.footer-wrap {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    height: 50px;
+}
+
+hr {
+    background-color: lightgray;
+    color: lightgray;
+    width: 80%;
+}
+
+.footer-p-tag {
+    color: lightgrey;
+    justify-content: center;
+    display: flex;
+    font-size: 10px;
+}
