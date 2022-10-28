@@ -16,6 +16,21 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .header,
 .content,
 .section,
@@ -43,6 +58,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
+  margin: 0 2em 3em;
 }
 
 .header_logo {
@@ -71,15 +87,15 @@ a:hover {
 }
 
 .main_div {
-  border: 2px solid black;
-  padding: 3rem 2rem 4rem;
   background-image: url(/img/first-background.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 4rem;
+  position: relative;
+  padding: 9rem 0rem 10rem;
+  margin: 0 2rem 6em;
 }
 .main_div div {
-  border: 2px solid rgb(255, 255, 255);
   color: aliceblue;
   flex-direction: column;
   display: flex;
@@ -90,25 +106,61 @@ a:hover {
   border-radius: 0.25em;
   padding: 0.5em 1.5em;
   color: aliceblue;
-  background-color: brown;
+  background-color: var(--orange-dark);
   width: 0 auto;
+  margin-top: 2em;
 }
 
+h1,
+p {
+  font-size: 3em;
+  font-weight: 50;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.04em;
+}
+
+p {
+  font-size: 1.75em;
+  color: #d5d2d2;
+}
+
+section h1 {
+  font-size: 2.15em;
+  font-weight: lighter;
+  color: #000000;
+}
+
+section p {
+  font-size: 1.15rem;
+  font-weight: normal;
+  color: #000000;
+}
+
+button {
+  font-weight: 60;
+}
 /*call to action*/
 .services {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*background-color: aqua;*/
   margin: 2em 0;
 }
 
 .service_cards {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 0.25em;
   padding: 0.5em 1.5em;
   color: rgb(0, 0, 0);
   width: 0 auto;
+}
+
+.service_cards img {
+  width: 60%;
+  padding-bottom: 2.5em;
 }
 
 .fab_button {
