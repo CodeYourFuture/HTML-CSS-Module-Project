@@ -8,7 +8,6 @@ body {
   margin: 1rem;
   text-align: center;
   align-items: center;
-  position: absolute;
 
   /*align-items: center;
   
@@ -39,7 +38,6 @@ header {
 .logo_header {
   width: 2rem;
   height: 2rem;
-
   padding: 1rem;
 }
 
@@ -70,6 +68,7 @@ header {
 
 hero {
   display: flex;
+  flex-wrap: wrap;
   background-image: url("https://raw.githubusercontent.com/BoshraM/HTML-CSS-Module-Project/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg");
   background-size: cover;
   flex-direction: column;
