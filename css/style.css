@@ -8,6 +8,7 @@ body {
   margin: 1rem;
   text-align: center;
   align-items: center;
+  position: absolute;
 
   /*align-items: center;
   
@@ -45,15 +46,12 @@ header {
 .navigation_list {
   display: flex;
   list-style: none;
+  flex-direction: row;
   justify-content: space-between;
-  margin-left: 2rem;
-  margin-left: auto;
 }
 
 .navigation_link {
   display: flex;
-  justify-content: space-between;
-  margin-left: 1.5rem;
   text-decoration: none;
   color: gray;
   font-size: 1rem;
@@ -62,6 +60,9 @@ header {
   color: black;
 }
 .navigation_link:hover {
+  color: rgb(255, 119, 0);
+}
+#navigation_link_1:hover {
   color: rgb(255, 119, 0);
 }
 
