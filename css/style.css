@@ -21,11 +21,18 @@ header {
     padding: 1rem 3rem;
     border-bottom: 0.1rem solid hsl(0, 0%, 75%);
 }
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+ }
 
-.logo{
-    width: 20px;
-    height: 20px;
-}
+ .logo{
+    display: block;
+    min-width: 1.5rem;
+    min-height: 1.5
+    rem;
+ }
 
 
 .list {
@@ -58,7 +65,19 @@ color: var(--grey-darkdark);
 .items:first-child > a:hover{
     color: var(--orange);
 }
-
+.p1 {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: none;
+}
 .p1 h2 {
     font-weight: 200;
     font-size: 35px;
@@ -83,6 +102,50 @@ color: var(--grey-darkdark);
 .p1 button a {
     text-decoration: none;
     color: var(--white);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+section h2 {
+    font-weight: 200;
+    font-size: 35px;
+}
+
+.features{
+display: flex;
+flex-direction:center;
+align-items: center;
+gap: 1.5rem;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+article h5 {
+    font-weight: 200;
+    font-size: 20px;
+
+}
+
+.features img {
+    width: 120px;
+    height: 120px;
+}
+
+.p2 {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 footer {
