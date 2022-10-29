@@ -3,6 +3,7 @@
 :root {
     --grey-dark: #363434;
     --grey: #adadad;
+    --grey-light: #f7f7f7;
     --orange: #f05a28;
     --white: #fff;
  }
@@ -35,6 +36,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
+    background-color: var(--grey-light);
+    border-bottom: 1px solid var(--grey);
  }
 
  .logo{
@@ -179,7 +182,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--grey);
-    margin: 0 9rem;
+    margin: 0 6rem;
     padding: 2rem 0;
     gap: 1rem;
 }
