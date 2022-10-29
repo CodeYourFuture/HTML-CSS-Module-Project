@@ -17,3 +17,109 @@ body {
  */
 
 
+.logo {
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.header { 
+ display: flex;   
+ justify-content: space-between;
+}
+
+.navigation{
+    display: inline-block;
+    text-decoration: none;
+    justify-content: end;
+  
+}
+
+.navlinks li{
+display:inline-flex;
+align-items: right;
+text-decoration: none;
+gap: 30px; 
+
+
+
+}
+
+h1{
+    color: white;
+    
+}
+h3{ text-align: center;
+    font-size-adjust: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+}
+h2{
+    color: white;
+}
+
+#hero {
+display: inline-block;
+text-align: center;
+background-image: url(/img/first-background.jpg);
+width: 100%;
+height: 75vh;
+margin-top: 25px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+#cards {
+        margin-top: 60px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        gap: 75px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: flex-start;
+    
+}
+
+.directors {
+        width: 100px;
+        height: 100px;
+}
+.btn{
+    background-color: orangered;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.footer-icons{
+    display: flex;
+        gap: 20px;
+        align-items: center;
+        gap: 35px;
+        flex-direction: row;
+        justify-content: center;   
+}
+h4{
+    text-align: center;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-img1{
+    width: 30px;
+}
+
+.footer-img2{
+    width: 30px;
+}
+.footer-img3{
+    width: 30px;
+    border: 0;
+}
+.c-site-footer{
+    text-align: center;
+}
