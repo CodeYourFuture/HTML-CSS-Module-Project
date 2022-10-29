@@ -1,5 +1,9 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -13,8 +17,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.1rem 3rem;
-  border-bottom: 0.1rem solid hsl(0, 0%, 75%);
+  padding: 0.5rem 3rem;
+  border-bottom: 0.1rem solid #eeeeee;
 }
 .logo_header {
   display: block;
@@ -23,6 +27,8 @@ header {
 }
 
 /* Navigation style */
+nav {
+}
 .nav_list {
   display: flex;
   list-style: none;
@@ -80,25 +86,34 @@ header {
 .little_karma {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-self: center;
   border-bottom: 0.1rem solid #eeeeee;
-}
-.little_karma > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style: none;
-  padding: 0rem 10rem;
-  padding-bottom: 2rem;
-}
-.little_karma img {
-  width: 6rem;
+  gap: 2rem;
 }
 .little_karma h2 {
   font-size: 2.2rem;
   font-weight: 300;
   align-self: center;
 }
-.little_karma > ul h4 {
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0rem 10rem;
+  padding-bottom: 2rem;
+}
+.row li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.little_karma img {
+  width: 6rem;
+}
+.row h4 {
   font-size: 1.2rem;
   font-weight: 400;
   align-self: center;
@@ -120,7 +135,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding-bottom: 3rem;
 }
 
 .social_media {
@@ -128,7 +143,7 @@ footer {
   flex-direction: row;
   list-style: none;
   gap: 0.5rem;
-  padding: 1rem 0;
+  padding: 1.4rem;
 }
 footer a {
   display: block;
@@ -144,10 +159,7 @@ footer > h6 {
   font-size: 0.8rem;
   font-weight: 400;
 }
-footer > span:first-child {
-  font-size: 0.7rem;
-}
-footer > span:last-child {
+footer > span {
   font-size: 0.7rem;
   color: #989898;
 }
