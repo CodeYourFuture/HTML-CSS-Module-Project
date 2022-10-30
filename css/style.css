@@ -182,7 +182,7 @@ form {
 label {
   font-size: 1rem;
   color: #434242;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 input[type="text"] {
   margin-bottom: 1rem;
@@ -253,4 +253,59 @@ label[for="agree"] {
 }
 label[for="agree"] a {
   color: var(--primary-color);
+}
+/*----- custom radio -----*/
+.sameLine label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 25px;
+}
+input[type="radio"] {
+  display: none;
+}
+.sameLine label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  border: 1px solid #666;
+  border-radius: 10px;
+}
+input[type="radio"]:checked + label::before {
+  content: "\2B24";
+  color: var(--primary-color);
+  font-size: 8px;
+  text-align: center;
+  line-height: 11px;
+}
+/*----- custom checkbox -----*/
+.otherBox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+input[type="checkbox"]:checked + label::before {
+  background-size: cover;
+  background: no-repeat center url("../level-2/checkmark.svg");
 }
