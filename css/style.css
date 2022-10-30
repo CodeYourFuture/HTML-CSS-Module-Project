@@ -32,27 +32,17 @@ nav ul {
   display: flex;
   gap: 2.5rem;
   list-style-type: none;
-}
-nav li {
   color: #888;
 }
-nav li :hover {
-  color: darkorange;
-  cursor: pointer;
-}
-nav li a:hover {
-  color: darkorange;
-  cursor: pointer;
-}
-nav li a {
+
+a {
   color: #888;
   text-decoration: none;
 }
-nav li:first-child {
-  font-weight: 500;
-  color: #555;
+a:hover {
+  color: darkorange;
+  cursor: pointer;
 }
-
 main {
   height: calc(100vh - 80px);
 }
@@ -90,6 +80,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 4rem 0;
 }
 .s2Container {
   display: flex;
@@ -285,7 +276,7 @@ input[type="radio"]:checked + label::before {
   line-height: 11px;
 }
 /*----- custom checkbox -----*/
-.otherBox label {
+label[for="agree"] {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -294,7 +285,7 @@ input[type="radio"]:checked + label::before {
 input[type="checkbox"] {
   display: none;
 }
-label::before {
+label[for="agree"]::before {
   content: "";
   display: inline-block;
   width: 15px;
@@ -305,7 +296,7 @@ label::before {
   border: 1px solid #666;
   border-radius: 3px;
 }
-input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked + label[for="agree"]::before {
   background-size: cover;
   background: no-repeat center url("../level-2/checkmark.svg");
 }
