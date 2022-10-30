@@ -93,8 +93,26 @@ select {
 
 .radio-box ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     list-style: none;
+}
+
+/* changed radio-box color */
+.radio-box input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--grey-dark);
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 2px;
+  display: inline-block;
+  margin-right: .1rem;
+  vertical-align: -3px;
+}
+
+.radio-box input[type="radio"]:checked {
+  background-color: var(--orange);
 }
 
 /* check box */
@@ -107,13 +125,45 @@ select {
     color: var(--orange);
 }
 
+/* change checkbox mark */
+
+.check-box input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--grey-dark);
+  border-radius: 20%;
+  background-clip: content-box;
+  padding: 1px;
+  background-color: var(--white);
+  display: inline-block;
+  margin-right: .1rem;
+  vertical-align: -3px;
+}
+
+.check-box input[type="checkbox"]:checked {
+  background-image: url(/level-2/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+}
+
 /* button */
 button {
     background-color: var(--orange);
     color: var(--white);
-    border: none;
+    border: 1px solid var(--orange);
     border-radius: 5px;
     padding: 10px 25px;
+    transition: all .3s ease-in-out;
+    margin: 2px;
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    border: 1px solid var(--orange);
 }
 /* section two */
 
