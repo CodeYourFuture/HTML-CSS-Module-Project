@@ -77,6 +77,10 @@ select {
     height: 30px;
 }
 
+select:focus {
+    outline-color: var(--orange) ;
+}
+
 /* radio-box */
 .radio-box {
     display: flex;
