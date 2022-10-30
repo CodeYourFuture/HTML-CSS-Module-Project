@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <header>
+        <img alt="Karma logo" class="logo-img" src="./img/karma-logo.svg">
+        <nav>
+            <ul>
+                <li><a class="nav-head" href="#">Meet Karma</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="main-container">
+            
+            <form id="form">
+                <p id="heading">Order you Karma Wifi device today!</p>
+
+                <section>
+                    <label for="f-name" id="label-fname">First name*</label>
+                    <input type="text" id="f-name">
+                    <label for="l-name" id="label-lname">Last-name*</label>
+                    <input type="text" id="l-name">
+                </section>
+
+                <section>
+                <label for="adrress" id="address">Address*</label>
+                <input type="text" id="address">
+                <label for="adrress2" id="address2">Address*</label>
+                <input type="text" id="address2">
+
+                <section>
+                    <label for="city" id="city">City*</label>
+                    <input type="text" id="city">
+
+                    <label for="postcode" id="city">Postcode*</label>
+                    <input type="text" id="postcode" >
+                </section>
+
+
+                <fieldset>
+                    <legend>Select colour</legend>
+                
+                    <input id="small" type="radio" name="size" value="small" />
+                    <label for="small">Small</label>
+                
+                    <input id="medium" type="radio" name="size" value="medium" />
+                    <label for="medium">Medium</label>
+                
+                    <input id="large" type="radio" name="size" value="large" />
+                    <label for="large">Large</label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Select colour</legend>
+                <label for="color-orange" >Select a colour</label>
+                <input name="colour" type="radio" id="color-orange">
+
+                <label for="color-grey">Select a colour</label>
+                <input name="colour" type="radio" id="color-grey" required>
+                </fieldset>
+
+
+
+                <img id="checkmark" src="./level-2/checkmark.svg"> 
+                <label for="tick" id="tick">By placing your order you agree to <a href="#">Terms and Conditions.*</a></label>
+
+                <button>Place my order</button>
+
+            </form>
+            <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg">
+            
+        </div>
+    </main>
