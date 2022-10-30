@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/karma-logo.svg" alt="karma-logo" />
+      <nav>
+        <ul>
+          <li>Meet Karma</li>
+          <li>How it Works</li>
+          <li style="color: rgb(226, 124, 0); font-weight: 500">Store</li>
+          <li>Blog</li>
+          <li>Help</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="storeContainer">
+        <div class="leftForm">
+          <h1 class="storeTitle">Order your Karma wifi <br />device today!</h1>
+          <form action="">
+            <div class="nameBox">
+              <div class="shortBox">
+                <label for="firstname">First name *</label>
+                <input id="firstname" type="text" />
+              </div>
+              <div class="shortBox">
+                <label for="lastname">Last name *</label>
+                <input id="lastname" type="text" />
+              </div>
+            </div>
+            <div class="longBox">
+              <label for="address">Address *</label>
+              <input id="address" type="text" />
+              <label for="address2">Address 2</label>
+              <input id="address2" type="text" />
+            </div>
+            <div class="cityPostcode">
+              <div class="cityBox">
+                <label for="city">City *</label>
+                <select id="city">
+                  <option value="" selected disabled hidden>
+                    Select your city...
+                  </option>
+                  <option value="London">London</option>
+                  <option value="Birmingham">Birmingham</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="Yorkshire">Yorkshire</option>
+                  <option value="Liverpool">Liverpool</option>
+                  <option value="Sheffield">Sheffield</option>
+                </select>
+              </div>
+              <div class="postcodeBox" id="addressId">
+                <label for="postcode">Postcode *</label>
+                <input type="text" id="postcode" />
+              </div>
+            </div>
+            <div class="otherBox">
+              <p>Select a colour</p>
+              <div class="sameLine">
+                <input type="radio" name="radio" id="selectOne" />
+                <label for="selectOne">Karma orange</label>
+                <input type="radio" name="radio" id="selectOne" />
+                <label for="selectOne">Space Grey</label>
+              </div>
+
+              <label for="agree">
+                <input type="checkbox" id="agree" />
+
+                By placing your order you agree to Karma's
+                <a href="#">Terms and Conditions</a>. *</label
+              >
+            </div>
+
+            <button>Place my order</button>
+          </form>
+        </div>
+        <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="" />
+      </section>
+
+      <footer class="footer">
+        <p class="join">Join us on</p>
+        <div class="icons">
+          <div class="icon">
+            <img src="./img/twitter-icon.svg" alt="twitter-icon" />
+          </div>
+          <div class="icon">
+            <img src="./img/facebook-icon.svg" alt="facebook-icon" />
+          </div>
+          <div class="icon">
+            <img src="./img/instagram-icon.svg" alt="instagram-icon" />
+          </div>
+        </div>
+        <p class="copyright">© Karma Mobility, Inc.</p>
+      </footer>
+    </main>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+  </body>
+</html>

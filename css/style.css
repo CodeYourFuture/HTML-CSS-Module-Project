@@ -23,6 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  background-color: rgba(196, 196, 196, 10%);
 }
 header img {
   height: 3rem;
@@ -35,9 +36,17 @@ nav ul {
 nav li {
   color: #888;
 }
-nav li:hover {
+nav li :hover {
   color: darkorange;
   cursor: pointer;
+}
+nav li a:hover {
+  color: darkorange;
+  cursor: pointer;
+}
+nav li a {
+  color: #888;
+  text-decoration: none;
 }
 nav li:first-child {
   font-weight: 500;
@@ -142,4 +151,98 @@ button {
 .qm {
   color: var(--primary-color);
   font-size: 4rem;
+}
+
+/* store.html */
+.storeContainer {
+  display: flex;
+}
+.storeContainer img {
+  width: 50%;
+}
+.leftForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.storeTitle {
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+label {
+  font-size: 1rem;
+  color: #434242;
+  padding-bottom: 0.5rem;
+}
+input[type="text"] {
+  margin-bottom: 1rem;
+  height: 2rem;
+  border: 2px solid #434242;
+  border-radius: 4px;
+}
+.nameBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.shortBox {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.longBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cityPostcode {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.cityBox {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.postcodeBox {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+select {
+  margin-bottom: 1rem;
+  height: 2.4rem;
+  border: 2px solid #434242;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.otherBox {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+label[for="selectOne"] {
+  margin-right: 1rem;
+}
+.sameLine {
+  white-space: nowrap;
+  margin-bottom: 3rem;
+}
+label[for="agree"] {
+  font-size: 0.8rem;
+}
+label[for="agree"] a {
+  color: var(--primary-color);
 }
