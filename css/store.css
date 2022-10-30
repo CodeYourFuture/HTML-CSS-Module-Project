@@ -177,12 +177,15 @@ button:hover {
 
 /* tablet and mobile size */
 @media screen and (max-width: 820px) {
+    /* fix textbox names */
     .fieldset {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-wrap: wrap;
     }
+
+    /* burger menu */
     .nav-list {
         display: none;
     }
@@ -191,12 +194,9 @@ button:hover {
     display: block;
     margin-right: -30px;
  }
-   
-}
 
-@media screen and (max-width: 489px) {
-   
-    .store-main {
+ /* fix positions */
+     .store-main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -228,4 +228,13 @@ button:hover {
     gap: 10px;
     list-style: none;
 }
+}
+
+/* mobile size */
+@media screen and (max-width: 489px) {
+    .form-section h1 {
+        text-align: center;
+    }
+
+
 }
