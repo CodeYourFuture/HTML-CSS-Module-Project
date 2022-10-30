@@ -1,3 +1,6 @@
+
+/* store page */
+
 /* main */
 .store-main {
     display: flex;
@@ -181,6 +184,7 @@ button:hover {
 
 /* tablet and mobile size */
 @media screen and (max-width: 890px) {
+
     /* fix textbox names */
     .fieldset {
     display: flex;
@@ -188,16 +192,6 @@ button:hover {
     align-items: stretch;
     flex-wrap: wrap;
     }
-
-    /* burger menu */
-    .nav-list {
-        display: none;
-    }
-
-     nav .burger{
-    display: block;
-    margin-right: -30px;
- }
 
  /* fix positions */
      .store-main {
@@ -240,9 +234,10 @@ select {
 
 /* mobile size */
 @media screen and (max-width: 489px) {
+    
+
     .form-section h1 {
         text-align: center;
     }
-
 
 }
