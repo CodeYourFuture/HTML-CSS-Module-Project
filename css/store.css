@@ -13,16 +13,19 @@
     padding: 2rem;
     gap: 30px;
 }
+/* form */
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* form title */
 .form-section h1 {
     color: var(--orange);
 }
 
+/* form classes */
 label {
     font-size: 12px;
     font-weight: 400;
@@ -45,14 +48,36 @@ label {
     gap: 5px;
 }
 
+/* input style */
+input[type="text"] {
+    height: 30px;
+    padding: 2px;
+}
 
+input:focus {
+    outline-color: var(--orange) !important;
+} 
+
+input[type="checkbox"] {
+    color: var(--orange);
+    background-color: var(--orange);
+}
+
+#postcode {
+    width: 100px;
+    text-transform: uppercase;
+}
+/* select & option */
 select {
+    font-style: italic;
     font-size: 12px;
     font-weight: 400;
     color: var(--grey-dark);
-    width: 170px;
-    height: 23px;
+    width: 250px;
+    height: 30px;
 }
+
+/* radio-box */
 .radio-box {
     display: flex;
     flex-direction: column;
@@ -71,14 +96,17 @@ select {
     list-style: none;
 }
 
+/* check box */
 .check-box {
     gap: 2px;
+    margin-top: 20px;
 }
 
 .check-box a {
     color: var(--orange);
 }
 
+/* button */
 button {
     background-color: var(--orange);
     color: var(--white);
