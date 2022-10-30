@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 
@@ -51,17 +52,21 @@
 
     <main>
 
-        <div class="store_title">
-            <h1>Order your Karma wifi device today!</h1>
-        </div>
-
         <form class="order_form">
 
-            <label for="first_name">First name *</label>
-            <input style="text" class="input" id="first_name" name="first_name" required>
+            <div class="store_title">
+                <h1>Order your Karma wifi device today!</h1>
+            </div>
 
-            <label for="last_name">Last name *</label>
-            <input style="text" class="input" id="last_name" name="last_name" required>
+            <fieldset>
+
+                <label for="first_name">First name *</label>
+                <input style="text" class="input" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last name *</label>
+                <input style="text" class="input" id="last_name" name="last_name" required>
+
+            </fieldset>
 
             <label for="address">Address *</label>
             <input style="text" class="input" id="address" name="address" required>
@@ -84,7 +89,21 @@
             <input type="radio" value="Space Grey" name="colour" id="space_grey">
 
 
+            <input type="checkbox" id:="tc">
+            <label for="tc">By placing your order you agree to Karma's Terms and Conditions. *</label>
+
+            <button>Place my order</button>
+
         </form>
+
+        <div class="store_image">
+            <a href="#">
+                <img
+                src="/level-2/store-image_by-andrew-neel-unsplash.jpg"
+                alt="woman working on her laptop sitting on a long desk"
+                class="store_image1">
+            </a>
+        </div>
 
     </main>
 
