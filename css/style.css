@@ -30,7 +30,9 @@ body {
  .header {
     padding:1rem 2rem;
     margin-bottom: 3rem;
-    padding-top: 1rem;
+    margin-top: 0;
+    align-items: center;
+    /* background-color: gainsboro; */
  }
 
  .header_logo {
@@ -49,7 +51,7 @@ body {
     justify-content:space-between;
     align-items: center;
     list-style: none;
-    gap: 1rem;
+    gap: 5rem;
     float:right;
     padding-right: 7rem;
     color: grey;
@@ -62,7 +64,7 @@ body {
 
   .nav_item {
     padding: 0.1rem 0;
-    margin: 0 20px 0 20px;
+    margin: 0;
   }
   
   .nav_link {
@@ -117,8 +119,27 @@ body {
     height: 15rem;
   }
 
-  .sep_line {
-    padding:0 12rem;
+  /* .sep_line {
+    margin:0 12rem;
+    opacity: 50%;
+  } */
+
+  /* Home Page Feature */
+
+  .home_feature {
+    display:flex;
+    background-color:#FFE8DE;
+  }
+
+  .feature_text {
+    text-align: center;
+    justify-content: center;
+    padding: 12rem 20rem 10rem 0;
+  }
+
+  .feature_image {
+    height: 35rem;
+    margin-right: 20rem;
   }
 
   /* Footer */
@@ -143,7 +164,6 @@ body {
     border-radius: 20px;
     padding: 20px;
     margin: 0 20px;
-    font-size: 20px;
   }
 
   .instagram_icon,
