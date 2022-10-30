@@ -106,33 +106,31 @@ body {
     margin: 0;
 }
 
-.hero h2 {
+.hero h1 {
     font-weight: 200;
     font-size: 35px;
     text-align: center;
 }
 
-.hero h5 {
-    margin-top: -1rem;
+.hero p {
+    margin-top: -2rem;
     margin-bottom: 2rem;
     font-weight: 50;
     font-size: 20px;
 }
 
-.hero button {
+.hero a {
     background-color: var(--orange);
     border: none;
     padding: .8rem 1rem;
     border-radius: 5px;
-}
-.hero button:hover {
-    background-color: var(--grey-dark);
-}
-
-.hero button a {
     text-decoration: none;
     color: var(--white);
 }
+.hero a:hover {
+    background-color: var(--grey-dark);
+}
+
 
 /* Second section */
 section {
@@ -156,7 +154,7 @@ article {
     
 }
 
-article h5 {
+article p {
     font-weight: 200;
     font-size: 20px;
     
@@ -261,11 +259,11 @@ footer ul li a img{
     max-height: 1rem;
 } 
 
-footer h2 {
+footer h3 {
     font-weight: 400;
 }
 
-footer h5 {
+footer p {
     font-weight: 200;
     color: var(--grey);
 }
