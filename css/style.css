@@ -80,7 +80,12 @@ body {
  .nav-items:first-child > a:hover{
     color: var(--orange);
  }
+ /* hamburger menu */
 
+ nav .burger{
+    display: none;
+ }
+ 
  /* main */
 
  main {
@@ -267,3 +272,34 @@ footer p {
     font-weight: 200;
     color: var(--grey);
 }
+
+/* tablet and mobile size */
+@media screen and (max-width: 820px) {
+     .nav-list {
+        display: none;
+    }
+
+     nav .burger{
+    display: block;
+    margin-right: -30px;
+ }
+}
+
+
+@media screen and (max-width: 489px) {
+
+    .hero-two {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    
+    
+}
+
+    section h2 {
+    text-align: center;
+}
+
+
+}
+    

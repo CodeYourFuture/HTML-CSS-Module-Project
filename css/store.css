@@ -157,7 +157,6 @@ button {
     border-radius: 5px;
     padding: 10px 25px;
     transition: all .3s ease-in-out;
-    margin: 2px;
 }
 
 button:hover {
@@ -174,4 +173,59 @@ button:hover {
     background-size: cover;
     width: 50%;
     margin: 0;
+}
+
+/* tablet and mobile size */
+@media screen and (max-width: 820px) {
+    .fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    }
+    .nav-list {
+        display: none;
+    }
+
+     nav .burger{
+    display: block;
+    margin-right: -30px;
+ }
+   
+}
+
+@media screen and (max-width: 489px) {
+   
+    .store-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.img-section {
+    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+}
+
+.radio-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
 }
