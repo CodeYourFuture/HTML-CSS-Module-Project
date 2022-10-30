@@ -180,7 +180,7 @@ button:hover {
 }
 
 /* tablet and mobile size */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 890px) {
     /* fix textbox names */
     .fieldset {
     display: flex;
@@ -205,6 +205,10 @@ button:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+}
+
+select {
+    width: 320px;
 }
 
 .form-section {
