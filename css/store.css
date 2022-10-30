@@ -1,0 +1,98 @@
+/* main */
+.store-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* section one */
+.form-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-section h1 {
+    color: var(--orange);
+}
+
+label {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    border: none;
+    gap: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+select {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+    width: 170px;
+    height: 23px;
+}
+.radio-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-box legend {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+}
+
+.radio-box ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.check-box {
+    gap: 2px;
+}
+
+.check-box a {
+    color: var(--orange);
+}
+
+button {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+/* section two */
+
+.img-section {
+    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin: 0;
+}
