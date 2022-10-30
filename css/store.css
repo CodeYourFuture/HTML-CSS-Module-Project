@@ -1,3 +1,6 @@
+
+/* store page */
+
 /* main */
 .store-main {
     display: flex;
@@ -180,8 +183,9 @@ button:hover {
 }
 
 /* tablet and mobile size */
-@media screen and (max-width: 820px) {
-    /* fix textbox names */
+@media screen and (max-width: 890px) {
+  
+      /* fix textbox names */
     .fieldset {
     display: flex;
     flex-direction: column;
@@ -189,22 +193,16 @@ button:hover {
     flex-wrap: wrap;
     }
 
-    /* burger menu */
-    .nav-list {
-        display: none;
-    }
-
-     nav .burger{
-    display: block;
-    margin-right: -30px;
- }
-
  /* fix positions */
      .store-main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+}
+
+select {
+    width: 320px;
 }
 
 .form-section {
@@ -236,9 +234,10 @@ button:hover {
 
 /* mobile size */
 @media screen and (max-width: 489px) {
+    
+
     .form-section h1 {
         text-align: center;
     }
-
 
 }
