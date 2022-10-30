@@ -38,23 +38,38 @@
             <div class="nameBox">
               <div class="shortBox">
                 <label for="firstname">First name *</label>
-                <input id="firstname" type="text" />
+                <input
+                  id="firstname"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z]+.{2,}"
+                />
               </div>
               <div class="shortBox">
                 <label for="lastname">Last name *</label>
-                <input id="lastname" type="text" />
+                <input
+                  id="lastname"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z]+.{2,}"
+                />
               </div>
             </div>
             <div class="longBox">
               <label for="address">Address *</label>
-              <input id="address" type="text" />
+              <input
+                id="address"
+                type="text"
+                required
+                pattern="[a-zA-Z0-9\s]+.{5,30}"
+              />
               <label for="address2">Address 2</label>
               <input id="address2" type="text" />
             </div>
             <div class="cityPostcode">
               <div class="cityBox">
                 <label for="city">City *</label>
-                <select id="city">
+                <select id="city" required>
                   <option value="" selected disabled hidden>
                     Select your city...
                   </option>
@@ -68,20 +83,25 @@
               </div>
               <div class="postcodeBox" id="addressId">
                 <label for="postcode">Postcode *</label>
-                <input type="text" id="postcode" />
+                <input
+                  type="text"
+                  id="postcode"
+                  required
+                  pattern="[a-zA-Z0-9\s]+.{6,8}"
+                />
               </div>
             </div>
             <div class="otherBox">
               <p>Select a colour</p>
               <div class="sameLine">
-                <input type="radio" name="radio" id="selectOne" />
+                <input type="radio" name="radio" id="selectOne" checked />
                 <label for="selectOne">Karma orange</label>
                 <input type="radio" name="radio" id="selectOne" />
                 <label for="selectOne">Space Grey</label>
               </div>
 
               <label for="agree">
-                <input type="checkbox" id="agree" />
+                <input type="checkbox" id="agree" required />
 
                 By placing your order you agree to Karma's
                 <a href="#">Terms and Conditions</a>. *</label

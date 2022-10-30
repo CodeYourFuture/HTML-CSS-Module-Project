@@ -229,6 +229,14 @@ select {
   background-color: #fff;
   border-radius: 4px;
 }
+select:required:invalid {
+  color: gray;
+  font-style: italic;
+}
+option {
+  color: black;
+  font-style: normal;
+}
 .otherBox {
   width: 100%;
   margin-bottom: 2rem;
