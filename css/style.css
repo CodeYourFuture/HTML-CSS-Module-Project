@@ -9,6 +9,15 @@ body {
     width: 100%;
 }
 
+.header,
+.content, 
+.footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
 /**
  * Add your custom styles below
  * 
@@ -46,6 +55,7 @@ nav {
 
 nav .bar{
     width: 100%;
+    padding: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -53,11 +63,10 @@ nav .bar{
     align-content: center;
     /* align-items: baseline; it does not work */
     gap: 1rem;
-    padding: auto;
 }
 
 li {
-    width: 16.5%;
+    width: auto;
     text-decoration: none;
     list-style: none; 
     display: block;
@@ -72,6 +81,10 @@ a {
     width: 100%;
     text-decoration: none;
     color: rgb(118, 123, 125);
+}
+
+ul :first-child{
+    color: rgb(19, 167, 226);
 }
 
 a:hover {color: rgb(243, 112, 56);}
@@ -177,29 +190,29 @@ hr{
 
 footer {
     margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
     text-align: center;
 }
 
-footer .foot{
+.foot ul{
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-footer .foot ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .foot ul li{
+    gap: 1.5rem;
+    list-style: none;
+    padding-left: 0px;
 
 }
 
-footer .foot ul li img{
-    
+.foot img{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+footer ul li{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+h5 {
+    color: darkgray;
 }
