@@ -13,6 +13,8 @@ main {
     margin-top:0;
 }
 
+/* Form */
+
 .order_form{
     display: flex;
     flex-direction: column;
@@ -35,6 +37,7 @@ label {
 input,
 label {
     /* display: block; */
+    width:auto;
 }
 
 button {
@@ -54,6 +57,7 @@ fieldset {
     border: none;
     display:flex;
     gap: 2rem;
+    width:auto;
 }
 
 .name_section {
