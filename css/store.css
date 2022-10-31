@@ -36,6 +36,19 @@ label {
     /* display: block; */
 }
 
+button {
+    background-color: #E14E00;
+    padding: 1rem;
+    margin: 2rem 30rem 2rem 0;
+    justify-content: left;
+    color: white;
+    border-radius: 0.2rem;;
+    border: none;
+}
+
+
+/* fieldsets */
+
 fieldset {
     border: none;
     display:flex;
@@ -49,19 +62,8 @@ fieldset {
 .address_section {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
-
-button {
-    background-color: #E14E00;
-    padding: 1rem;
-    margin: 2rem 30rem 2rem 0;
-    justify-content: left;
-    color: white;
-    border-radius: 0.2rem;;
-    border: none;
-}
-
-
 
 /* image */
 
