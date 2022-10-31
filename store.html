@@ -7,87 +7,105 @@
     <title>Karma</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css-store/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-
+    
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-    <header>
-        <img alt="Karma logo" class="logo-img" src="./img/karma-logo.svg">
-        <nav>
-            <ul>
-                <li><a class="nav-head" href="#">Meet Karma</a></li>
-                <li><a href="#">How it Works</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="main-container">
-            
-            <form id="form">
+    <div class="main-container"></div>
+
+        <header>
+            <img alt="Karma logo" class="logo-img" src="./img/karma-logo.svg">
+            <nav>
+                <ul>
+                    <li><a class="nav-head" href="#">Meet Karma</a></li>
+                    <li><a class="nav-item" href="#">How it Works</a></li>
+                    <li><a class="nav-item" href="#">Store</a></li>
+                    <li><a class="nav-item" href="#">Blog</a></li>
+                    <li><a class="nav-item" href="#">Help</a></li>
+                    <li><a class="nav-item" href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    
+
+        <div class="content">
+
+            <div class="form">
+                <form>
                 <p id="heading">Order you Karma Wifi device today!</p>
 
-                <section>
-                    <label for="f-name" id="label-fname">First name*</label>
-                    <input type="text" id="f-name">
-                    <label for="l-name" id="label-lname">Last-name*</label>
-                    <input type="text" id="l-name">
-                </section>
+                <div class="display-row">
+                    <div class="display-column">
+                        <label class="padding" for="f-name" id="label-fname">First name*</label>
+                        <input class="input-height" type="text" id="f-name">
+                    </div>
+                    <div class="display-column">
+                        <label class="padding" for="l-name" id="label-lname">Last-name*</label>
+                        <input class="input-height"type="text" id="l-name">
+                    </div>
+                </div>
 
-                <section>
-                <label for="adrress" id="address">Address*</label>
-                <input type="text" id="address">
-                <label for="adrress2" id="address2">Address*</label>
-                <input type="text" id="address2">
+                <div class="display-column">
+                    <label class="padding" for="adrress" id="address">Address 1*</label>
+                    <input class="input-height"  type="text" id="address">
+                    <label class="address2" for="adrress2" id="address2">Address 2</label>
+                    <input class="input-height"  type="text" id="address2">
+                </div>
 
-                <section>
-                    <label for="city" id="city">City*</label>
-                    <input type="text" id="city">
+                <div class="display-row">
+                    <div class="display-column">
+                        <label class="padding" for="city" id="city">City*</label>
+                        <input class="input-height" type="text" id="city">
+                    </div>
 
-                    <label for="postcode" id="city">Postcode*</label>
-                    <input type="text" id="postcode" >
-                </section>
-
-
-                <fieldset>
-                    <legend>Select colour</legend>
-                
-                    <input id="small" type="radio" name="size" value="small" />
-                    <label for="small">Small</label>
-                
-                    <input id="medium" type="radio" name="size" value="medium" />
-                    <label for="medium">Medium</label>
-                
-                    <input id="large" type="radio" name="size" value="large" />
-                    <label for="large">Large</label>
-                </fieldset>
+                    <div class="display-column">
+                        <label class="padding" for="postcode" id="city">Postcode*</label>
+                        <input class="input-height" type="text" id="postcode">
+                    </div>
+                </div>
 
                 <fieldset>
-                <legend>Select colour</legend>
-                <label for="color-orange" >Select a colour</label>
-                <input name="colour" type="radio" id="color-orange">
 
-                <label for="color-grey">Select a colour</label>
-                <input name="colour" type="radio" id="color-grey" required>
-                </fieldset>
-
-
-
-                <img id="checkmark" src="./level-2/checkmark.svg"> 
-                <label for="tick" id="tick">By placing your order you agree to <a href="#">Terms and Conditions.*</a></label>
-
-                <button>Place my order</button>
-
-            </form>
-            <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg">
+                    <legend>Select a colour</legend>
+                        <input name="colour" type="radio" id="color-orange" class="color">
+                        <label class="color-orange" for="color-orange" >Karma orange</label>
             
+                        <input name="colour" type="radio" id="color-grey" class="color" required>
+                        <label for="color-grey">Space Grey</label>
+                
+                </fieldset>
+
+
+                <div class="display-column">
+                    <div class="padding" class="display-row">
+
+                        <img id="checkmark" src="./level-2/checkmark.svg"> 
+                        <p>By placing your order you agree to Karma's <a class="orange-text" href="#">Terms and Conditions.</a>*</p>
+
+                    </div>
+                    <button>Place my order</button>
+                </div>
+             </form>
+            </div>
+            <img class="main-img" src="./level-2/store-image_by-andrew-neel-unsplash.jpg">
+
         </div>
-    </main>
+        <footer>
+            <p>Join us on</p>
+            
+            <div>
+                <a href="#"><img alt="twitter" class="footer-imgs" src="./img/twitter-icon.svg"></a>
+                <a href="#"><img alt="facebook" class="footer-imgs" src="./img/facebook-icon.svg"></a>
+                <a href="#"><img alt="instagram" class="footer-imgs" src="./img/instagram-icon.svg"></a>
+            </div>
+            
+            <p class="footer-p">&#169Karma Mobility, Inc.</p>
+        </footer>
+            
+    </div>

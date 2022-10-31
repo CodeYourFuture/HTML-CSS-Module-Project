@@ -26,14 +26,86 @@ body {
     background-position: right center;
  }
  */
- 
+
 header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 100px;
     display: flex;
-    background-color: rgb(247, 240, 240);
-    
+    background-color: rgb(247, 240, 240);   
+    margin: 0; 
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.display-column {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.display-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.padding {
+    padding-bottom: 10px;
+}
+
+.address2 {
+    padding: 20px 0 20px 0;
+}
+
+.color-orange {
+    padding-right: 30px;
+}
+ legend {
+    padding-top: 20px;
+ }
+
+.form {
+    width: 780px;
+    border: 3px dotted #413a36;
+    padding: 50px 90px 0 90px;
+}
+
+.main-img {
+    border: 3px dotted #CE5C08;
+    width: 580px;
+}
+
+.orange-text {
+    color: #CE5C08;
+}
+
+.input-height {
+    height: 30px;
+}
+
+.color {
+    color: #CE5C08;
+}
+
+#heading {
+    padding-bottom: 20px;
+    font-size: 3.8rem;
+}
+
+footer {
+    grid-area: f;
+    background-color: rgb(31, 12, 99);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 50px;
+    border-top: 1px solid #FAF6F6;
 }
 
 .logo-img {
@@ -48,7 +120,7 @@ ul {
     gap: 10px;
 }
 
-ul li a {
+.nav-item {
     color: rgb(158, 156, 156);
     text-decoration: none;
     padding: 15px;
@@ -63,39 +135,6 @@ ul li a:hover {
     color: rgb(63, 57, 57);
     font-weight: 500;
     font-size: 14px;
-
-}
-main {
-    display: flex;
-    flex-direction: row;
-}
-
-#main-container {
-    display: flex;
-    flex-direction: row;
-    
-}
-
-
-
-#heading {
-    color: #CE5C08;
-    font-size: 35px;
-}
-
-form {
-    width: 1345px;
-    padding: 80px 10px 10px 10px;
-    border: 2px solid pink;
-    background-size: 45%;
-    background-position: center right;
-}
-
-
-#main-img {
-
-  width: 40%;
-  justify-content: flex-end;
 }
 
 #checkmark {
@@ -105,13 +144,27 @@ form {
 button {
     background-color: #CE5C08;
     color: white;
-    width: 120px;
+    width: 200px;
     height: 50px;
     font-size: 14px;
-    border-radius: 4%;
+    border-radius: 4px;
     border: none;
+    margin: 20px 0 20px 0;
 }
 
 fieldset {
     border: 0;
+    padding: 10px 0px 50px 0px;
+}
+
+.footer-imgs {
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #E9ECF3;
+    border-radius: 50px;
+}
+
+.footer-p {
+    color: #555151;
 }
