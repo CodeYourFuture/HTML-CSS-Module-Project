@@ -16,24 +16,27 @@ body {
  */
 
 /** Navigation */
-.navigation__list {
+
+.nav-div {
   display: flex;
-  list-style: none;
-  flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  height: 10px;
-  margin-bottom: 1.4rem;
-  padding-top: 1rem;
-  padding-right: 150px;
+}
+
+.nav-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  padding-right: 1em;
+}
+.navigation__list {
+  list-style: none;
 }
 
 #Karma_logo {
-  width: 35px;
-  height: 35px;
-  padding-right: 800px;
-  padding-left: 30px;
-  padding-top: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 a {
@@ -44,10 +47,10 @@ a {
 li a:hover {
   color: rgba(231, 98, 49, 0.877);
 }
-/** Introduction section with bacground photo */
+/** Introduction section with background photo */
 
 .Introduction {
-  background-image: url("/home/natalie/Documents/CYF/HTML-CSS-Module-Project/img/first-background.jpg");
+  background-image: url("../img/first-background.jpg");
   color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,6 +85,7 @@ button {
 button:hover {
   color: rgba(231, 98, 49, 0.877);
   background: white;
+  outline-style: double;
 }
 /* section 2*/
 
