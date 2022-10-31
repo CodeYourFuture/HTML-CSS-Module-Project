@@ -58,7 +58,7 @@
                 <h1>Order your Karma wifi device today!</h1>
             </div>
 
-            <fieldset>
+            <fieldset class="name_section">
 
                 <label for="first_name">First name *</label>
                 <input style="text" class="input" id="first_name" name="first_name" required>
@@ -74,22 +74,30 @@
             <label for="address2">Address 2</label>
             <input style="text" class="input" id="address2" name="address2">
 
-            <label for="city">City *</label>
-            <select id="city" name="city">
-                <option value="">Select your city...</option>
-            </select>
+            <fieldset class="location_section">
 
-            <label for="postcode">Postcode *</label>
-            <input style="text" class="input" id="postcode" name="postcode">
+                <label for="city">City *</label>
+                <select id="city" name="city" class="input">
+                    <option value="">Select your city...</option>
+                </select>
 
-            <label for="karma_orange">Karma Orange</label>
-            <input type="radio" value="Karma range" name="colour" id="karma_orange">
+                 <label for="postcode">Postcode *</label>
+                 <input style="text" class="input" id="postcode" name="postcode">
 
-            <label for="space_grey">Space Grey</label>
-            <input type="radio" value="Space Grey" name="colour" id="space_grey">
+            </fieldset>
 
+            <fieldset>
+                <legend>Select a colour</legend>
 
-            <input type="checkbox" id:="tc">
+                <label for="karma_orange">Karma Orange</label>
+                <input type="radio" value="Karma range" name="colour" class="input" id="karma_orange">
+
+                <label for="space_grey">Space Grey</label>
+                <input type="radio" value="Space Grey" name="colour" class="input" id="space_grey">
+                
+            </fieldset>
+
+            <input type="checkbox" class="input" id="tc">
             <label for="tc">By placing your order you agree to Karma's Terms and Conditions. *</label>
 
             <button>Place my order</button>

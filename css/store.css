@@ -1,8 +1,10 @@
 
 /* main */
 
-.main {
+main {
     display: flex;
+    flex-direction: row;
+    margin:0;
 }
 
 .store_title {
@@ -14,6 +16,28 @@
     flex-direction: column;
     justify-content: center;
     width: 40%;
+    margin: 7rem;
+}
+
+.input {
+    border:solid 1.5px gray;
+    border-radius: 5px;
+    margin: 0 5px 2rem 0;
+    padding: 1rem;
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+input,
+label {
+    display: block;
+}
+
+fieldset {
+    border: none;
+    display:flex;
 }
 
 button {
@@ -22,6 +46,8 @@ button {
     margin: 2rem 30rem 2rem 0;
     justify-content: left;
     color: white;
+    border-radius: 0.2rem;;
+    border: none;
 }
 
 
@@ -29,6 +55,8 @@ button {
 /* image */
 
 .store_image1 {
+    display: flex;
+    justify-content: right;
     float: right;
-    width: 100px;
+    width: 80%;
 }
