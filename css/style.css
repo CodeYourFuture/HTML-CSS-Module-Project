@@ -178,25 +178,38 @@ article img {
 }
 
 /* Banner */
-.banner{
+
+.banner {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-      }
+}
 
-.column {
-    flex: 1;
-
+.banner .column {
+    flex-grow: 1;
   }
+
   .blue-column {
-    background-color: blue;
-    height: 100px;
+    background-image: url(/img/homepage-feature.png);
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    flex: 1;
+    padding: 1rem;
+    height: 30rem;
+    /* flex-grow: 1;
+    max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+    /* background-size:cover; */
+    /* height: 27rem;
+    /* width: 100%; */
+    /* padding-right: -1rem;
+    flex-grow: 1; */ 
   }
   
   .green-column {
     background-color: green;
     height: 100px;
+    flex-grow: 2;   
   }
 
 /* footer */
