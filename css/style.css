@@ -12,13 +12,12 @@ body {
 }
 
 /* Header Section */
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 3rem;
-  border-bottom: 0.1rem solid #eeeeee;
+  border-bottom: 0.1rem solid #989898;
 }
 .logo_header {
   display: block;
@@ -27,8 +26,7 @@ header {
 }
 
 /* Navigation style */
-nav {
-}
+
 .nav_list {
   display: flex;
   list-style: none;
@@ -41,7 +39,6 @@ nav {
   color: #989898;
   text-decoration: none;
 }
-
 .nav_list > li:first-child > a {
   color: #595959;
   font-weight: 500;
@@ -51,7 +48,6 @@ nav {
 }
 
 /* Main section */
-
 .main_content {
   display: flex;
   flex-direction: column;
@@ -86,37 +82,34 @@ nav {
 .little_karma {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-self: center;
   border-bottom: 0.1rem solid #eeeeee;
-  gap: 2rem;
+}
+.little_karma > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 2rem 10rem;
+  padding-bottom: 2rem;
+}
+.little_karma img {
+  width: 6rem;
 }
 .little_karma h2 {
   font-size: 2.2rem;
   font-weight: 300;
   align-self: center;
 }
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0rem 10rem;
-  padding-bottom: 2rem;
+.little_karma > ul h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  align-self: center;
 }
-.row li {
+
+.little_karma li {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-}
-.little_karma img {
-  width: 6rem;
-}
-.row h4 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  align-self: center;
 }
 
 /* button style */
@@ -135,7 +128,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 3rem;
+  padding: 1rem 0;
 }
 
 .social_media {
@@ -143,7 +136,7 @@ footer {
   flex-direction: row;
   list-style: none;
   gap: 0.5rem;
-  padding: 1.4rem;
+  padding: 1rem 0;
 }
 footer a {
   display: block;
@@ -159,7 +152,10 @@ footer > h6 {
   font-size: 0.8rem;
   font-weight: 400;
 }
-footer > span {
+footer > span:first-child {
+  font-size: 0.7rem;
+}
+footer > span:last-child {
   font-size: 0.7rem;
   color: #989898;
 }
