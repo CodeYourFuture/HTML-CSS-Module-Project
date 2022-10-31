@@ -178,8 +178,26 @@ article img {
 }
 
 /* Banner */
+.banner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+      }
 
+.column {
+    flex: 1;
 
+  }
+  .blue-column {
+    background-color: blue;
+    height: 100px;
+  }
+  
+  .green-column {
+    background-color: green;
+    height: 100px;
+  }
 
 /* footer */
 
