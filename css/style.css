@@ -4,6 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    display: block; 
+    margin: 0;
+    width: 100%;
 }
 
 /**
@@ -16,38 +19,49 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+*{
+    box-sizing: border-box;
+}
 
 
 header{ 
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
     width: 100%;
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5rem;
+    padding-bottom: 1rem;
+
 }
 
-img{
+header img{
     padding-top: 1rem;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
 
 nav {
-    padding-top: 1rem;
-    width: 50rem;
-    margin-right: 5rem;
+    width: 50%;
     /* background-color: yellow; */
 }
 
-.bar{
+nav .bar{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* align-items: baseline; it does not work */
+    gap: 1rem;
+    padding: auto;
 }
 
 li {
-    display: inline;
+    width: 16.5%;
     text-decoration: none;
     list-style: none; 
+    display: block;
+    align-content: center;
 }
 
 .karma{
@@ -55,6 +69,7 @@ li {
 }
 
 a {
+    width: 100%;
     text-decoration: none;
     color: rgb(118, 123, 125);
 }
@@ -67,7 +82,8 @@ section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 main {
@@ -75,16 +91,24 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 35rem;
-    padding-top: 13rem;
+    justify-content: center;
+    /* padding-top: 13rem; */
     color: rgb(246, 241, 241);
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-main h2{
+main img{
+    width: 100%;
+    height: 100%;
+}
+
+main h1{
     font-size: 4rem;
     font-weight: 350;
     margin-bottom: 0rem;
@@ -107,33 +131,41 @@ main p{
 h3{
     font-size: 3.4rem;
     font-weight: 200;
-    padding-top: 10rem;
-    margin: 0px;
+    /* padding-top: 10rem; */
+    text-align: center;
 }
 
 /* second div with the images */
 
 .content{
-    width: 80%;
-    height: 20rem;
+    width: 100%;
+    /* height: 20rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    justify-content: center;
 }
 
-.content div {
-    width: 35%;
-    height: 100%;
+.content .section {
+    width: 70%;
     text-align: center;
     color:  rgb(16, 15, 15);
     font-size: 2rem;
     font-weight: 500;
+    border-radius: yellow; 
 }
 
-div img{
-    padding-top: 3rem;
-    width: 40%;
+.content .section img{
+    /* padding-top: 3rem; */
+    width: 50%;
     margin: auto;
+}
+
+.content .section p{
+    width: 100%;
+    color:  rgb(16, 15, 15);
+    font-size: 80%;
+    font-weight: 500;
 }
 
 hr{
@@ -143,47 +175,31 @@ hr{
 
 /* footer */
 
-footer{
-
+footer {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.foot ul{
+footer .foot{
     display: flex;
     align-items: center;
-    justify-content: center;  
-    list-style: none;
-    gap: 1rem;
-}
-
-
-
-footer ul li{
-    display: flex;
     justify-content: center;
-    border-spacing: 1rem;
-    align-items: center; 
-    border: 1px solid #bdc3c7;
-    border-radius: 50%;
-    padding: 1rem;
-    padding-bottom: 3rem;
-    height: .5rem;
+}
+
+footer .foot ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .foot ul li{
+
+}
+
+footer .foot ul li img{
     
-}
-
-.foot img{
-    width: 2rem;
-    height: 2rem;
-}
-
-footer h2{
-    font-weight: 500;
-    margin: 1rem;
-}
-
-footer h5{
-    font-weight: 200;
 }
