@@ -9,13 +9,14 @@ main {
 
 .store_title {
     color: #E14E00;
+    margin-top:0;
 }
 
 .order_form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 40%;
+    /* justify-content: center; */
+    width: 50%;
     margin: 7rem;
 }
 
@@ -32,12 +33,17 @@ label {
 
 input,
 label {
-    display: block;
+    /* display: block; */
 }
 
 fieldset {
     border: none;
     display:flex;
+    gap: 2rem;
+}
+
+.name_section {
+    margin-top: 4rem;
 }
 
 button {
@@ -58,5 +64,5 @@ button {
     display: flex;
     justify-content: right;
     float: right;
-    width: 80%;
+    width: 90%;
 }
