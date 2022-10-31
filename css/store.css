@@ -23,12 +23,12 @@ main {
 .input {
     border:solid 1.5px gray;
     border-radius: 5px;
-    margin: 0 5px 2rem 0;
+    margin: 0 5px 1rem 0;
     padding: 1rem;
 }
 
 label {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 input,
@@ -44,6 +44,11 @@ fieldset {
 
 .name_section {
     margin-top: 4rem;
+}
+
+.address_section {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
