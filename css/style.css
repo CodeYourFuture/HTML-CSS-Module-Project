@@ -64,7 +64,7 @@ button {
   color: white;
   background-color: #c05326;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 15px 20px;
   /*margin-left: 650px;*/
   margin-top: 50px;
@@ -78,8 +78,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .need-karma {
@@ -105,12 +103,23 @@ button {
 
 #third-page {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #quote-button {
-  background-color: orange;
+  background-color: #e0633a1a;
+  height: 440px;
+  align-items: center;
+  justify-content: center;
+  width: 840px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 42px;
+  text-align: center;
+  font-style: italic;
 }
 
 /*STYLING  FOR FOOTER*/
