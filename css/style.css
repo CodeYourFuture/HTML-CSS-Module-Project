@@ -147,24 +147,26 @@ section {
 
 section h2 {
     font-weight: 100;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 article {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 80%
 }
 
 article h5 {
     font-weight: 400;
-    font-size: 20px;
+    font-size:  30px;
     padding-top: 1rem;
+    width:max-content;
 }
 
 article img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 200px;
 }
 
 .context {
