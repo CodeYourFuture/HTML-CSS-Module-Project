@@ -26,8 +26,7 @@ header {
 }
 
 main {
-  border-bottom: 2px solid rgba(210, 206, 206, 0.32);
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 nav {
@@ -178,9 +177,11 @@ section h3 {
 /* footer */
 
 footer {
+    border-top: 2px solid rgba(210, 206, 206, 0.32);
+
   font-weight: 500;
   font-size: 120%;
-  margin-bottom: 100px;
+  margin: 0 80px 100px 80px;
 }
 
 .social-icons {
