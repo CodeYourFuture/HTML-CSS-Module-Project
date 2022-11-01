@@ -4,11 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Header Section */
@@ -16,8 +17,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 3rem;
-  border-bottom: 0.1rem solid #989898;
+  padding: 0.5rem 5rem;
+  border-bottom: 0.1rem solid #eeeeee;
 }
 .logo_header {
   display: block;
@@ -33,7 +34,7 @@ header {
   gap: 1.5rem;
 }
 .nav_item {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0.1rem;
 }
 .nav_link {
   color: #989898;
@@ -45,6 +46,7 @@ header {
 }
 .nav_list a:hover {
   color: #c05326;
+  font-weight: 500;
 }
 
 /* Main section */
@@ -111,6 +113,32 @@ header {
   align-items: center;
   gap: 1rem;
 }
+/* Extended Section */
+.extended_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcefeb;
+}
+.extended_section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.extended_section > div > h3 {
+  text-align: center;
+  font-weight: 370;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  font-style: italic;
+}
+.quotation {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 0.3rem;
+  color: #c05326;
+}
 
 /* button style */
 button {
@@ -122,6 +150,17 @@ button {
   padding: 0.7rem 1.5rem;
   position: -500px;
 }
+.button_learnmore {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 7px;
+}
+.place_order {
+  font-weight: 500;
+  align-items: baseline;
+}
+
+/* ----------------------------------- */
 
 /* footer */
 footer {
@@ -130,7 +169,6 @@ footer {
   align-items: center;
   padding: 1rem 0;
 }
-
 .social_media {
   display: flex;
   flex-direction: row;
