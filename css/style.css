@@ -179,6 +179,76 @@ footer {
   font-size: 80%;
   color: rgba(193, 192, 192, 0.952);
 }
+
+/* Store page */
+
+.store-main {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 501px 1fr 630px;
+  grid-template-rows: 117px 118px 82px 849px 69px;
+  grid-template-areas:
+    ". . . M"
+    ". H . M"
+    ". . . M"
+    ". F . M"
+    ". . . M";
+  padding: 0%;
+}
+
+.store-main h1 {
+  grid-area: H;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #de6e49;
+}
+
+.store-main .img {
+  grid-area: M;
+  background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.store-main form {
+  grid-area: F;
+
+  display: grid;
+  /* grid-template-columns: repeat(10, 100px);
+  grid-template-rows:repeat(7, 1fr);; */
+  /* justify-items: flex-start; */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #666666;
+}
+
+.store-main form select option:first-child {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+}
+
+.store-main form input,select{
+  border: 2px solid #666666;
+border-radius: 4px;
+}
+
+.store-main form fieldset {
+  border: 0;
+  margin-right: auto;
+}
+
+.store-main form .First-name {
+  grid-column: 1/2;
+}
 /**
  * Add your custom styles below
  * 
