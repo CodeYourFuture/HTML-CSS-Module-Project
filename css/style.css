@@ -22,6 +22,7 @@ header {
   height: 5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  background-color: rgba(196, 196, 196, 0.1);
 }
 
 .logo1 {
@@ -116,6 +117,10 @@ hr {
 
 /* footer */
 
+footer {
+  background-color: yellow;
+}
+
 p {
   text-align:center;
   font-size: 23px;
@@ -148,4 +153,38 @@ h6{
   font-size: 15px;
 }
 
+/* form section */
 
+.form-container {
+  /* background-color:rgb(161, 184, 234); */
+  height: 40rem;
+  width: 100%;
+  font-family: roboto;
+  color: #DE6E49;
+  display: flex;
+  flex-direction: row;
+
+}
+/*  */
+.form {
+  /* background-color: chartreuse; */
+  height: 40rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 3rem; */
+  
+}
+
+.form-picture {
+  width: 50%;
+  height: 40rem;
+}
+
+.form-picture img {
+  width: 100%;
+  height: 40rem;
+
+
+
+}
