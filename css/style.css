@@ -315,6 +315,11 @@ footer p {
     .open-menu {
         display: inline-block;
         z-index: 4;
+        transition: all .4s ease;
+    }
+
+    #check:checked ~ .open-menu {
+        transform: rotate(-90deg);
     }
 
     #check:checked ~ .menu {top: 0;}
