@@ -1,0 +1,71 @@
+/*STYLING FOR HEADER*/
+
+#karma-logo {
+  width: 25px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+nav {
+  float: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+nav a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: gray;
+}
+
+#karma-meet {
+  font-weight: bold;
+}
+a:hover {
+  color: #c05326;
+}
+
+/*STYLING FOR BODY*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*main {
+  background-image: url(level-2/store-image_by-andrew-neel-unsplash.jpg);
+  position: absolute;
+}*/
+
+h1 {
+  color: #de6e49;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+/*STYLING  FOR FOOTER*/
+
+footer {
+  text-align: center;
+  margin: 50px 70px 0 70px;
+  border-top: 1px solid #ebebeb;
+}
+
+.smicon {
+  width: 20px;
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+#copyright {
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 20px;
+}

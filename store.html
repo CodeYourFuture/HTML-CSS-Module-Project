@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karma Store</title>
+    <link rel="stylesheet" href="store.css" />
+    <link rel="additional page" href="index.html" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="img/karma-logo.svg" alt="karma logo" id="karma-logo" />
+      <nav id="nav-bar">
+        <a href="meet-karma" id="karma-meet">Meet Karma</a>
+        <a href="works">How it Works</a>
+        <a href="store">Store</a>
+        <a href="blog">Blog</a>
+        <a href="help">Help</a>
+        <a href="login">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Order your Karma wifi device today</h1>
+      <form class="form">
+        <label for="firstname">First name*</label>
+        <input type="text" id="firstname" name="first-name" required />
+
+        <label for="lastname">Last name*</label>
+        <input type="text" id="lastname" name="last-name" required />
+
+        <label for="address">Address*</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="address2">Address 2</label>
+        <input type="text" id="address2" name="address2" />
+
+        <label for="city">City*</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Select your city..."
+          required
+        />
+
+        <label for="postcode">Postcode*</label>
+        <input type="text" id="postcode" name="postcode" required />
+
+        <fieldset>
+          <legend>Select a colour</legend>
+
+          <label for="orange">Karma Orange</label>
+          <input
+            type="radio"
+            id="orange"
+            name="karma-orange"
+            value="Karma orange"
+          />
+
+          <label for="grey">Space Grey</label>
+          <input type="radio" id="grey" name="space-grey" value="Space grey" />
+        </fieldset>
+
+        <input type="checkbox" id="terms" name="terms and conditions" />
+        <label for="terms"
+          >By placing your order you agree to Karma's<span
+            >Terms and Conditions</span
+          >*</label
+        >
+
+        <button>Place my order</button>
+      </form>
+    </main>
+    <footer>
+      <p>Join us on</p>
+      <div>
+        <img src="img/twitter-icon.svg" alt="twitter logo" class="smicon" />
+        <img src="img/facebook-icon.svg" alt="facebook logo" class="smicon" />
+        <img src="img/instagram-icon.svg" alt="instagram logo" class="smicon" />
+      </div>
+      <p id="copyright">&copy; Karma Mobility, Inc.</p>
+    </footer>
+  </body>
+</html>
