@@ -181,6 +181,25 @@ article img {
 
 /* Banner */
 
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left-column {
+    flex: 1;
+    background-color: rgb(156, 115, 62);
+    height: 10rem;
+}
+
+.right-column {
+    flex: 2;
+    background-color: aqua;
+    height: 10rem;
+    font-size: 2rem;
+}
+
 
 
 /* footer */
