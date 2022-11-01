@@ -57,6 +57,9 @@ header {
 .navlinks {
   color: var(--grey);
   text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
 }
 
 .navlinks:hover {
@@ -69,6 +72,23 @@ header {
 
 .navitems:first-child > a:hover {
   color: var(--orange);
+}
+/* hamburger menu */
+.menu {
+  display: flex;
+}
+.openmenu {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+.openmenu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#check {
+  display: none;
 }
 
 /* p */
