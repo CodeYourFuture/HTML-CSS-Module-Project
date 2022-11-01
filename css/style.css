@@ -189,18 +189,53 @@ article img {
 
 .left-column {
     flex: 1;
-    background-color: rgb(156, 115, 62);
-    height: 10rem;
+    background-color: #FCEFEB;
+    height: 27rem;
+    background-image: url(/img/homepage-feature.png);
+    background-repeat:no-repeat ;
 }
 
 .right-column {
-    flex: 2;
-    background-color: aqua;
+    flex: 1;
+    background-color: #FCEFEB;
     height: 10rem;
     font-size: 2rem;
+    height: 27rem;
+    justify-content: center;
 }
 
+.right-column p.q {
+    margin: 6rem 7rem 0 4rem;
+    font-style: italic;
+    font-size: 40px; 
+    font-weight: 100;
+}
 
+.right-column p {
+    margin-left: 14rem;
+    font-style: italic;
+    font-size: 40px; 
+    font-weight: 100;
+}
+
+.right-column button {
+    background-color: var(--orange);
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 12rem;
+}
+
+.right-column button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.right-column button:hover {
+    background-color: var(--grey-dark);
+}
 
 /* footer */
 
