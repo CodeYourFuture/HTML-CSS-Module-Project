@@ -13,7 +13,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="/HTML-CSS-Module-Project/css/store.css">
+    <link rel="stylesheet" href="/HTML-CSS-Module-Project/css/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
@@ -37,7 +37,11 @@
             <a class="navigation__link" href="#">How it works</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="/HTML-CSS-Module-Project/store.html">Store</a>
+            <a
+              class="navigation__link"
+              href="/HTML-CSS-Module-Project/store.html"
+              >Store</a
+            >
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Blog</a>
@@ -51,61 +55,20 @@
         </ul>
       </nav>
     </header>
-    <div class="content">
-      <main class="main">
-        <div class="karma-intro">
-          <h1>Introducing Karma</h1>
-          <p>Bring WIFI with you, everywhere you go.</p>
-          <button class="learn">Learn More</button>
+    <div class="content-store">
+      <form action="" class="orderForm">
+        <h2 class="article__summary">Order your Karma wifi device today!</h2>
+        <div class="firstLine">
+          <label id="first">First name </label>
+          <input required type="text" name="first_name" id="first" />
+          <label id="last">Last name</label>
+          <input required type="text" name="last_name" id="last" />
         </div>
-      </main>
-      <section>
-        <h2 class="heading-underline">Everyone needs a little Karma.</h2>
-        <article class="flex-article">
-          <div class="article">
-            <img
-              class="article__thumbnail"
-              src="/HTML-CSS-Module-Project/img/icon-devices.svg"
-              alt="internet-devices"
-            />
-            <div class="article__content">
-              <p class="article__summary">Internet for all devices</p>
-            </div>
-          </div>
-          <div class="article">
-            <img
-              class="article__thumbnail"
-              src="/HTML-CSS-Module-Project/img/icon-coffee.svg"
-              alt="internet-devices"
-            />
-            <div class="article__content">
-              <p class="article__summary">Boost you productivity</p>
-            </div>
-          </div>
-          <div class="article">
-            <img
-              class="article__thumbnail"
-              src="/HTML-CSS-Module-Project/img/icon-refill.svg"
-              alt="internet-devices"
-            />
-            <div class="article__content">
-              <p class="article__summary">Pay as You Go</p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section>
-        <div class="flex-connection">
-          <img
-            src="/HTML-CSS-Module-Project/img/smiling woman.png"
-            alt="smiling woman"
-          />
-          <div class="article_flex_content">
-            <p class="article__connection"><span class="orange-brk">"</span>Wherever I am, I just don’t worry about my connection anymore!<span class="orange-brk">"</span></p>
-            <button class="get_karma">Get Karma today</button>
-          </div>
-        </div>
-      </section>
+      </form>
+      <img
+        src="/HTML-CSS-Module-Project/img/Girl working at desk.png"
+        alt="working-woman"
+      />
     </div>
     <footer class="footer">
       <div class="footer__content">
