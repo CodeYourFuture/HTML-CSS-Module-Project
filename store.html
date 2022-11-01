@@ -32,11 +32,11 @@
     </header>
     <main>
       <section class="storeContainer">
-        <div class="leftForm">
+        <div class="leftForm fxdc-jcc-aic">
           <h1 class="storeTitle">Order your Karma wifi <br />device today!</h1>
           <form action="">
-            <div class="nameBox">
-              <div class="shortBox">
+            <div class="fillForm">
+              <div class="firstName fxdc">
                 <label for="firstname">First name *</label>
                 <input
                   id="firstname"
@@ -45,7 +45,7 @@
                   pattern="[a-zA-Z]+.{2,}"
                 />
               </div>
-              <div class="shortBox">
+              <div class="lastName fxdc">
                 <label for="lastname">Last name *</label>
                 <input
                   id="lastname"
@@ -54,20 +54,20 @@
                   pattern="[a-zA-Z]+.{2,}"
                 />
               </div>
-            </div>
-            <div class="longBox">
-              <label for="address">Address *</label>
-              <input
-                id="address"
-                type="text"
-                required
-                pattern="[a-zA-Z0-9\s]+.{5,30}"
-              />
-              <label for="address2">Address 2</label>
-              <input id="address2" type="text" />
-            </div>
-            <div class="cityPostcode">
-              <div class="cityBox">
+              <div class="address fxdc">
+                <label for="address">Address *</label>
+                <input
+                  id="address"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z0-9\s]+.{5,30}"
+                />
+              </div>
+              <div class="address2 fxdc">
+                <label for="address2">Address 2</label>
+                <input id="address2" type="text" />
+              </div>
+              <div class="city fxdc">
                 <label for="city">City *</label>
                 <select id="city" required>
                   <option value="" selected disabled hidden>
@@ -81,7 +81,7 @@
                   <option value="Sheffield">Sheffield</option>
                 </select>
               </div>
-              <div class="postcodeBox" id="addressId">
+              <div class="postCode fxdc">
                 <label for="postcode">Postcode *</label>
                 <input
                   type="text"
@@ -91,6 +91,7 @@
                 />
               </div>
             </div>
+
             <div class="otherBox">
               <p>Select a colour</p>
               <div class="sameLine">
@@ -112,23 +113,22 @@
         </div>
         <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="" />
       </section>
-
-      <footer class="footer">
-        <p class="join">Join us on</p>
-        <div class="icons">
-          <div class="icon">
-            <img src="./img/twitter-icon.svg" alt="twitter-icon" />
-          </div>
-          <div class="icon">
-            <img src="./img/facebook-icon.svg" alt="facebook-icon" />
-          </div>
-          <div class="icon">
-            <img src="./img/instagram-icon.svg" alt="instagram-icon" />
-          </div>
-        </div>
-        <p class="copyright">© Karma Mobility, Inc.</p>
-      </footer>
     </main>
+    <footer>
+      <p class="join">Join us on</p>
+      <div class="icons">
+        <div class="icon">
+          <img src="./img/twitter-icon.svg" alt="twitter-icon" />
+        </div>
+        <div class="icon">
+          <img src="./img/facebook-icon.svg" alt="facebook-icon" />
+        </div>
+        <div class="icon">
+          <img src="./img/instagram-icon.svg" alt="instagram-icon" />
+        </div>
+      </div>
+      <p class="copyright">© Karma Mobility, Inc.</p>
+    </footer>
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
