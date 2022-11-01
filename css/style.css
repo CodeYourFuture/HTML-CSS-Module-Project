@@ -135,11 +135,43 @@ color:#c05326;
     border-top:1px solid #ccc;
     padding-top:15px;
   }
+
   .line{
      border-top: 2px solid var(--black-light);
      text-align:center;
      padding-top:50px;
     }
+  
+  .ex{
+    display: flex;
+    flex-direction:row;
+    gap:150px;
+    text-align: center;
+    
+  
+    
+
+  } 
+
+  .orange{
+    background-color: rgb(250,239,236);
+  }
+
+  .quote{
+    padding-top:130px;
+    padding-left: 200px;
+    padding-right:250px;
+    
+  }
+  .size{
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+
+  }
+  .lady{
+    object-fit: cover;
+  }
   
   
   
