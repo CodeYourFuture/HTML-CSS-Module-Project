@@ -1,0 +1,227 @@
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+ body {
+    margin: 0;
+  }
+  
+  body,
+  button {
+    color: var(--grey-dark);
+    font-size: 1rem;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .header,
+  .content,
+  .footer {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+  }
+/* Header */
+ .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .header__logo {
+    max-height: 40px;
+    width: 40px;
+  }
+  
+/* Navigation */
+
+.navigation__list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navigation__item {
+    padding: 0.5rem 0;
+  }
+  
+  .navigation__link {
+    color: var(--grey-dark);
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .navigation__link:hover {
+    color: #c05326;
+  }
+
+/* karma-intro */
+
+.karma-intro {
+    background-image: url("/HTML-CSS-Module-Project/img/first-background.jpg");
+    height: 420px;
+    color:white;
+    padding-top: 250px;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  
+  .karma-intro h1 {
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+  
+  .karma-intro p {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .learn {
+    background-color: #c05326;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  /* Headings */
+
+.heading-underline {
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 22%;
+    padding-top: 5%;
+    border-bottom: 2px solid var(--orange-light);
+    font-size: 3.8rem;
+    font-weight: 300;
+  }
+  
+  .article__thumbnail {
+    object-fit: contain;
+    width: 10rem;
+    padding-left: 35px;
+  }
+
+  .flex-article{
+    display: flex;
+    gap: 15px; 
+    justify-content: space-evenly;
+  }
+
+  .article {
+    margin-bottom: 1rem;
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .article__summary {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+/* Footer */
+
+.footer {
+    margin-top: 2rem;
+  }
+  
+.footer__content {
+    border-top: 2px solid lightgray;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+.footer p {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+ .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+.social-icons {
+    max-height: 30px;
+    width: 30px;
+    border: solid 1px lightgray;
+    border-radius: 50%;
+}
+
+.footer__content p {
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* section connection */
+
+.flex-connection {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.article_flex_content {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: rgba(224, 99, 58, 0.1);
+  margin: 0;
+  
+}
+
+.get_karma {
+  background-color: #c05326;
+  border-radius: 3px;
+  border: none;
+  margin-top: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.article__connection {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding: 50px 137px 20px 156px ;
+  text-align: center;
+  font-style: italic;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.orange-brk {
+  color: #c05326;
+}
