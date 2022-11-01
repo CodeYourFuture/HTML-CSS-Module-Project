@@ -17,6 +17,10 @@ body {
 
 /** Navigation */
 
+nav {
+  padding-top: 0;
+  margin-top: 0;
+}
 .nav-div {
   display: flex;
   align-items: center;
@@ -157,4 +161,11 @@ button:hover {
   color: gray;
   text-align: center;
   margin-bottom: 80px;
+}
+
+/*container*/
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 15px;
 }
