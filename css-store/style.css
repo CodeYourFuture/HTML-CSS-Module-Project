@@ -4,6 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
 /**
  * Add your custom styles below
  * 
@@ -15,97 +16,32 @@ body {
  */
 
 
-
+:root {
+    --grey-dark: #292b2c;
+    --grey-light: #FAFAFA;
+    --orange: #CE5C08;
+    --white: #fff;
+}
 /* MY COMMENTS:
- Navigation Styles */
+Please check the following */
 
- /* body {
-    background-image: url("./level-2/store-image_by-andrew-neel-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
- }
- */
+.checkmark-label {
+    border: 2px dotted red;
+}
+
+.margin-right {
+    margin-right: 10px;
+    border: 2px dotted blue;
+}
+ /* Navigation Styles */
 
 header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 100px;
     display: flex;
-    background-color: rgb(247, 240, 240);   
+    background-color: var(--grey-light);   
     margin: 0; 
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-}
-
-
-.display-column {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-
-.display-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.padding {
-    padding-bottom: 10px;
-}
-
-.address2 {
-    padding: 20px 0 20px 0;
-}
-
-.color-orange {
-    padding-right: 30px;
-}
- legend {
-    padding-top: 20px;
- }
-
-.form {
-    width: 780px;
-    border: 3px dotted #413a36;
-    padding: 50px 90px 0 90px;
-}
-
-.main-img {
-    border: 3px dotted #CE5C08;
-    width: 580px;
-}
-
-.orange-text {
-    color: #CE5C08;
-}
-
-.input-height {
-    height: 30px;
-}
-
-.color {
-    color: #CE5C08;
-}
-
-#heading {
-    padding-bottom: 20px;
-    font-size: 3.8rem;
-}
-
-footer {
-    grid-area: f;
-    background-color: rgb(31, 12, 99);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    margin-bottom: 50px;
-    border-top: 1px solid #FAF6F6;
 }
 
 .logo-img {
@@ -121,7 +57,7 @@ ul {
 }
 
 .nav-item {
-    color: rgb(158, 156, 156);
+    color: var(--grey-dark);
     text-decoration: none;
     padding: 15px;
 
@@ -132,19 +68,105 @@ ul li a:hover {
 }
 
 .nav-head {
-    color: rgb(63, 57, 57);
+    color: var(--grey-dark);
     font-weight: 500;
     font-size: 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.heading {
+    padding-bottom: 20px;
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.form {
+    width: 780px;
+    padding: 50px 90px 0 90px;
+    font-size: 1.5rem;
+}
+
+.div-column {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.div-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.label-padding {
+    padding-bottom: 10px;
+}
+
+.address2 {
+    padding: 20px 0 20px 0;
+}
+
+.color-orange {
+    padding-right: 30px;
+}
+
+ legend {
+    padding-top: 20px;
+ }
+
+.main-img {
+    width: 580px;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+.input-height {
+    height: 30px;
+}
+
+.color {
+    accent-color: var(--orange);
+}
+
+.input-padding {
+    margin-right: 20px;
+}
+
+.input-width {
+    width: 200px;
+}
+
+.custom-select {
+    width: 300px;
+    height: 35px;
+    font-style: italic;
+    color: grey;
+    font-size:medium;
+    appearance: none;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qA0AV5aK5pyy8f5I5MTztObvFsjzL5oZgg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 3px);
+    background-size: 30px;
 }
 
 #checkmark {
     border: 1px solid black;
 }
 
+fieldset {
+    border: 0;
+    padding: 10px 0px 50px 0px;
+}
+
 button {
-    background-color: #CE5C08;
+    background-color: var(--orange);
     color: white;
-    width: 200px;
+    width: 250px;
     height: 50px;
     font-size: 14px;
     border-radius: 4px;
@@ -152,9 +174,14 @@ button {
     margin: 20px 0 20px 0;
 }
 
-fieldset {
-    border: 0;
-    padding: 10px 0px 50px 0px;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 50px;
+    border-top: 1px solid #FAF6F6;
 }
 
 .footer-imgs {
