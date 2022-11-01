@@ -180,3 +180,48 @@ body {
     font-size: 1rem;
     font-weight: 300;
 }
+
+/* section connection */
+
+.flex-connection {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.article_flex_content {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: rgba(224, 99, 58, 0.1);
+  margin: 0;
+  
+}
+
+.get_karma {
+  background-color: #c05326;
+  border-radius: 3px;
+  border: none;
+  margin-top: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.article__connection {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding: 50px 137px 20px 156px ;
+  text-align: center;
+  font-style: italic;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.orange-brk {
+  color: #c05326;
+}
