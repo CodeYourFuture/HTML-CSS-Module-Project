@@ -323,13 +323,7 @@ footer p {
     }
 
     #check:checked ~ .menu {top: 0;}
-
-}
-
-/* mobile size */
-@media screen and (max-width: 489px) {
-
-    .hero-two {
+       .hero-two {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
@@ -340,6 +334,13 @@ footer p {
     section h2 {
     text-align: center;
 }
+
+}
+
+/* mobile size */
+@media screen and (max-width: 489px) {
+
+ 
 
 .menu {
         display: flex;
