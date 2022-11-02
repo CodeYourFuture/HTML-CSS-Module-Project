@@ -26,12 +26,42 @@ body {
 Please check the following */
 
 .checkmark-label {
-    border: 2px dotted red;
+    font-size: 1.2rem;
 }
 
 .margin-right {
     margin-right: 10px;
     border: 2px dotted blue;
+}
+
+.custom-checkmark {
+    width: 20px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 5px;
+}
+
+.custom-checkmark:checked {
+    box-sizing: border-box;
+    content: url("../level-2/checkmark.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    appearance: none;
+    border: 1px solid black;
+    padding: 2px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 0 10px 0 0;
+}
+
+.radio-color:checked {
+    accent-color: var(--orange);
+    border: 1px solid black;
+}
+
+.radio-color {
+    width: 20px;
+    height: 20px;
 }
  /* Navigation Styles */
 
@@ -129,9 +159,9 @@ ul li a:hover {
     height: 30px;
 }
 
-.color {
+/* .radio-color {
     accent-color: var(--orange);
-}
+} */
 
 .input-padding {
     margin-right: 20px;
@@ -152,10 +182,6 @@ ul li a:hover {
     background-repeat: no-repeat;
     background-position: calc(100% - 3px);
     background-size: 30px;
-}
-
-#checkmark {
-    border: 1px solid black;
 }
 
 fieldset {
