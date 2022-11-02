@@ -1,0 +1,216 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* background-color: rgb(239, 236, 236); */
+    
+}
+.header-ul {
+    display: flex;
+    list-style: none;
+    
+}
+.header-ul li {
+    font-size: 14px;
+    margin: 0 15px;
+
+}
+.header-ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ li a:hover{
+    color:red;
+ 
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 11px 30px;
+    margin-left: 45px;
+}
+
+/* main */
+form {
+    padding: 20px;
+}
+
+.karma-store {
+    display: flex;
+    height: 100vh;
+}
+.field-set {
+    width: 50%;
+    border-color: white;
+
+}
+.order {
+    color: #E0633A;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.store-img {
+    width: 50%;
+
+}
+.f-n {
+    display: grid;
+    
+}
+.l-n{ 
+    display: grid;
+}
+
+.add1 {
+    display: grid;
+    grid-column: 1 / span 2;
+    margin-top: 20px;
+      
+}
+.add2 {
+    display: grid;
+    grid-column: 1 / span 2;
+    margin-top: 40px;
+
+}
+.cit {
+    display: grid;
+    margin-top: 60px;
+
+}
+.post {
+    display: grid;
+    margin-top: 60px;
+
+}
+
+#first, #second, #address1, #address2, #city, #postcode1 {
+    padding: 15px;
+    
+}
+
+
+.select, .check {
+    display: block;
+}
+.select {
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+.check {
+    margin-top: 10px;
+}
+#radio2 {
+    margin-left: 10px;
+}
+.check a {
+    color:#E0633A;
+    text-decoration: underline;
+    
+}
+    
+
+
+
+/* .store-form {
+    display: grid;
+    grid-gap: 12px;
+    
+   
+} */
+.container {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    margin-top: 10px;
+    /* width: 100%; */
+    /* padding: 20px; */
+    
+}
+
+.karma-store {
+    /* height: auto; */
+}
+
+
+.store-btn {
+    width: 150px;
+    height: 45px;
+    color: white;
+    background-color: #E0633A;
+    border-color: whitesmoke;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+
+/* footer */
+
+
+p {
+    text-align: center;
+    }
+    
+    .social-ul {
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      
+    }
+    .insta {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        margin: 5px 10px;
+    }
+    .tweet {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        margin: 5px 10px;
+        
+    
+    }
+    .face {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        margin: 5px 10px;
+    }
+    #social {
+        margin-top: 100px;
+        border-radius: 50%;
+        
+    }
+    .footer {
+        color: rgb(108, 107, 107);
+    
+    }
+    @media screen and (max-width: 767px) {
+        .karma-store {
+            height: 150vh;
+        }
+    }

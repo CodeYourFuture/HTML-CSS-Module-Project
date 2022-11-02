@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karma Store</title>
+    <link rel="stylesheet" href="./store.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img class="logo" src="/img/karma-logo.svg" />
+        </div>
+        
+        <nav>
+            <ul class="header-ul">
+                <li class="more-menu" id="show-product-menu">
+                    <a href="/index.html">Meet karma</a>
+                </li>
+                <li class="more-menu" id="show-product-menu">
+                    <a href="#">How it works</a>
+                </li>
+                <li class="more-menu" id="show-product-menu">
+                    <a href="/level-2/store.html">Store</a>
+                </li>
+                <li class="more-menu" id="show-product-menu">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="more-menu" id="show-product-menu">
+                    <a href="#">Help</a>
+                </li>
+                <li class="more-menu" id="show-product-menu">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="karma-store">
+        <fieldset class="field-set" id="">
+            <form class="store-form">
+
+                <p class="order">Order your Karma wifi device today!</p>
+
+            <div class="container">
+
+              <div class="f-n">
+                <label class="input" for="first">First name*</label>
+                <input required minlength="2" name="first-name" id="first"  type="text" pattern="^(\w\w+)$"/> 
+              </div> 
+
+              <div class="l-n">
+                <label for="second">Last name*</label>
+                <input required minlength="2" name="last-name" id="second"  type="text"  pattern="^(\w\w+)$"/> 
+              </div>
+
+              <div class="add1">
+                <label for="address1">Address*</label>
+                <input required minlength="5" name="address" id="address1"  type="text" /> 
+              </div>
+
+              <div class="add2">
+                <label for="address2">Address 2*</label>
+                <input required minlength="5" name="address2" id="address2"  type="text" />
+              </div> 
+               
+              <div class="cit">
+                <label for="city">City*</label>
+                <select id="city">
+                    <option value="" selected>select your city...</option>
+                    <option value="London">London</option>
+                    <option value="Cambridge">cambridge</option>
+                    <option value="Bristol">Bristol</option>
+                    <option value="Oxford">Oxford</option>
+                </select>
+                
+               </div>
+               
+               <div class="post">
+                <label for="postcode1">Postcode*</label>
+                <input required minlength="3" name="postcode" id="postcode1"  type="text" />
+               </div>
+              </div>
+             
+              <div class="lower-form">
+                <label class="select">Select a color:</label> 
+                <input checked type="radio" name="color" id="radio1"  value="karma-orange"/>
+                <label>Karma Orange</label>
+                <input  type="radio" name="color" id="radio2"  value="karma-orange"/>
+                <label>Space Gray</label>
+              <div class="check">
+                <input required id="" type="checkbox"/>
+                <label>By placing your order you agree to Karma's <a href="#">Terms and conditions.*</a></label>
+               </div>
+                <button class="store-btn">Place my order</button>
+               </div> 
+
+            </form>
+        </fieldset>
+
+        <img class="store-img" src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt=""/>
+    </main>
+
+
+
+
+
+    <main id="social" class="media">
+        <p>Join us on</p>
+         <ul class="social-ul">
+           <li>
+               <a href="https://twiter.com" target="blank">
+               <img src="/img/twitter-icon.svg" class="tweet" alt="" />
+               </a>
+           </li>
+           <li>
+               <a href="https://facebook.com" target="blank">
+               <img src="/img/facebook-icon.svg" class="face" alt="" />
+               </a>
+           </li>
+           <li>
+               <a href="https://instagram.com" target="blank">
+               <img src="/img/instagram-icon.svg" class="insta" alt="" />
+               </a>
+           </li>
+         </ul>
+   
+       </main>
+       <footer>
+           <p class="footer">Karma Mobility, Inc.</p>
+       </footer>
+   
+    
+</body>
+</html>
