@@ -1,13 +1,4 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* General Style */
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,8 +34,7 @@ hr {
 footer {
   text-align: center;
 }
-/* IDs here */
-
+/* IDs */
 #navbar-button {
   padding: 10px;
 }
@@ -68,12 +58,12 @@ footer {
   flex-direction: row;
 }
 
-/* Main */
+/* Main  */
 
 .article-one {
   background-image: url("../img/first-background.jpg");
   background-repeat: no-repeat;
-  width: auto;
+  width: 100%;
   height: 600px;
   color: aliceblue;
   text-align: center;
