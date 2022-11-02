@@ -42,12 +42,68 @@ h1 {
   color: #de6e49;
   font-size: 50px;
   font-weight: lighter;
+  width: 500px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  width: 500px;
 }
+
+article img {
+  width: 700px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ebebeb;
+}
+
+.title-form {
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+label,
+fieldset {
+  margin-top: 15px;
+}
+
+fieldset {
+  outline-style: hidden;
+  accent-color: #de6e49;
+}
+
+input {
+  margin-top: 5px;
+}
+
+span {
+  color: #de6e49;
+}
+
+.box-terms {
+  display: inline;
+  margin-top: 30px;
+  accent-color: #de6e49;
+}
+
+button {
+  align-content: center;
+  color: white;
+  background-color: #e0633a;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  /*margin-left: 650px;*/
+  margin-top: 50px;
+  font-size: 20px;
+  width: fit-content;
+}
+
 /*STYLING  FOR FOOTER*/
 
 footer {

@@ -39,7 +39,7 @@ nav a {
 #karma-meet {
   font-weight: bold;
 }
-a:hover {
+nav a:hover {
   color: #c05326;
 }
 
@@ -72,6 +72,8 @@ button {
 
 #first-page {
   background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   padding-bottom: 130px;
   padding-top: 200px;
   display: flex;
@@ -131,6 +133,11 @@ button {
 
 span {
   color: #e0633a;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 /*STYLING  FOR FOOTER*/
