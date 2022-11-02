@@ -1,22 +1,6 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    display: block; 
-    margin: 0;
-    width: 100%;
-}
-
-.header,
-.content, 
-.footer {
-    padding: 0 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 1rem;
-}
 
 /**
  * Add your custom styles below
@@ -27,6 +11,16 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: block; 
+    margin: 0;
+    width: 100%;
+}
+
 
 *{
     box-sizing: border-box;
@@ -44,11 +38,13 @@ header{
 }
 
 header img{
+    height: 4rem;
     padding-top: 1rem;
     /* margin-left: 5rem; */
 }
 
 nav {
+    padding: auto;
     width: 50%;
     /* background-color: yellow; */
 }
@@ -87,7 +83,12 @@ ul :first-child{
     color: rgb(118, 123, 125);
 }
 
-a:hover {color: rgb(243, 112, 56);}
+
+.btn:hover {
+    background-color: rgb(97, 40, 15);
+    color: rgb(251, 251, 251);
+
+}
 
 /* the picture brackgroun and button */
 
@@ -181,16 +182,89 @@ h3{
     font-weight: 500;
 }
 
-hr{
-    width: 80%;
-    border: 1px solid rgb(226, 221, 221);
+/* extender section */
+
+.extSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
 }
+
+.level2 {
+    /* height: 240px; */
+    width: 45%;
+}
+
+.sec2 {
+    height: 240px;
+    width: 55%;
+    height: 100%;
+    color: #434242;
+    background-color: rgba(224, 99, 58, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text {
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.get {
+    background-color: #E0633A;
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.get a{
+    text-decoration: none;
+    color: white;
+}
+
+.get:hover {
+    background-color: rgb(97, 40, 15);
+}
+
+
+
+/* p .quote {
+    
+    width: 5rem;
+    color: #E0633A;
+
+} */
 
 /* footer */
 
+
+
 footer {
-    margin-top: 4rem;
+    margin-top: 6rem;
     text-align: center;
+}
+
+hr{
+    width: 80%;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(226, 221, 221);
 }
 
 .foot ul{
@@ -205,6 +279,7 @@ footer {
 .foot img{
     width: 1.3rem;
     height: 1.3rem;
+    display: block;
 }
 
 footer ul li{
@@ -213,6 +288,6 @@ footer ul li{
     padding: 1rem;
 }
 
-h5 {
+small {
     color: darkgray;
 }
