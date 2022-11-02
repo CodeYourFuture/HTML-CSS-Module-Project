@@ -5,6 +5,177 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+*{
+    text-decoration: none;
+    list-style: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-ul {
+    display: flex;
+    list-style: none;
+    
+}
+.header-ul li {
+    font-size: 14px;
+    margin: 0 15px;
+
+}
+.header-ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ li a:hover{
+    color:red;
+ 
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 11px 30px;
+    
+}
+.icons {
+    /* width: 200px;
+    height: 200px; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+.introduce {
+    background-image: url("/img/first-background.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    color: white;
+}
+.btn {
+    background-color: #E0633A;
+    width: 100px;
+    height: 70px;
+
+}
+.wifi {
+    justify-content: center;
+    text-align: center;
+    padding: 200px;
+   
+}
+@media (min-width: 320px) and (max-width:1200) {
+    div{
+        width: 470px;
+        background: aquamarine;
+    }
+    p{
+        color:rgb(4, 94, 64);
+    }
+}
+  
+   
+
+    
+   
+
+p {
+text-align: center;
+}
+
+.social-ul {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+.insta {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 5px 10px;
+}
+.tweet {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 5px 10px;
+    
+
+}
+.face {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 5px 10px;
+}
+#social {
+    margin-top: 100px;
+    border-radius: 50%;
+    
+}
+.footer {
+    color: rgb(108, 107, 107);
+
+}
+.karma {
+    margin-top: 100px;
+}
+.image {
+    width: 100%;
+
+}
+.little {
+    margin-bottom: 100px;
+}
+
+
+.end-page {
+    display: flex;
+    margin-top: 200px;
+}
+.p-s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgba(224, 99, 58, 0.1);
+   
+}
+.btn2 {
+    background-color: #E0633A ;
+    width: 150px ;
+    height: 50px;
+    border: none;
+    color: white;
+
+}
+.end-img {
+    width: 50%;
+}
+b {
+    color: #E0633A;
+}
+
+    
+    
+
+
 
 /**
  * Add your custom styles below
