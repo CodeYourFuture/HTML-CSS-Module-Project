@@ -79,16 +79,18 @@ body {
   .container {
     display: flex;
     justify-content: space-evenly;
+    padding-left: 150px;
+    padding-right: 150px;
+    align-items: center;
   }
 .icons{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-bottom: 100px;
 }
 
@@ -96,19 +98,21 @@ body {
     height:100%;
     display: grid;
     background-color:bisque;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: 100px 100px 100px 50px ;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    margin-bottom:  50px;
     grid-template-areas: 
-        "p p p p p p p p p p . . . . . . . . . ."
-        "p p p p p p p p p p . q q q q q q q q q"
-        "p p p p p p p p p p . g g g g g g g g g"
-        "p p p p p p p p p p . . . . . . . . . .";
+        "p p p p p p p . . . . . . ."
+        "p p p p p p p q q q q q q q"
+        "p p p p p p p g g g g g g g"
+        "p p p p p p p . . . . . . .";
 }
 
 .photo1{
   grid-area: p;
   background-image: url(/level-2/homepage-feature.png);
   height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -117,10 +121,15 @@ body {
   grid-area: q;
   justify-self: center;
   text-align: center;
-  font-size-adjust: 5em;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
   
 }
 
+.quote p span{
+  color: darkorange;
+}
 .getbutton {
   grid-area: g;
   justify-self: center;
