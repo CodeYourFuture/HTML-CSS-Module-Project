@@ -23,46 +23,7 @@ body {
     --white: #fff;
 }
 /* MY COMMENTS:
-Please check the following */
 
-.checkmark-label {
-    font-size: 1.2rem;
-}
-
-.margin-right {
-    margin-right: 10px;
-    border: 2px dotted blue;
-}
-
-.custom-checkmark {
-    width: 20px;
-    justify-self: flex-start;
-    align-self: flex-start;
-    margin: 5px;
-}
-
-.custom-checkmark:checked {
-    box-sizing: border-box;
-    content: url("../level-2/checkmark.svg");
-    background-repeat: no-repeat;
-    background-color: white;
-    appearance: none;
-    border: 1px solid black;
-    padding: 2px;
-    justify-self: flex-start;
-    align-self: flex-start;
-    margin: 0 10px 0 0;
-}
-
-.radio-color:checked {
-    accent-color: var(--orange);
-    border: 1px solid black;
-}
-
-.radio-color {
-    width: 20px;
-    height: 20px;
-}
  /* Navigation Styles */
 
 header {
@@ -101,7 +62,10 @@ ul li a:hover {
     color: var(--grey-dark);
     font-weight: 500;
     font-size: 14px;
+    text-decoration: none;
 }
+
+/* General Styles */
 
 .content {
     display: flex;
@@ -120,63 +84,55 @@ ul li a:hover {
     font-size: 1.5rem;
 }
 
-.div-column {
+.main-img {
+    width: 580px;
+}
+
+.name-area {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.name-position {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
 }
 
-.div-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.label-padding {
+.label-style {
     padding-bottom: 10px;
 }
 
-.address2 {
-    padding: 20px 0 20px 0;
+.address-area {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
 }
 
-.color-orange {
-    padding-right: 30px;
+.city-area {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
- legend {
-    padding-top: 20px;
- }
-
-.main-img {
-    width: 580px;
+.city-position {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
 }
 
-.orange-text {
-    color: var(--orange);
-}
-
-.input-height {
-    height: 30px;
-}
-
-/* .radio-color {
-    accent-color: var(--orange);
-} */
-
-.input-padding {
-    margin-right: 20px;
-}
-
-.input-width {
+.postcode-input {
     width: 200px;
 }
 
+/* Select option Styles */
+
 .custom-select {
-    width: 300px;
+    width: 360px;
     height: 35px;
     font-style: italic;
     color: grey;
-    font-size:medium;
     appearance: none;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qA0AV5aK5pyy8f5I5MTztObvFsjzL5oZgg&usqp=CAU");
     background-repeat: no-repeat;
@@ -184,10 +140,66 @@ ul li a:hover {
     background-size: 30px;
 }
 
+/* Fieldset and Legend Styles */
+
 fieldset {
     border: 0;
     padding: 10px 0px 50px 0px;
 }
+
+ legend {
+     padding-top: 20px;
+ }
+
+.color-orange {
+    padding-right: 30px;
+    margin-right: 50px;
+}
+
+.radio-color {
+    width: 20px;
+    height: 20px;
+}
+
+.radio-color:checked {
+    accent-color: var(--orange);
+    border: 1px solid black;
+}
+
+/* Checkbox Area Styles */
+
+.checkbox-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkmark-label {
+    font-size: 1.2rem;
+}
+
+.custom-checkmark {
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 5px;
+}
+
+.custom-checkmark:checked {
+    box-sizing: border-box;
+    content: url("../level-2/checkmark.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    appearance: none;
+    border: 1px solid black;
+    padding: 2px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 0 10px 0 0;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+/* Button Styles */
 
 button {
     background-color: var(--orange);
@@ -199,6 +211,8 @@ button {
     border: none;
     margin: 20px 0 20px 0;
 }
+
+/* Footer Styles */
 
 footer {
     display: flex;

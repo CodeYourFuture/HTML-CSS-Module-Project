@@ -40,35 +40,34 @@
             <form class="form">
                 <p class="heading">Order your Karma Wifi device today!</p>
 
-                <div class="div-row" >
-                    <div class="div-column" class="margin-right">
-                        <label class="margin-right" class="label-padding" for="f-name" id="f-name">First name*</label>
-                        <input class="margin-right" class="input-width" class="input-padding" class="input-height" type="text" id="f-name" required>
+                <div class="name-area" >
+                    <div class="name-position">
+                        <label class="label-style" for="f-name" id="f-name">First name*</label>
+                        <input type="text" id="f-name" required>
                     </div>
-                    <div class="div-column">
-                        <label class="label-padding" for="l-name" id="l-name">Last name*</label>
-                        <input class="input-width" class="input-height" type="text" id="l-name" required>
+                    <div class="name-position">
+                        <label class="label-style" for="l-name" id="l-name">Last name*</label>
+                        <input type="text" id="l-name" required>
                     </div>
                 </div>
 
-                <div class="div-column">
-                    <label class="label-padding" for="adrress" id="address">Address 1*</label>
-                    <input class="input-height"  type="text" id="address" required>
-                    <label class="address2" for="adrress2" id="address2">Address 2</label>
-                    <input class="input-height"  type="text" id="address2">
+                <div class="address-area">
+                    <label class="label-style" for="adrress" id="address">Address 1*</label>
+                    <input type="text" id="address" required>
+                    <label class="label-style" for="adrress2" id="address2">Address 2</label>
+                    <input type="text" id="address2">
                 </div>
 
-                <div class="div-row">
-                    <div class="div-column">
-                        <label class="label-padding" for="city" id="city">City*</label>
-                            <select type="text" id="city" class="custom-select" required>
-                                <option value="" disabled selected hidden>Select your city...</option>
-                            </select>
+                <div class="city-area">
+                    <div class="city-position">
+                        <label class="label-style" for="city" id="city">City*</label>
+                        <select type="text" id="city" class="custom-select" required>
+                            <option value="" disabled selected hidden>Select your city...</option>
+                        </select>
                     </div>
-
-                    <div class="div-column">
-                        <label class="label-padding" for="postcode" id="city">Postcode*</label>
-                        <input class="input-height" type="text" id="postcode" required>
+                    <div class="city-position">
+                        <label  class="label-style" id="postcode" for="postcode" id="city">Postcode*</label>
+                        <input class="postcode-input" type="text" id="postcode" required>
                     </div>
                 </div>
 
@@ -83,13 +82,10 @@
                 
                 </fieldset>
 
-
-                <div class="div-column">
-                    <div class="div-row" class="label-padding">
-
+                <div>
+                    <div class="checkbox-area">
                         <input type="checkbox" id="checkmark" class="custom-checkmark"> 
                         <label for="checkmark" id="checkmark" class="checkmark-label">By placing your order you agree to Karma's <a class="orange-text" href="#">Terms and Conditions.</a>*</label>
-
                     </div>
                     <button>Place my order</button>
                 </div>
