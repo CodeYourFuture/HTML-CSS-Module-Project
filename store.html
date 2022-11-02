@@ -5,8 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="img" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    Store
+    <div class="container">
+      <nav>
+        <div class="nav-div">
+          <div class="nav-logo">
+            <ul class="navigation__list">
+              <li class="navigation__item" id="Karma_logo">
+                <img
+                  id="Karma_logo"
+                  src="img/karma-logo.svg"
+                  alt="Karma logo"
+                />
+              </li>
+            </ul>
+          </div>
+          <ul class="navigation__list nav-text">
+            <span id="MeetKarma">
+              <li class="navigation__item">
+                <a href="./index.html">Meet Karma</a>
+              </li>
+            </span>
+            <li class="navigation__item">
+              <a href="#HowItWorks">How it Works</a>
+            </li>
+            <li class="navigation__item"><a href="./store.html">Store</a></li>
+            <li class="navigation__item"><a href="./blog.html">Blog</a></li>
+            <li class="navigation__item"><a href="./help.html">Help</a></li>
+            <li class="navigation__item"><a href="./login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="store-section">
+        <div class="store-form">
+          <h1>Order your Karma wifi device today!</h1>
+          <form class="orderForm">
+            <div class="form-row-1">
+              <div>
+                <label for id="first">First name *</label>
+                <input
+                  required
+                  minlength="2"
+                  maxlength="20"
+                  class="input"
+                  type="text"
+                  name="first_name"
+                  id="first"
+                />
+              </div>
+              <div>
+                <label for id="last">Last name *</label>
+                <input
+                  required
+                  minlength="2"
+                  maxlength="20"
+                  class="input"
+                  type="text"
+                  name="last_name"
+                  id="last"
+                />
+              </div>
+            </div>
+
+            <div class="form-full-row">
+              <label for id="adress-1">Address *</label>
+              <input
+                required
+                minlength="2"
+                maxlength="100"
+                class="input"
+                type="text"
+                name="address-1"
+                id="adress-1"
+              />
+            </div>
+            <div class="form-full-row">
+              <label for id="adress-2">Address 2</label>
+              <input class="input" type="text" name="address-2" id="adress-2" />
+            </div>
+            <div>
+              <label for="city">City *</label>
+              <select required id="city" class="input">
+                <option value="" disabled selected>
+                  <em>Select your city... </em>
+                </option>
+                <option value="London">London</option>
+                <option value="Manchester">Manchester</option>
+                <option value="Bath">Bath</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Birmingham">Birmingham</option>
+                <option value="Glasgow">Glasgow</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for id="postcode">Postcode *</label>
+              <input
+                required
+                minlength="2"
+                maxlength="10"
+                class="input"
+                type="text"
+                name="postcode"
+                id="postcode"
+              />
+            </div>
+            <div>
+              <fieldset>
+                <legend>Select a colour</legend>
+                <input
+                  required
+                  type="radio"
+                  value="Orange"
+                  name="colour"
+                  id="Karma-Orange"
+                />
+                <label for="orange">Karma orange</label>
+                <input
+                  required
+                  type="radio"
+                  value="Grey"
+                  name="colour"
+                  id="Space-grey"
+                />
+                <label for id="Space-grey">Space Grey</label>
+              </fieldset>
+            </div>
+            <div>
+              <label for="check"
+                >By placing your order you agree to Karma's
+                <a href="https://www.w3schools.com/">Terms and Conditions</a
+                >*</label
+              >
+              <input
+                required
+                id="check"
+                type="checkbox"
+                name="Accapted_Terms_and_Conditions"
+              />
+            </div>
+          </form>
+
+          <button class="btn-form">Place my order</button>
+        </div>
+        <div class="store-img">
+          <img
+            src="./img/store-image_by-andrew-neel-unsplash.jpg"
+            alt="a woman with long hair drinks coffee and codes"
+          />
+        </div>
+      </div>
+
+      <footer>
+        <hr id="line" />
+        <p id="JoinUs">Join us on</p>
+        <div class="social-media-icons">
+          <img src="img/twitter-icon.svg" alt="Twitter logo" class="sm-icons" />
+          <img
+            src="img/facebook-icon.svg"
+            alt="Facebook logo"
+            class="sm-icons"
+          />
+          <img
+            src="img/instagram-icon.svg"
+            alt="Instagram logo"
+            class="sm-icons"
+          />
+        </div>
+        <p id="Author">Ⓒ Karma Mobility, Inc.</p>
+      </footer>
+    </div>
   </body>
 </html>
