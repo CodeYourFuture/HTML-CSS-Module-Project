@@ -39,30 +39,41 @@
             <!-- <img src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Image of the store"> -->
         </div>
         <form action="" method="get">
-
-            <label for="First-name">First name *</label>
-            <input id="First-name" type="text" name="First name" required/>
-
-            <label for="Last-name">Last name *</label>
-            <input id="Last-name" type="text" name="Last name" required/>
-
-            <label for="Address">Address *</label>
-            <input id="Address" type="text" name="Address" required/>
-
-            <label for="Address-2">Address 2</label>
-            <input id="Address-2" type="text" name="Address 2"/>
-
-            <label for="City">City *</label>
-            <select id="City" name="City" required>
-                <option value="" disabled selected hidden>Select your city...</option>
-                <option value="London">London</option>
-                <option value="Manchester">Manchester</option>
-                <option value="Glasgow">Glasgow</option>
-            </select>
-
-            <label for="Postcode">Postcode *</label>
-            <input id="Postcode" type="text" name="Postcode" required/>
-
+            <div>      
+                <label for="First-name">First name *</label>
+                <input id="First-name" type="text" name="First name" required/>
+            </div>
+            <div>
+                <label for="Last-name">Last name *</label>
+                  <input id="Last-name" type="text" name="Last name" required/>
+            </div>
+            
+            <div>
+                <label for="Address">Address *</label>
+                <input id="Address" type="text" name="Address" required/>
+            </div>
+            
+            <div>
+                <label for="Address-2">Address 2</label>
+                <input id="Address-2" type="text" name="Address 2"/>
+            </div>
+            
+            <div>
+                <label for="City">City *</label>
+                <select id="City" name="City" required>
+                    <option value="" disabled selected hidden>Select your city...</option>
+                    <option value="London">London</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Glasgow">Glasgow</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="Postcode">Postcode *</label>
+                <input id="Postcode" type="text" name="Postcode" required/>
+            </div>
+            
+            
             <fieldset>
               <legend>Select a colour</legend>
 
@@ -73,9 +84,11 @@
                 <label for="Space-Grey">Space Grey</label>
 
             </fieldset>
-
-            <input id="agreement" type="checkbox" name="agreement" />
-            <label for="agreement">By placing your order you agree to Karma's <a href="">Terms and Conditions</a>. *</label>
+            <fieldset>
+                <input id="agreement" type="checkbox" name="agreement" />
+                <label for="agreement">By placing your order you agree to Karma's <a href="">Terms and Conditions</a>. *</label>
+            
+            </fieldset>
             
             <button class="button">Place my order</button>
         </form>

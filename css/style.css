@@ -186,7 +186,7 @@ footer {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 501px 1fr 630px;
-  grid-template-rows: 117px 118px 82px 849px 69px;
+  grid-template-rows: 117px 118px 82px auto auto;
   grid-template-areas:
     ". . . M"
     ". H . M"
@@ -194,6 +194,7 @@ footer {
     ". F . M"
     ". . . M";
   padding: 0%;
+  text-align: left;
 }
 
 .store-main h1 {
@@ -218,9 +219,18 @@ footer {
   grid-area: F;
 
   display: grid;
-  /* grid-template-columns: repeat(10, 100px);
-  grid-template-rows:repeat(7, 1fr);; */
-  /* justify-items: flex-start; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 90px;
+  /* grid-template-rows: 90px 90px 90px 90px 70px 51px 70px; */
+  column-gap: 15px;
+  /* grid-template-areas: 
+  "F  F  L  L "
+  "A  A  A  A "
+  "A2 A2 A2 A2"
+  "C  C  C  P"
+  "S  S  S  S"
+  "G  G  G  G"
+  "B  B  B  B"; */
 
   font-family: "Roboto";
   font-style: normal;
@@ -229,6 +239,8 @@ footer {
   line-height: 25px;
   color: #666666;
 }
+
+
 
 .store-main form select option:first-child {
   font-family: "Roboto";
@@ -244,11 +256,36 @@ border-radius: 4px;
 .store-main form fieldset {
   border: 0;
   margin-right: auto;
+  grid-column: 1/5;
 }
 
-.store-main form .First-name {
-  grid-column: 1/2;
+.store-main form div:nth-child(n-1) {
+  display: flex;
+  flex-direction: column;
 }
+
+.store-main form div:nth-child(1) {
+  grid-column: 1/3;
+}
+.store-main form div:nth-child(2) {
+  grid-column: 3/5;
+}
+.store-main form div:nth-child(3) {
+  grid-column: 1/5;
+}
+
+.store-main form div:nth-child(4) {
+  grid-column: 1/5;
+}
+
+.store-main form div:nth-child(5) {
+  grid-column: 1/4;
+}
+
+.store-main form .button {
+  grid-column: 1/5;
+  margin: 15px 190px 15px 0;
+
 /**
  * Add your custom styles below
  * 
