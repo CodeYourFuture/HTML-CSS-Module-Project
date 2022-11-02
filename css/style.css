@@ -184,9 +184,9 @@ footer {
 
 .store-main {
   display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 501px 1fr 630px;
-  grid-template-rows: 117px 118px 82px auto auto;
+  /* width: 100%; */
+  grid-template-columns: 1fr 501px 1fr 600px;
+  grid-template-rows: 5rem auto auto auto 5rem;
   grid-template-areas:
     ". . . M"
     ". H . M"
@@ -195,52 +195,85 @@ footer {
     ". . . M";
   padding: 0%;
   text-align: left;
+  font-family: "Roboto";
+    font-weight: 500;
 }
 
 .store-main h1 {
   grid-area: H;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 50px;
-  line-height: 59px;
   color: #de6e49;
 }
 
 .store-main .img {
   grid-area: M;
   background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
+  background-size: cover;
 }
 
 .store-main form {
   grid-area: F;
-
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 90px;
-  /* grid-template-rows: 90px 90px 90px 90px 70px 51px 70px; */
-  column-gap: 15px;
-  /* grid-template-areas: 
-  "F  F  L  L "
-  "A  A  A  A "
-  "A2 A2 A2 A2"
-  "C  C  C  P"
-  "S  S  S  S"
-  "G  G  G  G"
-  "B  B  B  B"; */
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr;
+  /* grid-auto-rows: auto; */
+  grid-template-rows: auto auto auto auto auto auto auto;
+  /* column-gap: 15px; */
+  grid-template-areas: 
+  "F  F  L  L  L"
+  "A  A  A  A  A"
+  "A2 A2 A2 A2 A2"
+  "C  C  C  P  P"
+  "S  S  S  S  S"
+  "G  G  G  G  G"
+  "B  B  B  B  B";
   font-size: 21px;
-  line-height: 25px;
   color: #666666;
 }
 
+#F {
+  grid-area: F;
+}
+#L {
+  grid-area: L;
+}
+#A {
+  grid-area: A;
+}
+#A2 {
+  grid-area: A2;
+}
+#C {
+  grid-area: C;
+}
+#P {
+  grid-area: P;
+  justify-content: flex-end;
+}
+#S {
+  grid-area: S;
+}
+#G {
+  grid-area: G;
+}
+#B {
+  grid-area: B;
+}
 
+.store-main fieldset {
+  border: 0;
+  margin: 0;
+}
+
+.store-main input:not([type=radio]):not([type=checkbox]),
+.store-main select {
+  width: 100%;
+}
+
+.store-main button {
+  width: 265px;
+}
+
+/* 
 
 .store-main form select option:first-child {
   font-family: "Roboto";
@@ -285,6 +318,7 @@ border-radius: 4px;
 .store-main form .button {
   grid-column: 1/5;
   margin: 15px 190px 15px 0;
+} */
 
 /**
  * Add your custom styles below

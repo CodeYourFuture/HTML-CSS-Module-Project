@@ -39,26 +39,26 @@
             <!-- <img src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Image of the store"> -->
         </div>
         <form action="" method="get">
-            <div>      
+            <fieldset id="F">      
                 <label for="First-name">First name *</label>
                 <input id="First-name" type="text" name="First name" required/>
-            </div>
-            <div>
+            </fieldset>
+            <fieldset id="L">
                 <label for="Last-name">Last name *</label>
-                  <input id="Last-name" type="text" name="Last name" required/>
-            </div>
+                <input id="Last-name" type="text" name="Last name" required/>
+            </fieldset>
             
-            <div>
+            <fieldset id="A">
                 <label for="Address">Address *</label>
                 <input id="Address" type="text" name="Address" required/>
-            </div>
+            </fieldset>
             
-            <div>
+            <fieldset id="A2">
                 <label for="Address-2">Address 2</label>
                 <input id="Address-2" type="text" name="Address 2"/>
-            </div>
+            </fieldset>
             
-            <div>
+            <fieldset id="C">
                 <label for="City">City *</label>
                 <select id="City" name="City" required>
                     <option value="" disabled selected hidden>Select your city...</option>
@@ -66,15 +66,15 @@
                     <option value="Manchester">Manchester</option>
                     <option value="Glasgow">Glasgow</option>
                 </select>
-            </div>
+            </fieldset>
             
-            <div>
+            <fieldset id="P">
                 <label for="Postcode">Postcode *</label>
                 <input id="Postcode" type="text" name="Postcode" required/>
-            </div>
+            </fieldset>
             
             
-            <fieldset>
+            <fieldset id="S">
               <legend>Select a colour</legend>
 
                 <input id="Karma-orange" type="radio" name="colour" value="Karma orange" />
@@ -84,13 +84,13 @@
                 <label for="Space-Grey">Space Grey</label>
 
             </fieldset>
-            <fieldset>
+            <fieldset id="G">
                 <input id="agreement" type="checkbox" name="agreement" />
                 <label for="agreement">By placing your order you agree to Karma's <a href="">Terms and Conditions</a>. *</label>
             
             </fieldset>
             
-            <button class="button">Place my order</button>
+            <button id="B" class="button">Place my order</button>
         </form>
     </main>
 
