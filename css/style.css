@@ -164,16 +164,17 @@ h6{
   display: flex;
   flex-direction: row;
 
+
 }
 /*  */
 .form {
-  /* background-color: chartreuse; */
+  background-color: chartreuse;
   height: 40rem;
   width: 50%;
   display: flex;
   flex-direction: column;
-  /* padding: 3rem; */
-  
+  padding: 3rem;
+  row-gap: 12px;
 }
 
 .form-picture {
@@ -184,7 +185,35 @@ h6{
 .form-picture img {
   width: 100%;
   height: 40rem;
+}
 
-
+.form-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 12px;
 
 }
+#username {
+  width: 100%;
+  
+}
+
+#last_name {
+  width: 100%;
+}
+
+#email {
+  width: 100%;
+}
+
+.form-name {
+  column-gap: 12px;
+}
+
+.drop-box {
+  display: flex;
+  flex-direction: column;
+  column-gap: 12px;
+}
+
