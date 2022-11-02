@@ -1,0 +1,243 @@
+
+/* store page */
+
+/* main */
+.store-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* section one */
+.form-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+}
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* form title */
+.form-section h1 {
+    color: var(--orange);
+}
+
+/* form classes */
+label {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    border: none;
+    gap: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* input style */
+input[type="text"] {
+    height: 30px;
+    padding: 2px;
+}
+
+input:focus {
+    outline-color: var(--orange) !important;
+} 
+
+input[type="checkbox"] {
+    color: var(--orange);
+    background-color: var(--orange);
+}
+
+#postcode {
+    width: 100px;
+    text-transform: uppercase;
+}
+/* select & option */
+select {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+    width: 250px;
+    height: 30px;
+}
+
+select:focus {
+    outline-color: var(--orange) ;
+}
+
+/* radio-box */
+.radio-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-box legend {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+}
+
+.radio-box ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* changed radio-box color */
+.radio-box input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--grey-dark);
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 2px;
+  display: inline-block;
+  margin-right: .1rem;
+  vertical-align: -3px;
+}
+
+.radio-box input[type="radio"]:checked {
+  background-color: var(--orange);
+}
+
+/* check box */
+.check-box {
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.check-box a {
+    color: var(--orange);
+}
+
+/* change checkbox mark */
+
+.check-box input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--grey-dark);
+  border-radius: 20%;
+  background-clip: content-box;
+  padding: 1px;
+  background-color: var(--white);
+  display: inline-block;
+  margin-right: .1rem;
+  vertical-align: -3px;
+}
+
+.check-box input[type="checkbox"]:checked {
+  background-image: url(/level-2/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+/* button */
+button {
+    background-color: var(--orange);
+    color: var(--white);
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+}
+/* section two */
+
+.img-section {
+    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin: 0;
+}
+
+/* tablet and mobile size */
+@media screen and (max-width: 890px) {
+
+    /* fix textbox names */
+    .fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    }
+
+ /* fix positions */
+     .store-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+select {
+    width: 320px;
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.img-section {
+    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+}
+
+.radio-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+}
+
+/* mobile size */
+@media screen and (max-width: 489px) {
+    
+
+    .form-section h1 {
+        text-align: center;
+    }
+
+}
