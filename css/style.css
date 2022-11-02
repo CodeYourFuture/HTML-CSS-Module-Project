@@ -84,7 +84,15 @@ li a:hover {
   font-weight: lighter;
   margin-bottom: 80px;
 }
+button a {
+  border: none;
+  color: white;
+}
 
+button:hover a {
+  color: #e0633a;
+  
+}
 button {
   padding: 1rem 2rem;
   border-radius: 4px;
@@ -95,10 +103,11 @@ button {
   font-weight: lighter;
 }
 
+
 button:hover {
   color: #e0633a;
   background: white;
-  border: 1px solid #e0633a;
+  outline: 1px solid #e0633a;
 }
 /* section 2*/
 
@@ -243,6 +252,12 @@ button:hover {
 
 fieldset {
   border: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+legend {
+  margin-bottom: 0.2rem;
 }
 .orderForm {
 }
@@ -255,6 +270,7 @@ fieldset {
   background-color: #e0633a;
   font-size: 0.7rem;
   font-weight: lighter;
+  margin-top: 0.5rem;
 }
 
 #first {
@@ -283,8 +299,9 @@ fieldset {
 }
 
 #city {
-  width: 180%;
-  height: 1.2rem;
+  width: 210%;
+  height: 1.65rem;
+  margin-top: 0.2rem;
 }
 
 #postcode {
@@ -293,4 +310,35 @@ fieldset {
 
 input {
   height: 1.2rem;
+  margin-top: 0.2rem;
 }
+
+.form-line {
+  margin-bottom: 1rem;
+}
+
+.form-line-below {
+  margin: 4rem 6rem 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-line-below label {
+  font-size: 0.8rem;
+}
+
+.form-line-below label a {
+  color: #e0633a;
+  text-decoration: underline;
+}
+
+.form-line-below #check {
+  border: 2px dotted #00f;
+  display: block;
+  background: #ff0000;
+}
+
+input[type="radio"] {
+    color: red;
+   
+    
