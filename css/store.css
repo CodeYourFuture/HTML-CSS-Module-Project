@@ -1,0 +1,277 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --orange: #f05a28c4;
+    --white: #fff;
+ }
+
+/* header */
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem 1rem 11rem;
+    background-color: #F9F9F9;
+ }
+
+ .logo {
+    display: block;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+ }
+
+/* navigation */
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-right: 5em;
+ }
+
+ .nav-items {
+    display: flex;
+    padding: 0 1.5rem;
+ }
+
+ .nav-links {
+    color: var(--grey);
+    text-decoration: none;
+ }
+
+.nav-list #store >a {
+    color: var(--orange);
+}
+
+ .nav-links:hover {
+    color: var(--orange);
+ }
+
+ .nav-items:first-child > a {
+    color: var(--grey-dark);
+ }
+
+ .nav-items:first-child > a:hover{
+    color: var(--orange);
+ }
+
+/* Banner */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    height: 50em;
+}
+
+/* Left-column */
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 2rem 0 5rem;
+    font-size: 3.5em;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+/* Right-column */
+
+.right-column {
+    grid: 1;
+    background-image: url(/img/store-image_by-andrew-neel-unsplash.jpeg);
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+}
+
+/* form */
+
+.form {
+    border-style: none;
+}
+
+form {
+line-height: 1.15;
+font-size: 100%;
+font-weight: 400;
+max-width: 100%;
+display: block;
+padding: 2rem 1rem 2rem 5rem;
+color: #666666;
+}
+
+/* first li */
+
+li.forms {
+line-height: 1.15;
+font-size: 100%;
+font-weight: 400;
+list-style: none;
+margin: 0 0 0.25em 0;
+clear: both;
+display: inline-block;
+width: 100%;
+}
+
+/* p class left */
+
+p.left {
+    line-height: 1.15;
+    font-size: 100%;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+p.left input {
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 13rem;
+}
+
+/* p class right */
+
+p.right {
+    line-height: 1.15;
+    font-size: 100%;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding-right: 8em;
+    float: right;
+}
+
+p.right input {
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 15rem;
+}
+
+li.address { 
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+li.address >p> input.input {
+    width: 31rem;
+    height: 2.5rem;
+}
+
+li { 
+    list-style: none;
+}
+
+select {
+    font-style: italic;
+    color: #757575;
+    width: 15rem;
+    height: 2.55rem;
+}
+
+li.forms {
+    padding-top: 1rem;
+}
+
+li.radio-buttons {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+li p.radiobutton-p {
+    padding-bottom: 1rem;
+}
+
+li label >p.terms {
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+.submit button {
+    background-color: var(--orange);
+    border: none;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+.submit button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.submit button:hover {
+    background-color: var(--grey-dark);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid var(--grey);
+    margin: 7.9rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0 3rem 0 ;
+    gap: 1rem;
+}
+
+footer h2 {
+    margin-top: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li a {
+    display: block;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+footer ul li a img{
+    max-width: 1rem;
+    max-height: 1rem;
+} 
+
+footer h2 {
+    font-weight: 400;
+    font-size: large;
+}   
+
+footer h5 {
+    font-weight: 200;
+    color: var(--grey);
+}

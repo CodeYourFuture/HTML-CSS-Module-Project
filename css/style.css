@@ -16,4 +16,266 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+:root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --orange: #f05a28c4;
+    --white: #fff;
+ }
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem 1rem 11rem;
+ }
+
+ .logo {
+    display: block;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+ }
+
+ /* navigation */
+
+ .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-right: 5em;
+ }
+
+ .nav-items {
+    display: flex;
+    padding: 0 1.5rem;
+ }
+
+ .nav-links {
+    color: var(--grey);
+    text-decoration: none;
+ }
+
+ .nav-links:hover {
+    color: var(--orange);
+ }
+
+ .nav-items:first-child > a {
+    color: var(--grey-dark);
+ }
+
+ .nav-items:first-child > a:hover{
+    color: var(--orange);
+ }
+
+ /* main */
+
+ main {
+    display: flex;
+    flex-direction: column;
+ }
+
+ /* First section */
+
+.hero {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 5rem 0 5rem;
+}
+
+.hero h2 {
+    font-weight:100;
+    font-size: 50px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero h5 {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.hero button {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 15px;
+}
+
+.hero button>a {
+    padding: 0 1rem;
+}
+
+.hero button:hover {
+    background-color: var(--grey-dark);
+}
+
+.hero button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Second section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-weight: 100;
+    font-size: 60px;
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%
+}
+
+article h5 {
+    font-weight: 400;
+    font-size:  30px;
+    padding-top: 1rem;
+    width:max-content;
+}
+
+article img {
+    width: 150px;
+    height: 200px;
+}
+
+.context {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+    width: 250px;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left-column {
+    flex: 1;
+    background-color: #FCEFEB;
+    height: 27rem;
+    background-image: url(/img/homepage-feature.png);
+    background-repeat:no-repeat ;
+}
+
+.right-column {
+    flex: 1;
+    background-color: #FCEFEB;
+    height: 10rem;
+    font-size: 2rem;
+    height: 27rem;
+    justify-content: center;
+}
+
+.right-column p.q {
+    margin: 6rem 7rem 0 4rem;
+    font-style: italic;
+    font-size: 40px; 
+    font-weight: 100;
+}
+
+.right-column p {
+    margin-left: 14rem;
+    font-style: italic;
+    font-size: 40px; 
+    font-weight: 100;
+}
+
+.right-column button {
+    background-color: var(--orange);
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 12rem;
+}
+
+.right-column button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.right-column button:hover {
+    background-color: var(--grey-dark);
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid var(--grey);
+    margin: 0 9rem;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li a {
+    display: block;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+footer ul li a img{
+    max-width: 1rem;
+    max-height: 1rem;
+} 
+
+footer h2 {
+    font-weight: 400;
+    font-size: large;
+}   
+
+footer h5 {
+    font-weight: 200;
+    color: var(--grey);
+}
