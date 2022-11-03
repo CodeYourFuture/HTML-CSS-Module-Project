@@ -17,90 +17,113 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
-  <!-- Body starts here -->
+  <!-- Body Starts Here -->
   <body>
-    <!-- Top navbar starts here -->
+    <!-- Header Starts Here -->
+    <header>
+      <img
+        src="img/karma-logo.svg"
+        width="100%"
+        alt="karma-logo"
+        class="navbar-logo"
+      />
+      <nav>
+        <button>
+          <a href="#"><strong>Meet Karma</strong></a>
+        </button>
+        <button><a href="#">How it Works</a></button>
+        <button><a href="#">Store</a></button>
+        <button><a href="#">Blog</a></button>
+        <button><a href="#">Help</a></button>
+        <button><a href="#">Login</a></button>
+      </nav>
+    </header>
 
-    <section aria-label="Navigation bar at the top of the page">
-      <header class="header">
-        <img src="img/karma-logo.svg" alt="karma-logo" class="navbar-logo" />
+    <!-- Main Starts Here -->
+    <main class="main">
+      <!-- Article One Starts Here -->
+      <div class="first-section">
+        <h1 style="font-size: 4vw">Introducing Karma</h1>
+        <h3 style="font-size: 2vw">Bring WiFi with you, everywhere you go.</h3>
+        <button class="button-orange">Learn More</button>
+      </div>
 
-        <!-- Top navbar buttons -->
-        <nav>
-          <ul style="list-style: none" class="navbar-container">
-            <li id="navbar-button">
-              <a href="#"><strong>Meet Karma</strong></a>
-            </li>
-            <li id="navbar-button"><a href="#">How it Works</a></li>
-            <li id="navbar-button"><a href="#">Store</a></li>
-            <li id="navbar-button"><a href="#">Blog</a></li>
-            <li id="navbar-button"><a href="#">Help</a></li>
-            <li id="navbar-button"><a href="#">Login</a></li>
-          </ul>
-        </nav>
-      </header>
-    </section>
-    <main>
-      <!-- Article one and main photo -->
-      <article aria-label="Article one and main photo" class="article-one">
+      <!-- Article Two Starts Here -->
+      <h1 style="font-size: 3vw">
+        <center>Everyone needs a little Karma.</center>
+      </h1>
+
+      <ol style="list-style: none" class="second-section">
+        <li class="main-links">
+          <img
+            src="img/icon-devices.svg"
+            alt="icon-devices"
+            class="img-resize"
+          />
+          <a href="#" style="font-size: 2vw">Internet for all Devices</a>
+        </li>
+        <li class="main-links">
+          <img src="img/icon-coffee.svg" alt="icon-coffee" class="img-resize" />
+          <a href="#" style="font-size: 2vw">Boost Your Productivity</a>
+        </li>
+        <li class="main-links">
+          <img src="img/icon-refill.svg" alt="icon-refill" class="img-resize" />
+          <a href="#" style="font-size: 2vw">Pay as You Go</a>
+        </li>
+      </ol>
+
+      <!-- Article Three Starts Here -->
+      <div class="third-section">
         <img
-          src="img/first-background.jpg"
-          alt="first-background"
-          class="main-image"
+          src="level-2/homepage-feature.png"
+          alt="homepage-feature"
+          class="homepage-feature"
         />
-        <h1 class="first-txt">Introducing Karma</h1>
-        <h4 class="second-txt">Bring WiFi with you, everywhere you go.</h4>
-        <button class="learn-more-button" type="button">Learn More</button>
-      </article>
-
-      <!-- Article two, svg photos and links -->
-      <article aria-label="Article two" class="article-two">
-        <h1 class="little-karma">Everyone needs a little Karma.</h1>
-        <ol style="list-style: none" class="svg-img">
-          <li class="main-links">
-            <img
-              src="img/icon-devices.svg"
-              alt="icon-devices"
-              class="icon-devices"
-            />
-            <a href="#" class="main-link-txt">Internet for all Devices</a>
-          </li>
-          <li class="main-links">
-            <img
-              src="img/icon-coffee.svg"
-              alt="icon-coffee"
-              class="icon-coffee"
-            />
-            <a href="#" class="main-link-txt">Boost Your Productivity</a>
-          </li>
-          <li class="main-links">
-            <img
-              src="img/icon-refill.svg"
-              alt="icon-refill"
-              class="icon-refill"
-            />
-            <a href="#" class="main-link-txt">Pay as You Go</a>
-          </li>
-        </ol>
-      </article>
-      <div class="line"></div>
+        <div class="testimonial">
+          <h3 style="font-size: 3vw">
+            "Whatever I am, I just don't worry about my connection anymore!"
+          </h3>
+          <button class="button-orange">
+            <a href="store.html">Get Karma today</a>
+          </button>
+        </div>
+      </div>
     </main>
 
-    <!-- Footer starts here -->
-    <footer class="footer">
-      <h3 class="join-us"><a href="#">Join us on</h3>
-      <ul class="social-media-handles" style="list-style: none">
+    <hr />
+
+    <!-- Footer One Starts Here -->
+    <footer>
+      <h4 style="font-size: 1.5vw">Join us on</h4>
+      <ol style="list-style: none" class="social-media-handles">
         <li>
-          <img src="img/twitter-icon.svg" alt="twitter-icon" class="twitter-handle"/>
+          <a href="#"
+            ><img
+              src="img/facebook-icon.svg"
+              alt="facebook-icon"
+              class="facebook-handle"
+          /></a>
         </li>
         <li>
-          <img src="img/facebook-icon.svg" alt="facebook-icon" class="facebook-handle"/>
+          <a href="#"
+            ><img
+              src="img/twitter-icon.svg"
+              alt="twitter-icon"
+              class="twitter-handle"
+          /></a>
         </li>
         <li>
-          <img src="img/instagram-icon.svg" alt="instagram-icon" class="instagram-handle"/>
+          <a href="#"
+            ><img
+              src="img/instagram-icon.svg"
+              alt="instagram-icon"
+              class="instagram-handle"
+          /></a>
         </li>
-      </ul>
-      <h3 class="karma-mobility">©KarmaMobility.Inc.</h3>
+      </ol>
+      <h4 style="font-size: 1.5vw" class="karma-mobility">
+        © Karma Mobility, Inc.
+      </h4>
     </footer>
   </body>
 </html>
