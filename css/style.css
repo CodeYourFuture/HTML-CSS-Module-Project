@@ -59,7 +59,7 @@ main {
 }
 
 .items:first-child > a {
-  color: var(--grey-darkdark);
+  color: var(--grey-dark);
 }
 .items:first-child > a:hover {
   color: var(--orange);
@@ -230,4 +230,98 @@ footer h5 {
 
 .p3-text p {
   font-style: italic;
+}
+
+.main2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 30px;
+}
+
+.section2 h1 {
+  color: var(--orange);
+}
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey-dark);
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  border: none;
+  gap: 30px;
+}
+
+.what {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+select {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey-dark);
+  width: 170px;
+  height: 23px;
+}
+.radio-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-box legend {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey-dark);
+}
+
+.radio-box ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.check-box {
+  gap: 2px;
+}
+
+.check-box a {
+  color: var(--orange);
+}
+
+button {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.section2-img {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
