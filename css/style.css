@@ -17,8 +17,8 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     display: block; 
-    margin: 0;
-    width: 100%;
+    /* margin: 0; */  
+    /* width: 100%; */
 }
 
 
@@ -210,6 +210,11 @@ h3{
     text-align: center;
 }
 
+.sec2-quote {
+    color:  #E0633A;
+    font-size: 37px;
+}
+
 .text {
     width: 60%;
     align-content: center;
@@ -218,8 +223,6 @@ h3{
     font-style: italic;
     font-size: 30px;
     line-height: 36px;
-    display: flex;
-    align-items: center;
     text-align: center;
     margin-bottom: 1rem;
 }
