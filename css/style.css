@@ -38,7 +38,7 @@ h6 {
 
 /*main*/
 main {
-  padding-bottom: 150px;
+  padding-bottom: 20px;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -62,12 +62,12 @@ main {
 
 .navigation_item-l {
   margin-left: 70px;
-  margin-right: 600px;
+  margin-right: 400px;
 }
 
 /*wifi*/
 .wifi {
-  background-image: url("/img/first-background.jpg");
+  background-image: url("img/first-background.jpg");
   background-color: var(--grey-light);
   height: 635px;
   color: #fff;
@@ -177,4 +177,29 @@ main {
   border-radius: 100%;
   padding: 8px;
   margin-left: 5px;
+}
+
+/*extra*/
+.extra {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.text {
+  background: linen;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.wherever {
+  margin-top: 60px;
+}
+.get {
+  font-size: 0.6em;
+  background: #c05326;
+  color: #fff;
+  border-radius: 5%;
+  border: none;
+  padding: 6px 15px;
 }
