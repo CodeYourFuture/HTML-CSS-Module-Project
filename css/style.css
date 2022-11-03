@@ -5,10 +5,15 @@ body {
   color: black;
 }
 
-button {
-  padding: 20px;
-  border: 0px;
-  background: none;
+/*header,
+div,
+footer {
+  border: 5px solid red;
+} */
+
+/* IDs */
+#navbar-button {
+  padding: 10px;
 }
 
 a:hover {
@@ -21,140 +26,180 @@ li {
   color: black;
 }
 
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}*/
+
+button {
+  padding: 20px;
+  border: 0px;
+  background: none;
+  font-weight: 100;
+}
+
 hr {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 4em;
   margin-bottom: 0.5em;
   margin-left: 100px;
   margin-right: 100px;
   border-width: 1px;
-  opacity: 60%;
+  opacity: 30%;
 }
 
-footer {
-  text-align: center;
-}
-/* IDs */
-#navbar-button {
-  padding: 10px;
-}
+/* -------- */
 
-/* Header */
+.body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  margin: 10px;
+}
 
 .header {
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: row;
+  flex-direction: row;
+  align-content: center;
   justify-content: space-around;
-  align-items: center;
-  height: 100px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 100;
 }
 
 .navbar-logo {
   width: 2%;
 }
 
-.navbar-container {
+.main > h1 {
+  font-weight: 100;
+  font-size: 45px;
+}
+
+.first-section {
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  margin-bottom: 5%;
+}
+
+.first-section > h1 {
+  font-weight: 100;
+}
+
+.first-section > h3 {
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+.first-section > button {
+  font-weight: 100;
+  margin-bottom: 5%;
+}
+
+.second-section {
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: row;
-}
-
-/* Main  */
-
-.article-one {
-  background-image: url("../img/first-background.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
-  color: aliceblue;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   align-content: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
-.article-two {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.icon-devices {
-  width: 10%;
+.img-resize {
+  width: 40%;
   padding: 60px;
 }
 
-.icon-coffee,
-.icon-refill {
-  width: 11%;
-  padding: 0px;
-}
-
-.little-karma {
+.main-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
   text-align: center;
-  font-size: 2.5em;
-  margin-top: 10%;
-  font-weight: normal;
 }
 
-.article-two-img {
+.third-section {
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  background-color: hsl(23, 71%, 92%);
+  margin-bottom: 10%;
 }
 
-.article-two-links {
+.homepage-feature {
+  width: 40%;
+}
+
+.testimonial {
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
-  font-size: 25px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.testimonial > h3 {
+  font-weight: 100;
+  line-height: 2;
+}
+
+.button-orange {
+  background-color: #dc4a15;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 10px 18px;
+  text-align: center;
+  font-size: 1.5vw;
 }
 
 /* Footer */
+
+.footer {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer > h4,
+h3 {
+  font-weight: 100;
+  align-items: center;
+}
 
 .social-media-handles {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  margin: 0%;
 }
 
-.twitter-handle {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #555;
-  border-radius: 50px;
-  opacity: 80%;
-  margin: 30px;
-  padding: 5px;
-}
-
-.facebook-handle {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #555;
-  border-radius: 50px;
-  opacity: 80%;
-  padding: 5px;
-}
-
+.twitter-handle,
+.facebook-handle,
 .instagram-handle {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #555;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 50px;
-  opacity: 80%;
+  opacity: 60%;
+  margin: 10px;
   padding: 5px;
 }
 
 .karma-mobility {
-  text-align: center;
-  font-size: 15px;
-  padding: 10px 30px 30px;
-  font-weight: normal;
   color: rgb(104, 103, 103);
 }
