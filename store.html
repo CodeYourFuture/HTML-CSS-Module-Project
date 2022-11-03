@@ -60,29 +60,29 @@
         <h2 class="article__summary">Order your Karma wifi device today!</h2>
         <div class="Line">
           <div class="first-name">
-            <label id="first">First name * </label>
+            <label id="first" class="label">First name * </label>
             <input required type="text" name="first_name" id="first" />
           </div>
           <div class="last-name">
-            <label id="last">Last name *</label>
+            <label id="last" class="label">Last name *</label>
             <input required type="text" name="last_name" id="last" />
           </div>
         </div>
         <div class="Line">
           <div class="address">
-            <label id="address">Address *</label>
+            <label id="address" class="label">Address *</label>
             <input required type="text" name="address" id="address" />
           </div>
         </div>
         <div class="Line">
           <div class="address">
-            <label id="address-2">Address 2</label>
+            <label id="address-2" class="label">Address 2</label>
             <input required type="text" name="address-2" id="address-2" />
           </div>
         </div>
         <div class="Line">
           <div class="city">
-            <label for="size">City *</label>
+            <label for="size" class="label">City *</label>
             <select id="size" name="pizza_size">
               <option value="very_large">London</option>
               <option value="large">Manchester</option>
@@ -90,22 +90,25 @@
             </select>
           </div>
           <div class="postcode">
-            <label id="postcode">Postcode *</label>
+            <label id="postcode" class="label">Postcode *</label>
             <input required type="text" name="postcode" id="postcode" />
           </div>
         </div>
         <fieldset>
-            <legend>Please select a color</legend>
+            <legend>Select a color</legend>
             <div class="radio">
               <input type="radio" id="orange" name="color" value="orange" />
-              <label class="label" for="orange">Karma Orange</label>
+              <label class="label label-wide" for="orange">Karma Orange</label>
               <input type="radio" id="grey" name="color" value="grey" />
-              <label class="label" for="grey">Space Grey</label>
+              <label class="label label-wide" for="grey">Space Grey</label>
             </div>
         </fieldset>
-        <label class="Line">By placing your order you agree to Karma's Terms and Conditions. *
-            <input type="checkbox" checked="checked">
+        <div class="checkbox">
+            <label class="checkbox-line">By placing your order you agree to Karma's Terms and Conditions. *
+            <input class="checkbox-input" type="checkbox" checked="checked">
+            <span class="checkmark"></span>
         </label>
+        </div>
         <button class="get_karma">Place my order</button>
       </form>
       <img
