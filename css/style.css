@@ -27,7 +27,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5rem;
+    padding: 2rem 8rem;
+    width: auto;
  }
 
  .nav-list{
@@ -163,6 +164,65 @@ article img {
     gap: 1.5rem;
 
 }
+
+
+/*add new section*/
+
+
+.new{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1.5fr 2fr;
+
+
+}
+
+.new-img {
+    background-color: #363434;
+    height: 100%;
+    background-image: url(/level-2/homepage-feature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.new-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem;
+    background-color:rgb(230, 200, 175);
+    color: var(--grey-dark);
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+
+}
+
+.new-text p {
+    font-style: italic;
+}
+
+.new-text p span {
+    color: var(--orange);
+}
+
+.new-text a {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+}
+.new-text a:hover {
+    background-color: var(--grey-dark);
+}
+
+
+
 
 /* footer */
 footer {
