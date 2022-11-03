@@ -97,7 +97,7 @@
     width: 501px;
     height: 1200px;
     left: 122px;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
   }
 
 .orderForm h2 {
@@ -137,6 +137,22 @@
 
   fieldset {
     margin-top: 60px;
+    border: 0px;
+  }
+  .radio {
+    display: flex;
+  }
+
+  #orange {
+    width: 30px;
+    accent-color: #c05326;
+  }
+  #grey {
+    width: 30px;
+    accent-color: #c05326;
+  }
+  .label {
+    margin: auto 20px;
   }
 
   .get_karma {
