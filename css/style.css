@@ -2,12 +2,11 @@
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    /* background-color: yellow; */
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     display: block;
-    margin: 0;
-    width: 100%;
+    margin: auto;
+    width: 10s0%;
 }
 
 /**
@@ -191,4 +190,27 @@ footer ul{
 
 footer p{
     color:rgb(181, 179, 179)
+}
+
+/* Store Form Section + img */
+.main{
+    background-color: aqua;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    column-gap: 1rem;    
+}
+
+.form{
+    background-color: yellow;
+    width: 45%;
+    height: 7rem;
+    margin: auto;
+}
+
+.photo{
+    background-color: red;
+    width: 45%;
+    height: 7rem;
+    margin: auto;
 }
