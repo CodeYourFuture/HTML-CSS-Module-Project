@@ -91,7 +91,6 @@ button a {
 
 button:hover a {
   color: #e0633a;
-  
 }
 button {
   padding: 1rem 2rem;
@@ -102,7 +101,6 @@ button {
   font-size: 1.3rem;
   font-weight: lighter;
 }
-
 
 button:hover {
   color: #e0633a;
@@ -332,13 +330,10 @@ input {
   text-decoration: underline;
 }
 
-.form-line-below #check {
-  border: 2px dotted #00f;
-  display: block;
-  background: #ff0000;
+input[type="radio"] {
+  accent-color: #e0633a;
 }
 
-input[type="radio"] {
-    color: red;
-   
-    
+input[type="checkbox"] {
+  accent-color: #e0633a;
+}
