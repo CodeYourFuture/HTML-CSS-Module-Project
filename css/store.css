@@ -77,12 +77,11 @@ body {
     height: 50em;
 }
 
+/* Left-column */
+
 .left-column {
     display: flex;
     flex-direction: column;
-
-    /* grid: 1; */
-    /* background-color: #ac3d1b; */
 }
 
 .left-column h1{
@@ -95,6 +94,8 @@ body {
     color: var(--orange);
 }
 
+/* Right-column */
+
 .right-column {
     grid: 1;
     background-image: url(/img/store-image_by-andrew-neel-unsplash.jpeg);
@@ -103,15 +104,15 @@ body {
     max-height: 100%;
 }
 
+/* form */
+
 .form {
     border-style: none;
 }
 
-/* form */
 form {
 line-height: 1.15;
 font-size: 100%;
-font-family: Roboto, sans-serif;
 font-weight: 400;
 max-width: 100%;
 display: block;
@@ -119,15 +120,11 @@ padding: 2rem 1rem 2rem 5rem;
 color: #666666;
 }
 
-/* ul */
-
-
 /* first li */
 
 li.forms {
 line-height: 1.15;
 font-size: 100%;
-font-family: 'Lato', sans-serif;
 font-weight: 400;
 list-style: none;
 margin: 0 0 0.25em 0;
@@ -139,14 +136,13 @@ width: 100%;
 /* p class left */
 
 p.left {
-line-height: 1.15;
-font-size: 100%;
-font-family: 'Lato', sans-serif;
-font-weight: 400;
-list-style: none;
-margin: 0;
-padding: 0;
-float: left;
+    line-height: 1.15;
+    font-size: 100%;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
 }
 
 p.left input {
@@ -155,17 +151,16 @@ p.left input {
     width: 13rem;
 }
 
-
 /* p class right */
 
 p.right {
-line-height: 1.15;
-font-size: 100%;
-font-weight: 400;
-list-style: none;
-margin: 0;
-padding-right: 8em;
-float: right;
+    line-height: 1.15;
+    font-size: 100%;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+    padding-right: 8em;
+    float: right;
 }
 
 p.right input {
@@ -178,7 +173,6 @@ li.address {
     list-style: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
 }
 
 li.address >p> input.input {
@@ -214,7 +208,6 @@ li label >p.terms {
     text-decoration: underline;
     color: var(--orange);
 }
-
 
 .submit button {
     background-color: var(--orange);
