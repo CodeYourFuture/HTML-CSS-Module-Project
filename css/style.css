@@ -62,35 +62,72 @@ body {
     gap: 2rem;  
     }
 
-.first-sec h2 {
+  .first-sec h2 {
     color: antiquewhite;
     margin-top: -1rem;
     margin-bottom:1rem;
     font-weight: 80;
     font-size: 35px;
-  }
+    }
 
-.first-sec h5 {
+  .first-sec h5 {
     color: antiquewhite;  
     margin-top: -2rem;
     margin-bottom: 2rem;
     font-weight: 50;
     font-size: 20px;
-  }
+    }
 
-.first-sec button {  
+  .first-sec button {  
     background-color:#c05326;
     border: none;
     padding: .8rem 1rem;
     border-radius: 5px;
     margin-top: -1rem;
-  }
+    }
 
-.first-sec button:hover {
+  .first-sec button:hover {
     background-color:antiquewhite;
   }
 
-.first-sec button a {
+  .first-sec button a {
     text-decoration: none;
-    color: var(--white);
+    color:antiquewhite;
   }
+  /*Second section*/
+  .second-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    }
+
+  .second-sec h2 {
+    font-weight: 200;
+    font-size: 35px;
+    }
+
+  article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+  article h5 {
+    font-weight: 200;
+    font-size: 20px;
+    }
+
+  article img {
+    width: 120px;
+    height: 120px;
+    }
+
+  .context {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+   }
