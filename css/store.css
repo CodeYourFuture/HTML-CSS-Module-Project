@@ -104,7 +104,7 @@ body {
 }
 
 .form {
-    border-style: dotted;
+    border-style: none;
 }
 
 /* form */
@@ -116,6 +116,7 @@ font-weight: 400;
 max-width: 100%;
 display: block;
 padding: 2rem 1rem 2rem 5rem;
+color: #666666;
 }
 
 /* ul */
@@ -193,11 +194,91 @@ select {
     font-style: italic;
     color: #757575;
     width: 15rem;
-    height: 2.6rem;
+    height: 2.55rem;
 }
 
 li.forms {
     padding-top: 1rem;
 }
 
+li.radio-buttons {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
 
+li p.radiobutton-p {
+    padding-bottom: 1rem;
+}
+
+li label >p.terms {
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+
+.submit button {
+    background-color: var(--orange);
+    border: none;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+.submit button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.submit button:hover {
+    background-color: var(--grey-dark);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid var(--grey);
+    margin: 7.9rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0 3rem 0 ;
+    gap: 1rem;
+}
+
+footer h2 {
+    margin-top: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li a {
+    display: block;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+footer ul li a img{
+    max-width: 1rem;
+    max-height: 1rem;
+} 
+
+footer h2 {
+    font-weight: 400;
+    font-size: large;
+}   
+
+footer h5 {
+    font-weight: 200;
+    color: var(--grey);
+}
