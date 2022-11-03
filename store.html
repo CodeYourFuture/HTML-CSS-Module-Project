@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shorcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
     <header>
@@ -22,30 +23,63 @@
         </nav>
     </header>
     <div class="main">
-        <!-- <h1 class="orderKarma">Order your Karma wifi device today!</h1> -->
-        <form class="form">         
-            <label for="name">First name*</label>
-            <input id="name" type="text">
+        <section class="section">
+            <h1 class="orderKarma">Order your Karma wifi device today!</h1>
+            <form class="form">         
+                <div>
+                    <label for="name">First name*</label>
+                    <input id="name" type="text">
+                </div>
 
-            <label for="surname">Last name*</label>
-            <input id="surname" type="text">
+                <div>
+                    <label for="surname">Last name*</label>
+                <input id="surname" type="text">
+                </div>
 
-            <label for="address">Address*</label>
-            <input id="address" type="text">
+                <div>
+                <label for="address">Address*</label>
+                <input id="address" type="text">
+                </div>
 
-            <label for="address2">Address 2*</label>
-            <input id="address2" type="text">
+                <div>
+                <label for="address2">Address 2</label>
+                <input id="address2" type="text">
+                </div>
 
-            <label for="city">City*</label>
-            <input form="city" type="text">
+                <div>
+                    <label for="city">City*</label >
+                    <select id="city" name="city">
+                        <option value="select" selected>Select your city</option>
+                        <option value="london">london</option> 
+                        <option value="manchester">Manchester</option>
+                        <option value="Birmigan">Birmigan</option>
+                        <option value="glasgow">Glasgow</option>
+                        <option value="ireland">Ireland</option>
+                    </select>
+                </div>
 
-            <label for="pc">Post Code*</label>
-            <input id="pc" type="text">
+                <div>
+                    <label for="pc">Post Code*</label>
+                    <input id="pc" type="text">
+                </div>
 
+                <fieldset>
+                    <legend>select a color</legend>
 
+                    <input id="orange" type="radio" name="color" checked>
+                    <label for="orange">Karma orange</label>
 
+                    <input id="grey" type="radio" name="color">
+                    <label for="grey">Space grey</label>
+                </fieldset>
 
-        </form>
+                <input id="terms" type="checkbox" checked required>
+                <label for="terms">By placing yosur order you agree to Karma's <a href="#">Terms & Conditions</a>. *</label>
+                
+                <button type="submit">Place my order</button>
+            </form>
+        </section>
+
         <div class="photo">
 
         </div>
