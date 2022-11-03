@@ -15,34 +15,82 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ /* Header Style*/
 
- header {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 5rem;
     margin-bottom: -.5rem;
- } 
+    } 
  
   .logo-header {
     display: block;
     width: auto;
     height: 2rem;
-  }
+    }
   
   /* Navigation style */
   .nav-list {
     display: flex;
     list-style: none;
     gap: 1.5rem;
-  }
+    }
   
   .nav-links {
     color: #837b7b;
-  }
-    
+    }    
     
   .nav-list :hover {
     color: #c05326;
+    }
+
+    /*First Section (introducing)*/
+
+  .first-sec {
+    background-image: url(../img/first-background.jpg);
+    background-color: var(--gray);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position ;
+    padding: 14rem 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;  
+    }
+
+.first-sec h2 {
+    color: antiquewhite;
+    margin-top: -1rem;
+    margin-bottom:1rem;
+    font-weight: 80;
+    font-size: 35px;
   }
-  
+
+.first-sec h5 {
+    color: antiquewhite;  
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    font-weight: 50;
+    font-size: 20px;
+  }
+
+.first-sec button {  
+    background-color:#c05326;
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    margin-top: -1rem;
+  }
+
+.first-sec button:hover {
+    background-color:antiquewhite;
+  }
+
+.first-sec button a {
+    text-decoration: none;
+    color: var(--white);
+  }
