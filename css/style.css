@@ -122,3 +122,16 @@ footer p {
 #copyright {
   color: #adb0b7;
 }
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(224, 99, 58, 0.1);
+  margin-bottom: 50px;
+}
+
+.description {
+  width: auto;
+  font-size: 42px;
+  text-align: center;
+}
