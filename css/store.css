@@ -97,16 +97,58 @@
     width: 501px;
     height: 1200px;
     left: 122px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
 
 .orderForm h2 {
     justify-content: center;
     margin-top: 117px;
 }
-  .firstLine {
-    margin-top: 82px;
+  .Line {
+    margin-top: 60px;
     display: flex;
+    justify-content: space-between;
+  }
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input:checked {
+    border: 1px solid black;
+  }
+  .address {
+    width: 100%;
+  }
+
+  select {
+    width: 170%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  fieldset {
+    margin-top: 60px;
+  }
+
+  .get_karma {
+    background-color: #c05326;
+    border-radius: 3px;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    width: 200px;
   }
 /* Footer */
 
