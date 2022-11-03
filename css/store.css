@@ -109,14 +109,13 @@ body {
 
 /* form */
 form {
-    line-height: 1.15;
--webkit-text-size-adjust: 100%;
+line-height: 1.15;
 font-size: 100%;
-font-family: 'Lato', sans-serif;
+font-family: Roboto, sans-serif;
 font-weight: 400;
 max-width: 100%;
 display: block;
-padding: 3rem;
+padding: 2rem 1rem 2rem 5rem;
 }
 
 /* ul */
@@ -125,8 +124,7 @@ padding: 3rem;
 /* first li */
 
 li.forms {
-    line-height: 1.15;
--webkit-text-size-adjust: 100%;
+line-height: 1.15;
 font-size: 100%;
 font-family: 'Lato', sans-serif;
 font-weight: 400;
@@ -140,8 +138,7 @@ width: 100%;
 /* p class left */
 
 p.left {
-    line-height: 1.15;
--webkit-text-size-adjust: 100%;
+line-height: 1.15;
 font-size: 100%;
 font-family: 'Lato', sans-serif;
 font-weight: 400;
@@ -151,12 +148,17 @@ padding: 0;
 float: left;
 }
 
+p.left input {
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 13rem;
+}
+
 
 /* p class right */
 
 p.right {
 line-height: 1.15;
--webkit-text-size-adjust: 100%;
 font-size: 100%;
 font-weight: 400;
 list-style: none;
@@ -165,13 +167,22 @@ padding-right: 8em;
 float: right;
 }
 
+p.right input {
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 15rem;
+}
+
 li.address { 
     list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
 }
 
 li.address >p> input.input {
-    width: 32rem;
-    
+    width: 31rem;
+    height: 2.5rem;
 }
 
 li { 
@@ -181,11 +192,12 @@ li {
 select {
     font-style: italic;
     color: #757575;
-    width: 10rem;
-    height: 2rem;
+    width: 15rem;
+    height: 2.6rem;
+}
+
+li.forms {
+    padding-top: 1rem;
 }
 
 
-li input.checkbox{
-    background-image: url(/img/icon-refill.svg);
-    }
