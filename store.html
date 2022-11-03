@@ -44,7 +44,7 @@
                     <li class="address">
                         <p>
                           <label for="address">Address <span class="req">*</span></label><br>
-                          <input type="text" name="text" placeholder="address">
+                          <input type="text" name="text" placeholder="address" class="input">
                         </p>
                       </li> 
 
@@ -54,6 +54,37 @@
                           <input type="text" name="text" placeholder="address" class="input">
                         </p>
                       </li> 
+
+                      <li class="forms">
+                        <p class="left">
+                          <label for="city">City <span class="req">*</span></label><br>
+                          <select>
+                            <option value="" disabled selected>Select your city...</option>
+                            <option value="0">London</option>
+                            <option value="1">Miami</option>
+                          </select>
+                            </p>
+                        <p class="right">
+                          <label for="postcode">Postcode<span class="req">*</span></label><br>
+                          <input type="text" name="postcode">      
+                        </p>
+                      </li>
+
+                      <li>
+                        <p class="radiobutton-p">Select a color</p>
+                        <input type="radio" value="" class="karma-orange">
+                        <label for="radio">Karma Orange</label>
+                        <span></span>
+                        <input type="radio" value="">
+                        <label for="radio">Space Grey</label>
+                      </li>
+                      
+                      <li>
+                        <input type="checkbox" checked>
+                        <label for="terms"> By placing your order you agree to Karma's <p class="terms">Terms and Conditions.<span class="req">*</span></p></label>
+                      </li>
+                      
+
                   </ul>
             </form>
         </div>
