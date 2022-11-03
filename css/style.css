@@ -131,17 +131,55 @@ body {
     align-items: center;
     gap: 1.5rem;
    }
+   /*third section (grid container)*/
+    .third-sec {
+     display: grid;
+     grid-template-rows: auto auto;
+     grid-template-columns: 1fr 2fr;      
+     }
+   .third-sec p {
+    font-weight: 200;
+    font-size: 35px;    
+    font-style: italic;
+    text-align: center; 
+    }
+    .third-sec button {  
+      background-color:#c05326;
+      border: none;
+      padding: .8rem 1rem;
+      border-radius: 5px;
+      margin-top: -1rem;
+      }
+  
+    .third-sec button:hover {
+      background-color:rgb(100, 98, 96);
+      }
+  
+    .third-sec button a {
+      text-decoration: none;
+      color:rgb(223, 221, 217);
+      }
+    .box{
+      background-color: antiquewhite;        
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content:space-evenly;                    
+      }
+    span{
+      color: #c05326;
+      }
+
+
    /*footer*/
    footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-top: 1px solid ;
-    border-color: #c7bcbc;
+    justify-content: center;     
     margin: 0 9rem;
     padding: 2rem 0;
-    gap: -1px;
+    gap: -2px;
 }
 
 footer ul {
@@ -156,16 +194,16 @@ footer ul li a {
     border-color: #dfcece;
     padding: 1rem;
     border-radius: 50%;
-    margin: 10px;
+    margin: 8px;
 }
 
 footer ul li a img{
-    max-width: 16px;
-    max-height: 16px;
+    max-width: 14px;
+    max-height: 14px;
 } 
 
-footer h3 {
-    font-weight: 500;
+footer h4 {
+    font-weight: 300;
 }
 
 footer h5{
