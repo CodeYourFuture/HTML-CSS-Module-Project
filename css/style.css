@@ -58,7 +58,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
-  margin: 0 2em 3em;
+  margin: 0 auto 3em;
 }
 
 .header_logo {
@@ -98,13 +98,15 @@ a:hover {
 }
 
 .main_div {
+  display: flex;
+  flex-direction: column;
   background-image: url(/img/first-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 9rem 0rem 10rem;
-  margin: 0 2rem 6em;
+  margin: 0 auto 2rem;
 }
 .main_div div {
   color: aliceblue;
@@ -117,9 +119,9 @@ a:hover {
 .last_section {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   width: 0 auto;
-  margin-bottom: 3rem;
   background-color: #f7eae4;
 }
 
@@ -236,7 +238,13 @@ footer div ul li a {
   border: 2px solid rgb(194, 191, 191);
   z-index: 1;
 }
+footer {
+  border-top: 2px solid var(--orange-light);
+}
 
+footer > div {
+  padding-top: 1.5rem;
+}
 /**
  * Add your custom styles below
  * 
