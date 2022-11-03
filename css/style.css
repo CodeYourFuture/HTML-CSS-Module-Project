@@ -1,5 +1,14 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ :root {
+  --grey-dark: #363434;
+  --grey: #ADADAD;
+  --grey-light: #F7F7F7;
+  --orange: #F05A28;
+  --orange-light: hsl(20, 84%, 80%);
+  --white: #fff;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,10 +25,15 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*navigation*/
+
  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    margin-botton:10px;
+    margin-right:100px;
  }
  header img {
     width: 50px;
@@ -41,10 +55,13 @@ body {
   ul li:first-child a {
     color:black;
   }
-  /* Change the link color to #111 (black) on hover */
+
   li a:hover {
     color: orange;
   }
+
+  /*first section - intro to karma*/
+
   #section1 {
     background-image: url("../img/first-background.jpg");
     padding-bottom: 100px;
@@ -74,6 +91,9 @@ body {
     color:black;
     text-align: center;
   }
+
+/*section 2 - need karma*/
+
   #section2 {
   }
   .container {
@@ -136,6 +156,11 @@ body {
   text-align: center;
 }
 
+
+
+
+
+/*footer*/
 
 footer {
     text-align: center;

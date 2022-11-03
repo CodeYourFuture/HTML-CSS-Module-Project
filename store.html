@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+
+<!--navigation-->
+
+<body>
+    <header>
+        <img src="img/karma-logo.svg" alt="logo of karma">
+        <ul>
+          <li><a href="meet">Meet Karma</a></li>
+          <li><a href="howitworks">How it Works</a></li>
+          <li><a href="store">Store</a></li>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="help">Help</a></li>
+          <li><a href="login">Login</a></li>
+        </ul>
+    </header>
+    <br>
+
+<main>
+    <div class="all-container">
+    <div class="main-section">
+        <div class="page-title">
+            <h1>Order your Karma WiFi Device today!</h1>
+        </div>
+
+        <div class="all-form">
+        <form class="orderform">
+            <fieldset class="fillname">
+                <label for="first_name">First name*</label> <input style="text" class="input" id="first_name" required>
+                <label for="last_name">Last name*</label> <input style="text" class="input" id="last_name" required>
+            </fieldset>
+
+            <fieldset class="filladdress">
+                <label for="address">Address*</label> <input style="text" class="input" id="address" name="address" required>
+                <label for="address2">Address 2</label> <input style="text" class="input" id="address2" name="address2">
+            </fieldset>
+
+            <fieldset class="filllocation">
+
+                <label for="city">City*</label> <select id="city" name="city" class="input"><option value="">Select your city...</option>
+                </select>
+
+                 <label for="postcode">Postcode*</label><input style="text" class="input" id="postcode" name="postcode">
+             </fieldset>
+
+            <fieldset class="choosecolor">
+                <legend class="colorchoice">Select a colour</legend>
+                <label for="karma_orange">Karma Orange</label>
+                <input type="radio" value="Karma range" name="colour" class="input" id="karma_orange">
+                <label for="space_grey">Space Grey</label>
+                <input type="radio" value="Space Grey" name="colour" class="input" id="space_grey">
+
+            </fieldset>
+            <input type="checkbox" class="input" id="tandcs">
+            <label for="tandcs">By placing your order you agree to Karma's Terms and Conditions.*</label>
+            </fieldset>
+            <button>Place my order</button>
+        </form>
+    </div>
+    </div>
+    
+
+    <div class="img-right"><img class="imgmain" src="/level-2/store-image_by-andrew-neel-unsplash.jpg"/>
+    </div>
+    </div>
+</main>
+
+    <footer>
+        <p>Join us on:</p>
+        <div>
+          <img class="social" src="/img/twitter-icon.svg" alt="twitter icon"/>
+          <img class="social" src="/img/facebook-icon.svg" alt="facebook icon"/>
+          <img class="social" src="/img/instagram-icon.svg" alt="instagram icon"/>
+        </div>
+        <p id="copyright"> Karma Mobility, Inc.</p>
+</footer>
+</body>
+</html>
