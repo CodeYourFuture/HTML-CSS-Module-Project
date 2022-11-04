@@ -83,14 +83,11 @@ ul :first-child{
     color: rgb(118, 123, 125);
 }
 
-
-.btn:hover {
-    background-color: rgb(97, 40, 15);
-    color: rgb(251, 251, 251);
-
+.bar li a:hover {
+    color:rgb(243, 112, 56);
 }
 
-/* the picture brackgroun and button */
+/* section picture brackgroun and button */
 
 section {
     width: 100%;
@@ -111,8 +108,7 @@ main {
     align-items: center;
     height: 35rem;
     justify-content: center;
-    /* padding-top: 13rem; */
-    color: rgb(246, 241, 241);
+    color: rgb(241, 246, 241);
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -135,11 +131,17 @@ main p{
 
 .btn {
     background-color:rgb(243, 112, 56);
+    color: white;
     margin-top: 2rem;
     border: none;
     padding: 20px 32px;
     border-radius: 0.2rem;
     font-size: 17px;
+}
+
+.btn:hover {
+    background-color: rgb(97, 40, 15);
+    color: rgb(251, 251, 251);
 }
 
 h3{
@@ -188,7 +190,8 @@ h3{
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 20rem;
+    height: 22rem;
+    padding: auto;
 }
 
 .level2 {
@@ -221,10 +224,11 @@ h3{
     text-align: center;
     font-family: 'Roboto';
     font-style: italic;
-    font-size: 30px;
+    font-size: 33px;
     line-height: 36px;
     text-align: center;
     margin-bottom: 1rem;
+    font-weight: 400;
 }
 
 .get {
@@ -246,14 +250,6 @@ h3{
     background-color: rgb(97, 40, 15);
 }
 
-
-
-/* p .quote {
-    
-    width: 5rem;
-    color: #E0633A;
-
-} */
 
 /* footer */
 

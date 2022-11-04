@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="/favicon.ico">
+    <link rel="stylesheet" href="/css/store.css">
+</head>  
+<header>
+    <img src="/img/karma-logo.svg" alt="karma-logo">
+    <nav id="nav" class="nav">
+        <ul class="bar">
+            <li><a class="karma" href="#">Meet Karma</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Store</a></li> 
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <form>
+            <h1>Order your Karma wifi device today!</h1>
+            <label class="firstName" for="firstName">First Name</label>
+            <input class="firstName" id="firstName" type="text" minlength="15" maxlength="25" required />
+            <label class="lastName" for="lastName">Last Name</label>
+            <input class="lastName" id="lastName" type="text" minlength="15" maxlength="25" required />
+            <label class="address" for="address">Address *</label>
+            <input class="address" id="address" type="text" minlength="15" maxlength="50" required />
+            <label class="address2" for="address2">Address 2</label>
+            <input class="address2" id="address2" type="text" minlength="15" maxlength="50" required />
+            <label class="postcode" for="postcode">Postcode *</label>
+            <input class="postcode" id="postcode" type="text" minlength="6" maxlength="7" required />
+            <div class="dropdown">
+                <label for="city" class="dropdown-city">Select your city</label>
+                <select id="city" name="city" required>
+                    <option class="select" value=" " disabled selected hidden>Select your City...</option>
+                    <option value="London">London</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Birmigan">Birmigan</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Scotland">Scotland</option>
+                    <option value="Chichester">Chichester</option>
+                    <option value="Coventry">Coventry</option>
+                    <option value="Exeter">Exeter</option>
+                </select>
+            </div>            
+            <fieldset>
+                <legend class="select-color">Select a color</legend>
+                
+                <input class="color-input" id="gray-space" type="radio" name="color" value="gray-space" />
+                <label for="gray-space">Gray space</label>
+                
+                <input class="color-input" id="karma-orange" type="radio" name="color" value="karma-orange" checked />
+                <label for="Karma orange">Karma orange</label>
+            </fieldset>
+            <input class="agreement" id="agreement" type="checkbox" name="agreement" />
+            <label class="agreement-label" for="agreement">By placing your order You are agree to Karma's <a class="terms" href="#">Terms and conditions</a>. *</label>
+            <button class="get">Place my order</button>
+        </form>
+        <img class="store">
+    </div> 
+</body>
+<footer>
+    <hr>
+    <p clsss="join"><b>Join us on</b></p>
+    <div class="foot">
+        <ul>
+            <li><a href="#"> <img src="/img/twitter-icon.svg"></a></li>
+            <li><a href="#"> <img src="/img/facebook-icon.svg"></a></li>
+            <li><a href="#"> <img src="/img/instagram-icon.svg"></a></li>
+        </ul>
+    </div>
+    <small>&copy Karma Mobility, Inc.</small>
+</footer>
+</body>
+</html>
+
+

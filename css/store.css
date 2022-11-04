@@ -1,0 +1,34 @@
+body{
+    /* background-color: red; */
+}
+
+.container {
+    width: 100%;
+    height: 70rem;
+    /* background-color: cyan; */
+    display: flex;  
+}
+
+form {
+    /* background-color: yellow; */
+    width: 50%; 
+    height: 80%;
+}
+
+.store{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    background-image: url(/level-2/store-image_by-andrew-neel-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+select:invalid{
+    color: gray;
+}
+
+option{
+    color: rgb(235, 8, 8);
+}
