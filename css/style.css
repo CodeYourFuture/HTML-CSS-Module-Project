@@ -62,7 +62,6 @@ header {
 main{
   background-image: url(/img/first-background.jpg);
   background-size: cover;
-
   background-position: center;
   color: #fff;
 
@@ -197,8 +196,6 @@ h1 {
 
 #username {
   width: 100%;
-
-  
 }
 
 #last_name {
@@ -235,6 +232,10 @@ h1 {
 fieldset {
   border: 0;
   padding: 0;
+}
+
+fieldset a {
+  color: red;
 }
 
 .order input {
