@@ -41,7 +41,7 @@ svg {
   color: #c05326;
 }
 nav {
-  margin-right: -300px;
+  margin-right: -200px;
 }
 /* Main */
 .content {
@@ -157,7 +157,7 @@ button:hover {
   color: #c05326;
 }
 
-/*-----Order page ----------*/
+/*-----Order page ----------
 .heading_order {
   color: #c05326;
   display: flex;
@@ -165,6 +165,41 @@ button:hover {
   justify-content: center;
   margin-top: 7%;
   font-size: 4rem;
+}*/
+.main {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: repeat(100%, auto);
+  grid-template-rows: 150px auto;
+  grid-template-areas:
+    "h  h  h  h   a  a  a  a"
+    "s  s  s  s   a  a  a  a"
+    "s  s  s  s   a  a  a  a"
+    "s  s  s  s   a  a  a  a";
+  margin: 0 auto;
+  margin-left: 10%;
+}
+.heading_order {
+  height: 100%;
+  grid-area: h;
+
+  color: #c05326;
+  padding-left: 4rem;
+  text-align: left;
+  font-size: 3.5rem;
+}
+.aside {
+  grid-area: a;
+  width: 100%;
+}
+.section {
+  grid-area: s;
+
+  display: grid;
+
+  text-align: centre;
 }
 
 /**
