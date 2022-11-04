@@ -196,15 +196,154 @@ button:hover {
 }
 .section {
   grid-area: s;
-
+  margin-top: 3rem;
   display: grid;
-
+  /* background: lightslategrey;*/
   text-align: centre;
 }
 
-/**
- * Add your custom styles below
- * 
+/* Add your custom styles form  */
+
+.karma-form {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 8%;
+  width: 40%;
+  gap: 20px;
+  border-bottom: 1px solid var(--grey);
+}
+.karma-form h1 {
+  color: var(--orange);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-fill {
+  display: flex;
+  flex-direction: row;
+
+  border: none;
+  gap: 20px;
+  align-items: stretch;
+}
+.form-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-basis: 46%;
+  width: auto;
+}
+
+input[type="text"],
+select {
+  padding: 5px 5px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+label {
+  color: var(--grey-dark);
+  font-weight: 400;
+  font-size: 14px;
+}
+#postcode {
+  text-transform: uppercase;
+  width: 150px;
+}
+.form-postcode {
+  align-content: flex-end;
+}
+select {
+  font-size: 14px;
+  font-style: italic;
+  width: 250px;
+  height: 40px;
+  color: var(--grey-dark);
+  font-weight: 400;
+  padding: 5px 5px;
+}
+.radio-button {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.radio-button ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.container a {
+  color: var(--orange);
+}
+
+/* radio box color change*/
+
+.radio-button input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  appearance: none;
+  border-radius: 50px;
+  padding: 3px;
+  background-clip: content-box;
+}
+
+.radio-button input[type="radio"]:checked {
+  background-color: var(--orange);
+  background-color: #c05326;
+}
+
+/*check box with orange tick*/
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-image: url("../level-2/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background: size 22px;
+}
+
+/*
  * Remember: 
  *- Be organised, use comments and separate your styles into meaningful chunks
  *  for example: General styles, Navigation styles, Hero styles, Footer etc.
