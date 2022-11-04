@@ -21,6 +21,7 @@ body {
     --grey: #999;
     --orange: rgb(229, 134, 60);
     --orange-dark: rgb(210,106,69);
+    --orange-light: rgb(250, 239, 236);
     --grey-dark: #333;
     --grey-light: #eee;
     --white: #fff;
@@ -40,10 +41,18 @@ header {
     font-size: 0.9rem;
 }
 
- header img {
+header img {
     width: 1.4rem;
 }
 
+.orange-button {
+    background-color: var(--orange-dark);
+    border: none;
+    border-radius: 3px;
+    padding: 14px 30px;
+    font-size: 0.9rem;
+    color: var(--white);
+}
 
 /* Navigation */
 nav ul {
@@ -99,14 +108,6 @@ nav a:hover {
     margin-bottom: 3rem;
 }
 
-#top-half button {
-    background-color: var(--orange-dark);
-    border: none;
-    border-radius: 3px;
-    padding: 14px 30px;
-    font-size: 0.9rem;
-}
-
 #top-half p {
     text-align: center;
 }
@@ -127,7 +128,6 @@ nav a:hover {
 .features {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--grey-light);
     padding-bottom: 4rem;
 }
 
@@ -139,7 +139,45 @@ nav a:hover {
     height: 7rem;
 }
 
+/* Extension - Quote */
+
+.extension-quote {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange-light);
+}
+
+.quote {
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+    height: 14rem;
+}
+
+#quote-text {
+    font-style: italic;
+}
+
+#quote-mark {
+    color: var(--orange-dark);
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.image img{
+    height: 18rem;
+}
+
+.image {
+    height: 18rem;
+}
+
 /* Footer */
+
+footer {
+   border-top: 1px solid var(--grey-light);
+   margin: 3rem auto 0 auto;
+   width: 85%;   
+}
 
 .social-media {
     display: flex;
@@ -164,7 +202,7 @@ nav a:hover {
 footer h5 {
     font-size: 0.8rem;
     font-weight: normal;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 footer h6 {
