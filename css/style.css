@@ -1,9 +1,20 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+ :root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --orange: #f05a28;
+    --white: #fff;
+ }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    
 }
 
 /**
@@ -16,4 +27,441 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* header */
 
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+ }
+
+ .logo{
+    display: block;
+    min-width: 2rem;
+    min-height: 2rem;
+ }
+
+ /* navigation */
+
+ .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+ }
+
+ .nav-items {
+    display: flex;
+    padding: 0 1.5rem;
+    
+ }
+
+ .nav-links {
+    color: var(--grey);
+    text-decoration: none;
+ }
+
+ .nav-links:hover {
+    color: var(--orange);
+ }
+
+ .nav-items:first-child > a {
+    color: var(--grey-dark);
+ }
+
+ .nav-items:first-child > a:hover{
+    color: var(--orange);
+ }
+ /* main */
+
+ main {
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ /* First section */
+
+.hero {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.hero h2 {
+    font-weight: 200;
+    font-size: 35px;
+    text-align: center;
+}
+
+.hero h5 {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-weight: 50;
+    font-size: 20px;
+}
+
+.hero button {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+}
+.hero button:hover {
+    background-color: var(--grey-dark);
+}
+
+.hero button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Second section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-weight: 200;
+    font-size: 35px;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+}
+
+article h5 {
+    font-weight: 200;
+    font-size: 20px;
+    
+}
+
+article img {
+    width: 120px;
+    height: 120px;
+}
+
+.context {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--grey);
+    margin: 0 9rem;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+footer ul li a {
+    display: block;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+footer ul li a img{
+    max-width: 1rem;
+    max-height: 1rem;
+} 
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer h5 {
+    font-weight: 200;
+    color: var(--grey);
+}
+/* level 2 */
+/* container */
+.continer_ads{
+    display: grid;
+    grid-template-columns:1.5fr 2fr ;
+    grid-template-rows:auto;
+}
+.container_photo{
+    background-image: url(/level-2/homepage-feature.png);
+    background-size: cover;
+    height: 100%;
+    background-repeat: none;
+}
+.container_context{
+    padding: 8rem;
+}
+
+.store-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* section one */
+.form-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+}
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* form title */
+.form-section h1 {
+    color: var(--orange);
+}
+
+/* form classes */
+label {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    border: none;
+    gap: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* input style */
+input[type="text"] {
+    height: 30px;
+    padding: 2px;
+}
+
+input:focus {
+    outline-color: var(--orange) !important;
+} 
+
+input[type="checkbox"] {
+    color: var(--orange);
+    background-color: var(--orange);
+}
+
+#postcode {
+    width: 100px;
+    text-transform: uppercase;
+}
+/* select & option */
+select {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+    width: 250px;
+    height: 30px;
+}
+
+select:focus {
+    outline-color: var(--orange) ;
+}
+
+/* radio-box */
+.radio-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-box legend {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grey-dark);
+}
+
+.radio-box ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* changed radio-box color */
+.radio-box input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--grey-dark);
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 2px;
+  display: inline-block;
+  margin-right: .1rem;
+  vertical-align: -3px;
+}
+
+.radio-box input[type="radio"]:checked {
+  background-color: var(--orange);
+}
+
+/* check box */
+.check-box {
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.check-box a {
+    color: var(--orange);
+}
+
+/* change checkbox mark */
+
+.check-box input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--grey-dark);
+  border-radius: 20%;
+  background-clip: content-box;
+  padding: 1px;
+  background-color: var(--white);
+  display: inline-block;
+  margin-right: .1rem;
+  vertical-align: -3px;
+}
+
+.check-box input[type="checkbox"]:checked {
+  background-image: url(/level-2/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+}
+
+/* button */
+button {
+    background-color: var(--orange);
+    color: var(--white);
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+}
+/* section two */
+
+.img-section {
+    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin: 0;
+}
+
+/* tablet and mobile size */
+@media screen and (max-width: 890px) {
+
+    /* fix textbox names */
+    .fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    }
+
+ /* fix positions */
+     .store-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+select {
+    width: 320px;
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.img-section {
+    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+}
+
+.radio-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+}
+
+/* mobile size */
+@media screen and (max-width: 489px) {
+
+
+    .form-section h1 {
+        text-align: center;
+    }
+
+}
