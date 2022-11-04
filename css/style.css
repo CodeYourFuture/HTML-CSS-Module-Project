@@ -1,15 +1,21 @@
 /*
-*
-*
-*
-*
+/*
+/*
+/* --------- General Style --------- */
+/*
 */
-/* --------- General Style ---------   */
 
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   color: black;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  margin: 10px;
 }
 
 a:hover {
@@ -19,11 +25,7 @@ a:hover {
 a,
 li {
   text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-  color: inherit;
+  color: black;
 }
 
 button {
@@ -43,19 +45,13 @@ hr {
   opacity: 30%;
 }
 
+/* -------  IDs --------- */
+
 #navbar-button {
   padding: 10px;
 }
 
-/* ----------  Main ---------- */
-
-.body {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: auto 1fr auto;
-  margin: 10px;
-  margin-right: 0%;
-}
+/* -------- Header adn Main ------ */
 
 header {
   grid-column: 1 / -1;
@@ -64,10 +60,9 @@ header {
   flex-direction: row;
   align-content: center;
   justify-content: space-around;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin-top: 25px;
+  margin-bottom: 15px;
   font-weight: 100;
-  background-color: #fdf6f8;
 }
 
 .navbar-logo {
@@ -79,7 +74,7 @@ header {
   font-size: 45px;
 }
 
-/* --------------- First Section -------------*/
+/* ---------- First Section -------- */
 
 .first-section {
   background-image: url("../img/first-background.jpg");
@@ -106,7 +101,7 @@ header {
   margin-bottom: 5%;
 }
 
-/* --------------- Second Section -------------*/
+/* ---------- Second Section -------- */
 
 .second-section {
   grid-column: 1 / -1;
@@ -130,7 +125,7 @@ header {
   text-align: center;
 }
 
-/* --------------- Third Section -------------*/
+/* ---------- Third Section -------- */
 
 .third-section {
   grid-column: 1 / -1;
@@ -169,7 +164,7 @@ header {
   font-size: 1.5vw;
 }
 
-/* --------------- Footer -------------*/
+/* --------- Footer ---------- */
 
 footer {
   grid-column: 1 / -1;
@@ -187,33 +182,12 @@ h3 {
 .social-media-handles {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin: 0%;
 }
 
-.twitter-handle {
-  grid-column: 1;
-  grid-row: 1;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  opacity: 60%;
-  margin: 10px;
-  padding: 5px;
-}
-
-.facebook-handle {
-  grid-column: 2;
-  grid-row: 1;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  opacity: 60%;
-  margin: 10px;
-  padding: 5px;
-}
-
+.twitter-handle,
+.facebook-handle,
 .instagram-handle {
   width: 30px;
   height: 30px;
