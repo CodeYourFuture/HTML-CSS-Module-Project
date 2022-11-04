@@ -210,3 +210,93 @@ footer h5{
     font-weight: 200;
     color:#b4a3a3;
 }
+/* style store page*/
+.form-sec h1 {
+  color:#c05326;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/*style form*/
+.orderForm {
+  display: flex;
+  flex-direction:column;
+  width: 500px;
+  gap:65px;
+}
+ 
+ .input {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding: 1rem;
+    border: radius 5px;
+  
+}
+
+ .orderForm button {  
+  background-color:#c05326;
+  border: none;
+  padding: 10px 25px;
+  margin-top: -1rem;
+  }
+
+ button:hover {
+  background-color:antiquewhite;
+}
+.fieldset{
+  display: flex;
+  flex-direction:row;
+}
+.radioBox{
+  display: flex;
+  flex-direction:column;}
+  
+.radioBox ul{
+  display: flex;
+  justify-content:space-around;
+  
+  list-style: none;
+
+  
+}
+.form-2{
+  display: flex;
+  flex-direction: column;
+}
+.checkBox{
+  display: flex;
+  
+}
+.form-sec{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+}
+.storePage img{
+  height: 8%;
+  width: 44%;
+}
+.storePage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.address-1 {
+  display: flex;
+  flex-direction: column;
+
+}
+.address-2{
+  display: flex;
+  flex-direction: column;
+
+}
+.fieldset-2{
+  display: flex;
+  flex-direction:row;
+  gap: 30px;
+}
+.check-Box a{
+  color:#c05326
+}
