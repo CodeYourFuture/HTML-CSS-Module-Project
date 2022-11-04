@@ -176,7 +176,6 @@ color:#c05326;
  .main-grid{
   display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
  }
 
  .store-image{
@@ -184,43 +183,45 @@ color:#c05326;
  }
 
  .form-row{
+  display: flex;
+  gap: 20px;
   padding-bottom:30px;
+  padding-top: 50px;
  }
-
+.label-wrap label{
+    display: block;
+}
  .order-karma{
-  padding-bottom:px;
   font-size: 20px;
   color:rgb(223,100,58);
  }
 
- #first-name,{
-  padding-left: 0px;
- }
- #last-name{
-  padding-left: 0px;
- }
- #{
-
- }
- #{
-
- }
- label{
-  padding-right:px;
- }
  fieldset{
   border: none;
   height:806px;
  }
+
  input{
   border-radius: 6px;
  }
- .submit{
-  margin-top: 150px;
+
+ .button{
+  background-color: rgb(223,100,58);
  }
+
  .ora{
   color:#c05326;
+  padding-right:100px;
  }
  
+ .form{
+  padding-left:50px;
+ }
+ #address{
+  padding-left:290px;
+ }
+ #address2{
+  padding-left:290px;
+ }
   
   
