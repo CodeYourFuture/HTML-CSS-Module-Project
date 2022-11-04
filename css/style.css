@@ -165,3 +165,67 @@ h6{
     border-radius: 5px;
     font-size: 15px;
 }
+
+/* store page style */
+
+.maingrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.ordertitle{
+    padding: 20px 30px;
+    font-size: large;
+    color:#ed5412;
+}
+.form-row{
+    padding-bottom: 30px;
+}
+
+#first-name {
+    padding: 5px;
+}
+#last-name {
+    padding: 5px;
+}
+#address{
+    width: 540px;
+    padding: 5px;
+}
+#address2 {
+    width: 540px;
+    padding: 5px;
+}
+
+#cityselect{
+    padding: 5px;
+    width: 250px;
+}
+#postcode{
+    padding: 5px;
+    width:140px;
+}
+label {
+    padding-right: 5px;
+}
+
+fieldset {
+    border: none;
+    height:900px;
+}
+
+input{
+    border-radius: 5px;
+}
+.subbtn{
+    background-color:#ed5412;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.maingrid a{
+    color:#ed5412;
+    border-radius: 5px;
+    font-size: 15px;
+}
