@@ -1,11 +1,250 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header,
+.content,
+.section,
+.footer {
+  padding: 0;
+  max-width: 1440px;
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  margin: 1rem auto 0rem;
+  padding: 0rem 4rem;
+}
+
+.body_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin: 0 auto 3em;
+}
+
+.header_logo {
+  height: 2rem;
+  width: auto;
+}
+
+.navigation_list {
+  display: flex;
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  color: lightslategray;
+}
+a strong {
+  color: var(--grey-dark);
+}
+
+a strong:hover {
+  color: var(--orange-dark);
+}
+
+a:hover {
+  color: var(--orange-dark);
+}
+
+.navigation_item {
+  padding-top: 0.5rem;
+  padding-right: 0rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.main_div {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/img/first-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 9rem 0rem 10rem;
+  margin: 0 auto 2rem;
+}
+.main_div div {
+  color: aliceblue;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 0 auto;
+}
+
+.last_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 0 auto;
+  background-color: #f7eae4;
+}
+
+.last_section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 0 auto;
+  padding: 1rem 3rem;
+}
+
+.last_section > div > h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 1rem 4rem;
+}
+button {
+  border-radius: 0.25em;
+  padding: 0.5em 1.5em;
+  color: aliceblue;
+  background-color: var(--orange-dark);
+  width: 0 auto;
+  margin-top: 2em;
+}
+
+h1,
+p {
+  font-size: 3em;
+  font-weight: 50;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.04em;
+}
+
+p {
+  font-size: 1.75em;
+  color: #d5d2d2;
+}
+
+section h1 {
+  font-size: 2.15em;
+  font-weight: lighter;
+  color: #000000;
+}
+.quote::before {
+  content: ' " ';
+  color: red;
+  font-weight: bold;
+}
+.quote::after {
+  content: ' " ';
+  color: red;
+  font-weight: bold;
+}
+section p {
+  font-size: 1.15rem;
+  font-weight: normal;
+  color: #000000;
+}
+
+button {
+  font-weight: 60;
+}
+/*call to action*/
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+.service_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.25em;
+  padding: 0.5em 1.5em;
+  color: rgb(0, 0, 0);
+  width: 0 auto;
+}
+
+.service_cards img {
+  width: 60%;
+  padding-bottom: 2.5em;
+}
+
+nav {
+  padding: 0 auto;
+}
+
+ul {
+  display: flex;
+  position: relative;
+  padding-inline-start: 0%;
+}
+navigation_list li {
+  list-style: none;
+}
+
+footer div ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  line-height: 90px;
+  font-size: 35px;
+  margin: 0 20px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(194, 191, 191);
+  z-index: 1;
+}
+footer {
+  border-top: 2px solid var(--orange-light);
+}
+
+footer > div {
+  padding-top: 1.5rem;
+}
 /**
  * Add your custom styles below
  * 
@@ -15,5 +254,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-

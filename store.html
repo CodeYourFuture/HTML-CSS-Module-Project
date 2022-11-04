@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img src="img/karma-logo.svg" alt="Logo for karma" class="header_logo" />
+      </a>
+
+      <!-- logo end -->
+
+      <nav>
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a class="navigation_link" href="index.html"><strong> Meet Karma </strong> </a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">How it Works</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">Store</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">Blog</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">Help</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="serv">
+      <div class="form_container">
+        <form action="#" method="submit" target="">
+          <h1 class="fHeader">Order your Karma wifi device today!</h1>
+          <div class="fName">
+            <label for="firstname">First name *</label>
+            <input
+              id="firstname"
+              type="text"
+              autocomplete="on"
+              required=""
+              pattern="[a-zA-Z]{3,10}\s?"
+              title="Must contain at least 3 letters"
+            />
+          </div>
+          <div class="lName">
+            <label for="lastname">Last name *</label>
+            <input
+              id="lastname"
+              type="text"
+              autocomplete="on"
+              required=""
+              pattern="[a-zA-Z]{3,10}\s?"
+              title="Must contain at least 3 letters"
+            />
+          </div>
+          <div class="address">
+            <label for="address">Address *</label>
+            <input
+              id="address"
+              type="address"
+              autocomplete="on"
+              required=""
+              pattern="\s?[0-9]?\s?[a-zA-Z]{1,15}\s?[a-zA-Z]{1,15}\s?"
+              title="Must contain a door number or house name"
+            />
+          </div>
+          <div class="address2">
+            <label for="address2">Address 2</label>
+            <input id="address2" type="address" autocomplete="on" pattern="[a-zA-Z]{1,15}?" />
+          </div>
+          <div class="city">
+            <label for="city">City *</label>
+            <div class="select">
+              <select id="city" name="city">
+                <option value="" selected="">Select your city...</option>
+                <option value="NewYork">New York</option>
+                <option value="Sydney">Sydney</option>
+                <option value="lisbon">Lisbon</option>
+                <option value="london">London</option>
+                <option value="scotland">Scotland</option>
+                <option value="machester">Manchester</option>
+              </select>
+            </div>
+          </div>
+          <div class="postcode">
+            <label for="postcode">Postcode *</label>
+            <input
+              id="postcode"
+              type="postcode"
+              autocomplete="on"
+              required=""
+              pattern="^([a-zA-Z]{1,2}[0-9]{1,2}\s?[0-9][a-zA-Z]{1,2})?$"
+              title="Must  follow uk postcode format "
+            />
+          </div>
+
+          <fieldset class="choose_colour">
+            <label>Select a colour</label>
+            <div class="form_radio">
+              <label class="formStyle">
+                <input id="karmaOrange" type="radio" name="productColor" value="orange" />Karma
+                Orange</label
+              >
+              <label class="formStyle">
+                <input id="spaceGrey" type="radio" name="productColor" value="grey" />Space Grey
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="terms">
+            <label class="agreement">
+              <input type="checkbox" name="agreement" checked="checked" />
+              <span class="checkmark"></span>By placing your order you agree to Karma's
+              <a href="#" target="_blank">Terms and Conditions</a>
+            </label>
+          </fieldset>
+          <button class="place_order" id="">Place my Order</button>
+        </form>
+      </div>
+      <div class="image"></div>
+    </main>
+
+    <footer class="body_block footer">
+      <div>Join us on</div>
+      <div>
+        <ul class="navigation_list">
+          <li class="navigation_footer">
+            <a href="#">
+              <img src="img/twitter-icon.svg" alt="Logo for karma" class="header_logo" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/facebook-icon.svg" alt="Logo for karma" class="header_logo" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/instagram-icon.svg" alt="Logo for karma" class="header_logo" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p><span>&#169;</span> karma Mobility. Inc</p>
+      </div>
+    </footer>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+  </body>
+</html>
