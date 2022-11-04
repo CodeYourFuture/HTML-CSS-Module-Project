@@ -42,6 +42,35 @@ body {
   font-size: smaller;
   margin-right: 60px;
 }
+a:hover {
+  color: red;
+}
+.mainform {
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  text-align: center;
+  color: orange;
+  font-style: normal;
+  font-size: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+}
+.name {
+  display: flex;
+}
+.address {
+  display: flex;
+}
+.store-img {
+  display: flex;
+  width: 50%;
+}
 
 .footer {
   display: flex;
