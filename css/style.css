@@ -42,10 +42,6 @@
     float:left;
 }
     
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
 
 p, h2 {
     text-align: center;
@@ -121,9 +117,132 @@ p, h2 {
     color: #50525a;
   }
 
+.new {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: auto;
+  
+}
+
+.picture {
+  grid-column: 1/2;
+
+}
+
+.text {
+  grid-column: 2/3;
+  font-style: italic;
+  text-align: center;
+  font-size: 42px;
+  line-height: 49.22px;
+  align-items: center;
+width: 548px;
+height: 141px;
+  display: block;
+  padding-top: 96px;
+  padding-bottom: 202px;
+  padding-left: 156px;
+  padding-right: 137px;
+  background: rgba(224, 99, 58, 0.1);
+}
+
+
+.text button {
+  
+display: flex;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+color: white;
+background-color: #e0633a;
+border: none;
+border-radius: 2.5px;
+}
+
+.main-form button {
+  
+  display: flex;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: #e0633a;
+  border: none;
+  border-radius: 2.5px;
+  text-align: left;
+  }
+
+  .term-agree {
+    margin-bottom: 70px;
+  }
+
+.main-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "c p";
+  
+  
+}
+
+.main-form p {
+  font-size: medium;
+}
+
+.main-container {
+  grid-area: c;
+  grid-column: 1/2;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  
+}
+
+.picture-form {
+  grid-area: p;
+  grid-column: 2/3;
+  background-image: url(file:///C:/Users/%D0%98%D0%BD%D0%BD%D0%B0/Desktop/CYF_Folder/HTML-CSS-Module-Project/level-2/store-image_by-andrew-neel-unsplash.jpg);
+  height: 700px;
+  width: 300px;
+  color:white;
+}
+
+.heading-form {
+  color: 
+  #DE6E49;
+  font-size: 20px; 
+}
+
+
+
+select {
+  color: #666666
+  font-family'Roboto';
+font-style: italic;
+line-height: 25px;
+}
+
   #line {
     border-bottom: 1px solid #C9C4C4;
-    ;
+
   }
 .join {
     display: flex;
