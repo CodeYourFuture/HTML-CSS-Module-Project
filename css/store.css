@@ -1,10 +1,39 @@
-:root {
-    --main-color: #f15b2a;
-    --text-color: rgba(0, 0, 0, 0.6);
-    --secondary-color: rgba(0, 0, 0, 0.2);
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.1);
+    padding: 10px 70px 10px 100px;
   }
-main {
-    margin-top: 50px;
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  li:first-child {
+    color: rgb(77, 72, 72);
+    font-weight: 550;
+  }  
+  li:hover {
+    color: rgb(255, 98, 0);
+  }
+
+  /* main*/
+
+  main {
+    padding-bottom: 50px;
   }
   
   button {
@@ -14,64 +43,92 @@ main {
     border-radius: 4px;
     padding: 12px 25px 12px 25px;
   }
-
-  
-  .form1 {
-    padding: 130px 160px;
-    padding-right: 130px;
-    font-size: 30px;
-    font-weight: 200;
-    color: var(--main-color);
+      
+  h1 {
+        padding-top: 30vh;
+        font-weight: 300;
+        font-size: 250%;
+        letter-spacing: 2px;
+        margin: 0;
   }
-  
-h1 {
-    font-size: 68px;
+  ..main1 {
+    display: grid;
+    grid-template-columns: 1fr 501px 1fr 600px;
+    grid-template-rows: 5rem auto auto auto 5rem;
+    grid-template-areas:
+      ". . . m"
+      ". c . m"
+      ". . . m"
+      ". a . m"
+      ". . . m";
+    padding: 0%;
+    text-align: left;
+    font-family: "Roboto";
     font-weight: 500;
-    color: var(--main-color);
+  }
+  .main1 h1 {
+    grid-area: H;
+    font-size: 50px;
+    color: #de6e49;
+  }
+  .img {
+    grid-area: M;
+    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .main1 {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "a  a  b  b  b"
+      "c  c  c  c  c"
+      "d  d  d  d  d"
+      "e  e  e  f  f"
+      "g  g  g  g  g"
+      "G  G  G  G  G"
+      "B  B  B  B  B";
+    gap: 15px 8px;
+    font-size: 21px;
+    color: #666666;
+  }
+  #a {
+    grid-area: a;
   }
   
-  background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-
-
-
+  #b {
+    grid-area: b;
+  }
   
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-    .form1 {
-        padding-top: 80px; 
-    }
-     
- 
-@media (max-width: 370px) {
-.form1  {
-    padding-top: 90px;
-    padding-bottom: 120px;
-    margin-bottom: 50px;
-}
-    
-
- @media (max-width: 767px) {
-    .form1 {
-        padding-top: 20px;
-    }
-     
+  #c {
+    grid-area: c;
+  }
   
- @media (max-width: 600px) {
-        .form1 {
-          padding-top: 30px;
-          font-size: 24px;
-        }
-
-
- 
+  #d {
+    grid-area: d;
+  }
+  
+  #e {
+    grid-area: e;
+  }
+  
+  #f select{
+    font-style: italic;
+  }
+  
+  #g {
+    grid-area: g;
+    justify-content: flex-end;
+  }
+  
+  
+  
+  #B {
+    grid-area: B;
+  }
+  .main1 fieldset {
+    border: 0;
+    margin: 0;
+  }
