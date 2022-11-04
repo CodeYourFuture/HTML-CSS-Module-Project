@@ -57,6 +57,8 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/*forms*/
+
 .heading {
   color: #c05326;
   font-weight: 500;
@@ -65,42 +67,89 @@ main {
   padding-top: 70px;
   display: block;
   align-items: flex-start;
+  margin-bottom: 50px;
 }
+.heading-up {
+  margin-right: 50px;
+}
+
 .heading-down {
-  margin-right: 90px;
+  margin-right: 140px;
 }
 .name {
   display: flex;
   justify-content: space-between;
+  margin-left: 80px;
 }
 .name > p {
-  margin: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+#firstname {
+  width: 150px;
+  height: 30px;
+}
+#lastname {
+  width: 150px;
+  height: 30px;
 }
 
 .address {
   margin: 10px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#address {
+  width: 350px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+#address2 {
+  width: 350px;
+  height: 30px;
 }
 
 .location {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-left: 68px;
+  margin-bottom: 50px;
 }
 .location > p {
   margin: 10px;
 }
+#city {
+  width: 180px;
+  height: 30px;
+}
+
+#postcode {
+  width: 150px;
+  height: 30px;
+}
 
 .colour {
   margin: 10px;
+  margin-left: 97px;
+  margin-bottom: 70px;
 }
-.terms {
+.colour-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 155px;
+}
+.terms,
+.submit {
   margin: 10px;
+  margin-left: 100px;
+}
+
+.terms {
+  margin-bottom: 30px;
 }
 span {
   color: #c05326;
-}
-
-.submit {
-  margin: 10px;
 }
 
 .submit-order {
