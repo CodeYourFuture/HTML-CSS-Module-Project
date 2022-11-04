@@ -1,19 +1,162 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+ :root {
+    --grey-dark: #1D1E21;
+    --grey-med: #53565C;
+    --grey-light: #8A8F98;
+    --orange-dark: #c05326;
+  }
+
+body, h1, h2, h3, h4 {
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: var(--grey-dark);
+    font-weight: lighter;
 }
 
 /**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
+@@ -25,143 +16,4 @@ body, h1, h2, h3, h4 {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* headings */
 
+h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: white;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+/* main / re-used */
+.container {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* header */
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.splash {
+    align-items: center;
+    justify-content: center;
+    background-image:  url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+}
+
+/* navigation */
+
+.navigation {
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0rem 1rem;
+    color: var(--grey-light);
+}
+
+.nav-current {
+    color: var(--grey-med);    
+}
+
+.nav-link {    
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-item :hover {
+    color: var(--orange-dark);
+}
+
+/* buttons */
+
+button {
+    background-color: var(--orange-dark);
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* selling points */
+.sellingpoints {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.features {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.feature-item {
+
+}
+
+.features img {
+    height: 150px;
+    width: auto;
+}
+
+/* footer */
+
+.footer {
+    min-height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socials {
+    align-items: center;
+}
+
+.socials img {
+    max-height: 16px;
+    width: auto;
+    padding: 0 1rem;
+}
