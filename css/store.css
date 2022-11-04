@@ -1,0 +1,122 @@
+label {
+  display: block;
+  margin: 1px;
+  padding: 1px;
+}
+
+.field {
+  margin: 1px;
+  padding: 1px;
+}
+/*
+input {
+  background-color: #d5d2d2;
+  border: none;
+  outline: 2px solid rgb(174, 172, 172);
+  border-radius: 5px;
+  width: 100%;
+}
+*/
+.form_radio {
+  display: flex;
+  justify-items: center;
+}
+
+.serv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "form image";
+}
+
+.image {
+  grid-area: image;
+  background-image: url(/level-2/store-image_by-andrew-neel-unsplash.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form > fieldset {
+  border: 0;
+  padding: 0rem;
+}
+.serv form {
+  grid-area: form;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "fHeader fHeader"
+    "fName lName"
+    "address address"
+    "address2 address2"
+    "city postcode"
+    "choose_colour choose_colour"
+    "terms terms"
+    "button none";
+  row-gap: 1rem;
+  column-gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 4rem;
+}
+.fHeader {
+  grid-area: fHeader;
+
+  text-align: left;
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  color: #c05326;
+}
+
+.fName {
+  grid-area: fName;
+}
+.lName {
+  grid-area: lName;
+}
+.address {
+  grid-area: address;
+}
+.address2 {
+  grid-area: address2;
+}
+.city {
+  grid-area: city;
+}
+.postcode {
+  grid-area: postcode;
+}
+.choose_colour {
+  grid-area: choose_colour;
+  padding: 1.5rem 0;
+}
+.terms {
+  grid-area: terms;
+  padding: 2rem 0rem;
+}
+.place_order {
+  grid-area: button;
+}
+
+.formStyle {
+  margin-right: 1.5em;
+  display: flex;
+}
+
+input#karmaOrange,
+#spaceGrey {
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+input[type="radio"]#karmaOrange,
+#spaceGrey {
+  accent-color: #c05326;
+  border: 10px solid gray;
+}
+input#address,
+#address2 {
+  width: 100%;
+}
