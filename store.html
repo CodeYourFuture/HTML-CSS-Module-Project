@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>form</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+
+    <header>
+        <img class="logo-header" src="img/karma-logo.svg" alt="karma logo">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-items" ><a class="nav-links" href="/index.html">Meet Karma</a></li>
+                <li class="nav-items" ><a class="nav-links" href="#">How it Works</a></li>
+                <li class="nav-items" ><a class="nav-links" href="#">Store</a></li>
+                <li class="nav-items" ><a class="nav-links" href="#">Blog</a></li>
+                <li class="nav-items" ><a class="nav-links" href="#">Help</a></li>
+                <li class="nav-items" ><a class="nav-links" href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="storePage">
+     <section class="form-sec">
+        <h1>Order your Karma WiFi device today!</h1>          
+        
+        <form class="orderForm">
+            <div class="fieldset">
+             <div class="form-1">
+               <label for="first">First Name:*</label>
+               <input required class="input" type="text" name="first_name" id="first" />
+              </div>
+
+             <div class="form-1">
+              <label for="last">Last Name:*</label>
+              <input required class="input" type="text" name="last_name" id="last" />
+             </div>
+            </div>
+<div class="address-1">
+            <label for="address">Address:*</label>
+            <input required class="input" type="text" name="address" id="address" />
+</div>
+<div class="address-2">
+            <label for="address2">Address2:</label>            
+            <input class="input" type="text" name="address2" id="address2" />  
+</div>
+            <div class="fieldset-2">
+                <div class="form-2">
+            <label for="pc"> Postcode:*</label> 
+            <input required pattern="[A-Za-z]{3}" name="postcode" id="pc"/></div>
+            <div class="form-2">
+            <label for="city">City *</label>
+            <select name="city" id="city" required>                
+                <option value="" disabled selected>Select your city...</option>
+                <option value="london">London</option>
+                <option value="leeds">Leeds</option>
+                <option value="manchester">Manchester</option>
+            </select></div>
+            </div>
+            
+
+            <div class="radioBox">
+            <legend>Select a color</legend>
+            <ul>
+              <li><input type="radio" value="Karma Orange" name="colour" id="colour" />
+                  <label for="colour">Karma Orange</label></li>
+            
+              <li><input required type="radio" value="space gray" name="colour" id="couler" />
+                  <label for="colour">Space Gray</label></li> 
+            </ul>  
+            </div>   
+            <div class="check-Box">
+                <input type="checkbox" id="termsandconditions" required>
+                <label for="termsandconditions">By placing your order you agree to <a href="">Karma's Terms and Conditions</a> *</label>
+              </div>
+
+            <button>Place my order</button>
+            </form>
+        
+     </section>
+     <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="decorative">
+
+    </main>
+    <footer>
+        <h4>Join us on:</h4>
+        <ul>
+           <li><a href="https://www.twitter.com/" target="_blank">
+            <img src="img/twitter-icon.svg" alt="Twitter Logo" /></a></li>
+          
+          <li><a href="https://www.facebook.com/" target="_blank">
+            <img src="img/facebook-icon.svg" alt="Facebook Logo" /></a></li>
+
+         <li><a href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram-icon.svg" alt="Instagram Logo" /></a></li> 
+        </ul>
+        <h5> &copy;	Karma Mobility, Inc.</h5>
+    </footer>
+    
+</body>
+</html>
