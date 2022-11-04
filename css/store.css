@@ -34,6 +34,7 @@ header {
 
   main {
     padding-bottom: 50px;
+    margin: 0;
   }
   
   button {
@@ -51,7 +52,8 @@ header {
         letter-spacing: 2px;
         margin: 0;
   }
-  ..main1 {
+  /*.main1 {
+
     display: grid;
     grid-template-columns: 1fr 501px 1fr 600px;
     grid-template-rows: 5rem auto auto auto 5rem;
@@ -67,9 +69,17 @@ header {
     font-weight: 500;
   }
   .main1 h1 {
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
     grid-area: H;
     font-size: 50px;
     color: #de6e49;
+    margin-top: 10px;
   }
   .img {
     grid-area: M;
@@ -128,7 +138,12 @@ header {
   #B {
     grid-area: B;
   }
+  */
   .main1 fieldset {
     border: 0;
     margin: 0;
+  }
+  .footer1 {
+    display: flex;
+    flex-wrap: wrap;
   }
