@@ -16,4 +16,258 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* navgivation */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap:25px;
+}
 
+.nav-link{
+    color: var(--grey-dark);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a:hover{
+color:#c05326;
+  }
+
+#karma{
+    font-weight:bold;
+}
+
+.logo{
+    display:flex;
+    width:20px;
+    padding-left:30px;
+}
+
+
+.gallery {
+   position:relative;
+   height:50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction:column;
+       
+  }
+  .gallery>img{
+    width: 100%;
+    height: 100%;
+   object-fit:cover;
+  }
+  .background{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+   left:0;
+  }
+
+  .words-center{
+    color:white;
+    z-index: 3;
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .image-row{
+    display:flex;
+
+  }
+  .icons{
+    width:250px;
+    height:150px;
+  }
+  .text-align-center{
+    text-align:center;
+  }
+
+  button{
+    background-color:rgb(223,100,58);
+    border:none;
+  border-radius:5px;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:white;
+  }
+
+  h1,h2,p{
+    font-weight:normal;
+  }
+  .icons2{
+    width: 20px;
+    height: 15px;
+    border-radius: 90%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    opacity: 1.5;
+  }
+
+  .icon-border{
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .footer-opacity{
+    opacity: 0.40;
+    font-size:10px;
+  }
+  h4{
+    font-size:15px;
+    font-weight: normal;
+    border-top:1px solid #ccc;
+    padding-top:15px;
+  }
+
+  .line{
+     border-top: 2px solid var(--black-light);
+     text-align:center;
+     padding-top:50px;
+    }
+  
+  .ex{
+    display: flex;
+    flex-direction:row;
+    gap:150px;
+    text-align: center;
+    
+  
+    
+
+  } 
+
+  .orange{
+    background-color: rgb(250,239,236);
+  }
+
+  .quote{
+    padding-top:130px;
+    padding-left: 200px;
+    padding-right:250px;
+    
+  }
+  .size{
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+
+  }
+  .lady{
+    object-fit: cover;
+  }
+
+ .main-grid{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .store-image{
+ padding-left: 150px;
+ }
+
+ .form-row{
+  display: flex;
+  gap: 20px;
+  padding-bottom:30px;
+ }
+
+.label-wrap{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+label{
+  padding-bottom:5px;
+}
+.legend{
+  margin-left: 15px;
+  padding-bottom:8px;
+  padding-top:20px;
+}
+.select{
+  margin-left: 15px;
+}
+.check{
+  margin-left: 15px;
+  padding-top:20px;
+}
+
+.checker{
+  font-size: smaller;
+  
+}
+#city-select{
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius: 6px;
+  padding-left:105px;
+  padding-right:105px;
+}
+ .order-karma{
+  font-size: 30px;
+  color:rgb(223,100,58);
+  margin-left: 10px;
+ }
+
+ fieldset{
+  border: none;
+  color:rgb(114,114,114)
+ }
+
+ input{
+  border-radius: 6px;
+  padding-top:20px;
+  border-width:thin;
+ }
+
+ .button{
+  background-color: rgb(223,100,58);
+  margin-top: 25px;
+ }
+
+ .ora{
+  color:#c05326;
+  padding-right:100px;
+ }
+ 
+ .form{
+  padding-left:80px;
+ }
+ #address{
+  padding-left:390px;
+ }
+ #address2{
+  padding-left:390px;
+ }
+ #first-name{
+  padding-left:48px;
+  padding-right:45px;
+ }
+ #last-name{
+  padding-left:48px;
+  padding-right:45px;
+ }
+  nav{
+    padding-right:50px;
+  }
+  
+  
