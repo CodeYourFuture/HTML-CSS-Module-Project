@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/karma-logo.svg" alt="karma-logo" />
+      <nav>
+        <ul>
+          <li>Meet Karma</li>
+          <li>How it Works</li>
+          <li style="color: rgb(226, 124, 0); font-weight: 500">Store</li>
+          <li>Blog</li>
+          <li>Help</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="storeContainer">
+        <div class="leftForm fxdc-jcc-aic">
+          <h1 class="storeTitle">Order your Karma wifi <br />device today!</h1>
+          <form action="">
+            <div class="fillForm">
+              <div class="firstName fxdc">
+                <label for="firstname">First name *</label>
+                <input
+                  id="firstname"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z]+.{2,}"
+                />
+              </div>
+              <div class="lastName fxdc">
+                <label for="lastname">Last name *</label>
+                <input
+                  id="lastname"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z]+.{2,}"
+                />
+              </div>
+              <div class="address fxdc">
+                <label for="address">Address *</label>
+                <input
+                  id="address"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z0-9\s]+.{5,30}"
+                />
+              </div>
+              <div class="address2 fxdc">
+                <label for="address2">Address 2</label>
+                <input id="address2" type="text" />
+              </div>
+              <div class="city fxdc">
+                <label for="city">City *</label>
+                <select id="city" required>
+                  <option value="" selected disabled hidden>
+                    Select your city...
+                  </option>
+                  <option value="London">London</option>
+                  <option value="Birmingham">Birmingham</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="Yorkshire">Yorkshire</option>
+                  <option value="Liverpool">Liverpool</option>
+                  <option value="Sheffield">Sheffield</option>
+                </select>
+              </div>
+              <div class="postCode fxdc">
+                <label for="postcode">Postcode *</label>
+                <input
+                  type="text"
+                  id="postcode"
+                  required
+                  pattern="[a-zA-Z0-9\s]+.{6,8}"
+                />
+              </div>
+            </div>
+
+            <div class="otherBox">
+              <p>Select a colour</p>
+              <div class="sameLine">
+                <input type="radio" name="radio" id="karmaOrange" />
+                <label for="karmaOrange">Karma orange</label>
+                <input type="radio" name="radio" id="spaceGrey" />
+                <label for="spaceGrey">Space Grey</label>
+              </div>
+
+              <input type="checkbox" id="agree" required />
+              <label for="agree"
+                >By placing your order you agree to Karma's
+                <a href="#">Terms and Conditions</a>. *</label
+              >
+            </div>
+
+            <button>Place my order</button>
+          </form>
+        </div>
+        <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="" />
+      </section>
+    </main>
+    <footer>
+      <p class="join">Join us on</p>
+      <div class="icons">
+        <div class="icon">
+          <img src="./img/twitter-icon.svg" alt="twitter-icon" />
+        </div>
+        <div class="icon">
+          <img src="./img/facebook-icon.svg" alt="facebook-icon" />
+        </div>
+        <div class="icon">
+          <img src="./img/instagram-icon.svg" alt="instagram-icon" />
+        </div>
+      </div>
+      <p class="copyright">© Karma Mobility, Inc.</p>
+    </footer>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+  </body>
+</html>
