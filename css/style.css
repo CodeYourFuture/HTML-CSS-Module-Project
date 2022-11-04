@@ -18,6 +18,7 @@ h1 {
   margin: auto;
   margin-top: auto;
   font-size: 40px;
+  color: white;
 }
 h2 {
   margin: auto;
@@ -38,8 +39,8 @@ h3 {
 .header {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
-  margin: 15px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .navbar-logo {
@@ -166,6 +167,42 @@ hr {
   border-style: inset;
   border-width: 1px;
 }
+
+.section-two {
+  background-color: rgb(250, 235, 239);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 5px solid blue;
+}
+
+.container {
+  border: 5px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.connection {
+  color: black;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+.woman {
+  width: 40%;
+}
+.button-two {
+  background-color: darkorange;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 6px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
