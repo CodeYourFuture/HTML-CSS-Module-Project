@@ -45,30 +45,111 @@ body {
 a:hover {
   color: red;
 }
-.mainform {
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.main-section {
   display: flex;
   flex-direction: row;
 }
+
 h1 {
-  text-align: center;
   color: orange;
-  font-style: normal;
+  font-weight: 100;
   font-size: 30px;
 }
+
 .form {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: flex-start;
   width: 50%;
+  margin-right: 2%;
+  margin-left: 3%;
 }
+
 .name {
   display: flex;
+  flex-direction: row;
 }
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
 .address {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.field-2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+.city {
+  display: flex;
+  flex-direction: row;
+}
+
+.field-3 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.field-4 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 5%;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 1.5vw;
+}
+
+.select-color {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-margin {
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.checkbox {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.checkbox > input {
+  margin-right: 15px;
+}
+
+.button-order {
+  background-color: rgb(204, 82, 38);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
 }
 .store-img {
-  display: flex;
   width: 50%;
 }
 
