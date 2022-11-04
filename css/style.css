@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+<<<<<<< HEAD
   display: grid;
   position: relative;
   justify-content: center;
@@ -23,6 +24,17 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+=======
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  text-align: center;
+  align-items: center;
+
+  /*align-items: center;
+  
+  margin: 1rem 1rem;*/
+>>>>>>> a2ecc1e8d674dbbec225de7bd8124fdcd083a35e
 }
 
 /*header*/
@@ -63,6 +75,7 @@ header {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+<<<<<<< HEAD
 /*hero*/
 
 hero {
@@ -82,6 +95,66 @@ hero {
 
 .hero_title {
   font-weight: lighter;
+=======
+/* header*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*nav {
+  padding-left: 5rem;
+}*/
+
+.logo_header {
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+}
+
+.navigation_list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation_link {
+  display: flex;
+  text-decoration: none;
+  color: gray;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+#navigation_link_1 {
+  color: black;
+}
+.navigation_link:hover {
+  color: rgb(255, 119, 0);
+}
+#navigation_link_1:hover {
+  color: rgb(255, 119, 0);
+}
+
+/*hero*/
+
+hero {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://raw.githubusercontent.com/BoshraM/HTML-CSS-Module-Project/99d5c3fe44175a5563c36cd7806add33f0c3c670/img/first-background.jpg");
+  background-size: cover;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  padding: 5rem;
+  justify-content: center;
+}
+#hero_title {
+  font-weight: lighter;
+  margin: 0rem 0rem 0rem 0rem;
+>>>>>>> a2ecc1e8d674dbbec225de7bd8124fdcd083a35e
   font-size: 3.5rem;
 }
 
@@ -99,6 +172,7 @@ hero {
   border: none;
 }
 
+<<<<<<< HEAD
 /*main*/
 
 main {
@@ -202,7 +276,83 @@ footer {
   margin-right: 0.5rem;
 }
 
+=======
+/*section*/
+
+#title_section {
+  font-size: 2.5rem;
+  margin: 3rem 2rem 1rem 2rem;
+  font-weight: lighter;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+figcaption {
+  margin: 0px;
+  font-size: 1.5rem;
+}
+.img_section {
+  width: 100px;
+  height: 100px;
+
+  margin-bottom: 1rem;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-top: 0.5px solid rgb(202, 200, 200);
+  padding-left: 17rem;
+  padding-right: 17rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.navigation_list_footer {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0rem;
+}
+
+.logo_footer {
+  display: flex;
+  margin: 0rem;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.75rem;
+  border: 0.25px solid rgb(202, 200, 200);
+  border-radius: 100%;
+  margin: 0.5rem;
+}
+
+>>>>>>> a2ecc1e8d674dbbec225de7bd8124fdcd083a35e
 .footer_email {
   color: rgb(202, 200, 200);
   font-style: non;
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 600px) {
+  body {
+    position: fix;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+>>>>>>> a2ecc1e8d674dbbec225de7bd8124fdcd083a35e
