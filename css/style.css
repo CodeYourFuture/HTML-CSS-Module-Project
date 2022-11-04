@@ -173,13 +173,54 @@ color:#c05326;
     object-fit: cover;
   }
 
-  .store-image{
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  
+ .main-grid{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+ }
 
+ .store-image{
+ padding-left: 350px;
+ }
+
+ .form-row{
+  padding-bottom:30px;
+ }
+
+ .order-karma{
+  padding-bottom:px;
+  font-size: 20px;
+  color:rgb(223,100,58);
+ }
+
+ #first-name,{
+  padding-left: 0px;
+ }
+ #last-name{
+  padding-left: 0px;
+ }
+ #{
+
+ }
+ #{
+
+ }
+ label{
+  padding-right:px;
+ }
+ fieldset{
+  border: none;
+  height:806px;
+ }
+ input{
+  border-radius: 6px;
+ }
+ .submit{
+  margin-top: 150px;
+ }
+ .ora{
+  color:#c05326;
+ }
  
   
   
