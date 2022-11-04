@@ -48,7 +48,7 @@
             <a class="nav3" href="#">How it works</a>
           </li>
           <li class="nav2">
-            <a class="nav3" href="#">Store</a>
+              <a class="store" href="store.html">Store</a>
           </li>
           <li class="nav2">
             <a class="nav3" href="#">Blog</a>
@@ -65,30 +65,30 @@
 
     </header>
 
-    <main>
+    <main class="main1">
      
         <div class="form1">
-          <h1>Order you karma wifi today</h1>
+          <h1>Order you karma wifi device today</h1>
             <img src="store-image_by-andrew-neel-unsplash.jpg" alt="devices" width="120" height="120"/>
           <div>
-            <form class="row g-3">
-              <div class="col-md-6">
+            <form class="form2">
+              <div class="first_name">
                 <label for="fname" class="form-label">First Name*</label>
                 <input type="name" class="form-control" id="fname" required>
               </div>
-              <div class="col-md-6">
+              <div class="last_name">
                 <label for="Lname" class="form-label">Last Name*</label>
                 <input type="name" class="form-control" id="lname" required>
               </div>
-              <div class="col-12">
+              <div class="adress_1">
                 <label for="inputAddress" class="form-label">Address 1*</label>
                 <input type="text" class="form-control" id="inputAddress" required>
               </div>
-              <div class="col-12">
+              <div class="adress_2">
                 <label for="inputAddress2" class="form-label">Address 2</label>
                 <input type="text" class="form-control" id="inputAddress2">
               </div>
-              <div class="form-group col-xxl-4">
+              <div class="post_code">
                 <label for="inputPostcode">Postcode *</label>
                 <input type="text" class="form-control input-text" id="inputPostcode"
                     name="inputPostcode" required>
@@ -97,7 +97,7 @@
 
           </div>
           
-            <div>
+            <div class="region">
             <label for="git">select your Region </label>
 <select id="git" name="s">
   
@@ -108,14 +108,18 @@
  </select>
 
           </div>
-<div>
-  <input id="color" type="radio" name="o" value="color" />
-<label for="color">karma orange</label>
-  
-  <input id="color" type="radio" name="o" value="color" />
-<label for="color">space grey</label>
-</div>
-        </div>
+          <fieldset>
+            <legend>select a color</legend>
+            <div class="karma_orange">
+              <input id="color" type="radio" name="o" value="color" />
+            <label for="color">karma orange</label>
+              
+              <input id="color" type="radio" name="o" value="color" />
+            <label for="color">space grey</label>
+            </div>
+          </fieldset>
+
+        
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
           
@@ -126,10 +130,10 @@
           </div>
 
         <div>
-          <button>place my order</button>
+          <button class="submit_button">place my order</button>
         </div>
-        <div class="RHS">
-          <img class="rhsImage" src="store-image_by-andrew-neel-unsplash.jpg" alt="image by andrew">
+        <div class="image1">
+          <img class="image2" src="store-image_by-andrew-neel-unsplash.jpg" alt="image by andrew">
 
       </div>
     
