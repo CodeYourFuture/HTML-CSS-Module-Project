@@ -42,27 +42,28 @@ main {
   border-bottom: 1px solid lightgrey;
 }
 
-/*Navigation*/
+/*nav*/
 
-.navigation_list {
+.nav-container {
   display: flex;
-  list-style: none;
-  padding-left: 100px;
+  justify-content: center;
+  padding: 20px 10px;
 }
-.navigation_item {
-  padding: 0.5em 0;
+.logo {
+  margin-right: 100px;
 }
-.navigation_link {
-  color: var(--grey-dark);
-  margin: 8px;
+.bars {
+  display: flex;
+  margin-left: 240px;
+  justify-content: space-evenly;
 }
-.navigation_link:hover {
+.nav-link {
+  padding-right: 12px;
+  color: grey;
+  text-decoration: none;
+}
+.nav-link:hover {
   color: #c05326;
-}
-
-.navigation_item-l {
-  margin-left: 70px;
-  margin-right: 400px;
 }
 
 /*wifi*/

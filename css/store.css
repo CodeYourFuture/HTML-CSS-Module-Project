@@ -1,0 +1,161 @@
+body,
+button {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header,
+.content,
+.footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/*nav*/
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  background: rgb(248, 244, 244);
+  padding: 20px 10px;
+}
+.logo {
+  margin-right: 100px;
+}
+.bars {
+  display: flex;
+  margin-left: 240px;
+  justify-content: space-evenly;
+}
+.nav-link {
+  padding-right: 12px;
+  color: grey;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #c05326;
+}
+
+/*main*/
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.heading {
+  color: #c05326;
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 70px;
+  display: block;
+  align-items: flex-start;
+}
+.heading-down {
+  margin-right: 90px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.name > p {
+  margin: 10px;
+}
+
+.address {
+  margin: 10px;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+.location > p {
+  margin: 10px;
+}
+
+.colour {
+  margin: 10px;
+}
+.terms {
+  margin: 10px;
+}
+span {
+  color: #c05326;
+}
+
+.submit {
+  margin: 10px;
+}
+
+.submit-order {
+  color: #fff;
+  background: #c05326;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 5%;
+}
+
+.forms {
+  border-bottom: 1px solid lightgrey;
+}
+
+/*footer*/
+.footer {
+  margin-top: 2rem;
+}
+
+.footer_content {
+  border-top: 1px solid var(--grey-light);
+  padding-top: 2rem;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.karma {
+  color: gray;
+}
+
+.twitter {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-right: 5px;
+}
+.facebook {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.instagram {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-left: 5px;
+}
