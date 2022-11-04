@@ -173,11 +173,9 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 5px solid blue;
 }
 
 .container {
-  border: 5px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,16 +184,20 @@ hr {
 }
 
 .connection {
-  color: black;
+  color: rgb(79, 75, 75);
   text-align: center;
   font-style: italic;
   font-size: 30px;
+}
+.span {
+  color: darkorange;
+  font-size: larger;
 }
 .woman {
   width: 40%;
 }
 .button-two {
-  background-color: darkorange;
+  background-color: rgb(204, 82, 38);
   color: white;
   padding: 14px 25px;
   text-align: center;
