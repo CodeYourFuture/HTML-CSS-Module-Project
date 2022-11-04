@@ -21,8 +21,8 @@ header {
   justify-content: space-around;
   height: 5rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   background-color: rgba(196, 196, 196, 0.1);
+  border-bottom: 0.01rem solid rgb(216, 219, 220);
 }
 
 .logo1 {
@@ -117,9 +117,7 @@ hr {
 
 /* footer */
 
-footer {
-  background-color: yellow;
-}
+
 
 p {
   text-align:center;
@@ -153,22 +151,25 @@ h6{
   font-size: 15px;
 }
 
-/* form section */
+/* adding a new STORE PAGE that allows users to buy a Karma device using an order form */
 
 .form-container {
-  /* background-color:rgb(161, 184, 234); */
   height: 40rem;
   width: 100%;
   font-family: roboto;
-  color: #DE6E49;
   display: flex;
   flex-direction: row;
-
-
+  margin: 0;
+  border-bottom: 0.01rem solid rgb(216, 219, 220);
+  color: #666666;
 }
-/*  */
+
+h1 {
+  color: #DE6E49;
+}
+
+
 .form {
-  background-color: chartreuse;
   height: 40rem;
   width: 50%;
   display: flex;
@@ -179,7 +180,7 @@ h6{
 
 .form-picture {
   width: 50%;
-  height: 40rem;
+  height: 100%;
 }
 
 .form-picture img {
@@ -192,10 +193,11 @@ h6{
   flex-direction: row;
   justify-content: space-between;
   column-gap: 12px;
-
 }
+
 #username {
   width: 100%;
+
   
 }
 
@@ -213,7 +215,94 @@ h6{
 
 .drop-box {
   display: flex;
-  flex-direction: column;
-  column-gap: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 1rem;
 }
+
+.drop-box :nth-last-child(1) {
+  width: 100%;
+}
+
+.drop-box :nth-last-child(2) {
+  width: 100%;
+}
+
+.radio {
+  padding: 1rem 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.order input {
+  background-color: #DE6E49;
+  width: 10rem;
+  border: 0;
+  border-radius: 0.50rem;
+  padding: 0.7rem;
+  color:#ffffff;
+}
+
+/*CLOSED*/
+
+/*extending the homepage by adding a new block to it*/
+
+.extension {
+  
+  display: flex;
+  width: 100%;
+  height: 22rem;
+  padding: auto;
+}
+
+.section{
+  width: 45%;
+}
+
+.section-2 {
+  background-color: rgba(224, 99, 58, 0.1);
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.extension-text {
+  font-family: 'Roboto';
+  width: 40%;
+  text-align: center;
+  align-content: center;
+
+}
+
+.button :first-child {
+ text-decoration: none;
+ color: #ffffff;
+ background-color: #E0633A;
+ border-radius: 0.5rem;
+ padding: 1rem;
+ font-size: 15px;
+}
+
+.sec2-quote {
+  color: red;
+}
+
+/*CLOSED*/
+
+
+
+
+
+
+
+
+
 

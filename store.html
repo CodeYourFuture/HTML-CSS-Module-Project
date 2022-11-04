@@ -22,15 +22,6 @@
           </ul>
         </nav>
     </header> 
-<hr 1>
-
-
-
-
-
-
-
-
 <div class="form-container">
     <form class="form">
         <h1>Order your Karma wifi<br>device today!</h1>
@@ -50,11 +41,11 @@
             
             <label for="email">Address 2</label>
             <input id="email" type="email"/>
-<div class="drop-box">
-  <container>
+<container class="drop-box">
+  <div class="drop-list">
     <label for="city">city*</label>
-      <select id="city" name="city">
-        <option value="city" selected>Select your city</option>
+      <select  id="city" name="city">
+        <option value=" " desabled selected hidden>select your city...</option>
         <option value="Lima">Lima</option>
         <option value="Caracas">Caracas</option>
         <option value="Buenos Aires">Buenos Aires</option>
@@ -69,50 +60,48 @@
         <option value="Belmopan">Belmopan</option>
         <option value="Panama">Panama</option>
       </select>
-    </container>
-    <container>
+  </div>
+  <div>
+    <label for="postcode">Postcode*</label>
+    <input id="postcode" type="text" name="postcode" required />
+  </div>
+</container>
+<container class="radio">
+  <fieldset>
+    <legend>Select a Color</legend>
+    <input id="medium" type="radio" name="size" value="medium" checked />
+    <label for="medium">Karma orange</label>
 
-
-
-
-    </container>
+    <input id="large" type="radio" name="size" value="large" />
+    <label for="large">Space Grey</label>
+  </fieldset>
+</container>
+<div class="checkbox">
+    <fieldset>
+      <input id="apples" type="checkbox" name="favourite-fruit" value="apples" />
+      <label for="apples">By placing your order you agree to Karma's Terms and Conditions.*</label>
+    </fieldset>
 </div>
-
-
-
+<div class="order">
+  <input type="submit" value="Place my order">
+</div>
 </form>
     <div class="form-picture">
         <img src="/level-2/store-image_by-andrew-neel-unsplash.jpg"/>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<hr>
-      <footer>
-        <p>Join us on</p>
-      <div class="media">
-        <ul>
-          <li><a href="#"><img src="./img/twitter-icon.svg"></a></li>
-          <li><a href="#"><img src="./img/facebook-icon.svg"></a></li>
-          <li><a href="#"><img src="./img/instagram-icon.svg"></a></li>
+<footer>
+  <p>Join us on</p>
+    <div class="media">
+      <ul>
+        <li><a href="#"><img src="./img/twitter-icon.svg"></a></li>
+        <li><a href="#"><img src="./img/facebook-icon.svg"></a></li>
+        <li><a href="#"><img src="./img/instagram-icon.svg"></a></li>
         </ul>
         <h6>&copy; Karma Mobility, Inc.</h6>
-      </div>
+    </div>
      
-      </footer>
+</footer>
 
 </body>
 </html>
