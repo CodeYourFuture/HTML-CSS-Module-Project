@@ -31,13 +31,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    margin-botton:10px;
-    margin-right:100px;
+    padding-top: 20px;
+    padding-right:140px;
+    padding-bottom:20px;
+    background-color:var(--grey-light);
  }
+
  header img {
     width: 50px;
     height: 50px;
+    margin-left:100px;
  }
  ul {
     display: flex;
@@ -45,7 +48,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff;
   }
   ul li a {
     color: grey;
@@ -73,9 +75,11 @@ body {
   }
   h1{
     color:#fff;
+
   }
   h2{
     color:#fff;
+    font-weight: 200;
   }
   button {
     align-content: center;
@@ -98,6 +102,7 @@ body {
   }
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-left: 150px;
     padding-right: 150px;
@@ -154,9 +159,23 @@ body {
   grid-area: g;
   justify-self: center;
   text-align: center;
+  margin-top:70px;
 }
 
+.btn-get {
+  grid-area: g;
+  justify-self: center;
+  text-align: center;
+  text-decoration: none;
+  color:var(--white);
+  background-color: var(--orange);
+  padding: 20px 20px;
+  border-radius: 6px;
+}
 
+.btn-get:hover {
+  background-color: var(--grey-dark);
+}
 
 
 
@@ -180,3 +199,5 @@ footer {
     color: grey;
     text-align: center;
   }
+
+ 

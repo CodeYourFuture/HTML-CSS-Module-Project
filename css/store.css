@@ -12,39 +12,169 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/*form*/
+
 
 .all-container {
     display:flex;
     flex-direction: row;
-    border:green solid 10px;
+   
     
+}
+
+/*main left area includes title and form*/
+.main-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 90px;
+   
+}
+
+/*page title*/
+.page-title{
+   
 }
 
 .page-title h1{
     color: #F05A28;
 }
 
-.main-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 90px;
-    margin-right: 90px;
-}
-
-.page-title{
-    border: yellow solid 10px;
-}
-
+/*form*/
 .all-form {
     display: flex;
-    border:hsl(20, 84%, 80%) solid;
+  
+    width: 650px;
+}
+
+.orderform {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+     
 }
 
 
+
+.input {
+    border:solid 1.5px gray;
+    border-radius: 3px;
+    margin: 0 5px 1rem 0;
+    padding: 0.5rem;
+}
+
+input,
+ label {
+     width: auto;
+    }
+
+button {
+        background-color:var(--orange);
+        padding: 20px;
+        margin: 15px 400px 100px 0px;
+        justify-content: left;
+        color: white;
+        border-radius: 5px;
+        border: none;
+    }
+
+
+fieldset {
+    border: none;
+    display:flex;
+    gap: 15px;
+    width:auto;
+    }
+
+.fillname {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 600px;
+    justify-content: space-between;
+    }
+
+.firstnametext {
+   margin-bottom: 13px;
+}
+
+.lastnametext {
+    margin-bottom: 13px;
+ }
+
+ #first_name {
+    width: 250px;
+ }
+
+ #last_name {
+    width: 250px;
+ }
+
+ #address2 {
+    width:575px;
+ }
+
+ #address {
+    width:575px;
+ }
+
+.filladdress {
+    display: flex;
+    flex-direction: column;
+    }
+
+.filllocation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 600px;
+    justify-content: space-between;
+    
+}
+
+.citytext {
+    margin-bottom: 13px;
+ }
+
+ .postcodetext {
+    margin-bottom: 13px;
+ }
+
+ select {
+    width: 260px;
+    height: 40px;
+    background-color: white;
+    border-radius: 3px;
+    border:solid 1.5px gray;
+    border-radius: 3px;
+    margin: 0 5px 10px 0;
+    padding: 2px;
+    
+
+  }
+
+
+ #postcode{
+    width: 250px;
+ }
+
+   
+.choosecolor {
+    margin: 20px 0 2px 0;
+    }
+   
+.colorchoice {
+       margin: 20px 0 20px 0;
+    }
+
+
+
+/*image right of page*/
 .img-right {
-    border:hsl(90, 84%, 80%) solid;
-    width:700px;
+    
+    width:650px;
     height:900px;
+  
 }
 
 .imgmain {
@@ -52,8 +182,6 @@ body {
     flex-wrap: wrap;
     height:100%;
     width:100%;
-  
-    border:hsl(20, 84%, 80%) solid;
 }
 
 

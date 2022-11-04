@@ -17,15 +17,15 @@
     <header>
         <img src="img/karma-logo.svg" alt="logo of karma">
         <ul>
-          <li><a href="meet">Meet Karma</a></li>
-          <li><a href="howitworks">How it Works</a></li>
-          <li><a href="store">Store</a></li>
-          <li><a href="blog">Blog</a></li>
-          <li><a href="help">Help</a></li>
-          <li><a href="login">Login</a></li>
+            <li><a href="/index.html">Meet Karma</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="/store.html">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
     </header>
-    <br>
+
 
 <main>
     <div class="all-container">
@@ -36,23 +36,56 @@
 
         <div class="all-form">
         <form class="orderform">
+            
             <fieldset class="fillname">
-                <label for="first_name">First name*</label> <input style="text" class="input" id="first_name" required>
-                <label for="last_name">Last name*</label> <input style="text" class="input" id="last_name" required>
-            </fieldset>
+
+                <div class="firstnamecontainer">
+                    <div class="firstnametext">
+                        <label for="first_name">First name*</label>
+                    </div>          
+                    <div>
+                        <input type="text" class="input" id="first_name" required>
+                    </div>
+                </div>
+                
+                <div class="lastnamecontainer">
+                    <div class="lastnametext">
+                        <label for="last_name">Last name*</label>
+                    </div>          
+                    <div>
+                        <input type="text" class="input" id="last_name" required>
+                    </div>
+                </div>
+                </fieldset>
 
             <fieldset class="filladdress">
-                <label for="address">Address*</label> <input style="text" class="input" id="address" name="address" required>
-                <label for="address2">Address 2</label> <input style="text" class="input" id="address2" name="address2">
+                <label for="address" >Address*</label> <input type="text" class="input" id="address" name="address" required>
+                <label for="address2">Address 2</label> <input type="text" class="input" id="address2" name="address2">
             </fieldset>
 
             <fieldset class="filllocation">
 
-                <label for="city">City*</label> <select id="city" name="city" class="input"><option value="">Select your city...</option>
-                </select>
-
-                 <label for="postcode">Postcode*</label><input style="text" class="input" id="postcode" name="postcode">
-             </fieldset>
+                <div class="citycontainer">
+                    <div class="citytext">
+                        <label for="city">City*</label> 
+                    </div>
+                     <div>
+                         <select id="city" name="city" class="input"><option value="">Select your city...</option>
+                            <option value="">London</option>
+                            <option value="">Manchester</option>
+                       </select>
+                     </div>
+                </div>
+                 
+                 <div class="postcodecontainer">
+                    <div class="postcodetext">
+                    <label for="postcode">Postcode*</label>
+                    </div>
+                    <div>
+                        <input type="text" class="input" id="postcode" name="postcode">
+                        </div>
+                    </div>
+                </fieldset>
 
             <fieldset class="choosecolor">
                 <legend class="colorchoice">Select a colour</legend>
