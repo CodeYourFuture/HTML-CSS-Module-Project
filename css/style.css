@@ -23,7 +23,7 @@ header {
   padding: 1rem 3rem;
   border-bottom: 0.1rem solid hsl(0, 0%, 75%);
 }
-main {
+.main1 {
   display: flex;
   flex-direction: column;
   margin-top: -80px;
@@ -320,8 +320,10 @@ button {
 }
 
 .section2-img {
+  background-image: url(/level-2/store-image_by-andrew-neel-unsplash.jpg);
   width: 40%;
   display: flex;
   flex-direction: column;
+  background-size: cover;
   gap: 30px;
 }
