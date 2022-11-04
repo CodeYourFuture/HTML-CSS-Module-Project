@@ -35,6 +35,7 @@ button {
 
 hr {
   display: block;
+  margin-top: 4em;
   margin-bottom: 0.5em;
   margin-left: 100px;
   margin-right: 100px;
@@ -63,9 +64,10 @@ header {
   flex-direction: row;
   align-content: center;
   justify-content: space-around;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-top: 0%;
+  margin-bottom: 0%;
   font-weight: 100;
+  background-color: #fdf6f8;
 }
 
 .navbar-logo {
@@ -224,100 +226,4 @@ h3 {
 
 .karma-mobility {
   color: rgb(104, 103, 103);
-}
-
-/*
-/*
-/* ---------- Store Page Form --------- */
-/*
-*/
-
-.store-main {
-  display: flex;
-  flex-direction: row;
-}
-
-.store-main > img {
-  max-width: 40%;
-}
-
-:root {
-  --color-gray: #737888;
-  --color-lighter-gray: #e3e5ed;
-  --color-light-gray: #f7f7fa;
-}
-
-.container {
-  min-width: auto;
-  max-width: 40rem;
-  padding: 10vw 2rem 0;
-  margin: 0 auto;
-  height: 100vh;
-}
-
-.form {
-  display: grid;
-  grid-gap: 1rem;
-}
-
-.field {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--color-lighter-gray);
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.field__label {
-  color: var(--color-gray);
-  font-size: 0.6rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 0.25rem;
-}
-
-.field__input {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  font-weight: bold;
-  font-size: 1rem;
-  width: 100%;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-}
-.field:focus-within {
-  border-color: #000;
-}
-
-.fields {
-  display: grid;
-  grid-gap: 1rem;
-}
-.fields--2 {
-  grid-template-columns: 1fr 1fr;
-}
-.fields--3 {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.button {
-  background-color: #000;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 600;
-  display: block;
-  color: #fff;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.25rem;
-  border: 0;
-  cursor: pointer;
-  outline: 0;
-}
-.button:focus-visible {
-  background-color: #333;
 }
