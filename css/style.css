@@ -1,19 +1,329 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+:root {
+  --yellow: #ffcc5c;
+  --beige: #ffeead;
+  --grey: #adadad;
+  --white: #fff;
+  --orange: #f05a28;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 0.1rem solid hsl(0, 0%, 75%);
+}
+.main1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: -80px;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.logo {
+  display: block;
+  min-width: 1.5rem;
+  min-height: 1.5 rem;
+}
 
+.list {
+  display: flex;
+  justify-content: center;
+  padding: none;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
 
+.items {
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+.links {
+  color: var(--grey);
+  text-decoration: none;
+}
+
+.links:hover {
+  color: var(--orange);
+}
+
+.items:first-child > a {
+  color: var(--grey-dark);
+}
+.items:first-child > a:hover {
+  color: var(--orange);
+}
+.p1 {
+  background-image: url(/img/first-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 12rem 0;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+.p1 h2 {
+  font-weight: 200;
+  font-size: 35px;
+  text-align: center;
+}
+
+.p1 h5 {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-weight: 50;
+  font-size: 20px;
+}
+.p1 button {
+  background-color: var(--orange);
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+}
+.p1 button:hover {
+  background-color: var(--yellow);
+}
+.p1 button a {
+  text-decoration: none;
+  color: var(--white);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+section h2 {
+  font-weight: 200;
+  font-size: 35px;
+}
+
+.features {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+article h5 {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.features img {
+  width: 120px;
+  height: 120px;
+}
+
+.p2 {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--grey);
+  margin: 0 9rem;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+footer ul li a {
+  display: block;
+  border: 1px solid var(--grey);
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+footer ul li a img {
+  max-width: 1rem;
+  max-height: 1rem;
+}
+
+footer h2 {
+  font-weight: 400;
+}
+
+footer h5 {
+  font-weight: 200;
+  color: var(--grey);
+}
+
+.p3-text a {
+  background-color: var(--orange);
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.p3-text a:hover {
+  background-color: var(--yellow);
+}
+
+.part3 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 3fr;
+  background-color: #ffdfdf;
+}
+
+.p3-img {
+  background-color: #363434;
+  height: 100%;
+  background-image: url(/level-2/homepage-feature.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p3-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 8rem;
+  background-color: var(--orange-light);
+  color: var(--grey-dark);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.p3-text p span {
+  color: var(--orange);
+}
+
+.p3-text p {
+  font-style: italic;
+}
+
+.main2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 30px;
+}
+
+.section2 h1 {
+  color: var(--orange);
+}
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey-dark);
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  border: none;
+  gap: 30px;
+}
+
+.what {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+select {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey-dark);
+  width: 170px;
+  height: 23px;
+}
+.radio-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-box legend {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey-dark);
+}
+
+.radio-box ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.check-box {
+  gap: 2px;
+}
+
+.check-box a {
+  color: var(--orange);
+}
+
+button {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.section2-img {
+  background-image: url(/level-2/store-image_by-andrew-neel-unsplash.jpg);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  gap: 30px;
+}
