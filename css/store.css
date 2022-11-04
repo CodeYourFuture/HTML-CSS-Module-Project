@@ -1,0 +1,196 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+#navbar-button {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-logo {
+  display: flex;
+  margin: auto;
+  width: 2%;
+  margin-left: 200px;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: smaller;
+  margin-right: 60px;
+}
+a:hover {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.main-section {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: orange;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin-right: 2%;
+  margin-left: 3%;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.field-2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+.city {
+  display: flex;
+  flex-direction: row;
+}
+
+.field-3 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.field-4 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 5%;
+}
+
+h2 {
+  font-weight: 120;
+  font-size: 1vw;
+  color: rgb(49, 48, 48);
+}
+
+.select-color {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-margin {
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.checkbox {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.checkbox > input {
+  margin-right: 15px;
+}
+
+.button-order {
+  background-color: rgb(204, 82, 38);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+}
+.store-img {
+  width: 50%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: -10px;
+}
+
+.join-us {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.socialmedia-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 45px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin-left: 8px;
+}
+
+.mobility {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-style: normal;
+  opacity: 0.5;
+}

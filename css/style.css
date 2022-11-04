@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -15,5 +14,234 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+h1 {
+  margin: auto;
+  margin-top: auto;
+  font-size: 40px;
+  color: white;
+}
+h2 {
+  margin: auto;
+  margin-top: auto;
+  font-size: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 24px;
+  top: 30%;
+}
 
+#navbar-button {
+  margin-left: 25px;
+  margin-right: 25px;
+}
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-logo {
+  display: flex;
+  margin: auto;
+  width: 2%;
+  margin-left: 200px;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: smaller;
+  margin-right: 60px;
+}
+
+a:hover {
+  color: red;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+
+.main-articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-one {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  column-gap: 50px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.article-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line-one {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: lighter;
+}
+
+.line-two {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: lighter;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(204, 82, 38);
+  color: white;
+  appearance: none;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 8px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.little-karma {
+  display: flex;
+  justify-content: center;
+
+  font-weight: lighter;
+}
+.icones-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3%;
+}
+
+.devices,
+.coffee,
+.refill {
+  width: 40%;
+  height: 40%;
+}
+
+.photo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.section-two {
+  background-color: rgb(250, 235, 239);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.connection {
+  color: rgb(79, 75, 75);
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+.span {
+  color: darkorange;
+  font-size: larger;
+}
+.woman {
+  width: 40%;
+}
+.button-two {
+  background-color: rgb(204, 82, 38);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: -10px;
+}
+
+.join-us {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.socialmedia-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 45px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin-left: 8px;
+}
+
+.mobility {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-style: normal;
+  opacity: 0.5;
+}
