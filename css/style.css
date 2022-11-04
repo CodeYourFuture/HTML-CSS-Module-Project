@@ -49,6 +49,7 @@ color:#c05326;
 .logo{
     display:flex;
     width:20px;
+    padding-left:30px;
 }
 
 
@@ -179,34 +180,68 @@ color:#c05326;
  }
 
  .store-image{
- padding-left: 350px;
+ padding-left: 150px;
  }
 
  .form-row{
   display: flex;
   gap: 20px;
   padding-bottom:30px;
-  padding-top: 50px;
  }
-.label-wrap label{
-    display: block;
+
+.label-wrap{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+label{
+  padding-bottom:5px;
+}
+.legend{
+  margin-left: 15px;
+  padding-bottom:8px;
+  padding-top:20px;
+}
+.select{
+  margin-left: 15px;
+}
+.check{
+  margin-left: 15px;
+  padding-top:20px;
+}
+
+.checker{
+  font-size: smaller;
+  
+}
+#city-select{
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius: 6px;
+  padding-left:105px;
+  padding-right:105px;
 }
  .order-karma{
-  font-size: 20px;
+  font-size: 30px;
   color:rgb(223,100,58);
+  margin-left: 10px;
  }
 
  fieldset{
   border: none;
-  height:806px;
+  color:rgb(114,114,114)
  }
 
  input{
   border-radius: 6px;
+  padding-top:20px;
+  border-width:thin;
  }
 
  .button{
   background-color: rgb(223,100,58);
+  margin-top: 25px;
  }
 
  .ora{
@@ -215,13 +250,24 @@ color:#c05326;
  }
  
  .form{
-  padding-left:50px;
+  padding-left:80px;
  }
  #address{
-  padding-left:290px;
+  padding-left:390px;
  }
  #address2{
-  padding-left:290px;
+  padding-left:390px;
  }
+ #first-name{
+  padding-left:48px;
+  padding-right:45px;
+ }
+ #last-name{
+  padding-left:48px;
+  padding-right:45px;
+ }
+  nav{
+    padding-right:50px;
+  }
   
   
