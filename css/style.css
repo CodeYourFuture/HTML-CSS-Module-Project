@@ -1,11 +1,59 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  position: relative;
+  justify-content: center;
+  grid-template-columns: 1440px;
+  grid-template-rows: 89px 859px 812px 439px 370px;
+  grid-template-areas:
+    "header"
+    "hero"
+    "main"
+    "section"
+    "footer";
 }
 
+header {
+  grid-area: header;
+  background: rgba(196, 196, 196, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*header*/
+.logo_header {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 5rem;
+  padding: 1rem;
+}
+.navigation_list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-left: auto;
+}
+.navigation_link {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+}
+#navigation_link_1 {
+  color: black;
+}
+#navigation_link_1:hover,
+.navigation_link:hover {
+  color: rgb(255, 119, 0);
+}
 /**
  * Add your custom styles below
  * 
@@ -15,5 +63,146 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+/*hero*/
 
+hero {
+  grid-area: hero;
 
+  background-image: url("https://github.com/CodeYourFuture/HTML-CSS-Module-Project/blob/master/img/first-background.jpg?raw=true");
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffff;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_title {
+  font-weight: lighter;
+  font-size: 3.5rem;
+}
+
+#hero_prg {
+  margin: 0.5rem 2rem 1rem 2rem;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.button_style1 {
+  margin: 1rem 2rem 1rem 2rem;
+  background-color: rgb(255, 119, 0);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+/*main*/
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+}
+
+main article {
+  width: 1437;
+  height: 473;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+figure {
+  width: 415px;
+  height: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img_section {
+  width: 200px;
+  height: 200px;
+}
+/*extended_section*/
+
+section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: 599px 841px;
+  grid-template-rows: 439px;
+
+  background-color: rgba(224, 99, 58, 0.1);
+}
+.img_extended {
+  grid-column: 1 /2;
+}
+section article {
+  grid-column: 2 / 3;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: lighter;
+}
+span {
+  color: #e0633a;
+  width: 24px;
+  height: 79px;
+}
+section article button {
+  background-color: #e0633a;
+  border-radius: 8px;
+  width: 264px;
+  height: 70px;
+  color: #ffff;
+  border: none;
+  font-size: 1.5rem;
+}
+.store_link {
+  color: #ffff;
+}
+
+/*footer*/
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-top: 0.75px solid rgb(216, 214, 214);
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.navigation_list_footer {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.logo_footer {
+  display: flex;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.75rem;
+  border: 0.25px solid rgb(202, 200, 200);
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.footer_email {
+  color: rgb(202, 200, 200);
+  font-style: non;
+}

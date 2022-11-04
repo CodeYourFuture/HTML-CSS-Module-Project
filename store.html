@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo_header"
+        src="https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Module-Project/2eafd55a92f7931f2ce6d3264a4ea98a9488dc7e/img/karma-logo.svg"
+        alt="karma"
+      />
+      <nav>
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a
+              href="./index.html"
+              class="navigation_link"
+              id="navigation_link_1"
+              >Meet Karma</a
+            >
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link">How it works</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link">Store</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link">Blog</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link">Help</a>
+          </li>
+          <li class="navigation_item">
+            <a href="#" class="navigation_link">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <form id="Karma_form">
+      <label class="form_label" for="karema_form">
+        Order your Karema WiFi <br />
+        device today
+      </label>
+      <div id="name">
+        <div>
+          <label for="first_name">First Name *</label><br />
+          <input name="first" id="first_name" type="text" required />
+        </div>
+        <div>
+          <label for="last_name">Last Name *</label><br />
+          <input name="last" id="last_name" type="text" required />
+        </div>
+      </div>
+      <div>
+        <label for="address">Address *</label><br />
+        <input id="address" type="text" required />
+      </div>
+      <div>
+        <label for="address_2">Address 2</label><br />
+        <input id="address_2" type="text" />
+      </div>
+      <div id="area">
+        <div>
+          <label for="city">City *</label><br />
+          <select name="city" id="city" type="text" required>
+            <option>Select your city</option>
+            <option>Bath</option>
+            <option>Birmingham</option>
+            <option>Bradford</option>
+            <option>Brighton & Hove</option>
+            <option>Bristol</option>
+            <option>Cambridge</option>
+            <option>Canterbury</option>
+            <option>Carlisle</option>
+            <option>Chelmsford</option>
+            <option>Chester</option>
+            <option>Chichester</option>
+            <option>Colchester</option>
+            <option>Coventry</option>
+            <option>Derby</option>
+            <option>Doncaster</option>
+            <option>Durham</option>
+            <option>Ely</option>
+            <option>Exeter</option>
+            <option>Gloucester</option>
+            <option>Hereford</option>
+            <option>Kingston-upon-Hull</option>
+            <option>Lancaster</option>
+            <option>Leeds</option>
+            <option>Leicester</option>
+            <option>Lichfield</option>
+            <option>Lincoln</option>
+            <option>Liverpool</option>
+            <option>London</option>
+            <option>Manchester</option>
+            <option>Milton Keynes</option>
+            <option>Newcastle-upon-Tyne</option>
+            <option>Norwich</option>
+            <option>Nottingham</option>
+            <option>Oxford</option>
+            <option>Peterborough</option>
+            <option>Plymouth</option>
+            <option>Portsmouth</option>
+            <option>Preston</option>
+            <option>Ripon</option>
+            <option>Salford</option>
+            <option>Salisbury</option>
+            <option>Sheffield</option>
+            <option>Southampton</option>
+            <option>Southend-on-Sea</option>
+            <option>St Albans</option>
+            <option>Stoke on Trent*</option>
+            <option>Sunderland</option>
+            <option>Truro</option>
+            <option>Wakefield</option>
+            <option>Wells</option>
+            <option>Westminster</option>
+            <option>Winchester</option>
+            <option>Wolverhampton</option>
+            <option>Worcester</option>
+            <option>York*</option>
+          </select>
+        </div>
+        <div>
+          <label for="postcode">Postcode *</label><br />
+          <input name="postcode" id="postcode" type="text" required />
+        </div>
+      </div>
+      <fieldset>
+        <legend>Select a colour</legend>
+
+        <label class="container">
+          <input
+            id="orange"
+            type="radio"
+            checked="checked"
+            name="colour"
+            value="orange"
+            required />
+          Karema Orang<span class="checkmark"></span
+        ></label>
+        <label class="container">
+          <input
+            id="grey"
+            type="radio"
+            checked="checked"
+            name="colour"
+            value="grey"
+            required />
+          Space Grey<span class="checkmark"></span
+        ></label>
+      </fieldset>
+      <label class="container"
+        >By placing your order you agree to karema's
+        <a class="condition_link" href="#">Terms and Condition</a
+        ><input type="checkbox" required /> <span class="chechbox"></span
+      ></label>
+      <button id="btn_form">Place my order</button>
+    </form>
+    <img
+      class="img_store"
+      src="https://github.com/BoshraM/HTML-CSS-Module-Project/blob/master/level-2/store-image_by-andrew-neel-unsplash.jpg?raw=true"
+    />
+    <footer>
+      <p class="footer_title">Join us on</p>
+
+      <ul class="navigation_list_footer">
+        <li class="navigation_item">
+          <a href="#"
+            ><img
+              class="logo_footer"
+              src="https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Module-Project/2eafd55a92f7931f2ce6d3264a4ea98a9488dc7e/img/twitter-icon.svg"
+          /></a>
+        </li>
+        <li class="navigation_item">
+          <a href="#"
+            ><img
+              class="logo_footer"
+              src="https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Module-Project/2eafd55a92f7931f2ce6d3264a4ea98a9488dc7e/img/facebook-icon.svg"
+          /></a>
+        </li>
+        <li class="navigation_item">
+          <a href="#"
+            ><img
+              class="logo_footer"
+              src="https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Module-Project/2eafd55a92f7931f2ce6d3264a4ea98a9488dc7e/img/instagram-icon.svg"
+          /></a>
+        </li>
+      </ul>
+
+      <a href="#" class="footer_email">@Karma Mobility.inc</a>
+    </footer>
+  </body>
+</html>

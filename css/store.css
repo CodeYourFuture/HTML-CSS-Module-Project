@@ -1,0 +1,251 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  position: relative;
+  justify-content: center;
+  grid-template-columns: 739px 731px;
+  grid-template-rows: 89px 1235px 370px;
+  grid-template-areas:
+    "header header"
+    "form image"
+    "footer footer";
+}
+/*header*/
+header {
+  grid-area: header;
+  background: rgba(196, 196, 196, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo_header {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 5rem;
+  padding: 1rem;
+}
+.navigation_list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-left: auto;
+}
+.navigation_link {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+}
+#navigation_link_1 {
+  color: black;
+}
+#navigation_link_1:hover,
+.navigation_link:hover {
+  color: #de6e49;
+}
+/*form*/
+form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  justify-content: space-evenly;
+  margin: 120px;
+}
+.form_label {
+  color: #de6e49;
+  font-size: 2.5rem;
+}
+#name {
+  display: flex;
+  flex-direction: row;
+}
+
+#first_name {
+  max-width: 235px;
+  height: 53px;
+  margin-right: 27px;
+  margin-top: 1rem;
+}
+
+#last_name {
+  max-width: 235px;
+  height: 53px;
+  margin-top: 1rem;
+}
+#area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#city {
+  width: 307px;
+  height: 53px;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin-right: 27px;
+  margin-top: 1rem;
+}
+
+#postcode {
+  width: 165px;
+  height: 53px;
+  margin-top: 1rem;
+}
+
+#address {
+  width: 499px;
+  height: 53px;
+  margin-top: 1rem;
+}
+
+#address_2 {
+  width: 499px;
+  height: 53px;
+  margin-top: 1rem;
+}
+fieldset {
+  border: none;
+  padding: 0px;
+}
+#grey {
+  margin-left: 41px;
+}
+legend {
+  margin-bottom: 1rem;
+}
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.container:hover input ~ .checkmark {
+  background-color: #de6e49;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  top: 3.5px;
+  left: 3.5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #de6e49;
+}
+.container:hover input ~ .chechbox {
+  background-color: #de6e49;
+}
+.chechbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .chechbox:after {
+  display: block;
+}
+.container .chechbox:after {
+  background-image: url("https://raw.githubusercontent.com/CodeYourFuture/HTML-CSS-Module-Project/2eafd55a92f7931f2ce6d3264a4ea98a9488dc7e/level-2/checkmark.svg");
+  width: 18px;
+  height: 18px;
+  top: 3.5px;
+  left: 3.5px;
+}
+
+.chechbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+
+  border: 1px solid black;
+}
+
+.condition_link {
+  color: #de6e49;
+}
+
+#btn_form {
+  width: 269px;
+  height: 70px;
+  background-color: #de6e49;
+  color: #ffff;
+  border: none;
+  border-radius: 5%;
+}
+
+/*image*/
+
+.img_store {
+  grid-area: image;
+  width: 731px;
+  height: 1235px;
+}
+/*footer*/
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-top: 0.75px solid rgb(216, 214, 214);
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.navigation_list_footer {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.logo_footer {
+  display: flex;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.75rem;
+  border: 0.25px solid rgb(202, 200, 200);
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.footer_email {
+  color: rgb(202, 200, 200);
+  font-style: non;
+}
