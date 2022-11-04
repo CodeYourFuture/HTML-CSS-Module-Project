@@ -16,4 +16,216 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /* Navigation styles */
 
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap:25px;
+}
+.navLink{
+    color: darkgrey;
+    font-weight: 300;
+    text-decoration: none;
+}
+a:hover{
+    color: #c05326;
+}
+#karma{
+    font-weight: bold;
+}
+ .logo {
+    display: flex;
+    width: 20px;
+ }
+
+ /*main*/
+
+.mainpage{
+    background-image: url(/img/first-background.jpg);
+    padding:15rem;
+    background-position: center;
+}
+.intro{
+    text-align: center;
+    color:white;
+    font-weight: lighter;
+}
+.btn{
+    background-color: #c05326;
+    border:none;
+    border-radius: 5px;
+    padding:15px 30px;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 40px 30px;
+}
+
+/*article*/
+
+article{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+}
+article img{
+    width:50%;
+    height:50%;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*footer*/
+
+
+hr{
+    opacity: 20%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactimages{
+    width:15px;
+    height:15px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding:5px;
+}
+.contact{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:5px;
+}
+.footertext{
+    color:black;
+}
+h6{
+    color:darkgrey;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+/* new section */ 
+
+.newgrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.bottom-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap:1rem;
+    background-color: #f7d7c1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+}
+.bottom-text p{
+    font-style: italic;
+}
+.bottom-text p span {
+    color:  #c05326;
+}
+
+.getbtn{
+    display: flex;
+    justify-content: center;
+    background-color: #ed5412;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.bottom-text a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* store page style */
+
+.maingrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.ordertitle{
+    padding: 20px 30px;
+    font-size: large;
+    color:#ed5412;
+}
+.form-row{
+    padding-bottom: 30px;
+}
+
+#first-name {
+    padding: 5px;
+}
+#last-name {
+    padding: 5px;
+}
+#address{
+    width: 540px;
+    padding: 5px;
+}
+#address2 {
+    width: 540px;
+    padding: 5px;
+}
+
+#cityselect{
+    padding: 5px;
+    width: 250px;
+}
+#postcode{
+    padding: 5px;
+    width:140px;
+}
+label {
+    padding-right: 5px;
+}
+
+fieldset {
+    border: none;
+    height:900px;
+}
+
+input{
+    border-radius: 5px;
+}
+.subbtn{
+    background-color:#ed5412;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.maingrid a{
+    color:#ed5412;
+    border-radius: 5px;
+    font-size: 15px;
+}
