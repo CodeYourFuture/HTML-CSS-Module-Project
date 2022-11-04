@@ -123,3 +123,45 @@ h6{
     font-weight: normal;
     font-size: 15px;
 }
+
+/* new section */ 
+
+.newgrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.bottom-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap:1rem;
+    background-color: #f7d7c1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+}
+.bottom-text p{
+    font-style: italic;
+}
+.bottom-text p span {
+    color:  #c05326;
+}
+
+.getbtn{
+    display: flex;
+    justify-content: center;
+    background-color: #ed5412;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.bottom-text a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
