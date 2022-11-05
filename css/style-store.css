@@ -1,0 +1,86 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -53px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--orange-dark);
+}
+
+.background-image {
+    width: 50%;
+}
+
+.background-image img {
+    width: 40rem;
+}
+
+/* Core Form */
+
+.order-form {
+    text-align: left;
+    padding: 5% 5% 8% 7.5%;
+    font-size: 0.9rem;
+}
+
+label {
+    display: block;
+    margin: 1.5rem 0;
+}
+
+select {
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    height: 2rem;
+    border: 2px solid var(--grey);
+    border-radius: 3px;
+    margin-top: 0.4rem;
+}
+
+input #first-name {
+    width: 40%;
+}
+
+#orange-link {
+    color: var(--orange-dark);
+}
+
+fieldset {
+    margin: none;
+    padding-left: 0;
+    border: none;
+}
+
+#name {
+    display: inline;
+}
+
+
+.radio-button {
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #999;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+  }
+  
+.radio-button:checked {
+    border: 5px solid var(--orange-dark);
+    border-radius: 50%;
+  }
+
+  #terms-text {
+    font-size: 0.8rem;
+}

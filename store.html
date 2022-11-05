@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma - Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-store.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+
+    <header>
+        <img src="img/karma-logo.svg" alt="Karma logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Meet Karma</span>
+                </li>
+                <li>
+                    <a href="#">How it Works</a>
+                </li>
+                <li>
+                    <span class="current" href="#">Store</span>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h1>Order your Karma wifi device today!</h1>
+            <form action="URL">
+                <fieldset id="name">
+                    <label for="first-name">First name *
+                        <input id="first-name" type="text" name="first-name" required>
+                    </label>
+                    <label for="last-name">Last name *
+                        <input id="last-name" type="text" name="last-name" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="address-1">Address *
+                        <input id="address-1" type="text" name="address-1" required>
+                    </label>
+                    <label for="address-2">Address 2
+                        <input id="address-2" type="text" name="address-2">
+                    </label>
+                </fieldset>
+                <label for="city">City *
+                    <select id="city">
+                        <option value="">Select your city...</option>
+                        <option value="1">London</option>
+                        <option value="2">Oxford</option>
+                        <option value="3">Birmingham</option>
+                        <option value="4">Brighton</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Select a colour</legend>
+                    <label for="colour-orange">
+                    <input type="radio" name="colour" class="radio-button" id="colour-orange" value="orange" checked>Karma orange
+                    </label>
+                    <label for="colour-grey">
+                    <input type="radio" name="colour"  class="radio-button" id="colour-grey" value="grey">Space Grey
+                    </label>
+                </fieldset>
+                <label for="terms">
+                    <input type="checkbox" checked id="terms" value="accepted"><span id="terms-text">By placing your order you agree to Karma's <a id="orange-link" href="url">Terms and Conditions</a>. *</span>
+                </label>
+
+                <button class="orange-button" type="submit">Place my order</button>
+            </form>
+        </section>
+        <div class="background-image">
+            <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Woman using a laptop while drinking a hot drink">
+        </div>
+    </main>
+
+
+    <footer>
+        <h5>Join us on</h5>
+        <div class="social-media">
+            <div class="social"><a href="#"><img class="svg-image" src="img/twitter-icon.svg" alt="Logo of Twitter"></a></div>
+            <div class="social"><a href="#"><img class="svg-image" src="img/facebook-icon.svg" alt="Logo of Facebook"></a></div>
+            <div class="social"><a href="#"><img class="svg-image" src="img/instagram-icon.svg" alt="Logo of Instagram"></a></div>
+        </div>
+        <h6>© Karma Mobility, Inc.</h6>
+
+    </footer>
+
+
+</body>
+</html>
