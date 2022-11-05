@@ -56,7 +56,8 @@ h1 {
 }
 
 .image img {
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 section {
@@ -99,7 +100,7 @@ input {
 
 .name-wrapper {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .name {
@@ -133,9 +134,14 @@ input {
   margin-left: 3px;
 }
 
-input[type="checkbox"] {
-  background-color: white;
-  color: #de6e49;
+.tick-wrapper {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 button {
@@ -155,7 +161,7 @@ button {
 
 footer {
   text-align: center;
-  margin: 50px 70px 0 70px;
+  margin: 0 70px 0 70px;
   border-top: 1px solid #ebebeb;
 }
 
