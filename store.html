@@ -58,37 +58,45 @@
                 <h1>Order your Karma wifi device today!</h1>
             </div>
 
-            <fieldset class="name_section">
+            <div class="name_section">
+                <div>
+                    <label for="first_name">First name *</label>
+                    <input style="text" class="input" id="first_name" name="first_name" required>
+                </div>
+                <div>
+                    <label for="last_name">Last name *</label>
+                    <input style="text" class="input" id="last_name" name="last_name" required>
+                </div>
+            </div>
 
-                <label for="first_name">First name *</label>
-                <input style="text" class="input" id="first_name" name="first_name" required>
+            <div class="address_section">
+                <div>
+                    <label for="address">Address *</label>
+                    <input style="text" class="input" id="address" name="address" required>
 
-                <label for="last_name">Last name *</label>
-                <input style="text" class="input" id="last_name" name="last_name" required>
+                </div>
+                <div>
+                    <label for="address2">Address 2</label>
+                    <input style="text" class="input" id="address2" name="address2">
 
-            </fieldset>
+                </div>
+            </div>
 
-            <fieldset class="address_section">
-
-                <label for="address">Address *</label>
-                <input style="text" class="input" id="address" name="address" required>
-
-                <label for="address2">Address 2</label>
-                <input style="text" class="input" id="address2" name="address2">
-
-            </fieldset>
-
-            <fieldset class="location_section">
-
-                <label for="city">City *</label>
-                <select id="city" name="city" class="input">
-                    <option value="">Select your city...</option>
-                </select>
-
-                 <label for="postcode">Postcode *</label>
-                 <input style="text" class="input" id="postcode" name="postcode">
-
-            </fieldset>
+            <div class="location_section">
+                <div>
+                    <label for="city">City *</label>
+                    <select id="city" name="city" class="input" required>
+                        <option value="">Select your city...</option>
+                        <option value="UK">UK</option>
+                        <option value="USA">USA</option>
+                        <option value="France">France</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="postcode">Postcode *</label>
+                    <input style="text" class="input" id="postcode" name="postcode">
+                </div>
+            </div>
 
             <fieldset class="colour_section">
                 <legend class="colour_title">Select a colour</legend>
@@ -97,18 +105,17 @@
                 <input type="radio" value="Karma range" name="colour" class="input" id="karma_orange">
 
                 <label for="space_grey">Space Grey</label>
-                <input type="radio" value="Space Grey" name="colour" class="input" id="space_grey">
-                
+                <input type="radio" value="Space Grey" name="colour" class="input" id="space_grey"> 
             </fieldset>
 
-            <fieldset>
-
+            <div class="terms_cond">
                 <input type="checkbox" class="input" id="tc">
-                <label for="tc">By placing your order you agree to Karma's Terms and Conditions. *</label>
-
-            </fieldset>
+                <label for="tc">By placing your order you agree to 
+                    <a href="">Karma's Terms and Conditions. *</a>
+                </label>
+            </div>
             
-            <button>Place my order</button>
+            <button class="button">Place my order</button>
 
         </form>
 

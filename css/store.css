@@ -19,31 +19,22 @@ main {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    width: auto;
+    width: 100%;
     margin: 7rem;
 }
 
 .input {
     border:solid 1.5px gray;
     border-radius: 5px;
-    margin: 0 5px 1rem 0;
     padding: 1rem;
+    width:100%;
+    margin-top: 1rem;
 }
 
-label {
-    /* margin-bottom: 1rem; */
-}
-
-input,
-label {
-    /* display: block; */
-    width:auto;
-}
-
-button {
+.button {
     background-color: #E14E00;
     padding: 1rem;
-    margin: 2rem 30rem 2rem 0;
+    /* margin: 2rem 40rem 2rem 0; */
     justify-content: left;
     color: white;
     border-radius: 0.2rem;;
@@ -51,7 +42,7 @@ button {
 }
 
 
-/* fieldsets */
+/* Form Divs*/
 
 fieldset {
     border: none;
@@ -61,28 +52,49 @@ fieldset {
 }
 
 .name_section {
+    display:flex;
+    flex-direction: row;
     margin-top: 4rem;
+    margin-bottom: 2rem;;
+    width: 100%;
 }
 
 .address_section {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    width:100%;
+}
+
+#address {
+    margin-bottom:3rem;
+}
+
+.location_section {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-bottom: 2rem;
 }
 
 .colour_section {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 5rem 0;
 }
 
 .colour_title {
     margin: 2rem 0 1rem 0;
 }
 
+.terms_cond {
+    display: flex;
+    margin:0;
+    width: 100%;
+}
+
 /* image */
 
 .store_image1 {
-    display: flex;
-    justify-content: right;
-    float: right;
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
