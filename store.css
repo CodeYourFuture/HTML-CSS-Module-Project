@@ -144,6 +144,14 @@ input {
   align-content: center;
 }
 
+.tick-wrapper svg {
+  display: none;
+}
+
+.box-terms input[type="checkbox"]:checked + .tick-wrapper .icon {
+  display: inline;
+}
+
 button {
   align-content: center;
   color: white;
