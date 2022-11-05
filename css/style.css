@@ -1,77 +1,99 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+:root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --orange:#f05a28;
+    --white: #fff;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    max-width: 800px; 
+    margin-left: 20%;  
 }
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
 
 .logo {
     width: 40px;
-    height: 30px;
-    margin-top: 10px;
+    height: 40px;
+    display: block;
 }
 
-.header { 
- display: flex;   
- justify-content: space-between;
+ #header-rectangle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+ }
+
+.navbar { 
+    color:black;
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    position: flex;   
 }
 
-.navigation{
-    display: inline-block;
+.navbar a {
     text-decoration: none;
-    justify-content: end;
-  
+    color: var(--grey);
 }
-
-.navlinks li{
-display:inline-flex;
-align-items: right;
-text-decoration: none;
-gap: 30px; 
-
-
+.navbar a:hover{ color: var(--orange);
 
 }
 
-h1{
-    color: white;
-    
+.navbar a:nth-child(1){
+    color: black;
 }
-h3{ text-align: center;
-    font-size-adjust: inherit;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 60px;
-}
-h2{
-    color: white;
+.navbar a:nth-child(1):hover{
+    color: var(--orange);
 }
 
 #hero {
-display: inline-block;
-text-align: center;
-background-image: url(/img/first-background.jpg);
-width: 100%;
-height: 75vh;
-margin-top: 25px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+    display: inline-block;
+    text-align: center;
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12rem 0;
+    color: var(--white);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    }
+    
+h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 200;
+    text-align: center;  
 }
 
+h3{ text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    margin-top: 60px;
+}
+
+h2{
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    text-align: center;
+}
 
 #cards {
         margin-top: 60px;
@@ -82,48 +104,97 @@ align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
-        align-content: flex-start;
-    
+        align-content: flex-start;   
 }
 
 .directors {
-        width: 100px;
-        height: 100px;
+    height: 150px;
+    width: 220px;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;  
 }
+
+p{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 17px;
+}
+
 .btn{
-    background-color: orangered;
-    padding: 15px;
-    font-weight: 500;
-}
+    text-decoration: none;
+        background-color: #E0633A;
+        padding: 1rem;
+        color: var(--white);
+        border-radius: 5px; 
+    }
+
+    .btn:hover{
+        background-color: var(--grey-dark);
+    }
+
+/* homepage extension */
+
 #rectangle{
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 841px;
+        height: 439px;
+        left: 599px;
+        top: 1758px;
+        background-color: rgba(224, 99, 58, 0.1);
+}
+
+q{
+    width: 548px;
+    height:130px;
+    left: 755px;
+    top: 1854px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #434242;    
+}
+
+#homepagextension{
+    max-width: 800px;
+    margin-top: 5rem;
+    display:flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 300px;
-    margin-left: 599px;
-    top: 1758px;
-    background: rgba(224, 99, 58, 0.1); 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-    font-weight: 500px; 
-    font-style: italic; 
+}
+
+.btn2{
+    text-decoration: none;
+    background-color: #E0633A;
+    padding: 1rem;
+    color: var(--white);
+    border-radius: 5px; 
+}
+
+.btn2:hover{
+    background-color: var(--grey-dark);
 }
 
 .footer-icons{
-    display: flex;
+        display: flex;
         gap: 20px;
         align-items: center;
         gap: 35px;
         flex-direction: row;
         justify-content: center;   
 }
+
 h4{
     text-align: center;
     margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .footer-img1{
     width: 30px;
 }
@@ -137,4 +208,64 @@ h4{
 }
 .c-site-footer{
     text-align: center;
+}
+
+
+/* store page styling */
+.store-page{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    height: 100%;
+
+}
+.form-container{
+    display: inline-flex;
+    flex-direction: flex;
+    border: #f05a28 solid;
+   
+}
+
+
+.form-image{
+    border: lime solid;
+    width: 100%;
+    height: 100%;
+    background-image: url(/level-2/store-image_by-andrew-neel-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50%; 
+}
+.formheader{
+    color: var(--orange);
+}
+
+
+.clientnames{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    gap: 2px;
+}
+
+
+.name1{
+    height: 53px;
+    width: 235px;
+    left: 122px;
+    top: 451px;
+    border-radius: 4px;
+}
+.name2{
+    height: 53px;
+    width: 235px;
+    left: 122px;
+    top: 451px;
+    border-radius: 4px;  
+}
+
+.fieldset{
+    border: none;
 }
