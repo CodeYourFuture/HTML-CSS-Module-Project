@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-    
+    <header class="header header_store">
+
+        <img src="./img/karma-logo.svg" class="karma_logo" alt="Karma Logo">
+
+        <nav>
+            <ul class="nav_list">
+                <li>
+                    <a href="#" class="nav_link">Meet Karma</a>
+                </li>
+                <li>
+                    <a href="#">How it Works</a>
+                </li>
+                <li>
+                    <a href="store.html">Store</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="store">
+            <h1>Order your Karma wifi device today!</h1>
+            <form method="post" action="" >
+                <div class="wrapper">
+                    <div>
+                        <label for="first_name">First name*</label>
+                        <input type="text" id="first_name">
+                    </div>
+                    <div>
+                        <label for="last_name">Last name*</label>
+                         <input type="text" class="" id="last_name">
+                </div>
+                </div>
+                <label for="address">Address*</label>
+                <input type="text" id="address">
+                <label for="address_2">Address 2</label>
+                <input type="text" id="address_2">
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option >Select your city</option>
+                    <option value="london">London</option>
+                        <option value="manchester">Manchester</option>
+                    </select>
+                    <label for="postcode">Postcode*</label>
+                    <input type="text" id="postcode">
+                    <label>Select a colour</label>
+                    <div class="wrapper"> 
+                        <div class="wrapper"> 
+                            <input type="radio" id="orange">
+                            <label for="orange">Karma orange</label>
+                        </div>
+                        <div class="wrapper">
+                            <input type="radio" id="gray">
+                            <label for="gray">Space Gray</label>
+                        </div>
+                    </div>
+
+                    
+                    <fieldset>
+                        <legend>Select a colour</legend>
+                        <input type="radio" id="orange">
+                        <label for="orange">Karma orange</label>
+                        <input type="radio" id="gray">
+                        <label for="gray">Space Gray</label>
+                    </fieldset>
+                </form>
+                <input type="radio" id="orange">
+                <label for="orange">Karma orange</label><br>
+
+            </section>
+            <section class="store_img">
+                <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="a Lady at cofe">
+            </section>
+        </section>
+    </main>    
 </body>
 </html>

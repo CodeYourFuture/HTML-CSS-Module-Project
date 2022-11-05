@@ -34,6 +34,10 @@ body{
     height: 40px;
 }
 
+.header_store{
+    background-color: var(--light-gary);
+}
+
 /* Navigation */
 
 .nav_list{
@@ -57,7 +61,7 @@ body{
 }
 
 
-/* Main */
+/* Main for Index page*/
 /* Section Hiro */
 
 .hero{
@@ -153,7 +157,66 @@ body{
     background-color: var(--orange);
 }
 
+/* Main for Store */
 
+.terms-box input[type="checkbox"] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 20%;
+    background-clip: content-box;
+    padding: 1px;
+}
+
+.terms-box input[type="checkbox"]:checked {
+    background-image: url(/level-2/checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: right 0.1rem top 50%;
+    background-size: 1.3rem auto;
+    background-color: transparent;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "store hero";
+}
+
+.order{
+    grid-area: "store";
+}
+
+.form{
+    height: 100%;
+    text-align: left;
+    padding: 10% 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* row-gap: 20px; */
+}
+
+.wrapper{
+    display: flex;
+}
+
+.name_wrapper{
+    margin-right: 20px;
+}
+input{
+    width: 100%;
+}
+.store_img{    
+    grid-area: "hero";  
+    min-width: 100%;
+}
+
+.store_img img{
+width: 100%;
+height: 100%;
+}
 /* Footer */
 
 .footer{
