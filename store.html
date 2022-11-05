@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <img
+        src="./img/karma-logo.svg"
+        id="karma-logo"
+        alt="logo-Karma"
+        >
+        
+        <nav id="nav">
+            <ul class="nav_ul">
+                <li class="nav_li"><a class="nav_li-a" href="#">Meet Karma</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">How it Works</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Store</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Blog</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Help</a></li>
+                <li class="nav_li"><a class="nav_li-a" href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main1">
+        <div>
+
+            <h1>Order your Karma wifi device today! </h1>
+            <form class="form">
+                
+                <div class="nameLast">
+                    <div class="name">
+                        <label for="Fname">First name * </label>
+                        <input id="Fname" type="text" minlength="3" maxlength="15"required name="first-name" class="input"/>
+                    </div>
+                
+                    <div class="lastname">
+                        <label for="Lname">Last name * </label>
+                        <input id="Lname" type="text" minlength="3" maxlength="15" required name="second-name" class="input"/>
+                    </div>
+                </div>
+                <div class="address" >
+                    <label for="Address">Address *</label>
+                    <input id="Address" type="text" required class="input" name="address" />
+                </div>
+                <div class="address2">
+                    <label for="address2">Address 2</label>
+                    <input id="adsress2" type="text"class="input" name="address2">
+                </div>
+                <div class="citypostcode">
+                    <div class="city">
+                        <label  for="city">City *</label>
+                        <select id="city" class="cityinput" name="cities" required>
+                            <option value="London">London</option>
+                            <option value="Manchester">Manchester</option>
+                            <option value="Belfast">Belfast</option>
+                        </select>
+                    </div>
+                    <div class="postcode">
+                        <label for="postcode">Post Code *</label>
+                        <input type="text" id="postcode" class="postcodeinput" required>
+                    </div>
+                </div>
+                <div class="radio">
+                    
+                        <legend>Select a color</legend>
+                        <div class="innerradio">
+                            <input name="radios"type="radio" id="Orange" >
+                            <label for="Orange">Karma Orange</label>
+                        
+                            <input name="radios" type="radio" id="Gray" class="radio1" >
+                            <label for="Gray">Space Gray</label>
+                        </div>
+                
+                </div>   
+                <div class="div-checkbox">
+                    <input name="checkbox"required id="box" type="checkbox"/>
+                    <label class="checkbox" for="box">By placing your order you agree to Karma's <a href="#">Term and Conditions</a>. *</label>
+                </div>
+                <div>
+                    <button class="btn" type="submit">Place my order</button>
+                </div>
+                
+
+            </form>
+        </div>
+        <div class="imgdiv">
+            <img class="img" alt="girl working with laptop"src="./level-2/store-image_by-andrew-neel-unsplash.jpg" width="450px">
+        </div>
+    </main>
+    <footer class="footer">
+
+        <p id="footer-p">Join as on</p>
+        
+        <div id="footer-div">
+            <img class="icon-footer" src="./img/twitter-icon.svg" alt="Tweeter-icon">
+            <img class="icon-footer" src="./img/facebook-icon.svg" alt="Facebook-icon">
+            <img class="icon-footer" src="./img/instagram-icon.svg" alt="instagram-icon">
+        </div>
+    </footer>
+
+        
+</body>
+
+</html>
