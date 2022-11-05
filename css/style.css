@@ -194,7 +194,7 @@ button:hover {
   grid-area: a;
   width: 100%;
 }
-.section {
+.sectiongrid {
   grid-area: s;
   margin-top: 3rem;
   display: grid;
@@ -202,18 +202,15 @@ button:hover {
   text-align: centre;
 }
 
-/* Add your custom styles form  */
+/* Add  form  */
 
-.karma-form {
+.section {
   display: flex;
   flex-direction: column;
   padding: 6% 8%;
   width: 40%;
   gap: 20px;
   border-bottom: 1px solid var(--grey);
-}
-.karma-form h1 {
-  color: var(--orange);
 }
 
 form {
@@ -276,7 +273,7 @@ select {
   list-style: none;
   gap: 20px;
 }
-.container a {
+.container1 a {
   color: var(--orange);
 }
 
@@ -302,7 +299,7 @@ select {
   color: #c05326;
 }
 /* The container */
-.container {
+.container1 {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -313,7 +310,7 @@ select {
 }
 
 /* Hide the browser's default checkbox */
-.container input {
+.container1 input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -322,11 +319,11 @@ select {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container1:hover input ~ .checkmark {
   background-color: #ccc;
 }
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container1 input:checked ~ .checkmark {
   background-image: url("../level-2/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
