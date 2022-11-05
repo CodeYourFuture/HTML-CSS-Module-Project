@@ -6,6 +6,12 @@
     --orange: #d2691e;
     --gray: #808080;
     --light-gary: #e4e4e4;
+    --light-pink: #e9dbd8;
+    --red: #ff0000;
+ }
+
+ *{
+    margin: 0;
  }
 
 body{
@@ -18,6 +24,7 @@ body{
 
 .header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 70px;
     font-size: large;
@@ -31,6 +38,7 @@ body{
 
 .nav_list{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -48,16 +56,18 @@ body{
     color: var(--orange);
 }
 
-/* Main */
 
-.introducing{
+/* Main */
+/* Section Hiro */
+
+.hero{
     background: url("../img/first-background.jpg");
     background-color: var(--gray);
     padding: 150px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
     }
 
 .title_1{
@@ -77,6 +87,13 @@ body{
     margin-top: 40px;
 }
 
+
+/* Section Needs */
+
+.needs{
+    padding: 50px;
+}
+
 .needs_title{
     font-size: 40px;
     padding: 50px;
@@ -84,9 +101,8 @@ body{
 
 .icons{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
     justify-items: center;
-    padding: 0px 200px;
 }
 
 .icons img{
@@ -96,6 +112,45 @@ body{
 
 .icon_title{
     font-size: 20px;
+}
+
+
+/* Section Connection */
+
+.connection{
+    display: flex;
+    background-color: var(--light-pink);
+}
+
+.connection img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.connection article {
+    align-items: center;
+    align-content: center;
+}
+
+.connection p{
+    padding: 5rem 7rem 0rem 7rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.connection span{
+    color: var(--red);
+    padding: 5px;
+    font-size: 40px;
+}
+
+.connection button{
+    border-radius: 0.7ch;
+    border: none;
+    padding: 10px 30px;
+    margin: 3rem;
+    color: var(--white);
+    background-color: var(--orange);
 }
 
 /* Footer */
@@ -118,12 +173,35 @@ body{
     color: var(--gray);
 }
 
-
 /* Media queries */
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 850px) {
+
+.connection p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+   
+    .header{
+        padding: 0;
+    }
+    .nav_list{
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .connection{
+        flex-direction: column;
+    }
+
+    .connection p {
+        font-size: 10px;
+    }
 
 }
+
 /**
  * Add your custom styles below
  * 
