@@ -262,7 +262,7 @@ select {
   font-style: italic;
   width: 250px;
   height: 40px;
-  color: var(--grey-dark);
+
   font-weight: 400;
   padding: 5px 5px;
 }
@@ -298,7 +298,9 @@ select {
 }
 
 /*check box with orange tick*/
-
+.terms {
+  color: #c05326;
+}
 /* The container */
 .container {
   display: block;
@@ -319,22 +321,10 @@ select {
   width: 0;
 }
 
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 22px;
-  width: 22px;
-  border: 1px solid var(--grey);
-  border-radius: 5px;
-}
-
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-image: url("../level-2/checkmark.svg");
@@ -342,7 +332,16 @@ select {
   background-position: center;
   background: size 22px;
 }
-
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 /*
  * Remember: 
  *- Be organised, use comments and separate your styles into meaningful chunks
