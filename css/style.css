@@ -139,3 +139,23 @@ hr {
   margin: 8px;
   padding: auto;
 }
+/* slogan */
+.karma_slogan {
+  display: flex;
+  grid-column: 1 / -1;
+  grid-gap: 50px;
+  background-color: #f5d0c4;
+}
+
+.slogan {
+  margin: 30px 60px;
+  padding: 40px 70px;
+  text-align: center;
+}
+
+.btn_get_karma_today {
+  background-color: #f05a29;
+  color: white;
+  border-radius: 3px;
+  border: none;
+}
