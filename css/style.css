@@ -153,44 +153,62 @@ div p{
     font-size: 75%;
 }
 
-hr{
-    color:rgb(59, 50, 50);
+.newBlock{
+    background-color: rgb(224, 99, 58, 0.1);
     width: 100%;
-    margin: 0;
-}   
-
-footer{
-    text-align: center;
-    margin-top: 4rem;
-}
-
-footer ul{
-    list-style: none;
+    height: auto;
     display: flex;
+    flex-direction: row;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
-    gap: 1.2rem;
-    padding: 1rem 0;
-}
-
- footer ul li{
-    padding: 1rem;
-    border: 0.1rem solid rgb(201, 193, 193);
-    border-radius: 50%;
-    
- }
- footer  img{
-    width: 1.3rem;
-    height: 1.3rem;
-    display: block;
-}
-
- footer .Join{
-    color:black;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 40px;
+    line-height: 36px;
+    margin: auto;
     font-weight: 400;
- }
+    color: #434242;
 
-footer p{
-    color:rgb(181, 179, 179)
+}
+
+
+
+.text .quotes{
+    color: #E0633A;
+    font-size: 37px;
+}
+
+.buttonK {
+    background-color: #E0633A;
+    font-size: 20px;
+    width: 13rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0 0 0 6rem;
+}
+
+.buttonK:hover {
+background-color: rgb(97, 40, 19);
+}
+
+.buttonK a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+.newBlock img{
+    width: 45%;
+    height: auto;
 }
 
 /* ***************************** */
@@ -338,5 +356,45 @@ fieldset{
     background: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
     background-size: cover;
     background-position: center;
+}
 
+hr{
+    color:rgb(59, 50, 50);
+    width: 100%;
+    margin: 0;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 1rem 0;
+}
+
+ footer ul li{
+    padding: 1rem;
+    border: 0.1rem solid rgb(201, 193, 193);
+    border-radius: 50%;
+    
+ }
+ footer  img{
+    width: 1.3rem;
+    height: 1.3rem;
+    display: block;
+}
+
+ footer .Join{
+    color:black;
+    font-weight: 400;
+ }
+
+footer p{
+    color:rgb(181, 179, 179)
 }
