@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <nav>
+      <img alt=" Karma logo" src="/img/karma-logo.svg" />
+      <a href="">Login</a>
+      <a href="">Help</a>
+      <a href="">Blog</a>
+      <a
+        href="https://www.figma.com/file/BPtLAPr1HhwQdNfxGyFouo/Karma-design?node-id=858%3A3"
+        >Store</a
+      >
+      <a href="">How it Works</a>
+      <a id="meetKarma" href="">Meet Karma</a>
+    </nav>
+    <main class="mainform">
+      <div class="form">
+        <a
+          href="https://www.figma.com/file/BPtLAPr1HhwQdNfxGyFouo/Karma-design?node-id=858%3A3"
+          ><h1>Order your Karma wifi device today!</h1></a
+        >
+        <form>
+          <div class="row">
+            <div class="flex">
+              <label for="fname">First name *</label>
+              <input id="fname" type="text" required />
+            </div>
+            <div class="flex">
+              <label for="lname">Last name *</label>
+              <input id="lname" type="text" required />
+            </div>
+          </div>
+          <div class="flex">
+            <label for="adress">Address *</label>
+            <input id="address" type="text" required />
+          </div>
+          <div class="flex">
+            <label for="adress2">Address 2</label>
+            <input id="address2" type="text" />
+          </div>
+
+          <div class="row">
+            <div class="flex">
+              <label for="city">City *</label>
+              <select id="city">
+                <option value="word-of-mouth">London</option>
+                <option value="tv">Liverpool</option>
+                <option value="radio">Manchester</option>
+                <option value="tiktok">Crawley</option>
+              </select>
+            </div>
+            <div class="flex">
+              <label for="postcode">Postcode *</label>
+              <input id="postcode" type="text" required />
+            </div>
+          </div>
+
+          <p>Select a colour</p>
+          <div class="radiob">
+            <input id="color1" type="radio" name="colourradio" value="allow" />
+            <label for="color1">Karma orange</label>
+            <input id="color2" type="radio" name="colourradio" value="allow" />
+            <label for="color2">Space grey</label>
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" required
+              >By placing your order you agree to Karma's Terms and Conditions.
+              *</label
+            >
+          </div>
+          <div class="button">
+            <a
+              href="https://www.figma.com/file/BPtLAPr1HhwQdNfxGyFouo/Karma-design?node-id=858%3A3"
+              ><button>Place my order</button></a
+            >
+          </div>
+        </form>
+      </div>
+      <aside>
+        <img
+          src="/img/store-image_by-andrew-neel-unsplash.jpeg"
+          alt="store manager working on laptop"
+        />
+      </aside>
+    </main>
+    <footer>
+      <hr />
+      <p>Join us on</p>
+      <div class="container3">
+        <img id="fb" alt="icon devices" src="/img/twitter-icon.svg" />
+        <img id="tweeter" alt="icon coffee" src="/img/facebook-icon.svg" />
+        <img id="instagram" alt="icon refill" src="/img/instagram-icon.svg" />
+      </div>
+      <p id="copyright">© Karma Mobility, Inc</p>
+    </footer>
+  </body>
+</html>
