@@ -48,23 +48,31 @@ h1 {
 .form {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 100%;
 }
 
-article img {
-  width: 700px;
+.image {
+  width: 50%;
+}
+
+.image img {
+  object-fit: contain;
 }
 
 section {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ebebeb;
+  width: 100%;
+  gap: 50px;
 }
 
 .title-form {
   flex-direction: column;
   margin-left: 50px;
   margin-top: 70px;
+  width: 50%;
+  gap: 50px;
 }
 
 label,
@@ -73,22 +81,61 @@ fieldset {
 }
 
 fieldset {
-  outline-style: hidden;
+  border: none;
   accent-color: #de6e49;
+  padding: 0;
+  margin: 20px 0 0 0;
 }
 
 input {
   margin-top: 5px;
+  padding: 10px;
 }
 
-span {
-  color: #de6e49;
+.first-input,
+.last-input {
+  width: 50%;
+}
+
+.name-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.name {
+  width: 100%;
+}
+
+.city-wrapper {
+  width: 70%;
+  margin-top: 15px;
+}
+
+#city {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.postcode-wrapper {
+  width: 30%;
+  margin-top: 15px;
 }
 
 .box-terms {
   display: inline;
   margin-top: 30px;
   accent-color: #de6e49;
+}
+
+.box-terms a {
+  color: #de6e49;
+  margin-left: 3px;
+}
+
+input[type="checkbox"] {
+  background-color: white;
+  color: #de6e49;
 }
 
 button {

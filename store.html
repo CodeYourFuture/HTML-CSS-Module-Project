@@ -31,29 +31,67 @@
         <div class="title-form">
           <h1>Order your Karma wifi device today</h1>
           <form class="form">
-            <label for="firstname">First name*</label>
-            <input type="text" id="firstname" name="first-name" required />
+            <div class="name-wrapper">
+              <div class="first-input">
+                <label for="firstname">First name*</label>
+                <input
+                  class="name"
+                  type="text"
+                  id="firstname"
+                  name="first-name"
+                  required
+                />
+              </div>
 
-            <label for="lastname">Last name*</label>
-            <input type="text" id="lastname" name="last-name" required />
+              <div class="last-input">
+                <label for="lastname">Last name*</label>
+                <input
+                  class="name"
+                  type="text"
+                  id="lastname"
+                  name="last-name"
+                  required
+                />
+              </div>
+            </div>
 
             <label for="address">Address*</label>
-            <input type="text" id="address" name="address" required />
+            <input
+              class="name"
+              type="text"
+              id="address"
+              name="address"
+              required
+            />
 
             <label for="address2">Address 2</label>
-            <input type="text" id="address2" name="address2" />
+            <input class="name" type="text" id="address2" name="address2" />
 
-            <label for="city">City*</label>
-            <select name="city" id="city" required>
-              <option selected value="default">Select your city...</option>
-              <option value="london">London</option>
-              <option value="birmingham">Birmingham</option>
-              <option value="manchester">Manchester</option>
-              <option value="guildford">Guildford</option>
-            </select>
+            <div class="name-wrapper">
+              <div class="city-wrapper">
+                <label for="city">City*</label>
+                <select name="city" id="city" class="name" required>
+                  <option selected disabled value="default">
+                    Select your city...
+                  </option>
+                  <option value="london">London</option>
+                  <option value="birmingham">Birmingham</option>
+                  <option value="manchester">Manchester</option>
+                  <option value="guildford">Guildford</option>
+                </select>
+              </div>
 
-            <label for="postcode">Postcode*</label>
-            <input type="text" id="postcode" name="postcode" required />
+              <div class="postcode-wrapper">
+                <label for="postcode">Postcode*</label>
+                <input
+                  class="name"
+                  type="text"
+                  id="postcode"
+                  name="postcode"
+                  required
+                />
+              </div>
+            </div>
 
             <fieldset>
               <legend>Select a colour</legend>
@@ -83,8 +121,9 @@
                 name="terms and conditions"
                 checked
               /><label for="terms"
-                >By placing your order you agree to Karma's<span
-                  >Terms and Conditions</span
+                >By placing your order you agree to Karma's<a
+                  href="termsconditions"
+                  >Terms and Conditions</a
                 >*</label
               >
             </div>
@@ -92,12 +131,12 @@
             <button>Place my order</button>
           </form>
         </div>
-        <article>
+        <div class="image">
           <img
             src="level-2/store-image_by-andrew-neel-unsplash.jpg"
             alt="girl working at desk"
           />
-        </article>
+        </div>
       </section>
     </main>
     <footer>
