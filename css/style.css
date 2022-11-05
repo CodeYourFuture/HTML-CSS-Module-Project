@@ -220,15 +220,67 @@ header {
   border: none;
   border-radius: 4px;
   color: white;
+  margin-top: 10rem;
 }
-form {
-  width: 500px;
-  margin: auto;
+.mainform {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  padding-left: 10%;
+}
+.form h1 {
+  font-size: 70px;
+  color: #de6e49;
+}
+.mainform img {
+  width: 701px;
+}
+.flex {
+
   display: flex;
   flex-direction: column;
-  height: 100%;
-  
+  align-items: flex-start;
+  margin-top: 5%;
 }
-.name {
-  align-items: ;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 30%;
+  margin-top: 5%;
+}
+
+
+.radiob {
+  margin-bottom: 10%;
+}
+form p {
+  margin-top: 10%;
+}
+.form a {
+  text-decoration: none;
+}
+.input-field {
+  height: 23px;
+  width: 110%;
+  padding: 4px;
+  border-radius: 5px;
+}
+.input-field1 {
+  height: 23px;
+  width: 73%;
+  padding: 4px;
+  border-radius: 5px;
+}
+.dropdown {
+  height: 32px;
+ border-radius: 10px;
+}
+:any-link{
+  color: rgb(250, 115, 66);
+  ;
+}
+#store-title {
+  font-weight: 400;
+
 }
