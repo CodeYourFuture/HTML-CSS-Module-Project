@@ -228,6 +228,12 @@ button:hover {
 }
 
 /*store page*/
+
+.store-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .store-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -296,7 +302,6 @@ legend {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  width: 100%;
 }
 
 #city {
@@ -305,16 +310,22 @@ legend {
 }
 
 .postcode-line {
-  flex-grow: 1;
+  width: 30%;
 }
 
 .city-line {
-  flex-grow: 2;
+  width: 170%;
+}
+.city-line select {
+  height: 1.2rem;
+  margin-top: 0.2rem;
+  margin-right: 0;
 }
 
 input {
   height: 1.2rem;
   margin-top: 0.2rem;
+  margin-right: 0;
 }
 
 .form-line {
@@ -339,6 +350,12 @@ input {
 
 input[type="radio"] {
   accent-color: #e0633a;
+  /*-webkit-appearance: none;
+  width: ;
+  height: ;
+  border: 1px solid black;
+  border-radius: 50%;
+  outline: none;*/
 }
 
 input[type="checkbox"] {
