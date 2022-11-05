@@ -55,7 +55,59 @@
       </nav>
     </header>
     <hr>
-    <section class="main_store"></section>
+    <section class="main_store">
+        <h1>Order your Karma wifi device today!</h1>
+        <form class="orderform">
+            <fieldset class="1">
+            
+            <label   for="fname"><div>First name</div></label>
+            <input   id="fname" type="text" name="fname" required/>
+
+
+            <label   for="lname"><div>Last name</div></label>
+            <input  id="lname" type="text" name="lname" required />
+
+            <label for="address"><div>Address</div></label>
+            <input id="address" type="text" name="address" required/>
+
+             <label for="address2"><div>Address 2</div></label>
+            <input id="address2" type="text" name="address2" />
+</fieldset>
+
+
+<fieldset class="2">
+
+            <label for="city"><div>City</div></label>
+            <select id="city" name="city" required>
+
+            <option value="" id="city" disabled selected>Select your city ...</option>
+            <option value="london">London</option>
+             <option value="manchester">Manchester</option>
+              <option value="newcastle">Newcastle</option>
+
+            </select>
+             <label   for="postcode"><div>Postcode</div></label>
+            <input   id="postcode" type="text" name="postcode" required/>
+
+        </fieldset>
+
+
+        <div class="radio">
+           <div>Select a color:</div>
+            <input id="color" type="radio" name="Karma_orange" value="color" checked/>
+<label for="color">Karma Orange</label>
+ <input id="color" type="radio" name="space_gray" value="color"/>
+<label for="color">Space grey</label>
+        </div>
+
+
+        <div class="check-Box">
+                <input type="checkbox" id="termsandconditions" required checked>
+                <label for="termsandconditions">By placing your order you agree to <a href="">Karma's Terms and Conditions</a> *</label>
+              </div>
+           <button>Place my order</button>
+        </form>
+    </section>
     <hr>
     <footer class="footer">
             <p>Join us on</p>
