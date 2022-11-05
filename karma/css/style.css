@@ -1,25 +1,24 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
-
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
- nav {
+  }
+  
+  /**
+  * Add your custom styles below
+  * 
+  * Remember: 
+  * - Be organised, use comments and separate your styles into meaningful chunks
+  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+  * 
+  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+  */
+  nav {
     display: flex;
     padding: 0.5rem 8rem;
   }
-
+  
   .nav-logo {
     width: 100%;
   }
@@ -31,14 +30,14 @@ body {
   .karma-logo {
     width: 2rem;
   }
-
+  
   .nav-link {
     font-size: 15px;
     font-weight: 500;
     color: gray;
     text-decoration: none;
   }
-
+  
   .nav-link:hover {
     color: #c16718;
   }
@@ -46,15 +45,15 @@ body {
     color: #2b3956;
   }
   /* main - Freedom */
-
+  
   main {
-padding-left: 2rem;
-padding-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   }
-
+  
   .Karma {
     padding: 10%;
-    background-image: url("../img/first-background.jpg");
+    background-image: url("../css/img/first-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +63,7 @@ padding-right: 2rem;
     flex-direction: column;
     align-items: center;
     }
-
+  
   .Karma-title {
     font-size: 5rem;
     font-weight: inherit;
@@ -82,12 +81,12 @@ padding-right: 2rem;
     padding: 1.5rem 3rem;
     border-radius: 2rem;
     margin-top: 1.25rem;
-
-
+  
+  
   }
-
+  
   /* INFO */
-
+  
   .info {
     text-align: center;
     font-weight: 250px;
@@ -104,38 +103,38 @@ padding-right: 2rem;
     width: 60%;
     margin: 0 auto;
   }
-
+  
   .card  {
     width: 10rem;
    
     
   }
   /*Added  a  new section */
-
+  
   .features_1 {
     display: flex;
-
+  
   }
   
-
+  
   .features_boxes {
     
   
-background: rgba(224,99,58,0.1);
-margin-top: 1.5rem;
-margin-bottom: 1.5rem;
-margin-top: 1px;
-width:841px;
-height: 439px;
-left: 599px;
-top: 1758px;
-flex-direction: column;
-justify-content:space-evenly;
-align-items: center;
-display: flex;
-
-}
-
+  background: rgba(224,99,58,0.1);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1px;
+  width:841px;
+  height: 439px;
+  left: 599px;
+  top: 1758px;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  display: flex;
+  
+  }
+  
   .text {
     
     width: 548px;
@@ -152,9 +151,9 @@ display: flex;
     text-align: center;
     color: #434242;
   }
-
-.button2 {
- 
+  
+  .button2 {
+  
   color:#ffffff;
   background: #E0633A;
   border-radius: 8px;
@@ -162,31 +161,31 @@ display: flex;
   height: 70px;
   left: 888px;
   top: 2045px;
-
- 
-
-}
-
-
-
-
-
-    
- 
   
-
-
-
-
-
-
+  
+  
+  }
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
   /* footer */
-
+  
   .footer {
     text-align: center;
     padding: 2.5rem 0rem 3rem 0rem;
   }
-
+  
   .container-social {
     display: flex;
     justify-content: space-between;
@@ -194,24 +193,23 @@ display: flex;
     width: 13%;
     margin: 0 auto;
   }
-
+  
   .social {
     border: 1px solid #bdc3c7;
     border-radius: 100%;
     padding: 0.6rem ;
   }
-
+  
   .social img {
     width: 1.4rem;
   }
-
+  
   .footer-join {
     font-size: 20px;
   }
-
+  
   .footer-text {
     color: #bdc2c4;
     margin-top: 1.5rem;
   }
-
-
+  
