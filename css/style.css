@@ -32,6 +32,7 @@ body {
  #nav{
     display: flex;
     width: 100%;
+    
  }
 .nav_ul{
     display: flex;
@@ -56,17 +57,24 @@ body {
     width: auto;
  }
  .content{
+    display:flex;
     background-image: url("../img/first-background.jpg") ;
     height: 500px;
     background-size:cover;
     color:white;
-    text-align: center;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     
  }
 #content-btn{
     
     background-color: rgb(235, 114, 66);
+}
+#content-p1{
+    padding: 5px;
 }
 .article{
     display: flex;
@@ -93,3 +101,88 @@ body {
 #footer-p{
     font-weight: bold;
 }
+
+.extention{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 500px;
+    gap: 20px;
+}
+.extention-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+    
+    
+}
+.name,.city{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 30px;  
+   
+    
+}
+.cityinput{
+    width: 12vw;
+}
+.postcodeinput{
+    width: 88px;
+}
+
+.lastname{
+    display: flex;
+    flex-direction: column;
+   
+}
+.nameLast, .citypostcode{
+    display: flex;
+    
+}
+.address, .address2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+       
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .radio1{
+    margin-left: 30px;
+  }
+  legend{
+    margin-bottom: 10px;
+    margin-top: 60px;
+  }
+  .radio{
+    margin-bottom: 60px;
+  }
+  .btn{
+    width: 70%;
+    height: 40px;
+    margin-top: 30px ;
+    margin-bottom: 50px;
+    background-color: orange;
+    color: white;
+  }
+  
+main{
+    display: flex;
+    justify-content: center;
+}
+.imgdiv{
+    height: 100%;
+}
+  
