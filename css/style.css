@@ -258,6 +258,8 @@ legend {
   margin-bottom: 0.2rem;
 }
 .orderForm {
+  padding: 1.5rem 3rem 2 rem 1 rem;
+  margin-right: 6.5rem;
 }
 
 .btn-form {
@@ -287,23 +289,27 @@ legend {
 
 #adress-1,
 #adress-2 {
-  width: 76.4%;
+  width: 100%;
 }
 
 .form-row-last {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  gap: 2rem;
+  width: 100%;
 }
 
 #city {
-  width: 210%;
   height: 1.65rem;
   margin-top: 0.2rem;
 }
 
-#postcode {
-  width: 52%;
+.postcode-line {
+  flex-grow: 1;
+}
+
+.city-line {
+  flex-grow: 2;
 }
 
 input {
@@ -313,6 +319,7 @@ input {
 
 .form-line {
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .form-line-below {
