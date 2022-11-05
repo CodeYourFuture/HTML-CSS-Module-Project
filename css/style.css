@@ -55,7 +55,7 @@ main {
   background-image: url("/img/first-background.jpg");
   width: 100%;
   height: 800px;
-  background-position:bottom;
+  background-position: bottom;
   color: white;
 }
 
@@ -244,8 +244,11 @@ footer {
   grid-area: C;
 }
 
-#C select{
+#C select {
   font-style: italic;
+  background-color: #ffffff;
+  padding: 4px;
+  margin-top: 2px;
 }
 
 #P {
