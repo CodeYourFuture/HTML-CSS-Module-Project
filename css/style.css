@@ -1,9 +1,12 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+body,
+button {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  margin: 40px;
 }
 
 /**
@@ -15,5 +18,194 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.header,
+.content,
+.footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/*main*/
+main {
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+/*nav*/
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+.logo {
+  margin-right: 100px;
+}
+.bars {
+  display: flex;
+  margin-left: 240px;
+  justify-content: space-evenly;
+}
+.nav-link {
+  padding-right: 12px;
+  color: grey;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #c05326;
+}
+
+/*wifi*/
+.wifi {
+  background-image: url("../img/first-background.jpg");
+  background-color: var(--grey-light);
+  height: 635px;
+  color: #fff;
+  padding-top: 100px;
+  padding-left: 30px;
+  margin-bottom: 35px;
+}
+.intro {
+  margin-top: 148px;
+  margin-left: 500px;
+  margin-bottom: 1rem;
+  font-size: 3.9rem;
+  font-weight: 300;
+}
+.bring {
+  margin-top: 5px;
+  margin-left: 470px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.wifi button {
+  margin-top: 38px;
+  margin-left: 660px;
+  background: #c05326;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5%;
+}
+
+.more {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 120px;
+}
+.three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.l {
+  margin-right: 80px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c {
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.r {
+  margin-left: 80px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*footer*/
+.footer {
+  margin-top: 2rem;
+}
+
+.footer_content {
+  border-top: 1px solid var(--grey-light);
+  padding-top: 2rem;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.karma {
+  color: gray;
+}
+
+.twitter {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-right: 5px;
+}
+.facebook {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.instagram {
+  border: 1px solid gray;
+  border-radius: 100%;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+/*extra*/
+.extra {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  
+}
+
+.text {
+  background: linen;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.wherever {
+  margin-top: 60px;
+}
+.get {
+  font-size: 0.8em;
+  background: #c05326;
+  color: #fff;
+  border-radius: 5%;
+  border: none;
+  padding: 6px 15px;
+}
+.get > a {
+  text-decoration: none;
+  color: #fff;
+}
