@@ -134,3 +134,45 @@ h2 {
 #copyright {
     text-align: center;
 }
+
+#new-section {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.new-feature {
+    flex: 1;
+    background-color: rgb(245, 206, 206);
+    /* padding: 1em; */
+    border: none;
+    height: auto;    
+}
+
+#new-feature2 {
+    
+    justify-items: center;
+    word-wrap: break-word;
+    border: none;
+}
+
+#new-button {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    background-color: rgb(247, 100, 95);
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#quote {
+    font-size: 35px;
+    padding: 80px 80px 10px 80px;
+    text-align: center;
+    font-style: italic;
+}
+
+#new-image {
+    max-width: 100%;
+    max-height: 100%;
+}
