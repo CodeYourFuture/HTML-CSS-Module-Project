@@ -97,7 +97,12 @@ flex-wrap: wrap;
   flex-wrap: wrap;
   
 }
-
+.form2 {
+    padding-top: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
 /*footer*/
 .footer1 {
   
@@ -113,7 +118,10 @@ flex-wrap: wrap;
 }
 .footer3 {
   padding-bottom: 1rem;
-  
+  border-radius: 50%;
+  border: 1px solid rgb(211, 205, 205);
+  margin: 8px;
+  padding: auto;
   text-align: center;
   font-size: 0.5rem;
   display: flex;
@@ -125,3 +133,9 @@ button {
 .hi .hi2 .hi3 {
     padding: 0 15px;
 }
+@media (max-width: 370px) {
+    .main1 .main2 {
+        padding-top: 90px;
+      padding-bottom: 120px;
+      margin-bottom: 50px;
+    }

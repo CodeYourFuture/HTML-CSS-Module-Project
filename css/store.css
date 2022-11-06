@@ -31,13 +31,30 @@ header {
   }
 
   /* main*/
-
+  .container {
+    color: #DE6E49;
+margin-top: 10rem;
+    font-size: 28px;
+    font-weight: 500;
+    
+    padding: 130px 160px;
+  padding-right: 130px;
+  
+  color: var(--main-color);
+  }
   main {
     padding-bottom: 50px;
     margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
   }
-  
-  button {
+.radios {
+    margin-top: 2.5rem;}
+.form-check {
+        margin-top: 5.5rem;}
+.button {
     color: white;
     background-color: rgb(207, 82, 37);
     border: 0;
@@ -48,9 +65,18 @@ header {
   h1 {
         padding-top: 30vh;
         font-weight: 300;
-        font-size: 250%;
+        color: #DE6E49;
+margin-top: 10rem;
         letter-spacing: 2px;
         margin: 0;
+        font-size: 68px;
+        font-weight: 500;
+        
+  }
+  .image1 {  background-size: cover;
+    width: 100%;
+    height: 100%;
+
   }
   /*.main1 {
 
