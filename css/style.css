@@ -24,7 +24,7 @@ img {
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     /* grid-template-rows: repeat(5, 1fr); */
-    
+    background-color: rgb(192, 202, 199);
     padding-top: 5px;
     padding-bottom: 15px;
 }
@@ -34,7 +34,7 @@ img {
     display: flex;
     grid-column: 7 / 14;
     justify-content: space-evenly;
-    color: grey
+    color: grey;
 }
 
 .container {
@@ -72,6 +72,9 @@ img {
 
 h1 {
     font-size: 2.5rem;
+}
+a {
+    text-decoration: none;
 }
 
 h2 {
@@ -175,4 +178,74 @@ h2 {
 #new-image {
     max-width: 100%;
     max-height: 100%;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#order-text {
+    color: orangered;
+    
+}
+
+.order-main-items {
+    flex: 1;
+    border: none;
+    height: auto;
+    margin: 40px;
+}
+
+#order-main-items {
+    margin: 80px;
+}
+
+#main-order-section {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#forms {
+    padding: 20px;
+    margin: auto;
+}
+
+#order-text {
+    /* text-align: center; */
+    font-size: larger;
+}
+
+.form-format {
+    float: left;
+    margin-right: 20px;
+}
+
+/* label,
+input {
+    display: flex;
+    flex-direction: column;
+} */
+
+.group-element {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input .group-names {
+    display: flex;
+    flex-direction: column;    
+}
+
+.r-button {
+    accent-color: orangered;
+}
+
+input[type=checkbox] {
+    accent-color: orangered;
+}
+
+#place-order {
+    background-color: orangered;
+    border-radius: 2px;
+    border-color: orangered;
 }
