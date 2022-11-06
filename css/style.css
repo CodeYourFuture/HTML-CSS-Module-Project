@@ -5,6 +5,8 @@ body {
    font-family: 'Roboto', sans-serif;
    -webkit-font-smoothing: antialiased;
  }
+
+
   
  /**
  * Add your custom styles below
@@ -33,27 +35,59 @@ header {
    max-width: 32px;
    display: block;
 }
-  
-ul {
-   list-style: none;
+
+.nav-bar {
    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav-menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    gap: 10px;
 }
   
 .nav-item {
+   list-style: none;
    color: #9E9C9C;
    text-decoration: none;
    padding: 15px;  
+   transition: 0.5s ease;
 }
-  
-ul li a:hover {
+
+.nav-link {
+   text-decoration: none;
+   transition: 0.7s ease;
+   color: #787c79;
+}
+
+.nav-link:hover {
     color: #CE5C08;
 }
   
 .nav-head {
-   color: #39393F;
+   list-style: none;
    font-weight: 500;
    text-decoration: none;
+   padding: 20px;
+   transition: 0.5s ease;
+}
+
+.hamburger {
+   display: none;
+   cursor: pointer;
+}
+
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   background-color: black;
 }
   
  /* Hero Styles*/
@@ -218,24 +252,49 @@ footer {
     color: #555151;
 }
   
-.menu-img {
-   display: none;
-}
-  
 @media only screen and (max-width: 576px)  {
   
    header {
-      padding: 0 10px;
-   }
-  
-   .nav-bar {
-      visibility: hidden;
+      padding: 10px;
    }
 
-   .menu-img {
+   .hamburger {
       display: block;
    }
+
+   .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+   }
+
+   .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg)
+   }
+ 
+   .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg)
+   }
+   
+   .nav-menu {
+      position: absolute;
+      left: -120%;
+      top: 35px;
+      gap: 0;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      background-color: #FFF5EE;
+      padding: 20px 0;
+   }
+
+   .nav-item {
+      margin: 15px 0;
+   }
     
+   .nav-menu.active {
+      left: 0;
+   }
+
    .secondary-container {
       height: 700px;
    }

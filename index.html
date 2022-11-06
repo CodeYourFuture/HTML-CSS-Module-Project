@@ -17,16 +17,20 @@
    <header>
        <img alt="Karma logo" class="logo-img" src="img/karma-logo.svg">
        <nav class="nav-bar">
-           <ul>
-               <li><a class="nav-head" class="nav-item" href="#">Meet Karma</a></li>
-               <li><a class="nav-item" href="#">How it Works</a></li>
-               <li><a class="nav-item" href="#">Store</a></li>
-               <li><a class="nav-item" href="#">Blog</a></li>
-               <li><a class="nav-item" href="#">Help</a></li>
-               <li><a class="nav-item" href="#">Login</a></li>
+           <ul class="nav-menu">
+               <li class="nav-head" class="nav-item"><a class="nav-link" href="#">Meet Karma</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">How it Works</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
            </ul>
+           <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+           </div>
        </nav>
-       <img alt="menu" class="menu-img" src="./level-3/menu-hamburger.svg">
+      
    </header>
  
    <main>
@@ -79,6 +83,20 @@
        <p class="footer-p">&#169Karma Mobility, Inc.</p>
    </footer>
 </body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+
+    document.querySelectorAll ("nav-item").forEach(n => n. 
+    addEventListener("click",() => {
+
+    }))
+</script>
 </html>
  
  
