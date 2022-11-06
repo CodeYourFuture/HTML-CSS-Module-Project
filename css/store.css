@@ -18,7 +18,6 @@ main {
 .order_form{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     width: 100%;
     margin: 7rem;
 }
@@ -31,17 +30,6 @@ main {
     margin-top: 1rem;
 }
 
-.button {
-    background-color: #E14E00;
-    padding: 1rem;
-    /* margin: 2rem 40rem 2rem 0; */
-    justify-content: left;
-    color: white;
-    border-radius: 0.2rem;;
-    border: none;
-}
-
-
 /* Form Divs*/
 
 fieldset {
@@ -52,8 +40,10 @@ fieldset {
 }
 
 .name_section {
-    display:flex;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
     margin-top: 4rem;
     margin-bottom: 2rem;;
     width: 100%;
@@ -67,18 +57,21 @@ fieldset {
 }
 
 #address {
-    margin-bottom:3rem;
+    margin-bottom:2rem;
 }
 
 .location_section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
     width:100%;
     margin-bottom: 2rem;
 }
 
+
 .colour_section {
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 7rem 0;
 }
 
 .colour_title {
@@ -87,14 +80,35 @@ fieldset {
 
 .terms_cond {
     display: flex;
-    margin:0;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom:3rem;
     width: 100%;
+}
+
+.button {
+    background-color: #E14E00;
+    padding: 1rem;
+    justify-content: left;
+    color: white;
+    border-radius: 0.2rem;;
+    border: none;
+    margin-right: 50%;
+}
+
+/* Radio Styling */
+
+/* Checkbox Styling */
+
+input [type="checkbox"]:before {
+    color: #E14E00;
+    transform: scale(0);
 }
 
 /* image */
 
 .store_image1 {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
