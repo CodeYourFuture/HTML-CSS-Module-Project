@@ -1,0 +1,239 @@
+:root {
+  --main-color: #f15b2a;
+  --text-color: rgba(0, 0, 0, 0.6);
+  --secondary-color: rgba(0, 0, 0, 0.2);
+}
+
+main {
+  margin-top: 100px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.form-box {
+  padding: 130px 160px;
+  padding-right: 130px;
+}
+
+.form-box h1 {
+  font-size: 68px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+form {
+  padding-top: 50px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+form input {
+  /* line-height: 3.5 !important; */
+  border: 2.5px solid var(--text-color) !important;
+}
+
+form .input-text {
+  font-size: 24px;
+  line-height: 2.3;
+  color: var(--text-color);
+}
+
+form select {
+  height: 73px !important;
+  border: 2px solid var(--text-color) !important;
+}
+
+.form-group {
+  margin-bottom: 45px;
+}
+
+.italic-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+/* removing drop-down arrow and adding a new one*/
+.city-select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url("/level-2/caret-down-solid.svg");
+  background-repeat: no-repeat;
+  background-position: right 1.3rem top 50%;
+  background-size: 1.1rem auto;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset legend {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+fieldset .form-check {
+  padding: 0;
+}
+
+fieldset .form-check-label {
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+/* customizing radio button*/
+fieldset input[type="radio"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 4px;
+}
+
+fieldset input[type="radio"]:checked {
+  background-color: var(--main-color);
+}
+
+.terms-box {
+  margin-top: 100px;
+}
+
+.terms-box .form-check .terms-text {
+  padding-left: 35px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.terms-box .form-check .terms-text a {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+/*Customising checkbox */
+.terms-box input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--text-color);
+  border-radius: 20%;
+  background-clip: content-box;
+  padding: 1px;
+}
+
+.terms-box input[type="checkbox"]:checked {
+  background-image: url(/level-2/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.1rem top 50%;
+  background-size: 1.3rem auto;
+  background-color: transparent;
+}
+
+.submit-button {
+  padding: 22px 70px;
+  font-size: 28px;
+  font-weight: 400;
+  border: 2px solid var(--main-color);
+}
+
+.submit-button:hover {
+  color: var(--main-color);
+  background-color: white;
+  border: 2px solid var(--main-color);
+}
+
+footer {
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1400px) {
+  .form-box h1 {
+    font-size: 62px;
+  }
+
+  main img {
+    content: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-box {
+    padding-top: 80px;
+  }
+
+  .form-box h1 {
+    font-size: 62px;
+    text-align: center;
+  }
+
+  .submit-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-box {
+    padding-top: 20px;
+  }
+
+  .form-box h1 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  .form-box {
+    padding: 0 50px 100px 50px;
+  }
+
+  .form-box h1 {
+    font-size: 46px;
+  }
+
+  .submit-button {
+    font-size: 24px;
+  }
+
+  .italic-text {
+    font-size: 24px;
+  }
+
+  fieldset legend {
+    font-size: 24px;
+  }
+
+  .terms-box .form-check .terms-text {
+    font-size: 20px;
+  }
+}

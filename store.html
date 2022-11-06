@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/karma-logo.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler changed-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link karma-text active-link" href="index.html">Meet Karma</a>
+                        </li>
+                        <li class="nav-item nav-text">
+                            <a class="nav-link" href="#">How It Works</a>
+                        </li>
+                        <li class="nav-item nav-text">
+                            <a class="nav-link active-link" href="store.html">Store</a>
+                        </li>
+                        <li class="nav-item nav-text">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item nav-text">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                        <li class="nav-item nav-text">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 form-box no-padding">
+                    <h1>Order your Karma wifi device today!</h1>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-xxl-6">
+                                <label for="first_name">First name *</label>
+                                <input type="text" class="form-control input-text" id="first_name" name="first_name"
+                                    minlength="3" required />
+                            </div>
+                            <div class="form-group col-xxl-6">
+                                <label for="last_name">Last name *</label>
+                                <input type="text" class="form-control input-text" id="last_name" name="last_name"
+                                    minlength="3" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address *</label>
+                            <input type="text" class="form-control input-text" id="inputAddress" name="inputAddress"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control input-text" id="inputAddress2" name="inputAddress2">
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-xxl-8">
+                                <label for="inputCity">City *</label>
+                                <select id="inputCity" class="form-control italic-text city-select" name="inputCity"
+                                    required>
+                                    <option value="" disabled selected hidden>Select your city...
+                                    </option>
+                                    <option value="london">London</option>
+                                    <option value="liverpool">Liverpool</option>
+                                    <option value="edinburgh">Edinburgh</option>
+                                    <option value="manchester">Manchester</option>
+                                    <option value="bristol">Bristol</option>
+                                    <option value="otherCity">Other city</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xxl-4">
+                                <label for="inputPostcode">Postcode *</label>
+                                <input type="text" class="form-control input-text" id="inputPostcode"
+                                    name="inputPostcode" required>
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <legend>Select a colour</legend>
+                            <div class="checkbox-group">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="colour" id="karmaOrange" checked>
+                                    <label class="form-check-label" for="karmaOrange">
+                                        Karma orange
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="colour" id="spaceGrey">
+                                    <label class="form-check-label" for="spaceGrey">
+                                        Space grey
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group terms-box">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" checked required>
+                                <label class="form-check-label terms-text" for="gridCheck">
+                                    By placing your order you agree to Karma's
+                                    <a href="https://karmamobility.com/terms_and_conditions" target="_blank">Terms
+                                        and
+                                        Conditions</a>.*
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Place my order</button>
+                    </form>
+                </div>
+                <div class="col-xl-6 no-padding">
+                    <img src="level-2/store-image_by-andrew-neel-unsplash-cropped.jpg"
+                        alt="The girl is sitting with the computer.">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer-box">
+            <p class="text-1">Join us on</p>
+            <div class="icons">
+                <i class="fa-brands fa-twitter twitter-icon"></i>
+                <i class="fa-brands fa-facebook-f facebook-icon"></i>
+                <i class="fa-brands fa-instagram instagram-icon"></i>
+            </div>
+            <p class="text-2">© Karma Mobility, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e8c9266318.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

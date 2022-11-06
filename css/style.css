@@ -1,19 +1,635 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+:root {
+  --main-color: #f15b2a;
+  --text-color: rgba(0, 0, 0, 0.5);
+  --secondary-color: rgba(0, 0, 0, 0.2);
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
 
+/* navbar*/
+.menu {
+  padding: 22px 100px 22px 150px;
+  font-size: 28px;
+  color: var(--text-color);
+}
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/level-3/menu-hamburger.svg");
+}
+
+.navbar .navbar-brand .logo {
+  width: 45px;
+  height: auto;
+}
+
+.navbar .navbar-collapse .nav-text {
+  padding: 0 20px;
+  color: var(--text-color);
+}
+
+.navbar .navbar-collapse .nav-item .karma-text {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.navbar .navbar-collapse .nav-item .nav-link:hover {
+  color: var(--main-color);
+}
+
+.changed-toggler {
+  border: none;
+}
+
+.navbar .navbar-collapse .active-link {
+  color: var(--main-color);
+}
+
+/*section1*/
+.section1 {
+  background: url("/img/first-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.section1 .box {
+  position: relative;
+  padding-top: 430px;
+  padding-bottom: 470px;
+}
+
+.section1 h1 {
+  position: relative;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.section1 h3 {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 300;
+  color: white;
+  padding-bottom: 86px;
+}
+
+.section1_image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.section1 button {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  padding: 22px 56px;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 32px;
+  font-weight: 300;
+  border-radius: 8px;
+  border: none;
+  transition: all ease-in-out 200ms;
+}
+
+button:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+/*section2*/
+.section2 {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section2 .container {
+  max-width: 1700px;
+}
+
+.section2 .row {
+  margin-top: 80px;
+}
+
+.section2 h2 {
+  text-align: center;
+  font-size: 76px;
+  font-weight: 300;
+}
+
+.section2 .icon {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+}
+
+.section2 p {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 400;
+  padding-top: 58px;
+}
+
+/*section3*/
+.section3 {
+  display: flex;
+  flex-direction: row;
+  background-color: #fcefeb;
+}
+
+.section3 .container-fluid {
+  padding: 0 !important;
+}
+
+.section3 .text-section-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 200px;
+}
+
+.section3 p {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 62px;
+  color: #434242;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section3 span {
+  color: var(--main-color);
+}
+
+.section3 img {
+  width: 110%;
+  height: auto;
+}
+
+.section3 .mobile-button {
+  padding: 22px 56px;
+  color: white;
+  background-color: var(--main-color);
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  transition: all ease-in-out 200ms;
+}
+
+.section3 .mobile-button:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+/*footer*/
+footer {
+  margin: 100px 0;
+}
+
+footer hr {
+  width: 80%;
+  border-bottom: 1px solid var(--secondary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+footer .footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-box .text-1 {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+footer .footer-box .text-2 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+footer .footer-box .icons {
+  margin: 20px 0;
+}
+
+footer .footer-box .icons i {
+  font-size: 28px;
+  margin: 0 10px;
+  padding: 18px 21px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+  transition: all ease-in-out 100ms;
+}
+
+footer .footer-box .icons i:hover {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-box .icons .twitter-icon {
+  padding: 18px 19px;
+  color: #68ace8;
+}
+
+footer .footer-box .icons .facebook-icon {
+  padding: 18px 24px;
+  color: #50679f;
+}
+
+footer .footer-box .icons .instagram-icon {
+  color: #4a7297;
+}
+
+/*responsive design*/
+@media (max-width: 1400px) {
+  .menu {
+    padding: 15px 20px 15px 20px;
+  }
+
+  .navbar .navbar-collapse .nav-text {
+    padding: 0 10px;
+  }
+
+  .section1 .box {
+    padding-top: 270px;
+    padding-bottom: 220px;
+  }
+
+  .section3 .text-section-3 {
+    padding: 0 100px;
+  }
+
+  .section3 p {
+    font-size: 44px;
+    padding-bottom: 20px;
+  }
+
+  .section3 img {
+    width: 120%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    padding: 15px 20px 15px 20px;
+    font-size: 22px;
+  }
+
+  .navbar .navbar-collapse .nav-text {
+    padding: 0 10px;
+  }
+
+  .section1 .box {
+    padding-top: 240px;
+    padding-bottom: 200px;
+  }
+
+  .section1 h1 {
+    font-size: 66px;
+    padding-bottom: 30px;
+  }
+
+  .section1 h3 {
+    font-size: 42px;
+    padding-bottom: 66px;
+  }
+
+  button,
+  .section3 .mobile-button {
+    padding: 18px 52px;
+    font-size: 24px;
+  }
+
+  .section2 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .section2 h2 {
+    font-size: 58px;
+  }
+
+  .section2 .icon {
+    width: 30%;
+    height: auto;
+  }
+
+  .section2 p {
+    font-size: 32px;
+    padding-top: 48px;
+  }
+
+  .section3 .text-section-3 {
+    padding: 0 90px;
+  }
+
+  .section3 p {
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-brand .logo {
+    width: 30px;
+    height: auto;
+  }
+
+  .section1 .box {
+    padding-top: 180px;
+    padding-bottom: 230px;
+  }
+
+  .section1 h1 {
+    font-size: 46px;
+    padding-bottom: 20px;
+  }
+
+  .section1 h3 {
+    font-size: 28px;
+    padding-bottom: 46px;
+  }
+
+  button,
+  .section3 .mobile-button {
+    padding: 15px 49px;
+    font-size: 18px;
+  }
+
+  .section2 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .section2 .row {
+    margin-top: 70px;
+  }
+
+  .section2 h2 {
+    font-size: 38px;
+  }
+
+  .section2 p {
+    font-size: 22px;
+    padding-top: 28px;
+  }
+
+  .section3 .text-section-3 {
+    padding: 30px 90px;
+  }
+
+  .section3 p {
+    font-size: 38px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .section3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    margin: 60px 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .section1 .box {
+    padding-top: 180px;
+    padding-bottom: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1 .box {
+    padding-top: 140px;
+    padding-bottom: 220px;
+  }
+
+  .section1 h1 {
+    font-size: 40px;
+    padding-bottom: 16px;
+  }
+
+  .section1 h3 {
+    font-size: 22px;
+    padding-bottom: 26px;
+  }
+
+  button,
+  .section3 .mobile-button {
+    padding: 12px 42px;
+    font-size: 18px;
+  }
+
+  .section2 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .section2 .row {
+    margin-top: 20px;
+  }
+
+  .section2 .part {
+    margin-top: 50px;
+  }
+
+  .section2 h2 {
+    font-size: 32px;
+  }
+
+  .section2 p {
+    font-size: 20px;
+    padding-top: 28px;
+  }
+
+  .section3 .text-section-3 {
+    padding: 30px 90px;
+  }
+
+  .section3 p {
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .section3 .mobile-button {
+    padding: 14px 46px;
+    font-size: 24px;
+  }
+
+  footer {
+    margin: 60px 0;
+  }
+}
+
+@media (max-width: 665px) {
+  .section1 .box {
+    padding-top: 140px;
+    padding-bottom: 170px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section1 .box {
+    margin: 0 70px;
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+
+  .section1 h1 {
+    font-size: 40px;
+    padding-bottom: 16px;
+  }
+
+  .section1 h3 {
+    font-size: 22px;
+    padding-bottom: 26px;
+  }
+
+  .section1_image {
+    content: url("/img/first-background-cropped-more.jpg");
+  }
+
+  .section2 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .section2 .row {
+    margin-top: 20px;
+  }
+
+  .section2 .part {
+    margin-top: 50px;
+  }
+
+  .section2 h2 {
+    margin: 0 50px;
+    font-size: 32px;
+  }
+
+  .section3 .text-section-3 {
+    padding: 10px 60px;
+  }
+
+  .section3 p {
+    font-size: 28px;
+    line-height: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .section3 .mobile-button {
+    padding: 14px 46px;
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+
+  footer .footer-box .text-1 {
+    font-size: 20px;
+  }
+
+  footer .footer-box .text-2 {
+    font-size: 14px;
+  }
+
+  footer .footer-box .icons {
+    margin: 14px 0;
+  }
+
+  footer .footer-box .icons i {
+    font-size: 14px;
+    margin: 0 5px;
+    padding: 14px 17px;
+  }
+
+  footer .footer-box .icons .twitter-icon {
+    padding: 14px 15px;
+  }
+
+  footer .footer-box .icons .facebook-icon {
+    padding: 15px 19px;
+  }
+}
+
+@media (max-width: 465px) {
+  .section1 .box {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section1 .box {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+
+  .section1 h1 {
+    font-size: 30px;
+    padding-bottom: 16px;
+  }
+
+  .section1 h3 {
+    font-size: 18px;
+    padding-bottom: 26px;
+  }
+
+  button {
+    padding: 10px 38px;
+    font-size: 16px;
+  }
+
+  .section2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section2 h2 {
+    font-size: 28px;
+  }
+
+  .section3 p {
+    font-size: 24px;
+  }
+
+  .section3 .mobile-button {
+    padding: 14px 44px;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .section1 .box {
+    padding-top: 90px;
+    padding-bottom: 120px;
+  }
+}
