@@ -6,6 +6,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.image.png {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /**
  * Add your custom styles below
  * 
@@ -17,3 +23,197 @@ body {
  */
 
 
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo-image {
+    width: 20px;
+    height: 20px;
+    padding: 15px 100px;
+}
+
+a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.nav-text {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 15px 100px;
+}
+
+.gap-list {
+    width: 100px;
+}
+
+.bg-img {
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    z-index: -1;
+}
+
+.text-img {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.background-img {
+    position:relative;
+}
+
+h1, p {
+    color: white;
+}
+
+.text-img  button {
+    background-color: orangered;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+ 
+.section-down h1 {
+    justify-content: center;
+}
+
+.device-img,
+.coffee-img,
+.refill-img {
+    width: 100px;
+    height: 100px;
+}
+
+.section-down {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.part-two {
+    color: black;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.section-down h3 {
+    font-size: 10px;
+}
+
+.footer-img {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border: solid gray 1px;
+    border-radius: 50%;
+}
+
+
+h5 {
+    display: flex;
+    justify-content: center;
+    color: rgb(151, 150, 150);
+}
+
+.footer-wrap {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    height: 50px;
+}
+
+hr {
+    background-color: lightgray;
+    color: lightgray;
+    width: 80%;
+}
+
+.footer-p-tag {
+    color: lightgrey;
+    justify-content: center;
+    display: flex;
+    font-size: 10px;
+}
+
+
+/* Karma design */
+
+.karma-design{
+    /* width: 100%; */
+    display: flex;
+    background-color: #ffe6e6;
+    margin: 50px 0 20px 0;
+    height: 100%;
+}
+
+.img-karma{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.karma-img{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.karma-text{
+    text-align: center;
+    justify-content: right;
+    align-content: center;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 150px;
+    padding-top: 85px;
+}
+
+.karma-text > h4 {
+    justify-content: center;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.karma-btn {
+    background-color: rgb(255, 111, 58);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.karma-btn:hover {
+    background-color: white;
+    color: rgb(255, 111, 58);
+    border: 2px solid rgb(255, 111, 58);;
+}
+
+.quotationMarks{
+    color: rgb(255, 111, 58);
+}

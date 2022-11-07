@@ -1,0 +1,438 @@
+body {
+    margin: auto;
+    padding: 0;
+    width: 1280px;
+}
+
+
+
+p, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+   border: none;
+   padding: 0;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-option {
+    padding: 13px;
+}
+
+.primary-button {
+    text-transform: uppercase;
+    background: rgb(255, 94, 0);
+    border: none;
+    color: white;
+    padding: 18px 30px;
+    font-size: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.secondary-button {
+    text-transform: uppercase;
+    background: white;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 8px;
+}
+
+.left-border {
+    border-left: 1px #a8a8a8 solid;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px #ababab solid;
+}
+
+.hero {
+    display: flex;
+    padding: 0 54px;
+    background-color: #60746e;
+}
+
+.hero-content {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-right: 20px;
+    color: white;
+}
+
+.hero-main-title {
+    font-size: 10px;
+}
+.hero-title {
+    font-size: 18px;
+    margin: 13px 0;
+}
+.hero-copy{
+    font-size: 14px;
+}
+
+
+.hero-image {
+    background-color: red;
+    width: 50%;
+}
+
+.image-src {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    background-color: #fff9e9;
+    padding: 20px 0;
+}
+
+.elements-wrapper{
+    width: 100%;
+    max-width: 80%;
+}
+
+.form-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form {
+    display: flex;
+    gap: 2%;
+};
+
+.form-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form-input {
+    flex-grow: 1;
+    border-radius: 0;
+    border-radius: 0px;
+    border: 1px black solid;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.secondary-title {
+    text-align: center;
+    font-size: 14px;
+}
+
+.donate-card {
+    width: 50%;
+}
+
+.card-img {
+    height: 165px;
+    background-color: red;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.card-content {
+    padding: 20px;
+}
+
+.card-heading {
+    font-size: 16px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-link {
+    font-size: 12px;
+}
+
+.card-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+/* karma form */
+
+/* navbar style */
+
+header {
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(239, 239, 239, 0.811);
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.logo-image {
+    width: 20px;
+    height: 20px;
+    padding: 15px 100px;
+}
+
+a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.nav-text {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 15px 100px;
+}
+
+/* text style */
+
+.names-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.full-w-input {
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.name-style {
+    width: 50%;
+}
+
+.countryInput {
+    flex-grow: 1;
+}
+
+.postCode {
+    width: 30%;
+}
+
+.formWrapper {
+    padding: 104px;
+    width: 50%;
+}
+
+.formWrapper h1 {
+    color: rgb(255, 94, 0);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.selectInput {
+    padding: 10px 0;
+}
+
+/* .name-style{
+    display: flex;
+} */
+
+.chechbox-s {
+    display: flex;
+    margin-top: 90px;
+}
+
+.label-style {
+    display: block;
+    margin: 5px 0 10px 0;
+}
+
+.radio-wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+.input-space {
+    margin-bottom: 15px;
+    /* display: flex; */
+}
+
+.tandc {
+    margin-left: 10px;
+}
+
+.tanc-a{
+    color: rgb(255, 94, 0);
+}
+
+.formSection {
+    display: flex;
+}
+
+input[type='radio'] {
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    border:1px solid rgb(23, 23, 23);
+    border-radius:50%;
+    outline:none;
+    /* box-shadow:0 0 5px 0px gray inset; */
+  }
+  
+  /* input[type='radio']:hover {
+    box-shadow:0 0 5px 0px orange inset;
+  } */
+  
+  input[type='radio']:before {
+    content:'';
+    display:block;
+    width:80%;
+    height:80%;
+    margin: 10% auto;    
+    border-radius:50%;    
+  }
+  input[type='radio']:checked:before {
+    background:rgb(255, 91, 3);
+  }
+
+
+  /* checkbox styling */
+  input[type="checkbox"] {
+    /* this removes the default css styling */
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+
+    /* font: inherit;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 1px solid currentColor;
+    border-radius: 0.15em;
+
+    display: grid;
+    place-content: center; */
+  }
+
+  /* input[type="checkbox"]:before {
+    content: "✓";
+    width: 0.65em;
+    height: 0.65em;
+    color: orange;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  input[type="checkbox"]:checked:before {
+    transform: scale(1);
+  } */
+
+
+  /* sbg example */
+
+  .tick-wrapper {
+    width: 15px;
+    height: 15px;
+    border: 1px black solid;
+  }
+
+  .tick-wrapper svg {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + .tick-wrapper .icon {
+    display: block;
+  }
+
+  /* image style */
+
+.image-wrapper{
+    width: 50%;
+    /* background-image: url('/img/store-image_by-andrew-neel-unsplash.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.deskimg {
+    width: 50%;
+}
+
+  /* footer style */
+
+  footer {
+    height: 200px;
+    padding-top: 50px;
+  }
+
+
+  .footer-img {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border: solid gray 1px;
+    border-radius: 50%;
+}
+
+
+h5 {
+    display: flex;
+    justify-content: center;
+    color: rgb(151, 150, 150);
+}
+
+.footer-wrap {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    height: 50px;
+}
+
+hr {
+    background-color: lightgray;
+    color: lightgray;
+    width: 80%;
+}
+
+.footer-p-tag {
+    color: lightgrey;
+    justify-content: center;
+    display: flex;
+    font-size: 10px;
+}
+
