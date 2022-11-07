@@ -20,19 +20,20 @@ body {
 
  /* Header */
 
- .header {
-    padding:1rem 2rem;
-    margin-bottom: 3rem;
-    margin-top: 0;
+ header {
+    padding: 0;
+    margin: 0;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
  }
 
- .header_logo {
+ .header_logo_container { 
   max-height: 45px;
   width: auto;
-  display:flex;
-  float: left;
-  padding-left: 7rem;
+  margin-left: 7rem;
+  /* border: 4px solid blue; */
  }
 
  /* Navigation */
@@ -40,11 +41,11 @@ body {
   .nav_list {
     display:flex;
     flex-direction: row;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     align-items: center;
     list-style: none;
     gap: 5rem;
-    float:right;
+    /* float:right; */
     padding-right: 7rem;
     color: grey;
   }
