@@ -1,0 +1,169 @@
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align:left;
+  color: rgb(255, 106, 0);
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.nav {
+    list-style-type:none;
+    margin-left: 20vw;
+    padding: 0;
+    float:right;
+}  
+
+.nav li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    float:left;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+   margin: 0;
+}
+
+.primary-button {
+  text-transform: uppercase;
+  background: rgb(255, 106, 0);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 10px;
+  margin-top: 35px;
+}
+
+/* .form-section {
+  display: flex;
+  justify-content: center;
+} */
+
+  .form-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px; 
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+
+  .names-wrapper {
+    display: flex;
+    gap: 30px; 
+  }
+
+
+  
+  .full-input {
+    width: 100%;
+  }
+
+  .city-input {
+      flex-grow: 0,5;
+      margin-top: 15px;
+}
+
+.postcode {
+  width: 30%;
+  margin-top: 15px;
+}
+  
+.input-space {
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+ .tick-wrapper {
+  width: 15px;
+  height: 15px;
+  border: 1px black solid;
+}  
+
+.tick-wrapper svg {
+  display: none;
+} 
+
+ input[type="checkbox"]:checked + .tick-wrapper .icon {
+  display: block;
+} 
+
+.select-input {
+  padding: 2px;
+}
+
+.radio-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+  .tick-wrapper {
+  width: 15px;
+  height: 15px;
+  border: 1px black solid;
+} 
+ 
+.tick-wrapper svg {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .tick-wrapper .icon {
+  display: block;
+} 
+
+.image-wrapper {
+    width: 50%;
+}
+
+.image-wrapper img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+  .join {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+#fb,
+#inst,
+#tw {
+  border-radius: 100px;
+  border: 1px solid #adb0b7;
+  padding: 5px;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+#copyright {
+    color: #C9C4C4
+}
+

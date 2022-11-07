@@ -193,12 +193,16 @@ border-radius: 2.5px;
     margin-bottom: 70px;
   }
 
+  
+  .ful-page {
+    display: flex;
+    flex-direction: row;
+  }
 .main-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "c p";
-  
   
 }
 
