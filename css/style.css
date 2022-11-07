@@ -6,6 +6,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.image.png {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /**
  * Add your custom styles below
  * 
@@ -20,6 +26,7 @@ body {
 body {
     padding: 0px;
     margin: 0px;
+    text-align: center;
 }
 
 header {
@@ -27,7 +34,7 @@ header {
     justify-content:space-between;
 }
 
- .logo-image {
+.logo-image {
     width: 20px;
     height: 20px;
     padding: 15px 100px;
@@ -49,7 +56,9 @@ a:hover {
     margin: 15px 100px;
 }
 
-
+.gap-list {
+    width: 100px;
+}
 
 .bg-img {
     background-size: cover;
@@ -95,7 +104,8 @@ h1, p {
 }
 
 .section-down {
-    padding-left: 35%;
+    justify-content: center;
+    align-content: center;
     display: flex;
     gap: 50px;
     margin-top: 50px;
@@ -145,4 +155,65 @@ hr {
     justify-content: center;
     display: flex;
     font-size: 10px;
+}
+
+
+/* Karma design */
+
+.karma-design{
+    /* width: 100%; */
+    display: flex;
+    background-color: #ffe6e6;
+    margin: 50px 0 20px 0;
+    height: 100%;
+}
+
+.img-karma{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.karma-img{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.karma-text{
+    text-align: center;
+    justify-content: right;
+    align-content: center;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 150px;
+    padding-top: 85px;
+}
+
+.karma-text > h4 {
+    justify-content: center;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.karma-btn {
+    background-color: rgb(255, 111, 58);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.karma-btn:hover {
+    background-color: white;
+    color: rgb(255, 111, 58);
+    border: 2px solid rgb(255, 111, 58);;
+}
+
+.quotationMarks{
+    color: rgb(255, 111, 58);
 }
