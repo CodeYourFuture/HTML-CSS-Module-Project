@@ -186,3 +186,109 @@ ul.socialmedia {
   font-size: 1.1em;
   color: #65686d;
 }
+
+.mainStore {
+  color: #e06339;
+}
+
+/*------------------------------------------Store style----------------------*/
+.mainstore {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+.orderform {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  height: 1235px;
+}
+.loginform {
+  width: 521px;
+  height: 1234px;
+  margin-left: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.imgright {
+  height: 1235px;
+}
+#fname,
+#lname {
+  height: 53px;
+  width: 235px;
+}
+.wrapername {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+}
+#address,
+#address2 {
+  width: 499px;
+  height: 53px;
+}
+.city-postcode {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-end;
+  gap: 5%;
+}
+#selectCity {
+  width: 307px;
+  height: 53px;
+}
+#postcode {
+  width: 165px;
+  height: 53px;
+  line-height: 22px;
+  font-size: 21px;
+}
+.radiobutton {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  size: 22px;
+  line-height: 25px;
+}
+.radiobutton > label {
+  font-size: 21px;
+}
+
+.radiobutton > input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  accent-color: #de6e49;
+}
+.radiobutton > label {
+  margin-right: 10px;
+}
+.radiobutton > input[type="radio"]:after {
+  background-color: #d1d3d1;
+}
+.radiobutton > input[type="radio"]:checked:after {
+  background-color: #ffa500;
+}
+.checkbox > label {
+  font-size: 18px;
+}
+.name,
+.lname,
+.address1,
+.address2,
+.postcode > label {
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titlestore > p {
+  color: #de6e49;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  margin-bottom: 2em;
+}
