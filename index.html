@@ -1,19 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+    <header>
+      <div class="logo">
+        <img src="img/karma-logo.svg" alt="karma karma-logo" width="50px" />
+      </div>
+      <div class="navlinks">
+        <nav id="nav-bar">
+          <ul class="nav-bar">
+            <li>
+              <a class="nav-link" href="#MeetKarma"
+                ><strong>Meet Karma</strong></a
+              >
+            </li>
+            <li><a class="nav-link" href="#HowItWorks">How it works</a></li>
+            <li>
+              <a class="nav-link" href="store.html" target="_blank">Store</a>
+            </li>
+            <li><a class="nav-link" href="#Blog">Blog</a></li>
+            <li><a class="nav-link" href="#SHelp">Help</a></li>
+            <li><a class="nav-link" href="#Login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-</body>
+    <main>
+      <section class="Intro">
+        <div id="Content-Intro">
+          <h1>Introducing Karma</h1>
+          <p class="bringWiFi">Bring Wi-Fi with you, everywhere you go.</p>
+          <button
+            onclick="window.location.href='https://github.com/CodeYourFuture/HTML-CSS-Module-Project';"
+          >
+            Learn More
+          </button>
+        </div>
+      </section>
+
+      <!-- Section Everyone needs a little Karma -->
+
+      <div class="titleAdvantages">
+        <h2>Everyone needs a little Karma</h2>
+      </div>
+
+      <section class="Advantages">
+        <div class="icon">
+          <div id="icon1">
+            <img
+              src="../HTML-CSS-Module-Project/img/icon-devices.svg"
+              alt="device"
+            />
+            <p>Internet for all devices</p>
+          </div>
+          <div id="icon2">
+            <img
+              src="../HTML-CSS-Module-Project/img/icon-coffee.svg"
+              alt="coffee"
+            />
+            <p>Boost your productivity</p>
+          </div>
+          <div id="icon3">
+            <img
+              src="../HTML-CSS-Module-Project/img/icon-refill.svg"
+              alt="refill"
+            />
+            <p>Pay as You Go</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <p>Join us on</p>
+      <nav id="nav-social">
+        <ul class="socialmedia">
+          <li class="sm">
+            <a class="social-media" href="#twitter"
+              ><img
+                src="../HTML-CSS-Module-Project/img/twitter-icon.svg"
+                width="25"
+                height="25"
+                alt="twitterIcon"
+            /></a>
+          </li>
+          <li class="sm">
+            <a class="social-media" href="#facebook"
+              ><img
+                src="../HTML-CSS-Module-Project/img/facebook-icon.svg"
+                width="25"
+                height="25"
+                alt="facebookIcon"
+            /></a>
+          </li>
+          <li class="sm">
+            <a class="social-media" href="#instagram"
+              ><img
+                src="../HTML-CSS-Module-Project/img/instagram-icon.svg"
+                width="25"
+                height="25"
+                alt="instagramIcon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <p id="companyName">@Karma mobility, Inc.</p>
+    </footer>
+  </body>
 </html>

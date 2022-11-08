@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/karma-logo.svg" alt="karma karma-logo" width="50px" />
+      </div>
+      <div class="navlinks">
+        <nav id="nav-bar">
+          <ul class="nav-bar">
+            <li>
+              <a class="nav-link" href="#MeetKarma"
+                ><strong>Meet Karma</strong></a
+              >
+            </li>
+            <li><a class="nav-link" href="#HowItWorks">How it works</a></li>
+            <li>
+              <a class="nav-link" href="store.html" target="_blank">Store</a>
+            </li>
+            <li><a class="nav-link" href="#Blog">Blog</a></li>
+            <li><a class="nav-link" href="#SHelp">Help</a></li>
+            <li><a class="nav-link" href="#Login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="mainstore">
+        <div class="orderform">
+         
+          <form class="loginform">
+            <div class="titlestore">
+            <p>Order your Karma wifi device today!</p>
+          </div>
+          <div class="wrapername">
+            <div class="name">
+              <label for="fname">First Name*</label><br />
+              <br>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                required
+                minlength="4"
+                maxlength="8"
+                size="10"
+              />
+            </div>
+            <div class="lname">
+              <label for="lname">Last Name*</label><br />
+              <br>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                required
+                minlength="4"
+                maxlength="8"
+                size="10"
+              />
+            </div>
+            </div>
+            <div class="address1">
+              <label for="address">Address*</label><br />
+              <br>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                required
+                minlength="4"
+                maxlength="20"
+                size="26"
+              /><br />
+            </div>
+            <div class="address2">
+              <label for="address2">Address 2</label><br />
+              <br>
+              <input
+                type="text"
+                id="address2"
+                name="address2"
+                required
+                minlength="4"
+                maxlength="20"
+                size="26"
+              /><br />
+            </div>
+            <div class="city-postcode">
+            <div class="dropdownmenu">
+              <label for="selectCity">City*</label><br />
+              <br>
+              <select id="selectCity" Select yout city>
+                <option value="select-your-city">Select your city</option>
+                <option value="london">London</option>
+                <option value="bristol">Bristol</option>
+                <option value="edinburgh">Edinburgh</option>
+                <option value="liverpool">Liverpool</option>
+                <option value="oxford">Oxford</option>
+                <option value="birmingham">Birmingham</option>
+                <option value="nottingham">Nottingham</option>
+                <br />
+              </select>
+            </div>
+            <div class="postcode">
+              <label for="postcode">Post code*</label><br />
+              <br>
+              <input
+                type="text"
+                id="postcode"
+                name="postcode"
+                required
+                minlength="4"
+                maxlength="20"
+                size="26"
+              /><br />
+            </div></div>
+            <div class="select-colour">
+              <p>Select a colour</p></div>
+            <div class="radiobutton"> 
+              <input
+                type="radio"
+                id="karma-orange"
+                name="karma-orange"
+                value="karma-orange" required
+              />
+              <label for="karma-orange">Karma orange</label>
+              <input
+                type="radio"
+                id="space-grey"
+                name="space-grey"
+                value="space-grey"
+              />
+              <label for="space-grey">Space grey</label>
+            </div>
+            
+       
+
+<!---------------------------Checkbox-->
+
+<div class="boxes">
+
+<input type="checkbox" id="box-2" checked required>
+  <label for="box-2">By placing your order you agree Karma's
+                <a href="#termsconditions" target="_blank">Terms and conditions. *</a>
+              <span class="checkmark"></span> </label>
+</div>
+
+<!---------------------------Button Place my order-->
+<div class="button">
+            <button>Place my order</button></div>
+          </form>
+          <div>
+          <img
+          class="imgright"
+          src="../HTML-CSS-Module-Project/level-2/store-image_by-andrew-neel-unsplash.jpg"
+          alt="homepage-desktop"
+        /></div>
+        </div>
+      </main>
+    <footer>
+      <hr />
+      <p>Join us on</p>
+      <nav id="nav-social">
+        <ul class="socialmedia">
+          <li class="sm">
+            <a class="social-media" href="#twitter"
+              ><img
+                src="../HTML-CSS-Module-Project/img/twitter-icon.svg"
+                width="25"
+                height="25"
+                alt="twitterIcon"
+            /></a>
+          </li>
+          <li class="sm">
+            <a class="social-media" href="#facebook"
+              ><img
+                src="../HTML-CSS-Module-Project/img/facebook-icon.svg"
+                width="25"
+                height="25"
+                alt="facebookIcon"
+            /></a>
+          </li>
+          <li class="sm">
+            <a class="social-media" href="#instagram"
+              ><img
+                src="../HTML-CSS-Module-Project/img/instagram-icon.svg"
+                width="25"
+                height="25"
+                alt="instagramIcon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <p id="companyName">@Karma mobility, Inc.</p>
+    </footer>
+  </body>
+</html>

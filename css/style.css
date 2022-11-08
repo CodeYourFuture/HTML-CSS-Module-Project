@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,333 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* header style*/
+body {
+  padding: 0;
+  margin: 0%;
+  width: auto;
+  width: 1440px;
+}
+header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #c4c4c41a;
+  height: 89px;
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
+ul {
+  list-style: none;
+}
+.nav-bar {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+li {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #65686d;
+  transition: background-color 0.5s;
+}
+a:hover {
+  color: #ea9377;
+}
+
+/* section Introducing Karma*/
+
+.Intro {
+  background: url(../img/first-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 859px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Content-Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5%;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 4.4em;
+
+  margin-bottom: 0.5em;
+  color: white;
+}
+p {
+  font-size: 2em;
+  margin: 0%;
+  font-weight: lighter;
+}
+.bringWiFi {
+  color: white;
+}
+button {
+  border: none;
+  background-color: #e06339;
+  display: inline-block;
+  margin-top: 36px;
+  line-height: 2em;
+  padding: 0.2em 1em;
+  font-size: 1.4em;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  color: white;
+}
+button:hover {
+  background-color: white;
+  color: #e06339;
+}
+.Advantages {
+  height: 812px;
+  margin-top: -80px;
+  display: flex;
+  align-items: center;
+}
+
+.titleAdvantages {
+  text-align: center;
+}
+h2 {
+  font-weight: lighter;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 4em;
+}
+.icon img {
+  width: 10em;
+  height: 10em;
+}
+#icon1,
+#icon2,
+#icon3 {
+  width: 415px;
+  height: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  width: 415px;
+  height: 351px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  min-height: 200px;
+  column-gap: 10%;
+  padding-inline-start: 0px;
+}
+.icon p {
+  margin-top: 10px;
+}
+
+/* Footer*/
+footer {
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#nav-social {
+  display: flex;
+  justify-content: center;
+}
+footer > p {
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 6px;
+  color: #65686d;
+}
+ul.socialmedia {
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  align-content: space-around;
+}
+#companyName {
+  font-size: 1.1em;
+  color: #65686d;
+}
+
+.mainStore {
+  color: #e06339;
+}
+
+/*------------------------------------------Store style----------------------*/
+.mainstore {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+.orderform {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  height: 1235px;
+}
+.loginform {
+  width: 521px;
+  height: 1234px;
+  margin-left: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.imgright {
+  height: 1235px;
+}
+#fname,
+#lname {
+  height: 53px;
+  width: 235px;
+}
+.wrapername {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  margin-bottom: 20px;
+}
+#address,
+#address2 {
+  width: 499px;
+  height: 53px;
+  margin-bottom: 20px;
+}
+.city-postcode {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-end;
+  gap: 5%;
+  margin-bottom: 20px;
+}
+#selectCity {
+  width: 307px;
+  height: 58px;
+  line-height: 22px;
+  font-size: 21px;
+}
+#postcode {
+  width: 165px;
+  height: 53px;
+  line-height: 22px;
+  font-size: 21px;
+}
+.radiobutton {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  size: 22px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.radiobutton > label {
+  font-size: 21px;
+}
+.dropdownmenu,
+.name,
+.lname,
+.address1,
+.address2,
+.postcode > label {
+  font-size: 21px;
+}
+
+.radiobutton > input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  accent-color: #de6e49;
+}
+.radiobutton > label {
+  margin-right: 10px;
+}
+.radiobutton > input[type="radio"]:after {
+  background-color: #d1d3d1;
+}
+.radiobutton > input[type="radio"]:checked:after {
+  background-color: #ffa500;
+}
+/*------------------Style Checkbox----------------------*/
+.boxes {
+  margin-top: 70px;
+  font-size: 18px;
+}
+.boxes a {
+  color: #e06339;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e0633a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.12s, border-color 0.08s;
+  transition: all 0.12s, border-color 0.08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 6;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.titlestore > p {
+  color: #de6e49;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.select-colour {
+  font-size: 21px;
+  margin-top: 50px;
+}
