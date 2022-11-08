@@ -108,6 +108,7 @@ body {
     padding-right: 150px;
     align-items: center;
   }
+
 .icons{
     width: 200px;
     height: 200px;
@@ -200,4 +201,43 @@ footer {
     text-align: center;
   }
 
- 
+
+/* media query for tablet*/
+
+ @media screen and (max-width:768px) {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-light);
+    opacity: .9;
+    top: -800px;
+    gap: 10px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.fillname {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;}
+
+.filllocation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+.all-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+ }

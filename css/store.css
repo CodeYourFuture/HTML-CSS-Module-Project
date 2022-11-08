@@ -141,7 +141,7 @@ fieldset {
  }
 
  select {
-    width: 260px;
+    width: 250px;
     height: 40px;
     background-color: white;
     border-radius: 3px;
@@ -184,7 +184,61 @@ fieldset {
     width:100%;
 }
 
+@media screen and (max-width:768px) {
 
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--grey-light);
+      opacity: .9;
+      top: -800px;
+      gap: 10px;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+      border-radius: 5px;
+  }
+  
+  .fillname {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;}
+  
+  .filllocation {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+
+    #address2 {
+        width:250px;
+     }
+    
+     #address {
+        width:250px;
+     }
+  
+  .all-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgmain {
+    display:flex;
+    flex-wrap: wrap;
+    height:50%;
+    width:50%;
+}
+
+input,
+ label {
+     width: 80px;
+    }
+
+   }
 
 
 
