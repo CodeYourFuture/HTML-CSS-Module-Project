@@ -1,0 +1,247 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+a,
+li {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 20px;
+  border: 0px;
+  background: none;
+  font-weight: 100;
+}
+
+hr {
+  display: block;
+  margin-top: 40;
+  margin-bottom: 0.5em;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-width: 1px;
+  opacity: 30%;
+}
+
+#navbar-button {
+  padding: 10px;
+}
+
+/* ----------  Main ---------- */
+
+.body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  margin: 10px;
+  margin-right: 0%;
+}
+
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 100;
+  background-color: #fdf6f8;
+}
+
+.navbar-logo {
+  width: 2%;
+}
+
+/* --------------- Footer -------------*/
+
+footer {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
+}
+
+footer > h4,
+h3 {
+  font-weight: 100;
+  align-items: center;
+}
+
+.social-media-handles {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+}
+
+.twitter-handle {
+  grid-column: 1;
+  grid-row: 1;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  opacity: 60%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.facebook-handle {
+  grid-column: 2;
+  grid-row: 1;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  opacity: 60%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.instagram-handle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  opacity: 60%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.karma-mobility {
+  color: rgb(104, 103, 103);
+}
+
+/*
+/*
+/* ---------- Store Page Starts Here --------- */
+/*
+*/
+
+:root {
+  --color-gray: #737888;
+  --color-lighter-gray: #e3e5ed;
+  --color-light-gray: #f7f7fa;
+}
+
+.store-container {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40%;
+  max-width: 65%rem;
+  padding: 10vw 2rem 0;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.store-main-image {
+  max-width: 50%;
+}
+
+/*
+/*
+/* ---------- Store Form Starts Here --------- */
+/*
+*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.form > h1 {
+  color: orangered;
+  font-weight: 100;
+  line-height: 2;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #737888;
+  margin-right: 2%;
+}
+
+label {
+  display: block;
+  margin-top: 0.25em;
+  margin-bottom: 0.25rem;
+}
+
+.req {
+  color: red;
+}
+
+.form-names,
+.form-city-postcode {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.select-a-colour {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0%;
+}
+
+.radio-button,
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  color: #737888;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+#karma-orange,
+#space-gray {
+  margin-right: 10px;
+}
+
+#checkbox {
+  margin-left: 10px;
+}
+
+.button {
+  background-color: orangered;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  outline: 0;
+  margin-top: 5%;
+}
+.button:focus-visible {
+  background-color: #333;
+}
