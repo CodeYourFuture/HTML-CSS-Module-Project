@@ -238,6 +238,17 @@ footer {
   flex-direction: column;
 }
 
-
+.gridcontainer {
+  height: 100%;
+  display: grid;
+  background-color: bisque;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 122px 122px;
+  margin-bottom: 50px;
+  grid-template-areas: "p"
+      "q"
+      "g"
+      ".";
+}
 
  }
