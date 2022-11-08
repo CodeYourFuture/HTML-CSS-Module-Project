@@ -51,6 +51,7 @@
           <div class="wrapername">
             <div class="name">
               <label for="fname">First Name*</label><br />
+              <br>
               <input
                 type="text"
                 id="fname"
@@ -63,6 +64,7 @@
             </div>
             <div class="lname">
               <label for="lname">Last Name*</label><br />
+              <br>
               <input
                 type="text"
                 id="lname"
@@ -76,6 +78,7 @@
             </div>
             <div class="address1">
               <label for="address">Address*</label><br />
+              <br>
               <input
                 type="text"
                 id="address"
@@ -88,6 +91,7 @@
             </div>
             <div class="address2">
               <label for="address2">Address 2</label><br />
+              <br>
               <input
                 type="text"
                 id="address2"
@@ -101,6 +105,7 @@
             <div class="city-postcode">
             <div class="dropdownmenu">
               <label for="selectCity">City*</label><br />
+              <br>
               <select id="selectCity" Select yout city>
                 <option value="select-your-city">Select your city</option>
                 <option value="london">London</option>
@@ -115,6 +120,7 @@
             </div>
             <div class="postcode">
               <label for="postcode">Post code*</label><br />
+              <br>
               <input
                 type="text"
                 id="postcode"
@@ -125,7 +131,7 @@
                 size="26"
               /><br />
             </div></div>
-            <div>
+            <div class="select-colour">
               <p>Select a colour</p></div>
             <div class="radiobutton"> 
               <input
@@ -133,30 +139,31 @@
                 id="karma-orange"
                 name="karma-orange"
                 value="karma-orange" required
-              /><label for="karma-orange">Karma orange</label>
+              />
+              <label for="karma-orange">Karma orange</label>
               <input
                 type="radio"
                 id="space-grey"
                 name="space-grey"
                 value="space-grey"
-              /><label for="space-grey">Space grey</label>
-            </div>
-            <div class="checkbox">
-              <input
-                id="checkbox"
-                type="checkbox"
-                name="checkbox"
-                value="1"
-                required
               />
-              <label for="checkbox"
-                ><span style="font-family: Arial Unicode MS, Lucida Grande">
-                  &#10003; </span
-                >By placing your order you agree Karma's
-                <a href="#termsconditions">Terms and conditions*</a>
-              </label>
+              <label for="space-grey">Space grey</label>
             </div>
-            <div class="button">
+            
+       
+
+<!---------------------------Checkbox-->
+
+<div class="boxes">
+
+<input type="checkbox" id="box-2" checked required>
+  <label for="box-2">By placing your order you agree Karma's
+                <a href="#termsconditions" target="_blank">Terms and conditions. *</a>
+              <span class="checkmark"></span> </label>
+</div>
+
+<!---------------------------Button Place my order-->
+<div class="button">
             <button>Place my order</button></div>
           </form>
           <div>
@@ -166,17 +173,7 @@
           alt="homepage-desktop"
         /></div>
         </div>
-      <!---<section class="storeimage">
-
-      </section>
-      
-        <img
-          class="imgright"
-          src="../HTML-CSS-Module-Project/level-2/store-image_by-andrew-neel-unsplash.jpg"
-          alt="homepage-desktop"
-        />
-      </section>--->
-    </main>
+      </main>
     <footer>
       <hr />
       <p>Join us on</p>

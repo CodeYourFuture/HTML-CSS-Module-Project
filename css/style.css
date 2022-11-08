@@ -223,11 +223,13 @@ ul.socialmedia {
   display: flex;
   justify-content: flex-start;
   gap: 5%;
+  margin-bottom: 20px;
 }
 #address,
 #address2 {
   width: 499px;
   height: 53px;
+  margin-bottom: 20px;
 }
 .city-postcode {
   display: flex;
@@ -235,10 +237,13 @@ ul.socialmedia {
   justify-content: flex-start;
   align-content: flex-end;
   gap: 5%;
+  margin-bottom: 20px;
 }
 #selectCity {
   width: 307px;
-  height: 53px;
+  height: 58px;
+  line-height: 22px;
+  font-size: 21px;
 }
 #postcode {
   width: 165px;
@@ -252,8 +257,17 @@ ul.socialmedia {
   justify-content: flex-start;
   size: 22px;
   line-height: 25px;
+  margin-top: 20px;
 }
 .radiobutton > label {
+  font-size: 21px;
+}
+.dropdownmenu,
+.name,
+.lname,
+.address1,
+.address2,
+.postcode > label {
   font-size: 21px;
 }
 
@@ -272,17 +286,52 @@ ul.socialmedia {
 .radiobutton > input[type="radio"]:checked:after {
   background-color: #ffa500;
 }
-.checkbox > label {
+/*------------------Style Checkbox----------------------*/
+.boxes {
+  margin-top: 70px;
   font-size: 18px;
 }
-.name,
-.lname,
-.address1,
-.address2,
-.postcode > label {
-  font-size: 21px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.boxes a {
+  color: #e06339;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e0633a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.12s, border-color 0.08s;
+  transition: all 0.12s, border-color 0.08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 6;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .titlestore > p {
@@ -291,4 +340,8 @@ ul.socialmedia {
   line-height: 59px;
   text-align: center;
   margin-bottom: 2em;
+}
+.select-colour {
+  font-size: 21px;
+  margin-top: 50px;
 }
