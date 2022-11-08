@@ -42,23 +42,27 @@
     <main class="main">
         <section class="store">
             <h1>Order your Karma wifi device today!</h1>
+
             <form method="post" action="" >
                 <div class="wrapper">
                     <div>
                         <label for="first_name">First name*</label>
                         <input type="text" id="first_name">
                     </div>
-                    <div>
+                    <div >
                         <label for="last_name">Last name*</label>
-                         <input type="text" class="" id="last_name">
+                        <input type="text" class="input_wider" id="last_name">
                     </div>
                 </div>
+
                 <label for="address">Address*</label>
-                <input type="text" id="address" class="wider">
+                <input type="text" id="address" class="input_wider">
+
                 <label for="address_2">Address 2</label>
-                <input type="text" id="address_2" class="wider">
+                <input type="text" id="address_2" class="input_wider">
+                
                 <div class="wrapper">
-                    <div>
+                    <div class="wrapper column_wrapper">
                         <label for="city">City</label>
                         <select name="city" id="city">
                             <option disabled selected>Select your city</option>
@@ -68,22 +72,29 @@
                     </div>
                     <div>
                         <label for="postcode">Postcode*</label>
-                        <input type="text" id="postcode">
+                        <input type="text" id="postcode" class="input_wider">
                     </div>
                 </div>
+
+
+
                 <label>Select a colour</label>
-                <div class="wrapper"> 
+                <div class="wrapper gap_wrapper"> 
                     <div class="wrapper">
-                        <input type="radio" id="orange">
+                        <input type="radio" id="orange" name="colour">
                         <label for="orange">Karma orange</label>
                     </div>
                     <div class="wrapper">
-                        <input type="radio" id="gray">
+                        <input type="radio" id="gray" name="colour">
                         <label for="gray">Space Gray</label>
                 
                     </div>
                 </div>
-                    
+                
+                
+
+
+
                     <!-- <fieldset>
                         <legend>Select a colour</legend>
                         <input type="radio" id="orange">
