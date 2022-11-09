@@ -167,16 +167,21 @@ hr {
 /* store */
 .main_store {
   display: flex;
-  full-w-input:100%;
-  height:190px;
+  width:100%;
+  height:100%;
   gap:30px;
-  /* grid-column: 1/ -1; */
+ padding:40px 0;
+
 }
 .left{
   width:50%;
 }
 .right{
   width:50%;
+  background-image:url(/Users/farnooshmoayeri/Documents/GitHub/HTML-CSS-Module-Project/img/store-image_by-andrew-neel-unsplash.jpg);
+  background-color:red;
+  background-size:cover;
+  background-position:center;
   object-fit:cover;
 }
 
