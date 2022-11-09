@@ -219,6 +219,10 @@ hr {
 
 /* store */
 /* form */
+/* right */
+
+
+
 
 .main_store {
   display: flex;
@@ -228,6 +232,18 @@ hr {
  padding:40px 0;
 }
 
+/* right section */
+
+
+.right{
+  width:50%;
+  background-image:url(/Users/farnooshmoayeri/Documents/GitHub/HTML-CSS-Module-Project/img/store-image_by-andrew-neel-unsplash.jpg);
+  background-color:red;
+  background-size:cover;
+  background-position:center;
+  object-fit:cover;
+   height:400px;
+}
 
 
 .text{
@@ -237,11 +253,7 @@ hr {
 }
 
 
-fieldset {
-   border: none;
-   padding: 0;
-    margin: 0;
-}
+/* firstname/lastname */
 
 
 .name_wrapper{
@@ -260,15 +272,15 @@ margin-bottom:5px;
   width:50%;
 }
 
+/* address/address2 */
+
 .address_input{
   margin-top:5px;
   margin-bottom:5px;
 }
 
-.input_size {
-  width:80%;
 
-}
+/* city/postcode */
 
 .city_wrapper{
   display:flex;
@@ -277,14 +289,28 @@ gap:100px;
 margin-top:5px;
 margin-bottom:5px;
   
+}
+
+.input_size {
+  width:80%;
 
 }
+
+
 .city{
   width:150%;
 
 }
 .postcode{
   width:50%;
+}
+
+/* color form */
+
+fieldset {
+   border: none;
+   padding: 0;
+    margin: 0;
 }
 
 .radio{
@@ -296,15 +322,7 @@ padding-bottom:30px;
 margin-bottom:9px;
 }
 
-.right{
-  width:50%;
-  background-image:url(/Users/farnooshmoayeri/Documents/GitHub/HTML-CSS-Module-Project/img/store-image_by-andrew-neel-unsplash.jpg);
-  background-color:red;
-  background-size:cover;
-  background-position:center;
-  object-fit:cover;
-   height:400px;
-}
+/* right/bottom */
 
 .tac{
   color: #f05a29;
@@ -318,7 +336,9 @@ margin-bottom:9px;
   border-radius:3px;
   
 }
-/* image */
+
+
+/* right/image */
 
 .left{
   width:50%;
