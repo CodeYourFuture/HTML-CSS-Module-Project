@@ -1,19 +1,286 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+  }
+  /* HEADER */
+header {
+    padding: 20px;
+    background: rgba(196, 196, 196, 0.1);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  ul.nav-list {
+    display: none;
+    list-style: none;
+    padding: 0 20px;
+    color: black;
+  }
+  
+  a.nav-item {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 10px;
+    color: gray;
+  }
+
+
+  li:first-child {
+    font-weight: 500;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+  
+  .nav-item:hover {
+    color: rgb(250, 115, 66);
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    height: 350px;
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  .hero h1 {
+    font-size: 2.3rem;
+    font-weight: 300;
+    padding: 70px 20px 0 20px;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    padding: 0 65px 20px 65px;
+    line-height: 2rem;
+  }
+  
+  .orange-button {
+    padding: 0.9rem;
+    background-color: rgb(250, 115, 66);
+    border: none;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  /* ABOUT */
+  .about {
+    color: rgb(82, 80, 80);
+    text-align: center;
+    padding: 40px 60px 10px 60px;
+  }
+  
+  .about h2 {
+    font-weight: 300;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .flex-container img {
+    width: 100px;
+  }
+  
+  .flex-item {
+    padding: 20px 0;
+  }
+  hr {
+    border-top: 1px solid rgb(240, 239, 239);
+    margin: 4rem 3rem 3rem 3rem;
+  }
+  
+  /* ADDITIONAL SECTION GET KARMA */
+  
+  .get-karma-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+  
+  .get-karma-wrapper img {
+    width: 100%;
+  }
+  
+  .get-karma-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  
+  .get-karma-text h3 {
+    line-height: 2.3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-container {
+    padding: 3px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-container img {
+    width: 13px;
+    margin: 5px;
+  }
+  
+  .gray-text {
+    color: gray;
+    font-weight: lighter;
+    font-size: 0.8rem;
+  }
+  
+  /* MEDIA QUERY FOR DESKTOP */
+  
+  @media only screen and (min-width: 800px) {
+    header {
+      padding: 10px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  
+    nav {
+      justify-content: space-around;
+    }
+  
+    ul.nav-list {
+      display: flex;
+    }
+  
+    .hero {
+      height: 500px;
+    }
+  
+    .hero h1 {
+      padding-top: 150px;
+    }
+  
+    .flex-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .get-karma-wrapper {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .get-karma-wrapper img {
+      min-width: 60vw;
+      object-fit: cover;
+      object-position: 0 0;
+      width: auto;
+    }
+  
+    .get-karma-text h3 {
+      font-size: 1.7rem;
+    }
+  }
+
+/*SRORE HTML PAGE*/
+
+.orange-button2 {
+  padding: 0.9rem;
+  background-color: rgb(250, 115, 66);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin-top: 10rem;
+}
+.mainform {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  padding-left: 10%;
+}
+.form h1 {
+  font-size: 70px;
+  color: #de6e49;
+}
+.mainform img {
+  width: 701px;
+}
+.flex {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 30%;
+  margin-top: 5%;
+}
 
 
+.radiob {
+  margin-bottom: 10%;
+}
+form p {
+  margin-top: 10%;
+}
+.form a {
+  text-decoration: none;
+}
+.input-field {
+  height: 23px;
+  width: 110%;
+  padding: 4px;
+  border-radius: 5px;
+}
+.input-field1 {
+  height: 23px;
+  width: 73%;
+  padding: 4px;
+  border-radius: 5px;
+}
+.dropdown {
+  height: 32px;
+ border-radius: 10px;
+}
+:any-link{
+  color: rgb(250, 115, 66);
+  ;
+}
+#store-title {
+  font-weight: 400;
+
+}
