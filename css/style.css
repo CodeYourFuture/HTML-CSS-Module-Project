@@ -48,7 +48,7 @@ h1 {
   font-weight: lighter;
   font-size: xx-large;
   padding-bottom: 4px;
-  margin-right: -10px;
+ 
 }
 
 h2 {
@@ -72,19 +72,23 @@ h2 {
   color: white;
   font-weight: lighter;
   background-color: rgb(36, 6, 106);
-  background-image: url(/img/first-background.jpg);
+  background-image: url(file:///Users/farnooshmoayeri/Documents/GitHub/HTML-CSS-Module-Project/img/first-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 900px;
+  width: 100%;
   height: 500px;
-  padding-left: 50px;
-  margin-left: 90px;
+  /* padding-left: 50px;
+  margin-left: 90px; */
 }
 
 .hero_wrapper {
-  text-align: center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   padding-top: 8rem;
-  padding-left: 100px;
+  /* padding-left: 100px; */
+  wi
 }
 /* article */
 h3 {
@@ -151,11 +155,21 @@ hr {
   background-color: #f5d0c4;
 }
 
+
+.quotes{
+  color: #f05a29;
+}
+
 .slogan {
   margin: 30px 60px;
   padding: 40px 70px;
   text-align: center;
 }
+/* .image_karma_slogan{
+  /* background-image:url(img/homepage-feature.png); */
+  /* background-size:cover;
+  width:50%;
+} */ 
 
 .btn_get_karma_today {
   background-color: #f05a29;
@@ -165,17 +179,77 @@ hr {
 }
 
 /* store */
+/* form */
+
 .main_store {
   display: flex;
   width:100%;
-  height:100%;
+  height:400px;
   gap:30px;
  padding:40px 0;
 
 }
-.left{
+.text{
+  color:#f05a29;
+  margin-bottom:10px;
+  text-align:center;
+}
+fieldset {
+   border: none;
+   padding: 0;
+    margin: 0;
+}
+.name_wrapper{
+display:flex;
+width:100%;
+gap:2%;
+margin-top:5px;
+margin-bottom:5px;
+}
+
+.fname {
   width:50%;
 }
+.lname {
+  width:50%;
+}
+
+.address_input{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.input_size {
+  width:80%;
+
+}
+
+.city_wrapper{
+  display:flex;
+  width:100%;
+gap:100px;
+margin-top:5px;
+margin-bottom:5px;
+  
+
+}
+.city{
+  width:150%;
+
+}
+.postcode{
+  width:50%;
+}
+
+.radio{
+padding-top:6px;
+padding-bottom:30px;
+}
+
+.radio_color{
+margin-bottom:9px;
+}
+
 .right{
   width:50%;
   background-image:url(/Users/farnooshmoayeri/Documents/GitHub/HTML-CSS-Module-Project/img/store-image_by-andrew-neel-unsplash.jpg);
@@ -183,5 +257,26 @@ hr {
   background-size:cover;
   background-position:center;
   object-fit:cover;
+   height:400px;
 }
 
+.tac{
+  color: #f05a29;
+}
+.btn_place_my_order{
+  background-color:#f05a29;
+  color:white;
+  border:none;
+  margin:10px;
+  padding:4px 3px;
+  border-radius:3px;
+  
+}
+/* image */
+
+.left{
+  width:50%;
+  padding:40px
+   height:400px;
+
+}
