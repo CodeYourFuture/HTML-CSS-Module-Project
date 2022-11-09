@@ -58,17 +58,19 @@ header {
     color: rgb(80, 78, 78);
 }
 
-.one{
+.form-name{
     display: flex;
     flex-direction: row;
     column-gap: 2rem;
 }
+
 #name{
     display: flex;
     flex-direction: column;
     width: 17rem;
     height: 2.2rem;
 }
+
 #surname{
     display: flex;
     flex-direction: column;
@@ -90,18 +92,19 @@ header {
     height: 2.2rem;
 }
 
-.four{
+.dropdown{
     display: flex;
     flex-direction: row;
     column-gap: 3rem;
 }
+
 #city{
     display: flex;
     flex-direction: column;
     width: 17rem;
     height: 2.2rem;
-
 }
+
 #pc{
     display: flex;
     flex-direction: column;
@@ -109,8 +112,7 @@ header {
     height: 2.2rem;
 }
 
-
-.five{
+.legend{
     margin: 1rem 0 0 0;
     font-size: 1.2rem;
     color: rgb(80, 78, 78);
@@ -123,18 +125,18 @@ fieldset{
     border: 0;
 }
 
-
-.six{
+.term-checkbox{
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
     font-size: 1.2rem;
     color: rgb(80, 78, 78);
-
 }
-.six :first-child{
+
+.term-checkbox :first-child{
     color: #DE6E49;
 }
+
 .checkbox{
     background-color: #DE6E49;
     width: 1.1rem;
@@ -142,8 +144,7 @@ fieldset{
     margin: 0;
 }
 
-
-.seven input{
+.submit input{
     background-color: #DE6E49;
     margin: 2rem 0 0 0;
     width: 15rem;
