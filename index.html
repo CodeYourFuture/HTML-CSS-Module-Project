@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="img" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+   <div class="container">
+    <nav>
+      <div class="nav-div">
+        <div class="nav-logo">
+        <ul class="navigation__list">
+          <li class="navigation__item" id="Karma_logo">
+            <img id="Karma_logo" src="img/karma-logo.svg" alt="Karma logo"/>
+          </li>
+          </ul>
+        </div>
+        
+        <ul class="navigation__list nav-text">
+          <span id="MeetKarma">
+            <li class="navigation__item">
+              <a href="./index.html">Meet Karma</a>
+            </li>
+          </span>
+          <li class="navigation__item">
+            <a href="#HowItWorks">How it Works</a>
+          </li>
+          <li class="navigation__item"><a href="./store.html">Store</a></li>
+          <li class="navigation__item"><a href="./blog.html">Blog</a></li>
+          <li class="navigation__item"><a href="./help.html">Help</a></li>
+          <li class="navigation__item"><a href="./login.html">Login</a></li>
+          
+        </ul>
+      </div>
+    </nav>
 
-</body>
+    <header>
+      <div class="Introduction">
+        <h1>Introducing Karma</h1>
+        <p>Bring WiFi with you, everywhere you go.</p>
+        <button>Learn More</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="section-2">
+        <p class="section-2-heading">Everyone needs a little Karma.</p>
+
+        <div class="section-2-img">
+          <img src="img/icon-devices.svg" class="section-2-icons" alt="Gadgets: desktop, tablet phone"/>
+          <img src="img/icon-coffee.svg" class="section-2-icons" alt="A cup of hot coffee"/>
+          <img src="img/icon-refill.svg" class="section-2-icons" alt="A refill icon"/>
+        </div>
+        <div class="section-2-text">
+          
+            <p>Internet for all devices</li>
+            <p>Boost your productivity</li>
+            <p>Pay as You Go</li>
+          
+        </div>
+      </div>
+      <div class="section-3">
+        <div class="section-3-img">
+        <img src="./img/homepage-feature.png" alt="a happy woman codes"> 
+       </div>
+       <div class="section-3-text">
+        <p><em><span class="orng-text">"</span>Wherever I am, I just don't worry about my connection anymore!<span class="orng-text">"</span></em></p>
+        <button><a href="./store.html">Get Karma today</a></button>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <hr id="line">
+      <p id="JoinUs">Join us on</p>
+      <div class="social-media-icons">
+        <img src="img/twitter-icon.svg" alt="Twitter logo" class="sm-icons">
+        <img src="img/facebook-icon.svg" alt="Facebook logo" class="sm-icons">
+        <img src="img/instgr-icon.png" alt="Instagram logo" class="sm-icons">
+      </div>
+      <p id="Author"> Ⓒ Karma Mobility, Inc.</p>
+    </footer>
+    </div>
+  </body>
+
 </html>

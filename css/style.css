@@ -1,9 +1,9 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
 }
 
 /**
@@ -16,4 +16,348 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/** Navigation */
 
+nav {
+  padding-top: 0;
+  margin-top: 0;
+  background: #f9f9f9;
+}
+
+.nav-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25em;
+}
+
+.nav-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  padding-right: 1em;
+  font-size: 0.9em;
+}
+.navigation__list {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+#Karma_logo {
+  width: 30px;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+li a:hover {
+  color: #e0633a;
+}
+
+/** Introduction section with background photo */
+
+.Introduction {
+  background-image: url("../img/first-background.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 300px;
+  text-align: center;
+}
+
+.Introduction h1 {
+  margin-bottom: 16px;
+  font-size: 4.3rem;
+  font-weight: lighter;
+}
+
+.Introduction p {
+  font-size: 16px;
+  margin-bottom: 32px;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-bottom: 80px;
+}
+button a {
+  border: none;
+  color: white;
+}
+
+button:hover a {
+  color: #e0633a;
+}
+button {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #e0633a;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+button:hover {
+  color: #e0633a;
+  background: white;
+  outline: 1px solid #e0633a;
+}
+/* section 2*/
+
+.section-2 {
+  margin: 10rem 0 7rem 0;
+}
+
+.section-2-heading {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 10rem;
+}
+
+.section-2-icons {
+  height: 10rem;
+  width: 10rem;
+}
+
+.section-2-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section-2-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.3rem;
+  text-align: left;
+  padding-right: 87px;
+  margin: 1rem 0 0 0;
+}
+
+/*section 3*/
+.section-3 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(3, 8rem);
+  grid-template-areas:
+    "i i i i i i i i i i i i i t t t t t t t t t t t t t t t t t t"
+    "i i i i i i i i i i i i i t t t t t t t t t t t t t t t t t t"
+    "i i i i i i i i i i i i i t t t t t t t t t t t t t t t t t t";
+
+  background-color: #fcefeb;
+  margin-bottom: 1rem;
+}
+
+.section-3-img {
+  grid-area: i;
+}
+
+.section-3-img > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.section-3-text {
+  grid-area: t;
+  text-align: center;
+  padding: 4rem 7rem;
+}
+
+.section-3-text p {
+  font-size: 2rem;
+}
+
+.orng-text {
+  color: #e0633a;
+}
+/*footer*/
+#line {
+  margin: 3em 3em 2em 2em;
+  height: 0px;
+  border: none;
+  border-top: 0.1rem solid #f2f2f3;
+}
+
+#JoinUs {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-icons {
+  width: 1.5rem;
+  height: auto;
+  padding: 0.7rem;
+  border-radius: 50px;
+  border: 0.1rem solid #f2f2f3;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#Author {
+  font-weight: lighter;
+  color: gray;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/*container for pages*/
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+/*store page*/
+
+.store-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.store-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.store-form h1 {
+  color: #e0633a;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 4rem 0 4rem 0;
+}
+
+.store-form {
+  margin: 0 2rem 0 5rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+legend {
+  margin-bottom: 0.2rem;
+}
+.orderForm {
+  padding: 1.5rem 3rem 2 rem 1 rem;
+  margin-right: 6.5rem;
+}
+
+.btn-form {
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #e0633a;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  margin-top: 1.2rem;
+}
+
+#first {
+  width: 100%;
+}
+
+#last {
+  width: 100%;
+}
+
+.form-row-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#adress-1,
+#adress-2 {
+  width: 100%;
+}
+
+.form-row-last {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#city {
+  height: 1.65rem;
+  margin-top: 0.2rem;
+}
+
+.postcode-line {
+  width: 30%;
+}
+
+.city-line {
+  width: 170%;
+}
+.city-line select {
+  height: 1.2rem;
+  margin-top: 0.2rem;
+  margin-right: 0;
+}
+
+input {
+  height: 1.2rem;
+  margin-top: 0.2rem;
+  margin-right: 0;
+}
+
+.form-line {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-line-below {
+  margin: 4rem 6rem 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-line-below label {
+  font-size: 0.8rem;
+}
+
+.form-line-below label a {
+  color: #e0633a;
+  text-decoration: underline;
+}
+
+input[type="radio"] {
+  accent-color: #e0633a;
+  /*-webkit-appearance: none;
+  width: ;
+  height: ;
+  border: 1px solid black;
+  border-radius: 50%;
+  outline: none;*/
+}
+
+input[type="checkbox"] {
+  accent-color: #e0633a;
+}
