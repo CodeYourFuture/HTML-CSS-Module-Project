@@ -118,13 +118,16 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:center;
 }
 .social_media {
   display: flex;
   align-items: center;
   margin: auto;
 }
-
+.join_us_on{
+  text-align:center;
+}
 .end {
   font-size: small;
   text-align: center;
@@ -139,6 +142,7 @@ hr {
   margin: 8px;
   padding: auto;
 }
+
 /* slogan */
 .karma_slogan {
   display: flex;
@@ -163,9 +167,16 @@ hr {
 /* store */
 .main_store {
   display: flex;
+  full-w-input:100%;
+  height:190px;
+  gap:30px;
   /* grid-column: 1/ -1; */
 }
-/* .store_aside {
-  grid-column: 3;
-  grid-row: 1;
-} */
+.left{
+  width:50%;
+}
+.right{
+  width:50%;
+  object-fit:cover;
+}
+
