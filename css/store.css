@@ -1,7 +1,7 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -79,85 +79,128 @@ body {
     color: #c05326;
   }
 
-/* karma-intro */
+/* karma-store */
+.content-store {
+    display: flex;
+    justify-content: space-evenly;
+}
 
-.karma-intro {
-    background-image: url("/HTML-CSS-Module-Project/img/first-background.jpg");
-    height: 420px;
-    color:white;
-    padding-top: 250px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
+.article__summary {
+    font-size: 50px;
+    font-weight: 500;
+    color: #c05326;
+}
+/* contact-form */
+.orderForm{
+    display : flex;
+    flex-direction : column;
+    width: 501px;
+    height: 1200px;
+    left: 122px;
+    /* background-color: aquamarine; */
   }
-  
-  .karma-intro h1 {
-    margin-bottom: 1rem;
-    font-size: 4.5rem;
+
+.orderForm h2 {
+    justify-content: center;
+    margin-top: 117px;
+}
+  .Line {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input:checked {
+    border: 1px solid black;
+  }
+  .address {
+    width: 100%;
+  }
+
+  select {
+    width: 170%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  legend {
+    font-size: 21px;
+    font-weight: 500;
+  }
+  fieldset {
+    margin-top: 60px;
+    border: 0px;
+  }
+  .radio {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #orange {
+    width: 30px;
+    accent-color: #c05326;
+    
+  }
+  #grey {
+    width: 30px;
+    accent-color: #c05326;
+  }
+  .label {
+    font-size: 21px;
     font-weight: 400;
   }
-  
-  .karma-intro p {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  .learn {
+  .get_karma {
     background-color: #c05326;
     border-radius: 3px;
     border: none;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    width: 200px;
+  }
+  .checkbox {
+    accent-color: #c05326;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
   }
 
-  /* Headings */
-
-.heading-underline {
-    position: relative;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    padding-bottom: 0.5rem;
-    padding-left: 22%;
-    padding-top: 5%;
-    border-bottom: 2px solid var(--orange-light);
-    font-size: 3.8rem;
-    font-weight: 300;
+  .checkbox-line{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
   }
   
-  .article__thumbnail {
-    object-fit: contain;
-    width: 10rem;
-    padding-left: 35px;
-  }
-
-  .flex-article{
-    display: flex;
-    gap: 15px; 
-    justify-content: space-evenly;
-  }
-
-  .article {
-    margin-bottom: 1rem;
-    padding: 10px;
-    gap: 30px;
-  }
-
-  .article__summary {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+  .checkbox-input {
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
   }
 /* Footer */
 
 .footer {
     margin-top: 2rem;
   }
-  
+
 .footer__content {
     border-top: 2px solid lightgray;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
   }
   
 .footer p {
@@ -181,49 +224,4 @@ body {
     padding-top: 20px;
     font-size: 1rem;
     font-weight: 300;
-}
-
-/* section connection */
-
-.flex-connection {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.article_flex_content {
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  background-color: rgba(224, 99, 58, 0.1);
-  margin: 0;
-  
-}
-
-.get_karma {
-  background-color: #c05326;
-  border-radius: 3px;
-  border: none;
-  margin-top: 10px;
-  padding: 15px;
-  color: white;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.article__connection {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  padding: 50px 137px 20px 156px ;
-  text-align: center;
-  font-style: italic;
-  font-size: 42px;
-  font-weight: 400;
-}
-
-.orange-brk {
-  color: #c05326;
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/HTML-CSS-Module-Project/css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <header class="header">
+      <a href="/HTML-CSS-Module-Project/index.html">
+        <img
+          src="/HTML-CSS-Module-Project/img/karma-logo.svg"
+          alt="Logo"
+          class="header__logo"
+        />
+      </a>
+      <nav>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Meet Karma</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">How it works</a>
+          </li>
+          <li class="navigation__item">
+            <a
+              class="navigation__link"
+              href="/HTML-CSS-Module-Project/store.html"
+              >Store</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Help</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content-store">
+      <form action="" class="orderForm">
+        <h2 class="article__summary">Order your Karma wifi device today!</h2>
+        <div class="Line">
+          <div class="first-name">
+            <label id="first" class="label">First name * </label>
+            <input required type="text" name="first_name" id="first" />
+          </div>
+          <div class="last-name">
+            <label id="last" class="label">Last name *</label>
+            <input required type="text" name="last_name" id="last" />
+          </div>
+        </div>
+        <div class="Line">
+          <div class="address">
+            <label id="address" class="label">Address *</label>
+            <input required type="text" name="address" id="address" />
+          </div>
+        </div>
+        <div class="Line">
+          <div class="address">
+            <label id="address-2" class="label">Address 2</label>
+            <input required type="text" name="address-2" id="address-2" />
+          </div>
+        </div>
+        <div class="Line">
+          <div class="city">
+            <label for="size" class="label">City *</label>
+            <select id="size" name="pizza_size">
+              <option value="very_large">London</option>
+              <option value="large">Manchester</option>
+              <option value="medium">Bristol</option>
+            </select>
+          </div>
+          <div class="postcode">
+            <label id="postcode" class="label">Postcode *</label>
+            <input required type="text" name="postcode" id="postcode" />
+          </div>
+        </div>
+        <fieldset>
+            <legend>Select a color</legend>
+            <div class="radio">
+              <input type="radio" id="orange" name="color" value="orange" />
+              <label class="label label-wide" for="orange">Karma Orange</label>
+              <input type="radio" id="grey" name="color" value="grey" />
+              <label class="label label-wide" for="grey">Space Grey</label>
+            </div>
+        </fieldset>
+        <div class="checkbox">
+            <div>
+             <input class="checkbox-input" type="checkbox" checked="checked">
+            </div>
+            <div>
+                <label class="checkbox-line">By placing your order you agree to Karma's Terms and Conditions. *
+            </div>
+            <span class="checkmark"></span>
+        </label>
+        </div>
+        <button class="get_karma">Place my order</button>
+      </form>
+      <img
+        src="/HTML-CSS-Module-Project/img/Girl working at desk.png"
+        alt="working-woman"
+      />
+    </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <p><strong>Join us on</strong></p>
+        <div class="social">
+          <img
+            class="social-icons"
+            src="/HTML-CSS-Module-Project/img/twitter-icon.svg"
+            alt="twitter"
+          />
+          <img
+            class="social-icons"
+            src="/HTML-CSS-Module-Project/img/facebook-icon.svg"
+            alt="facebook"
+          />
+          <img
+            class="social-icons"
+            src="/HTML-CSS-Module-Project/img/instagram-icon.svg"
+            alt="instagram"
+          />
+        </div>
+        <p>Karma movility, Inc</p>
+      </div>
+    </footer>
+  </body>
+</html>
