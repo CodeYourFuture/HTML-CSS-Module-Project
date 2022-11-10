@@ -15,5 +15,288 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ /* Header Style*/
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5rem;
+    margin-bottom: -.5rem;
+    } 
+ 
+  .logo-header {
+    display: block;
+    width: auto;
+    height: 2rem;
+    }
+  
+  /* Navigation style */
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    }
+  
+  .nav-links {
+    color: #837b7b;
+    }    
+    
+  .nav-list :hover {
+    color: #c05326;
+    }
+
+    /*First Section (introducing)*/
+
+  .first-sec {
+    background-image: url(../img/first-background.jpg);
+    background-color: var(--gray);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position ;
+    padding: 14rem 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;  
+    }
+
+  .first-sec h2 {
+    color: antiquewhite;
+    margin-top: -1rem;
+    margin-bottom:1rem;
+    font-weight: 80;
+    font-size: 35px;
+    }
+
+  .first-sec h5 {
+    color: antiquewhite;  
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    font-weight: 50;
+    font-size: 20px;
+    }
+
+  .first-sec button {  
+    background-color:#c05326;
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    margin-top: -1rem;
+    }
+
+  .first-sec button:hover {
+    background-color:antiquewhite;
+  }
+
+  .first-sec button a {
+    text-decoration: none;
+    color:antiquewhite;
+  }
+  /*Second section*/
+  .second-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    }
+
+  .second-sec h2 {
+    font-weight: 200;
+    font-size: 35px;
+    }
+
+  article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+  article h5 {
+    font-weight: 200;
+    font-size: 20px;
+    }
+
+  article img {
+    width: 120px;
+    height: 120px;
+    }
+
+  .context {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+   }
+   /*third section (grid container)*/
+    .third-sec {
+     display: grid;
+     grid-template-rows: auto auto;
+     grid-template-columns: 1fr 2fr;      
+     }
+   .third-sec p {
+    font-weight: 200;
+    font-size: 35px;    
+    font-style: italic;
+    text-align: center; 
+    }
+    .third-sec button {  
+      background-color:#c05326;
+      border: none;
+      padding: .8rem 1rem;
+      border-radius: 5px;
+      margin-top: -1rem;
+      }
+  
+    .third-sec button:hover {
+      background-color:rgb(100, 98, 96);
+      }
+  
+    .third-sec button a {
+      text-decoration: none;
+      color:rgb(223, 221, 217);
+      }
+    .box{
+      background-color: antiquewhite;        
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content:space-evenly;                    
+      }
+    span{
+      color: #c05326;
+      }
 
 
+   /*footer*/
+   footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+    margin: 0 9rem;
+    padding: 2rem 0;
+    gap: -2px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+footer ul li a {
+    display: block;
+    border: 1px solid;
+    border-color: #dfcece;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+footer ul li a img{
+    max-width: 14px;
+    max-height: 14px;
+} 
+
+footer h4 {
+    font-weight: 300;
+}
+
+footer h5{
+    font-weight: 200;
+    color:#b4a3a3;
+}
+/* style store page*/
+.form-sec h1 {
+  color:#c05326;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/*style form*/
+.orderForm {
+  display: flex;
+  flex-direction:column;
+  width: 500px;
+  gap:65px;
+}
+ 
+ .input {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding: 1rem;
+    border: radius 5px;
+  
+}
+
+ .orderForm button {  
+  background-color:#c05326;
+  border: none;
+  padding: 10px 25px;
+  margin-top: -1rem;
+  }
+
+ button:hover {
+  background-color:antiquewhite;
+}
+.fieldset{
+  display: flex;
+  flex-direction:row;
+}
+.radioBox{
+  display: flex;
+  flex-direction:column;}
+  
+.radioBox ul{
+  display: flex;
+  justify-content:space-around;
+  
+  list-style: none;
+
+  
+}
+.form-2{
+  display: flex;
+  flex-direction: column;
+}
+.checkBox{
+  display: flex;
+  
+}
+.form-sec{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+}
+.storePage img{
+  height: 8%;
+  width: 44%;
+}
+.storePage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.address-1 {
+  display: flex;
+  flex-direction: column;
+
+}
+.address-2{
+  display: flex;
+  flex-direction: column;
+
+}
+.fieldset-2{
+  display: flex;
+  flex-direction:row;
+  gap: 30px;
+}
+.check-Box a{
+  color:#c05326
+}
