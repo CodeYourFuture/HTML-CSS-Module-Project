@@ -15,5 +15,213 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2rem 5rem;
+}
 
+.header,
+.content,
+.footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
 
+/*main*/
+main {
+  margin-bottom: 200px;
+}
+
+/*Navigation*/
+
+.nav1 {
+  display: flex;
+  justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+  list-style: none;
+}
+.nav2 {
+  padding: 0.5em 0;
+  display: flex;
+}
+.nav3 {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 8px;
+}
+.nav3:hover {
+  background: #c05326;
+}
+
+/*wifi*/
+.karma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: .5rem;
+
+}
+.main1 {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.main2 {
+    margin: 2em;
+  text-align: center;
+  display:flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+ 
+}
+.main3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em;
+  text-align: center;
+  flex-wrap: wrap;
+  
+}
+
+/*footer*/
+.footer1 {
+  
+  
+}
+
+.footer2 {
+  border-top: 1px solid var(--grey-light);
+  padding-top: 2rem;
+  padding-left: 550px;
+  padding-bottom: 2rem;
+  
+}
+.footer3 {
+  padding-bottom: 1rem;
+  border-radius: 50%;
+  border: 1px solid rgb(211, 205, 205);
+  margin: 8px;
+  padding: auto;
+  text-align: center;
+  font-size: 0.5rem;
+  display: flex;
+}
+button {
+    background-color: #c05326;
+
+}
+.hi .hi2 .hi3 {
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.1);
+    padding: 10px 70px 10px 100px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  li:first-child {
+    color: rgb(77, 72, 72);
+    font-weight: 550;
+  }  
+  li:hover {
+    color: rgb(255, 98, 0);
+  }
+
+  /* main*/
+  .container {
+    color: #DE6E49;
+margin-top: 10rem;
+    font-size: 28px;
+    font-weight: 500;
+    
+    padding: 130px 160px;
+  padding-right: 130px;
+  
+  color: var(--main-color);
+  }
+  main {
+    padding-bottom: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+.radios {
+    margin-top: 2.5rem;}
+.form-check {
+        margin-top: 5.5rem;}
+.button {
+    color: white;
+    background-color: rgb(207, 82, 37);
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 25px 12px 25px;
+  }
+      
+  h1 {
+        padding-top: 30vh;
+        font-weight: 300;
+        color: #DE6E49;
+margin-top: 10rem;
+        letter-spacing: 2px;
+        margin: 0;
+        font-size: 68px;
+        font-weight: 500;
+        
+  }
+  .image1 {  background-size: cover;
+    width: 100%;
+    height: 100%;
+
+  }
+@media (max-width: 370px) {
+    .main1 .main2 {
+        padding-top: 90px;
+      padding-bottom: 120px;
+      margin-bottom: 50px;
+    }
