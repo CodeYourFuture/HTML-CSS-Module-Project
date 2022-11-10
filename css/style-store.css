@@ -57,13 +57,27 @@ fieldset {
     border: none;
 }
 
+/*
 #name {
     display: inline;
 }
+*/
 
+#name {
+    display: flex;
+    justify-content: space-between;
+}
 
 #first-name, #last-name {
     width: 60%;
+}
+
+#city {
+    font-style: italic;
+}
+
+#postcode {
+    width: 7rem;
 }
 
 .radio-button {
