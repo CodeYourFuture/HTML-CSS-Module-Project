@@ -1,0 +1,197 @@
+/*STYLING FOR HEADER*/
+
+#karma-logo {
+  width: 25px;
+  margin: 50px 0 20px 50px;
+}
+
+nav {
+  float: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+nav a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: gray;
+}
+
+#karma-meet {
+  font-weight: bold;
+}
+a:hover {
+  color: #c05326;
+}
+
+/*STYLING FOR BODY*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*main {
+  background-image: url(level-2/store-image_by-andrew-neel-unsplash.jpg);
+  position: absolute;
+}*/
+
+h1 {
+  color: #de6e49;
+  font-size: 50px;
+  font-weight: lighter;
+  width: 500px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ebebeb;
+  width: 100%;
+  gap: 50px;
+}
+
+.title-form {
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 70px;
+  width: 50%;
+  gap: 50px;
+}
+
+label,
+fieldset {
+  margin-top: 15px;
+}
+
+fieldset {
+  border: none;
+  accent-color: #de6e49;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+input {
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.first-input,
+.last-input {
+  width: 50%;
+}
+
+.name-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.name {
+  width: 100%;
+}
+
+.city-wrapper {
+  width: 70%;
+  margin-top: 15px;
+}
+
+#city {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.postcode-wrapper {
+  width: 30%;
+  margin-top: 15px;
+}
+
+.box-terms {
+  display: inline;
+  margin-top: 30px;
+  accent-color: #de6e49;
+}
+
+.box-terms a {
+  color: #de6e49;
+  margin-left: 3px;
+}
+
+/* .box-terms label {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: white;
+  margin: 0;
+} */
+
+.tick-wrapper {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.tick-wrapper svg {
+  display: none;
+}
+
+.box-terms input[type="checkbox"]:checked + .tick-wrapper .icon {
+  display: inline;
+}
+
+button {
+  align-content: center;
+  color: white;
+  background-color: #e0633a;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  /*margin-left: 650px;*/
+  margin-top: 50px;
+  font-size: 20px;
+  width: fit-content;
+}
+
+/*STYLING  FOR FOOTER*/
+
+footer {
+  text-align: center;
+  margin: 0 70px 0 70px;
+  border-top: 1px solid #ebebeb;
+}
+
+.smicon {
+  width: 20px;
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+#copyright {
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 20px;
+}

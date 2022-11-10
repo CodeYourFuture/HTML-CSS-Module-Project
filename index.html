@@ -1,19 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
 
-</body>
+    <header>
+      <img src="img/karma-logo.svg" alt="karma logo" id="karma-logo" />
+      <nav id="nav-bar">
+        <a href="meet-karma" id="karma-meet">Meet Karma</a>
+        <a href="works">How it Works</a>
+        <a href="store.html">Store</a>
+        <a href="blog">Blog</a>
+        <a href="help">Help</a>
+        <a href="login">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="first-page">
+        <h1>Introducing Karma</h1>
+        <h2>Bring WiFi with you, everywhere you go.</h2>
+        <button>Learn More</button>
+      </section>
+      <section id="next-page">
+        <h1 class="need-karma">Everyone needs a little Karma.</h1>
+        <div id="icon-info">
+          <article>
+            <img
+              src="img/icon-devices.svg"
+              alt="Picture showing a monitor, phone and tablet"
+              class="icons"
+            />
+            <p>Internet for all devices</p>
+          </article>
+          <article>
+            <img
+              src="img/icon-coffee.svg"
+              alt="Picture showing a steamy teacup"
+              class="icons"
+            />
+            <p>Boost your productivity</p>
+          </article>
+          <article>
+            <img
+              src="img/icon-refill.svg"
+              alt="Picture showing gas pump"
+              class="icons"
+            />
+            <p>Pay as You Go</p>
+          </article>
+        </div>
+      </section>
+      <section id="third-page">
+        <img
+          src="level-2/homepage-feature.png"
+          alt="woman on a tablet smiling with a coffee cup on the table"
+          id="pic"
+        />
+        <article id="quote-button">
+          <p class="quote">
+            <span>"</span>Wherever I am, I just don't worry about my connection
+            anymore!<span>"</span>
+          </p>
+          <button><a href="store.html">Get Karma today</a></button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Join us on</p>
+      <div>
+        <img src="img/twitter-icon.svg" alt="twitter logo" class="smicon" />
+        <img src="img/facebook-icon.svg" alt="facebook logo" class="smicon" />
+        <img src="img/instagram-icon.svg" alt="instagram logo" class="smicon" />
+      </div>
+      <p id="copyright">&copy; Karma Mobility, Inc.</p>
+    </footer>
+  </body>
 </html>

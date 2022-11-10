@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,149 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*HEADER STYLES*/
 
+#karma-logo {
+  width: 25px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+nav {
+  float: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+nav a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: gray;
+}
+
+#karma-meet {
+  font-weight: bold;
+}
+nav a:hover {
+  color: #c05326;
+}
+
+/*CONTENT STYLES*/
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  font-weight: lighter;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+button {
+  align-content: center;
+  color: white;
+  background-color: #c05326;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  /*margin-left: 650px;*/
+  margin-top: 50px;
+}
+
+#first-page {
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 130px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.need-karma {
+  color: black;
+  font-size: 55px;
+}
+
+.icons {
+  width: 100px;
+}
+
+#icon-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#next-page {
+  margin-top: 100px;
+}
+
+#third-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 100px;
+}
+
+#quote-button {
+  background-color: #e0633a1a;
+  height: 440px;
+  align-items: center;
+  justify-content: center;
+  width: 840px;
+  text-align: center;
+}
+
+.quote {
+  font-size: 42px;
+  text-align: center;
+  font-style: italic;
+  padding-top: 50px;
+  width: 550px;
+  padding-left: 140px;
+  margin-bottom: 0;
+}
+
+span {
+  color: #e0633a;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+/*STYLING  FOR FOOTER*/
+
+footer {
+  text-align: center;
+  margin: 50px 70px 0 70px;
+  border-top: 1px solid #ebebeb;
+}
+
+.smicon {
+  width: 20px;
+  border: 1px solid #ebebeb;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+#copyright {
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 20px;
+}
