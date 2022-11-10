@@ -1,27 +1,135 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
- /*Mo nahvi*/
 
- body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
 
- :root {
-    --grey-dark: #363434;
-    --grey: #adadad;
-    --orange: #f05a28;
-    --white: #fff;
- }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 500;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+    width: auto;
+ }
+
+ .nav-list{
+    display: block;
+    min-width: 2rem;
+    min-height: 2rem;
+ }
+
+ /* navigation */
+
+ .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+ }
+
+ .nav-items {
+    display: flex;
+    padding: 0 1.5rem;
+
+ }
+
+ .nav-links {
+    color: var(--grey);
+    text-decoration: none;
+ }
+ .nav-links:hover {
+    color: var(--orange);
+ }
+
+ .nav-items:first-child > a {
+    color: var(--grey-dark);
+ }
+
+ .nav-items:first-child > a:hover{
+    color: var(--orange);
+ }
+
+ /* main */
+
+ main {
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ /* First section */
+
+.hero {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.hero h2 {
+    font-weight: 200;
+    font-size: 35px;
+    text-align: center;
+}
+
+.hero h5 {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-weight: 50;
+    font-size: 20px;
+}
+
+.hero button {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+}
+.hero button:hover {
+    background-color: var(--grey-dark);
+}
+
+.hero button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Second section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-weight: 200;
+    font-size: 35px;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
 
 }
 header {
@@ -143,189 +251,6 @@ article {
     justify-content: space-around;
     flex-wrap: wrap;
 
-/* header */
-
- header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5rem;
- }
-
- .logoweb{
-    display: block;
-    min-width: 2rem;
-    min-height: 2rem;
- }
-
- /* navigation */
-
- .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-
- }
-
- .nav-item {
-    display: flex;
-    padding: 0 1.5rem;
-    
- }
-
- .nav-link {
-    color: var(--grey);
-    text-decoration: none;
- }
-
- .nav-link:hover {
-    color: var(--orange);
- }
-
- .nav-item:first-child > a {
-    color: var(--grey-dark);
- }
-
- .nav-item:first-child > a:hover{
-    color: var(--orange);
- }
-
- /* main */
-
- main {
-    display: flex;
-    flex-direction: column;
-    
- }
-
- /* section */
-
-.hero {
-    background-image: url(/img/first-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 12rem 0;
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0;
-}
-
-.hero h2 {
-    font-weight: 200;
-    font-size: 35px;
-    text-align: center;
-}
-
-.hero h5 {
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-    font-weight: 50;
-    font-size: 20px;
-    
-}
-
-.hero button {
-    background-color: var(--orange);
-    border: none;
-    padding: .8rem 1rem;
-    border-radius: 5px;
-}
-.hero button:hover {
-    background-color: var(--grey-dark);
-}
-
-.hero button a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-}
-
-section h2 {
-    font-weight: 200;
-    font-size: 35px;
-}
-
-article {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-    
-}
-
-article h5 {
-    font-weight: 200;
-    font-size: 20px;
-    
-}
-
-article img {
-    width: 120px;
-    height: 120px;
-}
-
-.context {
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    
-}
-
-/* footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid var(--grey);
-    margin: 0 9rem;
-    padding: 2rem 0;
-    gap: 1rem;
-}
-
-footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-footer ul li a {
-    display: block;
-    border: 1px solid var(--grey);
-    padding: 1rem;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-footer ul li a img{
-    max-width: 1rem;
-    max-height: 1rem;
-} 
-
-footer h2 {
-    font-weight: 400;
-}
-
-footer h5 {
-    font-weight: 200;
-    color: var(--grey);
-}
 
 }
 
@@ -350,7 +275,7 @@ article img {
 }
 
 
-/*add new section*/
+/add new section/
 
 
 .new{
@@ -364,7 +289,7 @@ article img {
 .new-img {
     background-color: #363434;
     height: 100%;
-    background-image: url(/level-2/homepage-feature.png);
+    background-image: url(/homepage-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -447,3 +372,4 @@ footer h4 {
     font-weight: 200;
     color:rgb(58, 56, 56);
 }
+
