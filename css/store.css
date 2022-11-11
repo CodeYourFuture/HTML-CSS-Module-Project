@@ -1,0 +1,106 @@
+  
+    .store-container {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 40%;
+    max-width: 65%rem;
+    padding: 10vw 2rem 0;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  
+  .store-main-image {
+    max-width: 50%;
+  }
+  
+   
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  
+  .form > h1 {
+    color: orangered;
+    font-weight: 100;
+    line-height: 2;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #737888;
+    margin-right: 2%;
+  }
+  
+  label {
+    display: block;
+    margin-top: 0.25em;
+    margin-bottom: 0.25rem;
+  }
+  
+  .req {
+    color: red;
+  }
+  
+  .form-names,
+  .form-city-postcode {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .select-a-colour {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0%;
+  }
+  
+  .radio-button,
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    color: #737888;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+  
+  #karma-orange,
+  #space-gray {
+    margin-right: 10px;
+  }
+  
+  #checkbox {
+    margin-left: 10px;
+  }
+  
+  .button {
+    background-color: orangered;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 0;
+    outline: 0;
+    margin-top: 5%;
+  }
+  .button:focus-visible {
+    background-color: #333;
+  }
+
+
+
