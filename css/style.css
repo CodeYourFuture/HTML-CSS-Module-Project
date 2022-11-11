@@ -1,5 +1,14 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ :root {
+  --grey-dark: #363434;
+  --grey: #ADADAD;
+  --grey-light: #F7F7F7;
+  --orange: #F05A28;
+  --orange-light: hsl(20, 84%, 80%);
+  --white: #fff;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,4 +25,230 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/*navigation*/
 
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-right:140px;
+    padding-bottom:20px;
+    background-color:var(--grey-light);
+ }
+
+ header img {
+    width: 50px;
+    height: 50px;
+    margin-left:100px;
+ }
+ ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  ul li a {
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul li:first-child a {
+    color:black;
+  }
+
+  li a:hover {
+    color: orange;
+  }
+
+  /*first section - intro to karma*/
+
+  #section1 {
+    background-image: url("../img/first-background.jpg");
+    padding-bottom: 100px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    color:#fff;
+
+  }
+  h2{
+    color:#fff;
+    font-weight: 200;
+  }
+  button {
+    align-content: center;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    /*margin-left: 650px;*/
+    margin-top: 50px;
+  }
+  #text1 {
+    color:black;
+    text-align: center;
+  }
+
+/*section 2 - need karma*/
+
+  #section2 {
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 150px;
+    padding-right: 150px;
+    align-items: center;
+  }
+
+.icons{
+    width: 200px;
+    height: 200px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.gridcontainer {
+    height:100%;
+    display: grid;
+    background-color:bisque;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    margin-bottom:  50px;
+    grid-template-areas: 
+        "p p p p p p p . . . . . . ."
+        "p p p p p p p q q q q q q q"
+        "p p p p p p p g g g g g g g"
+        "p p p p p p p . . . . . . .";
+}
+
+.photo1{
+  grid-area: p;
+  background-image: url(/level-2/homepage-feature.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.quote {
+  grid-area: q;
+  justify-self: center;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  
+}
+
+.quote p span{
+  color: darkorange;
+}
+.getbutton {
+  grid-area: g;
+  justify-self: center;
+  text-align: center;
+  margin-top:70px;
+}
+
+.btn-get {
+  grid-area: g;
+  justify-self: center;
+  text-align: center;
+  text-decoration: none;
+  color:var(--white);
+  background-color: var(--orange);
+  padding: 20px 20px;
+  border-radius: 6px;
+}
+
+.btn-get:hover {
+  background-color: var(--grey-dark);
+}
+
+
+
+/*footer*/
+
+footer {
+    text-align: center;
+    margin: 40px 100px 100px 40px;
+    border-top: 1px solid grey ;
+  }
+
+  .social {
+    width: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 100px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  #copyright {
+    color: grey;
+    text-align: center;
+  }
+
+
+/* media query for tablet*/
+
+ @media screen and (max-width:768px) {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-light);
+    opacity: .9;
+    top: -800px;
+    gap: 10px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.fillname {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;}
+
+.filllocation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+.all-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridcontainer {
+  height: 100%;
+  display: grid;
+  background-color: bisque;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 122px 122px;
+  margin-bottom: 50px;
+  grid-template-areas: "p"
+      "q"
+      "g"
+      ".";
+}
+
+ }
