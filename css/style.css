@@ -2,18 +2,165 @@
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: auto 1fr auto;
+  margin: 10px;
+}
+
+a:hover {
+  color: orange;
+}
+
+a,
+li {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 20px;
+  border: 0px;
+  background: none;
+  font-weight: 100;
+}
+
+hero {
+  display: block;
+  margin-top: 40;
+  margin-bottom: 0.5em;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-width: 1px;
+  opacity: 30%;
+}
 
 
+
+#navbar-button {
+  padding: 10px;
+}
+
+
+/* Header  */
+
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  font-weight: 100;
+  background-color: #fdf6f8;
+}
+
+
+.main > h1 {
+  font-weight: 100;
+  font-size: 45px;
+}
+
+
+.first-section {
+  background-image: url("../img/first-background.jpg");
+  background-size: cover;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  margin-bottom: 5%;
+}
+
+.first-section > h1 {
+  font-weight: 100;
+}
+
+.first-section > h3 {
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+.first-section > button {
+  font-weight: 100;
+  margin-bottom: 5%;
+}
+
+/* Second Section */
+
+.second-section {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.img-resize {
+  width: 40%;
+  padding: 60px;
+}
+
+.main-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  text-align: center;
+}
+
+
+.button-orange {
+  background-color: #dc4a15;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 10px 18px;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+/* Footer  */
+
+footer {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > h4,
+h3 {
+  font-weight: 100;
+  align-items: center;
+}
+
+.social-media-handles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0%;
+}
+
+.twitter-handle,
+.facebook-handle,
+.instagram-handle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  opacity: 60%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.karma-mobility {
+  color: rgb(104, 103, 103);
+}
