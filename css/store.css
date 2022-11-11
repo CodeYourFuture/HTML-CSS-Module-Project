@@ -12,6 +12,22 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+
+/*hamburger menu*/
+.h-menu {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.topnav {
+    display: flex;
+}
+#check {
+    display: none;
+}
+
 /*form*/
 
 
@@ -141,7 +157,7 @@ fieldset {
  }
 
  select {
-    width: 250px;
+    width: 270px;
     height: 40px;
     background-color: white;
     border-radius: 3px;
@@ -241,6 +257,60 @@ input,
    }
 
 
+@media screen and (max-width:480px){
+    .topnav{
+        display: none;
+        visibility: hidden;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 40vh;
+        flex-direction: column;
+        top: -600px;
+        border-radius: 5px;
+        border:#363434 solid 10px;
+        background-color: #F05A28;
+        z-index: 1;
+        gap: 8px;
+        opacity: 1;
+        position: fixed;
+        background-color: var(--grey-light);
+    } 
 
+   .h-menu{
+     display: inline-block;
+     z-index: 4;
+   } 
+
+  #check:checked ~ .h-menu{
+    transform: scale(20);
+    background-color: var(--orange);
+    opacity: 0.9;
+   }
+
+   #check:checked ~ .topnav{
+     top: 0;
+ }
+
+ fieldset {
+    border: none;
+    /* display: flex; */
+    gap: 15px;
+    /* width: min-content; */
+}
+
+input, label {
+    width: 113px;
+}
+
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 15px;
+    width: auto;
+    flex-direction: column;
+}
+}
 
  
