@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
+  background-image: url(C:\Users\User\Documents\GitHub\HTML-CSS-Module-Project\img\first-background.jpg);
 }
 header {
     display: flex;
@@ -74,102 +75,11 @@ margin-top: 10rem;
         
   }
   .image1 {  background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 500%;
+    height: 500%;
 
-  }
-  /*.main1 {
-
-    display: grid;
-    grid-template-columns: 1fr 501px 1fr 600px;
-    grid-template-rows: 5rem auto auto auto 5rem;
-    grid-template-areas:
-      ". . . m"
-      ". c . m"
-      ". . . m"
-      ". a . m"
-      ". . . m";
-    padding: 0%;
-    text-align: left;
-    font-family: "Roboto";
-    font-weight: 500;
-  }
-  .main1 h1 {
-    padding: 12rem 0;
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    grid-area: H;
-    font-size: 50px;
-    color: #de6e49;
-    margin-top: 10px;
   }
   .img {
-    grid-area: M;
-    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .main1 {
-    grid-area: a;
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-areas:
-      "a  a  b  b  b"
-      "c  c  c  c  c"
-      "d  d  d  d  d"
-      "e  e  e  f  f"
-      "g  g  g  g  g"
-      "G  G  G  G  G"
-      "B  B  B  B  B";
-    gap: 15px 8px;
-    font-size: 21px;
-    color: #666666;
-  }
-  #a {
-    grid-area: a;
-  }
-  
-  #b {
-    grid-area: b;
-  }
-  
-  #c {
-    grid-area: c;
-  }
-  
-  #d {
-    grid-area: d;
-  }
-  
-  #e {
-    grid-area: e;
-  }
-  
-  #f select{
-    font-style: italic;
-  }
-  
-  #g {
-    grid-area: g;
-    justify-content: flex-end;
-  }
-  
-  
-  
-  #B {
-    grid-area: B;
-  }
-  */
-  .main1 fieldset {
-    border: 0;
-    margin: 0;
-  }
-  .footer1 {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
   }
