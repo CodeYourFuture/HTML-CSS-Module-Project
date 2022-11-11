@@ -1,0 +1,346 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+:root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --grey-light: #f7f7f7;
+    --orange: #f05a28;
+    --orange-light: #f7bfa3;
+    --white: #fff;
+ }
+
+ /*navbar setup*/
+header{
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-bottom: var(--grey);
+    background-color: var(--grey-light);
+    justify-content: space-between;
+}
+.logo-two{
+    display: block;
+}
+.nav-box{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+list-style: none;
+position: relative;
+}
+.nav-items{
+    display: flex;
+    padding: 0 2rem;
+}
+.nav-links{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: var(--grey);
+}
+.nav-links:hover{
+    color: var(--orange);
+
+}
+.menu-top{
+    display: flex;
+}
+#check{
+    display:none;
+}
+/*hamburger menu*/
+.small-menu{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.main-store{
+display: flex;
+flex-direction: row;
+flex-wrap:wrap; 
+
+/*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr; */    
+}
+/*main form and image layout*/
+
+.display-image{
+    background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
+    background-position: center;
+    width: 44%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-color: #f05a28;
+    height: auto;
+    border-bottom: 1px solid var(--grey);
+    
+}
+
+/* form layout*/
+
+.karma-form{
+    display: flex;
+    flex-direction: column;
+    padding:6% 8% ;
+    width: 40%;
+    gap: 20px;
+    border-bottom: 1px solid var(--grey);
+    
+    
+}
+.karma-form h1{
+    color:var(--orange);
+}
+.conjoined{
+justify-content: space-between;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-fill{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+    gap: 20px;
+    align-items: stretch;
+    
+   
+}
+.form-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-basis: 46%;
+    width: auto;
+    
+}
+
+input[type=text], select {
+    padding: 5px 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-dark);
+    
+}
+label{
+    color: var(--grey-dark);
+    font-weight: 400;
+    font-size: 14px;
+}
+#postcode{
+    text-transform: uppercase;
+    width: 150px;
+}
+.form-postcode{
+    align-content: flex-end;
+}
+select{
+    font-size: 14px;
+    font-style: italic;
+    width: 250px;
+    height: 40px;
+    color: var(--grey-dark);
+    font-weight: 400;
+    padding: 5px 5px;
+}
+.radio-button{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.radio-button ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.container a {
+    color: var(--orange);
+}
+button{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: border-radius 0.5s, height 0.5s;
+    transition-timing-function: ease-in-out;
+    height: 50px;
+    color: var(--white);
+}
+button:hover{
+    border-radius: 20%;
+    height:60px;
+    background-color: var(--grey);
+
+}
+
+/* radio box color change*/
+
+.radio-button input[type='radio'] {
+width: 15px;
+height: 15px;
+border: 1px solid var(--grey-dark);
+appearance: none;
+border-radius: 50px;
+padding: 3px;
+background-clip: content-box;
+}
+
+.radio-button input[type="radio"]:checked {
+  background-color: var(--orange);
+}
+
+/*check box with orange tick*/
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid var(--grey);
+border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */ 
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-image: url('../level-2/checkmark.svg');
+background-repeat: no-repeat;
+  background-position: center;
+  background: size 22px;
+}
+
+
+/*media for tablet break @768 */
+@media screen and (max-width:768px){
+   .menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40vh;
+    flex-direction: column;
+    top: -600px;
+    border-radius: 5px;
+    z-index: 1;
+    gap: 8px;
+    opacity: .7;
+    position: fixed;
+    background-color: var(--grey-light);
+   } 
+  .small-menu{
+    display: inline-block;
+    z-index: 4;
+  } 
+ #check:checked ~ .small-menu{
+    transform: rotate(-120deg);
+    background-color: var(--orange);
+    opacity: .8;
+  }
+  #check:checked ~ .menu-top{
+    top: 0;
+}
+.main-store {
+display: flex;
+flex-direction: column;
+flex-wrap:wrap; 
+
+/*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr; */    
+}
+.display-image{
+    height: 30vh;
+    width: auto;
+}
+.karma-form{
+    width: auto;
+    }
+
+/*media for tablet break @480*/
+@media screen and (max-width:480px){
+   .menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40vh;
+    flex-direction: column;
+    top: -600px;
+    border-radius: 5px;
+    z-index: 1;
+    gap: 8px;
+    opacity: 1;
+    position: fixed;
+    background-color: var(--grey-light);
+   } 
+  .small-menu{
+    display: inline-block;
+    z-index: 4;
+  } 
+ #check:checked ~ .small-menu{
+    transform: rotate(-120deg);
+    background-color: var(--orange);
+    opacity: .8;
+  }
+  #check:checked ~ .menu-top{
+    top: 0;
+}
+.main-store {
+display: flex;
+flex-direction: column;
+flex-wrap:wrap; 
+
+/*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr; */    
+}
+.display-image{
+    height: 30vh;
+    width: auto;
+}
+.karma-form{
+    width: auto;
+    }
