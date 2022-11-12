@@ -1,0 +1,113 @@
+
+/* main */
+
+.main_store {
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    color:gray;
+}
+
+.store_title {
+    color: #E14E00;
+    margin-top:0;
+}
+
+/* Form */
+
+.order_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 7rem;
+}
+
+.input {
+    border:solid 1.5px gray;
+    border-radius: 5px;
+    padding: 1rem;
+    width:100%;
+    margin-top: 1rem;
+}
+
+/* Form Divs*/
+
+fieldset {
+    border: none;
+    display:flex;
+    gap: 2rem;
+    width:auto;
+}
+
+.name_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;;
+    width: 100%;
+}
+
+.address_section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width:100%;
+}
+
+#address {
+    margin-bottom:2rem;
+}
+
+.location_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    width:100%;
+    margin-bottom: 2rem;
+}
+
+.colour_section {
+    margin: 2rem 0 7rem 0;
+}
+
+.colour_title {
+    margin: 2rem 0 1rem 0;
+}
+
+.terms_cond {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom:3rem;
+    width: 100%;
+}
+
+.button {
+    background-color: #E14E00;
+    padding: 1rem;
+    justify-content: left;
+    color: white;
+    border-radius: 0.2rem;;
+    border: none;
+    margin-right: 50%;
+}
+
+/* Radio Styling */
+
+/* Checkbox Styling */
+
+input [type="checkbox"]:before {
+    color: #E14E00;
+    transform: scale(0);
+}
+
+/* image */
+
+.store_image1 {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
