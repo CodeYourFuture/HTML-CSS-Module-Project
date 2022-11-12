@@ -38,7 +38,7 @@ body {
 
  /* Navigation */
 
-  .nav_list {
+  .nav_list_container {
     display:flex;
     flex-direction: row;
     /* justify-content:space-between; */
@@ -50,28 +50,20 @@ body {
     color: grey;
   }
 
+  .nav_item {
+    padding: 0.1rem 0;
+    margin: 0;
+    color: gray;
+  }
+
   .nav_item:hover,
-  .nav_item:focus {
+  .nac_item:focus {
     color: #E14E00;
     font-weight: bold;
   }
 
-  .nav_item {
-    padding: 0.1rem 0;
-    margin: 0;
-  }
-
-  .navmeetkarma {
+  #navmeetkarma {
     font-weight: bold;
-  }
-
-  .navmeetkarma,
-  .navhowitworks,
-  .navstore,
-  .navblog,
-  .navhelp,
-  .navlogin {
-    color:gray;
   }
 
   /* Main */
