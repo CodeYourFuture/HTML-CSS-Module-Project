@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <header class="header">
+        <div class="logo">
+            <img class="karma-logo" src="img/karma-logo.svg" alt="karma-logo">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li class="navList">
+                    <a class="navLink" id="karma" href="index.html"> Meet Karma</a>
+                </li>
+                <li class="navList">
+                    <a class="navLink" href="#"> How It Works</a>
+                </li>
+                <li class="navList">
+                    <a class="navLink" href="#"> Store</a>
+                </li>
+                <li class="navList">
+                    <a class="navLink" href="#"> Blog</a>
+                </li>
+                <li class="navList">
+                    <a class="navLink" href="#"> Help</a>
+                </li>
+                <li class="navList">
+                    <a class="navLink" href="#"> Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<main class="maingrid">
+    <form action="" method="get" class="form">
+        <fieldset>
+            <div class="ordertitle">
+                <h1>Order your Karma wifi device today!</h1>
+            </div>
+            <div class="form-row">
+                <label for="first-name">First name *</label>
+                <input type="text" name="first-name" id="first-name" required />
+                <label for="last-name">Last name *</label>
+                <input type="text" name="last-name" id="last-name" required />
+            </div>
+            <div class="form-row">
+                <label for="address">Address *</label>
+                <br>
+                <input type="text" name="address" id="address" required />
+            </div>
+            <div class="form-row">
+                <label for="address2">Address 2 *</label>
+                <br>
+                <input type="text" name="address2" id="address2" required />
+            </div>
+            <div class="form-row">
+                <label for="cityselect">City 2 *</label>
+                
+                <select name="cities" id="cityselect">
+                    <option value="">Select your city..</option>
+                    <option value="london">London</option>
+                    <option value="york">York</option>
+                    <option value="leeds">Leeds</option>
+                    <option value="edinburgh">Edinburgh</option>
+                    <option value="glasgow">Glasgow</option>
+                </select>
+                <label for="postcode">Postcode *</label>
+                <input type="text" name="postcode" id="postcode" required />
+            </div>
+            <div>
+                <legend>Select a colour</legend>
+            </div>
+            <div class="form-row">
+                <input type="radio" id="karmaorange" name="karmaorange" value="karmaorange" />
+                <label for="karmaorange">Karma orange</label>
+                <input type="radio" id="spacegrey" name="spacegrey" value="spacegrey" />
+                <label for="spacegrey">Space grey</label>
+            </div>
+            <div>
+                <input type="checkbox" id="t&c" name="t&c" checked required>
+                <label for="t&c" class="check">By placing your order you agree Karma's <a href="#" class="t&c">Terms and Conditions. *</a></label>
+            </div>
+
+                <input type="submit" class="subbtn" value="Place my order">
+
+        </fieldset>
+    </form>
+
+    <aside class="storeimg">
+        <img src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store store-image_by-andrew-neel-unsplash" width="400px" height="auto">
+    </aside>
+
+</main>
+
+<h6 class="footertext">Join us on</h6>
+<footer>
+    <div class="contact">
+        <div>
+            <img class="contactimages" src="img/twitter-icon.svg" alt="twitter-icon">
+        </div>
+        <div>
+            <img class="contactimages" src="img/facebook-icon.svg" alt="facebook-icon">
+        </div>
+        <div>
+            <img class="contactimages" src="img/instagram-icon.svg" alt="instagram-icon">
+        </div>
+    </div>
+</footer>
+
+<h6 class="footer">&copy; Karma Mobility, inc. </h6>
+</body>
+</html>
