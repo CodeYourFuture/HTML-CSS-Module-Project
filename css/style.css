@@ -147,7 +147,11 @@ body {
     padding: 10px;
   }
 
-  .footer_icons {
+  ul {
+    list-style: none;
+  }
+
+  .contact_icon_container {
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -155,19 +159,18 @@ body {
     padding: 5px;
   }
 
-  .icon_img {
-    height: 10px;
-    width: 10px;
+  .contact_icon {
+    height: 30px;
+    width: 30px;
     border: solid grey;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     margin: 0 20px;
   }
 
-  .instagram_icon,
-  .facebook_icon,
-  .twitter_icon {
-    height: 30px;
+  .contact_icon:hover {
+    background-color: #FFE8DE;
+    border-color: black;
   }
 
   .copyright {
