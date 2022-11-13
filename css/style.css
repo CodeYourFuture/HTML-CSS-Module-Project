@@ -1,10 +1,6 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
 
 /**
  * Add your custom styles below
@@ -17,3 +13,278 @@ body {
  */
 
 
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: block; 
+    margin: 0;  
+    /* width: 100%; */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5rem;
+    padding-bottom: 1rem;
+
+}
+
+header img{
+    height: 4rem;
+    padding-top: 1rem;
+    /* margin-left: 5rem; */
+}
+
+nav {
+    padding: auto;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+nav .bar{
+    width: 100%;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* align-items: baseline; it does not work */
+    gap: 1rem;
+}
+
+li {
+    width: auto;
+    text-decoration: none;
+    list-style: none; 
+    display: block;
+    align-content: center;
+}
+
+.karma{
+    font-weight: 900;
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+
+}
+
+ul :first-child{
+    color: rgb(118, 123, 125);
+}
+
+.bar li a:hover {
+    color:rgb(243, 112, 56);
+}
+
+/* section picture brackgroun and button */
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+main {
+    background-image: url("/img/first-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35rem;
+    justify-content: center;
+    color: rgb(241, 246, 241);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+main img{
+    width: 100%;
+    height: 100%;
+}
+
+main h1{
+    font-size: 4rem;
+    font-weight: 350;
+    margin-bottom: 0rem;
+}
+
+main p{
+    font-size: 2rem;
+    font-weight: 150;
+}
+
+.btn {
+    background-color:rgb(243, 112, 56);
+    color: white;
+    margin-top: 2rem;
+    border: none;
+    padding: 20px 32px;
+    border-radius: 0.2rem;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: rgb(97, 40, 15);
+    color: rgb(251, 251, 251);
+}
+
+h3{
+    font-size: 3.4rem;
+    font-weight: 200;
+    /* padding-top: 10rem; */
+    text-align: center;
+}
+
+/* second div with the images */
+
+.content{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.content .section {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    color:  rgb(16, 15, 15);
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: yellow; 
+}
+
+.content .section img{
+    /* padding-top: 3rem; */
+    width: 50%;
+    margin: auto;
+}
+
+.content .section p{
+    width: 100%;
+    color:  rgb(16, 15, 15);
+    font-size: 80%;
+    font-weight: 500;
+}
+
+/* extender section */
+
+.extSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 22rem;
+    padding: auto;
+}
+
+.level2 {
+    /* height: 240px; */
+    width: 45%;
+}
+
+.sec2 {
+    height: 240px;
+    width: 55%;
+    height: 100%;
+    color: #434242;
+    background-color: rgba(224, 99, 58, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sec2-quote {
+    color:  #E0633A;
+    font-size: 37px;
+}
+
+.text {
+    width: 60%;
+    align-content: center;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 33px;
+    line-height: 36px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.get {
+    background-color: #E0633A;
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.get a{
+    text-decoration: none;
+    color: white;
+}
+
+.get:hover {
+    background-color: rgb(97, 40, 15);
+}
+
+
+/* footer */
+
+
+
+footer {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+hr{
+    width: 80%;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(226, 221, 221);
+}
+
+.foot ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding-left: 0px;
+
+}
+
+.foot img{
+    width: 1.3rem;
+    height: 1.3rem;
+    display: block;
+}
+
+footer ul li{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+small {
+    color: darkgray;
+}

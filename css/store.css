@@ -1,0 +1,171 @@
+
+/* body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;   */
+    /* width: 100%; */
+
+
+/* *{
+    box-sizing: border-box;
+} */
+
+header {
+    border-bottom: 0.01rem solid black;
+}
+
+.main{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 0.01rem solid black;
+}
+
+.section{
+    width: 50%;
+    height: 50rem;
+}
+
+.orderKarma{
+    width: 100%;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 59px;
+    text-align: left;
+    color: #DE6E49;
+    /* margin: 1rem 0 0 0; */
+    margin-left: 4rem ;
+    
+}
+
+.form{
+    width: 85%;
+    height: 35rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.form input{
+    border: 0.1rem solid black;
+    border-radius: 0.25rem;
+}
+.form label{
+    color: rgb(80, 78, 78);
+}
+
+.form-name{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+#name{
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 2.2rem;
+}
+
+#surname{
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 2.2rem;
+}
+
+#address{
+    display: flex;
+    flex-direction: column; 
+    width: 36rem;
+    height: 2.2rem;
+}
+
+#address2{
+    display: flex;
+    flex-direction: column; 
+    width: 36rem;
+    height: 2.2rem;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+#city{
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 2.2rem;
+}
+
+#pc{
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    height: 2.2rem;
+}
+
+.legend{
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+    color: rgb(80, 78, 78);
+    /* padding: 1rem 0; */
+}
+
+fieldset{
+    margin: 0;
+    padding: 1rem 0;
+    border: 0;
+}
+
+.term-checkbox{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    font-size: 1.2rem;
+    color: rgb(80, 78, 78);
+}
+
+.term-checkbox :first-child{
+    color: #DE6E49;
+}
+
+.checkbox{
+    background-color: #DE6E49;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 0;
+}
+
+.submit input{
+    background-color: #DE6E49;
+    margin: 2rem 0 0 0;
+    width: 15rem;
+    height: 3.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.photo{
+    width: 50%;
+    height: 50rem;
+    /* margin: auto; */
+    background: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+}
