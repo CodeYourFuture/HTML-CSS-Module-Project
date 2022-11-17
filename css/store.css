@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Header Section */
+header {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 30px;
+  border-bottom: 0.1rem solid #eeeeee;
+}
+.logo_header {
+  display: block;
+  width: auto;
+  height: 2rem;
+}
+
+/* Navigation style */
+
+
+nav {
+  display: grid;
+  grid-column: 2 / -1;
+  justify-content: end;
+  padding-right: 40px;
+}
+.nav_list {
+  display: flex;
+
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav_item {
+  padding: 0.8rem 0.1rem;
+}
+.nav_link {
+  color: #989898;
+  text-decoration: none;
+}
+.nav_list > li:first-child > a {
+  color: #595959;
+  font-weight: 500;
+}
+.nav_list a:hover {
+  color: #c05326;
+  font-weight: 500;
+}
+.nav_menu input {
+  display: none;
+}
+
+
+/* button style */
+button {
+  color: #fff;
+  background-color: #c05326;
+  border-radius: 3px;
+  border: none;
+  margin-top: 1rem;
+  padding: 1.2rem 0rem;
+  font-weight: 500;
+    font-size: 1.3rem;
+
+}
+
+/* Store */
+main > section > h2 {
+  text-align: left;
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding-bottom: 3rem;
+  color: #c05326;
+}
+
+.store_image {
+  grid-area: image;
+  background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
+  size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+form > fieldset {
+  border: 0;
+  padding: 0rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "form image";
+  border-bottom: 0.1rem solid #eeeeee;
+}
+main > section {
+  padding: 5rem 4rem;
+}
+main > section > form {
+  grid-area: form;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "firstname lastname"
+    "address address"
+    "address2 address2"
+    "city city"
+    "karmacolour karmacolour"
+    "tc tc"
+    "button none";
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 350;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+main > section:nth-child(1) > form > div > label,
+.city-postcode > div > label,
+.karmacolour > label:first-child {
+  padding: 0.5rem 0rem;
+  color: #666666;
+  font-weight: 500;
+}
+form > div > input,
+.city > div > select,
+.postcode > input {
+  border: 0.15rem solid #666666;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.5rem;
+}
+.firstname {
+  grid-area: firstname;
+}
+.lastname {
+  grid-area: lastname;
+}
+.address {
+  grid-area: address;
+}
+.address2 {
+  grid-area: address2;
+}
+.karmacolour {
+  grid-area: karmacolour;
+  padding: 1.5rem 0;
+}
+.tc {
+  grid-area: tc;
+  padding: 2rem 0rem;
+}
+.place_order {
+  grid-area: button;
+}
+
+.tc > label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.city-postcode {
+  grid-area: city;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.city {
+  padding-right: 1.5rem;
+}
+.postcode input {
+  max-width: 100%;
+}
+.city-postcode > div > label {
+}
+/* form Branding */
+.karmacolour {
+display: flex;
+flex-direction: column;
+}
+.form_radio {
+display: flex;
+justify-items: center;
+}
+.form_branding {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  display: flex;
+  grid-template-columns: 5em auto;
+  gap: 0.5em;
+  margin-top: 1rem;
+
+}
+input[type="radio"] {
+  /* ----Add if not using autoprefixer */
+  appearance: none; */
+  /* ----For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* ----Not removed via appearance */
+  margin: 0;
+  font: inherit;
+
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #666666;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+
+}
+
+.form_branding + .form_branding {
+  margin-left: 2rem;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  box-shadow: inset 1em 1em #c05326;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+.tc > label > a {
+  color: #c05326;
+}
+
+/* -------tc custom style------- */
+.agreement {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.agreement input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+    border-radius: 20%;
+  border: 0.15em solid #666666;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.agreement input:checked ~ .checkmark:after {
+  display: block;
+}
+.agreement > .checkmark:after {
+  left: 6px;
+  top: 0px;
+  width: 9px;
+  height: 17px;
+  border: solid #c05326;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* -------form selector custom style------- */
+
+.city select {
+  appearance: none;
+  background-color: transparent;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  /* font-style: italic; */
+}
+/* .city select::-ms-expand {
+  display: none;
+} */
+.select {
+  display: grid;
+  grid-template-areas: "select";
+  cursor: pointer;
+  align-items: center;
+  font-style: italic;
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: #666666;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+
+}
+
+.city select,
+.select:after {
+  grid-area: select;
+}
+
+/* ----------------------------------- */
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+.social_media {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+footer a {
+  display: block;
+  border: 0.1rem solid #eeeeee;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+footer > div > a > img {
+  display: block;
+  max-width: 1.2rem;
+}
+footer > h6 {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+footer > span:first-child {
+  font-size: 0.7rem;
+}
+footer > span:last-child {
+  font-size: 0.7rem;
+  color: #989898;
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_menu {
+    display: block;
+    position: relative;
+    top: 5px;
+    z-index: 1;
+    text-align: center;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .nav_menu input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+  }
+  .nav_menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    left: 40px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #c05326;
+    border-radius: 3px;
+    z-index: 1;
+  }
+  .nav_list li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  .nav_list {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -197px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    display: none;
+  }
+  .nav_menu input:checked ~ ul {
+    display: block;
+  }
+  main > section > form {
+    display: flex;
+    flex-direction: column;
+  }
+  main > section:nth-child(1) > form > div > label,
+.city-postcode > div > label,
+.karmacolour > label:first-child {
+  padding: 0.5rem 0rem;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+}

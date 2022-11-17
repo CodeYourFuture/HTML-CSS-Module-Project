@@ -1,19 +1,294 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  font-weight: 400;
+}
 
+/* Header Section */
+header {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 30px;
+  border-bottom: 0.1rem solid #eeeeee;
+}
+.logo_header {
+  display: block;
+  width: auto;
+  height: 2rem;
+}
 
+/* Navigation style */
+
+nav {
+  display: grid;
+  grid-column: 2 / -1;
+  justify-content: end;
+  padding-right: 40px;
+}
+.nav_list {
+  display: flex;
+
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav_item {
+  padding: 0.8rem 0.1rem;
+}
+.nav_link {
+  color: #989898;
+  text-decoration: none;
+}
+.nav_list > li:first-child > a {
+  color: #595959;
+  font-weight: 500;
+}
+.nav_list a:hover {
+  color: #c05326;
+  font-weight: 500;
+}
+.nav_menu input {
+  display: none;
+}
+
+/* Main section */
+.main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+  padding: 9rem 1rem;
+  color: white;
+}
+.main_content h1 {
+  margin: 0;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 2.8rem;
+  padding: 0.5rem;
+}
+.main_content h3 {
+  margin: 0;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+/* row section */
+.little_karma {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1rem solid #eeeeee;
+  text-align: center;
+}
+.little_karma > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 2rem 0rem;
+  padding-bottom: 2rem;
+}
+.little_karma img {
+  width: 6rem;
+}
+.little_karma h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  align-self: center;
+}
+.little_karma > ul h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  align-self: center;
+}
+
+.little_karma li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+/* Extended Section */
+
+.extended_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcefeb;
+}
+.extended_section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.extended_section > div > h3 {
+  text-align: center;
+  font-weight: 370;
+  font-size: 2rem;
+  padding: 1rem 0;
+  font-style: italic;
+}
+.quotation {
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 0.3rem;
+  color: #c05326;
+}
+.extended_section img {
+  max-width: 50%;
+}
+
+/* button style */
+button {
+  color: #fff;
+  background-color: #c05326;
+  border-radius: 3px;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  position: -500px;
+}
+.button_learnmore {
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 7px;
+}
+.place_order {
+  font-weight: 500;
+  align-items: baseline;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+.social_media {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+footer a {
+  display: block;
+  border: 0.1rem solid #eeeeee;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+footer > div > a > img {
+  display: block;
+  max-width: 1.2rem;
+}
+footer > h6 {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+footer > span:first-child {
+  font-size: 0.7rem;
+}
+footer > span:last-child {
+  font-size: 0.7rem;
+  color: #989898;
+}
+
+/* ----- media query ----- */
+@media screen and (max-width: 640px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_menu {
+    display: block;
+    position: relative;
+    top: 5px;
+    z-index: 1;
+    text-align: center;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .nav_menu input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+  }
+  .nav_menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    left: 40px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #c05326;
+    border-radius: 3px;
+    z-index: 1;
+  }
+  .nav_list li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  .nav_list {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -197px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    display: none;
+  }
+  .nav_menu input:checked ~ ul {
+    display: block;
+  }
+  .little_karma h2 {
+    font-size: 1.8rem;
+    padding: 0 1.5rem;
+  }
+  .little_karma > ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .extended {
+    padding-bottom: 1.5rem;
+    background-color: #fcefeb;
+  }
+  .extended_section {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .extended_section img {
+    max-width: 100%;
+  }
+  footer {
+    margin-top: 20px;
+  }
+}

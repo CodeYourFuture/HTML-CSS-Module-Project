@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a href="/index.html">
+        <img
+          src="/img/karma-logo.svg"
+          alt="Karama home page"
+          class="logo_header"
+        />
+      </a>
+      <nav class="nav_menu">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a class="nav_link" href="/index.html">Meet Karma</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#">How it Works</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="/store.html">Store</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#">Blog</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#">Help</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <main>
+      <section>
+        <h2>Order your Karma wifi device today!</h2>
+        <form action="#" method="submit" target="">
+          <div class="firstname">
+            <label for="firstname">First name *</label>
+            <input id="firstname" type="text" autocomplete="name" required />
+          </div>
+          <div class="lastname">
+            <label for="lastname">Last name *</label>
+            <input id="lastname" type="text" required />
+          </div>
+          <div class="address">
+            <label for="adress">Address *</label>
+            <input id="address" type="address" required />
+          </div>
+          <div class="address2">
+            <label for="adress2">Address 2</label>
+            <input id="address2" type="address" />
+          </div>
+          <div class="city-postcode">
+          <div class="city">
+            <label for="city">City *</label>
+            <div class="select">
+              <select id="city" name="city">
+                <option value="" selected>Select your city...</option>
+                <option value="london">London</option>
+                <option value="machester">Manchester</option>
+              </select>
+            </div>
+          </div>
+          <div class="postcode">
+            <label for="postcode">Postcode *</label>
+            <input
+              id="postcode"
+              type="postcode"
+              autocomplete="postal-code"
+              required
+            />
+          </div>
+          </div>
+          <fieldset class="karmacolour">
+            <label>Select a colour</label>
+            <div class="form_radio">
+              <label class="form_branding">
+                <input
+                  id="karmaorange"
+                  type="radio"
+                  name="karmaorange"
+                  value="orange"
+                />Karma Orange</label
+              >
+              <label class="form_branding">
+                <input
+                  id="spacegrey"
+                  type="radio"
+                  name="spacegrey"
+                  value="grey"
+                />Space Grey
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="tc">
+
+            <label class="agreement">
+              <input type="checkbox" name="agreement" checked="checked" />
+              <span class="checkmark"></span>By placing your order you agree to Karma's
+              <a href="#" target="_blank"
+                >Terms and Conditions</a
+            </label>
+          </fieldset>
+          <button class="place_order">Place my Order</button>
+        </form>
+      </section>
+      <div class="store_image"></div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <span>Join us on</span>
+      <div class="social_media">
+        <a href="https://www.twitter.com/" target="_blank">
+          <img src="../img/twitter-icon.svg" alt="Twitter Logo" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="../img/facebook-icon.svg" alt="Facebook Logo" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../img/instagram-icon.svg" alt="Instagram Logo" />
+        </a>
+      </div>
+      <span>© Karma Mobility, Inc.</span>
+    </footer>
+  </body>
+</html>
