@@ -19,23 +19,28 @@
   <body>
     <!-- header -->
     <header>
-      <a href="../index.html">
+      <a href="/index.html">
         <img
-          src="../img/karma-logo.svg"
+          src="/img/karma-logo.svg"
           alt="Karama home page"
           class="logo_header"
         />
       </a>
-      <nav>
+      <nav class="nav_menu">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
         <ul class="nav_list">
           <li class="nav_item">
-            <a class="nav_link" href="#">Meet Karma</a>
+            <a class="nav_link" href="/index.html">Meet Karma</a>
           </li>
           <li class="nav_item">
             <a class="nav_link" href="#">How it Works</a>
           </li>
           <li class="nav_item">
-            <a class="nav_link" href="./store.html">Store</a>
+            <a class="nav_link" href="/store.html">Store</a>
           </li>
           <li class="nav_item">
             <a class="nav_link" href="#">Blog</a>
@@ -70,6 +75,7 @@
             <label for="adress2">Address 2</label>
             <input id="address2" type="address" />
           </div>
+          <div class="city-postcode">
           <div class="city">
             <label for="city">City *</label>
             <div class="select">
@@ -88,6 +94,7 @@
               autocomplete="postal-code"
               required
             />
+          </div>
           </div>
           <fieldset class="karmacolour">
             <label>Select a colour</label>

@@ -1,4 +1,3 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 * {
   margin: 0;
   padding: 0;
@@ -19,10 +18,12 @@ body {
 
 /* Header Section */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-gap: 10px;
+  justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 30px;
   border-bottom: 0.1rem solid #eeeeee;
 }
 .logo_header {
@@ -33,8 +34,16 @@ header {
 
 /* Navigation style */
 
+
+nav {
+  display: grid;
+  grid-column: 2 / -1;
+  justify-content: end;
+  padding-right: 40px;
+}
 .nav_list {
   display: flex;
+
   list-style: none;
   gap: 1.5rem;
 }
@@ -51,11 +60,12 @@ header {
 }
 .nav_list a:hover {
   color: #c05326;
-    font-weight: 500;
-
+  font-weight: 500;
+}
+.nav_menu input {
+  display: none;
 }
 
-/* Main section */
 
 /* button style */
 button {
@@ -66,6 +76,8 @@ button {
   margin-top: 1rem;
   padding: 1.2rem 0rem;
   font-weight: 500;
+    font-size: 1.3rem;
+
 }
 
 /* Store */
@@ -108,7 +120,7 @@ main > section > form {
     "firstname lastname"
     "address address"
     "address2 address2"
-    "city postcode"
+    "city city"
     "karmacolour karmacolour"
     "tc tc"
     "button none";
@@ -122,13 +134,15 @@ form > div {
   flex-direction: column;
 }
 main > section:nth-child(1) > form > div > label,
+.city-postcode > div > label,
 .karmacolour > label:first-child {
   padding: 0.5rem 0rem;
   color: #666666;
   font-weight: 500;
 }
 form > div > input,
-.city > div > select {
+.city > div > select,
+.postcode > input {
   border: 0.15rem solid #666666;
   border-radius: 0.25rem;
   font-size: 1.2rem;
@@ -146,12 +160,6 @@ form > div > input,
 .address2 {
   grid-area: address2;
 }
-.city {
-  grid-area: city;
-}
-.postcode {
-  grid-area: postcode;
-}
 .karmacolour {
   grid-area: karmacolour;
   padding: 1.5rem 0;
@@ -164,12 +172,23 @@ form > div > input,
   grid-area: button;
 }
 
-
 .tc > label {
   font-size: 1rem;
   font-weight: 400;
 }
-
+.city-postcode {
+  grid-area: city;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.city {
+  padding-right: 1.5rem;
+}
+.postcode input {
+  max-width: 100%;
+}
+.city-postcode > div > label {
+}
 /* form Branding */
 .karmacolour {
 display: flex;
@@ -290,7 +309,7 @@ input[type="radio"]:checked::before {
   font-size: inherit;
   cursor: inherit;
   line-height: inherit;
-  font-style: italic;
+  /* font-style: italic; */
 }
 /* .city select::-ms-expand {
   display: none;
@@ -300,8 +319,7 @@ input[type="radio"]:checked::before {
   grid-template-areas: "select";
   cursor: pointer;
   align-items: center;
-
-
+  font-style: italic;
 }
 
 .select::after {
@@ -311,8 +329,6 @@ input[type="radio"]:checked::before {
   background-color: #666666;
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
   justify-self: end;
-  margin-right: 10px;
-
 
 }
 
@@ -359,12 +375,75 @@ footer > span:last-child {
   color: #989898;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+@media screen and (max-width: 640px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_menu {
+    display: block;
+    position: relative;
+    top: 5px;
+    z-index: 1;
+    text-align: center;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .nav_menu input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+  }
+  .nav_menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    left: 40px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #c05326;
+    border-radius: 3px;
+    z-index: 1;
+  }
+  .nav_list li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  .nav_list {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -197px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    display: none;
+  }
+  .nav_menu input:checked ~ ul {
+    display: block;
+  }
+  main > section > form {
+    display: flex;
+    flex-direction: column;
+  }
+  main > section:nth-child(1) > form > div > label,
+.city-postcode > div > label,
+.karmacolour > label:first-child {
+  padding: 0.5rem 0rem;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+}
