@@ -1,19 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,100"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
-</body>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="header__logo" src="./img/karma-logo.svg" alt="karma-logo" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__list__item" href="#">Meet Karma</a></li>
+          <li><a class="nav__list__item" href="#">How it works</a></li>
+          <li><a class="nav__list__item" href="#">Store</a></li>
+          <li><a class="nav__list__item" href="#">Blog</a></li>
+          <li><a class="nav__list__item" href="#">Help</a></li>
+          <li><a class="nav__list__item" href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">Introducing Karma</h1>
+        <h3 class="hero__subtitle">Brining WiFi with you, everywhere you go</h3>
+        <button class="btn--primary">Learn More</button>
+      </section>
+      <section class="description">
+        <h2 class="description__title">Everyone needs a little Karma.</h2>
+        <div class="description_container">
+          <article class="description__article">
+            <img
+              class="description__article__image"
+              src="./img/icon-devices.svg"
+              alt="devices icon"
+            />
+            <p class="description__article__caption">
+              Internet for all devices
+            </p>
+          </article>
+          <article class="description__article">
+            <img
+              class="description__article__image"
+              src="./img/icon-coffee.svg"
+              alt="coffee icon"
+            />
+            <p class="description__article__caption">Boost your productivity</p>
+          </article>
+          <article class="description__article">
+            <img
+              class="description__article__image"
+              src="./img/icon-refill.svg"
+              alt="refill icon"
+            />
+            <p class="description__article__caption">Pay as you go</p>
+          </article>
+        </div>
+      </section>
+      <section class="subscription">
+        <img
+          class="subscription__image"
+          src="./level-2/homepage-feature.png"
+          alt="woman holding an ipad & laughing"
+        />
+        <div class="subscription__quotation">
+          <p class="subscription__quotation__text">
+            <span class="text__span">&ldquo;</span>Wherever I am, I just don't
+            worry about my connection anymore!<span class="text__span"
+              >&rdquo;</span
+            >
+          </p>
+          <button class="btn--primary">Get Karma today</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">Join us on</p>
+      <div class="footer__links">
+        <a href="#"
+          ><img
+            class="footer__links__icon"
+            src="./img/twitter-icon.svg"
+            alt="twitter icon"
+          />
+        </a>
+        <a href="#"
+          ><img
+            class="footer__links__icon"
+            src="./img/facebook-icon.svg"
+            alt="facebook icon"
+          />
+        </a>
+        <a href="#"
+          ><img
+            class="footer__links__icon"
+            src="./img/instagram-icon.svg"
+            alt="instagram icon"
+          />
+        </a>
+      </div>
+      <p class="footer__text--muted">© Karma Mobility Inc.</p>
+    </footer>
+  </body>
 </html>
