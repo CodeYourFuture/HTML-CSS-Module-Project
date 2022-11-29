@@ -1,19 +1,217 @@
+:root {
+    --grey-dark: #292b2c;
+    --grey-light: #d0cdcd;
+    --orange-dark: #F15B2A;
+    --orange-light: #f7eae4;
+    --white: #fff;
+}
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* Reset */
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--grey-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+body, button {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    background-color: var(--white);
+}
+
+.header__logo {
+    width: 1.5rem;
+    height: auto;
+}
+
+/* Navigation */
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: var(--grey-dark);
+}
+
+.nav__list__item {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.nav__list__item:hover {
+    color: var(--orange-dark);
+}
+
+.nav__list__item:focus {
+    font-weight: bold;
+    color: initial;
+}
+
+/* Main section */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Buttons */
+.btn--primary {
+    padding: 0.8rem 2rem;
+    border: 1px solid var(--orange-dark);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: var(--orange-dark);
+    color: var(--orange-light);
+}
+
+.btn--primary:hover {
+    color: var(--grey-dark);
+    background-color: var(--orange-light);
+}
 
 
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--grey-light);
+    background-image: url("../img/first-background.jpg");
+}
+
+.hero__title, .hero__subtitle {
+    color: var(--white);
+}
+
+.hero__title {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.hero__subtitle {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+/* Description section */
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    background-color: var(--white);
+}
+
+.description__title {
+    margin: 6rem 3rem 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.description_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.description__article {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    padding: 0 2rem;
+}
+
+.description__article__image {
+    height: 200px;
+    width: auto;
+}
+
+.description__article__caption {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+/* Subscription section*/
+
+.subscription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+}
+
+.subscription__quotation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-light);
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+}
+
+.subscription__quotation__text {
+    display: block;
+    width: 50%;
+    margin: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.text__span {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--orange-dark);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid var(--grey-light);
+    margin: 4rem 2rem 0;
+
+}
+
+.footer__text {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer__links__icon {
+    width: 30px;
+    height: auto;
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid var(--grey-light);
+    border-radius: 50%;
+}
+
+.footer__text--muted {
+    opacity: 0.8;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--grey-dark);
+}
