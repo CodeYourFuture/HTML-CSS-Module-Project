@@ -1,10 +1,11 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
+
+
 
 /**
  * Add your custom styles below
@@ -17,3 +18,367 @@ body {
  */
 
 
+ .header{
+    display: flex;
+    width: 100%;
+    height: 4.375rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.logo {
+    width: 15px;
+    height: 23px;
+    margin-left: 4rem;
+
+}
+
+
+.nav-links {
+    list-style: none;
+    margin-right: 4rem;
+    padding: 0;
+    cursor: pointer;
+  /*  overflow: hidden;
+    text-align: center;*/
+    
+}
+.nav-links li {
+    display: inline-block;
+    color: gray;
+}
+.nav-link {
+    text-decoration: none;
+    color: gray;
+    padding: 2px 5px;
+    
+}
+.nav-link:hover {
+    color: #c05326;
+}
+.nav_item {
+    cursor: pointer;
+    color: red;
+}
+.nav_item-active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.intro {
+   background-image: url("/img/first-background.jpg");
+   height: 500px;
+   background-position: center;
+   background-repeat: no-repeat; 
+   background-size: cover;
+   overflow: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.intro-text {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.intro_h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.intro_h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+.intro_buttons {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.learn_more {
+    width: 9.688rem;
+    font-size: 1.125rem;
+    background-color: #F15A29;
+    border-color: #F15A29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+}
+.learn_more:hover {
+    background-color: #D9400E;
+    border-color: #CF3D0E;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_content {
+    margin-top: 7.875rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #1D1E21;
+}
+.container_content>h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 4.125rem;
+    margin-left: 6rem;
+    font-weight: 300;
+    align-self: center;
+}
+.container_devices {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.container_devices>li {
+    display: flex;
+    flex-direction: column;
+}
+.container_devices>li:not(:last-child) {
+    margin-right: 2rem;
+}
+.container_image {
+    width: 130px;
+    height: 130px;
+    align-self: center;
+}
+.container_caption>h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.87rem;
+    text-align: center;
+}
+
+/* feature section */
+.feature_section {
+    display: flex;
+    
+}
+.get_karma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 225, 227);
+    padding: 0 14rem;
+}
+.feature_text {
+    text-align: center;
+   font-style: italic;
+}
+.feature_button {
+    background-color: #D9400E;
+        border-color: #CF3D0E;
+        cursor: pointer;
+        color: white;
+        padding: 1rem 0.75rem;
+        border-radius: 4px;
+        border-style: none;
+}
+
+/* footer section */
+.text_footer1 {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.s_media {
+    background-color: white;
+    overflow: auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.s_media hr {
+    order: 0;
+    border-top: 1px solid lightgrey;
+    margin: 1.3rem 0;
+    
+}
+.icons li {
+    border-radius: 1.25rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border-radius: 1px solid gray;
+    padding: 0.4rem 0;
+}    
+.s_media.copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+.icons li .fa {
+    font-size: 20px;
+    padding-inline: 1rem;
+    
+}
+.icons li .fa-facebook {
+    color: #3b5998;
+}
+.icons li .fa-twitter {
+    color: #00acee;
+}
+.icons li .fa-instagram {
+    color: #3b5998;
+}
+/* store page styles */
+.store {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.order-form-container {
+    flex: 1;
+    height: auto;
+    margin: 40px;
+    border: none;
+}
+
+#form-title {
+    color: rgba(255, 68, 0, 0.671);
+    margin-bottom: 82px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.name {
+     display: flex;
+    flex-direction: row;
+    margin-bottom: 31px;
+}
+
+.name input {
+    margin-top: 10px;
+    height: 53px;
+}
+
+.lname {
+     padding-left: 26px;
+}
+
+.fname input,
+.lname input {
+    width: 233px;
+}
+
+.address, .address2 {
+    margin-bottom: 32px;
+}
+
+.address input,
+.address2 input {
+    width: 499px;
+    margin-top: 10px;
+    height: 53px;
+}
+
+.city_postcode {
+    display: flex;
+    flex-direction: row;
+}
+
+.city {
+    margin-bottom: 32px;
+}
+
+#city {
+    margin-top: 10px;
+    height: 53px;
+    width: 307px;
+}
+
+.postcode {
+    padding-left: 25px;
+}
+
+.postcode input {
+    width: 160px;
+    margin-top: 10px;
+    height: 50px;
+}
+
+#postcode {
+    height: 45px;
+}
+
+.form h2 {
+    font-size: 21px;
+    font-weight: 500;
+    width: 140px;
+    height: 25px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 97px;
+}
+
+
+#karma-orange, #space-grey, #terms {
+    cursor: pointer;
+}
+
+.space_grey {
+    padding-left: 32px;
+}
+
+.terms {
+    margin-bottom: 36px;
+}
+
+#terms_n_conditions {
+    color: rgba(255, 68, 0, 0.671);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#button {
+    padding: 22px 60px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 12.688rem;
+    /* font-size: 1.125rem; */
+    background-color: #F15A29;
+    border-color: #F15A29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 7px;
+    padding: 0.5rem 1.5rem;
+    height: 50px;
+    
+}
+input {
+    accent-color: rgba(255, 68, 0, 0.671);
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
