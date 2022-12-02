@@ -54,6 +54,32 @@ section,
 summary {
     display: block;
 }
+.nav{
+    width: 100%;
+    display: flex;
+ 
+}
+.list{
+    margin-left: 1000px;
+}
+.item{
+    display: inline;
+    text-decoration: none;
+}
+.item a{
+    text-decoration:none;
+}
+.logo{
+    width: 20px;
+    height: 20px;
+
+}
+.h2 {
+    text-align: center;
+}
+.list2 {
+    display: inline;
+}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
