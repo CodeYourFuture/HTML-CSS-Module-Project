@@ -42,7 +42,37 @@ header {
  li:hover {
     color:orange;
  }
+.row {
+    display: flex;
+}
 
+.orange {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(225, 150, 12);
+}
+ .column {
+    
+    width: 50%;
+ }
+ .box3{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+
+ }
+.lastt{
+    font-size: 35px;
+}
+ .board{
+    background-color: rgb(244, 229, 227);
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 50px;
+    
+ }
  .box2{
     
     background-size: cover;
