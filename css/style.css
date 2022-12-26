@@ -1,9 +1,319 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+  --light-grey: rgba(196, 196, 196, 0.1);
+  --grey: rgba(152, 154, 155, 0.852);
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-grey);
+  padding: 10px 70px 10px 100px;
+}
+
+nav {
+  font-size: 120%;
+  color: var(--grey);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  margin-right: 26px;
+}
+
+li:first-child {
+  color: rgb(77, 72, 72);
+  font-weight: 550;
+}
+
+li:hover {
+  color: rgb(255, 98, 0);
+}
+/* main */
+
+main {
+  padding-bottom: 50px;
+}
+
+.section-1 {
+  background-size: cover;
+  background-image: url("/img/first-background.jpg");
+  width: 100%;
+  height: 800px;
+  background-position: bottom;
+  color: white;
+}
+
+.section-1 h1 {
+  padding-top: 30vh;
+  font-weight: 300;
+  font-size: 250%;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.section-1 h2 {
+  font-weight: 300;
+  font-size: 150%;
+  margin-bottom: 60px;
+}
+
+.button {
+  color: white;
+  background-color: rgb(207, 82, 37);
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 25px 12px 25px;
+}
+
+.section-2 {
+  padding: 90px 80px 120px 80px;
+}
+
+section h3 {
+  font-weight: 350;
+  font-size: 300%;
+}
+.sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons {
+  width: 150px;
+  height: 150px;
+}
+
+.sec p {
+  font-weight: 400;
+  font-size: 180%;
+}
+
+.section-3 {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  grid-template-rows: auto;
+}
+
+.section-3 img {
+  width: 100%;
+}
+
+.section-3 div {
+  background: rgba(224, 99, 58, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-3 h3 {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #434242;
+  padding: 20px 60px 10px;
+  margin-bottom: 30px;
+}
+
+.section-3 span {
+  color: #e0633a;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 100%;
+}
+
+.section-3 .button {
+  background: #e0633a;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding: 14px 35px;
+}
+
+/* footer */
+
+footer {
+  border-top: 2px solid rgba(210, 206, 206, 0.32);
+  font-weight: 500;
+  font-size: 120%;
+  margin: 0 80px 100px 80px;
+}
+
+.social-icons {
+  width: 1rem;
+  height: 1rem;
+  padding: 14px;
+  border: 2px solid rgba(210, 206, 206, 0.32);
+  border-radius: 50%;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 80%;
+  color: rgba(193, 192, 192, 0.952);
+}
+
+/* Store page */
+
+.store-main {
+  display: grid;
+  grid-template-columns: 1fr 501px 1fr 600px;
+  grid-template-rows: 5rem auto auto auto 5rem;
+  grid-template-areas:
+    ". . . M"
+    ". H . M"
+    ". . . M"
+    ". F . M"
+    ". . . M";
+  padding: 0%;
+  text-align: left;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.store-main h1 {
+  grid-area: H;
+  font-size: 50px;
+  color: #de6e49;
+}
+
+.store-main .img {
+  grid-area: M;
+  background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.store-main form {
+  grid-area: F;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas:
+    "F  F  L  L  L"
+    "A  A  A  A  A"
+    "A2 A2 A2 A2 A2"
+    "C  C  C  P  P"
+    "S  S  S  S  S"
+    "G  G  G  G  G"
+    "B  B  B  B  B";
+  gap: 0 8px;
+  font-size: 21px;
+  color: #666666;
+}
+
+#F {
+  grid-area: F;
+}
+
+#L {
+  grid-area: L;
+}
+
+#A {
+  grid-area: A;
+}
+
+#A2 {
+  grid-area: A2;
+}
+
+#C {
+  grid-area: C;
+}
+
+#C select {
+  font-style: italic;
+  background-color: #ffffff;
+}
+
+#P {
+  grid-area: P;
+  justify-content: flex-end;
+}
+
+#S {
+  grid-area: S;
+  margin-top: 10px;
+}
+
+#S label {
+  padding-right: 60px;
+}
+
+#G {
+  grid-area: G;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#B {
+  grid-area: B;
+}
+
+label {
+  line-height: 40px;
+}
+
+.store-main fieldset {
+  border: 0;
+  margin: 0;
+}
+
+.store-main input:not([type="radio"]):not([type="checkbox"]),
+.store-main select {
+  width: 100%;
+  height: 43px;
+  padding: 2px 4px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+  accent-color: #e0633a;
+}
+
+.store-main button {
+  width: 269px;
+  height: 70px;
+  background: #e0633a;
+  border-radius: 4px;
+  font-size: 22px;
+}
+
+.store-main input,
+select {
+  border: 2px solid #666666;
+  border-radius: 4px;
+}
+
+#terms {
+  color: #e0633a;
+  text-decoration: underline;
 }
 
 /**
@@ -15,5 +325,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-

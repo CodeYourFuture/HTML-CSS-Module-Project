@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <a href="/index.html">
+        <img class="logo" src="img\karma-logo.svg" alt="Karma Logo image" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="">Meet Karma</a></li>
+          <li><a href="">How it works</a></li>
+          <li><a href="/store.html">Store</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="store-main">
+        <h1>Order your Karma wifi device today!</h1>
+
+        <div class="img">
+            <!-- <img src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Image of the store"> -->
+        </div>
+        <form action="" method="get">
+            <fieldset id="F">      
+                <label for="First-name">First name *</label>
+                <input id="First-name" type="text" name="First name" required/>
+            </fieldset>
+            <fieldset id="L">
+                <label for="Last-name">Last name *</label>
+                <input id="Last-name" type="text" name="Last name" required/>
+            </fieldset>
+            
+            <fieldset id="A">
+                <label for="Address">Address *</label>
+                <input id="Address" type="text" name="Address" required/>
+            </fieldset>
+            
+            <fieldset id="A2">
+                <label for="Address-2">Address 2</label>
+                <input id="Address-2" type="text" name="Address 2"/>
+            </fieldset>
+            
+            <fieldset id="C">
+                <label for="City">City *</label>
+                <select id="City" name="City" required>
+                    <option value="" selected hidden>Select your city...</option>
+                    <option value="London">London</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Glasgow">Glasgow</option>
+                </select>
+            </fieldset>
+            
+            <fieldset id="P">
+                <label for="Postcode">Postcode *</label>
+                <input id="Postcode" type="text" name="Postcode" required/>
+            </fieldset>
+            
+            
+            <fieldset id="S">
+              <legend>Select a colour</legend>
+
+                <input id="Karma-orange" type="radio" name="colour" value="Karma orange" />
+                <label for="Karma-orange">Karma orange</label>
+
+                <input id="Space-Grey" type="radio" name="colour" value="Space Grey" />
+                <label for="Space-Grey">Space Grey</label>
+
+            </fieldset>
+            <fieldset id="G">
+                <input id="agreement" type="checkbox" name="agreement" />
+                <label for="agreement">By placing your order you agree to Karma's <a id="terms" href="">Terms and Conditions</a>. *</label>
+            
+            </fieldset>
+            
+            <button id="B" class="button">Place my order</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Join us on</p>
+        <a href="www.twitter.com"
+            ><img
+            class="social-icons"
+            src="img\twitter-icon.svg"
+            alt="Twitter Icon"
+        /></a>
+        <a href="www.facbook.com"
+            ><img
+            class="social-icons"
+            src="img\facebook-icon.svg"
+            alt="Facebook Icon"
+        /></a>
+        <a href="www.instagram.com"
+            ><img
+            class="social-icons"
+            src="img\instagram-icon.svg"
+            alt="Instagram Icon"
+        /></a>
+        <p class="copyright">© Karma Mobility, Inc.</p>
+    </footer>
+  </body>
+</html>
