@@ -184,6 +184,44 @@ body {
     font-size:3.5rem;
 }
 
+/**Footer section*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons{
+    display: flex;  
+}
+.footer-line {
+    display: flex;
+    border-top: solid;
+    width: 87em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    color: rgb(212, 212, 212);
+}
+.footer-text{
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+.social-icons{
+    height: 2rem;
+    width: 2rem;
+    border: solid;
+    color: rgb(212, 212, 212);
+    border-radius: 50%;
+    padding: 1.4rem;
+    margin-left: 1.6rem;
+}
+.copyright{
+    color: rgb(177, 176, 176);
+    margin-top: 2.2rem;
+    margin-bottom: 5rem;
+}
 
 
 
