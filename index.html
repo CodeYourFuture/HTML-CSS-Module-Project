@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
-<body>
+<body class="body">
 
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-    <div class="container">
         <!-- Nav -->
         <nav class="top-nav">
             <img src="img/karma-logo.svg" alt="Karma logo" class="logo">
@@ -36,48 +35,74 @@
         </nav>
 
         <!--photo-->
-        <header class="photo">
+        <header class="photo" style="background-image: url('img/first-background.jpg');">
+            <h1 class="titleh1-on-background">Introducing Karma</h1>
+            <h2 class="titleh2-on-background">Bring WIFI with you, everywhere you go.</h2>
+            <button class="btn-on-background">Learn More</button>
         </header>
 
         <!-- tiles -->
         <section class="tiles">
-            <section>
-              <img src="img/icon-devices.svg" alt="An icon for different devices">
-              <p>Internet for all devices</p>
-            </section>
+            
+            <h1 class="slogan">Everyone needs a little Karma</h1>
+            <div class="feature-box-holder">
 
-            <section>
-              <img src="img/icon-coffee.svg" alt="An icon for a cup a coffee">
-              <p>Boost your productivity</p>
-            </section>
+                <figure class="feature-box">
+                    <img src="img/icon-devices.svg" alt="An icon for different devices">
+                   <h2 class="feature-text">Internet for all devices</h2>
+                </figure>
 
-            <section>
-               <img src="img/icon-refill.svg" alt="An icon for a refill pump">
-               <p>Pay as You Go</p>
-            </section>
+                <figure id="coffee-box" class="feature-box">
+                    <img src="img/icon-coffee.svg" alt="An icon for a cup a coffee" class="feature-images">
+                    <h2 class="feature-text">Boost your productivity</h2>
+                </figure>
+            
+                <figure class="feature-box">
+                    <img src="img/icon-refill.svg" alt="An icon for a refill pump" class="feature-images">
+                    <h2 class="feature-text">Pay as You Go</h2>
+                </figure>
+            </div>
+        </section>
 
+        <section class="get-karma">
+            <img src="img/homepage-feature.png" alt="homepage-feature" class="homepage-feature-img">
+            <div class="get-karma-text">
+                <div class="get-karma-text-holder">
+                    <p class="homepage-text" id="homepage-text"><span class="qout" style="color:#db6439">"</span>Wherever I am, I just don’t</p>
+                    <p class="homepage-text">worry about my connection</p>
+                    <p class="homepage-text">anymore! <span class="qout" style="color:#db6439">"</span></p>
+                </div>
+                <a href="store.html" target="_blank">
+                <button class="get-karma-btn">
+                    Get Karma today
+                </button>
+                </a>
+            </div>
         </section>
 
         <!--social-->
-        <section class="social">
-          <p>Join us on</p>
-          <a href="https://twitter.com">
-            <img src="img/twitter-icon.svg" alt="Twitter's logo">
+        <footer class="footer">
 
-            <a href="https://facebook.com">
-            <img src="img/facebook-icon.svg" alt="Twitter's logo">
+            <div class="footer-line"></div> 
+            <div class="footer-icons">
+
+            <h2 class="footer-text">Join us on</h2>
+            <div class="footer-icons"></div>
+
+              <a href="https://twitter.com">
+              <img src="img/twitter-icon.svg" alt="Twitter's logo" class="footer-icon-images">
+
+              <a href="https://facebook.com">
+              <img src="img/facebook-icon.svg" alt="Facebook's logo"
+              class="footer-icon-images">
             
-            <a href="https://instagram.com">
-            <img src="img/instagram-icon.svg" alt="Twitter's logo">
-          </a>
-        </section>
-    </div> 
-    
-    <footer class="footer">
-        <p>© Karma Mobility, Inc</p>
-    </footer>   
+              <a href="https://instagram.com">
+              <img src="img/instagram-icon.svg" alt="Instagram's logo"
+              class="footer-icon-images">
+              </a>
+            </div> 
+            <p>© Karma Mobility, Inc</p>
+        </footer>   
 
 </body>
 </html>
-DELETE FROM here
-just checking Git Hub
