@@ -16,6 +16,82 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .body{
+    display: flex;
+    flex-direction: column;
+}
+
+/** Nav section*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 5rem;
+    max-width: 100vmax;
+    justify-content: flex-end;
+    margin-bottom: 1.4rem;
+ }
+ .top-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 5rem;
+    max-width: 100vmax;
+    justify-content: flex-end;    
+    background-color: #f8f8f8;
+    padding-bottom: 1.5rem;    
+ }
+ .main-menu{
+    margin: 17%;
+ }
+ .empty-menu{
+    margin: 4.5%;
+ }
+.logo{
+    display: flex;
+    max-width: 2.5rem;
+    margin-top: 10px;
+}
+.nav-buttons{
+    background-color: white;
+    border: none;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    color: rgb(146, 145, 145);
+}
+
+.nav-buttons:hover{
+    color: rgb(231, 121, 47);
+}
+
+#nav-meet{
+    color: black;
+}
+
+#nav-btn-meet:hover{
+    color: rgb(231, 121, 47);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  header-one{
     width: max-content;
     height: 6vh;
