@@ -39,7 +39,7 @@ body {
     max-height: 5rem;
     max-width: 100vmax;
     justify-content: flex-end;    
-    background-color: #f8f8f8;
+    background-color: #faf8f8;
     padding-bottom: 1.5rem;    
  }
  .main-menu{
@@ -54,7 +54,7 @@ body {
     margin-top: 10px;
 }
 .nav-buttons{
-    background-color: white;
+    background-color: rgb(251, 252, 246);
     border: none;
     margin: 1rem;
     margin-top: 2.5rem;
@@ -184,6 +184,140 @@ body {
 .quote{
     font-size:3.5rem;
 }
+
+/**Store styling */
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.store-photo{
+    width: 50%;
+}
+.form-items{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-top: solid;
+    border-color: rgb(197, 192, 192);
+}
+.order-karma-title{
+    color: #e0633a;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.9rem;
+    margin-top: 6rem;
+}
+.order-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-holder{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+.store-space{
+    width: 2rem;
+}
+.form-input{
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+#colour-selection{
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-color:transparent;
+    margin-left:0;
+}
+.radio-label{
+    font-size: 1.4rem;
+}
+.form-line{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+.radio-buttons{
+    display: flex;
+}
+.radio-label-holder{
+    width: 16rem;
+    
+}
+.checkbox-button{
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.4rem;
+}
+#checkbox-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 1rem;
+}
+.terms{
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.place-order-button{
+    color: white;
+    background-color: #e0633a;
+    border-color: transparent;
+    border-radius: 0.2rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-left: 1.7rem;
+}
+#place-order-button{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+#city{
+    padding-right: 4rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    padding-left: 0.2rem;
+}
+.address{
+    width: 30vw;
+    height: 4vh;
+    border-radius: 0.05rem;
+}
+#firstname{
+    height: 4vh;
+    border-radius: 0.05rem;
+}
+#lastname{
+    height: 4vh;
+    width: 13.45rem;
+    border-radius: 0.05rem;
+}
+#city{
+    border-width: 0.14rem;
+    border-color: black;
+    height: 2.2rem;
+}
+#postcode{
+    border-radius: 0.05rem;
+    height: 3.8vh;
+    width: 12.1rem;
+}
+
+
 
 /**Footer section*/
 .footer{
