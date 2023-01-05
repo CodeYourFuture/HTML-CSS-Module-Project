@@ -14,8 +14,9 @@
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-    
+
         <!-- Nav -->
+
         <nav class="top-nav">
             <img src="img/karma-logo.svg" alt="Karma logo" class="logo">
 
@@ -46,7 +47,81 @@
         
             <div class="empty-menu"></div>
         </nav>
+
+        <!-- Form -->
+
+        <main class="form">
+            <section class="form-items">
+                <form class="order-form"  action="">
+                    <h1 class="karma-order">Order your Karma wifi <br> device today!</h1>
+                    <div class="form-line">
+                        <div class="form-holder">
+                     <label for="firstname" class="form-input">First name *</label>
+                     <input id="firstname" type="text" name="firstname" required maxlength="20">
+                        </div>
+                        <div class="store-free-space"></div>
+                        <div class="form-holder">
+                     <label for="lastname" class="form-input">Last name *</label>
+                     <input id="lastname" type="text" name="lastname" required maxlength="20">
+                        </div>
+                     </div>
+                    <div class="form-line">
+                        <div class="form-holder">
+                     <label for="address" class="form-input">Address *</label>
+                     <input id="address" type="text" name="address" required class="address">   
+                        </div>
+                    </div>
+                    <div class="form-line">
+                        <div class="form-holder">
+                     <label for="address2" class="form-input">Address 2</label>
+                     <input id="address2" type="text" name="address2" class="address">
+                        </div>
+                    </div>
+                    <div class="form-line">
+                        <div class="form-holder">
+                     <label for="city" class="form-input">City *</label>
+                     <select id="city" name="city" required>
+                        <option value="-1" selected>Select your city...</option>
+                        <option value="Lisboa">Lisboa</option>
+                        <option value="Porto">Porto</option>
+                        <option value="Amora">Amora</option>
+                        <option value="Braga">Braga</option>
+                     </select>
+                        </div>
+                        <div class="store-space"></div>
+                        <div class="form-holder">
+                    <label for="postcode" class="form-input">Postcode *</label>
+                    <input id="postcode" type="text" name="postcode" maxlength="8" style="text-transform:uppercase">
+                        </div>
+                    </div>
+                    <div class="form-line">
+                         <fieldset class="form-input" id="select-colour">
+                            <legend>Select a colour</legend>
+                          <div class="radio-btns">
+                              <div class="radio-label-holder">
+                                <input id="orange" type="radio" name="orange" value="orange">
+                                <label for="orange" class="radio-label">Karma Orange 🧡</label>
+                              </div>
+                              <div class="radio-label-holder">
+                               <input id="grey" type="radio" name="orange" value="grey">
+                               <label for="grey" class="radio-label">Space Grey 🖤 </label>
+                              </div>
+                         </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-line" id="checkbox-items">
+                     <p class="terms"> <input type="checkbox" class="checkbox-button" required>By placing your order you agree to Karma's <span style="color:#e0633a">Terms and</span><br><span style="color:#e0633a">Conditions.</span> *</p>
+                    </div>
+                    <div class="form-line" id="place-order-button">
+                        <button class="place-order-button">Place my order</button>
+                    </div>
+                </form>
+            </section>
+            <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="store-image" class="store-img">
+        </main>
+
 <!--social-->
+
     <footer class="footer">
 
         <div class="footer-line"></div> 
