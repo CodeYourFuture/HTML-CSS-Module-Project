@@ -17,3 +17,40 @@ body {
  */
 
 
+
+header{ 
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+}
+
+img{
+    padding-top: 1rem;
+    margin-left: 4rem;
+}
+
+nav {
+    padding-top: 1rem;
+    width: 50rem;
+    margin-right: 4rem;
+    /* background-color: yellow; */
+   
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    text-decoration: none;
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
