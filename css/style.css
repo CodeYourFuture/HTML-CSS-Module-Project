@@ -1,283 +1,277 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+  --white: #fff;
+  --orange: #d2691e;
+  --gray: #808080;
+  --light-gary: #e4e4e4;
+  --light-pink: #e9dbd8;
+  --red: #ff0000;
+}
 
- :root{
-    --white: #fff;
-    --orange: #d2691e;
-    --gray: #808080;
-    --light-gary: #e4e4e4;
-    --light-pink: #e9dbd8;
-    --red: #ff0000;
- }
+* {
+  margin: 0;
+}
 
- *{
-    margin: 0;
- }
-
-body{
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
 }
 
 /* Header */
 
-.header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 70px 10px 70px;
-    font-size: large;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 70px 10px 70px;
+  font-size: large;
 }
 
-.karma_logo{
-    height: 40px;
+.karma_logo {
+  height: 40px;
 }
 
-.header_store{
-    background-color: var(--light-gary);
+.header_store {
+  background-color: var(--light-gary);
 }
 
 /* Navigation */
 
-.nav_list{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+.nav_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
-.nav_list a{
-    text-decoration: none;
-    padding: 20px;
-    color: var(--gray);
+.nav_list a {
+  text-decoration: none;
+  padding: 20px;
+  color: var(--gray);
 }
 
-.nav_link{
-    font-weight: 500;   
+.nav_link {
+  font-weight: 500;
 }
 
-.nav_list a:hover{
-    color: var(--orange);
+.nav_list a:hover {
+  color: var(--orange);
 }
-
 
 /* Main for Index page*/
 /* Section Hiro */
 
-.hero{
-    background: url("../img/first-background.jpg");
-    background-color: var(--gray);
-    padding: 150px 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--white);
-    /* overflow-wrap: break-word; */
-    }
-
-.title_1{
-    font-size: 60px;
-    font-weight: lighter;
+.hero {
+  background: url("../img/first-background.jpg");
+  background-color: var(--gray);
+  padding: 150px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  /* overflow-wrap: break-word; */
 }
 
-.title_2{
-    font-size: 30px;
-    font-weight: lighter;
+.title_1 {
+  font-size: 60px;
+  font-weight: lighter;
 }
 
-.learn_button{
-    background-color: var(--orange);
-    padding: 15px 40px;
-    border-radius: 1ch;
-    margin-top: 40px;
+.title_2 {
+  font-size: 30px;
+  font-weight: lighter;
 }
 
+.learn_button {
+  background-color: var(--orange);
+  padding: 15px 40px;
+  border-radius: 1ch;
+  margin-top: 40px;
+}
 
 /* Section Needs */
 
-.needs{
-    padding: 50px;
+.needs {
+  padding: 50px;
 }
 
-.needs_title{
-    font-size: 40px;
-    padding: 50px;
+.needs_title {
+  font-size: 40px;
+  padding: 50px;
 }
 
-.icons{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    justify-items: center;
+.icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
 }
 
-.icons img{
-    width: 150px;
-    height: 150px;
+.icons img {
+  width: 150px;
+  height: 150px;
 }
 
-.icon_title{
-    font-size: 20px;
+.icon_title {
+  font-size: 20px;
 }
-
 
 /* Section Connection */
 
-.connection{
-    display: flex;
-    background-color: var(--light-pink);
+.connection {
+  display: flex;
+  background-color: var(--light-pink);
 }
 
-.connection img{
-    max-width: 100%;
-    height: 100%;
+.connection img {
+  max-width: 100%;
+  height: 100%;
 }
 
 .connection article {
-    align-items: center;
-    align-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-.connection p{
-    padding: 10% 20% 0% 20%;
-    font-size: 2rem;
-    font-style: italic;
+.connection p {
+  padding: 10% 20% 0% 20%;
+  font-size: 2rem;
+  font-style: italic;
 }
 
-.connection span{
-    color: var(--red);
-    padding: 5px;
-    font-size: 40px;
+.connection span {
+  color: var(--red);
+  padding: 5px;
+  font-size: 40px;
 }
 
-.connection button{
-    border-radius: 0.7ch;
-    border: none;
-    padding: 10px 30px;
-    margin: 3rem;
-    color: var(--white);
-    background-color: var(--orange);
+.connection button {
+  border-radius: 0.7ch;
+  border: none;
+  padding: 10px 30px;
+  margin: 3rem;
+  color: var(--white);
+  background-color: var(--orange);
 }
 /* ************************************************************************************************ */
 
 /* Main for Store */
 
-.terms-box input[type="checkbox"] {
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    border: 2px solid var(--text-color);
-    border-radius: 20%;
-    background-clip: content-box;
-    padding: 1px;
+/* .terms-box input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--text-color);
+  border-radius: 20%;
+  background-clip: content-box;
+  padding: 1px;
 }
 
 .terms-box input[type="checkbox"]:checked {
-    background-image: url(/level-2/checkmark.svg);
-    background-repeat: no-repeat;
-    background-position: right 0.1rem top 50%;
-    background-size: 1.3rem auto;
-    background-color: transparent;
+  background-image: url(/level-2/checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: right 0.1rem top 50%;
+  background-size: 1.3rem auto;
+  background-color: transparent;
+} */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "store hero";
 }
 
-.main{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas:
-    "store hero";
+.order {
+  grid-area: "store";
 }
 
-.order{
-    grid-area: "store";
+form {
+  text-align: left;
+  padding: 10% 20%;
+  /* row-gap: 20px; */
 }
 
-form{
-    text-align: left;
-    padding: 10% 20%;
-    /* row-gap: 20px; */
+.wrapper {
+  display: flex;
+}
+.column_wrapper {
+  flex-direction: column;
 }
 
-.wrapper{
-    display: flex;
-}
-.column_wrapper{
-    flex-direction: column;
+.row_wrapper {
+  flex-direction: row;
 }
 
-.row_wrapper{
-    flex-direction: row;
+.gap_wrapper {
+  column-gap: 50px;
 }
 
-.gap_wrapper{
-    column-gap: 50px;
+.input_wider {
+  width: 100%;
 }
 
-.input_wider{
-    width: 100%;
+.store_hero {
+  grid-area: "hero";
+  height: auto;
 }
 
-.store_hero{    
-    grid-area: "hero";  
-    height: auto;
-}
-
-.store_hero img{
-    width: 100%;
-    height: 100%;
-    /* min-width: 100%; */
+.store_hero img {
+  width: 100%;
+  height: 100%;
+  /* min-width: 100%; */
 }
 
 /* Footer */
 
-.footer{
-    padding: 3%;
-    border-top: 2px solid var(--light-gary);
+.footer {
+  padding: 3%;
+  border-top: 2px solid var(--light-gary);
 }
 
-.index_footer{
-    margin: 3% 10%;
+.index_footer {
+  margin: 3% 10%;
 }
 
-.store_footer{
-    margin: 0% 10%;
+.store_footer {
+  margin: 0% 10%;
 }
 
-.footer img{
-    width: 15px;
-    height: 15px;
-    margin: 7px;
-    padding: 7px;
-    border: solid var(--light-gary);
-    border-radius: 50%;
+.footer img {
+  width: 15px;
+  height: 15px;
+  margin: 7px;
+  padding: 7px;
+  border: solid var(--light-gary);
+  border-radius: 50%;
 }
 
-.copyright{
-    font-size: 12px;
-    color: var(--gray);
+.copyright {
+  font-size: 12px;
+  color: var(--gray);
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 850px) {
-    .header {
-        padding: 5px;
-    }
-    .nav_list a {
-        padding: 10px;
-    }
-        .connection p {
-        font-size: 20px;
-    }
+  .header {
+    padding: 5px;
+  }
+  .nav_list a {
+    padding: 10px;
+  }
+  .connection p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    
-    .nav_list {
-        padding: 0;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .connection{
-        flex-direction: column;
-    }
+  .nav_list {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .connection {
+    flex-direction: column;
+  }
 }
 
 /**
@@ -289,5 +283,3 @@ form{
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
