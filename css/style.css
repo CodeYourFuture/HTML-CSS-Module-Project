@@ -25,6 +25,10 @@ nav{
     color: rgb(105, 105, 105);
 }
 
+.topnav a:hover{
+    color: rgb(226, 98, 0);
+}
+
 .karma{
     font-weight: 500;
     color: rgb(88, 88, 88);
@@ -65,5 +69,19 @@ nav{
 
 .logo{
     width: 4rem;
+}
+
+.learnMore{
+    background-color: rgb(228, 75, 15);
+    border: none;
+    border-radius: 0.2rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+
+}
+
+button :hover {
+    background-color: rgb(79, 27, 6);
 }
 
