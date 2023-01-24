@@ -6,14 +6,64 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
 
+
+
+
+.topnav a{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(105, 105, 105);
+}
+
+.karma{
+    font-weight: 500;
+    color: rgb(88, 88, 88);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-block{
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 250, 243);
+
+}
+
+.text-block h1{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.text-block p{
+    font-weight: 100;
+    font-size: 1.6rem;
+    margin-top: -1rem;
+}
+
+
+.main-img{
+    width: 100%;
+    
+}
+
+.logo{
+    width: 4rem;
+}
 
