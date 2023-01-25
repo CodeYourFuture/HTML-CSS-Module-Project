@@ -53,12 +53,14 @@ body {
   background-image: url("../img/first-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-clip: padding-box;
   margin: 0px 2rem;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 #section1 button {
   background-color: orangered;
@@ -95,8 +97,8 @@ body {
 }
 
 .footer div img {
-  height: 3%;
-  width: 3%;
+  height: 2%;
+  width: 2%;
 }
 
 .footer div a {
