@@ -51,7 +51,7 @@ body {
     color: var(--dark-gray);
 }
 
-.first-link {
+.main-nav li:first-child a {
     font-weight: 500;
 }
 
@@ -87,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--light-orange);
-    height: 30rem;
+    height: 32rem;
     width: 100vw;
 }
 
@@ -97,6 +97,12 @@ body {
     border-top: 1px solid var(--gray);
     margin-top: 5rem;
     text-align: center;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 /* Buttons and Links */
@@ -109,11 +115,22 @@ body {
     border-radius: 4px;
 }
 
-.media-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--dark-gray);
 }
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--orange);
+}
+
+.media-icons a:hover,
+.media-icons a:active {
+    background-color: var(--gray);
+    border-radius: 50%;
+}
+
 
 /* Images */
 .karma-logo {
@@ -137,6 +154,7 @@ body {
     border: 1px solid var(--gray);
     border-radius: 50%;
 }
+
 
 /* Headings & p */
 .heading-h1 {
@@ -189,7 +207,7 @@ blockquote span:last-child {
 
 .copyright {
     font-size: 1rem;
-    color: var(--dark-graygray);
+    color: var(--dark-gray);
     font-weight: 200;
     margin-top: 1.5rem;
 }
