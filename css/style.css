@@ -88,9 +88,13 @@ body {
     width: 100vw;
 }
 
-
-
 /* Footer */
+.footer {
+    height: 15rem;
+    border-top: 1px solid var(--gray);
+    margin-top: 5rem;
+    text-align: center;
+}
 
 /* Buttons and Links */
 .btn-primary {
@@ -100,6 +104,12 @@ body {
     color: var(--white);
     font-size: 1.6rem;
     border-radius: 4px;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 /* Images */
@@ -118,8 +128,11 @@ body {
 }
 
 .media-icon {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
 }
 
 /* Headings & p */
@@ -163,4 +176,17 @@ blockquote span:last-child {
     color: var(--orange);
     margin: 0.6rem;
     font-weight: 600;
+}
+
+.footer-p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.5rem;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: var(--dark-graygray);
+    font-weight: 200;
+    margin-top: 1.5rem;
 }
