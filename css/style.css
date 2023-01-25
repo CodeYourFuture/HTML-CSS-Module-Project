@@ -79,15 +79,20 @@ nav{
     padding: 0 1rem;
 
 }
+.main-grid{
+    max-width: 40rem;
+    margin: auto;
+    justify-content: center;
+}
 
 .grid {
 
     display:grid;
-    grid-template-columns: 15rem 15rem 15rem;
-    grid-template-rows: 5rem 5rem;
+    grid-template-rows: repeat(auto-fit, 13rem);
     text-align: center;
     margin: auto;
     justify-content: center;
+    grid-template-columns: repeat(auto-fit, 13rem);
 
 }
 
@@ -118,13 +123,11 @@ h3{
 }
 
 .connect{
-    display: flex;
-    flex-direction: row;
-    /*justify-content: space-around;*/
-    height: 26em;
-    justify-content: space-between;
+    display: grid;
+    min-height: 26em;
     background-color: antiquewhite;
     margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
 }  
 
 .connect_text{
@@ -133,10 +136,7 @@ h3{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-right: 10rem;
 }
-
-
 
 .p-text{
     font-style: italic;
