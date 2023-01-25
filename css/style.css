@@ -6,7 +6,7 @@ body {
 
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10vh 70vh 20vh;
+  grid-template-rows: 10vh auto auto;
 }
 
 .header {
@@ -25,6 +25,8 @@ body {
 
 .footer {
   grid-row: 3 / -1;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .header img {
@@ -48,9 +50,9 @@ body {
 }
 
 #section1 {
-  height: 100%;
   background-image: url("../img/first-background.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0px 2rem;
   color: white;
   display: flex;
@@ -60,26 +62,46 @@ body {
 }
 #section1 button {
   background-color: orangered;
+  border: none;
+  font-size: 0.75rem;
+  margin: 1rem 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5%;
 }
 #section2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
+  margin: 5rem 5rem 0px;
+  border-bottom: 1px solid gray;
 }
-#section2 > h1,
-div {
-  width: 80%;
-}
-
 #section2 div {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+}
+
+#section2 div a {
+  text-decoration: none;
+  color: black;
 }
 
 #section2 figure img {
   width: auto;
   height: 10vh;
+}
+
+#section2 figure figcaption {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.footer div img {
+  height: 3%;
+  width: 3%;
+}
+
+.footer div a {
+  text-decoration: none;
+  margin: 0 0.5rem;
 }
 
 /**
