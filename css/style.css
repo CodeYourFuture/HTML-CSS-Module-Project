@@ -1,19 +1,81 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+ :root {
+     --orange: #DE6E49;
+     --gray: #e9ecef;
+     --white: #fff;
+     --dark-gray: #495057;
+     --text: #212529;
+ }
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* Header & Nav*/
+.header {
+    background-color: var(--gray);
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 3rem;
+    position: relative;
+}
+
+.nav-list { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--dark-gray);
+}
 
 
+/* Hero section */
+
+/* Feature Section */
+
+/* Testimonial */
+
+/* Footer */
+
+/* Buttons and Links */
+
+/* Images */
+.karma-logo {
+    height: 3rem;
+}
+
+.big-logo {
+    height: 10rem;
+}
+
+.media-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+
+
+/* Headings & p */
