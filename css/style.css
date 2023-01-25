@@ -26,14 +26,14 @@ body {
 }
 
 /* Header & Nav*/
-.header {
+.main-nav {
     background-color: var(--gray);
     height: 6rem;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 0 3rem;
+    justify-content: space-between;
+    padding: 0 5rem;
     position: relative;
 }
 
@@ -51,6 +51,9 @@ body {
     color: var(--dark-gray);
 }
 
+.first-link {
+    font-weight: 500;
+}
 
 /* Hero section */
 .hero-section {
