@@ -1,15 +1,15 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+    --orange: #DE6E49;
+    --light-orange: #f1dcd5;
+    --gray: #e9ecef;
+    --white: #fff;
+    --dark-gray: #495057;
+    --text: #212529;
+}
 
- :root {
-     --orange: #DE6E49;
-     --gray: #e9ecef;
-     --white: #fff;
-     --dark-gray: #495057;
-     --text: #212529;
- }
-
- * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
     position: relative;
 }
 
-.nav-list { 
+.nav-list {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -76,12 +76,19 @@ body {
     gap: 5rem;
     justify-content: space-evenly;
     margin: 6rem;
-
 }
 
 
-
 /* Testimonial */
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-orange);
+    height: 30rem;
+    width: 100vw;
+}
+
+
 
 /* Footer */
 
@@ -104,6 +111,10 @@ body {
     height: 13rem;
     width: 13rem;
     margin-bottom: 3rem;
+}
+
+.test-img img {
+    height: 100%;
 }
 
 .media-icon {
@@ -132,4 +143,24 @@ body {
 
 .logo-decr {
     font-size: 2rem;
+}
+
+.test-quote {
+    text-align: center;
+    margin: auto;
+}
+
+blockquote {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+blockquote span:first-child,
+blockquote span:last-child {
+    font-size: 4rem;
+    color: var(--orange);
+    margin: 0.6rem;
+    font-weight: 600;
 }
