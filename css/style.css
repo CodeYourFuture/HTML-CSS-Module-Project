@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,113 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+h1,
+h2,
+h3 {
+  font-weight: 100;
+}
 
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.top-container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo-container {
+  width: 1.5rem;
+  padding-left: 2rem;
+}
+
+.nav-item {
+  padding-left: 2rem;
+  padding-right: 2 rem;
+}
+
+.nav-item:hover {
+  color: orange;
+}
+
+.nav-item-color {
+  color: grey;
+}
+
+header {
+  border: 3px solid red;
+  background-image: url(/img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.header-btn {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 5%;
+  background-color: #c05326;
+  margin-top: 2rem;
+}
+
+.hero-text {
+  color: white;
+}
+
+main {
+  color: darkslategray;
+  text-align: center;
+}
+
+.main-options {
+  margin: 0% 4rem 3rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.main-options-icon {
+  width: 5rem;
+}
+
+.horiz-rule {
+  width: 50%;
+  height: 1px;
+  border-width: 0;
+  background-color: lightgray;
+}
+
+/* footer details */
+.join-text {
+  text-align: center;
+  font-size: small;
+}
+
+.social-icons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0 40%;
+}
+
+.social-icon {
+  width: 1rem;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: x-small;
+}
