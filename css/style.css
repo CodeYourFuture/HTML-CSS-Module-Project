@@ -86,9 +86,14 @@ body {
 .testimonial-section {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--light-orange);
     height: 32rem;
     width: 100vw;
+}
+
+.test-img {
+    height: 100%;
 }
 
 /* Footer */
@@ -145,6 +150,7 @@ body {
 
 .test-img img {
     height: 100%;
+
 }
 
 .media-icon {
