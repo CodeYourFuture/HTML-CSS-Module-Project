@@ -7,15 +7,7 @@ body {
 
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+
 /* General style------------------------ */
 
 
@@ -24,12 +16,13 @@ body {
     height: 100%;
     display: grid;
     grid-gap: 1px;
+    text-align: center;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 4rem auto 8rem;
     grid-template-areas:
         ". h h h h h h h h h h ."
         ". c c c c c c c c c c ."
-        ". . f f f f f f f f . .";
+        ". f f f f f f f f f f .";
 }
 
 /* ----------------Header Style--------------- */
@@ -87,15 +80,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-weight: 2rem;
     color: rgba(250, 251, 251, 255);
+    text-align: center;
 }
 
 .header-hero {
@@ -112,20 +106,24 @@ body {
 
 .hero-button {
     background-color: rgba(224, 99, 58, 255);
+    width: 10rem;
+    height: 4rem;
     margin-top: 1rem;
     border-radius: 6px;
-    padding: 17px 28px;
+
 }
 
 /* Second Section----------------- */
 .services {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #service-header {
     padding-top: 5rem;
-    text-align: center;
     font-weight: lighter;
     color: black;
     font-size: 2.5rem;
@@ -133,39 +131,46 @@ body {
 
 .three-services {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 0.6rem;
     padding-bottom: 3rem;
-    padding-left: 9rem;
-    padding-right: 9rem;
+
 }
 
-.three-services,
-a {
+.service-part {
+    padding-left: 4.2rem;
+    padding-right: 4.2rem;
+}
+
+.link-service {
     text-decoration: none;
     color: black;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .img-service {
     width: 6rem;
     height: 6rem;
-
 }
 
 /* -------------------Footer style--------------- */
 .footer {
     border-top: 2px solid rgb(239, 237, 237);
     grid-area: f;
-}
-
-#p-footer {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
 }
 
 .join-footer {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .img-footer {
@@ -173,7 +178,7 @@ a {
     height: 1rem;
     border-radius: 100%;
     border: 1px solid rgb(239, 237, 237);
-    padding: 0.7rem;
+    padding: 0.5rem;
 }
 
 .icons {
@@ -181,8 +186,7 @@ a {
 }
 
 #pp-footer {
-    text-align: center;
     color: #cccccc;
     padding-bottom: 2rem;
-    font-size: 0.8rem;
+    font-size: x-small;
 }
