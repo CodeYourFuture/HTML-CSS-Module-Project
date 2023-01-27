@@ -24,7 +24,7 @@ img {
 .container {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 150px auto 150px;
+    grid-template-columns: 100px auto 100px;
 }
 
 .container > * {
@@ -56,7 +56,7 @@ nav li {
 
 /* Hero */
 .hero {
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
     background-image: url(../img/first-background.jpg);
 }
 
