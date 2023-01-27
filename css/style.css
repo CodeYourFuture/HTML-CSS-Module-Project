@@ -20,6 +20,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-repeat: no-repeat;
+    text-align: center;
  }
 header{
 background-color: white;
@@ -32,6 +33,9 @@ h2{
     color: black;
     margin-top: 0;
 }
+.grid-p{
+    color: black;
+}
 .btn-orange{
     background-color: orangered;
     display: inline-block;
@@ -41,16 +45,33 @@ main{
         background-image: url(/img/first-background.jpg);
         background-size: cover;
         height: 100vh;
-        /* width: 100vw; */
         
 
 }
-img{
-    margin: 3em;
+.hero{
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+   
+    
 }
+
+
+section{
+    width: 85%;
+    margin: auto;
+    padding: 4rem 3rem;
+}
+
 nav ul{
 
     display: flex;
     justify-content: space-around;
+}
+.image-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 1rem;
 }
 
