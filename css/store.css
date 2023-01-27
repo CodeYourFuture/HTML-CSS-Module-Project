@@ -49,15 +49,18 @@ body header nav a:first-child {
 
 main {
     display: flex;
+    height: 100%;
 
 }
-
-main img {
-
-
-    width: 50%;
-  
-
+main img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.photo{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
 }
 
 .form_container{
@@ -181,4 +184,5 @@ footer p:last-child {
         width: 100%;
    padding: 20px;
     }
+
 }
