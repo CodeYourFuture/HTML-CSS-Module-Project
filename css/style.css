@@ -3,6 +3,7 @@
 :root {
     --orange: #E0633A;
     --light__grey: #848993;
+    --lighter__grey: #F1F2F3;
     --dark__grey: #4D5057;
     --white: #FFF;
 }
@@ -19,6 +20,10 @@ body {
 
 img {
     width: 100%;
+}
+
+a:hover {
+    color: var(--orange);
 }
 
 /* Grid */
@@ -64,6 +69,9 @@ nav li {
 
 .center__container {
     text-align: center;
+}
+
+.hero .center__container {
     padding: 13rem;
 }
 
@@ -98,8 +106,8 @@ button:hover {
 }
 
 /* Main Content */
-main .center__container {
-    text-align: center;
+
+main {
     padding: 3rem;
 }
 
@@ -127,13 +135,30 @@ main img {
 .section__break {
     height: 1px;
     width: 95%;
-    background-color: #F1F2F3;
+    background-color: var(--lighter__grey);
     justify-self: center;
 }
 
 /* Footer */
 footer {
     grid-column: 2 / 3;
+    margin-bottom: 3rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.copyright__text {
+    color: var(--light__grey);
+}
+footer img {
+    max-width: 2%;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border: 0.1rem solid var(--lighter__grey);
+    border-radius: 2rem;
 }
 
 
