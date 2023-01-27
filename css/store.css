@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+
+.site_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+body header img {
+    width: 10%;
+    margin: 15px 0 20px 120px;
+}
+
+body header nav {
+    margin: 50px 120px 10px 0;
+}
+
+body header nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: grey
+}
+
+body header nav a:first-child {
+    color: rgb(74, 73, 73);
+}
+
+.color{
+    color: orangered;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+main {
+    display: flex;
+    height: 100%;
+
+}
+main img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.photo{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.form_container{
+    margin:150px;
+    width: 100%;
+}
+.heading {
+    text-align: center;
+    color:orangered;
+
+}
+
+.fullname {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.form-item input{
+    height: 30px;
+    border-radius: 4px;
+}
+
+
+
+.city_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.city_wrap select{
+    height: 30px;
+    border-radius: 4px;
+    width: 300%;
+}
+.select{
+    margin: 20px;
+    height: 30px;
+    font-weight: bolder;
+
+}
+.colour{
+    margin: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.terms , .button{
+    margin: 20px;
+    height: 30px;
+}
+
+button{
+    background-color:orangered;
+    color:white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+
+
+
+}
+footer {
+    text-align: center;
+    margin: 50px;
+    border-top: 1px solid rgb(184, 183, 183);
+
+}
+
+.icon {
+    margin: 20px;
+}
+
+.icon img {
+    width: 20px;
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+
+footer p:first-child {
+    margin-top: 15px;
+}
+
+footer p:last-child {
+    color: rgb(184, 183, 183);
+    padding: 20px;
+
+}
+
+
+@media screen and (max-width: 1004px){
+    .hamburger{
+        display: block;
+        width: 100%;
+        margin:20px;
+    }
+    body header nav {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .form_container{
+    margin:0;
+    }
+    main img{
+        width: 100%;
+   padding: 20px;
+    }
+
+}
