@@ -13,7 +13,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
@@ -30,9 +30,47 @@
     </header>
 
     <main class="main">
-      <section id="section1"></section>
+      <section id="section1">
+        <h1>Order your Karma WiFi device today!</h1>
 
-      <section id="section2"></section>
+        <form action="">
+          <label for="first-name"> First name*</label>
+          <input type="text" id="first-name" name="first-name" required />
+          <label for="last-name"> Last name*</label>
+          <input type="text" id="last-name" name="last-name" required />
+
+          <label for="address"> Address*</label>
+          <input type="text" id="address" name="Address" required />
+
+          <label for="address2"> Address 2</label>
+          <input type="text" id="address2" name="Address2" />
+
+          <label for="city"> City*</label>
+          <select name="City" id="city" required>
+            <option value="" selected>Select your city...</option>
+          </select>
+          <label for="postcode"> Postcode*</label>
+          <input type="text" id="postcode" name="Postcode" required />
+
+          <p>Select a colour</p>
+          <label for="orange"> Karma orange</label>
+          <input type="radio" id="orange" name="Colour" value="Karma orange" />
+          <label for="grey"> Space Grey</label>
+          <input type="radio" id="grey" name="Colour" value="Space Grey" />
+
+          <div>
+            <img src="img/tick.jpg" alt="" />
+            <p>By placing your order you agree to Karma</p>
+            <a href="#">Terms and Conditions</a>
+          </div>
+
+          <button type="button">Plece my order</button>
+        </form>
+      </section>
+
+      <section id="section2">
+        <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="" />
+      </section>
     </main>
 
     <footer class="footer">
