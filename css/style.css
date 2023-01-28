@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,62 +15,106 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
- body{
-    margin: 0;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    text-align: center;
- }
-header{
-background-color: white;
-height: 3em;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  text-align: center;
 }
-h1, p{
-    color: white;
+header {
+  background-color: white;
+  /* height: 3em; */
 }
-h2{
-    color: black;
-    margin-top: 0;
+h1 {
+  color: white;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 32px;
 }
-.grid-p{
-    color: black;
-}
-.btn-orange{
-    background-color: orangered;
-    display: inline-block;
-    padding: 1em 1em;
-}
-main{
-        background-image: url(/img/first-background.jpg);
-        background-size: cover;
-        height: 100vh;
-        
-
-}
-.hero{
-    width: 70%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-   
-    
+p {
+  color: white;
 }
 
-
-section{
-    width: 85%;
-    margin: auto;
-    padding: 4rem 3rem;
+h2 {
+  color: black;
+  margin-top: 0;
+}
+.grid-p {
+  color: black;
+}
+.btn-orange {
+  background-color: orangered;
+  color: white;
+  display: inline-block;
+  padding: 1em 2.5em;
+  text-decoration: none;
+}
+main {
+  background-image: url(/img/first-background.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
-nav ul{
-
-    display: flex;
-    justify-content: space-around;
+.hero {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* text-align: center; */
 }
-.image-container{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 1rem;
+
+section {
+  width: 85%;
+  margin: auto;
+  padding: 4rem 3rem;
+  border-bottom: 2px solid gray;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  padding: 1rem 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-right: 5rem;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+li {
+  list-style: none;
+}
+footer {
+  padding-bottom: 3rem;
+}
+
+.footer-icon {
+  line-height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  /* margin: 0 8px; */
+  display: flex;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: 3em;
+}
