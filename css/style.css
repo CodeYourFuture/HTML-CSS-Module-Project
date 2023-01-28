@@ -5,8 +5,90 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+nav{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding-top: 5px;
+	padding-left: 5%;
+	padding-right: 5%;}
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 1px  20px;
+      
+    }
+    nav ul li a{
+        color: #174049;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    nav ul li a:hover{
+        color: #e4671f;
+        transition: .4s;
+    }
+   .first{
+    height: 100%;
+	width: 100%;
+    background-image: url("https://github.com/Mr-DEM1R/HTML-CSS-Module-Project/blob/master/img/first-background.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+    position: absolute;
+    
+    
+    
+   }
+   
+  .logo{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 80px;
+  }
+  .second{
+    
+    color: white;
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 200;
+    
+    
+    
+  }
+  h1{
+    font-size: 70px;
+    font-weight: 200;
+     }
+   h2{
+    font-size: 40px;
+    font-weight: 200;
+   }  
+   .btn1{
+    background-color:#e4671f;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 3px;
+	transition: transform .4s; 
+    margin-left: 42%;
+    margin-right: 42%;
+    position: absolute;
+
+   }
+   .btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   }
+   .btn1:hover{
+	transform: scale(1.2);}
 
 /**
+
  * Add your custom styles below
  * 
  * Remember: 
