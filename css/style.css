@@ -31,6 +31,10 @@ a:hover {
     color: var(--orange);
 }
 
+.center__container {
+    text-align: center;
+}
+
 /* Grid */
 .container {
     display: grid;
@@ -74,10 +78,6 @@ nav ul a:first-child {
 .hero {
     grid-column: 1 / -1;
     background-image: url(../img/first-background.jpg);
-}
-
-.center__container {
-    text-align: center;
 }
 
 .hero .center__container {
