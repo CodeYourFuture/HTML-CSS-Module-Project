@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,69 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 15ex;
+}
+/* The navbar container */
+.topnav,
+.footer {
+  overflow: hidden;
+  background-color: #4f3850;
+}
 
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*  Header  */
+.Header {
+  text-align: center;
+}
+
+/* Links - change color on hover */
+.footer a:hover,
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+}
+
+/*      article card  */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Footer */
+
+.footer a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+}
+
+.footer {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: #f2f2f2;
+  text-align: center;
+  background: #4f3850;
+  margin-top: 20px;
+}
