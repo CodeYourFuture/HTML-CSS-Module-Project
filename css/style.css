@@ -18,24 +18,33 @@ body {
 * {
   box-sizing: border-box;
 }
-body {
-  padding: 15ex;
-}
+
 /* The navbar container */
 .topnav,
 .footer {
   overflow: hidden;
-  background-color: #4f3850;
 }
 
 /* Navbar links */
 .topnav a {
-  float: left;
+  float: right;
   display: block;
-  color: #f2f2f2;
+  color: #949292;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+.nav-logo {
+  float: left;
+  display: block;
+  color: #949292;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 150px;
+  text-decoration: none;
+}
+.nav-items {
+  padding-right: 50px;
 }
 
 /*  Header  */
