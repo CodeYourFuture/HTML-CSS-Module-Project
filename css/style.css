@@ -48,6 +48,8 @@ body {
 .nav-card {
   background-color: white;
   padding: 5px;
+  padding-right: 20ex;
+  padding-left: 20ex;
 }
 
 /*  Header  */
@@ -56,7 +58,7 @@ body {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: white;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,6 +74,17 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
+.hero-text button {
+  border: none;
+  margin-top: 4ex;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: rgb(226, 55, 25);
+  text-align: center;
+  cursor: pointer;
+}
 
 /* Links - change color on hover */
 .footer a:hover,
@@ -81,7 +94,7 @@ body {
 
 /* image */
 .img {
-  background-color: #aaa;
+  background-color: white;
   width: 100%;
   padding: 20px;
   height: 200px;
@@ -91,6 +104,8 @@ body {
 .card {
   background-color: white;
   padding: 20px;
+  padding-right: 20ex;
+  padding-left: 20ex;
   margin-top: 20px;
 }
 
