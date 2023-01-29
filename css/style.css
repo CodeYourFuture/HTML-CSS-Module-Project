@@ -21,7 +21,7 @@ body {
  .grid-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3rem 300px 90px 120px 90px;
+    grid-template-rows: 3rem 30rem 9rem 12rem 9rem;
  }
 
 
@@ -54,8 +54,37 @@ body {
 
 .header {
     grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("/img/first-background.jpg");
+    
+}
 
+.title {
+    color: white;
+    text-align: center;;
+}
+
+.sub-header {
+    grid-column: 1/-1;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.icons {
+    grid-column: 1 / -1;
+    justify-content: center;
+    display: flex;
+}
+.devices {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+}
+
+.coffee {
+    
 }
