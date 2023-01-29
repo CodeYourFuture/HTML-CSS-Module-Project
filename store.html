@@ -43,22 +43,23 @@
             <div class="form-names">
               <div class="form-first-name">
                 <label for="firstName">First Name *</label>
-                <input name="firstName" type="text" required>
+                <input class="form-input" name="firstName" type="text" required>
               </div>
               <div class="form-last-name">
                 <label for="lastName">Last Name *</label>
-                <input name="lastName" type="text" required>                      
+                <input class="form-input" name="lastName" type="text" required>                      
               </div>
             </div>
            <div class="form-address-full">
               <div class="form-address-1">
                 <label for="address1">Address *</label>
-                <input name="address1" type="text" required>
+                <input class="form-input" name="address1" type="text" required>
               </div>
               <div class="form-address-2">
                 <label for="address2">Address 2</label>
-                <input name="address2" type="text">
+                <input class="form-input" name="address2" type="text">
               </div>
+
               <div class="form-city-postcode">
                 <div class="form-city">
                   <label for="city">City *</label>
@@ -69,20 +70,23 @@
                     <option value="Dundee">Dundee</option>
                   </select>
                 </div>
+
                 <div class="form-postcode">
                   <label for="postcode">Postcode *</label>
-                  <input name="postcode" type="text" required>
+                  <input class="form-input" name="postcode" type="text" required>
                 </div>
               </div>
+
               <div class="form-color">
-                Select a colour
-                <div>
-                  <label for="karmaOrange">Karma orange</label>
-                  <input type="radio" name="formColor" id="karmaOrange" value="karmaOrange" checked>
-                  <label for="spaceGrey">Space Grey</label>
-                  <input type="radio" name="formColor" id="spaceGrey" value="spaceGrey">
+                <p>Select a colour</p>
+                <div class="form-color-choices">
+                  <input class="radio-color" type="radio" name="formColor" id="karmaOrange" value="karmaOrange" checked>
+                  <label class="radio-label" for="karmaOrange">Karma orange</label>
+                  <input class="radio-color" type="radio" name="formColor" id="spaceGrey" value="spaceGrey">
+                  <label class="radio-label" for="spaceGrey">Space Grey</label>
                   
                 </div>
+
               </div>
               <div class="karma-tc">
                 <label for="acceptTC"></label>

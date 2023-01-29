@@ -29,16 +29,6 @@ h2 {
   font-size: 2rem;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-input {
-  width: 100%;
-  height: 2rem;
-  margin-bottom: 2rem;
-}
-
 label {
   display: block;
   text-align: left;
@@ -47,7 +37,7 @@ label {
 
 select {
   width: 100%;
-  height: 2rem;
+  height: 2.3rem;
 }
 
 .top-container {
@@ -75,6 +65,10 @@ select {
 
 .nav-item-color {
   color: grey;
+}
+
+.nav-item a:link {
+  text-decoration: none;
 }
 
 header {
@@ -152,6 +146,7 @@ main {
 
 .karma-btn a {
   color: white;
+  text-decoration: none;
 }
 
 .get-karma-quote {
@@ -192,6 +187,12 @@ main {
   text-align: center;
 }
 
+.form-input {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
 .store-fieldset {
   border: none;
 }
@@ -226,6 +227,26 @@ main {
 }
 .form-postcode {
   width: 30%;
+}
+
+.form-color {
+  margin-bottom: 3rem;
+}
+
+.form-color-choices {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.radio-label {
+  padding-left: 1rem;
+  padding-right: 3rem;
+  padding-bottom: 0;
+}
+
+.karma-tc {
+  padding-bottom: 2rem;
 }
 
 .horiz-rule {
