@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 
-/* The navbar container */
+/*                            The navbar container */
 .topnav,
 .footer {
   overflow: hidden;
@@ -52,7 +52,7 @@ body {
   padding-left: 20ex;
 }
 
-/*  Header  */
+/*                              Header  */
 .Header {
   text-align: center;
 }
@@ -86,8 +86,26 @@ body {
   cursor: pointer;
 }
 
-/* Links - change color on hover */
-.footer a:hover,
+/*                    First part  */
+.card-article {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*                     Links - change color on hover */
+
 .topnav a:hover {
   color: rgb(226, 55, 25);
 }
@@ -109,19 +127,22 @@ body {
   margin-top: 20px;
 }
 
-/* Footer */
+/*                                   Footer */
 
 .footer a {
   color: #f2f2f2;
   padding: 14px 16px;
+}
+.footer h2 {
+  color: black;
 }
 
 .footer {
   padding: 20px;
   display: block;
   text-decoration: none;
-  color: #f2f2f2;
+  color: #949292;
   text-align: center;
-  background: #4f3850;
+  background: white;
   margin-top: 20px;
 }
