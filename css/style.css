@@ -29,6 +29,27 @@ h2 {
   font-size: 2rem;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  padding-bottom: 0.6rem;
+}
+
+select {
+  width: 100%;
+  height: 2rem;
+}
+
 .top-container {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -72,7 +93,8 @@ header {
 .header-btn {
   width: 10rem;
   height: 3rem;
-  border-radius: 5%;
+  border: none;
+  border-radius: 5px;
   background-color: #c05326;
   margin-top: 2rem;
 }
@@ -95,6 +117,115 @@ main {
 
 .main-options-icon {
   width: 5rem;
+}
+
+.get-karma-section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.get-karma-img-div {
+  overflow: hidden;
+}
+
+.get-karma-img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.get-karma-promo {
+  background-color: #e0633a10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.karma-btn {
+  background-color: #e0633a;
+  color: white;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  border: none;
+}
+
+.karma-btn a {
+  color: white;
+}
+
+.get-karma-quote {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+}
+
+.get-karma-quote::before {
+  content: "“";
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #e0633a;
+  padding: 0.25rem;
+}
+
+.get-karma-quote::after {
+  content: "”";
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #e0633a;
+  padding: 0.25rem;
+}
+
+.store-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.store-main {
+  padding: 10%;
+  text-align: left;
+}
+
+.store-form-header {
+  color: #e0633a;
+  font-weight: 500;
+  text-align: center;
+}
+
+.store-fieldset {
+  border: none;
+}
+
+.form-names {
+  display: flex;
+  gap: 2rem;
+  /* border: 3px solid blue; */
+  /* justify-content: space-between; */
+}
+.form-first-name {
+  width: 100%;
+  /* border: 3px solid green; */
+}
+.form-last-name {
+  /* border: 3px solid purple; */
+  width: 100%;
+}
+.store-aside-image {
+  width: 100%;
+  max-height: 130vh;
+  /* border: 5px solid purple; */
+}
+
+.form-city-postcode {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-city {
+  width: 70%;
+}
+.form-postcode {
+  width: 30%;
 }
 
 .horiz-rule {
