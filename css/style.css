@@ -6,11 +6,17 @@
     --lighter__grey: #F1F2F3;
     --dark__grey: #4D5057;
     --white: #FFF;
+    --light-orange: rgba(224, 99, 58, 0.1);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html, body {
     margin: 0;
     padding: 0;
+    display: inline-block;
 }
 
 body {
@@ -31,15 +37,21 @@ a:hover {
     color: var(--orange);
 }
 
-.center__container {
+.center__text {
     text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
 }
 
 /* Grid */
 .container {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 100px auto 100px;
+    grid-template-columns: 10rem auto 10rem;
     justify-content: center;
 }
 
@@ -78,9 +90,11 @@ nav ul a:first-child {
 .hero {
     grid-column: 1 / -1;
     background-image: url(../img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.hero .center__container {
+.hero .center__text {
     padding: 13rem;
 }
 
@@ -98,6 +112,8 @@ h1 {
     color: var(--white);
 }
 
+/* Button */
+
 button {
     color: var(--white);
     font-size: 0.875rem;
@@ -106,12 +122,14 @@ button {
     background-color: var(--orange);
     padding: 0.8rem 1.5rem;
     border-radius: 0.3rem;
+    border-color: var(--orange);
     margin-top: 1.5rem;
 }
 
 button:hover {
     color: var(--orange);
     background-color: var(--white);
+    border-color: var(--white);
 }
 
 /* Main Content */
@@ -131,14 +149,31 @@ main p {
     font-size: 1.2rem;
 }
 
-.wrapper {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
-
 main img {
     max-width: 50%;
+}
+
+/* Extended Section */
+
+.extended__section {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.center__contents {
+    border: 3px dotted pink;
+    background-color: var(--light-orange);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+}
+
+.extended__quote {
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 /* Break Line */
@@ -157,18 +192,21 @@ footer {
 
 footer p {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .copyright__text {
     color: var(--light__grey);
 }
+
 footer img {
-    max-width: 2%;
-    padding: 0.5rem;
+    max-width: 3%;
+    height: auto;
     margin: 0 0.5rem;
     border: 0.1rem solid var(--lighter__grey);
-    border-radius: 2rem;
+    border-radius: 50%;
+    padding: 0.2rem;
+    overflow: visible;
 }
 
 
