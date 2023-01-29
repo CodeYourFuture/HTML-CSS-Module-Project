@@ -233,6 +233,26 @@ main {
   margin-bottom: 3rem;
 }
 
+input[type="radio"] {
+  /* border: 0px; */
+  width: 2rem;
+  /* height: 2em; */
+}
+
+input[type="radio"]:checked:after {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.8rem;
+  top: 1px;
+  left: 7px;
+  position: relative;
+  background-color: #e0633a;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
 .form-color-choices {
   width: 100%;
   display: flex;
