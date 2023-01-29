@@ -96,6 +96,7 @@ nav ul a:first-child {
 
 .hero .center__text {
     padding: 13rem;
+
 }
 
 h1 {
@@ -110,9 +111,10 @@ h1 {
     font-weight: 300;
     letter-spacing: 0.1rem;
     color: var(--white);
+    margin-bottom: 3rem;
 }
 
-/* Button */
+/* Buttons */
 
 button {
     color: var(--white);
@@ -123,7 +125,7 @@ button {
     padding: 0.8rem 1.5rem;
     border-radius: 0.3rem;
     border-color: var(--orange);
-    margin-top: 1.5rem;
+    border: none;
 }
 
 button:hover {
@@ -159,21 +161,26 @@ main img {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 40% 60%;
+    margin-bottom: 2rem;
 }
 
 .center__contents {
-    border: 3px dotted pink;
     background-color: var(--light-orange);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 3rem;
+    padding: 0 5rem;
 }
 
 .extended__quote {
-    font-size: 1.5rem;
+    font-size: 2vmin;
     font-style: italic;
+}
+
+.orange__text {
+    color: var(--orange);
+    font-size: 2rem;
 }
 
 /* Break Line */
@@ -200,8 +207,7 @@ footer p {
 }
 
 footer img {
-    max-width: 3%;
-    height: auto;
+    max-width: 4%;
     margin: 0 0.5rem;
     border: 0.1rem solid var(--lighter__grey);
     border-radius: 50%;
