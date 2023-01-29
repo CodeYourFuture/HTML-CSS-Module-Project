@@ -4,14 +4,37 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 500px 400px 120px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
 }
 .logo {
     width: auto;
-    height: 80px;
+    height: 30px;
 }
+.navigation__list {
+    display: flex;
+    list-style: none;
+    padding-right: 1rem;
+  }
+  
 .intro{
 background-image: url("../img/first-background.jpg");
-background-position: cover;
+ height: 100%;
+ background-repeat: no-repeat;
+ background-size: auto;
+  background-color: var(--grey-light);
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding-left: 30px;
 }
 .footer {
     border-top: 1px solid black;
