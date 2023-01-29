@@ -55,19 +55,16 @@ header {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  justify-self: center;
   position: absolute;
   text-align: center;
   height: 70vh;
-  width: 80vw;
-  left: 10vw;
-  margin-bottom: 15px;
-  /* scale: 100%; */
+  width: 100vw;
 }
 
 #text_on_img > h1,
 h2 {
   font-weight: 200;
+  z-index: 1;
 }
 
 #text_on_img {
@@ -77,16 +74,20 @@ h2 {
 }
 
 button {
+  color: white;
   background-color: #df5f16;
   height: 50px;
   width: 160px;
   border-radius: 5px;
+  border-color: #df5f16;
 }
 
 button:hover {
   transition: all 0.4s ease 0s;
   background-color: white;
   color: #df5f16;
+  border-radius: 5px;
+  border-color: white;
 }
 #details {
   top: 70vh;
@@ -113,6 +114,38 @@ button:hover {
   padding-top: 50px;
   text-align: center;
   font-weight: 200;
+}
+
+#get_karma_section {
+  /* margin-top: 100px; */
+  position: relative;
+  top: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0;
+}
+#woman_img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3e7e0;
+}
+#text_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 28px;
+  text-align: center;
+  width: 50%;
+  line-height: 130%;
 }
 
 footer {
