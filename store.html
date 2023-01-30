@@ -2,9 +2,121 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/css/store.css"/>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="favicon.
+    ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <header id="nav_bar">
+      <img id="logo" src="/img/karma-logo.svg" alt="Karma Logo" width="25px" />
+      <nav>
+        <ul class="nav_links">
+          <li><a id="bold" href="/index.html">Meet Karma</a></li>
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <main>
+        <div id="main_div">
+          <div id="img_container"></div>
+          <div id="form_div">
+            <h1>Order your Karma WIFI<br>device today!</h1>
+              <div id="name" >
+                <div class="h">
+                  <label for="first_name">First name *</label><br>
+                  <input type="text" name="first_name" id="first_name" minlength="2" maxlength="20"><br>
+                </div>
+                  <div class="h"> 
+                    <label for="last_name">Last name *</label><br>
+                    <input type="text" name="last_name" id="last_name" minlength="2" maxlength="20"><br>
+                  </div>
+              </div>
+              <div id="address">
+                <div class="v">
+                  <label for="address1">Address *</label><br>
+                  <input type="text" name="address1" id="address1" minlength="2" maxlength="20"><br>
+                </div>
+                <div class="v">
+                  <label for="address2">Address 2</label><br>
+                  <input type="text" name="address2" id="address2" minlength="2" maxlength="20"><br>
+              </div>
+            <div id="city">
+              <div class="h">
+                  <label for="city">City *</label><br>
+                  <select name="city" id="city_input" >
+                    <option value="" disabled selected>Select your city...</option>
+                    <option value="Glasgow">Glasgow</option>
+                    <option value="London">London</option>
+                    <option value="Aberdeen">Aberdeen</option>
+                    <option value="Edinbrugh">Edinbrugh</option>
+                    <option value="Glasgow">Glasgow</option>
+                    <option value="London">London</option>
+                    <option value="Aberdeen">Aberdeen</option>
+                  </select><br>
+                </div>
+                <div id="postcode_div"class="h"> 
+                    <label for="last_name">Postcode *</label><br>
+                    <input type="text" name="postcode" id="postcode" minlength="5" maxlength="6"><br>
+                </div>
+            </div>
+            <div id="color_select">
+              <p>Select a colour</p>
+              <div id="radios">
+                <div id="orange_radio">
+                  <input type="radio" name="colour_pick" id="orange" value="orange" required>
+                  <label for="colour_pick">Karma Orange</label>
+                </div>
+                <div id="grey_radio">
+                  <input type="radio" name="colour_pick" id="grey" value="grey">
+                  <label for="colour_pick">Space Grey</label>
+                </div>
+              </div>
+            </div>
+            <div id="terms">
+              <input type="checkbox" name="terms_checkbox" id="check" required>
+              <label for="check">By placing your order you agree to Karma's <a id="terms_link"href="#">Terms and <br> Conditions</a>. *</label><br>
+              <input id="submit_btn"type="submit" value="Place my order">
+            </div>
+          </div>
+        </div>
+      </main>
+    </body>
+      <footer>
+        <p id="join">Join us on</p>
+        <section id="social">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </section>
+        <p id="copyright">©Karma Mobility, Inc.</p>
+      </footer>
+    </main>
+  </body>
 </html>
