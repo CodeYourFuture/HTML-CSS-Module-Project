@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3.4rem 30rem 23.7rem 10rem;
+    grid-template-rows: 3.4rem 30rem 22.1rem 11.2rem;
 }
 /** Navigation menu */
 .header {
@@ -55,15 +55,31 @@ flex-direction: column;
     padding-bottom: 1rem;
 }
 /** Footer */
-.footer {
+.footer{
     border-top: 1px solid #e5e6e4;
+    margin: 1rem 5rem;
+}
+.footer_title {
+    
+    padding-top: 1rem;
+    font-weight: lighter;
+    text-align: center;
+}
+.footer_icons_flex_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer_icons{
     width: auto;
-    height: 20px;
+    height: 0.8rem;
+    border: 0.12rem solid #e5e6e4;
+    border-radius: 50%;
+    padding: 0.38rem;
+    
 }
-.footer_img{
-
+.footer_end_p{
+    text-align: center;
 }
 
 /**
