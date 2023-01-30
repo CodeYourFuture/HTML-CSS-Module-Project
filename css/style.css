@@ -21,7 +21,7 @@ body {
  .grid-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 3rem 30rem 9rem 12rem 9rem;
+    grid-template-rows: 3rem 35rem 12rem 17rem 9rem;
  }
 
 
@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    ;
     
 }
 
@@ -59,7 +60,8 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("/img/first-background.jpg");
-    
+    background-size: cover;
+    margin: 0 2rem;
 }
 
 .title {
@@ -77,14 +79,50 @@ body {
     grid-column: 1 / -1;
     justify-content: center;
     display: flex;
+    align-items: flex-end;
+    padding-bottom: 5rem;
+    
 }
+
 .devices {
-    grid-column: 1 / 2;
+    
     display: flex;
     flex-direction: column;
-    padding-right: 5rem;
+    padding-right: 7rem;
+    width: 10rem;
 }
 
 .coffee {
+    width: 10rem;
+
+}
+
+.refill {
     
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+    width: 10rem;
+
+}
+
+.footer {
+    grid-column: 1 / -1;
+    text-align: center;
+
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.icon-size {
+    width: 1rem;
+    margin: 0 0.5rem;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 50%
 }
