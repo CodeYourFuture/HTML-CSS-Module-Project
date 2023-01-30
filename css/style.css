@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3.4rem 30rem 22.1rem 11.2rem;
+    grid-template-rows: 3.1rem 30rem 22.1rem 11.2rem;
 }
 /** Navigation menu */
 .header {
@@ -16,11 +16,24 @@ body {
 .logo_header {
     width: auto;
     height: 30px;
+    padding-top: 0.6rem;
+    padding-left: 3.8rem;
 }
-.navigation__list {
+.navigation_list {
     display: flex;
     list-style: none;
     padding-right: 1rem;
+    font-size: 0.8rem;
+    margin-right: 2.4rem;
+}
+.navigation_item{
+    padding: 0rem 0rem;
+}
+.navigation_link{
+    color: var(--grey-dark);
+  
+    text-decoration: none;
+    padding: 0 0.8rem;
 }
  /** First background with button */ 
 .intro{
