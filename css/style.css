@@ -1,10 +1,13 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ @media screen and (min-width: 480px) {
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
+
 
 /**
  * Add your custom styles below
@@ -16,4 +19,178 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .grid-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3rem 35rem 12rem 17rem 9rem;
+ }
 
+
+.nav {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+
+
+/** Image */
+
+/** Grid items */
+
+
+.karma {
+    width: 20px;
+    padding: 5rem;
+    
+    
+}
+
+.nav-main {
+    padding-right:5rem;
+    
+}
+
+.header {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/first-background.jpg");
+    background-size: cover;
+    
+}
+
+.heading {
+    font-weight: normal;
+    color: #FAF9F6;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+   
+}
+
+.title {
+font-size: 3rem;
+font-weight:lighter;
+
+}
+.sub-header {
+    grid-column: 1/-1;
+    text-align: center;
+    padding-top: 5rem;
+    
+}
+h2 {
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.icons {
+    grid-column: 1 / -1;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5rem;
+    text-align:center;
+    
+    
+}
+
+.devices-width {
+    width: 8rem;
+}
+
+.devices {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    
+}
+
+.coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5rem;
+    align-items: center;
+   
+   font-size: 20px;
+}
+
+.refill {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.icon-size {
+    width: 1.1rem;
+    margin: 0 0.5rem;
+    border: 1px solid rgb(235, 231, 231);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+
+/** Button */
+
+.button-more {
+    padding: 12px 25px;
+    color: #FAF9F6;
+    border: none;
+    border-radius: 4%;
+    background-color: rgb(213, 95, 52);
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+/** Footer */
+
+.copyright {
+    color: rgb(180, 173, 173);
+    font-size: 15px;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    text-align: center;
+
+}
+
+/** Nav bar */
+
+a {
+    text-decoration: none;
+    color: rgb(155, 149, 149);
+    padding: 0.9rem;
+    
+}
+
+a:first-child {
+    font-weight: 500;
+    color: rgb(65, 62, 62);
+}
+
+a:hover {
+    color: rgb(213, 95, 52);
+}
+
+}
