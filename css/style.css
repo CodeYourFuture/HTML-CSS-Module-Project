@@ -37,11 +37,13 @@ color: aliceblue;
 .icon_menu{
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: center;
+font-size: 1.2rem;
 }
 .icons{
 display: flex;
 flex-direction: column;
+padding: 0 2.5rem;
 }
 .logo_menu_img {
     width: auto;
@@ -60,26 +62,30 @@ flex-direction: column;
     margin: 1rem 5rem;
 }
 .footer_title {
-    
-    padding-top: 1rem;
     font-weight: lighter;
     text-align: center;
+    font-size: 0.75rem;
 }
-.footer_icons_flex_{
+.icons_contact{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.footer_icons{
+.icons_img_footer{
     width: auto;
     height: 0.8rem;
     border: 0.12rem solid #e5e6e4;
     border-radius: 50%;
     padding: 0.38rem;
+    margin-left: 0.8rem;
+    
     
 }
-.footer_end_p{
+.footer_end_paragraph{
     text-align: center;
+    color: #c5c3c6;
+    font-size: 0.65rem;
 }
 
 /**
