@@ -104,26 +104,41 @@ button:hover {
   justify-content: center;
   font-size: 1.2rem;
 }
+
 .icons {
   display: flex;
   flex-direction: column;
   padding: 0 100px;
 }
+
 .image-logo {
   width: auto;
   height: 150px;
   padding-bottom: 10px;
 }
 
-.sm {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-}
-
 #join-us {
   color: black;
   text-align: center;
   letter-spacing: 100;
-  padding: 100px;
+  padding-top: 100px;
+}
+
+.networks {
+  width: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+#copyright {
+  text-align: center;
+  font-size: small;
+}
+
+.sm-icon > img {
+  width: 20px;
 }
