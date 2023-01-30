@@ -61,20 +61,32 @@ body {
     align-items: center;
     background-image: url("/img/first-background.jpg");
     background-size: cover;
-    margin: 0 2rem;
+    margin: 0 1rem;
+}
+
+.heading {
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+   
 }
 
 .title {
-    color: white;
-    text-align: center;;
-}
+font-size: 3rem;
+font-weight:lighter;
 
+}
 .sub-header {
     grid-column: 1/-1;
     text-align: center;
     padding-top: 5rem;
+    
 }
-
+h2 {
+    font-weight: lighter;
+    font-size: 2rem;
+}
 .icons {
     grid-column: 1 / -1;
     justify-content: center;
