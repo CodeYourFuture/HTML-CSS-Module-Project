@@ -6,7 +6,7 @@ body {
 
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10vh auto auto;
+  grid-template-rows: 10vh 75vh auto;
 }
 
 .header {
@@ -58,6 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1rem 5rem 1rem;
+  height: 75vh;
 }
 
 #section1 h1 {
@@ -120,6 +121,26 @@ body {
 #section1 form .radio-div {
   grid-area: r;
 }
+#section1 form .radio-div #grey {
+  margin-left: 2rem;
+}
+
+/* changing the background of the radio button*/
+input[type="radio"] {
+  appearance: none;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  background-clip: content-box;
+}
+input[type="radio"]:checked {
+  background-color: orangered;
+}
+
 #section1 form .terms-div {
   grid-area: t;
   display: flex;
@@ -132,7 +153,7 @@ body {
   border: none;
   border-radius: 5%;
   padding: 2rem;
-  margin: 3rem;
+  margin: 3rem 0px;
   color: white;
 }
 
