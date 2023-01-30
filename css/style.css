@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3.6rem 30rem 400px 120px;
+    grid-template-rows: 3.4rem 30rem 23.7rem 10rem;
 }
 /** Navigation menu */
 .header {
@@ -43,9 +43,10 @@ justify-content: space-evenly;
 display: flex;
 flex-direction: column;
 }
-.logo_menu {
+.logo_menu_img {
     width: auto;
     height: 6rem;
+    padding-bottom: 1rem;
 }
 .icons-title{
     text-align: center;
@@ -55,7 +56,7 @@ flex-direction: column;
 }
 /** Footer */
 .footer {
-    border-top: 1px solid black;
+    border-top: 1px solid #e5e6e4;
 }
 .footer_icons{
     width: auto;
