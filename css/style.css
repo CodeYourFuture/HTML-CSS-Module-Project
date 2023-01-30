@@ -202,17 +202,18 @@ main {
 .form-names {
   display: flex;
   gap: 2rem;
-  /* border: 3px solid blue; */
-  /* justify-content: space-between; */
 }
+
 .form-first-name {
   width: 100%;
   /* border: 3px solid green; */
 }
+
 .form-last-name {
   /* border: 3px solid purple; */
   width: 100%;
 }
+
 .store-aside-image {
   width: 100%;
   max-height: 130vh;
@@ -247,27 +248,34 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   position: relative;
-  /* padding-left: 30px; */
+  padding-left: 30px;
   cursor: pointer;
   display: inline-block;
-  columns: #666;
+  color: red;
   line-height: 25px;
-  visibility: visible;
-  border: 2px solid red;
 }
 
-input[type="radio"]:checked:after {
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 0.8rem;
-  top: 1px;
-  left: 7px;
-  position: relative;
-  background-color: #e0633a;
+input[type="radio"] + label::before {
   content: "";
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid white;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  background-color: white;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #e0633a;
 }
 
 .form-color-choices {
