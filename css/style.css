@@ -195,6 +195,8 @@ main {
 
 .store-fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form-names {
@@ -235,8 +237,23 @@ main {
 
 input[type="radio"] {
   /* border: 0px; */
-  width: 2rem;
+  width: 24px;
   /* height: 2em; */
+}
+
+input[type="radio"] {
+  opacity: 0;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  /* padding-left: 30px; */
+  cursor: pointer;
+  display: inline-block;
+  columns: #666;
+  line-height: 25px;
+  visibility: visible;
+  border: 2px solid red;
 }
 
 input[type="radio"]:checked:after {
@@ -267,6 +284,55 @@ input[type="radio"]:checked:after {
 
 .karma-tc {
   padding-bottom: 2rem;
+  /* padding-left: 1rem; */
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+input[type="checkbox"] + label {
+  position: relative;
+  /* padding-left: 30px; */
+  cursor: pointer;
+  display: inline-block;
+  columns: #666;
+  line-height: 25px;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  outline: 1px solid grey;
+  background: white;
+  left: 0;
+  top: 5px;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  outline: 1px solid grey;
+  background: white;
+  left: 0;
+  top: 5px;
+}
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url(/level-2/checkmark.svg);
+  background-size: contain;
+  /* background: white; */
+  left: 0;
+  top: 5px;
+}
+
+.karma-tc-label {
+  padding-left: 1.5rem;
 }
 
 .horiz-rule {
