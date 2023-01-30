@@ -9,14 +9,22 @@ body {
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 0 3rem;
+    padding: 1rem 3rem;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    
 }
 
 
+.topnav{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;  
+}
 
 
 .topnav a{
-    float: right;
+    float: left;
     display: block;
     text-align: center;
     padding: 1rem 1.5rem;
@@ -27,6 +35,12 @@ nav{
 
 .topnav a:hover{
     color: rgb(226, 98, 0);
+}
+
+.name-container{
+    display: flex;
+    flex-flow: wrap;
+    
 }
 
 .karma{
@@ -40,6 +54,11 @@ nav{
     align-items: center;
     justify-content: center;
 
+}
+
+.container_store{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .text-block{
@@ -136,6 +155,7 @@ h3{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin: 4rem 0;
 }
 
 .p-text{
