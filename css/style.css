@@ -31,9 +31,14 @@ body {
 }
 .navigation_link{
     color: var(--grey-dark);
-  
     text-decoration: none;
     padding: 0 0.8rem;
+}
+.navigation_link:hover {
+    color: #f8520b;
+}
+li:first-child {
+    font-weight: 500;
 }
  /** First background with button */ 
 .intro{
