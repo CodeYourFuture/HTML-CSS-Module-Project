@@ -4,14 +4,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         -webkit-font-smoothing: antialiased;
+        margin: 4rem;
     }
 
   
     .navbar {
         display: flex;
-        padding-top: 2%;
         padding-left: 5%;
-        padding-bottom: 2%;
         align-items: flex-end;
         justify-content: space-between;
 
@@ -23,7 +22,7 @@
     }
 
     .links {
-        padding-right: 14%;
+        padding-right: 5%;
     }
 
     
@@ -37,7 +36,40 @@
     /* css style for the banner */
 
     .banner {
-        background-image: ;
+        background-image: url("../img/first-background.jpg");
+        height: 46rem;
+        margin: 2rem;
+        background-size: cover;
+        color: white;
+        background-position: bottom; /* Center the image */
+
+
+        /* flex */
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        text-align: center;
+       
+    }
+
+    .content h1 {
+        font-size: 70px;
+       font-weight: 100;
+    }
+
+    .content p {
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    .button button {
+        color:#fff;
+        background-color: #e0633a;
+        padding: 15px 28px;
     }
     
     
