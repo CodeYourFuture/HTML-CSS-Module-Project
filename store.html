@@ -35,79 +35,84 @@
 
     <main>
         <div class="grid-container">
-            <div class="forma">
+            <div class="form-container">
                 <div class="heading-box">
                     <h1>Order your Karma wifi device today!</h1>
                 </div>
-                <div class="flex-center">
-                    <div class="flex-column">
-                        <label for="first-name">First name *</label>
-                        <input id="first-name" type="text" required>
-                    </div>
-                    <div class="flex-column">
-                        <label for="last-name">Last name *</label>
-                        <input id="last-name" type="text" required>
+                <form>
+                    <div class="flex-center">
+                        <div class="flex-column">
+                            <label for="first-name">First name *</label>
+                            <input id="first-name" type="text" required>
+                        </div>
+                        <div class="flex-column">
+                            <label for="last-name">Last name *</label>
+                            <input id="last-name" type="text" required>
 
-                    </div>
-                </div>
-
-                <div class="flex-column">
-                    <label for="address">Address *</label>
-                    <input id="address" type="text" required>
-                </div>
-                <div class="flex-column">
-                    <label for="address">Address 2</label>
-                    <input id="address" type="text" required>
-                </div>
-
-                <div class="flex-center">
-                    <div class="flex-column">
-                        <label for="city">City *</label>
-                        <select name="city" id="city">
-                            <option value="glasgow">Glasgow</option>
-                            <option value="edinburgh">Edinburgh</option>
-                            <option value="london">London</option>
-                            <option value="manchester">Manchester</option>
-                            <option value="aberdeen">Aberdeen</option>
-                        </select>
+                        </div>
                     </div>
 
                     <div class="flex-column">
-                        <label for="postcode">Postcode *</label>
-                        <input id="postcode" type="text" required>
+                        <label for="address">Address *</label>
+                        <input id="address" type="text" required>
                     </div>
-                </div>
+                    <div class="flex-column">
+                        <label for="address">Address 2</label>
+                        <input id="address" type="text" required>
+                    </div>
 
-                <div>
-                    <fieldset>
-                        <legend>Select a colour</legend>
-                        <input id="orange" type="radio" name="color" value="orange">
-                        <label for="orange">Karma orange</label>
+                    <div class="flex-center">
+                        <div class="flex-column">
+                            <label for="city">City *</label>
+                            <select class="city-box" name="city" id="city">
+                                <option value="" selected>Select your city...</option>
+                                <option value="glasgow">Glasgow</option>
+                                <option value="edinburgh">Edinburgh</option>
+                                <option value="london">London</option>
+                                <option value="manchester">Manchester</option>
+                                <option value="aberdeen">Aberdeen</option>
+                            </select>
+                        </div>
 
-                        <input id="grey" type="radio" name="color" value="grey">
-                        <label for="grey">Space Grey</label>
-                    </fieldset>
+                        <div class="flex-column">
+                            <label for="postcode">Postcode *</label>
+                            <input id="postcode" type="text" required>
+                        </div>
+                    </div>
+
+
 
                     <div>
-                        <input id="agreement" name="agreement" type="checkbox" required>
-                        <label for="agreement">By placing your order you agree to Karma's <a href="#">Terms and
-                                Conditions</a> *</label>
+                        <p>Select a colour</p>
+                        <fieldset>                           
+                            <legend class="" hidden>Select a colour</legend>
+                        <div class="colors">
+                            <input id="orange" type="radio" name="color" value="orange">
+                            <label for="orange">Karma orange</label>
+                        </div>
+
+                        <div class="colors">
+                            <input id="grey" type="radio" name="color" value="grey">
+                            <label for="grey">Space Grey</label>
+                        </div>
+                        </fieldset>
                     </div>
-                    <div>
-                        <button class="btn-primary" type="submit">Place my order</button>
-                    </div>
 
-                </div>
-
-
-
-
-
-
-
+                        <div class="agreement-box">
+                            <input id="agreement" name="agreement" type="checkbox" required>
+                            <label for="agreement">By placing your order you agree to Karma's <a href="#">Terms and
+                                    Conditions</a> *</label>
+                        </div>
+                        <div>
+                            <button class="btn-primary" type="submit">Place my order</button>
+                        </div>
+                </form>
             </div>
-            <aside class="side-img-box">
-            </aside>
+
+        
+        <aside class="side-img-box">
+            <p>''</p>
+        </aside>
         </div>
     </main>
 
