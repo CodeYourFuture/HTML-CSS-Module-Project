@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store-style.css">
+
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -15,7 +17,8 @@
     <header>
         <!-- NAV SECTION  -->
         <nav class="main-nav">
-            <div><a class="nav-link" href="./index.html"><img class="karma-logo" src="./img/karma-logo.svg" alt="Karma Logo"></a>
+            <div><a class="nav-link" href="./index.html"><img class="karma-logo" src="./img/karma-logo.svg"
+                        alt="Karma Logo"></a>
             </div>
 
             <!-- NAV BAR -->
@@ -29,6 +32,83 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="forma">
+                <div class="heading-box">
+                    <h1>Order your Karma wifi device today!</h1>
+                </div>
+                <div class="flex-center">
+                    <div class="flex-column">
+                        <label for="first-name">First name *</label>
+                        <input id="first-name" type="text" required>
+                    </div>
+                    <div class="flex-column">
+                        <label for="last-name">Last name *</label>
+                        <input id="last-name" type="text" required>
+
+                    </div>
+                </div>
+
+                <div class="flex-column">
+                    <label for="address">Address *</label>
+                    <input id="address" type="text" required>
+                </div>
+                <div class="flex-column">
+                    <label for="address">Address 2</label>
+                    <input id="address" type="text" required>
+                </div>
+
+                <div class="flex-center">
+                    <div class="flex-column">
+                        <label for="city">City *</label>
+                        <select name="city" id="city">
+                            <option value="glasgow">Glasgow</option>
+                            <option value="edinburgh">Edinburgh</option>
+                            <option value="london">London</option>
+                            <option value="manchester">Manchester</option>
+                            <option value="aberdeen">Aberdeen</option>
+                        </select>
+                    </div>
+
+                    <div class="flex-column">
+                        <label for="postcode">Postcode *</label>
+                        <input id="postcode" type="text" required>
+                    </div>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Select a colour</legend>
+                        <input id="orange" type="radio" name="color" value="orange">
+                        <label for="orange">Karma orange</label>
+
+                        <input id="grey" type="radio" name="color" value="grey">
+                        <label for="grey">Space Grey</label>
+                    </fieldset>
+
+                    <div>
+                        <input id="agreement" name="agreement" type="checkbox" required>
+                        <label for="agreement">By placing your order you agree to Karma's <a href="#">Terms and
+                                Conditions</a> *</label>
+                    </div>
+                    <div>
+                        <button class="btn-primary" type="submit">Place my order</button>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <aside class="side-img-box">
+            </aside>
+        </div>
     </main>
 
     <!-- FOOTER SECTION -->
@@ -43,9 +123,7 @@
         </div>
         <p class="copyright">&copy; Karma Mobility, Inc</p>
 
-
     </footer>
-
 </body>
 
 </html>

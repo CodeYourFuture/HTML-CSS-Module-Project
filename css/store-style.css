@@ -1,0 +1,39 @@
+/* Page container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 123rem;
+    width: 100vw;
+    position: relative;
+}
+/* Form */
+.forma h1 {
+    color: var(--orange);
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.forma {
+    grid-column: 1/2;
+    box-sizing: border-box;
+    
+
+}
+
+.flex-center {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image aside */
+.side-img-box {
+    grid-column: 2/3;
+    background-image: url(/img/store-image_by-andrew-neel-unsplash.jpg);
+    background-size: 110% 110%;
+}
