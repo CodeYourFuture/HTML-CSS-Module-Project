@@ -1,19 +1,136 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+    /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
+    body {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        margin: 4rem;
+    }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+  
+    .navbar {
+        display: flex;
+        padding-left: 5%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .links {
+        padding-right: 5%;
+    }
+
+    
+    .links a {
+        padding-right: 37px;
+        text-decoration: none;
+        color:rgb(191, 191, 191);
+        font-size: large;
+    }
+
+    /* css style for the banner */
+
+    .banner {
+        background-image: url("../img/first-background.jpg");
+        height: 46rem;
+        margin: 2rem;
+        background-size: cover;
+        color: white;
+        background-position: bottom; /* Center the image */
 
 
+        /* flex */
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        text-align: center;
+       
+    }
+
+    .content h1 {
+        font-size: 70px;
+       font-weight: 100;
+    }
+
+    .content p {
+        font-size: 40px;
+        font-weight: 100;
+    }
+
+    .button button {
+        color:#fff;
+        background-color: #e0633a;
+        padding: 15px 28px;
+        border-style: none;
+        border-radius: 4%;
+    }
+    
+     /* css style for the features section */
+
+    .feature {
+       color:black;
+       display: flex; 
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .feature-heading h1 {
+        font-size: 4rem;
+        font-weight:100;
+        padding-top:3rem;
+    }
+
+    .feature-content {
+        display:flex;
+        align-items: flex-end;
+       
+    }   
+    
+    .feature-content-item {
+        display: flex;
+        margin: 4rem 7rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feature-content-item img {
+        width: 50%;
+        
+    }
+
+    .feature-content-item p {
+        font-size: 1.5rem
+    }
+
+    /* css style for the footer section */
+
+
+    footer {
+        display:flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .footer-icon img {
+        padding: 7px;
+        width:1%;
+        border-radius: 50%;
+    }
+
+    .footer-ending {
+        color:rgb(207, 207, 207);
+    }
