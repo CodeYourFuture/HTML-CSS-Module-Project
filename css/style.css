@@ -8,11 +8,12 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 3.6rem 30rem 400px 120px;
 }
+/** Navigation menu */
 .header {
     display: flex;
     justify-content: space-between;
 }
-.logo {
+.logo_header {
     width: auto;
     height: 30px;
 }
@@ -20,22 +21,39 @@ body {
     display: flex;
     list-style: none;
     padding-right: 1rem;
-  }
-  
+}
+ /** First background with button */ 
 .intro{
 background-image: url("../img/first-background.jpg");
 background-color: #cccccc;
-height: 30rem;
-background-position: cover;
-background-repeat: no-repeat;
 background-size: cover;
-
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 color: aliceblue;
 }
+/** Icons menu  */
+.icon_menu{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.icons{
+display: flex;
+flex-direction: column;
+}
+.logo_menu {
+    width: auto;
+    height: 6rem;
+}
+.icons-title{
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+/** Footer */
 .footer {
     border-top: 1px solid black;
 }
@@ -43,6 +61,10 @@ color: aliceblue;
     width: auto;
     height: 20px;
 }
+.footer_img{
+
+}
+
 /**
  * Add your custom styles below
  * 
