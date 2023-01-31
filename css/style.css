@@ -74,7 +74,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
-.hero-text button {
+button { 
   border: none;
   margin-top: 4ex;
   outline: 0;
@@ -85,7 +85,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-
+ 
 /*                    First part  */
 .card-article {
   text-align: center;
@@ -97,12 +97,14 @@ body {
   padding: 5px;
 }
 
+
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
 
 /*                     Links - change color on hover */
 
@@ -127,6 +129,20 @@ body {
   margin-top: 20px;
 }
 
+/* Second article   */
+
+.second-article-text{
+  display: flex;
+  padding: 0 5rem;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(240, 223, 220);
+  justify-content: center;
+}
+.qoute{  
+  font-size: 3rem;
+  color: rgb(226, 55, 25);
+}
 /*                                   Footer */
 
 .footer a {
