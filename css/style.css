@@ -19,9 +19,10 @@ body {
 
 :root {
     --orange-dark: #c05326;
-    --orange-light: #969AA2;
+    --grey: #969AA2;
+    --light-grey: #d3d8e0;
     --white: #fff;
-    --dark: #4D5057;
+    --dark: #303135;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -62,7 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navigation__link {
-    color: var(--orange-light);
+    color: var(--grey);
     font-size: 1.4rem;
     font-weight: 400;
     text-decoration: none;
@@ -70,6 +71,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .navigation__link:hover {
     color: var(--orange-dark);
+}
+
+/* Divider Style */
+
+.divider {
+    border: 0.1rem solid var(--light-grey);
+    margin: 5rem 10rem 2rem 10rem;
 }
 
 /* Hero */
@@ -146,4 +154,26 @@ button {
     font-size: 3.2rem;
     font-weight: 100;
     padding: 8rem 0 1.5rem 0;
+}
+
+/* Footer */
+
+.social-media-logo {
+    object-fit: contain;
+    width: 1.2rem;
+    padding: 0.8rem;
+    border: 0.1rem solid var(--light-grey);
+    border-radius: 100%;
+    margin: 0.1rem 0.8rem;
+}
+
+footer p {
+    color: var(--grey);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer p:first-child {
+    font-size: 1.3rem;
+    color: var(--dark);
 }
