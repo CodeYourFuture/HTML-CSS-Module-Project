@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <a href=""><img src="img/karma-logo.svg" alt="logo" /></a>
+      <nav>
+        <a href="#"><b>Meet Karma</b></a>
+        <a href="#">How it Works</a>
+        <a href="store.html">Store</a>
+        <a href="#">Blog</a>
+        <a href="#">Help</a>
+        <a href="#">Login</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="section1">
+        <h1>Order your Karma WiFi device today!</h1>
+
+        <form>
+          <div class="form">
+            <div class="firstName">
+              <label for="first-name"> First name*</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="lastName">
+              <label for="last-name"> Last name*</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+
+            <div class="address">
+              <label for="address"> Address*</label>
+              <input type="text" id="address" name="Address" required />
+            </div>
+
+            <div class="address2">
+              <label for="address2"> Address 2</label>
+              <input type="text" id="address2" name="Address2" />
+            </div>
+
+            <div class="city">
+              <label for="city"> City*</label>
+              <select name="City" id="city" required>
+                <option value="" class="italic">Select your city...</option>
+              </select>
+            </div>
+            <div class="postcode">
+              <label for="postcode"> Postcode*</label>
+              <input type="text" id="postcode" name="Postcode" required />
+            </div>
+
+            <div class="radio-div">
+              <p>Select a colour</p>
+              <input
+                type="radio"
+                id="orange"
+                name="Colour"
+                value="Karma orange"
+                checked
+              />
+              <label for="orange"> Karma orange</label>
+              <input type="radio" id="grey" name="Colour" value="Space Grey" />
+              <label for="grey"> Space Grey</label>
+            </div>
+
+            <div class="terms-div">
+              <label class="container">
+                By placing your order you agree to Karma's
+                <a href="#">Terms and Conditions</a> *
+                <input type="checkbox" name="terms" required checked />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <button class="btn" type="button">Place my order</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="section2">
+        <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="" />
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2>Join us on</h2>
+      <div>
+        <a href="#">
+          <img src="img/twitter-icon.svg" alt="twitter icon" />
+        </a>
+        <a href="#">
+          <img src="img/facebook-icon.svg" alt="facebook icon" />
+        </a>
+        <a href="#">
+          <img src="img/instagram-icon.svg" alt="instagram icon" />
+        </a>
+      </div>
+      <p>&copy; Karma Mobility, Inc.</p>
+    </footer>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+  </body>
+</html>
