@@ -284,8 +284,7 @@ border-radius: 4px;
   }
   .full-name{
     display: flex;
-    gap: 3rem
-    ;
+    gap: 3rem;
   }
   .city-postcode{
     width: 100%;
@@ -371,7 +370,6 @@ input[type="radio"] {
     position: absolute;
     left: 3px;
     top: 3px;
-    /* padding: 0rem 0rem; */
     width: 17px;
     height: 17px;
     border-radius: 50%;
@@ -386,9 +384,7 @@ input[type="radio"] {
   }
   input[type="checkbox"] + label {
     position: relative;
-    /* padding-left: 30px; */
     cursor: pointer;
-    /* display: inline-block; */
     columns: #666;
     line-height: 25px;
   }
@@ -420,7 +416,6 @@ input[type="radio"] {
     height: 14px;
     background-image: url(/level-2/checkmark.svg);
     background-size: contain;
-    /* background: white; */
     left: 0;
     top: 5px;
   }
