@@ -192,45 +192,51 @@ padding-left: 4rem;
 }
 
  .main-store{
-  /* border: 5px solid red; */
+  border: 5px solid red;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 80vh;
+  width: 202vh;
   
 }
 .store-form{
   /* border: 5px solid blue; */
   margin-left: 10rem;
-  margin-right: 10rem;
-  width: 50rem;
-  /* padding: 3rem; */
+  margin-right: 17rem;
+  width: 35rem;
+  /* padding: 5rem; */
   /* min-height: 53rem; */
-  height: 53rem;
+  /* height: 53rem; */
+  /* margin-bottom: 20rem;; */
   
 }
 .store-image{
-  height: 38rem;
-  width: 43rem;
-  padding-left: 5rem;
+  height: 46.5rem;
+  width: 58rem;
+  /* margin-left: 10rem; */
+  
+  
 }
 
 input[type=text] {
-  width: 80%;
-  /* padding: 12px 20px; */
-  /* margin: 8px 0; */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
   box-sizing: border-box;
   border-radius: 4px;
 }
 .first{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   margin-bottom: 1rem;
+  margin-right: 7rem;
+  width: 35rem
 }
 .city{
   
   display: flex;
   flex-direction: row;
-  /* margin: 8px 2px; */
+  margin: 8px 2px;
   border-radius: 4px;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -240,13 +246,13 @@ input[type=text] {
 .selectcolour{
   display: flex;
   justify-content:space-between;
-  /* padding-right: 20rem; */
+  padding-right: 10rem;
   
 }
 .checkbox{
   display: flex;
-  /* margin-top: 2.5rem; */
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
   
 
 }
@@ -254,15 +260,18 @@ button{
   background-color:#c05326;
   border: none;
   color: white;
-  padding: 4px 10px;
+  /* padding: 4px 10px; */
   text-decoration: none;
-  /* margin: 4px 2px; */
-  border-radius: 0.70rem;
+  /* margin: 7px 4px; */
+  /* border-radius: 2rem; */
+  width: 10rem;
+  height: 3rem;
+  margin-bottom: 1rem;
   
 }
 .checkbox p{
   color: grey;
-  padding: 0.5rem;
+  padding: 0.7rem;
   
 }
   .text{
@@ -273,7 +282,7 @@ button{
 
 .label-city{
   /* color: blue; */
-  width: 50%;
+  width: 100%;
   margin-right: 2rem;
 
 }
@@ -286,8 +295,9 @@ margin-top: 3rem;
 .store-karma{
   font-size: 15px;
   color: #c05326;
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
   padding-bottom: 2rem;
+
   
   
 }
