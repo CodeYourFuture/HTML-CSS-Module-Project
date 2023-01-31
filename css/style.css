@@ -18,11 +18,11 @@ body {
     grid-gap: 1px;
     text-align: center;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 4rem auto 8rem;
+   
     grid-template-areas:
-        ". h h h h h h h h h h ."
-        ". c c c c c c c c c c ."
-        ". f f f f f f f f f f .";
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
 }
 
 /* ----------------Header Style--------------- */
@@ -31,16 +31,18 @@ body {
     grid-area: h;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.1);
 }
 
 .logo {
-    padding-left: 5rem;
-    padding-top: 1rem;
+    width: 1.5rem;
+    padding-left: 4rem;
 }
 
 .navlist {
     display: flex;
-    padding-right: 5rem;
+    padding-right: 4rem;
 }
 
 .navitems {
@@ -75,7 +77,7 @@ body {
 .hero-image {
     background-image: url("/img/first-background.jpg");
     background-color: #cccccc;
-    height: 43rem;
+    height: 42rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,13 +116,6 @@ body {
 }
 
 /* Second Section----------------- */
-.services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
 
 #service-header {
     padding-top: 5rem;
@@ -131,16 +126,16 @@ body {
 
 .three-services {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 0.6rem;
-    padding-bottom: 3rem;
+    padding-bottom: 7rem;
 
 }
 
-.service-part {
-    padding-left: 4.2rem;
-    padding-right: 4.2rem;
-}
+/* .service-part {
+    padding-left: 5rem;
+    padding-right: 5rem;
+} */
 
 .link-service {
     text-decoration: none;
@@ -155,7 +150,53 @@ body {
     width: 6rem;
     height: 6rem;
 }
+/* Level 2- Extended Page style */
+.get-karma{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    height: 20rem;
+}
+.karma-img{
+width: 40rem;
+}
+.karma2{
+   width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(224, 99, 58, 0.1);
 
+}
+.karma-text{
+font-family: 'Roboto';
+font-style: italic;
+font-weight: 400;
+font-size: 2rem
+}
+#quoto::before
+{
+    content: "“";
+    color: #E0633A;
+    font-weight: 400;
+}
+#quoto::after{
+    content: "”";
+    color: #E0633A;
+    font-weight: 400;
+}
+.karma-btn{
+    background: #E0633A;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+}
+.karma-btn a{
+    color: white;
+    text-decoration: none;
+}
 /* -------------------Footer style--------------- */
 .footer {
     border-top: 2px solid rgb(239, 237, 237);
@@ -164,7 +205,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 .join-footer {
@@ -190,3 +231,211 @@ body {
     padding-bottom: 2rem;
     font-size: x-small;
 }
+/* ------Karma-sore style----- */
+
+.store-content{
+    height: 1235px;
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-areas: ". f f f f . i i i i i i"
+   ". f f f f . i i i i i i";
+   color: #666666;
+
+   
+}
+.form-section{
+    grid-area: f;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 21px;
+    
+}
+.img-section{
+    grid-area: i;
+}
+.store-img{
+    width: 100%;
+    height: 100%;  
+}
+.form-header{
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 59px;
+color: #E0633A;
+padding-top: 4rem;
+padding-bottom: 5rem;
+}
+.fieldset-store{
+        border: none;
+        margin: 0;
+        padding: 0;
+        /* display: flex; */
+        /* flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; */
+}
+.form-input {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #666666;
+border-radius: 4px;
+  }
+  .full-name{
+    display: flex;
+    gap: 3rem
+    ;
+  }
+  .city-postcode{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+  }
+  .city{
+    width: 70%;
+  }
+  .postcode{
+    width: 30%;
+  }
+  select{
+    width: 100%;
+    height: 2.4rem;
+    border: 2px solid #666666;
+    border-radius: 4px;
+  }
+
+  label{
+    display: block;
+    text-align: left;
+    padding-bottom: 0.8rem;
+  }
+
+  select:required:invalid {
+    color: #666666;
+font-style: italic;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color:#666666;
+  }
+  .select-color{
+    margin-bottom: 0rem;
+  }
+.color-choice{
+    
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+.radio-label {
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 0;
+    font-weight: 350;
+  }
+
+input[type="radio"] {
+    width: 24px;
+   
+  }
+  
+  input[type="radio"] {
+    opacity: 0;
+  }
+  
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+   
+  }
+  
+  input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    background-color: white;
+  }
+  
+  input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    /* padding: 0rem 0rem; */
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #e0633a;
+  }
+  .terms{
+    /* display: flex;
+   align-items: flex-start; */
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+  input[type="checkbox"] + label {
+    position: relative;
+    /* padding-left: 30px; */
+    cursor: pointer;
+    /* display: inline-block; */
+    columns: #666;
+    line-height: 25px;
+  }
+  
+  input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    outline: 1px solid grey;
+    background: white;
+    left: 0;
+    top: 5px;
+  }
+  input[type="checkbox"]:checked + label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    outline: 1px solid grey;
+    background: white;
+    left: 0;
+    top: 5px;
+  }
+  input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url(/level-2/checkmark.svg);
+    background-size: contain;
+    /* background: white; */
+    left: 0;
+    top: 5px;
+  }
+  .term-label{
+    padding-left: 1.5rem;
+    font-size: 18px;
+  }
+  .term-label a{
+    color:#E0633A;
+  }
+  .order-btn{
+    background-color: #E0633A;
+    color: white;
+    border-radius: 0.8rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    border: none;
+  }
