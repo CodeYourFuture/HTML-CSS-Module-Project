@@ -1,40 +1,48 @@
 /* Page container */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 123rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     width: 100vw;
-    position: relative;
 }
 
+
 /* Form */
+.form-container {
+    grid-column: 2/6;
+    padding: 6rem 0;
+}
+
 .form-container h1 {
     color: var(--orange);
     font-size: 5rem;
     font-weight: 500;
+    margin-bottom: 3rem;
 }
 
-.form-container {
-    grid-column: 1/2;
-    margin: 10rem;
-    width: 60rem;
-}
-
-form {
+.form {
     box-sizing: border-box;
     color: var(--dark-gray);
     font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 50rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    row-gap: 2rem;
 
 }
 
-.flex-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.grid-1 {
+    grid-column: 1/3;
+}
+
+.grid-2 {
+    grid-column: 3/5;
+}
+
+.grid-center {
+    grid-column: 1/ -1;
 }
 
 .flex-column {
@@ -61,15 +69,11 @@ input[type=option] {
 fieldset {
     margin-top: 1rem;
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     padding: 0;
     margin: 0;
 }
 
 .colors {
-    width: 40%;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -77,7 +81,7 @@ fieldset {
 
 .city-box {
     height: 5rem;
-    width: 25rem;
+    /* width: 25rem; */
     border-radius: 5px;
 }
 
@@ -97,7 +101,8 @@ fieldset {
 
 /* Image aside */
 .side-img-box {
-    grid-column: 2/3;
+    grid-column: 7/13;
     background-image: url(/img/store-image_by-andrew-neel-unsplash.jpg);
     background-size: 110% 110%;
+    /* background-repeat: no-repeat; */
 }
