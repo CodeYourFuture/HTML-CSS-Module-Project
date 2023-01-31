@@ -200,34 +200,37 @@ padding-left: 4rem;
 }
 .store-form{
   /* border: 5px solid blue; */
-  margin-left: 7rem;
-  margin-right: 7rem;
-  width: 60rem;
-  padding: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  width: 50rem;
+  /* padding: 3rem; */
   /* min-height: 53rem; */
-  /* height: 53rem; */
+  height: 53rem;
   
 }
 .store-image{
-  height: 57rem;
-  width: 50rem;
+  height: 38rem;
+  width: 43rem;
   padding-left: 5rem;
 }
 
 input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: 80%;
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
   box-sizing: border-box;
   border-radius: 4px;
 }
 .first{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 .city{
+  
   display: flex;
-  margin: 8px 0;
+  flex-direction: row;
+  /* margin: 8px 2px; */
   border-radius: 4px;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -237,12 +240,12 @@ input[type=text] {
 .selectcolour{
   display: flex;
   justify-content:space-between;
-  padding-right: 25rem;
+  /* padding-right: 20rem; */
   
 }
 .checkbox{
   display: flex;
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
   margin-bottom: 1rem;
   
 
@@ -251,14 +254,16 @@ button{
   background-color:#c05326;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 4px 10px;
   text-decoration: none;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
+  border-radius: 0.70rem;
   
 }
 .checkbox p{
   color: grey;
-  padding: 0.3rem;
+  padding: 0.5rem;
+  
 }
   .text{
   text-decoration: underline;
@@ -268,7 +273,8 @@ button{
 
 .label-city{
   /* color: blue; */
-  width: 100%;
+  width: 50%;
+  margin-right: 2rem;
 
 }
 
@@ -278,9 +284,10 @@ margin-top: 3rem;
 }
 
 .store-karma{
-  font-size: 20px;
+  font-size: 15px;
   color: #c05326;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding-bottom: 2rem;
+  
   
 }
