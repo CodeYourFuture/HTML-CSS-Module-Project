@@ -16,7 +16,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    display: inline-block;
 }
 
 body {
@@ -206,12 +205,20 @@ footer p {
     color: var(--light__grey);
 }
 
-footer img {
-    max-width: 4%;
-    margin: 0 0.5rem;
+#social__icon {
+    /* margin: 0 auto;
     border: 0.1rem solid var(--lighter__grey);
     border-radius: 50%;
     padding: 0.2rem;
+    overflow: visible; */
+
+    padding: 1px;
+    margin: 0.5rem;
+    max-width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 0.1rem solid var(--lighter__grey);
+    border-radius: 50%;
     overflow: visible;
 }
 
