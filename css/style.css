@@ -1,19 +1,227 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+    --orange: #DE6E49;
+    --light-orange: #f1dcd5;
+    --gray: #e9ecef;
+    --white: #fff;
+    --dark-gray: #495057;
+    --text: #212529;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* Header & Nav*/
+.main-nav {
+    background-color: var(--gray);
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--dark-gray);
+}
+
+.main-nav li:first-child a {
+    font-weight: 500;
+}
+
+/* Hero section */
+.hero-section {
+    background-image: url(/img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    text-align: center;
+}
 
 
+/* Feature Section */
+.feature-section {
+    color: var(--text);
+    text-align: center;
+    padding: 5rem;
+
+}
+
+.feature-flex {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-evenly;
+    margin: 6rem;
+}
+
+.feature {
+    height: 30rem;
+    width: 30rem;
+    text-align: center;
+}
+
+
+/* Testimonial */
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-orange);
+    height: 44rem;
+    width: 100vw;
+    margin-bottom: 5rem; 
+}
+
+.test-img {
+    height: 100%;
+}
+
+/* Footer */
+.footer {
+    height: 15rem;
+    border-top: 1px solid var(--gray);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Buttons and Links */
+.btn-primary {
+    background-color: var(--orange);
+    border: none;
+    padding: 1.2rem 2.4rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--dark-gray);
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--orange);
+}
+
+.media-icons a:hover,
+.media-icons a:active {
+    background-color: var(--gray);
+    border-radius: 50%;
+}
+
+
+/* Images */
+.karma-logo {
+    height: 5rem;
+}
+
+.big-logo {
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.test-img img {
+    height: 100%;
+
+}
+
+.media-icon {
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+}
+
+
+/* Headings & p */
+.heading-h1 {
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.heading-h2 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.heading-h3 {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 4rem;
+}
+
+.logo-decr {
+    font-size: 2.4rem;
+}
+
+.test-quote {
+    text-align: center;
+    margin: auto;
+}
+
+blockquote {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+blockquote span:first-child,
+blockquote span:last-child {
+    font-size: 4rem;
+    color: var(--orange);
+    margin: 0.6rem;
+    font-weight: 600;
+}
+
+.footer-p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1.5rem;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 200;
+    margin-top: 1.5rem;
+}
