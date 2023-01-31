@@ -125,7 +125,7 @@ body {
   margin-left: 2rem;
 }
 
-/* changing the background of the radio button*/
+/* Customise the radio input control*/
 input[type="radio"] {
   appearance: none;
   display: inline-block;
@@ -136,11 +136,56 @@ input[type="radio"] {
   border-radius: 50%;
   background-color: white;
   background-clip: content-box;
+  cursor: pointer;
 }
 input[type="radio"]:checked {
   background-color: orangered;
 }
 
+/* Customise the checkbox input control*/
+.container {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.container input[type="checkbox"] {
+  appearance: none;
+}
+
+.container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input[type="checkbox"]:checked ~ .checkmark::after {
+  display: block;
+}
+
+.container .checkmark::after {
+  top: 0px;
+  left: 6px;
+  width: 5px;
+  height: 16px;
+  border: solid orangered;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* grid items of main*/
 #section1 form .terms-div {
   grid-area: t;
   display: flex;
@@ -163,17 +208,16 @@ input[type="radio"]:checked {
   border: 1px solid black;
   border-radius: 10%;
 }
-#section1 form .terms-div p a {
+#section1 form .terms-div a {
   color: orangered;
 }
 #section1 form .terms-div p {
   padding-left: 0.25rem;
 }
 
-/*#section1 form label {
-  display: block;
-  margin-bottom: 0.5rem;
-}*/
+#section1 form .italic {
+  font-style: italic;
+}
 
 #section2 {
   grid-column: 7 / -1;

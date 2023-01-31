@@ -57,7 +57,7 @@
             <div class="city">
               <label for="city"> City*</label>
               <select name="City" id="city" required>
-                <option value="" selected>Select your city...</option>
+                <option value="" class="italic">Select your city...</option>
               </select>
             </div>
             <div class="postcode">
@@ -72,6 +72,7 @@
                 id="orange"
                 name="Colour"
                 value="Karma orange"
+                checked
               />
               <label for="orange"> Karma orange</label>
               <input type="radio" id="grey" name="Colour" value="Space Grey" />
@@ -79,13 +80,12 @@
             </div>
 
             <div class="terms-div">
-              <p>
-                <span class="check"
-                  ><input type="checkbox" name="terms" required /> <span></span>
-                </span>
+              <label class="container">
                 By placing your order you agree to Karma's
                 <a href="#">Terms and Conditions</a> *
-              </p>
+                <input type="checkbox" name="terms" required checked />
+                <span class="checkmark"></span>
+              </label>
             </div>
 
             <button class="btn" type="button">Place my order</button>
