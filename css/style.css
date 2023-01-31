@@ -24,6 +24,12 @@ body {
     --dark: #4D5057;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 /* Header */
 
 .header {
@@ -113,5 +119,31 @@ button {
 
 .article__thumbnail {
     object-fit: contain;
-    width: 5rem;
+    width: 10rem;
+}
+
+/* Flex Container */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.flex-text {
+    font-size: 2rem;
+
+}
+
+/* Headings */
+
+.section-heading {
+    font-size: 3.2rem;
+    font-weight: 100;
+    padding: 8rem 0 1.5rem 0;
 }
