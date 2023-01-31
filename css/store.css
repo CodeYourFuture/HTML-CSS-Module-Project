@@ -1,7 +1,27 @@
-.address__details {
-    display: block;
+/* General */
+:root {
+    --orange: #E0633A;
+    --light__grey: #848993;
+    --lighter__grey: #F1F2F3;
+    --dark__grey: #4D5057;
+    --white: #FFF;
+    --light-orange: rgba(224, 99, 58, 0.1);
 }
 
-label {
-    margin: 1rem 0;
+form {
+    max-width: 50%;
+}
+
+#terms__link {
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+.flex__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__row {
+    display: flex;
 }

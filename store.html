@@ -30,52 +30,74 @@
         <main>
             <h1>Order your Karma wifi device today!</h1>
             <form action="#">
-                <fieldset>
-                    <label for="first-name">First Name *
+                <fieldset class="flex__row">
+
+                    <div class="flex__column">
+                        <label for="first-name">First Name *</label>
                         <input id="first-name" type="text" required />
-                    </label>  
+                    </div>
                         
-                    <label for="last-name">Last name *
+                    <div class="flex__column">
+                        <label for="last-name">Last name *</label>
                         <input id="last-name" type="text" required />
-                    </label>
-                        
+                    </div>
+
                 </fieldset>
-                <fieldset>
-                    <label for="address-1" class="address__details">Address *
+
+                <fieldset class="address__details">
+
+                    <div class="flex__column">
+                        <label for="address-1">Address *</label>
                         <input id="address-1" type="text" required />
-                    </label>
-                    <label for="address-2" class="address__details">Address 2
+                    </div>
+
+                    <div class="flex__column">
+                        <label for="address-2">Address 2</label>
                         <input id="address-2" type="text" />
-                    </label>
+                    </div>
                     
-                    <label for="address-city">City *
-                        <input id="address-city" type="text" required />
-                    </label>
-                            
-                    <label for="address-postcode">Postcode *
-                        <input id="address-postcode" type="text" required />
-                    </label>     
+                    <div class="flex__row">
+                        <div class="flex__column">
+                            <label for="address-city">City *</label>
+                            <select id="address-city" name="city">
+                                <option value="glasgow">Glasgow</option>
+                                <option value="edinburgh">Edinburgh</option>
+                                <option value="tokyo">Tokyo</option>
+                                <option value="london">London</option>
+                            </select>
+                        </div>
+                        
+                        <div class="flex__column">
+                            <label for="address-postcode">Postcode *</label>
+                            <input id="address-postcode" type="text" required />
+                        </div>
+                    </div>
                     
                 </fieldset>
-                <fieldset class="inline__details">
-                    <label for="karma-orange">
-                        <input id="karma-orange" type="radio" />
-                        Karma Orange
-                    </label>
-                    <label for="space-grey">
-                        <input id="space-grey" type="radio" />
-                        Space Grey
-                    </label>
+
+                <fieldset >
+
+                    <input id="karma-orange" type="radio" name="color-preference" value="karma-orange" checked="checked" />
+                    <label for="karma-orange">Karma Orange</label>
+                    
+                    <input id="space-grey" type="radio" name="color-preference" value="space-grey" /> 
+                    <label for="space-grey">Space Grey</label>
+                    
                 </fieldset>
+
                 <fieldset>
-                    <label for="terms-checkbox">
-                        <input id="terms-checkbox" type="checkbox" />
-                        By placing your order you agree to Karma's Terms and Conditions.
-                    </label>
+
+                    <input id="terms-and-conditions" type="checkbox" required checked="checked" />
+                    <label for="terms-and-conditions">By placing your order you agree to Karma's <a href="#" id="terms__link">Terms and Conditions</a>. *</label>
+                      
                 </fieldset>
+
                 <input type="submit" value="Place my order" />
+
             </form>
+
             <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" />
+
         </main>
 
         <footer>
