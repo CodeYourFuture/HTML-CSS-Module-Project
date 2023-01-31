@@ -85,6 +85,72 @@ nav{
     width: 100%;
 }
 
+/*store*/
+
+.form{
+    margin: auto 7.5rem;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgb(94, 94, 94);
+}
+
+.name-container{
+    display: flex;
+
+}
+
+.last-name, .postcode{
+    margin-left: 0.5rem;
+}
+
+
+#first-name, #last-name, #city, #postcode{
+    height: 1.6rem;
+    width:10.45rem;
+    border: solid rgb(121, 121, 121) 0.08rem;
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+#city{
+    height: 1.8rem;
+    width: 10.8rem;
+}
+
+.colour{
+    font-weight: 500;
+}
+
+#adress{
+    height: 1.6rem;
+    width:21.8rem;
+    border: solid rgb(121, 121, 121) 0.08rem;
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+
+.store-h1{
+    font-size: 2.3rem;
+    color: rgb(221, 78, 16) ;
+}
+
+.submit-store{
+    height: 2.2rem;
+    width: 8.8rem;
+    border-radius: 0.2rem;
+    background-color: rgb(221, 78, 16) ;
+    font-size: 0.8rem;
+}
+
+.submit-store:hover{
+    
+    background-color: rgb(179, 61, 11) ;
+    font-size: 0.9rem;
+}
+
+/*store*/
+
 .logo{
     width: 4rem;
 }
