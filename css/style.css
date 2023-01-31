@@ -1,11 +1,23 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+   
+    
+     
 }
 
+
+  
+    
+    
+   
+
+    
+    
+    
 /**
  * Add your custom styles below
  * 
@@ -17,3 +29,258 @@ body {
  */
 
 
+
+ .karma{
+  background-image: url("/img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:6rem 3rem;color: white;
+  margin-bottom: 3rem;
+  height:40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .karma h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  
+  }
+  .karma p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    
+  }
+  .header-logo{
+    height: 3rem;
+    padding-left: 3rem;
+    
+  }
+
+  .learn-more{ 
+  border: none;
+  background-color:#c05326;
+  padding:1rem 2rem;
+  border-radius: 5%;
+  }
+  .navigaton-list{
+    display: flex;
+    justify-content: space-around;
+  }
+  .flex-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+.header-nav-items{
+  padding-right: 20rem;
+
+}
+.navigation-item{
+padding-left: 4rem;
+}
+
+.navigation-item:hover{
+  color: orange;
+}
+
+.meet-karma-item{
+  color:darkgrey;
+  
+}
+.karma2{
+  text-align: center;
+}
+
+.icon{
+  height:3rem ;
+
+}
+.icon-parent{
+  display: flex;
+  justify-content: space-evenly;
+}
+.homepage-parent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40vh;
+  margin-top: 6rem;
+  justify-content: center;
+  background-size: cover;
+}
+ .img-feature {
+  margin-bottom: 3rem;
+  height: 25rem;
+  width: 50rem;
+}
+.connection{
+  /* border: 5px solid yellow; */
+  height: 25rem;
+  width: 80rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  background-color: lightgrey;
+
+}
+
+.connection button{
+  border: none;
+  background-color:#c05326;
+  padding:1rem 1rem;
+  border-radius: 5%;
+  height: 3rem;
+  margin-top: 2rem;
+ }
+
+  .social-media-icon{  
+   display: flex;
+   justify-content: center;
+   border: radius 3rem;
+   height: 2rem;
+   background-size: cover;
+   margin-bottom: 5rem;
+   margin: 0.3rem;
+   
+   } 
+
+.footer{
+  margin-top: 2rem;
+}
+.footer-content{
+  border-top: 2px solid grey;
+  margin: 3rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer p{
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  
+  
+}
+.footer-karma p{
+  color: grey;
+  padding-top: 1rem;
+}
+.get-karma-quote {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-top: 7rem;
+  
+}
+.get-karma-quote::before {
+  content: "“";
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #E0633A;
+  padding: 0.25rem;
+}
+.get-karma-quote::after {
+  content: "”";
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #E0633A;
+  padding: 0.25rem;
+}
+
+ .main-store{
+  /* border: 5px solid red; */
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  
+}
+.store-form{
+  /* border: 5px solid blue; */
+  margin-left: 7rem;
+  margin-right: 7rem;
+  width: 60rem;
+  padding: 5rem;
+  /* min-height: 53rem; */
+  /* height: 53rem; */
+  
+}
+.store-image{
+  height: 57rem;
+  width: 50rem;
+  padding-left: 5rem;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.first{
+  display: flex;
+  justify-content: space-between;
+}
+.city{
+  display: flex;
+  margin: 8px 0;
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  
+}
+.selectcolour{
+  display: flex;
+  justify-content:space-between;
+  padding-right: 25rem;
+  
+}
+.checkbox{
+  display: flex;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  
+
+}
+button{
+  background-color:#c05326;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  
+}
+.checkbox p{
+  color: grey;
+  padding: 0.3rem;
+}
+  .text{
+  text-decoration: underline;
+  text-align: center;
+  color: red;
+}
+
+.label-city{
+  /* color: blue; */
+  width: 100%;
+
+}
+
+
+.colour{
+margin-top: 3rem;
+}
+
+.store-karma{
+  font-size: 20px;
+  color: #c05326;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  
+}
