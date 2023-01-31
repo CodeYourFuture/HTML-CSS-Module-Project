@@ -113,9 +113,9 @@ h1 {
     margin-bottom: 3rem;
 }
 
-/* Buttons */
+/* Buttons including submit button for store form */
 
-button {
+button, input[type=submit] {
     color: var(--white);
     font-size: 0.875rem;
     letter-spacing: 0.05rem;
@@ -127,7 +127,7 @@ button {
     border: none;
 }
 
-button:hover {
+button,input[type=submit]:hover {
     color: var(--orange);
     background-color: var(--white);
     border-color: var(--white);

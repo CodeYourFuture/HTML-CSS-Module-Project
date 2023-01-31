@@ -30,25 +30,50 @@
         <main>
             <h1>Order your Karma wifi device today!</h1>
             <form action="#">
-                <fieldset class="inline__details">
-                    <label>First Name</label>  
-                    <label>Last Name</label>
-                </fieldset>
-                <fieldset class="block__details">
-                    <label>Address</label>
-                    <label>Address 2</label>
-                    <div class="inline__details">
-                        <label>City</label>
-                        <label>Postcode</label>
-                    </div>
-                </fieldset>
-                <fieldset class="inline__details">
-                    <label>Select a colour</label>
+                <fieldset>
+                    <label for="first-name">First Name *
+                        <input id="first-name" type="text" required />
+                    </label>  
+                        
+                    <label for="last-name">Last name *
+                        <input id="last-name" type="text" required />
+                    </label>
+                        
                 </fieldset>
                 <fieldset>
-                    <label>By placing your order you agree to Karma's Terms and Conditions.</label>
+                    <label for="address-1" class="address__details">Address *
+                        <input id="address-1" type="text" required />
+                    </label>
+                    <label for="address-2" class="address__details">Address 2
+                        <input id="address-2" type="text" />
+                    </label>
+                    
+                    <label for="address-city">City *
+                        <input id="address-city" type="text" required />
+                    </label>
+                            
+                    <label for="address-postcode">Postcode *
+                        <input id="address-postcode" type="text" required />
+                    </label>     
+                    
                 </fieldset>
-                <button>Place my order</button>
+                <fieldset class="inline__details">
+                    <label for="karma-orange">
+                        <input id="karma-orange" type="radio" />
+                        Karma Orange
+                    </label>
+                    <label for="space-grey">
+                        <input id="space-grey" type="radio" />
+                        Space Grey
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="terms-checkbox">
+                        <input id="terms-checkbox" type="checkbox" />
+                        By placing your order you agree to Karma's Terms and Conditions.
+                    </label>
+                </fieldset>
+                <input type="submit" value="Place my order" />
             </form>
             <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" />
         </main>
