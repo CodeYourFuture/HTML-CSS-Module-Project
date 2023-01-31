@@ -1,0 +1,111 @@
+/* General */
+:root {
+    --orange: #E0633A;
+    --light__grey: #848993;
+    --lighter__grey: #F1F2F3;
+    --dark__grey: #4D5057;
+    --white: #FFF;
+    --light-orange: rgba(224, 99, 58, 0.1);
+}
+
+.store__main h1 {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Grid */
+
+.store__main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1rem;
+}
+
+.store__main > * {
+    grid-column: 1;
+}
+
+.heading_and_form {
+    display: inline-block;
+    margin: 2rem auto;
+}
+
+/* Form */
+
+.left__container {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    font-size: 0.8rem;
+    color: rgba(102, 102, 102, 1);
+}
+
+#first-name,
+#last-name,
+#address-1,
+#address-2,
+#address-city,
+#address-postcode {
+    height: 2rem;
+    border-radius: 0.2rem;
+    margin-right: 1rem;
+}
+
+#address-1, #address-2 {
+    max-width: 320px;;
+}
+
+#address-city {
+    width: 180px;
+}
+
+#address-postcode {
+    width: 125px;
+}
+
+.radio__buttons {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.label-and-input {
+    margin-bottom: 1.5rem;
+}
+
+.terms-label-and-input {
+    margin-bottom: 1rem;
+}
+
+#terms__link {
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+.flex__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    border: none;
+}
+
+#space-grey, #karma-orange {
+    accent-color: var(--orange);
+}
+
+/* Store image */
+
+.right__container {
+    grid-column: 2 / -1;
+}
+

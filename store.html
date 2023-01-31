@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/karma-logo.svg" alt="Karma logo" />
+            <nav>
+                <ul>
+                    <a href="#"><li>Meet Karma</li></a>
+                    <a href="#"><li>How it Works</li></a>
+                    <a href="#"><li>Store</li></a>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li>Help</li></a>
+                    <a href="#"><li>Login</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="store__main">
+            <div class="left__container">
+                <div class="heading_and_form">
+                    <h1>Order your Karma wifi device today!</h1>
+                    <form action="#">
+                        <fieldset>
+                            <div class="flex__row">
+                                <div class="label-and-input flex__column">
+                                    <label for="first-name">First Name *</label>
+                                    <input id="first-name" type="text" required />
+                                </div>
+                                <div class="label-and-input flex__column">
+                                    <label for="last-name">Last name *</label>
+                                    <input id="last-name" type="text" required />
+                                </div>
+                            </div>
+                    
+                            <div class="label-and-input flex__column">
+                                <label for="address-1">Address *</label>
+                                <input id="address-1" type="text" required />
+                            </div>
+                            <div class="label-and-input flex__column">
+                                <label for="address-2">Address 2</label>
+                                <input id="address-2" type="text" />
+                            </div>
+                    
+                            <div class="flex__row">
+                                <div class="label-and-input flex__column">
+                                    <label for="address-city">City *</label>
+                                    <select id="address-city" name="city">
+                                        <option value="">Select your city...</option>
+                                        <option value="glasgow">Glasgow</option>
+                                        <option value="edinburgh">Edinburgh</option>
+                                        <option value="tokyo">Tokyo</option>
+                                        <option value="london">London</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="label-and-input flex__column">
+                                    <label for="address-postcode">Postcode *</label>
+                                    <input id="address-postcode" type="text" required />
+                                </div>
+                            </div>
+                    
+                        </fieldset>
+                        <fieldset>
+                            <legend>Select a colour</legend>
+                            <div class="flex__row">
+                                <div class="radio__buttons">
+                                    <input id="karma-orange" type="radio" name="color-preference" value="karma-orange" checked="checked" />
+                                    <label for="karma-orange">Karma Orange</label>
+                                </div>
+                    
+                                <div class="#radio__buttons">
+                                    <input id="space-grey" type="radio" name="color-preference" value="space-grey" />
+                                    <label for="space-grey">Space Grey</label>
+                                </div>
+                            </div>
+                    
+                        </fieldset>
+                        <fieldset class="terms-label-and-input">
+                            <input id="terms-and-conditions" type="checkbox" required checked="checked" />
+                            <label for="terms-and-conditions">By placing your order you agree to Karma's <a href="#" id="terms__link">Terms and Conditions</a>. *</label>
+                    
+                        </fieldset>
+                        <input type="submit" value="Place my order" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="right__container">
+                <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" />
+            </div>
+
+        </main>
+
+         <div class="section__break"></div>
+
+        <footer>
+            <p>Join us on</p>
+            <div class="center__text">
+                <a href="#" target="_blank"><img src="img/twitter-icon.svg" alt="Twitter" id="social__icon" /></a>
+                <a href="#" target="_blank"><img src="img/facebook-icon.svg" alt="Facebook" id="social__icon" /></a>
+                <a href="#" target="_blank"><img src="img/instagram-icon.svg" alt="Instagram" id="social__icon" /></a>
+            </div>
+            <p class="copyright__text">© Karma Mobility, Inc.</p>
+        </footer>
+    </div>
+</body>
