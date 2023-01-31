@@ -8,8 +8,37 @@
     --light-orange: rgba(224, 99, 58, 0.1);
 }
 
+.store__main h1 {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.store__main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2rem;
+}
+
+.store__main > * {
+    grid-column: 1;
+}
+
+/* Form */
+
+.left__container {
+    grid-column: 1 / 2;
+}
+
 form {
-    max-width: 50%;
+    font-size: 0.8rem;
+    color: rgba(102, 102, 102, 1);
+}
+
+input, select {
+    height: 2rem;
+    border-radius: 0.3rem;
+    margin-right: 1rem;
 }
 
 #terms__link {
@@ -24,4 +53,20 @@ form {
 
 .flex__row {
     display: flex;
+    flex-wrap: wrap;
 }
+
+fieldset {
+    border: none;
+}
+
+#terms-and-conditions, #space-grey, #karma-orange {
+    accent-color: var(--orange);
+}
+
+/* Store image */
+
+.right__container {
+    grid-column: 2 / -1;
+}
+
