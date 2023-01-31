@@ -6,6 +6,24 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+:root {
+    --light-grey: #e4e4e4;
+    --orange-dark: #c05326;
+}
+.picture {
+    background-image: url(/img/first-background.jpg);
+    color: var(--light-grey);
+}
+
+button {
+    background-color: var(--orange-dark);
+}
+.sm_icon {
+    width: 30px;
+}
+.icon {
+    max-width: 400px;
+}
 /**
  * Add your custom styles below
  * 
