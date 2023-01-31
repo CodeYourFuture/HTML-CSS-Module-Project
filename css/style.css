@@ -158,6 +158,21 @@ button {
 
 /* Footer */
 
+.footer {
+    height: 18rem;
+}
+
+.footer p {
+    color: var(--grey);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.footer p:first-child {
+    font-size: 1.3rem;
+    color: var(--dark);
+}
+
 .social-media-logo {
     object-fit: contain;
     width: 1.2rem;
@@ -165,15 +180,4 @@ button {
     border: 0.1rem solid var(--light-grey);
     border-radius: 100%;
     margin: 0.1rem 0.8rem;
-}
-
-footer p {
-    color: var(--grey);
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-footer p:first-child {
-    font-size: 1.3rem;
-    color: var(--dark);
 }
