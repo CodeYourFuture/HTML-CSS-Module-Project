@@ -16,11 +16,39 @@ body {
  */
 
 
+
+.header,
+.content,
+.footer {
+    /*max-width: 900px;*/
+    margin: 0 auto;
+}
+
 /***Header***/
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 1rem 5rem;
+
+}
+
+.header_logo {
+    width: 2rem;
+}
 
 /***Navigation***/
 
+.nav_list {
+    list-style: none;
+    display: flex;
+}
+
+.nav_item {
+    padding-left: 1rem;
+}
 
 /***Text Styles***/
 
@@ -30,12 +58,46 @@ body {
 
 /***Content***/
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
 
 /***Hero***/
 
+.hero {
+    background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Module-Project/img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.hero_copy {
+    color: white;
+    text-align: center;
+    padding: 10rem 0;
+}
 
+.hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
 
+.hero p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
 
+/***Article***/
+
+.article_thumbnail {
+    width: 5rem;
+}
 
 /***Footer***/
+
+.socialmedia_icon {
+    width: 0.8rem;
+    border: solid 1px lightgrey;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
