@@ -32,7 +32,6 @@ body {
     justify-content: space-between;
     height: 4rem;
     padding: 1rem 5rem;
-
 }
 
 .header_logo {
@@ -80,22 +79,81 @@ body {
 .hero h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
+    font-weight: 200;
 }
 
 .hero p {
     margin-bottom: 2rem;
     font-size: 1.2rem;
+    font-weight: 200;
 }
 
 /***Article***/
 
-.article_thumbnail {
-    width: 5rem;
+.selling_points h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-top: 4rem;
 }
+
+.selling_points_thumbs {
+    display: flex;
+    justify-content: center;
+}
+
+.article_thumbnail {
+    width: 7rem;
+    margin: 0 4rem;
+    text-align: center;
+}
+
+
+/*** HELP!
+
+Cannot get the copy to be on a single line.
+
+.article_thumbnail p {}
+
+***/
 
 /***Footer***/
 
-.socialmedia_icon {
+footer {
+    margin-top: 3rem;
+}
+
+.footer_content {
+    border-top: 1px solid lightgray;
+    padding: 0.25rem;
+    margin: 0 4rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/*** HELP!
+
+.footer_content p:nth-child(2) {
+    color: grey;
+    font-size: 0.75rem;
+}
+
+cannot get this to work. Is it because there is a div in the middle?
+
+***/
+
+
+.footer_socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_socialmedia img {
     width: 0.8rem;
     border: solid 1px lightgrey;
     border-radius: 25px;
