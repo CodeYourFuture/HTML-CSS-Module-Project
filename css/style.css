@@ -5,7 +5,6 @@
     -webkit-font-smoothing: antialiased;
     margin: 4rem;
 }
-
 .navbar {
     display: flex;
     padding-left: 5%;
@@ -67,5 +66,60 @@ height: 50px;
     border-radius: 4%;
 }
 
-/*CSS for features */
+/* CSS for features */
 
+.feature {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-heading h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    padding-top: 3rem;
+}
+
+.feature-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.feature-content-item {
+    display: flex;
+    margin: 4rem 7rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature-content-item img {
+    width: 50%;
+}
+
+.feature-content-item p {
+    font-size: 1.5rem;
+}
+
+/* css for footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon img {
+    padding: 7px;
+    width: 1%;
+    border-radius: 50%;
+}
+
+.footer-ending {
+    color:rgb(207, 207, 207);
+}
