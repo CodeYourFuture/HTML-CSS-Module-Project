@@ -88,7 +88,7 @@ body {
     font-weight: 200;
 }
 
-/***Article***/
+/***Articles***/
 
 .selling_points h2 {
     display: flex;
@@ -110,6 +110,26 @@ body {
 }
 
 
+/***Testimonial***/
+
+.homepage_feature {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+
+
+.customer_quote {
+    background-color: #ffd7b5;
+    align-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+
 /*** HELP!
 
 Cannot get the copy to be on a single line.
@@ -117,6 +137,7 @@ Cannot get the copy to be on a single line.
 .article_thumbnail p {}
 
 ***/
+
 
 /***Footer***/
 
@@ -151,6 +172,10 @@ cannot get this to work. Is it because there is a div in the middle?
 .footer_socialmedia {
     display: flex;
     justify-content: center;
+}
+
+.footer_socialmedia a {
+    margin: 0.5rem;
 }
 
 .footer_socialmedia img {
