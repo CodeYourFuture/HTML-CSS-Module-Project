@@ -329,68 +329,54 @@ font-style: italic;
     display: flex;
     align-content: center;
 }
- 
-input[type="radio"] + label::before {
-  content: "";
-  position: absolute;
-  width: 1.3rem;
-  height: 1.3rem;
-  border-radius: 50%;
-  border: 2px solid grey;
-  background-color: white;
-  left: 0px;
-  top: 0px;
-}
-
-input[type="radio"]:checked + label::after {
-  background-color: #e0633a;
-  content: "";
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-}
 .radio-label {
     padding-left: 1rem;
     padding-right: 3rem;
     padding-bottom: 0;
-    font-weight: 350;
+    font-weight: 400;
   }
 
-input[type="radio"] {
+ input[type="radio"] {
     width: 2rem;
     opacity: 0;
-   
   }
    
-  input[type="radio"] + label {
-    position: relative;
-    padding-left: 2rem;
-    cursor: pointer;
-    display: inline-block;
-  }
- 
-  .terms{
-    /* display: flex;
-   align-items: flex-start; */
-  }
- 
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+input[type="radio"]:checked + label {
+  color:#666666;
+}
+input[type="radio"]:checked + label::before {
+  background: radial-gradient(#E0633A 0%, #E0633A 60%, transparent 50%, transparent);
+
+}
+
+input[type="radio"] + label {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: inline-block;
+}
   input[type="checkbox"] + label {
     position: relative;
-    cursor: pointer;
-    columns: #666;
-    line-height: 25px;
+    padding-top: 2px;
   }
   
   input[type="checkbox"] + label::before {
     content: "";
     position: absolute;
-    width: 14px;
-    height: 14px;
-    outline: 1px solid grey;
-    background: white;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 1px solid grey;
     left: 0;
     top: 5px;
   }
@@ -404,23 +390,14 @@ input[type="radio"] {
   .term-label a{
     color:#E0633A;
   }
-  input[type="checkbox"]:checked + label::before {
-    outline: 1px solid grey;
-    background: white;
-    left: 0;
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    top: 5px;
-  }
+
   input[type="checkbox"]:checked + label::after {
     background-image: url(/level-2/checkmark.svg);
     background-size: contain;
     content: "";
     position: absolute;
-    width: 14px;
-    height: 14px;
+    width: 0.9rem;
+    height: 0.9rem;
     left: 0;
     top: 5px;
   }
@@ -429,7 +406,7 @@ input[type="radio"] {
     background-color: #E0633A;
     color: white;
     border-radius: 0.8rem;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     margin-top: 2rem;
     border: none;
   }
