@@ -53,7 +53,19 @@ body {
 
 
 /***Buttons***/
+button {
+    background-color: #E0633A;
+    color: white;
+    padding: 1rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+}
 
+button:hover {
+    background-color: white;
+    color: #E0633A;
+}
 
 /***Content***/
 
@@ -112,6 +124,16 @@ body {
 
 /***Testimonial***/
 
+
+
+/*** HELP!
+
+Cannot get the side with the copy to take up more space than the image
+
+***/
+
+
+
 .homepage_feature {
     display: flex;
     justify-content: center;
@@ -121,13 +143,27 @@ body {
 
 
 .customer_quote {
-    background-color: #ffd7b5;
-    align-content: center;
-    text-align: center;
-    font-weight: 200;
-    font-style: italic;
+    background-color: #FCEFEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.customer_quote p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+}
+
+.quote {
+    color: #E0633A;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
 
 
 /*** HELP!
@@ -146,7 +182,7 @@ footer {
 }
 
 .footer_content {
-    border-top: 1px solid lightgray;
+    border-top: 1px solid lightgrey;
     padding: 0.25rem;
     margin: 0 4rem;
 }
