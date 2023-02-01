@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -17,3 +16,91 @@ body {
  */
 
 
+.header,
+.content,
+.footer {
+    margin: 0 auto;
+}
+
+
+/***Header***/
+
+.header_logo {
+    width: 2rem;
+    padding-left: 1rem;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    padding: 2rem 4rem;
+
+}
+
+
+
+
+
+/***Navigation***/
+
+ul {
+    display: flex;
+
+}
+
+li {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+
+
+/***Text Styles***/
+/***Buttons***/
+/***Content***/
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.article_thumbnail {
+    width: 3rem;
+}
+
+
+
+
+
+
+/***Hero***/
+
+.hero {
+    background-image: url("/home/cyf/Documents/CYF/HTML-CSS-Module-Project/img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-content {
+    padding: 20rem 0;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/***Footer***/
+
+.socialmedia_icon {
+    width: 2rem;
+    border: 1px solid gray;
+    border-radius: 60px;
+    padding: 0.5rem 0.6rem;
+}
