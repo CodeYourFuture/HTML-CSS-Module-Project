@@ -1,0 +1,74 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.menu {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header */
+.karma-logo {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-bar a {
+  float: left;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-bar a:hover {
+  color: #ff5f1f;
+}
+
+#first-a {
+  color: black;
+  font-weight: bold;
+}
+
+#first-a:hover {
+  color: #ff5f1f;
+}
+
+/*footer*/
+#join-us {
+  color: black;
+  text-align: center;
+  letter-spacing: 100;
+  padding-top: 100px;
+}
+
+.networks {
+  width: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+#copyright {
+  text-align: center;
+  font-size: small;
+}
+
+.sm-icon > img {
+  width: 20px;
+}
