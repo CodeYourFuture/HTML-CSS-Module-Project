@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Karma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <img src="img/karma-logo.svg" id="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Meet Karama</a></li>
+        <li><a href="#">How it work</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section class="hero">
+      <form>
+
+        <h1>Order your karama WiFi <br>device Today</h1>
+        <!-- Firstname and Lastname -->
+        <div class="form-body">
+
+          <fieldset class="hiroz-field">
+            <fieldset class="left ">
+              <label for="firstname" class="label-title">First name *</label>
+              <input type="text" id="firstname" class="form-input" placeholder="enter your first name"
+                required="required" />
+            </fieldset>
+            <fieldset class="right">
+              <label for="lasttname" class="label-title">Last name *</label>
+              <input type="text" id="lastname" class="form-input" placeholder="enter your last name"
+                required="required" />
+            </fieldset>
+          </fieldset>
+
+          <!--Address-->
+          <fieldset class="address">
+            <fieldset class="address1">
+              <label for="address" class="label-title">Address *</label>
+             <input type="address" id="address" class="form-input" required="required">
+
+            </fieldset>
+            <fieldset class="address2">
+              <label for="address2" class="label-title">Address 2 </label>
+              <input type="address2" id="address2" class="form-input" required="required">
+
+            </fieldset>
+          </fieldset>
+
+          <!--City and postcode-->
+          <fieldset class="hiroz-field">
+            <fieldset class=" left">
+              <label class="label-title">City*</label>
+              <select id="city" name="city" class="form-input">
+                <option value="" disabled selected hidden>Select your city...</option>
+                <option value="glasgow">Glasgow</option>
+                <option value="edinburgh">Edinburgh</option>
+                <option value="london">London</option>
+                <option value="paris">Paris</option>
+              </select>
+            </fieldset>
+            <fieldset class="right">
+              <label for="pcode" class="label-title">PostCode</label>
+              <input type="text" class="form-input" id="pcode">
+            </fieldset>
+          </fieldset>
+
+
+          <!--Color-->
+          <fieldset class="hiroz-field colour">
+            <fieldset>
+              <label class="label-title "><p>Select a colour<p></label>
+                <fieldset class="left">
+                  <label for="orange">
+                  <input type="radio"  id="rd-krm" name="karama" value="orange">Karama Orange</label>
+                </fieldset>
+                <fieldset class="right">
+                  <label for="grey" class="label-title colour" >
+                  <input type="radio"  id="rd-krm" name="karama" value="grey">Space Grey</label>
+                </fieldset>
+              </fieldset>
+              <fieldset class="check">
+               <label> <input type="checkbox"  id="check">By placing your order you agree to karama's <a href>Terms and condations *</a></label>
+               </label>
+
+            </fieldset>
+            
+    
+          </fieldset>
+          <button type="submit" id="sub-btn">Place my order</button>
+
+          </fieldset>
+        </div>
+
+      </form>
+      <section class="side-pic">
+        <img src="../img/store-image_by-andrew-neel-unsplash.jpg" id="img-side">
+      </section>
+
+    </section>
+
+
+
+
+
+    <hr>
+    <footer>
+      <section class="footer">
+        <p>Join us on</p>
+      </section>
+      <section class="social-sec">
+        <img src="img/twitter-icon.svg" class="social-pic" />
+        <img src="img/facebook-icon.svg" class="social-pic" />
+        <img src="img/instagram-icon.svg" class="social-pic" />
+      </section>
+      <p id="copy">&copy; Karama Mobility.inc</p>
+    </footer>
+</body>
+
+</html>
