@@ -15,21 +15,59 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-header{
+.header{
 display: flex;
 justify-content: space-between;
 align-items: center;
+flex-direction: row;
+height: 5rem;
+margin-bottom: 1rem;
+margin-top: 1rem;
 }
 
-.nav-list{ display: flex;
-list-style:none;
+.nav-list{display:flex;
+flex-direction: row;
+list-style: none;
 }
 
-.nav-item{padding: 0.5rem 0;}
+.nav-item{padding: 0.5rem;}
 
-.nav-link{
-    font-weight: 500;
-    text-decoration:none;
+.nav-link{font-weight: 400;
+text-decoration: none;
+padding: 0.5rem;
+color: darkgrey;}
+
+.hero{background-image: url( https://github.com/CodeYourFuture/HTML-CSS-Module-Project/blob/master/img/first-background.jpg?raw=true);
+color:white;
+padding:6rem;
+text-align: center;
 }
 
+.hero h1{font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:1rem;
+    font-size:1.2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
 
+.hero p{font-size:1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero button{color:white;
+background-color: #c05326;
+font-family: Arial, Helvetica, sans-serif;
+font-size:1rem;
+padding:1rem;
+margin-bottom: 6rem;
+;
+}
+.icons {display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.h1{margin-bottom:1rem;
+margin-top:5rem;
+text-align: center;}
