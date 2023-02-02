@@ -61,13 +61,50 @@ font-family: Arial, Helvetica, sans-serif;
 font-size:1rem;
 padding:1rem;
 margin-bottom: 6rem;
+background-size: cover;
 ;
 }
-.icons {display:flex;
-    flex-direction: row;
-    justify-content: center;
     
-}
+    
 .h1{margin-bottom:1rem;
 margin-top:5rem;
 text-align: center;}
+
+.icons {display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+column-gap: 5rem;}
+
+
+.footer{
+    border-top: 1px solid #e5e6e4;
+    margin: 1rem 5rem;
+}
+.footer_title {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 0.75rem;
+}
+.icons_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icons_img_footer{
+    width: auto;
+    height: 0.8rem;
+    border: 0.12rem solid #e5e6e4;
+    border-radius: 50%;
+    padding: 0.38rem;
+    margin-left: 0.8rem;
+    
+    
+}
+.footer_end_paragraph{
+    text-align: center;
+    color: #c5c3c6;
+    font-size: 0.65rem;
+}
+ 
