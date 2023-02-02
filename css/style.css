@@ -99,21 +99,18 @@ li {
 }
 footer {
   padding-bottom: 3rem;
+
+}
+.footer-container{
+  width: 50%;
 }
 
 .footer-icon {
-  line-height: 40px;
-  display: inline-block;
-  border-radius: 50%;
-  /* margin: 0 8px; */
-  display: flex;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-top: 3em;
+  
+}
+.p-footer{
+  color: gray;
 }
