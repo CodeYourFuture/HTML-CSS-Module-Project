@@ -81,30 +81,31 @@ column-gap: 5rem;}
     border-top: 1px solid #e5e6e4;
     margin: 1rem 5rem;
 }
-.footer_title {
+h4 {
     font-weight: lighter;
     text-align: center;
     font-size: 0.75rem;
 }
-.icons_contact{
+.contact{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 1.5em;
 }
-.icons_img_footer{
+.contact-logo{
     width: auto;
     height: 0.8rem;
-    border: 0.12rem solid #e5e6e4;
+    border: 0.13rem solid #e5e6e4;
     border-radius: 50%;
-    padding: 0.38rem;
-    margin-left: 0.8rem;
+    padding: 0.5rem;
+    
     
     
 }
-.footer_end_paragraph{
+.footer-end{
     text-align: center;
     color: #c5c3c6;
-    font-size: 0.65rem;
+    font-size: 0.70rem;
 }
  
