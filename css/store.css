@@ -1,0 +1,296 @@
+body{
+    background-color: white;
+    
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+   
+    
+   }
+   img{
+    width: 20px;
+    padding-left: 100px;
+    
+}
+
+   .header{
+       display: flex;
+   
+       justify-content: space-between;
+       background-color: #ececec;
+       padding: 10px;
+       
+   
+   
+   }
+   li{
+       list-style: none;
+       
+   }
+   a{
+       text-decoration: none;
+       color: black;
+       
+   }
+   .nav-bar ul{
+       display: flex;
+       flex-direction: row;
+       padding-right: 100px;
+       
+       
+   
+   }
+   h1{
+       text-align: center;
+       font-size: 40px;
+       font-weight:100;
+       margin-top: 100px;
+       margin-left: 183px;
+       color: #dc6601;
+       text-align: left;
+       margin-bottom: 50px;
+   }
+   h3{
+       text-align:center;
+       font-size: 25px;
+       font-weight: 100;
+       padding-bottom: 3px;
+   
+       
+   }
+   /* gghh */
+   /* l;;; */
+   h4{
+    margin-left: 190px;
+   }
+   .nav-bar ul li{
+       padding-left:30px;
+   }
+   .body-image{
+       background-image: url("img/first-background.jpg");
+       height: 500px;
+       text-align: center;
+       padding-top: 100px;
+       color: white;
+   
+   
+   
+   }
+   .btn{
+       background-color: #dc6601;
+       border: none;
+       color: white;
+       padding: 10px 20px 10px 20px;
+       border-radius: 3px;
+       margin-top: 20px;
+   }
+   .btn a{
+       color: white;
+       font-size: 20px;
+   }
+   .product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     
+   }
+   .product div{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+   }
+   .product div img{
+       width: 100px;
+       padding-top: 10px;
+   }
+   .product div p{
+       padding-top: 10px;
+       padding-left: 100px;
+       padding-bottom: 100px;
+   }
+   
+   .footer-image{
+       display: flex;
+       
+   }
+   .footer-image img{
+       width: 50%;
+   }
+   .footer-image div{
+       width: 50%;
+       background-color: #ffeeec;
+       text-align: center;
+       padding-top: 20px;
+   }
+   .footer-image div pre{
+       padding-top: 50px;
+   }
+   .btn-footer{
+       background-color: #dc6601;
+       border: none;
+       border-radius: 3px;
+       padding: 20px 40px 20px 40px;
+       margin-top: 15px;
+       color: white;
+       font-size:20px;
+   }
+   footer{
+       display: flex;
+       flex-direction: column;
+       
+       
+       align-items: center;
+       padding-top: 10px;
+   
+       
+   }
+   
+   footer img{
+       padding: 5px 10px 5px 10px;
+       border-radius: 30%;
+   
+   }
+   input[type=text]{
+    width: 100%;
+    align-items: left;
+    
+   padding: 12px; 
+  margin: 20px 0; 
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  
+
+}
+select{
+    width: 180px;
+    align-items: left;
+    padding: 12px; 
+  margin: 20px 0px; 
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  
+}
+
+.form-image
+{
+    display:flex;
+ 
+    
+}
+.form-image form{
+ width: 50%;
+}
+.form-image img{
+ width: 50%;
+}
+
+
+form div{
+ display: flex;
+ justify-content: space-around;
+ margin-left: 0px; 
+ /* padding-left: 100px; */
+ 
+}
+
+.address{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ margin-left: 190px;
+ margin-right: 28px;
+}
+.input-field{
+  display: flex; 
+  justify-content: space-around;
+  margin-left: 160px; 
+  
+  
+  
+}
+form{
+ margin-left: -90px;
+}
+
+.input-field-drop{
+ display: flex; 
+ justify-content: space-between;
+ margin-left: 190px; 
+ margin-right: 28px;
+ 
+ 
+ 
+}
+
+.input-label{
+ display: flex;
+ justify-content: space-between;
+
+}
+.label-firstname{
+ margin-left: 190px;
+}
+.label-lastname{
+ margin-right: 130px;
+}
+
+.color{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 133px;
+  
+margin-bottom: 10px;
+}
+
+.color div{
+ margin-left: 35px;
+ 
+ 
+
+}
+.color div label{
+ 
+ margin-left: -70px; 
+ 
+ 
+}
+.color div div{
+ margin-left: 50px;
+}
+.color div div label{
+ 
+ margin-left: -160px;
+}
+
+.checkbox{
+    margin-top: 10px;
+    display: flex;
+    
+    
+    
+
+}
+.checkbox div{
+ margin-left: 150px;
+ margin-top: 15px;
+ 
+}
+.checkbox div label{
+    margin-left: -205px;
+    margin-top: 15px;
+    
+}
+.btn-form{
+    margin-top: 30px;
+    background-color: #dc6601;
+    border: none;
+    padding:15px 40px 15px 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    color:white;
+    margin-left: 193px;
+    margin-bottom: 30px;
+}
+
