@@ -6,14 +6,294 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ /**header styles*/
+ h1{
+    font-weight: 100;
+ }
+ 
+ svg{
+    height: 2rem;
+    width: 2rem;
+    margin-top: 12px;
+    margin-left: 30px;
+ }
 
+ li{
+    list-style: none;
+ }
+ header a{
+    text-decoration: none;
+    padding-right: 30px;
+ }
+
+ #karma-link-color{
+    color: rgb(59, 57, 57);
+ }
+ .link-color{
+    color: gray;
+ }
+ header a:hover{
+color: orange;
+ }
+header{
+    display: flex;
+    justify-content:space-between;
+    height: 50px;
+    width: 100%;
+}
+ 
+
+ ul{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+/** main styles*/
+
+/**  section-1 */
+
+.introducing-section{
+    height: 400px;
+    background-image: url(../img/first-background.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    color: beige;
+}
+ 
+.introducing-section button{
+border-radius: 0.2rem;
+background-color: rgb(202, 113, 45);
+border-style: none;
+height: 40px;
+width: 100px;
+color:beige;
+font-size: smaller;
+margin-top: 40px;
+}
+
+/** section-2  */
+section{
+   color: rgb(59, 57, 57); 
+}
+
+
+#paragragh{
+    text-align: center;
+     font-size: larger;
+     font-weight: 100;
+     margin-top: 100px;
+}
+
+
+.icon-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icon-2{
+    
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+/** icons */
+
+#icon-devices{
+    height: 70px;
+    width: 70px;
+}
+
+#icon-coffee{
+    height: 70px;
+    width: 70px;
+}
+
+#icon-refill{
+    height: 70px;
+    width: 70px;
+}
+
+hr{
+    width: 80%;
+    text-align: center;
+    color: rgb(250, 247, 247);
+}
+/** footer  */
+
+footer{
+    color: rgb(59, 57, 57);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer p{
+    text-align: center;
+}
+#karma-color{
+    color: lightgray;
+}
+/**  level 2  */
+
+.level2-section{
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-rows: 400px;
+    grid-template-areas: "a b";
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.img-grid{
+    grid-area: a;
+    margin: 0px;
+}
+.img-grid img{
+    height: 400px;
+    width: 600px;
+}
+
+.div-grid{
+    grid-area: b;
+    background-color: rgb(244, 216, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px
+}
+
+.div-grid p{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+b{
+    color: orange;
+}
+.button-style{
+    border-radius: 0.2rem;
+background-color: rgb(202, 113, 45);
+border-style: none;
+height: 40px;
+width: 160px;
+color:beige;
+}
+
+/**  store's page  style  */
+
+.main{
+   width: 100%;
+    height: 1000px;
+    display: flex;
+
+}
+
+.image-right{
+    width: 50%;
+}
+.image{
+   height: 1000px;
+   width: 100%;
+}
+
+/** form styling  */
+
+input{
+    accent-color: orange;;
+}
+.form{
+  margin: 0px;  
+    
+}
+form div{
+    color: gray;
+}
+form{
+    height: 1000px;
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+form h2{
+    margin-bottom: 80px;
+    color: rgb(202, 113, 45);
+    font-size: xx-large;
+}
+.form-margin-bottom{
+    margin-bottom: 40px;
+}
+.padding-label{
+    padding-bottom: 10px;
+}
+
+
+.first-last-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-first-name{
+    display:flex;
+    flex-direction: column;
+    width: 170px;
+
+
+}
+.form-last-name{
+    display:flex;
+    flex-direction: column;
+    width: 170px;
+}
+.form-address{
+    display:flex;
+    flex-direction: column;
+}
+.form-address-2{
+    display:flex;
+    flex-direction: column;
+}
+.form-city{
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+}
+.form-post-code{
+    display:flex;
+    flex-direction: column;
+    width: 120px;
+}
+.form-city-post-code{
+    display: flex;
+    justify-content: space-between; 
+}
+.form-radio{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+.form-space-gray{
+    margin-left: 50px;
+}
+.form-checkbox{
+    width: 400px;
+    margin-bottom: 40px;
+}
+#terms-color{
+    color: rgb(202, 113, 45);
+}
 
