@@ -17,3 +17,35 @@ body {
  */
 
 
+.container{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "h h h h h h"
+    "ma ma ma ma ma ma"
+    "ma ma ma ma ma ma"
+    "ma ma ma ma ma ma"
+    "nav nav nav nav nav nav"
+    "nav nav nav nav nav nav"
+    "nav nav nav nav nav nav"
+    "foot foot foot foot foot foot"
+    ;
+}
+.box{
+    background-color: rgb(174, 171, 171);
+    display: flex;
+    color: rgb(10, 1, 2);   
+}
+.header{
+    grid-area: h;
+}
+.main{
+    grid-area: ma;
+}
+.nav{
+    grid-area: nav;
+}
+.footer{
+    grid-area: foot;
+}
