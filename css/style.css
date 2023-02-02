@@ -4,6 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 /**
@@ -17,3 +18,82 @@ body {
  */
 
 
+.main-header {
+    background-image: url('../img/first-background.jpg');
+    background-repeat: no-repeat;
+    padding: 300px;
+    color: white;
+    background-size: cover;
+    
+}
+
+nav {
+    padding: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: orange;
+    
+}
+
+.center-icons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#left-img {
+    padding-left: 300px;
+}
+
+#right-img {
+    padding-right: 300px;
+}
+
+.p-left {
+    padding-left: 300px;
+}
+
+.p-right {
+    padding-right: 300px;
+}
+
+.icon-labels {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+.icon-img {
+    width: 200px;
+
+}
+
+.heading {
+  text-align: center;  
+}
+
+.img-plus-button {
+    display: flex;
+    
+}
+
+.footer-img {
+    width: 50px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    text-align: center;
+}
+
+.middle-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
