@@ -91,7 +91,7 @@ button {
   text-align: center;
 }
 
-.column {
+.FIRST-Article-column {
   float: left;
   width: 33.33%;
   padding: 5px;
@@ -99,7 +99,7 @@ button {
 
 
 /* Clearfix (clear floats) */
-.row::after {
+.FIRST-Article-row::after {
   content: "";
   clear: both;
   display: table;
@@ -143,6 +143,32 @@ button {
   font-size: 3rem;
   color: rgb(226, 55, 25);
 }
+
+
+
+.SECOND-Article-row {
+  display: flex;
+}
+*/
+
+
+.SECOND-Article-column-1 {  
+  float: left;
+  flex: 40%;
+  padding: 10px;
+  height: 300px; 
+}
+.SECOND-Article-column-2 {  
+  float: left;
+  flex: 60%;
+}
+
+
+
+
+
+
+
 /*                                   Footer */
 
 .footer a {
