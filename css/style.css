@@ -20,6 +20,7 @@ body {
 .content,
 .footer {
     margin: 0 auto;
+
 }
 
 
@@ -57,7 +58,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(134, 131, 131);
 }
 
 a:hover {
@@ -65,7 +66,15 @@ a:hover {
 }
 
 
+
+
 /**Content**/
+
+
+h1 {
+    font-weight: 300;
+    font-size: 3rem;
+}
 
 
 .content {
@@ -76,6 +85,20 @@ a:hover {
 
 .article_thumbnail {
     width: 3rem;
+}
+
+.hero-content p {
+    font-size: x-large;
+}
+
+
+button {
+    background-color: orangered;
+    border: orangered;
+    padding: 15px 25px;
+    text-decoration: white;
+    border-radius: 3px;
+
 }
 
 
