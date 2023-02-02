@@ -23,10 +23,10 @@ body {
 }
 
 
-/***Header***/
+/**Header**/
 
 .header_logo {
-    width: 2rem;
+    width: 1.5rem;
     padding-left: 1rem;
 }
 
@@ -36,15 +36,14 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 2rem;
-    padding: 2rem 4rem;
+    padding: 1.5rem 4.5rem;
 
 }
 
 
 
 
-
-/***Navigation***/
+/**Navigation**/
 
 ul {
     display: flex;
@@ -56,11 +55,17 @@ li {
     padding-left: 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orangered;
+}
 
 
-/***Text Styles***/
-/***Buttons***/
-/***Content***/
+/**Content**/
 
 
 .content {
@@ -98,9 +103,32 @@ li {
 
 /***Footer***/
 
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: solid 1px rgb(199, 195, 195);
+    margin: 3rem 4rem;
+
+}
+
+.footer_socialmedia {
+    display: flex;
+}
+
+.socialmedia {
+    border-radius: 50px;
+    border: solid 0.8px rgb(199, 195, 195);
+    margin: 0.5rem;
+
+}
+
 .socialmedia_icon {
-    width: 2rem;
-    border: 1px solid gray;
-    border-radius: 60px;
-    padding: 0.5rem 0.6rem;
+    width: 1.5rem;
+    padding: 0.5rem;
+
+}
+
+span {
+    margin: 1rem 2rem;
 }
