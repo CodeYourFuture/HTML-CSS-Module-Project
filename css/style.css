@@ -15,5 +15,98 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+height: 5rem;
+margin-bottom: 1rem;
+margin-top: 1rem;
+}
+
+.nav-list{display:flex;
+flex-direction: row;
+list-style: none;
+}
+
+.nav-item{padding: 0.5rem;}
+
+.nav-link{font-weight: 400;
+text-decoration: none;
+padding: 0.5rem;
+color: darkgrey;}
+
+.hero{background-image: url( https://github.com/CodeYourFuture/HTML-CSS-Module-Project/blob/master/img/first-background.jpg?raw=true);
+color:white;
+padding:6rem;
+text-align: center;
+}
+
+.hero h1{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom:1rem;
+    font-size:1.8rem;
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+.hero p{font-size:1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero button{color:white;
+background-color: #c05326;
+font-family: Arial, Helvetica, sans-serif;
+font-size:1rem;
+padding:0.8rem;
+margin-bottom: 6rem;
+background-size: cover;
+;
+}
+    
+    
+.h1{margin-bottom:1rem;
+margin-top:5rem;
+text-align: center;}
+
+.icons {display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+column-gap: 5rem;}
 
 
+.footer{
+    border-top: 1px solid #e5e6e4;
+    margin: 1rem 5rem;
+}
+h4 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 0.75rem;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.3em;
+}
+.contact-logo{
+    width: auto;
+    height: 0.8rem;
+    border: 0.13rem solid #e5e6e4;
+    border-radius: 50%;
+    padding: 0.5rem;
+    
+    
+    
+}
+.footer-end{
+    text-align: center;
+    color: #c5c3c6;
+    font-size: 0.70rem;
+}
+ 
