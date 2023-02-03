@@ -4,22 +4,50 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: antiquewhite;
 }
 
-.header{
+header
+{ background-color: darkgoldenrod;
+}
+
+.container{
+    /* width: 80%;
+    margin-right: 5%; */
+    margin: left 5%;
     display: flex;
-    background-color: bisque;
-    justify-content: space-around;
-   
+    justify-content:flex-end;
+    align-items: center;
+    /* padding: 10px 0px 10px 0px ; */
+    background-color: rgb(255, 255, 255);
+    /* justify-content: space-around; */
     
 }
 
+
+
 .logo {
-    background-color: brown;
+    /* background-color: brown; */
+    margin-right: auto;
+    width: 5%;
+    padding: 10px;
+
+    /* margin: ; */
+    
 }
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: rgb(204, 0, 255);
+}
+
+
+
 .navbar_list {
    
-    display: flex;
+    /* display: flex; */
     /* width: 100%;
     justify-content: space-around;
     margin-left: auto; */
@@ -27,7 +55,12 @@ body {
     
 }
 
-.link {
+ {
     text-decoration: none;
+    color: rgb(63, 63, 63);
+}
 
+
+header a:hover {
+    color: orange;
 }
