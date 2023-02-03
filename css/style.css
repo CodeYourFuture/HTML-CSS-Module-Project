@@ -1,7 +1,12 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+* {
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     
@@ -19,22 +24,31 @@ body {
 
 
 .main-header {
-   background-image: url('../img/first-background.jpg');
+    background-image: url('/img/first-background.jpg');
     background-repeat: no-repeat;
     padding: 300px;
     color: white;
     background-size: cover;
-    background-color: pink;
     
-    
-    
+       
+}
+
+nav a {
+    font-size: 1.2rem;
+    padding-left: 50px;
+    color: black;
 }
 
 .span {
     color: red;
     
-    
+}
 
+.lady-p {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 0.2rem;
+    
 }
 
 nav {
@@ -52,12 +66,23 @@ nav {
     
 }
 
+.karma-button {
+    background-color: orange;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    color: white;
+    
+}
+
 .top-nav {
     display: flex;
     justify-content: space-between;
 }
 
-.kharma-logo {
+.karma-logo {
     width: 50px;
     height: 50px;
 }
@@ -86,10 +111,20 @@ nav {
 
 .p-left {
     padding-left: 300px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+.p-center {
+    margin-right: 60px;
+    font-size: 1.5em;
+    
+    
 }
 
 .p-right {
-    padding-right: 300px;
+    margin-right: 350px;
+    font-size: 1.5em;
 }
 
 .icon-labels {
@@ -105,7 +140,8 @@ nav {
 }
 
 .heading {
-  text-align: center;  
+  text-align: center;
+  font-size: 4em;  
 }
 
 .img-plus-button-container {
@@ -121,22 +157,28 @@ nav {
 }
 
 .footer-img {
-    width: 50px;
+    width: 30px;
 }
 
 .footer-icons {
     display: flex;
     justify-content: center;
+    
 }
 .copyright {
     text-align: center;
 }
 
-.middle-text {
+.text-plus-button {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 30em;
     
+    
 }
 
+.social {
+    font-size: 1.5rem;
+    text-align: center;
+}
