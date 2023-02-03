@@ -16,4 +16,61 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+*{
+    margin: 0;
+    padding: 0;
 
+}
+Body{
+    background: rgba(0 0 0 0.7) url('first-background.jpg') center center fixed;
+    background-size: cover;
+    background-position: 20px;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar ul li{
+
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 3.ms;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset, 0 3px 50px orangered inset, 0 3px 50px orangered inset
+}
+
+.content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 30%;
+}
+.content h1{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 30%;
+}
+.content p{
+    text-align: center;
+    margin-top: 17px;
+}
+.content button{
+    font-size: 30px;
+}
+.logo img{
+    float: left;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    height: auto;
+    width: 100px;
+}
+
+    
