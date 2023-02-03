@@ -25,7 +25,7 @@ header
 
 .logo {
     margin-right: auto;
-    width: 5%;
+    width: 1rem;
     padding: 10px;
 }
 
@@ -137,3 +137,22 @@ header a:hover {
 
 /* --------------- styling footer -----------------  */
 
+
+.footer {
+    margin: 100px;
+    text-align: center;
+}
+
+.logo-image{
+    width: 20px;
+    /* background-color: rgba(119, 115, 115, 0.418); */
+    /* box-shadow: inset 0 0 99999px rgba(162, 166, 170, 0.671); */
+    filter: grayscale(80%);
+    padding: 10px;
+    border: 1px solid rgba(190, 185, 185, 0.219) ;
+    border-radius: 50%;
+}
+
+.grey-font{
+    color: rgba(128, 128, 128, 0.418);
+}
