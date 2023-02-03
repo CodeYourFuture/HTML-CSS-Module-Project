@@ -97,10 +97,11 @@ button {
     background-color: orangered;
     border: orangered;
     padding: 15px 25px;
-    text-decoration: white;
+
     border-radius: 3px;
     font-size: large;
     margin-top: 2rem;
+    color: white;
 
 }
 
@@ -151,6 +152,51 @@ article {
     text-align: center;
     color: white;
 }
+
+
+
+
+/**Ad section**/
+
+.ad-info {
+    background-color: rgba(224, 99, 58, 0.1);
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+q {
+    font-size: 2.5rem;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+
+}
+
+
+.adinfo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 15rem;
+    width: 550px;
+
+
+}
+
+.adinfo-text button {
+    padding: 15px;
+}
+
+.ad-button {
+    display: flex;
+    align-items: center;
+}
+
 
 
 
