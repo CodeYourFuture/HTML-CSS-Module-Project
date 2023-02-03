@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+            <img
+                src="img/karma-logo.svg"
+                alt="Karma company logo"
+                class="header__logo"
+            />
+        </a>
+        <nav>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Meet Karma</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">How it Works</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Store</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Help</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <main class="main">
+            <div class="flex-container">
+                <section class="order-form flex-item">
+                    <p>Order your Karma wifi device today!</p>
+                    <form>
+                        <div class="flex-container">
+                            <div>
+                                <label for="fname">First name *</label><br>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+                            <div>
+                                <label for="lname">Last name *</label><br>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+                        </div>
+                        <label for="address">Address *</label><br>
+                        <input type="text" id="address" name="address"><br>
+                        <label for="address-add">Address 2</label><br>
+                        <input type="text" id="address-add" name="address-add"><br>
+                        <div class="flex-container">
+                            <div>
+                                <label for="city">City *</label><br>
+                                <select id="city" name="city">
+                                    <option>Select your city...</option>
+                                    <option value="glasgow">Glasgow</option>
+                                    <option value="edinburgh">Edinburgh</option>
+                                    <option value="aberdeen">Aberdeen</option>
+                                    <option value="london">London</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="postcode">Postcode *</label><br>
+                                <input type="text" id="postcode" name="postcode">
+                            </div>
+                        </div>
+                        <p>Select a color</p>
+                        <input type="radio" id="orange" name="color" value="orange">
+                        <label for="orange">Karma orange</label>
+                        <input type="radio" id="grey" name="color" value="grey">
+                        <label for="grey">Space grey</label><br>
+                        <input type="checkbox" id="agreement" name="agreement" value="agreement">
+                        <label for="agreement">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a> *</label><br>
+                        <input type="submit" value="Place my order">
+                    </form>
+                </section>
+                <img class="flex-item form-image" src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="female drinking coffee and using her laptop">
+            </div>
+        </main>
+
+        <footer class="footer">
+            <hr class="divider"></hr>
+            <section>
+                <p class="footer-text">join us on</p>
+                <div class="flex-container">
+                    <a href="#">
+                        <img class="social-media-logo" src="img/twitter-icon.svg" alt="twitter company logo">
+                    </a>
+                    <a href="#">
+                        <img class="social-media-logo" src="img/facebook-icon.svg" alt="facebook company logo">
+                    </a>
+                    <a href="#">
+                        <img class="social-media-logo" src="img/instagram-icon.svg" alt="instagram company logo">
+                    </a>
+                </div>
+                <p class="footer-text">© Karma Mobility, Inc.</p>
+            </section>
+        </footer>
+    </section>
+</body>
+</html>
