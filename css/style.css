@@ -5,7 +5,39 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
+ul li a {
+    display: block;
+    width: 60px;
+  }
+  
+  ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0px;  
+    overflow: hidden;  
+    background-color: none;  
+  }  
+    
+  li {  
+    float: left;  
+  }  
+    
+  li a {  
+    display: block;  
+    color: black;  
+   font: size 10px;
+    text-align: center;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+  }  
+  .active{  
+  background-color: none;  
+  color: white;  
+  }  
+  li a:hover {  
+    background-color: none;  
+    color: brown;  
+  }  
 /**
  * Add your custom styles below
  * 
