@@ -1,66 +1,95 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+/* orange color number #f15b2a */
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
+/* ----------------- Header ------------ */
+
 header
-{ background-color: darkgoldenrod;
+{ background-color: rgb(255, 255, 255);
 }
 
 .container{
-    /* width: 80%;
-    margin-right: 5%; */
-    margin: left 5%;
+    margin-right: 5%;
+    margin-left: 5%;
     display: flex;
     justify-content:flex-end;
-    align-items: center;
-    /* padding: 10px 0px 10px 0px ; */
-    background-color: rgb(255, 255, 255);
-    /* justify-content: space-around; */
-    
+    align-items: center;  
 }
 
-
-
 .logo {
-    /* background-color: brown; */
     margin-right: auto;
     width: 5%;
     padding: 10px;
-
-    /* margin: ; */
-    
 }
 
 header li {
     list-style: none;
     display: inline-block;
-    padding: 0 20px;
-    background-color: rgb(204, 0, 255);
+    padding: 0 10px;
 }
 
 
-
-.navbar_list {
-   
-    /* display: flex; */
-    /* width: 100%;
-    justify-content: space-around;
-    margin-left: auto; */
-    background-color: aquamarine;
-    
-}
-
- {
+header a  {
     text-decoration: none;
-    color: rgb(63, 63, 63);
+    color: rgb(150, 148, 148);
+    font-weight: 500;
 }
 
 
 header a:hover {
-    color: orange;
+    color: #f15b2a;
+}
+
+/* styling meet karma alone */
+
+#link-1 {
+    color: rgb(87, 86, 86);
+
+}
+#link-1:hover{
+    color: #f15b2a;   
+}
+
+/* --------- styling main ----------  */
+
+.main-image{
+    /* background-color: #f15b2a; */
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(255, 255, 255);
+    background-image: url("/img/first-background.jpg");
+    background-size: cover; */
+    height: 100%;
+    width: 100%;
+    
+
+
+}
+
+.main-image h1 {
+    font-weight: 300;
+   
+    font-size: 2rem;
+
+}
+
+.main-image h3{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.main-image button{
+    background-color: #f15b2a;
+    padding: 10px 40px;
+    border:none;
+    margin-top: 10px;
+
 }
