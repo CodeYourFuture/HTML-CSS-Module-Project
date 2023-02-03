@@ -18,6 +18,7 @@ body {
 
 :root {
     --orange-dark: #ff8753de;
+    --orange-light: #f1e3dd;
     --grey: #969AA2;
     --light-grey: #d3d8e0;
     --white: #fff;
@@ -143,8 +144,19 @@ button {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 3rem 5rem;
+
 }
+
+footer .flex-container {
+    justify-content: center;
+}
+
+.feature .flex-container {
+    margin: 15rem 0; 
+    background-color: var(--orange-light);
+    align-items: center;
+}
+
 
 .flex-text {
     font-size: 2.4rem;
@@ -185,3 +197,23 @@ button {
 }
 
 /* Homepage Feature */
+
+
+.feature-image {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+
+}
+
+.feature-text p {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.feature-text span {
+    color: var(--orange-dark);
+    font-weight: bolder;
+}
