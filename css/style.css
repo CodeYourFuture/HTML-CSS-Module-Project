@@ -46,7 +46,16 @@ body {
 }
 
 .nav_item {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+.nav_link:hover {
+    color: #E0633A;
 }
 
 /***Text Styles***/
@@ -215,8 +224,8 @@ cannot get this to work. Is it because there is a div in the middle?
 }
 
 .footer_socialmedia img {
-    width: 0.8rem;
-    border: solid 1px lightgrey;
-    border-radius: 25px;
-    padding: 0.5rem;
+    width: 0.9rem;
+    border: solid 0.8px lightgrey;
+    border-radius: 50px;
+    padding: 0.6rem;
 }
