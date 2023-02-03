@@ -139,6 +139,8 @@ button:hover {
 
 Cannot get the side with the copy to take up more space than the image
 
+similar issue ib store page
+
 ***/
 
 
@@ -149,15 +151,12 @@ Cannot get the side with the copy to take up more space than the image
     margin-top: 4rem;
 }
 
-
-
 .customer_quote {
     background-color: #FCEFEB;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .customer_quote p {
@@ -228,4 +227,30 @@ cannot get this to work. Is it because there is a div in the middle?
     border: solid 0.8px lightgrey;
     border-radius: 50px;
     padding: 0.6rem;
+}
+
+
+/*** HELP!
+
+Cannot get the side with the copy to be evenly distributed with the image side
+
+***/
+
+
+/***Store***/
+
+.store_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.store_form {
+    padding: 2rem 5rem;
+}
+
+.store_img {
+    /* width: 50%;
+    height: auto; */
+    background-size: contain;
 }
