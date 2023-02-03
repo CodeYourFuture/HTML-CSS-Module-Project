@@ -4,7 +4,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    margin: 0;
 }
 
 /**
@@ -18,7 +17,7 @@ body {
  */
 
 :root {
-    --orange-dark: #c05326;
+    --orange-dark: #ff8753de;
     --grey: #969AA2;
     --light-grey: #d3d8e0;
     --white: #fff;
@@ -29,6 +28,13 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+}
+
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+
 }
 
 /* Header */
@@ -127,25 +133,21 @@ button {
 
 .article__thumbnail {
     object-fit: contain;
-    width: 10rem;
+    width: 15rem;
+    padding: 5rem;
 }
 
 /* Flex Container */
 
 .flex-container {
     display: flex;
-    justify-content: center;
-}
-
-.flex-item {
+    justify-content: space-around;
     text-align: center;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 3rem 5rem;
 }
 
 .flex-text {
-    font-size: 2rem;
-
+    font-size: 2.4rem;
 }
 
 /* Headings */
@@ -181,3 +183,5 @@ button {
     border-radius: 100%;
     margin: 0.1rem 0.8rem;
 }
+
+/* Homepage Feature */
