@@ -62,11 +62,11 @@ header a:hover {
 .main-image{
     /* background-color: #f15b2a; */
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
     color: rgb(255, 255, 255);
     background-image: url("/img/first-background.jpg");
-    background-size: cover; */
+    background-size: cover;
     height: 100%;
     width: 100%;
     
@@ -77,7 +77,7 @@ header a:hover {
 .main-image h1 {
     font-weight: 300;
    
-    font-size: 2rem;
+    font-size: 2.5rem;
 
 }
 
@@ -93,3 +93,47 @@ header a:hover {
     margin-top: 10px;
 
 }
+
+/* ----------- styling the grid ------------ */
+
+.main-grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h h h "
+    "f s t";
+    text-align: center;
+    margin:20px 50px;
+
+
+}
+
+.grid-title{
+    grid-area: h;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 200;
+    padding-top: 50px;
+    
+}
+
+.first-box{
+    grid-area: f;
+}
+
+.second-box{
+    grid-area: s;
+}
+
+.third-box{
+    grid-area: t;
+}
+
+.image-class{
+    width: 100px;
+}
+
+
+/* --------------- styling footer -----------------  */
+
