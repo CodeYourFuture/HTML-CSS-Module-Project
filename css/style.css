@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,128 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+header {
+  background-color: white;
+}
+h1 {
+  color: white;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+p {
+  color: white;
+}
+main p{
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
 
+.meet-karma{
+  font-weight: 700;
+}
+h2 {
+  color: black;
+  margin-top: 0;
+}
+.grid-p {
+  color: black;
+}
+.btn-orange {
+  background-color: orangered;
+  color: white;
+  display: inline-block;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  border-radius: 2%;
+}
+main {
+  background-image: url(/img/first-background.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* text-align: center; */
+}
+
+section {
+  width: 85%;
+  margin: auto;
+  padding: 4rem 3rem;
+  border-bottom: 1px solid gray;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  padding: 1rem 0;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 5rem;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+li {
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+li a:hover,
+li a:active{
+  color: orange;
+}
+
+
+footer {
+  padding-bottom: 3rem;
+
+}
+.footer-container{
+  width: 50%;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.p-footer{
+  color: gray;
+}
