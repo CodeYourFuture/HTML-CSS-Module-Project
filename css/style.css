@@ -20,7 +20,8 @@ body {
     --orange-dark: #ff8753de;
     --orange-light: #f1e3dd;
     --grey: #969AA2;
-    --light-grey: #d3d8e0;
+    --lighter-grey: #ebe3e3;
+    --light-grey: #fffefe;
     --white: #fff;
     --dark: #303135;
 }
@@ -28,7 +29,6 @@ body {
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
 }
 
 html, body, div {
@@ -44,8 +44,10 @@ html, body, div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--light-grey);
     height: 6rem;
     padding: 0 9rem;
+    border-bottom: 0.1rem solid var(--lighter-grey);
 }
 
 .header__logo {
@@ -162,6 +164,14 @@ footer .flex-container {
     font-size: 2.4rem;
 }
 
+.flex-container-form {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
 /* Headings */
 
 .section-heading {
@@ -221,6 +231,32 @@ footer .flex-container {
 
 /* Form */
 
+.form-container {
+    display: flex;
+}
+
 .form-image {
     width: 50%;
+}
+
+form {
+    width: 50%;
+}
+
+form h1 {
+    color: var(--orange-dark)
+}
+
+.form-container-inline {
+    display: flex;
+    width: 100%;
+}
+
+.form-container-inline-item {
+    width: 50%;
+}
+
+input[type=text], select {
+    width: 100%;
+    margin: 1.5rem 0;
 }

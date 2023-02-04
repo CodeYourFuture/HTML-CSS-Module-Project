@@ -22,7 +22,7 @@
         <nav>
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a class="navigation__link" href="#">Meet Karma</a>
+                    <a class="navigation__link" href="index.html">Meet Karma</a>
                 </li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="#">How it Works</a>
@@ -45,51 +45,51 @@
 
     <section class="content">
         <main class="main">
-            <div class="flex-container">
-                <section class="order-form flex-item">
-                    <p>Order your Karma wifi device today!</p>
-                    <form>
-                        <div class="flex-container">
-                            <div>
-                                <label for="fname">First name *</label><br>
-                                <input type="text" id="fname" name="fname">
-                            </div>
-                            <div>
-                                <label for="lname">Last name *</label><br>
-                                <input type="text" id="fname" name="fname">
-                            </div>
+            <section class="form-container">
+                <form class="order-form">
+                    <h1>Order your Karma wifi device today!</h1>
+                    <div class="form-container-inline">
+                        <div class="form-container-inline-item">
+                            <label for="fname">First name *</label><br>
+                            <input type="text" id="fname" name="fname">
                         </div>
-                        <label for="address">Address *</label><br>
-                        <input type="text" id="address" name="address"><br>
-                        <label for="address-add">Address 2</label><br>
-                        <input type="text" id="address-add" name="address-add"><br>
-                        <div class="flex-container">
-                            <div>
-                                <label for="city">City *</label><br>
-                                <select id="city" name="city">
-                                    <option>Select your city...</option>
-                                    <option value="glasgow">Glasgow</option>
-                                    <option value="edinburgh">Edinburgh</option>
-                                    <option value="aberdeen">Aberdeen</option>
-                                    <option value="london">London</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="postcode">Postcode *</label><br>
-                                <input type="text" id="postcode" name="postcode">
-                            </div>
+                        <div class="form-container-inline-item">
+                            <label for="lname">Last name *</label><br>
+                            <input type="text" id="lname" name="fname">
                         </div>
-                        <p>Select a color</p>
-                        <input type="radio" id="orange" name="color" value="orange">
-                        <label for="orange">Karma orange</label>
-                        <input type="radio" id="grey" name="color" value="grey">
-                        <label for="grey">Space grey</label><br>
-                        <input type="checkbox" id="agreement" name="agreement" value="agreement">
-                        <label for="agreement">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a> *</label><br>
-                        <input type="submit" value="Place my order">
-                    </form>
-                </section>
-                <img class="flex-item form-image" src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="female drinking coffee and using her laptop">
+                    </div>
+                    <label for="address">Address *</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="address-add">Address 2</label><br>
+                    <input type="text" id="address-add" name="address-add"><br>
+                    <div class="form-container-inline">
+                        <div class="form-container-inline-item">
+                            <label for="city">City *</label><br>
+                            <select id="city" name="city">
+                            <option>Select your city...</option>
+                            <option value="glasgow">Glasgow</option>
+                            <option value="edinburgh">Edinburgh</option>
+                            <option value="aberdeen">Aberdeen</option>
+                            <option value="london">London</option>
+                            </select><br>
+                        </div>
+                        <div class="form-container-inline-item">
+                            <label for="postcode">Postcode *</label><br>
+                            <input type="text" id="postcode" name="postcode">
+                        </div>
+                    </div>
+                    <p>Select a color</p>
+                    <input type="radio" id="orange" name="color" value="orange">
+                    <label for="orange">Karma orange</label>
+                    <input type="radio" id="grey" name="color" value="grey">
+                    <label for="grey">Space grey</label><br>
+                    <input type="checkbox" id="agreement" name="agreement" value="agreement">
+                    <label for="agreement">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a> *</label><br>
+                    <input class="orange-button" type="submit" value="Place my order">
+                </form>
+                <img class="form-image" src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="female drinking coffee and using her laptop">
+            </section>
+            
             </div>
         </main>
 
