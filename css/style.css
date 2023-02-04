@@ -28,12 +28,26 @@ h1 {
   color: white;
   font-weight: 400;
   text-transform: capitalize;
-  font-size: 32px;
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 200;
 }
 p {
   color: white;
 }
+main p{
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
 
+.meet-karma{
+  font-weight: 700;
+}
 h2 {
   color: black;
   margin-top: 0;
@@ -47,6 +61,7 @@ h2 {
   display: inline-block;
   padding: 1em 2.5em;
   text-decoration: none;
+  border-radius: 2%;
 }
 main {
   background-image: url(/img/first-background.jpg);
@@ -85,7 +100,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
   margin-right: 5rem;
 }
 .image-container {
@@ -97,6 +112,17 @@ nav ul {
 li {
   list-style: none;
 }
+li a{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+}
+li a:hover,
+li a:active{
+  color: orange;
+}
+
+
 footer {
   padding-bottom: 3rem;
 
