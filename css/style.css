@@ -155,15 +155,6 @@ button:hover {
 /***Testimonial***/
 
 
-
-/*** HELP!
-
-Cannot get the image to start from the page edge
-
-***/
-
-
-
 .homepage_feature {
     display: flex;
     justify-content: space-between;
@@ -237,27 +228,29 @@ footer p {
 }
 
 
-/*** HELP!
-
-Cannot get the side with the copy to be evenly distributed with the image side
-
-***/
-
-
 /***Store***/
 
 .store_page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
 }
 
 .store_form {
+    grid-column: 1/7;
+    grid-row: 1/2;
     padding: 2rem 5rem;
+    background-color: aquamarine;
+
 }
 
 .store_img {
-    /* width: 50%;
-    height: auto; */
-    background-size: contain;
+    grid-column: 7/-1;
+    grid-row: 1/1;
+    background-color: pink;
+}
+
+.store_img img {
+    width: 100%;
+
 }
