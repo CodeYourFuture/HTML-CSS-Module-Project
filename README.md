@@ -1,3 +1,12 @@
+
+# The deployed website Link of netlify
+
+
+
+https://delicate-kitten-2bd298.netlify.app/
+
+
+
 # karma-clone
 
 The aim of this exercise is to create a page that looks just like this one: 
