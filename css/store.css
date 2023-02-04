@@ -17,16 +17,20 @@
 /* Grid */
 
 .left__right__container {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-gap: 1rem;
 }
 
-.heading_and_form {
+/* .heading_and_form {
     display: inline-block;
     margin: 2rem auto;
-}
+} */
+
+
+
 
 /* Form */
 
@@ -103,6 +107,6 @@ fieldset {
 /* Store image */
 
 .right__container {
-    grid-column: 2 / -1;
+    grid-column: 2 / 3;
 }
 
