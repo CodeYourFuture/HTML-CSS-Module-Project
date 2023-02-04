@@ -16,4 +16,77 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .header__logo {
+    max-height: 50px;
+    width: auto;
+padding-bottom: 0.2rem;
+ }
 
+    .nav {
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+
+    }
+    .navigation__list {
+        display: flex;
+        list-style: none;
+      }
+      
+      .navigation__item {
+        padding: 2rem;
+      }
+      
+      .navigation__link {
+        color: lightgray;
+        font-weight: 600;
+     
+        text-decoration: none;}
+
+.hero {
+    background-image: url(../img/first-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1000px;
+    position: relative;
+    
+
+
+}
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white
+}
+.hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    
+    
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+
+}
+.hero button{
+ background-color: #c05326;
+  color: #fff;
+  border: #c05326;
+  border-radius: 0.5em;
+  font-size: small;
+  padding: 1rem;
+
+
+}
