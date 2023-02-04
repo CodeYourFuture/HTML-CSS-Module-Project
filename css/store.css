@@ -16,14 +16,11 @@
 
 /* Grid */
 
-.store__main {
+.left__right__container {
+    grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-}
-
-.store__main > * {
-    grid-column: 1;
 }
 
 .heading_and_form {
