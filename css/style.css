@@ -58,6 +58,10 @@ body {
     color: #E0633A;
 }
 
+nav ul li:nth-child(1) a {
+    color: black;
+}
+
 /***Text Styles***/
 
 
@@ -69,6 +73,11 @@ button {
     border: none;
     border-radius: 5px;
     font-weight: 400;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
 }
 
 button:hover {
@@ -111,6 +120,12 @@ button:hover {
 
 /***Articles***/
 
+.selling_points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .selling_points h2 {
     display: flex;
     justify-content: center;
@@ -121,13 +136,19 @@ button:hover {
 
 .selling_points_thumbs {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .article_thumbnail {
-    width: 7rem;
-    margin: 0 4rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1.5rem;
+}
+
+.article_thumbnail img {
+    width: 8rem;
 }
 
 
@@ -137,9 +158,7 @@ button:hover {
 
 /*** HELP!
 
-Cannot get the side with the copy to take up more space than the image
-
-similar issue ib store page
+Cannot get the image to start from the page edge
 
 ***/
 
@@ -147,12 +166,16 @@ similar issue ib store page
 
 .homepage_feature {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 4rem;
+    background-color: #FCEFEB;
+}
+
+.homepage_feature img {
+    display: block;
 }
 
 .customer_quote {
-    background-color: #FCEFEB;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,15 +197,6 @@ similar issue ib store page
 }
 
 
-/*** HELP!
-
-Cannot get the copy to be on a single line.
-
-.article_thumbnail p {}
-
-***/
-
-
 /***Footer***/
 
 footer {
@@ -201,32 +215,25 @@ footer p {
 }
 
 
-/*** HELP!
-
-.footer_content p:nth-child(2) {
+.footer_content p:nth-child(3) {
     color: grey;
     font-size: 0.75rem;
 }
-
-cannot get this to work. Is it because there is a div in the middle?
-
-***/
-
 
 .footer_socialmedia {
     display: flex;
     justify-content: center;
 }
 
-.footer_socialmedia a {
-    margin: 0.5rem;
+.footer_socialmedia img {
+    padding: 0.5rem;
+    width: 1.5rem;
 }
 
-.footer_socialmedia img {
-    width: 0.9rem;
+.socialmedia {
     border: solid 0.8px lightgrey;
     border-radius: 50px;
-    padding: 0.6rem;
+    margin: 0.6rem;
 }
 
 
