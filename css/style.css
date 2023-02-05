@@ -66,7 +66,7 @@ a:hover {
     font-weight: 100;
 }
 
-.main__container button {
+.main__container button, .content__text button {
     border: none;
     display: inline-block;
     padding: 15px 35px;
@@ -116,6 +116,37 @@ section {
     font-size: 29px;
     height: 25px;
     margin: 0;
+}
+
+.content__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.content__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 229, 232);
+}
+
+.content__text a {
+    color: #fff;
+}
+
+.content__text h2 {
+    font-size: 2rem;
+}
+.content__container img {
+    width: 100%;
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
 }
 
 .footer {
