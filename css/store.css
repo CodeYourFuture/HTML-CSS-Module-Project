@@ -8,7 +8,7 @@
     --light-orange: rgba(224, 99, 58, 0.1);
 }
 
-.store__main h1 {
+.form__header {
     color: var(--orange);
     font-size: 2rem;
     font-weight: 500;
@@ -20,7 +20,7 @@
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
 }
 
 /* Form */
@@ -47,7 +47,8 @@ form {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 60px);
-    max-width: 600px;
+    max-width: 550px;
+    row-gap: 1.5rem;
 }
 
 .grid__fname {
@@ -106,41 +107,22 @@ form {
     flex-wrap: wrap;
 }
 
-/* #first-name,
+/* Form Styling */
+#first-name,
 #last-name,
 #address-1,
 #address-2,
 #address-city,
 #address-postcode {
-    height: 2rem;
+    height: 2.1rem;
     border-radius: 0.2rem;
     margin-right: 1rem;
 }
 
-#address-1, #address-2 {
-    max-width: 320px;;
-}
-
-#address-city {
-    width: 180px;
-}
-
-#address-postcode {
-    width: 125px;
-}
-
 .radio__buttons {
-    margin-right: 1rem;
-    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
 }
-
-.label-and-input {
-    margin-bottom: 1.5rem;
-}
-
-.terms-label-and-input {
-    margin-bottom: 1rem;
-} */
 
 #terms__link {
     text-decoration: underline;
