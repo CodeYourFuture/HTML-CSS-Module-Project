@@ -219,37 +219,50 @@ header a:hover {
     display: flex;
 
     gap: 2px;
-    background-color: #f07349;
+    background-color: #ffffff;
+    /* height: 100vh; */
+
+}
+.store-main{
+    margin-right: 0px;
+    margin-left: 0px;
+   
+
 
 }
 
 .form-container{
       
-    background-color: rgb(215, 250, 231);
+    background-color: rgb(255, 255, 255);
     width: 50%;
-    /* padding-top: 0px; */
-    /* height: 100%; */
-
-    /* display: flex;
-    flex-direction: column; */
+    height: 100vh;
     
-  
+ 
 }
 
 .form-class{
-    width: 70%;
+    /* width: 50%; */
+    height: 70vh;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    /* align-content:flex-end; */
+    /* align-content: flex-end; */
+
+    padding:20%;
+
+    border: 1px solid grey;
 
 }
-form input {
-    background-color: beige;
-    size: 2;
-    
+
+.two-boxes , form fieldset , .address,form button ,form h1 {
+   background-color: aqua;
+   margin-top: 20px;
 }
+
+
+
 
 .two-boxes
 {
@@ -260,6 +273,7 @@ form input {
 .up-down{
     display: flex;
     flex-direction: column;
+    width:50%
 }
 
 .store-image-class{
