@@ -215,6 +215,12 @@ header a:hover {
 /* ---------------------Styling Store Page------------------------- */
 /* ---------------------------------------------------------------- */
 
+.store-header{
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+
+
 .store-main{
     display: flex;
 
@@ -223,18 +229,18 @@ header a:hover {
     /* height: 100vh; */
 
 }
-.store-main{
+/* .store-main{
     margin-right: 0px;
     margin-left: 0px;
    
 
 
-}
+} */
 
 .form-container{
       
     background-color: rgb(255, 255, 255);
-    width: 50%;
+    width: 70%;
     height: 100vh;
     
  
@@ -247,17 +253,17 @@ header a:hover {
     flex-direction:column;
     flex-wrap: nowrap;
     justify-content: center;
-    /* align-content:flex-end; */
+    align-content: center;
+
     /* align-content: flex-end; */
 
     padding:20%;
 
-    border: 1px solid grey;
 
 }
 
 .two-boxes , form fieldset , .address,form button ,form h1 {
-   background-color: aqua;
+   background-color: rgb(255, 255, 255);
    margin-top: 20px;
 }
 
@@ -268,6 +274,13 @@ header a:hover {
 {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    /* margin-top: 0px; */
+   
+}
+
+.no-margin-top{
+    margin-top:0px;
 }
 
 .up-down{
@@ -292,5 +305,48 @@ form button{
     color: white;
     padding:10px 30px;
     border:none;
+}
+
+form h1{
+    color:#f07349;
+    font-weight: 500;
+}
+
+#first-name , #city, #choose-1, #choose-2{
+    margin-right: 10px;
+}
+
+.space-right{
+    margin-right: 10px;
+}
+
+#check{
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+#button-id{
+    width: 50%;
+    /* align-self: center; */
+}
+
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+}
+
+.dark-grey-font{
+   color: rgb(71, 70, 70);
+}
+
+.t-c{ 
+    color: #f07349;
+    
 }
 

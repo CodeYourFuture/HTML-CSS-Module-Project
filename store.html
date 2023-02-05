@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header>
+    <header class="store-header">
         <div class="container store.header" >
             <div class="logo">
                 <img src="img/karma-logo.svg"  alt="logo">    
@@ -22,9 +22,9 @@
             </div>
            <nav class="navbar">
                 <ul class="navbar_list">
-                    <li><a href=" " id="link-1">Meet Karma</a></li>
+                    <li><a href="index.html" id="link-1">Meet Karma</a></li>
                     <li><a href=" " >How it Works</a></li>
-                    <li><a href=" " >Store</a></li>
+                    <li><a href=" " id="link-3">Store</a></li>
                     <li><a href=" " >Blog</a></li>
                     <li><a href=" " >Help</a></li>
                     <li><a href=" " >Login</a></li>
@@ -42,55 +42,66 @@
                 
                 <div class="two-boxes">
                     <div class="up-down">
-                        <label for="first-name">First name *</label>
+                        <label for="first-name" class="dark-grey-font">First name *</label>
                         <input type="text" id="first-name" required >
                     </div>
 
                     <div class="up-down">
-                        <label for="last-name">Last name *</label>
+                        <label for="last-name" class="dark-grey-font">Last name *</label>
                         <input type="text" id="last-name" required>
                     </div>
                     
                 </div>
 
-                <label for="address" class="address">Address *</label>
+                <label for="address" class="address dark-grey-font">Address *</label>
                 <input type="text" id="address" required >
 
-                <label for="address-2" class="address">Address 2</label>
+                <label for="address-2" class="address dark-grey-font">Address 2</label>
                 <input type="text" id="address-2">
 
                 <div class="two-boxes"> 
                         <div class="up-down">
-                            <label for="city">City *</label>
-                            <select name="city" id="city">
-                                <option value="city-1">City 1</option>
-                                <option value="city-2">City-2</option>
+                            <label for="city" class="dark-grey-font">City *</label>
+                            <select name="city" id="city" class="dark-grey-font" >
+                                <option value="" disabled selected class="dark-grey-font">select your city...</option>
+                                <option value="city-1" >City 1</option>
+                                <option value="city-2" >City-2</option>
                             </select>
                         </div>
                         
                         <div class="up-down">
-                            <label for="postcode">Postcode *</label>
+                            <label for="postcode" class="dark-grey-font">Postcode *</label>
                             <input type="text" id="postcode" required>
                         </div>
 
                     
                 </div>
                
+                <br>
                 <fieldset>
-                    <legend>Select a colour</legend>
                     
-                    <input type="radio" id="choose-1" name="choose">
-                    <label for="choose-1">Karma Orange</label>
+                    <legend class="dark-grey-font">Select a colour</legend>
+                    
+                    <div class="two-boxes no-margin-top">
+                        <div class="two-boxes space-right">
+                            <input type="radio" id="choose-1" name="choose">
+                            <label for="choose-1" class="dark-grey-font">Karma Orange</label>
+                        </div>
 
-                    <input type="radio" id="choose-2" name="choose">
-                    <label for="choose-2">Space Grey</label>
-                    
+                        <div class="two-boxes">
+                            <input type="radio" id="choose-2" name="choose">
+                            <label for="choose-2" class="dark-grey-font">Space Grey</label>
+                        </div>
+                        
+                    </div>
+                                        
                 </fieldset>
+                <br><br>
                
                 
                 <div class="two-boxes">
                     <input type="checkbox" id="check" >  
-                    <label for="check">By placing your order you agree to karma's Terms and Conditions *</label>
+                    <label for="check" class="dark-grey-font">By placing your order you agree to karma's <a href="google.com" class="t-c"><span class="t-c">Terms and Conditions</span></a> *</label>
                 </div>
                 
                 <button id="button-id" class="orange-button"> Place my order</button>
