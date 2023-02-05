@@ -29,17 +29,17 @@
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 50px auto 50px;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 20px 1fr 4fr 20px;
 }
 
 .form__header {
     grid-column: 2 / 3;
-    grid-row: 1;
+    grid-row: 2 / 3;
 }
 
 form {
     grid-column: 2 / 3;
-    grid-row: 2;
+    grid-row: 3 / 4;
     font-size: 0.8rem;
     color: rgba(102, 102, 102, 1);
 }
