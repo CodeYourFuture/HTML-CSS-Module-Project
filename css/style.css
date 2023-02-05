@@ -1,19 +1,351 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+/* orange color number #f15b2a */
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    /* background-color: antiquewhite; */
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* ----------------- Header ------------ */
 
+header
+{ background-color: rgb(255, 255, 255);
+}
+
+.container{
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;  
+}
+
+.logo {
+    margin-right: auto;
+    width: 1rem;
+    padding: 10px;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+header a  {
+    text-decoration: none;
+    color: rgb(150, 148, 148);
+    font-weight: 500;
+}
+
+
+header a:hover {
+    color: #f15b2a;
+}
+
+/* styling meet karma alone */
+
+#link-1 {
+    color: rgb(87, 86, 86);
+
+}
+#link-1:hover{
+    color: #f15b2a;   
+}
+
+/* --------- styling main ----------  */
+
+.main-image{
+    /* background-color: #f15b2a; */
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    color: rgb(255, 255, 255);
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    
+
+
+}
+
+.main-image h1 {
+    font-weight: 300;
+   
+    font-size: 2.5rem;
+
+}
+
+.main-image h3{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.main-image button{
+    background-color: #f15b2a;
+    padding: 10px 40px;
+    border:none;
+    margin-top: 10px;
+
+}
+
+/* ----------- styling the grid ------------ */
+
+.main-grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h h h "
+    "f s t";
+    text-align: center;
+    margin:20px 50px;
+
+
+}
+
+.grid-title{
+    grid-area: h;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 200;
+    padding-top: 50px;
+    
+}
+
+.first-box{
+    grid-area: f;
+}
+
+.second-box{
+    grid-area: s;
+}
+
+.third-box{
+    grid-area: t;
+}
+
+.image-class{
+    width: 100px;
+}
+
+
+/* -------------- styling the new section   -------------- */
+.new-section{
+    /* width: 100%; */
+    /* height: 439px; */
+    display: flex;
+    margin-top: 5rem;
+
+
+    /* justify-content: flex-start; */
+    /* align-items: flex-start;  */
+}
+
+.new-section-image{
+    width: 40%;
+    /* width: 599px; */
+    /* height: 439px; */
+}
+
+.quote{
+    /* width: 60%; */
+    background-color: #e0633a10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 50px;
+}    
+
+.quote-p{
+
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.quote button{
+    background-color: #f07349;
+    color: white;
+    padding:10px 30px;
+    border:none;
+}
+
+.orange-quotation{
+    color: #f07349;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* --------------- styling footer -----------------  */
+
+
+.footer {
+    margin: 50px 100px 100px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.logo-image{
+    width: 15px;
+    /* background-color: rgba(119, 115, 115, 0.418); */
+    /* box-shadow: inset 0 0 99999px rgba(162, 166, 170, 0.671); */
+    filter: grayscale(80%);
+    padding: 10px;
+    border: 1px solid rgba(190, 185, 185, 0.219) ;
+    border-radius: 50%;
+   
+}
+
+.grey-font{
+    color: rgba(128, 128, 128, 0.418);
+}
+
+
+/* --------------------------------------------------------------- */
+/* ---------------------Styling Store Page------------------------- */
+/* ---------------------------------------------------------------- */
+
+.store-header{
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+
+
+.store-main{
+    display: flex;
+
+    gap: 2px;
+    background-color: #ffffff;
+    /* height: 100vh; */
+
+}
+/* .store-main{
+    margin-right: 0px;
+    margin-left: 0px;
+   
+
+
+} */
+
+.form-container{
+      
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 100vh;
+    
+ 
+}
+
+.form-class{
+    /* width: 50%; */
+    height: 70vh;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+
+    /* align-content: flex-end; */
+
+    padding:20%;
+
+
+}
+
+.two-boxes , form fieldset , .address,form button ,form h1 {
+   background-color: rgb(255, 255, 255);
+   margin-top: 20px;
+}
+
+
+
+
+.two-boxes
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* margin-top: 0px; */
+   
+}
+
+.no-margin-top{
+    margin-top:0px;
+}
+
+.up-down{
+    display: flex;
+    flex-direction: column;
+    width:50%
+}
+
+.store-image-class{
+  
+   background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 50%;
+    /* height: 100%; */
+
+}
+
+form button{
+    background-color: #f07349;
+    color: white;
+    padding:10px 30px;
+    border:none;
+}
+
+form h1{
+    color:#f07349;
+    font-weight: 500;
+}
+
+#first-name , #city, #choose-1, #choose-2{
+    margin-right: 10px;
+}
+
+.space-right{
+    margin-right: 10px;
+}
+
+#check{
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+#button-id{
+    width: 50%;
+    /* align-self: center; */
+}
+
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+}
+
+.dark-grey-font{
+   color: rgb(71, 70, 70);
+}
+
+.t-c{ 
+    color: #f07349;
+    
+}
 
