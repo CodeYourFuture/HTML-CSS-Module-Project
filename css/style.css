@@ -209,3 +209,74 @@ header a:hover {
 .grey-font{
     color: rgba(128, 128, 128, 0.418);
 }
+
+
+/* --------------------------------------------------------------- */
+/* ---------------------Styling Store Page------------------------- */
+/* ---------------------------------------------------------------- */
+
+.store-main{
+    display: flex;
+
+    gap: 2px;
+    background-color: #f07349;
+
+}
+
+.form-container{
+      
+    background-color: rgb(215, 250, 231);
+    width: 50%;
+    /* padding-top: 0px; */
+    /* height: 100%; */
+
+    /* display: flex;
+    flex-direction: column; */
+    
+  
+}
+
+.form-class{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+form input {
+    background-color: beige;
+    size: 2;
+    
+}
+
+.two-boxes
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.up-down{
+    display: flex;
+    flex-direction: column;
+}
+
+.store-image-class{
+  
+   background-image: url(../level-2/store-image_by-andrew-neel-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: rgb(66, 37, 192);
+    width: 50%;
+    /* height: 100%; */
+
+}
+
+form button{
+    background-color: #f07349;
+    color: white;
+    padding:10px 30px;
+    border:none;
+}
+
