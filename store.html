@@ -31,32 +31,43 @@
                 <div class="left__container">
                         <h1 class="form__header">Order your Karma wifi device today!</h1>
                         <form action="#">
-                            <fieldset>
-                                <label for="first-name">First Name *</label>
-                                <input id="first-name" type="text" required />
+                                <div class="grid__fname flex__column">
+                                    <label for="first-name">First Name *</label>
+                                    <input id="first-name" type="text" required />
+                                </div>
                 
-                                <label for="last-name">Last name *</label>
-                                <input id="last-name" type="text" required />
+                                <div class="grid__lname flex__column">
+                                    <label for="last-name">Last name *</label>
+                                    <input id="last-name" type="text" required />
+                                </div>
                 
-                                <label for="address-1">Address *</label>
-                                <input id="address-1" type="text" required />
+                                <div class="grid__address__1 flex__column">
+                                    <label for="address-1">Address *</label>
+                                    <input id="address-1" type="text" required />
+                                </div>
+
+                                <div class="grid__address__2 flex__column">
+                                    <label for="address-2">Address 2</label>
+                                    <input id="address-2" type="text" />
+                                </div>
                 
-                                <label for="address-2">Address 2</label>
-                                <input id="address-2" type="text" />
+                                <div class="grid__city flex__column">
+                                    <label for="address-city">City *</label>
+                                    <select id="address-city" name="city">
+                                        <option value="">Select your city...</option>
+                                        <option value="glasgow">Glasgow</option>
+                                        <option value="edinburgh">Edinburgh</option>
+                                        <option value="tokyo">Tokyo</option>
+                                        <option value="london">London</option>
+                                    </select>
+                                </div>
                 
-                                <label for="address-city">City *</label>
-                                <select id="address-city" name="city">
-                                    <option value="">Select your city...</option>
-                                    <option value="glasgow">Glasgow</option>
-                                    <option value="edinburgh">Edinburgh</option>
-                                    <option value="tokyo">Tokyo</option>
-                                    <option value="london">London</option>
-                                </select>
-                
-                                <label for="address-postcode">Postcode *</label>
-                                <input id="address-postcode" type="text" required />
-                            </fieldset>
-                            <fieldset>
+                                <div class="grid__postcode flex__column">
+                                    <label for="address-postcode">Postcode *</label>
+                                    <input id="address-postcode" type="text" required />
+                                </div>
+                            
+                            <fieldset class="grid__radio">
                                 <legend>Select a colour</legend>
                 
                                 <input id="karma-orange" type="radio" name="color-preference" value="karma-orange" checked="checked" />
@@ -65,12 +76,13 @@
                                 <input id="space-grey" type="radio" name="color-preference" value="space-grey" />
                                 <label for="space-grey">Space Grey</label>
                             </fieldset>
-                            <fieldset class="terms-label-and-input">
+
+                            <fieldset class="grid__terms terms-label-and-input">
                                 <input id="terms-and-conditions" type="checkbox" required checked="checked" />
                                 <label for="terms-and-conditions">By placing your order you agree to Karma's <a href="#" id="terms__link">Terms and Conditions</a>. *</label>
                             </fieldset>
                 
-                            <input type="submit" value="Place my order" class="hover__button" />
+                            <input type="submit" value="Place my order" class="grid__submit hover__button" />
                         </form>
                 </div>
 
