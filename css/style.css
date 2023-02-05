@@ -40,7 +40,7 @@ a:hover {
 /* Grid */
 .container {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: 5rem auto 5rem;
 }
 
@@ -50,6 +50,12 @@ a:hover {
 }
 
 /* Navigation */
+.header__container {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 5rem auto 5rem;
+}
+
 header {
     grid-column: 2 / 3;
     display: flex;
