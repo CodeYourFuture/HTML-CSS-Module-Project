@@ -16,33 +16,50 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
- .header__logo {
-    max-height: 50px;
-    width: auto;
-padding-bottom: 0.2rem;
+
+ 
+
+.nav {
+display: flex;
+float: right;
+
  }
 
-    .nav {
-        display: flex;
-        list-style: none;
-        align-items: center;
-
-
+.header__logo {
+max-height: 50px;
+width: auto;
+padding-bottom: 0.2rem;
+margin-left: 5rem;
+margin-bottom: 1rem;
+margin-top: 2rem;
     }
-    .navigation__list {
-        display: flex;
-        list-style: none;
-      }
+
+.navigation__list {
+display: flex;
+float: right;
+
+        
+}
       
-      .navigation__item {
-        padding: 2rem;
-      }
+.navigation__item {
+padding: 2rem;
       
-      .navigation__link {
-        color: lightgray;
-        font-weight: 600;
-     
-        text-decoration: none;}
+}
+      
+.navigation__link {
+color: lightgray;
+font-weight: 600;
+text-decoration:none;}
+
+ .navigation__list a:hover {
+    color: #c05326;
+
+ }
+
+.navigation__list a.active {
+color: darkgray;
+
+}
 
 .hero {
     background-image: url(../img/first-background.jpg);
@@ -50,10 +67,9 @@ padding-bottom: 0.2rem;
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
-    width: 1000px;
+    width: 60%;
     position: relative;
     
-
 
 }
 .hero-text{
@@ -89,4 +105,25 @@ padding-bottom: 0.2rem;
   padding: 1rem;
 
 
+}
+.article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+
+}
+.article h2 {
+    font-size: 2.5rem;
+    color: black;
+    
+}
+.article div {
+    object-fit: contain;
+
+    
+
+
+    
 }
