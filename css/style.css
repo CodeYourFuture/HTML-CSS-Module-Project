@@ -14,10 +14,13 @@ header {
 
 .header__container {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     padding: 0px 6rem 0 6rem;
     height: 100%;
+}
+
+.header__container img {
+    width: 35px;
 }
 
 .menu {
@@ -58,6 +61,11 @@ a:hover {
     color: white;
 }
 
+.main__container h2 {
+    font-size: 2em; 
+    font-weight: 100;
+}
+
 .main__container button {
     border: none;
     display: inline-block;
@@ -81,6 +89,10 @@ section {
     justify-content: center;
     height: 100%;
     row-gap: 2rem;
+}
+
+.section__container h2 {
+    font-size: 3rem;
 }
 
 .container__icon {
@@ -118,7 +130,7 @@ section {
 }
 
 .footer img {
-    width: 30px;
+    width: 25px;
 }
 
 .footer div {
