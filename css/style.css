@@ -16,6 +16,12 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* only screen and (max-width: 700px) {
+    body {
+    background-color: lightblue;
+    }
+} */
+
 
 .container{
     display: grid;
@@ -40,7 +46,7 @@ body {
 .box{
     background-color: #fff;
     display: flex;
-    color: rgb(10, 1, 2);   
+    color: rgb(10, 1, 2);  
 }
 
 .header{
@@ -48,7 +54,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 a{
     text-decoration: none;
@@ -173,8 +179,8 @@ button{
 .footer img{
     height: 2rem;
     width: 2rem;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    justify-content: center;
 }
 .footer li{
     list-style: none;
@@ -183,8 +189,10 @@ button{
 .footer li{
     height: 50px;
     width: 50px;
-    background-color: #bbb;
     border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     display:inline-flexbox;
 }
 .icon ul{
