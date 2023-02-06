@@ -1,20 +1,33 @@
 section {
-    height: 1050px;
+    height: 1000px;
+    text-align: left;
 }
 
 fieldset {
     border: none;
-    text-align: left;
 }
 
 form {
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
+    width: 70%;
+    text-align: left;
 }
 
+form label, legend {
+    margin-bottom: 0.7rem;
+}
+
+form div:nth-child(5) {
+    text-align: center;
+}
 fieldset:nth-child(1) input, select {
     height: 2rem;
+}
+
+fieldset:nth-child(1) label {
+    font-weight: bold;
 }
 
 fieldset:nth-child(1) {
