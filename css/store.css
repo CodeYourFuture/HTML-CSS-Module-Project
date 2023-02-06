@@ -1,0 +1,76 @@
+section {
+    height: 1050px;
+}
+
+fieldset {
+    border: none;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+fieldset:nth-child(1) input, select {
+    height: 2rem;
+}
+
+fieldset:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.section__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__left legend {
+    text-align: end;
+    font-weight: bold;
+}
+
+
+.section__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.section__wrapper img {
+    max-height: 1050px;
+}
+
+.section__wrapper h2 {
+    color: #f4861f;
+    font-size: 2rem;
+}
+
+.name__wrapper {
+    display: grid;
+    grid-template-columns: 47% 48%;
+    column-gap: 5%;
+}
+
+.address__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.postcode {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    column-gap: 20%;
+}
+
+.radio__wrapper {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.radio__wrapper input {
+    accent-color: #E0633A;
+}

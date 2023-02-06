@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Karma</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/store.css">
@@ -27,7 +27,63 @@
         </div>
     </header>
     <section>
-
+        <div class="section__wrapper">
+            <div class="section__left">
+                <h2>Order your Karma WiFi device today</h2>
+                <form action="#">
+                    <fieldset>
+                        <div class="name__wrapper">
+                            <label for="firstName">First Name *</label>
+                            <label for="lasttName">Last Name *</label>
+                            <input type="text" name="" id="firstName" required>
+                            <input type="text" name="" id="lasttName" required>
+                        </div>
+                        <div class="address__wrapper">
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        <div class="address__wrapper">
+                            <label for="address2">Address 2 *</label>
+                            <input type="text" id="address2">
+                        </div>
+                        <div class="postcode">
+                            <label for="city">City *</label>
+                            <label for="postcode">Postcode *</label>
+                            <select name="city" id="city" required>
+                                <option value>Select your city...</option>
+                                <option value="london">London</option>
+                                <option value="edinburgh">Edinburgh</option>
+                                <option value="moscow">Moscow</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="helsinki">Helsinki</option>
+                            </select>
+                            <input type="text" id="postcode" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select a color</legend>
+                        <div class="radio__wrapper">
+                            <div>
+                                <input name="color" type="radio" id="orange" required>
+                                <label for="orange">Karma Orange</label>
+                            </div>
+                            <div>
+                                <input name="color" type="radio" id="grey">
+                                <label for="grey">Space grey</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" required name="" id="terms">
+                        <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>. *</label>
+                    </fieldset>
+                    <button type="submit">Place my Order</button>
+                </form>
+            </div>
+            <div>
+                <img src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="">
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer" id="contact">
