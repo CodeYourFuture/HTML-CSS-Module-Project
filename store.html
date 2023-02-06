@@ -33,50 +33,52 @@
     <div class="content">
 
         <main class="store_page">
+            <fieldset class="store_form">
+                <h2>Order your Karma wifi device today!</h2>
 
-            <section class="store_form">
-                <h1>Order your Karma wifi device today!</h1>
                 <form action="customer.html" method="get"> <!----ADD---->
-                    <div>
+                    <div class="customer_name">
                         <label for="First Name">First Name *</label>
-                        <input type="text" name="First Name" id="First Name" required>
+                        <input class="customer_firstname" type="text" name="First Name" id="First Name" required>
 
                         <label for="Last Name">Last Name *</label>
-                        <input type="text" name="Last Name" id="Last Name" required>
+                        <input class="customer_lastname" type="text" name="Last Name" id="Last Name" required>
                     </div>
 
                     <div>
                         <label for="Address">Address *</label>
-                        <input type="text" name="Address" id="Address" required>
+                        <input class="address" type="text" name="Address" id="Address" required>
                     </div>
 
                     <div>
                         <label for="Address2">Address 2</label>
-                        <input type="text" name="Address2" id="Address2">
+                        <input class="address" type="text" name="Address2" id="Address2">
                     </div>
 
-                    <div>
+                    <div class="city_pcode">
                         <label for="City">City *</label>
                         <select name="City" id="City" placeholder="Select your city..">
-                            <option value="Glasgow"></option>
-                            <option value="Edinburgh"></option>
+                            <!-- HELP!! placeholder not working!! -->
+                            <option value="">Select your city..</option>
+                            <option value="Glasgow">Glasgow</option>
+                            <option value="Edinburgh">Edinburgh</option>
                         </select>
 
                         <label for="Postcode">Postcode *</label>
-                        <input type="" name="Postcode" id="Postcode" required>
+                        <input type="text" name="Postcode" id="Postcode" required>
                     </div>
 
 
                     <p>Select a Colour</p>
-                    <div>
-                        <label for="Orange">Karma Orange</label>
+                    <div class="radio_colors">
                         <input type="radio" name="Colour" id="Orange">
-                        <label for="Grey">Space Grey</label>
+                        <label for="Orange">Karma Orange</label>
                         <input type="radio" name="Colour" id="Grey">
+                        <label for="Grey">Space Grey</label>
                     </div>
 
 
-                    <div>
+                    <div class="select_terms">
                         <input type="checkbox" name="T&Cs" id="T&Cs" required>
                         <label for="T&Cs">By placing your order you agree to Karma's <span class="T&Cs">Terms and
                                 Conditions.</span>
@@ -88,7 +90,7 @@
 
                 </form>
 
-            </section>
+            </fieldset>
 
             <section class="store_img">
                 <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Image of store" />

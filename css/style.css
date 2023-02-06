@@ -233,24 +233,82 @@ footer p {
 .store_page {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 .store_form {
     grid-column: 1/7;
-    grid-row: 1/2;
+    grid-row: 1/-1;
     padding: 2rem 5rem;
-    background-color: aquamarine;
-
+    border: 0;
 }
 
 .store_img {
     grid-column: 7/-1;
-    grid-row: 1/1;
-    background-color: pink;
 }
 
 .store_img img {
     width: 100%;
-
 }
+
+.store_form h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    color: #E0633A;
+}
+
+
+.store_form label,
+p {
+    font-size: 0.9rem;
+    color: darkgray;
+}
+
+input[type=text] {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border: 1.5px solid lightgrey;
+    border-radius: 4px;
+    display: block;
+}
+
+#City {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border: 1.5px solid lightgrey;
+    border-radius: 4px;
+    display: block;
+}
+
+#City option:nth-child(1) {
+    color: lightgrey;
+    font-style: italic;
+}
+
+
+.radio_colors {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.select_terms {
+    margin: 2rem 0;
+}
+
+/*** HELP 
+
+These are no working
+
+.customer_name {
+    display: inline-block;
+}
+
+
+.city_pcode {
+    display: inline-block;
+}
+
+***/
