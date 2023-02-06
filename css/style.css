@@ -40,6 +40,10 @@ select {
   height: 2.3rem;
 }
 
+.menu-burger {
+  display: none;
+}
+
 .top-container {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -102,7 +106,7 @@ main {
   text-align: center;
 }
 
-.main-options {
+.main-options-container {
   margin: 0% 4rem 3rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -370,4 +374,51 @@ input[type="checkbox"]:checked + label::after {
 .copyright-text {
   text-align: center;
   font-size: x-small;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .top-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .menu-burger {
+    display: block;
+  }
+
+  .logo-container {
+    padding: 0;
+  }
+  .top-container-nav {
+    display: none;
+  }
+  header {
+    padding: 0 8rem;
+    text-align: center;
+  }
+  .main-options-container {
+    margin: 0% 4rem 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-slogan {
+    padding: 0 3rem;
+  }
+
+  .get-karma-section {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .get-karma-promo {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .horiz-rule {
+    display: none;
+  }
+  .copyright-text {
+    margin-bottom: 3rem;
+  }
 }
