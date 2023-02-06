@@ -85,7 +85,7 @@ html, body, div {
 /* Divider Style */
 
 .divider {
-    border: 0.1rem solid var(--light-grey);
+    border: 0.1rem solid var(--lighter-grey);
     margin: 5rem 10rem 2rem 10rem;
 }
 
@@ -240,23 +240,44 @@ footer .flex-container {
 }
 
 form {
-    width: 50%;
+    flex: 1;
+    padding: 0 12rem;
 }
 
 form h1 {
-    color: var(--orange-dark)
+    font-size: 2.8rem;
+    color: var(--orange-dark);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+form p, {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .form-container-inline {
     display: flex;
-    width: 100%;
 }
 
 .form-container-inline-item {
-    width: 50%;
+    flex: 1;
 }
 
 input[type=text], select {
     width: 100%;
     margin: 1.5rem 0;
+}
+
+input[type=submit] {
+    margin: 2rem 0;
+    padding: 0.6rem 2.4rem;
+}
+
+#agreement {
+    margin-top: 5rem;
+}
+
+#color {
+    margin-top: 2rem;
 }
