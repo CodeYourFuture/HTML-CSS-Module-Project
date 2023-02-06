@@ -83,10 +83,14 @@
               <div class="form-color">
                 <p>Select a colour</p>
                 <div class="form-color-choices">
-                  <input class="radio-color" type="radio" name="formColor" id="karmaOrange" value="karmaOrange" checked>
-                  <label class="radio-label" for="karmaOrange">Karma orange</label>
-                  <input class="radio-color" type="radio" name="formColor" id="spaceGrey" value="spaceGrey">
-                  <label class="radio-label" for="spaceGrey">Space Grey</label>
+                  <div class="color-choice">
+                    <input class="radio-color" type="radio" name="formColor" id="karmaOrange" value="karmaOrange" checked>
+                    <label class="radio-label" for="karmaOrange">Karma orange</label>
+                  </div>
+                  <div class="color-choice">
+                    <input class="radio-color" type="radio" name="formColor" id="spaceGrey" value="spaceGrey">
+                    <label class="radio-label" for="spaceGrey">Space Grey</label>
+                  </div>
                   
                 </div>
 
@@ -96,8 +100,10 @@
                 <label class="karma-tc-label" for="acceptTC">By placing your order you agree to Karma's <a href=".">Terms and Conditions *</a></label>
                 
               </div>                     
-            </div>          
-            <button type="submit" class="karma-btn">Place Your Order</button>
+            </div>  
+            <div class="karma-btn-container">
+              <button type="submit" class="karma-btn">Place Your Order</button>
+            </div>        
 
           </fieldset>
         </form>

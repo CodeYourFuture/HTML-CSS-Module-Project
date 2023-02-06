@@ -415,6 +415,45 @@ input[type="checkbox"]:checked + label::after {
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
+
+  /*                                     */
+  /* store changes for responsive design */
+  /*                                     */
+
+  .store-form-header {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+    /* outline: 5px dashed red; */
+  }
+  .store-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-names {
+    display: block;
+    gap: 2rem;
+  }
+
+  .form-city-postcode {
+    display: block;
+    gap: 2rem;
+  }
+
+  .form-postcode {
+    margin-top: 1rem;
+  }
+
+  .form-color-choices {
+    display: block;
+  }
+  .color-choice {
+    padding-top: 1rem;
+  }
+  .karma-btn-container {
+    text-align: center;
+  }
+
   .horiz-rule {
     display: none;
   }
