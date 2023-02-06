@@ -61,6 +61,10 @@ a:hover {
     color: white;
 }
 
+h1 {
+    font-weight: 100;
+}
+
 .main__container h2 {
     font-size: 2em; 
     font-weight: 100;
@@ -93,6 +97,7 @@ section {
 
 .section__container h2 {
     font-size: 3rem;
+    font-weight: 100;
 }
 
 .container__icon {
@@ -136,6 +141,7 @@ section {
 
 .content__text h2 {
     font-size: 2rem;
+    font-style: italic;
 }
 .content__container img {
     width: 100%;
@@ -149,6 +155,10 @@ section {
     text-align: center;
 }
 
+.content__wrapper span {
+    color: #f4861f;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -156,7 +166,7 @@ section {
     align-items: center;
     margin: 3rem;
     height: 150px;
-    border-top: #000 solid 1px;
+    border-top: #b2b2b2 solid 1px;
     row-gap: 1rem;
 }
 
@@ -164,8 +174,17 @@ section {
     width: 25px;
 }
 
+.footer a {
+    width: 40px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #b2b2b2;
+}
 .footer div {
     display: flex;
-    width: 110px;
+    width: 150px;
     justify-content: space-between;
 }
