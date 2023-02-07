@@ -211,4 +211,67 @@ section {
     .menu--hamburger {
         display: flex;
     }
+
+    .main__container h1 {
+        font-size: 3rem;
+    }
+
+    .main__container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .main__container button {
+        font-size: 15px;
+    }
+
+    section {
+        height: 950px;
+    }
+
+    .section__container {
+        justify-content: unset;
+    }
+
+    .section__container h2 {
+        font-size: 2rem;
+    }
+
+    .container__icon {
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4rem;
+    }
+
+    .content__container {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: none;
+    }
+
+    .content__img img {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    .content__wrapper h2 {
+        font-size: 1.6rem;
+    }
+
+    .content__text button {
+        font-size: 15px;
+        margin-bottom: 1rem;
+        padding: 15px 25px;
+        margin-top: 1.5rem;
+    }
+}
+@media (max-width: 390px) {
+    .content__text button {
+        font-size: 12px;
+        padding: 15px 15px;
+        margin-top: unset;
+    }
+
+    .content__wrapper h2 {
+        font-size: 1.2rem;
+    }
 }
