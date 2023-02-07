@@ -88,6 +88,7 @@ fieldset:nth-child(3) label {
 .section__wrapper h2 {
     color: #f4861f;
     font-size: 2rem;
+    width: 70%;
 }
 
 .name__wrapper {
@@ -121,6 +122,20 @@ fieldset:nth-child(3) label {
     background-size: cover;
 }
 
-.footer {
-    margin-top: 0rem;
+@media (max-width: 768px) {
+    section {
+        height: 1850px;
+    }
+    .section__wrapper {
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+    }
+
+    form {
+        row-gap: 3rem;
+    }
+
+    form div:last-child {
+        text-align: center;
+    }
 }
