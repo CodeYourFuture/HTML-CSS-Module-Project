@@ -14,8 +14,7 @@ header {
 
 .header__container {
     display: flex;
-    justify-content: space-between;
-    padding: 0px 6rem 0 6rem;
+    justify-content: space-around;
     height: 100%;
 }
 
@@ -27,6 +26,10 @@ header {
     display: flex;
     column-gap: 3rem;
     align-items: center;
+}
+
+.menu--hamburger {
+    display: none;
 }
 
 a {
@@ -192,4 +195,20 @@ section {
     display: flex;
     width: 150px;
     justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        justify-content: space-between;
+        padding-left: 6%;
+        padding-right: 8%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu--hamburger {
+        display: flex;
+    }
 }
