@@ -29,13 +29,35 @@ html {
 }
 
 
+.nav-bar{
+    background-color: white;
+        position: fixed;
+    
+}
+.nav-bar.links{
+    float: right;
+        font: 1rem;
+        margin-top: 25px;
 
+}
 
+.nav-bar.content{
+    width: 9.70px;
+        height: 4.375rem;
+        margin: 0 auto;
+        color: #838994;
+}
+.nav-bar li{
+    display: inline-block;
+        margin-left: 30px;
+}
 .main-nav{
     background-color:white;
     position: fixed;
     width: 100%;
 }
+
+
 
 .main-nav.content {
     width: 9.70px;
@@ -174,4 +196,124 @@ hr {
     word-spacing: 2px;
     text-transform: capitalize;
 
+}
+/*Karma Store*/
+
+.con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ 
+.order-title{
+    color: rgb(243, 159, 5);
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.fname_lname{
+display: flex;
+flex-direction: row;
+margin-bottom: 50px;
+}
+.lane{
+    padding-left: 30px;
+}
+.fname input
+.lname input {
+    width: 235px;
+}
+.form  input{
+    padding-right: 110px;
+    color: #838994;
+    width: 100%;
+    margin-left: 9%;
+border-radius: 8px;
+}
+.fname_lname input
+.adress input
+.adress2 input{
+    width: 100%;
+    border-radius: 8px;
+}
+.con img{
+margin-left: 8%;
+border-radius:8px;
+}
+
+
+/*styling the input boxes*/
+.fname_lname input
+.adress input
+.adress2 input
+.pcode input{
+    margin-top: 10px;
+    height: 53px;
+
+}
+.form label{
+    font-size: 21px;
+    font-weight: 500;
+}
+.adress.adress2{
+margin-bottom: 32px;
+}
+#city{
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+
+}
+.city{
+    margin-bottom: 30px;
+
+}
+.city_pcode{
+  display: flex;
+  flex-direction: row;  
+
+}
+.pcode{
+    padding-left: 27px;
+}
+.pcode input{
+    width:100px;
+}
+#pcode{
+    height:27px;
+}
+.form h3{
+    font-size: 20px;
+    font-weight: 500;
+    width: 100px;
+    height: 25px;
+}
+.radio_btn{
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+}
+#karma-orange, #space-gray, #trems{
+    cursor: pointer;
+}
+.space-gray{
+    padding-left: 20px;
+
+}
+.terms{
+    margin-bottom: 35px;
+}
+#tnc{
+    color:orangered;
+    font-weight: 400;
+    font-size: 18px;
+}
+#button{
+    padding: 23px 63px;
+    text-decoration: #fff;
+}
+/*giving a radio buttons orange colour and  check box background*/
+input {
+    accent-color: orange;
 }
