@@ -22,14 +22,77 @@ header {
     width: 35px;
 }
 
-.menu {
+.navbar {
     display: flex;
     column-gap: 3rem;
     align-items: center;
 }
 
-.menu--hamburger {
+/* Hamburger */
+menu {
+    text-align: center;
     display: none;
+}
+
+.hamburger1 {
+    height: 40px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+  
+.hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+  
+#toggle1 {
+    display: none;
+}
+  
+#toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+}
+  
+#toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: -5px;
+}
+  
+#toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+  
+#toggle1:checked ~ .navbar--mobile {
+    height: 300px;
+}
+  
+.navbar--mobile {
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-row-gap: 1rem;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navbar--mobile a:first-child {
+    margin-top: 1rem;
+}
+
+.navbar--mobile a:last-child {
+    margin-bottom: 1rem;
 }
 
 a {
@@ -51,16 +114,14 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 750px;
 }
 
 .main__container {
     text-align: center;
-    position: absolute;
-    top: 41%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
 }
 
@@ -197,6 +258,8 @@ section {
     justify-content: space-between;
 }
 
+
+
 @media (max-width: 768px) {
     .header__container {
         justify-content: space-between;
@@ -204,12 +267,12 @@ section {
         padding-right: 8%;
     }
 
-    .menu {
+    .navbar {
         display: none;
     }
 
-    .menu--hamburger {
-        display: flex;
+    menu {
+        display: grid;
     }
 
     .main__container h1 {
