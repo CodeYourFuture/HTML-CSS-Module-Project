@@ -76,7 +76,6 @@ select {
 }
 
 header {
-  border: 3px solid red;
   background-image: url(/img/first-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -381,8 +380,12 @@ input[type="checkbox"]:checked + label::after {
   .top-container {
     margin-left: 2rem;
     margin-right: 2rem;
+    /* outline: 3px solid red; */
   }
 
+  header {
+    margin-top: 4rem;
+  }
   .menu-burger {
     display: block;
   }
@@ -392,7 +395,18 @@ input[type="checkbox"]:checked + label::after {
   }
   .top-container-nav {
     display: none;
+    flex-direction: column;
+    margin-top: 4rem;
   }
+
+  .nav-item {
+    display: block;
+  }
+
+  .top-container-nav.active {
+    display: block;
+  }
+
   header {
     padding: 0 8rem;
     text-align: center;
@@ -423,7 +437,6 @@ input[type="checkbox"]:checked + label::after {
   .store-form-header {
     margin-top: 0px;
     margin-bottom: 3rem;
-    /* outline: 5px dashed red; */
   }
   .store-content {
     display: flex;
