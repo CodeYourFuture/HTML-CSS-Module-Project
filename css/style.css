@@ -65,6 +65,10 @@ a:hover {
     color: orangered;
 }
 
+nav ul li:nth-child(1) a {
+    color: black;
+}
+
 
 
 
@@ -197,8 +201,42 @@ q {
     align-items: center;
 }
 
+.ad-button a {
+    color: white;
+}
 
 
+
+/**Form**/
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+    display: grid;
+}
+
+form {
+    grid-column: 1/7;
+    grid-row: 1/-1;
+    padding: 2rem 5rem;
+}
+
+
+.form-image {
+    grid-column: 7/-1;
+    grid-row: 1/-1;
+
+}
+
+.form-image img {
+    width: 100%;
+}
 
 
 /***Footer***/
