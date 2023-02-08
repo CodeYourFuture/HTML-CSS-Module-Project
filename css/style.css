@@ -18,7 +18,7 @@ body {
     grid-gap: 1px;
     text-align: center;
     grid-template-columns: repeat(12, 1fr);
-   
+   grid-template-rows: auto;
     grid-template-areas:
         "h h h h h h h h h h h h"
         "c c c c c c c c c c c c"
@@ -27,7 +27,6 @@ body {
 
 /* ----------------Header Style--------------- */
 .header {
-    /* background-color: bisque; */
     grid-area: h;
     display: flex;
     justify-content: space-between;
@@ -40,28 +39,28 @@ body {
     padding-left: 4rem;
 }
 
-.navlist {
+.nav-list {
     display: flex;
     padding-right: 4rem;
 }
 
-.navitems {
+.nav-items {
     padding-left: 2rem;
     list-style: none;
 }
 
-.navitems>a {
+.nav-items>a {
     text-decoration: none;
     color: rgba(137, 141, 150, 255);
     font-size: 0.9rem;
 }
 
-.navitems>a:hover {
+.nav-items>a:hover {
     color: orangered;
 
 }
 
-.navitems:first-child a {
+.nav-items:first-child a {
     color: rgb(31, 28, 28);
 
 }
@@ -132,11 +131,6 @@ body {
 
 }
 
-/* .service-part {
-    padding-left: 5rem;
-    padding-right: 5rem;
-} */
-
 .link-service {
     text-decoration: none;
     color: black;
@@ -158,10 +152,10 @@ body {
     height: 20rem;
 }
 .karma-img{
-width: 40rem;
+width: 50rem;
 }
 .karma2{
-   width: 60rem;
+   width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,7 +199,7 @@ font-size: 2rem
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-top: 3rem; */
+  
 }
 
 .join-footer {
@@ -231,6 +225,9 @@ font-size: 2rem
     padding-bottom: 2rem;
     font-size: x-small;
 }
+ @media screen and (max-width: 768px) {
+  /* level 3 to be completed in few next days */
+} 
 /* ------Karma-sore style----- */
 
 .store-content{
@@ -270,10 +267,6 @@ padding-bottom: 5rem;
         border: none;
         margin: 0;
         padding: 0;
-        /* display: flex; */
-        /* flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start; */
 }
 .form-input {
     width: 100%;
@@ -312,7 +305,7 @@ border-radius: 4px;
 
   select:required:invalid {
     color: #666666;
-font-style: italic;
+     font-style: italic;
   }
   option[value=""][disabled] {
     display: none;
@@ -324,21 +317,26 @@ font-style: italic;
     margin-bottom: 0rem;
   }
 .color-choice{
-    
     width: 100%;
     display: flex;
-    align-content: center;
+    align-content:flex-start;
+}
+fieldset{
+  width: 100%;
+  padding-left: 0;
+  border: none;
 }
 .radio-label {
     padding-left: 1rem;
-    padding-right: 3rem;
+     padding-right: 3rem;
     padding-bottom: 0;
-    font-weight: 400;
+    font-weight: 300;
   }
 
  input[type="radio"] {
-    width: 2rem;
+    width: 1rem;
     opacity: 0;
+  
   }
    
 input[type="radio"] + label::before {
@@ -365,6 +363,7 @@ input[type="radio"] + label {
   padding: 0.5rem 1rem;
   cursor: pointer;
   display: inline-block;
+ ;
 }
   input[type="checkbox"] + label {
     position: relative;

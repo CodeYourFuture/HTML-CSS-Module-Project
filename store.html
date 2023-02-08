@@ -18,23 +18,23 @@
                 <img class="imglogo" src="img/karma-logo.svg" alt="karma-icon">
             </div>
             <nav>
-                <ul class="navlist">
-                    <li class="navitems">
+                <ul class="nav-list">
+                    <li class="nav-items">
                         <a href="index.html">Meet Karma</a>
                     </li>
-                    <li class="navitems">
+                    <li class="nav-items">
                         <a href="">How It Works</a>
                     </li>
-                    <li class=" navitems">
+                    <li class=" nav-items">
                         <a href="">Store</a>
                     </li>
-                    <li class="navitems">
+                    <li class="nav-items">
                         <a href="">Blog</a>
                     </li>
-                    <li class="navitems">
+                    <li class="nav-items">
                         <a href="">Help</a>
                     </li>
-                    <li class=" navitems">
+                    <li class=" nav-items">
                         <a href="">Login</a>
                     </li>
                 </ul>
@@ -45,17 +45,20 @@
          <section class="form-section">
              <h1 class="form-header">Order your Karma wifi device today!</h1>
              <form class="form-store" action="store.html" method="get">
-                <fieldset class="fieldset-store">
+                <div class="fieldset-store">
                    <div class="full-name">
                     <div class="first-name">
                         <label for="firstname">First name *</label>
                         <input class="form-input" type="text" name="fisrtname" id="firstname" required>
                     </div>
-                    <div class="last-name">
-                        <label for="lastname">Last name *</label>
-                        <input  class="form-input" type="text" name="lastname" id="lastname" required>
-                    </div>
+                
+                  
+                        <div class="last-name">
+                            <label for="lastname">Last name *</label>
+                            <input  class="form-input" type="text" name="lastname" id="lastname" required>
+                        </div>
                    </div>
+                    
                    <div class="full-addrese">
                     <div class="address1">
                         <label for="address">Address *</label>
@@ -69,11 +72,14 @@
                         <div class="city">
                             <label for="city">City *</label>
                             <select name="city" id="city" required>
+                                <optgroup>
                                 <option value="" disabled selected> Select your city... </option>
                                 <option value="Glasgow">Glasgow</option>
                                 <option value="London">London</option>
-                                <option value="Edinburg">Edinburg</option>
+                                <option value="Edinburgh">Edinburgh</option>
                                 <option value="Manchester">Manchester</option>
+                                </optgroup>
+                                
                             </select>
                         </div>
                         <div class="postcode">
@@ -82,18 +88,20 @@
                         </div>
                     </div>
                    </div>
-                
-                   <div class="select-color">
-                    <p>Select a color</p>
-                     <div class="color-choice">
-                        <input  class="form-input" type="radio" name="color" id="karmaorange" checked>
-                        <label class="radio-label" for="karmaorange">Karma orange</label>
-                     
-                        <input class="form-input"  type="radio" name="color" id="spacegray">
-                        <label  class="radio-label" for="spacegray">Space gray</label>
-                     </div>
-                       
-                   </div>
+                <fieldset>
+                    <div class="select-color">
+                        <legend>Select a color</legend>
+                         <div class="color-choice">
+                            <input  class="form-input" type="radio" name="color" id="karmaorange" checked>
+                            <label class="radio-label" for="karmaorange">Karma orange</label>
+                         
+                            <input class="form-input"  type="radio" name="color" id="spacegray">
+                            <label  class="radio-label" for="spacegray">Space gray</label>
+                         </div>
+                           
+                       </div>
+                </fieldset>
+                   
                    <div class="terms">
                     <input class="form-input"  type="checkbox" name="terms" id="terms">
                     <label class="term-label" for="terms">By placing your order you agree to Karma's <a href=".">Terms and Conditions *</a></label>
@@ -102,7 +110,7 @@
                    <div class="btn">
                        <button class="order-btn" type="submit">Place my order</button>
                    </div>
-                </fieldset>
+                </div>
              </form>
          </section>
          <section class="img-section">
