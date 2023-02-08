@@ -24,6 +24,48 @@ button {
 .icon {
     max-width: 400px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem 0 5rem;
+}
+
+.navigation_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.navigation_item:first-child {
+    font-weight: bold;
+}
+
+.navigation_item {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: var(--orange-dark);
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.icons h2 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    
+}
 /**
  * Add your custom styles below
  * 
