@@ -31,11 +31,14 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
 }
 
+a {
+    color: var(--orange-dark);
+}
+
 html, body, div {
     margin: 0;
     padding: 0;
     border: 0 none;
-
 }
 
 /* Header */
@@ -184,6 +187,7 @@ footer .flex-container {
 
 .footer {
     height: 18rem;
+    border-top: 0.1rem solid var(--lighter-grey);
 }
 
 .footer p {
@@ -229,7 +233,7 @@ footer .flex-container {
 }
 
 
-/* Form */
+/* Form 
 
 .form-container {
     display: flex;
@@ -280,4 +284,113 @@ input[type=submit] {
 
 #color {
     margin-top: 2rem;
+}
+
+*/
+
+/* New Form Styles */
+
+.form-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.form-container {
+    grid-column: 1 / 2;
+}
+
+.form-image-container {
+    grid-column: 2 / -1;
+}
+
+
+.order-form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    align-items: center;
+    column-gap: 1.5rem;
+    height: 100%;
+    padding: 3rem 10rem;
+    font-size: 1.4rem;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    }
+
+
+.form-title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+}
+
+.form-fname {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+.form-lname {
+    grid-column: 5 / -1;
+    grid-row: 3 / 4;
+}
+
+.form-address1 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+.form-address2 {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+}
+
+.form-city {
+    grid-column: 1 / 6;
+    grid-row: 6 / 7;
+}
+
+.form-postcode {
+    grid-column: 6 / -1;
+    grid-row: 6 / 7;
+}
+
+.form-color {
+    grid-column: 1 / -1;
+    grid-row: 7 / 8;
+}
+
+.form-agreement {
+    grid-column: 1 / -1;
+    grid-row: 8 / 9;
+    align-self: end;
+}
+
+.form-submit {
+    grid-column: 1 / 3;
+    grid-row: 9 / 10;
+}
+
+.form-image {
+    max-width: 50vw;
+}
+
+.form-title h1 {
+    color:var(--orange-dark);
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.form-submit input[type=submit] {
+    padding: 0.8rem 2rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.form-color-inline {
+    display: flex;
+    column-gap: 2rem;
 }
