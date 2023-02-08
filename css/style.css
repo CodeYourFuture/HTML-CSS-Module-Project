@@ -1,19 +1,411 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: rgb(255, 255, 255);
+
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+
+/* General style------------------------ */
 
 
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 1px;
+    text-align: center;
+    grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: auto;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+/* ----------------Header Style--------------- */
+.header {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.1);
+}
+
+.logo {
+    width: 1.5rem;
+    padding-left: 4rem;
+}
+
+.nav-list {
+    display: flex;
+    padding-right: 4rem;
+}
+
+.nav-items {
+    padding-left: 2rem;
+    list-style: none;
+}
+
+.nav-items>a {
+    text-decoration: none;
+    color: rgba(137, 141, 150, 255);
+    font-size: 0.9rem;
+}
+
+.nav-items>a:hover {
+    color: orangered;
+
+}
+
+.nav-items:first-child a {
+    color: rgb(31, 28, 28);
+
+}
+
+/* ------------------Main style ----------------- */
+.content {
+
+    grid-area: c;
+
+}
+
+/* First section -----------*/
+.hero-image {
+    background-image: url("/img/first-background.jpg");
+    background-color: #cccccc;
+    height: 42rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    font-weight: 2rem;
+    color: rgba(250, 251, 251, 255);
+    text-align: center;
+}
+
+.header-hero {
+    font-weight: lighter;
+    font-size: 3.5rem;
+    margin: 1rem 0rem;
+
+}
+
+.hero-p {
+    font-size: 1.9rem;
+    font-weight: lighter;
+}
+
+.hero-button {
+    background-color: rgba(224, 99, 58, 255);
+    width: 10rem;
+    height: 4rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+
+}
+
+/* Second Section----------------- */
+
+#service-header {
+    padding-top: 5rem;
+    font-weight: lighter;
+    color: black;
+    font-size: 2.5rem;
+}
+
+.three-services {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.6rem;
+    padding-bottom: 7rem;
+
+}
+
+.link-service {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img-service {
+    width: 6rem;
+    height: 6rem;
+}
+/* Level 2- Extended Page style */
+.get-karma{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    height: 20rem;
+}
+.karma-img{
+width: 50rem;
+}
+.karma2{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(224, 99, 58, 0.1);
+
+}
+.karma-text{
+font-family: 'Roboto';
+font-style: italic;
+font-weight: 400;
+font-size: 2rem
+}
+#quoto::before
+{
+    content: "“";
+    color: #E0633A;
+    font-weight: 400;
+}
+#quoto::after{
+    content: "”";
+    color: #E0633A;
+    font-weight: 400;
+}
+.karma-btn{
+    background: #E0633A;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+}
+.karma-btn a{
+    color: white;
+    text-decoration: none;
+}
+/* -------------------Footer style--------------- */
+.footer {
+    border-top: 2px solid rgb(239, 237, 237);
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.join-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-footer {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    border: 1px solid rgb(239, 237, 237);
+    padding: 0.5rem;
+}
+
+.icons {
+    padding: 0.3rem;
+}
+
+#pp-footer {
+    color: #cccccc;
+    padding-bottom: 2rem;
+    font-size: x-small;
+}
+ @media screen and (max-width: 768px) {
+  /* level 3 to be completed in few next days */
+} 
+/* ------Karma-sore style----- */
+
+.store-content{
+    height: 1235px;
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-areas: ". f f f f . i i i i i i"
+   ". f f f f . i i i i i i";
+   color: #666666;
+
+   
+}
+.form-section{
+    grid-area: f;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 21px;
+    
+}
+.img-section{
+    grid-area: i;
+}
+.store-img{
+    width: 100%;
+    height: 100%;  
+}
+.form-header{
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 59px;
+color: #E0633A;
+padding-top: 4rem;
+padding-bottom: 5rem;
+}
+.fieldset-store{
+        border: none;
+        margin: 0;
+        padding: 0;
+}
+.form-input {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid #666666;
+border-radius: 4px;
+  }
+  .full-name{
+    display: flex;
+    gap: 3rem;
+  }
+  .city-postcode{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+  }
+  .city{
+    width: 70%;
+  }
+  .postcode{
+    width: 30%;
+  }
+  select{
+    width: 100%;
+    height: 2.4rem;
+    border: 2px solid #666666;
+    border-radius: 4px;
+  }
+
+  label{
+    display: block;
+    text-align: left;
+    padding-bottom: 0.8rem;
+  }
+
+  select:required:invalid {
+    color: #666666;
+     font-style: italic;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color:#666666;
+  }
+  .select-color{
+    margin-bottom: 0rem;
+  }
+.color-choice{
+    width: 100%;
+    display: flex;
+    align-content:flex-start;
+}
+fieldset{
+  width: 100%;
+  padding-left: 0;
+  border: none;
+}
+.radio-label {
+    padding-left: 1rem;
+     padding-right: 3rem;
+    padding-bottom: 0;
+    font-weight: 300;
+  }
+
+ input[type="radio"] {
+    width: 1rem;
+    opacity: 0;
+  
+  }
+   
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+input[type="radio"]:checked + label {
+  color:#666666;
+}
+input[type="radio"]:checked + label::before {
+  background: radial-gradient(#E0633A 0%, #E0633A 60%, transparent 50%, transparent);
+
+}
+
+input[type="radio"] + label {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: inline-block;
+ ;
+}
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-top: 2px;
+  }
+  
+  input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 1px solid grey;
+    left: 0;
+    top: 5px;
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+  .term-label{
+    padding-left: 1.5rem;
+    font-size: 18px;
+  }
+  .term-label a{
+    color:#E0633A;
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    background-image: url(/level-2/checkmark.svg);
+    background-size: contain;
+    content: "";
+    position: absolute;
+    width: 0.9rem;
+    height: 0.9rem;
+    left: 0;
+    top: 5px;
+  }
+  
+  .order-btn{
+    background-color: #E0633A;
+    color: white;
+    border-radius: 0.8rem;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    border: none;
+  }
