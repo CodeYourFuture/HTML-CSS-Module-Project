@@ -18,12 +18,12 @@ body {
 button {
     background-color: var(--orange-dark);
 }
-.sm_icon {
-    width: 30px;
-}
+
 .icon {
     max-width: 400px;
 }
+
+/* header styling */
 
 header {
     display: flex;
@@ -55,25 +55,56 @@ a:hover {
     color: var(--orange-dark);
 }
 
+/* picture sector styling */
+
+/* articles sector styling */
+
 .icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
+    
 }
 
 .icons h2 {
     grid-column: 1 / -1;
     justify-self: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* footer styling */
+footer {
+    border-top: 4px solid var(--light-grey);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    text-align: center;
     
 }
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+footer p:first-child {
+    text-align: center;
+}
+
+footer p:last-child {
+    justify-self: center;
+    color: grey;
+}
+
+.footer_img {
+    display: inline-flex;
+    justify-content: center;
+}
+.sm_icon {
+    width: 30px;
+    display: flex;
+    border: 2px solid var(--light-grey);
+    border-radius: 50%;
+    border-spacing: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
 
 
