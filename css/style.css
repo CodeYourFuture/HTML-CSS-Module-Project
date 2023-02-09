@@ -1,15 +1,21 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3.1rem 30rem 22.1rem 11.2rem;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 3.1rem 30rem 25rem 20rem 11.2rem;
+    grid-template-areas: 
+    "header   header"
+    "intro    intro"
+    "icons    icons"
+    "girl     get"
+    "footer   footer";
 }
 /** Navigation menu */
 .header {
     display: flex;
     justify-content: space-between;
+    grid-area: header;
 }
 .logo_header {
     width: auto;
@@ -43,11 +49,14 @@ li:first-child {
 background-image: url("../img/first-background.jpg");
 background-color: #cccccc;
 background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 color: aliceblue;
+grid-area: intro;
 }
 .main_title{
 font-weight: lighter;
@@ -58,13 +67,17 @@ margin: 0;
     font-size: 1.35rem;
     margin-bottom: 2.6rem;
 }
-.button_learn_more{
+button{
     background-color: #ff6700;
     font-size: 0.85rem;
     border-radius: 7%;
     padding: 0.65rem 1.5rem;
+    color:aliceblue
 }
 /** Icons menu  */
+.karma_icons{
+    grid-area: icons;
+}
 .icon_menu{
 display: flex;
 flex-direction: row;
@@ -87,10 +100,33 @@ padding: 0 2.5rem;
     padding-top: 4rem;
     padding-bottom: 1rem;
 }
+/* Get karma section */
+.get_karma_img{
+    background-color: #f8520b;
+    grid-area: girl;
+    background-image: url("../level-2/homepage-feature.png");
+    background-color: #cccccc;
+    background-size: cover;
+    
+}
+.get_karma_content{
+    background-color: #fcefeb;
+    grid-area: get;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get_karma_content p{
+    width: 20rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
 /** Footer */
 .footer{
     border-top: 1px solid #e5e6e4;
     margin: 1rem 5rem;
+    grid-area: footer;
 }
 .footer_title {
     font-weight: lighter;
@@ -110,8 +146,6 @@ padding: 0 2.5rem;
     border-radius: 50%;
     padding: 0.38rem;
     margin-left: 0.8rem;
-    
-    
 }
 .footer_end_paragraph{
     text-align: center;
@@ -119,14 +153,3 @@ padding: 0 2.5rem;
     font-size: 0.65rem;
 }
  
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
