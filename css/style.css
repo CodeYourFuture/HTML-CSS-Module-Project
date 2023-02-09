@@ -37,6 +37,37 @@ body {
  .how_it_works, .meet_karma, .store, .blog, .help, .log_in {
     margin-right: 40px;
  }
- 
-
+ .main_upper_part {
+    background-image:url(../img/first-background.jpg);
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+ }
+ #main_introduction {
+    font-size: 80px;
+    color:beige;
+    margin-top: 250px;
+    margin-bottom: 0px;
+ }
+ #main_rest {
+    font-size: 40px;
+    color: beige;
+    
+ }
+ #learn_more {
+    background-color: coral;
+    font-size: 30px;
+    margin-top: 50px;
+    
+    
+ }
+#learn_more a {
+    text-decoration: none;
+    color: beige;
+    
+}
 
