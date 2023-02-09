@@ -70,4 +70,46 @@ body {
     color: beige;
     
 }
+#learn_more a:hover {
+    color: blue;
+}
+.main_lower_part {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    
+}
+#main_lower_part_title {
+    font-size: 60px;
+    padding-top: 60px;
+    padding-left: 500px;
+}
+.main_lower_part_section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin-bottom: 100px;
+}
+.main_lower_part_section1 a {
+    text-decoration: none;
+    color: grey;
+    
+}
+.main_lower_part_section1 img {
+    margin-bottom: 20px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    margin-bottom: 100px;
+    
+    
+}
 
+footer img {
+    width: 20px;
+    height: 20px;
+}
