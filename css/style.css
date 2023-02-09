@@ -15,5 +15,28 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ .navbar {
+    display: flex;
+    
+ }
+ .navbar img {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+ }
+ .navbar a {
+    text-decoration: none;
+    color:grey;
+ }
+ .navbar a:hover {
+    color: coral;
+ }
+ .meet_karma {
+    margin-left: auto;
+ }
+ .how_it_works, .meet_karma, .store, .blog, .help, .log_in {
+    margin-right: 40px;
+ }
+ 
 
 
