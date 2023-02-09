@@ -1,0 +1,145 @@
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ @media screen and (min-width: 480px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3.1rem 50rem 11.2rem;
+        grid-template-areas:
+        "header   header"
+        "order    girl"
+        "footer   footer" ;
+    }
+    /** Navigation menu */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        grid-area: header;
+    }
+    .logo_header {
+        width: auto;
+        height: 30px;
+        padding-top: 0.6rem;
+        padding-left: 3.8rem;
+    }
+    .navigation_list {
+        display: flex;
+        list-style: none;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+        margin-right: 2.4rem;
+    }
+    .navigation_item{
+        padding: 0rem 0rem;
+    }
+    .navigation_link{
+        color: var(--grey-dark);
+        text-decoration: none;
+        padding: 0 0.8rem;
+    }
+    .navigation_link:hover {
+        color: #f8520b;
+    }
+    li:first-child {
+        font-weight: 500;
+    }
+     /** First background with button */ 
+    .intro{
+    background-image: url("../img/first-background.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    grid-area: order;
+    }
+    .main_title{
+    font-weight: lighter;
+    font-size: 2.76em;
+    margin: 0;
+    }
+    .main_paragraph{
+        font-size: 1.35rem;
+        margin-bottom: 2.6rem;
+    }
+    .button_learn_more{
+        background-color: #ff6700;
+        font-size: 0.85rem;
+        border-radius: 7%;
+        padding: 0.65rem 1.5rem;
+    }
+    /** Icons menu  */
+    .icon_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2rem;
+    }
+    .girl{
+        grid-area: girl;
+    }
+    .icons{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    }
+    .logo_menu_img {
+        width: auto;
+        height: 6rem;
+        padding-bottom: 1rem;
+    }
+    .icons-title{
+        text-align: center;
+        font-weight: lighter;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    /** Footer */
+    .footer{
+        grid-area: footer;
+        border-top: 1px solid #e5e6e4;
+        margin: 1rem 5rem;
+    }
+    .footer_title {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+    .icons_contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons_img_footer{
+        width: auto;
+        height: 0.8rem;
+        border: 0.12rem solid #e5e6e4;
+        border-radius: 50%;
+        padding: 0.38rem;
+        margin-left: 0.8rem;
+        
+        
+    }
+    .footer_end_paragraph{
+        text-align: center;
+        color: #c5c3c6;
+        font-size: 0.65rem;
+    }
+     }
+    /**
+     * Add your custom styles below
+     * 
+     * Remember: 
+     * - Be organised, use comments and separate your styles into meaningful chunks
+     *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+     * 
+     * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+     */
+    
+    
+    
