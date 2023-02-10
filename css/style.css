@@ -9,6 +9,7 @@ body {
 :root {
     --light-grey: #e4e4e4;
     --orange-dark: #c05326;
+    --light-orange: #fcefeb;
 }
 
 /* header styling */
@@ -120,13 +121,41 @@ button:hover {
     
 }
 
+/* button section styling */
+
+a {
+    text-decoration: none;
+    color: var(--light-grey);
+}
+.extended {
+    display: inline-flex;
+    background-color: var(--light-orange);
+    width: 100%;
+}
+.button_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button_2 p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 48px;
+    padding: 0 20% 0 20%;
+}
+
 /* footer styling */
 footer {
     border-top: 4px solid var(--light-grey);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin: auto;
+    margin-top: 3rem;
     text-align: center;
     padding-bottom: 1.5rem;
 }
