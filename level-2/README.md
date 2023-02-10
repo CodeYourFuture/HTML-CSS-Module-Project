@@ -1,7 +1,7 @@
 # karma-clone
 ## Level 2
 The aim of this exercise is to:
--  add a new section to the homepage
++  add a new section to the homepage
 -  create a new 'store' page with an order form
 -  connect the 2 pages together by adding navigation
 
