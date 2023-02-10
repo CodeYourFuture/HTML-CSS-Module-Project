@@ -14,36 +14,38 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
 <body>
   <!-- Header Section -->
-  <header class="my-1">
-    <div class="container">
-      <!-- Header - Navbar section -->
-      <nav class="navbar">
-          <a href="#"><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 144 216"
-              width="100px"
-              height="43px"
-            >
-              <path
-                fill="#F15B2A"
-                d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z"
-              />
-            </svg></a>
-        
-        <ul>
-          <li><a href="index.html">Meet Karma</a></li>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li class="logo"><a href="#"><svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 144 216"
+          width="100px"
+          height="43px"
+        >
+          <path
+            fill="#F15B2A"
+            d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z"
+          />
+        </svg></a></li>
+        <input type="checkbox" id="check">
+        <span class="menu">
+          <li><a href="index.html"> <span class="first-color"> Meet Karma</span></a></li>
           <li><a href="#">How it Works</a></li>
-          <li><a href="store.html"><span class="sec-color">Store</span></a></li>
+          <li><a href="store.html"> <span class="sec-color">Store</span></a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Help</a></li>
           <li><a href="#">Login</a></li>
-        </ul>
-      </nav>
-    </div>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
   </header>
 
   <!-- Main Section-->
@@ -56,33 +58,33 @@
             <form class="form">
               <div class="name-sec">
                 <div>
-                  <label for="name">First name &#42;</label><br>
+                  <label class="py-1" for="name">First name &#42;</label><br>
                   <input type="text" id="name">
                 </div>
-                <div>
-                  <label for="l_name">Last name &#42;</label><br>
+                <div class="l_name">
+                  <label  class="py-1" for="l_name">Last name &#42;</label><br>
                   <input type="text" id="l_name">
                 </div>
               </div>
               <div class="my-2">
-                <label for="address">Address</label><br>
+                <label  class="py-1" for="address">Address</label><br>
                 <input type="text" id="address">
               </div>
               <div class="my-2">
-                <label for="address2">Address 2 &#42;</label><br>
+                <label  class="py-1" for="address2">Address 2 &#42;</label><br>
                 <input type="text" id="address2">
               </div>
               <div class="city-sec my-2">
                 <div>
-                  <label for="city">City &#42;</label><br>
+                  <label  class="py-1" for="city">City &#42;</label><br>
                   <select name="" id="city">
                     <option default>Select Your City...</option>
                     <option value="">Milton Keynes</option>
                     <option value="">London</option>
                   </select>
                 </div>
-                <div>
-                  <label for="post_code">Postcode &#42;</label><br>
+                <div class="post_code">
+                  <label  class="py-1" for="post_code">Postcode &#42;</label><br>
                   <input type="text" id="post_code">
                 </div>
               </div>
@@ -91,67 +93,30 @@
                 <div class="field-item">
                  <div>
                    <input type="radio" id="karma_color" name="karma_color">
-                   <label for="karma_color">Karma orange</label>
+                   <label  class="py-1" for="karma_color">Karma orange</label>
                  </div>
                  <div>
                    <input type="radio" id="space-color" name="karma_color">
-                 <label for="space-color">Space Gray</label>
+                 <label  class="py-1" for="space-color">Space Gray</label>
                 </div>
               </div>
                </fieldset>
                <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="privacy" checked>
                   <label class="form-check-label ml-3" for="privacy">
-                    By placing your order you agree to Karma's <a href="#"><span class="sec-color">Terms and <br>Conditions</span></a>
+                    By placing your order you agree to Karma's <a href="#"><span class="sec-color">Terms and Conditions</span></a>
                    </label>
                </div>
                <a href="#" class="btn">Place my order</a>
             </form>
         </div>
         <div class="col pic">
-          
+          <img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Store image">
         </div>
       </div>
-
     </section>
 
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 
 
 
