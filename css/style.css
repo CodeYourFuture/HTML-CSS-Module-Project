@@ -224,11 +224,23 @@ fieldset {
 
 }
 
-/*form {
-    grid-column: 1/7;
+form {
+    grid-column: 2/6;
     grid-row: 1/-1;
     padding: 2rem 5rem;
-}*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+legend {
+    color: orangered;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    grid-row: 1/2;
+    grid-column: 1/5;
+}
 
 
 .form-image {
@@ -241,6 +253,56 @@ fieldset {
     width: 100%;
 }
 
+.form-name {
+    display: flex;
+
+}
+
+.last-name {
+    margin-left: 1rem;
+}
+
+input[type=text] {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border: 1.5px solid lightgrey;
+    border-radius: 4px;
+    display: block;
+}
+
+form label,
+form span {
+    font-size: 0.9rem;
+    color: darkgray;
+}
+
+.form-address input {
+    width: 100%;
+}
+
+.city-postcode {
+    display: flex;
+}
+
+#city {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border: 1.5px solid lightgrey;
+    border-radius: 4px;
+
+}
+
+
+.select-city {
+    font-style: italic;
+    background-color: white;
+
+}
+
+.form-postcode {
+    margin-left: 4rem;
+}
 
 /***Footer***/
 
