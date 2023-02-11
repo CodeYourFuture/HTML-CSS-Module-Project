@@ -1,19 +1,468 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+  --primary-color: #333;
+  --secondary-color: #eb5e28;
+  --light-color: #fff;
+  --gray-color: #999;
+  --max-width: 1100px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  color: var(--primary-color);
 }
 
 /**
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be orgenised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Utility */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 0.5rem;
+  overflow: hidden;
+}
+.py-1 {
+  padding: 0.25rem 0;
+}
+.py-2 {
+  padding: 0.75rem 0;
+}
+.my-1 {
+  margin: 0.25rem 0;
+}
+.my-2 {
+  margin: 0.75rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.first-color {
+  color: var(--primary-color);
+}
+.sec-color {
+  color: var(--secondary-color);
+}
+a {
+  color: var(--gray-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+ul {
+  list-style: none;
+}
+.btn {
+  display: inline-block;
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+}
+.btn:hover {
+  color: var(--light-color);
+}
 
+/* Heading */
+/* Heading  navbar*/
+header .nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 12px 20px;
+}
+header .menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 30px;
+}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--gray-color);
+  text-align: center;
+  position: relative;
+}
+.menu li a:hover {
+  color: var(--secondary-color);
+}
+
+header .open-menu,
+header .close-menu {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+header .open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+header .close-menu {
+  top: 20px;
+  right: 20px;
+}
+header #check {
+  display: none;
+}
+
+/* Main */
+/* Main - Showcase*/
+main .showcase {
+  text-align: center;
+  height: 90vh;
+  background: url(../img/first-background.jpg) no-repeat bottom center/cover;
+  color: var(--light-color);
+}
+main .showcase h1 {
+  padding-top: 14rem;
+  padding-bottom: 0.5rem;
+  margin: 0;
+  font-weight: normal;
+  font-size: 3rem;
+}
+main .showcase p {
+  font-size: 1.5rem;
+}
+
+/* Main - Feature */
+main .feature h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+main .feature p {
+  font-size: 1rem;
+}
+main .feature .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Main - Description */
+.row-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+main .des .row .col {
+  min-height: 500px;
+  flex: 1;
+  justify-content: space-around;
+}
+main .des .row .col2 {
+  text-align: center !important;
+  background-color: #fae0e4;
+}
+main .des .row .col2 h2 {
+  margin-top: 7rem;
+}
+.img-feature,
+.col2 {
+  max-width: 600px;
+  margin-left: 20px;
+}
+.col1 {
+  background: url("../level-2/homepage-feature.png") no-repeat center
+    center/cover;
+}
+
+/* Main - Order -store page */
+main .order {
+  /* height: 90vh; */
+  line-height: 1.2;
+}
+main .order input[type="text"],
+main .order select {
+  height: 26px;
+}
+main .order h2 {
+  margin: 2rem 0;
+  font-size: 30px;
+}
+
+main .order .row {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+main .order .row .col {
+  min-height: 600px;
+  flex: 1;
+  justify-content: space-around;
+}
+main .order .row .pic {
+  background: url("../level-2/store-image_by-andrew-neel-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+main .order .row .input {
+  padding-left: 10rem;
+}
+main .order .row .input .name-sec,
+main .order .row .input .city-sec {
+  display: flex;
+  gap: 3rem;
+}
+main .order .row .input .name-sec input {
+  width: 150px;
+}
+main .order .row .input #address,
+main .order .row .input #address2 {
+  width: 350px;
+}
+main .order .row .input #post_code {
+  width: 130px;
+}
+main .order .row .input select {
+  width: 170px;
+}
+main .order .row .input fieldset {
+  border: none;
+  margin-top: 2.5rem;
+}
+
+main .order .row .input .field-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Radio buttons - change color */
+/* completely hiding radio button */
+input[type="radio"] {
+  display: none;
+}
+/* simulate radio button appearance using pseudo selector */
+main .order .row input[type="radio"] + label:before {
+  content: "";
+  /* create custom radio button appearance */
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 2.5px;
+  margin-right: 5px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+/* appearance of checked radio button */
+main .order .row input[type="radio"]:checked + label:before {
+  background-color: var(--secondary-color);
+}
+
+/* resetting default box-sizing */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* checkbox - change color */
+main .order .row .input .form-check {
+  position: relative;
+  margin-top: 2rem;
+}
+
+main .order .row .input input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+main .order .row .input input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: 15px;
+  width: 15px;
+  left: 0;
+  top: 0px;
+  background-color: var(--secondary-color);
+  font-family: "Montserrat";
+  border-radius: 2px;
+  border: 1px solid rgb(150 150 150 / 30%);
+}
+
+main .order .row .input input[type="checkbox"]:checked + label::after {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>');
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 2px;
+}
+
+main .order .row .input .form-check label {
+  font-size: 13px;
+}
+main .order .row .input a {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+}
+
+main .order .row .input .btn {
+  margin-top: 1rem;
+}
+
+/* Footer section */
+footer {
+  text-align: center;
+}
+footer svg {
+  border: 2px solid var(--gray-color);
+  border-radius: 50px;
+  background-color: var(--light-color);
+  padding: 0.25rem;
+}
+footer p {
+  margin-bottom: 2rem;
+  color: var(--gray-color);
+}
+
+@media (max-width: 540px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--light-color);
+  }
+  .menu li {
+    margin-top: 30px;
+  }
+  .menu li a {
+    padding: 8px;
+  }
+  header .open-menu,
+  header .close-menu {
+    display: block;
+  }
+  header #check:checked ~ .menu {
+    right: 0;
+  }
+
+  /* Showcase */
+  main .showcase {
+    height: 40vh;
+    background: url(../img/first-background.jpg) no-repeat center center/cover;
+  }
+  main .showcase h1 {
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  main .showcase p {
+    font-size: 1rem;
+  }
+
+  /* Feature */
+  main .feature .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .feature .items .item {
+    margin-top: 1.5rem;
+  }
+
+  /* Main - Description */
+  main .des .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .des .row .col2 h2 {
+    margin-top: 2rem;
+  }
+  main .des .row .col2 a {
+    margin-bottom: 1rem;
+  }
+  /* Order */
+
+  main .order .row {
+    display: flex;
+    flex-direction: column;
+  }
+  main .order .form {
+    height: 75vh;
+    /* line-height: 1; */
+  }
+  main .order .row .pic {
+    height: 50vh;
+  }
+  main .order .row .input {
+    padding-left: 4rem;
+  }
+  main .order .row .input .name-sec,
+  main .order .row .input .city-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  main .order .row .input #address,
+  main .order .row .input #address2,
+  main .order .row .input select,
+  main .order .row .input .name-sec input {
+    width: 250px;
+  }
+  main .order .row .input #post_code {
+    width: 125px;
+  }
+  main .order .row .input .name-sec .l_name,
+  main .order .row .input .post_code {
+    margin-top: 1rem;
+  }
+  main .order .row .input fieldset {
+    margin-top: 1rem;
+  }
+  main .order .row .input .form-check {
+    position: relative;
+    margin-top: 0.5rem;
+  }
+  main .order .row .input .field-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  main .order .row .input .form-check {
+    width: 250px;
+  }
+}
