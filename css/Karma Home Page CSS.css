@@ -1,0 +1,159 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    border: 2px solid blue;
+    margin: 50px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*navigation*/
+
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%
+}
+
+.top-navigation .content {
+    width: 970px;
+    height: 4.375rem;
+    margin: 0 auto;
+    color: #838994;
+}
+
+.top-navigation .links {
+    float: right;
+    font-size: 1rem;
+    margin-top: 1.563rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+.introduction {
+    background-image: url('https://thinkful-ed.github.io/karma-clone/img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    background-position: 10 bottom;
+    overflow: auto;
+}
+
+.introduction .content {
+    color: white;
+    text-align: center;
+    padding-top: 400px;
+}
+
+.cases {
+    text-align: center;
+}
+
+.get-karma-today {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.get-karma-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.get-karma-today1 {
+    width: 100%;
+    height: 100%;
+}
+
+.get-karma-today2 {
+    background-color: rgb(247, 229, 217);
+    text-align: center;
+    justify-items: center;
+    padding: 30px;
+    text-justify: auto;
+    justify-content: center;
+}
+
+button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: rgb(236, 110, 6);
+    color: white;
+}
+
+
+/*devices*/
+
+.devices>li {
+    width: 33%;
+    box-sizing: border-box;
+    height: 4em;
+    display: inline-block;
+    list-style: none;
+    box-sizing: border-box;
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+.social .twitter {
+    color: #55acee;
+}
+
+.social .icons {
+    text-align: center;
+}
+
+.social .icons>li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #4927c4;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+.social,
+.content {
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}

@@ -1,0 +1,409 @@
+navigation .top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%
+}
+
+.top-navigation .content {
+    width: 970px;
+    height: 4.375rem;
+    margin: 0 auto;
+    color: #838994;
+}
+
+.top-navigation .links {
+    float: right;
+    font-size: 1rem;
+    margin-top: 1.563rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 1625px;
+    background: #FFFFFF;
+}
+
+main {
+    position: absolute;
+    width: 1318px;
+    height: 1235px;
+    left: 122px;
+    top: 98px;
+}
+
+.heading1 {
+    position: absolute;
+    width: 521px;
+    height: 118px;
+    left: 123px;
+    top: 214px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #E0633A;
+}
+
+form {
+    position: absolute;
+    width: 501px;
+    height: 849px;
+    left: 122px;
+    top: 414px;
+}
+
+
+/* .name1 {
+    position: absolute;
+    width: 235px;
+    height: 90px;
+    left: 122px;
+    top: 414px;
+}
+
+.name2 {
+    position: absolute;
+    width: 235px;
+    height: 90px;
+    left: 384px;
+    top: 414px;
+} */
+
+.first-name-label {
+    position: absolute;
+    width: 148px;
+    height: 25px;
+    left: 122px;
+    top: 414px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+.first-name {
+    position: absolute;
+    width: 235px;
+    height: 53px;
+    left: 122px;
+    top: 451px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+.last-name-label {
+    position: absolute;
+    width: 128px;
+    height: 25px;
+    left: 384px;
+    top: 414px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #666666;
+}
+
+.last-name {
+    position: absolute;
+    width: 235px;
+    height: 53px;
+    left: 384px;
+    top: 451px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+
+/* .address1-fieldset {
+    position: absolute;
+    width: 499px;
+    height: 90px;
+    left: 122px;
+    top: 536px;
+} */
+
+.address1-label {
+    position: absolute;
+    width: 93px;
+    height: 25px;
+    left: 122px;
+    top: 536px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+.address1 {
+    position: absolute;
+    width: 499px;
+    height: 53px;
+    left: 122px;
+    top: 573px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+
+/* .address2-fieldset {
+    position: absolute;
+    width: 499px;
+    height: 90px;
+    left: 122px;
+    top: 658px;
+} */
+
+.address2-label {
+    position: absolute;
+    width: 96px;
+    height: 25px;
+    left: 122px;
+    top: 658px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+.address2 {
+    position: absolute;
+    width: 499px;
+    height: 53px;
+    left: 122px;
+    top: 695px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+
+/* 
+.city-fieldset {
+    position: absolute;
+    width: 307px;
+    height: 90px;
+    left: 122px;
+    top: 780px;
+} */
+
+.city-label {
+    position: absolute;
+    width: 51px;
+    height: 25px;
+    left: 122px;
+    top: 780px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+.city-box {
+    position: absolute;
+    width: 307px;
+    height: 53px;
+    left: 122px;
+    top: 817px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+#city {
+    position: absolute;
+    width: 222px;
+    height: 25px;
+    left: 134px;
+    top: 830px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+
+/* .postcode-fieldset {
+    position: absolute;
+    width: 165px;
+    height: 90px;
+    left: 456px;
+    top: 780px;
+ } */
+
+.postcode-label {
+    position: absolute;
+    width: 150.44px;
+    height: 25px;
+    left: 456px;
+    top: 780px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+.postcode {
+    position: absolute;
+    width: 165px;
+    height: 53px;
+    left: 456px;
+    top: 817px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+.colour-label {
+    position: absolute;
+    width: 140px;
+    height: 25px;
+    left: 122px;
+    top: 940px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #666666;
+}
+
+#colour1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 122px;
+    top: 985px;
+    border: 2px solid #666666;
+}
+
+#colour2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 332px;
+    top: 985px;
+    border: 2px solid #666666;
+}
+
+#colour1-label {
+    position: absolute;
+    width: 132px;
+    height: 25px;
+    left: 159px;
+    top: 985px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+#colour2-label {
+    position: absolute;
+    width: 106px;
+    height: 25px;
+    left: 369px;
+    top: 985px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #666666;
+}
+
+.terms {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 123px;
+    top: 1106px;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}
+
+.terms-label {
+    position: absolute;
+    width: 466.04px;
+    height: 50px;
+    left: 156.96px;
+    top: 1107px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #666666;
+}
+
+.submit-btn {
+    position: absolute;
+    width: 269px;
+    height: 70px;
+    left: 122px;
+    top: 1193px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    background: #E0633A;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.girl-img {
+    position: absolute;
+    width: 701px;
+    height: 1235px;
+    left: 739px;
+    top: 98px;
+    background: url(image.png);
+}
