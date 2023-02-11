@@ -247,6 +247,7 @@ footer p {
 
 .store_img {
     grid-column: 7/-1;
+    grid-row: 1/-1;
 }
 
 .store_img img {
@@ -275,6 +276,18 @@ input[type=text] {
     display: block;
 }
 
+.customer_name {
+    display: flex;
+}
+
+.customer_last_name {
+    margin-left: 1rem;
+}
+
+.city_pcode {
+    display: flex;
+}
+
 #City {
     margin: 1rem 0;
     padding: 0.5rem 0;
@@ -288,6 +301,9 @@ input[type=text] {
     font-style: italic;
 }
 
+.postcode {
+    margin-left: 1rem;
+}
 
 .radio_colors {
     margin-top: 0;
@@ -297,18 +313,3 @@ input[type=text] {
 .select_terms {
     margin: 2rem 0;
 }
-
-/*** HELP 
-
-These are no working
-
-.customer_name {
-    display: inline-block;
-}
-
-
-.city_pcode {
-    display: inline-block;
-}
-
-***/

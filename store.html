@@ -38,11 +38,14 @@
 
                 <form action="customer.html" method="get"> <!----ADD---->
                     <div class="customer_name">
-                        <label for="First Name">First Name *</label>
-                        <input class="customer_firstname" type="text" name="First Name" id="First Name" required>
-
-                        <label for="Last Name">Last Name *</label>
-                        <input class="customer_lastname" type="text" name="Last Name" id="Last Name" required>
+                        <div class="customer_first_name">
+                            <label for="First Name">First Name *</label>
+                            <input class="customer_firstname" type="text" name="First Name" id="First Name" required>
+                        </div>
+                        <div class="customer_last_name">
+                            <label for="Last Name">Last Name *</label>
+                            <input class="customer_lastname" type="text" name="Last Name" id="Last Name" required>
+                        </div>
                     </div>
 
                     <div>
@@ -56,18 +59,20 @@
                     </div>
 
                     <div class="city_pcode">
-                        <label for="City">City *</label>
-                        <select name="City" id="City" placeholder="Select your city..">
-                            <!-- HELP!! placeholder not working!! -->
-                            <option value="">Select your city..</option>
-                            <option value="Glasgow">Glasgow</option>
-                            <option value="Edinburgh">Edinburgh</option>
-                        </select>
-
-                        <label for="Postcode">Postcode *</label>
-                        <input type="text" name="Postcode" id="Postcode" required>
+                        <div class="city">
+                            <label for="City">City *</label>
+                            <select name="City" id="City" placeholder="Select your city..">
+                                <!-- HELP!! placeholder not working!! -->
+                                <option value="">Select your city..</option>
+                                <option value="Glasgow">Glasgow</option>
+                                <option value="Edinburgh">Edinburgh</option>
+                            </select>
+                        </div>
+                        <div class="postcode">
+                            <label for="Postcode">Postcode *</label>
+                            <input type="text" name="Postcode" id="Postcode" required>
+                        </div>
                     </div>
-
 
                     <p>Select a Colour</p>
                     <div class="radio_colors">
