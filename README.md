@@ -1,3 +1,12 @@
+
+# The deployed website Link of netlify
+
+
+
+https://cyf-ali-nasir-html-css-karma-week-2.netlify.app/
+
+
+
 # karma-clone
 
 The aim of this exercise is to create a page that looks just like this one: 
