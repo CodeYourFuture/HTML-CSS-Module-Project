@@ -17,12 +17,13 @@ body {
  */
  .navbar {
     display: flex;
+    align-items: center;
     
  }
  .navbar img {
-    width: 30px;
-    height: 30px;
-    margin-left: 50px;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 3rem;
  }
  .navbar a {
     text-decoration: none;
@@ -35,12 +36,12 @@ body {
     margin-left: auto;
  }
  .how_it_works, .meet_karma, .store, .blog, .help, .log_in {
-    margin-right: 40px;
+    margin-right: 2rem;
  }
  .main_upper_part {
     background-image:url(../img/first-background.jpg);
     background-size: cover;
-    height: 700px;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,20 +49,20 @@ body {
     
  }
  #main_introduction {
-    font-size: 80px;
+    font-size: 4.5rem;
     color:beige;
-    margin-top: 250px;
+    margin-top: 15rem;
     margin-bottom: 0px;
  }
  #main_rest {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: beige;
     
  }
  #learn_more {
     background-color: coral;
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 2rem;
+    margin-top: 3rem;
     
     
  }
@@ -80,16 +81,16 @@ body {
     
 }
 #main_lower_part_title {
-    font-size: 60px;
-    padding-top: 60px;
-    padding-left: 500px;
+    font-size: 4rem;
+    padding-top: 6rem;
+    padding-left: 32rem;
 }
 .main_lower_part_section1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items:flex-end;
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 .main_lower_part_section1 a {
     text-decoration: none;
@@ -97,19 +98,46 @@ body {
     
 }
 .main_lower_part_section1 img {
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
 }
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: grey;
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
     
     
 }
 
 footer img {
-    width: 20px;
-    height: 20px;
+    width: 4rem;
+    height: 4rem;
+}
+.extended_section {
+    height: 30rem;
+    width: 100%;
+    background-color: rgb(243, 230, 214);
+    display: flex;
+    
+    
+
+}
+.extended_section img {
+    height: 30rem;
+    width: 45rem;
+}
+.extended_section_right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 27rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* this section is for store.html*/
+.store_navbar {
+    background-color: beige;
+    border-bottom: rgb(218, 221, 223);
+    border-bottom-style: solid;
 }
