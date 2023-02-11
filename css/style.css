@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -17,3 +16,300 @@ body {
  */
 
 
+
+.header,
+.content,
+.footer {
+    /*max-width: 900px;*/
+    margin: 0 auto;
+}
+
+/***Header***/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 1rem 5rem;
+}
+
+.header_logo {
+    width: 2rem;
+}
+
+/***Navigation***/
+
+.nav_list {
+    list-style: none;
+    display: flex;
+}
+
+.nav_item {
+    padding-left: 1.5rem;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+
+.nav_link:hover {
+    color: #E0633A;
+}
+
+nav ul li:nth-child(1) a {
+    color: black;
+}
+
+/***Text Styles***/
+
+
+/***Buttons***/
+button {
+    background-color: #E0633A;
+    color: white;
+    padding: 1rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: #E0633A;
+}
+
+/***Content***/
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/***Hero***/
+
+.hero {
+    background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Module-Project/img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_copy {
+    color: white;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+/***Articles***/
+
+.selling_points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selling_points h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-top: 4rem;
+}
+
+.selling_points_thumbs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article_thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1.5rem;
+}
+
+.article_thumbnail img {
+    width: 8rem;
+}
+
+
+/***Testimonial***/
+
+
+.homepage_feature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    background-color: #FCEFEB;
+}
+
+.homepage_feature img {
+    display: block;
+}
+
+.customer_quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_quote p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+}
+
+.quote {
+    color: #E0633A;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+/***Footer***/
+
+footer {
+    margin-top: 3rem;
+}
+
+.footer_content {
+    border-top: 1px solid lightgrey;
+    padding: 0.25rem;
+    margin: 0 4rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.footer_content p:nth-child(3) {
+    color: grey;
+    font-size: 0.75rem;
+}
+
+.footer_socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_socialmedia img {
+    padding: 0.5rem;
+    width: 1.5rem;
+}
+
+.socialmedia {
+    border: solid 0.8px lightgrey;
+    border-radius: 50px;
+    margin: 0.6rem;
+}
+
+
+/***Store***/
+
+.store_page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.store_form {
+    grid-column: 1/7;
+    grid-row: 1/-1;
+    padding: 2rem 5rem;
+    border: 0;
+}
+
+.store_img {
+    grid-column: 7/-1;
+    grid-row: 1/-1;
+}
+
+.store_img img {
+    width: 100%;
+}
+
+.store_form h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    color: #E0633A;
+}
+
+
+.store_form label,
+p {
+    font-size: 0.9rem;
+    color: darkgray;
+}
+
+input[type=text] {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border: 1.5px solid lightgrey;
+    border-radius: 4px;
+    display: block;
+}
+
+.customer_name {
+    display: flex;
+}
+
+.customer_last_name {
+    margin-left: 1rem;
+}
+
+.city_pcode {
+    display: flex;
+}
+
+#City {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    border: 1.5px solid lightgrey;
+    border-radius: 4px;
+    display: block;
+}
+
+#City option:nth-child(1) {
+    color: lightgrey;
+    font-style: italic;
+}
+
+.postcode {
+    margin-left: 1rem;
+}
+
+.radio_colors {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.select_terms {
+    margin: 2rem 0;
+}

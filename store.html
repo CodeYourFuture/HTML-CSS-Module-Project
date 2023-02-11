@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <a href="#"><img src="img/karma-logo.svg" alt="" class="header_logo" /> </a>
+
+        <nav>
+            <ul class="nav_list">
+                <li class="nav_item">Meet Karma</li>
+                <li class="nav_item">How It Works</li>
+                <li class="nav_item">Store</li>
+                <li class="nav_item">Blog</li>
+                <li class="nav_item">Help</li>
+                <li class="nav_item">Login</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="content">
+
+        <main class="store_page">
+            <fieldset class="store_form">
+                <h2>Order your Karma wifi device today!</h2>
+
+                <form action="customer.html" method="get"> <!----ADD---->
+                    <div class="customer_name">
+                        <div class="customer_first_name">
+                            <label for="First Name">First Name *</label>
+                            <input class="customer_firstname" type="text" name="First Name" id="First Name" required>
+                        </div>
+                        <div class="customer_last_name">
+                            <label for="Last Name">Last Name *</label>
+                            <input class="customer_lastname" type="text" name="Last Name" id="Last Name" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="Address">Address *</label>
+                        <input class="address" type="text" name="Address" id="Address" required>
+                    </div>
+
+                    <div>
+                        <label for="Address2">Address 2</label>
+                        <input class="address" type="text" name="Address2" id="Address2">
+                    </div>
+
+                    <div class="city_pcode">
+                        <div class="city">
+                            <label for="City">City *</label>
+                            <select name="City" id="City" placeholder="Select your city..">
+                                <!-- HELP!! placeholder not working!! -->
+                                <option value="">Select your city..</option>
+                                <option value="Glasgow">Glasgow</option>
+                                <option value="Edinburgh">Edinburgh</option>
+                            </select>
+                        </div>
+                        <div class="postcode">
+                            <label for="Postcode">Postcode *</label>
+                            <input type="text" name="Postcode" id="Postcode" required>
+                        </div>
+                    </div>
+
+                    <p>Select a Colour</p>
+                    <div class="radio_colors">
+                        <input type="radio" name="Colour" id="Orange">
+                        <label for="Orange">Karma Orange</label>
+                        <input type="radio" name="Colour" id="Grey">
+                        <label for="Grey">Space Grey</label>
+                    </div>
+
+
+                    <div class="select_terms">
+                        <input type="checkbox" name="T&Cs" id="T&Cs" required>
+                        <label for="T&Cs">By placing your order you agree to Karma's <span class="T&Cs">Terms and
+                                Conditions.</span>
+                            *</label>
+
+                    </div>
+
+                    <button type="submit">Place my order</button>
+
+                </form>
+
+            </fieldset>
+
+            <section class="store_img">
+                <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Image of store" />
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
