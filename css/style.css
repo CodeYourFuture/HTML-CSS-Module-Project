@@ -165,13 +165,15 @@ main .feature .items {
 }
 
 /* Main - Description */
-main .des .row {
+.row-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
 }
 main .des .row .col {
-  height: 438.5px;
+  min-height: 500px;
   flex: 1;
   justify-content: space-around;
 }
@@ -181,6 +183,15 @@ main .des .row .col2 {
 }
 main .des .row .col2 h2 {
   margin-top: 7rem;
+}
+.img-feature,
+.col2 {
+  max-width: 600px;
+  margin-left: 20px;
+}
+.col1 {
+  background: url("../level-2/homepage-feature.png") no-repeat center
+    center/cover;
 }
 
 /* Main - Order -store page */
@@ -200,13 +211,20 @@ main .order h2 {
 main .order .row {
   display: flex;
   justify-content: center;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
 }
 main .order .row .col {
+  min-height: 600px;
   flex: 1;
+  justify-content: space-around;
 }
-main .order .row img {
-  width: 412px;
+main .order .row .pic {
+  background: url("../level-2/store-image_by-andrew-neel-unsplash.jpg")
+    no-repeat center center/cover;
 }
+
 main .order .row .input {
   padding-left: 10rem;
 }
@@ -390,6 +408,7 @@ footer p {
   main .des .row {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
   }
   main .des .row .col2 h2 {
     margin-top: 2rem;
@@ -407,7 +426,7 @@ footer p {
     height: 75vh;
     /* line-height: 1; */
   }
-  main .order .row .pic img {
+  main .order .row .pic {
     height: 50vh;
   }
   main .order .row .input {
