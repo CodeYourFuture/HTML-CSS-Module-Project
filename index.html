@@ -20,37 +20,56 @@
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+
     <header class="header">
       <img src="./img/karma-logo.svg" alt="" style="height: 50px" />
       <nav>
-        <ul>
-          <li>
-            <a href="#"><strong>Meet Karma</strong></a>
-          </li>
+        <ul class="nav-list">
+          <li><a href="#"><strong>Meet Karma</strong></a></li>
           <li><a href="#">How it Works</a></li>
-          <li><a href="./store.html"></a>Store</li>
+          <li><a href="#">Store</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Help</a></li>
           <li><a href="#">Login</a></li>
         </ul>
       </nav>
     </header>
+    <!-- MAIN -->
     <main class="main">
-      <div>
-        <h2>Introducing Karma</h2>
-        <p>Bring WiFi with you, everywhere you go.</p>
-        <button>Learn More</button>
+      <div class="main-container-up">
+        <h1>Introducing Karma</h1>
+        <h2>Bring WiFi with you, everywhere you go.</h2>
+        <button class="up-button">Learn More</button>
       </div>
-      <div>
+      <!--  -->
+      <div class="main-containe-down">
         <h2>Everyone needs a little Karma.</h2>
         <p>Internet for all devices</p>
         <p>Boost your productivity</p>
         <p>Pay as You Go</p>
       </div>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
-      <p>Join us on</p>
-      <p>Karma mobility inc.</p>
+      <p><strong>Join us on</strong></p>
+      <div class="social-media-icons">
+        <img
+          src="./img/twitter-icon.svg"
+          alt="twitter icon"
+          class="social_media_icon"
+        />
+        <img
+          src="./img/facebook-icon.svg"
+          alt="facebook icon"
+          class="social_media_icon"
+        />
+        <img
+          src="./img/instagram-icon.svg"
+          alt="instagram icon"
+          class="social_media_icon"
+        />
+      </div>
+      <p style="color: rgb(199, 198, 198)">Karma mobility, inc.</p>
     </footer>
   </body>
 </html>

@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,81 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* HEADER style */
 
+.header {
+  display: flex;
+  justify-content: space-around;
+  gap: 300px;
+  border: 2px solid grey;
+  height: 80px;
+  align-items: center;
+}
+
+.nav-list {
+    color: rgb(160, 158, 158);
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  border: 2px solid grey;
+  width: 500px;
+}
+
+/* END of HEADER style */
+
+/* MAIN style */
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-container-up {
+    background-image: url("../img/first-background.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+/*   background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed; */
+  display: flex;
+  flex-direction: column;
+    border-bottom: 2px solid grey;
+    color: white;
+    height: 670px;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-button{
+    background-color: orange;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.main-container-down {
+  align-content: center;
+}
+
+/* END of MAIN style */
+
+/* FOOTER style */
+.footer {
+  border-top: 3px solid grey;
+  text-align: center;
+}
+.social-media-icons {
+  justify-content: center;
+}
+
+.social_media_icon {
+  height: 18px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* END of FOOTER style */
