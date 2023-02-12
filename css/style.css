@@ -103,7 +103,7 @@ h1{
     font-size: 3rem;
 }
 .main em{
-    font-size: 1.7rem;
+    font-size: 1.7em;
 }
 button{
     height: 2.5rem;
@@ -120,6 +120,9 @@ button{
     padding-top: 150px;
     color: rgb(100, 98, 98);
     font-family:Georgia, 'Times New Roman', Times, serif
+}
+.img-box{
+    display: flex;
 }
 .section1{
     grid-area: se1;
@@ -203,3 +206,39 @@ button{
     gap: 1em;
 }
 
+@media screen and (max-width: 499px) {
+    .container{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+    }
+    .nav-bar ul{
+        display: none;
+    }
+    .main{
+        background-image: url(https://github.com/Abubakar-Meigag/HTML-CSS-Module-Project/blob/master/img/first-background.jpg?raw=true);
+        background-size: cover;
+        height: 200px;
+        width: 499px;
+    }
+    .main em{
+        display: flex;
+        font-size: 0.7em;
+        flex-wrap: wrap;
+    }
+    button{
+        height: 2.5rem;
+        width: 7rem;
+        }
+    .main h1{
+        font-size: 1.2em;
+    }
+    .nav{
+        padding-top: 10px;
+        flex-flow: wrap;
+    }
+    .img-box{
+        display: grid;
+        grid-column: 1/9;
+    }
+}
