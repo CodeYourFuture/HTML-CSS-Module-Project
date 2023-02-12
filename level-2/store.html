@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="/css/store.css">
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
         <nav>
             <ul class="navigation_list">
                 <li class="navigation_item"> 
-                    <a class="navigation__link" href="#">Meet Karma</a>
+                    <a class="navigation__link" href="/index.html">Meet Karma</a>
                 </li>
                 <li class="navigation_item">
                     <a class="navigation__link" href="#">How it works </a>
@@ -39,42 +39,64 @@
     </header>
     
     <main>
-        <div class="form">
-            <h2>Order your Karma wifi device today!</h2>
-            <div id="first_name">
-                <label for="name">First name *</label>
-                <input name="name" type="text" required/>
-            </div>
-            <div id="last_name">
-                <label for="last_name">Last name *</label>
-                <input name="last_name" type="text" required/>
-            </div>
-            <div id="address">
-                <label for="address">Address *</label>
-                <input name="address" type="text" required/>
-            </div>
-            <div id="address2">
-                <label for="address2">Address 2</label>
-                <input name="address2" type="text"/>
-            </div>
-            <div id="city">
-                <Label for="city">City *</Label>
-                <input name="city" type="checkbox" placeholder="Select your city..." required/>
-            </div>
-            <div id="postcode">
-                <label for="postcode">Postcode *</label>
-                <input name="postcode" type="text" required/>
-            </div>
+        <form>
+            <legend>Order your Karma wifi device today!</legend>
+            
+                <div class="inline" id="first_name">
+                    <div>
+                        <label for="name">First name *</label>
+                        <input name="name" type="text" id="name" required/>
+                    </div>
+                    <div>
+                        <label for="last_name">Last name *</label>
+                        <input name="last_name" type="text" id="last_name" required/>
+                    </div>
+                </div>
+            
+                <!-- <div class="inline" id="last_name">
+                    <label for="last_name">Last name *</label>
+                    <input name="last_name" type="text" id="last_name" required/>
+                </div> -->
+            
+                <div id="adres">
+                    <label for="address">Address *</label>
+                    <input name="address" type="text" id="address" required/>
+                </div>
+
+                <div id="adres2">
+                    <label for="address2">Address 2</label>
+                    <input name="address2" type="text" id="address2"/>
+                </div>
+            
+                <div class="inline" id="first_name">
+                    <div id="city">
+                        <Label for="city">City *</Label>
+                        <select name="city" id="city">
+                            <option value="" disabled selected>Select your city...</option>
+                            <option label="London" value="London"></option>
+                            <option label="Glasgow" value="Glasgow"></option>
+                        </select>
+                    </div>
+                    <div id="postcode">
+                        <label for="postcode">Postcode *</label>
+                        <input name="postcode" type="text" id="postcode" required/>
+                    </div>
+                </div>
+            
             <div id="select_colour">
-                <label for="select_color">Select a colour</label>
-                <input name="select_color" type="radio" value="Karma orange"/>
-                <input name="select_color" type="radio" value="Karma Grey"/>
+                Select a colour
+                <div>
+                    <input name="color" type="radio" id="orange" value="orange"/>
+                    <label class="colorSelect" for="orange">Karma orange</label>
+                    <input name="color" type="radio" id="grey" value="grey"/>
+                    <label class="colorSelect" for="grey">Karma Grey</label>
+                </div>
             </div>
-            <div id="checkbox">
-                <input name="checkbox" type="checkbox"/>
-            </div>
+                     
+                <label for="checkbox"><input name="checkbox" id="conditions" type="checkbox"/>  By placing your order you agree to Karma's <a href="#"><span style="color: #c05326">Terms and Conditions</span></a> *</label>
+        
             <button type="button" name="order">Place my order</button>
-        </div>
+        </form>
         <img id="store_img" src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="woman with a cup in front of her laptop"/>
 
     </main>

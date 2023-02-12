@@ -10,6 +10,7 @@ body {
     --light-grey: #e4e4e4;
     --orange-dark: #c05326;
     --light-orange: #fcefeb;
+    --text-grey: #3e3e43;
 }
 
 /* header styling */
@@ -35,9 +36,8 @@ header {
     padding-left: 1.5rem;
 }
 
-a {
-    text-decoration: none;
-    color: grey;
+.navigation__link {
+    color: var(--text-grey);
 }
 
 a:hover {
@@ -55,20 +55,21 @@ a:hover {
     color: var(--light-grey);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    text-align: center;
     align-items: center;
+   justify-content: center;
 }
 
 .picture h2 {
     font-weight: 400;
     margin-bottom: 0;
-    font-size: 4.5rem;
-    padding-top: 15rem;
+    font-size: 4.0rem;
+    /* padding-top: 2.5em; */
 }
 
 .picture p {
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-size: 2.0rem;
+    margin-top: 0.5rem; 
 }
 
 button {
@@ -78,7 +79,8 @@ button {
     border-radius: 5px;
     border: none;
     font-size: x-large;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
+    color: var(--light-grey);
 }
 
 button:hover {
@@ -123,14 +125,11 @@ button:hover {
 
 /* button section styling */
 
-a {
-    text-decoration: none;
-    color: var(--light-grey);
-}
 .extended {
     display: inline-flex;
     background-color: var(--light-orange);
     width: 100%;
+    margin-bottom: 3rem;
 }
 .button_2 {
     display: flex;
@@ -155,7 +154,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin-top: 3rem;
     text-align: center;
     padding-bottom: 1.5rem;
 }

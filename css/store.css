@@ -1,0 +1,45 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#store_img {
+    width: 100%;
+    grid-column: 2 / -1;
+}
+
+form {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    justify-content: space-between;
+     */
+}
+
+legend {
+    font-weight: 500;
+    font-size: xxx-large;
+    color: var(--orange-dark);
+}
+
+label {
+    display: block;
+    margin-top: 1em;;
+}
+
+input[type="checkbox"]+label, input[type="radio"]+label {
+    display:inline-block;
+    margin-top: 0;
+}
+
+input[name="address"], input[name="address2"]  {
+    width: 99%;
+}
+
+.inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
