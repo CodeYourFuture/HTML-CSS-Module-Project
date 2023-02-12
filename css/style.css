@@ -1,19 +1,64 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; 
+    background-color: white;
+    
+    
+}
+
+.header_logo{
+width: 2rem;
+padding: 1rem;
+padding-left: 5rem;
 
 
+}
+
+.navbar{
+display: flex;
+flex-direction: row;
+padding: 1rem;
+padding-right: 5rem;
+list-style: none;
+
+
+
+}
+.item{
+    list-style: none;
+    padding: 1rem;
+    
+}
+
+
+
+.link{
+color: #808080;
+
+text-decoration: none;}
+
+#Karma{
+    color: black;
+}
+ 
+
+.link:hover{
+    color: orange;
+}
+
+.hero{
+    background-image: url(/img/first-background.jpg);
+    height: 500px;
+
+    
+}
