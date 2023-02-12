@@ -21,7 +21,6 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 300px;
-  border: 2px solid grey;
   height: 80px;
   align-items: center;
 }
@@ -30,12 +29,20 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  border: 2px solid grey;
   width: 500px;
+      color: grey;
+    text-decoration: none;
 }
-.nav-item{
-    color: grey;
+.header .nav-item a {
+  color: grey;
+  text-decoration: none;
 }
+
+.header .nav-item a:hover {
+  color: orange;
+}
+
+
 /* END of HEADER style */
 
 /* MAIN style */
@@ -58,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
     border-bottom: 2px solid grey;
-    color: white;
+    color: rgb(231, 231, 231);
     height: 670px;
     align-items: center;
     justify-content: center;
@@ -69,6 +76,7 @@ body {
     color: white;
     padding: 10px 30px;
     border-radius: 5px;
+    margin-top: 30px;
 }
 
 .main-container-down {
@@ -86,7 +94,7 @@ body {
     margin: 0 100px 100px 100px;
 }
 .line{
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid rgb(236, 236, 236);
     margin-left: 275px;
     margin-right: 280px;
 }
