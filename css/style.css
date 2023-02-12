@@ -119,9 +119,7 @@ footer img {
     width: 100%;
     background-color: rgb(243, 230, 214);
     display: flex;
-    
-    
-
+    margin-bottom: 8rem;
 }
 .extended_section img {
     height: 30rem;
@@ -130,9 +128,27 @@ footer img {
 .extended_section_right {
     display: flex;
     flex-direction: column;
-    margin-left: 27rem;
+    margin-left: 20rem;
     justify-content: center;
     align-items: center;
+}
+.extended_section_right p {
+    font-size: 2.5rem;
+    color: gray;
+    
+}
+#quotation_mark {
+    color: coral;
+    font-size: 3rem;
+}
+#anymore {
+    margin-left: 9rem;
+}
+#get_karma_today a {
+    text-decoration: none;
+    color: beige;
+    background-color: coral;
+    font-size: 1.5rem;
 }
 
 /* this section is for store.html*/
@@ -140,4 +156,19 @@ footer img {
     background-color: beige;
     border-bottom: rgb(218, 221, 223);
     border-bottom-style: solid;
+}
+.main_section {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    grid-template-rows: 1rem;
+    grid-template-areas: 
+    "f im";
+}
+.main_section_left {
+    grid-area: f;
+}
+.main_section_image {
+    grid-area: im;
+    width: 10rem;
+    height: 30rem;
 }
