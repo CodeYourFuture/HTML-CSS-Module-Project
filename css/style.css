@@ -15,5 +15,187 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ .navbar {
+    display: flex;
+    align-items: center;
+    
+ }
+ .navbar img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 3rem;
+ }
+ .navbar a {
+    text-decoration: none;
+    color:grey;
+ }
+ .navbar a:hover {
+    color: coral;
+ }
+ .meet_karma {
+    margin-left: auto;
+ }
+ .how_it_works, .meet_karma, .store, .blog, .help, .log_in {
+    margin-right: 2rem;
+ }
+ .main_upper_part {
+    background-image:url(../img/first-background.jpg);
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+ }
+ #main_introduction {
+    font-size: 4.5rem;
+    color:beige;
+    margin-top: 15rem;
+    margin-bottom: 0px;
+ }
+ #main_rest {
+    font-size: 2.5rem;
+    color: beige;
+    
+ }
+ #learn_more {
+    background-color: coral;
+    font-size: 2rem;
+    margin-top: 3rem;
+    
+    
+ }
+#learn_more a {
+    text-decoration: none;
+    color: beige;
+    
+}
+#learn_more a:hover {
+    color: blue;
+}
+.main_lower_part {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    
+}
+#main_lower_part_title {
+    font-size: 4rem;
+    padding-top: 6rem;
+    padding-left: 32rem;
+}
+.main_lower_part_section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-end;
+    margin-bottom: 10rem;
+}
+.main_lower_part_section1 a {
+    text-decoration: none;
+    color: grey;
+    
+}
+.main_lower_part_section1 img {
+    margin-bottom: 4rem;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    margin-bottom: 5rem;
+    
+    
+}
 
+footer img {
+    width: 4rem;
+    height: 4rem;
+}
+.extended_section {
+    height: 30rem;
+    width: 100%;
+    background-color: rgb(243, 230, 214);
+    display: flex;
+    margin-bottom: 8rem;
+}
+.extended_section img {
+    height: 30rem;
+    width: 45rem;
+}
+.extended_section_right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+.extended_section_right p {
+    font-size: 2.5rem;
+    color: gray;
+    
+}
+#quotation_mark {
+    color: coral;
+    font-size: 3rem;
+}
+#anymore {
+    margin-left: 9rem;
+}
+#get_karma_today a {
+    text-decoration: none;
+    color: beige;
+    background-color: coral;
+    font-size: 1.5rem;
+}
 
+/* this section is for store.html*/
+.store_navbar {
+    background-color: beige;
+    border-bottom: rgb(218, 221, 223);
+    border-bottom-style: solid;
+}
+.main_section {
+    display: grid;
+    grid-template-columns: 60rem 1fr;
+    grid-template-areas: 
+    "f im";
+}
+.main_section_left {
+    grid-area: f;
+}
+.main_section_image {
+    grid-area: im;
+    width: 55.5rem;
+    height: 80rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 11rem;
+}
+#form_title {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    color:coral ;
+}
+.name_form, .address_form, .address2_form, .city_form, .select_color, .terms_form, .submit {
+    margin-top: 4rem;
+    
+    
+}
+#address, #address2 {
+    width: 32rem;
+    height: 2rem;
+    
+}
+#first_name, #last_name, #city, #post_code {
+    height: 2rem;
+    
+}
+#space_grey {
+    margin-left: 3rem;
+}
