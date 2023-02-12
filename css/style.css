@@ -27,14 +27,15 @@ body {
 }
 
 .nav-list {
-    color: rgb(160, 158, 158);
   display: flex;
   list-style: none;
   justify-content: space-between;
   border: 2px solid grey;
   width: 500px;
 }
-
+.nav-item{
+    color: grey;
+}
 /* END of HEADER style */
 
 /* MAIN style */
@@ -72,13 +73,27 @@ body {
 
 .main-container-down {
   align-content: center;
+  height: 500px;
 }
-
+.down-h1{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin: 0 100px 100px 100px;
+}
+.line{
+    border-bottom: 2px solid grey;
+    margin-left: 275px;
+    margin-right: 280px;
+}
 /* END of MAIN style */
 
 /* FOOTER style */
 .footer {
-  border-top: 3px solid grey;
   text-align: center;
 }
 .social-media-icons {
