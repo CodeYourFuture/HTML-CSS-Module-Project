@@ -1,26 +1,33 @@
 
+* {
+    width: 132rm;
+    height: 62rem;
+}
+
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-
-
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
+/* This is the header part */
+
 header {
     display: flex;
     flex-direction: row;
     margin: 1rem;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     justify-content: space-between;
+    height: 2rem;
 }
 
 .logo {
-    width: 3rem;
-    height: 3rem;
+    width: 95%;
+    height: 95%;
+    justify-content: start;
+    align-self:normal;
 }
 
 #nav-item1 {
@@ -40,11 +47,25 @@ header {
     margin: 0 3rem;
 }
 
+/* This is the hero section */
+
 .hero {
     background-image: url("../img/first-background.jpg");
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 136rem;
+    height: 62rem; */
 }
 
+h1 {
+    color: white;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This is the icon section  */
 
 .icon {
     width: 20%;
@@ -55,6 +76,14 @@ header {
 .product-descriptions {
 
 }
+
+/* This is the footer section  */
+
+.footer {
+
+}
+
+
 
 /**
  * Add your custom styles below
