@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -15,5 +14,200 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/img/first-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  background: #fff;
+  margin-top: 8px;
+}
+
+.logo {
+  height: 40px;
+  width: 20;
+  margin: 0px;
+  margin-right: 500px;
+  margin-top: 7px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  transform: translateY(-10px);
+}
+
+.row ul li {
+  display: inline-block;
+  margin: 0px 20px;
+  margin: 20px 10px;
+}
+
+.row :hover {
+  color: rgb(182, 64, 9);
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(138, 137, 137);
+}
+.row {
+  margin-right: 50px;
+}
+
+.Meet {
+  color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+article {
+  color: #fff;
+  text-align: center;
+  margin-top: 15%;
+  line-height: 30px;
+}
+
+button {
+  background-color: rgb(182, 64, 9);
+  border: 0;
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin-top: 40px;
+  color: rgb(214, 212, 212);
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 27px;
+  font-weight: lighter;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+  margin-top: 120px;
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  display: inline-block;
+  align-items: center;
+  margin: 60px 60px 150px 0px;
+}
+
+.photos {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.get_karma {
+  background-color: rgba(236, 173, 90, 0.149);
+  height: 350px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.Wherever {
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+i {
+  font-weight: bolder;
+}
+.today {
+  padding: 15px 30px;
+  background-color: rgb(182, 64, 9);
+  color: #fff;
+}
+span {
+  color: rgb(182, 64, 9);
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.homepage {
+  height: 350px;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  border: 1px rgb(189, 188, 188) solid;
+  padding: 8px;
+  border-radius: 50px;
+  margin: 8px;
+}
+
+.icon1 {
+  margin-left: 500px;
+}
+p {
+  text-align: center;
+  margin: 15px;
+}
+.footer {
+  font-size: 20px;
+}
+.copyright {
+  color: rgb(197, 196, 196);
+  margin-bottom: 60px;
+}
 
 
+
+.photo {
+  width: 700px;
+  height: 1000px;
+margin-left: 490px;
+}
+form 
+{
+  width: 1px;
+  height: 20px;
+}
+label,
+input
+{
+  display: inline-block;
+  justify-content: center;
+}
+.photo,
+.details {
+}
