@@ -66,6 +66,10 @@ height: 50px;
     border-radius: 4%;
 }
 
+.button button:hover {
+    background-color: grey;
+}
+
 /* CSS for features */
 
 .feature {
@@ -101,47 +105,48 @@ height: 50px;
     font-size: 1.5rem;
 }
 
+/* CSS for section two */
+.feature2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.feature2-content-pic{
+    background-color: #363434;
+    height: 100%;
+    background-image: url(/level-2/homepage-feature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature-heading2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 8rem;
+    background-color: var(--orange-light);
+    color: var(--grey-dark);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.button2 {
+    color: #fff;
+    background-color: #e0633a;
+    padding: 15px 28px;
+    border-style: none;
+    border-radius: 4%;
+   }
+
+   .button2:hover {
+    background-color: grey;
+}
 /* CSS for section 2 */
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-}
 
-section h2 {
-    font-weight: 200;
-    font-size: 35px;
-}
 
-article {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-    
-}
-
-article p {
-    font-weight: 200;
-    font-size: 20px;
-    
-}
-
-article img {
-    width: 120px;
-    height: 120px;
-}
-
-.context {
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    
-}
 
 /* css for footer*/
 
