@@ -35,7 +35,7 @@
                 <h1 class="store-h1">Order Your Karma wifi device today</h1>
                 <br>
                 <div class="name-container">
-                    <div class="name">
+                    <div class="first-name">
                         <label for="first-name">First Name*</lable><br>
                         <input type="text" name="first-name" id="first-name" required>
                     </div>
@@ -45,15 +45,15 @@
                     </div>   
                 </div>
                 <br>
+                <div class="name-container">
+                    <label for="adress">Adress*</lable><br>
+                    <input type="text" name="adress" id="adress" required>
+                    <br><br>
 
-                <label for="adress">Adress*</lable><br>
-                <input type="text" name="adress" id="adress" required>
-                <br><br>
-
-                <label for="adress2">Adress2</lable><br>
-                <input type="text" name="adress" id="adress">
-                <br><br>
-
+                    <label for="adress2">Adress2</lable><br>
+                    <input type="text" name="adress" id="adress">
+                    <br><br>
+                </div>
                 <div class="name-container">
                     <div class="city">
                         <label for="city">City*</lable><br>
@@ -68,30 +68,32 @@
                         <input type="text" name="postcode" id="postcode" required>
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
+                    <br>
+                    <br>
+                    <br>
+                <div class="right-align">
+                    <label for="colour" class="colour">Select a colour</label><br><br>
+                    <div class="radio-item">
+                        <input type="radio" name="colour" id="color-radio" value="karma-orange">
+                        <label for="orange">Karma Orange</label>
+                    
+                        <input type="radio" name="colour" id="color-radio" value="space-grey">
+                        <label for="grey">Space Grey</label>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
 
-                <label for="colour" class="colour">Select a colour</label><br><br>
-                <div class="radio-item">
-                    <input type="radio" name="colour" id="color-radio" value="karma-orange">
-                    <label for="orange">Karma Orange</label>
-                
-                    <input type="radio" name="colour" id="color-radio" value="space-grey">
-                    <label for="grey">Space Grey</label>
+                    <div>
+                        <input type="checkbox" name="conditions" id="conditions" value="conditions" required>
+                        <label for="conditions">By placing your order you agree to Karma's <span class="terms-conditions"><a href="">Terms and Conditions</a></span>*.</label>
+                    </div>
+                    <br>
+                    <br>
+
+                    <button class="submit-store">Place my order</button>
                 </div>
-                <br>
-                <br>
-                <br>
-
-                <div>
-                    <input type="checkbox" name="conditions" id="conditions" value="conditions" required>
-                    <label for="conditions">By placing your order you agree to Karma's <span class="terms-conditions"><a href="">Terms and Conditions</a></span>*.</label>
-                </div>
-                <br>
-                <br>
-
-                <button class="submit-store">Place my order</button>
+                    
             </div>
             
             <img src="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/level-2/store-image_by-andrew-neel-unsplash.jpg" class="main-img" alt="picture, women working on laptop"/>
