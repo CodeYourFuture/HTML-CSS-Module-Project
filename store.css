@@ -57,12 +57,12 @@ input[type="text"] {
 }
 
 input:focus {
-    outline-color: var(--orange) !important;
+    outline-color: #e0633a; !important;
 } 
 
 input[type="checkbox"] {
-    color: var(--orange);
-    background-color: var(--orange);
+    color: #e0633a;
+    background-color: #e0633a;;
 }
 
 #postcode {
@@ -74,13 +74,13 @@ select {
     font-style: italic;
     font-size: 12px;
     font-weight: 400;
-    color: var(--grey-dark);
+    color: grey;
     width: 250px;
     height: 30px;
 }
 
 select:focus {
-    outline-color: var(--orange) ;
+    outline-color: #e0633a;;
 }
 
 /* radio-box */
@@ -94,7 +94,7 @@ select:focus {
 .radio-box legend {
     font-size: 12px;
     font-weight: 400;
-    color: var(--grey-dark);
+    color: grey;
 }
 
 .radio-box ul {
@@ -108,7 +108,7 @@ select:focus {
   appearance: none;
   width: 15px;
   height: 15px;
-  border: 1px solid var(--grey-dark);
+  border: 1px solid grey;
   border-radius: 50%;
   background-clip: content-box;
   padding: 2px;
@@ -137,11 +137,11 @@ select:focus {
   appearance: none;
   width: 15px;
   height: 15px;
-  border: 1px solid var(--grey-dark);
+  border: 1px solid grey;
   border-radius: 20%;
   background-clip: content-box;
   padding: 1px;
-  background-color: var(--white);
+  background-color: white;
   display: inline-block;
   margin-right: .1rem;
   vertical-align: -3px;
@@ -157,9 +157,9 @@ select:focus {
 
 /* button */
 button {
-    background-color: var(--orange);
+    background-color: #e0633a;
     color: var(--white);
-    border: 1px solid var(--orange);
+    border: 1px solid #e0633a;
     border-radius: 5px;
     padding: 10px 25px;
     transition: all .3s ease-in-out;
@@ -167,8 +167,8 @@ button {
 
 button:hover {
     color: var(--orange);
-    background-color: var(--white);
-    border: 1px solid var(--orange);
+    background-color: white;
+    border: 1px solid #e0633a;;
 }
 /* section two */
 
