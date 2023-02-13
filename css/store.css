@@ -20,6 +20,7 @@ form {
     margin: 4rem;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 legend {
@@ -38,7 +39,7 @@ label {
 }
 
 input {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-radius: 5px;
     line-height: 2rem;
     accent-color: var(--orange-dark);
@@ -51,15 +52,11 @@ input[type="checkbox"]+label, input[type="radio"]+label {
 }
 
 input[name="address"], input[name="address2"]  {
-    width: 99%;
-}
-
-input[name="name"], input[name="last_name"] {
     width: 100%;
 }
 
-.last_name {
-    width: 45%;
+.first_name input {
+    width: 17em;
 }
     
 .inline {
@@ -68,8 +65,12 @@ input[name="name"], input[name="last_name"] {
     justify-content: space-between;
 }
 
-input {
+input, select {
     font-size: 18px;
+}
+
+input[name="postcode"]{
+    width: 8.5em;
 }
 
 button[name="order"] {
@@ -81,24 +82,25 @@ button[name="order"] {
     margin-bottom: 2rem;
 }
 
-#postcode {
+/* #postcode {
     width: 100%
 }
 
 .postcode {
     width: 25%;
-}
+} */
 
-#city {
-    width: 200%;
+/* #city {
+    width: 50%;
     font-size: 19px;
-}
+} */
 
 select {
+    width: 29em;;
     color: var(--text-grey);
     font-weight: 300;
     font-style: italic;
-    font-size: 12px;
+    font-size: 16px;
     box-sizing: border-box;
     border-radius: 5px;
     height: 2.5rem;
