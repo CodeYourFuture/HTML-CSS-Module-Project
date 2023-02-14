@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma - Store</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" rel='stylesheet'  href="css/style.css">
+    <link rel="stylesheet" rel='stylesheet'  href="store.css">
+    <link rel="stylesheet" rel='stylesheet'  href="media.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+        <img src="img/karma-logo.svg" alt="logo">
+    </div>
+
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <ul class="menu__box">
+        <li><a class="menu__item" href="Meet Karma">Meet Karma</a></li>
+              <li><a class="menu__item" href="How it Works">How it Works</a></li>
+              <li><a class="menu__item" href="Store">Store</a></li>
+              <li><a class="menu__item" href="Blog">Blog</a></li>
+              <li><a class="menu__item" href="Help">Help</a></li>
+              <li><a class="menu__item" href="Login">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="links">
+        <a href="#"><b>Meet Karma</b></a>
+        <a href="#">How it Works</a>
+        <a href="#">Store</a>
+        <a href="#">Blog</a>
+        <a href="#">Help</a>
+        <a href="#">Login</a>
+    </div>
+  </div>
+    <main class="store-main">
+        <section class="form-section">
+            <h1>Order your Karma wifi device today!</h1>
+
+            <form action="#">
+                <div class="fieldset">
+                    <div class="flex">
+                     <label for="first-name">First name *</label>
+                     <input 
+                        type="text" 
+                        id="first-name"
+                        required
+                     />
+                    </div>
+                    <div class="flex">
+                      <label for="last-name">Last name *</label>
+                      <input 
+                        type="text" 
+                        id="last-name"
+                        required
+                      />
+                    </div>
+                </div>
+
+                <div class="address">
+                    <div class="flex">
+                      <label for="address-one">Address *</label>
+                      <input 
+                        type="text"
+                        id="address-one"
+                        required
+                      />
+                    </div>
+                </div>
+
+                <div class="address">
+                    <div class="flex">
+                      <label for="address-two">Address 2</label>
+                      <input 
+                        type="text"
+                        id="address-two"
+                      />
+                    </div>
+                </div>
+
+                <div class="fieldset">
+                    <div class="flex">
+                      <label for="city">City *</label>
+                      <select name="city" id="city" required>
+                        <option value="" disabled selected>Select your city...</option>
+                        <option value="birmingham">Birmingham</option>
+                        <option value="london">London</option>
+                        <option value="manchester">Manchester</option>
+                      </select>
+                    </div>
+                    
+                    <div class="flex">
+                      <label for="postcode">Postcode *</label>
+                      <input 
+                        type="text"
+                        id="postcode"
+                        required
+                      />
+                    </div>
+                </div>
+
+                <div class="radio-box">
+                  <legend>Select a color</legend>
+                  <ul>
+                    <li>
+                        <input type="radio" id="karma-orange" name="color" value="karma-orange" checked/>
+                        <label for="karma-orange">Karma Orange</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="space-grey" name="color" value="space-grey"/>
+                      <label for="karma-orange">Space Grey</label>
+                  </li>
+                  </ul>
+                </div>
+
+                <div class="check-box">
+                  <input type="checkbox" id="termsandconditions" required>
+                  <label for="termsandconditions">By placing your order you agree to <a href="">Karma's Terms and Conditions</a> *</label>
+                </div>
+
+                <div>
+                    <button>Place my order</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="img-section">
+          <img class="store-img" src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store-img">
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-heading">
+          <h5>Join us on</h5>
+      </div>
+      <div class="footer-icon">
+         <img src="img/twitter-icon.svg" alt="twitter">
+         <img src="img/facebook-icon.svg" alt="facebook">
+         <img src="img/instagram-icon.svg" alt="instagram"> 
+      </div>
+      <div class="footer-ending">
+          <p>© 2023 Karma Mobility, inc</p>
+      </div>
+  </footer>
+</body>
+</html>

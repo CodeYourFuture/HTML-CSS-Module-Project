@@ -1,19 +1,277 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 4rem;
+}
+.navbar {
+    display: flex;
+    padding-left: 5%;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.logo img {
+width: 50px;
+height: 50px;
+}
+
+
+ /* hamburger menu */
+ #menu__toggle {
+    
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+.links {
+    padding-right: 5%;
+}
+
+.links a {
+    padding-right: 37px;
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+    font-size: large;
+}
+
+
+/* CSS for banner */
+
+.banner {
+    background-image: url("../img/first-background.jpg");
+    height: 46rem;
+    margin: 2rem;
+    background-size: cover;
+    color: white;
+    background-position: bottom;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.content p {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.button button {
+    color: #fff;
+    background-color: #e0633a;
+    padding: 15px 28px;
+    border-style: none;
+    border-radius: 4%;
+}
+
+.button button:hover {
+    background-color: grey;
+}
+
+/* CSS for features */
+
+.feature {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-heading h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    padding-top: 3rem;
+}
+
+.feature-content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.feature-content-item {
+    display: flex;
+    margin: 4rem 7rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature-content-item img {
+    width: 50%;
+}
+
+.feature-content-item p {
+    font-size: 1.5rem;
+}
+
+/* CSS for section two */
+.feature2{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.feature2-content-pic{
+    background-color: #363434;
+    height: 100%;
+    background-image: url(/level-2/homepage-feature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature-heading2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 8rem;
+    background-color: #e0633a;
+    color: grey;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.button2 {
+    color: #fff;
+    background-color: #e0633a;
+    padding: 15px 28px;
+    border-style: none;
+    border-radius: 4%;
+   }
+
+   .button2:hover {
+    background-color: grey;
+}
+
+
+
+
+/* css for footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon img {
+    padding: 7px;
+    width: 1%;
+    border-radius: 50%;
+}
+
+.footer-ending {
+    color:rgb(207, 207, 207);
+}
+
 
 
