@@ -23,7 +23,7 @@
 
     <header class="header">
       <img src="./img/karma-logo.svg" alt="" style="height: 50px" />
-      <nav>
+      <nav class="nav-desktop">
         <ul class="nav-list">
           <li class="nav-item">
             <a href="#"><strong>Meet Karma</strong></a>
@@ -35,6 +35,27 @@
           <li class="nav-item"><a href="#">Login</a></li>
         </ul>
       </nav>
+      <button id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!--  -->
+<!--       <ul id="menu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+
+      <script>
+        const button = document.querySelector("#hamburger-menu");
+        const menu = document.querySelector("#menu");
+
+        button.addEventListener("click", function () {
+          menu.style.display =
+            menu.style.display === "block" ? "none" : "block";
+        });
+      </script> -->
     </header>
     <!-- MAIN -->
     <main class="main">
