@@ -13,10 +13,12 @@ align-items: center;
 
 /* main */
 .store-main {
-    display: flex;
+    
     flex-direction: row;
     flex-wrap: wrap;
-  
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr;
 }
 
 /* section one */
