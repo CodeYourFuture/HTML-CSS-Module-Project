@@ -93,3 +93,40 @@ select {
     background-color: white;
     border: 2px solid;
 }
+
+@media only screen and (max-width: 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        margin: 2rem 1rem 1rem 1rem;
+        padding-bottom: 3rem;
+    }
+
+    legend {
+        font-weight: 500;
+        font-size: 2.7rem;
+        color: var(--orange-dark);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    .first_name input, select {
+        width: 100%;
+    }
+    #select_colour label {
+        margin-right: 15rem;
+        margin-bottom: 0;
+    }
+   button[name="order"] {
+    align-self: center;
+    padding: 10px 50px 10px 50px;
+    margin-top: 2rem;
+   }
+}
