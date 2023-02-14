@@ -47,19 +47,22 @@ a:hover {
 
 /* picture sector styling */
 
-.picture {
-    background-image: url(/img/first-background.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: calc(0.459*100vw); 
-    color: var(--light-grey);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-   justify-content: center;
+@media screen and (min-width:481px) {
+   .picture {
+        background-image: url(/img/first-background.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: calc(0.459*100vw); 
+        color: var(--light-grey);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    } 
 }
+
 
 .picture h2 {
     font-weight: 400;
@@ -182,5 +185,66 @@ footer p:last-child {
     padding: 15px;
 }
 
+/* for mobile screens */
 
+@media only screen and (max-width: 480px) {
+    .icons {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .icons h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .article p {
+        font-size: 1.25rem;
+    }
+
+    .extended {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .extended p {
+        font-size: 2rem;
+        padding: 2.5rem 1.2rem 1rem 1.2rem;
+    }
+
+    .picture {
+        font-display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/img/first-background.jpg);
+        background-size: cover;
+        /* background-position: center; */
+        background-position: 65% 10%;
+        padding: 4rem 2rem 3rem 2rem;
+        height: 18rem;
+        width: ;
+    }
+
+    .picture h2 {
+        font-weight: 100;
+        margin: 0;
+        font-size: 3em;
+        color: var(--light-grey);
+        /* padding-top: 3em; */
+    }
+    
+    .picture p {
+        font-size: 1.5rem;
+        margin-top: 1.5rem; 
+        font-weight: 100;
+        color: var(--light-grey);
+    }
+
+    .picture button {
+        font-size: medium;
+    }
+}
 
