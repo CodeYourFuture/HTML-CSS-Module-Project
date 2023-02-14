@@ -1,10 +1,22 @@
 /* store page */
+.header {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.hamburger-menu {
+  display: none;
+}
 
 /* main */
 .store-main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  
 }
 
 /* section one */
@@ -168,7 +180,7 @@ button {
 button:hover {
     color: var(--orange);
     background-color: white;
-    border: 1px solid #e0633a;;
+    border: 1px solid #e0633a;
 }
 /* section two */
 
@@ -181,62 +193,188 @@ button:hover {
     margin: 0;
 }
 
+menu__btn.hide{
+    display: none;
+} 
+
+menu__box.hide{
+    display: none;
+} 
+
+menu__item.hide{
+    display: none;
+} 
+
 /* tablet and mobile size */
 @media screen and (max-width: 890px) {
 
     /* fix textbox names */
-    .fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex-wrap: wrap;
-    }
+   .fieldset {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   flex-wrap: wrap;
+   }
 
- /* fix positions */
-     .store-main {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+/* fix positions */
+    .store-main {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
 }
 
 select {
-    width: 320px;
+   width: 320px;
 }
 
 .form-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 30px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   gap: 30px;
 }
 
 .img-section {
-    background-image: url("/level-2/store-image_by-andrew-neel-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 2rem;
+   
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   margin: 0;
+   padding: 2rem;
+}
+.store-img {
+  width: 30rem;
+  height: 50rem;
 }
 
 .radio-box ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   list-style: none;
 }
 }
+
+menu__btn.hide{
+    display: none;
+} 
+
+menu__box.hide{
+    display: none;
+} 
+
+menu__item.hide{
+    display: none;
+} 
 
 /* mobile size */
 @media screen and (max-width: 489px) {
-    
+     /* hamburger menu */
+#menu__toggle {
+   
+   opacity: 0;
+ }
+ 
+ #menu__toggle:checked ~ .menu__btn > span {
+   transform: rotate(45deg);
+ }
+ #menu__toggle:checked ~ .menu__btn > span::before {
+   top: 0;
+   transform: rotate(0);
+ }
+ #menu__toggle:checked ~ .menu__btn > span::after {
+   top: 0;
+   transform: rotate(90deg);
+ }
+ #menu__toggle:checked ~ .menu__box {
+   visibility: visible;
+   left: 0;
+ }
+ 
+ .menu__btn {
+   visibility: visible;
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+ 
+   width: 26px;
+   height: 26px;
+ 
+   cursor: pointer;
+   z-index: 1;
+ }
+ 
+ .menu__btn > span,
+ .menu__btn > span::before,
+ .menu__btn > span::after {
+   display: block;
+   position: absolute;
+ 
+   width: 100%;
+   height: 2px;
+ 
+   background-color: #616161;
+ 
+   transition-duration: .25s;
+ }
+ .menu__btn > span::before {
+   content: '';
+   top: -8px;
+ }
+ .menu__btn > span::after {
+   content: '';
+   top: 8px;
+ }
+ 
+ .menu__box {
+   visibility: visible;
+   display: block;
+   position: fixed;
+   visibility: hidden;
+   top: 0;
+   left: -100%;
+ 
+   width: 300px;
+   height: 100%;
+ 
+   margin: 0;
+   padding: 80px 0;
+ 
+   list-style: none;
+ 
+   background-color: #ECEFF1;
+   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+ 
+   transition-duration: .25s;
+ }
+ 
+ .menu__item {
+   visibility: visible;
+   display: block;
+   padding: 12px 24px;
+ 
+   color: #333;
+ 
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+ 
+   text-decoration: none;
+ 
+   transition-duration: .25s;
+ }
+ .menu__item:hover {
+   background-color: #CFD8DC;
+ }
 
-    .form-section h1 {
-        text-align: center;
-    }
+   .form-section h1 {
+       text-align: center;
+   }
 
 }
