@@ -190,22 +190,15 @@ button:hover {
     background-image: url("./level-2/store-image_by-andrew-neel-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    margin: 0;
+   
 }
 
-menu__btn.hide{
-    display: none;
-} 
-
-menu__box.hide{
-    display: none;
-} 
-
-menu__item.hide{
-    display: none;
-} 
+.store-img {
+  background-size: 70px 30px;
+  width: 50%;
+  margin: 0;
+  height: 100%;
+}
 
 /* tablet and mobile size */
 @media screen and (max-width: 890px) {
