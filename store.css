@@ -194,7 +194,10 @@ button:hover {
 }
 
 .store-img {
-  background-size: 70px 30px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px 20px;
   width: 50%;
   margin: 0;
   height: 100%;
@@ -254,20 +257,21 @@ select {
 }
 }
 
-menu__btn.hide{
-    display: none;
-} 
 
-menu__box.hide{
-    display: none;
-} 
-
-menu__item.hide{
-    display: none;
-} 
 
 /* mobile size */
-@media screen and (max-width: 489px) {
+@media screen and (max-width: 489px) 
+{
+
+  .links {
+    
+    display: none;
+    
+    }
+    
+    .hamburger-menu {
+      display: flex;
+    }
      /* hamburger menu */
 #menu__toggle {
    
