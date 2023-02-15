@@ -186,6 +186,12 @@ body {
   border-top: 2px solid rgb(235, 235, 235);
   margin-left: 90px;
 }
+.form-line-mobile{
+  display: none;
+}
+.mobile-img{
+  display: none;
+}
 
 label {
   font-weight: bold;
@@ -219,11 +225,13 @@ input[type="radio"]:checked {
 
 /* none-display for desktop size */
 
-.hamburger-menu {
+#hamburger-menu {
   display: none;
 }
 
+
 @media screen and (max-width: 540px) {
+  /* MEET KARMA PAGE */
   .nav-desktop {
     display: none;
   }
@@ -243,15 +251,18 @@ input[type="radio"]:checked {
     background-color: #000;
     border-radius: 5px;
   }
-/*   #menu {
+  /*   #menu {
     display: none;
   } */
 
   /* main */
-  .icons{
+  .icons {
     display: flex;
     flex-direction: column;
     gap: 40px;
     border-bottom: 2px solid rgb(223, 223, 223);
   }
+
+  /* STORE PAGE  */
+
 }

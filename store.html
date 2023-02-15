@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./store-mobile.css">
   </head>
       <header class="header">
       <img src="./img/karma-logo.svg" alt="" style="height: 50px" />
@@ -22,6 +23,11 @@
           <li class="nav-item"><a href="#">Login</a></li>
         </ul>
       </nav>
+      <button id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
     <!-- MAIN  -->
@@ -75,9 +81,9 @@
     <label for="color">Select a color</label>
       <div class="orange-grey">
             <input type="radio" id="color1" name="color" value="orange" />
-            <label for="color1">Karma orange</label>
+            <label for="color1" class="color1-orange">Karma orange</label>
             <input type="radio" id="color2" name="color" value="grey" />
-            <label for="color2">Space grey</label>
+            <label for="color2" class="color1-grey">Space grey</label>
       </div>
   </div>
 
@@ -90,10 +96,12 @@
       </form>
 
       </div>
-      <div class="background-img">
+      <div class="background-img"></div>
 
-      </div>
       <div class="form-line"></div>
+      <div class="mobile-img"><img src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="" width="500px"></div>
+            <div class="form-line-mobile"></div>
+
     </main>
 
     <!-- FOOTER -->
