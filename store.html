@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="./store-mobile.css">
   </head>
       <header class="header">
-      <img src="./img/karma-logo.svg" alt="" style="height: 50px" />
+        <div class="images">
+          <img src="./img/karma-logo.svg" alt="" style="height: 50px" class="karma-logo"/>
+<!--           <img src="./level-3/menu-hamburger.svg" alt="" style="width: 20px;" class="mobile-threelines"> -->
+          <button id="hamburger-menu"><!-- none display for desktop size -->
+            <span></span>
+           <span></span>
+           <span></span>
+          </button>
+        </div>
       <nav>
         <ul class="nav-list">
           <li class="nav-item">
@@ -23,11 +31,6 @@
           <li class="nav-item"><a href="#">Login</a></li>
         </ul>
       </nav>
-      <button id="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </header>
 
     <!-- MAIN  -->

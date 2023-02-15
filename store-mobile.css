@@ -1,8 +1,23 @@
 @media screen and (max-width: 540px) {
+  /* HEADER */
   .nav-list {
     display: none;
   }
-
+  #hamburger-menu {
+    grid-area: b;
+}
+ 
+  .karma-logo{
+    grid-area: a;
+  }
+  .images{
+      display: grid;
+      grid-template-columns: 10px 50px 30px 30px 30px 30px 30px 30px 30px 30px 50px 10px;
+      grid-row: auto;
+      grid-template-areas: ". a . . . . . . . . b .";
+      position: absolute;
+  }
+  /* MAIN */
   .store-main {
     display: flex;
     flex-direction: column;
