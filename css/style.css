@@ -4,16 +4,334 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
+    height: 100%;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+header {
+    height: 79px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.header__container img {
+    width: 35px;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+/* Hamburger */
+menu {
+    text-align: center;
+    display: none;
+}
+
+.hamburger1 {
+    height: 40px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+  
+.hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    transition: all 0.2s ease-in-out;
+}
+  
+#toggle1 {
+    display: none;
+}
+  
+#toggle1:checked + .hamburger1 .top {
+    transform: rotate(-45deg);
+    margin-top: 22.5px;
+}
+  
+#toggle1:checked + .hamburger1 .meat {
+    transform: rotate(45deg);
+    margin-top: -5px;
+}
+  
+#toggle1:checked + .hamburger1 .bottom {
+    transform: scale(0);
+}
+  
+#toggle1:checked ~ .navbar--mobile {
+    height: 300px;
+}
+  
+.navbar--mobile {
+    background-color: #fff;
+    display: grid;
+    position: relative;
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-row-gap: 1rem;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navbar--mobile a:first-child {
+    margin-top: 1rem;
+}
+
+.navbar--mobile a:last-child {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:nth-child(1) {
+    font-weight: bold;
+}
+
+a:hover {
+    cursor: pointer;
+    color: coral;
+}
+
+.main {
+    background-image: url("/img/first-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+
+.main__container {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+.main__container h2 {
+    font-size: 2em; 
+    font-weight: 100;
+}
+
+.main__container button, .content__text button, form button {
+    border: none;
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #f4861f;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+section {
+    height: 565px;
+    text-align: center;
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    row-gap: 2rem;
+}
+
+.section__container h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.container__icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.section__container img {
+    width: 140px;
+}
+.container__icon div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.container__icon p {
+    font-size: 29px;
+    height: 25px;
+    margin: 0;
+}
+
+.content__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.content__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 229, 232);
+}
+
+.content__text a {
+    color: #fff;
+}
+
+.content__text h2 {
+    font-size: 2rem;
+    font-style: italic;
+}
+.content__container img {
+    height: 100%;
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.content__wrapper span {
+    color: #f4861f;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    height: 150px;
+    border-top: #b2b2b2 solid 1px;
+    row-gap: 1rem;
+}
+
+.footer img {
+    width: 25px;
+}
+
+.footer a {
+    width: 40px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #b2b2b2;
+}
+.footer div {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
 
 
+
+@media (max-width: 768px) {
+    .header__container {
+        justify-content: space-between;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    menu {
+        display: grid;
+    }
+
+    .main__container h1 {
+        font-size: 3rem;
+    }
+
+    .main__container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .main__container button {
+        font-size: 15px;
+    }
+
+    section {
+        height: 950px;
+    }
+
+    .section__container {
+        justify-content: unset;
+    }
+
+    .section__container h2 {
+        font-size: 2rem;
+    }
+
+    .container__icon {
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4rem;
+    }
+
+    .content__container {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: none;
+    }
+
+    .content__img img {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    .content__wrapper h2 {
+        font-size: 1.6rem;
+    }
+
+    .content__text button {
+        font-size: 15px;
+        margin-bottom: 1rem;
+        padding: 15px 25px;
+        margin-top: 1.5rem;
+    }
+}
+@media (max-width: 390px) {
+    .content__text button {
+        font-size: 12px;
+        padding: 15px 15px;
+        margin-top: unset;
+    }
+
+    .content__wrapper h2 {
+        font-size: 1.2rem;
+    }
+}

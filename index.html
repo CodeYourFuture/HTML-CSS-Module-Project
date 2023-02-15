@@ -4,16 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
+    <header>
+        <div class="header__container">
+            <img src="/img/karma-logo.svg" alt="karma-logo">
+            <div class="navbar">
+                <a href="/index.html">Meet Karma</a>
+                <a href="#">How it Works</a>
+                <a href="/store.html">Store</a>
+                <a href="#">Blog</a>
+                <a href="#">Help</a>
+                <a href="#">Login</a>
+            </div>
+            <menu>
+                <nav id="navbar" class="navigation" role="navigation">
+                  <input id="toggle1" type="checkbox" />
+                  <label class="hamburger1" for="toggle1">
+                    <div class="top"></div>
+                    <div class="meat"></div>
+                    <div class="bottom"></div>
+                  </label>
+                  <nav class="navbar--mobile">
+                    <a href="/index.html">Meet Karma</a>
+                    <a href="#">How it Works</a>
+                    <a href="/store.html">Store</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Help</a>
+                    <a href="#">Login</a>
+                  </nav>
+              </nav>
+            </menu>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main__container">
+                <h1>Introducing Karma</h1>
+                <h2>Bring WiFi with you, everywhere you go.</h2>
+                <button>Learn more</button>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="section__container">
+            <h2>Everyone needs a little Karma</h2>
+            <div class="container__icon">
+                <div>
+                    <img src="/img/icon-devices.svg" alt="Devices">
+                    <p>Internet for all devices</p>
+                </div>
+                <div>
+                    <img src="/img/icon-coffee.svg" alt="Coffee">
+                    <p>Boost your productivity</p>
+                </div>
+                <div>
+                    <img src="/img/icon-refill.svg" alt="Refill">
+                    <p>Pay as You Go</p>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <content>
+        <div class="content__container" >
+            <div class="content__img">
+                <img src="/level-2/homepage-feature.png" alt="">
+            </div>
+            <div class="content__text">
+                <div class="content__wrapper">
+                    <h2><span>"</span>Wherever I am, I just don't worry about my connection anymore!<span>"</span></h2>
+                    <a href="/store.html"><button>Get Karma today</button></a>
+                </div>
+            </div>
+        </div>
+    </content>
+    <footer>
+        <div class="footer" id="contact">
+            <p>Join us on</p>
+            <div>
+                <a href="#"><img src="/img/twitter-icon.svg" alt=""></a>
+                <a href="#"><img src="/img/facebook-icon.svg" alt=""></a>
+                <a href="#"><img src="/img/instagram-icon.svg" alt=""></a>
+            </div>
+          <span>© Karma Mobility, Inc.</span>
+        </div>
+    </footer>
 </body>
 </html>

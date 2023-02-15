@@ -1,0 +1,141 @@
+section {
+    height: 1030px;
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    width: 75%;
+    text-align: left;
+}
+@media (max-width: 900px) {
+   form {
+    width: 90%;
+   } 
+    
+}
+form label, legend {
+    margin-bottom: 0.7rem;
+}
+
+form div:nth-child(5) {
+    text-align: center;
+}
+fieldset:nth-child(1) input, select {
+    height: 2rem;
+}
+
+fieldset:nth-child(1) label {
+    font-weight: bold;
+}
+
+fieldset:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+fieldset:nth-child(3) {
+    display: flex;
+}
+
+fieldset:nth-child(3) label {
+    padding-left: 0.5rem;
+}
+.checkbox {
+    padding: 3px;
+    height: 25px;
+    max-width: 25px;
+    width: 100%;
+    appearance: none;
+    border: 1px solid #34495E;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    content: url(/level-2/checkmark.svg);
+}
+
+.section__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__left legend {
+    text-align: end;
+    font-weight: bold;
+}
+
+.section__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+}
+
+.section__wrapper img {
+    max-height: 1050px;
+}
+
+.section__wrapper h2 {
+    color: #f4861f;
+    font-size: 2rem;
+    width: 70%;
+}
+
+.name__wrapper {
+    display: grid;
+    grid-template-columns: 47% 48%;
+    column-gap: 5%;
+}
+
+.address__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.postcode {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    column-gap: 20%;
+}
+
+.radio__wrapper {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.radio__wrapper input {
+    accent-color: #E0633A;
+}
+
+.section__right {
+    background: url(/level-2/store-image_by-andrew-neel-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    section {
+        height: 1850px;
+    }
+    .section__wrapper {
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+    }
+
+    form {
+        row-gap: 3rem;
+    }
+
+    form div:last-child {
+        text-align: center;
+    }
+}
