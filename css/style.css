@@ -1,76 +1,126 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
-*{
+body{
     margin: 0;
     padding: 0;
 
 }
-Body{
-    background: rgba(0 0 0 0.7) url('first-background.jpg') center center fixed;
-    background-size: cover;
-    background-position: 20px;
-    background-blend-mode: darken;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: flex-end;
+    padding-right: 4rem;
+    height: 5rem;
 }
-
-.navbar ul li{
-
-    display: inline-block;
-    padding: 18px;
-    text-transform: uppercase;
+.header-logo{
+    height: 50px;
+    width: 50px;
+    padding-left: 4rem;
 }
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 4px;
-    transition: 3.ms;
+logo-img{
+    margin-bottom: -10rem;
 }
-
-.navbar ul li a:hover{
-    box-shadow: 0 3px 50px orangered inset, 0 3px 50px orangered inset, 0 3px 50px orangered inset
+ul{
+    width: 100%;
+    margin: 0 0 0 250px;
+    list-style: none;
 }
-
-.content{
-    position: absolute;
-    color: #fff;
-    top: 40%;
-    left: 30%;
+nav{
+    width: 100%;
+    overflow: auto;
+   
 }
-.content h1{
-    font-family: sans-serif;
-    font-size: 20px;
-    margin-left: 30%;
-}
-.content p{
-    text-align: center;
-    margin-top: 17px;
-}
-.content button{
-    font-size: 30px;
-}
-.logo img{
+li{
     float: left;
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 10px;
-    height: auto;
-    width: 100px;
+}
+li a{
+    width: 100%;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
+.main{
+    background-image: url(../img/first-background.jpg);
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.main h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 5rem;
 }
 
-    
+.main p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.main button{
+    color: black;
+    background-color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 6rem;
+background-size: cover;
+}
+
+
+.main2{
+margin-top: 5rem;
+margin-bottom: 1rem;
+text-align: center;
+}
+h1{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 7rem;
+}
+.footer{
+   border-top: 1px solid grey;
+   margin: 1rem 4rem;
+}
+p{
+    font-weight: normal;
+    text-align: center;
+    font-size: medium;
+}
+.join us logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.3em;
+    width: auto;
+    height: 0.5rem;
+     border-radius: 50%;
+     padding: 0.5rem;
+}
+
+.footer-end{
+    text-align: center;
+    color: black;
+    font-size: small;
+}
