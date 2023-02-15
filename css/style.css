@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,254 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* HEADER style */
 
+.header {
+  display: flex;
+  justify-content: space-around;
+  gap: 300px;
+  height: 80px;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 500px;
+  color: grey;
+  text-decoration: none;
+}
+.header .nav-item a {
+  color: grey;
+  text-decoration: none;
+}
+
+.header .nav-item a:hover {
+  color: orange;
+}
+
+/* END of HEADER style */
+
+/* MAIN style */
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-container-up {
+  background-image: url("../img/first-background.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /*   background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed; */
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid grey;
+  color: rgb(231, 231, 231);
+  height: 670px;
+  align-items: center;
+  justify-content: center;
+}
+
+.up-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.main-container-down {
+  align-content: center;
+  height: 500px;
+}
+.down-h1 {
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  margin: 0 100px 100px 100px;
+}
+.line {
+  border-bottom: 2px solid rgb(236, 236, 236);
+  margin-left: 275px;
+  margin-right: 280px;
+}
+/* END of MAIN style */
+
+/* FOOTER style */
+.footer {
+  text-align: center;
+}
+.social-media-icons {
+  justify-content: center;
+}
+
+.social_media_icon {
+  height: 18px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* END of FOOTER style */
+
+/*  STORE PAGE STYLE */
+
+.store-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 950px;
+  grid-template-areas: "form img";
+}
+.form {
+  grid-area: form;
+  padding-left: 90px;
+  margin-right: 90px;
+}
+.background-img {
+  background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
+  grid-area: img;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  padding-left: 0px;
+}
+
+/* c */
+.form-h2 {
+  color: orange;
+  padding-top: 60px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.form-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.city-postcode {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.orange-grey {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.form-button {
+  color: orange;
+  background-color: orange;
+}
+.terms {
+  color: orange;
+}
+.form-line {
+  border-top: 2px solid rgb(235, 235, 235);
+  margin-left: 90px;
+}
+.form-line-mobile{
+  display: none;
+}
+.mobile-img{
+  display: none;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+input[type="radio"]:checked {
+  background-color: orange;
+  color: orange;
+}
+
+/* none-display for desktop size */
+
+#hamburger-menu {
+  display: none;
+}
+.mobile-threelines{
+  display: none;
+}
+
+
+@media screen and (max-width: 540px) {
+  /* MEET KARMA PAGE */
+  .nav-desktop {
+    display: none;
+  }
+   #hamburger-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  } 
+ 
+  #hamburger-menu span {
+    width: 10px;
+    height: 10pxpx;
+    background-color: #000;
+    border-radius: 5px;
+  }
+
+  /* main */
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-bottom: 2px solid rgb(223, 223, 223);
+  }
+
+  /* STORE PAGE  */
+
+}

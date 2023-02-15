@@ -1,19 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
 
-</body>
+    <header class="header">
+      <img src="./img/karma-logo.svg" alt="" style="height: 50px" />
+      <nav class="nav-desktop">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#"><strong>Meet Karma</strong></a>
+          </li>
+          <li class="nav-item"><a href="#">How it Works</a></li>
+          <li class="nav-item"><a href="./store.html">Store</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#">Help</a></li>
+          <li class="nav-item"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!--  -->
+<!--       <ul id="menu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+
+      <script>
+        const button = document.querySelector("#hamburger-menu");
+        const menu = document.querySelector("#menu");
+
+        button.addEventListener("click", function () {
+          menu.style.display =
+            menu.style.display === "block" ? "none" : "block";
+        });
+      </script> -->
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <div class="main-container-up">
+        <h1>Introducing Karma</h1>
+        <h2>Bring WiFi with you, everywhere you go.</h2>
+        <button class="up-button">Learn More</button>
+      </div>
+      <!--  -->
+      <div class="main-containe-down">
+        <h1 class="down-h1">Everyone needs a little Karma.</h1>
+        <div class="icons">
+          <div class="icon-1">
+            <img src="./img/icon-devices.svg" alt="" width="130px" />
+            <h3>Internet for all devices</h3>
+          </div>
+          <div class="icon-2">
+            <img src="./img/icon-coffee.svg" alt="" width="130px" />
+            <h3>Boost your productivity</h3>
+          </div>
+          <div class="icon-3">
+            <img src="./img/icon-refill.svg" alt="" width="130px" />
+            <h3>Pay as You Go</h3>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p><strong>Join us on</strong></p>
+      <div class="social-media-icons">
+        <img
+          src="./img/twitter-icon.svg"
+          alt="twitter icon"
+          class="social_media_icon"
+        />
+        <img
+          src="./img/facebook-icon.svg"
+          alt="facebook icon"
+          class="social_media_icon"
+        />
+        <img
+          src="./img/instagram-icon.svg"
+          alt="instagram icon"
+          class="social_media_icon"
+        />
+      </div>
+      <p style="color: rgb(199, 198, 198)">Karma mobility, inc.</p>
+    </footer>
+  </body>
 </html>

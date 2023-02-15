@@ -1,0 +1,83 @@
+@media screen and (max-width: 540px) {
+  /* HEADER */
+  .nav-list {
+    display: none;
+  }
+  #hamburger-menu {
+    grid-area: b;
+}
+ 
+  .karma-logo{
+    grid-area: a;
+  }
+  .images{
+      display: grid;
+      grid-template-columns: 10px 50px 30px 30px 30px 30px 30px 30px 30px 30px 50px 10px;
+      grid-row: auto;
+      grid-template-areas: ". a . . . . . . . . b .";
+      position: absolute;
+  }
+  /* MAIN */
+  .store-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group-inline {
+    display: flex;
+    flex-direction: column;
+  }
+  .city-postcode {
+    display: flex;
+    flex-direction: column;
+  }
+  #postcode {
+    width: 120px;
+  }
+  .orange-grey {
+    display: grid;
+    grid-template-columns: 30px 160px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "a c"
+      "b d";
+  }
+  #color1 {
+    grid-area: a;
+  }
+  #color2 {
+    grid-area: b;
+  }
+  .color1-orange {
+    grid-area: c;
+  }
+  .color1-grey {
+    grid-area: d;
+  }
+  .form-line {
+    display: none;
+  }
+  .form-line-mobile {
+    border-bottom: 2px solid grey;
+    margin-top: 10px;
+  }
+
+  .mobile-img {
+    display: inline;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    border-top: 2px solid rgb(223, 221, 221);
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .form-button {
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+}
