@@ -1,19 +1,293 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+ :root {
+    --grey-dark: #1D1E21;
+    --grey-med: #53565C;
+    --grey-light: #8A8F98;
+    --orange-dark: #c05326;
+  }
+
+/* body, h1, h2, h3, h4 { */
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: var(--grey-dark);
+    font-weight: lighter;
 }
 
+.header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50px;
+}
+
+#logo img {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    left: 10%;
+}
+
+/*nav */
+
+nav{
+    position: absolute;
+    right: 10%;
+}
+ul{
+list-style-type: none;
+
+}
+
+li {
+    display: inline;
+   margin-left: 10px;
+   color: #8A8F98;
+   font-weight: 500;
+}
+li a{
+    color: #8A8F98;
+    text-decoration: none;
+}
+li,a:hover{
+    color: #c05326;
+}
+
+
 /**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
+@@ -25,143 +16,4 @@ body, h1, h2, h3, h4 {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+/* headings */
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    
+}
+
+h3 {
+    font-size: 2rem;
+    color:#53565C;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+
+/* main / re-used */
+.select-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.select-one img{
+    background-size: cover;   
+}
+.element{
+    position: absolute;
+    top: 30%;
+    color: white;
+}
+.section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* header */
+
+
+
+.splash {
+    align-items: center;
+    justify-content: center;
+    background-image:  url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+}
+
+/* navigation */
+
+/* buttons */
+
+button {
+    background-color: var(--orange-dark);
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* selling points */
+.sellingpoints {
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.features {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.feature-item {
+
+}
+
+.features img {
+    height: 150px;
+    width: auto;
+}
+
+/* last section */
+.splite{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    position: relative;
+    gap: 200px;
+    
+}
+.one{
+    padding-left: 20%;
+}
+.twe{
+    height: 200px;
+    border: #c05326 1px solid;
+    text-align: center;
+    position: relative;
+}
+.section-three-btn{
+    position: absolute;
+    top: 50%;
+
+}
+.section-three-btn a{
+    text-decoration: none;
+    color:white
+}
+.section-three-btn a:hover{
+    color:gold;
+}
+
+
+/* footer */
+
+.footer {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 400;
+}
+.footer-pic{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials {
+    align-items: center;
+}
+
+.socials img {
+    max-height: 16px;
+    width: auto;
+    padding: 0 1rem;
+}
+
+/* form */
+main{
+position: relative;
+width: 1318px;
+height: 1235px;
+left: 122px;
+top: 98px;
+}
+
+.title{
+position: absolute;
+    width: 521px;
+    height: 118px;
+    left: 123px;
+    top:10px;
+
+}
+form{
+
+position: absolute;
+    width: 501px;
+    height: 849px;
+    left: 122px;
+    top: 200px;
+}
+.girl{
+position: absolute;
+    width: 701px;
+    height: 1235px;
+    left: 739px;
+    top: 10px;px;
+}
+.girl img{
+    width:90%;
+    height: 900px;
+}
+/* media query */
+@media screen and (min-width: 200px) {
+    .header {
+        display: grid;
+        grid-template-rows: 1fr ;
+
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .splite{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+
+
 
 
