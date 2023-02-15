@@ -22,10 +22,15 @@ header {
     background-color: var(--light-grey);
 }
 
+#menu-toggle {
+    display: none;
+}
+
 .navigation_list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    
     
 }
 .navigation_item:first-child {
@@ -39,6 +44,7 @@ header {
 
 .navigation__link {
     color: var(--text-grey);
+    text-decoration: none;
 }
 
 a:hover {
@@ -47,7 +53,7 @@ a:hover {
 
 /* picture sector styling */
 
-@media screen and (min-width:481px) {
+@media screen and (min-width: 601px) {
    .picture {
         background-image: url(/img/first-background.jpg);
         background-size: contain;
@@ -187,7 +193,7 @@ footer p:last-child {
 
 /* for mobile screens */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .icons {
         display:flex;
         flex-direction: column;
@@ -221,10 +227,10 @@ footer p:last-child {
         justify-content: center;
         background-image: url(/img/first-background.jpg);
         background-size: cover;
-        /* background-position: center; */
         background-position: 65% 10%;
         padding: 4rem 2rem 3rem 2rem;
         height: 18rem;
+        width: ;
     }
 
     .picture h2 {
@@ -246,4 +252,3 @@ footer p:last-child {
         font-size: medium;
     }
 }
-
