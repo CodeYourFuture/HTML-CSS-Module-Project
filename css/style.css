@@ -7,13 +7,35 @@
     --orange-dark: #c05326;
   }
 
-body, h1, h2, h3, h4 {
+/* body, h1, h2, h3, h4 { */
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     color: var(--grey-dark);
     font-weight: lighter;
 }
+
+#logo img {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    left: 100px;
+}
+
+
+nav{
+    position: absolute;
+    right: 100px;
+}
+ul{
+list-style-type: none;
+}
+
+li {
+    display: inline;
+   
+}
+
 
 /**
 @@ -25,143 +16,4 @@ body, h1, h2, h3, h4 {
@@ -24,12 +46,13 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    
 }
 
 h3 {
@@ -41,10 +64,44 @@ h4 {
     font-size: 2em;
 }
 
+.header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 50px;
+}
+
 /* main / re-used */
-.container {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+.select-one {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.select-one img{
+    background-size: cover;   
+}
+.element{
+    position: absolute;
+    top: 30%;
+    color: white;
+}
+.section-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 500;
 }
 
 .flex-col {
@@ -63,20 +120,7 @@ h4 {
 
 /* header */
 
-.header {
-    margin-left: auto;
-    margin-right: auto;
-    height: 60px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 7rem;
-    padding-right: 7rem;
-}
 
-.logo img {
-    height: 40px;
-    width: auto;
-}
 
 .splash {
     align-items: center;
@@ -89,25 +133,23 @@ h4 {
 
 /* navigation */
 
-.navigation {
-    list-style: none;
-}
 
-.nav-item {
+
+nav-item {
     margin: 0rem 1rem;
     color: var(--grey-light);
 }
 
-.nav-current {
+nav-current {
     color: var(--grey-med);    
 }
 
-.nav-link {    
+nav-link {    
     color: inherit;
     text-decoration: none;
 }
 
-.nav-item :hover {
+nav-item :hover {
     color: var(--orange-dark);
 }
 
@@ -147,8 +189,15 @@ button {
 
 .footer {
     min-height: 200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    font-weight: 400;
+}
+.footer-pic{
+    display: flex;
+    flex-direction: row;
 }
 
 .socials {
