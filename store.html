@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+    <nav>
+        <img cass="logo" src="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/img/karma-logo.svg" width="20rem">
+        <a class="burger-nav">
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.447715 0.447715 0 1 0H23C23.5523 0 24 0.447715 24 1V1.28572C24 1.838 23.5523 2.28572 23 2.28572H1C0.447716 2.28572 0 1.838 0 1.28572V1ZM0 7.85714C0 7.30485 0.447715 6.85713 1 6.85713H23C23.5523 6.85713 24 7.30485 24 7.85713V8.14285C24 8.69513 23.5523 9.14285 23 9.14285H1C0.447716 9.14285 0 8.69513 0 8.14285V7.85714ZM1 13.7143C0.447715 13.7143 0 14.162 0 14.7143V15C0 15.5523 0.447716 16 1 16H23C23.5523 16 24 15.5523 24 15V14.7143C24 14.162 23.5523 13.7143 23 13.7143H1Z" fill="black"/>
+            </svg>
+        </a>
+        <div class="topnav">
+            <ul>
+                <li><a class="login" href="#login">Login</a></li>
+                <li><a class="helo" href="#help">Help</a></li>
+                <li><a class="blog" href="#blog">Blog</a></li>
+                <li><a class="store" href="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/store.html">Store</a></li>
+                <li><a class="howWorks" href="#works">How it Works</a></li>
+                <li><a class="karma" href="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/index.html">Meet Karma</a></li>
+            </ul>             
+        </div>
+    </nav>
+    <main>
+        <div class="container_store">
+            
+            <div class="form">
+                <h1 class="store-h1">Order Your Karma wifi device today</h1>
+                <br>
+                <div class="name-container">
+                    <div class="first-name">
+                        <label for="first-name">First Name*</lable><br>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last-name">Last Name*</lable><br>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>   
+                </div>
+                <br>
+                <div class="name-container">
+                    <label for="adress">Adress*</lable><br>
+                    <input type="text" name="adress" id="adress" required>
+                    <br><br>
+
+                    <label for="adress2">Adress2</lable><br>
+                    <input type="text" name="adress" id="adress">
+                    <br><br>
+                </div>
+                <div class="name-container">
+                    <div class="city">
+                        <label for="city">City*</lable><br>
+                        <select name="city" id="city" required>
+                            <option value="London">London</option>
+                            <option value="Liverpul">Liverpul</option>
+                            <option value="Manchester">Manchester</option>
+                        </select>
+                    </div>
+                    <div class="postcode">
+                        <label for="postcode">Postcode*</lable><br>
+                        <input type="text" name="postcode" id="postcode" required>
+                    </div>
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="right-align">
+                    <label for="colour" class="colour">Select a colour</label><br><br>
+                    <div class="radio-item">
+                        <input type="radio" name="colour" id="color-radio" value="karma-orange">
+                        <label for="orange">Karma Orange</label>
+                    
+                        <input type="radio" name="colour" id="color-radio" value="space-grey">
+                        <label for="grey">Space Grey</label>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div>
+                        <input type="checkbox" name="conditions" id="conditions" value="conditions" required>
+                        <label for="conditions">By placing your order you agree to Karma's <span class="terms-conditions"><a href="">Terms and Conditions</a></span>*.</label>
+                    </div>
+                    <br>
+                    <br>
+
+                    <button class="submit-store">Place my order</button>
+                </div>
+                    
+            </div>
+            
+            <img src="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/level-2/store-image_by-andrew-neel-unsplash.jpg" class="main-img" alt="picture, women working on laptop"/>
+        
+        </div>
+        
+    </main>
+    <hr>
+    <footer>
+        <p class="join">Join us on</p>
+        <div class="footer-icons">
+            <img class="img-footer" src="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/img/twitter-icon.svg">
+            <img class="img-footer" src="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/img/facebook-icon.svg">
+            <img class="img-footer" src="/Users/Mac/Documents/CYF/HTML:CSS_karma_progect/HTML-CSS-Module-Project(4weeks)/img/instagram-icon.svg">
+        </div>
+        <p class="copy">© Karma Mobility.Inc.</p>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="menu.js"></script> 
+</body>
