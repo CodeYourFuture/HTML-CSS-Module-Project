@@ -47,7 +47,6 @@ menu {
     width: 40px;
     height: 5px;
     margin-top: 7px;
-    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
   
@@ -56,19 +55,16 @@ menu {
 }
   
 #toggle1:checked + .hamburger1 .top {
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin-top: 22.5px;
 }
   
 #toggle1:checked + .hamburger1 .meat {
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     margin-top: -5px;
 }
   
 #toggle1:checked + .hamburger1 .bottom {
-    -webkit-transform: scale(0);
     transform: scale(0);
 }
   
@@ -79,6 +75,7 @@ menu {
 .navbar--mobile {
     background-color: #fff;
     display: grid;
+    position: relative;
     grid-template-rows: repeat(5, 0.5fr);
     grid-row-gap: 1rem;
     height: 0px;
