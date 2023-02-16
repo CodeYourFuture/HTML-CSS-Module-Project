@@ -230,7 +230,7 @@ footer p:last-child {
         background-position: 65% 10%;
         padding: 4rem 2rem 3rem 2rem;
         height: 18rem;
-        width: ;
+        
     }
 
     .picture h2 {
@@ -238,7 +238,7 @@ footer p:last-child {
         margin: 0;
         font-size: 3em;
         color: var(--light-grey);
-        /* padding-top: 3em; */
+        
     }
     
     .picture p {
@@ -250,5 +250,81 @@ footer p:last-child {
 
     .picture button {
         font-size: medium;
+    }
+
+    #menuToggle {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        right: 50px;
+        width: 100%;
+        z-index: 1;
+        margin-right: 0;
+        padding-top: 10px;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #ham {
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        justify-self: right;
+        top: 5px;
+        cursor: pointer;
+        opacity: 0; 
+        z-index: 2;   
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: flex;
+        flex-direction: column;
+        width: 33px;
+        height: 4px;
+        justify-self: flex-end;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: black;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+/*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -1px);
     }
 }
