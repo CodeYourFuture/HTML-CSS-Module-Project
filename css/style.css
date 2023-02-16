@@ -194,6 +194,9 @@ footer p:last-child {
 /* for mobile screens */
 
 @media only screen and (max-width: 600px) {
+    
+    /* middle section */
+
     .icons {
         display:flex;
         flex-direction: column;
@@ -208,6 +211,8 @@ footer p:last-child {
         font-size: 1.25rem;
     }
 
+    /* bottom section */
+
     .extended {
         display: flex;
         flex-direction: column;
@@ -218,6 +223,8 @@ footer p:last-child {
         font-size: 2rem;
         padding: 2.5rem 1.2rem 1rem 1.2rem;
     }
+
+    /* top section */
 
     .picture {
         font-display: flex;
@@ -252,17 +259,30 @@ footer p:last-child {
         font-size: medium;
     }
 
+    /* header section */
+
+    header {
+        padding: 10px 20px 10px 20px;
+        background-color: white;
+        border-bottom: 2px solid var(--light-grey);
+    }
+
+    .navigation_list {
+        display: none;
+    }
+
     #menuToggle {
         display: grid;
         grid-template-columns: 1fr;
         position: relative;
-        right: 50px;
-        width: 100%;
+        /* right: 50px;
+        width: 100%; */
         z-index: 1;
         margin-right: 0;
-        padding-top: 10px;
+        padding: 10px;
         -webkit-user-select: none;
         user-select: none;
+        
     }
 
     #ham {
@@ -272,6 +292,7 @@ footer p:last-child {
         position: absolute;
         justify-self: right;
         top: 5px;
+        border: none;
         cursor: pointer;
         opacity: 0; 
         z-index: 2;   
@@ -285,14 +306,13 @@ footer p:last-child {
         height: 4px;
         justify-self: flex-end;
         margin-bottom: 5px;
-        position: relative;
-        
+                
         background: black;
         border-radius: 3px;
         z-index: 1;
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              /* background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), */
               opacity 0.55s ease;
     }
 
@@ -311,20 +331,33 @@ footer p:last-child {
         background: #232323;
     }
 
-/*
- * But let's hide the middle one.
- */
+
     #menuToggle input:checked ~ span:nth-last-child(3)
     {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
     #menuToggle input:checked ~ span:nth-last-child(2)
     {
         transform: rotate(-45deg) translate(0, -1px);
     }
+
+    #menuToggle input:checked ~ .navigation_list {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-around;
+        top: 20px;
+        right: 5px;
+        width: 450px;
+        background-color: white;
+        padding: 10px;
+    }
+
+
+
+
+
+   
 }
