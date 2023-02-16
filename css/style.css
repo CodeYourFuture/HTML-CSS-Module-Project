@@ -53,7 +53,7 @@ a:hover {
 
 /* picture sector styling */
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 501px) {
    .picture {
         background-image: url(/img/first-background.jpg);
         background-size: contain;
@@ -67,6 +67,10 @@ a:hover {
         align-items: center;
         justify-content: center;
     } 
+
+    #ham {
+        display: none;
+    }
 }
 
 
@@ -193,7 +197,7 @@ footer p:last-child {
 
 /* for mobile screens */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     
     /* middle section */
 
