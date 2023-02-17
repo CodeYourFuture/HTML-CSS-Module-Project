@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,167 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body header img {
+  width: 10%;
+  margin: 15px 0 20px 120px;
+}
+body header nav {
+  margin: 50px 120px 10px 0;
+}
+
+body header nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+body header nav a:first-child {
+  color: rgb(74, 73, 73);
+}
+.hamburger {
+  display: none;
+}
+
+main {
+  text-align: center;
+  background-image: url(/img/first-background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 300px;
+}
+
+main p,
+button {
+  margin: 20px;
+}
+.title {
+  font-size: xx-large;
+}
+
+.section_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.section_container:first-child {
+  font-size: xx-large;
+  margin-top: 140px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0 140px 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item img {
+  width: 100%;
+}
+
+.wrapper_feature {
+  display: flex;
+
+  margin: 0;
+
+  background-color: pink;
+}
+.wrapper_feature img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.photo {
+  box-sizing: border-box;
+  width: 50%;
+  height: auto;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+  font-size: xx-large;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  margin: 50px;
+  border-top: 1px solid rgb(184, 183, 183);
+}
+
+.icon {
+  margin: 20px;
+}
+
+.icon img {
+  width: 20px;
+  border: 1px solid rgb(184, 183, 183);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+}
+
+footer p:first-child {
+  margin-top: 15px;
+}
+
+footer p:last-child {
+  color: rgb(184, 183, 183);
+  padding: 20px;
+}
+
+@media screen and (max-width: 1004px) {
+  .hamburger {
+    display: block;
+    width: 50%;
+    margin: 20px;
+  }
+  body header nav {
+    display: none;
+  }
+
+  .wrapper,
+  .wrapper_feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper_feature img {
+    width: 100%;
+    padding: 20px;
+  }
+}
