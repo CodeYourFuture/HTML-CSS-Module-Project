@@ -1,0 +1,132 @@
+:root {
+    --light-grey: #e4e4e4;
+    --orange-dark: #c05326;
+    --light-orange: #fcefeb;
+    --text-grey: #3e3e43;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#store_img {
+    width: 100%;
+    grid-column: 2 / -1;
+}
+
+form {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+legend {
+    font-weight: 500;
+    font-size: xxx-large;
+    color: var(--orange-dark);
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-top: 1.5em;
+    font-size: 16px;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    border-radius: 5px;
+    line-height: 2rem;
+    accent-color: var(--orange-dark);
+}
+
+input[type="checkbox"]+label, input[type="radio"]+label {
+    display:inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 1.5rem;
+}
+
+input[name="address"], input[name="address2"]  {
+    width: 100%;
+}
+
+.first_name input {
+    width: 17em;
+}
+    
+.inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input, select {
+    font-size: 18px;
+}
+
+input[name="postcode"]{
+    width: 8.5em;
+}
+
+button[name="order"] {
+    margin-top: 1em;
+}
+
+#select_colour {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+select {
+    width: 29em;;
+    color: var(--text-grey);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 2.5rem;
+    background-color: white;
+    border: 2px solid;
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        margin: 2rem 1rem 1rem 1rem;
+        padding-bottom: 3rem;
+    }
+
+    legend {
+        font-weight: 500;
+        font-size: 2.7rem;
+        color: var(--orange-dark);
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    div {
+        width: 100%;
+    }
+
+    .first_name input, select {
+        width: 100%;
+    }
+    #select_colour label {
+        margin-right: 15rem;
+        margin-bottom: 0;
+    }
+   button[name="order"] {
+    align-self: center;
+    padding: 10px 50px 10px 50px;
+    margin-top: 2rem;
+   }
+}
