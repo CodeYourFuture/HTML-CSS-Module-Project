@@ -115,3 +115,91 @@ header {
   line-height: 1;
   margin-top: 15rem;
 }
+
+.services-container{
+  margin:3rem 0 3rem 0;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.2rem;
+  
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
+}
+.icon1 {
+  height: 7rem;
+  padding-bottom: 1rem;
+}
+.services-header {
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.get-karma-container {
+  display: flex;
+  align-items: center;
+  background-color: #f3d9ce;
+  margin: 5rem 5rem  ;
+}
+
+.img-container {
+  margin-right:10rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.karma-btn {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: #c05326;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+  line-height: 1;
+  margin-top: 10rem;
+}
+.footer-p{
+  text-align: center;
+  color: #c5c3c6;
+  font-size: 0.65rem;
+}
+.footer{
+  border-top: 1px solid #e5e6e4;
+  margin: 1rem 5rem;
+  grid-area: footer;
+}
+.footer-header {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons{
+  width: auto;
+  height: 0.8rem;
+  border: 0.12rem solid #e5e6e4;
+  border-radius: 50%;
+  padding: 0.38rem;
+  margin-left: 0.8rem;
+
+}
