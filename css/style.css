@@ -4,8 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    /* margin-left: 11rem;
-    margin-right: 11rem; */
+    margin: 0;
+    padding: 0;
+    
     
    
 }
@@ -13,13 +14,13 @@ body {
 
 .header{
     display: flex;
-    justify-content: space-between;
     justify-content: center; 
-    gap: 800px;
-  
-    /* padding: 1rem;  */
-    background-color: #fff;
-    /* margin-bottom: 0%;  */
+    gap: 500px; 
+    width: 1440px;
+    height: 89px; 
+    background-color: rgba(196, 196, 196, 0.1);
+    border-bottom: 1px solid #9b9b9b;
+    
     
     
 }
@@ -28,31 +29,32 @@ body {
 width: 45px;
 height: 50px;
 padding-top: 1rem;
-/* padding-left: 90px; */
 
-/* padding-left: 300px; */
 
 
 }
 
 .navbar{
+    
 display: flex;
-flex-direction: row;
-/* justify-content: center; */
-/* 
-text-align: center; */
-/* padding-top: 20px; */
-/* padding-right: 90px; */
-/* padding: 1rem; */
-/* padding-right: 300px;  */
+justify-content: space-between;
+/* gap: 10px; */
+/* flex-direction: row; */
+width: 650px;  
+height: 45px; 
 list-style: none;
+margin-top: 25px;
+
+
 
 
 
 }
 .item{
+    display: inline;
     list-style: none;
-    padding: 1rem; 
+    margin: 1%; 
+    /* padding: 5px; */
     
     
 }
@@ -62,7 +64,7 @@ list-style: none;
 .link{
 color: #afa9a9;
 font-family: sans-serif;
-font-weight: 100;
+font-weight: 300;
 font-size: 20px;
 text-decoration: none;}
 
@@ -72,11 +74,12 @@ text-decoration: none;}
  
 
 .link:hover{
-    color: rgba(255, 68, 0, 0.904);
+    color: rgba(224, 99, 58, 1);
+    ;
 }
 
 .hero{
-    background-image: url('/img/first-background.jpg');
+    background-image: url('/img/Karma');
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -87,7 +90,7 @@ text-decoration: none;}
     padding: 15px;
     height: 700px; */
     background-size: cover;  
-    width: 100%; 
+    width: 1440px; 
     height: 800px;  
     /* left: 20px;
     right: 20px; */
@@ -123,27 +126,34 @@ text-decoration: none;}
 }
 
 .hero_button{
-    border-radius: 6px;
-    background-color: rgba(255, 68, 0, 0.904);
+    border: solid;
+    border-color: rgba(224, 99, 58, 1);
+    ;
+    border-radius: 5px;
+    background-color:  rgba(224, 99, 58, 1);
+    ;
     color: #fff;
     padding: 15px 30px;
     font-family: sans-serif;
     /* font-weight: bold; */
-    font-size: 20px; 
-     margin-top: 2rem;
+    font-size: 1.5rem; 
+     margin: 2rem;
       
 
 }  
 
 
 
-
+main{
+    width: 1440px;
+    height: 550px;
+}
 
 
 
 .main_title{
     display: flex;
-
+    width: 1440px;
     justify-content: center;
     font-family: sans-serif;
     font-weight: 300;
@@ -155,16 +165,16 @@ text-decoration: none;}
 
 .article{
     display: flex; 
-    /* flex-direction: row;  */
+    width: 1440px;
     justify-content: space-around; 
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
     flex-flow: row; 
   
-    padding-top: 3rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+     padding-top: 3rem;
+    /* padding-left: 8rem;
+    padding-right: 8rem;  */
 }  
 
 .article_img{
@@ -175,10 +185,11 @@ text-decoration: none;}
 
 .article_title{
     /* padding: 2rem; */
+    
     padding-top: 1.5rem;
     padding-bottom: 5rem;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     font-family: sans-serif;}
     
 
@@ -206,22 +217,13 @@ text-decoration: none;}
     align-items: center;
 
 }
-/* .footer{
-     margin-top: 2rem; 
-    display: flex;
-    flex-direction: column; */
-    /* flex-flow: column;
-    justify-content: center; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin: 3rem;
-    height: 40px; */
-    /* border-top: 2rem black;  */
 
-/* } */
+.footer{
+    width: 1440px;
+}
 
 .footer_title{
+    width: 1440px;
     display: flex;
     justify-content: center;
     font-family: sans-serif;
@@ -236,7 +238,7 @@ text-decoration: none;}
 }
 
 .footer_content{
-
+    width: 1440px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -281,6 +283,7 @@ text-decoration: none;}
  
   
 .footer_desc{
+    width: 1440px;
     display: flex;
     justify-content: center;
     /* padding-top: 1rem; */
