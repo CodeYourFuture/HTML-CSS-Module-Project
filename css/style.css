@@ -218,6 +218,120 @@ main{
 
 }
 
+.home-page{
+    width: 1440px;
+    height: 450px;
+    display: flex;
+    justify-content: center; 
+
+}
+  .home-image{
+    width: 550px;
+    height: 450px;
+  }
+
+.home-content{
+   
+    width: 950px;
+    height: 450px;
+    position: relative;
+   
+    background-color: rgba(224, 99, 58, 0.1);
+    
+    
+}
+
+#desc{
+    /* margin: 2rem; */
+    color:rgba(67, 66, 66, 1);
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style:italic ;
+    line-height: 50px;
+    position: absolute;
+    /* display: inline; */
+    width: 500px;
+    left: 180px;
+    top: 80px;
+    text-align: center;
+   
+    /* display: flex;  */
+    /* flex-direction: column;  */
+    /* line-height: 1.5; */
+    /* padding: 1rem;
+    margin-top: 2rem;   */
+    /* align-items: center; */
+    /* align-items:  center; */ 
+}
+
+
+
+
+.home-button{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    width: 265px;
+    height: 70px;
+    background-color:rgba(224, 99, 58, 1);
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    border: solid;
+    border-color:rgba(224, 99, 58, 1) ;
+    border-radius: 5px;
+}
+
+.main-store{
+    width: 1440px;
+     /* display: flex; */
+  
+}
+
+
+.form-order{
+    position: relative;
+}
+
+.store-title{
+  position: absolute;
+  width: 550px;
+  height: 20px;
+  /* left: 120px;
+  top: 150px; */
+  font-size: 25px;
+  line-height: 60px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  color:rgba(224, 99, 58, 1);
+  text-align: center;
+  /* display: flex;
+  text-align: center; */
+}
+
+.form{
+    position: absolute;
+    text-align: center;
+
+
+
+
+}
+
+#id-name{
+    display: flex;
+}
+.form-image{
+    height: 1235px;
+    width: 700px;
+    float: right;
+}
+
+
 .footer{
     width: 1440px;
 }
@@ -293,3 +407,4 @@ main{
     font-weight: 100;
     font-size: 15px;
 }
+
