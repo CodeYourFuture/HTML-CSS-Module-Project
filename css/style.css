@@ -6,6 +6,160 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* This is the header part */
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+#nav-item1 {
+    font-weight: bold;
+}
+
+.nav-item {
+    margin: 1rem;
+    text-align: center;
+    width: auto;
+
+}
+
+.nav-item:hover {
+    color: #E0633A;
+}
+
+.top-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+/* This is the hero section */
+
+.hero {
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 3.25rem;
+    margin: 0;
+}
+
+.hero-text {
+    color: white;
+    margin: 1rem;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.learn-btn {
+    background-color: #E0633A;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    margin: 2rem;
+}
+
+/* This is the icon section  */
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+
+.product-nav {
+    display: flex;
+
+}
+
+.sevices {
+    display: flex;
+    flex-direction: column;
+    /* border: #E0633A solid 1px; */
+    width: 14rem;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 1rem;
+
+}
+
+.icon {
+    width: 65%;
+    height: 65%;
+}
+
+.product-descriptions {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+   
+}
+
+
+/* This is the footer section  */
+
+footer {
+    border-top: 2px solid #ECEDEE;
+    /* border: 2px solid #E0633A; */
+    margin: 2rem 10rem 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-btn {
+    border-radius: 5em;
+    background-color:transparent;
+    padding: .75rem 1rem;
+    border: #EEEFEF solid 2px;
+    margin: 0 0.45rem;
+}
+
+.social-media-links {
+    width: .75rem;
+}
+
+#copyright-section {
+    color: #9DA1A9;
+}
+
 /**
  * Add your custom styles below
  * 
