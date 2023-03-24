@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+  }
+  .header__logo {
+    height: 40px;
+    width: auto;
+    padding-bottom: 0.2rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .navigation{
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .navigation__list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navigation__item {
+    padding: 2rem;
+    align-items: ;
+  }
+  
+  .navigation__link {
+    color: lightgray;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .navigation__list a:hover {
+    color: #c05326;
+  }
+  
+  .navigation__list a.active {
+    color: darkgray;
