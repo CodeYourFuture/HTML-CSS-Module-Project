@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,462 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+h1,
+h2,
+h3 {
+  font-weight: 100;
+}
 
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  padding-bottom: 0.6rem;
+}
+
+select {
+  width: 100%;
+  height: 2.3rem;
+}
+
+.menu-burger {
+  display: none;
+}
+
+.top-container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo-container {
+  width: 1.5rem;
+  padding-left: 2rem;
+}
+
+.nav-item {
+  padding-left: 2rem;
+  padding-right: 2 rem;
+}
+
+.nav-item:hover {
+  color: orange;
+}
+
+.nav-item-color {
+  color: grey;
+}
+
+.nav-item a:link {
+  text-decoration: none;
+}
+
+header {
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.header-btn {
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #c05326;
+  margin-top: 2rem;
+}
+
+.hero-text {
+  color: white;
+}
+
+main {
+  color: darkslategray;
+  text-align: center;
+}
+
+.main-options-container {
+  margin: 0% 4rem 3rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.main-options-icon {
+  width: 5rem;
+}
+
+.get-karma-section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.get-karma-img-div {
+  overflow: hidden;
+}
+
+.get-karma-img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.get-karma-promo {
+  background-color: #e0633a10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.karma-btn {
+  background-color: #e0633a;
+  color: white;
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  border: none;
+}
+
+.karma-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.get-karma-quote {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+}
+
+.get-karma-quote::before {
+  content: "“";
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #e0633a;
+  padding: 0.25rem;
+}
+
+.get-karma-quote::after {
+  content: "”";
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #e0633a;
+  padding: 0.25rem;
+}
+
+.store-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.store-main {
+  padding: 10%;
+  text-align: left;
+}
+
+.store-form-header {
+  color: #e0633a;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-input {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.store-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-names {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-first-name {
+  width: 100%;
+  /* border: 3px solid green; */
+}
+
+.form-last-name {
+  /* border: 3px solid purple; */
+  width: 100%;
+}
+
+.store-aside-image {
+  width: 100%;
+  max-height: 130vh;
+  /* border: 5px solid purple; */
+}
+
+.form-city-postcode {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-city {
+  width: 70%;
+}
+.form-postcode {
+  width: 30%;
+}
+
+.form-color {
+  margin-bottom: 3rem;
+}
+
+input[type="radio"] {
+  /* border: 0px; */
+  width: 24px;
+  /* height: 2em; */
+}
+
+input[type="radio"] {
+  opacity: 0;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: red;
+  line-height: 25px;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  background-color: white;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #e0633a;
+}
+
+.form-color-choices {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+
+.radio-label {
+  padding-left: 1rem;
+  padding-right: 3rem;
+  padding-bottom: 0;
+}
+
+.karma-tc {
+  padding-bottom: 2rem;
+  /* padding-left: 1rem; */
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+input[type="checkbox"] + label {
+  position: relative;
+  /* padding-left: 30px; */
+  cursor: pointer;
+  display: inline-block;
+  columns: #666;
+  line-height: 25px;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  outline: 1px solid grey;
+  background: white;
+  left: 0;
+  top: 5px;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  outline: 1px solid grey;
+  background: white;
+  left: 0;
+  top: 5px;
+}
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url(/level-2/checkmark.svg);
+  background-size: contain;
+  /* background: white; */
+  left: 0;
+  top: 5px;
+}
+
+.karma-tc-label {
+  padding-left: 1.5rem;
+}
+
+.horiz-rule {
+  width: 50%;
+  height: 1px;
+  border-width: 0;
+  background-color: lightgray;
+}
+
+/* footer details */
+.join-text {
+  text-align: center;
+  font-size: small;
+}
+
+.social-icons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0 40%;
+}
+
+.social-icon {
+  width: 1rem;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: x-small;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .top-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* outline: 3px solid red; */
+  }
+
+  header {
+    margin-top: 4rem;
+  }
+  .menu-burger {
+    display: block;
+  }
+
+  .logo-container {
+    padding: 0;
+  }
+  .top-container-nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .top-container-nav.active {
+    display: block;
+  }
+
+  header {
+    padding: 0 8rem;
+    text-align: center;
+  }
+  .main-options-container {
+    margin: 0% 4rem 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-slogan {
+    padding: 0 3rem;
+  }
+
+  .get-karma-section {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .get-karma-promo {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  /*                                     */
+  /* store changes for responsive design */
+  /*                                     */
+
+  .store-form-header {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+  }
+  .store-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-names {
+    display: block;
+    gap: 2rem;
+  }
+
+  .form-city-postcode {
+    display: block;
+    gap: 2rem;
+  }
+
+  .form-postcode {
+    margin-top: 1rem;
+  }
+
+  .form-color-choices {
+    display: block;
+  }
+  .color-choice {
+    padding-top: 1rem;
+  }
+  .karma-btn-container {
+    text-align: center;
+  }
+
+  .horiz-rule {
+    display: none;
+  }
+  .copyright-text {
+    margin-bottom: 3rem;
+  }
+}

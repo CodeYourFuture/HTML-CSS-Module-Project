@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <div class="top-container">
+      <div class="logo-container">
+        <img src="img/karma-logo.svg" alt="karma logo" />
+      </div>
+      <!-- <div class="menu-burger">
+        <img src="./level-3/menu-hamburger.svg" alt="menu logo" />
+      </div>       -->
+      <nav class="top-container-nav">
+        <span class="nav-item"><a href="./index.html">Meet Karma</a></span>
+        <span class="nav-item nav-item-color">How it Works</span>
+        <span class="nav-item nav-item-color"><a href="./store.html">Store</a></span>
+        <span class="nav-item nav-item-color">Blog</span>
+        <span class="nav-item nav-item-color">Help</span>
+        <span class="nav-item nav-item-color">Login</span>
+      </nav>
+      <div class="menu-burger" id="toggle-button">
+        <img src="./level-3/menu-hamburger.svg" alt="menu logo" />
+      </div>
+
+    </div>
+
+    <div class="store-content">
+      <main class="store-main">
+        <h1 class="store-form-header">Order your Karma wifi device today!</h2>
+       
+        <form action="store.html" method="GET">
+          <fieldset name="order-details-capture" class="store-fieldset">
+            <div class="form-names">
+              <div class="form-first-name">
+                <label for="firstName">First Name *</label>
+                <input class="form-input" name="firstName" type="text" required>
+              </div>
+              <div class="form-last-name">
+                <label for="lastName">Last Name *</label>
+                <input class="form-input" name="lastName" type="text" required>                      
+              </div>
+            </div>
+           <div class="form-address-full">
+              <div class="form-address-1">
+                <label for="address1">Address *</label>
+                <input class="form-input" name="address1" type="text" required>
+              </div>
+              <div class="form-address-2">
+                <label for="address2">Address 2</label>
+                <input class="form-input" name="address2" type="text">
+              </div>
+
+              <div class="form-city-postcode">
+                <div class="form-city">
+                  <label for="city">City *</label>
+                  <select name="city" id="city">
+                    <option value="" disabled selected>Select your city...</option>
+                    <option value="Edinburgh">Edinburgh</option>
+                    <option value="Glasgow">Glasgow</option>
+                    <option value="Dundee">Dundee</option>
+                  </select>
+                </div>
+
+                <div class="form-postcode">
+                  <label for="postcode">Postcode *</label>
+                  <input class="form-input" name="postcode" type="text" required>
+                </div>
+              </div>
+
+              <div class="form-color">
+                <p>Select a colour</p>
+                <div class="form-color-choices">
+                  <div class="color-choice">
+                    <input class="radio-color" type="radio" name="formColor" id="karmaOrange" value="karmaOrange" checked>
+                    <label class="radio-label" for="karmaOrange">Karma orange</label>
+                  </div>
+                  <div class="color-choice">
+                    <input class="radio-color" type="radio" name="formColor" id="spaceGrey" value="spaceGrey">
+                    <label class="radio-label" for="spaceGrey">Space Grey</label>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="karma-tc">
+                <input type="checkbox" name="acceptTC" id="acceptTC">
+                <label class="karma-tc-label" for="acceptTC">By placing your order you agree to Karma's <a href=".">Terms and Conditions *</a></label>
+                
+              </div>                     
+            </div>  
+            <div class="karma-btn-container">
+              <button type="submit" class="karma-btn">Place Your Order</button>
+            </div>        
+
+          </fieldset>
+        </form>
+        
+      </main>
+      <aside class="store-aside">
+        <img class="store-aside-image" src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="girl on laptop at counter">
+      </aside>
+    </div>
+    <footer>
+      <hr class="horiz-rule" />
+      <p class="join-text">Join us on</p>
+      <div class="social-icons-container">
+        <img class="social-icon" src="img/twitter-icon.svg" alt="twitter icon" />
+        <img class="social-icon" src="img/facebook-icon.svg" alt="facebook icon" />
+        <img class="social-icon" src="img/instagram-icon.svg" alt="instagram icon" />
+      </div>
+      <p class="copyright-text">&#169 Karma Mobility Inc</p>
+    </footer>
+  </body>
+</html>
