@@ -1,9 +1,20 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+header img {
+    height: 60px;
+    margin-left: 40px;
+    
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    height: 125vh;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 60px;
+    /* padding: 30px; */
 }
 
 /**
@@ -16,4 +27,175 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+
+/* Add your CSS code here */
+
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+header * {
+    display: inline;
+}
+header ul {
+    margin: 20px;
+    right: 0;
+}
+header li {
+    margin: 20px;
+    right: 0;
+    
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+    right: 0;
+    
+}
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* ADD THIS LINE */
+
+    /* Background styles */
+    background-image: url('/../img/first-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 4em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 150px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white;
+    /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border styles */
+    border: 2px solid white;
+    /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+.we h1 {
+    /* Text styles */
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.post-teasers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.post-teasers>* {
+    flex: 1 1 300px;
+    align-self: flex-start;
+    padding: 1rem;
+}
+.post-teaser img {
+    position: absolute;
+    top: 50;
+    width: 30%;
+    height: 25%;
+
+}
+
+.blog-post-teaser figcaption h1 {
+    font-size: 22px;
+}
+
+.blog-post-teaser figcaption a {
+    text-decoration: none;
+    color: #111010;
+    font-size: 25px;
+}
+.join h1 {
+    /* Text styles */
+    font-size: 1em;
+    text-align: center;
+}
+.social-menu ul {
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.social-menu ul p {
+    position: absolute;
+    bottom: 15;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    /* display: flex; */
+}
+
+.social-menu ul img {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    /* transition: .6s; */
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+/* Apply some styles to the footer element */
+footer {
+   position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+    background-color: white;
+    color: rgb(13, 12, 12);
+    text-align: center;  
+}
 
