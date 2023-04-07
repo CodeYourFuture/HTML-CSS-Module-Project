@@ -8,16 +8,11 @@
     
      
 }
+/* * {
+  margin: 0;
+  padding: 0;
+} */
 
-
-  
-    
-    
-   
-
-    
-    
-    
 /**
  * Add your custom styles below
  * 
@@ -27,85 +22,314 @@
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ 
+.ddesktop-container {
+  display:none;
+}
+ 
+.mmobile-container{
+  display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 490px;
+}
+.mob-header-logo{
+  height: 2rem;
+}
+.hamburger {
+  display: block;
+  float: right;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+}
 
+.line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+  background-color: #333;
+}
+.mobile-header-logoo{
+  /* border: 5px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid lightgrey;
+  
+}
+.mobile-karma{
+  background-image: url("/img/first-background.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size:cover;
+  height: 65vh;
+}
+.mob-learn-more{
+    border: none;
+    background-color: #c05326;
+    /* padding: 1rem 2rem; */
+    border-radius: 0.5rem;
+    margin-left: 15rem;
+    height: 3rem;
+    width: 8rem;
+    
+}
+.karma-need{
+  text-align: center;
+  margin-top: 2rem;
+}
+.intro{
+  text-align: center;
+  /* border: 5px solid red; */
+  padding-top: 6rem;
+  font-size: 32px;
+  
+}
+.wifi{
+  text-align: center;
+  font-size: 24px;
+}
 
+.mo-icon{
+  height: 5rem;
+  margin-left: 16rem;
+  
+}
+.internet{
+  text-align: center;
+}
+.mob-img-feature{
+  height: 40vh;
+  width: 38rem;
+  margin-top: 2rem;
+}
+.mobile-get-karma-today{
+  margin-left: 13rem;
+  border-radius: 0.5rem;
+  background-color: #c05326;
+  height: 3rem;
+  margin-bottom: 3rem;
+  color: white;
+  width: 12rem;
+   
+} 
+.mob-get-karma-quote{
+  text-align: center;
+  font-size: 24px;
 
- .karma{
+}
+.mob-get-karma-quote::before {
+  content: "“";
+  font-family: "Roboto";
+  /* font-size: 24px; */
+  color: #E0633A;
+  padding: 0.25rem;
+}
+
+.mob-get-karma-quote::after {
+  content: "”";
+  font-family: "Roboto";
+  /* font-size: 1.5rem; */
+  color: #E0633A;
+  padding: 0.25rem;
+}
+
+.quote{
+  /* border: 5px solid black; */
+  background-color: lightgrey;
+  /* margin-top: 1rem; */
+  padding-top:2rem ;
+  
+}
+.mob-footer-content{
+  border-top: 2px solid lightgrey;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mob-join{
+  margin-left: 16rem;
+  
+  
+}
+.mob-social-media-icon{
+  display: flex;
+    justify-content: center;
+    border: radius 3rem;
+    height: 2rem;
+    gap: 2rem;
+
+}
+.mob-footer-karma{
+  text-align: center;
+}
+.store-mob-order{
+  text-align: center;
+  color: #E0633A;
+}
+.store-mob-firstname{
+  margin-left: 2rem;
+  
+}
+.store-text{
+  width: 27rem;
+  height: 2rem;
+}
+.store-mob-post{
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.store-mob-typ{
+  height:3rem ;
+}
+.store-mob-select-colour{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.mob-joined{
+  margin-left: 11rem;
+}
+.mob-store-checkbox{
+  display: flex;
+  margin-left: 2rem;
+  gap:0.5rem;
+
+}
+.mob-store-button{
+  margin-left: 10rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  width: 12rem;
+  height:3rem;
+  background-color: #E0633A;
+  color: white;
+  border-radius: 0.5rem;
+}
+.store-mobil-text{
+    text-decoration: underline;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+.mob-checkbox{
+  width: 1.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.mobile-store-image{
+  width: 31rem;
+}
+      /* responsive */
+         /* Desktop-version  */
+
+ @media screen and (min-width:900px) {
+
+.mmobile-container {
+  display: none;
+}
+
+.ddesktop-container {
+  display: grid;
+  width: 900px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.karma {
   background-image: url("/img/first-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding:6rem 3rem;color: white;
+  padding: 6rem 3rem;
+  color: white;
   margin-bottom: 3rem;
-  height:40vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
-  .karma h1{
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-  
-  }
-  .karma p{
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    
-  }
-  .header-logo{
-    height: 3rem;
-    padding-left: 3rem;
-    
-  }
+.karma h1 {
+  margin-bottom: 1rem;
+  font-size: 70px;
 
-  .learn-more{ 
+}
+
+
+.karma p {
+  font-size: 32px;
+  margin-bottom: 2rem;
+
+}
+
+.header-logo {
+  height: 3rem;
+  padding-left: 3rem;
+
+}
+
+.learn-more {
   border: none;
-  background-color:#c05326;
-  padding:1rem 2rem;
+  background-color: #c05326;
+  padding: 1rem 2rem;
   border-radius: 5%;
-  }
-  .navigaton-list{
-    display: flex;
-    justify-content: space-around;
-  }
-  .flex-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
+}
+
+.navigaton-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   
-.header-nav-items{
+}
+
+.header-nav-items {
   padding-right: 20rem;
-  
+
 
 }
-.navigation-item{
-padding-left: 4rem;
+
+.navigation-item {
+  padding-left: 4rem;
 }
 
-.navigation-item:hover{
+.navigation-item:hover {
   color: orange;
 }
 
-.meet-karma-item{
-  color:darkgrey;
-  
+.meet-karma-item {
+  color: darkgrey;
+
 }
-.karma2{
+
+.karma2 {
   text-align: center;
 }
 
-.icon{
-  height:3rem ;
+.icon {
+  height: 3rem;
 
 }
-.icon-parent{
+
+.icon-parent {
   display: flex;
   justify-content: space-evenly;
 }
-.homepage-parent{
+
+.homepage-parent {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -114,13 +338,14 @@ padding-left: 4rem;
   justify-content: center;
   background-size: cover;
 }
- .img-feature {
+
+.img-feature {
   margin-bottom: 3rem;
   height: 25rem;
   width: 50rem;
 }
-.connection{
-  /* border: 5px solid yellow; */
+
+.connection {
   height: 25rem;
   width: 80rem;
   text-align: center;
@@ -130,175 +355,195 @@ padding-left: 4rem;
 
 }
 
-.connection button{
+.connection button {
   border: none;
-  background-color:#c05326;
-  padding:1rem 1rem;
+  background-color: #c05326;
+  padding: 1rem 1rem;
   border-radius: 5%;
   height: 3rem;
   margin-top: 2rem;
- }
+}
 
-  .social-media-icon{  
-   display: flex;
-   justify-content: center;
-   border: radius 3rem;
-   height: 2rem;
-   background-size: cover;
-   margin-bottom: 5rem;
-   margin: 0.3rem;
-   
-   } 
+.social-media-icon {
+  display: flex;
+  justify-content: center;
+  border: radius 3rem;
+  height: 2rem;
+  background-size: cover;
+  margin-bottom: 5rem;
+  margin: 0.3rem;
+  gap: 2rem;
 
-.footer{
+}
+.desk-join{
+  font-size: 18px;
+}
+
+.footer {
   margin-top: 2rem;
 }
-.footer-content{
-  border-top: 2px solid grey;
+
+.footer-content {
+  border-top: 1px solid grey;
   margin: 3rem 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.footer p{
+
+.footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
-  
-  
+
+
 }
-.footer-karma p{
+
+.footer-karma p {
   color: grey;
   padding-top: 1rem;
 }
+
 .get-karma-quote {
   font-weight: 400;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 32px;
   margin-top: 7rem;
-  
+
 }
+
 .get-karma-quote::before {
   content: "“";
   font-family: "Roboto";
-  font-size: 1.5rem;
   color: #E0633A;
   padding: 0.25rem;
 }
+
 .get-karma-quote::after {
   content: "”";
   font-family: "Roboto";
-  font-size: 1.5rem;
   color: #E0633A;
   padding: 0.25rem;
 }
+.store-desk-flex-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: lightgrey;
 
- .main-store{
-  /* border: 5px solid red; */
+}
+.main-store {
   display: flex;
-  flex-direction: row;
-  height: 80vh;
-  width: 202vh;
-  
-}
-.store-form{
-  /* border: 5px solid blue; */
-  margin-left: 10rem;
-  margin-right: 17rem;
-  width: 35rem;
-  /* padding: 5rem; */
-  /* min-height: 53rem; */
-  /* height: 53rem; */
-  /* margin-bottom: 20rem;; */
-  
-}
-.store-image{
-  height: 46.5rem;
-  width: 58rem;
-  /* margin-left: 10rem; */
-  
-  
+
 }
 
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 4px;
+.store-form {
+  margin-left: 6rem;
+
 }
-.first{
+
+.store-image {
+  height: 50rem;
+  width: 40rem;
+  margin-top: -1rem;
+
+
+}
+.store-desk-name{
+  width: 20rem;
+  height: 2rem;
+}
+.store-desktop-named{
+    width: 47rem;
+    height: 2rem;
+}
+.first {
   display: flex;
-  justify-content:space-between;
   margin-bottom: 1rem;
   margin-right: 7rem;
-  width: 35rem
+  gap: 6rem;
 }
-.city{
-  
+
+.city {
   display: flex;
-  flex-direction: row;
-  margin: 8px 2px;
-  border-radius: 4px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  
-  
+  gap: 4rem;
+
 }
-.selectcolour{
+.city-label-desk{
+  height: 2.5rem;
+  width: 33rem;
+}
+.code-desk-store{
+  width: 10rem;
+  height: 2rem;
+}
+
+.selectcolour {
   display: flex;
-  justify-content:space-between;
-  padding-right: 10rem;
+  gap: 3rem;
   
 }
-.checkbox{
+
+.checkbox {
   display: flex;
   margin-top: 0.4rem;
   margin-bottom: 0.8rem;
-  
+
 
 }
-button{
-  background-color:#c05326;
+
+.btn-order{
+  background-color: #c05326;
   border: none;
   color: white;
-  /* padding: 4px 10px; */
-  text-decoration: none;
-  /* margin: 7px 4px; */
-  /* border-radius: 2rem; */
+  border-radius: 0.3rem;
   width: 10rem;
   height: 3rem;
   margin-bottom: 1.5rem;
-  
+
 }
-.checkbox p{
+.desk-checkbox{
+  margin-bottom: 0.8rem;
+  width: 1rem;
+}
+
+.checkbox p {
   color: grey;
   padding: 0.7rem;
-  
+
 }
-  .text{
+
+.text {
   text-decoration: underline;
   text-align: center;
   color: red;
 }
-
-.label-city{
-  /* color: blue; */
-  width: 100%;
-  margin-right: 2rem;
+.desk-store-foot{
+  margin-left: 47rem;
+}
+.desk-footer-karma{
+  text-align: center;
+  margin-top: 2rem;
+}
+.desk-store-footer-content{
+  border-top: 1px solid grey;
+  margin-left: 2rem;
 
 }
-
-
-.colour{
-margin-top: 3rem;
+.colour {
+  margin-top: 3rem;
 }
 
-.store-karma{
+.store-karma {
   font-size: 22px;
   color: #c05326;
   margin-top: 2rem;
-  /* padding-bottom: 2rem; */
+  padding-bottom: 2rem;
 
-  
-  
+
+
 }
+
+ }
+ 

@@ -1,138 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-    <title>Store Page</title>
-</head>
-<body>
-    <header class="flex-header">
-        <div class="header-logo">
-        <img
-            src="img/karma-logo.svg" alt="Logo for karma"class="header-logo"/>
-            
-        </div>
-        <div class="header-nav-items">
-            
-            <nav>
-                <span class="navigation-item meet-karma-item">
-                   <a class="navigation-link" href="./index.html">Meet karma</a>
-                </span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Karma</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+        <title>Store Page</title>
+    </head>
+    <body>
+        <div class="store-super-container">
+            <div class="mmobile-container">
+                <header class="mobile-header-logoo">
+                    <div>
+                        <img src="img/karma-logo.svg" alt="Logo for karma" class="mob-header-logo" />
                 
-                <span class="navigation-item">
-                    How it works
-                </span>
-                <span class="navigation-item">
-                     Store
-                    
-                </span>
-                <span class="navigation-item">
-                    Blog
-                </span>
-                <span class="navigation-item">
-                    Help
-                </span>
-                <span class="navigation-item">
-                    Login
-                </span>
-            
-            </nav>
-        </div>
-    </header>
-
-    <main class="main-store">
-        <div class="store-form">
-                <div class="store-karma">
-                    <h1>Order your Karma wifi device today!</h1>
-                </div>
-            <div class="first">
-                <div>
-                    <label form="firstname">First Name</label><br>
-                    <input type="text"name="firstname"id="firstname"required><br>
-                </div>
-                <div>
-                    <label form="lastname">Last Name</label><br>
-                    <input type="text"name="lastname"id="lastname"required><br>
-                </div>
-            </div>   
-                <div>
-                    <label form="address">Address*</label><br>
-                    <input type="text"name="address"id="address"required><br>
-                </div>
-                <div>
-                    <label form="address">Address 2</label><br>
-                    <input type="text"name="address"id="address"required><br>
-                </div>
-            <div class="city">
-                <div class="label-city">
-                    <label form="city">City*</label> <br>
-                    <select id="city"name="city">
-                        <option value="select your city">Select your city</option>
-                    </select>
-                </div>
-                <div>
-                    <label form="Postcode">Postcode*</label> <br>
-                    <input type="postcode"name="postcode"id="postcode"required>
-                </div>
-            </div>
-                <div class="colour">
-                    <p>Select a colour</p>
-                    <div class="selectcolour">
+                    </div>
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                
+                    </div>
+                </header>
+                <main>
+                    <section>
+                        <h1 class="store-mob-order">Order your Karma<br>wifi devices today!</h1>
+                    </section>
+                    <section>
+                        <div class="store-mob-firstname">
                             <div>
-                                <input type="radio"name="selectacolour"id="selectacolour"value="selectacolour">
-                                <label for="karmaorange">Karma Orange</label><br>
-                            
+                                <label form="firstname">First Name</label><br>
+                                <input class="store-text" type="text" name="firstname" id="firstname" required><br><br>
                             </div>
-                       
-                        <div>
-                            <input type="radio"name="selectacolour"id="selectacolour"value="selectacolour">
-                            <label for="spacegrey">Space Grey</label><br>
+                            <div>
+                                <label form="lastname">Last Name</label><br>
+                                <input class="store-text" type="text" name="lastname" id="lastname" required><br><br>
+                            </div>
+                            <div>
+                                <label form="address">Address*</label><br>
+                                <input class="store-text"type="text" name="address" id="address" required><br><br>
+                            </div>
+                            <div>
+                                <label form="address">Address 2</label><br>
+                                <input class="store-text" type="text" name="address" id="address" required><br><br>
+                            </div>
+                            <div class="mob-store-label-city">
+                                <label form="city">City*</label><br>
+                                <select class="store-text"id="city" name="city">
+                                    <option  value="select your city">Select your city</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="store-mob-post">
+                            <label form="Postcode">Postcode*</label> <br>
+                            <input class="store-mob-typ"type="postcode" name="postcode" id="postcode" required>
+                        </div>
+
+                        <div class="store-mob-select-colour">
+                                <p>Select a colour</p>
+                                <div>
+                                    <input type="radio" name="selectacolour" id="selectacolour" value="selectacolour">
+                                    <label for="karmaorange">Karma Orange</label><br>
+                                                                    
+                                </div>
+                                                                
+                                <div>
+                                    <input type="radio" name="selectacolour" id="selectacolour" value="selectacolour">
+                                    <label for="spacegrey">Space Grey</label><br>
+                                                                    
+                                </div>
+                        </div>
+                            <div class="mob-store-checkbox">
+                                <input class="mob-checkbox" type="checkbox">
+                                <p>By placing your agree to<br> Karma's <span class="store-mobil-text">Terms and Conditions*</span></p>
+                            </div>
+                            <button class="mob-store-button" type="Placemyorder">Place My Order</button>
+                            <div>
+                                <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store-image" class="mobile-store-image" />
+                            </div>
+
+                    </section>
+                </main>
+                <footer class="footer">
+                    <div class="mob-footer-content">
+                        <p>
+                            <strong class="mob-joined">Join on us</strong>
+                        </p>
+                
+                        <div class="mob-social-media-icon">
+                            <div>
+                                <img src="img/twitter-icon.svg" alt="twitter-icon" class="mob-social-media-icon" />
+                            </div>
+                            <div>
+                                <img src="img/facebook-icon.svg" alt="facebook-icon" class="mob-social-media-icon" />
+                            </div>
+                            <div>
+                                <img src="img/instagram-icon.svg" alt="instagram-icon" class="mob-social-media-icon" />
+                            </div>
+                
+                        </div>
+                        <div class="mob-footer-karma">
+                            <p>@karma mobility, inc.</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+ <!-- store-Desktop-Version -->
+                <div class="ddesktop-container">
+                    <header class="store-desk-flex-header">
+                        <div class="header-logo">
+                        <img src="img/karma-logo.svg" alt="Logo for karma"class="header-logo"/>
                             
                         </div>
-                    </div>    
+                        <div class="header-nav-items">
+                            
+                            <nav>
+                                <span class="navigation-item meet-karma-item">
+                                <a class="navigation-link" href="./index.html">Meet karma</a>
+                                </span>
+                                
+                                <span class="navigation-item">
+                                    How it works
+                                </span>
+                                <span class="navigation-item">
+                                    Store
+                                    
+                                </span>
+                                <span class="navigation-item">
+                                    Blog
+                                </span>
+                                <span class="navigation-item">
+                                    Help
+                                </span>
+                                <span class="navigation-item">
+                                    Login
+                                </span>
+                            
+                            </nav>
+                        </div>
+                    </header>
+
+                        <main class="main-store">
+                            <div class="store-form">
+                                <div class="store-karma">
+                                    <h1>Order your Karma wifi<br> device today!</h1>
+                                </div>
+                                <div class="first">
+                                    <div>
+                                        <label form="firstname">First Name</label><br>
+                                        <input class="store-desk-name" type="text"name="firstname"id="firstname"required><br>
+                                    </div>
+                                    <div>
+                                        <label form="lastname">Last Name</label><br>
+                                        <input class="store-desk-name" type="text"name="lastname"id="lastname"required><br>
+                                    </div>
+                                </div>   
+                                <div>
+                                    <label form="address">Address*</label><br>
+                                    <input class="store-desktop-named" type="text"name="address"id="address"required><br><br>
+                                </div>
+                                <div>
+                                    <label form="address">Address 2</label><br>
+                                    <input class="store-desktop-named" type="text"name="address"id="address"required><br><br>
+                                </div>
+                                <div class="city">
+                                    <div>
+                                        <label form="city">City*</label> <br>
+                                        <select  class="city-label-desk" id="city"name="city">
+                                            <option value="select your city">Select your city</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label form="Postcode">Postcode*</label> <br>
+                                        <input class="code-desk-store" type="postcode"name="postcode"id="postcode"required>
+                                    </div>
+                                </div>
+                                <div class="colour">
+                                       <p>Select a colour</p>
+                                        <div class="selectcolour">
+                                            <div>
+                                                <input type="radio"name="selectacolour"id="selectacolour"value="selectacolour">
+                                                <label for="karmaorange">Karma Orange</label><br>
+                                            
+                                            </div>
+                                    
+                                            <div>
+                                                <input type="radio"name="selectacolour"id="selectacolour"value="selectacolour">
+                                                <label for="spacegrey">Space Grey</label><br>
+                                                
+                                            </div>
+                                        </div>    
+                                </div>
+                                <div class="checkbox">
+                                    <input class="desk-checkbox" type="checkbox">
+                                    <p>By placing your agree to Karma's <span class="text">Terms and<br> Conditions*</span></p>
+                                </div>
+
+                                <button class="btn-order" type="Placemyorder">Place My Order</button>
+                            </div>
+                            <div>
+                            <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store-image"class="store-image"/>
+                            </div>
+                        </main>
+
+                    <footer class="desk-store-footer">
+                        <div class="desk-store-footer-content">
+                            <p>
+                                <strong class="desk-store-foot">Join on us</strong>
+                            </p>
+                            
+                            <div class="social-media-icon">
+                                <div>
+                                <img src="img/twitter-icon.svg" alt="twitter-icon"class="social-media-icon"/>
+                                </div>
+                                <div>
+                                <img src="img/facebook-icon.svg" alt="facebook-icon"class="social-media-icon"/>
+                                </div>
+                                <div>
+                                <img src="img/instagram-icon.svg" alt="instagram-icon"class="social-media-icon"/> 
+                                </div>
+                            
+                            </div>
+                            <div class="desk-footer-karma">
+                                <p>@karma mobility inc</p>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
-                    <div class="checkbox">
-                        <input type="checkbox">
-                        <p>By placing your agree to Karma's <span class="text">Terms and Condition*</span></p>
-                    </div>
-
-                    <button type="Placemyorder">Place My Order</button>
         </div>
-            <div>
-                <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="store-image"class="store-image"/>
-            </div>
-    </main>
-
- <footer class="footer">
-    <div class="footer-content">
-        <p>
-            <strong>Join on us</strong>
-        </p>
+                            
         
-        <div class="social-media-icon">
-            <div>
-              <img src="img/twitter-icon.svg" alt="twitter-icon"class="social-media-icon"/>
-            </div>
-            <div>
-              <img src="img/facebook-icon.svg" alt="facebook-icon"class="social-media-icon"/>
-            </div>
-            <div>
-               <img src="img/instagram-icon.svg" alt="instagram-icon"class="social-media-icon"/> 
-            </div>
-           
-        </div>
-        <div class="footer-karma">
-            <p>@karma mobility inc</p>
-        </div>
-            
+    </body>
         
-    </div>
-        
-</footer>
-</body>
 </html>
