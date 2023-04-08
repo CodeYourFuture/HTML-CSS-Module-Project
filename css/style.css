@@ -52,7 +52,6 @@
   background-color: #333;
 }
 .mobile-header-logoo{
-  /* border: 5px solid red; */
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
@@ -71,7 +70,6 @@
 .mob-learn-more{
     border: none;
     background-color: #c05326;
-    /* padding: 1rem 2rem; */
     border-radius: 0.5rem;
     margin-left: 15rem;
     height: 3rem;
@@ -84,7 +82,6 @@
 }
 .intro{
   text-align: center;
-  /* border: 5px solid red; */
   padding-top: 6rem;
   font-size: 32px;
   
@@ -107,7 +104,7 @@
   width: 38rem;
   margin-top: 2rem;
 }
-.mobile-get-karma-today{
+.mobile-get-karma-today-btn{
   margin-left: 13rem;
   border-radius: 0.5rem;
   background-color: #c05326;
@@ -117,6 +114,12 @@
   width: 12rem;
    
 } 
+.mobile-get-karma-today-btn a{
+text-decoration: none;
+}
+.mobile-get-karma-today-btn :hover{
+  color: white;
+}
 .mob-get-karma-quote{
   text-align: center;
   font-size: 24px;
@@ -125,7 +128,6 @@
 .mob-get-karma-quote::before {
   content: "“";
   font-family: "Roboto";
-  /* font-size: 24px; */
   color: #E0633A;
   padding: 0.25rem;
 }
@@ -133,15 +135,12 @@
 .mob-get-karma-quote::after {
   content: "”";
   font-family: "Roboto";
-  /* font-size: 1.5rem; */
   color: #E0633A;
   padding: 0.25rem;
 }
 
 .quote{
-  /* border: 5px solid black; */
   background-color: lightgrey;
-  /* margin-top: 1rem; */
   padding-top:2rem ;
   
 }
@@ -210,6 +209,13 @@
   color: white;
   border-radius: 0.5rem;
 }
+.mob-store-button a{
+  text-decoration:none;
+  
+}
+.mob-store-button :hover{
+  color: white;
+}
 .store-mobil-text{
     text-decoration: underline;
     text-align: center;
@@ -235,7 +241,7 @@
 
 .ddesktop-container {
   display: grid;
-  /* width: 200px; */
+  
 }
 
 .hamburger {
@@ -244,12 +250,10 @@
 
 .karma {
   background-image: url("/img/first-background.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  padding: 6rem 3rem;
   color: white;
   margin-bottom: 3rem;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,7 +275,7 @@
 
 .header-logo {
   height: 3rem;
-  padding-left: 3rem;
+  margin-left: 4rem;
 
 }
 
@@ -294,25 +298,25 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   
+  
 }
 
-.header-nav-items {
-  padding-right: 20rem;
-
-
-}
 
 .navigation-item {
-  padding-left: 4rem;
+  margin-right: 4rem;
 }
 
 .navigation-item:hover {
   color: orange;
 }
 
-.meet-karma-item {
-  color: darkgrey;
+.navigation-item-meet-karma-item {
+  color:darkgreen;
+  margin-right: 16rem;
 
+}
+.navigation-item-meet-karma-item:hover{
+  color: orange;
 }
 
 .karma2 {
@@ -331,12 +335,11 @@
 
 .homepage-parent {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   height: 40vh;
   margin-top: 6rem;
   justify-content: center;
-  background-size: cover;
+  
 }
 
 .img-feature {
@@ -347,7 +350,7 @@
 
 .connection {
   height: 25rem;
-  width: 80rem;
+  width: 50rem;
   text-align: center;
   margin-bottom: 8rem;
   margin-top: 5rem;
@@ -355,13 +358,20 @@
 
 }
 
-.connection button {
+.get-karma-today-btn {
   border: none;
   background-color: #c05326;
   padding: 1rem 1rem;
   border-radius: 5%;
   height: 3rem;
   margin-top: 2rem;
+  
+}
+ .navigation-link, .get-karma-today-btn a{
+  text-decoration: none;
+}
+.get-karma-today-btn :hover{
+  color: white;
 }
 
 .social-media-icon {
