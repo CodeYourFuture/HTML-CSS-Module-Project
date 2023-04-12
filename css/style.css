@@ -97,15 +97,9 @@
 a {
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
+.mobil-hambuger:hover{
+color: royalblue;
+}
 .mobile-header-logoo{
   /* border: 5px solid black; */
   display: flex;
@@ -133,6 +127,9 @@ a {
     width: 8rem;
     margin-bottom: 2rem;
     
+}
+.mob-learn-more:hover{
+background-color: blue;
 }
 .karma-need{
   text-align: center;
@@ -177,6 +174,7 @@ text-decoration: none;
 }
 .mobile-get-karma-today-btn :hover{
   color: white;
+  
 }
 .mob-get-karma-quote{
   text-align: center;
@@ -226,6 +224,8 @@ text-decoration: none;
 .mob-footer-karma{
   text-align: center;
 }
+/* Karma-store-mobile-version */
+
 .store-mob-order{
   text-align: center;
   color: #E0633A;
@@ -272,14 +272,19 @@ text-decoration: none;
   text-decoration:none;
   
 }
-.mob-store-button :hover{
-  color: white;
+.mob-store-button:hover{
+  /* color: white; */
+  background-color: royalblue;
 }
 .store-mobil-text{
     text-decoration: underline;
     text-align: center;
     color: red;
     font-size: 20px;
+}
+.store-mobil-text:hover{
+  color: blue;
+
 }
 .mob-checkbox{
   width: 1.7rem;
@@ -344,7 +349,9 @@ text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 5%;
 }
-
+.learn-more:hover{
+  background-color: blue;
+}
 .navigaton-list {
   display: flex;
   justify-content: space-around;
@@ -493,6 +500,8 @@ text-decoration: none;
   color: #E0633A;
   padding: 0.25rem;
 }
+/* Karma-Desktop-store version */
+
 .store-desk-flex-header{
     display: flex;
     justify-content: space-between;
@@ -561,6 +570,10 @@ text-decoration: none;
 
 
 }
+.agree:hover{
+  color: royalblue;
+  
+}
 
 .btn-order{
   background-color: #c05326;
@@ -570,6 +583,10 @@ text-decoration: none;
   width: 10rem;
   height: 3rem;
   margin-bottom: 1.5rem;
+
+}
+.btn-order:hover{
+  background-color: blue;
 
 }
 .desk-checkbox{
@@ -587,6 +604,9 @@ text-decoration: none;
   text-decoration: underline;
   text-align: center;
   color: red;
+}
+.text:hover{
+  color: blue;
 }
 .desk-store-foot{
   margin-left: 47rem;
