@@ -35,8 +35,9 @@
 }
 .mob-header-logo{
   height: 2rem;
+  
 }
-.hamburger {
+/* .hamburger {
   display: block;
   float: right;
   width: 35px;
@@ -50,8 +51,63 @@
   height: 4px;
   margin: 6px 0;
   background-color: #333;
+} */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:dark beige;
+  overflow-y: hidden;
+  transition: 0.5s;
 }
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color:royalblue;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
 .mobile-header-logoo{
+  /* border: 5px solid black; */
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
@@ -65,7 +121,8 @@
   background-repeat: no-repeat;
   color: white;
   background-size:cover;
-  height: 65vh;
+  /* height: 65vh; */
+  width: 36rem;
 }
 .mob-learn-more{
     border: none;
@@ -74,6 +131,7 @@
     margin-left: 15rem;
     height: 3rem;
     width: 8rem;
+    margin-bottom: 2rem;
     
 }
 .karma-need{
@@ -100,8 +158,8 @@
   text-align: center;
 }
 .mob-img-feature{
-  height: 40vh;
-  width: 38rem;
+  /* height: 43vh; */
+  width: 36rem;
   margin-top: 2rem;
 }
 .mobile-get-karma-today-btn{
@@ -142,6 +200,7 @@ text-decoration: none;
 .quote{
   background-color: lightgrey;
   padding-top:2rem ;
+  margin-top: -0.3rem;
   
 }
 .mob-footer-content{
