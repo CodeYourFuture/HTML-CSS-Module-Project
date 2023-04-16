@@ -29,44 +29,69 @@
         </nav>
     </header>
     <main>
-        <section class="section1">
-            <p class="section1-phrase1">Introducing Karma</p>
-            <p class="section1-phrase2">Bring WiFi with you, everywhere you go.</p>
+        <section class="main-container">
+            <h1 class="main-container-phrase1">Introducing Karma</h1>
+            <p class="main-container-phrase2">Bring WiFi with you, everywhere you go.</p>
             <button>Learn More</button>
         </section>
-    
-        <section class="section2">
-            <p class="section2-phrase1">Everyone needs a little Karma.</p>
-            <section class="section2-imgs-text">
-                <section class="info1">
+        
+        
+        <section class="secondary-container">
+            <p class="secondary-container-phrase1">Everyone needs a little Karma.</p>
+            <div class="secondary-imgs-text">
+                <div class="info1">
                     <img class="orange-imgs" src="./img/icon-devices.svg">
                     <p class="catch-phrases">Internet for all devices</p>
-                </section>
-                <section class="info1">
+                </div>
+                <div class="info1">
                     <img class="orange-imgs" src="./img/icon-coffee.svg">
                     <p class="catch-phrases">Boost your productivity</p>
-                </section>
-                <section class="info2">
+                </div>
+                <div class="info2">
                     <img class="orange-imgs" src="./img/icon-refill.svg">
                     <p class="catch-phrases">Pay as You Go</p>
-                </section>
+                </div>
                 <hr>
-            </section>
+            </div>
         </section>
-    
-    </main>
-    <footer>
-        <h6>Join us on</h6>
-    
-        <section>
-            <a href="#"><img class="footer-imgs" src="./img/twitter-icon.svg"></a>
-            <a href="#"><img class="footer-imgs" src="./img/facebook-icon.svg"></a>
-            <a href="#"><img class="footer-imgs" src="./img/instagram-icon.svg"></a>
-        </section>
-    
-        <p class="footer-p">&#169Karma Mobility, Inc.</p>
-    </footer>
-    </body>
-    
-    </html>
+        
+        </main>
+        
+        <div class="block2">
+            <img alt="" class="block2-img" src="./level-2/homepage-feature.png" width="599" height="439">
+            <div class="call-to-action">
+                <p class="block2-text"><span class="block2-span">"</span>Wherever I am, I just don't worry about my connection
+                    anymore.<span class="block2-span">"</span></p>
+                <button class="block2-button"><a class="button" href="./store.html">Get Karma Today</a></button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Join us on</p>
+        
+            <div>
+                <a href="#"><img alt="twitter" class="footer-imgs" src="./img/twitter-icon.svg"></a>
+                <a href="#"><img alt="facebook" class="footer-imgs" src="./img/facebook-icon.svg"></a>
+                <a href="#"><img alt="instagram" class="footer-imgs" src="./img/instagram-icon.svg"></a>
+            </div>
+        
+            <p class="footer-p">&#169Karma Mobility, Inc.</p>
+        </footer>
+        </body>
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            })
+
+            document.querySelectorAll("nav-item").forEach(n => n.
+                addEventListener("click", () => {
+
+                }))
+        </script>
+        
+        </html>
 
