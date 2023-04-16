@@ -19,6 +19,78 @@ body {
     background-position:center;
 }
 
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    display: flex;
+}
+
+.logo-img {
+    max-height: 32px;
+    max-width: 32px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+ul li a {
+    color: rgb(158, 156, 156);
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+ul li a:hover {
+    color: #CE5C08;
+}
+
+.nav-head {
+    color: rgb(63, 57, 57);
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+/* Styles for main section 1*/
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 230, 230);
+    background-image: url("../img/first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    font-size: 22px;
+    font-weight: 12;
+}
+
+.section1-phrase1 {
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 10;
+}
+
+.section1-phrase2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #CE5C08;
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 4%;
+    border: none;
+}
 /**
  * Add your custom styles below
  * 
