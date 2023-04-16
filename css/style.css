@@ -19,11 +19,20 @@ body {
     background-position:center;
 }
 
+:root {
+    --grey-dark: #292b2c;
+    --grey-light: #FAFAFA;
+    --orange: #CE5C08;
+    --white: #fff
+}
+
 header {
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 5px 100px;
     display: flex;
+    background-color: var(--grey-light);
+    margin: 0;
 }
 
 .logo-img {
@@ -36,6 +45,11 @@ ul {
     list-style: none;
     display: flex;
     gap: 10px;
+}
+.nav-item {
+    color: var(--grey-dark);
+    text-decoration: none;
+    padding: 15px;
 }
 
 ul li a {
@@ -50,10 +64,10 @@ ul li a:hover {
 }
 
 .nav-head {
-    color: rgb(63, 57, 57);
+    color: var(--grey-dark);
     font-weight: 500;
     font-size: 14px;
-
+    text-decoration: none;
 }
 
 /* Styles for main section 1*/
