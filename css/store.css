@@ -13,14 +13,12 @@ body {
     --white: #fff;
 }
 
- /* Navigation Styles */
+/* Navigation Styles*/
 header {
     justify-content: space-between;
     align-items: center;
-    padding: 5px 100px;
+    padding: 0 100px;
     display: flex;
-    background-color: var(--grey-light);
-    margin: 0;
 }
 
 .logo-img {
@@ -36,7 +34,7 @@ ul {
 }
 
 .nav-item {
-    color: var(--grey-dark);
+    color: #9E9C9C;
     text-decoration: none;
     padding: 15px;
 }
@@ -46,9 +44,8 @@ ul li a:hover {
 }
 
 .nav-head {
-    color: var(--grey-dark);
+    color: #39393F;
     font-weight: 500;
-    font-size: 14px;
     text-decoration: none;
 }
 
@@ -71,13 +68,16 @@ ul li a:hover {
     font-size: 1.5rem;
 }
 
-.main-img {
+.block {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0 90px 0;
     width: 100%;
-    height: 1000px;
-    object-fit: cover;
-
 }
 
+.block-img {
+    width: 45%;
+}
 
 .name-area {
     display: flex;
@@ -122,13 +122,14 @@ ul li a:hover {
     }
 
     /* Select option Styles */
+
     .custom-select {
         width: 360px;
         height: 35px;
         font-style: italic;
         color: rgb(109, 100, 100);
         appearance: none;
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qA0AV5aK5pyy8f5I5MTztObvFsjzL5oZgg&usqp=CAU");
+        background-image: url("");
         background-repeat: no-repeat;
         background-position: calc(100% - 3px);
         background-size: 30px;
