@@ -1,0 +1,236 @@
+Style Css store body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+:root {
+    --grey-dark: #292b2c;
+    --grey-light: #FAFAFA;
+    --orange: #CE5C08;
+    --white: #fff;
+}
+
+/* Navigation Styles */
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    display: flex;
+    background-color: var(--grey-light);
+    margin: 0;
+}
+
+.logo-img {
+    max-height: 32px;
+    max-width: 32px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item {
+    color: var(--grey-dark);
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+ul li a:hover {
+    color: #CE5C08;
+}
+
+.nav-head {
+    color: var(--grey-dark);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* General Styles */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.heading {
+    padding-bottom: 20px;
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.form {
+    width: 50%;
+    padding: 50px 90px 0 90px;
+    font-size: 1.5rem;
+}
+
+.main-img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+
+}
+
+
+.name-area {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.name-position {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.label-style {
+    padding-bottom: 10px;
+}
+
+.address-area {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.address2 {
+    padding: 20px 0 10px 0;
+}
+
+.city-area {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.city-position {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.postcode-input {
+    width: 200px;
+}
+
+/* Select option Styles */
+
+.custom-select {
+    width: 360px;
+    height: 35px;
+    font-style: italic;
+    color: rgb(109, 100, 100);
+    appearance: none;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qA0AV5aK5pyy8f5I5MTztObvFsjzL5oZgg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 3px);
+    background-size: 30px;
+    background-color: white;
+}
+
+/* Fieldset and Legend Styles */
+
+fieldset {
+    border: 0;
+    padding: 10px 0px 50px 0px;
+}
+
+legend {
+    padding-top: 20px;
+}
+
+.color-orange {
+    padding-right: 30px;
+    margin-right: 50px;
+}
+
+.radio-color {
+    width: 20px;
+    height: 20px;
+}
+
+.radio-color:checked {
+    accent-color: var(--orange);
+    border: 1px solid black;
+}
+
+/* Checkbox Area Styles */
+
+.checkbox-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkmark-label {
+    font-size: 1.2rem;
+}
+
+.custom-checkmark {
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 5px;
+}
+
+.custom-checkmark:checked {
+    box-sizing: border-box;
+    content: url("../level-2/checkmark.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    appearance: none;
+    border: 1px solid black;
+    padding: 2px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 0 10px 0 0;
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+/* Button Styles */
+
+button {
+    background-color: var(--orange);
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    margin: 20px 0 20px 0;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 50px;
+    border-top: 1px solid #FAF6F6;
+}
+
+.footer-imgs {
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #E9ECF3;
+    border-radius: 50px;
+}
+
+.footer-p {
+    color: #555151;
+}
