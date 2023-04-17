@@ -317,10 +317,11 @@ text-decoration: none;
   background-size: cover;
   color: white;
   margin-bottom: 3rem;
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 5px solid red; */
   
 }
 
@@ -348,6 +349,7 @@ text-decoration: none;
   background-color: #c05326;
   padding: 1rem 2rem;
   border-radius: 5%;
+  margin-bottom: 1rem;
 }
 .learn-more:hover{
   background-color: blue;
