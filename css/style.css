@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +15,275 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.header,
+.content,
+.footer {
+  margin: 0 auto;
+}
 
+/**Header**/
+
+.header_logo {
+  width: 1.5rem;
+  padding-left: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  padding: 1.5rem 4.5rem;
+}
+
+/**Navigation**/
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(134, 131, 131);
+}
+
+a:hover {
+  color: orangered;
+}
+
+nav ul li:nth-child(1) a {
+  color: black;
+}
+
+/**Content**/
+
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article_thumbnail {
+  width: 8rem;
+}
+
+.hero-content p {
+  font-size: x-large;
+  font-weight: 300;
+}
+
+button {
+  background-color: orangered;
+  border: orangered;
+  padding: 15px 25px;
+
+  border-radius: 3px;
+  font-size: large;
+  margin-top: 2rem;
+  color: white;
+}
+
+/**selling Points Section**/
+
+h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.selling_points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sellingpoint_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 1.5rem;
+}
+
+/***Hero***/
+
+.hero {
+  background-image: url("/img/first-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-content {
+  padding: 20rem 0;
+  text-align: center;
+  color: white;
+}
+
+/**Ad section**/
+
+.ad-info {
+  background-color: rgba(224, 99, 58, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+q {
+  font-size: 2.5rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.adinfo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 15rem;
+  width: 550px;
+}
+
+.adinfo-text button {
+  padding: 15px;
+}
+
+.ad-button {
+  display: flex;
+  align-items: center;
+}
+
+.ad-button a {
+  color: white;
+}
+
+/**Form**/
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  margin: 0;
+}
+
+fieldset {
+  grid-column: 1/7;
+  grid-row: 1/-1;
+  border: none;
+  gap: 20px;
+}
+
+form {
+  grid-column: 2/6;
+  grid-row: 1/-1;
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+legend {
+  color: orangered;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  grid-row: 1/2;
+  grid-column: 1/5;
+}
+
+.form-image {
+  grid-column: 7/-1;
+  grid-row: 1/-1;
+}
+
+.form-image img {
+  width: 100%;
+}
+
+.form-name {
+  display: flex;
+}
+
+.last-name {
+  margin-left: 1rem;
+}
+
+input[type="text"] {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border: 1.5px solid lightgrey;
+  border-radius: 4px;
+  display: block;
+}
+
+form label,
+form span {
+  font-size: 0.9rem;
+  color: darkgray;
+}
+
+.form-address input {
+  width: 100%;
+}
+
+.city-postcode {
+  display: flex;
+}
+
+#city {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border: 1.5px solid lightgrey;
+  border-radius: 4px;
+}
+
+.select-city {
+  font-style: italic;
+  background-color: white;
+}
+
+.form-postcode {
+  margin-left: 4rem;
+}
+
+/***Footer***/
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: solid 1px rgb(199, 195, 195);
+  margin: 3rem 4rem;
+}
+
+.footer_socialmedia {
+  display: flex;
+}
+
+.socialmedia {
+  border-radius: 50px;
+  border: solid 0.8px rgb(199, 195, 195);
+  margin: 0.5rem;
+}
+
+.socialmedia_icon {
+  width: 1.5rem;
+  padding: 0.5rem;
+}
+
+span {
+  margin: 1rem 2rem;
+}
