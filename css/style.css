@@ -314,7 +314,7 @@ text-decoration: none;
 
 .karma {
   background-image: url("/img/first-background.jpg");
-  background-size: cover;
+  background-size:cover;
   color: white;
   margin-bottom: 3rem;
   /* height: 50vh; */
@@ -402,9 +402,11 @@ text-decoration: none;
 }
 
 .homepage-parent {
+  /* border: 5px solid red; */
   display: flex;
   align-items: center;
   height: 40vh;
+  /* width: 50vw; */
   margin-top: 6rem;
   justify-content: center;
   
@@ -414,15 +416,19 @@ text-decoration: none;
   margin-bottom: 3rem;
   height: 25rem;
   width: 50rem;
+  /* margin-right: 2rem; */
+  /* padding-left: 5rem; */
 }
 
 .connection {
   height: 25rem;
-  width: 50rem;
+  width: 40rem;
   text-align: center;
   margin-bottom: 8rem;
   margin-top: 5rem;
   background-color: lightgrey;
+  /* margin-right: 3rem; */
+  padding-left: 5rem;
 
 }
 
@@ -505,12 +511,14 @@ text-decoration: none;
 /* Karma-Desktop-store version */
 
 .store-desk-flex-header{
+  /* border: 5px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: lightgrey;
+    
 
 }
 .main-store {
@@ -525,8 +533,9 @@ text-decoration: none;
 
 .store-image {
   height: 50rem;
-  width: 40rem;
+  /* width: 40rem; */
   margin-top: -1rem;
+  margin-left: 1.8rem;
 
 
 }
@@ -620,6 +629,7 @@ text-decoration: none;
 .desk-store-footer-content{
   border-top: 1px solid grey;
   margin-left: 2rem;
+  
 
 }
 .colour {
