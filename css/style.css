@@ -1,9 +1,24 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+ :root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --grey-light: #f7f7f7;
+    --orange: #f05a28;
+    --orange-light: #f7bfa3;
+    --white: #fff;
+ }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-weight: 500;
 }
 
 /**
