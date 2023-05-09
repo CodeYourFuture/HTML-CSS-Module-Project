@@ -6,7 +6,7 @@ The aim of this exercise is to create a page that looks just like this one:
 
 ### Set up
 
- - **Fork and clone** this repo.
+ + **Fork and clone** this repo.
    - To fork, hit the 'fork' button in the top right corner of this page on Github. 
   Now you should be on your own Github repository - you'll know this because your name should now be in the repo name at the top of the Github page. 
    - To clone, click the green button that says 'Code' on that page.
