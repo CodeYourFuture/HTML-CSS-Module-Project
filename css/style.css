@@ -45,7 +45,7 @@ padding: 0.7rem;
     height: 700px;
     flex-direction: column;
     position: relative;
-    margin: 0 50px 0 50px;
+    margin: 0 40px 0 40px;
     color: white;
     font-size: 1.5rem;
 }
@@ -55,6 +55,10 @@ padding: 0.7rem;
 
 }
 
+.IntrKarma p {
+    font-weight: lighter;
+}
+
 .IntrKarma  button {
     background-color: orange;
     border: none;
@@ -62,6 +66,7 @@ padding: 0.7rem;
     height: 2.5rem;
     font-size: 1rem;
     padding: 0 1.5rem;
+    margin-top: 2.8rem;
 }
 
 
@@ -69,7 +74,6 @@ padding: 0.7rem;
 .top-flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 70px;
     padding-bottom: 50px;
 }
@@ -78,48 +82,62 @@ padding: 0.7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 1.2rem;
-    
-    
-    
+    font-size: 1.2rem; 
+        
 }
 
 .icons {
     width: 7rem;
 }
 
-.icons-text{
+.icons-text {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-around;
+    
+    
+    
     
 }
 
 .top-flex-container h2 {
     justify-content: center;
+    align-self: center;
     font-weight: lighter;
     font-size: 2rem;
 }
 
-footer {
+.footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-top: 1px solid lightgrey;
-    padding: 0.5rem;
-    margin: 0 4rem;
+    padding: 1rem;
+    margin: 1rem 4rem;
+}
+
+.footer-content span {
+    align-self: center;
 }
 
 .social-media {
-    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
 }
 
-.social-media img {
+.social-media img{
+    
     width: 1rem;
     border: solid 1px lightgrey;
     border-radius: 50px;
+    margin: 10px;
+    padding: 8px;
 }
+
+    .footer-inc {
+        color: gray;
+    }
 
 
