@@ -16,4 +16,110 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    padding: 0.5rem 6.5rem;
+}
+ header a {
+    text-decoration: none;
+    padding: 10px;
+    color: gray;
+
+ }
+ .logo-img {
+width: 1.5rem;
+margin: 0 0.5rem;
+padding: 0.7rem;
+ }
+
+.IntrKarma {
+    background-image:url(/img/first-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    flex-direction: column;
+    position: relative;
+    margin: 0 50px 0 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.IntrKarma h1 {
+    font-weight: lighter;
+
+}
+
+.IntrKarma  button {
+    background-color: orange;
+    border: none;
+    border-radius: 0.2rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 0 1.5rem;
+}
+
+
+
+.top-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    
+    
+    
+}
+
+.icons {
+    width: 7rem;
+}
+
+.icons-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.top-flex-container h2 {
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid lightgrey;
+    padding: 0.5rem;
+    margin: 0 4rem;
+}
+
+.social-media {
+    width: 50px;
+}
+
+.social-media img {
+    width: 1rem;
+    border: solid 1px lightgrey;
+    border-radius: 50px;
+}
+
 
