@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,24 +15,24 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
- /* .main {
+/* .main {
     background-image: url(./homepage-desktop.png);
 } */
 
- 
 .karmalogo {
   justify-self: flex-start;
   margin: 10px;
   padding-left: 40px;
 }
 
-h1{
-    padding-top: 80px;
-    text-align: center;
-    color:aliceblue;   
+h1 {
+  padding-top: 80px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: lighter;
 }
 
-#main{
+#main {
   margin: 0;
   border: 0;
   padding: 0;
@@ -47,11 +46,11 @@ h1{
 
 .container {
   text-align: center;
-  align-items: center; 
+  align-items: center;
   margin-top: 30px;
 }
 
-.button{
+.btn1 {
   background-color: rgb(242 90 42);
   color: white;
   padding: 15px 32px;
@@ -60,11 +59,9 @@ h1{
   display: inline-block;
   font-size: 14px;
   border-radius: 10% 10% 10% 10%;
-  
 }
 
-
-.last{
+.last {
   font-size: 20px;
   text-align: center;
   color: black;
@@ -72,72 +69,93 @@ h1{
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    color: rgb(71, 65, 65);
-    display: flex;
-    justify-content: flex-end;  
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: rgb(71, 65, 65);
+  display: flex;
+  justify-content: flex-end;
+}
 
-  nav{
-    display: flex;
-    justify-content: space-between;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
 
-  a:hover{
-    color: rgb(242 90 42);
-    
-  
-  }
+a:hover {
+  color: rgb(242 90 42);
+}
 
-  
-  li{
-    display: inline-block;
-    padding-top: 30px;
-  }
-  
-  li a {
-    color: rgb(57, 54, 54);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+li {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+li a {
+  color: rgb(57, 54, 54);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 .icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; 
-  
+  justify-content: space-evenly;
 }
 
 .iconsp {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
 }
 
-.footer{
+.footer {
   display: flex;
   text-align: center;
   margin-top: 30px;
   display: flex;
   justify-content: center;
- 
 }
 
-.social{
+.social {
   display: flex;
   direction: row;
   display: block;
 }
 
-
-.copyright{
-color: darkgrey;
-/* display: flex;
+.copyright {
+  color: darkgrey;
+  /* display: flex;
 flex-direction: row;
 justify-content: space-evenly; 
 padding-top: 10px; */
+}
+
+#main2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.part2{
+  background-color: lightpink;
+  
+  padding: 10px;
+}
+
+.btn2 {
+  background-color: rgb(242 90 42);
+  color: white;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  
+  
 }
