@@ -1,9 +1,353 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --grey-light: #f7f7f7;
+    --orange: #f05a28;
+    --orange-light: #f7bfa3;
+    --white: #fff;
+ }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: var(--grey-light);
+    border-bottom: 1px solid var(--grey);
+ }
+
+ .logo{
+    display: block;
+    min-width: 2rem;
+    min-height: 2rem;
+ }
+
+ /* navigation */
+
+ .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+
+ }
+
+ .nav-items {
+    display: flex;
+    padding: 0 1.5rem;
+
+ }
+
+ .nav-links {
+    color: var(--grey);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+ }
+
+ .nav-links:hover {
+    color: var(--orange);
+ }
+
+ .nav-items:first-child > a {
+    color: var(--grey-dark);
+ }
+
+ .nav-items:first-child > a:hover{
+    color: var(--orange);
+ }
+ /* hamburger menu */
+ .menu {
+    display: flex;
+ }
+
+ .open-menu {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+#check {
+    display: none;
+}
+
+
+ /* main */
+
+ main {
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ /* First section */
+
+.hero {
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 12rem 0;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.hero h1 {
+    font-weight: 200;
+    font-size: 35px;
+    text-align: center;
+}
+
+.hero p {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    font-weight: 50;
+    font-size: 20px;
+}
+
+.hero a {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+}
+.hero a:hover {
+    background-color: var(--grey-dark);
+}
+
+
+/* Second section */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-weight: 200;
+    font-size: 35px;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+article p {
+    font-weight: 200;
+    font-size: 20px;
+
+}
+
+article img {
+    width: 120px;
+    height: 120px;
+}
+
+.context {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+/* third section */
+.hero-two {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1.5fr 2fr;
+
+
+}
+
+.hero-img {
+    background-color: #363434;
+    height: 100%;
+    background-image: url(/level-2/homepage-feature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 8rem;
+    background-color: var(--orange-light);
+    color: var(--grey-dark);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.hero-text p {
+    font-style: italic;
+}
+
+.hero-text p span {
+    color: var(--orange);
+}
+
+.hero-text a {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+}
+.hero-text a:hover {
+    background-color: var(--grey-dark);
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--grey);
+    margin: 0 6rem;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+footer ul li a {
+    display: block;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+footer ul li a img{
+    max-width: 1rem;
+    max-height: 1rem;
+} 
+
+footer h3 {
+    font-weight: 400;
+}
+
+footer p {
+    font-weight: 200;
+    color: var(--grey);
+}
+
+/* tablet size */
+@media screen and (max-width: 890px) {
+     .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 70vh;
+        position: fixed;
+        background-color: var(--grey-light);
+        opacity: .9;
+        top: -800px;
+        gap: 10px;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+    }
+    .open-menu {
+        display: inline-block;
+        z-index: 4;
+        transition: all .4s ease;
+    }
+
+    #check:checked ~ .open-menu {
+        transform: rotate(-90deg);
+    }
+
+    #check:checked ~ .menu {top: 0;}
+       .hero-two {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+
+}
+
+    section h2 {
+    text-align: center;
+}
+
+}
+
+/* mobile size */
+@media screen and (max-width: 489px) {
+
+
+
+.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 70vh;
+        position: fixed;
+        background-color: var(--grey-light);
+        top: -800px;
+        right: 20px;
+        gap: 10px;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+
 }
 
 /**
@@ -15,5 +359,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
