@@ -11,11 +11,14 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     color: var(--text);
-    font-size: 16px;
     line-height: 1.2;
 }
 
@@ -99,8 +102,22 @@ button.btn {
    width: 35px;
  }
 
+ .logo a {
+     width: 100%;
+     height: 100%;
+ }
+
+ .mob-menu_icon {
+     display: none;
+ }
+
+ #toggle {
+   appearance: none;
+ }
+
  .menu {
      max-width: calc(100% - 35px - 20px * 2);
+     font-size: 1rem;
  }
 
  .menu_list {
@@ -108,7 +125,7 @@ button.btn {
  }
 
  .menu_item {
-   color: var(--gray);
+    color: var(--gray);
      font-weight: 500;
  }
 
@@ -123,9 +140,15 @@ button.btn {
 /** Main */
  main {
      flex: 1 0 auto;
+     font-size: 1rem;
  }
 
 /** Footer  */
+
+footer {
+    font-size: 1rem;
+    margin-top: 7%;
+}
 
 .container--footer {
     border-top: 1px solid var(--line);
@@ -133,13 +156,13 @@ button.btn {
 }
 
 .footer_text {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
 .footer_copyright{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
     color: var(--gray);
 }
@@ -174,5 +197,45 @@ footer .socials_img {
     max-width: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
 
+    header {
+        padding: 20px 16px;
+    }
 
+    .logo {
+        width: 24px;
+    }
+
+    .menu_item {
+        font-size: 1.6rem;
+    }
+
+    .mob-menu_icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav.menu {
+        display: none;
+    }
+
+    #toggle:checked ~ nav.menu {
+        display: block;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        min-width: 100vw;
+        height: 100%;
+        background-color: white;
+
+        .menu_list {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}
