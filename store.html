@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karma</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container d-flex align-center justify-sb">
+            <div class="logo">
+                <img class="logo_img" src="img/karma-logo.svg" alt="karma logo">
+            </div>
+            <nav class="menu">
+                <ul class="menu_list d-flex align-center">
+                    <li class="menu_item"><a href="index.html">Meet Karma</a></li>
+                    <li class="menu_item"><a href="#about">How It Works</a></li>
+                    <li class="menu_item active"><a href="store.html">Store</a></li>
+                    <li class="menu_item"><a href="#">Blog</a></li>
+                    <li class="menu_item"><a href="#">Help</a></li>
+                    <li class="menu_item"><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="content_form">
+                <h1 class="form_title">
+                    Order your Karma wifi device today!
+                </h1>
+                <form action="" id="order" class="form">
+                    <div class="form_content">
+                    <div class="form_group">
+                        <div class="form_item">
+                            <label for="name">First name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form_item">
+                            <label for="lastName">Last name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form_item">
+                        <label for="address">Address *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form_item">
+                        <label for="address2">Address 2</label>
+                        <input type="text" id="address2" name="address2">
+                    </div>
+                    <div class="form_group">
+                        <div class="form_item">
+                            <label for="city">City *</label>
+                            <select type="text" id="city" name="city" required>
+                                <option value="none" selected>Select your city...</option>
+                                <option value="london">London</option>
+                                <option value="london">Kyiv</option>
+                                <option value="london">Lviv</option>
+                            </select>
+                        </div>
+                        <div class="form_item">
+                            <label for="postcode">Postcode *</label>
+                            <input type="text" id="postcode" name="postcode" required>
+                        </div>
+                    </div>
+                    <div class="radio-group">
+                        <div class="label" for="color">Select a colour</div>
+                        <div id='color' class="form_group">
+                            <div class="form_item--inline align-center">
+                                <input type="radio" name="color" id="orange" value="orange" checked>
+                                <label for="orange">Karma orange</label>
+                            </div>
+                            <div class="form_item--inline align-center">
+                                <input type="radio" name="color" id="grey" value="grey">
+                                <label for="grey">Space grey</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-group form_item--inline">
+                        <input type="checkbox" name="terms" id="terms" required checked>
+                        <label for="terms">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a> *</label>
+                    </div>
+                    <button type="submit" class="btn btn--order-form">Place my order</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content_img"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container container--footer text-center">
+            <div class="footer_text">Join us on</div>
+            <div class="footer_socials">
+                <ul class="socials_list">
+                    <li class="socials_item"><a href="#" class="socials_link"><img src="img/twitter-icon.svg" alt="twitter-icon" class="socials_img"></a>
+                    <li class="socials_item"><a href="#" class="socials_link"><img src="img/facebook-icon.svg" alt="facebook-icon" class="socials_img"></a>
+                    <li class="socials_item"><a href="#" class="socials_link"><img src="img/instagram-icon.svg" alt="instagram-icon" class="socials_img"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_copyright">
+                @ Karma Mobility, Inc.
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
