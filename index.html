@@ -7,13 +7,79 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
+<div class="wrapper">
+    <header>
+        <div class="container d-flex align-center justify-sb">
+            <div class="logo">
+                <img class="logo_img" src="img/karma-logo.svg" alt="karma logo">
+            </div>
+            <nav class="menu">
+                <ul class="menu_list d-flex align-center">
+                    <li class="menu_item active"><a href="#welcome">Meet Karma</a></li>
+                    <li class="menu_item"><a href="#about">How It Works</a></li>
+                    <li class="menu_item"><a href="#">Store</a></li>
+                    <li class="menu_item"><a href="#">Blog</a></li>
+                    <li class="menu_item"><a href="#">Help</a></li>
+                    <li class="menu_item"><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="welcome" class="welcome">
+            <div class="container container--welcome">
+                <h1 class="welcome_title">Introducing Karma</h1>
+                <h3 class="welcome_subtitle">Bring WiFi with you, everywhere you go.</h3>
+                <a class="welcome_btn" href="#">Learn More</a>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container container--about text-center">
+                <h2 class="about_title text-center">Everyone needs a little Karma</h2>
+                <div class="cards">
+                    <ul class="cards_list">
+                        <li class="cards_item">
+                            <img src="img/icon-devices.svg" alt="icon-devices" class="cards_img"/>
+                            <span class="cards_title">
+                                   Internet for all devices
+                               </span>
+                        </li>
+                        <li class="cards_item">
+                            <img src="img/icon-coffee.svg" alt="icon-coffee" class="cards_img"/>
+                            <span class="cards_title">
+                                   Boost your productivity
+                               </span>
+                        </li>
+                        <li class="cards_item">
+                            <img src="img/icon-refill.svg" alt="icon-refill" class="cards_img"/>
+                            <span class="cards_title">
+                                   Pay as You Go
+                               </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container container--footer text-center">
+            <div class="footer_text">Join us on</div>
+            <div class="footer_socials">
+                <ul class="socials_list">
+                    <li class="socials_item"><a href="#" class="socials_link"><img src="img/twitter-icon.svg" alt="twitter-icon" class="socials_img"></a>
+                    <li class="socials_item"><a href="#" class="socials_link"><img src="img/facebook-icon.svg" alt="facebook-icon" class="socials_img"></a>
+                    <li class="socials_item"><a href="#" class="socials_link"><img src="img/instagram-icon.svg" alt="instagram-icon" class="socials_img"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_copyright">
+                @ Karma Mobility, Inc.
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
