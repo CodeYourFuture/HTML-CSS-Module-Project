@@ -1,19 +1,241 @@
+:root{
+    --text: #4d5057;
+    --gray: #848993;
+    --gray-bg: #f9f9f9;
+    --orange: #e26a42;
+    --orange-bg: #fcefeb;
+    --line: #ecedee;
+}
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: var(--text);
+    line-height: 1.2;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ body, html{
+     width: 100%;
+     height: 100%;
+ }
 
+ h1, h2, h3, h4, h5 {
+     font-weight: 400;
+     margin: 0;
+ }
+ .wrapper {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     min-height: 100%;
+ }
 
+/** General  */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ ul {
+     list-style-type: none;
+     padding: 0;
+ }
+ img {
+     display: inline-block;
+     max-width: 100%;
+     height: auto;
+ }
+ .container{
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .d-flex{
+     display: flex;
+ }
+
+ .align-center {
+     align-items: center;
+ }
+
+ .justify-sb {
+     justify-content: space-between;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+.btn {
+    display: inline-block;
+    background-color: var(--orange);
+    color: white;
+    padding: 24px 43px;
+    border-radius: 8px;
+    flex: 0 0 auto;
+}
+
+button.btn {
+    outline: none;
+    border: none;
+
+}
+
+/** Header  */
+ header {
+     padding: 20px;
+     column-gap: 20px;
+     background-color: var(--gray-bg);
+     border-bottom: 1px solid var(--line);
+ }
+
+ .logo {
+   width: 35px;
+ }
+
+ .logo a {
+     width: 100%;
+     height: 100%;
+ }
+
+ .mob-menu_icon {
+     display: none;
+ }
+
+ #toggle {
+   appearance: none;
+ }
+
+ .menu {
+     max-width: calc(100% - 35px - 20px * 2);
+     font-size: 1rem;
+ }
+
+ .menu_list {
+     column-gap: 40px;
+ }
+
+ .menu_item {
+    color: var(--gray);
+     font-weight: 500;
+ }
+
+.menu_item.active{
+   color: var(--text);
+}
+
+ .menu_item:hover{
+     color: var(--orange);
+ }
+
+/** Main */
+ main {
+     flex: 1 0 auto;
+     font-size: 1rem;
+ }
+
+/** Footer  */
+
+footer {
+    font-size: 1rem;
+    margin-top: 7%;
+}
+
+.container--footer {
+    border-top: 1px solid var(--line);
+    padding: 3% 20px 9% 20px ;
+}
+
+.footer_text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer_copyright{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+footer .socials_list {
+    display: inline-flex;
+    column-gap: 18px;
+    margin-bottom: 30px;
+}
+
+footer .socials_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .socials_item{
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer .socials_img {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 20px 16px;
+    }
+
+    .logo {
+        width: 24px;
+    }
+
+    .menu_item {
+        font-size: 1.6rem;
+    }
+
+    .mob-menu_icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav.menu {
+        display: none;
+    }
+
+    #toggle:checked ~ nav.menu {
+        display: block;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        min-width: 100vw;
+        height: 100%;
+        background-color: white;
+
+        .menu_list {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+}

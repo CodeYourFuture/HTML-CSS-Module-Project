@@ -1,0 +1,118 @@
+
+.welcome{
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: white;
+}
+
+.container--welcome {
+    text-align: center;
+    padding: 20% 20px 27% 20px;
+}
+
+.container--about {
+    text-align: center;
+    padding: 14% 20px 9% 20px;
+}
+
+.welcome_title {
+    margin-bottom: 4%; /*43px;*/
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
+.welcome_subtitle {
+    margin-bottom: 6%; /*75px;*/
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.about_title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    margin-bottom: 9%;
+}
+
+.cards_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 4%;
+    row-gap: 4%;
+}
+
+.cards_item {
+    min-width: 216px;
+    text-align: center;
+    padding: 16px;
+    flex: 0 1 auto;
+}
+
+.cards_img {
+    width: 166px;
+    margin-bottom: 70px;
+}
+
+.cards_title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+/** Store section  */
+.store {
+    display: flex;
+}
+
+.store_img-container {
+    width: 50%;
+    flex: 1 1 50%;
+    background-image: url("../level-2/homepage-feature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    min-height: 460px;
+}
+
+.store_content-container {
+    width: 50%;
+    flex: 1 1 50%;
+    background-color: var(--orange-bg);
+    padding: 88px 20px 82px 30px;
+}
+
+.store blockquote {
+    font-size: 2.6rem;
+    max-width: 502px;
+    font-weight: 400;
+    margin: 0 auto 48px auto;
+    line-height: 1.4;
+}
+
+.store_quotes {
+    color: var(--orange);
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome{
+        background-position: center center;
+    }
+
+    .store {
+        flex-direction: column;
+    }
+
+    .store_img-container {
+        width: 100%;
+        height: 74%;
+    }
+
+    .store_content-container {
+        width: 100%;
+    }
+}
