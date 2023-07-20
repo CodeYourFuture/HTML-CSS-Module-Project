@@ -1,10 +1,51 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    padding-top: 10px;
 }
+
+/* /* .favicon-icon {
+    
+} */
+
+.nav-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 82px;
+}
+
+.flexbox-nav {
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    margin-left: auto;
+    padding-right: 82px;
+}
+
+a {
+    text-decoration: none;
+    color: #868e96;
+}
+
+a:hover,
+a:active {
+    color: #F15B2A;
+}
+
+.meet-karma-nav {
+    font-weight: bold;
+}
+
 
 /**
  * Add your custom styles below
