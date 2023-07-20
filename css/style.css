@@ -37,6 +37,7 @@ a {
     color: #868e96;
     font-size: 18px;
     font-weight: 400;
+    transition: color 1.2s;
 }
 
 a:hover,
@@ -52,7 +53,6 @@ a:active {
     width: 100%;
     height: 45.9rem;
     margin-top: 16px;
-    background-color: blue;
     background-image:url("/img/first-background.jpg");
     background-size:auto;
     display: flex;
@@ -66,15 +66,24 @@ a:active {
 }
 
 .intro-karma {
-    font-size: 82px;
+    font-size: 74px;
     font-weight: 100;
     margin-top: -48px;
 }
 
 .product-details {
-    font-size: 41px;
+    font-size: 38px;
     font-weight: 100;
-    margin-top: -48px;
+    margin-top: -18px;
+}
+
+button {
+    margin-top: 68px;
+    padding: 22px 44px;
+    border-radius: 8px;
+    background-color: #F15B2A;
+    border: none;
+    font-size: 22px;
 }
 
 /**
