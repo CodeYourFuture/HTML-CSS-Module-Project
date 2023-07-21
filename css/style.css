@@ -124,11 +124,37 @@ h1 {
 }
 
 .horizontal-line {
-    margin-bottom: 30px;
     width: 84%;
     margin: 0 auto;
     background-color: #b4bcc36a;
     height: 1.8px;
+}
+
+.socials-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.join-us-text {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.social-media-icons {
+    padding-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.6px solid #b4bcc36a;
+    padding: 12px;
+    border-radius: 100%;
 }
 
 
