@@ -10,7 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    padding-top: 28px;
+    padding-top: 12px;
 }
 
 /* /* .favicon-icon {
@@ -51,10 +51,10 @@ a:active {
 
 .picture {
     width: 100%;
-    height: 45.9rem;
+    height: 45rem;
     margin-top: 16px;
     background-image:url("/img/first-background.jpg");
-    background-size:auto;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,26 +65,40 @@ a:active {
     color: white;
 }
 
+.all-text-container {
+    text-align: center;
+}
+
 .intro-karma {
     font-size: 74px;
     font-weight: 100;
-    margin-top: -48px;
 }
 
 .product-details {
     font-size: 38px;
     font-weight: 100;
-    margin-top: -18px;
+    padding-top: 18px;
+}
+
+.learn-more-btn {
+    margin-top: 32px;
 }
 
 button {
-    margin-top: 68px;
-    padding: 22px 44px;
+    padding: 18px 36px;
     border-radius: 8px;
     background-color: #F15B2A;
     border: none;
     font-size: 22px;
 }
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    padding-top: 104px;
+    font-size: 48px;
+}
+
 
 /**
  * Add your custom styles below
