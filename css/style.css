@@ -47,6 +47,8 @@ a:active {
 
 .meet-karma-nav {
     font-weight: bold;
+    color: #495057;
+    font-weight: 500;
 }
 
 .picture {
@@ -96,15 +98,37 @@ h1 {
     text-align: center;
     font-weight: 200;
     padding-top: 104px;
-    font-size: 58px;
+    font-size: 52px;
 }
 
-.grid-container-icons-text {
+.flex-container-icons-text {
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
+    gap: 64px;
     width: 100%;
     margin: 0 auto;
+    padding-top: 24px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 104px;
+}
+
+.text-under-svg {
+    font-size: 32px;
+    font-weight:normal;
+    margin-top: 38px;
+}
+
+.horizontal-line {
+    margin-bottom: 30px;
+    width: 84%;
+    margin: 0 auto;
+    background-color: #b4bcc36a;
+    height: 1.8px;
 }
 
 
