@@ -5,8 +5,8 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-image: url("img/first-background.jpg");
-    text-align: center;
-    color:aliceblue;
+  
+   
     
 }
 
@@ -19,20 +19,9 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-/* .grid-for-nav {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    align-items: center;
-    width: 86%;
-    margin: 0 auto;
-}
-.flex-nav {
-    display: flex;
-    gap: 6%;
-    justify-content: end;
-    font-size: 0.9rem;
-    width: 98%;
-} */
+
+
+
 .nav-bar-grid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -40,7 +29,7 @@ body {
     width: 86%;
     margin: 0 auto;
     padding-top: 0.75rem;
-    padding-bottom: 0.50rem;
+    padding-bottom: 0.30rem;
 }
 
 .nav-bar {
@@ -62,7 +51,33 @@ a {
     height: 110vh;
     width: 100%;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
    
 }
 
 
+.all-text {
+   text-align: center;
+    font-weight: 1000;
+
+}
+.interoducin {
+    color:aqua;
+    
+}
+
+
+.btn {
+    margin-top: 10%;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: #F15B2A;
+    border: none;
+    font-size: 1.6vw;
+    font-weight: 100;
+   
+}
