@@ -1,0 +1,150 @@
+ /* General Styles */
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Roboto', sans-serif;
+     -webkit-font-smoothing: antialiased;
+     padding-bottom: 6rem;
+ }
+
+ /* Navigation Styles */
+
+.background-for-nav {
+    background-color: #F9F9F9;
+    border-bottom: 0.1vw solid #b4bcc36a;
+}
+
+ .grid-for-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items: center;
+    width: 86%;
+    margin: 0 auto;
+ }
+
+ .flex-nav {
+     display: flex;
+     gap: 6%;
+     justify-content: end;
+     font-size: 0.9rem;
+     width: 98%;
+ }
+
+ a {
+     text-decoration: none;
+     color: #868e96;
+     font-size: 1.2em;
+     font-weight: 400;
+     transition: color 1.2s;
+ }
+
+ a:hover,
+ a:active {
+     color: #F15B2A;
+ }
+
+ .meet-karma-nav {
+     font-weight: bold;
+     color: #495057;
+     font-weight: 500;
+ }
+
+ /* Order form & image Styles */
+
+ .form-picture-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+ }
+
+ /* .store-image {
+    height: 120vh;
+    width: 100%;
+ } */
+
+ .order-karma-wifi {
+    font-size: 2.6rem;
+    padding-top: 16%;
+    width: 72%;
+    margin: 0 auto;
+    font-weight: 500;
+    color: #F15B2A;
+ }
+
+ form {
+   max-width: 72%;
+   padding-top: 12%;
+   margin: 0 auto;
+ }
+
+ .margin {
+    margin-top: 1%;
+    height: 32px;
+ }
+
+ .first-second-name {
+    display: grid;
+    grid-template-columns: repeat(2, 36%);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 4%;
+ }
+
+ .fname {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 172%;
+ }
+
+ .fname-text {
+    font-weight: 500;
+    margin: 14% 0 4% 0;
+ }
+
+ .sname {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
+    height: 172%;
+ }
+
+ .sname-text {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    font-weight: 500;
+    margin: 14% 0 4% 0;
+ }
+
+ .address-text1 {
+    font-weight: 500;
+    margin: 14% 0 4% 0;
+ }
+
+ .address-field1 {
+    height: 172%;
+    grid-column: span 2;
+ }
+
+  .address-text2 {
+      font-weight: 500;
+      margin: 24% 0 4% 0;
+  }
+
+  .address-field2 {
+      height: 172%;
+      grid-column: span 2;
+  }
+
+  .city {
+    font-weight: 500;
+    margin: 14% 0 4% 0;
+  }
+
+  .form-select {
+    height: 172%;
+  }

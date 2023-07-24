@@ -29,14 +29,6 @@
 
  /* Navigation Styles */
 
- /* .nav-flex-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-} */
-
  .grid-for-nav {
      display: grid;
      grid-template-columns: repeat(2, 50%);
@@ -127,7 +119,60 @@
      font-size: 2.8vw;
  }
 
+/* Extended Section Styles */
 
+.grid-for-extended {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #FCEFEB;
+    justify-items: center;
+}
+
+.text--ext:after,
+.text--ext:before {
+    color: #F15B2A;
+}
+
+.text--ext:before {
+    content: open-quote;
+    font-size: 130%;
+}
+
+.text--ext:after {
+    content: close-quote;
+    font-size: 130%;
+}
+
+.text--ext {
+    font-size: 2.4em;
+    text-align: center;
+    color: #495057;
+}
+
+.flex-text-btn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 10%;
+}
+
+.get-karma-today {
+    width: 44%;
+    margin: 8% auto 0 auto;
+    color: white;
+    padding: 20px 0;
+    border-radius: 8px;
+    background-color: #F15B2A;
+    border: none;
+    font-size: 1.6vw;
+    font-weight: 100;
+    transition: background-color 1.2s;
+}
+
+.get-karma-today:hover,
+.get-karma-today:active {
+    background-color: #f56e45;
+}
  /* Icon Grid Section Styles */
 
  .grid-container-icons {
