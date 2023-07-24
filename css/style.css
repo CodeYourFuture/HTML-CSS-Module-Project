@@ -1,187 +1,5 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    padding-top: 0.75rem;
-    padding-bottom: 6rem;
-}
-
-/* .nav-flex-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-} */
-
-.grid-for-nav {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    align-items: center;
-    width: 86%;
-    margin: 0 auto;
-}
-
-.flex-nav {
-    display: flex;
-    gap: 6%;
-    justify-content: end;
-    font-size: 0.9rem;
-    width: 98%;
-}
-
-a {
-    text-decoration: none;
-    color: #868e96;
-    font-size: 1.2em;
-    font-weight: 400;
-    transition: color 1.2s;
-}
-
-a:hover,
-a:active {
-    color: #F15B2A;
-}
-
-.meet-karma-nav {
-    font-weight: bold;
-    color: #495057;
-    font-weight: 500;
-}
-
-.picture {
-    width: 100%;
-    height: 110vh;
-    margin-top: 1.6%;
-    background-image: url("/img/first-background.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.all-text-container {
-    text-align: center;
-}
-
-.intro-karma {
-    font-size: 4.6vw;
-    font-weight: 100;
-}
-
-.product-details {
-    font-size: 2.5vw;
-    font-weight: 100;
-    padding-top: 3.8%;
-}
-
-.learn-more-btn {
-    margin-top: 10%;
-    padding: 16px 32px;
-    border-radius: 8px;
-    background-color: #F15B2A;
-    border: none;
-    font-size: 1.6vw;
-    font-weight: 100;
-    transition: background-color 1.2s;
-}
-
-.learn-more-btn:hover,
-.learn-more-btn:active {
-    background-color: #f56e45
-}
-
-h1 {
-    text-align: center;
-    font-weight: 200;
-    padding-top: 8%;
-    font-size: 2.8vw;
-}
-
-.grid-container-icons {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: 100px 40px;
-    width: 52%;
-    margin: 0 auto;
-    align-items: center;
-    justify-items: center;
-    padding-top: 2.4%;
-    padding-bottom: 10%;
-}
-
-.text-under-svg {
-    margin-top: 60px;
-    font-size: 1.3em;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.horizontal-line {
-    width: 84%;
-    margin: 0 auto;
-    background-color: #b4bcc36a;
-    height: 0.1vw;
-}
-
-.socials-and-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2.4%;
-}
-
-.join-us-text {
-    font-weight: 500;
-    font-size: 1.2vw;
-    margin-top: -1%;
-    text-align: center;
-}
-
-.social-media-icons {
-    padding-top: 1%;
-    display: flex;
-    margin: 0 auto;
-    gap: 10px;
-}
-
-.sm-border {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.1vw solid #b4bcc36a;
-    padding: 0.6rem 0.7rem;
-    border-radius: 100%;
-    transition: border 1.2s
-}
-
-.sm-border:hover,
-.sm-border:active {
-    border: 1px solid #F15B2A;
-}
-
-.copyright-stamp {
-    margin-top: 1%;
-    color: #868e96;
-    text-align: center;
-}
-
-
 /**
  * Add your custom styles below
  * 
@@ -192,4 +10,200 @@ h1 {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+ /* General Styles */
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Roboto', sans-serif;
+     -webkit-font-smoothing: antialiased;
+     padding-top: 0.75rem;
+     padding-bottom: 6rem;
+ }
+
+
+ /* Navigation Styles */
+
+ /* .nav-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+
+ .grid-for-nav {
+     display: grid;
+     grid-template-columns: repeat(2, 50%);
+     align-items: center;
+     width: 86%;
+     margin: 0 auto;
+ }
+
+ .flex-nav {
+     display: flex;
+     gap: 6%;
+     justify-content: end;
+     font-size: 0.9rem;
+     width: 98%;
+ }
+
+ a {
+     text-decoration: none;
+     color: #868e96;
+     font-size: 1.2em;
+     font-weight: 400;
+     transition: color 1.2s;
+ }
+
+ a:hover,
+ a:active {
+     color: #F15B2A;
+ }
+
+ .meet-karma-nav {
+     font-weight: bold;
+     color: #495057;
+     font-weight: 500;
+ }
+
+
+ /* Hero Section Styles */
+
+ .picture {
+     width: 100%;
+     height: 110vh;
+     margin-top: 1.6%;
+     background-image: url("/img/first-background.jpg");
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: white;
+ }
+
+ .all-text-container {
+     text-align: center;
+ }
+
+ .intro-karma {
+     font-size: 4.6vw;
+     font-weight: 100;
+ }
+
+ .product-details {
+     font-size: 2.5vw;
+     font-weight: 100;
+     padding-top: 3.8%;
+ }
+
+ .learn-more-btn {
+     margin-top: 10%;
+     padding: 16px 32px;
+     border-radius: 8px;
+     background-color: #F15B2A;
+     border: none;
+     font-size: 1.6vw;
+     font-weight: 100;
+     transition: background-color 1.2s;
+ }
+
+ .learn-more-btn:hover,
+ .learn-more-btn:active {
+     background-color: #f56e45;
+ }
+
+ h1 {
+     text-align: center;
+     font-weight: 200;
+     padding-top: 8%;
+     font-size: 2.8vw;
+ }
+
+
+ /* Icon Grid Section Styles */
+
+ .grid-container-icons {
+     display: grid;
+     grid-template-columns: auto 1fr auto;
+     grid-template-rows: 100px 40px;
+     width: 52%;
+     margin: 0 auto;
+     align-items: center;
+     justify-items: center;
+     padding-top: 2.4%;
+     padding-bottom: 10%;
+ }
+
+ .text-under-svg {
+     margin-top: 60px;
+     font-size: 1.3em;
+ }
+
+ .flex-column {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .horizontal-line {
+     width: 84%;
+     margin: 0 auto;
+     background-color: #b4bcc36a;
+     height: 0.1vw;
+ }
+
+
+ /* Footer Section Styles */
+
+ .socials-and-text {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 2.4%;
+ }
+
+ .join-us-text {
+     font-weight: 500;
+     font-size: 1.2vw;
+     margin-top: -1%;
+     text-align: center;
+ }
+
+ .social-media-icons {
+     padding-top: 1%;
+     display: flex;
+     margin: 0 auto;
+     gap: 10px;
+ }
+
+ .sm-border {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 0.1vw solid #b4bcc36a;
+     padding: 0.6rem 0.7rem;
+     border-radius: 100%;
+     transition: border 1.2s;
+ }
+
+ .sm-border:hover,
+ .sm-border:active {
+     border: 1px solid #F15B2A;
+ }
+
+ /* Footer copyright text */
+
+ .copyright-stamp {
+     margin-top: 1%;
+     color: #868e96;
+     text-align: center;
+ }
 
