@@ -38,6 +38,7 @@ body {
     gap: 6%;
     width: 98%;
     font-size: 0.9rem;
+    padding-top: 3px;
 }
 
 a {
@@ -45,11 +46,17 @@ a {
     color: black;
 }
 
+a:hover {
+color: #F15B2A;
+}
+
+
 /* Hero section */
 .background-img {
     background-image: url("/HTML-CSS-Module-Project/img/first-background.jpg");
     height: 110vh;
     width: 100%;
+    background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -57,7 +64,7 @@ a {
     align-items: center;
     color: white;
    
-}
+} 
 
 
 .all-text {
@@ -66,13 +73,22 @@ a {
 
 }
 .interoducin {
-    color:aqua;
+    color:aliceblue;
+    font-size: 4.6vw;
+    font-weight: 100;
     
+}
+
+.interoducin-2 {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 100;
+
 }
 
 
 .btn {
-    margin-top: 10%;
+    margin-top: 4%;
     padding: 16px 32px;
     border-radius: 8px;
     background-color: #F15B2A;
@@ -80,4 +96,25 @@ a {
     font-size: 1.6vw;
     font-weight: 100;
    
+}
+h1 {
+    text-align: center;
+    font-size: 3.8vw ;
+    font-weight: 300;
+   padding-top: 80px;
+}
+
+.devices-coffee-refill-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+.icons-discraption {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 150%;
+}
+.icons-discraption {
+    margin-left: 30px;
+
 }
