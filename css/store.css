@@ -12,21 +12,28 @@
      padding-bottom: 6rem;
  }
 
+ .horizontal-line {
+     width: 78%;
+     margin: 0 auto;
+     background-color: #b4bcc36a;
+     height: 0.1vw;
+ }
+
  /* Navigation Styles */
 
-.background-for-nav {
-    background-color: #F9F9F9;
-    border-bottom: 0.1vw solid #b4bcc36a;
-}
+ .background-for-nav {
+     background-color: #F9F9F9;
+     border-bottom: 0.1vw solid #b4bcc36a;
+ }
 
  .grid-for-nav {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    align-items: center;
-    width: 86%;
-    margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(2, 50%);
+     padding-top: 0.75rem;
+     padding-bottom: 0.75rem;
+     align-items: center;
+     width: 86%;
+     margin: 0 auto;
  }
 
  .flex-nav {
@@ -59,92 +66,246 @@
  /* Order form & image Styles */
 
  .form-picture-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    justify-content: center;
+     display: grid;
+     grid-template-columns: repeat(2, 50%);
+     justify-content: center;
  }
 
- /* .store-image {
-    height: 120vh;
-    width: 100%;
- } */
+ .store-image {
+     height: auto;
+     width: 100%;
+     max-height: 500%;
+ }
 
  .order-karma-wifi {
-    font-size: 2.6rem;
-    padding-top: 16%;
-    width: 72%;
-    margin: 0 auto;
-    font-weight: 500;
-    color: #F15B2A;
+     font-size: 2.6rem;
+     font-weight: 500;
+     color: #F15B2A;
+     grid-column: span 2;
+     padding-bottom: 2rem;
  }
 
  form {
-   max-width: 72%;
-   padding-top: 12%;
-   margin: 0 auto;
+     max-width: 68%;
+     padding-top: 2.6rem;
+     margin: 0 auto;
  }
 
  .margin {
-    margin-top: 1%;
-    height: 32px;
+     margin-top: 1%;
+     height: 32px;
  }
 
- .first-second-name {
+.form-grid {
     display: grid;
-    grid-template-columns: repeat(2, 36%);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 42%);
+    grid-template-rows: auto auto auto auto auto auto auto auto 12%;
+    justify-content: center;
+    row-gap: 8%;
     column-gap: 4%;
- }
-
- .fname {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    height: 172%;
- }
-
- .fname-text {
     font-weight: 500;
-    margin: 14% 0 4% 0;
+    color: #495057;
+    padding-top: 6rem;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.labels {
+    padding-bottom: 0.6rem;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.address-fields {
+    grid-column: span 2;
+}
+
+.city-dropdown {
+    padding-right: 15.2rem;
+}
+
+.postcode-field {
+    margin-left: 2.6rem;
+}
+
+ /* Radio Checkbox & Order Button Styles */
+
+ .select-color {
+     font-weight: 500;
+     color: #495057;
+     grid-row: 6 / 7;
+     margin-bottom: -10%;
+     margin-top: 1rem;
  }
 
- .sname {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3; 
-    height: 172%;
+ .flex {
+    display: flex;
+    grid-row: 7 / 8; 
+    gap: 8%;
  }
 
- .sname-text {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    font-weight: 500;
-    margin: 14% 0 4% 0;
+ .radio1 {
+    width: 6.6rem;
+    max-width: 100%
  }
 
- .address-text1 {
-    font-weight: 500;
-    margin: 14% 0 4% 0;
+.radio2 {
+    width: 6.6rem;
+    max-width: 100%
+}
+
+ .radio-flex {
+     display: flex;
+     align-items: center;
+     margin-right: 6%;
+     gap: 10px;
+     font-weight: 500;
+     color: #495057;
  }
 
- .address-field1 {
-    height: 172%;
+ .radio-flex2 {
+     display: flex;
+     align-items: center;
+     margin-right: 6%;
+     gap: 10px;
+     font-weight: 500;
+     color: #495057;
+ }
+
+ input[type='radio'] {
+     appearance: none;
+     width: 1.2rem;
+     height: 1.2rem;
+     max-width: 100%;
+     border: 1.6px solid black;
+     border-radius: 100%;
+     display: flex;
+     padding: 2%;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+ }
+
+ input[type='radio']:after {
+     font: var(--fa-font-solid);
+     content: "\f111";
+     font-size: 12px;
+     color: #F15B2A;
+     display: none;
+ }
+
+ input[type='radio']:checked:after {
+     display: block;
+ }
+
+ .checkbox-tcs {
+    display: flex;
+    grid-row: 8 / 9;
     grid-column: span 2;
  }
 
-  .address-text2 {
-      font-weight: 500;
-      margin: 24% 0 4% 0;
-  }
+ input[type='checkbox'] {
+     appearance: none;
+     width: 5.2%;
+     height: 62%;
+     background-color: white;
+     border: 1.6px solid black;
+     border-radius: 4px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+ }
 
-  .address-field2 {
-      height: 172%;
-      grid-column: span 2;
-  }
+ input[type='checkbox']:after {
+     font: var(--fa-font-solid);
+     content: "\f00c";
+     font-size: 20px;
+     font-weight: bolder;
+     color: #F15B2A;
+     display: none;
+ }
 
-  .city {
-    font-weight: 500;
-    margin: 14% 0 4% 0;
-  }
+ input[type='checkbox']:checked:after {
+     display: block;
+ }
 
-  .form-select {
-    height: 172%;
-  }
+ .terms-and-cons {
+     width: 80%;
+     padding-left: 2%;
+     font-size: 14px;
+ }
+
+ .terms-and-cons-link {
+     font-size: 14px;
+     color: #F15B2A;
+     text-decoration: underline;
+ }
+
+ .terms-and-cons-link:hover,
+ .terms-and-cons-link:active {
+     text-decoration: none;
+ }
+
+ .place-order-btn {
+     border-radius: 4px;
+     background-color: #F15B2A;
+     border: none;
+     color: white;
+     grid-column: 1 / 2;
+    padding: 0.625rem 1.25rem;
+ }
+
+ /* Footer Section Styles */
+
+ .socials-and-text {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 2.4%;
+ }
+
+ .join-us-text {
+     font-weight: 500;
+     font-size: 0.9rem;
+     margin-top: -1%;
+     text-align: center;
+ }
+
+ .social-media-icons {
+     padding-top: 1%;
+     display: flex;
+     margin: 0 auto;
+     gap: 10px;
+ }
+
+ .sm-border {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 0.1vw solid #b4bcc36a;
+     padding: 0.6rem 0.7rem;
+     border-radius: 100%;
+     transition: border 1.2s;
+ }
+
+ .sm-border:hover,
+ .sm-border:active {
+     border: 1px solid #F15B2A;
+ }
+
+ /* Footer copyright text */
+
+ .copyright-stamp {
+     margin-top: 1%;
+     color: #868e96;
+     text-align: center;
+ }
