@@ -9,7 +9,6 @@
  body {
      font-family: 'Roboto', sans-serif;
      -webkit-font-smoothing: antialiased;
-     padding-bottom: 6rem;
  }
 
  .horizontal-line {
@@ -72,9 +71,7 @@
  }
 
  .store-image {
-     height: auto;
      width: 100%;
-     max-height: 500%;
  }
 
  .order-karma-wifi {
@@ -122,6 +119,7 @@
     justify-content: center;
     align-items: center;
     height: 40px;
+    padding-left: 0.4rem;
 }
 
 .address-fields {
@@ -262,6 +260,12 @@
      color: white;
      grid-column: 1 / 2;
     padding: 0.625rem 1.25rem;
+    transition: background-color 1.2s;
+ }
+
+ .place-order-btn:hover,
+ .place-order-btn:hover {
+    background-color: #f56e45;
  }
 
  /* Footer Section Styles */
@@ -308,4 +312,5 @@
      margin-top: 1%;
      color: #868e96;
      text-align: center;
+     padding-bottom: 2.4rem;
  }

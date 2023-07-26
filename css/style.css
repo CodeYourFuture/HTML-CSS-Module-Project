@@ -22,16 +22,21 @@
  body {
      font-family: 'Roboto', sans-serif;
      -webkit-font-smoothing: antialiased;
-     padding-top: 0.75rem;
-     padding-bottom: 6rem;
  }
 
 
  /* Navigation Styles */
 
+ .background-for-nav {
+     background-color: #F9F9F9;
+     border-bottom: 0.1vw solid #b4bcc36a;
+ }
+
  .grid-for-nav {
      display: grid;
      grid-template-columns: repeat(2, 50%);
+     padding-top: 0.75rem;
+     padding-bottom: 0.75rem;
      align-items: center;
      width: 86%;
      margin: 0 auto;
@@ -70,7 +75,6 @@
  .picture {
      width: 100%;
      height: 110vh;
-     margin-top: 1.6%;
      background-image: url("/img/first-background.jpg");
      background-position: center;
      background-size: cover;
@@ -250,5 +254,6 @@
      margin-top: 1%;
      color: #868e96;
      text-align: center;
+     padding-bottom: 2.4rem;
  }
 
