@@ -1,9 +1,10 @@
-.grid-continer {
-    display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 50px 50px;
+.container {
+        display: grid;
+            grid-template-columns: auto 1fr;
+            background-color: #FCEFEB;
+            justify-items: center;
         
 }
-.grid-continer {
-    background-color: aqua;git
+.title-2 {
+    color: greenyellow;
 }
