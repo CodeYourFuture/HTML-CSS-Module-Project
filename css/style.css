@@ -1,19 +1,75 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
  * Add your custom styles below
- * 
- * Remember: 
+
+
+/* <!-- NAV-BAR --> */
+
+.nav-background {
+  background-color: white;
+  border-bottom: 0.1vw solid #f9f9f9;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  gap: 6%;
+  justify-content: end;
+  font-size: 0.9rem;
+  width: 98%;
+}
+
+a {
+  text-decoration: none;
+  color: #868e96;
+  font-size: 1.3em;
+  font-weight: 400;
+  transition: color 1.2s;
+}
+
+a:hover,
+a:active {
+  color: #f15b2a;
+  transition: 1s;
+}
+
+.meet-karma {
+  font-weight: bold;
+  color: #495057;
+  font-weight: 500;
+}
+
+/* BACKGROUND-IMAGE   */
+
+/* .background-image {
+  background-image: url("https://images.ctfassets.net/hrltx12pl8hq/5Hw8qzHmYaZqcXQUS16Nnv/8faeb665bdd57734e435c7307f6456a5/thumb_creativerends_02_macabre.jpg?fit=fill&w=480&h=270&fm=webp");
+  background-size: cover;
+} */
+
+/* * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
