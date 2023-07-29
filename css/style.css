@@ -69,7 +69,7 @@ color: #F15B2A;
 
 .all-text {
    text-align: center;
-    font-weight: 1000;
+    font-weight: ;
 
 }
 .introduction {
@@ -127,7 +127,7 @@ h1 {
             margin: 0 auto;
             background-color: #b4bcc36a;
             height: 0.1vw;
-            margin-top: 5rem;
+            margin-top: 6rem;
         
 }
 .join-us {
@@ -140,7 +140,7 @@ h1 {
    
 }
 .logo-s {
-        display: flex;
+            display: flex;
             align-items: center;
             justify-content: center;
             border: 0.1vw solid #d0d7dd6a;
@@ -157,12 +157,43 @@ h1 {
 }
 
 .container {
-    display: grid;
+    display: flex;
+    align-items:center;
+    background-color: #F15B2A;
+    margin-top: 10%;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #FCEFEB;
+    background-color: #FCEFEB; */
 
+}
+.btn-text-wraper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column ;
+    
 }
 
 .title-2 {
-    color: red;
+    color: white;
+    margin: 
+    font-size: 30px;
+    padding-bottom: 1x;
+  
+}
+ .btn-2 {
+    padding: 1%;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-bottom: 0%;
+    /* margin: 4%;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: #b5f12a;
+    border: none;
+    font-size: 1.6vw;
+    font-weight: 100;  */
+}
+
+.homepage-feature {
+    padding: 0% 15% 0% %;
 }
