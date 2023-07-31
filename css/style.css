@@ -1,5 +1,17 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+/* * Add your custom styles below
+
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+/* GENERAL STYLES */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +22,6 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
-/**
- * Add your custom styles below
-
 
 /* <!-- NAV-BAR --> */
 
@@ -60,16 +68,90 @@ a:active {
   font-weight: 500;
 }
 
-/* BACKGROUND-IMAGE   */
+/* <!-- MAIN IMAGE AND TEXT --> */
 
-/* .background-image {
-  background-image: url("https://images.ctfassets.net/hrltx12pl8hq/5Hw8qzHmYaZqcXQUS16Nnv/8faeb665bdd57734e435c7307f6456a5/thumb_creativerends_02_macabre.jpg?fit=fill&w=480&h=270&fm=webp");
+.main-picture {
+  background-image: url("/HTML-CSS-Module-Project/img/first-background.jpg");
+  height: 110vh;
+  width: 100%;
+  background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.intro-karma {
+  font-size: 4.6vw;
+  font-weight: 100;
+}
+
+.product-details {
+  font-size: 2.5vw;
+  font-weight: 25;
+  padding-top: 3.8%;
+}
+
+.learn-btn {
+  margin-top: 10%;
+  padding: 16px 32px;
+  border-radius: 5px;
+  background-color: #f15b2a;
+  border: none;
+  font-size: 1.6vw;
+  font-weight: 100;
+  transition: background-color 1.2s;
+}
+
+.learn-btn:hover,
+.learn-btn:active {
+  background-color: #f56e45;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 200;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-size: 2.8vw;
+}
+
+/* LOGO SECTION WITH TEXT*/
+
+.main-logo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 52%;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+  padding-top: 2.4%;
+  padding-bottom: 10%;
+}
+
+.main-logo,
+.logo-text {
+  margin-top: 60px;
+  font-size: 1.3em;
+  align-items: self-start;
+  justify-items: center;
+}
+
+/* .flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 } */
 
-/* * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.horizontal-line {
+  width: 78%;
+  margin: 0 auto;
+  background-color: #b4bcc36a;
+  height: 0.1vw;
+}
