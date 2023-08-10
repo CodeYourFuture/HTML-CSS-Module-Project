@@ -1,4 +1,4 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/*----------Main CSS--------*/
 * {
   box-sizing: border-box;
 }
@@ -10,6 +10,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+/*----------Navigation bar--------*/
 nav {
   height: 5rem;
   display: flex;
@@ -42,6 +43,8 @@ nav {
 .nav-item a:active {
   color: red;
 }
+
+/*----------------Hero Section--------*/
 .hero {
   height: 40rem;
   display: flex;
@@ -74,6 +77,7 @@ nav {
 .hero-btn:active {
   background-color: rgb(255, 128, 0);
 }
+/*---------------------Main -----------------*/
 
 .main-heading {
   margin-top: 8rem;
@@ -103,6 +107,8 @@ nav {
   text-align: center;
   font-size: 1.3rem;
 }
+
+/*--------------Footer----------------*/
 footer {
   height: 15rem;
 }
