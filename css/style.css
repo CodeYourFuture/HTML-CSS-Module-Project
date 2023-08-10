@@ -1,19 +1,141 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+  box-sizing: border-box;
+}
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  overflow-x: hidden;
+}
+nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.karma-logo {
+  height: 3rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+}
+.nav-item:nth-child(1) {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.nav-item {
+  padding: 1rem;
+  list-style: none;
+}
+.nav-item a {
+  width: 15rem;
+  text-decoration: none;
+  color: gray;
+}
+.nav-item a:hover,
+.nav-item a:active {
+  color: red;
+}
+.hero {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/first-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.hero-heading {
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 0;
+}
+.hero-discription {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.hero-btn {
+  padding: 1rem;
+  background-color: rgb(235, 99, 2);
+  border: none;
+  border-radius: 3px;
+}
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: rgb(255, 128, 0);
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-
-
+.main-heading {
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.article-container {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0rem 10rem;
+  padding: 0;
+  border-bottom: 1px solid rgb(214, 212, 212);
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.article__img {
+  height: 9rem;
+}
+.article__description {
+  text-align: center;
+  font-size: 1.3rem;
+}
+footer {
+  height: 15rem;
+}
+.footer-card {
+  height: 10rem;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+.footer-card-heading{
+    font-weight: 400;
+}
+.icons {
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+.icon-item {
+  padding: 0.5rem;
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 50%;
+  height: 2rem;
+  
+}
+.icon-item:hover {
+  border: 1px solid rgb(44, 44, 44);
+}
+.icon-item img {
+  height: 1rem;
+}
+.footer-description {
+  color: rgb(196, 193, 193);
+  margin: 0;
+}
