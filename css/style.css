@@ -119,23 +119,26 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-.footer-card-heading{
-    font-weight: 400;
+.footer-card-heading {
+  font-weight: 500;
 }
 .icons {
   height: 2.5rem;
   display: flex;
   justify-content: space-evenly;
- 
 }
 .icon-item {
   padding: 0.5rem;
   border: 1px solid rgb(220, 217, 217);
   border-radius: 50%;
-  height: 2rem;
-  
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-item:hover {
+  transition: 0.5s ease-in-out;
   border: 1px solid rgb(44, 44, 44);
 }
 .icon-item img {
@@ -143,5 +146,5 @@ footer {
 }
 .footer-description {
   color: rgb(196, 193, 193);
-  margin: 0;
+  margin: 1rem;
 }
