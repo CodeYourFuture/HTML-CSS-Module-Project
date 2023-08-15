@@ -6,14 +6,165 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* <----------------navbar start--------------> */
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
 
+    
+}
+.lft-nav{
+    width: 15%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lft-nav svg{
+    width: 1.8vw;
+    cursor: pointer;
+}
+.cntr-nav{
+    width: 40%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.ryt-nav{
+   width: 45%;
+   height: 100%;
+   /* background-color: purple; */
+   display: flex;
+   gap: 5%;
+   align-items: center;
+   padding: 0 5%;
+   
+   
+}
+.ryt-nav a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgb(82, 76, 76);
+    transition: all linear 0.5s;
+}
+.ryt-nav #firstlink{
+    color: #000;
+    font-weight: 500;
+}
+.ryt-nav a:hover{
+       color: #F15B2A;
+}
+/* <------------------navbar completed---------------> */
 
+main{
+    width: 100%;
+    height: 90vh;
+    background: url('./img/first-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+main > h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 4rem;
+    margin-bottom: 0;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.51);
+}
+main > h2{
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.51);
+}
+main > button{
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #F15B2A;
+    box-shadow: rgba(241, 91, 42,0.3) 0px 5px 15px;
+    outline: none;
+    border: none;
+}
+/* <---------------front landing page completed---------------> */
+section{
+    width: 100%;
+    height: 90vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section >h1{
+    font-weight: 400;
+    font-size: 3rem;
+}
+section .specifications{
+    height: 45%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 1rem;
+    background-color: blue; */
+}
+.specifications .icon-container{
+    height: 100%;
+    width:26%;
+    /* background-color: blueviolet; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon-container svg{
+    width: 50%;
+}
+.icon-container > h3{
+    font-weight: 500;
+
+}
+/* <--------------mid section completed----------> */
+/* <----------------footer stats here------------> */
+footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #000; */
+}
+footer> h4{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+footer .social-media-icons{
+    width: 11%;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+.social-media-icons .icons{
+    height: 100%;
+    width: 20%;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.icons > svg{
+    width: 70%;
+}
