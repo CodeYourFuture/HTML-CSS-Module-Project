@@ -125,8 +125,9 @@ h1 {
 /* LOGO SECTION WITH TEXT*/
 
 .main-logo {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 100px 40px;
   width: 52%;
   margin: 0 auto;
   align-items: center;
@@ -135,19 +136,10 @@ h1 {
   padding-bottom: 10%;
 }
 
-.main-logo,
 .logo-text {
   margin-top: 60px;
   font-size: 1.3em;
-  align-items: self-start;
-  justify-items: left;
 }
-
-/* .flex-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .horizontal-line {
   width: 78%;
@@ -155,3 +147,6 @@ h1 {
   background-color: #b4bcc36a;
   height: 0.1vw;
 }
+
+
+
