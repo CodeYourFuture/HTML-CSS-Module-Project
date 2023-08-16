@@ -148,5 +148,46 @@ h1 {
   height: 0.1vw;
 }
 
+/* FOOTER SECTION */
+
+.socials-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.4%;
+}
+
+.join-us {
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin-top: -1%;
+  text-align: center;
+}
+
+.social-icons {
+  padding-top: 1%;
+  display: flex;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1vw solid #b4bcc36a;
+  padding: 0.6rem 0.7rem;
+  border-radius: 100%;
+  transition: border 1.2s;
+}
+
+
+.copyright {
+  margin-top: 1%;
+  color: #868e96;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
 
 
