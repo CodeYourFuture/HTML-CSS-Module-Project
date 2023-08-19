@@ -166,34 +166,58 @@ h1 {
     background-color: #FCEFEB; */
 
 }
-.btn-text-wraper {
+.grid-for-extended {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #fcefeb;
+    justify-items: center;
+}
+
+.text--ext:after,
+.text--ext:before {
+    color: #f15b2a;
+}
+
+.text--ext:before {
+    content: open-quote;
+    font-size: 130%;
+}
+
+.text--ext:after {
+    content: close-quote;
+    font-size: 130%;
+}
+
+.text--ext {
+    font-size: 2.4em;
+    text-align: center;
+    color: #495057;
+}
+
+.flex-text-btn {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column ;
-    
+    flex-direction: column;
+    width: 60%;
+    padding-top: 10%;
 }
 
-.title-2 {
+.get-karma-today {
+    margin: 1.6rem auto;
     color: white;
-    margin: 
-    font-size: 30px;
-    padding-bottom: 1x;
-  
-}
- .btn-2 {
-    padding: 1%;
-    margin-left: 37%;
-    margin-right: 37%;
-    margin-bottom: 0%;
-    /* margin: 4%;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     border-radius: 8px;
-    background-color: #b5f12a;
-    border: none;
+    text-align: center;
     font-size: 1.6vw;
-    font-weight: 100;  */
+    font-weight: 100;
+    transition: background-color 1.2s;
 }
 
-.homepage-feature {
-    padding: 0% 15% 0% %;
+.get-karma-today:hover,
+.get-karma-today:active {
+    background-color: #f56e45;
 }
+
+
+
+
+ 
