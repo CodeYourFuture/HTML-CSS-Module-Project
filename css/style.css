@@ -1,8 +1,17 @@
+/* Root Variables */
+:root {
+    --font-primary: 'Roboto', sans-serif;
+    --color-primary-background: #F9F9F9;
+    --color-primary-border: #b4bcc36a;
+    --color-secondary-text: #868e96;
+    --color-link: #F15B2A;
+    --color-heading: #495057;
+}
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-primary);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -16,4 +25,44 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.background-for-nav {
+    background-color: var(--color-primary-background);
+    border-bottom: 0.1vw solid var(--color-primary-border);
+}
 
+.grid-for-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items: center;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.flex-nav {
+    display: flex;
+    gap: 6%;
+    justify-content: end;
+    font-size: 0.9rem;
+    width: 98%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary-text);
+    font-size: 1.2em;
+    font-weight: 400;
+    transition: color 0.5s;
+}
+
+a:hover,
+a:active {
+    color: var(--color-link);
+}
+
+.karma-nav {
+    font-weight: bold;
+    color: var(--color-heading);
+    font-weight: 500;
+}
