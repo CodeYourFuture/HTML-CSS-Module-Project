@@ -92,14 +92,14 @@ body {
     color: var(--karma-color);
 }
 
+#karma:hover{
+    color: var(--hover-color);
+}
 
 .nav-bar ul li a:hover{
     color: var(--hover-color);
     cursor: pointer;
     
-}
-#karma:hover{
-    color: var(--hover-color);
 }
 
 
@@ -131,30 +131,28 @@ body {
    
 }
 
-.section-1 div {
-    margin: 10px 0 0 0 ;
-    padding: 0;
-    width: 130px;
-    height: 40px;
-    background-color: var(--hover-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.section-1 h2{
+    font-size: large;
+    font-weight: lighter;
+
 }
 
-.section-1 div a{
-    margin: 0;
-    display: block;
+
+
+.section-1 a{
+    margin: 15px 0 0 0  ;
+    display: flex;
     background-color: var(--hover-color);
-    padding: 3px;
+    padding: 4px;
     border-radius: 3px;
-    width: inherit;
-    height: inherit;
+    width: 120px;
+    height: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: var(--text-color);
+    font-size: large;
    
 
 }
