@@ -3,7 +3,7 @@
 :root{
     --text-color:white;
     --hover-color:rgb(246, 77, 16);
-    --link-color:rgb(128, 126, 126);
+    --link-color:rgb(100, 99, 99);
     --karma-color:black;
 
     
@@ -97,8 +97,8 @@ body {
     cursor: pointer;
     
 }
-#karma a:hover{
-    font-weight: bold;
+#karma:hover{
+    color: var(--hover-color);
 }
 
 
