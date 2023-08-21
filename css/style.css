@@ -5,6 +5,34 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.logo{
+    width:5rem;
+}
+.navigation_list{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.hero{
+    background-image: url(/img/first-background.jpg);
+    background-color: var(--grey-light);
+    height: 54%;
+}
+.karma_icon{
+    display:flex;
+    width:5rem;
+
+}
+
+
+
+
+
+.footer_icon{
+ width:8rem;
+ display: flex;
+
+}
 
 /**
  * Add your custom styles below
