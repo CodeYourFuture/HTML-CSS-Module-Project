@@ -3,7 +3,8 @@
 :root{
     --text-color:white;
     --hover-color:rgb(246, 77, 16);
-    --link-color:rgb(62, 60, 60);
+    --link-color:rgb(128, 126, 126);
+    --karma-color:black;
 
     
 }
@@ -62,7 +63,7 @@ body {
     align-items: flex-end;
 }
 
-.header ul{
+.nav-bar ul{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,20 +73,36 @@ body {
     padding: 0;
 }
 
-.header ul li{
+.nav-bar ul li{
     margin: 0 20px;
     list-style: none;
+    
 }
 
-.nav-bar a {
+
+  
+
+.nav-bar ul li a {
     text-decoration: none;
-    color: var(--link-color);
+    color:var(--link-color);
+    
+}
+#karma{
+    color: var(--karma-color);
 }
 
-.nav-bar a:hover{
+
+.nav-bar ul li a:hover{
     color: var(--hover-color);
+    cursor: pointer;
+    
+}
+#karma a:hover{
     font-weight: bold;
 }
+
+
+
 
 /* styling the main tag */
 .main{
