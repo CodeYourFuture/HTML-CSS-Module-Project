@@ -15,7 +15,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 80px 400px 300px;
+    grid-template-rows: 80px auto 300px;
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "m m m m m m m m m m m m"
@@ -44,6 +44,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 5px 50px;
+    
     
 }
  /* header logo styling */
@@ -107,11 +108,63 @@ body {
 /* styling the main tag */
 .main{
     grid-area: m;
-    background-color: #f8341a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    
+}
+.section-1{
     background-image: url("../img/first-background.jpg");
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.section-1 div {
+    margin: 10px 0 0 0 ;
+    padding: 0;
+    width: 130px;
+    height: 40px;
+    background-color: var(--hover-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.section-1 div a{
+    margin: 0;
+    display: block;
+    background-color: var(--hover-color);
+    padding: 3px;
+    border-radius: 3px;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+   
+
+}
+
+
+.section-2{
+    
+    width:100% ;
+    height: 400px;
+    background-color: aqua;
 }
 
 
@@ -120,5 +173,6 @@ body {
 .footer{
     grid-area: f;
     background-color: #ffcc5c;
+    
 }
 
