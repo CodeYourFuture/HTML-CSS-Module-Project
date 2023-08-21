@@ -1,0 +1,85 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("img/first-background.jpg");
+
+
+
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+
+
+.nav-bar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    width: 86%;
+    margin: 0 auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.30rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: end;
+    gap: 6%;
+    width: 98%;
+    font-size: 0.9rem;
+    padding-top: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #F15B2A;
+}
+
+
+/* Hero section */
+
+
+.media-logo {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.logo-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1vw solid #d0d7dd6a;
+    padding: 0.6rem 0.7rem;
+    border-radius: 112%;
+    transition: border 1.2s
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #F15B2A;
+    margin-top: 10%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FCEFEB; */
+
+}
+
