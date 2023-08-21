@@ -1,18 +1,40 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+   
 }
 .logo{
-    width:5rem;
+    width:2rem;
+    margin-left:5rem;
+  
+    
+
 }
 .navigation_list{
     display:flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    margin-right: 10rem;
 }
+.navigation_list li {
+    
+    display: inline-block;
+    padding: 0 20px;
+}
+.navigation_list a{
+text-decoration: none;
+}
+
 .hero{
     background-image: url(/img/first-background.jpg);
     background-color: var(--grey-light);
@@ -27,10 +49,18 @@ body {
 
 
 
-
+.border_footer{
+    border-top: .1rem solid gray;
+}
+.border_icon{
+border: .1rem solid gray;
+border-radius: 100%;
+}
 .footer_icon{
+ 
  width:8rem;
- display: flex;
+ display:flex;
+ 
 
 }
 
