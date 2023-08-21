@@ -1,9 +1,25 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+:root{
+    --text-color:white;
+    --hover-color:rgb(246, 77, 16);
+    --link-color:rgb(62, 60, 60);
 
+    
+}
 body {
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 80px 400px 300px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f";
+
 }
 
 /**
@@ -16,4 +32,76 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+
+ /* Styling pages header */
+
+ .header{
+    
+    align-items: center;
+    grid-area: h;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 50px;
+    
+}
+ /* header logo styling */
+ .header div{
+    margin: 0;
+    padding: 0;
+
+ }
+.header img{
+    width: 50px;
+    height: 50px;
+    
+    
+    
+}
+.header nav{
+    align-items: flex-end;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.nav-bar a:hover{
+    color: var(--hover-color);
+    font-weight: bold;
+}
+
+/* styling the main tag */
+.main{
+    grid-area: m;
+    background-color: #f8341a;
+    background-image: url("../img/first-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* footer stlyes*/
+
+.footer{
+    grid-area: f;
+    background-color: #ffcc5c;
+}
 
