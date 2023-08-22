@@ -122,6 +122,61 @@ h1 {
   font-size: 2.8vw;
 }
 
+/* HOMEPAGE WITH BLOCKQUOTE  */
+
+.second-picture {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: #eccfc8;
+  justify-items: center;
+}
+
+.text-content:after,
+.text-content:before {
+  color: #f15b2a;
+}
+
+.text-content:before {
+  content: open-quote;
+  font-size: 130%;
+}
+
+.text-content:after {
+  content: close-quote;
+  font-size: 130%;
+}
+
+.text-content {
+  font-size: 2.4em;
+  text-align: center;
+  color: #495057;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-top: 10%;
+}
+
+.get-karma-today {
+  width: 44%;
+  margin: 8% auto 0 auto;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f15b2a;
+  border: none;
+  font-size: 1.4vw;
+  font-weight: 100;
+  transition: background-color 1.2s;
+}
+
+.get-karma-today:hover,
+.get-karma-today:active {
+  background-color: #f56e45;
+}
+
 /* LOGO SECTION WITH TEXT*/
 
 .main-logo {
@@ -145,6 +200,7 @@ h1 {
   width: 78%;
   margin: 0 auto;
   background-color: #b4bcc36a;
+  padding-top: 2.4px;
   height: 0.1vw;
 }
 
@@ -181,13 +237,9 @@ h1 {
   transition: border 1.2s;
 }
 
-
 .copyright {
   margin-top: 1%;
   color: #868e96;
   text-align: center;
   padding-bottom: 2.4rem;
 }
-
-
-
