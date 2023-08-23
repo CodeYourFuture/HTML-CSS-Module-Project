@@ -1,19 +1,181 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* nav styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
+.navbar ul {
+    list-style: none;
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navigation-link {
+   text-decoration: none;
+   color: #a19d9d;
+}
+
+.navigation-link1 {
+   text-decoration: none;
+   color: black;
+}
+.navigation-item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: 5px;
+   margin: 0 10px;
+}
+.navigation-link:hover {
+   color: red;
+}
+.navigation-link1:hover {
+   color: red;
+}
+ /* main section 1 */
+
+ .background-container {
+    position: relative;
+ }
+ .background-img {
+    height: 55%;
+    width:1210px;
+    margin-bottom: 40px;
+ }
+
+ .text-overlay {
+    color: white;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ 
+ .text-overlay p {
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom:20px;
+ }
+
+ .text-overlay h1{
+    font-size:50px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight: lighter;
+
+ }
+ .text-overlay button {
+    background-color: #c05326;
+    cursor: pointer;
+    border: 2px solid #c05326;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 30px;
+ }
+
+ .text-overlay button:hover {
+    color: #c05326;
+    background-color: white;
+    border-color: white;
+ }
+
+ /* main section2 */
+
+ .sec2img {
+   max-width: 100px;
+   max-height: 100px;
+ }
+ .feature {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-right:30px;
+   margin-left: 30px;
+   gap:15px;
+   
+ }
+
+ .section2-container {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-left: 170px;
+
+ }
+ h2 {
+   display: flex;
+   font-size: 40px;
+   font-weight: lighter;
+   align-items: center;
+   flex-direction: column;
+   justify-content: flex-start;
+   margin-top: 40px;
+ }
+ .feature p {
+   font-size: 25px;
+ }
 
 
+ /* footer styles */
+
+footer {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 50px;
+}
+
+.footer-line {
+   border:1px solid #eeeaea;
+   margin-left: 50px;
+   margin-right:50px;
+   margin-top:50px;
+
+}
+.copyright {
+    color:#b5b1b1;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.insta {
+   width: 20px;
+   margin-right: 530px;
+   border: 2px solid #eeeaea;
+   border-radius: 20px;
+   padding:6px;
+
+}
+.fb {
+   width: 20px;
+   border: 2px solid #eeeaea;
+   border-radius:20px;
+   padding:6px;
+}
+.twitter {
+   width:20px;
+   margin-left: 530px;
+   border: 2px solid #eeeaea;
+   border-radius:20px;
+   padding: 6px;
+}
+.social-icons {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
