@@ -1,19 +1,60 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.logo{
+    width:2rem;
+    margin-left:5rem;
+}
+.navigation_list{
+    display:flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    margin-right: 10rem;
+}
+.navigation_list li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.navigation_list a{
+text-decoration: none;
+}
+.hero{
+    background-image: url(/img/first-background.jpg);
+    background-color: var(--grey-light);
+    height: 54%;
+}
+.karma_icon{
+    display:flex;
+    width:5rem;
+}
+8:16
+.border_footer{
+    border-top: .1rem solid gray;
+}
+.border_icon{
+border: .1rem solid gray;
+border-radius: 100%;
+}
+.footer_icon{
+ width:8rem;
+ display:flex;
+}
+.input_card{
+    display:flex;
+}
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
 
