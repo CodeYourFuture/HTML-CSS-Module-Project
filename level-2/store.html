@@ -22,7 +22,7 @@
 		d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z" />
 	</svg> 
     <nav class="nav-bar">
-       <a href="#">Meet Karma</a>
+       <a href="/HTML-CSS-Module-Project/index.html">Meet Karma</a>
        <a href="#">How it Works</a>
        <a href="#">Store</a>
        <a href="#">Blog</a>
@@ -35,40 +35,46 @@
     <!-- <img class="stor-image" src="/HTML-CSS-Module-Project/level-2/store-image_by-andrew-neel-unsplash.jpg" alt=""> -->
 
     <!-- form section -->
-<form action="">
-    <div>
-     <label for="name">name*</label>
-     <input type="text" name="name" id="name" required>
-    </div>
+   <section class="container"> 
+<form>
+     <label for="name" class="grid-name" >name*</label>
+    <br />
+     <input type="text" name="name" class="name" required>
 
-   <div>
-    <label for="last-name">Last name *</label>
-    <input type="text" name="last-name" id="last-name" required>
-   </div>
+    <label for="last-name" class="grid-name">Last name *</label>
+    <br />
+    <input type="text" name="last-name" class="last-name" required>
 
-   <div>
+
+<div>
     <label for="address">address *</label>
-    <input type="text" name="address" id="address" required>
-</div>
-    
+    <br />
+    <input type="text" name="address" class="address" required>
+ </div> 
+
 <div>
     <label for="address-2">address 2</label>
-    <input type="text" name="address" id="address-2">
+    <br />
+    <input type="text" name="address" class="address-2">
 </div>
-    
+
 <div>
        <label for="city">city *</label>
-       <input type="text" name="city"  placeholder="Select your city..."  required >
+       <br />
+       <input type="text" name="city"  class="city" placeholder="Select your city..."  required >
        
 </div>
 
 <div> 
        <label for="postcode">postcode *</label>
-       <input type="text" name="postcode" id="postcode" required>
+        <br />
+ 
+       <input type="text" name="postcode" class="postcode" required>
 </div>
 
 
 </form>
+</section>
     
    
 </body>

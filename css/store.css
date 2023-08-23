@@ -55,8 +55,22 @@ a:hover {
     margin-left: 50rem;
     margin-right: 0px;
 }
+
+
 /* form section */
-.labels {
+
+
+.container {
+    width: 50%;
+    margin-top: 40px;
+    
+}
+.grid-name {
+    display: flex;
+    align-items: row;
+}
+
+/* .labels {
     padding-bottom: 1.6rem;
 }
 
@@ -67,7 +81,44 @@ a:hover {
     height: 50px;
     padding-left: 0.rem;
 }
+
+.labels {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 0
+}
+
+
+
+.name {
+    background-color: green;
+    grid-row: 2/3;
+    
+}
+.last-name {
+    background-color: blue;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.address {
+    background-color: yellow;
+    grid-column: span 2;
+    
+}
+.address-2 {
+    background-color: ;
+    
+}
+.city {
+    background-color: black;
+}
+.postcode {
+    background-color: aquamarine;
+} */
+
 /* form section */
+
+
 
 
 
