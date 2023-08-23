@@ -43,8 +43,12 @@ h2{
     display: inline-block;
     padding: 0 20px;
 }
-.navigation_list a{
+.navigation_item a{
 text-decoration: none;
+color:gray;
+}
+.navigation_item :hover{
+   color:rgb(228, 108, 23);
 }
 
 
@@ -60,18 +64,32 @@ text-decoration: none;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    
-    
 
 }
-button{
-    background-color: chocolate;
-    border:1px solid chocolate;
-    padding:8px 16px;
+.hero_title{
+font-weight: 300;
+font-size: 3rem;
+margin-bottom: 18px;
+
+}
+.hero_info{
+font-size: 1.7rem;
+font-weight:50;
+margin:0;
+}
+
+.hero_burtton{
+    background-color:rgb(229, 90, 20);
+    border:1px solid rgb(229, 90, 20);
+    padding:10px 20px;
     border-radius: 3px ;
     font-size: smaller;
-    margin-top:30px;
+    margin-top:40px;
 }
+  padding: 1rem;
+  background-color: rgb(235, 99, 2);
+  border: none;
+  border-radius: 3px;
 .karma_icon{
     display: flex;
     flex-direction: column;
