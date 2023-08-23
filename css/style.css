@@ -9,13 +9,16 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    padding:40px;
    
+}
+.header{
+    display:flex;
+    justify-content: space-between;
 }
 .logo{
     width:2rem;
-    margin-left:5rem;
-  
-    
+    margin-left:5rem;   
 
 }
 .navigation_list{
@@ -25,6 +28,7 @@ body {
     align-items: center;
     padding: 20px 50px;
     margin-right: 10rem;
+  
 }
 .navigation_list li {
     
@@ -35,19 +39,49 @@ body {
 text-decoration: none;
 }
 
+
 .hero{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
     background-image: url(/img/first-background.jpg);
-    background-color: var(--grey-light);
-    height: 54%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+    
+
+}
+button{
+    background-color: chocolate;
+    border:1px solid chocolate;
+    padding:8px 16px;
+    border-radius: 3px ;
+    font-size: smaller;
+    margin-top:30px;
 }
 .karma_icon{
-    display:flex;
-    width:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
+.icon{
 
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 
-
+}
+height: 20rem;
+margin: 0rem 10rem;
+padding: 0;
+border-bottom: 1px solid rgb(214, 212, 212);
 
 .border_footer{
     border-top: .1rem solid gray;
@@ -55,6 +89,7 @@ text-decoration: none;
 .border_icon{
 border: .1rem solid gray;
 border-radius: 100%;
+
 }
 .footer_icon{
  
@@ -62,6 +97,9 @@ border-radius: 100%;
  display:flex;
  
 
+}
+.input_card{
+    display:flex;
 }
 
 /**
