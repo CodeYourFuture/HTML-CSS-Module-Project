@@ -12,9 +12,17 @@ body {
     padding:40px;
    
 }
+h2{
+    font-size:3rem;
+    font-weight:lighter;
+    text-align: center;
+    margin-top:10rem;
+    
+}
 .header{
     display:flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .logo{
     width:2rem;
@@ -77,27 +85,64 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 
-}
-height: 20rem;
-margin: 0rem 10rem;
-padding: 0;
-border-bottom: 1px solid rgb(214, 212, 212);
-
-.border_footer{
-    border-top: .1rem solid gray;
-}
-.border_icon{
-border: .1rem solid gray;
-border-radius: 100%;
 
 }
+.icon_img{
+  width:10rem;
+  margin:5rem 0;
+ 
+}
+.description{
+    font-size:2rem;
+    
+    
+}
+
+
+
+footer{
+    margin-top:5rem;
+    text-align: center;
+    margin-top: 6rem;
+    border-top: 1px solid rgb(214, 212, 212);
+    
+}
+.footer_content{
+    margin-top: 2rem;
+}
+.content{
+    font-weight:normal;
+    font-size: 1rem;
+}
+
+.footer_part{
+display: flex;
+justify-content: center;
+ 
+}
+
 .footer_icon{
- 
- width:8rem;
- display:flex;
- 
+height: 1.2rem;
+display: flex;
+justify-content: space-evenly;
+padding: 0.5rem;
+border: 1px solid rgb(220, 217, 217);
+border-radius: 50%;
+margin-top: 2rem;
 
 }
+
+#facebook-icon {
+    margin-right:15px;
+    margin-left:15px;
+}
+.karma_mobality{
+    margin-top:10px;
+    font-size: smaller;
+    font-weight:lighter ;
+    color: rgb(196, 193, 193);
+}
+
 .input_card{
     display:flex;
 }
