@@ -11,6 +11,7 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    padding: 50px;
 }
 .logo{
     width:2rem;
@@ -36,21 +37,44 @@ body {
 text-decoration: none;
 }
 .hero{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
     background-image: url(/img/first-background.jpg);
-    background-color: var(--grey-light);
-    height: 54%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
-    text-align: center;
-}
+    }
 button {
     background-color: orangered;
     padding: 8px 18px;
     border-radius: 5px;
     font-size: smaller;
+    margin-top: 30px;
+    border: 0 orangered solid;
+}
+section {
+    display: flex;
+    justify-content: space-around ;
+}
+h2 {
+    text-align: center;
+    margin: 100px 0;
 }
 .karma_icon{
     display:flex;
-    width:5rem;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+}
+.icon{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 .border_footer{
     border-top: .1rem solid gray;
