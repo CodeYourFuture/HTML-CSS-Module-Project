@@ -16,6 +16,10 @@ body {
     width:2rem;
     margin-left:5rem;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+}
 .navigation_list{
     display:flex;
     list-style: none;
@@ -35,12 +39,19 @@ text-decoration: none;
     background-image: url(/img/first-background.jpg);
     background-color: var(--grey-light);
     height: 54%;
+    color: white;
+    text-align: center;
+}
+button {
+    background-color: orangered;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: smaller;
 }
 .karma_icon{
     display:flex;
     width:5rem;
 }
-8:16
 .border_footer{
     border-top: .1rem solid gray;
 }
