@@ -6,6 +6,8 @@
     --color-secondary-text: #868e96;
     --color-link: #F15B2A;
     --color-heading: #495057;
+    --feature: #f7eee2;
+    --margin: 5%;
 }
 
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
@@ -204,3 +206,66 @@ a:active {
     text-align: center;
     padding-bottom: 2.4rem;
 }
+
+.feature-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Gap between grid items */
+    align-items: center; /* Center items vertically */
+    background-color: var(--feature);
+    max-height: 440px;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+     /* Center items horizontally */
+  }
+  
+  .feature-txt {
+    font-size: clamp(16px, 4vw, 49px); /* Responsive font size using clamp() */
+    text-align: center; /* Center text horizontally */
+    padding: 10px;
+    text-overflow: ellipsis;
+    color: var(--color-heading);
+   font-style: italic;
+  }
+  .feature-txt::before{
+    content: open-quote;
+    color: var(--color-link);
+  }
+  .feature-txt::after{
+    content: close-quote;
+    color: var(--color-link);
+  }
+  
+  
+  .feature-btn {
+    margin-top: 15%;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: var(--color-link);
+    border: none;
+    font-size: 1.6vw;
+    font-weight: 100;
+    transition: background-color 0.5s;
+    color: var(--color-primary-background);
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: var(--font-primary);
+  }
+  
+  .feature-btn:hover,
+  .feature-btn:active {
+      background-color: var(--color-secondary-text);
+      color: var(--color-primary-background);
+  }
+  
