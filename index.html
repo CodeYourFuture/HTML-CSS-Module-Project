@@ -15,11 +15,11 @@
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-    <header class="header">
+    <header class="header" role="heading">
         <div class="logo">
             <img src="img/karma-logo.svg" alt="logo-icon" >
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" role="navigation">
             <ul>
                 <li >
                     <a  href="#" id="karma" target="_blank"> Meet Karma </a>
@@ -43,8 +43,8 @@
         </nav>
     </header>
     
-    <main class="main">
-        <section class="section-1">
+    <main class="main" role="main">
+        <section class="section-1" role="region" aria-label="introduce Karma">
             <h1>Introducing karma</h1>
             <p>Bring Wifi with you, everywhere you go. </p>
 
@@ -55,7 +55,7 @@
 
         </section>
 
-        <section class="section-2">
+        <section class="section-2" role="region" aria-label="introduce Karma products">
             <h2>
                 Everyone needs a little Karma.
             </h2>
@@ -84,7 +84,7 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p>Join us on </p>
         <div>
             <a href="#" target="_blank"><img src="img/facebook-icon.svg" alt="facebook-icon link"></a>
