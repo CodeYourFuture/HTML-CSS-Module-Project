@@ -43,8 +43,8 @@ body {
     -webkit-font-smoothing: antialiased;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 80px auto 130px;
+    grid-template-columns: repeat(12,minmax(1fr,auto));
+    grid-template-rows: 10% auto 15%;
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "m m m m m m m m m m m m"
@@ -72,6 +72,7 @@ body {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
+    
     padding: 5px 50px;
     
     
@@ -85,10 +86,8 @@ body {
 .header img{
     width: 50px;
     height: 50px;
-    
-    
-    
 }
+
 .header nav{
     align-items: flex-end;
 }
@@ -117,6 +116,7 @@ body {
     color:var(--link-color);
     
 }
+
 #karma{
     color: var(--karma-color);
 }
@@ -228,6 +228,7 @@ body {
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
     width: 85%;
     height: max-content;
 
@@ -235,8 +236,8 @@ body {
 
 .section-2-div div{
     
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
 
 .section-2-div div img{
