@@ -7,7 +7,15 @@
     --color-link: #F15B2A;
     --color-heading: #495057;
     --feature: #f7eee2;
-    --margin: 5%;
+    --margin: 3vh;
+    --border-radius: 5px;
+    --input-height: 6vh;
+    --address-width: 32.3vw;
+    --name-width: 15.2vw;
+    --city-width: 21vw;
+    --city-height: 7vh;
+    --postcode-width: 10.3vw;
+    --dark-grey: #353a3f;
 }
 
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
@@ -34,7 +42,7 @@ body {
 
 .grid-for-nav {
     display: grid;
-    grid-template-columns: auto auto; /* Let content dictate column width */
+    grid-template-columns: auto auto; 
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     align-items: center;
@@ -52,15 +60,15 @@ body {
 }
 
 /* Anchor Links */
-a {
+.flex-nav a {
     text-decoration: none;
     color: var(--color-secondary-text);
     font-weight: 400;
     transition: color 0.5s;
 }
 
-a:hover,
-a:active {
+.flex-nav a:hover,
+.flex-nav a:active {
     color: var(--color-link);
 }
 
@@ -107,6 +115,8 @@ a:active {
     font-size: 1.6vw;
     font-weight: 100;
     transition: background-color 0.5s;
+    text-decoration: none;
+    color: var(--color-primary-background);
 }
 
 .learn-more-btn:hover,
@@ -121,7 +131,6 @@ a:active {
     font-size: 2.8vw;
 }
 
-/* Grid Area for Icons with Text */
 .icon-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -158,7 +167,6 @@ a:active {
 }
 
 /* Footer Section Styles */
-
 .social-icons {
     display: flex;
     flex-direction: column;
@@ -199,7 +207,6 @@ a:active {
 }
 
 /* Footer copyright text */
-
 .copyright-stamp {
     margin-top: 1%;
     color: var(--color-secondary-text);
@@ -209,63 +216,354 @@ a:active {
 
 .feature-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-gap: 20px; /* Gap between grid items */
-    align-items: center; /* Center items vertically */
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    align-items: center; 
     background-color: var(--feature);
-    max-height: 440px;
+    max-height: 72.2vh;
     margin-top: var(--margin);
-    margin-bottom: var(--margin);
-  }
+    margin-bottom: 10vh;
+}
   
-  .image img {
-    max-width: 100%;
-    height: auto;
-    padding: 0;
-  }
+.image img {
+   max-width: 100%;
+   height: auto;
+   padding: 0;
+}
   
-  .content {
-    display: flex;
-    flex-direction: column;
-     /* Center items horizontally */
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+}
   
-  .feature-txt {
-    font-size: clamp(16px, 4vw, 49px); /* Responsive font size using clamp() */
-    text-align: center; /* Center text horizontally */
-    padding: 10px;
-    text-overflow: ellipsis;
-    color: var(--color-heading);
-   font-style: italic;
-  }
-  .feature-txt::before{
-    content: open-quote;
-    color: var(--color-link);
-  }
-  .feature-txt::after{
-    content: close-quote;
-    color: var(--color-link);
-  }
+.feature-txt {
+  font-size: clamp(16px, 4vw, 49px); 
+  text-align: center; 
+  padding: 10px;
+  text-overflow: ellipsis;
+  color: var(--color-heading);
+  font-style: italic;
+}
+
+.feature-txt::before{
+  content: open-quote;
+  color: var(--color-link);
+}
+
+.feature-txt::after{
+  content: close-quote;
+  color: var(--color-link);
+}
   
+.feature-btn {
+  margin-top: 15%;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--color-link);
+  border: none;
+  font-size: 1.6vw;
+  font-weight: 100;
+  transition: background-color 0.5s;
+  color: var(--color-primary-background);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
   
-  .feature-btn {
-    margin-top: 15%;
-    padding: 16px 32px;
-    border-radius: 8px;
-    background-color: var(--color-link);
-    border: none;
-    font-size: 1.6vw;
-    font-weight: 100;
-    transition: background-color 0.5s;
-    color: var(--color-primary-background);
-    max-width: 100%;
-    margin: 0 auto;
-    font-family: var(--font-primary);
-  }
+.feature-btn:hover,
+.feature-btn:active {
+   background-color: var(--color-secondary-text);
+   color: var(--color-primary-background);
+}
+
+/* styling store page */
+#store {
+  color: var(--color-link); 
+}
+
+#store:hover {
+  color: var(--color-secondary-text); 
+}
+
+.social-icons-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.4%;
+  border-top: 1px solid var(--color-primary-border);
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.store-container {
+   display: grid;
+   margin: 0;
+   height: 165vh; /* Use viewport height for better responsiveness */
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   justify-self: center;
+   align-self: center; 
+   grid-template-areas:
+     "form image";
+}
+
+.image-store {
+  height: inherit;
+  width: 100%;
+  grid-area: image;
+}
+/* Form container */
+.form-container {
+  grid-area: form;
+  max-width: 35vw;
+  margin: 0 auto; 
+  display: grid;
+  gap: 2vh;
+  grid-template-areas:
+    "order order"
+    "names names"
+    "address1 address1"
+    "address2 address2"
+    "city city"
+    "colors colors"
+    "terms terms"
+    "order-btn .....";
+  place-self: center; /* Center horizontally and vertically within grid cell */ 
+}
   
-  .feature-btn:hover,
-  .feature-btn:active {
-      background-color: var(--color-secondary-text);
-      color: var(--color-primary-background);
-  }
+.order{
+  grid-area: order;
+  font-family: var(--font-primary);
+  color: var(--color-link);
+  font-size: clamp(1vh, 1.7vw, 4vh); /* Responsive font size using clamp() */
+  text-overflow: ellipsis;
+  margin-bottom: 3vh;
+}
+
+/* Input fields */
+.names {
+  display: flex;
+  gap: 1vw;
+  grid-area: names;
+  color: var(--color-heading);
+  margin-bottom: var(--margin); 
+}
+
+.input-name input[type="text"] {
+  height: var(--input-height); 
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--name-width);
+}
+
+.txt-lable{ 
+  margin-bottom: 10px;
+}
+
+.address1 {
+  grid-area: address1;
+  color: var(--color-heading);
+}
+
+.input-address1 input[type="text"] {
+  height: var(--input-height); 
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--address-width);
+  margin-top: 10px;
+  margin-bottom: var(--margin);
+}
+
+.address2 {
+  grid-area: address2;
+  color: var(--color-heading);
+}
+
+.input-address2 input[type="text"] {
+  height: var(--input-height); 
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--address-width);
+  margin-top: 10px;
+  margin-bottom: var(--margin);
+}
+
+.city {
+  display: flex;
+  gap: 1vw;
+  grid-area: city;
+  color: var(--color-heading);
+}
+
+#city {
+  padding-left: 0.5vw; 
+  font-style: italic;
+}
+
+#city option[value="Select a city..."] {
+  display: none;
+}
+
+/* Traingle dropdown select styling */
+.city-dropdown select {
+  height: var(--city-height); 
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--city-width);
+  margin-bottom: var(--margin);
+  background-color: var(--color-primary-background); 
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* For Safari */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path d="M1 0l5 5 5-5" fill="%23495057" /></svg>');
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-size: 17px; 
+}
+
+.city-dropdown select option:checked {
+  background-color: var(--color-primary-background); /* Selected option color */
+  color: var(--color-link); /* Text color */
+}
+/* Remove default arrow */
+.city-dropdown select::-ms-expand {
+  display: none;
+}
+
+.city-dropdown select:hover,
+.city-dropdown select:focus {
+  border-color: var(--color-link); 
+  outline: none; /* Remove default focus outline */
+}
+
+.postcode{
+  grid-area: city;
+  color: var(--color-heading);
+}
+
+.postcode input[type="text"] {
+  height: var(--input-height); 
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--postcode-width);
+}
+
+.colors {
+  grid-area: colors;
+  margin-top: 1vh;
+}
+
+.colors p {
+  font-family: var(--font-primary);
+  color: var(--color-heading);
+}
+
+.colors .flex {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.colors .radio1,
+.colors .radio2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.colors input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-heading);
+  border-radius: 50%;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.colors .radio-label {
+  font-family: var(--font-primary);
+  color: var(--color-heading);
+  cursor: pointer;
+  font-size: clamp(1vh, 1.7vw, 3vh);
+  font-weight: lighter;
+}
+
+.colors input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.colors input[type="radio"]:checked::before {
+  background-color: var(--color-link); 
+}
+
+.terms {
+  grid-area: terms;
+  display: flex; 
+  margin-top: 10vh;
+}
+/* Hide the default checkbox */
+.terms input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom checkbox */
+.terms input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-heading); /* Border for the checkbox */
+  border-radius: 3px;
+  margin-right: 8px; 
+}
+
+/* Style for checked checkbox */
+.terms input[type="checkbox"]:checked + label::before {
+  content: "✔"; /* Display a custom checkmark */
+  font-size: 20px;
+  line-height: 3vh;
+  text-align: center;
+  color: var(--color-link); 
+}
+
+.terms-link{
+  color: var(--color-link);
+}
+
+.order-btn{
+  grid-area: order-btn;
+  margin-top: 5vh;
+}
+
+.order-btn a {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--color-link);
+  border: none;
+  font-size: 1.6vw;
+  font-weight: 100;
+  transition: background-color 0.5s;
+  color: var(--color-primary-background);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+
+.order-btn :hover,
+.order-btn :active {
+  background-color: var(--color-secondary-text);
+  color: var(--color-primary-background);
+}
+ 
   
