@@ -1,0 +1,219 @@
+/* General Styles */
+
+/* STORE PAGE STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.horizontal-line {
+  width: 78%;
+  margin: 0 auto;
+  background-color: #b4bcc36a;
+  height: 0.1vw;
+}
+
+/* FORM SECTION AND PICTURE */
+
+.order-form {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+}
+
+.store-image {
+  width: 100%;
+}
+
+.order-karma {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #f15b2a;
+  grid-column: span 2;
+  padding-bottom: 2rem;
+}
+
+form {
+  max-width: 68%;
+  padding-top: 2.6rem;
+  margin: 0 auto;
+}
+
+.margin {
+  margin-top: 1%;
+  height: 32px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 42%);
+  justify-content: center;
+  row-gap: 8%;
+  column-gap: 4%;
+  font-weight: 500;
+  color: #495057;
+  padding-top: 6rem;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.labels {
+  padding-bottom: 0.6rem;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding-left: 0.4rem;
+}
+
+.address-fields {
+  grid-column: span 2;
+}
+
+.city-dropdown {
+  padding-right: 15.2rem;
+}
+
+.postcode-field {
+  margin-left: 2.6rem;
+}
+
+   /* RADIO CHECKBOX AND BUTTON */
+
+.select-color {
+  font-weight: 500;
+  color: #495057;
+  grid-row: 6 / 7;
+  margin-bottom: -10%;
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  grid-row: 7 / 8;
+  gap: 8%;
+}
+
+.radio1 {
+  width: 6.6rem;
+  max-width: 100%;
+}
+
+.radio2 {
+  width: 6.6rem;
+  max-width: 100%;
+}
+
+.radio-flex {
+  display: flex;
+  align-items: center;
+  margin-right: 6%;
+  gap: 10px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.radio-flex2 {
+  display: flex;
+  align-items: center;
+  margin-right: 6%;
+  gap: 10px;
+  font-weight: 500;
+  color: #495057;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  max-width: 100%;
+  border: 1.6px solid black;
+  border-radius: 100%;
+  display: flex;
+  padding: 2%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+input[type="radio"]:after {
+  font: var(--fa-font-solid);
+  content: "\f111";
+  font-size: 12px;
+  color: #f15b2a;
+  display: none;
+}
+
+input[type="radio"]:checked:after {
+  display: block;
+}
+
+.checkbox {
+  display: flex;
+  grid-row: 8 / 9;
+  grid-column: span 2;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 5.2%;
+  height: 62%;
+  background-color: white;
+  border: 1.6px solid black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:after {
+  font: var(--fa-font-solid);
+  content: "\f00c";
+  font-size: 20px;
+  font-weight: bolder;
+  color: #f15b2a;
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+.terms-and-cons {
+  width: 80%;
+  padding-left: 2%;
+  font-size: 14px;
+}
+
+.terms-and-cons-link {
+  font-size: 14px;
+  color: #f15b2a;
+  text-decoration: underline;
+}
+
+.terms-and-cons-link:hover,
+.terms-and-cons-link:active {
+  text-decoration: none;
+}
+
+.place-order-btn {
+  border-radius: 4px;
+  background-color: #f15b2a;
+  padding: 20px 50px;
+  border: none;
+  color: white;
+  grid-column: 1 / 2;
+}
