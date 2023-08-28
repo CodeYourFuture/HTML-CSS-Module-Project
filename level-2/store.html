@@ -31,50 +31,76 @@
     </nav>
     </div>
 
+
     <!-- main section imag -->
-    <!-- <img class="stor-image" src="/HTML-CSS-Module-Project/level-2/store-image_by-andrew-neel-unsplash.jpg" alt=""> -->
-
-    <!-- form section -->
-   <section class="container"> 
-<form>
-     <label for="name" class="grid-name" >name*</label>
-    <br />
-     <input type="text" name="name" class="name" required>
-
-    <label for="last-name" class="grid-name">Last name *</label>
-    <br />
-    <input type="text" name="last-name" class="last-name" required>
+    
 
 
-<div>
-    <label for="address">address *</label>
-    <br />
-    <input type="text" name="address" class="address" required>
- </div> 
+    <section class="form-picture">
+    <div>
+    <form class="form-grid">
+    <div class="order-karma-wifi">Order your Karma wifi device today!</div>
+    <div class="form-flex">
+    <label for="fname" class="labels">First Name *</label>
+    <input type="text" name="fname" class="input-fields">
+    </div>
+    <div class="form-flex">
+    <label for="lname" class="labels">Last Name *</label>
+    <input type="text" name="sname" class="input-fields">
+    </div>
+    <div class="address-fields form-flex">
+    <label for="address" class="labels">Address *</label>
+    <input type="text" name="address" class="input-fields">
+    </div>
+    <div class="address-fields form-flex">
+    <label for="address-2" class="labels">Address 2</label>
+    <input type="text" name="address-2" class="input-fields">
+    </div>
+    <div class="form-flex">
+    <label for="city" class="labels">City *</label>
+<!--     <input type="text" name="city" class="city" placeholder="Select your city..." required> -->
+<select id="city" name="city" class="input-fields city-dropdown">
+            <option placeholder="">Select your city...</option>
+            <option value="Bath">Bath</option>
+            <option value="Birmingham">Birmingham</option>
+           
+    </select>
+    </div>
+    <div class="postcode-field form-flex">
+    <label for="postcode" class="labels">Postcode</label>
+    <input type="text" name="postcode" class="input-fields">
+    </div>
 
-<div>
-    <label for="address-2">address 2</label>
-    <br />
-    <input type="text" name="address" class="address-2">
-</div>
+                    
+    <!-- Color Theme Section -->
 
-<div>
-       <label for="city">city *</label>
-       <br />
-       <input type="text" name="city"  class="city" placeholder="Select your city..."  required >
-       
-</div>
+    <!-- <p class="select-color">Select a color</p>
+    <div class="flex">
+    <span class="radio-flex">
+    <input type="radio" class="radio" name="radio">
+    <label for="radio" class="radio1">Karma Orange</label>
+    </span>
+    <span class="radio-flex2">
+    <input type="radio" class="radio" name="radio">
+    <label for="radio" class="radio2">Space Grey</label>
+    </span> -->
+    <!-- Checkbox & Place Order Btn Section -->
+    <!-- </div>
+    <div class="checkbox-tcs">
+    <input type="checkbox" class="checkbox" name="checkbox">
+    <div class="terms-and-cons">
+    By placing your order you agree to Karma's <a href="#" class="terms-and-cons-link">Terms and Conditions</a>. *
+    </div>
+    </div>
+    <button class="place-order-btn">Place my order</button>
+    </div>
+    </form> -->
 
-<div> 
-       <label for="postcode">postcode *</label>
-        <br />
- 
-       <input type="text" name="postcode" class="postcode" required>
-</div>
+    </div>
+    <img src="store-image_by-andrew-neel-unsplash.jpg" alt="Picture of a female at her laptop while drinking coffee" class="store-image" />
+    </section>
 
 
-</form>
-</section>
     
    
 </body>

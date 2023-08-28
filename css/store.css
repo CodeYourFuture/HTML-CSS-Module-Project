@@ -49,77 +49,216 @@ a:hover {
     color: #F15B2A;
 }
 
-/* main section image */
-.stor-image {
-    width: 40%;
-    margin-left: 50rem;
-    margin-right: 0px;
+/* form section & image */
+
+
+
+
+.form-picture {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+   
 }
 
-
-/* form section */
-
-
-.container {
-    width: 50%;
-    margin-top: 40px;
-    
+.store-image {
+    width: 100%;
+    padding-right: auto;
+    padding-left: 14rem;
 }
-.grid-name {
+
+.order-karma-wifi {
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #F15B2A;
+    grid-column: span 2;
+    padding-bottom: 2rem;
+}
+
+form {
+    max-width: 68%;
+    padding-top: 2.6rem;
+    margin: 0 auto;
+}
+
+.margin {
+    margin-top: 1%;
+    height: 32px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 42%);
+    // grid-template-rows: auto auto auto auto auto auto auto auto 12%;
+    justify-content: center;
+    row-gap: 8%;
+    column-gap: 4%;
+    font-weight: 500;
+    color: #495057;
+    padding-top: 6rem;
+}
+
+.form-flex {
     display: flex;
-    align-items: row;
+    flex-direction: column;
 }
 
-/* .labels {
-    padding-bottom: 1.6rem;
+.labels {
+    padding-bottom: 0.6rem;
 }
 
 .input-fields {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    padding-left: 0.rem;
+    height: 40px;
+    padding-left: 0.4rem;
 }
 
-.labels {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 0
-}
-
-
-
-.name {
-    background-color: green;
-    grid-row: 2/3;
-    
-}
-.last-name {
-    background-color: blue;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.address {
-    background-color: yellow;
+.address-fields {
     grid-column: span 2;
-    
 }
-.address-2 {
-    background-color: ;
-    
+
+.city-dropdown {
+    padding-right: 15.2rem;
 }
-.city {
-    background-color: black;
+
+.postcode-field {
+    margin-left: 2.6rem;
 }
-.postcode {
-    background-color: aquamarine;
-} */
 
-/* form section */
+/* Radio Checkbox & Order Button Styles */
 
+.select-color {
+    font-weight: 500;
+    color: #495057;
+    grid-row: 6 / 7;
+    margin-bottom: -10%;
+    margin-top: 1rem;
+}
 
+.flex {
+    display: flex;
+    grid-row: 7 / 8;
+    gap: 8%;
+}
 
+.radio1 {
+    width: 6.6rem;
+    max-width: 100%
+}
 
+.radio2 {
+    width: 6.6rem;
+    max-width: 100%
+}
 
+.radio-flex {
+    display: flex;
+    align-items: center;
+    margin-right: 6%;
+    gap: 10px;
+    font-weight: 500;
+    color: #495057;
+}
 
+.radio-flex2 {
+    display: flex;
+    align-items: center;
+    margin-right: 6%;
+    gap: 10px;
+    font-weight: 500;
+    color: #495057;
+}
+
+input[type='radio'] {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    max-width: 100%;
+    border: 1.6px solid black;
+    border-radius: 100%;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+input[type='radio']:after {
+    font: var(--fa-font-solid);
+    content: "\f111";
+    font-size: 12px;
+    color: #F15B2A;
+    display: none;
+}
+
+input[type='radio']:checked:after {
+    display: block;
+}
+
+.checkbox-tcs {
+    display: flex;
+    grid-row: 8 / 9;
+    grid-column: span 2;
+}
+
+input[type='checkbox'] {
+    appearance: none;
+    width: 5.2%;
+    height: 62%;
+    background-color: white;
+    border: 1.6px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type='checkbox']:after {
+    font: var(--fa-font-solid);
+    content: "\f00c";
+    font-size: 20px;
+    font-weight: bolder;
+    color: #F15B2A;
+    display: none;
+}
+
+input[type='checkbox']:checked:after {
+    display: block;
+}
+
+.terms-and-cons {
+    width: 80%;
+    padding-left: 2%;
+    font-size: 14px;
+}
+
+/* .terms-and-cons-link {
+    font-size: 14px;
+    color: #F15B2A;
+    text-decoration: underline;
+}
+
+.terms-and-cons-link:hover,
+.terms-and-cons-link:active {
+    text-decoration: none;
+}
+
+.place-order-btn {
+    border-radius: 4px;
+    background-color: #F15B2A;
+    border: none;
+    color: white;
+    grid-column: 1 / 2;
+    padding: 0.625rem 1.25rem;
+    transition: background-color 1.2s;
+}
+
+.place-order-btn:hover,
+.place-order-btn:hover {
+    background-color: #f56e45;
+}
+
+ */
