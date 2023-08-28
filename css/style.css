@@ -1,11 +1,13 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
 
+:root {
+}
 /**
  * Add your custom styles below
  * 
@@ -16,4 +18,55 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Grid box to divide the whole page (into header, main, footer) */
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80px 750px 250px 150px;
+  grid-template-areas:
+    "h h"
+    "m m"
+    "c c"
+    "f f";
+}
 
+.header {
+  grid-area: h;
+  border: 2px solid black;
+}
+.logo-img {
+  margin: 1rem 4rem;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 10rem 0;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  margin: 2rem 4rem;
+}
+.meet-karma,
+.other-nav-items {
+  margin: 0 1rem;
+}
+
+.main {
+  grid-area: m;
+  border: 2px solid black;
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+}
+.content {
+  grid-area: c;
+  border: 2px solid black;
+}
+.footer {
+  grid-area: f;
+  border: 2px solid black;
+}
