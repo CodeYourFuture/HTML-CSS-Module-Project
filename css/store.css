@@ -3,10 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-image: url("img/first-background.jpg");
-
-
-
+    background-image: url("img/first-background.jp");
 }
 
 /**
@@ -20,25 +17,49 @@ body {
  */
 
 /* nav section */
+.header-background {
+    display: flex;
+    align-items:row;
+    justify-content: center;
+    /* width: 113rem; */
+    width: auto;
+    background-color: #495057;
+}
+.nav-logo {
+    margin-left: 10rem;
+    margin-right: auto;
+}
 
 .nav-bar-grid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     align-items: center;
-    width: 86%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 0.75rem;
     padding-bottom: 0.30rem;
+    
 }
 
 .nav-bar {
+
     display: flex;
-    justify-content: end;
-    gap: 6%;
-    width: 98%;
-    font-size: 0.9rem;
-    padding-top: 3px;
-}
+        justify-content: normal;
+        gap: 3rem;
+        width: 98%;
+        font-size: 0.9rem;
+        padding-top: 3px;
+    }
+    /* display: flex;
+        justify-content: end;
+        gap: 12%;
+        width: 98%;
+        font-size: 0.9rem;
+        padding-top: 3px; */
+        /* margin-left: -17rem;
+        margin-right: auto; */
+
+   
 
 a {
     text-decoration: none;
@@ -63,8 +84,6 @@ a:hover {
 
 .store-image {
     width: 100%;
-    padding-right: auto;
-    padding-left: 14rem;
 }
 
 .order-karma-wifi {
@@ -89,7 +108,7 @@ form {
 .form-grid {
     display: grid;
     grid-template-columns: repeat(2, 42%);
-    // grid-template-rows: auto auto auto auto auto auto auto auto 12%;
+    grid-template-rows: auto auto auto auto auto auto auto auto 12%;
     justify-content: center;
     row-gap: 8%;
     column-gap: 4%;
@@ -118,18 +137,19 @@ form {
 .address-fields {
     grid-column: span 2;
 }
-
-.city-dropdown {
-    padding-right: 15.2rem;
+.city-input {
+    padding: 0.8rem;
 }
+
 
 .postcode-field {
     margin-left: 2.6rem;
 }
 
+
 /* Radio Checkbox & Order Button Styles */
 
-.select-color {
+.select-your-color {
     font-weight: 500;
     color: #495057;
     grid-row: 6 / 7;
@@ -142,9 +162,22 @@ form {
     grid-row: 7 / 8;
     gap: 8%;
 }
+.radio {
+    accent-color: rgb(255, 187, 0);
+    width: 1.2rem;
+        height: 1.2rem;
+        max-width: 100%;
+        border: 0.1px solid rgb(245, 166, 8);
+        border-radius: 100%;
+        display: flex;
+        /* padding: %; */
+        /* align-items: center;
+        justify-content: center;
+        cursor: pointer; */
+}
 
 .radio1 {
-    width: 6.6rem;
+    width: 8.6rem;
     max-width: 100%
 }
 
@@ -170,32 +203,36 @@ form {
     font-weight: 500;
     color: #495057;
 }
+/* .radio {
+    padding: 5rem;
+    accent-color: orange;
 
-input[type='radio'] {
+} */
+
+/* input[type='radio'] {
     appearance: none;
     width: 1.2rem;
     height: 1.2rem;
     max-width: 100%;
-    border: 1.6px solid black;
+    border: 1.6px solid rgb(23, 22, 22);
     border-radius: 100%;
     display: flex;
     padding: 2%;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
+} */
 
-input[type='radio']:after {
+/* input[type='radio']:after {
     font: var(--fa-font-solid);
     content: "\f111";
     font-size: 12px;
-    color: #F15B2A;
     display: none;
-}
+} */
 
-input[type='radio']:checked:after {
+/* input[type='radio']:checked:after {
     display: block;
-}
+}  */
 
 .checkbox-tcs {
     display: flex;
@@ -235,7 +272,7 @@ input[type='checkbox']:checked:after {
     font-size: 14px;
 }
 
-/* .terms-and-cons-link {
+.terms-and-cons-link {
     font-size: 14px;
     color: #F15B2A;
     text-decoration: underline;
@@ -260,5 +297,3 @@ input[type='checkbox']:checked:after {
 .place-order-btn:hover {
     background-color: #f56e45;
 }
-
- */

@@ -15,9 +15,9 @@
     <!-- Add your HTML markup here -->
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
-    
+  <header class="header-background">
 <div class="nav-bar-grid">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 216" width="48px" height="48px">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 216" width="48px" height="48px" class="nav-logo">
 	<path fill="#F15B2A"
 		d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z" />
 	</svg> 
@@ -30,6 +30,7 @@
        <a href="#">Login</a>
     </nav>
     </div>
+  </header>
 
 
     <!-- main section imag -->
@@ -42,39 +43,40 @@
     <div class="order-karma-wifi">Order your Karma wifi device today!</div>
     <div class="form-flex">
     <label for="fname" class="labels">First Name *</label>
-    <input type="text" name="fname" class="input-fields">
+    <input type="text" name="fname" class="input-fields" required>
     </div>
     <div class="form-flex">
     <label for="lname" class="labels">Last Name *</label>
-    <input type="text" name="sname" class="input-fields">
+    <input type="text" name="sname" class="input-fields" required>
     </div>
     <div class="address-fields form-flex">
     <label for="address" class="labels">Address *</label>
-    <input type="text" name="address" class="input-fields">
+    <input type="text" name="address" class="input-fields" required>
     </div>
     <div class="address-fields form-flex">
     <label for="address-2" class="labels">Address 2</label>
-    <input type="text" name="address-2" class="input-fields">
+    <input type="text" name="address-2" class="input-fields" required>
     </div>
     <div class="form-flex">
     <label for="city" class="labels">City *</label>
+    <input type="text" name="city" class="city-input" value="select your city.." required>
 <!--     <input type="text" name="city" class="city" placeholder="Select your city..." required> -->
-<select id="city" name="city" class="input-fields city-dropdown">
+<!-- <select id="city" name="city" class="input-fields city-dropdown">
             <option placeholder="">Select your city...</option>
             <option value="Bath">Bath</option>
             <option value="Birmingham">Birmingham</option>
            
-    </select>
+    </select> -->
     </div>
     <div class="postcode-field form-flex">
     <label for="postcode" class="labels">Postcode</label>
-    <input type="text" name="postcode" class="input-fields">
+    <input type="text" name="postcode" class="input-fields" required>
     </div>
 
                     
-    <!-- Color Theme Section -->
+    <!-- select your color section -->
 
-    <!-- <p class="select-color">Select a color</p>
+    <p class="select-your-color">Select a color</p>
     <div class="flex">
     <span class="radio-flex">
     <input type="radio" class="radio" name="radio">
@@ -83,9 +85,9 @@
     <span class="radio-flex2">
     <input type="radio" class="radio" name="radio">
     <label for="radio" class="radio2">Space Grey</label>
-    </span> -->
+    </span>
     <!-- Checkbox & Place Order Btn Section -->
-    <!-- </div>
+    </div>
     <div class="checkbox-tcs">
     <input type="checkbox" class="checkbox" name="checkbox">
     <div class="terms-and-cons">
@@ -94,7 +96,7 @@
     </div>
     <button class="place-order-btn">Place my order</button>
     </div>
-    </form> -->
+    </form>
 
     </div>
     <img src="store-image_by-andrew-neel-unsplash.jpg" alt="Picture of a female at her laptop while drinking coffee" class="store-image" />
