@@ -84,7 +84,6 @@ a:active {
   flex-direction: row;
   background-image: url("../img/first-background.jpg");
   background-size: cover;
-  background-position: center;
   height: 110vh;
   width: 100%;
   justify-content: center;
@@ -93,28 +92,23 @@ a:active {
   color: white;
 }
 
-/* .hero-karma {
-  text-align: center;
-  color: white;
-} */
 .hero-karma span {
-  font-size: 2.3vw;
+  font-size: 5.4vw;
   margin-bottom: 20px;
-  /* font-weight: 100; */
+  font-weight: 20;
 }
+
 .hero-karma p {
-  font-size: 1em;
-  /* margin-bottom: 3rem; */
-  font-weight: 10;
-  padding-top: 6%;
+  font-size: 3vw;
+  font-weight: lighter;
+  padding-top: 4%;
 }
 .hero-btn {
-  padding: 0.625rem 1.25rem;
+  padding: 0.9rem 1.8rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.1em;
-  margin-top: 10vh;
+  margin-top: 13vh;
   background-color: var(--font-color);
 }
 
@@ -125,17 +119,17 @@ a:active {
 
 /* Main styling */
 
-main{
+main {
   color: rgb(44, 43, 43);
 }
 
-.icon-intro{
+.icon-intro {
   text-align: center;
   font-weight: 100;
   padding-top: 100px;
   font-size: 3rem;
 }
-.iconContainer{
+.iconContainer {
   display: flex;
   justify-content: space-evenly;
   justify-items: center;
@@ -143,56 +137,61 @@ main{
   margin: 0 8rem;
   padding: 0;
 }
-.icon-art{
+.icon-art {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.icon-image{
+.icon-image {
   height: 148px;
 }
-.icon-word{
+.icon-word {
   text-align: center;
   font-size: 1.5rem;
   word-spacing: 0.13em;
   font-weight: light;
 }
+
 /* Footer styling */
-footer{
-  margin-top: 30px;
+
+footer {
+  margin:40px 8rem 0 8rem ;
   border-top: 0.1rem solid #eee;
   height: 75rem;
   word-spacing: 0.1em;
   color: rgb(44, 43, 43);
 }
-.media-icon{
+.media-icon {
   display: grid;
   height: 160px;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-.connect{
+.connect {
   text-align: center;
   font-size: 1rem;
   font-weight: light;
   margin-bottom: 1rem;
 }
-.footerLogo{
+
+.footerLogo {
   display: flex;
   justify-content: space-evenly;
   height: 40px;
 }
-.connect-logo{
+
+.connect-logo {
   display: flex;
-  height: 32px;
   border: 2px solid #eee;
-  border-radius: 50%;
+  border-radius: 20px;
+  padding: 10px;
 }
-.copyright{
+
+.copyright {
   text-align: center;
   font-size: 1rem;
   font-weight: lighter;
