@@ -297,3 +297,100 @@ input[type='checkbox']:checked:after {
 .place-order-btn:hover {
     background-color: #f56e45;
 }
+
+/* social media and logo section */
+
+.line {
+    width: 84%;
+    margin: 0 auto;
+    background-color: #b4bcc36a;
+    height: 0.1vw;
+    margin-top: 6rem;
+
+}
+
+.join-us {
+    text-align: center;
+}
+
+.media-logo {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.logo-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1vw solid #d0d7dd6a;
+    padding: 0.6rem 0.7rem;
+    border-radius: 112%;
+    transition: border 1.2s
+}
+
+.kar-Mobility {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    color: #868e96;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #F15B2A;
+    margin-top: 10%;
+}
+
+.grid-for-extended {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #fcefeb;
+    justify-items: center;
+}
+
+.text--ext:after,
+.text--ext:before {
+    color: #f15b2a;
+}
+
+.text--ext:before {
+    content: open-quote;
+    font-size: 130%;
+}
+
+.text--ext:after {
+    content: close-quote;
+    font-size: 130%;
+}
+
+.text--ext {
+    font-size: 2.4em;
+    text-align: center;
+    color: #495057;
+}
+
+.flex-text-btn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 10%;
+}
+
+.get-karma-today {
+    margin: 1.6rem auto;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 100;
+    transition: background-color 1.2s;
+}
+
+.get-karma-today:hover,
+.get-karma-today:active {
+    background-color: #f56e45;
+}
