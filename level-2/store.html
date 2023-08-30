@@ -12,9 +12,6 @@
 </head>
 <body>
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
   <header class="header-background">
 <div class="nav-bar-grid">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 216" width="48px" height="48px" class="nav-logo">
@@ -33,7 +30,7 @@
   </header>
 
 
-    <!-- main section imag -->
+    <!-- main section imag and form -->
     
 
 
@@ -47,7 +44,7 @@
     </div>
     <div class="form-flex">
     <label for="lname" class="labels">Last Name *</label>
-    <input type="text" name="sname" class="input-fields" required>
+    <input type="text" name="s-name" class="input-fields" required>
     </div>
     <div class="address-fields form-flex">
     <label for="address" class="labels">Address *</label>
@@ -60,13 +57,6 @@
     <div class="form-flex">
     <label for="city" class="labels">City *</label>
     <input type="text" name="city" class="city-input" value="select your city.." required>
-<!--     <input type="text" name="city" class="city" placeholder="Select your city..." required> -->
-<!-- <select id="city" name="city" class="input-fields city-dropdown">
-            <option placeholder="">Select your city...</option>
-            <option value="Bath">Bath</option>
-            <option value="Birmingham">Birmingham</option>
-           
-    </select> -->
     </div>
     <div class="postcode-field form-flex">
     <label for="postcode" class="labels">Postcode</label>
@@ -76,7 +66,7 @@
                     
     <!-- select your color section -->
 
-    <p class="select-your-color">Select a color</p>
+    <p class="select-a-color">Select a color</p>
     <div class="flex">
     <span class="radio-flex">
     <input type="radio" class="radio" name="radio">
@@ -86,17 +76,22 @@
     <input type="radio" class="radio" name="radio">
     <label for="radio" class="radio2">Space Grey</label>
     </span>
-    <!-- Checkbox & Place Order Btn Section -->
     </div>
-    <div class="checkbox-tcs">
+
+     <!-- Checkbox & Place Order Btn Section -->
+     
+    <div class="checkbox-text">
     <input type="checkbox" class="checkbox" name="checkbox">
     <div class="terms-and-cons">
     By placing your order you agree to Karma's <a href="#" class="terms-and-cons-link">Terms and Conditions</a>. *
     </div>
     </div>
+   
     <button class="place-order-btn">Place my order</button>
     </div>
     </form>
+
+    <!-- store image section -->
 
     </div>
     <img src="store-image_by-andrew-neel-unsplash.jpg" alt="Picture of a female at her laptop while drinking coffee" class="store-image" />
