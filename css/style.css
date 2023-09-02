@@ -1,10 +1,17 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+   
+    
+     
 }
+/* * {
+  margin: 0;
+  padding: 0;
+} */
 
 /**
  * Add your custom styles below
@@ -15,5 +22,616 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+ 
+.ddesktop-container {
+  display:none;
+}
+ 
+.mmobile-container{
+  display: grid;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  
+}
+.mob-header-logo{
+  height: 2rem;
+  
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:beige;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color:royalblue;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+.mobil-hambuger:hover{
+color: royalblue;
+}
+.mobile-header-logoo{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid lightgrey;
+  
+  
+}
+.mobile-karma{
+  background-image: url("/img/first-background.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size:cover;
+  /* height: 65vh; */
+  /* width: 620px; */
+}
+.mob-learn-more{
+    border: none;
+    background-color: #c05326;
+    border-radius: 0.5rem;
+    margin-left: 15rem;
+    height: 3rem;
+    width: 8rem;
+    margin-bottom: 2rem;
+    
+}
+.mob-learn-more:hover{
+background-color: blue;
+}
+.karma-need{
+  text-align: center;
+  margin-top: 2rem;
+}
+.intro{
+  text-align: center;
+  padding-top: 6rem;
+  font-size: 32px;
+  
+}
+.wifi{
+  text-align: center;
+  font-size: 24px;
+}
+
+.mo-icon{
+  height: 5rem;
+  margin-left: 16rem;
+  
+}
+.internet{
+  text-align: center;
+}
+.mob-img-feature{
+  /* height: 43vh; */
+  /* width: 620px; */
+  margin-top: 2rem;
+}
+.mobile-get-karma-today-btn{
+  margin-left: 13rem;
+  border-radius: 0.5rem;
+  background-color: #c05326;
+  height: 3rem;
+  margin-bottom: 3rem;
+  color: white;
+  width: 12rem;
+   
+} 
+.mobile-get-karma-today-btn a{
+text-decoration: none;
+}
+.mobile-get-karma-today-btn :hover{
+  color: white;
+  
+}
+.mob-get-karma-quote{
+  text-align: center;
+  font-size: 24px;
+
+}
+.mob-get-karma-quote::before {
+  content: "“";
+  font-family: "Roboto";
+  color: #E0633A;
+  padding: 0.25rem;
+}
+
+.mob-get-karma-quote::after {
+  content: "”";
+  font-family: "Roboto";
+  color: #E0633A;
+  padding: 0.25rem;
+}
+
+.quote{
+  background-color: lightgrey;
+  padding-top:2rem ;
+  margin-top: -0.3rem;
+  /* width: 620px; */
+  
+}
+.mob-footer-content{
+  border-top: 2px solid lightgrey;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mob-join{
+  margin-left: 16rem;
+  
+  
+}
+.mob-social-media-icon{
+  display: flex;
+    justify-content: center;
+    border: radius 3rem;
+    height: 2rem;
+    gap: 2rem;
+
+}
+.mob-footer-karma{
+  text-align: center;
+}
+/* Karma-store-mobile-version */
+
+.store-mob-order{
+  text-align: center;
+  color: #E0633A;
+}
+.store-mob-firstname{
+  margin-left: 2rem;
+  
+}
+.store-text{
+  width: 27rem;
+  height: 2rem;
+}
+.store-mob-post{
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.store-mob-typ{
+  height:3rem ;
+}
+.store-mob-select-colour{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.mob-joined{
+  margin-left: 11rem;
+}
+.mob-store-checkbox{
+  display: flex;
+  margin-left: 2rem;
+  gap:0.5rem;
+
+}
+.mob-store-button{
+  margin-left: 10rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  width: 12rem;
+  height:3rem;
+  background-color: #E0633A;
+  color: white;
+  border-radius: 0.5rem;
+}
+.mob-store-button a{
+  text-decoration:none;
+  
+}
+.mob-store-button:hover{
+  /* color: white; */
+  background-color: royalblue;
+}
+.store-mobil-text{
+    text-decoration: underline;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+.store-mobil-text:hover{
+  color: blue;
+
+}
+.mob-checkbox{
+  width: 1.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.mobile-store-image{
+  width: 31rem;
+}
+      /* responsive */
+         /* Desktop-version  */
+
+ @media screen and (min-width:900px) {
+
+.mmobile-container {
+  display: none;
+}
+
+.ddesktop-container {
+  display: grid;
+  
+}
+
+.hamburger {
+  display: none;
+}
+
+.karma {
+  background-image: url("/img/first-background.jpg");
+  background-size:cover;
+  color: white;
+  margin-bottom: 3rem;
+  /* height: 50vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 5px solid red; */
+  
+}
+
+.karma h1 {
+  margin-bottom: 1rem;
+  font-size: 70px;
+
+}
 
 
+.karma p {
+  font-size: 32px;
+  margin-bottom: 2rem;
+
+}
+
+.header-logo {
+  height: 3rem;
+  margin-left: 4rem;
+
+}
+
+.learn-more {
+  border: none;
+  background-color: #c05326;
+  padding: 1rem 2rem;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+}
+.learn-more:hover{
+  background-color: blue;
+}
+.navigaton-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  
+}
+
+
+.navigation-item {
+  margin-right: 4rem;
+}
+
+.navigation-item:hover {
+  color: orange;
+}
+
+.navigation-item-meet-karma-item {
+  color:darkgreen;
+  margin-right: 16rem;
+
+}
+.navigation-item-meet-karma-item:hover{
+  color: orange;
+}
+
+.karma2 {
+  text-align: center;
+}
+
+.icon {
+  height: 3rem;
+
+}
+
+.icon-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.homepage-parent {
+  /* border: 5px solid red; */
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  /* width: 50vw; */
+  margin-top: 6rem;
+  justify-content: center;
+  
+}
+
+.img-feature {
+  margin-bottom: 3rem;
+  height: 25rem;
+  width: 50rem;
+  /* margin-right: 2rem; */
+  /* padding-left: 5rem; */
+}
+
+.connection {
+  height: 25rem;
+  width: 40rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  background-color: lightgrey;
+  /* margin-right: 3rem; */
+  padding-left: 5rem;
+
+}
+
+.get-karma-today-btn {
+  border: none;
+  background-color: #c05326;
+  padding: 1rem 1rem;
+  border-radius: 5%;
+  height: 3rem;
+  margin-top: 2rem;
+  
+}
+ .navigation-link, .get-karma-today-btn a{
+  text-decoration: none;
+}
+.get-karma-today-btn :hover{
+  color: white;
+}
+
+.social-media-icon {
+  display: flex;
+  justify-content: center;
+  border: radius 3rem;
+  height: 2rem;
+  background-size: cover;
+  margin-bottom: 5rem;
+  margin: 0.3rem;
+  gap: 2rem;
+
+}
+.desk-join{
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+.footer-content {
+  border-top: 1px solid grey;
+  margin: 3rem 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer p {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+
+
+}
+
+.footer-karma p {
+  color: grey;
+  padding-top: 1rem;
+}
+
+.get-karma-quote {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 32px;
+  margin-top: 7rem;
+
+}
+
+.get-karma-quote::before {
+  content: "“";
+  font-family: "Roboto";
+  color: #E0633A;
+  padding: 0.25rem;
+}
+
+.get-karma-quote::after {
+  content: "”";
+  font-family: "Roboto";
+  color: #E0633A;
+  padding: 0.25rem;
+}
+/* Karma-Desktop-store version */
+
+.store-desk-flex-header{
+  /* border: 5px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: lightgrey;
+    
+
+}
+.main-store {
+  display: flex;
+
+}
+
+.store-form {
+  margin-left: 6rem;
+
+}
+
+.store-image {
+  height: 50rem;
+  /* width: 40rem; */
+  margin-top: -1rem;
+  margin-left: 1.8rem;
+
+
+}
+.store-desk-name{
+  width: 20rem;
+  height: 2rem;
+}
+.store-desktop-named{
+    width: 47rem;
+    height: 2rem;
+}
+.first {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-right: 7rem;
+  gap: 6rem;
+}
+
+.city {
+  display: flex;
+  gap: 4rem;
+
+}
+.city-label-desk{
+  height: 2.5rem;
+  width: 33rem;
+}
+.code-desk-store{
+  width: 10rem;
+  height: 2rem;
+}
+
+.selectcolour {
+  display: flex;
+  gap: 3rem;
+  
+}
+
+.checkbox {
+  display: flex;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+
+
+}
+.agree:hover{
+  color: royalblue;
+  
+}
+
+.btn-order{
+  background-color: #c05326;
+  border: none;
+  color: white;
+  border-radius: 0.3rem;
+  width: 10rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+
+}
+.btn-order:hover{
+  background-color: blue;
+
+}
+.desk-checkbox{
+  margin-bottom: 0.8rem;
+  width: 1rem;
+}
+
+.checkbox p {
+  color: grey;
+  padding: 0.7rem;
+
+}
+
+.text {
+  text-decoration: underline;
+  text-align: center;
+  color: red;
+}
+.text:hover{
+  color: blue;
+}
+.desk-store-foot{
+  margin-left: 47rem;
+}
+.desk-footer-karma{
+  text-align: center;
+  margin-top: 2rem;
+}
+.desk-store-footer-content{
+  border-top: 1px solid grey;
+  margin-left: 2rem;
+  
+
+}
+.colour {
+  margin-top: 3rem;
+}
+
+.store-karma {
+  font-size: 22px;
+  color: #c05326;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+
+
+
+}
+
+ }
+ 
