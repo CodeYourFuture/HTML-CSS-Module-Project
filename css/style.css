@@ -45,7 +45,7 @@ body {
     display: grid;
     row-gap: 15px;
     grid-template-columns: repeat(12,minmax(1fr,auto));
-    grid-template-rows: 10% auto 11%;
+    grid-template-rows: 6% auto 11%;
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "m m m m m m m m m m m m"
@@ -335,7 +335,7 @@ body {
     width: fit-content;
     margin: 3px auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 1em;
 
 }
 /* -------- icon styling in footer --------------*/

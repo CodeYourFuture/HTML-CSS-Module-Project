@@ -1,0 +1,11 @@
+html{
+    margin: 0;
+    width: 100%;
+    
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto-fill);
+}
