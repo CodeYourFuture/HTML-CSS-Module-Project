@@ -267,14 +267,14 @@ body {
     padding: 0;
     background-color: antiquewhite;
     min-height: 13em;
-    height: 20em;
+    height: auto;
    
 }
 
 .section-3 img{
     display: inline-block;
     width: 85%;
-    max-width: 100%;
+    min-width: fit-content;
     max-height: 100%;
     margin: 0;
 
@@ -347,12 +347,17 @@ body {
     justify-content: center;
 }
 
-.footer img{
-    width: 50px;
-    height: 40px;
+.footer a{
     margin: 2px 8px;
-    padding: 5px;
-    border: 1px solid #d7d5d5;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.footer img{
+    width: inherit;
+    height: inherit;
     border-radius:50% ;
 }
 
