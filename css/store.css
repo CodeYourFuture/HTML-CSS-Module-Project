@@ -5,7 +5,57 @@ html{
 }
 body{
     min-height: 100vh;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(2,minmax(1fr,auto-fit)); */
     grid-template-rows: repeat(3,auto-fill);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    row-gap: 1em;
+}
+
+.header{
+    grid-area: header;
+    margin: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(166, 90, 237);
+
+}
+
+.header img{
+    width: 2em;
+    height: 2em;
+}
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav-bar ul>*{
+    margin: 1em;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+/* styling main tag with class=main */
+.main{
+    grid-area: main;
+    background-color: chartreuse;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: darkgrey;
 }
