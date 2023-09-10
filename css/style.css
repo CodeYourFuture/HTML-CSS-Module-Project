@@ -173,6 +173,10 @@ main div {
   grid-template-columns: repeat(2, 1fr);
 }
 
+content-2 div img {
+  width: auto;
+}
+
 .content-2 div:nth-child(2) {
   display: flex;
   flex-direction: column;
@@ -272,7 +276,7 @@ footer {
 @media only screen and (min-width: 360px) and (max-width: 640px) {
   .layout-container {
     display: grid;
-    grid-template-rows: 70px 700px 900px 920px 300px;
+    grid-template-rows: 70px 700px 900px auto 300px;
   }
 
   main {
@@ -322,6 +326,6 @@ footer {
   }
 
   footer {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 }
