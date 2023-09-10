@@ -26,10 +26,8 @@ body {
 /* <!-- NAV-BAR --> */
 
 .nav-background {
-  background-color:  #f9fafb;
+  background-color: #f9fafb;
 }
-
-
 
 .nav-grid {
   display: grid;
@@ -47,6 +45,7 @@ body {
   justify-content: end;
   font-size: 0.9rem;
   width: 98%;
+  list-style: none;
 }
 
 a {
@@ -160,7 +159,7 @@ h1 {
   padding-top: 10%;
 }
 
- .get-karma-today {
+.get-karma-today {
   width: 44%;
   margin: 8% auto 0 auto;
   color: white;
