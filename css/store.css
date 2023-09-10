@@ -13,18 +13,18 @@ html{
     width: 100%;
     
 }
-body{
+/* body{
     min-height: 100vh;
     margin: 0;
     display: grid;
-    /* grid-template-columns: repeat(2,minmax(1fr,auto-fit)); */
+    grid-template-columns: repeat(2,minmax(1fr,auto-fit));
     grid-template-rows: 10% auto 10%;
     grid-template-areas: 
     "header header"
     "main main"
     "footer footer";
     row-gap: 1em;
-}
+} */
 
 .header{
     grid-area: header;
@@ -69,7 +69,7 @@ body{
 
 
 /* styling main tag with class=main */
-.main{
+.main-store{
     grid-area: main;
     background-color: chartreuse;
     display: grid;
@@ -78,21 +78,21 @@ body{
     margin: 0;
     
 }
-.main>*{
+.main-store>*{
     margin: 0;
 }
-.section-1{
+.section-1-store{
 
     grid-column: 1/2;
     background-color: rgb(245, 78, 56);
 }
 
-.section-2{
+.section-2-store{
     grid-column: 2/-1;
     background-color: rgb(233, 233, 80);
 }
 
-.section-2 img{
+.section-2-store img{
     max-width: 100%;
     width: 100%;
     height: auto;

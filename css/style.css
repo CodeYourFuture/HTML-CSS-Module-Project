@@ -44,12 +44,12 @@ body {
     margin: 0;
     display: grid;
     row-gap: 15px;
-    grid-template-columns: repeat(12,minmax(1fr,auto));
+    /* grid-template-columns: repeat(12,minmax(1fr,auto)); */
     grid-template-rows: 6% auto 11%;
     grid-template-areas: 
-    "h h h h h h h h h h h h"
-    "m m m m m m m m m m m m"
-    "f f f f f f f f f f f f";
+    "header"
+    "main"
+    "footer";
     grid-auto-rows: auto;
 
 }
@@ -70,7 +70,7 @@ body {
  .header{
     
     align-items: center;
-    grid-area: h;
+    grid-area: header;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -138,7 +138,7 @@ body {
 
 /* styling the main tag */
 .main{
-    grid-area: m;
+    grid-area: main;
     margin: 0;
     padding: 0;
     display: flex;
@@ -317,7 +317,7 @@ body {
 /* footer stlyes*/
 
 .footer{
-    grid-area: f;
+    grid-area: footer;
     background-color: white;
     margin-top: 10px;
     border-top:1px solid rgb(226, 224, 224) ;
