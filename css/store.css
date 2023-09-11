@@ -13,59 +13,6 @@ html{
     width: 100%;
     
 }
-/* body{
-    min-height: 100vh;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2,minmax(1fr,auto-fit));
-    grid-template-rows: 10% auto 10%;
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer";
-    row-gap: 1em;
-} */
-
-/* .header{
-    grid-area: header;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-
-}
-
-.header img{
-    width: 3em;
-    height: 3em;
-}
-
-.nav-bar{
-    height: inherit;
-}
-
-.nav-bar ul{
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.nav-bar ul>*{
-    margin: 1.5em;
-    list-style: none;
-
-}
-
-.nav-bar ul a{
-   text-decoration: none;
-   color: var(--link-color);
-}
 
 
 /* styling main tag with class=main */
@@ -89,6 +36,9 @@ html{
     
 } 
 
+.section-1-store h1{
+    color: var(--hover-color);
+}
 
 .form-container{
     display: flex;
@@ -126,10 +76,11 @@ html{
 
 #label-fname{
     grid-area: label1;
-
+    margin-top: auto;
 }
 
 #label-lname{
+    margin-top: auto;
     grid-area: label2;
 }
 
@@ -156,15 +107,17 @@ html{
 
 #address-info span{
     display: grid;
+    grid-template-columns: 1fr .5fr;
     grid-template-areas: 
     "city post"
     "inp1 inp2";
     gap: .5em;
 }
-/* #address-info span>*{
-    display: block;
-} */
-
+#city{
+    height: 2em;
+    font-size: 1.1rem;
+    
+}
 
 #address-info label::after, #personal-info label::after{
     content: "*";
@@ -203,7 +156,29 @@ html{
 }
 
 
+/* term field styling */
 
+#term-field{
+    display: flex;
+    align-items: center;
+}
+
+#term-field input{
+    width: 1em;
+    height: 1em;
+}
+
+/* submit button */
+.form-container button{
+    width: 10em;
+    height: 3em;
+    background-color: var(--hover-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    border-radius: 2px;
+    margin-top: 1em;
+}
 
 /*  section-2 image part -------------*/
 
