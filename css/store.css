@@ -126,10 +126,11 @@ html{
 
 #label-fname{
     grid-area: label1;
-
+    margin-top: auto;
 }
 
 #label-lname{
+    margin-top: auto;
     grid-area: label2;
 }
 
@@ -203,7 +204,29 @@ html{
 }
 
 
+/* term field styling */
 
+#term-field{
+    display: flex;
+    align-items: center;
+}
+
+#term-field input{
+    width: 1em;
+    height: 1em;
+}
+
+/* submit button */
+.form-container button{
+    width: 10em;
+    height: 3em;
+    background-color: var(--hover-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    border-radius: 2px;
+    margin-top: 1em;
+}
 
 /*  section-2 image part -------------*/
 
