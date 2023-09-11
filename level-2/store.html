@@ -45,36 +45,47 @@
             </h1>
             <form class="form-container">
                 <fieldset id="personal-info">
-                    <div>
+                    <!-- <div>
                         <label for="fname">First Name:</label>
-                        <label for="lname">Last Name:</label>
+                        <input type="text" id="fname" name="fname"/>
                     </div>
                     <div>
-                        <input type="text" id="fname" name="fname"/>
+                        <label for="lname">Last Name:</label>
                         <input type="text" id="lname" name="lname">
-                    </div>
+                    </div> -->
+                    <label for="fname" id="label-fname">First Name:</label>
+                    <input type="text" id="fname" name="fname"/>
+                    <label for="lname" id="label-lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname">
                 </fieldset>
+                <fieldset id="address-info">
+                    <label for="address">Address: </label>
+                    <input type="text" id="address" name="address"/>
+                    <label for="address-2">Address 2:</label>
+                    <input type="text" id="address-2" name="address-2"/>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                    <label for="post-code">Post Code:</label>
+                    <input type="text" id="post-code" name="post-code"/>
 
-                <label for="address">Address: </label>
-                <input type="text" id="address" name="address"/>
-                <label for="address-2">Address 2:</label>
-                <input type="text" id="address-2" name="address-2"/>
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city">
-                <label for="post-code">Post Code:</label>
-                <input type="text" id="post-code" name="post-code"/>
+                </fieldset>
+                
 
-                <fieldset>
+                <fieldset id="karma-radio-color">
                     <legend>Select a color:</legend>
-                    <input type="radio" value="karma-orange" name="device-color" id="karma-orange">
-                    <label for="karma-orange">Karma Orange</label>
-                    <input type="radio" value="space-grey" name="device-color" id="space-grey">
-                    <label for="space-grey">Space Grey</label>
-
-                    <input type="checkbox" id="terms" name="terms-conditions" value="terms">
+                    <span id="karma-red">
+                        <input type="radio" value="karma-orange" name="device-color" id="karma-orange">
+                        <label for="karma-orange">Karma Orange</label>
+                    </span>
+                    <span id="space-grey">
+                        <input type="radio" value="space-grey" name="device-color" id="space-grey">
+                        <label for="space-grey">Space Grey</label>
+                    </span>
+                    
                 </fieldset>
 
                 <fieldset>
+                    <input type="checkbox" id="terms" name="terms-conditions" value="terms">
                     <label for="terms">
                         By tick this box you are agree with Karma's <a href="#">Terms and Conditions</a>
                     </label>

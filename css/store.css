@@ -85,42 +85,93 @@ html{
 .section-1-store{
 
     grid-column: 1/2;
-    padding: 1.5em;
+    padding: 4em;
     
 } 
+
 
 .form-container{
     display: flex;
     flex-direction: column;
 }
 .form-container>*{
-    width: 90%;
+    width: 100%;
 
+}
+
+.form-container fieldset{
+    border: none;
+    display: block;
+    padding: 0;
+    margin-bottom:1em ;
+    gap: 1em;
+}
+
+.form-container input{
+    height: 2em;
 }
 
 #personal-info{
-    display: flex;
-    flex-direction: column;
-}
-
-#personal-info label{
-    width: fit-content;
-}
-
-#personal-info input{
-    width: 3em;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+    "label1 label2"
+    "fname lname";
 }
 
 
-label , input{
-    display: inline-block;
+
+#label-fname{
+    grid-area: label1;
+
+}
+
+#label-lname{
+    grid-area: label2;
+}
+
+#fname{
+    grid-area: fname;
+}
+
+#lname{
+    grid-area: lname;
 }
 
 
-.section-1-store fieldset{
-    border: none;
-    display: block;
+
+
+/* styling address field set ----------------- */
+#address-info{
+    display: grid;
+    padding: 0;
 }
+
+ /* styling radio buttons */
+#karma-radio-color{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,auto-fit);
+}
+ 
+
+#karma-radio-color legend{
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+#karma-radio-color #karma-red{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#karma-radio-color #space-grey{
+    grid-column: 2;
+    grid-row: 2;
+}
+
 
 .section-2-store{
     grid-column: 2/-1;
