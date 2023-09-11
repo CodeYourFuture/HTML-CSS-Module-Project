@@ -103,12 +103,13 @@ html{
     border: none;
     display: block;
     padding: 0;
-    margin-bottom:1em ;
-    gap: 1em;
+    margin-bottom:1.5em ;
+    gap: .5em;
 }
 
 .form-container input{
-    height: 2em;
+    height: 1.5em;
+    font-size: 1.2rem;
 }
 
 #personal-info{
@@ -146,7 +147,28 @@ html{
 /* styling address field set ----------------- */
 #address-info{
     display: grid;
-    padding: 0;
+
+}
+
+#address-info input{
+    margin-bottom: 1em;
+}
+
+#address-info span{
+    display: grid;
+    grid-template-areas: 
+    "city post"
+    "inp1 inp2";
+    gap: .5em;
+}
+/* #address-info span>*{
+    display: block;
+} */
+
+
+#address-info label::after, #personal-info label::after{
+    content: "*";
+    color: var(--hover-color);
 }
 
  /* styling radio buttons */
@@ -160,18 +182,30 @@ html{
 #karma-radio-color legend{
     grid-column: 1/-1;
     grid-row: 1;
+    margin-top: 1em;
 }
 
-#karma-radio-color #karma-red{
+#karma-red{
     grid-column: 1;
     grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
-#karma-radio-color #space-grey{
+#space-grey{
     grid-column: 2;
     grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
+
+
+
+/*  section-2 image part -------------*/
 
 .section-2-store{
     grid-column: 2/-1;
