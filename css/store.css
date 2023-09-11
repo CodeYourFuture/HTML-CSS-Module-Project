@@ -1,0 +1,227 @@
+
+:root{
+    --text-color:white;
+    --hover-color:#C64110;
+    --link-color:rgb(100, 99, 99);
+    --karma-color:black;
+
+    
+}
+
+html{
+    margin: 0;
+    width: 100%;
+    
+}
+/* body{
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(1fr,auto-fit));
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    row-gap: 1em;
+} */
+
+/* .header{
+    grid-area: header;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+
+}
+
+.header img{
+    width: 3em;
+    height: 3em;
+}
+
+.nav-bar{
+    height: inherit;
+}
+
+.nav-bar ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav-bar ul>*{
+    margin: 1.5em;
+    list-style: none;
+
+}
+
+.nav-bar ul a{
+   text-decoration: none;
+   color: var(--link-color);
+}
+
+
+/* styling main tag with class=main */
+.main-store{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 0;
+    color: #000;
+    border-top: 1px solid var(--link-color);
+    
+}
+.main-store>*{
+    margin: 0;
+}
+.section-1-store{
+
+    grid-column: 1/2;
+    padding: 4em;
+    
+} 
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-container>*{
+    width: 100%;
+
+}
+
+.form-container fieldset{
+    border: none;
+    display: block;
+    padding: 0;
+    margin-bottom:1.5em ;
+    gap: .5em;
+}
+
+.form-container input{
+    height: 1.5em;
+    font-size: 1.2rem;
+}
+
+#personal-info{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+    "label1 label2"
+    "fname lname";
+}
+
+
+
+#label-fname{
+    grid-area: label1;
+
+}
+
+#label-lname{
+    grid-area: label2;
+}
+
+#fname{
+    grid-area: fname;
+}
+
+#lname{
+    grid-area: lname;
+}
+
+
+
+
+/* styling address field set ----------------- */
+#address-info{
+    display: grid;
+
+}
+
+#address-info input{
+    margin-bottom: 1em;
+}
+
+#address-info span{
+    display: grid;
+    grid-template-areas: 
+    "city post"
+    "inp1 inp2";
+    gap: .5em;
+}
+/* #address-info span>*{
+    display: block;
+} */
+
+
+#address-info label::after, #personal-info label::after{
+    content: "*";
+    color: var(--hover-color);
+}
+
+ /* styling radio buttons */
+#karma-radio-color{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,auto-fit);
+}
+ 
+
+#karma-radio-color legend{
+    grid-column: 1/-1;
+    grid-row: 1;
+    margin-top: 1em;
+}
+
+#karma-red{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#space-grey{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+
+/*  section-2 image part -------------*/
+
+.section-2-store{
+    grid-column: 2/-1;
+    
+}
+
+.section-2-store img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+
+/* styling footer */
+/* .footer{
+    grid-area: footer;
+    background-color: darkgrey;
+} */

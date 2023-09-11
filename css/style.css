@@ -44,12 +44,12 @@ body {
     margin: 0;
     display: grid;
     row-gap: 15px;
-    grid-template-columns: repeat(12,minmax(1fr,auto));
-    grid-template-rows: 10% auto 11%;
+    /* grid-template-columns: repeat(12,minmax(1fr,auto)); */
+    grid-template-rows: 6% auto 11%;
     grid-template-areas: 
-    "h h h h h h h h h h h h"
-    "m m m m m m m m m m m m"
-    "f f f f f f f f f f f f";
+    "header"
+    "main"
+    "footer";
     grid-auto-rows: auto;
 
 }
@@ -70,7 +70,7 @@ body {
  .header{
     
     align-items: center;
-    grid-area: h;
+    grid-area: header;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -86,8 +86,8 @@ body {
 
  }
 .header img{
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
 }
 
 .header nav{
@@ -138,7 +138,7 @@ body {
 
 /* styling the main tag */
 .main{
-    grid-area: m;
+    grid-area: main;
     margin: 0;
     padding: 0;
     display: flex;
@@ -267,14 +267,14 @@ body {
     padding: 0;
     background-color: antiquewhite;
     min-height: 13em;
-    height: 20em;
+    height: auto;
    
 }
 
 .section-3 img{
     display: inline-block;
     width: 85%;
-    max-width: 100%;
+    min-width: fit-content;
     max-height: 100%;
     margin: 0;
 
@@ -317,7 +317,7 @@ body {
 /* footer stlyes*/
 
 .footer{
-    grid-area: f;
+    grid-area: footer;
     background-color: white;
     margin-top: 10px;
     border-top:1px solid rgb(226, 224, 224) ;
@@ -335,7 +335,7 @@ body {
     width: fit-content;
     margin: 3px auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 1em;
 
 }
 /* -------- icon styling in footer --------------*/
@@ -347,12 +347,17 @@ body {
     justify-content: center;
 }
 
-.footer img{
-    width: 50px;
-    height: 40px;
+.footer a{
     margin: 2px 8px;
-    padding: 5px;
-    border: 1px solid #d7d5d5;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.footer img{
+    width: inherit;
+    height: inherit;
     border-radius:50% ;
 }
 
