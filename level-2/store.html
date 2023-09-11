@@ -46,17 +46,17 @@
             <form class="form-container">
 
                 <fieldset id="personal-info">
-                    <label for="fname" id="label-fname">First Name:</label>
-                    <input type="text" id="fname" name="fname"/>
+                    <label for="fname" id="label-fname" >First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter Your First Name (required)" required/>
                     <label for="lname" id="label-lname">Last Name:</label>
-                    <input type="text" id="lname" name="lname">
+                    <input type="text" id="lname" name="lname" required placeholder="Enter Your last Name(required)">
                 </fieldset>
 
                 <fieldset id="address-info">
                     <label for="address">Address: </label>
-                    <input type="text" id="address" name="address"/>
+                    <input type="text" id="address" name="address" placeholder="Enter Your Address(required)"/>
                     <label for="address-2">Address 2:</label>
-                    <input type="text" id="address-2" name="address-2"/>
+                    <input type="text" id="address-2" name="address-2" placeholder="This Field Is Optional"/>
                     <span id="city-post">
                         <label for="city">City:</label>
                         <label for="post-code">Post Code:</label>
@@ -67,7 +67,7 @@
                             <option value="Manchester">Manchester</option>
                             <option value="Glosgow">Glosgow</option>
                           </select>
-                        <input type="text" id="post-code" name="post-code"/>
+                        <input type="text" id="post-code" name="post-code" required placeholder="Your post-code(required)"/>
                     </span>
                 </fieldset>
                 
