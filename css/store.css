@@ -168,6 +168,11 @@ html{
     height: 1em;
 }
 
+#term-field>label>a{
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
 /* submit button */
 .form-container button{
     width: 10em;
@@ -195,8 +200,3 @@ html{
 }
 
 
-/* styling footer */
-/* .footer{
-    grid-area: footer;
-    background-color: darkgrey;
-} */

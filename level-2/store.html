@@ -47,27 +47,27 @@
 
                 <fieldset id="personal-info">
                     <label for="fname" id="label-fname" >First Name:</label>
-                    <input type="text" id="fname" name="fname" placeholder="Enter Your First Name (required)" required/>
+                    <input type="text" id="fname" name="fname" placeholder="Your First Name Here (required)" aria-label="enter your first name Here" required/>
                     <label for="lname" id="label-lname">Last Name:</label>
-                    <input type="text" id="lname" name="lname" required placeholder="Enter Your last Name(required)">
+                    <input type="text" id="lname" name="lname" placeholder="Your last Name Here(required)" aria-label="enter our last name Here" required />
                 </fieldset>
 
                 <fieldset id="address-info">
                     <label for="address">Address: </label>
-                    <input type="text" id="address" name="address" placeholder="Enter Your Address(required)"/>
+                    <input type="text" id="address" name="address" placeholder="Enter Your Address(required)" aria-label="enter your address Here" required/>
                     <label for="address-2">Address 2:</label>
-                    <input type="text" id="address-2" name="address-2" placeholder="This Field Is Optional"/>
+                    <input type="text" id="address-2" name="address-2" placeholder="This Field Is Optional" aria-label="enter your second address , this field is Optional"/>
                     <span id="city-post">
                         <label for="city">City:</label>
                         <label for="post-code">Post Code:</label>
-                        <select id="city" name="city" placeholder>
+                        <select id="city" name="city" required aria-label="select a your city , required">
                             <option value="" disabled selected>Select Your City:</option>
-                            <option value="Birmingham">Birmingham</option>
+                            <option value="Birmingham" >Birmingham</option>
                             <option value="London">London</option>
                             <option value="Manchester">Manchester</option>
                             <option value="Glosgow">Glosgow</option>
                           </select>
-                        <input type="text" id="post-code" name="post-code" required placeholder="Your post-code(required)"/>
+                        <input type="text" id="post-code" name="post-code" required placeholder="Your post-code Here(required)" aria-label="enter your post code . required"/>
                     </span>
                 </fieldset>
                 
@@ -75,24 +75,24 @@
                 <fieldset id="karma-radio-color">
                     <legend>Select a color:</legend>
                     <span id="karma-red">
-                        <input type="radio" value="karma-orange" name="device-color" id="karma-orange">
+                        <input type="radio" value="karma-orange" name="device-color" id="karma-orange" required>
                         <label for="karma-orange">Karma Orange</label>
                     </span>
                     <span id="space-grey">
-                        <input type="radio" value="space-grey" name="device-color" id="space-grey">
+                        <input type="radio" value="space-grey" name="device-color" id="space-grey" required>
                         <label for="space-grey">Space Grey</label>
                     </span>
                     
                 </fieldset>
 
                 <fieldset id="term-field">
-                    <input type="checkbox" id="terms" name="terms-conditions" value="terms">
+                    <input type="checkbox" id="terms" name="terms-conditions" value="terms" required>
                     <label for="terms">
                         By tick this box you are agree with Karma's <a href="#">Terms and Conditions</a>
                     </label>
                 </fieldset>
 
-                <button type="submit">Place Your order</button>
+                <button type="submit" name="submit">Place Your order</button>
                 
             </form>
 
