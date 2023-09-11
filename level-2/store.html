@@ -43,7 +43,42 @@
             <h1>
                 Order your Karma WiFi device today!
             </h1>
-            <form class="form">
+            <form class="form-container">
+                <fieldset id="personal-info">
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <label for="lname">Last Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="fname" name="fname"/>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                </fieldset>
+
+                <label for="address">Address: </label>
+                <input type="text" id="address" name="address"/>
+                <label for="address-2">Address 2:</label>
+                <input type="text" id="address-2" name="address-2"/>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city">
+                <label for="post-code">Post Code:</label>
+                <input type="text" id="post-code" name="post-code"/>
+
+                <fieldset>
+                    <legend>Select a color:</legend>
+                    <input type="radio" value="karma-orange" name="device-color" id="karma-orange">
+                    <label for="karma-orange">Karma Orange</label>
+                    <input type="radio" value="space-grey" name="device-color" id="space-grey">
+                    <label for="space-grey">Space Grey</label>
+
+                    <input type="checkbox" id="terms" name="terms-conditions" value="terms">
+                </fieldset>
+
+                <fieldset>
+                    <label for="terms">
+                        By tick this box you are agree with Karma's <a href="#">Terms and Conditions</a>
+                    </label>
+                </fieldset>
                 
             </form>
 

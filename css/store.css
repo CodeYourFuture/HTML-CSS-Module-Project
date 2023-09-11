@@ -26,7 +26,7 @@ html{
     row-gap: 1em;
 } */
 
-.header{
+/* .header{
     grid-area: header;
     margin: 0;
     display: flex;
@@ -71,11 +71,12 @@ html{
 /* styling main tag with class=main */
 .main-store{
     grid-area: main;
-    background-color: chartreuse;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     margin: 0;
+    color: #000;
+    border-top: 1px solid var(--link-color);
     
 }
 .main-store>*{
@@ -84,12 +85,46 @@ html{
 .section-1-store{
 
     grid-column: 1/2;
-    background-color: rgb(245, 78, 56);
+    padding: 1.5em;
+    
+} 
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-container>*{
+    width: 90%;
+
+}
+
+#personal-info{
+    display: flex;
+    flex-direction: column;
+}
+
+#personal-info label{
+    width: fit-content;
+}
+
+#personal-info input{
+    width: 3em;
+}
+
+
+label , input{
+    display: inline-block;
+}
+
+
+.section-1-store fieldset{
+    border: none;
+    display: block;
 }
 
 .section-2-store{
     grid-column: 2/-1;
-    background-color: rgb(233, 233, 80);
+    
 }
 
 .section-2-store img{
@@ -101,7 +136,7 @@ html{
 
 
 /* styling footer */
-.footer{
+/* .footer{
     grid-area: footer;
     background-color: darkgrey;
-}
+} */
