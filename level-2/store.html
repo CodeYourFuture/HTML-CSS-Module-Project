@@ -60,7 +60,13 @@
                     <span id="city-post">
                         <label for="city">City:</label>
                         <label for="post-code">Post Code:</label>
-                        <input type="text" id="city" name="city">
+                        <select id="city" name="city" placeholder>
+                            <option value="" disabled selected>Select Your City:</option>
+                            <option value="Birmingham">Birmingham</option>
+                            <option value="London">London</option>
+                            <option value="Manchester">Manchester</option>
+                            <option value="Glosgow">Glosgow</option>
+                          </select>
                         <input type="text" id="post-code" name="post-code"/>
                     </span>
                 </fieldset>
