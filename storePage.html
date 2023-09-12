@@ -1,106 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Karma</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css" />
-</head>
-
-<body>
-  <header>
-    <nav>
-      <img class="karma-logo" src="/img/karma-logo.svg" alt="karama-logo" />
-      <ul class="nav-list">
-        <li class="nav-item"><a href="/index.html">Meet Karma</a></li>
-        <li class="nav-item"><a href="#">How its work</a></li>
-        <li class="nav-item"><a href="#">Store</a></li>
-        <li class="nav-item"><a href="#">Blog</a></li>
-        <li class="nav-item"><a href="#">Help</a></li>
-        <li class="nav-item"><a href="#">Login</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="order-form">
-      <h1 class="heading">Order your Karma wifi device today!</h1>
-      <div class="form">
-        <div class="name">
-          <div class="input-label">
-            <label class="label" for="name-first">First Name *</label>
-            <input class="full-name input" type="text" name="name-first" id="name-first" />
-          </div>
-          <div class="input-label last-name">
-            <label class="label" for="name-last">Last Name *</label>
-            <input class="full-name input" type="text" name="name-last" id="name-last" />
-          </div>
-        </div>
-
-        <div class="input-label">
-          <label class="label" for="Address">Address *</label>
-          <input class="input" type="text" name="Address" id="Address" />
-        </div>
-        <div class="input-label">
-          <label class="label" for="Address2">Address 2</label>
-          <input class="input" type="text" name="Address2" id="Address2" />
-        </div>
-        <div class="name city-post">
-          <div class="input-label">
-            <label class="label" for="city">City *</label>
-            <select class="city" name="city" id="city">
-              <option value="" disabled selected>Select a city *</option>
-              <option value="1">london</option>
-              <option value="2">Wolverhampton</option>
-              <option value="3">Birmingham</option>
-              <option value="4">Manchester</option>
-            </select>
-          </div>
-          <div class="input-label">
-            <label class="label" for="postcode">Postcode *</label>
-            <input class="input post" type="text" name="postcode" id="postcode" />
-          </div>
-        </div>
-        <div class="radio">
-          <label class="label" for="color">Select a color *</label>
-          <div class="flex">
-            <div>
-              <label class="label" for="color"></label><span class="radio-label">Karma Orange </span>
-              <input class="input-radio" type="radio" name="color" id="color" />
+  <body>
+    <header>
+      <nav>
+        <img class="karma-logo" src="/img/karma-logo.svg" alt="karama-logo" />
+        <div id="menu" class="menu-open"></div>
+        <ul class="close" id="navlist">
+          <li class="nav-item"><a href="/index.html">Meet Karma</a></li>
+          <li class="nav-item"><a href="#">How its work</a></li>
+          <li class="nav-item"><a href="/storePage.html">Store</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#">Help</a></li>
+          <li class="nav-item"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="order-form">
+        <h1 class="heading">Order your Karma wifi device today!</h1>
+        <div class="form">
+          <div class="name">
+            <div class="input-label">
+              <label class="label" for="name-first">First Name *</label>
+              <input
+                class="full-name input"
+                type="text"
+                name="name-first"
+                id="name-first"
+              />
             </div>
-            <div>
-              <label class="label" for="color"></label><span class="radio-label">Space Grey </span>
-              <input class="input-radio" type="radio" name="color" id="color" />
+            <div class="input-label last-name">
+              <label class="label" for="name-last">Last Name *</label>
+              <input
+                class="full-name input"
+                type="text"
+                name="name-last"
+                id="name-last"
+              />
             </div>
           </div>
-        </div>
 
-        <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" /><label class="checkbox-p"
-          for="checkbox">By placing your order you aggre to Karma
-          <a class="terms" href="#">Terms and Conditions</a></label>
-        <div class="btn">
-          <input class="submit" type="submit" value="Place my Order" />
-        </div>
-      </div>
-    </section>
-    <section class="side-image"></section>
-  </main>
-  <footer>
-    <div class="footer-card">
-      <h4 class="footer-card-heading">Join us on</h4>
-      <div class="icons">
-        <a class="icon-item" href="#"><img src="/img/facebook-icon.svg" alt="facebook-icon" /></a>
-        <a class="icon-item" href="#"><img src="/img/instagram-icon.svg" alt="instagram-icon" /></a>
-        <a class="icon-item" href="#">
-          <img src="/img/twitter-icon.svg" alt="twitter-icon" /></a>
-      </div>
-      <p class="footer-description">@Karma Mobile .Inc</p>
-    </div>
-  </footer>
-</body>
+          <div class="input-label">
+            <label class="label" for="Address">Address *</label>
+            <input class="input" type="text" name="Address" id="Address" />
+          </div>
+          <div class="input-label">
+            <label class="label" for="Address2">Address 2</label>
+            <input class="input" type="text" name="Address2" id="Address2" />
+          </div>
+          <div class="name city-post">
+            <div class="input-label">
+              <label class="label" for="city">City *</label>
+              <select class="city" name="city" id="city">
+                <option value="" disabled selected>Select a city *</option>
+                <option value="1">london</option>
+                <option value="2">Wolverhampton</option>
+                <option value="3">Birmingham</option>
+                <option value="4">Manchester</option>
+              </select>
+            </div>
+            <div class="input-label">
+              <label class="label" for="postcode">Postcode *</label>
+              <input
+                class="input post"
+                type="text"
+                name="postcode"
+                id="postcode"
+              />
+            </div>
+          </div>
+          <div class="radio">
+            <label class="label" for="color">Select a color *</label>
+            <div class="flex">
+              <div>
+                <label class="label" for="color"></label
+                ><span class="radio-label">Karma Orange </span>
+                <input
+                  class="input-radio"
+                  type="radio"
+                  name="color"
+                  id="color"
+                />
+              </div>
+              <div>
+                <label class="label" for="color"></label
+                ><span class="radio-label">Space Grey </span>
+                <input
+                  class="input-radio"
+                  type="radio"
+                  name="color"
+                  id="color"
+                />
+              </div>
+            </div>
+          </div>
+  <input
+  class="checkbox"
+  type="checkbox"
+  name="checkbox"
+  id="checkbox"
+/><label class="checkbox-p" for="checkbox"
+  >By placing your order you agree to Karma
+  <a class="terms" href="#">Terms and Conditions</a></label
 
+          <div class="btn">
+            <input class="submit" type="submit" value="Place my Order" />
+          </div>
+        </div>
+      </section>
+      <section class="side-image"></section>
+    </main>
+    <footer>
+      <div class="footer-card">
+        <h4 class="footer-card-heading">Join us on</h4>
+        <div class="icons">
+          <a class="icon-item" href="#"
+            ><img src="/img/facebook-icon.svg" alt="facebook-icon"
+          /></a>
+          <a class="icon-item" href="#"
+            ><img src="/img/instagram-icon.svg" alt="instagram-icon"
+          /></a>
+          <a class="icon-item" href="#">
+            <img src="/img/twitter-icon.svg" alt="twitter-icon"
+          /></a>
+        </div>
+        <p class="footer-description">@Karma Mobile .Inc</p>
+      </div>
+    </footer>
+    <script src="/index.js"></script>
+  </body>
 </html>
