@@ -275,6 +275,7 @@ input[type="checkbox"] + label {
   margin-block: 3rem;
   width: 500px;
   height: 51px;
+  line-height: 2rem;
 }
 
 input[type="checkbox"] {
@@ -290,7 +291,7 @@ input[type="checkbox"] + label:before {
   height: 0.8em;
   padding-left: 0.2em;
   padding-bottom: 0.3em;
-  margin-right: 0.2em;
+  margin-right: 0.5em;
   vertical-align: bottom;
   color: transparent;
   transition: 0.2s;
@@ -334,22 +335,22 @@ input[type="radio"] {
 }
 .radio-label::before {
   content: "\f111";
-  font-weight: 400;
   display: inline-block;
   text-rendering: auto;
+  width: 1rem;
   -webkit-font-smoothing: antialiased;
-  font: var(--fa-font-solid);
   color: var(--karma-orange);
+  background-color: var(--karma-orange);
   margin-right: 1rem;
   padding: 0.1rem;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 2px solid grey;
   transition: 0.25s ease;
 }
 input[type="radio"] {
   transform: scale(0);
 }
-.input-radio:checked + .radio-label::before {
+.input-radio:checked.radio-label::before:hover {
   color: black;
 }
 select {
@@ -433,7 +434,7 @@ select option {
     padding: 2rem;
     justify-content: center;
     text-align: center;
-    border: 5px solid var(--karma-orange);
+    box-shadow: 0px 0px 10px black;
     animation: show 1s 1 forwards alternate;
   }
   .open {
@@ -519,11 +520,11 @@ select option {
     line-height: 2.1rem;
     width: 80%;
   }
-.extended-btn{
-  width: 13rem;
-  height: 3.7rem;
-  font-size: 1.3rem;
-}
+  .extended-btn {
+    width: 13rem;
+    height: 3.7rem;
+    font-size: 1.3rem;
+  }
   /*--------Store page------------------*/
   .container {
     min-width: 23.4375rem;
