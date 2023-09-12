@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Store</title>
     <link rel="stylesheet" href="../css/store.css">
     <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="in this page users fill up order form for a karma wifi device">
 </head>
 <body>
     <header class="header">
@@ -74,11 +75,11 @@
 
                 <fieldset id="karma-radio-color">
                     <legend>Select a color:</legend>
-                    <span id="karma-red">
+                    <span id="karma-red-span">
                         <input type="radio" value="karma-orange" name="device-color" id="karma-orange" required>
                         <label for="karma-orange">Karma Orange</label>
                     </span>
-                    <span id="space-grey">
+                    <span id="space-grey-span">
                         <input type="radio" value="space-grey" name="device-color" id="space-grey" required>
                         <label for="space-grey">Space Grey</label>
                     </span>
@@ -88,18 +89,18 @@
                 <fieldset id="term-field">
                     <input type="checkbox" id="terms" name="terms-conditions" value="terms" required>
                     <label for="terms">
-                        By tick this box you are agree with Karma's <a href="#">Terms and Conditions</a>
+                        By tick this box you are agree with Karma's <a href="#" aria-label="terms and condtions of order">Terms and Conditions</a>
                     </label>
                 </fieldset>
 
-                <button type="submit" name="submit">Place Your order</button>
+                <button type="submit" name="submit" aria-label="submiting fotm button">Place Your order</button>
                 
             </form>
 
         </section>
 
         <section class="section-2-store">
-            <img src="store-image_by-andrew-neel-unsplash.jpg" alt="store image on the side bar a lady using karma wifi">
+            <img src="store-image_by-andrew-neel-unsplash.webp" alt="store image on the side bar a lady using karma wifi">
         </section>
 
     </main>

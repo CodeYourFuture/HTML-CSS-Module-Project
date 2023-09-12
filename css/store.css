@@ -138,7 +138,7 @@ html{
     margin-top: 1em;
 }
 
-#karma-red{
+#karma-red-span{
     grid-column: 1;
     grid-row: 2;
     display: flex;
@@ -147,7 +147,7 @@ html{
 
 }
 
-#space-grey{
+#space-grey-span{
     grid-column: 2;
     grid-row: 2;
     display: flex;
@@ -195,7 +195,8 @@ html{
 .section-2-store img{
     max-width: 100%;
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: auto;
     margin: 0;
 }
 
