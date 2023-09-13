@@ -1,19 +1,313 @@
+/* General Styles */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+:root {
+  --brand: #f15b2a;
+  --brand-hover: #f26b3f;
+  --btn-hover-transition: ease-in-out 0.6s;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 3rem;
+}
 
+a {
+  text-decoration: none;
+}
+
+.layout-container {
+  display: grid;
+  grid-template-rows: 70px 900px 500px 720px 300px;
+}
+
+/* Navigation Styles */
+
+nav {
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.9rem;
+  border-bottom: 0.1rem solid #b4bcc36a;
+}
+
+.flex-nav {
+  font-size: 0.9rem;
+}
+
+.flex-nav a {
+  color: #868e96;
+  font-size: 1.2em;
+  transition: color var(--btn-hover-transition);
+  padding-right: 2rem;
+}
+
+.flex-nav a:hover,
+.flex-nav a:active {
+  color: var(--brand);
+}
+
+.meet-karma-nav {
+  font-weight: bold;
+  color: #495057;
+  font-weight: 500;
+}
+
+/* MOBILE NAV */
+
+.hamburger-menu {
+  position: relative;
+  width: 2.4rem;
+  height: 0.5rem;
+  background-color: black;
+  transform: translate(0, 50%);
+  display: none;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after {
+  position: absolute;
+  content: "";
+  width: 2.4rem;
+  height: 0.5rem;
+  background-color: black;
+}
+
+.hamburger-menu::before {
+  top: -16px;
+}
+
+.hamburger-menu::after {
+  top: 16px;
+}
+
+/* Hero Section (MAIN) */
+
+main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  background-image: url(/img/first-background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main div {
+  margin-bottom: 2rem;
+}
+
+.intro-karma {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.product-details {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.learn-more {
+  padding: 22px 37px;
+  color: white;
+}
+
+.btn {
+  border-radius: 8px;
+  background-color: var(--brand);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 100;
+  transition: background-color var(--btn-hover-transition);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--brand-hover);
+}
+
+/* Content 1 section (SVG VECTORS AND TEXT) */
+
+.content1 {
+  width: 90%;
+  margin: 10rem auto;
+}
+
+.content1 p {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.content1 h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.svgs-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* Content 2 section (IMAGE OF LADY AND GET KARMA TODAY) */
+
+.content-2 {
+  background-color: #fcefeb;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-container {
+  background-color: black;
+}
+
+.content-2 div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  gap: 5rem;
+}
+
+.content-2 div:nth-child(2) i {
+  font-size: 2rem;
+}
+
+.content-2 div:nth-child(2) i:before {
+  content: open-quote;
+  color: var(--brand);
+}
+
+.content-2 div:nth-child(2) i:after {
+  content: close-quote;
+  color: var(--brand);
+}
+
+.getkarma-btn {
+  padding: 1.6rem 3rem;
+  margin-top: 30rem;
+}
+
+/*  */
+
+footer {
+  /* background-color: #f26b3f; */
+  width: 85%;
+  margin: 0 auto;
+  border-top: 3px solid #868e9614;
+  margin-top: 4rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 1.2rem;
+}
+
+.join-us {
+  font-size: 1.4rem;
+}
+
+.socialicons-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.sm-border {
+  align-items: center;
+  justify-content: center;
+  border: 0.1vw solid #b4bcc36a;
+  padding: 0.8rem 1rem;
+  border-radius: 100%;
+  transition: border var(--btn-hover-transition);
+}
+
+.sm-border:hover,
+.sm-border:active {
+  border: 1px solid #f15b2a;
+}
+
+.copyright-stamp {
+  color: #868e96;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* MOBILE */
+
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+  .layout-container {
+    display: grid;
+    grid-template-rows: 70px 700px 900px auto 300px;
+  }
+
+  main {
+    background-position: 54rem 0rem;
+  }
+
+  main div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .content1 {
+    margin-top: 4rem;
+  }
+
+  .content1 p {
+    font-size: 3rem;
+  }
+
+  .svgs-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .content-2 {
+    grid-template-rows: 1fr 500px;
+  }
+
+  .content-2 div:nth-child(1) {
+    grid-column: span 2;
+    background-size: cover;
+  }
+
+  .content-2 div:nth-child(2) {
+    grid-column: span 2;
+    width: 84%;
+  }
+
+  .getkarma-btn {
+    font-size: 1.6rem;
+  }
+  .flex-nav a {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+}
