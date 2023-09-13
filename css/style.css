@@ -98,7 +98,6 @@ align-items: center;
 }
 footer{
     border-top: 1px solid lightgray;
-    margin-top: 4rem;
 }
 .footer_info{
     text-align: center;
@@ -124,13 +123,13 @@ border-radius: 50%;
 #facebook_icon{
     margin: 0 13px;
 }
-.last-info{
+.last-info {
     margin-top: 1rem;
     text-align: center;
     font-size: small;
     color: gray;
 }
-.input_card{
+.input_card {
     display:flex;
 }
 .karma-feature {
@@ -163,6 +162,20 @@ border-radius: 50%;
     border: 0 rgb(134, 49, 17) solid;
     color: white;
     width: 200px;
+ }
+ .main {
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.5px grey solid;
+ }
+
+ .info {
+    
+ }
+
+ .store-img {
+    width: 600px;
+    margin-right: 0;
  }
 
 
