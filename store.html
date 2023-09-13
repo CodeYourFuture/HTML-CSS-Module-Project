@@ -1,51 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <header>
-        <div class="header">
-        <svg  class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 216">
-        <path fill="#F15B2A"
-        d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z" />
+      <div class="header">
+        <svg
+          class="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 144 216"
+        >
+          <path
+            fill="#F15B2A"
+            d="M126.1 212.9c4.1 4.1 10.7 4.1 14.8 0 4.1-4.1 4.1-10.7 0-14.8l-28.6-28.6 18.1-18.1c8.4-8.4 13.6-20 13.6-32.9C144 92.8 123.2 72 97.5 72S51 92.8 51 118.5c0 12.8 5.2 24.5 13.6 32.9l18.1 18.1-18.1 18.1c-4.6 4.6-11 7.5-18.1 7.5-14.1 0-25.6-11.5-25.6-25.6v-159C20.9 4.7 16.2 0 10.5 0 4.7 0 0 4.7 0 10.5v159C0 195.2 20.8 216 46.5 216c12.8 0 24.5-5.2 32.9-13.6l18.1-18.1 28.6 28.6zm-46.7-76.3c-4.6-4.6-7.5-11-7.5-18.1 0-14.1 11.5-25.6 25.6-25.6 14.1 0 25.6 11.5 25.6 25.6 0 7.1-2.9 13.5-7.5 18.1l-18.1 18.1-18.1-18.1z"
+          />
         </svg>
         <nav>
-            <ul class="navigation_list">
-                <li class="navigation_item"><a class="navigation_link" href="index.html">Meet Karma</a></li>
-                <li class="navigation_item"><a class="navigation_link" href="#">How It Works</a></li>
-                <li class="navigation_item"><a class="navigation_link" href="#">Store</a></li>
-                <li class="navigation_item"><a class="navigation_link" href="#">Blog</a></li>
-                <li class="navigation_item"><a class="navigation_link" href="#">Help</a></li>
-                <li class="navigation_item"><a class="navigation_link" href="#">Login</a></li>
-            </ul>
+          <ul class="navigation_list">
+            <li class="navigation_item">
+              <a class="navigation_link" href="index.html">Meet Karma</a>
+            </li>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">How It Works</a>
+            </li>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">Store</a>
+            </li>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">Blog</a>
+            </li>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">Help</a>
+            </li>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">Login</a>
+            </li>
+          </ul>
         </nav>
-        </div>
+      </div>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Order your Karma wifi <br> device today!</h1>
-            </div>
-            <div></div>
-        </section>
+      <section class="main">
+        <div class="info">
+          <h1>
+            Order your Karma wifi <br />
+            device today!
+          </h1>
+          <form>
+            <section class="name">
+              <label for="fname">First name *</label>
+              <input type="text" id="fname" name="fname" value="" /><br />
+            </section>
+            <br />
+            <section class="name">
+              <label for="lname">Last name *</label>
+              <input type="text" id="lname" name="lname" value="" /><br />
+            </section>
+            <br />
+            <section>
+                <label for="address">Address *</label>
+                <input type="text" id="address" name="address" value="" /><br />
+            </section>
+            <br />
+            <section>
+                <label for="address">Address 2</label>
+                <input type="text" id="address" name="address" value="" /><br />
+            </section>
+            <br />
+            <section></section>
+            <br />
+            <p>Select a colour</p>
+            <br />
+            <section>
+                 <input type="radio" id="karma orange" name="colour" value="karma orange">
+                 <label for="karma orange">Karma orange</label><br>
+                 <input type="radio" id="space grey" name="colour" value="space grey">
+                 <label for="space grey">Space Grey</label><br>
+            </section>
+            <br />
+            <section>
+                <input type="checkbox" id="agreement" name="agreement" value="✔️">
+                <label for="agreement">By placing your order you agree to Karma's <u>Terms and Conditions</u>.*</label><br>
+            </section>
+            <button>Place my order</button>
+          </form>
+        </div>
+        <div>
+            <img class="store-img" src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="A lady working on a computer while drinking her coffee">
+        </div>
+      </section>
     </main>
     <footer>
-            <div class="footer_info">
-                <h4 class="info">Join us on</h4>
-            </div>
-            <div class="footer_img">
-                <a class="footer-icon" href=""><img src="/img/twitter-icon.svg"  alt="twitter-icon"></a>
-                <a class="footer-icon" id="facebook_icon" href=""><img src="/img/facebook-icon.svg" alt="facebook-icon"></a>
-                <a class="footer-icon" href=""><img src="/img/instagram-icon.svg" alt="instagram-icon"></a>
-            </div>
-            <P class="last-info">©️Karma Mobility, Inc.</P>
+      <div class="footer_info">
+        <h4 class="info">Join us on</h4>
+      </div>
+      <div class="footer_img">
+        <a class="footer-icon" href=""
+          ><img src="/img/twitter-icon.svg" alt="twitter-icon"
+        /></a>
+        <a class="footer-icon" id="facebook_icon" href=""
+          ><img src="/img/facebook-icon.svg" alt="facebook-icon"
+        /></a>
+        <a class="footer-icon" href=""
+          ><img src="/img/instagram-icon.svg" alt="instagram-icon"
+        /></a>
+      </div>
+      <p class="last-info">©️Karma Mobility, Inc.</p>
     </footer>
-</body>
+  </body>
 </html>
