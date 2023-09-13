@@ -52,12 +52,12 @@ text-decoration: none;
     font-size: larger;
     }
 button {
-    background-color: orangered;
+    background-color:rgb(245, 127, 84);
     padding: 8px 18px;
     border-radius: 5px;
     font-size: smaller;
     margin-top: 30px;
-    border: 0 orangered solid;
+    border: 0 rgb(245, 127, 84);
 }
 section {
     display: flex;
@@ -89,7 +89,7 @@ align-items: center;
 }
 footer{
     border-top: 1px solid lightgray;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 .footer_info{
     text-align: center;
@@ -140,7 +140,20 @@ border-radius: 50%;
 }
 .karma-quote {
     margin-top: 80px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: xx-large;
 }
+ .karma-button {
+    background-color: rgb(245, 127, 84);
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 30px;
+    border: 0 rgb(134, 49, 17) solid;
+    color: white;
+ }
 
 
 
