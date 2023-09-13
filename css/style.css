@@ -1,182 +1,221 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    padding: 50px;
-}
-.logo{
-    width:2rem;
-    margin-left:5rem;
+.logo {
+  width: 2rem;
+  margin-left: 5rem;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
-.navigation_list{
-    display:flex;
-    list-style: none;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 50px;
-    margin-right: 10rem;
+.navigation_list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  margin-right: 10rem;
 }
 .navigation_link:hover {
-    color: orangered;
+  color: orangered;
 }
 
 .navigation_list li {
-    display: inline-block;
-    padding: 0 20px;
+  display: inline-block;
+  padding: 0 20px;
 }
-.navigation_list a{
-text-decoration: none;
+.navigation_list a {
+  text-decoration: none;
 }
-.hero{
-    height: 40rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/img/first-background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-size: larger;
-    }
+.hero {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/first-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: larger;
+}
+
 button {
-    background-color:rgb(245, 127, 84);
-    padding: 8px 18px;
-    border-radius: 5px;
-    font-size: smaller;
-    margin-top: 30px;
-    border: 0 rgb(245, 127, 84);
+  background-color: rgb(245, 127, 84);
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-size: smaller;
+  margin-top: 30px;
+  border: 0 rgb(245, 127, 84);
 }
 
 button:hover {
-    background-color: white;
-    color: orangered;
+  background-color: white;
+  color: orangered;
 }
+
 section {
-    display: flex;
-    justify-content: space-around ;
+  display: flex;
+  justify-content: space-around;
 }
+
 h2 {
-    text-align: center;
-    margin: 100px 0;
-    font-weight: lighter;
-    font-size: 3rem;
+  text-align: center;
+  margin: 100px 0;
+  font-weight: lighter;
+  font-size: 3rem;
 }
-.icon_img{
-    width: 9rem;
-    margin-bottom: 25px;
+.icon_img {
+  width: 9rem;
+  margin-bottom: 25px;
 }
-.img_info{
-    font-size: 1.8rem;
+
+.img_info {
+  font-size: 1.8rem;
 }
-.karma_icon{
-    display:flex;
-   justify-content: space-evenly;
-   align-items: center;
-   flex-direction: column;
+
+.karma_icon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
-.icon{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+
+.icon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-footer{
-    border-top: 1px solid lightgray;
+
+footer {
+  border-top: 1px solid lightgray;
 }
-.footer_info{
-    text-align: center;
-    margin: 1rem 0;
-    
+
+.footer_info {
+  text-align: center;
+  margin: 1rem 0;
 }
 .info {
-    font-weight: normal;
+  font-weight: normal;
 }
-.footer_img{
-    display: flex;
-    justify-content: center;
-   
+
+.footer_img {
+  display: flex;
+  justify-content: center;
 }
-.footer-icon{
- height: 1rem;
-display: flex;
-justify-content: space-evenly;
-padding: 0.5rem;
-border: 1px solid rgb(220, 217, 217);
-border-radius: 50%;
+.footer-icon {
+  height: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 50%;
 }
-#facebook_icon{
-    margin: 0 13px;
+#facebook_icon {
+  margin: 0 13px;
 }
 .last-info {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: small;
-    color: gray;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: small;
+  color: gray;
 }
+
 .input_card {
-    display:flex;
+  display: flex;
 }
 .karma-feature {
-    margin-top: 100px;
-    display: flex;
-    justify-content: flex-start;
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-start;
 }
 .feature-img {
-    width: 550px;
-    margin: 0;
+  width: 550px;
+  margin: 0;
 }
 .quote {
-    background-color:#f9e6e2e7;
-    width: 70%;
-    text-align: center;
+  background-color: #f9e6e2e7;
+  width: 70%;
+  text-align: center;
 }
 .karma-quote {
-    margin-top: 80px;
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: 10px;
-    font-size: xx-large;
+  margin-top: 80px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: xx-large;
 }
- .karma-button {
-    background-color: rgb(245, 127, 84);
-    padding: 15px 25px;
-    border-radius: 5px;
-    font-size: large;
-    margin-top: 30px;
-    border: 0 rgb(134, 49, 17) solid;
-    color: white;
-    width: 200px;
- }
- .main {
+.karma-button {
+  background-color: rgb(245, 127, 84);
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: large;
+  margin-top: 30px;
+  border: 0 rgb(134, 49, 17) solid;
+  color: white;
+  width: 200px;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.5px grey solid;
+}
+
+.store-img {
+  width: 600px;
+  margin-right: 0;
+}
+
+u {
+  color: rgb(194, 72, 28);
+}
+
+.title {
+  color: rgb(218, 120, 85);
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+#lname {
+    margin-left: 20px;
+}
+
+.radioButtons {
+  accent-color:rgb(194, 72, 28);
+  height: 1em;
+  width: 1em;
+}
+
+.radio-input {
     display: flex;
-    justify-content: space-around;
-    border-top: 0.5px grey solid;
- }
+}
+#space-grey {
+    margin-left: 50px;
+}
 
- .info {
-    
- }
+.checkbox {
+    accent-color:rgb(194, 72, 28);
+}
 
- .store-img {
-    width: 600px;
-    margin-right: 0;
- }
+#city {
+    font-style: italic;
+}
+.city-postcode {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4em;
+}
+
 
 
 

@@ -56,51 +56,116 @@
     <main>
       <section class="main">
         <div class="info">
-          <h1>
+          <h1 class="title">
             Order your Karma wifi <br />
             device today!
           </h1>
           <form>
-            <section class="name">
-              <label for="fname">First name *</label>
-              <input type="text" id="fname" name="fname" value="" /><br />
-            </section>
+            <div class="name">
+              <div>
+                <label for="fname">First name *</label><br /><br />
+                <input type="text" id="fname" name="fname" value="" />
+              </div>
+              <div>
+                <label id="lname" for="lname">Last name *</label><br /><br />
+                <input type="text" id="lname" name="lname" value="" />
+              </div>
+              <br />
+            </div>
             <br />
-            <section class="name">
-              <label for="lname">Last name *</label>
-              <input type="text" id="lname" name="lname" value="" /><br />
-            </section>
+            <div>
+              <label for="address">Address *</label><br /><br />
+              <input
+                size="50"
+                type="text"
+                id="address"
+                name="address"
+                value=""
+              />
+            </div>
             <br />
-            <section>
-                <label for="address">Address *</label>
-                <input type="text" id="address" name="address" value="" /><br />
-            </section>
+            <div>
+              <label for="address">Address 2</label><br /><br />
+              <input
+                size="50"
+                type="text"
+                id="address"
+                name="address"
+                value=""
+              />
+            </div>
             <br />
-            <section>
-                <label for="address">Address 2</label>
-                <input type="text" id="address" name="address" value="" /><br />
-            </section>
-            <br />
-            <section></section>
+            <div class="city-postcode">
+              <div>
+                <label for="city">City *</label>
+                <br /><br />
+                <select id="city" name="city">
+                  <option value="select" selected>Select your city...</option>
+                  <option value="Birmingham">Birmingham</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="London">London</option>
+                  <option value="Liverpool">Liverpool</option>
+                  <option value="Sheffield">Sheffield</option>
+                </select>
+              </div>
+              <div class="postcode">
+                <label class="postcode" for="postcode">Postcode *</label> <br /><br />
+                <input
+                  size="10"
+                  type="text"
+                  id="postcode"
+                  name="postcode"
+                  value=""
+                />
+              </div>
+            </div>
             <br />
             <p>Select a colour</p>
+            <div class="radio-input">
+              <div>
+                <input
+                  type="radio"
+                  id="karma-orange"
+                  name="colour"
+                  value="karma orange"
+                  class="radioButtons"
+                />
+                <label for="karma orange">Karma orange</label><br />
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="space-grey"
+                  name="colour"
+                  value="space grey"
+                  class="radioButtons"
+                />
+                <label for="space grey">Space Grey</label><br />
+              </div>
+            </div>
             <br />
-            <section>
-                 <input type="radio" id="karma orange" name="colour" value="karma orange">
-                 <label for="karma orange">Karma orange</label><br>
-                 <input type="radio" id="space grey" name="colour" value="space grey">
-                 <label for="space grey">Space Grey</label><br>
-            </section>
-            <br />
-            <section>
-                <input type="checkbox" id="agreement" name="agreement" value="✔️">
-                <label for="agreement">By placing your order you agree to Karma's <u>Terms and Conditions</u>.*</label><br>
-            </section>
+            <div>
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                value="✔️"
+              />
+              <label for="agreement"
+                >By placing your order you agree to Karma's
+                <u>Terms and Conditions</u>.*</label
+              ><br />
+            </div>
             <button>Place my order</button>
           </form>
         </div>
         <div>
-            <img class="store-img" src="/level-2/store-image_by-andrew-neel-unsplash.jpg" alt="A lady working on a computer while drinking her coffee">
+          <img
+            class="store-img"
+            src="/level-2/store-image_by-andrew-neel-unsplash.jpg"
+            alt="A lady working on a computer while drinking her coffee"
+          />
         </div>
       </section>
     </main>
