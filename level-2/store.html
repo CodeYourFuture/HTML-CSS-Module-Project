@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="../css/store.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="in this page users fill up order form for a karma wifi device">
+</head>
+<body>
+    <header class="header">
+        
+            <div class="logo">
+                <img src="../img/karma-logo.svg" alt="logo-icon" >
+            </div>
+            <nav class="nav-bar" role="navigation" aria-label="navigation bar of PAGE">
+                <ul>
+                    <li >
+                        <a  href="../index.html" id="karma" target="_blank" aria-label="meet karma redirect to karma page "> Meet Karma </a>
+                    </li>
+                    <li>
+                        <a  href="#" target="_blank" aria-label="how it works, link to guiding page"> How it Works </a>
+                    </li>
+                    <li>
+                        <a  href="level-2/store.html" target="_blank" aria-label="link to store page"> Store </a>
+                    </li>
+                    <li>
+                        <a  href="#" target="_blank" aria-label="link to Blog"> Blog </a>
+                    </li>
+                    <li>
+                        <a  href="#" target="_blank"> Help </a>
+                    </li>
+                    <li>
+                        <a  href="#" target="_blank"> Login</a>
+                    </li>
+                </ul>
+            </nav>
+
+    </header>
+    <main class="main-store">
+
+        <section class="section-1-store">
+            <h1>
+                Order your Karma WiFi device today!
+            </h1>
+            <form class="form-container">
+
+                <fieldset id="personal-info">
+                    <label for="fname" id="label-fname" >First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Your First Name Here (required)" aria-label="enter your first name Here" required/>
+                    <label for="lname" id="label-lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Your last Name Here(required)" aria-label="enter our last name Here" required />
+                </fieldset>
+
+                <fieldset id="address-info">
+                    <label for="address">Address: </label>
+                    <input type="text" id="address" name="address" placeholder="Enter Your Address(required)" aria-label="enter your address Here" required/>
+                    <label for="address-2">Address 2:</label>
+                    <input type="text" id="address-2" name="address-2" placeholder="This Field Is Optional" aria-label="enter your second address , this field is Optional"/>
+                    <span id="city-post">
+                        <label for="city">City:</label>
+                        <label for="post-code">Post Code:</label>
+                        <select id="city" name="city" required aria-label="select a your city , required">
+                            <option value="" disabled selected>Select Your City:</option>
+                            <option value="Birmingham" >Birmingham</option>
+                            <option value="London">London</option>
+                            <option value="Manchester">Manchester</option>
+                            <option value="Glosgow">Glosgow</option>
+                          </select>
+                        <input type="text" id="post-code" name="post-code" required placeholder="Your post-code Here(required)" aria-label="enter your post code . required"/>
+                    </span>
+                </fieldset>
+                
+
+                <fieldset id="karma-radio-color">
+                    <legend>Select a color:</legend>
+                    <span id="karma-red-span">
+                        <input type="radio" value="karma-orange" name="device-color" id="karma-orange" required>
+                        <label for="karma-orange">Karma Orange</label>
+                    </span>
+                    <span id="space-grey-span">
+                        <input type="radio" value="space-grey" name="device-color" id="space-grey" required>
+                        <label for="space-grey">Space Grey</label>
+                    </span>
+                    
+                </fieldset>
+
+                <fieldset id="term-field">
+                    <input type="checkbox" id="terms" name="terms-conditions" value="terms" required>
+                    <label for="terms">
+                        By tick this box you are agree with Karma's <a href="#" aria-label="terms and condtions of order">Terms and Conditions</a>
+                    </label>
+                </fieldset>
+
+                <button type="submit" name="submit" aria-label="submiting fotm button">Place Your order</button>
+                
+            </form>
+
+        </section>
+
+        <section class="section-2-store">
+            <img src="store-image_by-andrew-neel-unsplash.webp" alt="store image on the side bar a lady using karma wifi">
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo" aria-label="footer of the webpage">
+        <p>Join us on: </p>
+        <div>
+            <a href="#" target="_blank" aria-label="redirecting to facebook page of karma Inc"><img src="../img/facebook-icon.svg" alt="facebook-icon link"></a>
+            <a href="#" target="_blank" aria-label="redirecting to instagram page of karma Inc"><img src="../img/instagram-icon.svg" alt="instagram-icon link"></a>
+            <a href="#" target="_blank" aria-label="redirecting to twitter page of karma Inc"><img src="../img/twitter-icon.svg" alt="twitter-iconlink"></a>
+        </div>
+        <p>
+            &copy; Karma Mobility Inc
+        </p>
+
+    </footer>
+    
+</body>
+</html>
