@@ -153,6 +153,38 @@ main {
   font-weight: light;
 }
 
+/* feature styling */
+.feature{
+  display: flex;
+  width: 100%;
+  height: 450px;
+}
+.feature-image{
+  /* flex: 40%; */
+  width: 540px;
+  height: 450px;
+}
+.feature-wrap{
+  display: flex;
+  /* flex: 60%; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #efdfd6;
+  width: 841px;
+  height: 439px;
+  flex-shrink: 0;
+}
+/* rgba(230, 115, 86, 0.1) */
+p .tag{
+  color: #ef6419;
+}
+.feature-desc{
+  color: var(--color);
+  font-size: 2.5em;
+  text-align: center;
+  font-style: italic;
+}
 /* Footer styling */
 
 footer {
