@@ -13,6 +13,7 @@ body {
   --grey-light--: #e4e4e4;
   --white: #fff;
   --light-dark-grey--: #807e7e;
+  --burnt-orange--: #e0633a;
 }
 /**
  * Add your custom styles below
@@ -30,11 +31,12 @@ body {
   display: grid;
   grid-gap: 6px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 80px 750px 500px 150px;
+  grid-template-rows: 80px 750px 500px 439px 200px;
   grid-template-areas:
     "h h"
     "m m"
     "c c"
+    "s s"
     "f f";
 }
 
@@ -99,7 +101,7 @@ a:active {
   margin-top: 0;
 }
 .main .btn {
-  background-color: var(--orange-dark--);
+  background-color: var(--burnt-orange--);
   padding: 1rem 1.8rem;
   border-radius: 0.3rem;
   margin-left: 10rem;
@@ -112,7 +114,7 @@ a:active {
 }
 .everyone {
   margin-left: 20rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   font-weight: 10;
   font-size: 3.6vw;
@@ -132,11 +134,62 @@ a:active {
   margin-right: 4.5rem;
 }
 
+/* Sub-Content styling */
+.sub-content {
+  grid-area: s;
+  display: flex;
+  height: 439px;
+  margin-top: -3rem;
+}
+.feature-img {
+  /* height: 420px; */
+}
+.feature-content {
+  background-color: antiquewhite;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .feature-content p,
+btn {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  font-weight: 10;
+  font-size: 2.6vw;
+  font-style: italic;
+} */
+.whenever {
+  text-align: center;
+  font-size: 2.8vw;
+  font-style: italic;
+  font-weight: 400;
+  padding: 2rem;
+  margin: 4.5rem 7rem 1.3rem 7rem;
+  color: #434242;
+}
+#apostrophe {
+  color: var(--burnt-orange--);
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.btn {
+  background-color: var(--burnt-orange--);
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border: 0;
+  margin: 0 9rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 /* FOOTER styling */
 .footer {
   grid-area: f;
   border-top: 1.6px solid var(--grey-light--);
-  margin: 0 9rem;
+  margin: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
