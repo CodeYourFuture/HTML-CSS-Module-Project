@@ -117,7 +117,7 @@ body {
    flex-direction: row;
    align-items: center;
    margin-left: 170px;
-
+   margin-bottom: 70px;
  }
  h2 {
    display: flex;
@@ -178,4 +178,57 @@ footer {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.section3 {
+   padding: 20px;
+   text-align: center;
+}
+.section3-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+}
+.sec3img {
+   max-width: 40%;
+   height: auto;
+}
+.text-section {
+   
+   text-align: center;
+   background-color: #eadcdc;
+
+}
+.text-section button {
+   background-color: #c05326;
+   color: #fff;
+   padding: 10px 20px;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-bottom:60px;
+   border: 2px solid #c05326;
+   border-radius: 5px;
+}
+.text-section button:hover {
+   color: #c05326;
+   background-color: white;
+   border-color: white;
+}
+
+.text-section p {
+   text-align: center;
+   font-style: italic;
+   font-size: xx-large;
+   padding:75px;
+   margin-left: 40px;
+   margin-right: 40px;
+   max-height:18px;
+}
+.text-section p::before,
+.text-section p::after{
+   content: "“";
+   color: #c05326;
+   font-weight: bold;
+   font-size: 24px;
 }
