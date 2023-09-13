@@ -121,15 +121,6 @@ form div:nth-child(6) {
   row-gap: 0.6rem;
 }
 
-form div:nth-child(1) input,
-form div:nth-child(2) input,
-form div:nth-child(3) input,
-form div:nth-child(4) input,
-form div:nth-child(5) input,
-form div:nth-child(6) input {
-  padding-left: 0.6rem;
-}
-
 form div:nth-child(3) {
   grid-column: span 2;
 }
@@ -340,6 +331,15 @@ footer {
 
   input[type="checkbox"] {
     width: 12%;
+  }
+
+  form div:nth-child(1) input,
+  form div:nth-child(2) input,
+  form div:nth-child(3) input,
+  form div:nth-child(4) input,
+  form div:nth-child(5) input,
+  form div:nth-child(6) input {
+    padding-left: 0.6rem;
   }
 
   .terms-and-cons {
