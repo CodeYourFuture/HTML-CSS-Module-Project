@@ -1,5 +1,5 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
   --font-family: "Roboto", sans-serif;
   --font-color: #ef6419;
@@ -160,30 +160,43 @@ main {
   height: 450px;
 }
 .feature-image{
-  /* flex: 40%; */
-  width: 540px;
+  flex-shrink: 0;
+  width: 47%;
   height: 450px;
 }
 .feature-wrap{
   display: flex;
-  /* flex: 60%; */
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #efdfd6;
-  width: 841px;
+  width: 53%;
   height: 439px;
   flex-shrink: 0;
 }
 /* rgba(230, 115, 86, 0.1) */
 p .tag{
   color: #ef6419;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
 }
 .feature-desc{
   color: var(--color);
-  font-size: 2.5em;
+  font-size: 2.4em;
   text-align: center;
   font-style: italic;
+  width: 35rem;
+  /* font-weight: 500; */
+}
+.feature-btn{
+  background: #ef6419;
+  padding: .8em 1.6em;
+  margin-top: 2em;
+  color: white;
+  border: none;
+  border-radius: .2em;
+  font-size: 1.5em;
 }
 /* Footer styling */
 
