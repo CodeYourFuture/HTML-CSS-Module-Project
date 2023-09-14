@@ -272,7 +272,6 @@ footer {
    grid-template-columns: repeat(2, 30%);
    grid-template-rows:repeat(2, 130px);
    gap:40px;
-   /* margin-left: 50px; */
    justify-content: center;
 }
 
@@ -287,20 +286,15 @@ footer {
 .order-form input,
 .order-form select {
    width: 100%;
-   /* Make form elements take up the full width of their cell */
    margin-bottom: 10px;
-   /* Add some space between elements */
 }
 
-.order-form .color-checkboxes {
+.order-form .color-radio {
    grid-column: span 2;
-   /* Span both columns */
 }
 
 .order-form button {
    grid-column: span 2;
-   /* Span both columns */
    margin-top: 10px;
    margin-bottom: 20px;
-   /* Add space below the button */
 }
