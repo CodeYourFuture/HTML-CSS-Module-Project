@@ -195,22 +195,20 @@ footer {
    height: auto;
 }
 .text-section {
-   
    text-align: center;
    background-color: #eadcdc;
-
 }
-.text-section button {
+.text-section a.button {
    background-color: #c05326;
    color: #fff;
    padding: 10px 20px;
    cursor: pointer;
-   margin-top: 10px;
-   margin-bottom:60px;
    border: 2px solid #c05326;
    border-radius: 5px;
+   text-decoration: none;
+   vertical-align: middle;
 }
-.text-section button:hover {
+.text-section a.button:hover {
    color: #c05326;
    background-color: white;
    border-color: white;
@@ -223,7 +221,7 @@ footer {
    padding:75px;
    margin-left: 40px;
    margin-right: 40px;
-   max-height:18px;
+   max-height:112px;
 }
 .text-section p::before,
 .text-section p::after{
@@ -231,4 +229,78 @@ footer {
    color: #c05326;
    font-weight: bold;
    font-size: 24px;
+}
+
+/* store.html page */
+.order-form button {
+   background-color: #c05326;
+   color: #fff;
+   padding: 10px 30px;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-bottom: 60px;
+   border: 2px solid #c05326;
+   border-radius: 4px;
+}
+
+.order-form button:hover {
+   color: #c05326;
+   background-color: rgb(220, 208, 208);
+   border-color: rgb(220, 208, 208);
+}
+.order-form h2 {
+   color:#c05326;
+   font-weight:500;
+}
+.terms-text {
+   color: red;
+   text-decoration: underline;
+   cursor: pointer;
+}
+.store-section{
+   display:grid;
+   grid-template-columns: 1fr 1fr ;
+   gap: 0;
+}
+.store-img img {
+   max-width: 100%;
+   height: auto;
+}
+
+.order-form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap:40px;
+   margin-left: 50px;
+}
+
+.order-form h2 {
+   grid-column: span 2;
+   /* Span both columns */
+   text-align: center;
+   /* Center align the h2 */
+   margin-top: 0;
+   /* Remove default margin */
+}
+
+.order-form label,
+.order-form input,
+.order-form select {
+   width: 100%;
+   /* Make form elements take up the full width of their cell */
+   margin-bottom: 10px;
+   /* Add some space between elements */
+}
+
+.order-form .color-checkboxes {
+   grid-column: span 2;
+   /* Span both columns */
+}
+
+.order-form button {
+   grid-column: span 2;
+   /* Span both columns */
+   margin-top: 10px;
+   margin-bottom: 20px;
+   /* Add space below the button */
 }
