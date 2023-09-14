@@ -269,18 +269,18 @@ footer {
 
 .order-form {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: repeat(2, 30%);
+   grid-template-rows:repeat(2, 130px);
    gap:40px;
-   margin-left: 50px;
+   /* margin-left: 50px; */
+   justify-content: center;
 }
 
 .order-form h2 {
    grid-column: span 2;
-   /* Span both columns */
-   text-align: center;
-   /* Center align the h2 */
-   margin-top: 0;
-   /* Remove default margin */
+   text-align: start;
+   margin-top: 40px;
+   padding-bottom: 3px;
 }
 
 .order-form label,
