@@ -5,7 +5,7 @@ body {
 
 .logo {
   width: 2rem;
-  margin-left: 5rem;
+  margin-left: 12rem;
 }
 .header {
   display: flex;
@@ -164,12 +164,12 @@ footer {
 }
 .main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-top: 0.5px grey solid;
 }
 
 .store-img {
-  width: 600px;
+  width: 650px;
   margin-right: 0;
 }
 
@@ -179,6 +179,7 @@ u {
 
 .title {
   color: rgb(218, 120, 85);
+  margin-bottom: 70px;
 }
 
 .name {
@@ -199,6 +200,11 @@ u {
 .radio-input {
     display: flex;
 }
+
+.radio-text {
+     margin-top: 30px;
+}
+
 #space-grey {
     margin-left: 50px;
 }
@@ -214,6 +220,22 @@ u {
     display: flex;
     justify-content: space-between;
     margin-right: 4em;
+}
+.order-button {
+    background-color: rgb(245, 127, 84);
+    padding: 15px 25px;
+    border-radius: 3px;
+    font-size: large;
+    border: 0 rgb(134, 49, 17) solid;
+    color: white;
+    width: 200px;
+}
+.info-form {
+    align-items: center;
+    margin-top: 120px;
+}
+#agreement {
+    margin: 60px 0 20px 0;
 }
 
 
