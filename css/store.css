@@ -10,12 +10,10 @@ body {
   background: var(--white-color);
   
 }
+/* main styling */
 .container {
   display: flex;
-  /* gap: 5px; */
-  /* width: 1318px; */
   height: 1235px;
-  /* padding-top: 98px; */
 }
 .order-container {
   padding-left: 122px;
@@ -24,16 +22,17 @@ h2 {
   width: 521px;
   height: 118px;
   font-family: "roboto";
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 450;
+  font-size: 45px;
   line-height: 58.59px;
   color: var(--burnt-orange);
   margin-top: 140px;
-  margin-bottom: 56px;
+  margin-bottom: 65px;
 }
 .image {
   padding-left: 50px;
 }
+/* form styling */
 form {
   display: grid;
   grid-template-rows: repeat(8, auto);
@@ -59,7 +58,6 @@ form div:nth-child(6) {
 form div:nth-child(3) {
   grid-column: span 2;
 }
-
 form div:nth-child(4) {
   grid-column: span 2;
 }
@@ -77,7 +75,7 @@ form div:nth-child(4) {
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
-.colour {
+.color {
   font-weight: 600;
 }
 .select-radio {
@@ -98,7 +96,7 @@ form div:nth-child(4) {
   color: var(--burnt-orange);
 }
 
-/* Style the terms and conditions text */
+/* terms and conditions text styling */
 .terms {
   display: flex;
   grid-column: span 2;
@@ -107,14 +105,14 @@ form div:nth-child(4) {
   margin-top: 10px;
 }
 
-/* Style the terms and conditions link */
+/* terms and conditions link styling */
 .terms span {
   color: var(--burnt-orange);
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* Style the checkmark image */
+/* checkmark image styling */
 img[src="./checkmark.svg"] {
   vertical-align: middle;
   height: 15px;
