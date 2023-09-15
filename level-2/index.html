@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="This is a page for Karma Mobile App.">
+
+  <title>Store Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/store.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navigation">
+    <nav>
+      <img class="karma-logo" src="../img/karma-logo.svg" height="40px" width="40px" alt="karma-icon" />
+      <ul class="navigationList">
+        <li class="karma-item"><a href="#"><strong>Meet Karma</strong></a></li>
+        <li class="nav-item"><a href="#">How it works</a></li>
+        <li class="nav-item"><a href="#">Store</a></li>
+        <li class="nav-item"><a href="#">Blogs</a></li>
+        <li class="nav-item"><a href="#">Help</a></li>
+        <li class="nav-item"><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Form -->
+  <main class="container">
+    <div class="order-container">
+      <h2>Order your Karma wifi device today!</h2>
+      <form action="/index.html" method="post">
+        <div class="input-group">
+          <label class="name" for="firstName">First Name*</label>
+          <input type="text" name="firstName" />
+        </div>
+        <div class="input-group">
+          <label class="name" for="lastName">Last Name*</label>
+          <input type="text" name="lastName" />
+        </div>
+        <div class="firstAdd">
+          <label class="add-one" for="firstAddress">Address*</label>
+          <input type="text" name="firstAddress" />
+        </div>
+        <div class="secondAdd">
+          <label class="add-two" for="secondAddress">Address 2</label>
+          <input type="text" name="secondAddress" />
+        </div>
+        <div class="input-group">
+          <label class="select" value="" for="select-city">City*</label>
+          <select name="city" id="select-city">
+            <option value="">Select your option...</option>
+            <option value="aberdeen">Aberdeen</option>
+            <option value="coventry">Coventry</option>
+            <option value="dudley">Dudley</option>
+            <option value="glasgow">Glasgow</option>
+            <option value="oxford">Oxford</option>
+            <option value="brighton">Brighton</option>
+            <option value="bath">Bath</option>
+            <option value="bristol">Bristol</option>
+            <option value="belfast">Belfast</option>
+            <option value="leicester">Leicester</option>
+            <option value="nottingham">Nottingham</option>
+            <option value="birmingham">Birmingham</option>
+            <option value="durham">Durham</option>
+            <option value="dundee">Dundee</option>
+            <option value="leeds">Leeds</option>
+            <option value="kent">Kent</option>
+            <option value="cambridge">Cambridge</option>
+            <option value="lancashire">Lancashire</option>
+            <option value="luton">Luton</option>
+            <option value="bradford">Bradford</option>
+            <option value="london">London</option>
+            <option value="norwich">Norwich</option>
+            <option value="edinburgh">Edinburgh</option>
+            <option value="sheffield">Sheffield</option>
+            <option value="sale">Sale</option>
+            <option value="st Ives">St Ives</option>
+            <option value="plymouth">Plymouth</option>
+            <option value="liverpool">Liverpool</option>
+            <option value="lancaster">Lancaster</option>
+            <option value="newport">Newport</option>
+            <option value="derby">Derby</option>
+            <option value="hereford">Hereford</option>
+            <option value="newcastle">Newcastle</option>
+            <option value="sunderland">Sunderland</option>
+            <option value="hull">Hull</option>
+            <option value="cardiff">Cardiff</option>
+            <option value="manchester">Manchester</option>
+            <option value="salisbury">Salisbury</option>
+            <option value="southampton">Southampton</option>
+            <option value="worcester">Worcester</option>
+            <option value="wolverhampton">Wolverhampton</option>
+            <option value="york">York</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label class="your-code" for="post-code">Postcode*</label>
+          <input type="text" name="post-code" />
+        </div>
+
+        <label class="color" for="colour" name="colour">Select a colour</label>
+        <section class="select-radio">
+          <div>
+            <input type="radio" name="radio">
+            <label for="colour">Karma orange</label>
+          </div>
+          <div>
+            <input type="radio" name="radio">
+            <label for="colour">Space Grey</label>
+          </div>
+        </section>
+
+        <section class="terms">
+          <img src="./checkmark.svg" alt="checker"> <p>By placing your order you agree to Karma's <span>Terms and
+              conditions.*</span> </p>
+        </section>
+        <!-- form button -->
+        <button class="order-btn">Place my order</button>
+      </form>
+    </div>
+    <div class="image">
+      <img src="./store-image_by-andrew-neel-unsplash.jpg" alt="A woman working and sipping coffee." height="1295px"
+        width="570px">
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="media-icon">
+      <h5 class="connect">Join us on</h5>
+      <div class="footerLogo">
+        <a class="connect-logo" href="#"><img src="../img/twitter-icon.svg" alt="twitter-icon" height="15"
+            width="15" /></a>
+        <a class="connect-logo" href="#"><img src="../img/facebook-icon.svg" alt="facebook-icon" height="15"
+            width="15" /></a>
+        <a class="connect-logo" href="#"><img src="../img/instagram-icon.svg" alt="instagram-icon" height="15"
+            width="15" /></a>
+      </div>
+      <p class="copyright">&copy;Karma Mobility, Inc.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
