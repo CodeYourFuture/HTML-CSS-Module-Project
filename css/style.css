@@ -27,7 +27,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/* Grid box to divide the whole page (into header, main, footer) */
+/* Grid box to divide the whole page (into header, main, content, sub-content and footer) */
 .container {
   height: 100%;
   display: grid;
@@ -45,9 +45,10 @@ body {
 /* HEADER Styling section */
 .header {
   grid-area: h;
+  background-color: #c4c4c41a;
 }
 .logo-img {
-  margin: 1rem 4rem;
+  margin: 1rem 6.1rem;
 }
 .nav-menu {
   display: flex;
@@ -181,7 +182,7 @@ a:active {
 .footer {
   grid-area: f;
   border-top: 1.6px solid var(--grey-light--);
-  margin: 0 2rem;
+  margin: 0 6.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

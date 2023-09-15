@@ -1,0 +1,101 @@
+/* Grid box to divide the whole page (into header, main, footer) */
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80px 1228px 200px;
+  grid-template-areas:
+    "h h"
+    "s s"
+    "f f";
+}
+
+.store-content {
+  grid-area: s;
+  display: flex;
+}
+.store-img {
+  width: 650px;
+}
+.form-layout {
+  width: 450px;
+  margin: 5rem 6.1rem;
+}
+h1 {
+  color: var(--burnt-orange--);
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+form {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  row-gap: 2rem;
+  grid-column: span 2;
+  column-gap: 1.6rem;
+}
+form div:nth-child(1),
+form div:nth-child(2),
+form div:nth-child(3),
+form div:nth-child(4),
+form div:nth-child(5),
+form div:nth-child(6) {
+  display: grid;
+  grid-template-rows: auto 3rem;
+  row-gap: 0.5rem;
+}
+form div:nth-child(3) {
+  grid-column: span 2;
+}
+form div:nth-child(4) {
+  grid-column: span 2;
+}
+form label {
+  font-weight: 500;
+}
+.your-city {
+  font-style: italic;
+}
+
+.color {
+  grid-column: span 2;
+  font-weight: 500;
+  color: var(--grey-dark--);
+  margin-bottom: -1rem;
+  margin-top: 1.5rem;
+}
+.themes-radios {
+  display: flex;
+  margin-bottom: 20px;
+  grid-column: span 2;
+  gap: 2rem;
+  align-items: center;
+}
+.themes-radios div:nth-child(1),
+.themes-radios div:nth-child(2) {
+  display: block;
+}
+.themes-radios input[type="radio"] {
+  margin-right: 5px;
+}
+
+.terms-and-cons {
+  display: flex;
+  grid-column: span 2;
+  gap: 0.5rem;
+}
+.terms-and-cons a {
+  color: var(--burnt-orange--);
+  text-decoration: underline;
+}
+
+.place-order-btn {
+  color: white;
+}
+.order-btn {
+  background-color: var(--burnt-orange--);
+  padding: 1.1rem 2.6rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-size: 1.2rem;
+}
