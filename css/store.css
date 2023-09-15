@@ -1,0 +1,151 @@
+:root{
+        --karma-color: rgb(218, 90, 20);
+}
+
+h1{
+        font-size: 2rem;
+        color:rgb(218, 90, 20);
+        margin-top: 50px;
+        font-weight: 500;
+       
+        
+}
+.form{
+        margin:3rem;
+}
+
+.container{
+display: flex;
+height: 80rem;
+min-width: 86rem;
+
+}
+
+        
+input[type="text"],
+select {
+        width: 100%;
+        padding: 20px;
+        
+}
+.form_container{
+        background-color: rgb(231, 240, 222);
+        width:50vw;
+        margin-left: 
+        display:flex;
+        
+}
+.store_img{
+        width:50vw;
+}
+.input_container{
+display: flex;
+flex-direction: row;
+gap: 2rem;
+}
+.input_card{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;   
+}
+
+.button{
+padding:10px 30px;
+background-color:rgb(218, 90, 20);
+border: none;
+border-radius: .3rem;
+font-size: 22px;
+font-weight: 500;
+margin-top: 40px;
+color:#fff;
+width:270px;
+height: 70px;
+flex-shrink: 0;
+}
+.button:hover{
+        background-color: #fff;
+        color:rgb(218, 90, 20);;
+        border:2px solid rgb(218, 90, 20);
+
+        
+}
+
+#condition{
+   color:rgb(218, 90, 20);
+}
+#first_name{
+ margin-right: 0;
+        
+}
+.box{
+width:180px;
+height:40px;
+border:1px solid rgb(138, 132, 132);
+border-radius:2px;
+color:rgb(138, 132, 132);
+
+}
+.add_box{
+width:410px;
+height: 40px;
+border: 1px solid rgb(138, 132, 132);
+border-radius: 2px;
+color: rgb(138, 132, 132);
+}
+.select {
+width: 220px;
+height: 40px;
+border: 1px solid rgb(138, 132, 132);
+border-radius: 2px;
+color: rgb(138, 132, 132);
+}
+.text_box{
+color: rgb(111, 106, 106);
+font-weight: 500;
+font-size: 1.1rem;
+margin-bottom: 1rem;
+
+}
+.address_field{flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+      
+}
+.select_col{
+        display:flex;
+        gap:4rem;
+}
+
+.radio{
+        display: grid;
+        align-content: space-between;
+        height: 4rem auto;
+        gap:2rem;
+        align-items: center;
+        margin-block:2rem;
+
+}
+.input_citypost{
+        display:flex;
+
+}
+.select{
+        height: 3.5rem;
+        width: 20rem;
+        border: 2px solid rgb(164, 163, 163);
+        border-radius: 0.4rem;
+}
+
+input[type="radio"]+lable{
+        display: block;
+        cursor: pointer;
+        padding:.2em;
+        background-color:rgb(218, 90, 20);
+}
+
+.input_radio{
+
+}
+.checkbox{
+
+}

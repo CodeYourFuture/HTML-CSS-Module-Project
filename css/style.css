@@ -1,9 +1,208 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  background-color: transparent;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 10rem;
+}
+/*_____________________media query_____________________*/
+
+@media screen and (min-width: 768px) {
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+  height: 8vh;
+  /* margin-left: 3vw;
+    margin-right: 3vw; */
+  padding-left: 3vw;
+  padding-right: 3vw;
+  align-items: center;
+  background-color: rgb(249, 248, 241);
+}
+.logo {
+  width: 2.5rem;
+  height: auto;
+}
+.navigation_list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* 1 row and 6 columns */
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.5vw;
+  /* Adjust the gap as needed */
+  width: 50vw;
+  height: 2vh;
+}
+.navigation_item a {
+  width: 15rem;
+  text-decoration: none;
+  color: gray;
+}
+.navigation_item:nth-child(1) {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.navigation_list li {
+  padding: 0;
+  text-align: center;
+  /* Center the content within each grid item */
+  box-sizing: border-box;
+  /* Include padding and border in total width/height */
+  font-size: clamp(1.9vh, 1vw, 3vh);
+}
+.navigation_item a {
+  text-decoration: none;
+  color: gray;
+  font-size: 0.8rem;
+}
+#meet-karma {
+  color: red;
+}
+.navigation_item :hover {
+  color: rgb(218, 90, 20);
+}
+
+.hero {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/first-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.hero_title {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+.hero_info {
+  font-size: 1.7rem;
+  font-weight: 50;
+  margin: 0;
+}
+
+.hero_burtton {
+  background-color: rgb(218, 90, 20);
+  border: 1px solid rgb(218, 90, 20);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: smaller;
+  margin-top: 40px;
+  color: white;
+}
+padding: 1rem;
+background-color: rgb(235, 99, 2);
+border: none;
+border-radius: 3px;
+.karma_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icon_img {
+  width: 10rem;
+  margin: 5rem 0;
+}
+.description {
+  font-size: 2rem;
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+  margin-top: 6rem;
+  border-top: 1px solid rgb(214, 212, 212);
+}
+.footer_content {
+  margin-top: 2rem;
+}
+.content {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.footer_part {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_icon {
+  height: 1.9rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+#facebook-icon {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.karma_mobality {
+  margin-top: 10px;
+  font-size: smaller;
+  font-weight: lighter;
+  color: rgb(196, 193, 193);
+}
+
+.input_card {
+  display: flex;
+}
+
+.note_container {
+  display: flex;
+  margin-top: 10rem;
+}
+.note {
+  background-color: rgb(250, 233, 233);
+  width: 70vw;
+  text-align: center;
+
+  font-size: larger;
+}
+.note_info {
+  margin-top: 10rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 /**
@@ -15,5 +214,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
