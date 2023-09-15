@@ -7,7 +7,7 @@ Now let's make this website responsive!
 
 - Use media queries to make both the homepage and the order page look good on mobile. 
 - You'll find the mobile designs inside the 'level-3' folder. 
-- You can use 1 or 2 breakpoints, it's up to you (if you're not sure, start with 768px - it's a classic one as it's the width of an iPad and a good point to switch from a mobile layout to a desktop layout).
+- You can use 1 or 2 breakpoint,s it's up to you (if you're not sure, start with 768px - it's a classic one as it's the width of an iPad and a good point to switch from a mobile layout to a desktop layout).
 - You might have to change some of your existing HTML and CSS code so that your webpage can match the mobile and desktop designs
 
 ### Submitting your work
