@@ -1,9 +1,20 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey-dark--: #292b2c;
+  --orange-dark--: #c05326;
+  --orange-light--: #f7eae4;
+  --grey-light--: #e4e4e4;
+  --white: #fff;
+  --light-dark-grey--: #807e7e;
+  --burnt-orange--: #e0633a;
 }
 
 /**
@@ -16,4 +27,177 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Grid box to divide the whole page (into header, main, content, sub-content and footer) */
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 80px 750px 500px 439px 200px;
+  grid-template-areas:
+    "h h"
+    "m m"
+    "c c"
+    "s s"
+    "f f";
+}
 
+/* HEADER Styling section */
+.header {
+  grid-area: h;
+  background-color: #c4c4c41a;
+}
+.logo-img {
+  margin: 1rem 6.1rem;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 10rem 0;
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  margin: 2rem 4rem;
+}
+.meet-karma,
+.other-nav-items {
+  margin: 0 1rem;
+}
+a {
+  text-decoration: none;
+  color: var(--light-dark-grey--);
+}
+a:hover,
+a:active {
+  color: var(--orange-dark--);
+}
+
+/* MAIN section styling */
+.main {
+  grid-area: m;
+  background-image: url("../img/first-background.jpg");
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+.main-text {
+  color: var(--grey-light--);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro {
+  margin-top: 15rem;
+  margin-left: 10rem;
+  margin-bottom: 1.5rem;
+  font-weight: 20;
+  font-size: 5vw;
+}
+.wifi {
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  font-weight: 100;
+  font-size: 2.8vw;
+  margin-top: 0;
+}
+.main .btn {
+  background-color: var(--burnt-orange--);
+  padding: 1rem 1.8rem;
+  border-radius: 0.3rem;
+  margin-left: 10rem;
+  border: 0;
+}
+
+/* CONTENT Section styling */
+.content {
+  grid-area: c;
+}
+.everyone {
+  margin-left: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 10;
+  font-size: 3.6vw;
+  display: flex;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: 500;
+  font-size: 1.6vw;
+  margin-right: 4.5rem;
+}
+
+/* Sub-Content styling */
+.sub-content {
+  grid-area: s;
+  display: flex;
+  height: 439px;
+  margin-top: -3rem;
+}
+.feature-img {
+}
+.feature-content {
+  background-color: rgba(224, 99, 58, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whenever {
+  text-align: center;
+  font-size: 2.8vw;
+  font-style: italic;
+  font-weight: 400;
+  padding: 2rem;
+  margin: 4.5rem 7rem 1.3rem 7rem;
+  color: #434242;
+}
+#apostrophe {
+  color: var(--burnt-orange--);
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.btn {
+  background-color: var(--burnt-orange--);
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border: 0;
+  margin: 0 9rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* FOOTER styling */
+.footer {
+  grid-area: f;
+  border-top: 1.6px solid var(--grey-light--);
+  margin: 0 6.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-logo {
+  border: 1px solid var(--grey-light--);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0 0.3rem;
+}
+.footer-text {
+  font-weight: 500;
+}
+.copyright-karma {
+  font-size: 1vw;
+  font-weight: 400;
+  color: #a5a5a5;
+}

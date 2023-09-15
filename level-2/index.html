@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma - Store Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/storepage.css" />
+    <link rel="shortcut icon" type="../image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+    <div class="container">
+      <header class="header">
+        <nav class="nav-menu">
+          <div class="logo">
+            <img
+              class="logo-img"
+              src="../img/karma-logo.svg"
+              height="40px"
+              width="40px"
+              alt="Karma signature logo"
+            />
+          </div>
+          <ul class="nav-items">
+            <li class="meet-karma">
+              <a href="#"><strong>Meet Karma</strong></a>
+            </li>
+            <li class="other-nav-items"><a href="#">How it Works</a></li>
+            <li class="other-nav-items"><a href="#">Store</a></li>
+            <li class="other-nav-items"><a href="#">Blog</a></li>
+            <li class="other-nav-items"><a href="#">Help</a></li>
+            <li class="other-nav-items"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- MAIN AREA in store page -->
+      <section class="store-content">
+        <div class="form-layout">
+          <h1>Order your Karma wifi device today!</h1>
+          <form action="./index.html" method="post">
+            <div>
+              <label for="firstName" class="labels">First Name *</label>
+              <input type="text" name="firstName" class="fields" />
+            </div>
+            <div>
+              <label for="lastName" class="labels">Last Name *</label>
+              <input type="text" name="lastName" class="fields" />
+            </div>
+            <div>
+              <label for="address" class="labels">Address *</label>
+              <input type="text" name="address" class="fields" />
+            </div>
+            <div>
+              <label for="address" class="labels">Address 2</label>
+              <input type="text" name="address-2" class="fields" />
+            </div>
+
+            <div>
+              <label for="city" class="labels">City *</label>
+              <select id="city" name="city" class="your-city">
+                <option value="" class="your-city">Select your city...</option>
+                <option value="Aberdeen">Aberdeen</option>
+                <option value="Bangor">Bangor</option>
+                <option value="Belfast">Belfast</option>
+                <option value="Birmingham">Birmingham</option>
+                <option value="Bradford">Bradford</option>
+                <option value="Brighton">Brighton</option>
+                <option value="Bristol">Bristol</option>
+                <option value="Cambridge">Cambridge</option>
+                <option value="Canterbury">Canterbury</option>
+                <option value="Cardiff">Cardiff</option>
+                <option value="Chelmsford">Chelmsford</option>
+                <option value="Chester">Chester</option>
+                <option value="Chichester">Chichester</option>
+                <option value="Colchester">Colchester</option>
+                <option value="Coventry">Coventry</option>
+                <option value="Derby">Derby</option>
+                <option value="Doncaster">Doncaster</option>
+                <option value="Durham">Durham</option>
+                <option value="Ely">Ely</option>
+                <option value="Exeter">Exeter</option>
+                <option value="Gloucester">Gloucester</option>
+                <option value="Hereford">Hereford</option>
+                <option value="Kingston upon Hull">Kingston upon Hull</option>
+                <option value="Lancaster">Lancaster</option>
+                <option value="Leeds">Leeds</option>
+                <option value="Leicester">Leicester</option>
+                <option value="Lichfield">Lichfield</option>
+                <option value="Lincoln">Lincoln</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="London">London</option>
+                <option value="Manchester">Manchester</option>
+                <option value="Milton Keynes">Milton Keynes</option>
+                <option value="Newcastle">Newcastle</option>
+                <option value="Norwich">Norwich</option>
+                <option value="Nottingham">Nottingham</option>
+                <option value="Oxford">Oxford</option>
+                <option value="Peterborough">Peterborough</option>
+                <option value="Plymouth">Plymouth</option>
+                <option value="Portsmouth">Portsmouth</option>
+                <option value="Preston">Preston</option>
+                <option value="Salford">Salford</option>
+                <option value="Salisbury">Salisbury</option>
+                <option value="Sheffield">Sheffield</option>
+                <option value="Southampton">Southampton</option>
+                <option value="St Albans">St Albans</option>
+                <option value="Stoke-on-Trent">Stoke-on-Trent</option>
+                <option value="Sunderland">Sunderland</option>
+                <option value="Truro">Truro</option>
+                <option value="Wakefield">Wakefield</option>
+                <option value="Wells">Wells</option>
+                <option value="Westminster">Westminster</option>
+                <option value="Winchester">Winchester</option>
+                <option value="Wolverhampton">Wolverhampton</option>
+                <option value="Worcester">Worcester</option>
+                <option value="York">York</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="postcode" class="labels">Postcode *</label>
+              <input type="text" name="postcode" class="fields" />
+            </div>
+
+            <label for="color" class="color">Select a colour</label>
+            <div class="themes-radios">
+              <div>
+                <input type="radio" name="radio" />
+                <label for="color-select">Karma Orange</label>
+              </div>
+              <div>
+                <input type="radio" name="radio" />
+                <label for="color-select">Space Grey</label>
+              </div>
+            </div>
+
+            <div class="terms-and-cons">
+              <input type="checkbox" class="checkbox" name="checkbox" />
+              <p>
+                By placing your order you agree to Karma's
+                <a href="#">Terms and Conditions</a>. *
+              </p>
+            </div>
+            <div class="place-order">
+              <button class="order-btn">
+                <a href="#" class="place-order-btn">Place my order</a>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="store-img">
+          <img
+            src="store-image_by-andrew-neel-unsplash.jpg"
+            alt="A woman working with laptop at a desk"
+            height="1235px"
+            width="701px"
+          />
+        </div>
+      </section>
+
+      <!-- FOOTER  SECTION -->
+
+      <footer class="footer">
+        <div class="footer-text">
+          <p>Join us on</p>
+        </div>
+        <div class="contacts">
+          <a href="#"
+            ><img
+              class="contact-logo"
+              src="../img/twitter-icon.svg"
+              height="10"
+              width="10"
+          /></a>
+          <a href="#"
+            ><img
+              class="contact-logo"
+              src="../img/facebook-icon.svg"
+              height="10"
+              width="10"
+          /></a>
+          <a href="#"
+            ><img
+              class="contact-logo"
+              src="../img/instagram-icon.svg"
+              height="10"
+              width="10"
+            />
+          </a>
+        </div>
+        <p class="copyright-karma">&copy;Karma Mobility, Inc.</p>
+      </footer>
+    </div>
+  </body>
+</html>
