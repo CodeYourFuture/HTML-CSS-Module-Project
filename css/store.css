@@ -1,0 +1,124 @@
+:root {
+  --burnt-orange: #e0633a;
+  --gray-color: #666666;
+  --white-color: #ffffff;
+}
+
+body {
+  width: 100%;
+  height: 1625px;
+  background: var(--white-color);
+  
+}
+.container {
+  display: flex;
+  /* gap: 5px; */
+  /* width: 1318px; */
+  height: 1235px;
+  /* padding-top: 98px; */
+}
+.order-container {
+  padding-left: 122px;
+}
+h2 {
+  width: 521px;
+  height: 118px;
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 58.59px;
+  color: var(--burnt-orange);
+  margin-top: 140px;
+  margin-bottom: 56px;
+}
+.image {
+  padding-left: 50px;
+}
+form {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  row-gap: 2rem;
+  grid-column: span 2;
+  column-gap: 1.6rem;
+  margin-right: 30px;
+  color: var(--gray-color);
+}
+form label{
+    font-weight: 600;
+}
+form div:nth-child(1),
+form div:nth-child(2),
+form div:nth-child(3),
+form div:nth-child(4),
+form div:nth-child(5),
+form div:nth-child(6) {
+  display: grid;
+  grid-template-rows: auto 3rem;
+  row-gap: 0.5rem;
+}
+form div:nth-child(3) {
+  grid-column: span 2;
+}
+
+form div:nth-child(4) {
+  grid-column: span 2;
+}
+#select-city{
+    font-style: italic;
+}
+/* Style the order button */
+.order-btn {
+  background-color: var(--burnt-orange);
+  color: white;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.colour {
+  font-weight: 600;
+}
+.select-radio {
+  display: flex;
+  grid-column: span 2;
+  gap: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.select-radio div:nth-child(1),
+.select-radio div:nth-child(2) {
+  display: block;
+}
+
+/* Button hover effect */
+.order-btn:hover {
+  background-color: white;
+  color: var(--burnt-orange);
+}
+
+/* Style the terms and conditions text */
+.terms {
+  display: flex;
+  grid-column: span 2;
+}
+.terms p {
+  margin-top: 10px;
+}
+
+/* Style the terms and conditions link */
+.terms span {
+  color: var(--burnt-orange);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Style the checkmark image */
+img[src="./checkmark.svg"] {
+  vertical-align: middle;
+  height: 15px;
+  margin-top: 11px;
+  margin-right: 5px;
+  border: 2px solid grey;
+}
