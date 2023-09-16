@@ -1,19 +1,399 @@
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    margin: 1em;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    width: 3em;
+}
+
+.top-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    gap: 3em;
+    font-size: 1em; 
+    margin-right: 4em;
+}
+
+.links a {
+    text-decoration: none;  
+    color: inherit;         
+    cursor: pointer;        
+}
+
+.links a {
+    color: grey;  
+}
+
+.links .active a {
+    color: black;
+}
+
+.links a:hover {
+    color: darkorange; 
+}
+
+.introduction {
+    display: grid;
+    place-items: center;
+    background-image: url('img/first-background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50em;
+    margin:  auto;
+}
+
+.introduction .content {
+    display: grid;
+    color: white;
+    text-align: center;
+    place-items: center; 
+    font-weight: normal;  
+}
+
+.introduction button {
+    padding: 0.5em;  
+    background-color: #e55b00;
+    color: white;
+    cursor: pointer; 
+    font-size: 1.5em; 
+    border: none
+}
+
+.introduction button:hover {
+    background-color: orange; 
+}
+
+.introduction h1 {
+    font-size: 3em; 
+    font-weight: normal;  
+}
+
+.introduction h3 {
+    font-size: 2em;  
+    font-weight: normal;  
+}
+
+.cases > div > ul.devices {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 15em;
+    list-style: none;
+}
+
+.cases > div > h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.cases > div:first-child > h2 {
+    font-size: 4em;  
+    font-weight: normal;  
+}
+
+.cases .devices li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5em;
+}
+
+.cases .devices li img {
+    width: 100px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.split-section {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    width: 100%;
+    height: 30em;
+}
+
+.right {
+    flex: 1;
+    background-color: rgba(255, 218, 185, 0.451) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right p {
+    color: black;
+    font-style: italic;
+    text-align: center;
+    font-size: 4em;
+}
+
+.quote {
+    color: darkorange;
+}
+
+.cta-button {
+    padding: 1em;
+    font-size: 1em;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: orange;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separator-line {
+    height: 1px;
+    width: 90%;  
+    background-color: #D3D3D3;  
+    margin: 0.5em  
+}
+
+.socials {
+    display: flex;
+    list-style: none;  
+    padding: 0.1em;      
+    gap: 0.3em;        
+    justify-content: center;
+}
+
+.socials li img {
+    width: 1em;  
+    border: 0.1em solid #cac6c6;
+    border-radius: 50%;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+footer h2 {
+    font-size: 0.7em; 
+    font-weight: normal; 
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.copyright {
+    color: grey;
+    margin-bottom: 0.3em;
+}
+
+.order-section {
+    display: flex;
+    width: 100em;
+}
+
+.order-title {
+    margin-left: 2em;
+    font-size: 3em;
+    color:darkorange;    
+}
+
+
+.order-right img {
+    width: 40em;
+}
+
+.order-left {
+    flex-basis: 100%;
+    padding: 5em;
+    box-sizing: border-box;
+}
+
+.order-left form {
+    display: grid;
+    gap: 1.5em;
+    margin-top: 5em;
+}
+
+
+
+.order-left form input[type="text"], .order-left form select {
+    padding:1em;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.order-button {
+    padding: 1em;
+    background-color: darkorange;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    width: 9em;
+}
+
+.order-terms-link {
+    color: darkorange;
+}
+
+.name-container, .address-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.name-field, .city-field, .postcode-field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.name-field:last-child, .postcode-field {
+    margin-right: 0;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .top-navigation {
+        flex-direction: column;
+    }
+    
+    .links {
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    .introduction {
+        height: auto;
+        padding: 2em;
+    }
+
+    .introduction .content {
+        font-size: 1.2em;
+    }
+    
+    .cases > div > ul.devices {
+        grid-template-columns: 1fr;
+    }
+    
+    .split-section {
+        flex-direction: column;
+    }
+    
+    .order-section {
+        flex-direction: column;
+    }
+    
+    .order-left, .order-right {
+        padding: 2em;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .order-title {
+        font-size: 2em;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .order-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .order-left, .order-right {
+        flex-basis: auto;
+        width: 100%;
+        padding: 2em;
+    }
+
+    .order-left form {
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .name-container, .address-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .name-field, .city-field, .postcode-field {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .order-button {
+        width: 100%;
+    }
+}
+
+
+
+#menuToggle {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .top-navigation {
+        display: none;
+        flex-direction: column;
+    }
+    
+    #menuToggle:checked + .hamburger-menu + .top-navigation {
+        display: flex;
+    }
+}
 
