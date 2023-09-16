@@ -1,19 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Karma</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    </head>
+    
+    <body>
+        <header>
+            <div class="header-container">
+                <img class="logo" src="https://thinkful-ed.github.io/karma-clone/img/karma-logo.svg" alt="Logo Image" width="26">
+                
+                <input type="checkbox" id="menuToggle">
+                
+                <label class="hamburger-menu" for="menuToggle">&#9776;</label>
+                
+                <nav class="top-navigation">
+                    <ul class="links">
+    
+                    <li class="active"><a href="index.html">Meet Karma</a></li>
+                    <li><a href="store.html">Order Device</a></li>         
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>        
+            </nav>
+        </header>
+        
+        <section class="introduction" style="background-image: url('img/first-background.jpg');">
+            <div class="content">
+                <h1>Introducing you to Karma</h1>
+                <h3>Bring WiFi with you, everywhere you go.</h3>
+                <button>Learn More</button>
+            </div>
+        </section>
+        
+        <section class="cases">
+            <div>
+                <h2>Everyone needs a little Karma. </h2>
+                <ul class="devices">
+                    <li>
+                        <img src="img/icon-devices.svg" alt="Devices">
+                        <p>Internet for all devices</p>
+                        <li>
+                        <img src="img/icon-coffee.svg" alt="Coffee">
+                        <p>Boost your productivity</p>
+                        <li>
+                        <img src="/img/icon-refill.svg" alt="Refill">
+                        <p>Pay as You Go</p>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="split-section">
+            <div class="left">
+                <img src="level-2/homepage-feature.png" alt="Description of Image">
+            </div>
+            
+            <div class="right">
+                <p><span class="quote">"</span>Wherever I am, I just don't worry about my connection anymore!<span class="quote">"</span></p>
+                <button class="cta-button">Get Karma today</button>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-wrapper">
+                <div class="separator-line"></div> 
+                <h2>Join us on</h2>
+                <ul class="socials">
+                    <li>
+                        <img src="img/twitter-icon.svg" alt="twitter-icon">
+                    </li>
+                    <li>
+                        <img src="img/facebook-icon.svg" alt="facebook-icon">
+                    </li>
+                    <li>
+                        <img src="img/instagram-icon.svg" alt="instagram-icon">
+                    </li>
+                </ul>
+                <h2 class="copyright">© Karma Mobility, Inc.</h2>
+            </div>
+        </footer>
+    </body>
 </html>

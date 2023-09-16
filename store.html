@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Karma</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    </head>
+    
+    <header>
+      <div class="header-container">
+          <img class="logo" src="https://thinkful-ed.github.io/karma-clone/img/karma-logo.svg" alt="Logo Image" width="26">
+          
+          <input type="checkbox" id="menuToggle">
+          
+          <label class="hamburger-menu" for="menuToggle">&#9776;</label>
+          
+          <nav class="top-navigation">
+              <ul class="links">
+    
+                    <li class="active"><a href="index.html">Meet Karma</a></li>
+                    <li><a href="store.html">Order Device</a></li>         
+                    <li><a href="#">How it Works</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>        
+            </nav>
+        </header>
+
+    <body>
+      <h2 class="order-title">Order your Karma wifi device today!</h2>
+      <div>
+        <section class="order-section">
+          <div class="order-left">
+            <div class="order-form-container">
+              <form action="#" method="post">
+                <div class="name-container">
+                  <div class="name-field">
+                    <label for="first-name">First name*</label>
+                    <input type="text" id="first-name" required>
+                  </div>
+                  <div class="name-field">
+                    <label for="last-name">Last name*</label>
+                    <input type="text" id="last-name" required>
+                  </div>
+                </div>
+                
+                <div>
+                  <label for="address">Address*</label>
+                  <input type="text" id="address" required>
+                </div>
+      
+                <div>
+                  <label for="address2">Address 2</label>
+                  <input type="text" id="address2">
+                </div>
+      
+                <div class="address-container">
+                  <div class="city-field">
+                    <label for="city">City*</label>
+                    <select id="city" required>
+                      <option value="">Select a city</option>
+                      <option value="city1">City 1</option>
+                      <option value="city2">City 2</option>
+                      <option value="city3">City 3</option>
+                    </select>
+                  </div>
+                  <div class="postcode-field">
+                    <label for="postcode">Postcode*</label>
+                    <input type="text" id="postcode" required>
+                  </div>
+                </div>
+      
+                <fieldset>
+                  <legend>Select a color</legend>
+                  <input type="radio" id="karma-orange" name="color" value="karma-orange" required>
+                  <label for="karma-orange">Karma orange</label>
+                  
+                  <input type="radio" id="space-grey" name="color" value="space-grey" required>
+                  <label for="space-grey">Space Grey</label>
+                </fieldset>
+
+              <form>
+                <input type="checkbox" id="terms" required>
+                <label for="terms">By placing your order you agree to <a href="#" class="terms-link">Karma's Terms and Conditions</a>.*</label>
+                <button type="submit" class="order-button">Place my order</button>
+              </form>
+            </div>
+          </div>
+      
+          <div class="order-right">
+            <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="Karma Device">
+          </div>
+        </section>
+      </div>
+    </body>      
+    
+
+
+
+  
+    <footer>
+      <div class="footer-wrapper">
+          <div class="separator-line"></div> 
+          <h2>Join us on</h2>
+          <ul class="socials">
+              <li>
+                  <img src="img/twitter-icon.svg" alt="twitter-icon">
+              </li>
+              <li>
+                  <img src="img/facebook-icon.svg" alt="facebook-icon">
+              </li>
+              <li>
+                  <img src="img/instagram-icon.svg" alt="instagram-icon">
+              </li>
+          </ul>
+          <h2 class="copyright">© Karma Mobility, Inc.</h2>
+      </div>
+  </footer>
+</body>
+</html>
+
