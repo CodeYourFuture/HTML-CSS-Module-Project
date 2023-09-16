@@ -21,5 +21,5 @@ The aim of this exercise is to create a page that looks just like this one:
 
 ### Submitting your work
  - **Commit and push your code often** (for example every half an hour)so you get into the habit and you avoid losing any code that you write if your machine crashes for example. 
- - Once you're ready to submit your homework for review, do a final push and **create a Pull Request**. If you're unsure how to do this, [have a look here](https://syllabus.codeyourfuture.io/git/cheatsheet/#i-want-to-send-my-code-to-volunteers-pushing).
+ - Once you're ready to submit your homework for review, do a final push and **create a Pull Request**. If you're unsure how to do this, [have a look here](https://curriculum.codeyourfuture.io/guides/create-a-pull-request/).
 
