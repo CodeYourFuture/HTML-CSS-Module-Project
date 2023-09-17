@@ -1,9 +1,28 @@
+/* Root Variables */
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --color-primary-background: #f9f9f9;
+  --color-primary-border: #b4bcc36a;
+  --color-secondary-text: #868e96;
+  --color-link: #f15b2a;
+  --color-heading: #495057;
+  --feature: #f7eee2;
+  --margin: 3vh;
+  --border-radius: 5px;
+  --input-height: 6vh;
+  --address-width: 32.3vw;
+  --name-width: 15.2vw;
+  --city-width: 21vw;
+  --city-height: 7vh;
+  --postcode-width: 10.3vw;
+  --dark-grey: #353a3f;
+}
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,4 +35,718 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+.background-for-nav {
+  background-color: var(--color-primary-background);
+  border-bottom: 0.1vw solid var(--color-primary-border);
+}
 
+.grid-for-nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.flex-nav {
+  display: flex;
+  gap: 6%;
+  justify-content: end;
+  font-size: clamp(2vh, 1.5vw, 18vh); /* Adjust preferred font size */
+  width: 98%;
+  flex-wrap: nowrap;
+}
+
+/* Anchor Links */
+.flex-nav a {
+  text-decoration: none;
+  color: var(--color-secondary-text);
+  font-weight: 400;
+  transition: color 0.5s;
+}
+
+.flex-nav a:hover,
+.flex-nav a:active {
+  color: var(--color-link);
+}
+
+.karma-nav {
+  font-weight: bold;
+  color: var(--color-heading);
+  font-weight: 500;
+}
+
+.bg-image {
+  width: 100%;
+  height: 110vh;
+  background-image: url("../img/first-background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary-background);
+}
+
+.text-container {
+  text-align: center;
+}
+
+.intro-karma {
+  font-size: 4.6vw;
+  font-weight: 100;
+}
+.intro-karma::before {
+  content: "Introducing Karma"; /* Set the initial content */
+}
+
+.product-details {
+  font-size: 2.5vw;
+  font-weight: 100;
+  padding-top: 3.8%;
+}
+
+.product-details::before {
+  content: "Bring WiFi with you, everywhere you go."; /* Set the initial content */
+}
+
+.learn-more-btn {
+  margin-top: 10%;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--color-link);
+  border: none;
+  font-size: clamp(2vh, 1.6vw, 2vh);
+  font-weight: 100;
+  transition: background-color 0.5s;
+  text-decoration: none;
+  color: var(--color-primary-background);
+}
+
+.learn-more-btn:hover,
+.learn-more-btn:active {
+  background-color: var(--color-secondary-text);
+}
+
+.title {
+  text-align: center;
+  font-weight: 200;
+  padding-top: 8%;
+  font-size: 2.8vw;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg-icon {
+  max-width: 100%;
+  max-height: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.icon-text {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 8%;
+  font-size: clamp(12px, 2vw, 18px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* Footer Section Styles */
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.4%;
+  border-top: 1px solid var(--color-primary-border);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.join-us-text {
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin-top: -1%;
+  text-align: center;
+}
+
+.social-media-icons {
+  padding-top: 1%;
+  display: flex;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.sm-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1vw solid var(--color-secondary-text);
+  padding: 0.6rem 0.7rem;
+  border-radius: 100%;
+  transition: border 0.5s;
+}
+
+.sm-border:hover,
+.sm-border:active {
+  border: 1px solid var(--color-link);
+}
+
+/* Footer copyright text */
+.copyright-stamp {
+  margin-top: 1%;
+  color: var(--color-secondary-text);
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  background-color: var(--feature);
+  max-height: 72.2vh;
+  margin-top: var(--margin);
+  margin-bottom: 10vh;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-txt {
+  font-size: clamp(16px, 4vw, 49px);
+  text-align: center;
+  padding: 10px;
+  text-overflow: ellipsis;
+  color: var(--color-heading);
+  font-style: italic;
+}
+
+.feature-txt::before {
+  content: open-quote;
+  color: var(--color-link);
+}
+
+.feature-txt::after {
+  content: close-quote;
+  color: var(--color-link);
+}
+
+.feature-btn {
+  margin-top: 15%;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background-color: var(--color-link);
+  border: none;
+  font-size: 1.6vw;
+  font-weight: 100;
+  transition: background-color 0.5s;
+  color: var(--color-primary-background);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+
+.feature-btn:hover,
+.feature-btn:active {
+  background-color: var(--color-secondary-text);
+  color: var(--color-primary-background);
+}
+
+/* styling store page */
+#store {
+  color: var(--color-link);
+}
+
+#store:hover {
+  color: var(--color-secondary-text);
+}
+
+.social-icons-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.4%;
+  border-top: 1px solid var(--color-primary-border);
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.store-container {
+  display: grid;
+  margin: 0;
+  height: 165vh; /* Use viewport height for better responsiveness */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-self: center;
+  align-self: center;
+  grid-template-areas: "form image";
+}
+
+.image-store {
+  height: inherit;
+  width: 100%;
+  grid-area: image;
+}
+/* Form container */
+.form-container {
+  grid-area: form;
+  max-width: 35vw;
+  margin: 0 auto;
+  display: grid;
+  gap: 2vh;
+  grid-template-areas:
+    "order order"
+    "names names"
+    "address1 address1"
+    "address2 address2"
+    "city city"
+    "colors colors"
+    "terms terms"
+    "order-btn .....";
+  place-self: center; /* Center horizontally and vertically within grid cell */
+}
+
+.order {
+  grid-area: order;
+  font-family: var(--font-primary);
+  color: var(--color-link);
+  font-size: clamp(1vh, 1.7vw, 4vh); /* Responsive font size using clamp() */
+  text-overflow: ellipsis;
+  margin-bottom: 3vh;
+}
+
+/* Input fields */
+.names {
+  display: flex;
+  gap: 1vw;
+  grid-area: names;
+  color: var(--color-heading);
+  margin-bottom: var(--margin);
+}
+
+.input-name input[type="text"] {
+  height: var(--input-height);
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--name-width);
+}
+
+.txt-lable {
+  margin-bottom: 10px;
+}
+
+.address1 {
+  grid-area: address1;
+  color: var(--color-heading);
+}
+
+.input-address1 input[type="text"] {
+  height: var(--input-height);
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--address-width);
+  margin-top: 10px;
+  margin-bottom: var(--margin);
+}
+
+.address2 {
+  grid-area: address2;
+  color: var(--color-heading);
+}
+
+.input-address2 input[type="text"] {
+  height: var(--input-height);
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--address-width);
+  margin-top: 10px;
+  margin-bottom: var(--margin);
+}
+
+.city {
+  display: flex;
+  gap: 1vw;
+  grid-area: city;
+  color: var(--color-heading);
+}
+
+#city {
+  padding-left: 0.5vw;
+  font-style: italic;
+}
+
+#city option[value="Select a city..."] {
+  display: none;
+}
+
+/* Traingle dropdown select styling */
+.city-dropdown select {
+  height: var(--city-height);
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--city-width);
+  margin-bottom: var(--margin);
+  background-color: var(--color-primary-background);
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* For Safari */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path d="M1 0l5 5 5-5" fill="%23495057" /></svg>');
+  background-repeat: no-repeat;
+  background-position: 19vw center;
+  background-size: 1.5vw;
+  font-size: clamp(2vh, 2vw, 2vh);
+}
+
+.city-dropdown select option:checked {
+  background-color: var(--color-primary-background); /* Selected option color */
+  color: var(--color-link); /* Text color */
+}
+/* Remove default arrow */
+.city-dropdown select::-ms-expand {
+  display: none;
+}
+
+.city-dropdown select:hover,
+.city-dropdown select:focus {
+  border-color: var(--color-link);
+  outline: none; /* Remove default focus outline */
+}
+
+.postcode {
+  grid-area: city;
+  color: var(--color-heading);
+}
+
+.postcode input[type="text"] {
+  height: var(--input-height);
+  border: 2px solid var(--color-heading);
+  border-radius: var(--border-radius);
+  width: var(--postcode-width);
+}
+
+.colors {
+  grid-area: colors;
+  margin-top: 1vh;
+}
+
+.colors p {
+  font-family: var(--font-primary);
+  color: var(--color-heading);
+}
+
+.colors .flex {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.colors .radio1,
+.colors .radio2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.colors input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-heading);
+  border-radius: 50%;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.colors .radio-label {
+  font-family: var(--font-primary);
+  color: var(--color-heading);
+  cursor: pointer;
+  font-size: clamp(1vh, 1.7vw, 3vh);
+  font-weight: lighter;
+}
+
+.colors input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.colors input[type="radio"]:checked::before {
+  background-color: var(--color-link);
+}
+
+.terms {
+  grid-area: terms;
+  display: flex;
+  margin-top: 10vh;
+}
+/* Hide the default checkbox */
+.terms input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom checkbox */
+.terms input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-heading); /* Border for the checkbox */
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+/* Style for checked checkbox */
+.terms input[type="checkbox"]:checked + label::before {
+  content: "✔"; /* Display a custom checkmark */
+  font-size: 20px;
+  line-height: 3vh;
+  text-align: center;
+  color: var(--color-link);
+}
+
+.terms-link {
+  color: var(--color-link);
+}
+
+.order-btn {
+  grid-area: order-btn;
+  margin-top: 5vh;
+}
+
+.order-btn a {
+  padding: 3vh;
+  border-radius: 8px;
+  background-color: var(--color-link);
+  border: none;
+  font-size: clamp(1vh, 2vw, 3vh);
+  font-weight: 100;
+  transition: background-color 0.5s;
+  color: var(--color-primary-background);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+
+.order-btn :hover,
+.order-btn :active {
+  background-color: var(--color-secondary-text);
+  color: var(--color-primary-background);
+}
+.menu-hamburger {
+  display: none;
+}
+/*media query for mobile screen to main karma page */
+@media (max-width: 768px) {
+  .grid-for-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .menu-hamburger {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+
+  .flex-nav {
+    display: none;
+  }
+
+  .bg-image {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .intro-karma::before {
+    content: "Introducing";
+    display: block;
+    font-size: clamp(8vw, 2vh, 2vw) !important;
+  }
+
+  .intro-karma::after {
+    content: "Karma";
+    display: block;
+    font-size: clamp(8vw, 2vh, 2vw) !important;
+  }
+  .product-details::before {
+    content: "Bring WiFi with you,";
+    display: block;
+    font-size: clamp(5vw, 2vh, 2vw) !important;
+  }
+  .product-details::after {
+    content: "everywhere you go.";
+    display: block;
+    font-size: clamp(5vw, 2vh, 2vw) !important;
+    padding-bottom: 20px !important;
+  }
+
+  .title {
+    font-size: clamp(5vw, 2vh, 2vw) !important;
+    padding-top: 5%;
+  }
+
+  .icon-grid {
+    grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+    margin: o !important;
+    padding: 0 !important;
+    gap: 5px !important;
+  }
+
+  .icon-text {
+    font-size: 14px;
+    padding-top: 1%;
+  }
+
+  .feature-container {
+    grid-template-columns: 1fr; /* Show a single column on mobile */
+    max-height: 125vh !important;
+  }
+
+  .feature-txt {
+    font-size: clamp(8vh, 4vw, 49vh) !important;
+    margin: 0 !important;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .feature-btn {
+    padding: 16px 32px;
+    font-size: 2.6vw;
+    margin: 5vh auto !important;
+  }
+}
+
+/*media query for mobile screen to store karma page */
+@media (max-width: 768px) {
+  .store-container {
+    grid-template-areas:
+      "form"
+      "image";
+    height: auto !important;
+  }
+
+  .form-container {
+    max-width: 90vw; /* Adjust the max-width for mobile view */
+    align-items: center !important;
+    padding: 4vw !important;
+  }
+  .order {
+    font-size: clamp(5vh, 1.7vw, 4vh); /* Responsive font size using clamp() */
+  }
+
+  .names {
+    display: block;
+  }
+
+  .input-name input[type="text"] {
+    width: 90vw !important;
+    margin-bottom: 4vh !important;
+  }
+  .address1 {
+    margin-top: -20px !important;
+  }
+
+  .input-address1 input[type="text"] {
+    width: 90vw !important;
+  }
+
+  .input-address2 input[type="text"] {
+    width: 90vw !important;
+  }
+
+  .city {
+    display: block;
+  }
+  .city-dropdown select {
+    width: 91.5vw !important;
+    font-size: clamp(3vh, 2vw, 2vh);
+    background-position: 80vw center;
+    background-size: 2.5vw;
+  }
+  .postcode input[type="text"] {
+    width: 41.5vw !important;
+  }
+  .colors .flex {
+    display: block;
+  }
+  .colors input[type="radio"] {
+    margin-bottom: 1.5vw !important;
+  }
+
+  .colors .radio-label {
+    font-size: clamp(3vh, 1.7vw, 3vh);
+    margin-top: -5px !important;
+  }
+  .terms {
+    display: block;
+    margin-top: 10vh;
+  }
+
+  /* Custom checkbox */
+  .terms input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+  }
+
+  /* Style for checked checkbox */
+  .terms input[type="checkbox"]:checked + label::before {
+    content: "✔"; /* Display a custom checkmark */
+    font-size: 20px;
+  }
+
+  .order-btn a {
+    font-size: clamp(3vh, 2vw, 3vh);
+  }
+  .image-store {
+    width: 100vw !important;
+    margin: 0 !important;
+  }
+  .social-icons-store {
+    margin-top: 59px !important;
+  }
+}
