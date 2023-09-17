@@ -7,10 +7,10 @@ body {
 }
 
 /* nav section */
-/* .header-background {
-  display: flex;
+.header-background {
+  /* display: flex;
   align-items: row;
-  justify-content: center;
+  justify-content: center; */
   width: auto;
   background-color: #d0d7dd6a;
 }
@@ -20,8 +20,8 @@ body {
 }
 
 .nav-bar-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
+  /* display: grid;
+  grid-template-columns: repeat(2, 50%); */
   align-items: center;
   width: 100%;
   margin: 0 auto;
@@ -30,7 +30,7 @@ body {
 }
 
 .nav-bar {
-  display: flex;
+   display: flex;
   justify-content: normal;
   gap: 3rem;
   width: 98%;
@@ -43,7 +43,7 @@ a {
   color: black;
 }
 
-a:hover {
+/* a:hover {
   color: #f15b2a;
 } */
 
@@ -213,7 +213,7 @@ input[type="checkbox"] {
 
 /* social media and logo section */
 
-/* .line {
+.line {
   width: 84%;
   margin: 0 auto;
   background-color: #b4bcc36a;
@@ -230,7 +230,7 @@ input[type="checkbox"] {
   gap: 12px;
 }
 
-.logo-s {
+/* .logo-s {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,7 +238,7 @@ input[type="checkbox"] {
   padding: 0.6rem 0.7rem;
   border-radius: 112%;
   margin-top: 2rem;
-}
+} */
 
 .kar-Mobility {
   text-align: center;
@@ -247,21 +247,21 @@ input[type="checkbox"] {
   color: #868e96;
 }
 
-.container {
+/* .container {
   display: flex;
   align-items: center;
   background-color: #f15b2a;
   margin-top: 10%;
-}
+} */
 
-.grid-for-extended {
+/* .grid-for-extended {
   display: grid;
   grid-template-columns: auto 1fr;
   background-color: #fcefeb;
   justify-items: center;
-}
+} */
 
-.text--ext:after,
+/* .text--ext:after,
 .text--ext:before {
   color: #f15b2a;
 }
