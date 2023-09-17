@@ -655,16 +655,98 @@ body {
 
   .feature-btn {
     padding: 16px 32px;
-    border-radius: 8px;
-    background-color: var(--color-link);
-    border: none;
     font-size: 2.6vw;
-    font-weight: 100;
-    transition: background-color 0.5s;
-    color: var(--color-primary-background);
-    max-width: 100%;
     margin: 5vh auto !important;
-    font-family: var(--font-primary);
-    text-decoration: none;
+  }
+}
+
+/*media query for mobile screen to store karma page */
+@media (max-width: 768px) {
+  .store-container {
+    grid-template-areas:
+      "form"
+      "image";
+    height: auto !important;
+  }
+
+  .form-container {
+    max-width: 90vw; /* Adjust the max-width for mobile view */
+    align-items: center !important;
+    padding: 4vw !important;
+  }
+  .order {
+    font-size: clamp(5vh, 1.7vw, 4vh); /* Responsive font size using clamp() */
+  }
+
+  .names {
+    display: block;
+  }
+
+  .input-name input[type="text"] {
+    width: 90vw !important;
+    margin-bottom: 4vh !important;
+  }
+  .address1 {
+    margin-top: -20px !important;
+  }
+
+  .input-address1 input[type="text"] {
+    width: 90vw !important;
+  }
+
+  .input-address2 input[type="text"] {
+    width: 90vw !important;
+  }
+
+  .city {
+    display: block;
+  }
+  .city-dropdown select {
+    width: 91.5vw !important;
+    font-size: clamp(3vh, 2vw, 2vh);
+    background-position: 80vw center;
+    background-size: 2.5vw;
+  }
+  .postcode input[type="text"] {
+    width: 41.5vw !important;
+  }
+  .colors .flex {
+    display: block;
+  }
+  .colors input[type="radio"] {
+    margin-bottom: 1.5vw !important;
+  }
+
+  .colors .radio-label {
+    font-size: clamp(3vh, 1.7vw, 3vh);
+    margin-top: -5px !important;
+  }
+  .terms {
+    display: block;
+    margin-top: 10vh;
+  }
+
+  /* Custom checkbox */
+  .terms input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+  }
+
+  /* Style for checked checkbox */
+  .terms input[type="checkbox"]:checked + label::before {
+    content: "✔"; /* Display a custom checkmark */
+    font-size: 20px;
+  }
+
+  .order-btn a {
+    font-size: clamp(3vh, 2vw, 3vh);
+  }
+  .image-store {
+    width: 100vw !important;
+    margin: 0 !important;
+  }
+  .social-icons-store {
+    margin-top: 59px !important;
   }
 }
