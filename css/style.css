@@ -23,7 +23,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* <!-- NAV-BAR --> */
+
+.hamburger-menu {
+  display: none;
+}
 
 .nav-background {
   background-color: #f9fafb;
@@ -72,8 +80,8 @@ a:active {
 
 .main-picture {
   background-image: url("/img/first-background.jpg");
-  height: 110vh;
   width: 100%;
+  height: 60rem;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -129,6 +137,11 @@ h1 {
   grid-template-columns: auto 1fr;
   background-color: #eccfc8;
   justify-items: center;
+  margin-top: 8rem;
+}
+
+.second-picture img {
+  height: 600px;
 }
 
 .text-content:after,
@@ -155,45 +168,49 @@ h1 {
 .text {
   display: flex;
   flex-direction: column;
-  width: 60%;
   padding-top: 10%;
 }
 
-.get-karma-today {
-  width: 44%;
-  margin: 8% auto 0 auto;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #f15b2a;
-  border: none;
-  font-size: 1.4vw;
-  font-weight: 100;
-  transition: background-color 1.2s;
+.text i {
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
-.get-karma-today:hover,
-.get-karma-today:active {
+.text a {
+  margin: 2.4rem auto;
+  font-size: 3rem;
+  text-align: center;
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  color: white;
+  border-radius: 1rem;
+  background-color: #f15b2a;
+}
+
+.text a:hover,
+.text a:active {
   background-color: #f56e45;
+}
+
+.text-content {
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* LOGO SECTION WITH TEXT*/
 
 .main-logo {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 100px 40px;
-  width: 52%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-items: center;
-  padding-top: 2.4%;
-  padding-bottom: 10%;
 }
 
-.logo-text {
+.main-logo div:nth-child(1),
+.main-logo div:nth-child(2),
+.main-logo div:nth-child(3) {
   margin-top: 60px;
-  font-size: 1.3em;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .horizontal-line {
@@ -215,9 +232,7 @@ h1 {
 }
 
 .join-us {
-  font-weight: 500;
-  font-size: 1.2vw;
-  margin-top: -1%;
+  margin: 2rem 0 0.8rem 0;
   text-align: center;
 }
 
@@ -243,4 +258,95 @@ h1 {
   color: #868e96;
   text-align: center;
   padding-bottom: 2.4rem;
+}
+
+/* Media Query Section */
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+  .layout-container {
+    display: grid;
+    grid-template-rows: 70px 1200px 1600px 1fr 200px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: grid;
+  }
+
+  .main-picture {
+    padding: 3rem;
+  }
+
+  .intro-karma,
+  .product-details {
+    padding: 0 0;
+  }
+
+  .intro-karma {
+    font-size: 8rem;
+  }
+
+  .product-details {
+    font-size: 4.6rem;
+  }
+
+  .learn-btn {
+    padding: 24px 32px;
+    border-radius: 2rem;
+    font-size: 3.2rem;
+  }
+
+  .content1 h1 {
+    font-size: 6rem;
+  }
+
+  .main-logo {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .main-logo div:nth-child(1),
+  .main-logo div:nth-child(2),
+  .main-logo div:nth-child(3) {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 3.2rem;
+  }
+
+  .second-picture {
+    grid-template-rows: 1fr 750px;
+    grid-template-columns: none;
+  }
+
+  .second-picture img {
+    width: 100%;
+  }
+
+  .text-content {
+    font-size: 3.4rem;
+  }
+
+  .get-karma-today {
+    font-size: 2rem;
+  }
+
+  .text {
+    gap: 2.6rem;
+  }
+
+  .join-us {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+
+  .text a {
+    padding: 2.2rem 3.6rem;
+  }
 }
