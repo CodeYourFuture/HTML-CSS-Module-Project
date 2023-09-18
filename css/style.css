@@ -11,9 +11,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
-    margin-right: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+@media (min-width: 768px){
+   .navbar {
+      margin-left: 50px;
+      margin-right:60px;
+   }
+} 
 
 .navbar ul {
     list-style: none;
@@ -267,7 +273,7 @@ footer {
    height: auto;
 }
 
-.order-form {
+/* .order-form {
    display: grid;
    grid-template-columns: repeat(2, 30%);
    grid-template-rows:repeat(2, 130px);
@@ -297,4 +303,36 @@ footer {
    grid-column: span 2;
    margin-top: 10px;
    margin-bottom: 20px;
+} */
+
+.order-form {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+   justify-content: center;
+   margin-left: 30px;
+}
+
+.order-form h2 {
+   grid-column: span 2;
+   text-align: start;
+   margin-top: 20px;
+   margin-bottom: 0px;
+   padding-bottom: 3px;
+}
+
+.order-form label,
+.order-form input,
+.order-form select {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.order-form button {
+   grid-column: span 2;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.order-form p {
+   margin: 0%;
 }
