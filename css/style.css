@@ -1,10 +1,187 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
 body {
     font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; 
 }
+
+a {
+    background-color: transparent;
+}
+
+h2{
+    font-size:50px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 300;
+}
+
+.logo{
+    width:30px;
+    height: auto;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 1 row and 6 columns */
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    /* Adjust the gap as needed */
+    gap: 2%;
+    width: 50vw;
+    height: 2vh;
+}
+
+.list li {
+    padding: 0;
+    text-align: center;
+    /* Center the content within each grid item */
+    box-sizing: border-box;
+    /* Include padding and border in total width/height */
+    font-size: clamp(1.5vh, 1vw, 3vh);
+}
+.item a{
+text-decoration: none;
+color:gray;
+}
+.item :hover{
+   color:rgb(228, 108, 23);
+}
+
+
+.main-image{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/first-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.main-intro{
+font-weight: 300;
+font-size: 3rem;
+margin-bottom: 18px;
+
+}
+
+
+.main-button{
+    background-color:rgb(250, 101, 21);
+    border:1px solid rgb(250, 101, 21);
+    border-radius: 5px ;
+    margin-top:40px;
+    padding:10px 20px;
+    font-size: smaller;
+    color: white;
+}
+ 
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.icon-img{
+  width:10rem;
+  margin:5rem 0;
+ 
+}
+.text{
+    font-size:2rem; 
+}
+
+.input_card {
+    display:flex;
+}
+
+.feature-container{
+    display:flex;
+    margin-top: 10rem;
+}
+
+.text-info{
+    margin-top: 10rem;
+}
+
+.feature{
+    background-color: rgb(250, 233, 233);
+    width:70vw;
+    text-align: center;
+    font-size: larger;
+}
+
+footer{
+    margin-top:5rem;
+    text-align: center;
+    margin-top: 6rem;
+    border-top: 1px solid rgb(214, 212, 212);
+    
+}
+.footer-items{
+    margin-top: 2rem;
+}
+.content{
+    font-weight:normal;
+    font-size: 1rem;
+}
+
+.footer-icons{
+display: flex;
+justify-content: center;
+
+}
+
+.footer_icon{
+height: 1.2rem;
+display: flex;
+justify-content: space-evenly;
+border: 1px solid rgb(220, 217, 217);
+border-radius: 50%;
+margin-top: 2rem;
+padding: 0.5rem;
+
+}
+
+#facebook-icon {
+    margin-right:15px;
+    margin-left:15px;
+}
+.karma_mobality{
+    margin-top:10px;
+    font-size: smaller;
+    font-weight:lighter ;
+    color: rgb(196, 193, 193);
+}
+
 
 /**
  * Add your custom styles below
@@ -15,5 +192,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
