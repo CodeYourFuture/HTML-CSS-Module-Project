@@ -27,7 +27,8 @@ body {
     font-size: 50px;
     width: 1263px;
     height: 50px;
-    margin-top: 120px;
+    margin-top: 160px;
+    margin-bottom: 80px;
     text-align: center; 
 }
 
@@ -158,6 +159,26 @@ body {
     margin-top: 20px;
  }
 
+/* Logos */
+
+.iconLogos{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon{
+    width: 1263px;
+    height: 150px;
+}
+
+.iconText{
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
  /* Footer */
 
  .footer{
@@ -173,4 +194,18 @@ body {
     font-size: 24px;
     color: #acacac;
     font-weight: lighter;
+ }
+
+ .logosFooter{
+    display: flex;
+    justify-content: center;
+ }
+
+ .iconFooter{
+    height: 30px;
+    border: solid 2px #d4ceceaa;
+    border-radius: 30px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
  }
