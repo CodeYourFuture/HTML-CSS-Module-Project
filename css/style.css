@@ -6,7 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1{
+.h1Introducing{
     font-family: 'Roboto';
     font-weight: lighter;
     font-size: 65px;
@@ -14,11 +14,30 @@ h1{
     margin-bottom: 0px;
 }
 
-p{
+.pIntroducing{
     font-size: 35px;
     font-weight: lighter;
     margin-top: 25px;
     margin-bottom: 35px;
+}
+
+.h2Logos{
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 50px;
+    width: 1263px;
+    height: 50px;
+    margin-top: 120px;
+    text-align: center; 
+}
+
+.h3Content3{    
+    width: 500px;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: lighter;
+    padding-right: 106.5px;
+    padding-left: 106.5px;
 }
 /**
  * Add your custom styles below
@@ -62,7 +81,7 @@ p{
   }
 
   .navigation_link1 {
-    color: #252525;
+    color: #414040;
     font-weight: 600;
     text-decoration: none;
   }
@@ -78,11 +97,10 @@ p{
   }
 
   /* Content*/
-  .content{
+  .content1{
     background-image: url("../img/first-background.jpg");
     width: 1263px;
     height: 700px;
-    justify-content: center;
   }
 
  .Introducing{
@@ -93,6 +111,31 @@ p{
     padding-top: 170px;
  } 
 
+ .content2{
+    width: 550px;
+    height: 400px;
+    padding-top: 120px;
+    display: flex;
+    padding-bottom: 80px;    
+ }
+
+ .content3{
+    text-align: center;
+    background-color: #ffeaf0;
+    width: 713px;
+    height: 400px;
+ }
+
+ .imgDrinking{
+    width: 550px;
+    height: 400px;
+ }
+
+ .quotation{
+    color: #ff0000;
+    font-size: 50px;
+ }
+
 /* Button */
 
  .btnLearn{
@@ -102,4 +145,32 @@ p{
     border-radius: 5px;
     font-size: 17px;
     margin-top: 20px;
+ }
+
+ .btnGetKarma{
+    background-color: #e05e0d;
+    width: 180px;
+    height: 50px;
+    color: white;
+    border: solid white 2px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: 20px;
+ }
+
+ /* Footer */
+
+ .footer{
+    width: 1000px;
+    font-size: 25px;
+    text-align: center;
+    color: #232121;
+    border-top: solid 2px #eae6e6;
+ }
+
+ .textFooter{
+    text-align: center;
+    font-size: 24px;
+    color: #acacac;
+    font-weight: lighter;
  }
