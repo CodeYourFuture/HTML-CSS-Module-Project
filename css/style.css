@@ -138,7 +138,6 @@ body {
  }
 
 /* Button */
-
  .btnLearn{
     background-color: #e05e0d;
     width: 120px;
@@ -159,8 +158,7 @@ body {
     margin-top: 20px;
  }
 
-/* Logos */
-
+/* Icons */
 .iconLogos{
     display: flex;
     justify-content: flex-start;
@@ -180,7 +178,6 @@ body {
 }
 
  /* Footer */
-
  .footer{
     width: 1000px;
     font-size: 25px;
@@ -191,9 +188,10 @@ body {
 
  .textFooter{
     text-align: center;
-    font-size: 24px;
+    font-size: 25px;
     color: #acacac;
-    font-weight: lighter;
+    font-weight:400;
+    margin-top: 20px;
  }
 
  .logosFooter{
@@ -208,4 +206,11 @@ body {
     padding: 5px;
     margin-right: 10px;
     margin-left: 10px;
+ }
+
+ .circle{
+    border: solid 1px #acacac;
+    border-radius: 20px;
+    padding: 0 4px 0 4px;  
+    font-size: 15px;  
  }
