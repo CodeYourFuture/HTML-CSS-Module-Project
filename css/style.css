@@ -6,6 +6,20 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+h1{
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 65px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+p{
+    font-size: 35px;
+    font-weight: lighter;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
 /**
  * Add your custom styles below
  * 
@@ -59,9 +73,33 @@ body {
     text-decoration: none;
   }
 
+  .navigation_link:hover{
+    color: #f96203;
+  }
+
   /* Content*/
   .content{
     background-image: url("../img/first-background.jpg");
-    width: 1200px;
-    height: 400px;
+    width: 1263px;
+    height: 700px;
+    justify-content: center;
   }
+
+ .Introducing{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 170px;
+ } 
+
+/* Button */
+
+ .btnLearn{
+    background-color: #e05e0d;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: 20px;
+ }
