@@ -1,9 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /**
@@ -16,9 +15,72 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-.container {
+
+
+/* .container {
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 50px 300px 50px;
+} */
+
+header {
+    display: flex;
+    background-color: aquamarine;
+}
+
+.karma-logo {
+  width: 30px;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__item {
+  padding: 0.5rem 1rem;
+}
+
+.navigation__link {
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.article{
+display: flex;
+flex-direction: row;
+}
+
+/* .article-karma-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 40px 100px;
+
+}
+
+.article-head {
+    grid-row-start: 1;
+    grid-row-end: -1;
+} */
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: lighter;
+}
+
+.social {
+  display: flex;
 }
