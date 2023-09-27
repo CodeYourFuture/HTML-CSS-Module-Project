@@ -1,5 +1,4 @@
 /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,17 +7,19 @@ body {
 /* Variables */
 :root {
   --color-brand: #e0633a;
+  --color-brand-dark:rgb(129, 58, 34);
   --color-light: #ffffff;
-  --color-darker: #1c1c1c;
+  --color-darker: #151515;
   --color-dark: #3c3c3c;
   --color-mid: #8d8d8d;
   --color-cr: #cccccc;
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.75rem;
+  --fs-h1: 4.5rem;
+  --fs-hero-description: 2.5rem;
+  --fs-h2: 3.5rem;
+  --fs-h3: 2.5rem;
   --fs-navbar: 1.25rem;
-  --fs-p: 1rem;
+  --fs-p: 2rem;
   --fs-obs: 0.875rem;
   --fs-notation: 0.75rem;
 }
@@ -37,6 +38,7 @@ body {
 h1,
 h2,
 h3 {
+  font-weight: lighter;
 }
 
 h1 {
@@ -106,10 +108,50 @@ header img {
   color: var(--color-dark);
 }
 
-/* Main */
+/* Hero */
 
-main {
-  margin: 0 3%;
+#hero {
+  background: url("../img/first-background.jpg") no-repeat top center;
+  background-size: auto 100%;
+  height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  color: var(--color-light);
+}
+
+#hero p {
+    font-size: var(--fs-hero-description);
+    line-height: var(--fs-hero-description);
+}
+
+#hero a {
+    margin-top: 2rem;
+    padding: 1.25rem 2.75rem;
+    border-radius: 0.25rem;
+    
+    background-color: var(--color-brand);
+    color: var(--color-light);
+    font-size: var(--fs-navbar);
+
+    transition: all 0.2s;
+}
+
+#hero a:hover {
+    background-color: var(--color-brand-dark);
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+/* Benefits */
+
+#benefits {
+    padding: 10rem 20% 6rem;
+    text-align: center;
 }
 
 /* Footer */
