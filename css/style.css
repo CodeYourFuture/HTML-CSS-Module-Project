@@ -1,19 +1,117 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* Variables */
+:root {
+  --color-brand: #e0633a;
+  --color-light: #ffffff;
+  --color-dark: #3c3c3c;
+  --color-mid: #8d8d8d;
+  --color-cr: #cccccc;
 
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.75rem;
+  --fs-navbar: 1.25rem;
+  --fs-p: 1rem;
+  --fs-obs: 0.875rem;
+  --fs-notation: 0.75rem;
+}
 
+/* General */
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-dark);
+}
+
+h1,
+h2,
+h3 {
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: calc(var(--fs-h1) * 1.5);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: calc(var(--fs-h2) * 1.5);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: calc(var(--fs-h3) * 1.5);
+}
+
+p {
+  font-size: var(--fs-p);
+  line-height: calc(var(--fs-p) * 1.5);
+}
+
+a:any-link {
+  color: var(--color-mid);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: var(--color-brand);
+  transition: all 0.2s;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 8%;
+  margin: 0 3%;
+  background-color: var(--color-light);
+}
+
+header nav {
+  width: 55%;
+  font-size: var(--fs-navbar);
+}
+
+header img {
+  height: 3rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  color: var(--color-mid);
+}
+
+.navbar__item:first-child a {
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+/* Main */
+
+main {
+  margin: 0 3%;
+}
+
+/* Footer */
+
+footer {
+  margin: 0 3%;
+}
