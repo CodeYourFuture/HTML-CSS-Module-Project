@@ -9,6 +9,7 @@ body {
 :root {
   --color-brand: #e0633a;
   --color-light: #ffffff;
+  --color-darker: #1c1c1c;
   --color-dark: #3c3c3c;
   --color-mid: #8d8d8d;
   --color-cr: #cccccc;
@@ -24,10 +25,13 @@ body {
 
 /* General */
 
+html {
+  background-color: var(--color-darker);
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  background-color: var(--color-dark);
+  background-color: var(--color-light);
+  margin: 0 3%;
 }
 
 h1,
@@ -75,12 +79,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 8%;
-  margin: 0 3%;
-  background-color: var(--color-light);
 }
 
 header nav {
-  width: 55%;
+  width: 50%;
   font-size: var(--fs-navbar);
 }
 
