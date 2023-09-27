@@ -69,7 +69,7 @@ a:any-link {
   transition: all 0.2s;
 }
 
-a:hover {
+a:hover, a:focus {
   color: var(--color-brand);
   transition: all 0.2s;
 }
@@ -105,9 +105,12 @@ header img {
   color: var(--color-mid);
 }
 
+.navbar__item:first-child a:not(:hover):not(:focus) {
+  color: var(--color-dark);
+}
+
 .navbar__item:first-child a {
   font-weight: bold;
-  color: var(--color-dark);
 }
 
 /* Hero */
@@ -212,11 +215,12 @@ footer h3 {
   margin: 25%;
 }
 
-.social-media-link:hover, .social-media-link:focus {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse 2s infinite;
-  }
+.social-media-link:hover,
+.social-media-link:focus {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
 
 #copyright {
   font-size: var(--fs-obs);
@@ -225,18 +229,18 @@ footer h3 {
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
-	}
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
 }
