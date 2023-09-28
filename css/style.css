@@ -23,6 +23,12 @@ body {
   --fs-obs: 1rem;
 
   --gap-vertical: 3rem;
+
+  --ideal-page-width: 1790px;
+  --ideal-viewport-width: 1910px;
+  --vw-dif: calc(100vw - var(--ideal-viewport-width));
+  --page-width-proportion: calc(10 / 9);
+  --page-width-add: calc(var(--vw-dif) / var(--page-width-proportion));
 }
 
 /* General */
@@ -33,7 +39,7 @@ html {
 
 body {
   background-color: var(--color-light);
-  width: calc(1790px + ((100vw - 1910px) / (10 / 9)));
+  width: calc(var(--ideal-page-width) + var(--page-width-add));
   max-width: 100vw;
   margin: 0 auto;
 }
@@ -90,6 +96,7 @@ header {
 
 header nav {
   width: 50%;
+  min-width: 500px;
   font-size: var(--fs-navbar);
 }
 
@@ -130,6 +137,8 @@ header img {
   gap: 2rem;
 
   color: var(--color-light);
+
+  text-align: center;
 }
 
 #hero p {
@@ -250,19 +259,30 @@ footer h3 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   
   :root {
     --fs-h1: 3.375rem;
-    --fs-hero-description: 2.5;
+    --fs-hero-description: 2rem;
     --fs-h2: 2.75rem;
     --fs-h3: 1.5rem;
     --fs-navbar: 1.25rem;
     --fs-p: 2.5rem;
     --fs-obs: 1rem;
+
+    --gap-vertical: 1.5rem;
   }
 
   nav {
     display: none;
+  }
+
+  #benefits-list {
+    gap: var(--gap-vertical);
+    max-width: 95vw;
+  }
+
+  .benefit img {
+    height: 130px;
   }
 }
