@@ -6,37 +6,36 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.header,
+/* .header,
 .main,
 .footer{
     padding: 0 1.5rem;
     max-width: 1200px;  
     margin: 0 auto;
-}
+} */
 
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 5rem;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 2px 100px;
 }
 
 .header_logo{
     width: 20px;
-    height: auto;
+    height: 10rem;
 }
 
 .navigation_list{
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
 .navigation_item{
     padding: 20px;
+    font-size: large;
 }
 
 .navigation_link{
@@ -50,11 +49,13 @@ body {
 
 .main{
     background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     padding: 80px; 
     text-align: center;
     font-size: xx-large;
-    margin-bottom: 5rem;
+    margin: 5px 40px;
 }
 
 .main h1{
@@ -75,31 +76,50 @@ body {
 
 .second_heading{
     text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    font-size: 50px;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
 .images{
-    display: inline-block;
-    justify-content:space-around;
-    padding: 40px;
     width: 300px;
     height: 200px;
 }
 
 .article_title{
-    text-align: center;
     font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px 300px;
+} */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer p {
-    text-align: center;
-    margin-top: 10rem;
     font-size: 20px;
-    align-items: center;
 }
 
 .footer_img{
-    display:inline-block;
-    align-items: center;
     padding: 10px;
     width: 20px;   
     height: 30px;
