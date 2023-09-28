@@ -5,10 +5,14 @@
   --light-gray: rgb(171, 171, 171);
   --white: rgb(255, 255, 255);
   --orange: rgb(241, 91, 42);
+
+  --h3-color: var(--dark-gray);
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  color: var(--dark-gray);
 }
 
 /**
@@ -20,3 +24,27 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 52px;
+  color: var(--white);
+}
+h2 {
+  font-size: 40px;
+  color: var(--dark-gray);
+}
+h3 {
+  font-size: 30px;
+  color: var(--h3-color);
+}
+
+p {
+  font-size: 25px;
+}
