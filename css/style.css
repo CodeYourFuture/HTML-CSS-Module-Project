@@ -9,7 +9,7 @@ body {
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be organized, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
@@ -24,8 +24,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .header-logo {
@@ -42,6 +42,10 @@ body {
 
 .nav-item {
   margin-right: 50px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
 }
 
 .nav-link {
@@ -65,9 +69,51 @@ body {
   text-align: center;
 }
 
+.xx-large-text {
+  font-size: 5em;
+}
+
+.large-text {
+  font-size: 3em;
+}
+
+.x-large-text {
+  font-size: 4em;
+}
+
+.with-img-background {
+  background-image: url("../img/first-background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.content {
+  color: white;
+}
+
+.button {
+  background-color: orangered;
+  font-size: 2em;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px 30px;
+}
+
 .icons {
-  max-width: 100px;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.with-three-icons {
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 .the-three-icons {
@@ -76,20 +122,28 @@ body {
 }
 
 .icons-texts {
-  margin: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.with-img-background {
-  background-image: url("../img/first-background.jpg");
+#p {
+  font-size: 2em;
 }
 
 /* Footer styles */
 
 .footer {
   text-align: center;
+  border-top: 2px solid lightgray;
 }
 
 .footer-icons {
   max-width: 20px;
   height: auto;
+}
+
+.header,
+.main,
+.footer {
+  margin: 10px;
 }
