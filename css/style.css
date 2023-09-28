@@ -19,6 +19,12 @@ body {
   margin: 40px;
 }
 
+.header,
+.main,
+.footer {
+  margin: 10px;
+}
+
 /* Header styles */
 
 .header {
@@ -67,6 +73,7 @@ body {
 
 .main {
   text-align: center;
+  border-bottom: 2px solid lightgray;
 }
 
 .xx-large-text {
@@ -134,16 +141,20 @@ body {
 
 .footer {
   text-align: center;
-  border-top: 2px solid lightgray;
+}
+
+.footer-items {
+  margin: 10px;
 }
 
 .footer-icons {
   max-width: 20px;
   height: auto;
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px lightgrey solid;
+  padding: 10px;
 }
-
-.header,
-.main,
-.footer {
-  margin: 10px;
+.footer-text-grey {
+  color: grey;
 }
