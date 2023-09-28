@@ -15,7 +15,7 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-/* header styles */
+/* Header styles */
 
 .header {
   display: flex;
@@ -40,4 +40,28 @@ body {
 
 .nav-link {
   text-decoration: none;
+}
+
+/* Main styles */
+
+.main {
+  text-align: center;
+}
+
+.icons {
+  max-width: 100px;
+  height: auto;
+}
+
+.the-three-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons-texts {
+  margin: 20px;
+}
+
+.with-img-background {
+  background-image: url("../img/first-background.jpg");
 }
