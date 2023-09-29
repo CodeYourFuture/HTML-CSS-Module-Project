@@ -40,11 +40,11 @@ h1 {
   color: var(--white);
 }
 h2 {
-  font-size: 40px;
+  font-size: 60px;
   color: var(--dark-gray);
 }
 h3 {
-  font-size: 30px;
+  font-size: 40px;
   color: var(--h3-color);
 }
 
@@ -67,6 +67,12 @@ a {
   border-radius: 0.3rem;
   padding: 1rem 2rem;
   font-size: 1.2rem;
+  transition: all 0.2s ease-in;
+}
+
+.primary-btn:hover {
+  color: var(--orange);
+  background-color: var(--white);
 }
 /* Header styles */
 
@@ -142,7 +148,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 260px;
+  width: 350px;
   text-align: center;
 }
 
