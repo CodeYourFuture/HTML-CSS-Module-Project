@@ -1,5 +1,4 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -16,4 +15,107 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ .header,
+ .ma-img,
+ .footer,
+ .icon{
+    padding: 0 1.5rem;
+    max-width: auto;
+    margin: 0 auto;
+ }
+ .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+ }
+ nav{
+    display: flex;
+    width: 100%;
+ }
+.navbar{
+    display: flex;
+    list-style: none;
+    font-size: normal;
+    color: lightgrey;
+    padding-left: 8rem;
+   
+}
+.nav-li-a{
+    margin: 20px;
+    text-decoration: none;
+    color: gray;
+}
 
+.karma-logo{
+    max-height: 40px;
+    width: auto;
+    padding-right: 10rem;
+}
+.meet{
+    font-weight: bold;
+}
+.Store{
+    color: orange;
+}
+
+.ma-img{
+    display: flex;
+    background-image: url( "/img/first-background.jpg");
+    height: 500px;
+    background-size: cover;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.learn-more{
+    background-color: rgb(235, 114, 66);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 5rem;
+}
+.icon-img{
+    max-height: 100px;
+    width: auto;
+    padding-bottom: 4rem;
+    flex-direction: row;
+}
+.p2{
+    margin-bottom: 3rem;
+}
+.icon{
+    display: flex;
+    justify-content:space-around;
+}
+.line{
+    color:#DCDCDC;
+}
+.icon-footer1{
+    max-height: 20px;
+    justify-content: center;
+    border: solid 1px rgb(224, 229, 229);
+    border-radius: 15px;
+    margin-left: 30px;
+}
+.footer,
+.part2{
+    text-align: center;
+}
+.p1,
+.part2{
+    text-align: center;
+    font-size: 40px;
+}
+.p1{
+    margin-bottom: 1rem;
+}
+.footer-p{
+    font-weight: bold;
+}
+.copyrights{
+    color: grey;
+    font-size: x-small;
+}
