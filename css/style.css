@@ -24,9 +24,16 @@ body {
     grid-template-rows: 50px 300px 50px;
 } */
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: lighter;
+}
+
 header {
     display: flex;
-    background-color: aquamarine;
 }
 
 .karma-logo {
@@ -45,42 +52,102 @@ header {
 }
 
 .navigation__link {
-  color: black;
-  font-weight: 600;
+  color: gray;  
+  font-weight: lighter;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.article{
-display: flex;
-flex-direction: row;
+.hero {
+  background-image: url(../img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 45px;
+  margin-bottom: -5px;
+}
+
+
+
+.learn {
+  background-color: rgb(211, 102, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: rgb(211, 102, 0);
 }
 
 /* .article-karma-icons {
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: 40px 100px;
-
+    grid-gap: 5px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, 3fr);
+    grid-template-areas: 
+    ". . . ah ah ah ah ah . . ."
+    ". a1 a1 a1 a2 a2 a2 a3 a3 a3 .";
 }
 
 .article-head {
-    grid-row-start: 1;
-    grid-row-end: -1;
-} */
-
-footer {
-  grid-column-start: 1;
-  grid-column-end: -1;
+  grid-area: ah;
+  justify-content: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: lighter;
+#a1 {
+  grid-area: a1;
+}
+
+#a2 {
+  grid-area: a2;
+}
+
+#a3{
+  grid-area: a3;
+} */
+
+.article-karma-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  padding: 50px;
+  width: 150px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.social-icons {
+  display: flex;
 }
 
 .social {
   display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgba(219, 219, 219, 0.726) ;
+  border-radius: 50%;
 }
