@@ -124,3 +124,23 @@ li {
 .feature img {
   width: 120px;
 }
+
+/* Footer Styles */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 12rem;
+  padding: 1rem 0;
+}
+
+.social-media {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.social-media img {
+  width: 40px;
+}
