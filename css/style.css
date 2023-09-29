@@ -3,6 +3,9 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /**
@@ -30,10 +33,17 @@ h3,
 h4,
 h5 {
   font-weight: lighter;
+  text-wrap: nowrap;
 }
 
 header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .karma-logo {
@@ -84,34 +94,6 @@ header {
   border-color: rgb(211, 102, 0);
 }
 
-/* .article-karma-icons {
-    height: 100%;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(2, 3fr);
-    grid-template-areas: 
-    ". . . ah ah ah ah ah . . ."
-    ". a1 a1 a1 a2 a2 a2 a3 a3 a3 .";
-}
-
-.article-head {
-  grid-area: ah;
-  justify-content: center;
-}
-
-#a1 {
-  grid-area: a1;
-}
-
-#a2 {
-  grid-area: a2;
-}
-
-#a3{
-  grid-area: a3;
-} */
-
 .article-karma-icons {
   display: flex;
   flex-wrap: nowrap;
@@ -126,8 +108,12 @@ header {
 }
 
 .article {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
   width: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
