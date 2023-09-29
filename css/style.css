@@ -56,6 +56,9 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 /* Header styles */
 
 .header {
@@ -70,6 +73,19 @@ li {
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+
+.nav-menu a {
+  color: var(--light-gray);
+}
+
+.nav-menu a:hover {
+  color: var(--orange);
+}
+
+.nav-menu .current-menu-item {
+  color: var(--dark-gray);
+  font-weight: 600;
 }
 
 /* Hero styles */
