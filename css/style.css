@@ -1,11 +1,115 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/*Header*/
+
+.Karma-logo {
+  width: 30px;
+  margin-left: 4em;
+}
+/* Updated CSS to make nav items appear in one row with gaps */
+
+.nav {
+  display: flex;
+  justify-content: flex-end; /* Align items to the left */
+  margin-left: 2em; /* Add left margin for spacing */
 }
 
+.nav-item {
+  list-style-type: none;
+  margin-right: 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  margin-right: 1em;
+}
+
+.nav-link:hover {
+  color: orangered;
+}
+
+.nav li {
+  text-decoration: none;
+  gap: 1px;
+  float: left;
+}
+.nav ul {
+  list-style-type: none;
+  margin-left: 1em;
+}
+
+/*hero*/
+.hero {
+  padding: 200px;
+  background-size: cover;
+  background-image: url("/img/first-background.jpg");
+}
+.hero h1 {
+  margin-left: 340px;
+  color: white;
+}
+.hero p {
+  margin-left: 280px;
+  font-size: 20px;
+  margin-top: 0px;
+  color: white;
+}
+
+.hero-button {
+  padding: 0.4em 1em;
+  border-style: none;
+  border-radius: 2px;
+  background-color: orangered;
+  color: white;
+  margin-left: 400px;
+}
+/*icon*/
+
+.section {
+  margin-top: 80px;
+}
+.section-p {
+  font-size: 38px;
+  text-align: center;
+}
+.icon-imag {
+  margin-left: 3em;
+  width: 100px;
+}
+.icon-discribtion {
+  font-size: 20px;
+}
+.section-icon {
+  display: flex;
+  padding-left: 7em;
+}
+.section-icon div {
+  padding-left: 7em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid rgb(184, 180, 180);
+}
+/*footer*/
+.social-media-icon {
+  border: 1px solid rgb(185, 179, 179);
+  padding: 5px;
+  width: 30px;
+  border-radius: 25px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+footer h3 {
+  text-align: center;
+}
+footer p {
+  color: rgb(178, 177, 177);
+  text-align: center;
+}
 /**
  * Add your custom styles below
  * 
@@ -15,5 +119,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
