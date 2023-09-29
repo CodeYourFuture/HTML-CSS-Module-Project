@@ -7,10 +7,11 @@
   --orange: rgb(241, 91, 42);
 
   --h3-color: var(--dark-gray);
+
+  font-size: 16px;
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   color: var(--dark-gray);
 }
@@ -50,3 +51,22 @@ p {
   font-size: 25px;
 }
 
+li {
+  list-style: none;
+}
+
+/* Header styles */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 4rem;
+  padding: 1.5rem 7rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
