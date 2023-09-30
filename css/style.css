@@ -56,10 +56,15 @@ p {
 }
 
 /*Navigation*/
+
+nav {
+  margin-right: 10%;
+}
 .nav-list {
   display: flex;
   gap: 2rem;
   list-style: none;
+  align-items: center;
 }
 
 .nav__item {
@@ -69,7 +74,7 @@ p {
 .nav__link {
   color: gray;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
 }
 
@@ -106,15 +111,15 @@ button:hover {
 
 .introduction {
   background-image: url("../img/first-background.jpg");
-  width: 98%;
-  height: 40rem;
+  width: 93.9%;
+  height: 38rem;
   background-color: var(--grey-light);
-  padding-left: 100px;
+  padding-left: 79px;
 }
 
 .introduction h1 {
   padding-top: 200px;
-  padding-left: 300px;
+  padding-left: 302px;
   margin-bottom: 1rem;
   font-size: 2.5rem;
   color: white;
@@ -192,6 +197,7 @@ hr.new {
   text-align: center;
   width: 1rem;
   border: 1px solid gray;
-  border-radius: 100%;
+  border-radius: 50%;
+  padding: 10px;
   overflow: hidden;
 }
