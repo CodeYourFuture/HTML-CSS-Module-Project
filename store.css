@@ -6,6 +6,8 @@ body{
 
 main{
     height: 900px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 a{
@@ -72,6 +74,7 @@ a{
     width: 600px;
     padding-top: 0px;
     display: flex; 
+    flex-direction: row-reverse;
  }
 
  .imgContent2{
@@ -175,7 +178,7 @@ a{
  }
 
 .radioText{
-    font-size: 20px;
+    font-size: 18px;
     height: 50px;
     margin-top: 10px;
  }
