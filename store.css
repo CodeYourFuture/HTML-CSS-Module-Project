@@ -8,6 +8,10 @@ main{
     height: 900px;
 }
 
+a{
+   color: #f96203;
+}
+
 .header, .footer {
     padding: 0rem 1rem 0rem 1rem;
     max-width: 1200px;
@@ -68,6 +72,10 @@ main{
     width: 600px;
     padding-top: 0px;
     display: flex; 
+ }
+
+ .imgContent2{
+   text-align: end;
  }
 
  .content3{
@@ -180,16 +188,13 @@ main{
     accent-color: #f96203;
  }
 
- a{
-    color: #f96203;
- }
-
-.divPlace{
+ .divPlace{
     text-align: left;
 }
 
+/* Button */
 .btnPlace{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 130px;
     width: 180px;
     height: 50px;    
