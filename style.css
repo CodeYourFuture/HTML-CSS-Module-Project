@@ -1,0 +1,99 @@
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+.Karmanav {
+    text-align: right;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 20px;
+    
+}
+.ulnav {
+    display: flex;
+    /* list-style-type: none; */
+    /* justify-content: right; */
+    /* flex-direction: row; */
+    /* text-align: right; */
+
+
+
+}
+.ulnav li {
+    padding: 20px;
+    color: gray;
+    list-style-type: none;
+}
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.Bkgimg {
+   background-image: url("/img/first-background.jpg");
+   width: 1500px;
+   height: 700px;
+   margin-top: 50px;
+}
+.bkgtext {
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+.karmabtn {
+    background-color: #f96c07;
+    height: 40px;
+    width: 160px;
+}
+.h1class {
+    font-size: 60px;
+    font-weight: lighter;
+}
+.pclass {
+    font-size: 35px;
+    font-weight: lighter;
+}
+.kmain {
+    margin-top: 100px;
+    text-align: center;
+
+}
+.h2class {
+  font-size: 50px;  
+  font-weight: lighter;
+}
+.imgsclass {
+    width: 500px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;    
+}
+.imgsclass img{
+    padding: 95px;
+}
+.imgsclass h3 {
+    text-align: center;
+    margin-top: 20px;
+    padding: 90px;
+}
+.logoclass {
+    margin-top: 20px;
+    margin-left: 20px;
+}
