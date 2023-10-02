@@ -4,10 +4,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-
+    margin: 0px;
+    padding: 0px;
 }
    /*Header*/
- 
+ .header{background-color: rgb(248, 248, 248);}
  .karam-logo{
         width: 30px;
         margin-left: 4em;
@@ -42,12 +43,20 @@ body {
     color:white;}
 
   .hero-button{ 
-     padding: 0.4em 1em;
-     border-style: none;
-     border-radius: 2px;
-     background-color: orangered;
-     color: white;
-     margin-left: 400px;}
+     margin-left: 25em}
+        /*hero-button and article-button*/
+        .hero-button, .article-button{
+          padding: 0.4em 1em;
+          border-style: none;
+          border-radius: 2px;
+          background-color: orangered;
+          color: white;
+        }
+
+        .hero-button:hover{
+          background-color: white;
+          color: orangered;
+        }
       /*icon*/
 
   .section{ 
@@ -71,11 +80,38 @@ body {
   .section-icon div{
     padding-left: 7em;
     padding-bottom: 3em;
-    border-bottom: 1px solid rgb(184, 180, 180);
+    
   }
+  .homepage-img{
+    max-width: 100%;
+    max-height: 100%;}
+  .article{
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 220, 224);
+   
+  }
+  .article-p {   
+          
+  }
+  
+  .article-quote{
+    font-size: 30px;
+    font-style: italic;
+    padding-left: 2.5em;
+    color: rgb(31, 31, 31);
+    text-align: center;
+  }
+  .article-button{
+    
+    margin-left: 12em;
+  }
+  .article-button:hover{
+    background-color: white;
+    color: orangered;}
       /*footer*/
     .social-media-icon{
-        border: 1px solid rgb(185, 179, 179);
+        border: 1px solid rgb(118, 118, 118);
          padding: 5px;
         width: 30px;
         border-radius: 25px;
@@ -88,8 +124,111 @@ footer h3{
 
 }
 footer p{
-     color: rgb(178, 177, 177);
+     color: rgb(118, 118, 118);
      text-align: center;
+}
+
+
+       /*Store*/  
+
+
+       /*section*/
+
+       /*Nameiput*/
+#karam-logo{
+  margin-left: 8em;
+}
+
+.form-name{
+ padding: 0.5em;
+ margin-bottom: 2em;
+ margin-top: 0.5em;
+ border: 1.5px solid rgb(118, 118, 118);
+ border-radius: 3px;
+}
+
+
+.form-section h2 {
+  color: rgb(230, 73, 16);
+}
+.name-div{ 
+  display: flex;
+  }
+#name-div{
+  margin-top: 2em;
+}
+.lastname-div
+{ margin-left: 1.5em;}
+   
+/*address input*/
+
+.address{
+  padding: 0.5em 8em ;
+  border: 1.5px solid rgb(108, 106, 106);
+  border-radius: 3px;
+}
+
+.address2-div{
+  margin-top: 2em;
+}
+.colorselct-p{
+  margin-bottom: 7px;
+  color: rgb(118, 118, 118);
+}
+.ch_color{
+  accent-color: red; 
+}
+.cheakbox-section{
+  margin-top: 1.5em;
+}
+.cheakbox-link{
+  color: orangered;
+}
+
+ .store-img{
+  width: 500px;
+  height: 650px;
+  margin-left: 50px;
+} 
+
+.img-section
+{
+  margin-left: 12em;
+ }
+
+
+
+
+.section-flex
+{  display: flex;
+  margin-left: 135px;
+  border-bottom: 1.2px solid rgb(212, 201, 201);
+}
+#placeorder-button{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 10px 20px;
+  background-color: rgb(208, 66, 14);
+  border-style: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 3px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+#placeorder-button:hover{
+  background-color: white;
+  color:  rgb(208, 66, 14);
+}
+
+
+
+
+
+
+.cheakbox{
+  padding: 60px;
 }
 /**
  * Add your custom styles below
