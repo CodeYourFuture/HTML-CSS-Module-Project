@@ -54,6 +54,7 @@ a {
   font-size: 0.9rem;
   width: 98%;
   list-style: none;
+  align-items: center;
 }
 
 a {
@@ -265,19 +266,25 @@ h1 {
 @media only screen and (min-width: 300px) and (max-width: 640px) {
   .layout-container {
     display: grid;
-    grid-template-rows: 70px 1200px 1600px 1fr 200px;
+    grid-template-rows: 70px 1200px 1600px 1fr 280px;
   }
 
   .nav-links {
     display: none;
   }
 
+  .nav-grid {
+    padding-top: 2rem;
+  }
+
   .hamburger-menu {
-    display: grid;
+    display: flex;
+    justify-content: end;
   }
 
   .main-picture {
-    padding: 3rem;
+    padding: 15rem;
+    margin-top: 4rem;
   }
 
   .intro-karma,
@@ -295,7 +302,7 @@ h1 {
 
   .learn-btn {
     padding: 24px 32px;
-    border-radius: 2rem;
+    border-radius: 1rem;
     font-size: 3.2rem;
   }
 
