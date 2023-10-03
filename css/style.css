@@ -17,3 +17,56 @@ body {
  */
 
 
+ body{
+    font-weight: 400;
+ }
+
+ /* header styles */
+
+ header{
+    margin: 30px 8vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+ }
+ .karmaIcon{
+    height: 60px;
+    
+
+ }
+ nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vw;
+    padding: 0;
+ }
+ nav ul li:nth-child(1){
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+ }
+ li{
+    font-size: 1.5vw;
+    color: rgb(150, 150, 150);
+ }
+ 
+
+
+ /* first section styles */
+
+ main{
+    margin: 0;
+ }
+ h1{
+    margin: 0;
+ }
+
+
+ /* second section styles */
+
+
+ /* footer styles */
