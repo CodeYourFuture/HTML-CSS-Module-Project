@@ -76,12 +76,15 @@ p{
     margin-bottom: 4rem;
 }
 
-.main button{
+.orange-button{
     margin-bottom: 10rem; 
-    background-color: rgba(214, 65, 12, 0.842);
+    background-color: rgb(214, 103, 12);
+    border: none;
     color: white;
-    padding: 20px 50px;
-    border-radius: 10px;
+    padding: 20px 35px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: lighter;
 }
 
 .second_heading{
@@ -149,4 +152,32 @@ p{
 
 hr{
     width: 90%;
+}
+
+.feature{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.feedback{
+    background-color: rgba(255, 113, 4, 0.252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ .speechmarks{
+    font-size: 40px;
+    font-style: italic;
+    padding: 2px 20px;
+    margin: 20px 40px 10px 40px;
+    text-wrap: wrap;
+}
+
+.feedback button{
+    margin-top: 200px;
 }
