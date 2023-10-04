@@ -5,6 +5,7 @@
   --light-gray: rgb(171, 171, 171);
   --white: rgb(255, 255, 255);
   --orange: rgb(241, 91, 42);
+  --light-orange: rgb(252, 239, 235);
 
   --h3-color: var(--dark-gray);
 
@@ -14,6 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   color: var(--dark-gray);
+  text-align: center;
 }
 
 /**
@@ -154,13 +156,42 @@ hr {
   justify-content: space-between;
   align-items: center;
   width: 350px;
-  text-align: center;
 }
 
 .feature img {
   width: 120px;
 }
 
+/* Store Feature Styles */
+
+.store-ft {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.store-ft > img {
+  max-width: 40%;
+  flex-grow: 1;
+}
+
+.store-ft-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 60%;
+  background-color: var(--light-orange);
+}
+
+.store-ft-nav > h3 {
+  margin: 0 3rem 3rem;
+  font-style: italic;
+}
+
+.color-orange {
+  color: var(--orange);
+}
 /* Footer Styles */
 
 .footer {
