@@ -1,13 +1,7 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* * Add your custom styles below
 
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-/**
- * Add your custom styles below
  * 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
@@ -16,4 +10,350 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* GENERAL STYLES */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* <!-- NAV-BAR --> */
+
+.hamburger-menu {
+  display: none;
+}
+
+.nav-background {
+  background-color: #f9fafb;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.main-nav {
+  display: flex;
+  gap: 6%;
+  justify-content: end;
+  font-size: 0.9rem;
+  width: 98%;
+  list-style: none;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #868e96;
+  font-size: 1.3em;
+  font-weight: 400;
+  transition: color 1.2s;
+}
+
+a:hover,
+a:active {
+  color: #f15b2a;
+  transition: 1s;
+}
+
+.meet-karma {
+  font-weight: bold;
+  color: #495057;
+  font-weight: 500;
+}
+
+/* <!-- MAIN IMAGE AND TEXT --> */
+
+.main-picture {
+  background-image: url("/img/first-background.jpg");
+  width: 100%;
+  height: 60rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.intro-karma {
+  font-size: 4.6vw;
+  font-weight: 100;
+}
+
+.product-details {
+  font-size: 2.5vw;
+  font-weight: 25;
+  padding-top: 3.8%;
+}
+
+.learn-btn {
+  margin-top: 10%;
+  padding: 16px 32px;
+  border-radius: 5px;
+  background-color: #f15b2a;
+  border: none;
+  font-size: 1.6vw;
+  font-weight: 100;
+  transition: background-color 1.2s;
+}
+
+.learn-btn:hover,
+.learn-btn:active {
+  background-color: #f56e45;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 200;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-size: 2.8vw;
+}
+
+/* HOMEPAGE WITH BLOCKQUOTE  */
+
+.second-picture {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: #eccfc8;
+  justify-items: center;
+  margin-top: 8rem;
+}
+
+.second-picture img {
+  height: 600px;
+}
+
+.text-content:after,
+.text-content:before {
+  color: #f15b2a;
+}
+
+.text-content:before {
+  content: open-quote;
+  font-size: 130%;
+}
+
+.text-content:after {
+  content: close-quote;
+  font-size: 130%;
+}
+
+.text-content {
+  font-size: 2.4em;
+  text-align: center;
+  color: #495057;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.text i {
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.text a {
+  margin: 2.4rem auto;
+  font-size: 3rem;
+  text-align: center;
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  color: white;
+  border-radius: 1rem;
+  background-color: #f15b2a;
+}
+
+.text a:hover,
+.text a:active {
+  background-color: #f56e45;
+}
+
+.text-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* LOGO SECTION WITH TEXT*/
+
+.main-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-logo div:nth-child(1),
+.main-logo div:nth-child(2),
+.main-logo div:nth-child(3) {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.horizontal-line {
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: #b4bcc36a;
+  padding-top: 2.4px;
+  height: 0.1vw;
+}
+
+/* FOOTER SECTION */
+
+.socials-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.4%;
+}
+
+.join-us {
+  margin: 2rem 0 0.8rem 0;
+  text-align: center;
+}
+
+.social-icons {
+  padding-top: 1%;
+  display: flex;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1vw solid #b4bcc36a;
+  padding: 0.6rem 0.7rem;
+  border-radius: 100%;
+  transition: border 1.2s;
+}
+
+.copyright {
+  margin-top: 1%;
+  color: #868e96;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+/* Media Query Section */
+
+@media only screen and (min-width: 300px) and (max-width: 640px) {
+  .layout-container {
+    display: grid;
+    grid-template-rows: 70px 1200px 1600px 1fr 280px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-grid {
+    padding-top: 2rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: end;
+  }
+
+  .main-picture {
+    padding: 15rem;
+    margin-top: 4rem;
+  }
+
+  .intro-karma,
+  .product-details {
+    padding: 0 0;
+  }
+
+  .intro-karma {
+    font-size: 8rem;
+  }
+
+  .product-details {
+    font-size: 4.6rem;
+  }
+
+  .learn-btn {
+    padding: 24px 32px;
+    border-radius: 1rem;
+    font-size: 3.2rem;
+  }
+
+  .content1 h1 {
+    font-size: 6rem;
+  }
+
+  .main-logo {
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .main-logo div:nth-child(1),
+  .main-logo div:nth-child(2),
+  .main-logo div:nth-child(3) {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 3.2rem;
+  }
+
+  .second-picture {
+    grid-template-rows: 1fr 750px;
+    grid-template-columns: none;
+  }
+
+  .second-picture img {
+    width: 100%;
+  }
+
+  .text-content {
+    font-size: 3.4rem;
+  }
+
+  .get-karma-today {
+    font-size: 2rem;
+  }
+
+  .text {
+    gap: 2.6rem;
+  }
+
+  .join-us {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+
+  .text a {
+    padding: 2.2rem 3.6rem;
+  }
+}
