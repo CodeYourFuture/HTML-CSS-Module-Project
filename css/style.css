@@ -22,6 +22,7 @@ body {
   --logoColor: #e0633a;
   --reverseColor: white;
   --color: black;
+  --navColor:rgb(150, 150, 150);
 }
 
 body {
@@ -48,7 +49,7 @@ h4 {
 /* header styles */
 
 header {
-  margin: 3vh 8vw;
+  margin: 3vh 9vw;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -71,7 +72,7 @@ nav ul li:nth-child(1) {
 }
 li {
   font-size: 1.5vw;
-  color: rgb(150, 150, 150);
+  color: var(--navColor);
 }
 
 /* first section styles */
@@ -132,7 +133,30 @@ li {
 }
 
 /* footer styles */
-
+footer {
+  margin: 0 9vw 5vh 9vw;
+  text-align: center;
+}
 .media-logo {
-  height: 50px;
+  border-radius: 27px;
+  padding: 10px;
+  border: var(--navColor) solid 2px;
+  height: 30px;
+  margin: 0 5px;
+}
+footer h5 {
+  font-size: 1.3vw;
+
+  color: var(--color);
+  font-weight: 300;
+  margin: 30px;
+}
+footer h6 {
+  font-size: 1vw;
+  color: rgb(150, 150, 150);
+  font-weight: 200;
+  margin: 40px 0 100px;
+}
+hr{
+    border: var(--navColor) solid 2px;
 }
