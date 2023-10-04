@@ -15,16 +15,24 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
+ :root {
+    --gap: 2vh;
+    --sectionHeight: 90vh;
+    --headerLineSize: calc(3.5vw + 25px);
+    --subHeaderLineSize: calc(2vw + 15px);
+    --logoColor: #e0633a;
+    --reverseColor: white;
+  }
 
  body{
     font-weight: 400;
+    
  }
 
  /* header styles */
 
  header{
-    margin: 30px 8vw;
+    margin: 3vh 8vw;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -65,8 +73,51 @@ body {
     margin: 0;
  }
 
+ .main-area{
+    height: var(--sectionHeight);
+    background-position: center;
+    background-size: cover;  
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+ }
+ .main-area h3{
+    color: white;
+    font-size: var(--headerLineSize);
+    font-weight: 100;
+    margin: var(--gap);
+ }
+
+ .main-area h4{
+    color: white;
+    font-size: var(--subHeaderLineSize);
+    font-weight: 100;
+    margin: var(--gap);
+ }
+ .main-area button{
+    margin: calc(3*var(--gap));
+    font-size: calc(var(--subHeaderLineSize)/2);
+    color: var(--reverseColor);
+    background-color: var(--logoColor);
+    padding:calc(1.5*var(--gap)) calc(3*var(--gap));
+    border: none;
+    border-radius: 10px;
+
+ }
+
+
+
 
  /* second section styles */
-
+.article-icon{
+    height: 30vh;
+}
 
  /* footer styles */
+
+ .media-logo{
+    height: 50px;
+ }
