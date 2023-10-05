@@ -1,0 +1,38 @@
+#form-container {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+}
+
+#form-container img {
+  max-width: 100%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin: 6rem 4rem 4rem;
+}
+
+form h2 {
+    color: var(--color-brand);
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+#terms-link {
+    color: var(--color-brand);
+    text-decoration: underline;
+}
+
+#terms-link:hover, #terms-link:focus {
+    color: var(--color-brand);
+    text-decoration: underline;
+
+    font-weight: 500;
+}
+
+/* delete default layout */
+input[type="checkbox"] {
+    display: none;
+}

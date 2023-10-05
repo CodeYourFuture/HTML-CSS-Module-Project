@@ -2,41 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Karma</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/store.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-    <header>
-        <a href=""><img src="img/karma-logo.svg" alt="Karma Logo"></a>
-        <nav>
-            <ul id="navbar__items">
-                <li class="navbar__item"><a href="./index.html" class="navbar__item-link">Meet Karma</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__item-link">How it Works</a></li>
-                <li class="navbar__item"><a href="#" id="navbar__item-selected" class="navbar__item-link">Store</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__item-link">Blog</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__item-link">Help</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__item-link">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-        <h3>Join us on</h3>
-        <section id="social-media-list">
-            <a href="https://twitter.com/yourKarma" target="_blank" class="social-media-link" aria-label="twitter"><img src="img/twitter-icon.svg" alt="twitter logo"></a>
-            <a href="https://www.facebook.com/newkarmawifi/" target="_blank" class="social-media-link" aria-label="facebook"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
-            <a href="https://www.instagram.com/karmawifi/" class="social-media-link" target="_blank" aria-label="instagram"><img src="img/instagram-icon.svg" alt="instagram logo"></a>
-        </section>
-        <p id="copyright">&copy; Karma Mobility Inc</p>
-    </footer>
+  <header>
+    <a href=""><img src="img/karma-logo.svg" alt="Karma Logo"></a>
+    <nav>
+      <ul id="navbar__items">
+        <li class="navbar__item"><a href="./index.html" class="navbar__item-link">Meet Karma</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__item-link">How it Works</a></li>
+        <li class="navbar__item"><a href="#" id="navbar__item-selected" class="navbar__item-link">Store</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__item-link">Blog</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__item-link">Help</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__item-link">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="form-container">
+      <form action="">
+        <h2>Order your Karma wifi device today!</h2>
+        <div class="form__row">
+          <div class="form__item-container">
+            <label for="first-name">First name *</label>
+            <input type="text" name="first-name" id="first-name" required>
+          </div>
+          <div class="form__item-container">
+            <label for="last-name">Last name *</label>
+            <input type="text" name="last-name" id="last-name" required>
+          </div>
+        </div>
+        <div class="form__item-container">
+          <label for="address1">Address *</label>
+          <input type="text" name="address1" id="address1" required>
+        </div>
+        <div class="form__item-container">
+          <label for="address2">Address 2</label>
+          <input type="text" name="address2" id="address2">
+        </div>
+        <div class="form__row">
+          <div class="form__item-container">
+            <label for="city">City *</label>
+            <select name="city" id="city" required>
+              <option value="liverpool">Liverpool</option>
+              <option value="london">London</option>
+              <option value="manchester">Manchester</option>
+              <option value="salford">Salford</option>
+            </select>
+          </div>
+          <div class="form__item-container">
+            <label for="postcode">Postcode *</label>
+            <input type="text" name="postcode" id="postcode" required>
+          </div>
+        </div>
+        <div class="form__item-container">
+          <p>Select a colour</p>
+          <div class="form__item-container">
+            <div>
+              <input type="radio" name="colour" id="orange" value="orange">
+              <label for="orange">Karma Orange</label>
+            </div>
+            <div>
+              <input type="radio" name="colour" id="grey" value="grey">
+              <label for="grey">Space Grey</label>
+            </div>
+          </div>
+        </div>
+        <div class="form__item-container">
+          <input type="checkbox" name="terms" id="terms">
+          <label for="terms">By placing your order you agree to Karma's <a id="terms-link" href="#">Terms and Conditions</a>. *</label>
+        </div>
+        <button type="submit"></button>
+
+      </form>
+      <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="">
+    </section>
+  </main>
+  <footer>
+    <h3>Join us on</h3>
+    <section id="social-media-list">
+      <a href="https://twitter.com/yourKarma" target="_blank" class="social-media-link" aria-label="twitter"><img
+          src="img/twitter-icon.svg" alt="twitter logo"></a>
+      <a href="https://www.facebook.com/newkarmawifi/" target="_blank" class="social-media-link"
+        aria-label="facebook"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
+      <a href="https://www.instagram.com/karmawifi/" class="social-media-link" target="_blank"
+        aria-label="instagram"><img src="img/instagram-icon.svg" alt="instagram logo"></a>
+    </section>
+    <p id="copyright">&copy; Karma Mobility Inc</p>
+  </footer>
 </body>
 
 </html>
