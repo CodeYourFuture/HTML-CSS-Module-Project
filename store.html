@@ -53,6 +53,7 @@
           <div class="form__item-container">
             <label for="city">City *</label>
             <select name="city" id="city" required>
+              <option value="" disabled selected>Select your city...</option>
               <option value="liverpool">Liverpool</option>
               <option value="london">London</option>
               <option value="manchester">Manchester</option>
@@ -64,9 +65,9 @@
             <input type="text" name="postcode" id="postcode" required>
           </div>
         </div>
-        <div class="form__item-container">
-          <p>Select a colour</p>
-          <div class="form__item-container">
+        <div id="form__colour-container" class="form__item-container">
+          <p class="label">Select a colour</p>
+          <div id="form__colour-options">
             <div>
               <input type="radio" name="colour" id="orange" value="orange">
               <label for="orange">Karma Orange</label>
@@ -77,11 +78,11 @@
             </div>
           </div>
         </div>
-        <div class="form__item-container">
-          <input type="checkbox" name="terms" id="terms">
+        <div id="terms-container" class="form__item-container">
+          <input type="checkbox" name="terms" id="terms" required>
           <label for="terms">By placing your order you agree to Karma's <a id="terms-link" href="#">Terms and Conditions</a>. *</label>
         </div>
-        <button type="submit"></button>
+        <button class="button" type="submit">Place my order</button>
 
       </form>
       <img src="img/store-image_by-andrew-neel-unsplash.jpg" alt="">
