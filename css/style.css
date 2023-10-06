@@ -3,10 +3,12 @@
   --grey-light: #a7a4a4;
   --orange-dark: #c05326;
   --orange-light: #f7eae4;
+  --orange: #d65a17;
   --white: #fff;
   --black: black;
+  --pink: #f7d1b980;
 }
-
+/*Body*/
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,6 +36,7 @@ header {
   align-items: center;
   padding: 0 60px;
 }
+
 header .karma__logo {
   height: 4rem;
 }
@@ -43,8 +46,8 @@ header nav {
   min-width: 500px;
   font-size: large;
 }
-
 /* Navigation */
+
 #navigation__list {
   display: flex;
   list-style: none;
@@ -53,11 +56,9 @@ header nav {
   margin: 0;
   color: var(--grey-light);
 }
-
 .nav__item a:hover {
   color: var(--orange-dark);
 }
-
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -65,11 +66,9 @@ header nav {
   text-decoration: none;
   transition: color 0.2s;
 }
-
 #navigation__list li:nth-child(1) a {
   color: black;
 }
-
 li a {
   color: var(--grey-dark);
   text-decoration: none;
@@ -79,7 +78,6 @@ li a {
 section {
   height: 75vh;
 }
-
 #hero {
   background-image: url(../img/first-background.jpg);
   background-position: center;
@@ -95,21 +93,21 @@ section {
   margin: 0;
   margin-bottom: 9rem;
 }
-
 #hero h1 {
   margin-top: 10rem;
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 #hero h2 {
   margin-top: 2rem;
   margin-bottom: 3rem;
-  font-weight: 160;
+  font-weight: 180;
+  font-size: 2.5rem;
 }
-
 #hero p {
   margin-bottom: 4rem;
 }
+
 /*button*/
 #hero button {
   margin-top: 0;
@@ -118,8 +116,11 @@ section {
   color: var(--white);
   padding: 15px 17px;
   border-radius: 10px;
-  font-weight: 60;
+  font-size: 1.5rem;
+  font-weight: 200;
+  border: none;
 }
+/*icons*/
 
 #icons {
   display: flex;
@@ -134,19 +135,17 @@ section {
 }
 
 h5 {
-  text-align: center;
-  font-size: 22px;
+  text-align: left;
+  font-size: 30px;
   align-items: center;
   justify-content: center;
   font-weight: 200;
   color: var(--grey-dark);
 }
-
 .icon1 {
   width: 70%;
   height: auto;
 }
-
 .icon__images {
   margin: 4rem 15vw;
   display: grid;
@@ -182,15 +181,49 @@ h5:nth-child(6) {
   grid-area: text3;
 }
 
+/*get-karma*/
+.get-karma {
+  display: flex;
+  margin: 50px 0 80px 0;
+  height: 65vh;
+}
+.quote-text {
+  background-color: var(--pink);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.connection-quote {
+  font-size: 43px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0px;
+}
+.orange-quote {
+  color: var(--orange-dark);
+  font-size: 55px;
+}
+.btn-getkarma {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 25px 30px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 190;
+  border: 0;
+}
+
 /* footer*/
 
 .grey-hr {
-  height: 1px; /*  height line */
-  background-color: rgb(230, 227, 227);
+  height: 1px;
+  background-color: rgb(214, 212, 212);
   border: none;
   margin: 30px 0 10px;
 }
-
 footer {
   display: flex;
   flex-direction: column;
@@ -198,7 +231,6 @@ footer {
   align-items: center;
   padding: 4rem;
 }
-
 footer h6 {
   font-size: 14px;
   color: var(--grey-light);
@@ -207,20 +239,19 @@ footer h6 {
   color: var(--grey-dark);
 }
 
+/* media__icons */
+
 .media__icons {
   margin: 20px 0;
 }
-
 .media__icons a {
   margin: 0 10px;
 }
-
 .media__icons img {
   width: 4rem;
   height: 2rem;
   margin: 1rem 5px;
 }
-
 .copyright {
   color: rgb(184, 180, 180);
   font-size: 13px;
