@@ -192,6 +192,35 @@ hr {
 .color-orange {
   color: var(--orange);
 }
+
+/* Store page styles */
+
+.store-main > h1 {
+  color: var(--orange);
+}
+
+.store-form {
+  display: flex;
+  flex-direction: column;
+}
+.store {
+  display: flex;
+}
+
+.store-main {
+  width: 50%;
+  text-align: left;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-row: repeat(8, 1fr);
+}
+
+.store-img {
+  width: 50%;
+}
+
 /* Footer Styles */
 
 .footer {
