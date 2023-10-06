@@ -210,11 +210,28 @@ hr {
 .store-main {
   width: 50%;
   text-align: left;
+  padding: 4rem;
 }
 
 .form-grid {
   display: grid;
-  grid-template-row: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 0.25rem;
+  column-gap: 1rem;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+.col-3 {
+  grid-column: span 3;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-6 {
+  grid-column: span 6;
 }
 
 .store-img {
