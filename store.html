@@ -2,14 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Karma</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
-      rel="stylesheet"
-      type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,300" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -22,9 +17,9 @@
     <header class="header">
       <img src="img/karma-logo.svg" />
       <nav class="nav-menu">
-        <li><a class="current-menu-item" href="#">Meet Karma</a></li>
+        <li><a href="#">Meet Karma</a></li>
         <li><a href="#">How it Works</a></li>
-        <li><a href="#">Store</a></li>
+        <li><a class="current-menu-item" href="#">Store</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Help</a></li>
         <li><a href="#">Login</a></li>
@@ -34,7 +29,7 @@
       <!-- Store section -->
       <section class="flex-row">
         <div class="store-main">
-          <h1>Order your Karma wifi device today!</h1>
+          <h2>Order your Karma wifi device today!</h2>
           <form class="flex-column">
             <div class="form-grid">
               <div class="col-3 flex-column">
@@ -57,6 +52,7 @@
               <div class="col-4 flex-column">
                 <label for="city">City *</label>
                 <select id="city" name="city">
+                  <option value="" disabled selected>Select your city...</option>
                   <option value="manchester">Manchester</option>
                   <option value="stockport">Stockport</option>
                   <option value="bolton">Bolton</option>
@@ -68,40 +64,26 @@
                 <input type="text" id="postcode" />
               </div>
             </div>
-            <div class="flex-column">
+            <div class="flex-column margin-bottom-2">
               <label for="">Select a colour </label>
-              <div class="flex-row">
-                <input
-                  type="radio"
-                  id="karma-orange"
-                  name="colour"
-                  value="karma-orange" />
+              <div class="flex-row gap-0-5">
+                <input class="accent-color-orange" type="radio" id="karma-orange" name="colour" value="karma-orange" />
 
-                <label for="karma-orange">Karma orange</label>
-                <input
-                  type="radio"
-                  id="space-grey"
-                  name="colour"
-                  value="space-grey" />
-                <label for="space-grey">Space Grey</label>
+                <label class="form-end-label" for="karma-orange">Karma orange</label>
+                <input class="accent-color-orange" type="radio" id="space-grey" name="colour" value="space-grey" />
+                <label class="form-end-label" for="space-grey">Space Grey</label>
               </div>
             </div>
-            <div class="flex-row">
-              <input type="checkbox" id="tc" name="tc" value="tc" />
-              <label for="tc"
-                >By placing your order you agree to Karma's
-                <a href="#">Terms and Conditions</a>. *</label
-              >
+            <div class="flex-row gap-0-5 margin-bottom-2">
+              <input class="accent-color-orange" type="checkbox" id="tc" name="tc" value="tc" />
+              <label class="form-end-label" for="tc">By placing your order you agree to Karma's <a href="#">Terms and Conditions</a>. *</label>
             </div>
             <div class="flex-row">
               <button type="submit" class="primary-btn">Place my order</button>
             </div>
           </form>
         </div>
-        <img
-          class="store-img"
-          src="level-2/store-image_by-andrew-neel-unsplash.jpg"
-          alt="a woman looks laptop" />
+        <img class="store-img" src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="a woman looks laptop" />
       </section>
     </main>
     <hr />

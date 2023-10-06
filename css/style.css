@@ -59,7 +59,7 @@ li {
 }
 
 a {
-  text-decoration: none;
+  color: var(--orange);
   transition: all 0.2s ease-in;
 }
 
@@ -99,6 +99,7 @@ hr {
 
 .nav-menu a {
   color: var(--light-gray);
+  text-decoration: none;
 }
 
 .nav-menu a:hover {
@@ -195,22 +196,18 @@ hr {
 
 /* Store page styles */
 
-.store-main > h1 {
-  color: var(--orange);
-}
-
 .flex-column {
   display: flex;
   flex-direction: column;
 }
+
 .flex-row {
   display: flex;
+  align-items: center;
 }
 
-.store-main {
-  width: 50%;
-  text-align: left;
-  padding: 4rem;
+.gap-0-5 {
+  gap: 0.5rem;
 }
 
 .form-grid {
@@ -219,20 +216,68 @@ hr {
   grid-template-columns: repeat(6, 1fr);
   row-gap: 1.25rem;
   column-gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .col-2 {
   grid-column: span 2;
 }
+
 .col-3 {
   grid-column: span 3;
 }
+
 .col-4 {
   grid-column: span 4;
 }
+
 .col-6 {
   grid-column: span 6;
+}
+
+.store-main {
+  width: 50%;
+  text-align: left;
+  padding: 5rem;
+}
+
+.store-main > h2 {
+  color: var(--orange);
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.form-end-label {
+  margin: 0 0.5rem 0 0;
+  font-weight: 400;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.accent-color-orange {
+  accent-color: var(--orange);
+}
+
+label {
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  color: var(--dark-gray);
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+}
+
+select {
+  color: var(--dark-gray);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  flex-grow: 1;
 }
 
 .store-img {
