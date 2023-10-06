@@ -34,20 +34,21 @@ header {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 85px;
+  padding: 2px 90px;
   background-color: rgb(243, 241, 241);
-  height: 5.5rem;
+  height: 3.75rem;
 }
 
 header .karma__logo {
-  height: 4rem;
+  height: 2.5rem;
 }
 
 header nav {
   width: 50%;
   min-width: 500px;
-  font-size: large;
+  font-size: 45px;
 }
+
 /* Navigation */
 
 #navigation__list {
@@ -189,7 +190,7 @@ h5:nth-child(6) {
 }
 
 /*get-karma*/
-.get-karma {
+#get-karma {
   display: flex;
   margin: 50px 0 80px 0;
   height: 65vh;
@@ -213,7 +214,7 @@ h5:nth-child(6) {
   color: var(--orange-dark);
   font-size: 55px;
 }
-.btn-getkarma {
+.btn-karma {
   background-color: var(--orange-dark);
   color: var(--white);
   padding: 25px 30px;
