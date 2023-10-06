@@ -34,7 +34,9 @@ header {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
+  padding: 0 85px;
+  background-color: rgb(243, 241, 241);
+  height: 5.5rem;
 }
 
 header .karma__logo {
@@ -59,9 +61,14 @@ header nav {
 .nav__item a:hover {
   color: var(--orange-dark);
 }
+.nav__item {
+  font-size: 20px;
+}
+
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
+
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.2s;
@@ -187,7 +194,7 @@ h5:nth-child(6) {
   margin: 50px 0 80px 0;
   height: 65vh;
 }
-.quote-text {
+.quote-div {
   background-color: var(--pink);
   width: 100%;
   display: flex;
@@ -211,7 +218,7 @@ h5:nth-child(6) {
   color: var(--white);
   padding: 25px 30px;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 190;
   border: 0;
 }
