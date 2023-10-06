@@ -3,6 +3,7 @@
 :root {
   --dark-gray: rgb(75, 75, 75);
   --light-gray: rgb(171, 171, 171);
+  --lighter-gray: rgb(249, 249, 249);
   --white: rgb(255, 255, 255);
   --orange: rgb(241, 91, 42);
   --light-orange: rgb(252, 239, 235);
@@ -65,6 +66,7 @@ a {
 
 hr {
   width: 80%;
+  margin-top: 0;
 }
 
 .primary-btn {
@@ -75,6 +77,7 @@ hr {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   transition: all 0.2s ease-in;
+  text-decoration: none;
 }
 
 .primary-btn:hover {
@@ -89,12 +92,14 @@ hr {
   align-content: center;
   height: 4rem;
   padding: 1.5rem 7rem;
+  background-color: var(--lighter-gray);
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   gap: 3rem;
+  font-size: 1.3rem;
 }
 
 .nav-menu a {
@@ -210,6 +215,22 @@ hr {
   gap: 0.5rem;
 }
 
+.store {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.store-main {
+  text-align: left;
+  padding: 5rem;
+}
+
+.store-main > h2 {
+  color: var(--orange);
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
 .form-grid {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -233,18 +254,6 @@ hr {
 
 .col-6 {
   grid-column: span 6;
-}
-
-.store-main {
-  width: 50%;
-  text-align: left;
-  padding: 5rem;
-}
-
-.store-main > h2 {
-  color: var(--orange);
-  margin-bottom: 3rem;
-  font-weight: 500;
 }
 
 .form-end-label {
@@ -281,7 +290,9 @@ select {
 }
 
 .store-img {
-  width: 50%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /* Footer Styles */
