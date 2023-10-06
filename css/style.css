@@ -199,11 +199,11 @@ hr {
   color: var(--orange);
 }
 
-.store-form {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
-.store {
+.flex-row {
   display: flex;
 }
 
@@ -215,10 +215,11 @@ hr {
 
 .form-grid {
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(6, 1fr);
-  row-gap: 0.25rem;
+  row-gap: 1.25rem;
   column-gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .col-2 {
