@@ -23,6 +23,7 @@ body {
   --reverseColor: white;
   --color: black;
   --navColor: rgb(150, 150, 150);
+  --navSize: 1.5vw;
 }
 
 body {
@@ -57,7 +58,7 @@ header {
   align-items: center;
 }
 .karmaIcon {
-  height: 60px;
+  height: calc(40px + 1vw);
 }
 nav ul {
   list-style: none;
@@ -66,13 +67,19 @@ nav ul {
   gap: 2.5vw;
   padding: 0;
 }
-nav ul li:nth-child(1) {
+
+.nav-link{
+  font-size: calc(9px + 1vw);
+  color: var(--navColor);
+  text-decoration: none;
+}
+.first-link{
   color: rgb(75, 75, 75);
   font-weight: 500;
 }
-li {
-  font-size: 1.5vw;
-  color: var(--navColor);
+.nav-link:hover {
+  
+  color: var(--logoColor);
 }
 
 /* first section styles */
