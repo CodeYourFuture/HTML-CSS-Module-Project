@@ -18,8 +18,6 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
-
-
 /* .container {
     display: grid;
     gap: 5px;
@@ -37,12 +35,12 @@ h5 {
 }
 
 header {
-    display: flex;
-    margin-bottom: -30px;
+  display: flex;
+  margin-bottom: -30px;
 }
 
 hr {
-  width: 90%;
+  width: 70%;
 }
 
 footer {
@@ -78,7 +76,7 @@ footer {
 }
 
 .navigation__link {
-  color: gray;  
+  color: gray;
   font-weight: lighter;
   text-transform: uppercase;
   text-decoration: none;
@@ -106,6 +104,7 @@ footer {
   padding: 10px 20px;
   border-radius: 5px;
   border-color: rgb(211, 102, 0);
+  color: #ffff;
 }
 
 .article-karma-icons {
@@ -115,7 +114,7 @@ footer {
   justify-content: center;
 }
 
-.article-head{
+.article-head {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +129,33 @@ footer {
   align-items: center;
 }
 
+.store {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: #fcefeb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.store-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.apos {
+  color: orange;
+}
+
+.store-tb {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .social-icons {
   display: flex;
 }
@@ -141,11 +167,18 @@ footer {
   height: 15px;
   padding: 5px;
   margin: 5px;
-  border: 1px solid rgba(219, 219, 219, 0.726) ;
+  border: 1px solid rgba(219, 219, 219, 0.726);
   border-radius: 50%;
 }
 
 h5 {
   color: darkgrey;
   font-size: x-small;
+}
+
+.order-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  color: orange;
 }

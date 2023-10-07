@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="karma-logo">
+        <a><img src="img/karma-logo.svg" alt="Karma logo" /></a>
+      </section>
+      <nav class="nav-list">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Meet Karma</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">How it Works</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Store</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Help</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="order-text">
+        <h1>Order your Karma wifi device today!</h1>
+      </div>
+      <form action="signups.html" method="get">
+        <div>
+          <label for="firstname">First name</label>
+          <input type="text" name="First name" id="firstname" required />
+        </div>
+        <div>
+          <label for="lastname">Last name</label>
+          <input type="text" name="Last name" id="lastname" required />
+        </div>
+        <div>
+          <label for="address1">Address</label>
+          <input type="text" name="Address Line 1" id="address1" required />
+        </div>
+        <div>
+          <label for="address2">Address 2</label>
+          <input type="text" name="Address Line 2" id="address2" />
+        </div>
+        <div>
+          <label for="city">City</label>
+          <select name="city" id="city">
+            <option value="london">London</option>
+            <option value="manchester">Manchester</option>
+            <option value="glasgow">Glasgow</option>
+            <option value="oxford">Oxford</option>
+          </select>
+        </div>
+        <div>
+          <label>Postcode</label>
+          <input required />
+          <div>
+            Select a colour
+            <div>
+              <label for="karmaorange">Karma Orange</label>
+              <input
+                type="radio"
+                name="colour"
+                id="karmaorange"
+                value="Karma Orange"
+              />
+            </div>
+            <div>
+              <label for="spacegrey">Space Grey</label>
+              <input
+                type="radio"
+                name="colour"
+                id="spacegrey"
+                value="Space Grey"
+              />
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms"
+              >By placing your order you agree to Karma's
+              <a class="tnc">Terms & Conditions</a> *
+            </label>
+          </div>
+        </div>
+        <button class="learn" type="submit">Place my order now</button>
+      </form>
+    </main>
+    <hr />
+    <footer class="footer">
+      <h4>Join us on</h4>
+      <section class="social-icons">
+        <a class="social"
+          ><img src="img/twitter-icon.svg" alt="Twitter icon"
+        /></a>
+        <a class="social"
+          ><img src="img/facebook-icon.svg" alt="Facebook icon"
+        /></a>
+        <a class="social"
+          ><img src="img/instagram-icon.svg" alt="Instagram icon"
+        /></a>
+      </section>
+
+      <h5>©Karma Mobility, Inc.</h5>
+    </footer>
+  </body>
+</html>
