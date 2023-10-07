@@ -205,6 +205,7 @@ header img {
 
 #to-store img {
   width: 40%;
+  min-width: none;
 }
 
 #to-store article {
@@ -216,6 +217,28 @@ header img {
   background-color: #fcefeb;
   width: 60%;
   padding: 0 12%;
+}
+
+@media screen and (max-width: 1400px) {
+  #to-store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #to-store article,
+  #to-store img {
+    width: 80%;
+  }
+
+  #to-store article {
+    padding: 2rem 1rem;
+  }
+
+  :root {
+    --page-width: 99%
+  }
 }
 
 #to-store p {
