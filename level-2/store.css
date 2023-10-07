@@ -1,0 +1,180 @@
+h1 {
+  font-size: 6ch;
+  color: #f96b37;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: 0;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* 1 row and 6 columns */
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  /* Adjust the gap as needed */
+  gap: 2%;
+  width: 50vw;
+  height: 2vh;
+}
+
+.list li {
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: clamp(1.5vh, 1vw, 3vh);
+}
+
+.flex {
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  width: 50vw;
+  margin-left: 50px;
+}
+.store_img {
+  width: 50vw;
+}
+.address-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 70px;
+}
+
+.select {
+  width: 220px;
+  height: 40px;
+  border: 1px solid rgb(138, 132, 132);
+  border-radius: 2px;
+  color: rgb(138, 132, 132);
+}
+
+.name-input {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 10%;
+}
+.address-input {
+  width: 270%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 10%;
+}
+
+.add-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+
+select#city {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 150%;
+}
+
+input#postcode {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 70%;
+}
+
+label {
+  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 30px;
+  background-color: rgb(218, 90, 20);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #fff;
+  width: 270px;
+  height: 70px;
+  flex-shrink: 0;
+}
+.button:hover {
+  background-color: #fff;
+  color: rgb(218, 90, 20);
+  border: 2px solid rgb(218, 90, 20);
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+  margin-top: 0;
+  border-top: 1px solid rgb(214, 212, 212);
+}
+.footer-items {
+  margin-top: 2rem;
+}
+.content {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_icon {
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid rgb(220, 217, 217);
+  border-radius: 50%;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+#facebook-icon {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.karma_mobality {
+  margin-top: 10px;
+  font-size: smaller;
+  font-weight: lighter;
+  color: rgb(196, 193, 193);
+}
