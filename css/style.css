@@ -4,8 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 /**
@@ -36,7 +36,6 @@ h5 {
 
 header {
   display: flex;
-  margin-bottom: -30px;
 }
 
 hr {
@@ -86,7 +85,7 @@ footer {
   background-image: url(../img/first-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 800px;
+  height: 700px;
   color: ghostwhite;
   display: flex;
   flex-direction: column;
@@ -131,8 +130,8 @@ footer {
 
 .store {
   width: 90%;
-  margin: auto;
-  margin-bottom: 1rem;
+  margin: 2rem;
+  margin-bottom: 5rem;
   background-color: #fcefeb;
   display: flex;
   flex-direction: row;
@@ -142,18 +141,22 @@ footer {
 
 .store-text {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 350;
   font-size: 2rem;
+  text-wrap: wrap;
+  text-align: center;
 }
 
 .apos {
-  color: orange;
+  color: rgb(255, 123, 0);
 }
 
 .store-tb {
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  padding: 5em;
 }
 
 .social-icons {
@@ -181,4 +184,29 @@ h5 {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bolder;
   color: orange;
+}
+
+.store-page {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+  padding: 10px 5px;
+}
+
+.store-img img {
+  width: 40em;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.name {
+  display: flex;
 }
