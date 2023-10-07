@@ -78,22 +78,28 @@ a {
   font-size: 50px;  
   font-weight: lighter;
 }
-.imgsclass {
-    width: 500px;
-    flex-direction: row;
+.brandDescription {
     display: flex;
-    align-items: center;
-    margin-left: 20%;    
+    flex-direction: row;
+    justify-content: center;
+    column-gap:100px;
+    
+}
+.imgsclass {
+   display: flex;
+   flex-direction: column;
 }
 .imgsclass img{
-    padding: 95px;
+    width: 200px;
 }
 .imgsclass h3 {
-    text-align: center;
-    margin-top: 20px;
-    padding: 90px;
 }
+    
 .logoclass {
     margin-top: 20px;
     margin-left: 20px;
+}
+.infoclass {
+   
+    
 }
