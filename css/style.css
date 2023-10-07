@@ -95,6 +95,10 @@ hr {
   background-color: var(--lighter-gray);
 }
 
+.header a {
+  display: flex;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -221,6 +225,9 @@ hr {
 }
 
 .store-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
   padding: 5rem;
 }
