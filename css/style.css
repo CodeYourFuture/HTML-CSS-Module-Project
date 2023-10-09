@@ -174,16 +174,18 @@ hr{
 }
 
 .speechmarks{
-    display: flex;
-    flex-direction: row;
     text-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
     text-align: center;
     font-size: 35px;
     font-weight: 400;
     font-style: italic;
     padding: 0px 180px;
+}
+
+.feedback span{
+    color: #e0633a;
+    font-size: 40px;
+    font-style: italic;
 }
 
 .homepage-feature{
