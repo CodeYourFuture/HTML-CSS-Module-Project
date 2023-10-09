@@ -33,7 +33,7 @@ p {
 .header,
 .content,
 .footer {
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -45,8 +45,7 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  margin-bottom: 0.2rem;
-  padding-top: 0.1rem;
+  background-color: aliceblue;
 }
 
 .header__logo {
@@ -85,18 +84,22 @@ nav {
 /*Button*/
 
 button {
-  padding: 1rem 1rem 1rem 1rem;
   background-color: #c05326;
   color: white;
-  border-radius: 5px;
+  border-radius: 3px;
+  border: none;
+  padding: 1rem 1.5rem;
 }
+
+/* INSERT BUTTON STYLES HERE */
 
 button:hover {
   background-color: gray;
 }
 
 .btn {
-  padding-left: 25rem;
+  padding-left: 26rem;
+  padding-top: 2em;
 }
 
 /*Content*/
@@ -104,7 +107,40 @@ button:hover {
 .content {
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
+  /* padding-right: 30px; */
+}
+
+/*Promote*/
+
+.pro__img {
+  width: 100%;
+  height: 23rem;
+}
+
+.pro {
+  background-color: lightpink;
+  width: 95%;
+  height: 17rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 6rem;
+  padding-left: 2rem;
+  color: rgb(52, 44, 44);
+}
+
+.promote {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.5rem;
+}
+
+.color {
+  color: #c05326;
+}
+
+.pro__btn {
+  padding-top: 1rem;
 }
 
 /*Introduction*/
@@ -119,7 +155,7 @@ button:hover {
 
 .introduction h1 {
   padding-top: 200px;
-  padding-left: 302px;
+  padding-left: 305px;
   margin-bottom: 1rem;
   font-size: 2.5rem;
   color: white;
@@ -128,7 +164,7 @@ button:hover {
 .introduction p {
   font-size: 2rem;
   margin-bottom: 2rem;
-  padding-left: 200px;
+  padding-left: 206px;
   padding-top: 30px;
   color: white;
 }
@@ -176,21 +212,19 @@ hr.new {
 }
 
 .footer {
-  /* align-items: center;
-  padding-left: 38rem;
-  font-size: 0.8rem; */
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .footer p {
-  padding-bottom: 1rem;
+  padding: 1.5rem;
   text-align: center;
   font-size: 0.85rem;
 }
 
 .text {
   color: gray;
+  padding-top: 0.5em;
 }
 
 .img__footer {
