@@ -13,7 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   max-width: 100vw;
-  margin: 0 auto;
+  margin: 0;
 }
 
 h1,
@@ -26,58 +26,42 @@ p {
   margin-bottom: 0;
 }
 
-/* Header */
-
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2px 90px;
-  background-color: rgb(243, 241, 241);
-  height: 3.75rem;
+/* Form section */
+.order-section {
+  height: min-content;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: min-content;
+  align-items: flex-start; /* ust noktalari bir */
 }
 
-header .karma__logo {
-  height: 2.5rem;
+/* left text and form */
+.order-text {
+  margin: 15vh 5vw 0;
 }
-
-header nav {
-  width: 50%;
-  min-width: 500px;
-  font-size: 45px;
-}
-
-/* Navigation */
-
-#navigation__list {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  color: var(--grey-light);
-}
-.nav__item a:hover {
+.order-text h1 {
+  margin-bottom: 2rem;
   color: var(--orange-dark);
 }
-.nav__item {
-  font-size: 20px;
+.order-image {
+  background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+
+  height: 100%;
 }
 
-.navigation__link {
-  color: var(--grey-dark);
-  font-weight: 600;
+/* resmin kaplayacagi alan*/
 
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.2s;
+.couple {
+  display: flex;
+  flex-direction: column;
 }
-#navigation__list li:nth-child(1) a {
-  color: black;
+.name-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
 }
-li a {
-  color: var(--grey-dark);
-  text-decoration: none;
+.name {
+  width: 50%;
 }

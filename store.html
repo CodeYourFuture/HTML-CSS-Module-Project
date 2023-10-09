@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
@@ -47,14 +48,114 @@
         </ul>
       </nav>
     </header>
-    <!--section Form Page-->
 
-    <section id="form-page"></section>
-    <h3 class="form-title">
-      Order your Karma Wifi
-      <br />
-      device today!
-    </h3>
-    <div class="form"></div>
+    <!--main -->
+    <main>
+      <section class="order-section">
+        <div class="order-text">
+          <h1>Order your Karma wifi <br />device today!</h1>
+          <form id="orderForm" action="process_order.php" method="POST">
+            <div class="name-row">
+              <div class="name couple">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="name couple">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <br />
+            <div class="address">
+              <label for="address">Address:</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                required
+              /><br /><br />
+
+              <label for="address2">Address 2:</label>
+              <input type="text" id="address2" name="address2" /><br /><br />
+            </div>
+
+            <div class="city-postcode">
+              <label for="city">City:</label>
+              <select id="city" name="city" required>
+                <option value="" disabled selected>Select</option>
+                <option value="London">London</option>
+                <option value="Manchester">Manchester</option>
+                <option value="Liverpool">Liverpool</option>
+              </select>
+
+              <label for="postcode">Postcode:</label>
+              <input
+                type="text"
+                id="postcode"
+                name="postcode"
+                required
+              /><br /><br />
+            </div>
+
+            <div class="btn-radio">
+              <label>Select a color:</label><br />
+              <input
+                type="radio"
+                id="karma-orange"
+                name="color"
+                value="karma-orange"
+                required
+              />
+              <label for="karma-orange">Karma orange</label><br />
+
+              <input
+                type="radio"
+                id="space-grey"
+                name="color"
+                value="space-grey"
+                required
+              />
+              <label for="space-grey">Space Grey</label><br />
+            </div>
+
+            <div>
+              <input type="checkbox" id="terms" required />
+              <label for="terms"
+                >By placing your order you agree to
+                <a href="#" class="terms-link">Karma's Terms and Conditions</a
+                >.*</label
+              >
+            </div>
+
+            <div class="submit">
+              <input type="submit" value="Place my order" />
+            </div>
+          </form>
+        </div>
+        <div class="order-image"></div>
+      </section>
+    </main>
+
+    <!--Footer -->
+    <footer>
+      <h6>Join us on</h6>
+      <div class="media__icons">
+        <a href="https://twitter.com/yourKarma" target="_blank ">
+          <img src="img/twitter-icon.svg" alt="twitter icon"
+        /></a>
+        <a href="https://www.facebook.com/newkarmawifi/" target="_blank">
+          <img src="img/facebook-icon.svg" alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com/karmawifi/" target="_blank "
+          ><img src="img/instagram-icon.svg" alt="instagram icon"
+        /></a>
+      </div>
+      <p class="copyright">@ Karma Mobility. Inc</p>
+    </footer>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
   </body>
 </html>

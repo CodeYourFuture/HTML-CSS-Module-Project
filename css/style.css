@@ -44,9 +44,7 @@ header .karma__logo {
 }
 
 header nav {
-  width: 50%;
-  min-width: 500px;
-  font-size: 45px;
+  width: 50vw;
 }
 
 /* Navigation */
@@ -54,7 +52,9 @@ header nav {
 #navigation__list {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  gap: calc(5px + 2vw);
   padding: 0;
   margin: 0;
   color: var(--grey-light);
@@ -62,24 +62,15 @@ header nav {
 .nav__item a:hover {
   color: var(--orange-dark);
 }
-.nav__item {
-  font-size: 20px;
-}
 
-.navigation__link {
-  color: var(--grey-dark);
-  font-weight: 600;
-
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.2s;
-}
 #navigation__list li:nth-child(1) a {
   color: black;
 }
 li a {
   color: var(--grey-dark);
   text-decoration: none;
+  font-size: calc(5px + 1vw);
+  margin: 0;
 }
 
 /*main*/
@@ -104,13 +95,13 @@ section {
 #hero h1 {
   margin-top: 10rem;
   font-weight: 100;
-  font-size: 4rem;
+  font-size: calc(30px + 3vw);
 }
 #hero h2 {
   margin-top: 2rem;
   margin-bottom: 3rem;
   font-weight: 180;
-  font-size: 2.5rem;
+  font-size: calc(20px + 1.5vw);
 }
 #hero p {
   margin-bottom: 4rem;
@@ -138,13 +129,13 @@ section {
 }
 #icons h1 {
   color: var(--grey-dark);
-  font-size: 3rem;
+  font-size: calc(20px + 2vw);
   font-weight: 100;
 }
 
 h5 {
   text-align: left;
-  font-size: 30px;
+  font-size: calc(15px + 1vw);
   align-items: center;
   justify-content: center;
   font-weight: 200;
@@ -155,14 +146,15 @@ h5 {
   height: auto;
 }
 .icon__images {
-  margin: 4rem 15vw;
+  margin: 4rem 10vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr auto;
-  gap: 5rem;
+  gap: calc(15px + 1.5vw);
   grid-template-areas:
     "icon1 icon2 icon3"
     "text1 text2 text3";
+  justify-items: center;
 }
 
 grid areas for each element .icon__images:nth-child(1) {
@@ -197,14 +189,15 @@ h5:nth-child(6) {
 }
 .quote-div {
   background-color: var(--pink);
-  width: 100%;
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .connection-quote {
-  font-size: 43px;
+  font-size: calc(10px + 2vw);
   font-style: italic;
   font-weight: 300;
   text-align: center;
@@ -217,11 +210,17 @@ h5:nth-child(6) {
 .btn-karma {
   background-color: var(--orange-dark);
   color: var(--white);
-  padding: 25px 30px;
+  padding: calc(10px + 1.5vw) calc(15px + 2vw);
   border-radius: 10px;
-  font-size: 1.75rem;
+  font-size: calc(10px + 1vw);
   font-weight: 190;
   border: 0;
+}
+.girl-img {
+  width: 50%;
+  background-image: url("../level-2/homepage-feature.png");
+  background-position: center left;
+  background-size: cover;
 }
 
 /* footer*/
