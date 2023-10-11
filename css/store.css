@@ -37,11 +37,13 @@ p {
 
 /* left text and form */
 .order-text {
-  margin: 15vh 5vw 0;
+  margin: 15vh 8vw 0;
 }
 .order-text h1 {
   margin-bottom: 2rem;
   color: var(--orange-dark);
+  font-size: 2.8rem;
+  font-weight: 465;
 }
 .order-image {
   background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
@@ -74,7 +76,7 @@ p {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .radio-text {
@@ -93,6 +95,10 @@ p {
   height: 40px;
 }
 
+.input-btn {
+  padding: 1vw 2vw;
+}
+
 .submit input[type="submit"] {
   background-color: var(--orange-dark);
   color: white;
@@ -101,10 +107,28 @@ p {
   margin-top: 2rem;
   transition: background-color 0.3s;
   background-size: 20%;
-  padding: 20px 40px;
   border-radius: 5px;
 }
 
 .submit input[type="submit"]:hover {
   background-color: rgb(211, 70, 19);
+}
+.lbl-space {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.clr-lbl {
+  margin: 30px;
+}
+
+span.orange-text {
+  color: var(--orange-dark);
+  text-decoration: underline;
+}
+
+a.terms-link {
+  text-decoration: none; /* Remove underline*/
+  color: black;
+  text-decoration: none;
 }

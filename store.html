@@ -58,29 +58,28 @@
           <form id="orderForm" action="process_order.php" method="POST">
             <div class="name-row">
               <div class="name couple">
-                <label for="firstName">First Name:</label>
+                <label class="lbl-space" for="firstName">First Name *</label>
                 <input type="text" id="firstName" name="firstName" required />
               </div>
               <div class="name couple">
-                <label for="lastName">Last Name:</label>
+                <label class="lbl-space" for="lastName">Last Name *</label>
                 <input type="text" id="lastName" name="lastName" required />
               </div>
             </div>
 
-            <br />
             <div class="address-line">
-              <label for="address">Address:</label>
+              <label class="lbl-space" for="address">Address *</label>
               <input type="text" id="address" name="address" required />
             </div>
-            <br />
+
             <div class="address-line">
-              <label for="address2">Address 2:</label>
+              <label class="lbl-space" for="address2">Address 2:</label>
               <input type="text" id="address2" name="address2" />
             </div>
-            <br />
+
             <div class="name-row">
               <div class="name couple">
-                <label for="city">City:</label>
+                <label class="lbl-space" for="city">City *</label>
                 <select class="city" name="city" required>
                   <option value="" disabled selected>Select</option>
                   <option value="London">London</option>
@@ -89,21 +88,19 @@
                 </select>
               </div>
               <div class="name couple">
-                <label for="postcode">Postcode:</label>
+                <label class="lbl-space" for="postcode">Postcode *</label>
                 <input type="text" class="postcode" name="postcode" required />
               </div>
             </div>
-            <br />
-            <br />
 
             <div class="radio-text">
-              <label>Select a color:</label>
-              <br />
+              <label class="clr-lbl" for="color-select">Select a color:</label>
+
               <div class="radio-row">
                 <input
                   type="radio"
-                  id="karma-orange"
-                  name="color"
+                  id="color-select"
+                  name="color-select"
                   value="karma-orange"
                   required
                 />
@@ -111,8 +108,8 @@
 
                 <input
                   type="radio"
-                  id="space-grey"
-                  name="color"
+                  id="color-select"
+                  name="color-select"
                   value="space-grey"
                   required
                 />
@@ -124,13 +121,15 @@
               <input type="checkbox" id="terms" required />
               <label for="terms">
                 By placing your order you agree to
-                <a href="#" class="terms-link">Karma's Terms and Conditions</a
-                >.*
+                <a href="#" class="terms-link"
+                  >Karma's
+                  <span class="orange-text">Terms and Conditions. *</span>
+                </a>
               </label>
             </div>
 
             <div class="submit">
-              <input type="submit" value="Place my order" />
+              <input class="input-btn" type="submit" value="Place my order" />
             </div>
           </form>
         </div>
