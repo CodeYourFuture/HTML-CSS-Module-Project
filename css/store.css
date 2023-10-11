@@ -92,14 +92,19 @@ p {
   width: 100%;
   height: 40px;
 }
-.submit {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+
+.submit input[type="submit"] {
   background-color: var(--orange-dark);
-  color: var(--white);
-  padding: 15px 17px;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 200;
-  border: none;
+  color: white;
+  border: 0;
+  font-size: 20px;
+  margin-top: 2rem;
+  transition: background-color 0.3s;
+  background-size: 20%;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.submit input[type="submit"]:hover {
+  background-color: rgb(211, 70, 19);
 }
