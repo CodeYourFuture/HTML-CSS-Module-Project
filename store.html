@@ -54,6 +54,7 @@
       <section class="order-section">
         <div class="order-text">
           <h1>Order your Karma wifi <br />device today!</h1>
+
           <form id="orderForm" action="process_order.php" method="POST">
             <div class="name-row">
               <div class="name couple">
@@ -80,7 +81,7 @@
             <div class="name-row">
               <div class="name couple">
                 <label for="city">City:</label>
-                <select id="city" name="city" required>
+                <select class="city" name="city" required>
                   <option value="" disabled selected>Select</option>
                   <option value="London">London</option>
                   <option value="Manchester">Manchester</option>
@@ -89,13 +90,15 @@
               </div>
               <div class="name couple">
                 <label for="postcode">Postcode:</label>
-                <input type="text" id="postcode" name="postcode" required />
+                <input type="text" class="postcode" name="postcode" required />
               </div>
             </div>
             <br />
             <br />
-            <div class="btn-radio">
+
+            <div class="radio-text">
               <label>Select a color:</label>
+              <br />
               <div class="radio-row">
                 <input
                   type="radio"

@@ -63,21 +63,43 @@ p {
   width: 50%;
 }
 
-#city,
-#postcode {
+.city,
+.postcode,
+#firstName,
+#lastName {
   width: 100%;
   height: 40px;
-  padding: 5px;
 }
-
 .radio-row {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-bottom: 20px;
+}
+
+.radio-text {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .address-line {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+#address,
+#address2 {
+  width: 100%;
+  height: 40px;
+}
+.submit {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 15px 17px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 200;
+  border: none;
 }
