@@ -22,7 +22,7 @@ body {
 .header,
 .main,
 .footer {
-  margin: 10px;
+  margin: 0;
 }
 
 /* Header styles */
@@ -30,8 +30,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding: 10px 150px;
+  background-color: #f9f9f9;
 }
 
 .header-logo {
@@ -74,6 +74,7 @@ body {
 .main {
   text-align: center;
   border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
 }
 
 .xx-large-text {
@@ -174,4 +175,23 @@ span {
 }
 .footer-text-grey {
   color: grey;
+}
+
+/* store-page */
+
+.main-store-page {
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.with-form-img {
+  display: flex;
+}
+
+#img-working-lady {
+  width: 50%;
+}
+
+#form {
+  width: 50%;
 }
