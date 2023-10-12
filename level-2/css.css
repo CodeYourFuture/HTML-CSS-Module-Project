@@ -1,0 +1,225 @@
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+ /* Reset some default styles for better consistency */
+
+ /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+ /* Reset some default styles for better consistency */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and text color to the whole page */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style for the header section */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.header svg {
+  fill: #F15B2A;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__item {
+  margin-right: 2rem;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Style for the hero section */
+.hero {
+  text-align: center;
+  padding: 5rem 0;
+  background-image: url("C:\Users\Rawan\Desktop\Portfolio\HTML-CSS-MODULE-PROJECT\HTML-CSS-Module-Project\img\first-background.jpg");
+  color: #161515;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Style for the article title */
+.article__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+/* Style for the icon container */
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.icon-container svg {
+  fill: #F05A29;
+}
+
+
+
+
+/* Style for the CTA (Call to Action) section */
+.cta {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: gainsboro;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Style for buttons */
+button {
+  background-color: #F05A29;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Style for the footer section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .header ul {
+      margin-top: 1rem;
+  }
+
+  .navigation__list {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navigation__item {
+      margin: 1rem 0;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .article__title {
+      font-size: 1.25rem;
+  }
+
+ .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-end; /* Align text to the bottom */
+    text-align: center; /* Center horizontally within the container */
+    height: 150px; /* Adjust the container's height as needed */
+}
+
+
+.icon-container svg {
+    width: 100px; /* Adjust the icon size as needed */
+    height: 100px; /* Adjust the icon size as needed */
+    margin-bottom: 10px; /* Spacing between icon and text */
+}
+
+.icon-text {
+    font-size: 16px; /* Adjust the text size as needed */
+    font-weight: bold; /* Text styling */
+  
+}
+
+
+
+  .cta p {
+      font-size: 1rem;
+  
+}

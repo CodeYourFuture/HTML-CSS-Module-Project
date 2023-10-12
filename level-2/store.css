@@ -1,0 +1,90 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+ /* Reset some default styles for better consistency */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and text color to the whole page */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style for the header section */
+.header {
+  background-color: #9332;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.header svg {
+  fill: #F15B2A;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__item {
+  margin-right: 2rem;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #313;
+  font-weight: 500;
+}
+
+
+
+
+
+ div {
+    display: inline-block;
+  padding-left: 50pt; 
+  padding-right: 50pt;
+   
+}
+
+ div {
+    display: block;
+  padding-left: 100pt; 
+  padding-right: 50pt;
+ 
+}
+
+label {
+  color: #312;
+  font-weight: ;
+  display: block;
+  width: 230px;
+  float: up;
+ 
+label:after { content: ": " }
