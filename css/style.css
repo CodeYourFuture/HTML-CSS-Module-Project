@@ -59,14 +59,14 @@ body {
   color: gray;
 }
 .nav-link:hover {
-  color: orange;
+  color: #e06239;
 }
 
 #black-text {
   color: black;
 }
 #black-text:hover {
-  color: orange;
+  color: #e06239;
 }
 
 /* Main styles */
@@ -104,7 +104,8 @@ body {
 }
 
 .button {
-  background-color: orangered;
+  background-color: #e06239;
+  color: white;
   font-size: 2em;
   border-radius: 5px;
   border: 0;
@@ -135,6 +136,22 @@ body {
 
 #p {
   font-size: 2em;
+}
+
+.with-img-connection {
+  display: flex;
+  margin: 100px 0;
+  background-color: #fcefeb;
+  text-align: center;
+  align-items: center;
+}
+
+#italic-text {
+  font-style: italic;
+}
+
+span {
+  color: #e06239;
 }
 
 /* Footer styles */
