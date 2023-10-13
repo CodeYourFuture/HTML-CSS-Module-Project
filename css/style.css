@@ -23,6 +23,7 @@ body {
   --reverseColor: white;
   --color: black;
   --navColor: rgb(150, 150, 150);
+  --navColor2: rgb(150, 150, 150, 0.5);
   --navSize: 1.5vw;
   --headerBackground: #c4c4c41a;
 }
@@ -98,7 +99,7 @@ nav ul {
 }
 
 button {
-  margin: calc(3 * var(--gap));
+  margin: calc(3 * var(--gap)) 0;
   font-size: calc(var(--subHeaderLineSize) / 2);
   color: var(--reverseColor);
   background-color: var(--logoColor);
@@ -205,6 +206,75 @@ footer h6 {
   margin: 40px 0 100px;
 }
 hr {
+  margin: 0;
   height: 0px;
-  border: var(--navColor) solid 1px;
+  border: var(--navColor2) solid 1px;
+}
+
+/* store page styles */
+.store-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-area{
+  padding: 6vw 9vw;
+  gap: 3vw;
+}
+
+.img-area {
+  
+  background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.form-hdr{
+  color: var(--logoColor);
+  font-size: calc(var(--headerLineSize) / 1.5);
+  font-weight: 500;
+  margin: 0;
+  
+}
+form {
+  text-align: left;
+  padding: 3vw 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.couple-lbl-inpt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input[type="text"]{
+  height: 3em;
+  border: #666666 solid 1px;
+  border-radius: 0.3em;
+}
+
+input[type="radio"] {
+  accent-color: var(--logoColor);
+}
+
+input[type="checkbox"]:checked {
+  content: url("../level-2/checkmark.svg");
+  accent-color: rgba(255, 255, 255, 0);
+}
+
+.order-btn{
+  margin: 0;
+  align-self: flex-start;
+}
+
+.tac-spn{
+  color: var(--logoColor);
 }
