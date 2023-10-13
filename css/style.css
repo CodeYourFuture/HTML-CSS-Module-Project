@@ -15,5 +15,245 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
+ body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .logo {
+    width: 2rem;
+    margin-left: 12rem;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .navigation_list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    margin-right: 10rem;
+    color:black;
+  }
+  .navigation_link:hover {
+    color: orangered;
+  }
+  
+  .navigation_list li {
+    display: inline-block;
+    padding: 0 20px;
+    color:black; 
+  }
+  .navigation_list a {
+    text-decoration: black;
+  }
+  .hero {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;   
+    align-items: center;   
+    background-image: url("C:\Users\Rawan\WEEK1-2 PHY\HTML-CSS-Module-Project\img\first-background.jpg");
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+  
+  button {
+    background-color: rgb(245, 127, 84);
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-top: 30px;
+    border: 0 rgb(245, 127, 84);
+  }
+  
+  button:hover {
+    background-color: white;
+    color: orangered;
+  }
+  
+  section {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 100px 0;
+    font-weight: black;
+    font-size: 3rem;
+  }
+  .icon_img {
+    width: 9rem;
+    margin-bottom: 25px;
+  }
+  
+  .img_info {
+    font-size: 1.8rem;
+  }
+  
+  .karma_icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  footer {
+    border-top: 1px solid lightgray;
+  }
+  
+  .footer_info {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .info {
+    font-weight: normal;
+  }
+  
+  .footer_img {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-icon {
+    height: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    border: 1px solid rgb(220, 217, 217);
+    border-radius: 50%;
+  }
+  #facebook_icon {
+    margin: 0 13px;
+  }
+  .site-credit {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: small;
+    color: gray;
+  }
+  
+  .input_card {
+    display: flex;
+  }
+  .karma-feature {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .feature-img {
+    width: 550px;
+    margin: 0;
+  }
+  .Karma {
+    background-color: #fde3dee7;
+    width: 70%;
+    text-align: center;
+  }
+  .karma-text {
+    margin-top: 80px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: xx-large;
+  }
+  .karma-button {
+    background-color: rgb(245, 127, 84);
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: large;
+    margin-top: 30px;
+    border: 0 rgb(134, 49, 17) solid;
+    color: white;
+    width: 200px;
+  }
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 0.5px grey solid;
+  }
+  
+  
+  u {
+    color: rgb(194, 72, 28);
+  }
+  
+  .title {
+    color: rgb(218, 120, 85);
+    margin-bottom: 70px;
+  }
+  
+  .name {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #lname {
+      margin-left: 20px;
+  }
+  
+  .Buttons {
+    accent-color:rgb(194, 72, 28);
+    height: 1em;
+    width: 1em;
+  }
+  
+  .user-input {
+      display: flex;
+  }
+  
+  .select-text {
+       margin-top: 30px;
+  }
+  
+  #space-grey {
+      margin-left: 50px;
+  }
+  
+  .checkbox {
+      accent-color:rgb(194, 72, 28);
+  }
+  
+  #city {
+      font-style: italic;
+  }
+  .city-postcode {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 4em;
+  }
+  .order-button {
+      background-color: rgb(245, 127, 84);
+      padding: 15px 25px;
+      border-radius: 3px;
+      font-size: large;
+      border: 0 rgb(134, 49, 17) solid;
+      color: white;
+      width: 200px;
+  }
+  .text-form {
+      align-items: center;
+      margin-top: 120px;
+  }
+  #agreement {
+      margin: 60px 0 20px 0;
+  }
+  
+  
+  
+  
+  
 
