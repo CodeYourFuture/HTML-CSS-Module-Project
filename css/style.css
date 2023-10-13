@@ -193,11 +193,90 @@ hr{
     object-fit:cover;
 }
 
+.store-container{
+    display: flex;
+}
+
 .aside-img{
    width: 50vw;
 }
 
-.name{
-    display: flex;
-    flex-direction: row;
+.hero-form{
+    margin: 0px 60px;
 }
+
+.hero-form h1{
+    color: #e0633a;
+    font-weight: 500;
+    margin-left: 60px;
+    font-size: 40px;
+}
+
+.hero-form button{
+    margin-left: 60px;
+}
+
+form{
+    margin: 20px 60px;
+}
+
+form p{
+    color: #6f6f6f;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+label[for="fname"], label[for="lname"], label[for="address"], label[for="address2"], label[for="sort"], label[for="postcode"]{
+    color: #6f6f6f;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+label[for="colour1"], label[for="colour2"]{
+    color: #6b6b6b;
+    font-weight: 400;
+}
+
+label[for="order"]{
+    color: #6b6b6b;
+    font-size: 15px;
+}
+
+.terms .oandu{
+    color: #e0633a;
+    text-decoration: underline;
+}
+
+select[name="s"]{
+    width: 285px;
+}
+
+input[type="postcode"]{
+    width: 100px;
+}
+
+.names, .area{
+    display: flex;
+    column-gap: 20px;
+}
+
+.obutton{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 70px;
+}
+
+input, select[name="s"]{
+    border: solid #686868;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.address1, .address2{
+    display: flex;
+    flex-direction: column;
+}
+
+
