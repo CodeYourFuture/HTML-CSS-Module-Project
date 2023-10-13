@@ -24,6 +24,7 @@ body {
   --color: black;
   --navColor: rgb(150, 150, 150);
   --navSize: 1.5vw;
+  --headerBackground: #c4c4c41a;
 }
 
 body {
@@ -51,12 +52,13 @@ h4 {
 /* header styles */
 
 header {
-  margin: 3vh 9vw;
+  padding: 3vh 9vw;
   height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--headerBackground);
 }
 .karmaIcon {
   height: calc(40px + 1vw);
