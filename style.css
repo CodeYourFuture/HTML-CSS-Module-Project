@@ -99,7 +99,68 @@ a {
     margin-top: 20px;
     margin-left: 20px;
 }
-.infoclass {
-   
-    
+.bodybottomtxt {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    justify-content: center;
+}
+.bodybottom {
+    background-color: #f3dccc;
+    display: flex;
+    justify-content: center;
+}
+.bbtstyle {
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-stretch: extra-expanded;
+    font-size: large;
+    font-weight: bold;
+
+}
+.karmabtn2 {
+    justify-content: center;
+    background-color: #f96c07;
+    text-decoration: aliceblue;
+    color: #f3dccc;
+    font-weight: bold;
+    height: 40px;
+    width: 160px;
+    margin-left: 100px;
+}
+.karmafooter {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    border-top: #6940ef;
+    border-radius: 80px;
+}
+.footericons {
+    display: flex;
+flex-direction: row;
+gap: 50px;
+justify-content: center;
+
+}
+.inst {
+    width: 40px;
+    height: 40px;
+}
+.face {
+    width: 40px;
+    height: 40px;
+}
+.twit {
+    width: 40px;
+    height: 40px;
+}
+.allfooter {
+    justify-content: center;
+}
+.ftr {
+    display: flex;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    justify-content: center;
 }
