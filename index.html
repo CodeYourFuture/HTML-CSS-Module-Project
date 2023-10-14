@@ -6,14 +6,104 @@
     <title>Karma</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
 <body>
-
     <!-- Add your HTML markup here -->
+    <header class="header">
+
+        <a href="#">
+            <img src="favicon.ico" 
+            alt="logo favorite icon"
+            class="header_logo">   
+        </a>
+        
+        <nav>
+            <ul class="navigation_list">
+                <li class="navigation_item">
+                    <a class="navigation_link1" href="/index.html">Meet Karma</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">How It Works</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="/store.html">Store</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Blog</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Help</a>
+                </li>
+                <li class="navigation_item">
+                    <a class="navigation_link" href="#">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
     <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
     <!-- All the images you need are in the 'img' folder -->
+    <main >
 
+        <section class="content1">
+            <div class="Introducing">
+                <h1 class="h1Introducing">Introducing Karma</h1>
+                <p class="pIntroducing">Bring WiFi with you, everywhere you go.</p>
+                <button class="btnLearn">Learn More</button>
+            </div>
+        </section>
+
+        <section class="Logos">
+            <h2 class="h2Logos">Everyone needs a little Karma.</h2>
+            <div class="logoPosition">
+                <div class="iconLogos">
+                    <img src="/img/icon-devices.svg" alt="device" class="icon">   
+                    <h4 class="iconText">Internet for all devices</h4>                   
+                </div>
+
+                <div class="iconLogos">
+                    <img src="/img/icon-coffee.svg" alt="coffee" class="icon">
+                    <h4 class="iconText">Boost your productivity</h4>                   
+                </div>
+
+                <div class="iconLogos">
+                    <img src="/img/icon-refill.svg" alt="refill" class="icon">
+                    <h4 class="iconText">Pay as You go</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="content2">
+            <div >
+                <img 
+                src="/level-2/homepage-feature.png" 
+                alt="girl drinking coffee"
+                class="imgDrinking">
+                
+            </div>
+        <div class="content3">
+            <h3 class="h3Content3">
+                <span class="quotation">"</span>Wherever I am, I just don't worry about my connection anymore!<span class="quotation">"</span> 
+            </h3>
+            <button class="btnGetKarma">Get Karma Today</button>
+        </div>
+        </section>
+
+    </main>
 </body>
+<footer>
+    <div class="footer">
+        <h4>Join us on</h4>
+    </div>
+    <div class="logosFooter">
+        <img src="/img/twitter-icon.svg" alt="twitter" class="iconFooter">
+        <img src="/img/facebook-icon.svg" alt="facebook" class="iconFooter">
+        <img src="/img/instagram-icon.svg" alt="instagram" class="iconFooter">
+    </div>
+    <div class="textFooter">
+        <h5 class="textFooter"><span class="circle">C</span> Karma Mobility, Inc.</h5>
+    </div>
+</footer>
 </html>
