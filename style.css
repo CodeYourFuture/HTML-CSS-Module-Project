@@ -182,18 +182,34 @@ font-size: larger;
 
 .frmlable {
     display: flex;
-    gap: 120px;
+    gap: 140px;
     padding-top: 40px;
 }
 .frminput {
+    padding-top: 15px;
     display: flex;
     gap: 20px;
+    
+}
+.frminput input {
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+
 }
 .frmaddress {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+} 
+.frmaddress input {
+    width: 430px;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+
+
 }
 .storeleft {
     display: flex;
@@ -201,13 +217,21 @@ font-size: larger;
 }
 .frmlable2 {
     display: flex;
-    gap: 120px;
+    gap: 200px;
     padding-top: 20px;
 }
-#city {
-    width: 145px;
-    height: 20px;
+.frminput2 #city {
+    border: 1px solid black;
+    width: 230px;
+    height: 30px;
 }
+.frminput2 input {
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
 .ordercolor {
     padding-top: 20px;
 }
