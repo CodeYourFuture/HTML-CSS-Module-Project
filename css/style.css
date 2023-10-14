@@ -217,23 +217,21 @@ hr {
   grid-template-columns: 1fr 1fr;
 }
 
-.form-area{
+.form-area {
   padding: 6vw 9vw;
   gap: 3vw;
 }
 
 .img-area {
-  
   background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
   background-position: center;
   background-size: cover;
 }
-.form-hdr{
+.form-hdr {
   color: var(--logoColor);
   font-size: calc(var(--headerLineSize) / 1.5);
   font-weight: 500;
   margin: 0;
-  
 }
 form {
   text-align: left;
@@ -255,7 +253,7 @@ form {
   gap: 1em;
 }
 
-input[type="text"]{
+input[type="text"] {
   height: 3em;
   border: #666666 solid 1px;
   border-radius: 0.3em;
@@ -264,17 +262,38 @@ input[type="text"]{
 input[type="radio"] {
   accent-color: var(--logoColor);
 }
-
-input[type="checkbox"]:checked {
-  content: url("../level-2/checkmark.svg");
-  accent-color: rgba(255, 255, 255, 0);
+.red {
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 13px;
+  grid-template-rows: 13px;
+  justify-items: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  border: var(--logoColor) solid 1px;
+}
+input[type="checkbox"] {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  opacity: 0;
+}
+.checkmark {
+  opacity: 1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  width: 10px;
+  height: 10px;
+}
+.red input[type="checkbox"]:not(:checked) ~ .checkmark {
+  display: none;
 }
 
-.order-btn{
+.order-btn {
   margin: 0;
   align-self: flex-start;
 }
 
-.tac-spn{
+.tac-spn {
   color: var(--logoColor);
 }
