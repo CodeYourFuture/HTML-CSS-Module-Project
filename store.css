@@ -1,7 +1,7 @@
-:root {
-  --fs-normal: 1rem;
+*{
+  margin-right: 10px;
+  margin-left: 10px;
 }
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,8 +36,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  width: 90%;
   height: 4rem;
-  width: 1167px;
   margin-bottom: 0rem;
   padding-left: 96px;
   padding-right: 0rem;
@@ -49,9 +49,9 @@ a {
 .navigation_list {
   display: flex;
   list-style: none;
-  width: 600px;
+  width: 80%;
   justify-content: space-between;
-  padding-left: 450px;
+  padding-left: 300px;
 }
 
 .navigation_item {
@@ -76,7 +76,7 @@ a {
 
 /* Main */
 .content2 {
-  width: 600px;
+  width: 100%;
   padding-top: 0px;
   display: flex;
   flex-direction: row-reverse;
@@ -99,7 +99,7 @@ a {
 }
 
 .imgStore {
-  width: 600px;
+  height: 900px;
 }
 
 /* Input*/
@@ -114,7 +114,7 @@ a {
 
 .h5name1 {
   margin-bottom: 0px;
-  padding-left: 133px;
+  padding-left: 100px;
   height: 25px;
 }
 
@@ -127,7 +127,7 @@ a {
 .inputName {
   width: 190px;
   height: 30px;
-  margin-left: 10px;
+  margin-left: 0;
   border: solid 2px rgb(118, 118, 118);
   border-radius: 4px;
 }
@@ -135,7 +135,7 @@ a {
 .inputAddress {
   width: 398px;
   height: 30px;
-  margin-left: 10px;
+  margin-left: 0;
   border: solid 2px rgb(118, 118, 118);
   border-radius: 4px;
 }
@@ -191,8 +191,8 @@ a {
 .checkbox {
   display: flex;
   text-align: left;
-  margin-top: 60px;
-  margin-left: 127px;
+  margin-top: 20px;
+  margin-left: 110px;
   margin-right: 95px;
   font-size: 18px;
   accent-color: #f96203;
