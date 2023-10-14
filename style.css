@@ -21,6 +21,13 @@ body {
     margin-bottom: 35px;
 }
 
+.logoPosition{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+
 .h2Logos{
     font-family: 'Roboto';
     font-weight: lighter;
@@ -164,7 +171,10 @@ body {
 /* Icons */
 .iconLogos{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     
 }
 
