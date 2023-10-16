@@ -1,210 +1,236 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    margin: 0px;
-    padding: 0px;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  padding: 0px;
 }
-   /*Header*/
- .header{background-color: rgb(248, 248, 248);}
- .karam-logo{
-        width: 30px;
-        margin-left: 4em;
-}
-.nav{display: flex; 
-    float: right;
-    margin-right: 3em;}
-
-.nav-link {text-decoration: none; 
-           color: black;
-    padding-left: 2em;}
-
-.nav-item{
-    display: inline;
-    list-style-type: none;
-  }
-.nav-link:hover{color: orangered;}
-    /*hero*/
-  .hero{ 
-        padding: 200px;
-        background-size: cover;
-        background-image: url("/img/first-background.jpg");
-    }
-  .hero h1{
-    margin-left: 340px;  
-    color:white;
-  }
-  .hero p{ 
-    margin-left: 280px;  
-    font-size: 20px;   
-    margin-top: 0px;    
-    color:white;}
-
-  .hero-button{ 
-     margin-left: 25em}
-        /*hero-button and article-button*/
-        .hero-button, .article-button{
-          padding: 0.4em 1em;
-          border-style: none;
-          border-radius: 2px;
-          background-color: orangered;
-          color: white;
-        }
-
-        .hero-button:hover{
-          background-color: white;
-          color: orangered;
-        }
-      /*icon*/
-
-  .section{ 
-    margin-top: 80px;}
-  .section-p{
-    font-size: 38px;
-    text-align: center;
-    
-  }
-  .icon-imag{
-     margin-left: 3em;
-     width: 100px;}
-.icon-discribtion{
-    font-size: 20px;
-}
-  .section-icon{
-    display: flex;
-    padding-left: 7em;
-    
-  }
-  .section-icon div{
-    padding-left: 7em;
-    padding-bottom: 3em;
-    
-  }
-  .homepage-img{
-    max-width: 100%;
-    max-height: 100%;}
-  .article{
-    display: flex;
-    align-items: center;
-    background-color: rgb(245, 220, 224);
-   
-  }
-  .article-p {   
-          
-  }
-  
-  .article-quote{
-    font-size: 30px;
-    font-style: italic;
-    padding-left: 2.5em;
-    color: rgb(31, 31, 31);
-    text-align: center;
-  }
-  .article-button{
-    
-    margin-left: 12em;
-  }
-  .article-button:hover{
-    background-color: white;
-    color: orangered;}
-      /*footer*/
-    .social-media-icon{
-        border: 1px solid rgb(118, 118, 118);
-         padding: 5px;
-        width: 30px;
-        border-radius: 25px;
-         margin-left: 7px;
-         cursor: pointer;
-    }
-
-footer h3{
-    text-align: center;
-
-}
-footer p{
-     color: rgb(118, 118, 118);
-     text-align: center;
+/*Header*/
+.header {
+  background-color: rgb(248, 248, 248);
 }
 
+.karam-logo {
+  width: 30px;
+  margin-left: 4em;
+}
 
-       /*Store*/  
+.nav {
+  display: flex;
+  float: right;
+  margin-right: 3em;
+}
+#nav-link {
+  color: black;
+}
 
+.nav-link {
+  text-decoration: none;
+  color: rgb(152, 147, 147);
+  padding-left: 2em;
+}
 
-       /*section*/
+.nav-item {
+  display: inline;
+  list-style-type: none;
+}
 
-       /*Nameiput*/
-#karam-logo{
+.nav-link:hover {
+  color: orangered;
+}
+
+/*hero*/
+.hero {
+  text-align: center;
+  padding: 12em;
+  background-size: cover;
+  background-image: url("/img/first-background.jpg");
+}
+
+.hero h1 {
+  color: white;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 0px;
+  color: white;
+}
+
+/*hero-button and article-button*/
+
+.hero-button,
+.article-button {
+  padding: 0.4em 1em;
+  border-style: none;
+  border-radius: 2px;
+  background-color: orangered;
+  color: white;
+}
+.hero-button:hover {
+  background-color: white;
+  color: orangered;
+}
+
+/*icon*/
+.section {
+  margin-top: 8em;
+}
+
+.section-p {
+  font-size: 3em;
+  color: rgb(69, 67, 67);
+  text-align: center;
+}
+
+.icon-imag {
+  width: 45%;
+  padding: 1em;
+}
+
+.icon-discribtion {
+  font-size: 20px;
+}
+
+.section-icon {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin-left: 8em;
+  padding-bottom: 6em;
+}
+
+.section-icon div {
+  padding: 1em 3em;
+}
+
+.homepage-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 220, 224);
+}
+
+.article-quote {
+  font-size: 30px;
+  font-style: italic;
+  padding-left: 2.5em;
+  color: rgb(31, 31, 31);
+  text-align: center;
+}
+
+.article-button {
+  margin-left: 12em;
+}
+
+.article-button:hover {
+  background-color: white;
+  color: orangered;
+}
+
+/*footer*/
+
+.social-media-icon {
+  border: 1px solid rgb(118, 118, 118);
+  padding: 5px;
+  width: 30px;
+  border-radius: 25px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer p {
+  color: rgb(118, 118, 118);
+  text-align: center;
+}
+
+/*Store*/
+
+/*section*/
+
+/*Nameiput*/
+#karam-logo {
   margin-left: 8em;
 }
 
-.form-name{
- padding: 0.5em;
- margin-bottom: 2em;
- margin-top: 0.5em;
- border: 1.5px solid rgb(118, 118, 118);
- border-radius: 3px;
+.form-name {
+  padding: 0.5em;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  border: 1.5px solid rgb(118, 118, 118);
+  border-radius: 3px;
 }
-
 
 .form-section h2 {
   color: rgb(230, 73, 16);
 }
-.name-div{ 
+
+.name-div {
   display: flex;
-  }
-#name-div{
+}
+
+#name-div {
   margin-top: 2em;
 }
-.lastname-div
-{ margin-left: 1.5em;}
-   
+
+.lastname-div {
+  margin-left: 1.5em;
+}
+
 /*address input*/
 
-.address{
-  padding: 0.5em 8em ;
+.address {
+  padding: 0.5em 8em;
   border: 1.5px solid rgb(108, 106, 106);
   border-radius: 3px;
 }
 
-.address2-div{
+.address2-div {
   margin-top: 2em;
 }
-.colorselct-p{
+
+.colorselct-p {
   margin-bottom: 7px;
   color: rgb(118, 118, 118);
 }
-.ch_color{
-  accent-color: red; 
+
+.ch_color {
+  accent-color: red;
 }
-.cheakbox-section{
+
+.cheakbox-section {
   margin-top: 1.5em;
 }
-.cheakbox-link{
+
+.cheakbox-link {
   color: orangered;
 }
 
- .store-img{
+.store-img {
   width: 500px;
   height: 650px;
   margin-left: 50px;
-} 
+}
 
-.img-section
-{
+.img-section {
   margin-left: 12em;
- }
+}
 
-
-
-
-.section-flex
-{  display: flex;
+.section-flex {
+  display: flex;
   margin-left: 135px;
   border-bottom: 1.2px solid rgb(212, 201, 201);
 }
-#placeorder-button{
+#placeorder-button {
   margin-top: 1em;
   margin-bottom: 2em;
   padding: 10px 20px;
@@ -217,17 +243,12 @@ footer p{
   cursor: pointer;
 }
 
-#placeorder-button:hover{
+#placeorder-button:hover {
   background-color: white;
-  color:  rgb(208, 66, 14);
+  color: rgb(208, 66, 14);
 }
 
-
-
-
-
-
-.cheakbox{
+.cheakbox {
   padding: 60px;
 }
 /**
@@ -239,5 +260,3 @@ footer p{
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
