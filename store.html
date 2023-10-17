@@ -19,7 +19,9 @@
   <body>
     <header class="header">
       <section class="karma-logo">
-        <a href="index.html"><img src="img/karma-logo.svg" alt="Karma logo" /></a>
+        <a href="index.html"
+          ><img src="img/karma-logo.svg" alt="Karma logo"
+        /></a>
       </section>
       <nav class="nav-list">
         <ul class="navigation__list">
@@ -45,47 +47,50 @@
       </nav>
     </header>
     <main class="store-page">
-      <section class="info-form">
+      <form class="info-form" action="signups.html" method="post">
         <div class="order-text">
           <h1>Order your Karma wifi device today!</h1>
         </div>
-        <form action="signups.html" method="post">
-          <div class="name">
-            <div class="text-input">
-              <label for="firstname">First name</label>
-              <input type="text" name="First name" id="firstname" required />
-            </div>
-            <div class="text-input">
-              <label for="lastname">Last name</label>
-              <input type="text" name="Last name" id="lastname" required />
-            </div>
+        <div class="name">
+          <div class="text-input">
+            <label for="firstname">First name</label>
+            <input type="text" name="First name" id="firstname" required />
           </div>
           <div class="text-input">
-            <label for="address1">Address</label>
-            <input type="text" name="Address Line 1" id="address1" required />
+            <label for="lastname">Last name</label>
+            <input type="text" name="Last name" id="lastname" required />
+          </div>
+        </div>
+        <div class="address">
+          <label for="address1">Address</label>
+          <input type="text" name="Address Line 1" id="address1" required />
+        </div>
+        <div class="address">
+          <label for="address2">Address 2</label>
+          <input type="text" name="Address Line 2" id="address2" />
+        </div>
+        <div class="city-postcode">
+          <div class="text-input">
+            <label for="city">City</label>
+            <select name="city" id="city">
+              <option placeholder="" disabled selected>
+                Select your city...
+              </option>
+              <option value="london">London</option>
+              <option value="manchester">Manchester</option>
+              <option value="glasgow">Glasgow</option>
+              <option value="oxford">Oxford</option>
+            </select>
           </div>
           <div class="text-input">
-            <label for="address2">Address 2</label>
-            <input type="text" name="Address Line 2" id="address2" />
+            <label>Postcode</label>
+            <input type="text" required />
           </div>
-          <div class="city-postcode">
-            <div class="text-input">
-              <label for="city">City</label>
-              <select name="city" id="city">
-                <option placeholder="" disabled selected>Select your city...</option>
-                <option value="london">London</option>
-                <option value="manchester">Manchester</option>
-                <option value="glasgow">Glasgow</option>
-                <option value="oxford">Oxford</option>
-              </select>
-            </div>
-            <div class="text-input">
-              <label>Postcode</label>
-              <input required />
-            </div>
+        </div>
+        <div class="colour-selection">
+          <p>Select a colour</p>
           </div>
-          <div class="colour-selection">
-            Select a colour
+          <div class="colours">
             <div class="radio-buttons">
               <label for="karmaorange">Karma Orange</label>
               <input
@@ -95,7 +100,7 @@
                 value="Karma Orange"
               />
             </div>
-            <div>
+            <div class="radio-buttons">
               <label for="spacegrey">Space Grey</label>
               <input
                 type="radio"
@@ -105,20 +110,19 @@
               />
             </div>
           </div>
-          <div>
-            <input type="checkbox" name="terms" id="terms" required />
-            <label for="terms"
-              >By placing your order you agree to Karma's
-              <a class="tnc">Terms & Conditions</a> *
-            </label>
-          </div>
-          <button class="learn" type="submit">Place my order now</button>
-        </form>
-      </section>
-      <section class="store-img">
+        </div>
+          <input type="checkbox" name="terms" id="terms" required />
+          <label for="terms">
+            By placing your order you agree to Karma's
+            <a class="tnc">Terms & Conditions</a> *
+          </label>
+        </div>
+        <button class="learn" type="submit">Place my order now</button>
+      </form>
+      <div class="store-img">
         <img src="level-2/store-image_by-andrew-neel-unsplash.jpg" alt="image of
         a lady sitting on a stool working"
-      </section>
+      </div>
     </main>
     <hr />
     <footer class="footer">
