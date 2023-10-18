@@ -1,19 +1,403 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 /**
  * Add your custom styles below
  * 
  * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
+ * - Be organized, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* .container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 300px 50px;
+} */
 
+:root {
+  --karmaorange: rgb(211, 102, 0);
+  --buttonorange: #e0633a;
+  --buttonwhite: #fdf5f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: lighter;
+  text-wrap: nowrap;
+}
+
+header {
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+hr {
+  width: 70%;
+  margin-top: 0px;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.karma-logo {
+  margin-left: 100px;
+  margin-right: auto;
+  min-width: 30px;
+  width: 30px;
+  padding-left: 70px;
+  margin-top: 10px;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  margin-right: 150px;
+  margin-left: auto;
+  text-wrap: nowrap;
+}
+
+.navigation__item {
+  padding: 0.5rem 1rem;
+}
+
+.navigation__item a:hover {
+  color: var(--karmaorange);
+}
+
+.navigation__link {
+  color: gray;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url(../img/first-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 45px;
+  margin-bottom: -5px;
+}
+
+.learn {
+  background-color: var(--buttonorange);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: var(--buttonorange);
+  color: var(--buttonwhite);
+}
+
+.article-karma-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.store {
+  width: 90%;
+  margin: 2rem;
+  margin-bottom: 5rem;
+  background-color: #fcefeb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.store-text {
+  font-style: italic;
+  font-weight: 350;
+  font-size: 2rem;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.apos {
+  color: rgb(255, 123, 0);
+}
+
+.store-tb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgba(219, 219, 219, 0.726);
+  border-radius: 50%;
+}
+
+h5 {
+  color: darkgrey;
+  font-size: x-small;
+}
+
+.order-text {
+  font-weight: bolder;
+  color: var(--karmaorange);
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+}
+
+.order-text h1 {
+  font-size: 3.5rem;
+  text-align: start;
+  text-wrap: wrap;
+}
+
+.store-page {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+  padding: 0px 5px 0px 5px;
+}
+
+form {
+  margin: 0px 100px;
+}
+
+input,
+select {
+  font-family: inherit;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  background-color: #ffff;
+}
+
+.store-img img {
+  width: 53em;
+  padding-left: 50px;
+}
+.text-input,
+input[type="text"] {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+input[type="text"] {
+  padding: 1rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+select {
+  padding: 1rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 36rem;
+}
+
+[type="radio"] {
+  opacity: 0;
+}
+
+[type="radio"] + label{
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+  line-height: 35px;
+}
+
+[type="radio"] + label::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 2px solid gainsboro;
+  background: #fff;
+}
+
+[type="radio"]:checked + label::before{
+  content: "";
+  background-color: #fff;
+  width: calc(100%-10px);
+  height: calc(100%-10px);
+}
+
+[type="radio"]:checked + label::after{
+  content: "";
+  position: absolute;
+  left: 4.5px;
+  top: 4.5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: var(--karmaorange);
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem 3rem;
+}
+
+.name {
+  display: flex;
+  column-gap: 2rem;
+  clear: both;
+}
+
+.name input[type="text"] {
+  width: 14.5rem;
+}
+
+.city-postcode {
+  display: flex;
+}
+
+#city {
+  width: 20rem;
+  padding: 1rem;
+  border-width: 0.15rem;
+  margin-right: 1.5rem;
+  margin-left: -0.5rem;
+}
+
+.colour-selection {
+  display: flex;
+}
+
+.colour-selection p {
+  font-size: 1.5rem;
+}
+
+.colours {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+[type="checkbox"]{
+  opacity: 0;
+}
+
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: #666;
+  line-height: 25px;
+}
+
+[type="checkbox"]+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #aaa;
+  border-radius: 2px;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid gray;
+  border-radius: 2px;
+  background: #fff;
+}
+
+[type="checkbox"]:checked+label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../level-2/checkmark.svg);
+  background-size: contain;
+  border-radius: 2px;
+}
+
+.tnc-text {
+  font-size: 14px;
+}
+
+.tnc {
+  text-decoration: underline;
+  color: var(--karmaorange);
+}
+
+.order-btn {
+  padding-top: 40px;
+  padding-left: 30px;
+}
