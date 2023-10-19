@@ -1,5 +1,3 @@
-/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -12,16 +10,9 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
-/**
- * Add your custom styles below
- 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
-h1 p {
+
+h1,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -50,30 +41,31 @@ h1 p {
   padding-left: 100px;
 }
 
-/*Navigation*/
-
-nav {
-  margin-right: 10%;
+#hamnav {
+  margin-left: 5em;
 }
-.nav-list {
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+#hamitems {
+  margin-left: 3em;
   display: flex;
-  gap: 2rem;
-  list-style: none;
-  align-items: center;
-}
-
-.nav__item {
-  padding: 0.5rem 0;
-}
-
-.nav__link {
-  color: gray;
+  justify-content: flex-end;
+  gap: 2em;
+  padding: 10px;
   font-weight: 600;
-  text-transform: capitalize;
+}
+#hamitems a {
+  padding: 13px;
+  color: gray;
   text-decoration: none;
+  text-align: center;
 }
 
-.nav__link:hover {
+#hamitems a:hover {
   color: orange;
 }
 
@@ -94,8 +86,9 @@ button:hover {
 }
 
 .btn {
-  padding-left: 26rem;
+  padding-left: 45%;
   padding-top: 2em;
+  padding-bottom: 5em;
 }
 
 /*Content*/
@@ -103,7 +96,7 @@ button:hover {
 .content {
   display: flex;
   flex-direction: column;
-  /* padding-right: 30px; */
+  padding-right: 30px;
 }
 
 /*Promote*/
@@ -136,74 +129,78 @@ button:hover {
 }
 
 .pro__btn {
-  padding-top: 1rem;
+  padding-top: 1em;
 }
 
 /*Introduction*/
 
-.introduction {
+.introduction-img {
   background-image: url("../img/first-background.jpg");
-  width: 93.9%;
-  height: 38rem;
-  background-color: var(--grey-light);
-  padding-left: 79px;
+  height: 34em;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-
-.introduction h1 {
-  padding-top: 200px;
-  padding-left: 305px;
-  margin-bottom: 1rem;
+.karma-introduction h1 {
+  padding-top: 100px;
   font-size: 2.5rem;
   color: white;
+  text-align: center;
+  position: relative;
 }
 
-.introduction p {
+.karma-introduction p {
   font-size: 2rem;
   margin-bottom: 2rem;
-  padding-left: 206px;
-  padding-top: 30px;
+  padding-top: 80px;
   color: white;
+  text-align: center;
+  position: relative;
 }
 
 .main {
-  position: relative;
+  position: static;
   margin-bottom: 3rem;
-  padding-bottom: 4rem;
+  padding: 4rem 20%;
   font-size: 2rem;
   font-weight: 50;
-  padding-top: 100px;
-  padding-left: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /*Caption*/
 .more__caption {
-  padding-left: 12rem;
+  padding: 0 12rem;
   display: flex;
-  gap: 2rem;
   flex-direction: row;
+  gap: 2rem;
   flex-wrap: wrap;
+  align-content: space-around;
   text-align: center;
+  justify-content: center;
 }
 
 /*articles*/
 
-.art-area {
+.art-text {
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  justify-content: center;
   font-size: 1.6rem;
+  margin-bottom: 2rem;
+  padding-top: 30px;
 }
 
 .article__img {
-  padding-left: 5rem;
+  padding-left: 2.5rem;
   width: 8rem;
 }
 
 /*Footer*/
 
 hr.new {
-  border-top: 1px solid gray;
-  width: 60rem;
+  border-top: 1px solid rgb(232, 224, 224);
+  width: 70%;
   margin-top: 4rem;
 }
 
@@ -230,4 +227,90 @@ hr.new {
   border-radius: 50%;
   padding: 10px;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .header,
+  .content,
+  .footer {
+    padding: 0;
+  }
+  .header__logo {
+    padding: 0;
+  }
+  #hamitems {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    gap: 0.3em;
+  }
+  #hamitems a {
+    border: 2px solid rgb(117, 105, 105);
+    border-radius: 3px;
+  }
+
+  .nav__link {
+    background-color: rgb(243, 233, 234);
+    font-weight: 600;
+    padding: 0.3em;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: rgb(35, 26, 18);
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+  }
+
+  .introduction-img {
+    background-size: 100% 100%;
+    object-fit: contain;
+  }
+
+  .btn {
+    padding-left: 38%;
+    padding-bottom: 20%;
+  }
+
+  .article__img {
+    padding-left: 1rem;
+    width: 33%;
+  }
+
+  .more__caption {
+    padding: 0 3rem;
+    justify-content: center;
+  }
+
+  .promote {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    margin: 0;
+  }
+  .pro {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 0;
+  }
 }
