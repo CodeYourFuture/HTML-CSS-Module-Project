@@ -11,11 +11,7 @@ button {
   font-size: 1rem;
 }
 
-h1 {
-  margin-top: 0;
-  /* margin-bottom: 0; */
-}
-
+h1,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -30,28 +26,31 @@ p {
 
 /*Navigation*/
 
-nav {
-  margin-right: 5%;
+#hamnav {
+  margin-left: 5em;
 }
-.nav-list-2 {
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+#hamitems {
+  margin-left: 3em;
   display: flex;
-  gap: 2rem;
-  list-style: none;
-  align-items: center;
-}
-
-.nav__item-2 {
-  padding: 0rem;
-}
-
-.nav__link-2 {
-  color: gray;
+  justify-content: flex-end;
+  gap: 2em;
+  padding: 10px;
   font-weight: 600;
-  text-transform: capitalize;
+}
+#hamitems a {
+  padding: 13px;
+  color: gray;
   text-decoration: none;
+  text-align: center;
 }
 
-.nav__link-2:hover {
+#hamitems a:hover {
   color: orange;
 }
 
@@ -62,8 +61,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  /* margin-bottom: 0.2rem;
-  padding-top: 0.1rem; */
   background-color: aliceblue;
 }
 
@@ -91,15 +88,8 @@ button:hover {
   padding-top: 2rem;
 }
 
-/* Farm Parts*/
-/* 
-.for__gap {
-  line-height: 3rem;
-} */
-
 .form__part {
   margin-left: 10vw;
-  /* max-width: fit-content; */
   text-align: start;
   font-weight: bold;
 }
@@ -134,12 +124,6 @@ select {
 .form {
   display: flex;
   justify-content: space-between;
-  /* padding-left: 10.5%;
-  gap: 4rem;
-  display: grid;
-  grid-template-columns: repeat(2, auto); */
-  /* border: 1px solid red;
-  border-top: 2em; */
 }
 
 /*Radio active button*/
@@ -158,9 +142,7 @@ input[type="radio"]:checked {
 /*Checkbox*/
 
 input[type="checkbox"] {
-  transform: scale(
-    1.6
-  ); /*Adjust the scale factor as needed to increase the size */
+  transform: scale(1.6);
 }
 
 input[type="checkbox"]:checked::before {
@@ -181,7 +163,6 @@ input[type="checkbox"]:checked::before {
 
 .last__name {
   display: flex;
-
   flex-direction: row;
   padding-top: 2.5rem;
   gap: 0.2rem;
@@ -227,7 +208,7 @@ input[type="postcode"] {
 /*img*/
 
 .store__img {
-  width: 600px;
+  width: 50%;
 }
 
 /*radio*/
@@ -271,6 +252,90 @@ a {
 hr.new {
   margin-top: 0px;
   border: 1px solid rgb(237, 233, 233);
-  width: 60rem;
+  width: 80%;
   margin-bottom: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .head__logo {
+    padding: 0;
+  }
+
+  #hamitems {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    gap: 0.3em;
+  }
+  #hamitems a {
+    border: 2px solid rgb(117, 105, 105);
+    border-radius: 3px;
+  }
+
+  .nav__link {
+    background-color: rgb(243, 233, 234);
+    font-weight: 600;
+    padding: 0.3em;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: rgb(35, 26, 18);
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+  }
+
+  .form {
+    display: inline;
+  }
+  .button-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+  }
+  .last__name {
+    display: block;
+  }
+
+  input[type="last name"] {
+    width: 95%;
+  }
+
+  .last__name-2 {
+    display: block;
+  }
+
+  select {
+    width: 95%;
+  }
+
+  input[type="postcode"] {
+    width: 50%;
+  }
+
+  .store__img {
+    width: 100%;
+  }
 }

@@ -13,7 +13,6 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="../level-2/store.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Store-Page/HTML-CSS-Module-Project</title>
@@ -22,30 +21,21 @@
     <header class="header">
       <img
         src="../img/karma-logo.svg"
-        alt=" main icon"
+        alt="it is main section"
         class="head__logo"
       />
-      <nav>
-        <ul class="nav-list-2">
-          <li class="nav__item-2">
-            <a class="nav__link-2" href="#">Meet Karma</a>
-          </li>
-          <li class="nav__item-2">
-            <a class="nav__link-2" href="#">How it Works</a>
-          </li>
-          <li class="nav__item-2">
-            <a class="nav__link-2" href="#">Store</a>
-          </li>
-          <li class="nav__item-2">
-            <a class="nav__link-2" href="#">Blog</a>
-          </li>
-          <li class="nav__item-2">
-            <a class="nav__link-2" href="#">Help</a>
-          </li>
-          <li class="nav__item-2">
-            <a class="nav__link-2" href="#">Login</a>
-          </li>
-        </ul>
+
+       <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+
+        <div id="hamitems">
+          <a class="nav__link" href="#">How it Works</a>
+          <a class="nav__link" href="#">Store</a>
+          <a class="nav__link" href="#">Blog</a>
+          <a class="nav__link" href="#">Help</a>
+          <a class="nav__link" href="#">Login</a>
+        </div>
       </nav>
     </header>
 
@@ -136,7 +126,7 @@
         <img
           class="img__icon"
           src="../img/twitter-icon.svg"
-          alt="you can have contact"
+          alt="for contact"
         />
 
         <img
@@ -148,7 +138,7 @@
         <img
           class="img__icon"
           src="../img/instagram-icon.svg"
-          alt="you can visit"
+          alt="for visit"
         />
 
 
