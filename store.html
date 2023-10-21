@@ -1,122 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Store</title>
- </head>
- <body>
+  </head>
+  <body>
     <header class="header">
-        <img id="karam-logo" class="karam-logo" src="img/karma-logo.svg" alt="picture of karam logo">
-        <nav class="nav">
-            <ul class="nav-list">
-    
-             <li class="nav-item">
-             <a class="nav-link" href="index.html">Meet Karma</a>  </li>
-    
-             <li class="nav-item">
-                <a class="nav-link" href="#">How it Works </a> </li>   
-    
-             <li class="nav-item">
-                <a class="nav-link" href="#">Store</a> </li>   
-    
-             <li class="nav-item"> 
-                <a class="nav-link" href="#">Blog</a> </li>  
-             
-             <li class="nav-item">
-                <a class="nav-link" href="#">Help</a> </li> 
-                
-             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a> </li>     
-            </ul>
-        </nav>
-       
+      <img
+        id="karam-logo"
+        class="karam-logo"
+        src="img/karma-logo.svg"
+        alt="picture of karam logo"
+      />
+      <nav class="nav">
+        <label class="label-menu" for="cheakbox-menu">
+          <span class="humburger-menu"> &#9776; </span>
+        </label>
+        <input type="checkbox" id="cheakbox-menu" />
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Meet Karma</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">How it Works </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Store</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-<section class="section-flex"> 
-    <section class="form-section">
-        <h2 >Order your Karma Wifi<br> device today!</h2>
+    <section class="section-flex">
+      <section class="form-section">
+        <h2>
+          Order your Karma Wifi<br />
+          device today!
+        </h2>
         <form>
-<div class="name-div" >
-    <div class="firstname-div">
-        <label for="firstname">First name*</label><br>
-        <input class="form-name"  type="text">
-    </div>    
+          <div class="name-div">
+            <div class="firstname-div">
+              <label for="firstname">First name*</label><br />
+              <input class="form-name" type="text" />
+            </div>
 
-    <div class="lastname-div"> 
-        <label for="lastname">Last name*</label><br>
-        <input class="form-name" type="text">
-    </div>
-</div>
+            <div class="lastname-div">
+              <label for="lastname">Last name*</label><br />
+              <input class="form-name" type="text" />
+            </div>
+          </div>
 
-<div>
-    <div  class="address1-div">
-        <label for="address">Address*</label><br>
-        <input class="address" type="text">
-    </div> 
-    
-    <div class="address2-div">
-        <label for="address">Address 2</label><br>
-        <input class="address" type="text">
-    </div> 
+          <div>
+            <div class="address1-div">
+              <label for="address">Address*</label><br />
+              <input class="address" type="text" />
+            </div>
 
-</div>
+            <div class="address2-div">
+              <label for="address">Address 2</label><br />
+              <input class="address" type="text" />
+            </div>
+          </div>
 
-<div class="name-div" id="name-div" >
-    <div class="firstname-div">
-        <label for="city">City*</label><br>
-        <input class="form-name"  type="search">
-    </div>    
+          <div class="name-div" id="name-div">
+            <div class="firstname-div">
+              <label for="city">City*</label><br />
+              <input class="form-name" type="search" />
+            </div>
 
-    <div class="lastname-div"> 
-        <label for="lastname">Postcode*</label><br>
-        <input class="form-name" type="text">
-    </div>
-</div>
+            <div class="lastname-div">
+              <label for="lastname">Postcode*</label><br />
+              <input class="form-name" type="text" />
+            </div>
+          </div>
         </form>
-   
 
+        <article class="article_1">
+          <p class="colorselct-p">Select a colour</p>
+          <input
+            class="ch_color"
+            type="radio"
+            name="select color"
+            value="Karma orange"
+          />
+          <label for="radio">Karma orange</label>
 
-<article class="article_1">
-   <p class="colorselct-p">Select a colour</p>
-  <input class="ch_color" type="radio" name="select color" value="Karma orange" >
-  <label for="radio">Karma orange</label>
-  
-  <input class="ch_color"  type="radio"  name="select color" value="Karma orange">
-  <label for="radio">Space Grey</label>
+          <input
+            class="ch_color"
+            type="radio"
+            name="select color"
+            value="Karma orange"
+          />
+          <label for="radio">Space Grey</label>
 
- <section class="cheakbox-section">
+          <section class="cheakbox-section">
+            <input class="ch_color" type="checkbox" />
+            <label for="cheakbox">
+              By placing your order you agree to karma's
+              <a class="cheakbox-link" href="#">Terms and conditions.</a>*
+            </label>
+          </section>
+          <button id="placeorder-button">Place my order</button>
+        </article>
+      </section>
 
-    <input class="ch_color" type="checkbox">
-    <label for="cheakbox">
-     By placing your order you agree to karma's <a class="cheakbox-link" href="#">Terms and conditions.</a>*
-     
-    </label>  
-
- </section>
- <button id="placeorder-button" >Place my order</button>
- </article>
+      <div class="img-section">
+        <img
+          class="store-img"
+          src="level-2/store-image_by-andrew-neel-unsplash.jpg"
+        />
+      </div>
     </section>
 
-
-<div class="img-section"> 
-  <img class="store-img" src="level-2/store-image_by-andrew-neel-unsplash.jpg">
-</div>
-</section>
-  
-<footer>
-    <h3>Join us on</h3>
-    <center> 
-        <img class="social-media-icon" src="img/twitter-icon.svg" alt="twitter icon">
-        <img class="social-media-icon" src="img/facebook-icon.svg" alt="facebook icon">
-        <img class="social-media-icon" src="img/instagram-icon.svg" alt="instagram icon">
-    </center>
-    <P>@Karma Mobility.inc.</P>
-</footer>
-
-
-
- </body>
+    <footer>
+      <h3>Join us on</h3>
+      <center>
+        <img
+          class="social-media-icon"
+          src="img/twitter-icon.svg"
+          alt="twitter icon"
+        />
+        <img
+          class="social-media-icon"
+          src="img/facebook-icon.svg"
+          alt="facebook icon"
+        />
+        <img
+          class="social-media-icon"
+          src="img/instagram-icon.svg"
+          alt="instagram icon"
+        />
+      </center>
+      <p>@Karma Mobility.inc.</p>
+    </footer>
+  </body>
 </html>

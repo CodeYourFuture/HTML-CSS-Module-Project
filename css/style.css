@@ -9,18 +9,20 @@ body {
 /*Header*/
 .header {
   background-color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .karam-logo {
-  width: 30px;
-  margin-left: 4em;
+  width: 3%;
+  margin-top: 0.5em;
 }
 
-.nav {
-  display: flex;
-  float: right;
-  margin-right: 3em;
+#cheakbox-menu {
+  display: none;
 }
+
 #nav-link {
   color: black;
 }
@@ -32,7 +34,7 @@ body {
 }
 
 .nav-item {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
 }
 
@@ -40,11 +42,15 @@ body {
   color: orangered;
 }
 
+.humburger-menu {
+  display: none;
+}
 /*hero*/
 .hero {
   text-align: center;
-  padding: 12em;
+  padding: 10em;
   background-size: cover;
+  background-position: center;
   background-image: url("/img/first-background.jpg");
 }
 
@@ -53,8 +59,7 @@ body {
 }
 
 .hero p {
-  font-size: 20px;
-  margin-top: 0px;
+  font-size: 2rem;
   color: white;
 }
 
@@ -75,57 +80,50 @@ body {
 
 /*icon*/
 .section {
-  margin-top: 8em;
+  margin-top: 1em;
 }
 
 .section-p {
-  font-size: 3em;
+  font-size: 3rem;
   color: rgb(69, 67, 67);
   text-align: center;
 }
 
 .icon-imag {
-  width: 45%;
+  width: 40%;
   padding: 1em;
 }
 
 .icon-discribtion {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .section-icon {
   display: flex;
   width: 90%;
-  justify-content: center;
-  margin-left: 8em;
-  padding-bottom: 6em;
-}
-
-.section-icon div {
-  padding: 1em 3em;
-}
-
-.homepage-img {
-  max-width: 100%;
-  max-height: 100%;
+  justify-content: space-around;
+  padding-bottom: 4em;
+  margin-left: 5em;
 }
 
 .article {
   display: flex;
   align-items: center;
   background-color: rgb(245, 220, 224);
+  width: 100%;
 }
 
-.article-quote {
-  font-size: 30px;
-  font-style: italic;
-  padding-left: 2.5em;
-  color: rgb(31, 31, 31);
+.homepage-img {
+  width: 50%;
+}
+.article-p {
   text-align: center;
+  padding-left: 1em;
 }
-
-.article-button {
-  margin-left: 12em;
+.article-quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: rgb(31, 31, 31);
 }
 
 .article-button:hover {
@@ -158,9 +156,6 @@ footer p {
 /*section*/
 
 /*Nameiput*/
-#karam-logo {
-  margin-left: 8em;
-}
 
 .form-name {
   padding: 0.5em;
@@ -199,7 +194,7 @@ footer p {
 }
 
 .colorselct-p {
-  margin-bottom: 7px;
+  margin-bottom: 1em;
   color: rgb(118, 118, 118);
 }
 
@@ -216,18 +211,18 @@ footer p {
 }
 
 .store-img {
-  width: 500px;
-  height: 650px;
-  margin-left: 50px;
+  width: 100%;
+  margin: 0%;
 }
 
 .img-section {
-  margin-left: 12em;
+  width: 40%;
 }
 
 .section-flex {
   display: flex;
-  margin-left: 135px;
+  justify-content: right;
+  margin-left: 1.5em;
   border-bottom: 1.2px solid rgb(212, 201, 201);
 }
 #placeorder-button {
@@ -251,6 +246,79 @@ footer p {
 .cheakbox {
   padding: 60px;
 }
+
+@media (max-width: 590px) {
+  .header {
+    justify-content: space-between;
+  }
+  .karam-logo {
+    padding: 1em 0 0 2em;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .humburger-menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1em 0 0;
+  }
+  .humburger-menu:hover {
+    color: orangered;
+  }
+  .label-menu {
+    padding: 1em 1em;
+  }
+  #cheakbox-menu {
+    display: none;
+  }
+  #cheakbox-menu:checked ~ .nav-list {
+    display: none;
+  }
+  .section {
+  }
+  .section-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .section-p {
+    font-size: 2rem;
+  }
+  .img-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-imag {
+    width: 30%;
+  }
+  .article-quote {
+    font-size: 1rem;
+  }
+  /* store */
+  .section-flex {
+    display: flex;
+    /* margin-left: 1.5em; */
+    border-bottom: 1.2px solid rgb(212, 201, 201);
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .img-section {
+    width: 100%;
+    height: auto;
+  }
+  .store-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 /**
  * Add your custom styles below
  * 
