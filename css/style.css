@@ -1,9 +1,322 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  padding: 0px;
+}
+/*Header*/
+.header {
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.karam-logo {
+  width: 3%;
+  margin-top: 0.5em;
+}
+
+#cheakbox-menu {
+  display: none;
+}
+
+#nav-link {
+  color: black;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(152, 147, 147);
+  padding-left: 2em;
+}
+
+.nav-item {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.nav-link:hover {
+  color: orangered;
+}
+
+.humburger-menu {
+  display: none;
+}
+/*hero*/
+.hero {
+  text-align: center;
+  padding: 10em;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/first-background.jpg");
+}
+
+.hero h1 {
+  color: white;
+}
+
+.hero p {
+  font-size: 2rem;
+  color: white;
+}
+
+/*hero-button and article-button*/
+
+.hero-button,
+.article-button {
+  padding: 0.4em 1em;
+  border-style: none;
+  border-radius: 2px;
+  background-color: orangered;
+  color: white;
+}
+.hero-button:hover {
+  background-color: white;
+  color: orangered;
+}
+
+/*icon*/
+.section {
+  margin-top: 1em;
+}
+
+.section-p {
+  font-size: 3rem;
+  color: rgb(69, 67, 67);
+  text-align: center;
+}
+
+.icon-imag {
+  width: 40%;
+  padding: 1em;
+}
+
+.icon-discribtion {
+  font-size: 1rem;
+}
+
+.section-icon {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  padding-bottom: 4em;
+  margin-left: 5em;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  background-color: rgb(245, 220, 224);
+  width: 100%;
+}
+
+.homepage-img {
+  width: 50%;
+}
+.article-p {
+  text-align: center;
+  padding-left: 1em;
+}
+.article-quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: rgb(31, 31, 31);
+}
+
+.article-button:hover {
+  background-color: white;
+  color: orangered;
+}
+
+/*footer*/
+
+.social-media-icon {
+  border: 1px solid rgb(118, 118, 118);
+  padding: 5px;
+  width: 30px;
+  border-radius: 25px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer p {
+  color: rgb(118, 118, 118);
+  text-align: center;
+}
+
+/*Store*/
+
+/*section*/
+
+/*Nameiput*/
+
+.form-name {
+  padding: 0.5em;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  border: 1.5px solid rgb(118, 118, 118);
+  border-radius: 3px;
+}
+
+.form-section h2 {
+  color: rgb(230, 73, 16);
+}
+
+.name-div {
+  display: flex;
+}
+
+#name-div {
+  margin-top: 2em;
+}
+
+.lastname-div {
+  margin-left: 1.5em;
+}
+
+/*address input*/
+
+.address {
+  padding: 0.5em 8em;
+  border: 1.5px solid rgb(108, 106, 106);
+  border-radius: 3px;
+}
+
+.address2-div {
+  margin-top: 2em;
+}
+
+.colorselct-p {
+  margin-bottom: 1em;
+  color: rgb(118, 118, 118);
+}
+
+.ch_color {
+  accent-color: red;
+}
+
+.cheakbox-section {
+  margin-top: 1.5em;
+}
+
+.cheakbox-link {
+  color: orangered;
+}
+
+.store-img {
+  width: 100%;
+  margin: 0%;
+}
+
+.img-section {
+  width: 40%;
+}
+
+.section-flex {
+  display: flex;
+  justify-content: right;
+  margin-left: 1.5em;
+  border-bottom: 1.2px solid rgb(212, 201, 201);
+}
+#placeorder-button {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 10px 20px;
+  background-color: rgb(208, 66, 14);
+  border-style: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 3px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+#placeorder-button:hover {
+  background-color: white;
+  color: rgb(208, 66, 14);
+}
+
+.cheakbox {
+  padding: 60px;
+}
+
+@media (max-width: 590px) {
+  .header {
+    justify-content: space-between;
+  }
+  .karam-logo {
+    padding: 1em 0 0 2em;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .humburger-menu {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1em 0 0;
+  }
+  .humburger-menu:hover {
+    color: orangered;
+  }
+  .label-menu {
+    padding: 1em 1em;
+  }
+  #cheakbox-menu {
+    display: none;
+  }
+  #cheakbox-menu:checked ~ .nav-list {
+    display: none;
+  }
+  .section {
+  }
+  .section-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .section-p {
+    font-size: 2rem;
+  }
+  .img-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-imag {
+    width: 30%;
+  }
+  .article-quote {
+    font-size: 1rem;
+  }
+  /* store */
+  .section-flex {
+    display: flex;
+    /* margin-left: 1.5em; */
+    border-bottom: 1.2px solid rgb(212, 201, 201);
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .img-section {
+    width: 100%;
+    height: auto;
+  }
+  .store-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /**
@@ -15,5 +328,3 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
