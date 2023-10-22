@@ -248,17 +248,21 @@ footer h6 {
 
 /* media__icons */
 
+.img-circle {
+  padding: 0.5em;
+  width: 1.5rem;
+
+  border: solid 1px;
+  border-color: var(--grey-light);
+  border-radius: 2rem;
+}
+
 .media__icons {
   margin: 20px 0;
+  display: flex;
+  gap: 2em;
 }
-.media__icons a {
-  margin: 0 10px;
-}
-.media__icons img {
-  width: 4rem;
-  height: 2rem;
-  margin: 1rem 5px;
-}
+
 .copyright {
   color: rgb(184, 180, 180);
   font-size: 13px;
