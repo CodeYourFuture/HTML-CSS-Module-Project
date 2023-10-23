@@ -1,0 +1,134 @@
+:root {
+  --grey-dark: #616364;
+  --grey-light: #a7a4a4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --orange: #d65a17;
+  --white: #fff;
+  --black: black;
+  --pink: #f7d1b980;
+}
+/*Body*/
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  max-width: 100vw;
+  margin: 0;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Form section */
+.order-section {
+  height: min-content;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: min-content;
+  align-items: flex-start;
+}
+
+/* left text and form */
+.order-text {
+  margin: 15vh 8vw 0;
+}
+.order-text h1 {
+  margin-bottom: 2rem;
+  color: var(--orange-dark);
+  font-size: 2.8rem;
+  font-weight: 465;
+}
+.order-image {
+  background-image: url("../level-2/store-image_by-andrew-neel-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.couple {
+  display: flex;
+  flex-direction: column;
+}
+.name-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+.name {
+  width: 50%;
+}
+
+.city,
+.postcode,
+#firstName,
+#lastName {
+  width: 100%;
+  height: 40px;
+}
+.radio-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.radio-text {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.address-line {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#address,
+#address2 {
+  width: 100%;
+  height: 40px;
+}
+
+.input-btn {
+  padding: 1vw 2vw;
+}
+
+.submit input[type="submit"] {
+  background-color: var(--orange-dark);
+  color: white;
+  border: 0;
+  font-size: 20px;
+  margin-top: 2rem;
+  transition: background-color 0.3s;
+  background-size: 20%;
+  border-radius: 5px;
+}
+
+.submit input[type="submit"]:hover {
+  background-color: rgb(211, 70, 19);
+}
+.lbl-space {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.clr-lbl {
+  margin: 30px;
+}
+
+span.orange-text {
+  color: var(--orange-dark);
+  text-decoration: underline;
+}
+
+a.terms-link {
+  text-decoration: none; /* Remove underline*/
+  color: black;
+  text-decoration: none;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <a href="#"
+        ><img class="karma__logo" src="img/karma-logo.svg" alt="Karma Logo"
+      /></a>
+      <div class="hidden-menu">
+        <label id="hamburger-lbl" for="menu-icon">
+          <img
+            class="hamburger-menu"
+            src="./level-3/menu-hamburger.svg"
+            alt="hamburger menu"
+        /></label>
+      </div>
+      <!-- Navigation Bar -->
+
+      <input type="checkbox" id="menu-icon" />
+      <nav>
+        <ul id="navigation__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__item-link">Meet Karma</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">How it Works</a>
+          </li>
+          <li class="nav__item">
+            <a href="store.html" class="nav__item-link">Store</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Help</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__item-link">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--main -->
+    <main>
+      <section class="order-section">
+        <div class="order-text">
+          <h1>Order your Karma wifi <br />device today!</h1>
+
+          <form id="orderForm" action="process_order.php" method="POST">
+            <div class="name-row">
+              <div class="name couple">
+                <label class="lbl-space" for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="name couple">
+                <label class="lbl-space" for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="address-line">
+              <label class="lbl-space" for="address">Address *</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+
+            <div class="address-line">
+              <label class="lbl-space" for="address2">Address 2:</label>
+              <input type="text" id="address2" name="address2" />
+            </div>
+
+            <div class="name-row">
+              <div class="name couple">
+                <label class="lbl-space" for="city">City *</label>
+                <select class="city" name="city" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="London">London</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="Liverpool">Liverpool</option>
+                </select>
+              </div>
+              <div class="name couple">
+                <label class="lbl-space" for="postcode">Postcode *</label>
+                <input type="text" class="postcode" name="postcode" required />
+              </div>
+            </div>
+
+            <div class="radio-text">
+              <label class="clr-lbl" for="color-select">Select a color:</label>
+
+              <div class="radio-row">
+                <input
+                  type="radio"
+                  id="color-select"
+                  name="color-select"
+                  value="karma-orange"
+                  required
+                />
+                <label for="karma-orange">Karma orange</label>
+
+                <input
+                  type="radio"
+                  id="color-select"
+                  name="color-select"
+                  value="space-grey"
+                  required
+                />
+                <label for="space-grey">Space Grey</label>
+              </div>
+            </div>
+
+            <div>
+              <input type="checkbox" id="terms" required />
+              <label for="terms">
+                By placing your order you agree to
+                <a href="#" class="terms-link"
+                  >Karma's
+                  <span class="orange-text">Terms and Conditions. *</span>
+                </a>
+              </label>
+            </div>
+
+            <div class="submit">
+              <input class="input-btn" type="submit" value="Place my order" />
+            </div>
+          </form>
+        </div>
+        <div class="order-image"></div>
+      </section>
+    </main>
+
+    <!--Footer -->
+    <footer>
+      <h6>Join us on</h6>
+      <div class="media__icons">
+        <a href="https://twitter.com/yourKarma" target="_blank ">
+          <img
+            class="img-circles"
+            src="img/twitter-icon.svg"
+            alt="twitter icon"
+        /></a>
+        <a href="https://www.facebook.com/newkarmawifi/" target="_blank">
+          <img
+            class="img-circles"
+            src="img/facebook-icon.svg"
+            alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com/karmawifi/" target="_blank "
+          ><img
+            class="img-circles"
+            src="img/instagram-icon.svg"
+            alt="instagram icon"
+        /></a>
+      </div>
+      <p class="copyright">@ Karma Mobility. Inc</p>
+    </footer>
+
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+  </body>
+</html>
