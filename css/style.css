@@ -34,7 +34,7 @@ header {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 90px;
+  margin: 2px 90px;
   background-color: rgb(243, 241, 241);
   height: 3.75rem;
 }
@@ -93,7 +93,6 @@ section {
   margin-bottom: 9rem;
 }
 #hero h1 {
-  margin-top: 10rem;
   font-weight: 100;
   font-size: calc(30px + 3vw);
 }
@@ -110,7 +109,7 @@ section {
 /*button*/
 #hero button {
   margin-top: 0;
-  margin-bottom: 10rem;
+
   background-color: var(--orange-dark);
   color: var(--white);
   padding: 15px 17px;
@@ -151,45 +150,19 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr auto;
   gap: calc(15px + 1.5vw);
-  grid-template-areas:
-    "icon1 icon2 icon3"
-    "text1 text2 text3";
   justify-items: center;
 }
 
-grid areas for each element .icon__images:nth-child(1) {
-  grid-area: icon1;
-}
-
-.icon__images:nth-child(1) {
-  grid-area: icon2;
-}
-
-.icon__images:nth-child(1) {
-  grid-area: icon3;
-}
-
-h5:nth-child(1) {
-  grid-area: text1;
-}
-
-h5:nth-child() {
-  grid-area: text2;
-}
-
-h5:nth-child(6) {
-  grid-area: text3;
-}
-
 /*get-karma*/
-#get-karma {
-  display: flex;
+.get-karma {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 50px 0 80px 0;
   height: 65vh;
 }
 .quote-div {
   background-color: var(--pink);
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -217,7 +190,8 @@ h5:nth-child(6) {
   border: 0;
 }
 .girl-img {
-  width: 50%;
+  width: 100%;
+  height: 100%;
   background-image: url("../level-2/homepage-feature.png");
   background-position: center left;
   background-size: cover;
@@ -248,7 +222,7 @@ footer h6 {
 
 /* media__icons */
 
-.img-circle {
+.img-circles {
   padding: 0.5em;
   width: 1.5rem;
 
@@ -266,4 +240,75 @@ footer h6 {
 .copyright {
   color: rgb(184, 180, 180);
   font-size: 13px;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#hamburger-lbl {
+  display: none;
+}
+
+@media screen and (max-width: 540px) {
+  header nav {
+    display: none;
+    width: fit-content;
+  }
+  header {
+    position: relative;
+    margin: 2px 15px;
+  }
+  #navigation__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.3em;
+  }
+  .nav__item {
+    padding: 0.3em;
+    text-align: center;
+  }
+
+  #menu-icon:checked + nav {
+    display: inline;
+    position: absolute;
+    right: 0%;
+    top: 110%;
+
+    background-color: var(--white);
+  }
+  #hamburger-lbl {
+    display: block;
+  }
+
+  #hero {
+    height: 35vh;
+    margin-bottom: 0;
+  }
+  .icon__images {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+  #r2 {
+    grid-row: 3/4;
+  }
+
+  #r3 {
+    grid-row: 5/6;
+  }
+
+  #icons {
+    height: fit-content;
+    width: 70vw;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .get-karma {
+    display: flex;
+    flex-direction: column;
+  }
+  .girl-img {
+    width: 100%;
+  }
 }
