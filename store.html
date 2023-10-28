@@ -27,13 +27,13 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="#" id="black-text">Meet Karma</a>
+            <a class="nav-link" href="index.html" id="black-text">Meet Karma</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">How it Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Store</a>
+            <a class="nav-link" href="store.html">Store</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
@@ -50,7 +50,136 @@
 
     <main class="main-store-page">
       <div class="with-form-img">
-        <form id="form">The form is going to be applied to this section</form>
+        <div id="form-col">
+          <div id="form-col-with-items">
+            <p class="large-text" id="form-text-order">
+              Order your Karma wifi device today!
+            </p>
+
+            <form>
+              <div class="flex-inputs">
+                <div class="flex-inputs-children">
+                  <label for="first-name">First name *</label>
+                  <br />
+                  <br />
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="flex-inputs-children">
+                  <label for="last-name">Last name *</label>
+                  <br />
+                  <br />
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="form-items">
+                <label for="address1">Address *</label>
+                <br />
+                <br />
+                <input
+                  type="text"
+                  id="address1"
+                  name="address"
+                  required
+                  minlength="5"
+                />
+              </div>
+              <br />
+              <div class="form-items">
+                <label for="address2">Address 2</label>
+                <br />
+                <br />
+                <input type="text" id="address2" name="address" />
+              </div>
+              <br />
+              <div class="flex-inputs">
+                <div class="flex-inputs-children" id="city-container">
+                  <label for="city">City *</label>
+                  <br />
+                  <br />
+                  <select id="city" required>
+                    <option value="" disabled selected>
+                      Select your city...
+                    </option>
+                    <option value="city1">City1</option>
+                    <option value="city2">City2</option>
+                    <option value="city3">City3</option>
+                  </select>
+                </div>
+                <div class="flex-inputs-children" id="postcode-container">
+                  <label for="postcode">Postcode *</label>
+                  <br />
+                  <br />
+                  <input
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    required
+                    minlength="2"
+                  />
+                </div>
+              </div>
+              <br />
+              <br />
+              <div class="form-items">
+                <label>Select a colour</label>
+                <br />
+                <br />
+                <div id="radio-buttons">
+                  <div class="radio-checkbox-text">
+                    <input
+                      type="radio"
+                      id="karma-orange"
+                      name="color"
+                      value="Karma orange"
+                    /><label for="karma-orange" class="radio-text"
+                      >Karma orange</label
+                    >
+                  </div>
+                  <div class="radio-checkbox-text" id="radio-margin">
+                    <input
+                      type="radio"
+                      id="space-grey"
+                      name="color"
+                      value="Space Grey"
+                    /><label for="space-grey" class="radio-text"
+                      >Space Grey</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <br />
+              <div class="form-items">
+                <div class="radio-checkbox-text">
+                  <input type="checkbox" id="agree" name="agreement" required />
+                  <label for="agree" id="agreement-text">
+                    By placing your order agree to Karma's<a
+                      href=""
+                      target="_blank"
+                      >Terms and Conditions</a
+                    >. *
+                  </label>
+                </div>
+              </div>
+              <br />
+              <button type="submit" class="button">Place my order</button>
+            </form>
+          </div>
+        </div>
         <img
           src="level-2/store-image_by-andrew-neel-unsplash.jpg"
           alt="A lady sitting and working with her laptop and holding a cup of coffee with the other hand"
