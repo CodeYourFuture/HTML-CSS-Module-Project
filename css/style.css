@@ -117,15 +117,15 @@ body {
 }
 
 .icons {
-  width: 150px;
-  height: 150px;
-  padding-left: 100px;
-  padding-right: 100px;
+  width: 10em;
+  height: 10em;
+  padding-left: 6em;
+  padding-right: 6em;
 }
 
 .with-three-icons {
-  margin-top: 150px;
-  margin-bottom: 50px;
+  margin-top: 10em;
+  margin-bottom: 5em;
 }
 
 .the-three-icons {
@@ -134,8 +134,8 @@ body {
 }
 
 .icons-texts {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 #p1 {
@@ -152,7 +152,7 @@ body {
 
 .with-img-connection {
   display: flex;
-  margin: 100px 0;
+  margin: 5em 0;
   background-color: #fcefeb;
   text-align: center;
   align-items: center;
@@ -160,6 +160,8 @@ body {
 
 #italic-text {
   font-style: italic;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 span {
@@ -295,4 +297,121 @@ a {
   margin-right: 1em;
   width: 1em;
   height: 1em;
+}
+
+/* media queries */
+
+/* media queries index-page */
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  /* header */
+
+  .header {
+    padding: 20px;
+    background-color: white;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+
+  /* main */
+
+  .with-img-background {
+    height: auto;
+    padding: 2em;
+  }
+
+  .content {
+    text-align: center;
+    padding: 3em;
+  }
+
+  .button {
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+  }
+
+  .xx-large-text {
+    font-size: 3em;
+  }
+
+  .large-text {
+    font-size: 2em;
+  }
+
+  .x-large-text {
+    font-size: 2.5em;
+  }
+
+  .with-three-icons {
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
+
+  .the-three-icons {
+    display: block;
+  }
+
+  #p1 {
+    font-size: 1.3em;
+  }
+
+  #p2 {
+    font-size: 1.3em;
+  }
+
+  #p3 {
+    font-size: 1.3em;
+  }
+
+  .icons-texts {
+    margin: 1em;
+  }
+
+  .icons {
+    width: 5em;
+    height: 5em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
+
+  .with-img-connection {
+    display: block;
+    background-color: #fcefeb;
+    text-align: center;
+    align-items: center;
+  }
+
+  #img-laughing-lady {
+    width: 100%;
+  }
+
+  #last-text-button {
+    margin: 4em 2em;
+    padding-top: 1em;
+    padding-bottom: 6em;
+  }
+
+  #last-button {
+    padding: 20px 40px;
+  }
+
+  #italic-text {
+    margin-bottom: 3em;
+  }
+
+  /* footer */
+
+  .footer {
+    padding-bottom: 4em;
+  }
 }
