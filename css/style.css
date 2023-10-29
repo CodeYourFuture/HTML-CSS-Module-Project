@@ -36,13 +36,14 @@ body {
 
 .header-logo {
   max-width: 30px;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  margin: o;
+  margin: 0;
   padding: 0;
 }
 
@@ -168,6 +169,11 @@ span {
   color: #e06239;
 }
 
+#img-laughing-lady {
+  width: 100%;
+  height: 100%;
+}
+
 /*Index-page | Footer-styles */
 
 .footer {
@@ -180,7 +186,8 @@ span {
 
 .footer-icons {
   max-width: 20px;
-  height: auto;
+  width: 100%;
+  height: 100%;
   margin: 5px;
   border-radius: 50%;
   border: 1px lightgrey solid;
@@ -302,16 +309,16 @@ a {
   height: 1em;
 }
 
-/* Media queries */
+/* Media-queries */
 
-/* Media queries | Index-page */
+/* Media-queries | Index-page */
 
 @media (max-width: 768px) {
   body {
     margin: 0;
   }
 
-  /* Media queries | Index-page | Header-styles */
+  /* Media-queries | Index-page | Header-styles */
 
   .header {
     padding: 20px;
@@ -326,7 +333,7 @@ a {
     margin: 5px 0;
   }
 
-  /* Media queries | Index-page | Main-styles */
+  /* Media-queries | Index-page | Main-styles */
 
   .with-img-background {
     height: auto;
@@ -412,15 +419,15 @@ a {
     margin-bottom: 3em;
   }
 
-  /* Media queries | Index-page | Footer-styles */
+  /* Media-queries | Index-page | Footer-styles */
 
   .footer {
     padding-bottom: 4em;
   }
 
-  /* Media queries | Store-page */
+  /* Media-queries | Store-page */
 
-  /* Media queries | Store-page | Main-styles */
+  /* Media-queries | Store-page | Main-styles */
 
   form {
     padding-top: 3em;
@@ -445,6 +452,7 @@ a {
 
   #img-working-lady {
     width: 100%;
+    height: 100%;
     margin-bottom: 3em;
   }
 
@@ -490,5 +498,30 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 2em;
+  }
+}
+
+/* Hamburger-menu */
+
+#ham-nav label,
+#hamburger {
+  display: none;
+}
+
+/* Hamburger-menu | Media-queries */
+
+@media (max-width: 768px) {
+  #ham-nav label {
+    display: flex;
+    justify-content: right;
+    font-size: 3em;
+  }
+
+  #ham-items {
+    display: none;
+  }
+
+  #ham-nav input:checked ~ #ham-items {
+    display: block;
   }
 }
