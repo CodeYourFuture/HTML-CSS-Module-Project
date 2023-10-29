@@ -25,7 +25,7 @@ body {
   margin: 0;
 }
 
-/* Header styles */
+/* Index-page | Header-styles */
 
 .header {
   display: flex;
@@ -71,7 +71,7 @@ body {
   color: #e06239;
 }
 
-/* Main styles */
+/*Index-page | Main-styles */
 
 .main {
   text-align: center;
@@ -168,7 +168,7 @@ span {
   color: #e06239;
 }
 
-/* Footer styles */
+/*Index-page | Footer-styles */
 
 .footer {
   text-align: center;
@@ -191,10 +191,13 @@ span {
   color: grey;
 }
 
-/* store-page */
+/* Store-page */
+
+/* Store-page | Main-styles */
 
 .main-store-page {
   border-bottom: 2px solid lightgray;
+  border-top: 2px solid lightgray;
   margin-bottom: 20px;
 }
 
@@ -299,16 +302,16 @@ a {
   height: 1em;
 }
 
-/* media queries */
+/* Media queries */
 
-/* media queries index-page */
+/* Media queries | Index-page */
 
 @media (max-width: 768px) {
   body {
     margin: 0;
   }
 
-  /* header */
+  /* Media queries | Index-page | Header-styles */
 
   .header {
     padding: 20px;
@@ -323,7 +326,7 @@ a {
     margin: 5px 0;
   }
 
-  /* main */
+  /* Media queries | Index-page | Main-styles */
 
   .with-img-background {
     height: auto;
@@ -409,9 +412,83 @@ a {
     margin-bottom: 3em;
   }
 
-  /* footer */
+  /* Media queries | Index-page | Footer-styles */
 
   .footer {
     padding-bottom: 4em;
+  }
+
+  /* Media queries | Store-page */
+
+  /* Media queries | Store-page | Main-styles */
+
+  form {
+    padding-top: 3em;
+  }
+
+  #form-col-with-items {
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .with-form-img {
+    flex-direction: column;
+  }
+
+  #city {
+    width: 143%;
+  }
+
+  #postcode {
+    width: 200%;
+  }
+
+  #img-working-lady {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  #form-col {
+    width: 100%;
+  }
+
+  #order-paragraph {
+    text-align: center;
+  }
+
+  #form-text-order {
+    margin-top: 0.5em;
+  }
+
+  .flex-inputs {
+    flex-direction: column;
+  }
+
+  .flex-inputs-children {
+    margin-bottom: 1em;
+  }
+
+  #radio-buttons {
+    flex-direction: column;
+  }
+
+  .radio-checkbox-text {
+    margin-bottom: 1em;
+  }
+
+  #agree {
+    width: 2em;
+    height: 2em;
+  }
+
+  #order-button {
+    padding: 20px 60px;
+  }
+
+  #order-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
   }
 }
