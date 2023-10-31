@@ -1,19 +1,352 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+/* Variables */
+:root {
+  --color-brand: #e0633a;
+  --color-brand-dark: #e04815;
+  --color-light: #ffffff;
+  --color-darker: #151515;
+  --color-dark: #3c3c3c;
+  --color-mid: #8d8d8d;
+  --color-cr: #dbdbdb;
 
+  --fs-h1: 4rem;
+  --fs-hero-description: 2.5rem;
+  --fs-h2: 3.5rem;
+  --fs-h3: 1.25rem;
+  --fs-navbar: 1.25rem;
+  --fs-p: 2rem;
+  --fs-obs: 1rem;
 
+  --gap-vertical: 3rem;
+
+  --ideal-page-width: 1600px;
+  --ideal-viewport-width: 1980px;
+  --vw-dif: calc(100vw - var(--ideal-viewport-width));
+  --page-width-proportion: calc(10 / 9);
+  --page-width-add: calc(var(--vw-dif) / var(--page-width-proportion));
+  --page-width: calc(var(--ideal-page-width) + var(--page-width-add));
+}
+
+/* General */
+
+html {
+  background-color: var(--color-darker);
+  color: var(--color-darker);
+}
+
+body {
+  background-color: var(--color-light);
+  width: var(--page-width);
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: calc(var(--fs-h1) * 1.5);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  line-height: calc(var(--fs-h2) * 1.5);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: calc(var(--fs-h3) * 1.5);
+  font-weight: normal;
+}
+
+p {
+  font-size: var(--fs-p);
+  line-height: calc(var(--fs-p) * 1.5);
+}
+
+a {
+  color: var(--color-mid);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-brand);
+  transition: all 0.2s;
+}
+
+.button {
+  margin-top: var(--gap-vertical);
+  padding: 1.25rem 2.75rem;
+  border-radius: 0.25rem;
+
+  background-color: var(--color-brand);
+  color: var(--color-light);
+  font-size: var(--fs-navbar);
+
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-color: var(--color-brand-dark);
+  color: var(--color-light);
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 8%;
+}
+
+header nav {
+  width: 50%;
+  min-width: 500px;
+  font-size: var(--fs-navbar);
+}
+
+header img {
+  height: 3rem;
+}
+
+#navbar__items {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  color: var(--color-mid);
+}
+
+.navbar__item:first-child a:not(:hover):not(:focus) {
+  color: var(--color-dark);
+}
+
+.navbar__item:first-child a {
+  font-weight: bold;
+}
+
+/* Hero */
+
+#hero {
+  background: url("../img/first-background.jpg") no-repeat top center / cover;
+  /* background-size: cover; */
+  height: 96vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  color: var(--color-light);
+
+  text-align: center;
+}
+
+#hero p {
+  font-size: var(--fs-hero-description);
+  line-height: var(--fs-hero-description);
+}
+
+/* Benefits */
+
+#benefits {
+  padding: 10rem 10% 8rem;
+  text-align: center;
+  width: 100%;
+}
+
+#benefits h2 {
+  margin-bottom: var(--gap-vertical);
+}
+
+#benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100vw;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
+}
+
+.benefit img {
+  height: 200px;
+}
+
+#to-store {
+  display: flex;
+  max-width: 100vw;
+  margin-bottom: 6rem;
+}
+
+#to-store img {
+  width: 40%;
+  min-width: unset;
+}
+
+#to-store article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fcefeb;
+  width: 60%;
+  padding: 0 12%;
+}
+
+@media screen and (max-width: 1400px) {
+  #to-store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #to-store article,
+  #to-store img {
+    width: 80%;
+  }
+
+  #to-store article {
+    padding: 2rem 1rem;
+  }
+
+  :root {
+    --page-width: 99%
+  }
+}
+
+#to-store p {
+  font-style: italic;
+  font-size: var(--fs-hero-description);
+
+  text-align: center;
+}
+
+#to-store span {
+  font-size: var(--fs-h2);
+  color: var(--color-brand);
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+footer h3 {
+  width: 85%;
+  border-top: solid var(--color-cr) 2px;
+  padding-top: 2rem;
+}
+
+#social-media-list {
+  display: flex;
+  width: 250px;
+  justify-content: space-evenly;
+
+  margin: calc(var(--gap-vertical) / 2) 0;
+}
+
+.social-media-link {
+  --size-media: 3rem;
+  height: var(--size-media);
+  width: var(--size-media);
+  border: solid var(--color-cr) 2px;
+  border-radius: 50%;
+}
+
+.social-media-link img {
+  height: 50%;
+  margin: 25%;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+#copyright {
+  font-size: var(--fs-obs);
+  margin-bottom: calc(var(--gap-vertical) * 1.5);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  :root {
+    --fs-h1: 3.375rem;
+    --fs-hero-description: 2rem;
+    --fs-h2: 2.75rem;
+    --fs-h3: 1.5rem;
+    --fs-navbar: 1.25rem;
+    --fs-p: 2.5rem;
+    --fs-obs: 1rem;
+
+    --gap-vertical: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #benefits-list {
+    gap: var(--gap-vertical);
+    max-width: 95vw;
+  }
+
+  .benefit img {
+    height: 130px;
+  }
+}
+
+/* navbar selected link highlight */
+
+#navbar__item-selected {
+  color: var(--color-brand);
+}

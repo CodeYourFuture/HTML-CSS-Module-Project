@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,13 +8,51 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
-
+    <header>
+        <a href=""><img src="img/karma-logo.svg" alt="Karma Logo"></a>
+        <nav>
+            <ul id="navbar__items">
+                <li class="navbar__item"><a href="#" id="navbar__item-selected" class="navbar__item-link">Meet Karma</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item-link">How it Works</a></li>
+                <li class="navbar__item"><a href="./store.html" class="navbar__item-link">Store</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item-link">Blog</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item-link">Help</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Introducing Karma</h1>
+            <p>Bring WiFi with you, everywhere you go.</p>
+            <a href="#" class="button">Learn More</a>
+        </section>
+        <section id="benefits">
+            <h2>Everyone needs a little Karma.</h2>
+            <section id="benefits-list">
+                <article class="benefit"><img src="img/icon-devices.svg" alt="Illustration of devices"><p>Internet for all devices</p></article>
+                <article class="benefit"><img src="img/icon-coffee.svg" alt="Illustration of a coffee"><p>Boost your productivity</p></article>
+                <article class="benefit"><img src="img/icon-refill.svg" alt="Illustration of an iPod"><p>Pay as You Go</p></article>
+            </section>
+        </section>
+        <section id="to-store">
+            <img src="img/homepage-feature.png" alt="">
+            <article><p><span>"</span>Wherever I am, I just don't worry about my connection anymore!<span>"</span></p><a href="./store.html" class="button">Get Karma today</a></article>
+        </section>
+    </main>
+    <footer>
+        <h3>Join us on</h3>
+        <section id="social-media-list">
+            <a href="https://twitter.com/yourKarma" target="_blank" class="social-media-link" aria-label="twitter"><img src="img/twitter-icon.svg" alt="twitter logo"></a>
+            <a href="https://www.facebook.com/newkarmawifi/" target="_blank" class="social-media-link" aria-label="facebook"><img src="img/facebook-icon.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/karmawifi/" class="social-media-link" target="_blank" aria-label="instagram"><img src="img/instagram-icon.svg" alt="instagram logo"></a>
+        </section>
+        <p id="copyright">&copy; Karma Mobility Inc</p>
+    </footer>
 </body>
+
 </html>
