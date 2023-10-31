@@ -147,8 +147,8 @@ header img {
 /* Hero */
 
 #hero {
-  background: url("../img/first-background.jpg") no-repeat top center/cover;
-  background-size: cover;
+  background: url("../img/first-background.jpg") no-repeat top center / cover;
+  /* background-size: cover; */
   height: 96vh;
 
   display: flex;
@@ -205,7 +205,7 @@ header img {
 
 #to-store img {
   width: 40%;
-  min-width: none;
+  min-width: unset;
 }
 
 #to-store article {
