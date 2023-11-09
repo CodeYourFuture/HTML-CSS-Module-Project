@@ -85,6 +85,13 @@ nav ul {
   color: var(--logoColor);
 }
 
+#ham-menu-input {
+  display: none;
+}
+
+.ham-menu-label {
+  display: none;
+}
 /* first section styles */
 
 .main-area {
@@ -273,7 +280,7 @@ input[type="radio"] {
   height: 14px;
   border: var(--logoColor) solid 1px;
 }
-input[type="checkbox"] {
+.tac {
   grid-column: 1/-1;
   grid-row: 1/-1;
   opacity: 0;
@@ -296,4 +303,119 @@ input[type="checkbox"] {
 
 .tac-spn {
   color: var(--logoColor);
+}
+
+@media screen and (max-width: 768px) {
+  .ham-menu-img {
+    cursor: none;
+  }
+  header {
+    position: relative;
+  }
+  .ham-menu-label {
+    z-index: 2;
+    display: inline;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    z-index: 1;
+    background-color: var(--white);
+  }
+  nav ul {
+    flex-direction: column;
+    background-color: var(--reverseColor);
+    padding: 30px;
+    padding-right: 60px;
+  }
+
+  #ham-menu-input:checked + nav {
+    display: inline;
+  }
+
+  .getKarma {
+    flex-direction: column;
+  }
+  .article-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+  .article-grid img:nth-child(2) {
+    grid-row: 3 / 4;
+  }
+  .article-grid img:nth-child(3) {
+    grid-row: 5 / 6;
+  }
+  .article-area {
+    height: fit-content;
+  }
+  .article-area > h3 {
+    text-align: center;
+    min-width: 18ch;
+  }
+  .article-getKarma {
+    padding: 50px 0px;
+  }
+  .article-getKarma h4 {
+    font-size: calc(var(--subHeaderLineSize) / 0.9);
+  }
+  .article-getKarma h4 span {
+    font-size: calc(var(--subHeaderLineSize) / 0.6);
+  }
+  .article-grid h4 {
+    font-size: calc(var(--subHeaderLineSize) / 1);
+  }
+  .main-area {
+    height: calc(var(--sectionHeight) / 1.5);
+  }
+  .main-area h3 {
+    max-width: 12ch;
+    text-align: center;
+    font-size: calc(var(--headerLineSize) * 1.2);
+  }
+  .main-area h4 {
+    max-width: 16ch;
+    text-align: center;
+    font-size: calc(var(--headerLineSize) / 1.2);
+  }
+  .main-area button {
+    margin: calc(2 * var(--gap)) 0;
+  }
+  footer h5 {
+    font-size: calc(var(--subHeaderLineSize) / 1.3);
+  }
+  .media-logo {
+    height: 20px;
+  }
+  footer h6 {
+    font-size: calc(var(--subHeaderLineSize) / 1.7);
+  }
+  button {
+    font-size: calc(var(--subHeaderLineSize) / 1);
+  }
+
+  /* store page */
+
+  .store-area {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-area {
+    width: 100%;
+    padding-top: 120%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+  .radio-group {
+    flex-direction: row;
+  }
+
+  #postcode {
+    width: 150px;
+  }
 }
