@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Karma - Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <!-- Add your HTML markup here -->
+    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
+    <!-- All the images you need are in the 'img' folder -->
+
+    <!-- header part -->
+    <header>
+      <img class="karmaIcon" src="./img/karma-logo.svg" alt="karma's icon" />
+
+      <label class="ham-menu-label" for="ham-menu-input">
+        <img class="ham-menu-img" src="./level-3/menu-hamburger.svg" alt="" />
+      </label>
+      <input type="checkbox" id="ham-menu-input" />
+      <nav>
+        <ul>
+          <li>
+            <a class="nav-link first-link" href="./index.html">Meet Karma</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">How it Works</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./store.html">Store</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Blog</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Help</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="store-area">
+        <div class="form-area">
+          <h3 class="form-hdr">Order your Karma wifi<br />device today!</h3>
+          <form action="">
+            <div class="form-row">
+              <div class="couple-lbl-inpt">
+                <label for="firstName">First name *</label>
+                <input type="text" id="firstName" />
+              </div>
+              <div class="couple-lbl-inpt">
+                <label for="lastName">Last name *</label>
+                <input type="text" id="lastName" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="couple-lbl-inpt">
+                <label for="address1">Address *</label>
+                <input type="text" id="address1" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="couple-lbl-inpt">
+                <label for="address2">Address 2 *</label>
+                <input type="text" id="address2" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="couple-lbl-inpt">
+                <label for="city">City *</label>
+                <input type="text" id="city" />
+              </div>
+              <div class="couple-lbl-inpt">
+                <label for="postcode">Postcode *</label>
+                <input type="text" id="postcode" />
+              </div>
+            </div>
+            <div class="couple-lbl-inpt">
+              <legend>Select a colour *</legend>
+              <div class="form-row radio-group">
+                <input
+                  type="radio"
+                  id="color-orange"
+                  name="color"
+                  value="orange"
+                  checked
+                />
+                <label for="color-orange">Karma Orange</label>
+                <input type="radio" id="color-grey" name="color" value="grey" />
+                <label for="color-grey">Space Grey</label>
+              </div>
+            </div>
+            <div class="form-row radio-group">
+              <div class="red">
+                <input class="tac" type="checkbox" id="TaC" />
+                <img class="checkmark" src="./level-2/checkmark.svg" alt="" />
+              </div>
+
+              <label for="TaC"
+                >By placing your order you agree to Karma's
+                <a class="tac-spn" href="">Terms and Conditions</a>. *</label
+              >
+            </div>
+            <button class="order-btn">Place my order</button>
+          </form>
+        </div>
+
+        <div class="img-area"></div>
+      </div>
+    </main>
+
+    <!-- footer part -->
+    <footer>
+      <hr />
+      <h5>Join us on</h5>
+      <div>
+        <a href=""
+          ><img
+            class="media-logo"
+            src="./img/twitter-icon.svg"
+            alt="twitter icon"
+        /></a>
+        <a href=""
+          ><img
+            class="media-logo"
+            src="./img/facebook-icon.svg"
+            alt="facebook icon"
+        /></a>
+        <a href=""
+          ><img
+            class="media-logo"
+            src="./img/instagram-icon.svg"
+            alt="instagram icon"
+        /></a>
+      </div>
+      <h6>@ Karma Mobility, Inc.</h6>
+    </footer>
+  </body>
+</html>
