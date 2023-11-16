@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.h1{
+    color: orange;
+     max-width: 300px;
+    font-family: sans-serif;
+}
+.main{
+  display: flex;
+  flex-direction: row-reverse;
+}
+div{
+  display: inline:block;
+
+}
+
+
+*/ nav-bar/
+.ul link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 10px;
+}
+  .nav a:hover{
+            color: red;}
+                
+  #menu-icon{
+      width: 50px;
+     border-radius: 50%;
+    position: fixed;
+    top: 3px;   right: 60px;
+     cursor: pointer;
+     z-index: 100;
+ }
+
+ */container/ 
+
+
+  .main-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+ }
+ .container form .input-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: left;
+ }
+ form input{
+  width: 50px;
+ }
+ .radio-button {
+    margin: 20px;
+}
+input{
+ width: 50%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      
+
+}
+
+
+label, input {
+    padding: 5px;
+    margin:10px;
+    flex-grow: 1;
+}
+
+#address {
+    width: 380px;
+}
+
+.place {
+    background-color: orange;
+    color: white;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+        
+        
