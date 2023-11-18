@@ -165,14 +165,29 @@ justify-content: center;
     justify-content: center;
 }
 .storeimg {
-    height: 800px;
-    width: 600px;
+    border-radius: 25px;
+    height:100%;
+    width: 100%;
+
+
+   max-height: 800px;
+   max-width: 600px;
+  
     justify-content: center;
 }
 .storemain {
-    padding: 80px;
-    display: flex;
+    width: fit-content;
+    /* border: 5px solid blue; */
+    padding: 30px;
+    display: grid;
     gap: 30px;
+}
+@media screen and (min-width: 40em) {
+    .storemain {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      column-gap: 20px;
+    }
 }
 
 .formtop {
@@ -214,6 +229,14 @@ font-size: larger;
 .storeleft {
     display: flex;
     flex-direction: column;
+    /* border: 5px solid red; */
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+}
+.imgmain {
+    /* border: 5px solid red; */
+    width: 600px;
 }
 .frmlable2 {
     display: flex;
