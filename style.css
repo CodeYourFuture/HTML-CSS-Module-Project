@@ -1,20 +1,8 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
 
 .Karmanav {
     text-align: right;
@@ -27,11 +15,7 @@ body {
 }
 .ulnav {
     display: flex;
-    /* list-style-type: none; */
-    /* justify-content: right; */
-    /* flex-direction: row; */
-    /* text-align: right; */
-
+   
 
 
 }
@@ -47,14 +31,45 @@ a {
 
 .Bkgimg {
    background-image: url("/img/first-background.jpg");
-   width: 1500px;
-   height: 700px;
+   width: 100%;
+   height: auto;
    margin-top: 50px;
 }
-.bkgtext {
+
+.imgxx {
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 620px) {
+    
+    .bodybottomimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Bkgimg {
+        height: auto;
+        max-width: 100%;
+       
+    }
+      
+      .bkgtext {
+        width: auto;
+    height: auto;
     text-align: center;
     color: white;
     padding-top: 200px;
+      }
+
+} 
+.bkgtext {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+    
 }
 .karmabtn {
     background-color: #f96c07;
@@ -70,45 +85,77 @@ a {
     font-weight: lighter;
 }
 .kmain {
-    margin-top: 100px;
+   
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
-
+    justify-items: center;
 }
 .h2class {
   font-size: 50px;  
   font-weight: lighter;
 }
 .brandDescription {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap:100px;
-    
-}
-.imgsclass {
-   display: flex;
-   flex-direction: column;
-}
-.imgsclass img{
+    display: grid; 
+    grid-template-columns: 3fr;
+    column-gap: 20px;
+    width: 100%;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    height: auto;
+    }
+.imgsclass1 {
     width: 200px;
 }
-.imgsclass h3 {
-}
-    
+.imgsclass2 {
+    width: 200px;
+    margin-top: 20px;
+
+ }
+ .imgsclass3 {
+    width: 200px;
+    margin-top: 20px;
+ }
+
+ 
 .logoclass {
     margin-top: 20px;
     margin-left: 20px;
 }
+
+.bodybottomimg {
+width: 100%;
+height: auto;
+height: fit-content;
+width: fit-content;
+display: grid;
+
+}
+
 .bodybottomtxt {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+
+    
     padding: 100px;
     justify-content: center;
+    width: fit-content;
+    height: fit-content;
 }
 .bodybottom {
+    display: grid; 
+    grid-template-rows: auto;
     background-color: #f3dccc;
-    display: flex;
-    justify-content: center;
+    align-content: space-between;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+
 }
 .bbtstyle {
     font-style: italic;
@@ -177,17 +224,47 @@ justify-content: center;
 }
 .storemain {
     width: fit-content;
-    /* border: 5px solid blue; */
     padding: 30px;
     display: grid;
     gap: 30px;
 }
+
 @media screen and (min-width: 40em) {
+    .brandDescription {
+        display: grid; 
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+      }
+      .bodybottom {
+        display: grid;
+        grid-template-columns: auto auto; 
+        align-items: center;
+        align-content: center;
+            background-color: #f3dccc;
+            justify-content: center;
+        }
+}
+
+
+
+@media screen and (min-width: 40em) {
+        .kmain {
+            display: grid;
+            grid-template-rows: auto; 
+            row-gap: 20px;
+            justify-items: center;
+          }
+
     .storemain {
       display: grid;
       grid-template-columns: 3fr 1fr;
       column-gap: 20px;
     }
+    
 }
 
 .formtop {
@@ -229,13 +306,11 @@ font-size: larger;
 .storeleft {
     display: flex;
     flex-direction: column;
-    /* border: 5px solid red; */
     align-content: center;
     justify-content: center;
     width: fit-content;
 }
 .imgmain {
-    /* border: 5px solid red; */
     width: 600px;
 }
 .frmlable2 {
