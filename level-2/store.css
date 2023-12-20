@@ -20,8 +20,7 @@ p {
 .header,
 .content,
 .footer {
-  padding: 0 2rem;
-  max-width: 1200px;
+  padding: 0;
 }
 
 /*Navigation*/
@@ -123,7 +122,9 @@ select {
 
 .form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 3.5em;
+  /* justify-content: space-between; */
 }
 
 /*Radio active button*/
@@ -208,7 +209,7 @@ input[type="postcode"] {
 /*img*/
 
 .store__img {
-  width: 50%;
+  width: 49%;
 }
 
 /*radio*/
