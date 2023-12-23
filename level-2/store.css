@@ -1,0 +1,343 @@
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+body,
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: var(--grey-dark);
+  font-size: 1rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header,
+.content,
+.footer {
+  padding: 0;
+  margin: 0;
+}
+
+/*Navigation*/
+
+#hamnav {
+  margin-left: 5em;
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+#hamitems {
+  margin-left: 3em;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  padding: 10px;
+  font-weight: 600;
+}
+#hamitems a {
+  padding: 13px;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+}
+
+#hamitems a:hover {
+  color: orange;
+}
+
+/*Header*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: aliceblue;
+}
+
+.head__logo {
+  max-height: 71px;
+  width: 1.5rem;
+  padding-left: 100px;
+}
+
+/*Button*/
+
+button {
+  background-color: #c05326;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 0.7rem 1.5rem;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.button-info {
+  padding-top: 2rem;
+}
+
+.form__part {
+  margin: 8rem;
+  text-align: start;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="last name"] {
+  width: 110%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 140%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: border-box;
+  color: gray;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.9em;
+}
+
+/*Radio active button*/
+
+input[type="radio"] {
+  appearance: none;
+  border: 2px solid gray;
+  padding: 8px;
+  border-radius: 50%;
+}
+input[type="radio"]:checked {
+  background-color: rgb(255, 140, 0);
+  border-color: rgb(203, 210, 216);
+}
+
+/*Checkbox*/
+
+input[type="checkbox"] {
+  transform: scale(1.6);
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2713";
+  display: block;
+  width: 11.5px;
+  height: 11.5px;
+  line-height: 13px;
+  text-align: start;
+  background-color: #fff;
+  border: 1px solid #605753;
+  border-radius: 2px;
+  color: #c05326;
+  font-weight: bold;
+}
+
+/*Name*/
+
+.last__name {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.5rem;
+  gap: 2rem;
+}
+
+.for__name {
+  display: flex;
+  flex-direction: column;
+}
+
+.last__name-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+input[type="postcode"] {
+  width: 87%;
+  padding: 12px 6px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.for__name-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  color: gray;
+}
+
+.text {
+  color: #c05326;
+  font-size: 2.3rem;
+  font-weight: bold;
+  justify-items: center;
+  font-style: bold;
+  /* padding-top: 5rem; */
+}
+
+/*img*/
+
+.store__img {
+  width: 49%;
+}
+
+/*radio*/
+
+.radio-1 {
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+}
+
+/*footer*/
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+a {
+  color: darkorange;
+}
+
+.footer p {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.for__text {
+  padding-top: 1em;
+  color: gray;
+}
+
+.img__icon {
+  text-align: center;
+  width: 1rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+hr.new {
+  margin-top: 0px;
+  border: 1px solid rgb(237, 233, 233);
+  width: 80%;
+  margin-bottom: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .head__logo {
+    padding: 0;
+  }
+
+  #hamitems {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    gap: 0.3em;
+  }
+  #hamitems a {
+    border: 2px solid rgb(117, 105, 105);
+    border-radius: 3px;
+  }
+
+  .nav__link {
+    background-color: rgb(243, 233, 234);
+    font-weight: 600;
+    padding: 0.3em;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: rgb(35, 26, 18);
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .button-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+  }
+  .last__name {
+    display: block;
+  }
+
+  input[type="last name"] {
+    width: 95%;
+  }
+
+  .last__name-2 {
+    display: block;
+  }
+
+  select {
+    width: 95%;
+  }
+
+  input[type="postcode"] {
+    width: 50%;
+  }
+
+  .store__img {
+    width: 100%;
+  }
+}
