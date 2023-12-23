@@ -1,19 +1,321 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
 body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body,
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: var(--grey-dark);
+  font-size: 1rem;
+}
 
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.header,
+.content,
+.footer {
+  padding: 0;
+  margin: 0;
+}
+
+/*Header*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: aliceblue;
+}
+
+.header__logo {
+  max-height: 70px;
+  width: 1.5rem;
+  padding-left: 100px;
+}
+
+#hamnav {
+  margin-left: 5em;
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+#hamitems {
+  margin-left: 3em;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+  padding: 10px;
+  font-weight: 600;
+}
+#hamitems a {
+  padding: 13px;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+}
+
+#hamitems a:hover {
+  color: orange;
+}
+
+/*Button*/
+
+button {
+  background-color: #c05326;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
+/* INSERT BUTTON STYLES HERE */
+
+button:hover {
+  background-color: gray;
+}
+
+.btn {
+  padding-left: 45%;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+/*Content*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /* padding-right: 70px; */
+}
+
+/*Promote*/
+
+.promote {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2.5rem;
+  margin: 0;
+}
+
+.color {
+  color: #c05326;
+}
+
+.pro {
+  margin: 0;
+  background-color: #ffb6c1;
+  height: 17rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 6rem;
+  padding-left: 2rem;
+  color: rgb(52, 44, 44);
+}
+
+.pro__img {
+  height: 23rem;
+  width: 50%;
+}
+
+.pro__btn {
+  padding-top: 1em;
+}
+
+/*Introduction*/
+
+.introduction-img {
+  background-image: url("../img/first-background.jpg");
+  height: 34em;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.karma-introduction h1 {
+  padding-top: 100px;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+}
+
+.karma-introduction p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.main {
+  position: static;
+  margin-bottom: 3rem;
+  padding: 4rem 20%;
+  font-size: 2rem;
+  font-weight: 50;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*Caption*/
+
+.more__caption {
+  padding: 0 12rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-content: space-around;
+  text-align: center;
+  justify-content: center;
+}
+
+/*articles*/
+
+.art-text {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  padding-top: 30px;
+}
+
+.article__img {
+  padding-left: 2.5rem;
+  width: 8rem;
+}
+
+/*Footer*/
+hr.new {
+  border-top: 1px solid rgb(232, 224, 224);
+  width: 70%;
+  margin-top: 4rem;
+}
+
+.footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer p {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.text {
+  color: gray;
+  padding-top: 0.5em;
+}
+
+.img__footer {
+  text-align: center;
+  width: 1rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .header,
+  .content,
+  .footer {
+    padding: 0;
+  }
+
+  .header__logo {
+    padding: 0;
+  }
+  #hamitems {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    gap: 0.3em;
+  }
+  #hamitems a {
+    border: 2px solid rgb(117, 105, 105);
+    border-radius: 3px;
+  }
+
+  .nav__link {
+    background-color: rgb(243, 233, 234);
+    font-weight: 600;
+    padding: 0.3em;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: rgb(35, 26, 18);
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+  }
+
+  .introduction-img {
+    background-size: 100% 100%;
+    object-fit: cover;
+  }
+
+  .btn {
+    padding-left: 38%;
+    padding-bottom: 20%;
+  }
+
+  .article__img {
+    padding-left: 1rem;
+    width: 33%;
+  }
+
+  .more__caption {
+    padding: 0 3rem;
+    justify-content: center;
+  }
+
+  .pro__img {
+    width: 100%;
+  }
+
+  .promote {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    margin: 0;
+  }
+
+  .pro {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 0;
+  }
+}

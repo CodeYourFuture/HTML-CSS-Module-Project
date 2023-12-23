@@ -1,19 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karma</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>HTML-CSS-Module-Project</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="img/karma-logo.svg"
+        alt="it is used for website"
+        class="header__logo"
+      />
 
-    <!-- Add your HTML markup here -->
-    <!-- Remember: Use semantic HTML tags like <header>, <main>, <nav>, <footer>, <section> etc -->
-    <!-- All the images you need are in the 'img' folder -->
+      <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
 
-</body>
+        <div id="hamitems">
+          <a class="nav__link" href="#">How it Works</a>
+          <a class="nav__link" href="#">Store</a>
+          <a class="nav__link" href="#">Blog</a>
+          <a class="nav__link" href="#">Help</a>
+          <a class="nav__link" href="#">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <content class="content">
+      <content class="introduction-img">
+        <section class="karma-introduction">
+          <h1>Introduction Karma</h1>
+          <p>Bring WiFi with you, everywhere you go</p>
+          <main class="btn">
+            <button>Learn More</button>
+          </main>
+        </section>
+      </content>
+
+    <content class="main">
+        <p>Everyone Needs a little Karma</p>
+      </content>
+
+      <section class="more__caption">
+        <article class="art-area">
+          <img
+            class="article__img"
+            src="img/icon-devices.svg"
+            alt="more detail"
+          />
+          
+          <p class="art-text">Internat for all devices</p>
+        </article>
+
+        <article class="art-area">
+          <img
+            class="article__img"
+            src="img/icon-coffee.svg"
+            alt="you can enjoy your spare time. "
+          />
+          <p class="art-text">Boost your productivity</p>
+        </article>
+
+        <article class="art-area">
+          <img
+            class="article__img"
+            src="img/icon-refill.svg"
+            alt="you can visit anytime"
+          />
+          <p class="art-text">Pay us You Go</p>
+        </article>
+      </section>
+    </content>
+
+    <figure class="promote">
+      <img
+        class="pro__img"
+        src="./level-2/homepage-feature.png"
+        alt="advertising"
+      />
+      <main class="pro">
+        <p>
+          <span class="color">"</span>Whenever I am, I just do't worry about my
+          connection anymore!<span class="color">"</span>
+        </p>
+        <main class="pro__btn">
+          <a href="./level-2/store.html"><button>Get Karma today</button></a>
+        </main>
+      </main>
+    </figure>
+
+    <hr class="new" />
+
+    <footer class="footer">
+      <p>Join us own</p>
+      <content class="footer__content">
+        <img
+          class="img__footer"
+          src="img/twitter-icon.svg"
+          alt="you can have contact"
+        />
+
+        <img
+          class="img__footer"
+          src="img/facebook-icon.svg"
+          alt="for more detail"
+        />
+
+        <img
+          class="img__footer"
+          src="img/instagram-icon.svg"
+          alt="you can visit"
+        />
+        <p class="text">@ Karma Mobility, Ick</p>
+      </content>
+    </footer>
+  </body>
 </html>
