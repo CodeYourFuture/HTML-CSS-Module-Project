@@ -12,7 +12,7 @@ Now let's make this website responsive!
 
 ### Submitting your work
  - Remember to **commit and push your code often**
- - Once you're ready to submit your homework for review, do a final push and **create a Pull Request**. If you're unsure how to do this, [have a look here](https://syllabus.codeyourfuture.io/git/cheatsheet/#i-want-to-send-my-code-to-volunteers-pushing).
+ - Once you're ready to submit your homework for review, do a final push and **create a Pull Request**. If you're unsure how to do this, [you can use this guide for creating pull requests](https://curriculum.codeyourfuture.io/guides/create-a-pull-request/).
  **Note:** If you've added your level 3 code to the same branch you used for the previous levels, then it will just update your existing Pull Request and you won't need a new PR. 
 
 ## Designs
