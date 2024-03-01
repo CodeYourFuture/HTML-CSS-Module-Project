@@ -1,19 +1,81 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+.header {
+  position: relative;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.ul link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: ;
+}
+nav ul li a:hover {
+  color: red;
+}
+.top3 {
+  float: right;
+  font-size: 30px;
+  width: 30px;
+}
+
+.image1 {
+  background-image: url(/img/first-background.jpg);
+  padding: 10em;
+}
+.button {
+  background-color: orange;
+}
+.h1{color: black;}
+
+*/ Icons/
+
+.icon{
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#p1{
+    color: black;
+}
 
 
+.test{
+    color:black;
+    padding: 10px;
+}
+.icon2{
+    height: 40px;px;
+    width: 40px;
+}
+#topimage{
+    float: left;
+}
