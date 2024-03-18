@@ -1,0 +1,353 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.Karmanav {
+    text-align: right;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 20px;
+    
+}
+.ulnav {
+    display: flex;
+   
+
+
+}
+.ulnav li {
+    padding: 20px;
+    color: gray;
+    list-style-type: none;
+}
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.Bkgimg {
+   background-image: url("/img/first-background.jpg");
+   width: 100%;
+   height: auto;
+   margin-top: 50px;
+}
+
+.imgxx {
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 620px) {
+    
+    .bodybottomimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Bkgimg {
+        height: auto;
+        max-width: 100%;
+       
+    }
+      
+      .bkgtext {
+        width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+      }
+
+} 
+.bkgtext {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+    
+}
+.karmabtn {
+    background-color: #f96c07;
+    height: 40px;
+    width: 160px;
+}
+.h1class {
+    font-size: 60px;
+    font-weight: lighter;
+}
+.pclass {
+    font-size: 35px;
+    font-weight: lighter;
+}
+.kmain {
+   
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    justify-items: center;
+}
+.h2class {
+  font-size: 50px;  
+  font-weight: lighter;
+}
+.brandDescription {
+    display: grid; 
+    grid-template-columns: 3fr;
+    column-gap: 20px;
+    width: 100%;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    height: auto;
+    }
+.imgsclass1 {
+    width: 200px;
+}
+.imgsclass2 {
+    width: 200px;
+    margin-top: 20px;
+
+ }
+ .imgsclass3 {
+    width: 200px;
+    margin-top: 20px;
+ }
+
+ 
+.logoclass {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.bodybottomimg {
+width: 100%;
+height: auto;
+height: fit-content;
+width: fit-content;
+display: grid;
+
+}
+
+.bodybottomtxt {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+
+    
+    padding: 100px;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+.bodybottom {
+    display: grid; 
+    grid-template-rows: auto;
+    background-color: #f3dccc;
+    align-content: space-between;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+
+}
+.bbtstyle {
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-stretch: extra-expanded;
+    font-size: large;
+    font-weight: bold;
+
+}
+.karmabtn2 {
+    justify-content: center;
+    background-color: #f96c07;
+    text-decoration: aliceblue;
+    color: #f3dccc;
+    font-weight: bold;
+    height: 40px;
+    width: 160px;
+    margin-left: 100px;
+}
+.karmafooter {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    border-top: #6940ef;
+    border-radius: 80px;
+}
+.footericons {
+    display: flex;
+flex-direction: row;
+gap: 50px;
+justify-content: center;
+
+}
+.inst {
+    width: 40px;
+    height: 40px;
+}
+.face {
+    width: 40px;
+    height: 40px;
+}
+.twit {
+    width: 40px;
+    height: 40px;
+}
+.allfooter {
+    justify-content: center;
+}
+.ftr {
+    display: flex;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    justify-content: center;
+}
+.storeimg {
+    border-radius: 25px;
+    height:100%;
+    width: 100%;
+
+
+   max-height: 800px;
+   max-width: 600px;
+  
+    justify-content: center;
+}
+.storemain {
+    width: fit-content;
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+}
+
+@media screen and (min-width: 40em) {
+    .brandDescription {
+        display: grid; 
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+      }
+      .bodybottom {
+        display: grid;
+        grid-template-columns: auto auto; 
+        align-items: center;
+        align-content: center;
+            background-color: #f3dccc;
+            justify-content: center;
+        }
+}
+
+
+
+@media screen and (min-width: 40em) {
+        .kmain {
+            display: grid;
+            grid-template-rows: auto; 
+            row-gap: 20px;
+            justify-items: center;
+          }
+
+    .storemain {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      column-gap: 20px;
+    }
+    
+}
+
+.formtop {
+color: #f96c07;
+font-size: larger;
+}
+
+.frmlable {
+    display: flex;
+    gap: 140px;
+    padding-top: 40px;
+}
+.frminput {
+    padding-top: 15px;
+    display: flex;
+    gap: 20px;
+    
+}
+.frminput input {
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+
+}
+.frmaddress {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+.frmaddress input {
+    width: 430px;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 5px;
+
+
+}
+.storeleft {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+}
+.imgmain {
+    width: 600px;
+}
+.frmlable2 {
+    display: flex;
+    gap: 200px;
+    padding-top: 20px;
+}
+.frminput2 #city {
+    border: 1px solid black;
+    width: 230px;
+    height: 30px;
+}
+.frminput2 input {
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.ordercolor {
+    padding-top: 20px;
+}
+.terms1 {
+    font-size: large;
+    padding-left: 10px;
+}
+.terms2 {
+    color: #f96c07;
+    text-decoration: underline;
+
+}
+.orderbtn {
+    background-color: #f96c07;
+    color: aliceblue;
+    height: 40px;
+    width: 160px;
+
+    
+    
+}
