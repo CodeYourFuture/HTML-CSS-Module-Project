@@ -6,14 +6,372 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-weight: lighter;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    margin: auto;
+    background-color:#f9f9f9;
+}
+
+.header_logo{
+    width: 20px;
+    height: 10rem;
+    margin-left: 80px;
+}
+
+nav{
+    margin-right: 80px;
+}
+
+.navigation_list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation_item{
+    padding: 20px;
+    font-size: large;
+}
+
+.navigation_link{
+    text-decoration: none;
+    color: #999ea5;
+}
+
+.navigation_link1{
+    text-decoration: none;
+    color: #62656b;
+}
+
+.navigation_link:hover, .navigation_link1:hover{
+    color: #e08464;
+}
+
+.hero{
+    background-image: url(../img/first-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    height: 700px;
+}
+
+main h1{
+    margin: 0 0 -1rem 0;
+} 
+
+.orange-button{
+    background-color: #e0633a;
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+    width: min-content;
+    text-wrap: nowrap;
+}
+
+.second_heading{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 35px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.images{
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.article_title{
+    font-size: 16px;
+    text-wrap: nowrap;
+    font-weight:410;
+}
+
+.articles{
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 20px;
+}
+
+.Join{
+    font-weight: 400;
+}
+
+.copyright{
+    color: #bcbec3;
+}
+
+.footer_img{
+    padding: 10px;
+    width: 20px;   
+    height: 20px;
+    border: solid 1px lightgray;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+hr{
+    width: 90%;
+    border: 0px;
+    border-top: solid 1px #e4e6ea;
+    margin-top: 0;
+}
+
+.feature{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    margin-bottom: 5rem;
+}
 
 
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcefeb;
+}
+
+.speechmarks{
+    text-wrap: wrap; 
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0px 180px;
+}
+
+.feedback span{
+    color: #e0633a;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.homepage-feature{
+    width: 40vw;
+    object-fit:cover;
+}
+
+.store-container{
+    display: flex;
+}
+
+.aside-img{
+   width: 37rem;
+}
+
+.hero-form{
+    margin: 0px 60px;
+}
+
+.hero-form h1{
+    color: #e0633a;
+    font-weight: 500;
+    margin-top: 7rem;
+    margin-left: 60px;
+    font-size: 40px;
+}
+
+.hero-form button{
+    margin-left: 60px;
+}
+
+form{
+    margin: 20px 60px;
+}
+
+form p{
+    color: #6f6f6f;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+label[for="fname"], label[for="lname"], label[for="address"], label[for="address2"], label[for="sort"], label[for="postcode"]{
+    color: #6f6f6f;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+label[for="color1"], label[for="color2"]{
+    color: #6b6b6b;
+    font-weight: 400;
+}
+
+label[for="order"]{
+    color: #6b6b6b;
+    font-size: 15px;
+}
+
+.terms .oandu{
+    color: #e0633a;
+    text-decoration: underline;
+}
+
+select[name="s"]{
+    width: 285px;
+}
+
+input[type="postcode"]{
+    width: 100px;
+}
+
+.names, .area{
+    display: flex;
+    column-gap: 25px;
+}
+
+.obutton{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 70px;
+}
+
+input, select[name="s"]{
+    border: solid #686868;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.address1, .address2{
+    display: flex;
+    flex-direction: column;
+}
+
+.terms{
+    display: flex;
+    column-gap: 5px;
+}
+
+input[type="checkbox"]{
+    opacity: 0;
+}
+
+input[type="checkbox"] + label[for="order"]{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label[for="order"]::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: 2px solid #686868;
+    border-radius: 2px;
+    background: white;
+}
+
+input[type="checkbox"]:checked + label[for="order"]::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../level-2/checkmark.svg);
+    background-size: contain;
+}
+
+input[type="radio"]{
+    opacity: 0;
+}
+
+input[type="radio"] + label[for="color1"], label[for="color2"]{
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+input[type="radio"] + label[for="color1"]::before, label[for="color2"]::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    border: 2px solid #686868;
+}
+
+input[type="radio"]:checked + label[for="color1"]::after{
+    content: "";
+    position: absolute;
+    top: 3.6px;
+    left: 3.6px;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    background: #e0633a;
+}
+
+input[type="radio"]:checked + label[for="color2"]::after{
+    content: "";
+    position: absolute;
+    top: 3.6px;
+    left: 3.6px;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    background: #e0633a;
+}
+
+#sort{
+    appearance: none;
+    cursor: pointer;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.8rem auto;
+}
